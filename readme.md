@@ -10,14 +10,15 @@ Typical install of the patched font or generate a patched font from your own fon
 
 ## Patched Fonts
 
-| Currnetly Included Patched Fonts                        |
-|--------------------------------------------------------|
-| Anonymice Powerline Plus Nerd File Types               |
-| Droid Sans Mono for Powerline Plus Nerd File Types     |
-| Literation Mono Powerline Plus Nerd File Types         |
-| ProggyCleanTT Plus Nerd File Types                     |
-| Sauce Code Powerline Plus Nerd File Types              |
-| Ubuntu Mono derivative Powerline Plus Nerd File Types  |
+| Currnetly Included Patched Fonts                       | em size  |
+|--------------------------------------------------------|----------|
+| Anonymice Powerline Plus Nerd File Types               |   2048   |
+| Droid Sans Mono for Powerline Plus Nerd File Types     |   2048   |
+| Literation Mono Powerline Plus Nerd File Types         |   2048   |
+| ProggyCleanTT Plus Nerd File Types                     |   2048   |
+| Sauce Code Powerline Plus Nerd File Types              |   1000   |
+| Ubuntu Mono derivative Powerline Plus Nerd File Types  |   1000   |
+| Ubuntu Mono Plus Nerd File Types                       |   1000   |
 
 Patching the font of your own choosing:
 * requires: python2, python-fontforge package

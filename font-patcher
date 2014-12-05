@@ -33,7 +33,8 @@ sourceFont_em_original = sourceFont.em
 
 #Open a font
 glyphFont1=fontforge.open("glyph-source-fonts/original-source.otf")
-
+## @todo improve/fix
+sourceFont.em = glyphFont1.em
 #select unicodes:
 glyphFont1.selection.select(("ranges","unicode"),0xE500,0xE51D)
 #Copy those glyphs into the clipboard:
@@ -43,6 +44,9 @@ glyphFont1.copy()
 sourceFont.selection.select(("ranges","unicode"),0xE600,0xE61D)
 #paste the glyphs above in:
 sourceFont.paste()
+
+# fix scaling of glyphs
+sourceFont.em = sourceFont_em_original
 
 ### even more glyphs
 
