@@ -1,0 +1,3 @@
+- v0.1.0
+-- release
+-- inital port from 'features/1-script-patch-fonts' branch on vim-webdevicons repo

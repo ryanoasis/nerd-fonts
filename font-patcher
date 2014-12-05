@@ -1,0 +1,77 @@
+#!/usr/bin/env python2
+
+import sys
+import psMat
+import re
+import os.path
+
+try:
+	#Load the module
+	import fontforge
+
+except ImportError:
+	sys.stderr.write("FontForge module could not be loaded. Try installing fontforge python bindings\n")
+	sys.exit(1)
+
+print "using fontforge package version: " + str(fontforge.__version__)
+
+sourceFont = fontforge.open(sys.argv[1])
+
+# rename font
+fontname, style = re.match("^([^-]*)(?:(-.*))?$", sourceFont.fontname).groups()
+sourceFont.familyname = sourceFont.familyname + " Plus Nerd File Types"
+sourceFont.fullname = sourceFont.fullname + " Plus Nerd File Types"
+sourceFont.fontname = fontname + 'PlusNerdFileTypes'
+sourceFont.appendSFNTName('English (US)', 'Preferred Family', sourceFont.familyname)
+sourceFont.appendSFNTName('English (US)', 'Compatible Full', sourceFont.fullname)
+
+# glyph font
+
+sourceFont_em_original = sourceFont.em
+
+# glyph fonts
+
+#Open a font
+glyphFont1=fontforge.open("glyph-source-fonts/original-source.otf")
+
+#select unicodes:
+glyphFont1.selection.select(("ranges","unicode"),0xE500,0xE51D)
+#Copy those glyphs into the clipboard:
+glyphFont1.copy()
+
+#select unicodes:
+sourceFont.selection.select(("ranges","unicode"),0xE600,0xE61D)
+#paste the glyphs above in:
+sourceFont.paste()
+
+### even more glyphs
+
+##Open a font
+glyphFont2=fontforge.open("glyph-source-fonts/devicons.ttf")
+## @todo improve/fix
+sourceFont.em = glyphFont2.em
+##select unicodes:
+glyphFont2.selection.select(("ranges","unicode"),0xE600,0xE6A4)
+##Copy those glyphs into the clipboard
+glyphFont2.copy()
+#
+#
+## #select unicodes
+sourceFont.selection.select(("ranges","unicode"),0xE700,0xE7A4)
+##paste the glyphs above in:
+sourceFont.paste()
+
+# fix scaling of glyphs
+sourceFont.em = sourceFont_em_original
+
+extension = os.path.splitext(sourceFont.path)[1]
+
+# @todo later add option to generate the sfd?
+#sourceFont.save(sourceFont.fullname + ".sfd")
+
+sourceFont.generate(sourceFont.fullname + extension)
+
+print "Generated"
+print sourceFont.fullname
+print sourceFont.fontname
+
