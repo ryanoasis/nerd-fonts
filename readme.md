@@ -1,4 +1,4 @@
-nerd-filetype-glyphs-fonts-patcher
+nerd-filetype-glyphs-fonts-patcher v0.1.2
 ==================================
 
 * A python fontforge command line script to patch any font for use with the [vim-webdevicons](https://github.com/ryanoasis/vim-webdevicons) vim plugin
