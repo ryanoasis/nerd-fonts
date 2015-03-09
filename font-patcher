@@ -4,6 +4,7 @@ import sys
 import psMat
 import re
 import os.path
+import argparse
 
 try:
 	#Load the module
@@ -13,15 +14,29 @@ except ImportError:
 	sys.stderr.write("FontForge module could not be loaded. Try installing fontforge python bindings\n")
 	sys.exit(1)
 
+
+# argparse stuff
+
+parser = argparse.ArgumentParser(description='Patches a given font with programming and web development related glyphs (mainly for vim-webdevicons)')
+parser.add_argument('font', help='The path to the font to be patched (e.g. Inconsolata.otf)')
+parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
+parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
+args = parser.parse_args()
+
 print "using fontforge package version: " + str(fontforge.__version__)
 
-sourceFont = fontforge.open(sys.argv[1])
+additionalFontNameSuffix = " Plus Nerd File Types"
+
+if args.single:
+    additionalFontNameSuffix += " Mono"
+
+sourceFont = fontforge.open(args.font)
 
 # rename font
 fontname, style = re.match("^([^-]*)(?:(-.*))?$", sourceFont.fontname).groups()
-sourceFont.familyname = sourceFont.familyname + " Plus Nerd File Types"
-sourceFont.fullname = sourceFont.fullname + " Plus Nerd File Types"
-sourceFont.fontname = fontname + 'PlusNerdFileTypes'
+sourceFont.familyname = sourceFont.familyname + additionalFontNameSuffix
+sourceFont.fullname = sourceFont.fullname + additionalFontNameSuffix
+sourceFont.fontname = fontname + additionalFontNameSuffix.replace(" ", "")
 sourceFont.appendSFNTName('English (US)', 'Preferred Family', sourceFont.familyname)
 sourceFont.appendSFNTName('English (US)', 'Compatible Full', sourceFont.fullname)
 
@@ -29,44 +44,195 @@ sourceFont.appendSFNTName('English (US)', 'Compatible Full', sourceFont.fullname
 
 sourceFont_em_original = sourceFont.em
 
-# glyph fonts
+symbols = fontforge.open("glyph-source-fonts/original-source.otf")
+symbols2 = fontforge.open("glyph-source-fonts/devicons.ttf")
 
-#Open a font
-glyphFont1=fontforge.open("glyph-source-fonts/original-source.otf")
-## @todo improve/fix
-sourceFont.em = glyphFont1.em
-#select unicodes:
-glyphFont1.selection.select(("ranges","unicode"),0xE500,0xE51D)
-#Copy those glyphs into the clipboard:
-glyphFont1.copy()
+symbolsRangeStart = 0xE500
+symbolsRangeEnd = 0xE521
 
-#select unicodes:
-sourceFont.selection.select(("ranges","unicode"),0xE600,0xE61D)
-#paste the glyphs above in:
-sourceFont.paste()
+symbols2RangeStart = 0xE600
+symbols2RangeEnd = 0xE6A4
 
-# fix scaling of glyphs
-sourceFont.em = sourceFont_em_original
+sourceFontRange1Start = 0xE600
+sourceFontRange1End = 0xE621
 
-### even more glyphs
+sourceFontRange2Start = 0xE700
+sourceFontRange2End = 0xE7A4
 
-##Open a font
-glyphFont2=fontforge.open("glyph-source-fonts/devicons.ttf")
-## @todo improve/fix
-sourceFont.em = glyphFont2.em
-##select unicodes:
-glyphFont2.selection.select(("ranges","unicode"),0xE600,0xE6A4)
-##Copy those glyphs into the clipboard
-glyphFont2.copy()
+SYM_ATTR = {
+	# Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
+	0x2b60: { 'align': 'c', 'stretch': 'y' , 'overlap': False },
+	0x2b61: { 'align': 'c', 'stretch': ''  , 'overlap': False },
+	0x2b62: { 'align': 'r', 'stretch': ''  , 'overlap': False },
+	0x2b63: { 'align': 'l', 'stretch': ''  , 'overlap': False },
+	0x2b64: { 'align': 'c', 'stretch': ''  , 'overlap': False },
+	0x2b80: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+	0x2b81: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+	0x2b82: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+	0x2b83: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+}
+
+
+# Force the em size to be equal
+symbols.em = sourceFont.em
+symbols2.em = sourceFont.em
+
+# Initial font dimensions
+font_dim = {
+	'xmin'  :    0,
+	'ymin'  :    -sourceFont.descent,
+	'xmax'  :    0,
+	'ymax'  :    sourceFont.ascent,
+
+	'width' :    0,
+	'height':    0,
+}
+
+# Find the biggest char width and height
 #
-#
-## #select unicodes
-sourceFont.selection.select(("ranges","unicode"),0xE700,0xE7A4)
-##paste the glyphs above in:
-sourceFont.paste()
+# 0x00-0x17f is the Latin Extended-A range
+# 0x2500-0x2600 is the box drawing range
+for glyph in range(0x00, 0x17f) + range(0x2500, 0x2600):
+	try:
+		(xmin, ymin, xmax, ymax) = sourceFont[glyph].boundingBox()
+	except TypeError:
+		continue
 
-# fix scaling of glyphs
-sourceFont.em = sourceFont_em_original
+	if font_dim['width'] == 0:
+		font_dim['width'] = sourceFont[glyph].width
+
+	if ymin < font_dim['ymin']: font_dim['ymin'] = ymin
+	if ymax > font_dim['ymax']: font_dim['ymax'] = ymax
+	if xmax > font_dim['xmax']: font_dim['xmax'] = xmax
+
+# Calculate font height
+font_dim['height'] = abs(font_dim['ymin']) + font_dim['ymax']
+
+# Update the font encoding to ensure that the Unicode glyphs are available
+sourceFont.encoding = 'ISO10646'
+
+# Fetch this property before adding outlines
+onlybitmaps = sourceFont.onlybitmaps
+
+def get_dim(glyph):
+	bbox = glyph.boundingBox()
+
+	return  {
+		'xmin'  : bbox[0],
+		'ymin'  : bbox[1],
+		'xmax'  : bbox[2],
+		'ymax'  : bbox[3],
+
+		'width' : bbox[2] + (-bbox[0]),
+		'height': bbox[3] + (-bbox[1]),
+	}
+
+def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd):
+
+    sourceFontList = []
+    sourceFontCounter = 0
+
+    for i in xrange(sourceFontStart, sourceFontEnd + 1):
+        sourceFontList.append(format(i, 'X'))
+
+    # Create glyphs from symbol font
+
+    symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
+    sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
+
+    for sym_glyph in symbolFont.selection.byGlyphs:
+            #sym_attr = SYM_ATTR[sym_glyph.unicode]
+            if args.quiet == False:
+                print "updating glyph: " + str(sym_glyph)
+            # convince that this string really is a hex:
+            currentSourceFontGlyph = int("0x" + sourceFontList[sourceFontCounter], 16)
+
+            # Prepare symbol glyph dimensions
+            sym_dim = get_dim(sym_glyph)
+
+            # Select and copy symbol from its encoding point
+            symbolFont.selection.select(sym_glyph.encoding)
+            symbolFont.copy()
+
+            # Select and paste symbol to its unicode code point
+            sourceFont.selection.select(currentSourceFontGlyph)
+            sourceFont.paste()
+
+            if args.single:
+                # Now that we have copy/pasted the glyph, it's time to scale and move it
+
+                # Handle glyph stretching
+                #if 'x' in sym_attr['stretch']:
+                #        # Stretch the glyph horizontally
+                #        scale_ratio = font_dim['width'] / sym_dim['width']
+
+                #        sourceFont.transform(psMat.scale(scale_ratio, 1))
+                #if 'y' in sym_attr['stretch']:
+                #        # Stretch the glyph vertically
+                #        scale_ratio = font_dim['height'] / sym_dim['height']
+
+                #        sourceFont.transform(psMat.scale(1, scale_ratio))
+
+                # Use the dimensions from the pasted and stretched glyph
+                sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
+
+                # Center-align the glyph vertically
+                font_ycenter = font_dim['height'] / 2
+                sym_ycenter  = sym_dim['height'] / 2
+
+                # First move it to the ymax (top)
+                sourceFont.transform(psMat.translate(0, font_dim['ymax'] - sym_dim['ymax']))
+
+                # Then move it the y center difference
+                sourceFont.transform(psMat.translate(0, sym_ycenter - font_ycenter))
+
+                # Ensure that the glyph doesn't extend outside the font's bounding box
+                if sym_dim['width'] > font_dim['width']:
+                        # The glyph is too wide, scale it down to fit
+                        scale_matrix = psMat.scale(font_dim['width'] / sym_dim['width'], 1)
+
+                        sourceFont.transform(scale_matrix)
+
+                        # Use the dimensions from the stretched glyph
+                        sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
+
+                # Handle glyph alignment
+                #if sym_attr['align'] == 'c':
+                #        # Center align
+                #        align_matrix = psMat.translate(font_dim['width'] / 2 - sym_dim['width'] / 2 , 0)
+                align_matrix = psMat.translate(font_dim['width'] / 2 - sym_dim['width'] / 2 , 0)
+                #elif sym_attr['align'] == 'r':
+                #        # Right align
+                #        align_matrix = psMat.translate(font_dim['width'] - sym_dim['width'], 0)
+                #else:
+                        # No alignment (left alignment)
+                        #align_matrix = psMat.translate(0, 0)
+
+                sourceFont.transform(align_matrix)
+
+                #if sym_attr['overlap'] is True:
+                #        overlap_width = sourceFont.em / 48
+
+                #        # Stretch the glyph slightly horizontally if it should overlap
+                #        sourceFont.transform(psMat.scale((sym_dim['width'] + overlap_width) / sym_dim['width'], 1))
+
+                #        if sym_attr['align'] == 'l':
+                #                # The glyph should be left-aligned, so it must be moved overlap_width to the left
+                #                # This only applies to left-aligned glyphs because the glyph is scaled to the right
+                #                sourceFont.transform(psMat.translate(-overlap_width, 0))
+
+                # Ensure the font is considered monospaced on Windows
+                sourceFont[currentSourceFontGlyph].width = font_dim['width']
+
+            sourceFontCounter += 1
+            # reset selection so iteration works propertly @todo fix? rookie misunderstanding?
+            symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
+    # end for
+    return
+
+
+copy_glyphs(sourceFont, sourceFontRange1Start, sourceFontRange1End, symbols, symbolsRangeStart, symbolsRangeEnd)
+copy_glyphs(sourceFont, sourceFontRange2Start, sourceFontRange2End, symbols2, symbols2RangeStart, symbols2RangeEnd)
 
 extension = os.path.splitext(sourceFont.path)[1]
 
@@ -77,5 +243,4 @@ sourceFont.generate(sourceFont.fullname + extension)
 
 print "Generated"
 print sourceFont.fullname
-print sourceFont.fontname
 
