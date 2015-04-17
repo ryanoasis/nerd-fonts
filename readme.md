@@ -33,7 +33,6 @@ See: [Font Patcher](#font-patcher) for usage
 | Anonymice Powerline Plus Nerd File Types                    |   2048   |
 | Droid Sans Mono for Powerline Plus Nerd File Types          |   2048   |
 | Literation Mono Powerline Plus Nerd File Types              |   2048   |
-| PragmataPro for Powerline Plus Nerd File Types              |   2048   |
 | ProggyCleanTT Plus Nerd File Types                          |   2048   |
 | Sauce Code Powerline Plus Nerd File Types                   |   1000   |
 | Ubuntu Mono derivative Powerline Plus Nerd File Types       |   1000   |
@@ -44,7 +43,6 @@ See: [Font Patcher](#font-patcher) for usage
 | Anonymice Powerline Plus Nerd File Types Mono                       |   2048   |
 | Droid Sans Mono for Powerline Plus Nerd File Types Mono             |   2048   |
 | Literation Mono Powerline Plus Nerd File Types Mono                 |   2048   |
-| PragmataPro for Powerline Plus Nerd File Types Mono                 |   2048   |
 | ProggyCleanTT Plus Nerd File Types Mono                             |   2048   |
 | Sauce Code Powerline Plus Nerd File Types Mono                      |   1000   |
 | Ubuntu Mono derivative Powerline Plus Nerd File Types Mono          |   1000   |
