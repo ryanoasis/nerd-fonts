@@ -23,7 +23,18 @@ parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='st
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
 args = parser.parse_args()
 
-print "using fontforge package version: " + str(fontforge.__version__)
+#print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
+#print type(fontforge.version())
+#print int(fontforge.version())
+
+minimumVersion = 20141231
+actualVersion = int(fontforge.version())
+#actualVersion = 20120731 # for testing invalid version
+
+if actualVersion < minimumVersion:
+    print "You seem to be using an unsupported (old) version of fontforge: " + str(actualVersion)
+    print "Please use at least version: " + str(minimumVersion)
+    sys.exit(1)
 
 additionalFontNameSuffix = " Plus Nerd File Types"
 
