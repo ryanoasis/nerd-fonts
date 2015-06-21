@@ -1,4 +1,4 @@
-nerd-filetype-glyphs-fonts-patcher v0.2.0
+nerd-filetype-glyphs-fonts-patcher v0.2.1
 =========================================
 
 * A python fontforge command line script to patch any font
@@ -47,6 +47,15 @@ See: [Font Patcher](#font-patcher) for usage
 | Sauce Code Powerline Plus Nerd File Types Mono                      |   1000   |
 | Ubuntu Mono derivative Powerline Plus Nerd File Types Mono          |   1000   |
 | Ubuntu Mono Plus Nerd File Types Mono                               |   1000   |
+
+## Font Install Script (Linux and Mac OS X)
+
+	> ./install.sh
+
+### Examples
+
+	./install.sh
+	All fonts installed to /home/ryan/.fonts
 
 ## Font Patcher
 
