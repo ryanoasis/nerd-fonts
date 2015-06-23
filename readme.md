@@ -1,14 +1,18 @@
-nerd-filetype-glyphs-fonts-patcher v0.2.1
+nerd-filetype-glyphs-fonts-patcher v0.3.0
 =========================================
 
 * A python fontforge command line script to patch any font
-* patched-fonts folder contains pre-patched fonts provided for use with [vim-webdevicons](https://github.com/ryanoasis/vim-webdevicons) [(see list below)](#patched-fonts)
+* patched-fonts folder contains pre-patched fonts provided for use with [vim-webdevicons] [(see list below)](#patched-fonts)
 
-![image](https://github.com/ryanoasis/vim-webdevicons/wiki/screenshots/v0.3.4/fontforge-glyph-set-1.png)
+## Glyph set 1
 
-... and more ...
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-1.png)
 
-* Particularly created for use with [vim-webdevicons](https://github.com/ryanoasis/vim-webdevicons) vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
+## Glyph set 2 (from [vorillaz-devicons])
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-2.png)
+
+
+* Particularly created for use with [vim-webdevicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
 
 ## Usage
 
@@ -28,25 +32,56 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Patched Fonts
 
-| Currently Included Patched Fonts (double width glyphs)      | em size  |
-|-------------------------------------------------------------|----------|
-| Anonymice Powerline Plus Nerd File Types                    |   2048   |
-| Droid Sans Mono for Powerline Plus Nerd File Types          |   2048   |
-| Literation Mono Powerline Plus Nerd File Types              |   2048   |
-| ProggyCleanTT Plus Nerd File Types                          |   2048   |
-| Sauce Code Powerline Plus Nerd File Types                   |   1000   |
-| Ubuntu Mono derivative Powerline Plus Nerd File Types       |   1000   |
-| Ubuntu Mono Plus Nerd File Types                            |   1000   |
+| Currently Included Patched Fonts (double width glyphs)              | em size  | status                   |
+|---------------------------------------------------------------------|----------|--------------------------|
+| 3270 Plus Nerd File Types                                           |   1000   | [OKAY]                   |
+| Anonymice Powerline Plus Nerd File Types                            |   2048   | [OKAY]                   |
+| Aurulent Sans Mono Plus Nerd File Types                             |   1000   | [OKAY]                   |
+| Bitstream Vera Sans Mono Plus Nerd File Types                       |   2048   | [OKAY]                   |
+| DejaVu Sans Mono Plus Nerd File Types                               |   2048   | [OKAY]                   |
+| Droid Sans Mono for Powerline Plus Nerd File Types                  |   2048   | [OKAY]                   |
+| Fira Mono for Powerline Plus Nerd File Types                        |   1000   | [OKAY]                   |
+| Heavy Data Mono for Powerline Plus Nerd File Types                  |   2048   | [OKAY]                   |
+| Inconsolata for Powerline Plus Nerd File Types                      |   1000   | [OKAY]                   |
+| Input Mono for Powerline Plus Nerd File Types                       |   2048   | [OKAY]                   |
+| Lekton for Powerline Plus Nerd File Types                           |   1000   | [OKAY]                   |
+| Literation Mono for Powerline Plus Nerd File Types                  |   2048   | [OKAY]                   |
+| Meslo for Powerline Plus Nerd File Types                            |   2048   | [OKAY]                   |
+| Monofur for Powerline Plus Nerd File Types                          |   2400   | [OKAY]                   |
+| M+ (MPlus) for Powerline Plus Nerd File Types                       |   1000   | [OKAY]                   |
+| ProFont (Windows tweaked) for Powerline Plus Nerd File Types        |   1200   | [OKAY]                   |
+| ProFont (x11) for Powerline Plus Nerd File Types                    |   1000   | [FAIL]                   |
+| ProggyCleanTT Plus Nerd File Types                                  |   2048   | [OKAY]                   |
+| Sauce Code Powerline Plus Nerd File Types                           |   1000   | [OKAY]                   |
+| Terminess for Powerline Plus Nerd File Types                        |   1000   | [OKAY]                   |
+| Ubuntu Mono derivative Powerline Plus Nerd File Types               |   1000   | [OKAY]                   |
+| Ubuntu Mono Plus Nerd File Types                                    |   1000   | [OKAY]                   |
 
-| Currently Included Absolute Mono Patched Fonts (single width glyphs)| em size  |
-|---------------------------------------------------------------------|----------|
-| Anonymice Powerline Plus Nerd File Types Mono                       |   2048   |
-| Droid Sans Mono for Powerline Plus Nerd File Types Mono             |   2048   |
-| Literation Mono Powerline Plus Nerd File Types Mono                 |   2048   |
-| ProggyCleanTT Plus Nerd File Types Mono                             |   2048   |
-| Sauce Code Powerline Plus Nerd File Types Mono                      |   1000   |
-| Ubuntu Mono derivative Powerline Plus Nerd File Types Mono          |   1000   |
-| Ubuntu Mono Plus Nerd File Types Mono                               |   1000   |
+| Currently Included Absolute Mono Patched Fonts (single width glyphs)| em size  | status                   |
+|---------------------------------------------------------------------|----------|--------------------------|
+| 3270 Plus Nerd File Types Mono                                      |   2048   | [OKAY]                   |
+| Anonymice Powerline Plus Nerd File Types Mono                       |   2048   | [OKAY]                   |
+| Aurulent Sans Mono Plus Nerd File Types Mono                        |   1000   | [OKAY]                   |
+| Bitstream Vera Sans Mono Plus Nerd File Types Mono                  |   2048   | [OKAY]                   |
+| DejaVu Sans Mono Plus Nerd File Types Mono                          |   2048   | [OKAY]                   |
+| Droid Sans Mono for Powerline Plus Nerd File Types Mono             |   2048   | [OKAY]                   |
+| Fira Mono for Powerline Plus Nerd File Types Mono                   |   1000   | [OKAY]                   |
+| Heavy Data Mono for Powerline Plus Nerd File Types Mono             |   2048   | [OKAY]                   |
+| Inconsolata for Powerline Plus Nerd File Types Mono                 |   1000   | [OKAY]                   |
+| Input Mono for Powerline Plus Nerd File Types Mono                  |   2048   | [OKAY]                   |
+| Lekton for Powerline Plus Nerd File Types Mono                      |   1000   | [OKAY]                   |
+| Literation Mono for Powerline Plus Nerd File Types Mono             |   2048   | [OKAY]                   |
+| Meslo for Powerline Plus Nerd File Types Mono                       |   2048   | [OKAY]                   |
+| Monofur for Powerline Plus Nerd File Types Mono                     |   2400   | [OKAY]                   |
+| M+ (MPlus) for Powerline Plus Nerd File Types Mono                  |   1000   | [OKAY]                   |
+| ProFont (Windows tweaked) for Powerline Plus Nerd File Types Mono   |   1200   | [OKAY]                   |
+| ProFont (x11) for Powerline Plus Nerd File Types Mono               |   1000   | [FAIL]                   |
+| Literation Mono Powerline Plus Nerd File Types Mono                 |   2048   | [OKAY]                   |
+| ProggyCleanTT Plus Nerd File Types Mono                             |   2048   | [OKAY]                   |
+| Sauce Code Powerline Plus Nerd File Types Mono                      |   1000   | [OKAY]                   |
+| Terminess for Powerline Plus Nerd File Types Mono                   |   1000   | [OKAY]                   |
+| Ubuntu Mono derivative Powerline Plus Nerd File Types Mono          |   1000   | [OKAY]                   |
+| Ubuntu Mono Plus Nerd File Types Mono                               |   1000   | [OKAY]                   |
 
 ## Font Install Script (Linux and Mac OS X)
 
@@ -92,6 +127,17 @@ optional arguments:
 	./font-patcher Inconsolata.otf
 
 
+## Gotta Patch 'em All Font Patcher!
+
+* re-patches **all** fonts in the unpatched directory
+* mostly for Contributor/Dev use only
+
+	> ./gotta-patch-em-all-font-patcher\!.sh
+
 ## License
 
 see [LICENSE](LICENSE)
+
+
+[vorillaz-devicons]:http://vorillaz.github.io/devicons/
+[vim-webdevicons]:https://github.com/ryanoasis/vim-webdevicons
