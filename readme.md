@@ -101,7 +101,7 @@ Patching the font of your own choosing for use with the [vim-webdevicons](https:
 	> ./font-patcher PATH_TO_FONT
 
 ```
-usage: font-patcher [-h] [-s] [-q] font
+usage: font-patcher [-h] [-s] [-q] [-w] font
 
 Patches a given font with programming and web development related glyphs
 (mainly for vim-webdevicons)
@@ -117,6 +117,9 @@ optional arguments:
                         double-width (default is double-width)
   -q, --quiet, --shutup
                         Do not generate verbose output
+  -w, --windows, --limit-font-name-length
+                        Limit the internal font name to a maximum of 31
+                        characters (for safe Windows compatiblity)
 ```
 
 ### Examples
@@ -124,6 +127,8 @@ optional arguments:
 	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf
 	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
 	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf --use-single-width-glyphs --quiet
+	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf -w
+	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf --windows --quiet
 	./font-patcher Inconsolata.otf
 
 
