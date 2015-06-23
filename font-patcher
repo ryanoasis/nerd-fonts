@@ -21,6 +21,7 @@ parser = argparse.ArgumentParser(description='Patches a given font with programm
 parser.add_argument('font', help='The path to the font to be patched (e.g. Inconsolata.otf)')
 parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
+parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows', action='store_true', help='Limit the internal font name to a maximum of 31 characters (for safe Windows compatiblity)', default=False)
 args = parser.parse_args()
 
 #print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
@@ -36,18 +37,38 @@ if actualVersion < minimumVersion:
     print "Please use at least version: " + str(minimumVersion)
     sys.exit(1)
 
-additionalFontNameSuffix = " Plus Nerd File Types"
+if args.windows:
+    # attempt to shorten here on the additional name BEFORE trimming later
+    additionalFontNameSuffix = " PNFT"
+else:
+    additionalFontNameSuffix = " Plus Nerd File Types"
 
 if args.single:
     additionalFontNameSuffix += " Mono"
 
+
 sourceFont = fontforge.open(args.font)
 
-# rename font
 fontname, style = re.match("^([^-]*)(?:(-.*))?$", sourceFont.fontname).groups()
-sourceFont.familyname = sourceFont.familyname + additionalFontNameSuffix
-sourceFont.fullname = sourceFont.fullname + additionalFontNameSuffix
-sourceFont.fontname = fontname + additionalFontNameSuffix.replace(" ", "")
+familyname = sourceFont.familyname + additionalFontNameSuffix
+fullname = sourceFont.fullname + additionalFontNameSuffix
+fontname = fontname + additionalFontNameSuffix.replace(" ", "")
+
+if args.windows:
+    maxLength = 31
+    fullname += " Windows Compatible"
+    # now make sure less than 32 characters name length
+    #if len(fullname) > maxLength:
+    #    fullname = fullname[:maxLength]
+    if len(fontname) > maxLength:
+        fontname = fontname[:maxLength]
+    if len(fullname) > maxLength:
+        familyname = familyname[:maxLength]
+
+# rename font
+sourceFont.familyname = familyname
+sourceFont.fullname = fullname
+sourceFont.fontname = fontname
 sourceFont.appendSFNTName('English (US)', 'Preferred Family', sourceFont.familyname)
 sourceFont.appendSFNTName('English (US)', 'Compatible Full', sourceFont.fullname)
 
@@ -62,13 +83,13 @@ symbolsRangeStart = 0xE500
 symbolsRangeEnd = 0xE521
 
 symbols2RangeStart = 0xE600
-symbols2RangeEnd = 0xE6A4
+symbols2RangeEnd = 0xE6C5
 
 sourceFontRange1Start = 0xE600
 sourceFontRange1End = 0xE621
 
 sourceFontRange2Start = 0xE700
-sourceFontRange2End = 0xE7A4
+sourceFontRange2End = 0xE7C5
 
 SYM_ATTR = {
 	# Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
@@ -94,7 +115,6 @@ font_dim = {
 	'ymin'  :    -sourceFont.descent,
 	'xmax'  :    0,
 	'ymax'  :    sourceFont.ascent,
-
 	'width' :    0,
 	'height':    0,
 }
