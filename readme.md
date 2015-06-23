@@ -2,7 +2,7 @@ nerd-filetype-glyphs-fonts-patcher v0.3.0
 =========================================
 
 * A python fontforge command line script to patch any font
-* patched-fonts folder contains pre-patched fonts provided for use with [vim-webdevicons] [(see list below)](#patched-fonts)
+* patched-fonts folder contains pre-patched fonts provided for use with [vim-webdevicons][vim-webdevicons] [(see list below)](#patched-fonts)
 
 ## Glyph set 1
 
