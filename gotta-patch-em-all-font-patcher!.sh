@@ -74,16 +74,41 @@ do
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
 	mv "$newly_created_font" $patched_font_dir
 
+	./font-patcher --pomicons -q "$f"
+	printf "\n---------------\n"
+	newly_created_font=$(find -maxdepth 1 -name '*.[o,t]tf')
+	echo "newly_created_font = $newly_created_font"
+	patched_font_dir="${f%/*}/"
+	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mv "$newly_created_font" $patched_font_dir
+
+	./font-patcher --pomicons -q -s "$f"
+	printf "\n---------------\n"
+	newly_created_font=$(find -maxdepth 1 -name '*.[o,t]tf')
+	echo "newly_created_font = $newly_created_font"
+	patched_font_dir="${f%/*}/"
+	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mv "$newly_created_font" $patched_font_dir
+
+	./font-patcher --pomicons -q -w "$f"
+	printf "\n---------------\n"
+	newly_created_font=$(find -maxdepth 1 -name '*.[o,t]tf')
+	echo "newly_created_font = $newly_created_font"
+	patched_font_dir="${f%/*}/"
+	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mv "$newly_created_font" $patched_font_dir
+
+	./font-patcher --pomicons -q -s -w "$f"
+	printf "\n---------------\n"
+	newly_created_font=$(find -maxdepth 1 -name '*.[o,t]tf')
+	echo "newly_created_font = $newly_created_font"
+	patched_font_dir="${f%/*}/"
+	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mv "$newly_created_font" $patched_font_dir
+
 	# un-comment to test this script (patch 1 font)
-	#break	
+	# break	
 done
-
-exit
-
-echo "./font-patcher" . "path"
-echo "./font-patcher" . "path -s -q"
-newly_created_font="find -name '*.[o,t]tf'"
-echo "mv NEWLY_CREATED_FONT $patched_fonts_dir/%/NEWLY_CREATED_FONT"
 
 
 echo "All unpatched fonts re-patched to their respective sub-directories in $patched_fonts_dir"

@@ -8,9 +8,11 @@ nerd-filetype-glyphs-fonts-patcher v0.3.0
 
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-1.png)
 
-## Glyph set 2 (from [vorillaz-devicons])
+## Glyph set 2 (devicons from [vorillaz-devicons])
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-2.png)
 
+## Glyph set 3 (pomicons from [gabrielelana-pomicons])
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-3.png)
 
 * Particularly created for use with [vim-webdevicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
 
@@ -144,5 +146,6 @@ optional arguments:
 see [LICENSE](LICENSE)
 
 
-[vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [vim-webdevicons]:https://github.com/ryanoasis/vim-webdevicons
+[vorillaz-devicons]:http://vorillaz.github.io/devicons/
+[gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons

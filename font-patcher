@@ -22,6 +22,7 @@ parser.add_argument('font', help='The path to the font to be patched (e.g. Incon
 parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
 parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows', action='store_true', help='Limit the internal font name to a maximum of 31 characters (for safe Windows compatiblity)', default=False)
+parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
 args = parser.parse_args()
 
 #print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
@@ -37,21 +38,29 @@ if actualVersion < minimumVersion:
     print "Please use at least version: " + str(minimumVersion)
     sys.exit(1)
 
+
+verboseAdditionalFontNameSuffix = " Plus Nerd File Types"
+
 if args.windows:
     # attempt to shorten here on the additional name BEFORE trimming later
     additionalFontNameSuffix = " PNFT"
 else:
-    additionalFontNameSuffix = " Plus Nerd File Types"
+    additionalFontNameSuffix = verboseAdditionalFontNameSuffix
 
 if args.single:
     additionalFontNameSuffix += " Mono"
+
+if args.pomicons:
+    additionalFontNameSuffix += " Plus Pomicons"
+    verboseAdditionalFontNameSuffix += " Plus Pomicons"
 
 
 sourceFont = fontforge.open(args.font)
 
 fontname, style = re.match("^([^-]*)(?:(-.*))?$", sourceFont.fontname).groups()
 familyname = sourceFont.familyname + additionalFontNameSuffix
-fullname = sourceFont.fullname + additionalFontNameSuffix
+# fullname (filename) can always use long/verbose font name, even in windows
+fullname = sourceFont.fullname + verboseAdditionalFontNameSuffix
 fontname = fontname + additionalFontNameSuffix.replace(" ", "")
 
 if args.windows:
@@ -78,6 +87,7 @@ sourceFont_em_original = sourceFont.em
 
 symbols = fontforge.open("glyph-source-fonts/original-source.otf")
 symbols2 = fontforge.open("glyph-source-fonts/devicons.ttf")
+pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
 
 symbolsRangeStart = 0xE500
 symbolsRangeEnd = 0xE521
@@ -85,11 +95,17 @@ symbolsRangeEnd = 0xE521
 symbols2RangeStart = 0xE600
 symbols2RangeEnd = 0xE6C5
 
+pomiconsRangeStart = 0xE000
+pomiconsRangeEnd = 0xE00A
+
 sourceFontRange1Start = 0xE600
 sourceFontRange1End = 0xE621
 
 sourceFontRange2Start = 0xE700
 sourceFontRange2End = 0xE7C5
+
+sourceFontRange3Start = 0xE000
+sourceFontRange3End = 0xE00A
 
 SYM_ATTR = {
 	# Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
@@ -264,6 +280,9 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
 copy_glyphs(sourceFont, sourceFontRange1Start, sourceFontRange1End, symbols, symbolsRangeStart, symbolsRangeEnd)
 copy_glyphs(sourceFont, sourceFontRange2Start, sourceFontRange2End, symbols2, symbols2RangeStart, symbols2RangeEnd)
+
+if args.pomicons:
+    copy_glyphs(sourceFont, sourceFontRange3Start, sourceFontRange3End, pomicons, pomiconsRangeStart, pomiconsRangeEnd)
 
 extension = os.path.splitext(sourceFont.path)[1]
 
