@@ -1,5 +1,6 @@
-nerd-filetype-glyphs-fonts-patcher v0.3.0
+font nerd icons
 =========================================
+[![GitHub version](https://badge.fury.io/gh/ryanoasis%2Fnerd-filetype-glyphs-fonts-patcher.svg)](http://badge.fury.io/gh/ryanoasis%2Fnerd-filetype-glyphs-fonts-patcher)
 
 * A python fontforge command line script to patch any font
 * patched-fonts folder contains pre-patched fonts provided for use with [vim-webdevicons][vim-webdevicons] [(see list below)](#patched-fonts)
@@ -149,3 +150,7 @@ see [LICENSE](LICENSE)
 [vim-webdevicons]:https://github.com/ryanoasis/vim-webdevicons
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
+
+## Other
+
+* previously known as 'nerd-filetype-glyphs-fonts-patcher'
