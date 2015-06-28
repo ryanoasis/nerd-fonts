@@ -6,9 +6,9 @@ font nerd icons
 * Over 20 already [patched fonts](#patched-fonts)
 * Over 200 unique variations of patched fonts
  * Variations for each font are any combination of:
-  * Mono glyphs
-  * Windows Compatible
-  * Pomicons
+    * Mono glyphs
+    * Windows Compatible
+    * Pomicons
 
 ## Glyph set 1
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-1.png)
@@ -86,7 +86,7 @@ See: [Font Patcher](#font-patcher) for usage
 | Ubuntu Mono derivative Powerline Plus Nerd File Types Mono          |   1000   | [OKAY]                   |
 | Ubuntu Mono Plus Nerd File Types Mono                               |   1000   | [OKAY]                   |
 
-## Font Install Script (Linux and Mac OS X)
+## Font Install Script (Linux & Mac OS X)
 
 	> ./install.sh
 
@@ -101,7 +101,10 @@ Patching the font of your own choosing for use with the [vim-webdevicons](https:
 * requires: python2, python-fontforge package
 * usage:
 
-	> ./font-patcher PATH_TO_FONT
+
+```
+./font-patcher PATH_TO_FONT
+```
 
 ```
 usage: font-patcher [-h] [-s] [-q] [-w] font
@@ -140,7 +143,9 @@ optional arguments:
 * re-patches **all** fonts in the unpatched directory
 * mostly for Contributor/Dev use only
 
-	> ./gotta-patch-em-all-font-patcher\!.sh
+```
+./gotta-patch-em-all-font-patcher\!.sh
+```
 
 ## License
 
