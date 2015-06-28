@@ -1,12 +1,16 @@
 font nerd icons
 =========================================
-[![GitHub version](https://badge.fury.io/gh/ryanoasis%2Fnerd-filetype-glyphs-fonts-patcher.svg)](http://badge.fury.io/gh/ryanoasis%2Fnerd-filetype-glyphs-fonts-patcher)
+[![GitHub version](https://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons.svg)](http://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons)
 
-* A python fontforge command line script to patch any font
-* patched-fonts folder contains pre-patched fonts provided for use with [vim-webdevicons][vim-webdevicons] [(see list below)](#patched-fonts)
+* A [fontforge python script](#font-patcher) to patch any font
+* Over 20 already [patched fonts](#patched-fonts)
+* Over 200 unique variations of patched fonts
+ * Variations for each font are any combination of:
+  * Mono glyphs
+  * Windows Compatible
+  * Pomicons
 
 ## Glyph set 1
-
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-1.png)
 
 ## Glyph set 2 (devicons from [vorillaz-devicons])
@@ -15,15 +19,11 @@ font nerd icons
 ## Glyph set 3 (pomicons from [gabrielelana-pomicons])
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-3.png)
 
-* Particularly created for use with [vim-webdevicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
-
 ## Usage
 
-### Option A
+### Option A 
 
-Typical install of any of the [provided patched fonts](#patched-fonts)
-
-or
+Install any of the already [provided patched fonts](#patched-fonts)
 
 ### Option B
 
@@ -146,11 +146,16 @@ optional arguments:
 
 see [LICENSE](LICENSE)
 
+## Rationale
 
-[vim-webdevicons]:https://github.com/ryanoasis/vim-webdevicons
-[vorillaz-devicons]:http://vorillaz.github.io/devicons/
-[gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
+* Originally created for use with [vim-webdevicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
 
 ## Other
 
 * previously known as 'nerd-filetype-glyphs-fonts-patcher'
+
+
+
+[vim-webdevicons]:https://github.com/ryanoasis/vim-webdevicons
+[vorillaz-devicons]:http://vorillaz.github.io/devicons/
+[gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
