@@ -63,7 +63,7 @@ See: [Font Patcher](#font-patcher) for usage
 | [Ubuntu Mono Plus Nerd File Types](patched-fonts/UbuntuMono)                              |   1000   | [OKAY]                   |
 
 | Currently Included Absolute Mono Patched Fonts (extra glyphs are *single* width)          | em size  | status                   |
-|-------------------------------------------------------------------------------------------|-------------------------------------|
+|-------------------------------------------------------------------------------------------|----------|--------------------------|
 | [3270 Plus Nerd File Types Mono](patched-fonts/3270)                                      |   2048   | [OKAY]                   |
 | [Anonymice Powerline Plus Nerd File Types Mono](patched-fonts/AnonymousPro)               |   2048   | [OKAY]                   |
 | [Aurulent Sans Mono Plus Nerd File Types Mono](patched-fonts/AurulentSansMono)            |   1000   | [OKAY]                   |
