@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# version: 0.3.1
 
 # Set source and target directories
 source_fonts_dir="${PWD}/unpatched-sample-fonts"
@@ -107,7 +107,7 @@ do
 	mv "$newly_created_font" $patched_font_dir
 
 	# un-comment to test this script (patch 1 font)
-	# break	
+	#break
 done
 
 
