@@ -4,23 +4,23 @@ font nerd icons
 
 * A [fontforge python script](#font-patcher) to patch any font
 * Over 20 already [patched font families](#patched-fonts)
-* Over 350 unique permutations/variations of patched fonts:
- * 44 font variations (just counting otf and ttf)
- * 8 permutations (1 no flags, 3 flagged options)
- * Calculated Permutations (8 * 44) = 352
- * Permutations for each font are any combination of (plus no flags option):
-    * Monospaced extra glyphs
-    * Windows Compatible
-    * Pomicons
+* Over 350 unique permutations/variations of patched fonts [how?](#permutations)
 
-## Glyph set 1 ([Seti-UI] / icomoon plus misc custom glyphs)
+## Glyph set 1: Seti-UI + Custom
+* [Seti-UI] / icomoon plus misc custom glyphs
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-1.png)
 
-## Glyph set 2 (devicons from [vorillaz-devicons])
+## Glyph set 2: [devicons][vorillaz-devicons]
+* [devicons][vorillaz-devicons] from [vorillaz-devicons]
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-2.png)
 
-## Glyph set 3 (pomicons from [gabrielelana-pomicons])
+## Glyph set 3: [Pomicons][gabrielelana-pomicons]
+* [Pomicons][gabrielelana-pomicons] from [gabrielelana-pomicons]
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-3.png)
+
+## Glyph set 4: [powerline-extra-symbols][ryanoasis-powerline-extra-symbols]
+* Work In Progress... :)
+![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
 
 ## Usage
 
@@ -38,7 +38,7 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Patched Fonts
 
-| Currently Included Patched Fonts (extra glyphs are *double* width)                        | em size  | status                   |
+| Font Name                                                                                 | em size  | status                   |
 |-------------------------------------------------------------------------------------------|----------|--------------------------|
 | [3270 Plus Nerd File Types](patched-fonts/3270)                                           |   1000   | [OKAY]                   |
 | [Anonymice Powerline Plus Nerd File Types](patched-fonts/AnonymousPro)                    |   2048   | [OKAY]                   |
@@ -58,33 +58,25 @@ See: [Font Patcher](#font-patcher) for usage
 | [ProFont (x11) for Powerline Plus Nerd File Types](patched-fonts/ProFont)                 |   1000   | [FAIL]                   |
 | [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [OKAY]                   |
 | [Sauce Code Powerline Plus Nerd File Types](patched-fonts/SourceCodePro)                  |   1000   | [OKAY]                   |
-| [Terminess for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [OKAY]                   |
+| [Terminess for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [FAIL]                   |
 | [Ubuntu Mono derivative Powerline Plus Nerd File Types](patched-fonts/UbuntuMono)         |   1000   | [OKAY]                   |
 | [Ubuntu Mono Plus Nerd File Types](patched-fonts/UbuntuMono)                              |   1000   | [OKAY]                   |
 
-| Currently Included Absolute Mono Patched Fonts (extra glyphs are *single* width)          | em size  | status                   |
-|-------------------------------------------------------------------------------------------|----------|--------------------------|
-| [3270 Plus Nerd File Types Mono](patched-fonts/3270)                                      |   2048   | [OKAY]                   |
-| [Anonymice Powerline Plus Nerd File Types Mono](patched-fonts/AnonymousPro)               |   2048   | [OKAY]                   |
-| [Aurulent Sans Mono Plus Nerd File Types Mono](patched-fonts/AurulentSansMono)            |   1000   | [OKAY]                   |
-| [Bitstream Vera Sans Mono Plus Nerd File Types Mono](patched-fonts/BitstreamVeraSansMono) |   2048   | [OKAY]                   |
-| [DejaVu Sans Mono Plus Nerd File Types Mono](patched-fonts/DejaVuSansMono)                |   2048   | [OKAY]                   |
-| [Droid Sans Mono for Powerline Plus Nerd File Types Mono](patched-fonts/DroidSansMono)    |   2048   | [OKAY]                   |
-| [Fira Mono for Powerline Plus Nerd File Types Mono](patched-fonts/FiraMono)               |   1000   | [OKAY]                   |
-| [Heavy Data Mono for Powerline Plus Nerd File Types Mono](patched-fonts/HeavyData)        |   2048   | [OKAY]                   |
-| [Inconsolata for Powerline Plus Nerd File Types Mono](patched-fonts/Inconsolata)          |   1000   | [OKAY]                   |
-| [Lekton for Powerline Plus Nerd File Types Mono](patched-fonts/Lekton)                    |   1000   | [OKAY]                   |
-| [Literation Mono for Powerline Plus Nerd File Types Mono](patched-fonts/LiberationMono)   |   2048   | [OKAY]                   |
-| [Meslo for Powerline Plus Nerd File Types Mono](patched-fonts/Meslo)                      |   2048   | [OKAY]                   |
-| [Monofur for Powerline Plus Nerd File Types Mono](patched-fonts/Monofur)                  |   2400   | [OKAY]                   |
-| [M+ (MPlus) for Powerline Plus Nerd File Types Mono](patched-fonts/MPlus)                 |   1000   | [OKAY]                   |
-| [ProFont (Windows tweaked) for Powerline Plus Nerd File Types Mono](patched-fonts/Profont)|   1200   | [OKAY]                   |
-| [ProFont (x11) for Powerline Plus Nerd File Types Mono](patched-fonts/Profont)            |   1000   | [FAIL]                   |
-| [ProggyCleanTT Plus Nerd File Types Mono](patched-fonts/ProggyClean)                      |   2048   | [OKAY]                   |
-| [Sauce Code Powerline Plus Nerd File Types Mono](patched-fonts/SourceCodePro)             |   1000   | [OKAY]                   |
-| [Terminess for Powerline Plus Nerd File Types Mono](patched-fonts/Terminus)               |   1000   | [OKAY]                   |
-| [Ubuntu Mono derivative Powerline Plus Nerd File Types Mono](patched-fonts/UbuntuMono)    |   1000   | [OKAY]                   |
-| [Ubuntu Mono Plus Nerd File Types Mono](patched-fonts/UbuntuMono)                         |   1000   | [OKAY]                   |
+* Variations include: 
+ * extra glyphs that are *double* or *single* (monospaced) width
+ * Pomicons[gabrielelana-pomicons]
+ * Windows Compatible (WIP)
+
+## Permutations
+
+* Over 350 unique permutations/variations of patched fonts:
+ * 44 font variations (just counting otf and ttf)
+ * 8 permutations (1 no flags, 3 flagged options)
+ * Calculated Permutations (8 * 44) = 352
+ * Permutations for each font are any combination of (plus no flags option):
+    * Monospaced extra glyphs
+    * Windows Compatible
+    * [Pomicons][gabrielelana-pomicons]
 
 ## Other Good Fonts to Patch
 
@@ -172,3 +164,4 @@ see [LICENSE](LICENSE)
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
+[ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
