@@ -6,19 +6,35 @@ font nerd icons
 * Over 20 already [patched font families](#patched-fonts)
 * Over 350 unique permutations/variations of patched fonts [how?](#permutations)
 
-## Glyph set 1: Seti-UI + Custom
+## TOC
+- [font nerd icons](#)
+	- [Glyph sets](#glyph-sets)
+	- [Usage](#usage)
+	- [Patched Fonts List](#patched-fonts)
+	- [Permutations](#permutations)
+	- [Font Install Script (Linux & Mac OS X)](#font-install-script)
+	- [Font Patcher](#font-patcher)
+	- [Gotta Patch 'em All Font Patcher!](#gotta-patch-em-all)
+	- [Other Good Fonts to Patch](#other-good-fonts-to-patch)
+	- [Rationale](#rationale)
+	- [Other](#other)
+	- [License](#license)
+
+## Glyph Sets
+
+### Set 1: Seti-UI + Custom
 * [Seti-UI] / icomoon plus misc custom glyphs
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-1.png)
 
-## Glyph set 2: [devicons][vorillaz-devicons]
+### Set 2: [devicons][vorillaz-devicons]
 * [devicons][vorillaz-devicons] from [vorillaz-devicons]
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-2.png)
 
-## Glyph set 3: [Pomicons][gabrielelana-pomicons]
+### Set 3: [Pomicons][gabrielelana-pomicons]
 * [Pomicons][gabrielelana-pomicons] from [gabrielelana-pomicons]
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.3.0/fontforge-glyph-set-3.png)
 
-## Glyph set 4: [powerline-extra-symbols][ryanoasis-powerline-extra-symbols]
+### Set 4: [powerline-extra-symbols][ryanoasis-powerline-extra-symbols]
 * Work In Progress... :)
 ![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
 
@@ -78,13 +94,8 @@ See: [Font Patcher](#font-patcher) for usage
     * Windows Compatible
     * [Pomicons][gabrielelana-pomicons]
 
-## Other Good Fonts to Patch
-
-* a list of additional good fonts to patch that I cannot provide or share due to the license:
- * [Input Mono](http://input.fontbureau.com/)
- * [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
-
-## Font Install Script (Linux & Mac OS X)
+## Font Install Script
+* Linux & Mac OS X
 
 	> ./install.sh
 
@@ -98,7 +109,6 @@ See: [Font Patcher](#font-patcher) for usage
 Patching the font of your own choosing for use with the [vim-webdevicons](https://github.com/ryanoasis/vim-webdevicons) vim plugin:
 * requires: python2, python-fontforge package
 * usage:
-
 
 ```
 ./font-patcher PATH_TO_FONT
@@ -139,6 +149,7 @@ optional arguments:
 	./font-patcher Inconsolata.otf
 
 
+<a name="gotta-patch-em-all"></a>
 ## Gotta Patch 'em All Font Patcher!
 
 * re-patches **all** fonts in the unpatched directory
@@ -147,6 +158,11 @@ optional arguments:
 ```
 ./gotta-patch-em-all-font-patcher\!.sh
 ```
+## Other Good Fonts to Patch
+
+* a list of additional good fonts to patch that I cannot provide or share due to the license:
+ * [Input Mono](http://input.fontbureau.com/)
+ * [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
 
 ## Rationale
 
