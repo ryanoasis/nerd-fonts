@@ -147,10 +147,6 @@ optional arguments:
 ./gotta-patch-em-all-font-patcher\!.sh
 ```
 
-## License
-
-see [LICENSE](LICENSE)
-
 ## Rationale
 
 * Originally created for use with [vim-webdevicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
@@ -159,7 +155,9 @@ see [LICENSE](LICENSE)
 
 * previously known as 'nerd-filetype-glyphs-fonts-patcher'
 
+## License
 
+see [LICENSE](LICENSE)
 
 [vim-webdevicons]:https://github.com/ryanoasis/vim-webdevicons
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
