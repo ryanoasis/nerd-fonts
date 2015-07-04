@@ -3,10 +3,10 @@ font nerd icons
 [![GitHub version](https://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons.svg)](http://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons)
 
 * A [fontforge python script](#font-patcher) to patch any font
-* Over 20 already [patched font families](#patched-fonts)
-* Over 350 unique permutations/variations of patched fonts [how?](#permutations)
+* Over **20** already [patched font families](#patched-fonts)
+* Over **350** unique permutations/variations of patched fonts [how?](#permutations)
 
-## TOC
+## Table of Contents
 - [font nerd icons](#)
 	- [Glyph sets](#glyph-sets)
 	- [Usage](#usage)
@@ -56,27 +56,27 @@ See: [Font Patcher](#font-patcher) for usage
 
 | Font Name                                                                                 | em size  | status                   |
 |-------------------------------------------------------------------------------------------|----------|--------------------------|
-| [3270 Plus Nerd File Types](patched-fonts/3270)                                           |   1000   | [OKAY]                   |
-| [Anonymice Powerline Plus Nerd File Types](patched-fonts/AnonymousPro)                    |   2048   | [OKAY]                   |
-| [Aurulent Sans Mono Plus Nerd File Types](patched-fonts/AurulentSansMono)                 |   1000   | [OKAY]                   |
-| [Bitstream Vera Sans Mono Plus Nerd File Types](patched-fonts/BitstreamVeraSansMono)      |   2048   | [OKAY]                   |
-| [DejaVu Sans Mono Plus Nerd File Types](patched-fonts/DejaVuSansMono)                     |   2048   | [OKAY]                   |
-| [Droid Sans Mono for Powerline Plus Nerd File Types](patched-fonts/DroidSansMono)         |   2048   | [OKAY]                   |
-| [Fira Mono for Powerline Plus Nerd File Types](patched-fonts/FiraMono)                    |   1000   | [OKAY]                   |
-| [Heavy Data Mono for Powerline Plus Nerd File Types](patched-fonts/HeavyData)             |   2048   | [OKAY]                   |
-| [Inconsolata for Powerline Plus Nerd File Types](patched-fonts/Inconsolata)               |   1000   | [OKAY]                   |
-| [Lekton for Powerline Plus Nerd File Types](patched-fonts/Lekton)                         |   1000   | [OKAY]                   |
-| [Literation Mono for Powerline Plus Nerd File Types](patched-fonts/LiberationMono)        |   2048   | [OKAY]                   |
-| [Meslo for Powerline Plus Nerd File Types](patched-fonts/Meslo)                           |   2048   | [OKAY]                   |
-| [Monofur for Powerline Plus Nerd File Types](patched-fonts/Monofur)                       |   2400   | [OKAY]                   |
-| [M+ (MPlus) for Powerline Plus Nerd File Types](patched-fonts/MPlus)                      |   1000   | [OKAY]                   |
-| [ProFont (Windows tweaked) for Powerline Plus Nerd File Types](patched-fonts/Profont)     |   1200   | [OKAY]                   |
+| [3270 Plus Nerd File Types](patched-fonts/3270)                                           |   1000   | [TEST]                   |
+| [Anonymice Powerline Plus Nerd File Types](patched-fonts/AnonymousPro)                    |   2048   | [TEST]                   |
+| [Aurulent Sans Mono Plus Nerd File Types](patched-fonts/AurulentSansMono)                 |   1000   | [TEST]                   |
+| [Bitstream Vera Sans Mono Plus Nerd File Types](patched-fonts/BitstreamVeraSansMono)      |   2048   | [TEST]                   |
+| [DejaVu Sans Mono Plus Nerd File Types](patched-fonts/DejaVuSansMono)                     |   2048   | [TEST]                   |
+| [Droid Sans Mono for Powerline Plus Nerd File Types](patched-fonts/DroidSansMono)         |   2048   | [TEST]                   |
+| [Fira Mono for Powerline Plus Nerd File Types](patched-fonts/FiraMono)                    |   1000   | [TEST]                   |
+| [Heavy Data Mono for Powerline Plus Nerd File Types](patched-fonts/HeavyData)             |   2048   | [TEST]                   |
+| [Inconsolata for Powerline Plus Nerd File Types](patched-fonts/Inconsolata)               |   1000   | [TEST]                   |
+| [Lekton for Powerline Plus Nerd File Types](patched-fonts/Lekton)                         |   1000   | [TEST]                   |
+| [Literation Mono for Powerline Plus Nerd File Types](patched-fonts/LiberationMono)        |   2048   | [TEST]                   |
+| [Meslo for Powerline Plus Nerd File Types](patched-fonts/Meslo)                           |   2048   | [TEST]                   |
+| [Monofur for Powerline Plus Nerd File Types](patched-fonts/Monofur)                       |   2400   | [TEST]                   |
+| [M+ (MPlus) for Powerline Plus Nerd File Types](patched-fonts/MPlus)                      |   1000   | [TEST]                   |
+| [ProFont (Windows tweaked) for Powerline Plus Nerd File Types](patched-fonts/Profont)     |   1200   | [TEST]                   |
 | [ProFont (x11) for Powerline Plus Nerd File Types](patched-fonts/ProFont)                 |   1000   | [FAIL]                   |
-| [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [OKAY]                   |
-| [Sauce Code Powerline Plus Nerd File Types](patched-fonts/SourceCodePro)                  |   1000   | [OKAY]                   |
+| [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [TEST]                   |
+| [Sauce Code Powerline Plus Nerd File Types](patched-fonts/SourceCodePro)                  |   1000   | [TEST]                   |
 | [Terminess for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [FAIL]                   |
-| [Ubuntu Mono derivative Powerline Plus Nerd File Types](patched-fonts/UbuntuMono)         |   1000   | [OKAY]                   |
-| [Ubuntu Mono Plus Nerd File Types](patched-fonts/UbuntuMono)                              |   1000   | [OKAY]                   |
+| [Ubuntu Mono derivative Powerline Plus Nerd File Types](patched-fonts/UbuntuMono)         |   1000   | [TEST]                   |
+| [Ubuntu Mono Plus Nerd File Types](patched-fonts/UbuntuMono)                              |   1000   | [TEST]                   |
 
 * Variations include: 
  * extra glyphs that are *double* or *single* (monospaced) width
