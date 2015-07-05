@@ -172,7 +172,7 @@ optional arguments:
 
 ## Other
 
-* previously known as 'nerd-filetype-glyphs-fonts-patcher'
+* previously known as 'nerd-filetype-glyphs-fonts-patcher', 'font-nerd-icons'
 
 ## License
 
