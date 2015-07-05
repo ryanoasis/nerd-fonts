@@ -1,7 +1,7 @@
 <h1 align="center">
 	<img src="images/nerd-fonts-logo.png" alt="nerd fonts">
 </h1>
-[![GitHub version](https://badge.fury.io/gh/ryanoasis%2Fnerd-icons.svg)](http://badge.fury.io/gh/ryanoasis%2Fnerd-icons)
+[![GitHub version](https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts.svg)](http://badge.fury.io/gh/ryanoasis%2Fnerd-fonts)
 ***
 ### [Fonts](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-sm.png)](#font-patcher) [Patcher](#font-patcher) 
 ***
