@@ -3,7 +3,7 @@
 </h1>
 [![GitHub version](https://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons.svg)](http://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons)
 ***
-#### [Fonts](#patched-fonts) | [Patcher](#font-patcher) 
+### [Fonts](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-sm.png)](#font-patcher) [Patcher](#font-patcher) 
 ***
 
 * A [fontforge python script](#font-patcher) to patch any font
