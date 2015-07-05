@@ -3,7 +3,7 @@
 </h1>
 [![GitHub version](https://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons.svg)](http://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons)
 ***
-#### [Fonts](#patched-fonts) | [Patcher](#font-patcher) 
+### [Fonts](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-sm.png)](#font-patcher) [Patcher](#font-patcher) 
 ***
 
 * A [fontforge python script](#font-patcher) to patch any font
@@ -108,7 +108,9 @@ See: [Font Patcher](#font-patcher) for usage
 	./install.sh
 	All fonts installed to /home/ryan/.fonts
 
-## Font Patcher
+<h2 align="center" id="font-patcher">
+	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
+</h2>
 
 Patching the font of your own choosing for use with the [vim-webdevicons](https://github.com/ryanoasis/vim-webdevicons) vim plugin:
 * requires: python2, python-fontforge package
