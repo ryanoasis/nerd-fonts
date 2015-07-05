@@ -108,7 +108,9 @@ See: [Font Patcher](#font-patcher) for usage
 	./install.sh
 	All fonts installed to /home/ryan/.fonts
 
-## Font Patcher
+<h2 align="center" id="font-patcher">
+	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
+</h2>
 
 Patching the font of your own choosing for use with the [vim-webdevicons](https://github.com/ryanoasis/vim-webdevicons) vim plugin:
 * requires: python2, python-fontforge package
