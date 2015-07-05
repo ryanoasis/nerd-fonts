@@ -1,8 +1,8 @@
 <h1 align="center">
 	<img src="images/nerd-fonts-logo.png" alt="nerd fonts">
 </h1>
-=========================================
 [![GitHub version](https://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons.svg)](http://badge.fury.io/gh/ryanoasis%2Ffont-nerd-icons)
+=========================================
 
 * A [fontforge python script](#font-patcher) to patch any font
 * Over **20** already [patched font families](#patched-fonts)
