@@ -4,7 +4,7 @@ font nerd icons
 
 * A [fontforge python script](#font-patcher) to patch any font
 * Over **20** already [patched font families](#patched-fonts)
-* Over **350** unique permutations/variations of patched fonts [how?](#permutations)
+* Over **350** unique permutations/variations of patched fonts [(more details)](#permutations)
 
 ## Table of Contents
 - [font nerd icons](#)
