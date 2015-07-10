@@ -86,7 +86,7 @@ See: [Font Patcher](#font-patcher) for usage
 
 * Variations include: 
  * extra glyphs that are *double* or *single* (monospaced) width
- * Pomicons[gabrielelana-pomicons]
+ * [Pomicons][gabrielelana-pomicons]
  * Windows Compatible (WIP)
 
 ## Permutations
