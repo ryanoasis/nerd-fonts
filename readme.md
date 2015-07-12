@@ -78,7 +78,7 @@ See: [Font Patcher](#font-patcher) for usage
 | [M+ (MPlus) for Powerline Plus Nerd File Types](patched-fonts/MPlus)                      |   1000   | [TEST]                   |
 | [ProFont (Windows tweaked) for Powerline Plus Nerd File Types](patched-fonts/Profont)     |   1200   | [TEST]                   |
 | [ProFont (x11) for Powerline Plus Nerd File Types](patched-fonts/ProFont)                 |   1000   | [FAIL]                   |
-| [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [TEST]                   |
+| [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [MISSING POWERLINE GLYPHS]                   |
 | [Sauce Code Powerline Plus Nerd File Types](patched-fonts/SourceCodePro)                  |   1000   | [TEST]                   |
 | [Terminess for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [FAIL]                   |
 | [Ubuntu Mono derivative Powerline Plus Nerd File Types](patched-fonts/UbuntuMono)         |   1000   | [TEST]                   |
