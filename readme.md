@@ -5,7 +5,7 @@
 ***
 | **[Fonts](#patched-fonts)**         | **[Patcher](#font-patcher)** |
 |-------------------------------------|-------------------------------|
-| [![patcher-logo-small](images/nerd-fonts-character-logo-md.png)](#font-patcher)                                    | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) |
+| [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts)                                    | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) |
 ***
 
 * A [fontforge python script](#font-patcher) to patch any font
