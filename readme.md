@@ -115,7 +115,7 @@ See: [Font Patcher](#font-patcher) for usage
 </h2>
 
 Patching the font of your own choosing for use with the [vim-webdevicons](https://github.com/ryanoasis/vim-webdevicons) vim plugin:
-* requires: python2, python-fontforge package
+* requires: python2, python-fontforge package (version 20141231 or later)
 * usage:
 
 ```
