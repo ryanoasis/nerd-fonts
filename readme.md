@@ -3,7 +3,9 @@
 </h1>
 [![GitHub version](https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts.svg)](http://badge.fury.io/gh/ryanoasis%2Fnerd-fonts)
 ***
-### [Fonts](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-sm.png)](#font-patcher) [Patcher](#font-patcher) 
+| **[Fonts](#patched-fonts)**         | **[Patcher](#font-patcher)** |
+|-------------------------------------|-------------------------------|
+| [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts)                                    | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) |
 ***
 
 * A [fontforge python script](#font-patcher) to patch any font
@@ -76,15 +78,15 @@ See: [Font Patcher](#font-patcher) for usage
 | [M+ (MPlus) for Powerline Plus Nerd File Types](patched-fonts/MPlus)                      |   1000   | [TEST]                   |
 | [ProFont (Windows tweaked) for Powerline Plus Nerd File Types](patched-fonts/Profont)     |   1200   | [TEST]                   |
 | [ProFont (x11) for Powerline Plus Nerd File Types](patched-fonts/ProFont)                 |   1000   | [FAIL]                   |
-| [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [TEST]                   |
+| [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [MISSING POWERLINE GLYPHS](https://github.com/ryanoasis/nerd-fonts/issues/16)                   |
 | [Sauce Code Powerline Plus Nerd File Types](patched-fonts/SourceCodePro)                  |   1000   | [TEST]                   |
-| [Terminess for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [FAIL]                   |
+| [Terminess for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [FAIL](https://github.com/ryanoasis/nerd-fonts/issues/16)                   |
 | [Ubuntu Mono derivative Powerline Plus Nerd File Types](patched-fonts/UbuntuMono)         |   1000   | [TEST]                   |
 | [Ubuntu Mono Plus Nerd File Types](patched-fonts/UbuntuMono)                              |   1000   | [TEST]                   |
 
 * Variations include: 
  * extra glyphs that are *double* or *single* (monospaced) width
- * Pomicons[gabrielelana-pomicons]
+ * [Pomicons][gabrielelana-pomicons]
  * Windows Compatible (WIP)
 
 ## Permutations
