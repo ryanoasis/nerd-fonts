@@ -89,7 +89,8 @@ sourceFont_em_original = sourceFont.em
 
 symbols = fontforge.open("glyph-source-fonts/original-source.otf")
 symbols2 = fontforge.open("glyph-source-fonts/devicons.ttf")
-pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
+if args.pomicons:
+    pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
 
 symbolsRangeStart = 0xE500
 symbolsRangeEnd = 0xE521
