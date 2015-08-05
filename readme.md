@@ -63,7 +63,7 @@ See: [Font Patcher](#font-patcher) for usage
 | Font Name                                                                                 | em size  | status                   |
 |-------------------------------------------------------------------------------------------|----------|--------------------------|
 | [3270 Plus Nerd File Types](patched-fonts/3270)                                           |   1000   | [TEST]                   |
-| [Anonymice Powerline Plus Nerd File Types](patched-fonts/AnonymousPro)                    |   2048   | [TEST]                   |
+| [Anonymous Pro for Powerline Plus Nerd File Types](patched-fonts/AnonymousPro)                    |   2048   | [TEST]                   |
 | [Aurulent Sans Mono Plus Nerd File Types](patched-fonts/AurulentSansMono)                 |   1000   | [TEST]                   |
 | [Bitstream Vera Sans Mono Plus Nerd File Types](patched-fonts/BitstreamVeraSansMono)      |   2048   | [TEST]                   |
 | [DejaVu Sans Mono Plus Nerd File Types](patched-fonts/DejaVuSansMono)                     |   2048   | [TEST]                   |
@@ -72,15 +72,15 @@ See: [Font Patcher](#font-patcher) for usage
 | [Heavy Data Mono for Powerline Plus Nerd File Types](patched-fonts/HeavyData)             |   2048   | [TEST]                   |
 | [Inconsolata for Powerline Plus Nerd File Types](patched-fonts/Inconsolata)               |   1000   | [TEST]                   |
 | [Lekton for Powerline Plus Nerd File Types](patched-fonts/Lekton)                         |   1000   | [TEST]                   |
-| [Literation Mono for Powerline Plus Nerd File Types](patched-fonts/LiberationMono)        |   2048   | [TEST]                   |
+| [Liberation Mono for Powerline Plus Nerd File Types](patched-fonts/LiberationMono)        |   2048   | [TEST]                   |
 | [Meslo for Powerline Plus Nerd File Types](patched-fonts/Meslo)                           |   2048   | [TEST]                   |
 | [Monofur for Powerline Plus Nerd File Types](patched-fonts/Monofur)                       |   2400   | [TEST]                   |
 | [M+ (MPlus) for Powerline Plus Nerd File Types](patched-fonts/MPlus)                      |   1000   | [TEST]                   |
 | [ProFont (Windows tweaked) for Powerline Plus Nerd File Types](patched-fonts/Profont)     |   1200   | [TEST]                   |
 | [ProFont (x11) for Powerline Plus Nerd File Types](patched-fonts/ProFont)                 |   1000   | [FAIL]                   |
 | [ProggyCleanTT Plus Nerd File Types](patched-fonts/ProggyClean)                           |   2048   | [MISSING POWERLINE GLYPHS](https://github.com/ryanoasis/nerd-fonts/issues/16)                   |
-| [Sauce Code Powerline Plus Nerd File Types](patched-fonts/SourceCodePro)                  |   1000   | [TEST]                   |
-| [Terminess for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [FAIL](https://github.com/ryanoasis/nerd-fonts/issues/16)                   |
+| [Source Code Pro for Powerline Plus Nerd File Types](patched-fonts/SourceCodePro)                  |   1000   | [TEST]                   |
+| [Terminus for Powerline Plus Nerd File Types](patched-fonts/Terminus)                    |   1000   | [FAIL](https://github.com/ryanoasis/nerd-fonts/issues/16)                   |
 | [Ubuntu Mono derivative Powerline Plus Nerd File Types](patched-fonts/UbuntuMono)         |   1000   | [TEST]                   |
 | [Ubuntu Mono Plus Nerd File Types](patched-fonts/UbuntuMono)                              |   1000   | [TEST]                   |
 
