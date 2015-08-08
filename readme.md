@@ -175,7 +175,7 @@ optional arguments:
 
 ## Rationale
 
-* Originally created for use with [vim-webdevicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
+* Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
 
 ## Other
 
@@ -185,7 +185,7 @@ optional arguments:
 
 see [LICENSE](LICENSE)
 
-[vim-webdevicons]:https://github.com/ryanoasis/vim-webdevicons
+[vim-devicons]:https://github.com/ryanoasis/vim-devicons
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
