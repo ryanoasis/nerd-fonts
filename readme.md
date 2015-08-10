@@ -47,11 +47,11 @@
 * [octicons][octicons] (experimental and work-in-progress)
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-octicons.png)
 
-### Pomicons][gabrielelana-pomicons]
+### [Pomicons][gabrielelana-pomicons]
 * [Pomicons][gabrielelana-pomicons] from [gabrielelana-pomicons]
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-pomicons.png)
 
-### powerline-extra-symbols][ryanoasis-powerline-extra-symbols]
+### [powerline-extra-symbols][ryanoasis-powerline-extra-symbols]
 * Work In Progress... :)
 ![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
 
@@ -119,6 +119,7 @@ See: [Font Patcher](#font-patcher) for usage
 ## Glyphs Combined
 
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/sankey-glyphs-combined-diagram.png)
+
 Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 
 ## Font Install Script
@@ -200,7 +201,7 @@ optional arguments:
 
 * a list of additional good fonts to patch that I cannot provide or share due to the license:
  * [Input Mono](http://input.fontbureau.com/)
-  * Coming soon with external hosting :)
+   * Coming soon with external hosting :)
  * [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
 
 ## Rationale
