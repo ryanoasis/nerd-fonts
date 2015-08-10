@@ -136,7 +136,8 @@ Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 </h2>
 
 Patching the font of your own choosing for use with the [vim-devicons](https://github.com/ryanoasis/vim-devicons) vim plugin:
-* requires: python2, python-fontforge package
+* requires: python2, python-fontforge package (version 20141231 or later, see
+  the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * usage:
 
 ```

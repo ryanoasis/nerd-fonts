@@ -1,4 +1,5 @@
 #!/usr/bin/env python2
+# version: 0.4.0
 
 import sys
 import psMat
@@ -113,7 +114,8 @@ powerlineSymbols = fontforge.open("glyph-source-fonts/PowerlineSymbols.otf")
 symbolsDevicons = fontforge.open("glyph-source-fonts/devicons.ttf")
 fontawesome = fontforge.open("glyph-source-fonts/FontAwesome.otf")
 octicons = fontforge.open("glyph-source-fonts/octicons.ttf")
-pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
+if args.pomicons:
+    pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
 
 symbolsOriginalRangeStart = 0xE4FE
 symbolsOriginalRangeEnd = 0xE52A
@@ -336,6 +338,9 @@ if args.octicons:
 
 if args.pomicons:
     copy_glyphs(sourceFont, sourceFontPomiconsStart, sourceFontPomiconsEnd, pomicons, symbolsPomiconsRangeStart, symbolsPomiconsRangeEnd)
+
+if args.pomicons:
+    copy_glyphs(sourceFont, sourceFontRange3Start, sourceFontRange3End, pomicons, pomiconsRangeStart, pomiconsRangeEnd)
 
 extension = os.path.splitext(sourceFont.path)[1]
 
