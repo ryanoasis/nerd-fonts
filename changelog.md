@@ -1,9 +1,52 @@
+CHANGELOG
+================================================================================
+This project is using [Semantic Versioning 2.0.0](http://semver.org/)
+
+- v0.4.0
+ - Added support for 'octicons', 'font-awesome' font glyphs
+ - Added missing font combinations
+ - Added Hermit (as 'Hurmit' to comply with SIL Open Font License (OFL)) font
+ - Added more sample fonts (Hermit and SourceCodePro variants)
+ - Added logos
+ - Added 'Code of Conduct'
+ - Added missing Pomicons.otf source file and update .gitignore (fixes #19)
+ - Added 'all fonts patcher script' pattern parameter support (fuzzy matching)
+ - Updated readme: python-fontforge minimum version & link to FontForge install docs (enhancement PR #18) (@blueyed)
+ - Updated readme: various misc improvements and fixes
+ - Fixed font-patcher to only load Pomicons.otf with '--pomicons' flag (enhancement PR #20) (fixes #19) (@blueyed)
+ - Fixed other misc issues
+ - Added font files versioning
+- v0.3.1
+ - Updated readme
+ - Fixed font patcher output name for Mono fonts
+ - Fixed patcher overwriting fonts with 'Mono' versions preventing all combinations from being generated (only 220 instead of 352)
+ - Fixed more possible license issues by completely removed 'Input Mono' font related files
+ - Fixed all patched fonts: Re-patched all the fonts due to issue with font patcher and all fonts
+- v0.3.0
+ - Added new fonts, set up unpatched sources, and set up patched version folders (enhancement #10)
+   - Fonts: 3270, Aurulent Sans Mono, Bitstream Vera Sans Mono, Heavy Data, Lekton, MPlus (M+), ProFont
+ - Added script to re-patch all of the fonts (work in progress) for enhancement (enhancement #11)
+ - Added pomicon glyphs (enhancement #14)
+ - Updated devicons font source to latest version 1.8.0 release
+ - Updated the range to include new glyphs from latest devicons 1.8.0 (work toward but NOT does not fix #12)
+ - Updated scripts and files: various clean-up and refactoring tasks
+ - Updated readme
+- v0.2.1
+ - Added fonts install script for Linux and Mac OS (enhancment PR #5) (@srijanshetty)
+ - Added detection and warnings when using unsupported (old) fontforge versions (fixes #6)
+ - Added missing patched fonts
+ - Fixed Licensing compliance issues (#7)
+ - Updated readme
+- v0.2.0
+ - Added details of cli parameters and updated fonts list with the true mono spaced fonts (#4)
+ - Added/fixed mono fonts single width glyphs support 
+ - Updated readme
 - v0.1.2
--- updated readme with better description and explanation of the options available
--- added new unpatched font PragmataPro for Powerline
--- added new patched font PragmataPro for Powerline Plus Nerd File Types
+ - Updated readme with better description and explanation of the options available
+ - Added new unpatched font PragmataPro for Powerline
+ - Added new patched font PragmataPro for Powerline Plus Nerd File Types
 - v0.1.1
--- Fixes scaling issues in first set of glyphs in certain fonts (fixes issue #1)
+ - Fixes scaling issues in first set of glyphs in certain fonts (fixes issue #1)
 - v0.1.0
--- release
--- inital port from 'features/1-script-patch-fonts' branch on vim-webdevicons repo
+ - Release
+ - Inital port from 'features/1-script-patch-fonts' branch on vim-webdevicons repo
