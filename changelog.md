@@ -36,7 +36,8 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
  - Added detection and warnings when using unsupported (old) fontforge versions (fixes #6)
  - Added missing patched fonts
  - Fixed Licensing compliance issues (#7)
- - Updated readme
+   - includes removing PragmataPro (@abl)
+ - Updated readme: misc updates and tweaks
 - v0.2.0
  - True mono support
    - Script can now build single and double width glyphs!
