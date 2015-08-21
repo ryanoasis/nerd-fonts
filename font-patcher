@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-# version: 0.4.0
+# version: 0.4.1
 
 import sys
 import psMat
@@ -32,7 +32,8 @@ args = parser.parse_args()
 #print type(fontforge.version())
 #print int(fontforge.version())
 
-version = "0.4.0"
+version = "0.4.1"
+changelog = open("changelog.md", "r")
 minimumVersion = 20141231
 actualVersion = int(fontforge.version())
 #actualVersion = 20120731 # for testing invalid version
@@ -97,13 +98,20 @@ def replace_all(text, dic):
 # comply with SIL Open Font License (OFL)
 reservedFontNameReplacements = {'source': 'sauce', 'Source': 'Sauce', 'hermit': 'hurmit', 'Hermit': 'Hurmit'}
 
+projectInfo = "Patched with 'Nerd Fonts Patcher' (https://github.com/ryanoasis/nerd-fonts)"
+
 sourceFont.familyname = replace_all(familyname, reservedFontNameReplacements)
 sourceFont.fullname = replace_all(fullname, reservedFontNameReplacements)
 sourceFont.fontname = replace_all(fontname, reservedFontNameReplacements)
 sourceFont.appendSFNTName('English (US)', 'Preferred Family', sourceFont.familyname)
 sourceFont.appendSFNTName('English (US)', 'Compatible Full', sourceFont.fullname)
+sourceFont.comment = projectInfo
+sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
 
-sourceFont.version = version
+# todo version not being set for all font types (e.g. ttf)
+#print "Version was " + sourceFont.version
+sourceFont.version += ";Nerd Fonts " + version
+#print "Version now is " + sourceFont.version
 
 # glyph font
 
@@ -350,15 +358,14 @@ if args.octicons:
 if args.pomicons:
     copy_glyphs(sourceFont, sourceFontPomiconsStart, sourceFontPomiconsEnd, pomicons, symbolsPomiconsRangeStart, symbolsPomiconsRangeEnd)
 
-if args.pomicons:
-    copy_glyphs(sourceFont, sourceFontRange3Start, sourceFontRange3End, pomicons, pomiconsRangeStart, pomiconsRangeEnd)
-
 extension = os.path.splitext(sourceFont.path)[1]
 
 # @todo later add option to generate the sfd?
 #sourceFont.save(sourceFont.fullname + ".sfd")
 
-sourceFont.generate(sourceFont.fullname + extension)
+# the `PfEd-comments` flag is required for Fontforge to save
+# '.comment' and '.fontlog'.
+sourceFont.generate(sourceFont.fullname + extension, flags=('PfEd-comments',))
 
 print "Generated"
 print sourceFont.fullname
