@@ -109,13 +109,28 @@ sourceFont.version = version
 
 sourceFont_em_original = sourceFont.em
 
+# Open fonts and force the em size to be equal
+
 symbols = fontforge.open("glyph-source-fonts/original-source.otf")
 powerlineSymbols = fontforge.open("glyph-source-fonts/PowerlineSymbols.otf")
 symbolsDevicons = fontforge.open("glyph-source-fonts/devicons.ttf")
-fontawesome = fontforge.open("glyph-source-fonts/FontAwesome.otf")
-octicons = fontforge.open("glyph-source-fonts/octicons.ttf")
+
+symbols.em = sourceFont.em
+symbolsDevicons.em = sourceFont.em
+
+if args.fontawesome:
+    fontawesome = fontforge.open("glyph-source-fonts/FontAwesome.otf")
+    fontawesome.em = sourceFont.em
+
+if args.octicons:
+    octicons = fontforge.open("glyph-source-fonts/octicons.ttf")
+    octicons.em = sourceFont.em
+
 if args.pomicons:
     pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
+    pomicons.em = sourceFont.em
+
+# Define the character ranges
 
 symbolsOriginalRangeStart = 0xE4FE
 symbolsOriginalRangeEnd = 0xE52A
@@ -167,13 +182,6 @@ SYM_ATTR = {
 	0x2b83: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 }
 
-
-# Force the em size to be equal
-symbols.em = sourceFont.em
-symbolsDevicons.em = sourceFont.em
-fontawesome.em = sourceFont.em
-octicons.em = sourceFont.em
-pomicons.em = sourceFont.em
 
 # Initial font dimensions
 font_dim = {
