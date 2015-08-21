@@ -38,6 +38,8 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
  - Fixed Licensing compliance issues (#7)
  - Updated readme
 - v0.2.0
+ - True mono support
+   - Script can now build single and double width glyphs!
  - Added details of cli parameters and updated fonts list with the true mono spaced fonts (#4)
  - Added/fixed mono fonts single width glyphs support 
  - Updated readme
