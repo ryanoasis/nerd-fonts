@@ -171,6 +171,9 @@ SYM_ATTR = {
 # Force the em size to be equal
 symbols.em = sourceFont.em
 symbolsDevicons.em = sourceFont.em
+fontawesome.em = sourceFont.em
+octicons.em = sourceFont.em
+pomicons.em = sourceFont.em
 
 # Initial font dimensions
 font_dim = {
