@@ -2,6 +2,13 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- v0.4.1
+  - Fixed wrong em sizes on some glyphs (particularly Font Awesome) (fixes #24)
+    - Regenerated all patched fonts
+  - Added version, comment and fontlog (with changelog notes) to fonts
+  - Added image: non text version of patcher logo
+  - Removed misc unnecessary code (clean-up)
+  - Updated changelog: added missing release details and updated other releases
 - v0.4.0
  - Added support for 'octicons', 'font-awesome' font glyphs
  - Added missing font combinations
@@ -42,7 +49,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
  - True mono support
    - Script can now build single and double width glyphs!
  - Added details of cli parameters and updated fonts list with the true mono spaced fonts (#4)
- - Added/fixed mono fonts single width glyphs support 
+ - Added/fixed mono fonts single width glyphs support
  - Updated readme
 - v0.1.2
  - Updated readme with better description and explanation of the options available
