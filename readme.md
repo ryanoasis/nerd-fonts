@@ -12,6 +12,7 @@
 * Over **20** already [patched font families](#patched-fonts)
 * Over **1,700** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **900** glyphs/icons combined [(more details)](#combinations)
+* Originally created for use with [vim-devicons ➶][vim-devicons] vim plugin
 
 ## Table of Contents
 - [font nerd icons](#)
