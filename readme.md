@@ -32,25 +32,25 @@
 
 ### Seti-UI + Custom
 * [Seti-UI] / icomoon plus misc custom glyphs
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-1.png)
 
 ### [devicons][vorillaz-devicons]
 * [devicons][vorillaz-devicons] from [vorillaz-devicons]
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-2.png)
 
 ### [font-awesome][font-awesome]
 * [font-awesome][font-awesome] (experimental and work-in-progress)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-font-awesome-1.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-font-awesome-2.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-font-awesome-3.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-font-awesome-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-font-awesome-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-font-awesome-3.png)
 
 ### [octicons][octicons]
 * [octicons][octicons] (experimental and work-in-progress)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-octicons.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-octicons.png)
 
 ### [Pomicons][gabrielelana-pomicons]
 * [Pomicons][gabrielelana-pomicons] from [gabrielelana-pomicons]
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/fontforge-glyph-set-pomicons.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-pomicons.png)
 
 ### [powerline-extra-symbols][ryanoasis-powerline-extra-symbols]
 * Work In Progress... :)
@@ -119,7 +119,7 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Glyphs Combined
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.4.0/sankey-glyphs-combined-diagram.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/sankey-glyphs-combined-diagram.png)
 
 Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 
