@@ -45,6 +45,8 @@ echo "Total source fonts found: ${#source_fonts[*]}"
 
 #find_new_generated_font="find . -maxdepth 1 -name '*.[o,t]tf' -type f -print0"
 
+#cd temp-generated-fonts/
+
 # Use for loop iterate through source fonts
 # $f stores current value
 for f in "${source_fonts[@]}"
@@ -57,6 +59,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 	#echo "Moved newly created font to: $patched_font_dir"
 
@@ -66,6 +69,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher -q -w "$f"
@@ -74,6 +78,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher -q -s -w "$f"
@@ -82,6 +87,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	# font awesome variations
@@ -91,6 +97,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome -q -s "$f"
@@ -99,6 +106,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome -q -w "$f"
@@ -107,6 +115,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome -q -s -w "$f"
@@ -115,6 +124,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	# octicons variations:
@@ -124,6 +134,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --octicons -q -s "$f"
@@ -132,6 +143,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --octicons -q -w "$f"
@@ -140,6 +152,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --octicons -q -s -w "$f"
@@ -148,6 +161,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	# pomicon variations:
@@ -157,6 +171,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --pomicons -q -s "$f"
@@ -165,6 +180,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --pomicons -q -w "$f"
@@ -173,6 +189,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --pomicons -q -s -w "$f"
@@ -181,6 +198,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	# fontawesome + octicons variations:
@@ -190,6 +208,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --octicons -q -s "$f"
@@ -198,6 +217,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --octicons -q -w "$f"
@@ -206,6 +226,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --octicons -q -s -w "$f"
@@ -214,6 +235,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	# fontawesome + pomicons variations:
@@ -223,6 +245,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --pomicons -q -s "$f"
@@ -231,6 +254,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --pomicons -q -w "$f"
@@ -239,6 +263,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --pomicons -q -s -w "$f"
@@ -247,6 +272,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	# octicons + pomicons variations:
@@ -256,6 +282,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --octicons --pomicons -q -s "$f"
@@ -264,6 +291,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --octicons --pomicons -q -w "$f"
@@ -272,6 +300,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --octicons --pomicons -q -s -w "$f"
@@ -280,6 +309,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	# fontawesome + octicons + pomicons variations:
@@ -289,6 +319,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --octicons --pomicons -q -s "$f"
@@ -297,6 +328,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --octicons --pomicons -q -w "$f"
@@ -305,6 +337,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 	./font-patcher --fontawesome --octicons --pomicons -q -s -w "$f"
@@ -313,6 +346,7 @@ do
 	echo "newly_created_font = $newly_created_font"
 	patched_font_dir="${f%/*}/"
 	patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+	mkdir -p $patched_font_dir
 	mv "$newly_created_font" $patched_font_dir
 
 
