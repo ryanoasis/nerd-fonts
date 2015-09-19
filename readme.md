@@ -10,7 +10,7 @@
 
 * A [fontforge python script](#font-patcher) to patch any font
 * Over **20** already [patched font families](#patched-fonts)
-* Over **1,700** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **1,800** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **900** glyphs/icons combined [(more details)](#combinations)
 * Originally created for use with [vim-devicons ➶][vim-devicons] vim plugin
 
@@ -107,10 +107,10 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Combinations
 
-* Over 1,700 unique variations/combinations (Power Set) of patched fonts:
- * 54 font variations (just counting otf and ttf)
+* Over 1,800 unique variations/combinations (Power Set) of patched fonts:
+ * 58 font variations (just counting otf and ttf)
  * 32 (2⁵) combinations (1 no flags, 5 flagged options)
- * Calculated combinations (32 * 54) = 1,728
+ * Calculated combinations (32 * 58) = 1,856
  * Combinations for each font are any combination of (plus no flags option):
     * Monospaced extra glyphs
     * Windows Compatible
