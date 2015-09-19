@@ -84,6 +84,7 @@ See: [Font Patcher](#font-patcher) for usage
 | [Heavy Data Mono for Powerline Plus Nerd File Types](patched-fonts/HeavyData)          |                    |   2048  | [TEST] |
 | [Hermut Plus Nerd File Types](patched-fonts/Hermit)                                    |                    |   1000  | [TEST] |
 | [Inconsolata for Powerline Plus Nerd File Types](patched-fonts/Inconsolata)            |                    |   1000  | [TEST] |
+| [Knack Plus Nerd File Types](patched-fonts/Hack)                                       | Hack               |   2048  | [TEST] |
 | [Lekton for Powerline Plus Nerd File Types](patched-fonts/Lekton)                      |                    |   1000  | [TEST] |
 | [Literation Mono for Powerline Plus Nerd File Types](patched-fonts/LiberationMono)     | Liberation         |   2048  | [TEST] |
 | [Meslo for Powerline Plus Nerd File Types](patched-fonts/Meslo)                        |                    |   2048  | [TEST] |
