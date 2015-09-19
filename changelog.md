@@ -2,6 +2,16 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- v0.5.0
+  - Added Hack font (as 'Knack' for now) (enhancement PR #28) (@cheba)
+  - Updated and improved all fonts patcher script (enhancement PR #27) (@cheba)
+  - Updated Font Awesome to the latest version v4.4.0
+    - for more details see https://github.com/FortAwesome/Font-Awesome/releases/tag/v4.4.0
+  - Updated readme with Reserved Font Name info, Hack font, and various version updates
+  - Updated the directory structures to make it easier to find font styles
+  - Updated all patch fonts to use latest changes and fixes
+  - Fixed unicode codepoints for Font Awesome glyphs (fixes #31)
+  - Fixed potential SIL Open Font License (OFL) issue with 'Fira Mono' (patched as 'Fura')
 - v0.4.1
   - Fixed wrong em sizes on some glyphs (particularly Font Awesome) (fixes #24)
     - Regenerated all patched fonts
@@ -39,7 +49,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
  - Updated scripts and files: various clean-up and refactoring tasks
  - Updated readme
 - v0.2.1
- - Added fonts install script for Linux and Mac OS (enhancment PR #5) (@srijanshetty)
+ - Added fonts install script for Linux and Mac OS (enhancement PR #5) (@srijanshetty)
  - Added detection and warnings when using unsupported (old) fontforge versions (fixes #6)
  - Added missing patched fonts
  - Fixed Licensing compliance issues (#7)
