@@ -58,28 +58,36 @@ function patch_font_batch {
 # $f stores current value
 for f in "${source_fonts[@]}"
 do
-  patch_font_batch "$f"
+  echo "$f"
+  if [[ "$f" =~ Hack ]]
+  then
+    powerline=""
+  else
+    powerline="--powerline"
+  fi
+
+  patch_font_batch "$f" $powerline
 
   # font awesome variations
-  patch_font_batch "$f" --fontawesome
+  patch_font_batch "$f" $powerline --fontawesome
 
   # octicons variations:
-  patch_font_batch "$f" --octicons
+  patch_font_batch "$f" $powerline --octicons
 
   # pomicon variations:
-  patch_font_batch "$f" --pomicons
+  patch_font_batch "$f" $powerline --pomicons
 
   # fontawesome + octicons variations:
-  patch_font_batch "$f" --fontawesome --octicons
+  patch_font_batch "$f" $powerline --fontawesome --octicons
 
   # fontawesome + pomicons variations:
-  patch_font_batch "$f" --fontawesome --pomicons
+  patch_font_batch "$f" $powerline --fontawesome --pomicons
 
   # octicons + pomicons variations:
-  patch_font_batch "$f" --octicons --pomicons
+  patch_font_batch "$f" $powerline --octicons --pomicons
 
   # fontawesome + octicons + pomicons variations:
-  patch_font_batch "$f" --fontawesome --octicons --pomicons
+  patch_font_batch "$f" $powerline --fontawesome --octicons --pomicons
 
   # un-comment to test this script (patch 1 font)
   #break

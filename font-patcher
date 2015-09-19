@@ -26,6 +26,7 @@ parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows
 parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome/)', default=False)
 parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com/)', default=False)
 parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
+parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 args = parser.parse_args()
 
 #print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
@@ -140,14 +141,18 @@ if args.pomicons:
 
 # Define the character ranges
 
-symbolsOriginalRangeStart = 0xE4FE
-symbolsOriginalRangeEnd = 0xE52A
+# Symbol font ranges
+symbolsPomiconsRangeStart = 0xE000
+symbolsPomiconsRangeEnd = 0xE00A
 
 symbolsPowerlineRange1Start = 0xE0A0
 symbolsPowerlineRange1End = 0xE0A2
 
 symbolsPowerlineRange2Start = 0xE0B0
 symbolsPowerlineRange2End = 0xE0B3
+
+symbolsOriginalRangeStart = 0xE4FE
+symbolsOriginalRangeEnd = 0xE52A
 
 symbolsDeviconsRangeStart = 0xE600
 symbolsDeviconsRangeEnd = 0xE6C5
@@ -158,8 +163,15 @@ symbolsFontAwesomeRangeEnd = 0xF23A
 symbolsOcticonsRangeStart = 0xF000
 symbolsOcticonsRangeEnd = 0xF0DB
 
-symbolsPomiconsRangeStart = 0xE000
-symbolsPomiconsRangeEnd = 0xE00A
+# Destination font ranges
+sourceFontPomiconsStart = 0xE000
+sourceFontPomiconsEnd = 0xE00A
+
+#symbolsPowerlineRange1Start = 0xE0A0
+#symbolsPowerlineRange1End = 0xE0A2
+
+#symbolsPowerlineRange2Start = 0xE0B0
+#symbolsPowerlineRange2End = 0xE0B3
 
 sourceFontOriginalStart = 0xE5FE
 sourceFontOriginalEnd = 0xE62A
@@ -172,9 +184,6 @@ sourceFontFontAwesomeEnd = 0xF23A
 
 sourceFontOcticonsStart = 0xF400
 sourceFontOcticonsEnd = 0xF4DB
-
-sourceFontPomiconsStart = 0xE000
-sourceFontPomiconsEnd = 0xE00A
 
 
 SYM_ATTR = {
@@ -345,9 +354,12 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
 
 copy_glyphs(sourceFont, sourceFontOriginalStart, sourceFontOriginalEnd, symbols, symbolsOriginalRangeStart, symbolsOriginalRangeEnd)
-copy_glyphs(sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, powerlineSymbols, symbolsPowerlineRange1Start, symbolsPowerlineRange1End)
-copy_glyphs(sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, powerlineSymbols, symbolsPowerlineRange2Start, symbolsPowerlineRange2End)
 copy_glyphs(sourceFont, sourceFontDeviconsStart, sourceFontDeviconsEnd, symbolsDevicons, symbolsDeviconsRangeStart, symbolsDeviconsRangeEnd)
+
+if args.powerline:
+    copy_glyphs(sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End)
+    copy_glyphs(sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End)
+
 
 if args.fontawesome:
     copy_glyphs(sourceFont, sourceFontFontAwesomeStart, sourceFontFontAwesomeEnd, fontawesome, symbolsFontAwesomeRangeStart, symbolsFontAwesomeRangeEnd)
