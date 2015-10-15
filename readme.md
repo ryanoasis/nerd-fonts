@@ -15,6 +15,8 @@
 * Originally created for use with [vim-devicons ➶][vim-devicons] vim plugin
 
 ## Table of Contents
+
+[![Join the chat at https://gitter.im/ryanoasis/nerd-fonts](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ryanoasis/nerd-fonts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 - [font nerd icons](#)
 	- [Glyph sets](#glyph-sets)
 	- [Usage](#usage)
