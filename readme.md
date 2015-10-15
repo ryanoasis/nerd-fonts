@@ -1,7 +1,8 @@
 <h1 align="center">
 	<img src="images/nerd-fonts-logo.png" alt="nerd fonts">
 </h1>
-[![GitHub version](https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts.svg)](http://badge.fury.io/gh/ryanoasis%2Fnerd-fonts)
+[![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
+
 ***
 | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** |
 |-----------------------------|------------------------------|
@@ -16,7 +17,6 @@
 
 ## Table of Contents
 
-[![Join the chat at https://gitter.im/ryanoasis/nerd-fonts](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ryanoasis/nerd-fonts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 - [font nerd icons](#)
 	- [Glyph sets](#glyph-sets)
 	- [Usage](#usage)
@@ -227,3 +227,15 @@ see [LICENSE](LICENSE)
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
+
+<!---
+Link References
+-->
+
+[badge-version]:http://badge.fury.io/gh/ryanoasis%2Fnerd-fonts
+[badge-gitter]:https://gitter.im/ryanoasis/nerd-fonts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[badge-flattr]:https://flattr.com/submit/auto?user_id=ryanoasis&url=https://github.com/ryanoasis/nerd-fonts&title=nerd-fonts&language=python&tags=github&category=software
+
+[img-version-badge]:https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts.svg
+[img-gitter-badge]:https://img.shields.io/badge/%E2%8A%AA%20GITTER%20-CHAT%20%E2%86%92-1dce73.svg?style=flat
+[img-flattr-badge]:https://img.shields.io/badge/donate-flattr%20this!-8DB65B.svg?style=flat
