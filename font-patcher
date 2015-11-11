@@ -271,8 +271,9 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
     for sym_glyph in symbolFont.selection.byGlyphs:
             #sym_attr = SYM_ATTR[sym_glyph.unicode]
+            glyphName = sym_glyph.glyphname
             if args.quiet == False:
-                print "updating glyph: " + str(sym_glyph)
+                print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname)
 
             if exactEncoding:
                 # use the exact same hex values for the source font as for the symbol font
@@ -292,6 +293,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             # Select and paste symbol to its unicode code point
             sourceFont.selection.select(currentSourceFontGlyph)
             sourceFont.paste()
+            sourceFont[currentSourceFontGlyph].glyphname = glyphName
 
             if args.single:
                 # Now that we have copy/pasted the glyph, it's time to scale and move it
