@@ -5,7 +5,7 @@
 <!---
 Start notice section
 -->
-| [Unstable file paths warning: To avoid font file references breaking on releases please read this](#unstable-file-paths) |
+| Unstable file paths warning: [To avoid font file references breaking on releases please read](#unstable-file-paths) |
 -------------------------------
 <!---
 End notice section
