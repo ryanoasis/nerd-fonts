@@ -1,6 +1,16 @@
 <h1 align="center">
 	<img src="images/nerd-fonts-logo.png" alt="nerd fonts">
 </h1>
+
+<!---
+Start notice section
+-->
+| [Unstable file paths warning: To avoid font file references breaking on releases please read this](#unstable-file-paths) |
+-------------------------------
+<!---
+End notice section
+-->
+
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
 
 ***
@@ -25,6 +35,7 @@
 	- [Font Install Script (Linux & Mac OS X)](#font-install-script)
 	- [Font Patcher](#font-patcher)
 	- [Gotta Patch 'em All Font Patcher!](#gotta-patch-em-all)
+	- [Unstable file paths on master](#unstable-file-paths)
 	- [Other Good Fonts to Patch](#other-good-fonts-to-patch)
 	- [Rationale](#rationale)
 	- [Other](#other)
@@ -201,6 +212,17 @@ optional arguments:
 ./gotta-patch-em-all-font-patcher\!.sh
 ./gotta-patch-em-all-font-patcher\!.sh Hermit
 ```
+
+## Unstable file paths
+
+| Unstable file paths warning |
+-------------------------------
+| Please make sure to reference via the **release** branch and _not_ the ~~**master**~~ branch because paths are subject to being improved/changed per release |
+| For example (paths shorted for demonstation purposes): |
+| Instead of: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DroidSansMono/< font_path >.otf~~ |
+| Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.6.0/patched-fonts/DroidSansMono/< font_path >.otf |
+
+
 ## Other Good Fonts to Patch
 
 * a list of additional good fonts to patch that I cannot provide or share due to the license:
