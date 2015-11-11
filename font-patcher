@@ -25,7 +25,8 @@ parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows
 parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome/)', default=False)
 parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com/)', default=False)
 parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
-parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
+parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
+parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 args = parser.parse_args()
 
 #print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
@@ -95,6 +96,7 @@ def replace_all(text, dic):
         text = text.replace(i, j)
     return text
 
+
 # comply with SIL Open Font License (OFL)
 reservedFontNameReplacements = { 'source': 'sauce', 'Source': 'Sauce', 'hermit': 'hurmit', 'Hermit': 'Hurmit', 'fira': 'fura', 'Fira': 'Fura', 'hack': 'knack', 'Hack': 'Knack' }
 
@@ -121,6 +123,7 @@ sourceFont_em_original = sourceFont.em
 
 symbols = fontforge.open("glyph-source-fonts/original-source.otf")
 powerlineSymbols = fontforge.open("glyph-source-fonts/PowerlineSymbols.otf")
+powerlineExtraSymbols = fontforge.open("glyph-source-fonts/PowerlineExtraSymbols.otf")
 symbolsDevicons = fontforge.open("glyph-source-fonts/devicons.ttf")
 
 symbols.em = sourceFont.em
@@ -155,6 +158,15 @@ symbolsPowerlineRange1End = 0xE0A2
 
 symbolsPowerlineRange2Start = 0xE0B0
 symbolsPowerlineRange2End = 0xE0B3
+
+symbolsPowerlineExtraRange1Start = 0xE0A3
+symbolsPowerlineExtraRange1End = 0xE0A3
+
+symbolsPowerlineExtraRange2Start = 0xE0B4
+symbolsPowerlineExtraRange2End = 0xE0C8
+
+symbolsPowerlineExtraRange3Start = 0xE0CC
+symbolsPowerlineExtraRange3End = 0xE0D4
 
 symbolsOriginalRangeStart = 0xE4FE
 symbolsOriginalRangeEnd = 0xE52A
@@ -377,6 +389,10 @@ if args.powerline:
     copy_glyphs(sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End)
     copy_glyphs(sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End)
 
+if args.powerlineextra:
+    copy_glyphs(sourceFont, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, powerlineExtraSymbols, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, True)
+    copy_glyphs(sourceFont, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, powerlineExtraSymbols, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, True)
+    copy_glyphs(sourceFont, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, powerlineExtraSymbols, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, True)
 
 if args.fontawesome:
     copy_glyphs(sourceFont, sourceFontFontAwesomeStart, sourceFontFontAwesomeEnd, fontawesome, symbolsFontAwesomeRangeStart, symbolsFontAwesomeRangeEnd, True)
