@@ -143,11 +143,19 @@ Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 Patching the font of your own choosing for use with the [vim-devicons](https://github.com/ryanoasis/vim-devicons) vim plugin:
 * requires: python2, python-fontforge package (version 20141231 or later, see
   the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
-* usage:
+* can alternately be installed on OSX via: `brew install fontforge`
+* Usage:
 
 ```
 ./font-patcher PATH_TO_FONT
 ```
+
+* Alternate usage: Alternately the patcher can be run through the fontforge binary using the script flag:
+
+```
+./fontforge -script font-patcher PATH_TO_FONT
+```
+
 
 ```
 usage: font-patcher [-h] [-s] [-q] [-w] [--fontawesome] [--octicons]
