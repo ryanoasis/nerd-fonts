@@ -27,6 +27,7 @@ parser.add_argument('--octicons', dest='octicons', action='store_true', help='Ad
 parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
+parser.add_argument('--careful', dest='careful', action='store_true', help='Do not overwrite existing glyphs if detected', default=False)
 args = parser.parse_args()
 
 #print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
@@ -302,9 +303,19 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             symbolFont.selection.select(sym_glyph.encoding)
             symbolFont.copy()
 
-            # Select and paste symbol to its unicode code point
-            sourceFont.selection.select(currentSourceFontGlyph)
-            sourceFont.paste()
+            # check it
+            if args.careful:
+                codepoint = int("0x" + copiedToSlot, 16)
+                try:
+                    sourceFont[codepoint]
+                except TypeError:
+                    # nothing there go ahead and paste at this codepoint
+                    sourceFont.selection.select(currentSourceFontGlyph)
+                    sourceFont.paste()
+            else:
+                sourceFont.selection.select(currentSourceFontGlyph)
+                sourceFont.paste()
+
             sourceFont[currentSourceFontGlyph].glyphname = glyphName
 
             if args.single:
@@ -405,12 +416,9 @@ if args.pomicons:
 
 extension = os.path.splitext(sourceFont.path)[1]
 
-# @todo later add option to generate the sfd?
-#sourceFont.save(sourceFont.fullname + ".sfd")
-
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
-sourceFont.generate(sourceFont.fullname + extension, flags=('PfEd-comments',))
+sourceFont.generate(sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
 
 print "Generated"
 print sourceFont.fullname
