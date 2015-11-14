@@ -46,17 +46,13 @@ if actualVersion < minimumVersion:
     sys.exit(1)
 
 
-verboseAdditionalFontNameSuffix = " Plus Nerd File Types"
+verboseAdditionalFontNameSuffix = " Nerd Font"
 
 if args.windows:
     # attempt to shorten here on the additional name BEFORE trimming later
-    additionalFontNameSuffix = " PNFT"
+    additionalFontNameSuffix = " NF"
 else:
     additionalFontNameSuffix = verboseAdditionalFontNameSuffix
-
-if args.single:
-    additionalFontNameSuffix += " Mono"
-    verboseAdditionalFontNameSuffix += " Mono"
 
 if args.fontawesome:
     additionalFontNameSuffix += " Plus Font Awesome"
@@ -70,11 +66,21 @@ if args.pomicons:
     additionalFontNameSuffix += " Plus Pomicons"
     verboseAdditionalFontNameSuffix += " Plus Pomicons"
 
+# if all source glyphs included simplify the name
+if args.fontawesome and args.octicons and args.pomicons:
+    additionalFontNameSuffix = " Nerd Font Complete"
+    verboseAdditionalFontNameSuffix = " Nerd Font Complete"
+
+# add mono signifier to end of name
+if args.single:
+    additionalFontNameSuffix += " Mono"
+    verboseAdditionalFontNameSuffix += " Mono"
+
 
 sourceFont = fontforge.open(args.font)
 
 fontname, style = re.match("^([^-]*)(?:(-.*))?$", sourceFont.fontname).groups()
-familyname = sourceFont.familyname + additionalFontNameSuffix
+familyname = sourceFont.familyname
 # fullname (filename) can always use long/verbose font name, even in windows
 fullname = sourceFont.fullname + verboseAdditionalFontNameSuffix
 fontname = fontname + additionalFontNameSuffix.replace(" ", "")
@@ -169,7 +175,7 @@ symbolsPowerlineExtraRange2End = 0xE0C8
 symbolsPowerlineExtraRange3Start = 0xE0CC
 symbolsPowerlineExtraRange3End = 0xE0D4
 
-symbolsOriginalRangeStart = 0xE4FE
+symbolsOriginalRangeStart = 0xE4FA
 symbolsOriginalRangeEnd = 0xE52A
 
 symbolsDeviconsRangeStart = 0xE600
@@ -185,13 +191,7 @@ symbolsOcticonsRangeEnd = 0xF0DB
 sourceFontPomiconsStart = 0xE000
 sourceFontPomiconsEnd = 0xE00A
 
-#symbolsPowerlineRange1Start = 0xE0A0
-#symbolsPowerlineRange1End = 0xE0A2
-
-#symbolsPowerlineRange2Start = 0xE0B0
-#symbolsPowerlineRange2End = 0xE0B3
-
-sourceFontOriginalStart = 0xE5FE
+sourceFontOriginalStart = 0xE5FA
 sourceFontOriginalEnd = 0xE62A
 
 sourceFontDeviconsStart = 0xE700
@@ -285,16 +285,21 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
     for sym_glyph in symbolFont.selection.byGlyphs:
             #sym_attr = SYM_ATTR[sym_glyph.unicode]
             glyphName = sym_glyph.glyphname
-            if args.quiet == False:
-                print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname)
 
             if exactEncoding:
                 # use the exact same hex values for the source font as for the symbol font
                 currentSourceFontGlyph = sym_glyph.encoding
+                copiedToSlot = sym_glyph.glyphname
             else:
                 # use source font defined hex values based on passed in start and end
                 # convince that this string really is a hex:
                 currentSourceFontGlyph = int("0x" + sourceFontList[sourceFontCounter], 16)
+                copiedToSlot = sourceFontList[sourceFontCounter]
+
+            if args.quiet == False:
+                print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + str(copiedToSlot)
+
+
 
             # Prepare symbol glyph dimensions
             sym_dim = get_dim(sym_glyph)

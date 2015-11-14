@@ -13,6 +13,7 @@ type fontforge >/dev/null 2>&1 || {
 source_fonts_dir="${PWD}/unpatched-sample-fonts"
 patched_fonts_dir="${PWD}/patched-fonts"
 like_pattern=''
+organizing_sub_dir=""
 
 if [ $# -eq 1 ]
   then
@@ -38,7 +39,11 @@ function patch_font {
   local newly_created_font=$(find . -maxdepth 1 -name '*.[o,t]tf')
   echo "Newly created font: $newly_created_font"
   local patched_font_dir="${f%/*}/"
+  echo "patched font dir is $patched_font_dir"
   local patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
+  echo "patched font dir is $patched_font_dir"
+  local patched_font_dir+=$organizing_sub_dir
+  echo "patched font dir is $patched_font_dir"
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
   mkdir -p $patched_font_dir
   mv "$newly_created_font" "$patched_font_dir"
@@ -59,35 +64,50 @@ function patch_font_batch {
 for f in "${source_fonts[@]}"
 do
   echo "$f"
-  if [[ "$f" =~ Hack ]]
+  if [[ "$f" =~ Hack ]] || [[ "$f" =~ SourceCodePro ]]
   then
     powerline=""
   else
     powerline="--powerline"
   fi
 
+  organizing_sub_dir="minimal/"
+
   patch_font_batch "$f" $powerline
+
+  organizing_sub_dir="additional-variations/"
 
   # font awesome variations
   patch_font_batch "$f" $powerline --fontawesome
+  patch_font_batch "$f" $powerline --fontawesome --powerlineextra
 
   # octicons variations:
   patch_font_batch "$f" $powerline --octicons
+  patch_font_batch "$f" $powerline --octicons --powerlineextra
 
   # pomicon variations:
   patch_font_batch "$f" $powerline --pomicons
+  patch_font_batch "$f" $powerline --pomicons --powerlineextra
 
   # fontawesome + octicons variations:
   patch_font_batch "$f" $powerline --fontawesome --octicons
+  patch_font_batch "$f" $powerline --fontawesome --octicons --powerlineextra
 
   # fontawesome + pomicons variations:
   patch_font_batch "$f" $powerline --fontawesome --pomicons
+  patch_font_batch "$f" $powerline --fontawesome --pomicons --powerlineextra
 
   # octicons + pomicons variations:
   patch_font_batch "$f" $powerline --octicons --pomicons
+  patch_font_batch "$f" $powerline --octicons --pomicons --powerlineextra
 
   # fontawesome + octicons + pomicons variations:
   patch_font_batch "$f" $powerline --fontawesome --octicons --pomicons
+
+  organizing_sub_dir="complete/"
+
+  # fontawesome + octicons + pomicons + powerlineextra variations:
+  patch_font_batch "$f" $powerline --fontawesome --octicons --pomicons --powerlineextra
 
   # un-comment to test this script (patch 1 font)
   #break
