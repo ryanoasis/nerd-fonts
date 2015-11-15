@@ -69,7 +69,7 @@ if args.pomicons:
     verboseAdditionalFontNameSuffix += " Plus Pomicons"
 
 # if all source glyphs included simplify the name
-if args.fontawesome and args.octicons and args.pomicons:
+if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra:
     additionalFontNameSuffix = " Nerd Font Complete"
     verboseAdditionalFontNameSuffix = " Nerd Font Complete"
 
