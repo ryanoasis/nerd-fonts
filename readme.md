@@ -11,8 +11,8 @@
 
 * A [fontforge python script](#font-patcher) to patch any font
 * Over **20** already [patched font families](#patched-fonts)
-* Over **1,800** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **900** glyphs/icons combined [(more details)](#combinations)
+* Over **2,000** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **1,000** glyphs/icons combined [(more details)](#combinations)
 * Originally created for use with [vim-devicons ➶][vim-devicons] vim plugin
 
 ## Table of Contents
@@ -34,28 +34,27 @@
 
 ### Seti-UI + Custom
 * [Seti-UI] / icomoon plus misc custom glyphs
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-1.png)
 
 ### [devicons][vorillaz-devicons]
 * [devicons][vorillaz-devicons] from [vorillaz-devicons]
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-2.png)
 
 ### [font-awesome][font-awesome]
-* [font-awesome][font-awesome] (experimental and work-in-progress)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-font-awesome-1.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-font-awesome-2.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-font-awesome-3.png)
+* [font-awesome][font-awesome]
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-font-awesome-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-font-awesome-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-font-awesome-3.png)
 
 ### [octicons][octicons]
-* [octicons][octicons] (experimental and work-in-progress)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-octicons.png)
+* [octicons][octicons]
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-octicons.png)
 
 ### [Pomicons][gabrielelana-pomicons]
 * [Pomicons][gabrielelana-pomicons] from [gabrielelana-pomicons]
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/fontforge-glyph-set-pomicons.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-pomicons.png)
 
 ### [powerline-extra-symbols][ryanoasis-powerline-extra-symbols]
-* Work In Progress... :)
 ![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
 
 ## Usage
@@ -109,10 +108,10 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Combinations
 
-* Over 1,800 unique variations/combinations (Power Set) of patched fonts:
- * 58 font variations (just counting otf and ttf)
- * 32 (2⁵) combinations (1 no flags, 5 flagged options)
- * Calculated combinations (32 * 58) = 1,856
+* Over 2,000 unique variations/combinations (Power Set) of patched fonts:
+ * 57 font variations (just counting otf and ttf)
+ * 36 combinations (Powerline Extra included by default currently)
+ * Calculated combinations (36 * 57) = 2,052
  * Combinations for each font are any combination of (plus no flags option):
     * Monospaced extra glyphs
     * Windows Compatible
@@ -122,7 +121,7 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Glyphs Combined
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.5.x/sankey-glyphs-combined-diagram.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/sankey-glyphs-combined-diagram.png)
 
 Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 
@@ -159,7 +158,8 @@ Patching the font of your own choosing for use with the [vim-devicons](https://g
 
 ```
 usage: font-patcher [-h] [-s] [-q] [-w] [--fontawesome] [--octicons]
-                    [--pomicons]
+                    [--pomicons] [--powerline] [--powerlineextra] [--careful]
+                    [-out [OUTPUTDIR]]
                     font
 
 Patches a given font with programming and web development related glyphs
@@ -184,6 +184,12 @@ optional arguments:
   --octicons            Add Octicons Glyphs (https://octicons.github.com/)
   --pomicons            Add Pomicon Glyphs
                         (https://github.com/gabrielelana/pomicons)
+  --powerline           Add Powerline Glyphs
+  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis
+                        /powerline-extra-symbols)
+  --careful             Do not overwrite existing glyphs if detected
+  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                        The directory to output the patched font file to
 ```
 
 ### Examples
