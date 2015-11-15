@@ -137,6 +137,7 @@ symbolsDevicons = fontforge.open("glyph-source-fonts/devicons.ttf")
 
 symbols.em = sourceFont.em
 symbolsDevicons.em = sourceFont.em
+# powerlineExtraSymbols.em = sourceFont.em
 
 if args.fontawesome:
     fontawesome = fontforge.open("glyph-source-fonts/FontAwesome.otf")
