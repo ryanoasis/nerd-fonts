@@ -5,8 +5,9 @@
 import sys
 import psMat
 import re
-import os.path
+import os
 import argparse
+import errno
 
 try:
 	#Load the module
@@ -29,6 +30,7 @@ parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Ad
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 parser.add_argument('--careful', dest='careful', action='store_true', help='Do not overwrite existing glyphs if detected', default=False)
+parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
 args = parser.parse_args()
 
 #print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
@@ -105,6 +107,15 @@ def replace_all(text, dic):
         text = text.replace(i, j)
     return text
 
+
+def make_sure_path_exists(path):
+    try:
+        os.makedirs(path)
+    except OSError as exception:
+        if exception.errno != errno.EEXIST:
+            raisee
+
+make_sure_path_exists(args.outputdir)
 
 # comply with SIL Open Font License (OFL)
 reservedFontNameReplacements = { 'source': 'sauce', 'Source': 'Sauce', 'hermit': 'hurmit', 'Hermit': 'Hurmit', 'fira': 'fura', 'Fira': 'Fura', 'hack': 'knack', 'Hack': 'Knack' }
@@ -426,7 +437,7 @@ extension = os.path.splitext(sourceFont.path)[1]
 
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
-sourceFont.generate(sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
+sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
 
 print "Generated"
 print sourceFont.fullname

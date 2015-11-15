@@ -9,6 +9,8 @@ type fontforge >/dev/null 2>&1 || {
   exit 1
 }
 
+res1=$(date +%s)
+
 # Set source and target directories
 source_fonts_dir="${PWD}/unpatched-sample-fonts"
 patched_fonts_dir="${PWD}/patched-fonts"
@@ -34,20 +36,16 @@ echo "Total source fonts found: ${#source_fonts[*]}"
 
 function patch_font {
   local f=$1; shift
-  fontforge -script ./font-patcher "$@" "$f"
-  printf "\n---------------\n"
-  local newly_created_font=$(find . -maxdepth 1 -name '*.[o,t]tf')
-  echo "Newly created font: $newly_created_font"
+  local organizing_sub_dir=$1; shift
+  # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
-  echo "patched font dir is $patched_font_dir"
+  printf "\n---------------\n"
   local patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
   echo "patched font dir is $patched_font_dir"
   local patched_font_dir+=$organizing_sub_dir
   echo "patched font dir is $patched_font_dir"
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
-  mkdir -p $patched_font_dir
-  mv "$newly_created_font" "$patched_font_dir"
-  echo "Moved newly created font to: $patched_font_dir"
+  fontforge -quiet -script ./font-patcher "$@" "$f" --outputdir $patched_font_dir 2>/dev/null
 }
 
 function patch_font_batch {
@@ -71,47 +69,56 @@ do
     powerline="--powerline"
   fi
 
-  organizing_sub_dir="minimal/"
-
-  patch_font_batch "$f" $powerline
-
-  organizing_sub_dir="additional-variations/"
+  patch_font_batch "$f" "minimal/" $powerline &
 
   # font awesome variations
-  patch_font_batch "$f" $powerline --fontawesome
-  patch_font_batch "$f" $powerline --fontawesome --powerlineextra
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome &
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --powerlineextra &
 
   # octicons variations:
-  patch_font_batch "$f" $powerline --octicons
-  patch_font_batch "$f" $powerline --octicons --powerlineextra
+  patch_font_batch "$f" "additional-variations/" $powerline --octicons &
+  patch_font_batch "$f" "additional-variations/" $powerline --octicons --powerlineextra &
 
   # pomicon variations:
-  patch_font_batch "$f" $powerline --pomicons
-  patch_font_batch "$f" $powerline --pomicons --powerlineextra
+  patch_font_batch "$f" "additional-variations/" $powerline --pomicons &
+  patch_font_batch "$f" "additional-variations/" $powerline --pomicons --powerlineextra &
 
   # fontawesome + octicons variations:
-  patch_font_batch "$f" $powerline --fontawesome --octicons
-  patch_font_batch "$f" $powerline --fontawesome --octicons --powerlineextra
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons &
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons --powerlineextra &
 
   # fontawesome + pomicons variations:
-  patch_font_batch "$f" $powerline --fontawesome --pomicons
-  patch_font_batch "$f" $powerline --fontawesome --pomicons --powerlineextra
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --pomicons &
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --pomicons --powerlineextra &
 
   # octicons + pomicons variations:
-  patch_font_batch "$f" $powerline --octicons --pomicons
-  patch_font_batch "$f" $powerline --octicons --pomicons --powerlineextra
+  patch_font_batch "$f" "additional-variations/" $powerline --octicons --pomicons &
+  patch_font_batch "$f" "additional-variations/" $powerline --octicons --pomicons --powerlineextra &
 
   # fontawesome + octicons + pomicons variations:
-  patch_font_batch "$f" $powerline --fontawesome --octicons --pomicons
-
-  organizing_sub_dir="complete/"
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons --pomicons &
 
   # fontawesome + octicons + pomicons + powerlineextra variations:
-  patch_font_batch "$f" $powerline --fontawesome --octicons --pomicons --powerlineextra
+  patch_font_batch "$f" "complete/" $powerline --fontawesome --octicons --pomicons --powerlineextra &
+
 
   # un-comment to test this script (patch 1 font)
   #break
+  # wait for this set of bg commands to finish: dont do too many at once!
+  wait
 done
+# wait for all bg commands to finish
+wait
 
+res2=$(date +%s)
+dt=$(echo "$res2 - $res1" | bc)
+dd=$(echo "$dt/86400" | bc)
+dt2=$(echo "$dt-86400*$dd" | bc)
+dh=$(echo "$dt2/3600" | bc)
+dt3=$(echo "$dt2-3600*$dh" | bc)
+dm=$(echo "$dt3/60" | bc)
+ds=$(echo "$dt3-60*$dm" | bc)
+
+printf "Total runtime: %d:%02d:%02d:%02d\n" $dd $dh $dm $ds
 
 echo "All unpatched fonts re-patched to their respective sub-directories in $patched_fonts_dir"
