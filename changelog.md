@@ -2,6 +2,23 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- v0.6.0
+  - Updated Font naming conventions and directory paths that are more manageable (partially fixes #32, #42)
+  - Updated Font variations to use same Font Family (partially fixes #25, #42)
+  - Updated Hack/Knack font to [v2.018](https://github.com/chrissimpkins/Hack/releases/tag/v2.018) (enhancement #39)
+  - Updated Source Code Pro (Sauce Code Pro) font to [v2.010/v1.030](https://github.com/adobe-fonts/source-code-pro/releases/tag/2.010R-ro%2F1.030R-it) (enhancement #33)
+  - Updated Octicons font to [v3.2.0](https://github.com/github/octicons/releases/tag/v3.2.0) plus latest master commits
+  - Updated readme with alternate OSX install and execution options (enhancement #38)
+  - Improved performance of 'Multiple Fonts Patcher (Gotta Patch 'em All Font Patcher!) by using parallelization (background processes) (enhancement #44)
+  - Added new flag/option to font patcher (--outputdir) to allow specifying where to save patched font instead of current directory (enhancement #44)
+  - Added 'Powerline Extra' symbols (enhancement #30, #35)
+  - Added more Glyphs from Vim-devicons glyph set (various folders, Go, Windows logo, Vim logo, etc)
+  - Fixed patched fonts not retaining glyph names (fixes #41)
+  - Fixed Ligatures being lost/overwritten when patching (fixes #43)
+  - Regenerated all patched fonts
+- v0.5.1
+  - Added Gitter chat badge
+  - Updated readme with badges
 - v0.5.0
   - Added Hack font (as 'Knack' for now) (enhancement PR #28) (@cheba)
   - Updated and improved all fonts patcher script (enhancement PR #27) (@cheba)
