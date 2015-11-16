@@ -2,6 +2,8 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- Unreleased/unversioned
+  - Fixes possible error with '--careful' flag (fixes #45)
 - v0.6.0
   - Updated Font naming conventions and directory paths that are more manageable (partially fixes #32, #42)
   - Updated Font variations to use same Font Family (partially fixes #25, #42)

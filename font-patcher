@@ -303,7 +303,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             if exactEncoding:
                 # use the exact same hex values for the source font as for the symbol font
                 currentSourceFontGlyph = sym_glyph.encoding
-                copiedToSlot = sym_glyph.glyphname
+                copiedToSlot = str(sym_glyph.unicode)
             else:
                 # use source font defined hex values based on passed in start and end
                 # convince that this string really is a hex:
@@ -312,8 +312,6 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
             if args.quiet == False:
                 print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + str(copiedToSlot)
-
-
 
             # Prepare symbol glyph dimensions
             sym_dim = get_dim(sym_glyph)
@@ -324,6 +322,10 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
             # check it
             if args.careful:
+
+                if copiedToSlot.startswith("uni"):
+                    copiedToSlot = copiedToSlot[3:]
+
                 codepoint = int("0x" + copiedToSlot, 16)
                 try:
                     sourceFont[codepoint]
