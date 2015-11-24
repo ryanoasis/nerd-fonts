@@ -32,6 +32,7 @@ End notice section
 	- [Usage](#usage)
 	- [Patched Fonts List](#patched-fonts)
 	- [Combinations](#combinations)
+    - [Font Installation](#font-installation)
 	- [Font Install Script (Linux & Mac OS X)](#font-install-script)
 	- [Font Patcher](#font-patcher)
 	- [Gotta Patch 'em All Font Patcher!](#gotta-patch-em-all)
@@ -136,6 +137,24 @@ See: [Font Patcher](#font-patcher) for usage
 
 Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 
+<a name="font-installation"></a>
+## Font Installation
+
+Put any font you would like to use into the `~/.local/share/fonts` (Linux) or `~/Library/Fonts/`(OS X) folder. For example:
+
+
+Linux
+```sh
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline%20Plus%20Nerd%20File%20Types.otf
+```
+
+deprecated alternate paths: `~/.fonts`
+
+OS X
+```sh
+cd ~/Library/Fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline%20Plus%20Nerd%20File%20Types.otf
+```
 ## Font Install Script
 * Linux & Mac OS X
 
@@ -275,3 +294,6 @@ Link References
 [img-version-badge]:https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts.svg
 [img-gitter-badge]:https://img.shields.io/badge/%E2%8A%AA%20GITTER%20-CHAT%20%E2%86%92-1dce73.svg?style=flat
 [img-flattr-badge]:https://img.shields.io/badge/donate-flattr%20this!-8DB65B.svg?style=flat
+
+
+
