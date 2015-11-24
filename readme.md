@@ -156,9 +156,13 @@ cd ~/Library/Fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf h
 ```
 ## Font Install Script
 
+Installs all of the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
+
 * Linux & Mac OS X
 
-	> ./install.sh
+```sh
+./install.sh
+```
 
 ### Examples
 
