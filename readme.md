@@ -19,7 +19,7 @@ End notice section
 | [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) |
 ***
 
-* A [fontforge python script](#font-patcher) to patch any font
+* A [FontForge python script](#font-patcher) to patch any font
 * Over **20** already [patched font families](#patched-fonts)
 * Over **2,000** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
@@ -191,7 +191,7 @@ Patching the font of your own choosing for use with the [vim-devicons](https://g
 ./font-patcher PATH_TO_FONT
 ```
 
-* Alternate usage: Alternately the patcher can be run through the fontforge binary using the script flag:
+* Alternate usage: Alternately the patcher can be run through the FontForge binary using the script flag:
 
 ```
 ./fontforge -script font-patcher PATH_TO_FONT
