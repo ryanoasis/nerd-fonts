@@ -2,8 +2,12 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
-- Unreleased/unversioned
-  - Fixes possible error with '--careful' flag (fixes #45)
+- v0.6.1
+  - Added 'font installation' section from [vim-devicons](https://github.com/ryanoasis/vim-devicons) with changes (enhancement PR #47) (@her)
+  - Improved various readme updates and fixes: Improved section headers, gitter badge, misc
+  - Fixed possible error with '--careful' flag (fixes #45)
+  - Fixed default font directory on linux install script to `~/.local/share/fonts` as the previous was deprecated (fix PR #51) (@shaief)
+  - Fixed broken curl download example (fixes #50)
 - v0.6.0
   - Updated Font naming conventions and directory paths that are more manageable (partially fixes #32, #42)
   - Updated Font variations to use same Font Family (partially fixes #25, #42)
