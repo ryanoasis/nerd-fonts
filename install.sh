@@ -10,7 +10,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   font_dir="$HOME/Library/Fonts"
 else
   # Linux
-  font_dir="$HOME/.fonts"
+  font_dir="$HOME/.local/share/fonts"
   mkdir -p "$font_dir"
 fi
 
