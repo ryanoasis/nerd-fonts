@@ -84,7 +84,7 @@ if args.single:
 sourceFont = fontforge.open(args.font)
 
 fontname, style = re.match("^([^-]*)(?:(-.*))?$", sourceFont.fontname).groups()
-style = style.replace('-', '')
+style = style.replace("-", "")
 
 familyname = sourceFont.familyname.replace(style, "").rstrip()
 # fullname (filename) can always use long/verbose font name, even in windows
