@@ -2,6 +2,20 @@
 	<img src="images/nerd-fonts-logo.png" alt="nerd fonts">
 </h1>
 
+[![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
+
+***
+| **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[Vim Plugin ➶][vim-devicons]** |
+|-----------------------------|------------------------------|----------------------------------|
+| [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) | [![vim-devicons-logo-small][img-visual-toc-vim-devicons]][vim-devicons] |
+***
+
+* A [FontForge python script](#font-patcher) to patch any font
+* Over **20** already [patched font families](#patched-fonts)
+* Over **2,000** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **1,000** glyphs/icons combined [(more details)](#combinations)
+* Originally created for use with [vim-devicons ➶][vim-devicons] vim plugin
+
 <!---
 Start notice section
 -->
@@ -10,20 +24,6 @@ Start notice section
 <!---
 End notice section
 -->
-
-[![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
-
-***
-| **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** |
-|-----------------------------|------------------------------|
-| [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) |
-***
-
-* A [FontForge python script](#font-patcher) to patch any font
-* Over **20** already [patched font families](#patched-fonts)
-* Over **2,000** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **1,000** glyphs/icons combined [(more details)](#combinations)
-* Originally created for use with [vim-devicons ➶][vim-devicons] vim plugin
 
 ## Table of Contents
 
@@ -306,3 +306,4 @@ Link References
 [img-version-badge]:https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts.svg
 [img-gitter-badge]:https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat
 [img-flattr-badge]:https://img.shields.io/badge/donate-flattr%20this!-8DB65B.svg?style=flat
+[img-visual-toc-vim-devicons]:https://raw.githubusercontent.com/wiki/ryanoasis/vim-devicons/screenshots/v1.0.0/branding-logo-sm.png
