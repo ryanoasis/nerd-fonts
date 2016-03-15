@@ -4,17 +4,21 @@
 
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
 
+**Nerd Fonts** is a project that attempts to patch as many developer targeted and/or used fonts as possible. The patch is to specifically add a high number of additional glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and others. 
+
+For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [vim-devicons ➶][vim-devicons].
+
 ***
 | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[Vim Plugin ➶][vim-devicons]** |
 |-----------------------------|------------------------------|----------------------------------|
 | [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) | [![vim-devicons-logo-small][img-visual-toc-vim-devicons]][vim-devicons] |
 ***
 
+Included in this repo:
 * A [FontForge python script](#font-patcher) to patch any font
 * Over **20** already [patched font families](#patched-fonts)
 * Over **2,000** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
-* Originally created for use with [vim-devicons ➶][vim-devicons] vim plugin
 
 <!---
 Start notice section
@@ -27,20 +31,19 @@ End notice section
 
 ## Table of Contents
 
-- [font nerd icons](#)
-	- [Glyph sets](#glyph-sets)
-	- [Usage](#usage)
-	- [Patched Fonts List](#patched-fonts)
-	- [Combinations](#combinations)
-	- [Font Installation](#font-installation)
-	- [Font Install Script (Linux & Mac OS X)](#font-install-script)
-	- [Font Patcher](#font-patcher)
-	- [Gotta Patch 'em All Font Patcher!](#gotta-patch-em-all)
-	- [Unstable file paths on master](#unstable-file-paths)
-	- [Other Good Fonts to Patch](#other-good-fonts-to-patch)
-	- [Rationale](#rationale)
-	- [Other](#other)
-	- [License](#license)
+- [Glyph sets](#glyph-sets)
+- [Usage](#usage)
+- [Patched Fonts List](#patched-fonts)
+- [Combinations](#combinations)
+- [Font Installation](#font-installation)
+- [Font Install Script (Linux & Mac OS X)](#font-install-script)
+- [Font Patcher](#font-patcher)
+- [Gotta Patch 'em All Font Patcher!](#gotta-patch-em-all)
+- [Unstable file paths on master](#unstable-file-paths)
+- [Other Good Fonts to Patch](#other-good-fonts-to-patch)
+- [Motivation](#motivation-original-rationale)
+- [Other](#other)
+- [License](#license)
 
 ## Glyph Sets
 
@@ -275,7 +278,7 @@ optional arguments:
    * Coming soon with external hosting :)
  * [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
 
-## Rationale
+## Motivation (Original Rationale)
 
 * Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
 
@@ -294,6 +297,7 @@ see [LICENSE](LICENSE)
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
+[wiki]:https://github.com/ryanoasis/nerd-fonts/wiki
 
 <!---
 Link References
