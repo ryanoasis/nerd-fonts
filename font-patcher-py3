@@ -53,8 +53,8 @@ actualVersion = int(fontforge.version())
 # versions tested: 20150612, 20150824
 
 if actualVersion < minimumVersion:
-    print projectName + ": You seem to be using an unsupported (old) version of fontforge: " + str(actualVersion)
-    print projectName + ": Please use at least version: " + str(minimumVersion)
+    print(projectName + ": You seem to be using an unsupported (old) version of fontforge: " + str(actualVersion))
+    print(projectName + ": Please use at least version: " + str(minimumVersion))
     sys.exit(1)
 
 
@@ -112,7 +112,7 @@ try:
     # now we have the correct item:
     subFamily = sourceFont.sfnt_names[sfntNamesStringIDIndex][subFamilyTupleIndex]
 except IndexError:
-    print projectName + ": Could not find 'SubFamily' for given font, falling back to parsed fontname"
+    print(projectName + ": Could not find 'SubFamily' for given font, falling back to parsed fontname")
     subFamily = fallbackStyle
 
 # some fonts have inaccurate 'SubFamily', if it is Regular let us trust the filename more:
@@ -137,7 +137,7 @@ else:
 # rename font
 
 def replace_all(text, dic):
-    for i, j in dic.iteritems():
+    for i, j in dic.items():
         text = text.replace(i, j)
     return text
 
@@ -281,7 +281,7 @@ font_dim = {
 #
 # 0x00-0x17f is the Latin Extended-A range
 # 0x2500-0x2600 is the box drawing range
-for glyph in range(0x00, 0x17f) + range(0x2500, 0x2600):
+for glyph in list(range(0x00, 0x17f)) + list(range(0x2500, 0x2600)):
 	try:
 		(xmin, ymin, xmax, ymax) = sourceFont[glyph].boundingBox()
 	except TypeError:
@@ -323,7 +323,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         sourceFontList = []
         sourceFontCounter = 0
 
-        for i in xrange(sourceFontStart, sourceFontEnd + 1):
+        for i in range(sourceFontStart, sourceFontEnd + 1):
             sourceFontList.append(format(i, 'X'))
 
     # Create glyphs from symbol font
@@ -339,7 +339,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             if exactEncoding:
                 # use the exact same hex values for the source font as for the symbol font
                 currentSourceFontGlyph = sym_glyph.encoding
-                copiedToSlot = str(sym_glyph.unicode)
+                copiedToSlot = str(sym_glyph.str)
             else:
                 # use source font defined hex values based on passed in start and end
                 # convince that this string really is a hex:
@@ -347,7 +347,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                 copiedToSlot = sourceFontList[sourceFontCounter]
 
             if args.quiet == False:
-                print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + str(copiedToSlot)
+                print("updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + str(copiedToSlot))
 
             # Prepare symbol glyph dimensions
             sym_dim = get_dim(sym_glyph)
@@ -477,6 +477,6 @@ extension = os.path.splitext(sourceFont.path)[1]
 # '.comment' and '.fontlog'.
 sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
 
-print "Generated"
-print sourceFont.fullname
+print("Generated")
+print(sourceFont.fullname)
 
