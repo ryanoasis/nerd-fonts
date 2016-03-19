@@ -72,25 +72,49 @@ if args.pomicons:
 
 # if all source glyphs included simplify the name
 if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra:
-    additionalFontNameSuffix = " Nerd Font Complete"
-    verboseAdditionalFontNameSuffix = " Nerd Font Complete"
+    additionalFontNameSuffix = " " + projectNameSingular + " Complete"
+    verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
 
 # add mono signifier to end of name
 if args.single:
     additionalFontNameSuffix += " Mono"
     verboseAdditionalFontNameSuffix += " Mono"
 
-
 sourceFont = fontforge.open(args.font)
 
-fontname, style = re.match("^([^-]*)(?:(-.*))?$", sourceFont.fontname).groups()
-familyname = sourceFont.familyname
+# basically split the font name around the dash "-" to get the fontname and the style (e.g. Bold)
+# this does not seem very reliable so only use the style here as a fallback if the font does not
+# have an internal style defined (in sfnt_names)
+# using '([^-]*?)' to get the item before the first dash "-"
+# using '([^-]*(?!.*-))' to get the item after the last dash "-"
+fontname, fallbackStyle = re.match("^([^-]*).*?([^-]*(?!.*-))$", sourceFont.fontname).groups()
+# dont trust 'sourceFont.familyname'
+familyname = fontname
 # fullname (filename) can always use long/verbose font name, even in windows
 fullname = sourceFont.fullname + verboseAdditionalFontNameSuffix
 fontname = fontname + additionalFontNameSuffix.replace(" ", "")
 
+# let us try to get the 'style' from the font info in sfnt_names and fallback to the
+# parse fontname if it fails:
+try:
+    # search tuple:
+    subFamilyTupleIndex = [x[1] for x in sourceFont.sfnt_names].index("SubFamily")
+    # String ID is at the second index in the Tuple lists
+    sfntNamesStringIDIndex = 2
+    # now we have the correct item:
+    subFamily = sourceFont.sfnt_names[sfntNamesStringIDIndex][subFamilyTupleIndex]
+except IndexError:
+    print projectName + ": Could not find 'SubFamily' for given font, falling back to parsed fontname"
+    subFamily = fallbackStyle
+
+# some fonts have inaccurate 'SubFamily', if it is Regular let us trust the filename more:
+if subFamily == "Regular":
+    subFamily = fallbackStyle
+
+
 if args.windows:
     maxLength = 31
+    familyname += " " + projectNameAbbreviation
     fullname += " Windows Compatible"
     # now make sure less than 32 characters name length
     #if len(fullname) > maxLength:
@@ -99,6 +123,8 @@ if args.windows:
         fontname = fontname[:maxLength]
     if len(fullname) > maxLength:
         familyname = familyname[:maxLength]
+else:
+    familyname += " " + projectNameSingular
 
 # rename font
 
@@ -127,6 +153,7 @@ sourceFont.fullname = replace_all(fullname, reservedFontNameReplacements)
 sourceFont.fontname = replace_all(fontname, reservedFontNameReplacements)
 sourceFont.appendSFNTName('English (US)', 'Preferred Family', sourceFont.familyname)
 sourceFont.appendSFNTName('English (US)', 'Compatible Full', sourceFont.fullname)
+sourceFont.appendSFNTName('English (US)', 'SubFamily', subFamily)
 sourceFont.comment = projectInfo
 sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
 
