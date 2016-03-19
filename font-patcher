@@ -100,7 +100,7 @@ fontname, fallbackStyle = re.match("^([^-]*).*?([^-]*(?!.*-))$", sourceFont.font
 familyname = fontname
 # fullname (filename) can always use long/verbose font name, even in windows
 fullname = sourceFont.fullname + verboseAdditionalFontNameSuffix
-fontname = fontname + additionalFontNameSuffix.replace(" ", "")
+fontname = fontname + additionalFontNameSuffix.replace(" ", "") + "-" + style
 
 # let us try to get the 'style' from the font info in sfnt_names and fallback to the
 # parse fontname if it fails:
