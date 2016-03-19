@@ -2,20 +2,31 @@
 # coding=utf8
 # version: 0.6.0
 
+version = "0.6.0"
+projectName = "Nerd Fonts"
+projectNameAbbreviation = "NF"
+projectNameSingular = projectName[:-1]
+
 import sys
-import psMat
+
+try:
+    import psMat
+except ImportError:
+    sys.stderr.write(projectName + ": FontForge module is probably not installed. [See: http://designwithfontforge.com/en-US/Installing_Fontforge.html]\n")
+    sys.exit(1)
+
 import re
 import os
 import argparse
 import errno
 
 try:
-	#Load the module
-	import fontforge
+    #Load the module
+    import fontforge
 
 except ImportError:
-	sys.stderr.write("FontForge module could not be loaded. Try installing fontforge python bindings\n")
-	sys.exit(1)
+    sys.stderr.write(projectName + ": FontForge module could not be loaded. Try installing fontforge python bindings [e.g. on Linux Debian or Ubuntu: `sudo apt-get install fontforge python-fontforge`]\n")
+    sys.exit(1)
 
 # argparse stuff
 
@@ -33,28 +44,25 @@ parser.add_argument('--careful', dest='careful', action='store_true', help='Do n
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
 args = parser.parse_args()
 
-#print "using fontforge package version: " + str(fontforge.__version__) + " " + str(fontforge.version())
-#print type(fontforge.version())
-#print int(fontforge.version())
 
-version = "0.6.0"
 changelog = open("changelog.md", "r")
 minimumVersion = 20141231
 actualVersion = int(fontforge.version())
-#actualVersion = 20120731 # for testing invalid version
+# un-comment following line for testing invalid version error handling
+#actualVersion = 20120731
 # versions tested: 20150612, 20150824
 
 if actualVersion < minimumVersion:
-    print "You seem to be using an unsupported (old) version of fontforge: " + str(actualVersion)
-    print "Please use at least version: " + str(minimumVersion)
+    print projectName + ": You seem to be using an unsupported (old) version of fontforge: " + str(actualVersion)
+    print projectName + ": Please use at least version: " + str(minimumVersion)
     sys.exit(1)
 
 
-verboseAdditionalFontNameSuffix = " Nerd Font"
+verboseAdditionalFontNameSuffix = " " + projectNameSingular
 
 if args.windows:
     # attempt to shorten here on the additional name BEFORE trimming later
-    additionalFontNameSuffix = " NF"
+    additionalFontNameSuffix = " " + projectNameAbbreviation
 else:
     additionalFontNameSuffix = verboseAdditionalFontNameSuffix
 
@@ -146,7 +154,7 @@ make_sure_path_exists(args.outputdir)
 # comply with SIL Open Font License (OFL)
 reservedFontNameReplacements = { 'source': 'sauce', 'Source': 'Sauce', 'hermit': 'hurmit', 'Hermit': 'Hurmit', 'fira': 'fura', 'Fira': 'Fura', 'hack': 'knack', 'Hack': 'Knack' }
 
-projectInfo = "Patched with 'Nerd Fonts Patcher' (https://github.com/ryanoasis/nerd-fonts)"
+projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)"
 
 sourceFont.familyname = replace_all(familyname, reservedFontNameReplacements)
 sourceFont.fullname = replace_all(fullname, reservedFontNameReplacements)
@@ -159,7 +167,7 @@ sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
 
 # todo version not being set for all font types (e.g. ttf)
 #print "Version was " + sourceFont.version
-sourceFont.version += ";Nerd Fonts " + version
+sourceFont.version += ";" + projectName + " " + version
 #print "Version now is " + sourceFont.version
 
 # glyph font
@@ -324,6 +332,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
     sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
 
     for sym_glyph in symbolFont.selection.byGlyphs:
+
             #sym_attr = SYM_ATTR[sym_glyph.unicode]
             glyphName = sym_glyph.glyphname
 
