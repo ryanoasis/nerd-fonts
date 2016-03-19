@@ -231,7 +231,7 @@ symbolsDeviconsRangeStart = 0xE600
 symbolsDeviconsRangeEnd = 0xE6C5
 
 symbolsFontAwesomeRangeStart = 0xF000
-symbolsFontAwesomeRangeEnd = 0xF280
+symbolsFontAwesomeRangeEnd = 0xF295
 
 symbolsOcticonsRangeStart = 0xF000
 symbolsOcticonsRangeEnd = 0xF0DB
@@ -247,7 +247,7 @@ sourceFontDeviconsStart = 0xE700
 sourceFontDeviconsEnd = 0xE7C5
 
 sourceFontFontAwesomeStart = 0xF000
-sourceFontFontAwesomeEnd = 0xF280
+sourceFontFontAwesomeEnd = 0xF295
 
 sourceFontOcticonsStart = 0xF400
 sourceFontOcticonsEnd = 0xF4DB
