@@ -4,21 +4,28 @@
 
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
 
-**Nerd Fonts** is a project that attempts to patch as many developer targeted and/or used fonts as possible. The patch is to specifically add a high number of additional glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and others. 
+**Nerd Fonts** is a project that attempts to patch as many developer targeted and/or used fonts as possible. The patch is to specifically add a high number of additional glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and others.
 
 For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [vim-devicons ➶][vim-devicons].
 
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/sankey-glyphs-combined-diagram.png)
+
+<sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
+
+
+## Quick Links
 ***
 | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[Vim Plugin ➶][vim-devicons]** |
 |-----------------------------|------------------------------|----------------------------------|
 | [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) | [![vim-devicons-logo-small][img-visual-toc-vim-devicons]][vim-devicons] |
 ***
 
-Included in this repo:
+## Features
 * A [FontForge python script](#font-patcher) to patch any font
 * Over **20** already [patched font families](#patched-fonts)
 * Over **2,000** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
+* A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
 <!---
 Start notice section
@@ -141,11 +148,6 @@ See: [Font Patcher](#font-patcher) for usage
     * [GitHub Octicons][octicons]
     * [Pomicons][gabrielelana-pomicons]
 
-## Glyphs Combined
-
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/sankey-glyphs-combined-diagram.png)
-
-Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 
 ## Font Installation
 
