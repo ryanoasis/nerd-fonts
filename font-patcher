@@ -31,6 +31,7 @@ except ImportError:
 # argparse stuff
 
 parser = argparse.ArgumentParser(description='Patches a given font with programming and web development related glyphs (mainly for https://github.com/ryanoasis/vim-devicons)')
+parser.add_argument('-v', '--version', action='version', version=projectName + ": %(prog)s ("+version+")")
 parser.add_argument('font', help='The path to the font to be patched (e.g. Inconsolata.otf)')
 parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
