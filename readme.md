@@ -50,29 +50,29 @@ End notice section
 ### Seti-UI + Custom
 > Based off of [Seti-UI] Icomoon with additional custom glyphs added from various sources.
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-1.png)
 
 ### [Devicons][vorillaz-devicons]
 > An iconic font made for developers, code jedis, ninjas, HTTPsters, evangelists and nerds(sic). / ([repo][vorillaz-devicons]) / ([website](http://vorillaz.github.io/devicons))
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-2.png)
 
 ### [Font Awesome][font-awesome]
 > The iconic font and CSS toolkit. / ([repo][font-awesome]) / ([website](https://fortawesome.github.io/Font-Awesome))
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-font-awesome-1.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-font-awesome-2.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-font-awesome-3.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-font-awesome-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-font-awesome-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-font-awesome-3.png)
 
 ### [Octicons][octicons]
 > GitHub's icons. / ([repo][octicons]) / ([website](https://octicons.github.com))
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-octicons.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-octicons.png)
 
 ### [Pomicons][gabrielelana-pomicons]
 > 8 symbols for the ["Pomodoro Technique"®](http://pomodorotechnique.com). / ([repo][gabrielelana-pomicons])
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/fontforge-glyph-set-pomicons.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-pomicons.png)
 
 ### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 > Provides additional Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
@@ -143,7 +143,7 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Glyphs Combined
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.6.x/sankey-glyphs-combined-diagram.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/sankey-glyphs-combined-diagram.png)
 
 Diagram created using [@SankeyMATIC](http://sankeymatic.com/)
 
@@ -268,7 +268,7 @@ optional arguments:
 | Please make sure to reference via the **release** branch and _not_ the ~~**master**~~ branch because paths are subject to being improved/changed per release |
 | For example (paths shorted for demonstation purposes): |
 | Instead of: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DroidSansMono/< font_path >.otf~~ |
-| Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.6.0/patched-fonts/DroidSansMono/< font_path >.otf |
+| Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.7.0/patched-fonts/DroidSansMono/< font_path >.otf |
 
 
 ## Other Good Fonts to Patch
