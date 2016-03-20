@@ -105,7 +105,7 @@ See: [Font Patcher](#font-patcher) for usage
 | Font Name                                                                   | Reserved Font Name | EM Size | Status |
 |-----------------------------------------------------------------------------|--------------------|---------|--------|
 | [3270 Nerd Font](patched-fonts/3270)                                        |                    |   1000  | [TEST] |
-| [Anonymice Powerline Nerd Font](patched-fonts/AnonymousPro)                 | Anonymous Pro      |   2048  | [TEST] |
+| [Anonymice Powerline Nerd Font](patched-fonts/AnonymousPro)                 | [Anonymous Pro][font-anonymous-pro] |   2048  | [TEST] |
 | [Aurulent Sans Mono Nerd Font](patched-fonts/AurulentSansMono)              |                    |   1000  | [TEST] |
 | [Bitstream Vera Sans Mono Nerd Font](patched-fonts/BitstreamVeraSansMono)   |                    |   2048  | [TEST] |
 | [DejaVu Sans Mono Nerd Font](patched-fonts/DejaVuSansMono)                  |                    |   2048  | [TEST] |
@@ -114,17 +114,17 @@ See: [Font Patcher](#font-patcher) for usage
 | [Heavy Data Mono for Powerline Nerd Font](patched-fonts/HeavyData)          |                    |   2048  | [TEST] |
 | [Hermut Nerd Font](patched-fonts/Hermit)                                    |                    |   1000  | [TEST] |
 | [Inconsolata for Powerline Nerd Font](patched-fonts/Inconsolata)            |                    |   1000  | [TEST] |
-| [Knack Nerd Font](patched-fonts/Hack)                                       | Hack               |   2048  | [TEST] |
+| [Knack Nerd Font](patched-fonts/Hack)                                       | [Hack][font-hack]  |   2048  | [#70](https://github.com/ryanoasis/nerd-fonts/issues/70) |
 | [Lekton for Powerline Nerd Font](patched-fonts/Lekton)                      |                    |   1000  | [TEST] |
-| [Literation Mono for Powerline Nerd Font](patched-fonts/LiberationMono)     | Liberation         |   2048  | [TEST] |
+| [Literation Mono for Powerline Nerd Font](patched-fonts/LiberationMono)     | [Liberation][font-liberation]         |   2048  | [TEST] |
 | [Meslo for Powerline Nerd Font](patched-fonts/Meslo)                        |                    |   2048  | [TEST] |
 | [Monofur for Powerline Nerd Font](patched-fonts/Monofur)                    |                    |   2400  | [TEST] |
 | [M+ (MPlus) for Powerline Nerd Font](patched-fonts/MPlus)                   |                    |   1000  | [TEST] |
 | [ProFont (Windows tweaked) for Powerline Nerd Font](patched-fonts/Profont)  |                    |   1200  | [TEST] |
 | [ProFont (x11) for Powerline Nerd Font](patched-fonts/ProFont)              |                    |   1000  | [FAILING] |
 | [ProggyCleanTT Nerd Font](patched-fonts/ProggyClean)                        |                    |   2048  | [FAILING] |
-| [Sauce Code Powerline Nerd Font](patched-fonts/SourceCodePro)               | Source             |   1000  | [TEST] |
-| [Terminess for Powerline Nerd Font](patched-fonts/Terminus)                 | Terminus Font      |   1000  | [FAILING](https://github.com/ryanoasis/nerd-fonts/issues/16) |
+| [Sauce Code Powerline Nerd Font](patched-fonts/SourceCodePro)               | [Source][font-source]|   1000  | [TEST] |
+| [Terminess for Powerline Nerd Font](patched-fonts/Terminus)                 | [Terminus Font][font-terminus]      |   1000  | [#16](https://github.com/ryanoasis/nerd-fonts/issues/16) |
 | [Ubuntu Mono derivative Powerline Nerd Font](patched-fonts/UbuntuMono)      |                    |   1000  | [TEST] |
 | [Ubuntu Mono Nerd Font](patched-fonts/UbuntuMono)                           |                    |   1000  | [TEST] |
 
@@ -313,3 +313,13 @@ Link References
 [img-gitter-badge]:https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat
 [img-flattr-badge]:https://img.shields.io/badge/donate-flattr%20this!-8DB65B.svg?style=flat
 [img-visual-toc-vim-devicons]:https://raw.githubusercontent.com/wiki/ryanoasis/vim-devicons/screenshots/v1.0.0/branding-logo-sm.png
+
+<!--
+Font repos
+-->
+
+[font-hack]:https://github.com/chrissimpkins/Hack
+[font-anonymous-pro]:http://www.marksimonson.com/fonts/view/anonymous-pro
+[font-source]:https://github.com/adobe-fonts/source-code-pro
+[font-liberation]:https://fedorahosted.org/liberation-fonts
+[font-terminus]:http://terminus-font.sourceforge.net
