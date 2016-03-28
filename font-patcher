@@ -120,6 +120,7 @@ except IndexError:
 if subFamily == "Regular":
     subFamily = fallbackStyle
 
+fontname += " - " + subFamily
 
 if args.windows:
     maxLength = 31
