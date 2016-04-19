@@ -22,8 +22,8 @@ For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [v
 
 ## Features
 * A [FontForge python script](#font-patcher) to patch any font
-* Over **20** already [patched font families](#patched-fonts)
-* Over **2,000** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **24** already [patched font families](#patched-fonts)
+* Over **2,700** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
@@ -110,19 +110,22 @@ See: [Font Patcher](#font-patcher) for usage
 | [Bitstream Vera Sans Mono Nerd Font](patched-fonts/BitstreamVeraSansMono)   |                    |   2048  | [TEST] |
 | [DejaVu Sans Mono Nerd Font](patched-fonts/DejaVuSansMono)                  |                    |   2048  | [TEST] |
 | [Droid Sans Mono for Powerline Nerd Font](patched-fonts/DroidSansMono)      |                    |   2048  | [TEST] |
-| [Fira Mono for Powerline Nerd Font](patched-fonts/FiraMono)                 |                    |   1000  | [TEST] |
+| [Fura Code Nerd Font](patched-fonts/FiraCode)                               | [Fira][font-fira-code] |   1000  | [TEST] |
+| [Fura Mono for Powerline Nerd Font](patched-fonts/FiraMono)                 | [Fira][font-fira-mono] |   1000  | [TEST] |
 | [Heavy Data Mono for Powerline Nerd Font](patched-fonts/HeavyData)          |                    |   2048  | [TEST] |
 | [Hermut Nerd Font](patched-fonts/Hermit)                                    |                    |   1000  | [TEST] |
 | [Inconsolata for Powerline Nerd Font](patched-fonts/Inconsolata)            |                    |   1000  | [TEST] |
 | [Knack Nerd Font](patched-fonts/Hack)                                       | [Hack][font-hack]  |   2048  | [#70](https://github.com/ryanoasis/nerd-fonts/issues/70) |
 | [Lekton for Powerline Nerd Font](patched-fonts/Lekton)                      |                    |   1000  | [TEST] |
-| [Literation Mono for Powerline Nerd Font](patched-fonts/LiberationMono)     | [Liberation][font-liberation]         |   2048  | [TEST] |
+| [Literation Mono for Powerline Nerd Font](patched-fonts/LiberationMono)     | [Liberation][font-liberation] |   2048  | [TEST] |
 | [Meslo for Powerline Nerd Font](patched-fonts/Meslo)                        |                    |   2048  | [TEST] |
 | [Monofur for Powerline Nerd Font](patched-fonts/Monofur)                    |                    |   2400  | [TEST] |
+| [Monoid Nerd Font](patched-fonts/Monoid)                                    |                    |   1536  | [TEST] |
 | [M+ (MPlus) for Powerline Nerd Font](patched-fonts/MPlus)                   |                    |   1000  | [TEST] |
 | [ProFont (Windows tweaked) for Powerline Nerd Font](patched-fonts/Profont)  |                    |   1200  | [TEST] |
 | [ProFont (x11) for Powerline Nerd Font](patched-fonts/ProFont)              |                    |   1000  | [FAILING] |
-| [ProggyCleanTT Nerd Font](patched-fonts/ProggyClean)                        |                    |   2048  | [FAILING] |
+| [ProggyClean Nerd Font](patched-fonts/ProggyClean)                          |                    |   2048  | [FAILING] |
+| [Roboto Mono](patched-fonts/RobotoMono)                                     |                    |   2048  | [FAILING] |
 | [Sauce Code Powerline Nerd Font](patched-fonts/SourceCodePro)               | [Source][font-source]|   1000  | [TEST] |
 | [Terminess for Powerline Nerd Font](patched-fonts/Terminus)                 | [Terminus Font][font-terminus]      |   1000  | [#16](https://github.com/ryanoasis/nerd-fonts/issues/16) |
 | [Ubuntu Mono derivative Powerline Nerd Font](patched-fonts/UbuntuMono)      |                    |   1000  | [TEST] |
@@ -137,10 +140,10 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Combinations
 
-* Over 2,000 unique variations/combinations (Power Set) of patched fonts:
- * 57 font variations (just counting otf and ttf)
+* Over 2,700 unique variations/combinations (Power Set) of patched fonts:
+ * 77 font variations (just counting otf and ttf)
  * 36 combinations (Powerline Extra included by default currently)
- * Calculated combinations (36 * 57) = 2,052
+ * Calculated combinations (36 * 77) = 2,772
  * Combinations for each font are any combination of (plus no flags option):
     * Monospaced extra glyphs
     * Windows Compatible
@@ -323,3 +326,6 @@ Font repos
 [font-source]:https://github.com/adobe-fonts/source-code-pro
 [font-liberation]:https://fedorahosted.org/liberation-fonts
 [font-terminus]:http://terminus-font.sourceforge.net
+[font-fira-mono]:https://github.com/mozilla/Fira
+[font-fira-code]:https://github.com/tonsky/FiraCode
+[font-monoid]:https://github.com/larsenwork/monoid

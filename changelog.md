@@ -2,6 +2,22 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- v0.7.0
+  - Added 3 new fonts:
+    - Monoid (enhancement #54)
+    - Roboto Mono (enhancement #55)
+    - Fira Code (enhancement PR #62, fixes #59) (@jrolfs)
+  - Added 1 new font variant:
+    - Proggy Clean (Slashed Zero) (fixes #69)
+  - Added contributing and issue PR templates (enhancement #66)
+  - Added Python 3 version of the font-patcher script (fixes #49)
+  - Improved explanation of font choices (complete vs alternative vs minimal choices) with bash script to maintain (fixes #52)
+  - Updated Hack to v2.019 (fixes #53)
+  - Updated Font Awesome to the latest version v4.5.0 (20 new icons) (fixes #48):
+    - https://github.com/FortAwesome/Font-Awesome/releases/tag/v4.5.0
+    - https://github.com/FortAwesome/Font-Awesome/issues?q=milestone%3A4.5.0
+  - Fixed fonts showing as duplicates in OS X Font Book (fixes #56, enhancement PR #61) (@jrolfs)
+  - Fixed Powerline Symbols not being applied correctly to patched fonts since v0.5.0 (fixes #68, fix PR #71) (@F1LT3R)
 - v0.6.1
   - Added 'font installation' section from [vim-devicons](https://github.com/ryanoasis/vim-devicons) with changes (enhancement PR #47) (@her)
   - Improved various readme updates and fixes: Improved section headers, gitter badge, misc
