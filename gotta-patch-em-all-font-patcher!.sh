@@ -55,14 +55,24 @@ function patch_font_batch {
   patch_font "$@" -q -s -w
 }
 
-#cd temp-generated-fonts/
-
 # Use for loop iterate through source fonts
 # $f stores current value
 for f in "${source_fonts[@]}"
 do
   echo "$f"
-  if [[ "$f" =~ Hack ]] || [[ "$f" =~ SourceCodePro ]]
+  config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
+  config_dir=$( cd "$( dirname "$f" )" && pwd)
+
+  # source the font config file if exists:
+  if [ -f "$config_dir/config.cfg" ]
+  then
+    source "$config_dir/config.cfg"
+  elif [ -f "$config_parent_dir/config.cfg" ]
+  then
+    source "$config_parent_dir/config.cfg"
+  fi
+
+  if [ $config_has_powerline ]
   then
     powerline=""
   else
