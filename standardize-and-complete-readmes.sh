@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 0.7.0
+# version: 0.8.0
 # Iterates over all patched fonts directories
 # converts all non markdown readmes to markdown (e.g. txt, rst) using pandoc
 # adds information on minimal, alternative, and complete font variations

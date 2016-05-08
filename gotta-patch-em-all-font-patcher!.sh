@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 0.7.0
+# version: 0.8.0
 
 # Check for Fontforge
 type fontforge >/dev/null 2>&1 || {
