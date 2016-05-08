@@ -89,6 +89,10 @@ do
   patch_font_batch "$f" "additional-variations/" $powerline --octicons &
   patch_font_batch "$f" "additional-variations/" $powerline --octicons --powerlineextra &
 
+  # font linux variations:
+  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux &
+  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux --powerlineextra &
+
   # pomicon variations:
   patch_font_batch "$f" "additional-variations/" $powerline --pomicons &
   patch_font_batch "$f" "additional-variations/" $powerline --pomicons --powerlineextra &
@@ -101,15 +105,30 @@ do
   patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --pomicons &
   patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --pomicons --powerlineextra &
 
+  # fontawesome + fontlinux variations:
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --fontlinux &
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --fontlinux --powerlineextra &
+
+  # fontlinux + pomicons variations:
+  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux --pomicons &
+  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux --pomicons --powerlineextra &
+
   # octicons + pomicons variations:
   patch_font_batch "$f" "additional-variations/" $powerline --octicons --pomicons &
   patch_font_batch "$f" "additional-variations/" $powerline --octicons --pomicons --powerlineextra &
 
+  # octicons + fontlinux variations:
+  patch_font_batch "$f" "additional-variations/" $powerline --octicons --fontlinux &
+  patch_font_batch "$f" "additional-variations/" $powerline --octicons --fontlinux --powerlineextra &
+
   # fontawesome + octicons + pomicons variations:
   patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons --pomicons &
 
-  # fontawesome + octicons + pomicons + powerlineextra variations:
-  patch_font_batch "$f" "complete/" $powerline --fontawesome --octicons --pomicons --powerlineextra &
+  # fontawesome + octicons + pomicons + fontlinux variations:
+  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons --pomicons --fontlinux &
+
+  # fontawesome + octicons + pomicons + powerlineextra variations (aka Complete):
+  patch_font_batch "$f" "complete/" $powerline --fontawesome --octicons --pomicons --powerlineextra --fontlinux &
 
 
   # un-comment to test this script (patch 1 font)

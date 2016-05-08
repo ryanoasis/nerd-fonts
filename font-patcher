@@ -36,8 +36,9 @@ parser.add_argument('font', help='The path to the font to be patched (e.g. Incon
 parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
 parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows', action='store_true', help='Limit the internal font name to a maximum of 31 characters (for safe Windows compatiblity)', default=False)
-parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome/)', default=False)
-parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com/)', default=False)
+parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)', default=False)
+parser.add_argument('--fontlinux', dest='fontlinux', action='store_true', help='Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)', default=False)
+parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)', default=False)
 parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
@@ -79,8 +80,12 @@ if args.pomicons:
     additionalFontNameSuffix += " Plus Pomicons"
     verboseAdditionalFontNameSuffix += " Plus Pomicons"
 
+if args.fontlinux:
+    additionalFontNameSuffix += " Plus Font Linux"
+    verboseAdditionalFontNameSuffix += " Plus Font Linux"
+
 # if all source glyphs included simplify the name
-if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra:
+if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra and args.fontlinux:
     additionalFontNameSuffix = " " + projectNameSingular + " Complete"
     verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
 
@@ -200,10 +205,18 @@ if args.pomicons:
     pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
     pomicons.em = sourceFont.em
 
+if args.fontlinux:
+    fontlinux = fontforge.open("glyph-source-fonts/font-linux.ttf")
+    fontlinux.em = sourceFont.em
+    fontlinuxExactEncodingPosition = True
+
 # Prevent glyph encoding position conflicts between glyph sets
 
 if args.fontawesome and args.octicons:
     octiconsExactEncodingPosition = False
+
+if args.fontawesome or args.octicons:
+    fontlinuxExactEncodingPosition = False
 
 # Define the character ranges
 
@@ -238,6 +251,9 @@ symbolsFontAwesomeRangeEnd = 0xF295
 symbolsOcticonsRangeStart = 0xF000
 symbolsOcticonsRangeEnd = 0xF0DB
 
+symbolsFontLinuxRangeStart = 0xF100
+symbolsFontLinuxRangeEnd = 0xF115
+
 # Destination font ranges
 sourceFontPomiconsStart = 0xE000
 sourceFontPomiconsEnd = 0xE00A
@@ -253,6 +269,9 @@ sourceFontFontAwesomeEnd = 0xF295
 
 sourceFontOcticonsStart = 0xF400
 sourceFontOcticonsEnd = 0xF4DB
+
+sourceFontFontLinuxStart = 0xF300
+sourceFontFontLinuxEnd = 0xF315
 
 
 SYM_ATTR = {
@@ -472,6 +491,9 @@ if args.octicons:
 
 if args.pomicons:
     copy_glyphs(sourceFont, sourceFontPomiconsStart, sourceFontPomiconsEnd, pomicons, symbolsPomiconsRangeStart, symbolsPomiconsRangeEnd)
+
+if args.fontlinux:
+    copy_glyphs(sourceFont, sourceFontFontLinuxStart, sourceFontFontLinuxEnd, fontlinux, symbolsFontLinuxRangeStart, symbolsFontLinuxRangeEnd, fontlinuxExactEncodingPosition)
 
 extension = os.path.splitext(sourceFont.path)[1]
 

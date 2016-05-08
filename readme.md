@@ -76,15 +76,20 @@ End notice section
 
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-octicons.png)
 
-### [Pomicons][gabrielelana-pomicons]
-> 8 symbols for the ["Pomodoro Technique"®](http://pomodorotechnique.com). / ([repo][gabrielelana-pomicons])
-
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-pomicons.png)
-
 ### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 > Provides additional Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
 
 ![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
+
+### [Font Linux][font-linux]
+> Font-linux is an icon font containing logos of popular linux distributions for inclusion in websites. / ([repo][font-linux])
+
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-font-linux.png)
+
+### [Pomicons][gabrielelana-pomicons]
+> 8 symbols for the ["Pomodoro Technique"®](http://pomodorotechnique.com). / ([repo][gabrielelana-pomicons])
+
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.7.x/fontforge-glyph-set-pomicons.png)
 
 ## Usage
 
@@ -139,6 +144,7 @@ See: [Font Patcher](#font-patcher) for usage
  * extra glyphs that are *double* or *single* (monospaced) width
  * [Font Awesome][font-awesome]
  * [GitHub Octicons][octicons]
+ * [Font Linux][font-linux]
  * [Pomicons][gabrielelana-pomicons]
  * Full Windows Compatibility (WIP)
 
@@ -153,6 +159,7 @@ See: [Font Patcher](#font-patcher) for usage
     * Windows Compatible
     * [Font Awesome][font-awesome]
     * [GitHub Octicons][octicons]
+    * [Font Linux][font-linux]
     * [Pomicons][gabrielelana-pomicons]
 
 
@@ -211,9 +218,9 @@ Patching the font of your own choosing for use with the [vim-devicons](https://g
 
 
 ```
-usage: font-patcher [-h] [-s] [-q] [-w] [--fontawesome] [--octicons]
-                    [--pomicons] [--powerline] [--powerlineextra] [--careful]
-                    [-out [OUTPUTDIR]]
+usage: font-patcher [-h] [-v] [-s] [-q] [-w] [--fontawesome] [--fontlinux]
+                    [--octicons] [--pomicons] [--powerline] [--powerlineextra]
+                    [--careful] [-out [OUTPUTDIR]]
                     font
 
 Patches a given font with programming and web development related glyphs
@@ -225,6 +232,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
   -s, --use-single-width-glyphs
                         Whether to generate the glyphs as single-width not
                         double-width (default is double-width)
@@ -234,8 +242,10 @@ optional arguments:
                         Limit the internal font name to a maximum of 31
                         characters (for safe Windows compatiblity)
   --fontawesome         Add Font Awesome Glyphs (http://fortawesome.github.io
-                        /Font-Awesome/)
-  --octicons            Add Octicons Glyphs (https://octicons.github.com/)
+                        /Font-Awesome)
+  --fontlinux           Add Font Linux Glyphs (https://github.com/Lukas-W
+                        /font-linux)
+  --octicons            Add Octicons Glyphs (https://octicons.github.com)
   --pomicons            Add Pomicon Glyphs
                         (https://github.com/gabrielelana/pomicons)
   --powerline           Add Powerline Glyphs
@@ -299,16 +309,21 @@ optional arguments:
 
 see [LICENSE](LICENSE)
 
+<!--
+Repo References
+-->
+
 [vim-devicons]:https://github.com/ryanoasis/vim-devicons
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [octicons]:https://github.com/github/octicons
+[font-linux]:https://github.com/Lukas-W/font-linux
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
 [wiki]:https://github.com/ryanoasis/nerd-fonts/wiki
 
-<!---
+<!--
 Link References
 -->
 
@@ -324,6 +339,7 @@ Link References
 <!--
 Font repos
 -->
+
 [f-hack]:https://github.com/chrissimpkins/Hack
 [f-a-pro]:http://www.marksimonson.com/fonts/view/anonymous-pro
 [f-source]:https://github.com/adobe-fonts/source-code-pro
@@ -338,6 +354,7 @@ Font repos
 <!--
 Patched Font internal links
 -->
+
 [p-3270]:patched-fonts/3270
 [p-a-pro]:patched-fonts/AnonymousPro
 [p-aurulent]:patched-fonts/AurulentSansMono
@@ -368,5 +385,6 @@ Patched Font internal links
 <!--
 Patched Font Statuses
 -->
+
 [s-hack]:https://github.com/ryanoasis/nerd-fonts/issues/70
 [s-terminus]:https://github.com/ryanoasis/nerd-fonts/issues/16
