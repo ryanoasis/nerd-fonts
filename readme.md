@@ -108,7 +108,7 @@ See: [Font Patcher](#font-patcher) for usage
 ## Patched Fonts
 
 | Font Name                                         | Font Name and Repository    | *RFN | EM Size | Status            |
-|---------------------------------------------------------------------------------|------|---------|-------------------|
+|---------------------------------------------------|-----------------------------|------|---------|-------------------|
 | [3270 Nerd Font][p-3270]                          |                             | NO   | 1000    | [TEST]            |
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | [TEST]            |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | [TEST]            |
@@ -136,7 +136,7 @@ See: [Font Patcher](#font-patcher) for usage
 | [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]          | YES  | 1000    | [TEST]            |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | [#16][s-terminus] |
 | [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | [TEST]            |
-| [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                             | NO   | 1000    | [TEST]            |
+| [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | [TEST]            |
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
@@ -356,7 +356,7 @@ Patched Font internal links
 -->
 
 [p-3270]:patched-fonts/3270
-[p-a-pro]:patched-fonts/AnonymousPro
+[p-anonymous-pro]:patched-fonts/AnonymousPro
 [p-aurulent]:patched-fonts/AurulentSansMono
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
