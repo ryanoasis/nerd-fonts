@@ -110,6 +110,7 @@ See: [Font Patcher](#font-patcher) for usage
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | [TEST]            |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | [TEST]            |
 | [Droid Sans Mono Nerd Font][p-droid]              |                             | NO   | 2048    | [TEST]            |
+| [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | [TEST]            |
 | [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]         | YES  | 1000    | [TEST]            |
 | [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]         | YES  | 1000    | [TEST]            |
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | [TEST]            |
@@ -324,7 +325,7 @@ Link References
 Font repos
 -->
 [f-hack]:https://github.com/chrissimpkins/Hack
-[f-anonymous-pro]:http://www.marksimonson.com/fonts/view/anonymous-pro
+[f-a-pro]:http://www.marksimonson.com/fonts/view/anonymous-pro
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-liberation]:https://fedorahosted.org/liberation-fonts
 [f-terminus]:http://terminus-font.sourceforge.net
@@ -332,6 +333,7 @@ Font repos
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-iosevka]:https://github.com/be5invis/Iosevka
+[f-fant]:https://github.com/belluzj/fantasque-sans
 
 <!--
 Patched Font internal links
@@ -342,6 +344,7 @@ Patched Font internal links
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
+[p-fantasque]:patched-fonts/FantasqueSansMono
 [p-fira-code]:patched-fonts/FiraCode
 [p-fira-mono]:patched-fonts/FiraMono
 [p-heavy-data]:patched-fonts/HeavyData
