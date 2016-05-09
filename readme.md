@@ -187,8 +187,16 @@ Installs all of the patched Fonts (_Warning: This is a lot of Fonts adding up to
 
 * Linux & Mac OS X
 
+To install all fonts:
 ```sh
 ./install.sh
+```
+
+To install a single font:
+```sh
+./install.sh <FontName>
+./install.sh Hack
+./install.sh HeavyData
 ```
 
 #### Examples
