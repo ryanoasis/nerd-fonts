@@ -340,7 +340,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             if exactEncoding:
                 # use the exact same hex values for the source font as for the symbol font
                 currentSourceFontGlyph = sym_glyph.encoding
-                copiedToSlot = str(sym_glyph.str)
+                copiedToSlot = str(sym_glyph.unicode)
             else:
                 # use source font defined hex values based on passed in start and end
                 # convince that this string really is a hex:
