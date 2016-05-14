@@ -27,12 +27,12 @@ For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [v
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
-<!---
+<!--
 Start notice section
 -->
 | Unstable file paths warning: [To avoid font file references breaking on releases please read](#unstable-file-paths) |
 -------------------------------
-<!---
+<!--
 End notice section
 -->
 
@@ -150,10 +150,10 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Combinations
 
-* Over 2,700 unique variations/combinations (Power Set) of patched fonts:
- * 77 font variations (just counting otf and ttf)
- * 36 combinations (Powerline Extra included by default currently)
- * Calculated combinations (36 * 77) = 2,772
+* Over 5,700 unique variations/combinations (Power Set) of patched fonts:
+ * 102 unpatched font variations (just counting otf and ttf)
+ * 56 combinations (Powerline Extra included by default currently)
+ * Calculated combinations (56 * 102) = 5,712
  * Combinations for each font are any combination of (plus no flags option):
     * Monospaced extra glyphs
     * Windows Compatible
