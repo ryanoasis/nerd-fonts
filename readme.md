@@ -121,7 +121,7 @@ See: [Font Patcher](#font-patcher) for usage
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | [TEST]            |
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | [TEST]            |
 | [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | [TEST]            |
-| [Iosevka][p-iosevka]                              | [Iosevka][f-iosevka]        | YES  | 1000    | [TEST]            |
+| [Iosevka][p-iosevka]                              | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
 | [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | [#70][s-hack]     |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | [TEST]            |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]  | YES  | 2048    | [TEST]            |
@@ -388,3 +388,4 @@ Patched Font Statuses
 
 [s-hack]:https://github.com/ryanoasis/nerd-fonts/issues/70
 [s-terminus]:https://github.com/ryanoasis/nerd-fonts/issues/16
+[s-iosevka]:https://github.com/ryanoasis/nerd-fonts/issues/83
