@@ -22,8 +22,8 @@ For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [v
 
 ## Features
 * A [FontForge python script](#font-patcher) to patch any font
-* **24** already [patched font families](#patched-fonts)
-* Over **2,700** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **26** already [patched font families](#patched-fonts)
+* Over **5,700** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
