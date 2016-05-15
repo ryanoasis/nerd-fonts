@@ -8,6 +8,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
     - [Iosevka](https://github.com/be5invis/Iosevka) (enhancement #81)
   - Added new Glyph set: [Font Linux](https://github.com/Lukas-W/font-linux) (enhancement #75)
   - Updated font install script to limit to a single font family (more typical use case) (enhancement PR #82) (@rawkode)
+  - Updated readme: Misc readability tweaks and clean-up
   - Fixed Powerline Symbols not correctly rendering (if font already has the symbols) (fixes #78)
   - Fixed AttributeError with Python 3 version of font patcher script (fixes #79)
 - v0.7.0
