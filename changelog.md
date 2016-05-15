@@ -11,6 +11,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Updated readme: Misc readability tweaks and clean-up
   - Fixed Powerline Symbols not correctly rendering (if font already has the symbols) (fixes #78)
   - Fixed AttributeError with Python 3 version of font patcher script (fixes #79)
+  - Fixed certain Hack/Knack font style sets by updating version of Hack to [v2.020](https://github.com/chrissimpkins/Hack/releases/tag/v2.020) (fixes #63)
 - v0.7.0
   - Added 3 new fonts:
     - Monoid (enhancement #54)
