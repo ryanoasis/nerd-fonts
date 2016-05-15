@@ -2,6 +2,14 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- v0.8.0
+  - Added 2 new fonts:
+    - [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans) (enhancement #80)
+    - [Iosevka](https://github.com/be5invis/Iosevka) (enhancement #81)
+  - Added new Glyph set: [Font Linux](https://github.com/Lukas-W/font-linux) (enhancement #75)
+  - Updated font install script to limit to a single font family (more typical use case) (enhancement PR #82) (@rawkode)
+  - Fixed Powerline Symbols not correctly rendering (if font already has the symbols) (fixes #78)
+  - Fixed AttributeError with Python 3 version of font patcher script (fixes #79)
 - v0.7.0
   - Added 3 new fonts:
     - Monoid (enhancement #54)
