@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img src="images/nerd-fonts-logo.png" alt="nerd fonts">
+	<img src="images/nerd-fonts-logo.png" alt="nerd fonts" />
 </h1>
 
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
@@ -8,7 +8,9 @@
 
 For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [vim-devicons ➶][vim-devicons].
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/sankey-glyphs-combined-diagram.png)
+<h1 align="center">
+	<img src="https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/sankey-glyphs-combined-diagram.png" alt="@SankeyMATIC Diagram" />
+</h1>
 
 <sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
 
