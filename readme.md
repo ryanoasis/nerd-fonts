@@ -4,15 +4,17 @@
 
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
 
-**Nerd Fonts** is a project that attempts to patch as many developer targeted and/or used fonts as possible. The patch is to specifically add a high number of additional glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and others.
+**Nerd Fonts** is a project that attempts to patch as many developer targeted fonts as possible with a high number of additional glyphs (icons). The main goal is to specifically add a high number of additional glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
 
-For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [vim-devicons ➶][vim-devicons].
+The following Sankey flow diagram shows the current glyph sets included:
 
 <h1 align="center">
 	<img src="https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/sankey-glyphs-combined-diagram.png" alt="@SankeyMATIC Diagram" />
 </h1>
 
 <sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
+
+For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [vim-devicons ➶][vim-devicons].
 
 
 ## Quick Links
@@ -35,6 +37,7 @@ End notice section
 * **26** already [patched font families](#patched-fonts)
 * Over **5,700** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
+  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
 
@@ -50,8 +53,10 @@ End notice section
 - [Gotta Patch 'em All Font Patcher!](#gotta-patch-em-all)
 - [Unstable file paths on master](#unstable-file-paths)
 - [Other Good Fonts to Patch](#other-good-fonts-to-patch)
-- [Motivation](#motivation-original-rationale)
-- [Other](#other)
+- [Project History](#project-history)
+  - [Motivation](#motivation-original-rationale)
+- [Contributing](#contributing)
+- [Changelog](#changelog)
 - [License](#license)
 
 ## Glyph Sets
@@ -312,9 +317,17 @@ optional arguments:
 
 * project and repository previously known as 'nerd-filetype-glyphs-fonts-patcher' and 'font-nerd-icons'
 
+## Contributing
+
+See [contributing.md][contributing.md]
+
+## Changelog
+
+See [changelog.md](changelog.md)
+
 ## License
 
-see [LICENSE](LICENSE)
+[MIT][LICENSE] © Ryan L McIntyre
 
 <!--
 Repo References
