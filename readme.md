@@ -319,7 +319,7 @@ optional arguments:
 
 ## Contributing
 
-See [contributing.md][contributing.md]
+See [contributing.md](contributing.md)
 
 ## Changelog
 
@@ -327,7 +327,7 @@ See [changelog.md](changelog.md)
 
 ## License
 
-[MIT][LICENSE] © Ryan L McIntyre
+[MIT](LICENSE) © Ryan L McIntyre
 
 <!--
 Repo References
