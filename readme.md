@@ -16,11 +16,19 @@ For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [v
 
 
 ## Quick Links
-***
+
 | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[Vim Plugin ➶][vim-devicons]** |
 |-----------------------------|------------------------------|----------------------------------|
 | [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) | [![vim-devicons-logo-small][img-visual-toc-vim-devicons]][vim-devicons] |
-***
+
+<!--
+Start notice section
+-->
+| Warning: _master_ branch file paths are _not_ considered stable: [Please read if you are referencing the repo directly](#unstable-file-paths) |
+-------------------------------
+<!--
+End notice section
+-->
 
 ## Features
 * A [FontForge python script](#font-patcher) to patch any font
@@ -29,14 +37,6 @@ For more high level info see the [wiki][wiki]. Looking for the Vim plugin see [v
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
-<!--
-Start notice section
--->
-| Unstable file paths warning: [To avoid font file references breaking on releases please read](#unstable-file-paths) |
--------------------------------
-<!--
-End notice section
--->
 
 ## Table of Contents
 
