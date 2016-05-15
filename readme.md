@@ -183,26 +183,24 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 ## Font Install Script
 
-Installs all of the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
-
 * Linux & Mac OS X
 
-To install all fonts:
+### To install all fonts:
+
+* Installs all of the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
+
 ```sh
 ./install.sh
 ```
 
-To install a single font:
+### To install a single font:
+
 ```sh
 ./install.sh <FontName>
 ./install.sh Hack
 ./install.sh HeavyData
 ```
 
-#### Examples
-
-	./install.sh
-	All fonts installed to /home/ryan/.fonts
 
 <h2 align="center" id="font-patcher">
 	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
@@ -297,7 +295,6 @@ optional arguments:
 | Instead of: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DroidSansMono/< font_path >.otf~~ |
 | Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.8.0/patched-fonts/DroidSansMono/< font_path >.otf |
 
-
 ## Other Good Fonts to Patch
 
 * a list of additional good fonts to patch that I cannot provide or share due to the license:
@@ -305,13 +302,13 @@ optional arguments:
    * Coming soon with external hosting :)
  * [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
 
-## Motivation (Original Rationale)
+## Project History
 
-* Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path
+### Motivation (Original Rationale)
 
-## Other
+* Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path. This project began as a part of the [vim-devicons] repo but soon it became apparent it did not belong tied to the vim plugin. I thought it might benefit others better as a separate project and allow a wider range of uses. This project started before I knew about Fontconfig provided solution, although a patched font still has some benefits over the Fontconfig.
 
-* project/repo previously known as 'nerd-filetype-glyphs-fonts-patcher', 'font-nerd-icons'
+* project and repository previously known as 'nerd-filetype-glyphs-fonts-patcher' and 'font-nerd-icons'
 
 ## License
 
