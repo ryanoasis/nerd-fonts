@@ -1,4 +1,4 @@
-Fura Code Powerline
+Fira Code Powerline
 ===================
 
 Font creator
