@@ -159,7 +159,18 @@ def make_sure_path_exists(path):
 make_sure_path_exists(args.outputdir)
 
 # comply with SIL Open Font License (OFL)
-reservedFontNameReplacements = { 'source': 'sauce', 'Source': 'Sauce', 'hermit': 'hurmit', 'Hermit': 'Hurmit', 'fira': 'fura', 'Fira': 'Fura', 'hack': 'knack', 'Hack': 'Knack' }
+reservedFontNameReplacements = {
+    'source': 'sauce',
+    'Source': 'Sauce',
+    'hermit': 'hurmit',
+    'Hermit': 'Hurmit',
+    'fira': 'fura',
+    'Fira': 'Fura',
+    'hack': 'knack',
+    'Hack': 'Knack',
+    'hasklig': 'hasklug',
+    'Hasklig': 'Hasklug'
+}
 
 projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)"
 
