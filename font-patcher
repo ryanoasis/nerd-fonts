@@ -36,6 +36,7 @@ parser.add_argument('font', help='The path to the font to be patched (e.g. Incon
 parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
 parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows', action='store_true', help='Limit the internal font name to a maximum of 31 characters (for safe Windows compatiblity)', default=False)
+parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all availale Glyphs', default=False)
 parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)', default=False)
 parser.add_argument('--fontlinux', dest='fontlinux', action='store_true', help='Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)', default=False)
 parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)', default=False)
@@ -59,8 +60,15 @@ if actualVersion < minimumVersion:
     print projectName + ": Please use at least version: " + str(minimumVersion)
     sys.exit(1)
 
-
 verboseAdditionalFontNameSuffix = " " + projectNameSingular
+
+if args.complete:
+    args.fontawesome = True
+    args.fontlinux = True
+    args.octicons = True
+    args.pomicons = True
+    args.powerline = True
+    args.powerlineextra = True
 
 if args.windows:
     # attempt to shorten here on the additional name BEFORE trimming later
@@ -93,6 +101,9 @@ if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra 
 if args.single:
     additionalFontNameSuffix += " Mono"
     verboseAdditionalFontNameSuffix += " Mono"
+    # Windows doesn't properly detect patched ttf font files as monotype, but works properly with otf, so force the issue
+    if args.windows and args.extension=="":
+        args.extension = "otf"
 
 sourceFont = fontforge.open(args.font)
 
@@ -154,7 +165,7 @@ def make_sure_path_exists(path):
         os.makedirs(path)
     except OSError as exception:
         if exception.errno != errno.EEXIST:
-            raisee
+            raise
 
 make_sure_path_exists(args.outputdir)
 
@@ -176,11 +187,6 @@ sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
 #print "Version was " + sourceFont.version
 sourceFont.version += ";" + projectName + " " + version
 #print "Version now is " + sourceFont.version
-
-# glyph font
-
-sourceFont_em_original = sourceFont.em
-print("SourceFont.em: ", sourceFont.em)
 
 # Open fonts and force the em size to be equal
 
@@ -277,89 +283,88 @@ sourceFontFontLinuxEnd = 0xF315
 
 
 SYM_ATTR = {
-	# Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
-	0x2b60: { 'align': 'c', 'stretch': 'y' , 'overlap': False },
-	0x2b61: { 'align': 'c', 'stretch': ''  , 'overlap': False },
-	0x2b62: { 'align': 'r', 'stretch': ''  , 'overlap': False },
-	0x2b63: { 'align': 'l', 'stretch': ''  , 'overlap': False },
-	0x2b64: { 'align': 'c', 'stretch': ''  , 'overlap': False },
-	0x2b80: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-	0x2b81: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-	0x2b82: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-	0x2b83: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    # Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
+    0x2b60: { 'align': 'c', 'stretch': 'y' , 'overlap': False },
+    0x2b61: { 'align': 'c', 'stretch': ''  , 'overlap': False },
+    0x2b62: { 'align': 'r', 'stretch': ''  , 'overlap': False },
+    0x2b63: { 'align': 'l', 'stretch': ''  , 'overlap': False },
+    0x2b64: { 'align': 'c', 'stretch': ''  , 'overlap': False },
+    0x2b80: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0x2b81: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0x2b82: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0x2b83: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 
-        # Powerline dividers
+    # Powerline dividers
 
-        # Arrow tips
-	0xe0b0: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0b1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0b2: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-	0xe0b3: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Arrow tips
+    0xe0b0: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0b1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0b2: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0b3: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 
-        # Rounded arcs
-	0xe0b4: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0b5: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0b6: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-	0xe0b7: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Rounded arcs
+    0xe0b4: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0b5: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0b6: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0b7: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 
-        # Bottom Triangles
-	0xe0b8: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0b9: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0ba: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-	0xe0bb: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Bottom Triangles
+    0xe0b8: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0b9: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0ba: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0bb: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 
-        # Top Triangles
-	0xe0bc: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0bd: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0be: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-	0xe0bf: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Top Triangles
+    0xe0bc: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0bd: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0be: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0bf: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 
-        # Flames
-	0xe0c0: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0c1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0c2: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-	0xe0c3: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Flames
+    0xe0c0: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0c1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0c2: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0c3: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 
-        # Small squares
-	0xe0c4: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0c5: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Small squares
+    0xe0c4: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0c5: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 
-        # Bigger squares
-	0xe0c6: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0c7: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Bigger squares
+    0xe0c6: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0c7: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 
-        # Waveform
-	0xe0c8: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    # Waveform
+    0xe0c8: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
 
-        # Hexagons
-	0xe0cc: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0cd: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    # Hexagons
+    0xe0cc: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0cd: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
 
-        # Legos
-	0xe0ce: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0cf: { 'align': 'c', 'stretch': 'xy', 'overlap': False  },
-	0xe0d1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    # Legos
+    0xe0ce: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0cf: { 'align': 'c', 'stretch': 'xy', 'overlap': False  },
+    0xe0d1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
 
-        # Top and bottom trapezoid
-	0xe0d2: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-	0xe0d4: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    # Top and bottom trapezoid
+    0xe0d2: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0d4: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
 }
 
 SYM_ATTR_DEFAULT = {
-        # 'pa' == preserve aspect ratio
-	'align': 'c', 'stretch': 'pa', 'overlap': False
-        }
-
+    # 'pa' == preserve aspect ratio
+    'align': 'c', 'stretch': 'pa', 'overlap': False
+}
 
 # Initial font dimensions
 font_dim = {
-        # Use winXXXXXX for ymin and ymax as this is typically what is used for line size
-	'xmin'  :    0,
-	'ymin'  :    -sourceFont.os2_windescent,
-	'xmax'  :    0,
-	'ymax'  :    sourceFont.os2_winascent,
-	'width' :    0,
-	'height':    0,
+    # Use winXXXXXX for ymin and ymax as this is typically what is used for line size
+    'xmin'  :    0,
+    'ymin'  :    -sourceFont.os2_windescent,
+    'xmax'  :    0,
+    'ymax'  :    sourceFont.os2_winascent,
+    'width' :    0,
+    'height':    0,
 }
 
 # Find the biggest char width and height
@@ -367,21 +372,21 @@ font_dim = {
 # 0x00-0x17f is the Latin Extended-A range
 # 0x2500-0x2600 is the box drawing range
 for glyph in range(0x00, 0x17f) + range(0x2500, 0x2600):
-	try:
-		(xmin, ymin, xmax, ymax) = sourceFont[glyph].boundingBox()
-	except TypeError:
-		continue
+    try:
+        (xmin, ymin, xmax, ymax) = sourceFont[glyph].boundingBox()
+    except TypeError:
+        continue
 
-	if font_dim['width'] == 0:
-		font_dim['width'] = sourceFont[glyph].width
+    if font_dim['width'] == 0:
+        font_dim['width'] = sourceFont[glyph].width
 
-        if font_dim['width'] < sourceFont[glyph].width:
-            font_dim['width'] = sourceFont[glyph].width
+    if font_dim['width'] < sourceFont[glyph].width:
+        font_dim['width'] = sourceFont[glyph].width
 
-        # Ignore the y-values, os2_winXXXXX values set above are more accurate
-	# if ymin < font_dim['ymin']: font_dim['ymin'] = ymin
-	# if ymax > font_dim['ymax']: font_dim['ymax'] = ymax
-	if xmax > font_dim['xmax']: font_dim['xmax'] = xmax
+    # Ignore the y-values, os2_winXXXXX values set above are more accurate
+    # if ymin < font_dim['ymin']: font_dim['ymin'] = ymin
+    # if ymax > font_dim['ymax']: font_dim['ymax'] = ymax
+    if xmax > font_dim['xmax']: font_dim['xmax'] = xmax
 
 # Calculate font height
 font_dim['height'] = abs(font_dim['ymin']) + font_dim['ymax']
@@ -393,18 +398,17 @@ sourceFont.encoding = 'ISO10646'
 onlybitmaps = sourceFont.onlybitmaps
 
 def get_dim(glyph):
-	bbox = glyph.boundingBox()
+    bbox = glyph.boundingBox()
 
-	return  {
-		'xmin'  : bbox[0],
-		'ymin'  : bbox[1],
-		'xmax'  : bbox[2],
-		'ymax'  : bbox[3],
+    return  {
+        'xmin'  : bbox[0],
+        'ymin'  : bbox[1],
+        'xmax'  : bbox[2],
+        'ymax'  : bbox[3],
 
-		'width' : bbox[2] + (-bbox[0]),
-		'height': bbox[3] + (-bbox[1]),
-	}
-
+        'width' : bbox[2] + (-bbox[0]),
+        'height': bbox[3] + (-bbox[1]),
+    }
 
 def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding=False):
 
@@ -421,124 +425,124 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
     sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
 
     for sym_glyph in symbolFont.selection.byGlyphs:
+        try:
+            sym_attr = SYM_ATTR[sym_glyph.unicode]
+        except KeyError:
+            sym_attr = SYM_ATTR_DEFAULT
 
+        glyphName = sym_glyph.glyphname
+
+        if exactEncoding:
+            # use the exact same hex values for the source font as for the symbol font
+            currentSourceFontGlyph = sym_glyph.encoding
+            copiedToSlot = str(sym_glyph.unicode)
+        else:
+            # use source font defined hex values based on passed in start and end
+            # convince that this string really is a hex:
+            currentSourceFontGlyph = int("0x" + sourceFontList[sourceFontCounter], 16)
+            copiedToSlot = sourceFontList[sourceFontCounter]
+
+        if args.quiet == False:
+            print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + str(copiedToSlot)
+
+        # Prepare symbol glyph dimensions
+        sym_dim = get_dim(sym_glyph)
+
+        # Select and copy symbol from its encoding point
+        symbolFont.selection.select(sym_glyph.encoding)
+        symbolFont.copy()
+
+        # check it
+        if args.careful:
+
+            if copiedToSlot.startswith("uni"):
+                copiedToSlot = copiedToSlot[3:]
+
+            codepoint = int("0x" + copiedToSlot, 16)
             try:
-                sym_attr = SYM_ATTR[sym_glyph.unicode]
-            except KeyError:
-                sym_attr = SYM_ATTR_DEFAULT
-
-            glyphName = sym_glyph.glyphname
-
-            if exactEncoding:
-                # use the exact same hex values for the source font as for the symbol font
-                currentSourceFontGlyph = sym_glyph.encoding
-                copiedToSlot = str(sym_glyph.unicode)
-            else:
-                # use source font defined hex values based on passed in start and end
-                # convince that this string really is a hex:
-                currentSourceFontGlyph = int("0x" + sourceFontList[sourceFontCounter], 16)
-                copiedToSlot = sourceFontList[sourceFontCounter]
-
-            if args.quiet == False:
-                print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + str(copiedToSlot)
-
-            # Prepare symbol glyph dimensions
-            sym_dim = get_dim(sym_glyph)
-
-            # Select and copy symbol from its encoding point
-            symbolFont.selection.select(sym_glyph.encoding)
-            symbolFont.copy()
-
-            # check it
-            if args.careful:
-
-                if copiedToSlot.startswith("uni"):
-                    copiedToSlot = copiedToSlot[3:]
-
-                codepoint = int("0x" + copiedToSlot, 16)
-                try:
-                    sourceFont[codepoint]
-                except TypeError:
-                    # nothing there go ahead and paste at this codepoint
-                    sourceFont.selection.select(currentSourceFontGlyph)
-                    sourceFont.paste()
-            else:
+                sourceFont[codepoint]
+            except TypeError:
+                # nothing there go ahead and paste at this codepoint
                 sourceFont.selection.select(currentSourceFontGlyph)
                 sourceFont.paste()
+        else:
+            sourceFont.selection.select(currentSourceFontGlyph)
+            sourceFont.paste()
 
-            sourceFont[currentSourceFontGlyph].glyphname = glyphName
+        sourceFont[currentSourceFontGlyph].glyphname = glyphName
 
-            # There are some symbols that are blank, skip those 
-            if args.single and sym_dim['width'] and sym_dim['height']:
-                # Now that we have copy/pasted the glyph, it's time to scale and move it
+        # There are some symbols that are blank, skip those
+        if args.single and sym_dim['width'] and sym_dim['height']:
+            # Now that we have copy/pasted the glyph, it's time to scale and move it
 
-                # Handle glyph stretching
-                scale_ratio_x = 1
-                scale_ratio_y = 1
-                if sym_attr['stretch'] == 'pa':
-                    # We want to preserve x/y aspect ratio, so find biggest scale factor that allows
-                    scale_ratio_x = font_dim['width'] / sym_dim['width']
-                    scale_ratio_y = font_dim['height'] / sym_dim['height']
-                    if scale_ratio_x > scale_ratio_y:
-                        scale_ratio_x = scale_ratio_y
-                    else:
-                        scale_ratio_y = scale_ratio_x
+            # Handle glyph stretching
+            scale_ratio_x = 1
+            scale_ratio_y = 1
+            if sym_attr['stretch'] == 'pa':
+                # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
+                scale_ratio_x = font_dim['width'] / sym_dim['width']
+                # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
+                scale_ratio_y = sourceFont.em / sym_dim['height']
+                if scale_ratio_x > scale_ratio_y:
+                    scale_ratio_x = scale_ratio_y
                 else:
-                    if 'x' in sym_attr['stretch']:
-                        # Stretch the glyph horizontally
-                        scale_ratio_x = font_dim['width'] / sym_dim['width']
-                    if 'y' in sym_attr['stretch']:
-                        # Stretch the glyph vertically
-                        scale_ratio_y = font_dim['height'] / sym_dim['height']
+                    scale_ratio_y = scale_ratio_x
+            else:
+                if 'x' in sym_attr['stretch']:
+                    # Stretch the glyph horizontally
+                    scale_ratio_x = font_dim['width'] / sym_dim['width']
+                if 'y' in sym_attr['stretch']:
+                    # Stretch the glyph vertically to total line height (good for powerline separators)
+                    scale_ratio_y = font_dim['height'] / sym_dim['height']
 
+            if scale_ratio_x != 1 or scale_ratio_y != 1:
                 sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
-                # Use the dimensions from the pasted and stretched glyph
-                sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
+            # Use the dimensions from the pasted and stretched glyph
+            sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
 
-                # Center the symbol by matching the center of the font and center of symbol
-                sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
-                font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
-                sourceFont.transform(psMat.translate(0, font_ycenter - sym_ycenter))
+            # Center the symbol by matching the center of the line height and center of symbol
+            sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
+            font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
+            sourceFont.transform(psMat.translate(0, font_ycenter - sym_ycenter))
 
-                # Handle glyph l/r alignment
+            # Handle glyph l/r alignment
 
-                # First move it to the xmin (left)
-                left_align_distance = font_dim['xmin']-sym_dim['xmin']
-                if sym_attr['align'] == 'c':
-                        # Center align
-                        align_matrix = psMat.translate(left_align_distance + ((font_dim['width']/2) - (sym_dim['width']/2)), 0)
-                elif sym_attr['align'] == 'r':
-                        # Right align
-                        align_matrix = psMat.translate(left_align_distance + font_dim['width'] - sym_dim['width'], 0)
-                else:
-                        # Left align
-                        align_matrix = psMat.translate(left_align_distance, 0)
+            # First move it to the xmin (left)
+            left_align_distance = font_dim['xmin']-sym_dim['xmin']
+            if sym_attr['align'] == 'c':
+                # Center align
+                align_matrix = psMat.translate(left_align_distance + ((font_dim['width']/2) - (sym_dim['width']/2)), 0)
+            elif sym_attr['align'] == 'r':
+                # Right align
+                align_matrix = psMat.translate(left_align_distance + font_dim['width'] - sym_dim['width'], 0)
+            else:
+                # Left align
+                align_matrix = psMat.translate(left_align_distance, 0)
 
-                sourceFont.transform(align_matrix)
+            sourceFont.transform(align_matrix)
 
-                if sym_attr['overlap'] is True:
-                        overlap_width = sourceFont.em / 48
+            if sym_attr['overlap'] is True:
+                overlap_width = sourceFont.em / 48
 
-                        # Stretch the glyph slightly horizontally if it should overlap
-                        sourceFont.transform(psMat.scale((sym_dim['width'] + overlap_width) / sym_dim['width'], 1))
+                # Stretch the glyph slightly horizontally if it should overlap
+                sourceFont.transform(psMat.scale((sym_dim['width'] + overlap_width) / sym_dim['width'], 1))
 
-                        if sym_attr['align'] == 'l':
-                                # The glyph should be left-aligned, so it must be moved overlap_width to the left
-                                # This only applies to left-aligned glyphs because the glyph is scaled to the right
-                                sourceFont.transform(psMat.translate(-overlap_width, 0))
+                if sym_attr['align'] == 'l':
+                    # The glyph should be left-aligned, so it must be moved overlap_width to the left
+                    # This only applies to left-aligned glyphs because the glyph is scaled to the right
+                    sourceFont.transform(psMat.translate(-overlap_width, 0))
 
-                # Ensure the font is considered monospaced on Windows
-                sourceFont[currentSourceFontGlyph].width = font_dim['width']
+            # Ensure the font is considered monospaced on Windows
+            sourceFont[currentSourceFontGlyph].width = font_dim['width']
 
-            if exactEncoding is False:
-                sourceFontCounter += 1
+        if exactEncoding is False:
+            sourceFontCounter += 1
 
-            # reset selection so iteration works propertly @todo fix? rookie misunderstanding?
-            symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
+        # reset selection so iteration works propertly @todo fix? rookie misunderstanding?
+        symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
     # end for
     return
-
 
 copy_glyphs(sourceFont, sourceFontOriginalStart, sourceFontOriginalEnd, symbols, symbolsOriginalRangeStart, symbolsOriginalRangeEnd)
 copy_glyphs(sourceFont, sourceFontDeviconsStart, sourceFontDeviconsEnd, symbolsDevicons, symbolsDeviconsRangeStart, symbolsDeviconsRangeEnd)
@@ -575,4 +579,3 @@ sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flag
 
 print "Generated"
 print sourceFont.fullname
-
