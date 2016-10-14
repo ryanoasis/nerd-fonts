@@ -133,10 +133,8 @@ except IndexError:
 if subFamily == "Regular":
     subFamily = fallbackStyle
 
-fontname += " - " + subFamily
-
 if args.windows:
-    maxLength = 31
+    maxLength = 31 - len('-'+subFamily)
     familyname += " " + projectNameAbbreviation
     fullname += " Windows Compatible"
     # now make sure less than 32 characters name length
@@ -148,6 +146,10 @@ if args.windows:
         familyname = familyname[:maxLength]
 else:
     familyname += " " + projectNameSingular
+
+# Don't truncate the subfamily to keep fontname unique.  MacOS treats fonts with
+# the same name as the same font, even if subFamily is different.
+fontname += '-' + subFamily
 
 # rename font
 
