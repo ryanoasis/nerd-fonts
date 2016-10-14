@@ -407,6 +407,11 @@ def get_dim(glyph):
         'height': bbox[3] + (-bbox[1]),
     }
 
+def set_width(sourceFont, width):
+    sourceFont.selection.all()
+    for glyph in sourceFont.selection.byGlyphs:
+        glyph.width = width
+
 def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding=False):
 
     if exactEncoding is False:
@@ -542,6 +547,17 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
     # end for
     return
 
+if args.extension == "":
+    extension = os.path.splitext(sourceFont.path)[1]
+else:
+    extension = '.'+args.extension
+
+if args.single and extension == '.ttf':
+    # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
+    # This needs to be done on all characters, as some information seems to be lost in the original font file.
+    # Seen only as a problem with ttf files, otf files seem to be okay.
+    set_width(sourceFont, font_dim['width'])
+
 copy_glyphs(sourceFont, sourceFontOriginalStart, sourceFontOriginalEnd, symbols, symbolsOriginalRangeStart, symbolsOriginalRangeEnd)
 copy_glyphs(sourceFont, sourceFontDeviconsStart, sourceFontDeviconsEnd, symbolsDevicons, symbolsDeviconsRangeStart, symbolsDeviconsRangeEnd)
 
@@ -565,11 +581,6 @@ if args.pomicons:
 
 if args.fontlinux:
     copy_glyphs(sourceFont, sourceFontFontLinuxStart, sourceFontFontLinuxEnd, fontlinux, symbolsFontLinuxRangeStart, symbolsFontLinuxRangeEnd, fontlinuxExactEncodingPosition)
-
-if args.extension == "":
-    extension = os.path.splitext(sourceFont.path)[1]
-else:
-    extension = '.'+args.extension
 
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
