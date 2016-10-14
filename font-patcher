@@ -101,9 +101,6 @@ if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra 
 if args.single:
     additionalFontNameSuffix += " Mono"
     verboseAdditionalFontNameSuffix += " Mono"
-    # Windows doesn't properly detect patched ttf font files as monotype, but works properly with otf, so force the issue
-    if args.windows and args.extension=="":
-        args.extension = "otf"
 
 sourceFont = fontforge.open(args.font)
 
@@ -533,6 +530,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                     # This only applies to left-aligned glyphs because the glyph is scaled to the right
                     sourceFont.transform(psMat.translate(-overlap_width, 0))
 
+        if args.single:
             # Ensure the font is considered monospaced on Windows
             sourceFont[currentSourceFontGlyph].width = font_dim['width']
 
