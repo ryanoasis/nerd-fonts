@@ -100,7 +100,7 @@ if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra 
 # add mono signifier to end of name
 if args.single:
     additionalFontNameSuffix += " M"
-    verboseAdditionalFontNameSuffix += " M"
+    verboseAdditionalFontNameSuffix += " Mono"
 
 sourceFont = fontforge.open(args.font)
 
@@ -140,9 +140,9 @@ if args.windows:
     fullname += " Windows Compatible"
     # now make sure less than 32 characters name length
     if len(fontname) > maxFontLength:
-        fontname = fontname[:maxLength]
+        fontname = fontname[:maxFontLength]
     if len(familyname) > maxFamilyLength:
-        familyname = familyname[:maxLength]
+        familyname = familyname[:maxFamilyLength]
 else:
     familyname += " " + projectNameSingular
 
@@ -304,34 +304,34 @@ SYM_ATTR = {
     # Powerline dividers
 
     # Arrow tips
-    0xe0b0: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0b1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0b2: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-    0xe0b3: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0b0: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0b1: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0b2: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0b3: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 
     # Rounded arcs
-    0xe0b4: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0b5: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0b6: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-    0xe0b7: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0b4: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0b5: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0b6: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0b7: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 
     # Bottom Triangles
-    0xe0b8: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0b9: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0ba: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-    0xe0bb: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0b8: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0b9: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0ba: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0bb: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 
     # Top Triangles
-    0xe0bc: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0bd: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0be: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-    0xe0bf: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0bc: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0bd: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0be: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0bf: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 
     # Flames
-    0xe0c0: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0c1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0c2: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
-    0xe0c3: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0c0: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0c1: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0c2: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0c3: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 
     # Small squares
     0xe0c4: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
@@ -354,8 +354,8 @@ SYM_ATTR = {
     0xe0d1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
 
     # Top and bottom trapezoid
-    0xe0d2: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0d4: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0d2: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
+    0xe0d4: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
 }
 
 SYM_ATTR_DEFAULT = {
