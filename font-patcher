@@ -134,15 +134,14 @@ if subFamily == "Regular":
     subFamily = fallbackStyle
 
 if args.windows:
-    maxLength = 31 - len('-'+subFamily)
+    maxFamilyLength = 31
+    maxFontLength = maxFamilyLength-len('-' + subFamily)
     familyname += " " + projectNameAbbreviation
     fullname += " Windows Compatible"
     # now make sure less than 32 characters name length
-    #if len(fullname) > maxLength:
-    #    fullname = fullname[:maxLength]
-    if len(fontname) > maxLength:
+    if len(fontname) > maxFontLength:
         fontname = fontname[:maxLength]
-    if len(fullname) > maxLength:
+    if len(familyname) > maxFamilyLength:
         familyname = familyname[:maxLength]
 else:
     familyname += " " + projectNameSingular
