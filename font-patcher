@@ -77,30 +77,30 @@ else:
     additionalFontNameSuffix = verboseAdditionalFontNameSuffix
 
 if args.fontawesome:
-    additionalFontNameSuffix += " Plus Font Awesome"
+    additionalFontNameSuffix += " A"
     verboseAdditionalFontNameSuffix += " Plus Font Awesome"
 
 if args.octicons:
-    additionalFontNameSuffix += " Plus Octicons"
+    additionalFontNameSuffix += " O"
     verboseAdditionalFontNameSuffix += " Plus Octicons"
 
 if args.pomicons:
-    additionalFontNameSuffix += " Plus Pomicons"
+    additionalFontNameSuffix += " P"
     verboseAdditionalFontNameSuffix += " Plus Pomicons"
 
 if args.fontlinux:
-    additionalFontNameSuffix += " Plus Font Linux"
+    additionalFontNameSuffix += " L"
     verboseAdditionalFontNameSuffix += " Plus Font Linux"
 
 # if all source glyphs included simplify the name
 if args.fontawesome and args.octicons and args.pomicons and args.powerlineextra and args.fontlinux:
-    additionalFontNameSuffix = " " + projectNameSingular + " Complete"
+    additionalFontNameSuffix = " " + projectNameSingular + " C"
     verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
 
 # add mono signifier to end of name
 if args.single:
-    additionalFontNameSuffix += " Mono"
-    verboseAdditionalFontNameSuffix += " Mono"
+    additionalFontNameSuffix += " M"
+    verboseAdditionalFontNameSuffix += " M"
 
 sourceFont = fontforge.open(args.font)
 
@@ -226,8 +226,8 @@ if args.fontawesome or args.octicons:
     fontlinuxExactEncodingPosition = False
 
 # Define the character ranges
-
 # Symbol font ranges
+
 symbolsPomiconsRangeStart = 0xE000
 symbolsPomiconsRangeEnd = 0xE00A
 
@@ -280,6 +280,15 @@ sourceFontOcticonsEnd = 0xF4DB
 sourceFontFontLinuxStart = 0xF300
 sourceFontFontLinuxEnd = 0xF315
 
+# To keep the size of glyphs constant when scaling, choose a larger
+# sized glyph from each symbol font to set the scaling amount
+symbolsPomiconsScaleGlyph = 0xE000          # first symbol
+symbolsPowerlineScaleGlyph = 0xE0A0         # scm branch symbol
+symbolsPowerlineExtraScaleGlyph = 0xE70E    # Android logo
+symbolsDeviconsScaleGlyph = 0xE60E          # Android logo
+symbolsFontAwesomeScaleGlyph = 0xF17A       # Windows logo
+symbolsOcticonsScaleGlyph = 0xF02E          # magnifying glass
+symbolsFontLinuxScaleGlyph = 0xF10E         # Ubuntu logo
 
 SYM_ATTR = {
     # Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
@@ -357,7 +366,7 @@ SYM_ATTR_DEFAULT = {
 
 # Initial font dimensions
 font_dim = {
-    # Use winXXXXXX for ymin and ymax as this is typically what is used for line size
+    # Use os2_winXXXXXX for ymin and ymax as this is typically what is used for line size
     'xmin'  :    0,
     'ymin'  :    -sourceFont.os2_windescent,
     'xmax'  :    0,
@@ -414,7 +423,17 @@ def set_width(sourceFont, width):
     for glyph in sourceFont.selection.byGlyphs:
         glyph.width = width
 
-def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding=False):
+def get_scale_factor(font_dim, sym_dim):
+    # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
+    scale_ratio_x = font_dim['width'] / sym_dim['width']
+    # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
+    scale_ratio_y = sourceFont.em / sym_dim['height']
+    if scale_ratio_x > scale_ratio_y:
+        return scale_ratio_y
+    else:
+        return scale_ratio_x
+
+def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding=False, scaleGlyph=None):
 
     if exactEncoding is False:
         sourceFontList = []
@@ -423,8 +442,12 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         for i in xrange(sourceFontStart, sourceFontEnd + 1):
             sourceFontList.append(format(i, 'X'))
 
-    # Create glyphs from symbol font
+    scale_factor = 0
+    if scaleGlyph:
+        sym_dim = get_dim(symbolFont[scaleGlyph])
+        scale_factor = get_scale_factor(font_dim, sym_dim)
 
+    # Create glyphs from symbol font
     symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
     sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
 
@@ -475,25 +498,28 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         sourceFont[currentSourceFontGlyph].glyphname = glyphName
 
-        # There are some symbols that are blank, skip those
+        # Now that we have copy/pasted the glyph, if we are creating a monospace
+        # font we need to scale and move the glyphs.  It is possible to have
+        # empty glyphs, so we need to skip those.
         if args.single and sym_dim['width'] and sym_dim['height']:
-            # Now that we have copy/pasted the glyph, it's time to scale and move it
-
-            # Handle glyph stretching
             scale_ratio_x = 1
             scale_ratio_y = 1
+            # If we want to preserve that aspect ratio of the glyphs we need to
+            # find the largest possible scaling factor that will allow the glyph
+            # to fit in both the x and y directions
             if sym_attr['stretch'] == 'pa':
-                # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
-                scale_ratio_x = font_dim['width'] / sym_dim['width']
-                # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
-                scale_ratio_y = sourceFont.em / sym_dim['height']
-                if scale_ratio_x > scale_ratio_y:
-                    scale_ratio_x = scale_ratio_y
+                if scale_factor:
+                    # We want to preserve the relative size of each glyph to other glyphs
+                    # in the same symbol font.
+                    scale_ratio_x = scale_factor
+                    scale_ratio_y = scale_factor
                 else:
+                    # In this case, each glyph is sized independantly to each other
+                    scale_ratio_x = get_scale_factor(font_dim, sym_dim)
                     scale_ratio_y = scale_ratio_x
             else:
                 if 'x' in sym_attr['stretch']:
-                    # Stretch the glyph horizontally
+                    # Stretch the glyph horizontally to fit the entire available width
                     scale_ratio_x = font_dim['width'] / sym_dim['width']
                 if 'y' in sym_attr['stretch']:
                     # Stretch the glyph vertically to total line height (good for powerline separators)
@@ -502,28 +528,26 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             if scale_ratio_x != 1 or scale_ratio_y != 1:
                 sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
-            # Use the dimensions from the pasted and stretched glyph
+            # Use the dimensions from the newly pasted and stretched glyph
             sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
 
-            # Center the symbol by matching the center of the line height and center of symbol
+            # Center the symbol vertically by matching the center of the line height and center of symbol
             sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
             font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
-            sourceFont.transform(psMat.translate(0, font_ycenter - sym_ycenter))
+            y_align_distance = font_ycenter - sym_ycenter
 
-            # Handle glyph l/r alignment
+            # Handle glyph l/r/c alignment
 
-            # First move it to the xmin (left)
-            left_align_distance = font_dim['xmin']-sym_dim['xmin']
+            # First find the baseline x-alignment (left alignment amount)
+            x_align_distance = font_dim['xmin']-sym_dim['xmin']
             if sym_attr['align'] == 'c':
                 # Center align
-                align_matrix = psMat.translate(left_align_distance + ((font_dim['width']/2) - (sym_dim['width']/2)), 0)
+                x_align_distance += (font_dim['width']/2) - (sym_dim['width']/2)
             elif sym_attr['align'] == 'r':
                 # Right align
-                align_matrix = psMat.translate(left_align_distance + font_dim['width'] - sym_dim['width'], 0)
-            else:
-                # Left align
-                align_matrix = psMat.translate(left_align_distance, 0)
+                x_align_distance += font_dim['width'] - sym_dim['width']
 
+            align_matrix = psMat.translate(x_align_distance, y_align_distance)
             sourceFont.transform(align_matrix)
 
             if sym_attr['overlap'] is True:
@@ -538,13 +562,17 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                     sourceFont.transform(psMat.translate(-overlap_width, 0))
 
         if args.single:
-            # Ensure the font is considered monospaced on Windows
+            # Ensure the font is considered monospaced on Windows by setting the same
+            # width for all character glyphs.
+            # This needs to be done for all glyphs, even the ones that are empty and
+            # didn't go through the scaling operations.
             sourceFont[currentSourceFontGlyph].width = font_dim['width']
 
         if exactEncoding is False:
             sourceFontCounter += 1
 
         # reset selection so iteration works propertly @todo fix? rookie misunderstanding?
+        # This is likely needed because the selection was changed when the glyph was copy/pasted
         symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
     # end for
     return
@@ -556,33 +584,33 @@ else:
 
 if args.single and extension == '.ttf':
     # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
-    # This needs to be done on all characters, as some information seems to be lost in the original font file.
-    # Seen only as a problem with ttf files, otf files seem to be okay.
+    # This needs to be done on all characters, as some information seems to be lost from the original font file.
+    # This is only a problem with ttf files, otf files seem to be okay.
     set_width(sourceFont, font_dim['width'])
 
 copy_glyphs(sourceFont, sourceFontOriginalStart, sourceFontOriginalEnd, symbols, symbolsOriginalRangeStart, symbolsOriginalRangeEnd)
-copy_glyphs(sourceFont, sourceFontDeviconsStart, sourceFontDeviconsEnd, symbolsDevicons, symbolsDeviconsRangeStart, symbolsDeviconsRangeEnd)
+copy_glyphs(sourceFont, sourceFontDeviconsStart, sourceFontDeviconsEnd, symbolsDevicons, symbolsDeviconsRangeStart, symbolsDeviconsRangeEnd, scaleGlyph=symbolsDeviconsScaleGlyph)
 
 if args.powerline:
-    copy_glyphs(sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, powerlineSymbols, symbolsPowerlineRange1Start, symbolsPowerlineRange1End)
-    copy_glyphs(sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, powerlineSymbols, symbolsPowerlineRange2Start, symbolsPowerlineRange2End)
+    copy_glyphs(sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, powerlineSymbols, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, scaleGlyph=symbolsPowerlineScaleGlyph)
+    copy_glyphs(sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, powerlineSymbols, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, scaleGlyph=symbolsPowerlineScaleGlyph)
 
 if args.powerlineextra:
-    copy_glyphs(sourceFont, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, powerlineExtraSymbols, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, True)
-    copy_glyphs(sourceFont, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, powerlineExtraSymbols, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, True)
-    copy_glyphs(sourceFont, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, powerlineExtraSymbols, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, True)
+    copy_glyphs(sourceFont, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, powerlineExtraSymbols, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, True, scaleGlyph=symbolsPowerlineExtraScaleGlyph)
+    copy_glyphs(sourceFont, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, powerlineExtraSymbols, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, True, scaleGlyph=symbolsPowerlineExtraScaleGlyph)
+    copy_glyphs(sourceFont, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, powerlineExtraSymbols, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, True, scaleGlyph=symbolsPowerlineExtraScaleGlyph)
 
 if args.fontawesome:
-    copy_glyphs(sourceFont, sourceFontFontAwesomeStart, sourceFontFontAwesomeEnd, fontawesome, symbolsFontAwesomeRangeStart, symbolsFontAwesomeRangeEnd, True)
+    copy_glyphs(sourceFont, sourceFontFontAwesomeStart, sourceFontFontAwesomeEnd, fontawesome, symbolsFontAwesomeRangeStart, symbolsFontAwesomeRangeEnd, True, scaleGlyph=symbolsFontAwesomeScaleGlyph)
 
 if args.octicons:
-    copy_glyphs(sourceFont, sourceFontOcticonsStart, sourceFontOcticonsEnd, octicons, symbolsOcticonsRangeStart, symbolsOcticonsRangeEnd, octiconsExactEncodingPosition)
+    copy_glyphs(sourceFont, sourceFontOcticonsStart, sourceFontOcticonsEnd, octicons, symbolsOcticonsRangeStart, symbolsOcticonsRangeEnd, octiconsExactEncodingPosition, scaleGlyph=symbolsOcticonsScaleGlyph)
 
 if args.pomicons:
-    copy_glyphs(sourceFont, sourceFontPomiconsStart, sourceFontPomiconsEnd, pomicons, symbolsPomiconsRangeStart, symbolsPomiconsRangeEnd)
+    copy_glyphs(sourceFont, sourceFontPomiconsStart, sourceFontPomiconsEnd, pomicons, symbolsPomiconsRangeStart, symbolsPomiconsRangeEnd, scaleGlyph=symbolsPomiconsScaleGlyph)
 
 if args.fontlinux:
-    copy_glyphs(sourceFont, sourceFontFontLinuxStart, sourceFontFontLinuxEnd, fontlinux, symbolsFontLinuxRangeStart, symbolsFontLinuxRangeEnd, fontlinuxExactEncodingPosition)
+    copy_glyphs(sourceFont, sourceFontFontLinuxStart, sourceFontFontLinuxEnd, fontlinux, symbolsFontLinuxRangeStart, symbolsFontLinuxRangeEnd, fontlinuxExactEncodingPosition, scaleGlyph=symbolsFontLinuxScaleGlyph)
 
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
