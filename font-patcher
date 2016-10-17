@@ -281,9 +281,9 @@ sourceFontFontLinuxEnd = 0xF315
 
 # To keep the size of glyphs constant when scaling, choose a larger
 # sized glyph from each symbol font to set the scaling amount
-symbolsPomiconsScaleGlyph = 0xE000          # first symbol
-symbolsPowerlineScaleGlyph = 0xE0A0         # scm branch symbol
-symbolsPowerlineExtraScaleGlyph = 0xE70E    # Android logo
+symbolsPomiconsScaleGlyph = None # 0xE000          # first symbol
+symbolsPowerlineScaleGlyph = None # 0xE0A0         # scm branch symbol
+symbolsPowerlineExtraScaleGlyph = None # 0xE70E    # Android logo
 symbolsDeviconsScaleGlyph = 0xE60E          # Android logo
 symbolsFontAwesomeScaleGlyph = 0xF17A       # Windows logo
 symbolsOcticonsScaleGlyph = 0xF02E          # magnifying glass
