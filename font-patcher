@@ -363,9 +363,20 @@ SYM_ATTR_DEFAULT = {
     'align': 'c', 'stretch': 'pa', 'overlap': False
 }
 
+# win_ascent and win_descent are used to set the line height for windows fonts.
+# hhead_ascent and hhead_descent are used to set the line height for mac fonts.
+#
+# Make the total line size even.  This seems to make the powerline separators
+# center more evenly.
+if (sourceFont.os2_winascent + sourceFont.os2_windescent) % 2 != 0:
+    sourceFont.os2_winascent += 1
+
+# Make the line size identical for windows and mac
+sourceFont.hhea_ascent = sourceFont.os2_winascent
+sourceFont.hhea_descent = -sourceFont.os2_windescent
+
 # Initial font dimensions
 font_dim = {
-    # Use os2_winXXXXXX for ymin and ymax as this is typically what is used for line size
     'xmin'  :    0,
     'ymin'  :    -sourceFont.os2_windescent,
     'xmax'  :    0,
@@ -374,25 +385,19 @@ font_dim = {
     'height':    0,
 }
 
-# Find the biggest char width and height
+# Find the biggest char width
+# Ignore the y-values, os2_winXXXXX values set above are used for line height
 #
 # 0x00-0x17f is the Latin Extended-A range
-# 0x2500-0x2600 is the box drawing range
-for glyph in range(0x00, 0x17f) + range(0x2500, 0x2600):
+for glyph in range(0x00, 0x17f):
     try:
         (xmin, ymin, xmax, ymax) = sourceFont[glyph].boundingBox()
     except TypeError:
         continue
 
-    if font_dim['width'] == 0:
-        font_dim['width'] = sourceFont[glyph].width
-
     if font_dim['width'] < sourceFont[glyph].width:
         font_dim['width'] = sourceFont[glyph].width
 
-    # Ignore the y-values, os2_winXXXXX values set above are more accurate
-    # if ymin < font_dim['ymin']: font_dim['ymin'] = ymin
-    # if ymax > font_dim['ymax']: font_dim['ymax'] = ymax
     if xmax > font_dim['xmax']: font_dim['xmax'] = xmax
 
 # Calculate font height
@@ -423,14 +428,16 @@ def set_width(sourceFont, width):
         glyph.width = width
 
 def get_scale_factor(font_dim, sym_dim):
+    scale_ratio = 1
     # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
     scale_ratio_x = font_dim['width'] / sym_dim['width']
     # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
     scale_ratio_y = sourceFont.em / sym_dim['height']
     if scale_ratio_x > scale_ratio_y:
-        return scale_ratio_y
+        scale_ratio = scale_ratio_y
     else:
-        return scale_ratio_x
+        scale_ratio = scale_ratio_x
+    return scale_ratio
 
 def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding=False, scaleGlyph=None):
 
@@ -546,19 +553,23 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                 # Right align
                 x_align_distance += font_dim['width'] - sym_dim['width']
 
-            align_matrix = psMat.translate(x_align_distance, y_align_distance)
-            sourceFont.transform(align_matrix)
-
             if sym_attr['overlap'] is True:
-                overlap_width = sourceFont.em / 48
+                # We will use 1% of the font height/width as the overlap amount
+                overlap_width = font_dim['width'] / 100;
+                overlap_height = font_dim['height'] / 100;
 
-                # Stretch the glyph slightly horizontally if it should overlap
-                sourceFont.transform(psMat.scale((sym_dim['width'] + overlap_width) / sym_dim['width'], 1))
+                sourceFont.transform(psMat.scale((sym_dim['width'] + overlap_width) / sym_dim['width'],
+                    (sym_dim['height'] + overlap_height) / sym_dim['height'] ))
 
+                # We are always vertically centering the glyph, so adjust it after the scale operation
+                y_align_distance -= overlap_height
                 if sym_attr['align'] == 'l':
                     # The glyph should be left-aligned, so it must be moved overlap_width to the left
                     # This only applies to left-aligned glyphs because the glyph is scaled to the right
-                    sourceFont.transform(psMat.translate(-overlap_width, 0))
+                    x_align_distance -= overlap_width
+
+            align_matrix = psMat.translate(x_align_distance, y_align_distance)
+            sourceFont.transform(align_matrix)
 
         if args.single:
             # Ensure the font is considered monospaced on Windows by setting the same
