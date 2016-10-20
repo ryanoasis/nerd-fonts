@@ -186,108 +186,32 @@ sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
 sourceFont.version += ";" + projectName + " " + version
 #print "Version now is " + sourceFont.version
 
-# Open fonts and force the em size to be equal
-
-symbols = fontforge.open("glyph-source-fonts/original-source.otf")
-powerlineSymbols = fontforge.open("glyph-source-fonts/PowerlineSymbols.otf")
-powerlineExtraSymbols = fontforge.open("glyph-source-fonts/PowerlineExtraSymbols.otf")
-symbolsDevicons = fontforge.open("glyph-source-fonts/devicons.ttf")
-
-symbols.em = sourceFont.em
-symbolsDevicons.em = sourceFont.em
-powerlineSymbols.em = sourceFont.em
-powerlineExtraSymbols.em = sourceFont.em
-
-if args.fontawesome:
-    fontawesome = fontforge.open("glyph-source-fonts/FontAwesome.otf")
-    fontawesome.em = sourceFont.em
-
-if args.octicons:
-    octicons = fontforge.open("glyph-source-fonts/octicons.ttf")
-    octicons.em = sourceFont.em
-    octiconsExactEncodingPosition = True
-
-if args.pomicons:
-    pomicons = fontforge.open("glyph-source-fonts/Pomicons.otf")
-    pomicons.em = sourceFont.em
-
-if args.fontlinux:
-    fontlinux = fontforge.open("glyph-source-fonts/font-linux.ttf")
-    fontlinux.em = sourceFont.em
-    fontlinuxExactEncodingPosition = True
-
 # Prevent glyph encoding position conflicts between glyph sets
 
+octiconsExactEncodingPosition = True
 if args.fontawesome and args.octicons:
     octiconsExactEncodingPosition = False
 
+fontlinuxExactEncodingPosition = True
 if args.fontawesome or args.octicons:
     fontlinuxExactEncodingPosition = False
 
 # Define the character ranges
 # Symbol font ranges
 
-symbolsPomiconsRangeStart = 0xE000
-symbolsPomiconsRangeEnd = 0xE00A
-
-symbolsPowerlineRange1Start = 0xE0A0
-symbolsPowerlineRange1End = 0xE0A2
-
-symbolsPowerlineRange2Start = 0xE0B0
-symbolsPowerlineRange2End = 0xE0B3
-
-symbolsPowerlineExtraRange1Start = 0xE0A3
-symbolsPowerlineExtraRange1End = 0xE0A3
-
-symbolsPowerlineExtraRange2Start = 0xE0B4
-symbolsPowerlineExtraRange2End = 0xE0C8
-
-symbolsPowerlineExtraRange3Start = 0xE0CC
-symbolsPowerlineExtraRange3End = 0xE0D4
-
-symbolsOriginalRangeStart = 0xE4FA
-symbolsOriginalRangeEnd = 0xE52A
-
-symbolsDeviconsRangeStart = 0xE600
-symbolsDeviconsRangeEnd = 0xE6C5
-
-symbolsFontAwesomeRangeStart = 0xF000
-symbolsFontAwesomeRangeEnd = 0xF295
-
-symbolsOcticonsRangeStart = 0xF000
-symbolsOcticonsRangeEnd = 0xF0DB
-
-symbolsFontLinuxRangeStart = 0xF100
-symbolsFontLinuxRangeEnd = 0xF115
-
-# Destination font ranges
-sourceFontPomiconsStart = 0xE000
-sourceFontPomiconsEnd = 0xE00A
-
-sourceFontOriginalStart = 0xE5FA
-sourceFontOriginalEnd = 0xE62A
-
-sourceFontDeviconsStart = 0xE700
-sourceFontDeviconsEnd = 0xE7C5
-
-sourceFontFontAwesomeStart = 0xF000
-sourceFontFontAwesomeEnd = 0xF295
-
-sourceFontOcticonsStart = 0xF400
-sourceFontOcticonsEnd = 0xF4DB
-
-sourceFontFontLinuxStart = 0xF300
-sourceFontFontLinuxEnd = 0xF315
-
-# To keep the size of glyphs constant when scaling, choose a larger
-# sized glyph from each symbol font to set the scaling amount
-symbolsPomiconsScaleGlyph = None # 0xE000          # first symbol
-symbolsPowerlineScaleGlyph = None # 0xE0A0         # scm branch symbol
-symbolsPowerlineExtraScaleGlyph = None # 0xE70E    # Android logo
-symbolsDeviconsScaleGlyph = 0xE60E          # Android logo
-symbolsFontAwesomeScaleGlyph = 0xF17A       # Windows logo
-symbolsOcticonsScaleGlyph = 0xF02E          # magnifying glass
-symbolsFontLinuxScaleGlyph = 0xF10E         # Ubuntu logo
+PATCH_SET = [
+    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': True, 'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA, 'SrcEnd': 0xE62A, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': True,                  'Filename': "devicons.ttf",             'Exact': True, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'SrcEnd': 0xE7C5, 'ScaleGlyph': 0xE60E },  # Android logo
+    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': 0xE0A0, 'SrcEnd': 0xF295, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': 0xE0B0, 'SrcEnd': 0xE0B3, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': 0xE0A3, 'SrcEnd': 0xE0A3, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': 0xE0B4, 'SrcEnd': 0xE0C8, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': 0xE0CC, 'SrcEnd': 0xE0D4, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': args.pomicons,         'Filename': "Pomicons.otf",             'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': 0xE000, 'SrcEnd': 0xE00A, 'ScaleGlyph': None },
+    { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF295, 'SrcStart': 0xF000, 'SrcEnd': 0xF295, 'ScaleGlyph': 0xF17A },  # Windows logo
+    { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': 0xF10E },  # Ubuntu logo
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF0DB, 'SrcStart': 0xF400, 'SrcEnd': 0xF4DB, 'ScaleGlyph': 0xF02E },  # Magnifying glass 
+]
 
 SYM_ATTR = {
     # Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
@@ -598,29 +522,25 @@ if args.single and extension == '.ttf':
     # This is only a problem with ttf files, otf files seem to be okay.
     set_width(sourceFont, font_dim['width'])
 
-copy_glyphs(sourceFont, sourceFontOriginalStart, sourceFontOriginalEnd, symbols, symbolsOriginalRangeStart, symbolsOriginalRangeEnd)
-copy_glyphs(sourceFont, sourceFontDeviconsStart, sourceFontDeviconsEnd, symbolsDevicons, symbolsDeviconsRangeStart, symbolsDeviconsRangeEnd, scaleGlyph=symbolsDeviconsScaleGlyph)
+# Prevent opening and closing the fontforge font. Makes things faster when patching
+# multiple ranges using the same symbol font.
+PreviousSymbolFilename = ""
+symfont = None
+for patch in PATCH_SET:
+    if patch['Enabled']:
+        if PreviousSymbolFilename != patch['Filename']:
+            # We have a new symbol font, so close the previous one if it exists
+            if symfont:
+                symfont.close()
+                symfont = None
+            symfont = fontforge.open("glyph-source-fonts/"+patch['Filename'])
+            # Match the symbol font size to the source font size
+            symfont.em = sourceFont.em
+            PreviousSymbolFilename = patch['Filename']
+        copy_glyphs(sourceFont, patch['SrcStart'], patch['SrcEnd'], symfont, patch['SymStart'], patch['SymEnd'],  patch['Exact'], patch['ScaleGlyph'])
 
-if args.powerline:
-    copy_glyphs(sourceFont, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, powerlineSymbols, symbolsPowerlineRange1Start, symbolsPowerlineRange1End, scaleGlyph=symbolsPowerlineScaleGlyph)
-    copy_glyphs(sourceFont, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, powerlineSymbols, symbolsPowerlineRange2Start, symbolsPowerlineRange2End, scaleGlyph=symbolsPowerlineScaleGlyph)
-
-if args.powerlineextra:
-    copy_glyphs(sourceFont, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, powerlineExtraSymbols, symbolsPowerlineExtraRange1Start, symbolsPowerlineExtraRange1End, True, scaleGlyph=symbolsPowerlineExtraScaleGlyph)
-    copy_glyphs(sourceFont, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, powerlineExtraSymbols, symbolsPowerlineExtraRange2Start, symbolsPowerlineExtraRange2End, True, scaleGlyph=symbolsPowerlineExtraScaleGlyph)
-    copy_glyphs(sourceFont, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, powerlineExtraSymbols, symbolsPowerlineExtraRange3Start, symbolsPowerlineExtraRange3End, True, scaleGlyph=symbolsPowerlineExtraScaleGlyph)
-
-if args.fontawesome:
-    copy_glyphs(sourceFont, sourceFontFontAwesomeStart, sourceFontFontAwesomeEnd, fontawesome, symbolsFontAwesomeRangeStart, symbolsFontAwesomeRangeEnd, True, scaleGlyph=symbolsFontAwesomeScaleGlyph)
-
-if args.octicons:
-    copy_glyphs(sourceFont, sourceFontOcticonsStart, sourceFontOcticonsEnd, octicons, symbolsOcticonsRangeStart, symbolsOcticonsRangeEnd, octiconsExactEncodingPosition, scaleGlyph=symbolsOcticonsScaleGlyph)
-
-if args.pomicons:
-    copy_glyphs(sourceFont, sourceFontPomiconsStart, sourceFontPomiconsEnd, pomicons, symbolsPomiconsRangeStart, symbolsPomiconsRangeEnd, scaleGlyph=symbolsPomiconsScaleGlyph)
-
-if args.fontlinux:
-    copy_glyphs(sourceFont, sourceFontFontLinuxStart, sourceFontFontLinuxEnd, fontlinux, symbolsFontLinuxRangeStart, symbolsFontLinuxRangeEnd, fontlinuxExactEncodingPosition, scaleGlyph=symbolsFontLinuxScaleGlyph)
+if symfont:
+    symfont.close()
 
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
