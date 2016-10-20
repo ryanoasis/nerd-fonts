@@ -395,7 +395,7 @@ Patched Font internal links
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
 [p-mplus]:patched-fonts/MPlus
-[p-profont]:patched-fonts/Profont
+[p-profont]:patched-fonts/ProFont
 [p-proggy-clean]:patched-fonts/ProggyClean
 [p-roboto]:patched-fonts/RobotoMono
 [p-source-code-pro]:patched-fonts/SourceCodePro
