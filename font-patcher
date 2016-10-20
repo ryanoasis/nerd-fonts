@@ -200,13 +200,13 @@ if args.fontawesome or args.octicons:
 # Symbol font ranges
 
 PATCH_SET = [
-    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': True, 'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA, 'SrcEnd': 0xE62A, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': True, 'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA, 'SrcEnd': 0xE62A, 'ScaleGlyph': None },
     { 'Enabled': True,                  'Filename': "devicons.ttf",             'Exact': True, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'SrcEnd': 0xE7C5, 'ScaleGlyph': 0xE60E },  # Android logo
-    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': 0xE0A0, 'SrcEnd': 0xF295, 'ScaleGlyph': None },  # Windows logo
-    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': 0xE0B0, 'SrcEnd': 0xE0B3, 'ScaleGlyph': None },  # Windows logo
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': 0xE0A3, 'SrcEnd': 0xE0A3, 'ScaleGlyph': None },  # Windows logo
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': 0xE0B4, 'SrcEnd': 0xE0C8, 'ScaleGlyph': None },  # Windows logo
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': 0xE0CC, 'SrcEnd': 0xE0D4, 'ScaleGlyph': None },  # Windows logo
+    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': 0xE0A0, 'SrcEnd': 0xF295, 'ScaleGlyph': None },
+    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': 0xE0B0, 'SrcEnd': 0xE0B3, 'ScaleGlyph': None },
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': 0xE0A3, 'SrcEnd': 0xE0A3, 'ScaleGlyph': None },
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': 0xE0B4, 'SrcEnd': 0xE0C8, 'ScaleGlyph': None },
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': 0xE0CC, 'SrcEnd': 0xE0D4, 'ScaleGlyph': None },
     { 'Enabled': args.pomicons,         'Filename': "Pomicons.otf",             'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': 0xE000, 'SrcEnd': 0xE00A, 'ScaleGlyph': None },
     { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF295, 'SrcStart': 0xF000, 'SrcEnd': 0xF295, 'ScaleGlyph': 0xF17A },  # Windows logo
     { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': 0xF10E },  # Ubuntu logo
