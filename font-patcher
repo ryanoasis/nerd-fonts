@@ -392,7 +392,8 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         if exactEncoding:
             # use the exact same hex values for the source font as for the symbol font
             currentSourceFontGlyph = sym_glyph.encoding
-            copiedToSlot = str(sym_glyph.unicode)
+            # Save as a hex string without the '0x' prefix
+            copiedToSlot = format(sym_glyph.unicode, 'X')
         else:
             # use source font defined hex values based on passed in start and end
             # convince that this string really is a hex:
@@ -400,7 +401,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             copiedToSlot = sourceFontList[sourceFontCounter]
 
         if args.quiet == False:
-            print "updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + str(copiedToSlot)
+            print "Updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot
 
         # Prepare symbol glyph dimensions
         sym_dim = get_dim(sym_glyph)
@@ -418,6 +419,8 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             codepoint = int("0x" + copiedToSlot, 16)
             try:
                 sourceFont[codepoint]
+                if args.quiet == False:
+                    print "  Found existing Glyph.  Skipping..."
             except TypeError:
                 # nothing there go ahead and paste at this codepoint
                 sourceFont.selection.select(currentSourceFontGlyph)
