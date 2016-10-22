@@ -4,7 +4,7 @@
 
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter] [![Flattr this git repo][img-flattr-badge]][badge-flattr]
 
-**Nerd Fonts** is a project that attempts to patch as many developer targeted fonts as possible with a high number of additional glyphs (icons). The main goal is to specifically add a high number of additional glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
+**Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
 
 The following Sankey flow diagram shows the current glyph sets included:
 
@@ -26,7 +26,7 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 <!--
 Start notice section
 -->
-| Warning: _master_ branch file paths are _not_ considered stable: [Please read if you are referencing the repo directly](#unstable-file-paths) |
+| Warning: _`master`_ branch file paths are _not_ considered stable. [Please read if you are directly referencing the repository URI](#unstable-file-paths) |
 -------------------------------
 <!--
 End notice section
@@ -62,7 +62,7 @@ End notice section
 ## Glyph Sets
 
 ### Seti-UI + Custom
-> Based off of [Seti-UI] Icomoon with additional custom glyphs added from various sources.
+> Based off of [Seti-UI] Icomoon with extra custom glyphs.
 
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-1.png)
 
@@ -84,7 +84,7 @@ End notice section
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-octicons.png)
 
 ### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
-> Provides additional Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
+> Provides extra Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
 
 ![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
 
@@ -106,7 +106,7 @@ Install any of the already [provided patched fonts](#patched-fonts)
 
 #### Option B
 
-Use the provided python command line script to generate a patched font from your own font to get the additional new glyphs
+Use the provided python command line script to generate a patched font from your own font to get the extra new glyphs
 
 See: [Font Patcher](#font-patcher) for usage
 
@@ -158,8 +158,8 @@ See: [Font Patcher](#font-patcher) for usage
 ## Combinations
 
 * Over 5,700 unique variations/combinations (Power Set) of patched fonts:
- * 102 unpatched font variations (just counting otf and ttf)
- * 56 combinations (Powerline Extra included by default currently)
+ * 102 unpatched font variations (counting otf and ttf)
+ * 56 combinations (Includes [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols])
  * Calculated combinations (56 * 102) = 5,712
  * Combinations for each font are any combination of (plus no flags option):
     * Monospaced extra glyphs
@@ -181,7 +181,7 @@ mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 ```
 
-deprecated alternate paths: `~/.fonts`
+deprecated alternative paths: `~/.fonts`
 
 OS X
 ```sh
@@ -194,7 +194,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 ### To install all fonts:
 
-* Installs all of the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
+* Installs all the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
 
 ```sh
 ./install.sh
@@ -216,14 +216,14 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 Patching the font of your own choosing for use with the [vim-devicons](https://github.com/ryanoasis/vim-devicons) vim plugin:
 * requires: python2, python-fontforge package (version 20141231 or later, see
   the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
-* can alternately be installed on OSX via: `brew install fontforge`
+* alternative install method on OSX: `brew install fontforge`
 * Usage:
 
 ```
 ./font-patcher PATH_TO_FONT
 ```
 
-* Alternate usage: Alternately the patcher can be run through the FontForge binary using the script flag:
+* Alternative usage: Execute the patcher with the FontForge binary using the script flag:
 
 ```
 ./fontforge -script font-patcher PATH_TO_FONT
@@ -285,11 +285,15 @@ optional arguments:
 <a name="gotta-patch-em-all"></a>
 ## Gotta Patch 'em All Font Patcher!
 
-* re-patches **all** fonts in the unpatched directory
-* mostly for Contributor/Dev use only
-* can optionally limit to specific font pattern (second example)
+* for Contributor or Developer use
+
+* re-patches **all** fonts in the unpatched directory:
 ```
 ./gotta-patch-em-all-font-patcher\!.sh
+```
+
+* can optionally limit to specific font name pattern:
+```
 ./gotta-patch-em-all-font-patcher\!.sh Hermit
 ```
 
@@ -297,7 +301,7 @@ optional arguments:
 
 | Unstable file paths warning |
 -------------------------------
-| Please make sure to reference via the **release** branch and _not_ the ~~**master**~~ branch because paths are subject to being improved/changed per release |
+| Please make sure to reference via the **release** branch and _not_ the ~~**master**~~ branch because paths are subject change for each release |
 | For example (paths shorted for demonstation purposes): |
 | Instead of: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DroidSansMono/< font_path >.otf~~ |
 | Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.8.0/patched-fonts/DroidSansMono/< font_path >.otf |
@@ -313,7 +317,7 @@ optional arguments:
 
 ### Motivation (Original Rationale)
 
-* Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path. This project began as a part of the [vim-devicons] repo but soon it became apparent it did not belong tied to the vim plugin. I thought it might benefit others better as a separate project and allow a wider range of uses. This project started before I knew about Fontconfig provided solution, although a patched font still has some benefits over the Fontconfig.
+* Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path. This project began as a part of the [vim-devicons] repo but soon it became apparent it did not belong tied to the vim plugin. I thought it may benefit others more as a separate project and allow a wider range of uses. This project started before I knew about Fontconfig provided solution, although a patched font still has some benefits over the Fontconfig.
 
 * project and repository previously known as 'nerd-filetype-glyphs-fonts-patcher' and 'font-nerd-icons'
 
