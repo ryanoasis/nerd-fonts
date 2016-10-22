@@ -196,96 +196,88 @@ fontlinuxExactEncodingPosition = True
 if args.fontawesome or args.octicons:
     fontlinuxExactEncodingPosition = False
 
-# Define the character ranges
-# Symbol font ranges
+# Supported params: overlap | careful
 
-PATCH_SET = [
-    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': True, 'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA, 'SrcEnd': 0xE62A, 'ScaleGlyph': None },
-    { 'Enabled': True,                  'Filename': "devicons.ttf",             'Exact': True, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'SrcEnd': 0xE7C5, 'ScaleGlyph': 0xE60E },  # Android logo
-    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': 0xE0A0, 'SrcEnd': 0xF295, 'ScaleGlyph': None },
-    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': 0xE0B0, 'SrcEnd': 0xE0B3, 'ScaleGlyph': None },
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': 0xE0A3, 'SrcEnd': 0xE0A3, 'ScaleGlyph': None },
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': 0xE0B4, 'SrcEnd': 0xE0C8, 'ScaleGlyph': None },
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': 0xE0CC, 'SrcEnd': 0xE0D4, 'ScaleGlyph': None },
-    { 'Enabled': args.pomicons,         'Filename': "Pomicons.otf",             'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': 0xE000, 'SrcEnd': 0xE00A, 'ScaleGlyph': None },
-    { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF295, 'SrcStart': 0xF000, 'SrcEnd': 0xF295, 'ScaleGlyph': 0xF17A },  # Windows logo
-    { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': 0xF10E },  # Ubuntu logo
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF0DB, 'SrcStart': 0xF400, 'SrcEnd': 0xF4DB, 'ScaleGlyph': 0xF02E },  # Magnifying glass 
-]
-
-SYM_ATTR = {
-    # Right/left-aligned glyphs will have their advance width reduced in order to overlap the next glyph slightly
-    0x2b60: { 'align': 'c', 'stretch': 'y' , 'overlap': False },
-    0x2b61: { 'align': 'c', 'stretch': ''  , 'overlap': False },
-    0x2b62: { 'align': 'r', 'stretch': ''  , 'overlap': False },
-    0x2b63: { 'align': 'l', 'stretch': ''  , 'overlap': False },
-    0x2b64: { 'align': 'c', 'stretch': ''  , 'overlap': False },
-    0x2b80: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0x2b81: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0x2b82: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-    0x2b83: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-
-    # Powerline dividers
+# Powerline dividers
+SYM_ATTR_POWERLINE = {
+    'default': { 'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': '' },
 
     # Arrow tips
-    0xe0b0: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0b1: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0b2: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-    0xe0b3: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0b0: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0b1: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0b2: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0b3: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
 
     # Rounded arcs
-    0xe0b4: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0b5: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0b6: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-    0xe0b7: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0b4: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
+    0xe0b5: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
+    0xe0b6: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
+    0xe0b7: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
 
     # Bottom Triangles
-    0xe0b8: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0b9: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0ba: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-    0xe0bb: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0b8: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0b9: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0ba: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0bb: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
 
     # Top Triangles
-    0xe0bc: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0bd: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0be: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-    0xe0bf: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0bc: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0bd: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0be: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0bf: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
 
     # Flames
-    0xe0c0: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0c1: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0c2: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
-    0xe0c3: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0c0: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
+    0xe0c1: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
+    0xe0c2: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
+    0xe0c3: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
 
     # Small squares
-    0xe0c4: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0c5: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0c4: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': '' },
+    0xe0c5: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': '' },
 
     # Bigger squares
-    0xe0c6: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0c7: { 'align': 'r', 'stretch': 'xy', 'overlap': False  },
+    0xe0c6: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': '' },
+    0xe0c7: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': '' },
 
     # Waveform
-    0xe0c8: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0c8: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.01} },
 
     # Hexagons
-    0xe0cc: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0cd: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0cc: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': '' },
+    0xe0cd: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': '' },
 
     # Legos
-    0xe0ce: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
-    0xe0cf: { 'align': 'c', 'stretch': 'xy', 'overlap': False  },
-    0xe0d1: { 'align': 'l', 'stretch': 'xy', 'overlap': False  },
+    0xe0ce: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': '' },
+    0xe0cf: { 'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': '' },
+    0xe0d1: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
 
     # Top and bottom trapezoid
-    0xe0d2: { 'align': 'l', 'stretch': 'xy', 'overlap': True  },
-    0xe0d4: { 'align': 'r', 'stretch': 'xy', 'overlap': True  },
+    0xe0d2: { 'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
+    0xe0d4: { 'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap':0.02} },
 }
 
 SYM_ATTR_DEFAULT = {
     # 'pa' == preserve aspect ratio
-    'align': 'c', 'stretch': 'pa', 'overlap': False
+    'default': { 'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': '' },
 }
+
+# Define the character ranges
+# Symbol font ranges
+
+PATCH_SET = [
+    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': False,'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA,'SrcEnd': 0xE62A,'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': True,                  'Filename': "devicons.ttf",             'Exact': False,'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700,'SrcEnd': 0xE7C5,'ScaleGlyph': 0xE60E,'Attributes': SYM_ATTR_DEFAULT },  # Android logo
+    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.pomicons,         'Filename': "Pomicons.otf",             'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  },
+    { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF295, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': 0xF17A,'Attributes': SYM_ATTR_DEFAULT },  # Windows logo
+    { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': 0xF10E, 'Attributes': SYM_ATTR_DEFAULT },  # Ubuntu logo
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF0DB, 'SrcStart': 0xF400, 'SrcEnd': 0xF4DB, 'ScaleGlyph': 0xF02E, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
+]
 
 # win_ascent and win_descent are used to set the line height for windows fonts.
 # hhead_ascent and hhead_descent are used to set the line height for mac fonts.
@@ -363,7 +355,7 @@ def get_scale_factor(font_dim, sym_dim):
         scale_ratio = scale_ratio_x
     return scale_ratio
 
-def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding=False, scaleGlyph=None):
+def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding, scaleGlyph, attributes):
 
     if exactEncoding is False:
         sourceFontList = []
@@ -383,11 +375,9 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
     for sym_glyph in symbolFont.selection.byGlyphs:
         try:
-            sym_attr = SYM_ATTR[sym_glyph.unicode]
+            sym_attr = attributes[sym_glyph.unicode]
         except KeyError:
-            sym_attr = SYM_ATTR_DEFAULT
-
-        glyphName = sym_glyph.glyphname
+            sym_attr = attributes['default']
 
         if exactEncoding:
             # use the exact same hex values for the source font as for the symbol font
@@ -399,6 +389,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             # convince that this string really is a hex:
             currentSourceFontGlyph = int("0x" + sourceFontList[sourceFontCounter], 16)
             copiedToSlot = sourceFontList[sourceFontCounter]
+            sourceFontCounter += 1
 
         if args.quiet == False:
             print "Updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot
@@ -406,30 +397,30 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         # Prepare symbol glyph dimensions
         sym_dim = get_dim(sym_glyph)
 
-        # Select and copy symbol from its encoding point
-        symbolFont.selection.select(sym_glyph.encoding)
-        symbolFont.copy()
-
-        # check it
-        if args.careful:
+        # check if a glyph already exists in this location
+        if args.careful or 'careful' in sym_attr['params']:
 
             if copiedToSlot.startswith("uni"):
                 copiedToSlot = copiedToSlot[3:]
 
             codepoint = int("0x" + copiedToSlot, 16)
-            try:
-                sourceFont[codepoint]
+            if codepoint in sourceFont:
                 if args.quiet == False:
-                    print "  Found existing Glyph.  Skipping..."
-            except TypeError:
-                # nothing there go ahead and paste at this codepoint
-                sourceFont.selection.select(currentSourceFontGlyph)
-                sourceFont.paste()
-        else:
-            sourceFont.selection.select(currentSourceFontGlyph)
-            sourceFont.paste()
+                    print "  Found existing Glyph at "+ copiedToSlot +".  Skipping..."
+                # We don't want to touch anything so move to next Glyph
+                continue
 
-        sourceFont[currentSourceFontGlyph].glyphname = glyphName
+        # Select and copy symbol from its encoding point
+        # We need to do this select after the careful check, this way we don't
+        # reset our selection before starting the next loop
+        symbolFont.selection.select(sym_glyph.encoding)
+        symbolFont.copy()
+
+        # Paste it
+        sourceFont.selection.select(currentSourceFontGlyph)
+        sourceFont.paste()
+
+        sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
 
         # Now that we have copy/pasted the glyph, if we are creating a monospace
         # font we need to scale and move the glyphs.  It is possible to have
@@ -464,26 +455,29 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             # Use the dimensions from the newly pasted and stretched glyph
             sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
 
-            # Center the symbol vertically by matching the center of the line height and center of symbol
-            sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
-            font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
-            y_align_distance = font_ycenter - sym_ycenter
+            y_align_distance = 0
+            if sym_attr['valign'] == 'c':
+                # Center the symbol vertically by matching the center of the line height and center of symbol
+                sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
+                font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
+                y_align_distance = font_ycenter - sym_ycenter
 
             # Handle glyph l/r/c alignment
+            x_align_distance = 0
+            if sym_attr['align']:
+                # First find the baseline x-alignment (left alignment amount)
+                x_align_distance = font_dim['xmin']-sym_dim['xmin']
+                if sym_attr['align'] == 'c':
+                    # Center align
+                    x_align_distance += (font_dim['width']/2) - (sym_dim['width']/2)
+                elif sym_attr['align'] == 'r':
+                    # Right align
+                    x_align_distance += font_dim['width'] - sym_dim['width']
 
-            # First find the baseline x-alignment (left alignment amount)
-            x_align_distance = font_dim['xmin']-sym_dim['xmin']
-            if sym_attr['align'] == 'c':
-                # Center align
-                x_align_distance += (font_dim['width']/2) - (sym_dim['width']/2)
-            elif sym_attr['align'] == 'r':
-                # Right align
-                x_align_distance += font_dim['width'] - sym_dim['width']
-
-            if sym_attr['overlap'] is True:
+            if 'overlap' in sym_attr['params']:
                 # We will use 1% of the font height/width as the overlap amount
-                overlap_width = font_dim['width'] / 100;
-                overlap_height = font_dim['height'] / 100;
+                overlap_width = font_dim['width'] * sym_attr['params']['overlap']
+                overlap_height = font_dim['height'] * sym_attr['params']['overlap']
 
                 sourceFont.transform(psMat.scale((sym_dim['width'] + overlap_width) / sym_dim['width'],
                     (sym_dim['height'] + overlap_height) / sym_dim['height'] ))
@@ -504,9 +498,6 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             # This needs to be done for all glyphs, even the ones that are empty and
             # didn't go through the scaling operations.
             sourceFont[currentSourceFontGlyph].width = font_dim['width']
-
-        if exactEncoding is False:
-            sourceFontCounter += 1
 
         # reset selection so iteration works propertly @todo fix? rookie misunderstanding?
         # This is likely needed because the selection was changed when the glyph was copy/pasted
@@ -540,7 +531,14 @@ for patch in PATCH_SET:
             # Match the symbol font size to the source font size
             symfont.em = sourceFont.em
             PreviousSymbolFilename = patch['Filename']
-        copy_glyphs(sourceFont, patch['SrcStart'], patch['SrcEnd'], symfont, patch['SymStart'], patch['SymEnd'],  patch['Exact'], patch['ScaleGlyph'])
+        # If patch table doesn't include a source start and end, re-use the symbol font values
+        SrcStart = patch['SrcStart']
+        SrcEnd = patch['SrcEnd']
+        if not SrcStart:
+            SrcStart = patch['SymStart']
+        if not SrcEnd:
+            SrcEnd = patch['SymEnd']
+        copy_glyphs(sourceFont, SrcStart, SrcEnd, symfont, patch['SymStart'], patch['SymEnd'],  patch['Exact'], patch['ScaleGlyph'], patch['Attributes'])
 
 if symfont:
     symfont.close()
