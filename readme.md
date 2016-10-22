@@ -123,27 +123,33 @@ See: [Font Patcher](#font-patcher) for usage
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | [TEST]            |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | [TEST]            |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | [TEST]            |
+| [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | [TEST]            |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | [TEST]            |
 | [Droid Sans Mono Nerd Font][p-droid]              |                             | NO   | 2048    | [TEST]            |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | [TEST]            |
 | [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]         | YES  | 1000    | [TEST]            |
 | [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]         | YES  | 1000    | [TEST]            |
+| [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | [TEST]            |
+| [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]        | YES  | 1000    | [TEST]            |
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | [TEST]            |
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | [TEST]            |
 | [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | [TEST]            |
-| [Iosevka][p-iosevka]                              | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
 | [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | [#70][s-hack]     |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | [TEST]            |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]  | YES  | 2048    | [TEST]            |
 | [Meslo Nerd Font][p-meslo]                        |                             | NO   | 2048    | [TEST]            |
 | [Monofur Nerd Font][p-monofur]                    |                             | NO   | 2400    | [TEST]            |
 | [Monoid Nerd Font][p-monoid]                      |                             | NO   | 1536    | [TEST]            |
+| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]      | NO   | 1024    | [TEST]            |
 | [M+ (MPlus) Nerd Font][p-mplus]                   |                             | NO   | 1000    | [TEST]            |
 | [ProFont (Windows tweaked) Nerd Font][p-profont]  |                             | NO   | 1200    | [TEST]            |
 | [ProFont (x11) Nerd Font][p-profont]              |                             | NO   | 1000    | [FAILING]         |
 | [ProggyClean Nerd Font][p-proggy-clean]           |                             | NO   | 2048    | [FAILING]         |
 | [Roboto Mono][p-roboto]                           |                             | NO   | 2048    | [FAILING]         |
 | [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]          | YES  | 1000    | [TEST]            |
+| [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | [TEST]            |
+| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | [TEST]            |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | [#16][s-terminus] |
 | [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | [TEST]            |
 | [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | [TEST]            |
@@ -376,6 +382,11 @@ Font repos
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-iosevka]:https://github.com/be5invis/Iosevka
 [f-fant]:https://github.com/belluzj/fantasque-sans
+[f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
+[f-space]:https://fonts.google.com/specimen/Space+Mono
+[f-gohu]:http://font.gohu.org/
+[f-mononoki]:http://madmalik.github.io/mononoki/
+[f-hasklig]:https://github.com/i-tu/Hasklig
 
 <!--
 Patched Font internal links
@@ -407,6 +418,12 @@ Patched Font internal links
 [p-source-code-pro]:patched-fonts/SourceCodePro
 [p-terminus]:patched-fonts/Terminus
 [p-ubuntu]:patched-fonts/UbuntuMono
+[p-share-tech-mono]:patched-fonts/ShareTechMono
+[p-space-mono]:patched-fonts/SpaceMono
+[p-gohu]:patched-fonts/Gohu
+[p-mononoki]:patched-fonts/Mononoki
+[p-code-nr]:patched-fonts/CodeNewRoman
+[p-hasklig]:patched-fonts/Hasklig
 
 <!--
 Patched Font Statuses
