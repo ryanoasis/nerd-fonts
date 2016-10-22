@@ -450,6 +450,9 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                     scale_ratio_y = font_dim['height'] / sym_dim['height']
 
             if scale_ratio_x != 1 or scale_ratio_y != 1:
+                if 'overlap' in sym_attr['params']:
+                    scale_ratio_x *= 1+sym_attr['params']['overlap']
+                    scale_ratio_y *= 1+sym_attr['params']['overlap']
                 sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
             # Use the dimensions from the newly pasted and stretched glyph
@@ -475,19 +478,11 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                     x_align_distance += font_dim['width'] - sym_dim['width']
 
             if 'overlap' in sym_attr['params']:
-                # We will use 1% of the font height/width as the overlap amount
                 overlap_width = font_dim['width'] * sym_attr['params']['overlap']
-                overlap_height = font_dim['height'] * sym_attr['params']['overlap']
-
-                sourceFont.transform(psMat.scale((sym_dim['width'] + overlap_width) / sym_dim['width'],
-                    (sym_dim['height'] + overlap_height) / sym_dim['height'] ))
-
-                # We are always vertically centering the glyph, so adjust it after the scale operation
-                y_align_distance -= overlap_height
                 if sym_attr['align'] == 'l':
-                    # The glyph should be left-aligned, so it must be moved overlap_width to the left
-                    # This only applies to left-aligned glyphs because the glyph is scaled to the right
                     x_align_distance -= overlap_width
+                if sym_attr['align'] == 'r':
+                    x_align_distance += overlap_width
 
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
             sourceFont.transform(align_matrix)
