@@ -14,6 +14,12 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 <sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
 
+The best way to get the fonts is to [download](#patched-fonts) the specific one you want
+
+Cloning of this repository is **not** required nor the most efficient way to get the fonts,
+however if you want all of the fonts and want to clone be sure to shallow clone:
+> `git clone --depth 1`
+
 For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [vim-devicons ➶][vim-devicons].
 
 
@@ -23,14 +29,11 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 |-----------------------------|------------------------------|----------------------------------|
 | [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) | [![vim-devicons-logo-small][img-visual-toc-vim-devicons]][vim-devicons] |
 
-<!--
-Start notice section
--->
-| Warning: _`master`_ branch file paths are _not_ considered stable. [Please read if you are directly referencing the repository URI](#unstable-file-paths) |
--------------------------------
-<!--
-End notice section
--->
+
+## Important Notices
+* _`master`_ branch file paths are _not_ considered stable. [Please read if you are directly referencing the repository URI](#unstable-file-paths)
+* cloning this repository is **not** recommended unless you are going to be [contributing to development](#contributing)
+
 
 ## Features
 * A [FontForge python script](#font-patcher) to patch any font
