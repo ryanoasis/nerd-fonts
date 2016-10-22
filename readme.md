@@ -116,7 +116,7 @@ See: [Font Patcher](#font-patcher) for usage
 
 | Font Name                                         | Font Name and Repository    | *RFN | EM Size | Status            |
 |---------------------------------------------------|-----------------------------|------|---------|-------------------|
-| [3270 Nerd Font][p-3270]                          |                             | NO   | 1000    | [TEST]            |
+| [3270 Nerd Font][p-3270]                          | [3270][f-3270]              | NO   | 1000    | [TEST]            |
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | [TEST]            |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | [TEST]            |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | [TEST]            |
@@ -362,6 +362,7 @@ Font repos
 
 [f-hack]:https://github.com/chrissimpkins/Hack
 [f-a-pro]:http://www.marksimonson.com/fonts/view/anonymous-pro
+[f-3270]:https://github.com/rbanffy/3270font
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-liberation]:https://fedorahosted.org/liberation-fonts
 [f-terminus]:http://terminus-font.sourceforge.net
