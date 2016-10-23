@@ -240,17 +240,18 @@ Patching the font of your own choosing for use with the [vim-devicons](https://g
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-q] [-w] [--fontawesome] [--fontlinux]
-                    [--octicons] [--pomicons] [--powerline] [--powerlineextra]
-                    [--careful] [-out [OUTPUTDIR]]
+usage: font-patcher [-h] [-v] [-s] [-q] [-w] [-c] [--fontawesome]
+                    [--fontawesomeextension] [--fontlinux] [--octicons]
+                    [--powersymbols] [--pomicons] [--powerline]
+                    [--powerlineextra] [--careful] [-ext [EXTENSION]]
+                    [-out [OUTPUTDIR]]
                     font
 
 Patches a given font with programming and web development related glyphs
 (mainly for https://github.com/ryanoasis/vim-devicons)
 
 positional arguments:
-  font                  The path to the font to be patched (e.g.
-                        Inconsolata.otf)
+  font                  The path to the font to patch (e.g., Inconsolata.otf)
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -261,19 +262,26 @@ optional arguments:
   -q, --quiet, --shutup
                         Do not generate verbose output
   -w, --windows, --limit-font-name-length
-                        Limit the internal font name to a maximum of 31
-                        characters (for safe Windows compatiblity)
+                        Limit the internal font name to 31 characters (for
+                        Windows compatibility)
+  -c, --complete        Add all available Glyphs
   --fontawesome         Add Font Awesome Glyphs (http://fortawesome.github.io
                         /Font-Awesome)
+  --fontawesomeextension
+                        Add Font Awesome Extension Glyphs
+                        (http://andrelgava.github.io/font-awesome-extension)
   --fontlinux           Add Font Linux Glyphs (https://github.com/Lukas-W
                         /font-linux)
   --octicons            Add Octicons Glyphs (https://octicons.github.com)
+  --powersymbols        Add IEC Power Symbols (http://unicodepowersymbol.com)
   --pomicons            Add Pomicon Glyphs
                         (https://github.com/gabrielelana/pomicons)
   --powerline           Add Powerline Glyphs
   --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis
                         /powerline-extra-symbols)
   --careful             Do not overwrite existing glyphs if detected
+  -ext [EXTENSION], --extension [EXTENSION]
+                        Change font file type to create (e.g., ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
                         The directory to output the patched font file to
 ```
@@ -313,14 +321,15 @@ optional arguments:
 | Please make sure to reference via the **release** branch and _not_ the ~~**master**~~ branch because paths are subject change for each release |
 | For example (paths shorted for demonstation purposes): |
 | Instead of: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DroidSansMono/< font_path >.otf~~ |
-| Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.8.0/patched-fonts/DroidSansMono/< font_path >.otf |
+| Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/DroidSansMono/< font_path >.otf |
 
 ## Other Good Fonts to Patch
 
 * a list of additional good fonts to patch that I cannot provide or share due to the license:
- * [Input Mono](http://input.fontbureau.com/)
-   * Coming soon with external hosting :)
- * [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
+ * [Input Mono][input-mono] (license restriction)
+   * Possibly coming with external hosting :)
+ * [PragmataPro][pragmatapro] (not free)
+ * [Consolas][consolas] (proprietary)
 
 ## Project History
 
@@ -366,6 +375,10 @@ Link References
 [img-version-badge]:https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts.svg
 [img-gitter-badge]:https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat
 [img-visual-toc-vim-devicons]:https://raw.githubusercontent.com/wiki/ryanoasis/vim-devicons/screenshots/v1.0.0/branding-logo-sm.png
+
+[consolas]:https://www.microsoft.com/typography/fonts/family.aspx?FID=300
+[input-mono]:http://input.fontbureau.com/download/
+[pragmatapro]:http://www.fsd.it/shop/fonts/pragmatapro/
 
 <!--
 Font repos
