@@ -17,7 +17,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 The best way to get the fonts is to [download](#patched-fonts) the specific one you want
 
 Cloning of this repository is **not** required nor the most efficient way to get the fonts,
-however if you want all of the fonts and want to clone be sure to shallow clone:
+however if you want all the fonts and want to clone be sure to shallow clone:
 > `git clone --depth 1`
 
 For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [vim-devicons ➶][vim-devicons].

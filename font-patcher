@@ -32,11 +32,11 @@ except ImportError:
 
 parser = argparse.ArgumentParser(description='Patches a given font with programming and web development related glyphs (mainly for https://github.com/ryanoasis/vim-devicons)')
 parser.add_argument('-v', '--version', action='version', version=projectName + ": %(prog)s ("+version+")")
-parser.add_argument('font', help='The path to the font to be patched (e.g. Inconsolata.otf)')
+parser.add_argument('font', help='The path to the font to patch (e.g., Inconsolata.otf)')
 parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
-parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows', action='store_true', help='Limit the internal font name to a maximum of 31 characters (for safe Windows compatiblity)', default=False)
-parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all availale Glyphs', default=False)
+parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows', action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)', default=False)
+parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all available Glyphs', default=False)
 parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)', default=False)
 parser.add_argument('--fontlinux', dest='fontlinux', action='store_true', help='Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)', default=False)
 parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)', default=False)
@@ -44,7 +44,7 @@ parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Ad
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 parser.add_argument('--careful', dest='careful', action='store_true', help='Do not overwrite existing glyphs if detected', default=False)
-parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension', help='Change type of font file to create (e.g. ttf, otf)', default="")
+parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension', help='Change font file type to create (e.g., ttf, otf)', default="")
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
 args = parser.parse_args()
 
