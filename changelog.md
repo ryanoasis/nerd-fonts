@@ -2,6 +2,29 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- v0.9.0
+  - Added 6 new fonts:
+    - Code New Roman (enhancement #85)
+    - Gohu (enhancement #90)
+    - Hasklig (enhancement PR #103) (@jrolfs)
+    - Mononoki (enhancement #89)
+    - Share Tech Mono (enhancement #105)
+    - Space Mono (enhancement #93)
+  - Added new Glyph set: [Font Awesome Extension](http://andrelgava.github.io/font-awesome-extension/) (Over 170 glyphs) (enhancement #96)
+  - Added new Glyph set: [IEC Power Symbols](http://unicodepowersymbol.com/) (enhancement #94)
+  - Added missing glyphs in range `2630` through `2637` (trigrams) to DejaVu Sans Mono (fixes #100)
+  - Updated Octicons font from [v3.2.0](https://github.com/github/octicons/releases/tag/v3.2.0) to [v4.4.0](https://github.com/github/octicons/releases/tag/v4.4.0)
+    - Last version with [font support](https://github.com/primer/octicons/issues/108)
+    - Adds glyphs: `verified`, `smiley`, `unverified`, `ellipses`, `file`, `grabber`, `plus-small`, `reply`
+    - Various glyph modifications and fixes
+  - Updated [DejaVu Sans Mono](http://dejavu-fonts.org/wiki/Changelog) from version 2.33 to 2.37
+  - Updated readme with information on shallow cloning (enhancement #102)
+  - Updated readme with better readability, prose, and removes some passive voice issues
+  - Fixed various missing glyphs such as `heart`, `zap`, `desktop` (fixes #87)
+  - Fixed several long standing issues (fix & enhancement PR #107) (@sharkusk)
+    - glyphs (scaling and positioning) (fixes #74)
+    - Monospacing issues
+    - Windows and macOS issues (fixes #111)
 - v0.8.0
   - Added 2 new fonts:
     - [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans) (enhancement #80)
