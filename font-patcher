@@ -169,7 +169,9 @@ reservedFontNameReplacements = {
     'hack': 'knack',
     'Hack': 'Knack',
     'hasklig': 'hasklug',
-    'Hasklig': 'Hasklug'
+    'hasklig': 'hasklug',
+    'Share': 'Shure',
+    'share': 'shure'
 }
 
 projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)"
@@ -259,8 +261,11 @@ symbolsDeviconsRangeEnd = 0xE6C5
 symbolsFontAwesomeRangeStart = 0xF000
 symbolsFontAwesomeRangeEnd = 0xF295
 
+symbolsOcticonsSymbolHeart = 0x2665
+symbolsOcticonsSymbolZap = 0x26a1
+symbolsOcticonsSymbolDesktop = 0xF27C
 symbolsOcticonsRangeStart = 0xF000
-symbolsOcticonsRangeEnd = 0xF0DB
+symbolsOcticonsRangeEnd = 0xF105
 
 symbolsFontLinuxRangeStart = 0xF100
 symbolsFontLinuxRangeEnd = 0xF115
@@ -278,8 +283,11 @@ sourceFontDeviconsEnd = 0xE7C5
 sourceFontFontAwesomeStart = 0xF000
 sourceFontFontAwesomeEnd = 0xF295
 
+sourceFontOcticonsSymbolHeart = 0x2665
+sourceFontOcticonsSymbolZap = 0x26a1
+sourceFontOcticonsSymbolDesktop = 0xF27C
 sourceFontOcticonsStart = 0xF400
-sourceFontOcticonsEnd = 0xF4DB
+sourceFontOcticonsEnd = 0xF505
 
 sourceFontFontLinuxStart = 0xF300
 sourceFontFontLinuxEnd = 0xF315
@@ -499,6 +507,9 @@ if args.fontawesome:
 
 if args.octicons:
     copy_glyphs(sourceFont, sourceFontOcticonsStart, sourceFontOcticonsEnd, octicons, symbolsOcticonsRangeStart, symbolsOcticonsRangeEnd, octiconsExactEncodingPosition)
+    copy_glyphs(sourceFont, sourceFontOcticonsSymbolHeart, sourceFontOcticonsSymbolHeart, octicons, symbolsOcticonsSymbolHeart, symbolsOcticonsSymbolHeart, octiconsExactEncodingPosition)
+    copy_glyphs(sourceFont, sourceFontOcticonsSymbolZap, sourceFontOcticonsSymbolZap, octicons, symbolsOcticonsSymbolZap, symbolsOcticonsSymbolZap, octiconsExactEncodingPosition)
+    copy_glyphs(sourceFont, sourceFontOcticonsSymbolDesktop, sourceFontOcticonsSymbolDesktop, octicons, symbolsOcticonsSymbolDesktop, symbolsOcticonsSymbolDesktop, octiconsExactEncodingPosition)
 
 if args.pomicons:
     copy_glyphs(sourceFont, sourceFontPomiconsStart, sourceFontPomiconsEnd, pomicons, symbolsPomiconsRangeStart, symbolsPomiconsRangeEnd)
