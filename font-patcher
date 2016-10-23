@@ -105,7 +105,7 @@ if args.fontlinux:
     verboseAdditionalFontNameSuffix += " Plus Font Linux"
 
 # if all source glyphs included simplify the name
-if args.fontawesome and args.fontawesomeextra and args.octicons and args.powersymbols and args.pomicons and args.powerlineextra and args.fontlinux:
+if args.fontawesome and args.fontawesomeextension and args.octicons and args.powersymbols and args.pomicons and args.powerlineextra and args.fontlinux:
     additionalFontNameSuffix = " " + projectNameSingular + " C"
     verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
 
@@ -300,14 +300,14 @@ PATCH_SET = [
     { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.pomicons,         'Filename': "Pomicons.otf",             'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  },
     { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF295, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': 0xF17A,'Attributes': SYM_ATTR_DEFAULT },  # Windows logo
-    { 'Enabled': args.fontawesomeextension,      'Filename': "font-awesome-extension.ttf",          'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200,  'SrcEnd': 0xE2A9,  'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': args.fontawesomeextension,      'Filename': "font-awesome-extension.ttf",          'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200,  'SrcEnd': 0xE2A9,  'ScaleGlyph': 0xE05D, 'Attributes': SYM_ATTR_DEFAULT }, # Maximize
     { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': 0xF10E, 'Attributes': SYM_ATTR_DEFAULT },  # Ubuntu logo
     { 'Enabled': args.pomicons,         'Filename': "Unicode_IEC_symbol_font.otf",             'Exact': True, 'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Power, Power On/Off, Power On, Sleep
     { 'Enabled': args.pomicons,         'Filename': "Unicode_IEC_symbol_font.otf",             'Exact': True, 'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Heavy Circle (aka Power Off)
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF0DB, 'SrcStart': 0xF400, 'SrcEnd': 0xF4DB, 'ScaleGlyph': 0xF02E, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': 0xF02E, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
     { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },  # Heart
     { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },  # Zap
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': True,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },  # Desktop
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF67C, 'SrcEnd': 0xF67C, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },  # Desktop
 ]
 
 # win_ascent and win_descent are used to set the line height for windows fonts.
