@@ -13,6 +13,9 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Added new Glyph set: [Font Awesome Extension](http://andrelgava.github.io/font-awesome-extension/) (Over 170 glyphs) (enhancement #96)
   - Added new Glyph set: [IEC Power Symbols](http://unicodepowersymbol.com/) (enhancement #94)
   - Added missing glyphs in range `2630` through `2637` (trigrams) to DejaVu Sans Mono (fixes #100)
+  - Updated Font Awesome to the latest version v4.7.0:
+    - https://github.com/FortAwesome/Font-Awesome/releases/tag/v4.7.0
+    - https://github.com/FortAwesome/Font-Awesome/issues?q=milestone%3A4.7.0
   - Updated Octicons font from [v3.2.0](https://github.com/github/octicons/releases/tag/v3.2.0) to [v4.4.0](https://github.com/github/octicons/releases/tag/v4.4.0)
     - Last version with [font support](https://github.com/primer/octicons/issues/108)
     - Adds glyphs: `verified`, `smiley`, `unverified`, `ellipses`, `file`, `grabber`, `plus-small`, `reply`
