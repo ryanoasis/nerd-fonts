@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 0.8.0
+# version: 0.9.0
 
 # Check for Fontforge
 type fontforge >/dev/null 2>&1 || {
@@ -15,7 +15,11 @@ res1=$(date +%s)
 source_fonts_dir="${PWD}/unpatched-sample-fonts"
 patched_fonts_dir="${PWD}/patched-fonts"
 like_pattern=''
-organizing_sub_dir=""
+complete_variation_count=0
+total_variation_count=0
+total_count=0
+last_parent_dir=""
+
 
 if [ $# -eq 1 ]
   then
@@ -36,32 +40,20 @@ echo "Total source fonts found: ${#source_fonts[*]}"
 
 function patch_font {
   local f=$1; shift
-  local organizing_sub_dir=$1; shift
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
-  printf "\n---------------\n"
+  printf "\n---------------\n\n"
   local patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
-  echo "patched font dir is $patched_font_dir"
+  #echo "patched font dir is $patched_font_dir"
   local patched_font_dir+=$organizing_sub_dir
-  echo "patched font dir is $patched_font_dir"
+  #echo "patched font dir is $patched_font_dir"
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
-  fontforge -quiet -script ./font-patcher "$@" "$f" --outputdir $patched_font_dir 2>/dev/null
-}
+  #fontforge -quiet -script ./font-patcher "$@" "$f" --outputdir $patched_font_dir 2>/dev/null
 
-function patch_font_batch {
-  patch_font "$@" -q
-  patch_font "$@" -q -s
-  patch_font "$@" -q -w
-  patch_font "$@" -q -s -w
-}
-
-# Use for loop iterate through source fonts
-# $f stores current value
-for f in "${source_fonts[@]}"
-do
-  echo "$f"
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
   config_dir=$( cd "$( dirname "$f" )" && pwd)
+
+  echo "config parent dir is $config_parent_dir"
 
   # source the font config file if exists:
   if [ -f "$config_dir/config.cfg" ]
@@ -75,61 +67,59 @@ do
   if [ $config_has_powerline ]
   then
     powerline=""
+	 combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
   else
     powerline="--powerline"
+	 combinations=$("./font-patcher ${f##*/} %s\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
   fi
 
-  patch_font_batch "$f" "minimal/" $powerline &
+  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --outputdir $patched_font_dir"complete/" 2>/dev/null
+  fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --outputdir $patched_font_dir"complete/" 2>/dev/null
+  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --outputdir $patched_font_dir"complete/" 2>/dev/null
 
-  # font awesome variations
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome &
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --powerlineextra &
+  complete_variation_count=$((complete_variation_count+3))
+  combination_count=$(printf "$combinations" | wc -l)
 
-  # octicons variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --octicons &
-  patch_font_batch "$f" "additional-variations/" $powerline --octicons --powerlineextra &
+  # generate the readmes:
 
-  # font linux variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux &
-  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux --powerlineextra &
+  # if first time with this font then re-build parent dir readme, else skip:
+  if [[ $config_parent_dir != $last_parent_dir ]];
+  then
+    echo "Re-generate parent directory readme"
+	 generate_readme "$patched_font_dir/.."
+  fi
 
-  # pomicon variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --pomicons &
-  patch_font_batch "$f" "additional-variations/" $powerline --pomicons --powerlineextra &
+  generate_readme $patched_font_dir
 
-  # fontawesome + octicons variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons &
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons --powerlineextra &
+  last_parent_dir=$config_parent_dir
 
-  # fontawesome + pomicons variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --pomicons &
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --pomicons --powerlineextra &
+  total_variation_count=$((combination_count))
+  total_count=$((complete_variation_count+combination_count))
 
-  # fontawesome + fontlinux variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --fontlinux &
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --fontlinux --powerlineextra &
+}
 
-  # fontlinux + pomicons variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux --pomicons &
-  patch_font_batch "$f" "additional-variations/" $powerline --fontlinux --pomicons --powerlineextra &
+# Re-generate all the readmes
+# $1 = fontdir path
+function generate_readme {
+  patched_font_dir=$1
+  combinations_filename="$patched_font_dir/readme.md"
 
-  # octicons + pomicons variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --octicons --pomicons &
-  patch_font_batch "$f" "additional-variations/" $powerline --octicons --pomicons --powerlineextra &
+  cat $patched_font_dir/font-info.md > $combinations_filename
+  cat $PWD/source/readme-per-directory-variations.md >> $combinations_filename
 
-  # octicons + fontlinux variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --octicons --fontlinux &
-  patch_font_batch "$f" "additional-variations/" $powerline --octicons --fontlinux --powerlineextra &
+  printf "\`\`\`sh" >> $combinations_filename
+  printf "\n# $combination_count Possible Combinations:\n" >> $combinations_filename
+  printf "\n" >> $combinations_filename
+  printf "$combinations" >> $combinations_filename
+  printf "\n" >> $combinations_filename
+  printf "\`\`\`" >> $combinations_filename
+}
 
-  # fontawesome + octicons + pomicons variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons --pomicons &
-
-  # fontawesome + octicons + pomicons + fontlinux variations:
-  patch_font_batch "$f" "additional-variations/" $powerline --fontawesome --octicons --pomicons --fontlinux &
-
-  # fontawesome + octicons + pomicons + powerlineextra variations (aka Complete):
-  patch_font_batch "$f" "complete/" $powerline --fontawesome --octicons --pomicons --powerlineextra --fontlinux &
-
+# Use for loop iterate through source fonts
+# $f stores current value
+for f in "${source_fonts[@]}"
+do
+  patch_font "$f" &
 
   # un-comment to test this script (patch 1 font)
   #break
@@ -151,3 +141,6 @@ ds=$(echo "$dt3-60*$dm" | bc)
 printf "Total runtime: %d:%02d:%02d:%02d\n" $dd $dh $dm $ds
 
 echo "All unpatched fonts re-patched to their respective sub-directories in $patched_fonts_dir"
+echo "The total number of 'variation' patched fonts created was $total_variation_count"
+echo "The total number of 'complete' patched fonts created was $complete_variation_count"
+echo "The total number of patched fonts created was $total_count"
