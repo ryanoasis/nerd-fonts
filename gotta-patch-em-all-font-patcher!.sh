@@ -42,7 +42,6 @@ function patch_font {
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
   local patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
-  local patched_font_dir+=$organizing_sub_dir
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
@@ -57,7 +56,7 @@ function patch_font {
     source "$config_parent_dir/config.cfg"
   fi
 
-  if [ $config_has_powerline ]
+  if [ "$config_has_powerline" ]
   then
     powerline=""
 	 combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
@@ -66,24 +65,24 @@ function patch_font {
 	 combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
   fi
 
-  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --outputdir $patched_font_dir"complete/" 2>/dev/null &
-  fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --outputdir $patched_font_dir"complete/" 2>/dev/null &
-  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --outputdir $patched_font_dir"complete/" 2>/dev/null &
+  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
+  fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
+  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
   #wait
 
   complete_variation_count=$((complete_variation_count+3))
-  combination_count=$(printf "$combinations" | wc -l)
+  combination_count=$(printf "%s" "$combinations" | wc -l)
 
   # generate the readmes:
 
   # if first time with this font then re-build parent dir readme, else skip:
-  if [[ $config_parent_dir != $last_parent_dir ]];
+  if [[ $config_parent_dir != "$last_parent_dir" ]];
   then
     #echo "Re-generate parent directory readme"
     generate_readme "$patched_font_dir/.."
   fi
 
-  generate_readme $patched_font_dir
+  generate_readme "$patched_font_dir"
 
   last_parent_dir=$config_parent_dir
 
@@ -98,15 +97,18 @@ function generate_readme {
   patched_font_dir=$1
   combinations_filename="$patched_font_dir/readme.md"
 
-  cat $patched_font_dir/font-info.md > $combinations_filename
-  cat $PWD/source/readme-per-directory-variations.md >> $combinations_filename
+  cat "$patched_font_dir/font-info.md" > "$combinations_filename"
+  cat "$PWD/source/readme-per-directory-variations.md" >> "$combinations_filename"
 
-  printf "\`\`\`sh" >> $combinations_filename
-  printf "\n# $combination_count Possible Combinations:\n" >> $combinations_filename
-  printf "\n" >> $combinations_filename
-  printf "$combinations" >> $combinations_filename
-  printf "\n" >> $combinations_filename
-  printf "\`\`\`" >> $combinations_filename
+  # add to the file
+  {
+    printf "\`\`\`sh"
+    printf "\n# %s Possible Combinations:\n" "$combination_count"
+    printf "\n"
+    printf "%s" "$combinations"
+    printf "\n"
+    printf "\`\`\`"
+  } >> "$combinations_filename"
 }
 
 # Use for loop iterate through source fonts
@@ -132,9 +134,9 @@ dt3=$(echo "$dt2-3600*$dh" | bc)
 dm=$(echo "$dt3/60" | bc)
 ds=$(echo "$dt3-60*$dm" | bc)
 
-printf "# Total runtime: %d:%02d:%02d:%02d\n" $dd $dh $dm $ds
+printf "# Total runtime: %d:%02d:%02d:%02d\n" "$dd" "$dh" "$dm" "$ds"
 
-printf "# All fonts patched to sub-directories in '$patched_fonts_dir'\n"
-printf "# The total number of 'variation' patched fonts created was $total_variation_count\n"
-printf "# The total number of 'complete' patched fonts created was $complete_variation_count\n"
-printf "# The total number of patched fonts created was $total_count\n"
+printf "# All fonts patched to sub-directories in '%s'\n" "$patched_fonts_dir"
+printf "# The total number of 'variation' patched fonts created was '%s'\n" "$patched_fonts_dir"
+printf "# The total number of 'complete' patched fonts created was '%s'\n" "$complete_variation_count"
+printf "# The total number of patched fonts created was '%s'\n" "$total_count"
