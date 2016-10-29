@@ -9,7 +9,7 @@
 The following Sankey flow diagram shows the current glyph sets included:
 
 <h1 align="center">
-	<img src="https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/sankey-glyphs-combined-diagram.png" alt="@SankeyMATIC Diagram" />
+	<img src="https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/sankey-glyphs-combined-diagram.png" alt="@SankeyMATIC Diagram" />
 </h1>
 
 <sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
@@ -67,39 +67,51 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 ### Seti-UI + Custom
 > Based off of [Seti-UI] Icomoon with extra custom glyphs.
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-1.png)
 
 ### [Devicons][vorillaz-devicons]
 > An iconic font made for developers, code jedis, ninjas, HTTPsters, evangelists and nerds(sic). / ([repo][vorillaz-devicons]) / ([website](http://vorillaz.github.io/devicons))
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-2.png)
 
 ### [Font Awesome][font-awesome]
 > The iconic font and CSS toolkit. / ([repo][font-awesome]) / ([website](https://fortawesome.github.io/Font-Awesome))
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-font-awesome-1.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-font-awesome-2.png)
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-font-awesome-3.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-awesome-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-awesome-2.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-awesome-3.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-awesome-4.png)
+
+### [Font Awesome Extension][font-awesome-extension]
+> Simple Font Awesome Extension. / ([repo][font-awesome-extension]) / ([website](http://andrelgava.github.io/font-awesome-extension/))
+
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-awesome-extension-1.png)
 
 ### [Octicons][octicons]
 > GitHub's icons. / ([repo][octicons]) / ([website](https://octicons.github.com))
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-octicons.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-octicons.png)
 
 ### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 > Provides extra Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
 
 ![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
 
+### [IEC Power Symbols][font-iecpower]
+> Adding new characters into Unicode / ([website][website-iecpower])
+
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-iec-power-1.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-iec-power-2.png)
+
 ### [Font Linux][font-linux]
 > Font-linux is an icon font containing logos of popular linux distributions for inclusion in websites. / ([repo][font-linux])
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-font-linux.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-linux.png)
 
 ### [Pomicons][gabrielelana-pomicons]
 > 8 symbols for the ["Pomodoro Technique"®](http://pomodorotechnique.com). / ([repo][gabrielelana-pomicons])
 
-![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.8.x/fontforge-glyph-set-pomicons.png)
+![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-pomicons.png)
 
 ## Usage
 
@@ -358,12 +370,19 @@ Repo References
 [vim-devicons]:https://github.com/ryanoasis/vim-devicons
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
+[font-awesome-extension]:https://github.com/AndreLGava/font-awesome-extension
 [octicons]:https://github.com/github/octicons
 [font-linux]:https://github.com/Lukas-W/font-linux
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
 [wiki]:https://github.com/ryanoasis/nerd-fonts/wiki
+
+<!--
+Website References
+-->
+
+[website-iecpower]:http://unicodepowersymbol.com/
 
 <!--
 Link References
