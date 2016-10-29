@@ -97,7 +97,7 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 
 ![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
 
-### [IEC Power Symbols][font-iecpower]
+### [IEC Power Symbols][website-iecpower]
 > Adding new characters into Unicode / ([website][website-iecpower])
 
 ![image](https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/fontforge-glyph-set-font-iec-power-1.png)
