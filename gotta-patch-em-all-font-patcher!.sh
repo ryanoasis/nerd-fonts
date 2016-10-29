@@ -10,7 +10,6 @@ type fontforge >/dev/null 2>&1 || {
 }
 
 res1=$(date +%s)
-
 # Set source and target directories
 source_fonts_dir="${PWD}/unpatched-sample-fonts"
 patched_fonts_dir="${PWD}/patched-fonts"
@@ -42,18 +41,12 @@ function patch_font {
   local f=$1; shift
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
-  #printf "\n---------------\n\n"
   local patched_font_dir="${patched_font_dir/unpatched-sample-fonts/patched-fonts}"
-  #echo "patched font dir is $patched_font_dir"
   local patched_font_dir+=$organizing_sub_dir
-  #echo "patched font dir is $patched_font_dir"
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
-  #fontforge -quiet -script ./font-patcher "$@" "$f" --outputdir $patched_font_dir 2>/dev/null
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
   config_dir=$( cd "$( dirname "$f" )" && pwd)
-
-  #echo "config parent dir is $config_parent_dir"
 
   # source the font config file if exists:
   if [ -f "$config_dir/config.cfg" ]
@@ -87,7 +80,7 @@ function patch_font {
   if [[ $config_parent_dir != $last_parent_dir ]];
   then
     #echo "Re-generate parent directory readme"
-	 generate_readme "$patched_font_dir/.."
+    generate_readme "$patched_font_dir/.."
   fi
 
   generate_readme $patched_font_dir
