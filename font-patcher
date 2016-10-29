@@ -553,7 +553,7 @@ for patch in PATCH_SET:
             if symfont:
                 symfont.close()
                 symfont = None
-            symfont = fontforge.open("glyph-source-fonts/"+patch['Filename'])
+            symfont = fontforge.open("src/glyphs/"+patch['Filename'])
             # Match the symbol font size to the source font size
             symfont.em = sourceFont.em
             PreviousSymbolFilename = patch['Filename']
@@ -573,5 +573,4 @@ if symfont:
 # '.comment' and '.fontlog'.
 sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
 
-print "Generated"
-print sourceFont.fullname
+print "Generated: " + sourceFont.fullname
