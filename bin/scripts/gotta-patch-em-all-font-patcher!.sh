@@ -42,35 +42,22 @@ echo "# Total source fonts found: ${#source_fonts[*]}"
 
 function patch_font {
   local f=$1; shift
-  echo "f $f"
-  echo "basename $(basename $f)"
-  echo "dirname $(dirname $f)"
-  echo pwd
-  ## take everything before the last slash (/) to start building the full path
-  #echo "patched_font_dir $patched_font_dir"
+  # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
-  echo "patched_font_dir $patched_font_dir"
-  #local patched_font_dir="${patched_font_dir/../../unpatched-fonts/patched-fonts}"
-  #echo "patched_font_dir $patched_font_dir"
   # find replace unpatched parent dir with patched parent dir:
   local patched_font_dir="${patched_font_dir/$unpatched_parent_dir/$patched_parent_dir}"
-  echo "patched_font_dir $patched_font_dir"
+
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
   config_dir=$( cd "$( dirname "$f" )" && pwd)
-  config_parent_dir_name=$(basename $config_parent_dir)
-  #is_unpatched_fonts_root=$("$config_parent_dir_name" == "unpatched-fonts")
+  config_parent_dir_name=$(basename "$config_parent_dir")
   is_unpatched_fonts_root=0
-  echo "config_parent_dir_name $config_parent_dir_name"
 
   if [ "$config_parent_dir_name" == "unpatched-fonts" ]
   then
-    echo "ITS ROOT"
     is_unpatched_fonts_root=1
   fi
-
-  echo "is_unpatched_fonts_root $is_unpatched_fonts_root"
 
   # source the font config file if exists:
   if [ -f "$config_dir/config.cfg" ]
@@ -90,9 +77,6 @@ function patch_font {
     combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
   fi
 
-  echo "f ${f}"
-  echo "output to ${patched_font_dir}complete/"
-
   cd "$parent_dir"
 
   fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
@@ -108,8 +92,6 @@ function patch_font {
   # if first time with this font then re-build parent dir readme, else skip:
   if [[ $config_parent_dir != "$last_parent_dir"  && (! $is_unpatched_fonts_root) ]];
   then
-    echo "config_parent_dir $config_parent_dir"
-    echo "last_parent_dir $last_parent_dir"
     echo "Re-generate parent directory readme"
     generate_readme "$patched_font_dir/.."
   fi
@@ -119,7 +101,7 @@ function patch_font {
   last_parent_dir=$config_parent_dir
 
   total_variation_count=$((total_variation_count+combination_count))
-  total_count=$((complete_variation_count+combination_count))
+  total_count=$((total_count+complete_variation_count+combination_count))
 
 }
 
@@ -133,11 +115,12 @@ function generate_readme {
   # clear output file (needed for multiple runs or updates):
   > "$combinations_filename"
 
-  if [ -f font_info ];
+  if [ -f "$font_info" ];
   then
     cat "$patched_font_dir/font-info.md" >> "$combinations_filename"
   else
 	  echo "# Could not append font-info.md (file not found). Was standardize script run? It should be executed first"
+	  echo "# looked for: $font_info"
   fi
 
   cat "$parent_dir/src/readme-per-directory-variations.md" >> "$combinations_filename"
@@ -157,7 +140,6 @@ function generate_readme {
 # $f stores current value
 for f in "${source_fonts[@]}"
 do
-	#echo "patch $f"
    patch_font "$f"
 
   # un-comment to test this script (patch 1 font)
