@@ -13,8 +13,11 @@ cd ../../src/unpatched-fonts/ || {
   exit 1
 }
 
-#find ./ProFont -type d | # uncomment to test 1 font
-#find ./DejaVuSansMono -type d | # uncomment to test 1 font
+#find ./ProFont -type d | # uncomment to test 1 font (with txt)
+#find ./DejaVuSansMono -type d | # uncomment to test 1 font (with rst)
+#find ./Hasklig -type d | # uncomment to test 1 font
+#find ./Hack -type d | # uncomment to test 1 font (with md)
+#find ./Gohu -type d | # uncomment to test 1 font (no readme files)
 find . -type d | # uncomment to do ALL fonts
 while read -r filename
 do
@@ -30,6 +33,7 @@ do
 
 	RST=( $(find "$searchdir" -type f -iname 'readme.rst') )
 	TXT=( $(find "$searchdir" -type f -iname 'readme.txt') )
+	MD=( $(find "$searchdir" -type f -iname 'readme.md') )
 	outputdir=$PWD/../../patched-fonts/$filename/
 
 	echo "# Generating readme for: $filename"
@@ -44,8 +48,7 @@ do
 			echo "## Found RST"
 
 			from="$PWD/$i"
-			from_dir=$(dirname "$from")
-			to_dir="${from_dir/$unpatched_parent_dir/$patched_parent_dir}"
+			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
 			to="${to_dir}/$infofilename"
 
 			[[ -d "$to_dir" ]] || mkdir -p "$to_dir"
@@ -56,7 +59,6 @@ do
 
 			cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
 		done
-
 	elif [ "${TXT[0]}" ];
 	then
 		for i in "${TXT[@]}"
@@ -64,8 +66,25 @@ do
 			echo "## Found TXT"
 
 			from="$PWD/$i"
-			from_dir=$(dirname "$from")
-			to_dir="${from_dir/$unpatched_parent_dir/$patched_parent_dir}"
+			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+			to="${to_dir}/$infofilename"
+
+			[[ -d "$to_dir" ]] || mkdir -p "$to_dir"
+			# clear output file (needed for multiple runs or updates):
+			> "$to" 2> /dev/null
+
+			cp "$from" "$to"
+
+			cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+		done
+	elif [ "${MD[0]}" ];
+	then
+		for i in "${MD[@]}"
+		do
+			echo "## Found MD"
+
+			from="$PWD/$i"
+			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
 			to="${to_dir}/$infofilename"
 
 			[[ -d "$to_dir" ]] || mkdir -p "$to_dir"
