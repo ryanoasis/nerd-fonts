@@ -315,6 +315,11 @@ if (sourceFont.os2_winascent + sourceFont.os2_windescent) % 2 != 0:
 sourceFont.hhea_ascent = sourceFont.os2_winascent
 sourceFont.hhea_descent = -sourceFont.os2_windescent
 
+# Line gap add extra space on the bottom of the line which doesn't allow
+# the powerline glyphs to fill the entire line.
+sourceFont.hhea_linegap = 0
+sourceFont.os2_typolinegap = 0
+
 # Initial font dimensions
 font_dim = {
     'xmin'  :    0,
