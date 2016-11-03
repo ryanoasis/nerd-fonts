@@ -45,6 +45,7 @@ parser.add_argument('--powersymbols', dest='powersymbols', action='store_true', 
 parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
+parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
 parser.add_argument('--careful', dest='careful', action='store_true', help='Do not overwrite existing glyphs if detected', default=False)
 parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension', help='Change font file type to create (e.g., ttf, otf)', default="")
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
@@ -287,27 +288,50 @@ SYM_ATTR_DEFAULT = {
     'default': { 'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': '' },
 }
 
+SYM_ATTR_FONTA = {
+    # 'pa' == preserve aspect ratio
+    'default': { 'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': '' },
+
+    # Don't center these arrows vertically
+    0xf0dc: { 'align': 'c', 'valign': '', 'stretch': 'pa', 'params': '' },
+    0xf0dd: { 'align': 'c', 'valign': '', 'stretch': 'pa', 'params': '' },
+    0xf0de: { 'align': 'c', 'valign': '', 'stretch': 'pa', 'params': '' },
+}
+
+CUSTOM_ATTR = {
+    # 'pa' == preserve aspect ratio
+    'default': { 'align': 'c', 'valign': '', 'stretch': '', 'params': '' },
+}
+
+# Most glyphs we want to maximize during the scale.  However, there are some
+# that need to be small or stay relative in size to each other.
+# The following list are those glyphs.  A tuple represents a range.
+DEVI_SCALE_LIST  = { 'ScaleGlyph': 0xE60E, 'GlyphsToScale': [ (0xe6bd, 0xe6c3), ] }
+FONTA_SCALE_LIST = { 'ScaleGlyph': 0xF17A, 'GlyphsToScale': [ 0xf005, 0xf006, (0xf026, 0xf028), 0xf02b, 0xf02c, (0xf031, 0xf035), (0xf044, 0xf054), (0xf060, 0xf063), 0xf077, 0xf078, 0xf07d, 0xf07e, 0xf089, (0xf0d7, 0xf0da), (0xf0dc, 0xf0de), (0xf100, 0xf107), 0xf141, 0xf142, (0xf153, 0xf15a), (0xf175, 0xf178), 0xf182, 0xf183, (0xf221, 0xf22d), (0xf255, 0xf25b), ] }
+OCTI_SCALE_LIST  = { 'ScaleGlyph': 0xF02E, 'GlyphsToScale': [ (0xf03d, 0xf040), 0xf044, (0xf051, 0xf053), 0xf05a, 0xf05b, 0xf071, 0xf078, (0xf09f, 0xf0aa), 0xf0ca, ] }
+
 # Define the character ranges
 # Symbol font ranges
 
 PATCH_SET = [
-    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': False,'SymStart': 0xE4FA, 'SymEnd': 0xE52B, 'SrcStart': 0xE5FA,'SrcEnd': 0xE62B,'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT },
-    { 'Enabled': True,                  'Filename': "devicons.ttf",             'Exact': False,'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700,'SrcEnd': 0xE7C5,'ScaleGlyph': 0xE60E,'Attributes': SYM_ATTR_DEFAULT },  # Android logo
+    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': False,'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA,'SrcEnd': 0xE62B,'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': True,                  'Filename': "devicons.ttf",             'Exact': False,'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700,'SrcEnd': 0xE7C5,'ScaleGlyph': DEVI_SCALE_LIST,'Attributes': SYM_ATTR_DEFAULT },
     { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.pomicons,         'Filename': "Pomicons.otf",             'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  },
-    { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': 0xF17A,'Attributes': SYM_ATTR_DEFAULT },  # Windows logo
+    { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': FONTA_SCALE_LIST,'Attributes': SYM_ATTR_FONTA },
     { 'Enabled': args.fontawesomeextension,      'Filename': "font-awesome-extension.ttf",          'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200,  'SrcEnd': 0xE2A9,  'ScaleGlyph': 0xE05D, 'Attributes': SYM_ATTR_DEFAULT }, # Maximize
-    { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': 0xF10E, 'Attributes': SYM_ATTR_DEFAULT },  # Ubuntu logo
+    { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': 0xF10E, 'Attributes': SYM_ATTR_DEFAULT },
     { 'Enabled': args.pomicons,         'Filename': "Unicode_IEC_symbol_font.otf",             'Exact': True, 'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Power, Power On/Off, Power On, Sleep
     { 'Enabled': args.pomicons,         'Filename': "Unicode_IEC_symbol_font.otf",             'Exact': True, 'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Heavy Circle (aka Power Off)
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': 0xF02E, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },  # Heart
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },  # Zap
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF67C, 'SrcEnd': 0xF67C, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },  # Desktop
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Heart
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Zap
+    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF67C, 'SrcEnd': 0xF67C, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Desktop
+    { 'Enabled': args.custom,           'Filename': args.custom,                'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': 0x0000, 'SrcEnd': 0x0000, 'ScaleGlyph': None, 'Attributes': CUSTOM_ATTR },
 ]
 
 # win_ascent and win_descent are used to set the line height for windows fonts.
@@ -321,6 +345,11 @@ if (sourceFont.os2_winascent + sourceFont.os2_windescent) % 2 != 0:
 # Make the line size identical for windows and mac
 sourceFont.hhea_ascent = sourceFont.os2_winascent
 sourceFont.hhea_descent = -sourceFont.os2_windescent
+
+# Line gap add extra space on the bottom of the line which doesn't allow
+# the powerline glyphs to fill the entire line.
+sourceFont.hhea_linegap = 0
+sourceFont.os2_typolinegap = 0
 
 # Initial font dimensions
 font_dim = {
@@ -350,8 +379,8 @@ for glyph in range(0x00, 0x17f):
 # Calculate font height
 font_dim['height'] = abs(font_dim['ymin']) + font_dim['ymax']
 
-# Update the font encoding to ensure that the Unicode glyphs are available
-sourceFont.encoding = 'ISO10646'
+# Update the font encoding to ensure that the Unicode glyphs are available.
+sourceFont.encoding = 'UnicodeFull'
 
 # Fetch this property before adding outlines
 onlybitmaps = sourceFont.onlybitmaps
@@ -386,7 +415,21 @@ def get_scale_factor(font_dim, sym_dim):
         scale_ratio = scale_ratio_x
     return scale_ratio
 
+def use_scale_glyph( unicode_value, glyph_list ):
+    for i in glyph_list:
+        if isinstance(i, tuple):
+            if unicode_value >= i[0] and unicode_value <= i[1]:
+                return True
+        else:
+            if unicode_value == i:
+                return True
+    return False
+
 def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding, scaleGlyph, attributes):
+
+    careful = False
+    if args.careful:
+        careful = True
 
     if exactEncoding is False:
         sourceFontList = []
@@ -397,12 +440,20 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
     scale_factor = 0
     if scaleGlyph:
-        sym_dim = get_dim(symbolFont[scaleGlyph])
+        sym_dim = get_dim(symbolFont[scaleGlyph['ScaleGlyph']])
         scale_factor = get_scale_factor(font_dim, sym_dim)
 
     # Create glyphs from symbol font
-    symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
-    sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
+
+    # If we are going to copy all Glyphs, then assume we want to be careful
+    # and only copy those that are not already contained in the source font
+    if symbolFontStart == 0:
+        symbolFont.selection.all()
+        sourceFont.selection.all()
+        careful = True
+    else:
+        symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
+        sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
 
     for sym_glyph in symbolFont.selection.byGlyphs:
         try:
@@ -422,6 +473,10 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             copiedToSlot = sourceFontList[sourceFontCounter]
             sourceFontCounter += 1
 
+        if int(copiedToSlot, 16) < 0:
+            print "Found invalid glyph slot number. Skipping."
+            continue
+
         if args.quiet == False:
             print "Updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot
 
@@ -429,8 +484,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         sym_dim = get_dim(sym_glyph)
 
         # check if a glyph already exists in this location
-        if args.careful or 'careful' in sym_attr['params']:
-
+        if careful or 'careful' in sym_attr['params']:
             if copiedToSlot.startswith("uni"):
                 copiedToSlot = copiedToSlot[3:]
 
@@ -463,7 +517,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             # find the largest possible scaling factor that will allow the glyph
             # to fit in both the x and y directions
             if sym_attr['stretch'] == 'pa':
-                if scale_factor:
+                if scale_factor and use_scale_glyph(sym_glyph.unicode, scaleGlyph['GlyphsToScale'] ):
                     # We want to preserve the relative size of each glyph to other glyphs
                     # in the same symbol font.
                     scale_ratio_x = scale_factor
@@ -527,7 +581,10 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         # reset selection so iteration works propertly @todo fix? rookie misunderstanding?
         # This is likely needed because the selection was changed when the glyph was copy/pasted
-        symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
+        if symbolFontStart == 0:
+            symbolFont.selection.all()
+        else:
+            symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
     # end for
     return
 
