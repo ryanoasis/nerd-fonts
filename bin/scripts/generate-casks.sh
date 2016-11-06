@@ -14,9 +14,8 @@ cd ../../patched-fonts/ || {
   exit 1
 }
 
-#find . -type d -iname 'complete' | # uncomment to do ALL fonts
-#find ./Hack -type d -iname 'complete' | # uncomment to test 1 font
-find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+#find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+find . -maxdepth 1 -type d | # uncomment to test 1 font
 while read -r filename
 do
 
@@ -25,37 +24,14 @@ do
 	searchdir=$filename
 	fontdir=$(basename "$(dirname "$dirname")")
 
-	## limit looking for the readme files in the parent dir not the child dirs:
-	#if [[ $dirname != "." ]];
-	#then
-	#   searchdir=$dirname
-	#fi
-
-	#TTF=( $(find "$searchdir" -type f \( -iname '*.ttf' ! -wholename '*Windows*' \)) )
-	#OTF=( $(find "$searchdir" -type f \( -iname '*.otf' ! -wholename '*Windows*' \)) )
-	#FONTS=( $(find "$searchdir" . -type f \( -iname '*.otf' -o -iname '*.ttf' ! -wholename '*Windows*' \)) )
-	#FONTS=$(find "$searchdir" -type f  -iname 'complete' \( -iname '*.otf' -o -iname '*.ttf' ! -wholename '*Windows*' \))
-	#FONTS=$(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.otf' -o -iname '*.ttf' ! -wholename '*Windows*' \) -print0)
-
 	FONTS=()
 	while IFS= read -d $'\0' -r file ; do
 	  FONTS=("${FONTS[@]}" "$file")
 	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' \) -print0)
 
-	#FONTS=$(find "$searchdir/" -type f)
-	#echo "FONTS[0] ${FONTS[0]}"
-	#echo "FONTS[1] ${FONTS[1]}"
-	#exit
 	outputdir=$PWD/../casks/
 
 	formattedbasename=$(echo "$basename" | tr "[:upper:]" "[:lower:]")
-
-	echo "searchdir $searchdir"
-	echo "filename $filename"
-	echo "basename $basename"
-	echo "formattedbasename $formattedbasename"
-	echo "dirname $dirname"
-	echo "fontdir $fontdir"
 
 	echo "# Generating cask for: $fontdir"
 
