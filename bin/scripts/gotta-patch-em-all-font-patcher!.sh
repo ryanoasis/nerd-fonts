@@ -77,12 +77,17 @@ function patch_font {
     combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
   fi
 
-  cd "$parent_dir"
+  cd "$parent_dir" || {
+    echo >&2 "# Could not find project parent directory"
+    exit 1
+  }
 
-  fontforge -quiet -script ./font-patcher "$f" -q $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
-  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
-  fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
-  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
+  fontforge -quiet -script ./font-patcher "$f" -q $powerline --complete --no-progressbars--outputdir "${patched_font_dir}complete/" 2>/dev/null &
+  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null &
+  fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null &
+  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null &
+  # wait for this group of background processes to finish to avoid forking too many processes
+  # that can add up quickly with the number of combinations
   #wait
 
   complete_variation_count=$((complete_variation_count+4))
