@@ -48,6 +48,13 @@ parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Ad
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
+
+# http://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
+progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
+progressbars_group_parser.add_argument('--progressbars', dest='progressbars', action='store_true', help='Show percentage completion progress bars per Glyph Set')
+progressbars_group_parser.add_argument('--no-progressbars', dest='progressbars', action='store_false', help='Don\'t show percentage completion progress bars per Glyph Set')
+parser.set_defaults(progressbars=True)
+
 parser.add_argument('--careful', dest='careful', action='store_true', help='Do not overwrite existing glyphs if detected', default=False)
 parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension', help='Change font file type to create (e.g., ttf, otf)', default="")
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
@@ -430,9 +437,8 @@ def use_scale_glyph( unicode_value, glyph_list ):
 ## modified from: http://stackoverflow.com/questions/3160699/python-progress-bar
 ## Accepts a float between 0 and 1. Any int will be converted to a float.
 ## A value at 1 or bigger represents 100%
-def update_progress(progress):
+def update_progress(progress, status=""):
     barLength = 40 # Modify this to change the length of the progress bar
-    status = ""
     if isinstance(progress, int):
         progress = float(progress)
     if progress >= 1:
@@ -478,7 +484,6 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
     for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
 
         index = max(1, index)
-        update_progress(round(float(index)/glyphSetLength,2))
 
         try:
             sym_attr = attributes[sym_glyph.unicode]
@@ -502,7 +507,17 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             continue
 
         if args.quiet == False:
-            print "Updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot
+            if args.progressbars:
+                if glyphSetLength == index+1:
+                    progressText = ' '*len(progressText)
+                else:
+                    progressText = " " + str(sym_glyph.glyphname) + " to " + copiedToSlot + " " + str(glyphSetLength) + " " + str(index);
+
+                update_progress(round(float(index)/glyphSetLength,2), progressText)
+            else:
+                progressText = "\nUpdating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot;
+                sys.stdout.write(progressText)
+                sys.stdout.flush()
 
         # Prepare symbol glyph dimensions
         sym_dim = get_dim(sym_glyph)
