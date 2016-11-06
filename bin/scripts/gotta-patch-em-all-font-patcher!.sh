@@ -79,12 +79,13 @@ function patch_font {
 
   cd "$parent_dir"
 
+  fontforge -quiet -script ./font-patcher "$f" -q $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
   fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
   fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
   fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --outputdir "${patched_font_dir}complete/" 2>/dev/null &
   #wait
 
-  complete_variation_count=$((complete_variation_count+3))
+  complete_variation_count=$((complete_variation_count+4))
   combination_count=$(printf "%s" "$combinations" | wc -l)
 
   # generate the readmes:
@@ -119,8 +120,8 @@ function generate_readme {
   then
     cat "$patched_font_dir/font-info.md" >> "$combinations_filename"
   else
-	  echo "# Could not append font-info.md (file not found). Was standardize script run? It should be executed first"
-	  echo "# looked for: $font_info"
+    echo "# Could not append font-info.md (file not found). Was standardize script run? It should be executed first"
+    echo "# looked for: $font_info"
   fi
 
   cat "$parent_dir/src/readme-per-directory-variations.md" >> "$combinations_filename"
