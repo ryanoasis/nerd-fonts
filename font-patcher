@@ -18,7 +18,9 @@ except ImportError:
 import re
 import os
 import argparse
+from argparse import RawTextHelpFormatter
 import errno
+import time
 
 try:
     #Load the module
@@ -30,12 +32,12 @@ except ImportError:
 
 # argparse stuff
 
-parser = argparse.ArgumentParser(description='Patches a given font with programming and web development related glyphs (mainly for https://github.com/ryanoasis/vim-devicons)')
+parser = argparse.ArgumentParser(description='Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs\n\nWebsite: https://github.com/ryanoasis/nerd-fonts', formatter_class=RawTextHelpFormatter)
 parser.add_argument('-v', '--version', action='version', version=projectName + ": %(prog)s ("+version+")")
 parser.add_argument('font', help='The path to the font to patch (e.g., Inconsolata.otf)')
-parser.add_argument('-s', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
+parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
-parser.add_argument('-w', '--windows', '--limit-font-name-length', dest='windows', action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)', default=False)
+parser.add_argument('-w', '--windows', dest='windows', action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)', default=False)
 parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all available Glyphs', default=False)
 parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)', default=False)
 parser.add_argument('--fontawesomeextension', dest='fontawesomeextension', action='store_true', help='Add Font Awesome Extension Glyphs (http://andrelgava.github.io/font-awesome-extension)', default=False)
@@ -46,6 +48,13 @@ parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Ad
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
+
+# http://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
+progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
+progressbars_group_parser.add_argument('--progressbars', dest='progressbars', action='store_true', help='Show percentage completion progress bars per Glyph Set')
+progressbars_group_parser.add_argument('--no-progressbars', dest='progressbars', action='store_false', help='Don\'t show percentage completion progress bars per Glyph Set')
+parser.set_defaults(progressbars=True)
+
 parser.add_argument('--careful', dest='careful', action='store_true', help='Do not overwrite existing glyphs if detected', default=False)
 parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension', help='Change font file type to create (e.g., ttf, otf)', default="")
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
@@ -314,24 +323,24 @@ OCTI_SCALE_LIST  = { 'ScaleGlyph': 0xF02E, 'GlyphsToScale': [ (0xf03d, 0xf040), 
 # Symbol font ranges
 
 PATCH_SET = [
-    { 'Enabled': True,                  'Filename': "original-source.otf",      'Exact': False,'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA,'SrcEnd': 0xE62B,'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT },
-    { 'Enabled': True,                  'Filename': "devicons.ttf",             'Exact': False,'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700,'SrcEnd': 0xE7C5,'ScaleGlyph': DEVI_SCALE_LIST,'Attributes': SYM_ATTR_DEFAULT },
-    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
-    { 'Enabled': args.powerline,        'Filename': "PowerlineSymbols.otf",     'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
-    { 'Enabled': args.powerlineextra,   'Filename': "PowerlineExtraSymbols.otf",'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
-    { 'Enabled': args.pomicons,         'Filename': "Pomicons.otf",             'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  },
-    { 'Enabled': args.fontawesome,      'Filename': "FontAwesome.otf",          'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': FONTA_SCALE_LIST,'Attributes': SYM_ATTR_FONTA },
-    { 'Enabled': args.fontawesomeextension,      'Filename': "font-awesome-extension.ttf",          'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200,  'SrcEnd': 0xE2A9,  'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT }, # Maximize
-    { 'Enabled': args.fontlinux,        'Filename': "font-linux.ttf",           'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },
-    { 'Enabled': args.pomicons,         'Filename': "Unicode_IEC_symbol_font.otf",             'Exact': True, 'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Power, Power On/Off, Power On, Sleep
-    { 'Enabled': args.pomicons,         'Filename': "Unicode_IEC_symbol_font.otf",             'Exact': True, 'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Heavy Circle (aka Power Off)
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Heart
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Zap
-    { 'Enabled': args.octicons,         'Filename': "octicons.ttf",             'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF67C, 'SrcEnd': 0xF67C, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Desktop
-    { 'Enabled': args.custom,           'Filename': args.custom,                'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': 0x0000, 'SrcEnd': 0x0000, 'ScaleGlyph': None, 'Attributes': CUSTOM_ATTR },
+    { 'Enabled': True,                      'Name': "Seti-UI + Custom", 'Filename': "original-source.otf",         'Exact': False,'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA,'SrcEnd': 0xE62B,'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': True,                      'Name': "Devicons", 'Filename': "devicons.ttf",                'Exact': False,'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700,'SrcEnd': 0xE7C5,'ScaleGlyph': DEVI_SCALE_LIST,'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': args.powerline,            'Name': "Powerline Symbols", 'Filename': "PowerlineSymbols.otf",        'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerline,            'Name': "Powerline Symbols", 'Filename': "PowerlineSymbols.otf",        'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",   'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",   'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerlineextra,       'Name': "Powerline Extra Symobls", 'Filename': "PowerlineExtraSymbols.otf",   'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.pomicons,             'Name': "Pomicons", 'Filename': "Pomicons.otf",                'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  },
+    { 'Enabled': args.fontawesome,          'Name': "Font Awesome", 'Filename': "FontAwesome.otf",             'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': FONTA_SCALE_LIST,'Attributes': SYM_ATTR_FONTA },
+    { 'Enabled': args.fontawesomeextension, 'Name': "Font Awesome Extension", 'Filename': "font-awesome-extension.ttf",  'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200,  'SrcEnd': 0xE2A9,  'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT }, # Maximize
+    { 'Enabled': args.fontlinux,            'Name': "Font Linux", 'Filename': "font-linux.ttf",              'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': args.powersymbols,         'Name': "Power Symbols", 'Filename': "Unicode_IEC_symbol_font.otf", 'Exact': True, 'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Power, Power On/Off, Power On, Sleep
+    { 'Enabled': args.powersymbols,         'Name': "Power Symbols", 'Filename': "Unicode_IEC_symbol_font.otf", 'Exact': True, 'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Heavy Circle (aka Power Off)
+    { 'Enabled': args.octicons,             'Name': "Octions", 'Filename': "octicons.ttf",                'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
+    { 'Enabled': args.octicons,             'Name': "Octicons", 'Filename': "octicons.ttf",                'Exact': octiconsExactEncodingPosition,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Heart
+    { 'Enabled': args.octicons,             'Name': "Octicons", 'Filename': "octicons.ttf",                'Exact': octiconsExactEncodingPosition,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Zap
+    { 'Enabled': args.octicons,             'Name': "Octicons", 'Filename': "octicons.ttf",                'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF67C, 'SrcEnd': 0xF67C, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Desktop
+    { 'Enabled': args.custom,               'Name': "Custom", 'Filename': args.custom,                   'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': 0x0000, 'SrcEnd': 0x0000, 'ScaleGlyph': None, 'Attributes': CUSTOM_ATTR },
 ]
 
 # win_ascent and win_descent are used to set the line height for windows fonts.
@@ -425,6 +434,21 @@ def use_scale_glyph( unicode_value, glyph_list ):
                 return True
     return False
 
+## modified from: http://stackoverflow.com/questions/3160699/python-progress-bar
+## Accepts a float between 0 and 1. Any int will be converted to a float.
+## A value at 1 or bigger represents 100%
+def update_progress(progress, status=""):
+    barLength = 40 # Modify this to change the length of the progress bar
+    if isinstance(progress, int):
+        progress = float(progress)
+    if progress >= 1:
+        progress = 1
+        status = "Done...\r\n"
+    block = int(round(barLength*progress))
+    text = "\r[{0}] {1}% {2}".format( "#"*block + "-"*(barLength-block), progress*100, status)
+    sys.stdout.write(text)
+    sys.stdout.flush()
+
 def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding, scaleGlyph, attributes):
 
     careful = False
@@ -455,7 +479,12 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
         sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
 
-    for sym_glyph in symbolFont.selection.byGlyphs:
+    glyphSetLength = max(1, symbolFontEnd-symbolFontStart)
+
+    for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
+
+        index = max(1, index)
+
         try:
             sym_attr = attributes[sym_glyph.unicode]
         except KeyError:
@@ -478,7 +507,17 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             continue
 
         if args.quiet == False:
-            print "Updating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot
+            if args.progressbars:
+                if glyphSetLength == index+1:
+                    progressText = ' '*len(progressText)
+                else:
+                    progressText = " " + str(sym_glyph.glyphname) + " to " + copiedToSlot + " " + str(glyphSetLength) + " " + str(index);
+
+                update_progress(round(float(index)/glyphSetLength,2), progressText)
+            else:
+                progressText = "\nUpdating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot;
+                sys.stdout.write(progressText)
+                sys.stdout.flush()
 
         # Prepare symbol glyph dimensions
         sym_dim = get_dim(sym_glyph)
@@ -586,6 +625,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         else:
             symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
     # end for
+    sys.stdout.write("\n")
     return
 
 if args.extension == "":
@@ -603,6 +643,7 @@ if args.single and extension == '.ttf':
 # multiple ranges using the same symbol font.
 PreviousSymbolFilename = ""
 symfont = None
+
 for patch in PATCH_SET:
     if patch['Enabled']:
         if PreviousSymbolFilename != patch['Filename']:
@@ -621,13 +662,17 @@ for patch in PATCH_SET:
             SrcStart = patch['SymStart']
         if not SrcEnd:
             SrcEnd = patch['SymEnd']
+
+        sys.stdout.write("Adding " + str(max(1, patch['SymEnd']-patch['SymStart'])) + " Glyphs from " + patch['Name'] + " Set \n")
         copy_glyphs(sourceFont, SrcStart, SrcEnd, symfont, patch['SymStart'], patch['SymEnd'],  patch['Exact'], patch['ScaleGlyph'], patch['Attributes'])
 
 if symfont:
     symfont.close()
 
+print "\nDone with Path Sets, generating font..."
+
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
 sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
 
-print "Generated: " + sourceFont.fullname
+print "\nGenerated: " + sourceFont.fullname
