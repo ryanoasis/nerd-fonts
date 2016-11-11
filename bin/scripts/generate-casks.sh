@@ -8,6 +8,7 @@
 
 patched_parent_dir="patched-fonts"
 homepage="https://github.com/ryanoasis/nerd-fonts"
+downloadroot="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/"
 
 cd ../../patched-fonts/ || {
   echo >&2 "# Could not find patched fonts directory"
@@ -47,10 +48,8 @@ do
   {
     printf "cask '%s' do\n" "$caskname"
     printf "  version :latest\n"
-    printf "  sha256 :no_check\n"
-    printf "  url '%s/blob/master/patched-fonts/%s'\n" "$homepage" "$basename"
-    printf "  homepage '%s'" "$homepage"
-    printf "\n"
+    printf "  sha256 :no_check\n\n"
+    printf "  url '%s%s'\n" "$downloadroot" "$basename"
   } >> "$to"
 
 
@@ -71,7 +70,8 @@ do
 			then
 				familyname=$(fc-query --format='%{family}' "${FONTS[$i]}")
 				printf "  name '%s'\n" "$familyname" >> "$to"
-				printf "\n" >> "$to"
+				printf "  homepage '%s'" "$homepage" >> "$to"
+				printf "\n\n" >> "$to"
 			fi
 
 			printf "  font '%s'\n" "$downloadfont" >> "$to"
@@ -83,7 +83,6 @@ do
 
   # add to the file
   {
-    printf "\n"
     printf "end"
   } >> "$to"
 
