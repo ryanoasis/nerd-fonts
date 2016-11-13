@@ -4,24 +4,29 @@
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # only adds non-Windows versions of the fonts
 
-#set -x
+set -x
 
+version="0.8.0"
 patched_parent_dir="patched-fonts"
 homepage="https://github.com/ryanoasis/nerd-fonts"
-downloadroot="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/"
+downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"
+sha256sum=":no_check"
+appcast="https://github.com/ryanoasis/nerd-fonts/releases.atom"
+appcastcheckpoint=$(curl --compressed --location --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36' "https://github.com/ryanoasis/nerd-fonts/releases.atom" | sed 's|<pubDate>[^<]*</pubDate>||g' | shasum --algorithm 256 | head -c 64)
 
 cd ../../patched-fonts/ || {
   echo >&2 "# Could not find patched fonts directory"
   exit 1
 }
 
-#find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -type d | # uncomment to test 1 font
+find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+#find . -maxdepth 1 -type d | # uncomment to test 1 font
 while read -r filename
 do
 
 	dirname=$(dirname "$filename")
 	basename=$(basename "$filename")
+	sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
 	searchdir=$filename
 	fontdir=$(basename "$(dirname "$dirname")")
 
@@ -47,34 +52,36 @@ do
   # add to the file
   {
     printf "cask '%s' do\n" "$caskname"
-    printf "  version :latest\n"
-    printf "  sha256 :no_check\n\n"
-    printf "  url '%s%s'\n" "$downloadroot" "$basename"
+    printf "  version '%s'\n" "$version"
+    printf "  sha256 '%s'\n\n" "$sha256sum"
+    printf "  url '%s%s.zip'\n" "$downloadarchive" "$basename"
+    printf "  appcast '%s'\n" "$appcast"
+    printf "          checkpoint: '%s'\n" "$appcastcheckpoint"
   } >> "$to"
 
 
 	if [ "${FONTS[0]}" ];
 	then
-		#echo "fonts ${FONTS}"
-		#echo "fonts[0] ${FONTS[0]}"
 		for i in "${!FONTS[@]}"
 		do
 			echo "## Found Font"
-			individualfont=${FONTS[$i]}
-			downloadfont="${individualfont/$searchdir\//}"
+			individualfont=$(basename "${FONTS[$i]}")
+			#downloadfont="${individualfont/$searchdir\//}"
 			echo "individualfont $individualfont"
 			echo "downloadfont $downloadfont"
 			echo "$i"
-			#echo "${FONTS[$i]}"
+			echo "${FONTS[$i]}"
 			if [ "$i" == 0 ];
 			then
 				familyname=$(fc-query --format='%{family}' "${FONTS[$i]}")
-				printf "  name '%s'\n" "$familyname" >> "$to"
-				printf "  homepage '%s'" "$homepage" >> "$to"
-				printf "\n\n" >> "$to"
+				{
+					printf "  name '%s (%s)'\n" "$familyname" "$basename"
+					printf "  homepage '%s'" "$homepage"
+					printf "\n\n"
+				} >> "$to"
 			fi
 
-			printf "  font '%s'\n" "$downloadfont" >> "$to"
+			printf "  font '%s'\n" "$individualfont" >> "$to"
 
 		done
 	else
