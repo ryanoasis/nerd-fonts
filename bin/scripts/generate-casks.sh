@@ -55,7 +55,7 @@ do
     printf "  version '%s'\n" "$version"
     printf "  sha256 '%s'\n\n" "$sha256sum"
     printf "  url '%s%s.zip'\n" "$downloadarchive" "$basename"
-    printf "  appcast '%s'\n" "$appcast"
+    printf "  appcast '%s',\n" "$appcast"
     printf "          checkpoint: '%s'\n" "$appcastcheckpoint"
   } >> "$to"
 
