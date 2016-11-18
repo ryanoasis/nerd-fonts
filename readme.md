@@ -2,7 +2,7 @@
 	<img src="images/nerd-fonts-logo.png" alt="nerd fonts" />
 </h1>
 
-[![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w]](#patched-fonts "↓ Windows Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m]](#patched-fonts "↓ macOS (OSX) Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![Linux Logo][l]](#patched-fonts "↓ Linux Compatibility Status ↓")
+[![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w-top]](#patched-fonts "↓ Windows Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m-top]](#patched-fonts "↓ macOS (OSX) Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![Linux Logo][l-top]](#patched-fonts "↓ Linux Compatibility Status ↓")
 
 **Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
 
@@ -461,13 +461,17 @@ Patched Font internal links
 Patched Font Statuses
 -->
 
-[w]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/windows-pass-sm.png
-[l]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/linux-pass-sm.png
-[m]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/mac-pass-sm.png
+[w-top]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/windows-pass-sm.png
+[l-top]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/linux-pass-sm.png
+[m-top]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/mac-pass-sm.png
 
-[w2]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/windows-unknown-sm.png
-[l2]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/linux-unknown-sm.png
-[m2]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/mac-unknown-sm.png
+[w]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/windows-pass-sm.png "Windows status is working ☺"
+[l]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/linux-pass-sm.png "Linux status is working ☺"
+[m]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/mac-pass-sm.png "macOS (OSX) status is working ☺"
+
+[w2]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/windows-unknown-sm.png "Windows status is Unknown/Un-tested"
+[l2]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/linux-unknown-sm.png "Linux status is Unknown/Un-tested"
+[m2]:https://github.com/ryanoasis/nerd-filetype-glyphs-fonts-patcher/wiki/screenshots/v0.9.x/mac-unknown-sm.png "macOS (OSX) status is Unknown/Un-tested"
 
 [s-hack]:https://github.com/ryanoasis/nerd-fonts/issues/70
 [s-terminus]:https://github.com/ryanoasis/nerd-fonts/issues/16
