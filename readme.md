@@ -2,7 +2,7 @@
 	<img src="images/nerd-fonts-logo.png" alt="nerd fonts" />
 </h1>
 
-[![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter]&nbsp;&nbsp;&nbsp;[![Windows Compatible][w]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![macOS (OSX) Compatible][m]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![Linux Compatible][l]](#patched-fonts)
+[![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w]](#patched-fonts "↓ Windows Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m]](#patched-fonts "↓ macOS (OSX) Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![Linux Logo][l]](#patched-fonts "↓ Linux Compatibility Status ↓")
 
 **Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
 
