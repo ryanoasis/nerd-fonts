@@ -5,7 +5,7 @@
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w-top]](#patched-fonts "↓ Windows Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m-top]](#patched-fonts "↓ macOS (OSX) Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![Linux Logo][l-top]](#patched-fonts "↓ Linux Compatibility Status ↓")
 
 
-[![GitHub release](https://img.shields.io/github/release/ryanoasis/nerd-fonts.svg?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACcAAAAOCAMAAACb3vX5AAAAKlBMVEVoY2P%2Fzj7%2F%2F%2F%2F%2F5Zj%2FzTj%2F23D%2B9d3%2F7rv%2FyzLf3d22s7NuaWn%2FySr%2F1FU02XqOAAAAAXRSTlMAQObYZgAAAIxJREFUeAFtkE0ORCEMguXp%2B1no%2Fa87oRKCybBoVT5q0kZNbN3tkF5HXg4HE04N%2BQm5AsszxRkbOrH4r465CtYAWp5F1tzuKhnBKw4gFwhL9xixOY%2FFYXEjnZMjUWt6eLv%2Fcm4YDYv%2F546%2B3ZLT3z73MpB%2BR0Xe67rYHYqNecW9eHzN0qUs64HyqXz6Ae5GAZ9KAYxaAAAAAElFTkSuQmCC)](https://github.com/ryanoasis/nerd-fonts)
+[![GitHub release](https://img.shields.io/github/release/ryanoasis/nerd-fonts.svg?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACcAAAAOCAMAAACb3vX5AAAAJ1BMVEX%2F%2F%2F%2F%2Fzj5oY2P%2F5Zj%2FzTj%2F23D%2B9d3%2F7rv%2FyzLf3d22s7NuaWn%2FySpP6xHaAAAAAXRSTlMAQObYZgAAAGhJREFUeNp9kVEKgEAIBRX86KP7nzfEddSEFbJ1nBdU4qVZUlXY%2BiAj8Bazswdg0ns2Ee14aRCDIcdFX9m7x1Z1eV4YbAOat75usfUKy%2BPGQ2eWYXnyY9PnVKyg5cn4nE%2BAGvbvglAdfRV3AOfeqRdeAAAAAElFTkSuQmCC)](https://github.com/ryanoasis/nerd-fonts)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/ryanoasis/nerd-fonts)
 
 
