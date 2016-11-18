@@ -4,6 +4,11 @@
 
 [![GitHub version][img-version-badge]][badge-version] [![Join the chat at https://gitter.im/ryanoasis/nerd-fonts][img-gitter-badge]][badge-gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w-top]](#patched-fonts "↓ Windows Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m-top]](#patched-fonts "↓ macOS (OSX) Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![Linux Logo][l-top]](#patched-fonts "↓ Linux Compatibility Status ↓")
 
+
+[![GitHub release](https://img.shields.io/github/release/ryanoasis/nerd-fonts.svg?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAOCAMAAACb3vX5AAAAKlBMVEVoY2P/zj7/////5Zj/zTj/23D+9d3/7rv/yzLf3d22s7NuaWn/ySr/1FU02XqOAAAAAXRSTlMAQObYZgAAAIxJREFUeAFtkE0ORCEMguXp+1no/a87oRKCybBoVT5q0kZNbN3tkF5HXg4HE04N+Qm5AsszxRkbOrH4r465CtYAWp5F1tzuKhnBKw4gFwhL9xixOY/FYXEjnZMjUWt6eLv/cm4YDYv/546+3ZLT3z73MpB+R0Xe67rYHYqNecW9eHzN0qUs64HyqXz6Ae5GAZ9KAYxaAAAAAElFTkSuQmCC)](https://github.com/ryanoasis/nerd-fonts)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/ryanoasis/nerd-fonts)
+
+
 **Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
 
 The following Sankey flow diagram shows the current glyph sets included:
