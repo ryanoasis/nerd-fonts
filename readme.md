@@ -218,7 +218,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 * Linux & Mac OS X
 
-### To install all fonts:
+### Install all fonts:
 
 * Installs all the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
 
@@ -226,7 +226,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 ./install.sh
 ```
 
-### To install a single font:
+### Install a single font:
 
 ```sh
 ./install.sh <FontName>
@@ -305,12 +305,12 @@ optional arguments:
 
 #### Examples
 
-	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf
-	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
-	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf --use-single-width-glyphs --quiet
-	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf -w
-	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf --windows --quiet
-	./font-patcher unpatched-sample-fonts/Droid\ Sans\ Mono\ for\ Powerline.otf --windows --pomicons --quiet
+	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
+	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
+	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --use-single-width-glyphs --quiet
+	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -w
+	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --windows --quiet
+	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --windows --pomicons --quiet
 	./font-patcher Inconsolata.otf --fontawesome
 	./font-patcher Inconsolata.otf --fontawesome --octicons --pomicons
 	./font-patcher Inconsolata.otf
@@ -331,14 +331,14 @@ optional arguments:
 ./gotta-patch-em-all-font-patcher\!.sh Hermit
 ```
 
-## Unstable file paths
+## Unstable File Paths
 
 | Unstable file paths warning |
 -------------------------------
-| Please make sure to reference via the **release** branch and _not_ the ~~**master**~~ branch because paths are subject change for each release |
-| For example (paths shorted for demonstation purposes): |
-| Instead of: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DroidSansMono/< font_path >.otf~~ |
-| Please use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/DroidSansMono/< font_path >.otf |
+| Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release |
+| For example: |
+| Use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf |
+| Not: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf~~ |
 
 ## Other Good Fonts to Patch
 
