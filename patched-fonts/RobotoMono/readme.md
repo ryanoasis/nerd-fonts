@@ -9,517 +9,1029 @@ Combinations are no longer included by default because of the large inflation in
 
 
 ```sh
-# 510 Possible Combinations:
+# 1022 Possible Combinations:
 
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesome
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --octicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --windows
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --octicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesome
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --octicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --pomicons
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --use-single-width-glyphs
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --octicons
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesome
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --octicons
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --pomicons
-./font-patcher RobotoMono-Bold.ttf  --windows --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --windows --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --windows
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --octicons
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --pomicons
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontawesome --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesome
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --pomicons
-./font-patcher RobotoMono-Bold.ttf  --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --octicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --octicons
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --pomicons
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --fontlinux --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontlinux
-./font-patcher RobotoMono-Bold.ttf  --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --pomicons --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --pomicons --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --pomicons --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --pomicons --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --pomicons --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --pomicons --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --pomicons
-./font-patcher RobotoMono-Bold.ttf  --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --powerlineextra --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --powerlineextra --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --powerlineextra
-./font-patcher RobotoMono-Bold.ttf  --fontawesomeextension --powersymbols
-./font-patcher RobotoMono-Bold.ttf  --fontawesomeextension
-./font-patcher RobotoMono-Bold.ttf  --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --windows
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --use-single-width-glyphs
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --windows
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerline
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --windows
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --use-single-width-glyphs
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --windows --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --windows
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesome
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --octicons
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontlinux
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --pomicons
+./font-patcher RobotoMono-BoldItalic.ttf  --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerlineextra --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powerlineextra --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --powerlineextra
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesomeextension --powersymbols
+./font-patcher RobotoMono-BoldItalic.ttf  --fontawesomeextension
+./font-patcher RobotoMono-BoldItalic.ttf  --powersymbols
 ```
