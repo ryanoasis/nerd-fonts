@@ -14,7 +14,8 @@ cd ../../patched-fonts/ || {
 }
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -type d | # uncomment to test all font
+#find ./ProFont -maxdepth 0 -type d | # uncomment to test 1 font
+find . -maxdepth 1 -type d | # uncomment to test all fonts
 while read -r filename
 do
 
