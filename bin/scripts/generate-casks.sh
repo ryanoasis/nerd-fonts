@@ -4,22 +4,23 @@
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # only adds non-Windows versions of the fonts
 
-set -x
+#set -x
 
 version="0.8.0"
-patched_parent_dir="patched-fonts"
+patched_parent_dir="../../patched-fonts/"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"
 sha256sum=":no_check"
 appcast="https://github.com/ryanoasis/nerd-fonts/releases.atom"
 appcastcheckpoint=$(curl --compressed --location --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36' "https://github.com/ryanoasis/nerd-fonts/releases.atom" | sed 's|<pubDate>[^<]*</pubDate>||g' | shasum --algorithm 256 | head -c 64)
 
-cd ../../patched-fonts/ || {
+cd $patched_parent_dir || {
   echo >&2 "# Could not find patched fonts directory"
   exit 1
 }
 
-find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+#find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
 #find . -maxdepth 1 -type d | # uncomment to test 1 font
 while read -r filename
 do
@@ -64,13 +65,10 @@ do
 	then
 		for i in "${!FONTS[@]}"
 		do
-			echo "## Found Font"
 			individualfont=$(basename "${FONTS[$i]}")
-			#downloadfont="${individualfont/$searchdir\//}"
-			echo "individualfont $individualfont"
-			echo "downloadfont $downloadfont"
-			echo "$i"
-			echo "${FONTS[$i]}"
+
+			printf "## Found Font: %s\n" "${FONTS[$i]}"
+
 			if [ "$i" == 0 ];
 			then
 				familyname=$(fc-query --format='%{family}' "${FONTS[$i]}")
@@ -90,7 +88,7 @@ do
 
   # add to the file
   {
-    printf "end"
+    printf "end\n"
   } >> "$to"
 
 done
