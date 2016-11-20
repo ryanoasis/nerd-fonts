@@ -46,21 +46,36 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 
 ## Table of Contents
 
-- [Glyph sets](#glyph-sets)
-- [Usage](#usage)
-- [Patched Fonts List](#patched-fonts)
-- [Combinations](#combinations)
-- [Font Installation](#font-installation)
-- [Font Install Script (Linux & Mac OS X)](#font-install-script)
-- [Font Patcher](#font-patcher)
-- [Gotta Patch 'em All Font Patcher!](#gotta-patch-em-all)
-- [Unstable file paths on master](#unstable-file-paths)
-- [Other Good Fonts to Patch](#other-good-fonts-to-patch)
-- [Project History](#project-history)
-  - [Motivation](#motivation-original-rationale)
-- [Contributing](#contributing)
-- [Changelog](#changelog)
-- [License](#license)
+[**Glyph/Icon sets**](#glyph-sets)
+
+[**Usage**](#usage)
+
+[**Patched Fonts List**](#patched-fonts)
+
+[**Combinations**](#combinations)
+
+[**Font Installation**](#font-installation)
+
+[**Font Install Script (Linux & Mac OS X)**](#font-install-script)
+
+[**Font Patcher**](#font-patcher)
+
+[**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all)
+
+[**Unstable file paths on master**](#unstable-file-paths)
+
+[**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
+
+[**Project History**](#project-history)
+
+  * [**Motivation**](#motivation-original-rationale)
+
+[**Contributing**](#contributing)
+
+[**Changelog**](#changelog)
+
+[**License**](#license)
+
 
 ## Glyph Sets
 
