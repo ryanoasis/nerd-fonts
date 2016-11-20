@@ -14,14 +14,6 @@ The following Sankey flow diagram shows the current glyph sets included:
 </p>
 <sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
 
-The best way to get the fonts is to [download](#patched-fonts) the specific one you want
-
-Cloning of this repository is **not** required nor the most efficient way to get the fonts,
-however if you want all the fonts and want to clone be sure to shallow clone:
-> `git clone --depth 1`
-
-For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
-
 
 ## Quick Links
 
@@ -46,35 +38,34 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 
 ## Table of Contents
 
-[**Glyph/Icon sets**](#glyph-sets)
+[**Installation Options**](#font-installation)
+  * [**1 - Install Script**](#option-1-install-script)
+  * [**2 - Ad Hoc Curl Download**](#option-2-ad-hoc-curl-download)
+  * [**3 - Release Archive Download**](#option-3-release-archive-download)
+  * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
+  * [**5 - Manual**](#option-5-download-and-install-manually)
+  * [**6 - Clone Repo**](#option-6-clone-the-repo)
+  * [**7 - Patch Your Own Font**](#option-7-patch-your-own-font)
 
-[**Usage**](#usage)
+**Features**
+  * [**Glyph/Icon sets**](#glyph-sets)
+  * [**Patched Fonts**](#patched-fonts)
+  * [**Combinations**](#combinations)
+  * [**Font Patcher**](#font-patcher)
 
-[**Patched Fonts List**](#patched-fonts)
-
-[**Combinations**](#combinations)
-
-[**Font Installation**](#font-installation)
-
-[**Font Install Script (Linux & Mac OS X)**](#font-install-script)
-
-[**Font Patcher**](#font-patcher)
-
-[**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all)
-
-[**Unstable file paths on master**](#unstable-file-paths)
-
-[**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
+[**Developer / Contributor**](#developer)
+  * [**Font Patcher**](#font-patcher)
+  * [**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all)
+  * [**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
+  * [**Contributing**](#contributing)
 
 [**Project History**](#project-history)
-
   * [**Motivation**](#motivation-original-rationale)
 
-[**Contributing**](#contributing)
-
-[**Changelog**](#changelog)
-
-[**License**](#license)
+**Additional Info**
+  * [**Unstable file paths on master**](#unstable-file-paths)
+  * [**Changelog**](#changelog)
+  * [**License**](#license)
 
 
 ## Glyph Sets
@@ -128,19 +119,6 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 
 ![image](https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/fontforge-glyph-set-pomicons.png)
 
-## Usage
-
-#### Option A
-
-Install any of the already [provided patched fonts](#patched-fonts)
-
-#### Option B
-
-Use the provided python command line script to generate a patched font from your own font to get the extra new glyphs
-
-See: [Font Patcher](#font-patcher) for usage
-
-* use this option if you do __not__ want to use one of the [fonts provided](#patched-fonts)
 
 ## Patched Fonts
 
@@ -206,27 +184,11 @@ See: [Font Patcher](#font-patcher) for usage
 
 ## Font Installation
 
-Put any font you would like to use into the `~/.local/share/fonts` (Linux) or `~/Library/Fonts/`(OS X) folder. For example:
+### `Option 1: Install Script`
 
+_Note_: only for Linux & macOS (OS X)
 
-Linux
-```sh
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
-```
-
-deprecated alternative paths: `~/.fonts`
-
-OS X
-```sh
-cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
-```
-
-## Font Install Script
-
-* Linux & Mac OS X
-
-### Install all fonts:
+#### All fonts:
 
 * Installs all the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
 
@@ -234,13 +196,63 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 ./install.sh
 ```
 
-### Install a single font:
+#### Single font:
+
+* Installs a single Font of your choice
 
 ```sh
 ./install.sh <FontName>
 ./install.sh Hack
 ./install.sh HeavyData
 ```
+
+### `Option 2: Ad Hoc Curl Download`
+
+#### Linux
+
+```sh
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
+```
+
+_Note:_ deprecated alternative paths: `~/.fonts`
+
+#### macOS (OS X)
+
+```sh
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
+```
+### `Option 3: Release Archive Download`
+
+Coming soon
+
+### `Option 4: Homebrew Fonts`
+
+_Note:_ macOS (OS X) only
+
+Coming soon
+
+### `Option 5: Download and Install Manually`
+
+Download the specific [patched font](#patched-fonts) of your choice
+
+### `Option 6: Clone the Repo`
+
+Cloning of this repository is **not** required nor the most efficient way to get the fonts,
+however if you want all the fonts and want to clone be sure to shallow clone:
+> `git clone --depth 1`
+
+For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
+
+### `Option 7: Patch Your Own Font`
+
+Use the provided python command line script to generate a patched font from your own font to get the extra new glyphs
+
+See: [Font Patcher](#font-patcher) for usage
+
+* use this option if you do __not__ want to use one of the [fonts provided](#patched-fonts)
+
+Put any font you would like to use into the `~/.local/share/fonts` (Linux) or `~/Library/Fonts/`(OS X) folder. For example:
 
 
 <h2 align="center" id="font-patcher">
