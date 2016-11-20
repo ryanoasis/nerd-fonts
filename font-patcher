@@ -202,7 +202,9 @@ reservedFontNameReplacements = {
     'hasklig' : 'hasklug',
     'hasklig' : 'hasklug',
     'Share'   : 'Shure',
-    'share'   : 'shure'
+    'share'   : 'shure',
+    'terminus': 'terminess',
+    'Terminus': 'Terminess'
 }
 
 projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)"
@@ -323,7 +325,7 @@ OCTI_SCALE_LIST  = { 'ScaleGlyph': 0xF02E, 'GlyphsToScale': [ (0xf03d, 0xf040), 
 # Symbol font ranges
 
 PATCH_SET = [
-    { 'Enabled': True,                      'Name': "Seti-UI + Custom", 'Filename': "original-source.otf",         'Exact': False,'SymStart': 0xE4FA, 'SymEnd': 0xE52A, 'SrcStart': 0xE5FA,'SrcEnd': 0xE62B,'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': True,                      'Name': "Seti-UI + Custom", 'Filename': "original-source.otf",         'Exact': False,'SymStart': 0xE4FA, 'SymEnd': 0xE52B, 'SrcStart': 0xE5FA,'SrcEnd': 0xE62B,'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT },
     { 'Enabled': True,                      'Name': "Devicons", 'Filename': "devicons.ttf",                'Exact': False,'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700,'SrcEnd': 0xE7C5,'ScaleGlyph': DEVI_SCALE_LIST,'Attributes': SYM_ATTR_DEFAULT },
     { 'Enabled': args.powerline,            'Name': "Powerline Symbols", 'Filename': "PowerlineSymbols.otf",        'Exact': True, 'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.powerline,            'Name': "Powerline Symbols", 'Filename': "PowerlineSymbols.otf",        'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
@@ -451,6 +453,7 @@ def update_progress(progress, status=""):
 
 def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding, scaleGlyph, attributes):
 
+    progressText = ''
     careful = False
     if args.careful:
         careful = True
@@ -625,7 +628,10 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         else:
             symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
     # end for
-    sys.stdout.write("\n")
+
+    if args.quiet == False or args.progressbars:
+        sys.stdout.write("\n")
+
     return
 
 if args.extension == "":
@@ -663,7 +669,9 @@ for patch in PATCH_SET:
         if not SrcEnd:
             SrcEnd = patch['SymEnd']
 
-        sys.stdout.write("Adding " + str(max(1, patch['SymEnd']-patch['SymStart'])) + " Glyphs from " + patch['Name'] + " Set \n")
+        if args.quiet == False:
+            sys.stdout.write("Adding " + str(max(1, patch['SymEnd']-patch['SymStart'])) + " Glyphs from " + patch['Name'] + " Set \n")
+
         copy_glyphs(sourceFont, SrcStart, SrcEnd, symfont, patch['SymStart'], patch['SymEnd'],  patch['Exact'], patch['ScaleGlyph'], patch['Attributes'])
 
 if symfont:
