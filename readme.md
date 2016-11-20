@@ -10,7 +10,7 @@
 The following Sankey flow diagram shows the current glyph sets included:
 
 <p align="center">
-  <img src="https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/sankey-glyphs-combined-diagram.png" alt="@SankeyMATIC Diagram" />
+  <img src="https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/custom-sankey-glyphs-combined-diagram.png" alt="@SankeyMATIC Diagram" />
 </p>
 <sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
 
