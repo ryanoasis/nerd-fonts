@@ -2,7 +2,7 @@
   <img src="images/nerd-fonts-logo.png" alt="Nerd Fonts Logo" />
 </h1>
 
-[![GitHub release][img-version-badge-with-logo]] [repo][![Gitter][img-gitter-badge]][gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w-top]](#patched-fonts "↓ Windows Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m-top]](#patched-fonts "↓ macOS (OSX) Compatibility Status ↓")&nbsp;&nbsp;&nbsp;[![Linux Logo][l-top]](#patched-fonts "↓ Linux Compatibility Status ↓")
+[![GitHub release][img-version-badge-with-logo]][repo]&nbsp;[![Gitter][img-gitter-badge]][gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w-top]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m-top]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![Linux Logo][l-top]](#patched-fonts)
 
 
 **Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
@@ -20,19 +20,14 @@ Cloning of this repository is **not** required nor the most efficient way to get
 however if you want all the fonts and want to clone be sure to shallow clone:
 > `git clone --depth 1`
 
-For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [vim-devicons ➶][vim-devicons].
+For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
 
 
 ## Quick Links
 
-| **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[Vim Plugin ➶][vim-devicons]** |
+| **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** |
 |-----------------------------|------------------------------|----------------------------------|
 | [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) | [![vim-devicons-logo-small][img-visual-toc-vim-devicons]][vim-devicons] |
-
-
-## Important Notices
-* _`master`_ branch file paths are _not_ considered stable. [Please read if you are directly referencing the repository URI](#unstable-file-paths)
-* cloning this repository is **not** recommended unless you are going to be [contributing to development](#contributing)
 
 
 ## Features
@@ -42,6 +37,11 @@ For more high level information see the [wiki][wiki]. If you are looking for the
 * Over **1,000** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
+
+
+## Important Notices
+* _`master`_ branch file paths are _not_ considered stable. [Please read if you are directly referencing the repository URI](#unstable-file-paths)
+* cloning this repository is **not** recommended unless you are going to be [contributing to development](#contributing)
 
 
 ## Table of Contents
@@ -133,48 +133,50 @@ See: [Font Patcher](#font-patcher) for usage
 |---------------------------------------------------|-----------------------------|------|---------|-------------------|
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]              | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | ![w2] ![m2] ![l2] |
-| [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | ![w2]![m2]![l2]   |
-| [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w2]![m2]![l2]   |
-| [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w2]![m2]![l2]   |
-| [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | ![w2]![m2]![l2]   |
-| [Droid Sans Mono Nerd Font][p-droid]              |                             | NO   | 2048    | ![w2]![m2]![l2]   |
-| [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w2]![m2]![l2]   |
-| [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]         | YES  | 1000    | ![w2]![m2]![l2]   |
-| [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]         | YES  | 1000    | ![w2]![m2]![l2]   |
-| [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | ![w2]![m2]![l2]   |
-| [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]        | YES  | 1000    | ![w2]![m2]![l2]   |
-| [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | ![w2]![m2]![l2]   |
-| [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w2]![m2]![l2]   |
-| [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | ![w2]![m2]![l2]   |
+| [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w2] ![m2] ![l2] |
+| [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w2] ![m2] ![l2] |
+| [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | ![w2] ![m2] ![l2] |
+| [Droid Sans Mono Nerd Font][p-droid]              |                             | NO   | 2048    | ![w2] ![m2] ![l2] |
+| [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w2] ![m2] ![l2] |
+| [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]         | YES  | 1000    | ![w2] ![m2] ![l2] |
+| [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]         | YES  | 1000    | ![w2] ![m2] ![l2] |
+| [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]        | YES  | 1000    | ![w2] ![m2] ![l2] |
+| [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | ![w2] ![m2] ![l2] |
+| [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
 | [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | [#70][s-hack]     |
-| [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w2]![m2]![l2]   |
-| [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]  | YES  | 2048    | ![w2]![m2]![l2]   |
-| [Meslo Nerd Font][p-meslo]                        |                             | NO   | 2048    | ![w2]![m2]![l2]   |
-| [Monofur Nerd Font][p-monofur]                    |                             | NO   | 2400    | ![w2]![m2]![l2]   |
-| [Monoid Nerd Font][p-monoid]                      |                             | NO   | 1536    | ![w2]![m2]![l2]   |
-| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]      | NO   | 1024    | ![w2]![m2]![l2]   |
-| [M+ (MPlus) Nerd Font][p-mplus]                   |                             | NO   | 1000    | ![w2]![m2]![l2]   |
-| [ProFont (Windows tweaked) Nerd Font][p-profont]  |                             | NO   | 1200    | ![w2]![m2]![l2]   |
+| [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]  | YES  | 2048    | ![w2] ![m2] ![l2] |
+| [Meslo Nerd Font][p-meslo]                        |                             | NO   | 2048    | ![w2] ![m2] ![l2] |
+| [Monofur Nerd Font][p-monofur]                    |                             | NO   | 2400    | ![w2] ![m2] ![l2] |
+| [Monoid Nerd Font][p-monoid]                      |                             | NO   | 1536    | ![w2] ![m2] ![l2] |
+| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]      | NO   | 1024    | ![w2] ![m2] ![l2] |
+| [M+ (MPlus) Nerd Font][p-mplus]                   |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [ProFont (Windows tweaked) Nerd Font][p-profont]  |                             | NO   | 1200    | ![w2] ![m2] ![l2] |
 | [ProFont (x11) Nerd Font][p-profont]              |                             | NO   | 1000    | [FAILING]         |
 | [ProggyClean Nerd Font][p-proggy-clean]           |                             | NO   | 2048    | [FAILING]         |
 | [Roboto Mono][p-roboto]                           |                             | NO   | 2048    | [FAILING]         |
-| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]          | YES  | 1000    | ![w2]![m2]![l2]   |
-| [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w2]![m2]![l2]   |
-| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w2]![m2]![l2]   |
+| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]          | YES  | 1000    | ![w2]! [m2] ![l2] |
+| [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w2]! [m2] ![l2] |
+| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w2]! [m2] ![l2] |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | [#16][s-terminus] |
-| [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | ![w2]![m2]![l2]   |
-| [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | ![w2]![m2]![l2]   |
+| [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | ![w2] ![m2]! [l2] |
+| [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | ![w2] ![m2]! [l2] |
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
 * Variations include:
- * extra glyphs that are *double* or *single* (monospaced) width
+ * *double* (variable/proportional) or *single* (fixed/monospaced) width icons/glyphs
  * [Font Awesome][font-awesome]
  * [GitHub Octicons][octicons]
  * [Font Linux][font-linux]
+ * [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
+ * [IEC Power Symbols][website-iecpower]
  * [Pomicons][gabrielelana-pomicons]
- * Full Windows Compatibility (WIP)
+ * Windows Compatibility
 
 ## Combinations
 
@@ -186,6 +188,7 @@ See: [Font Patcher](#font-patcher) for usage
     * Monospaced extra glyphs
     * Windows Compatible
     * [Font Awesome][font-awesome]
+    * [Font Awesome Extension][font-awesome-extension]
     * [GitHub Octicons][octicons]
     * [Font Linux][font-linux]
     * [Pomicons][gabrielelana-pomicons]
@@ -234,7 +237,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
 </h2>
 
-Patching the font of your own choosing for use with the [vim-devicons](https://github.com/ryanoasis/vim-devicons) vim plugin:
+Patching the font of your own choosing for use with the [VimDevIcons][vim-devicons]:
 * requires: python2, python-fontforge package (version 20141231 or later, see
   the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * alternative install method on OSX: `brew install fontforge`
@@ -463,9 +466,9 @@ Patched Font internal links
 Patched Font Statuses
 -->
 
-[w-top]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/windows-pass-sm.png
-[l-top]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/linux-pass-sm.png
-[m-top]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/mac-pass-sm.png
+[w-top]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/windows-pass-sm.png "↓ Windows Compatibility Status ↓"
+[l-top]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/linux-pass-sm.png "↓ Linux Compatibility Status ↓"
+[m-top]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/mac-pass-sm.png "↓ macOS (OSX) Compatibility Status ↓"
 
 [w]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/windows-pass-sm.png "Windows status is working ☺"
 [l]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v0.9.x/linux-pass-sm.png "Linux status is working ☺"
