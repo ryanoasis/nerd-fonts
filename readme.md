@@ -168,30 +168,25 @@ See: [Font Patcher](#font-patcher) for usage
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
-* Variations include:
+## Combinations
+
+* Over `5,700` unique variations/combinations (Power Set) of patched fonts:
+ * `102` unpatched font variations (otf and ttf)
+ * `56` combinations
+ * Calculated combinations `(56 * 102) = 5,712`
+ * Combinations for each font are any combination of (plus no flags option) [Variations](#variations)
+    
+### Variations
+ * no flags given (defaults to only [Seti-UI] and [Devicons][vorillaz-devicons])
  * *double* (variable/proportional) or *single* (fixed/monospaced) width icons/glyphs
  * [Font Awesome][font-awesome]
+ * [Font Awesome Extension][font-awesome-extension]
  * [GitHub Octicons][octicons]
  * [Font Linux][font-linux]
  * [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
  * [IEC Power Symbols][website-iecpower]
  * [Pomicons][gabrielelana-pomicons]
  * Windows Compatibility
-
-## Combinations
-
-* Over 5,700 unique variations/combinations (Power Set) of patched fonts:
- * 102 unpatched font variations (counting otf and ttf)
- * 56 combinations (Includes [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols])
- * Calculated combinations (56 * 102) = 5,712
- * Combinations for each font are any combination of (plus no flags option):
-    * Monospaced extra glyphs
-    * Windows Compatible
-    * [Font Awesome][font-awesome]
-    * [Font Awesome Extension][font-awesome-extension]
-    * [GitHub Octicons][octicons]
-    * [Font Linux][font-linux]
-    * [Pomicons][gabrielelana-pomicons]
 
 
 ## Font Installation
