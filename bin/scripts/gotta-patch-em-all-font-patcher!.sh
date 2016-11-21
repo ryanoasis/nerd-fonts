@@ -1,6 +1,9 @@
 #!/bin/bash
 # version: 0.9.0
 
+# used for debugging
+#set -x
+
 # Check for Fontforge
 type fontforge >/dev/null 2>&1 || {
   echo >&2 "# FontForge must be installed before running this script."
@@ -13,7 +16,6 @@ res1=$(date +%s)
 parent_dir="${PWD}/../../"
 # Set source and target directories
 source_fonts_dir="${PWD}/../../src/unpatched-fonts"
-patched_fonts_dir="${PWD}/../../patched-fonts"
 like_pattern=''
 complete_variation_count=0
 total_variation_count=0
@@ -23,11 +25,17 @@ unpatched_parent_dir="bin/scripts/../../src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 max_parallel_process=64
 
-
 if [ $# -eq 1 ]
   then
     like_pattern=$1
     echo "# Parameter given, limiting search and patch to pattern '$like_pattern' given"
+fi
+
+# simple second param option to allow to regenerate font info without re-patching
+if [ $# -eq 2 ]
+  then
+    info_only=$2
+    echo "# 'Info Only' Parameter given, only generating font info (not patching)"
 fi
 
 # correct way to output find results into an array (when files have space chars, etc)
@@ -43,6 +51,57 @@ echo "# Total source fonts found: ${#source_fonts[*]}"
 
 function patch_font {
   local f=$1; shift
+  local i=$1; shift
+  #echo $i
+  #echo $f
+  # take everything before the last slash (/) to start building the full path
+  local patched_font_dir="${f%/*}/"
+  # find replace unpatched parent dir with patched parent dir:
+  local patched_font_dir="${patched_font_dir/$unpatched_parent_dir/$patched_parent_dir}"
+
+  [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
+
+  config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
+  config_dir=$( cd "$( dirname "$f" )" && pwd)
+
+  # source the font config file if exists:
+  if [ -f "$config_dir/config.cfg" ]
+  then
+    source "$config_dir/config.cfg"
+  elif [ -f "$config_parent_dir/config.cfg" ]
+  then
+    source "$config_parent_dir/config.cfg"
+  fi
+
+  if [ "$config_has_powerline" ]
+  then
+    powerline=""
+    combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
+  else
+    powerline="--powerline"
+    combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
+  fi
+
+  cd "$parent_dir" || {
+    echo >&2 "# Could not find project parent directory"
+    exit 1
+  }
+
+  fontforge -quiet -script ./font-patcher "$f" -q $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
+  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
+  fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
+  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
+  # wait for this group of background processes to finish to avoid forking too many processes
+  # that can add up quickly with the number of combinations
+  #wait
+
+}
+
+function generate_info {
+  local f=$1; shift
+  local i=$1; shift
+  #echo $i
+  #echo $f
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
   # find replace unpatched parent dir with patched parent dir:
@@ -77,20 +136,6 @@ function patch_font {
     powerline="--powerline"
     combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
   fi
-
-  cd "$parent_dir" || {
-    echo >&2 "# Could not find project parent directory"
-    exit 1
-  }
-
-
-  fontforge -quiet -script ./font-patcher "$f" -q $powerline --complete --no-progressbars--outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script ./font-patcher "$f" -q -w $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  # wait for this group of background processes to finish to avoid forking too many processes
-  # that can add up quickly with the number of combinations
-  #wait
 
   complete_variation_count=$((complete_variation_count+4))
   combination_count=$(printf "%s" "$combinations" | wc -l)
@@ -144,28 +189,38 @@ function generate_readme {
   } >> "$combinations_filename"
 }
 
+if [ ! $info_only ]
+then
+  # Iterate through source fonts
+  for i in "${!source_fonts[@]}"
+  do
+    patch_font "${source_fonts[$i]}" "$i" 2>/dev/null &
+
+    # un-comment to test this script (patch 1 font)
+    #break
+
+    # wait for this set of bg commands to finish: dont do too many at once!
+    # if we spawn a background process for each set of fonts it will
+    # end up using too many system resources
+    # however we want to run a certain number in parallel to decrease
+    # the amount of time patching all the fonts will take
+    # for now set a 'wait' for each X set of processes:
+    if [[ $(($i % $max_parallel_process)) == 0 ]];
+    then
+      echo "complete_variation_count after max parallel proc is  $complete_variation_count"
+      wait
+    fi
+  done
+  # wait for all bg commands to finish
+  wait
+fi
+
+# update information in separate iteration (to avoid issues with bg processes and the counts):
 # Iterate through source fonts
 for i in "${!source_fonts[@]}"
 do
-   patch_font "${source_fonts[$i]}" "$i" 2>/dev/null &
-  echo "complete_variation_count  after bg proc is  $complete_variation_count"
-
-  # un-comment to test this script (patch 1 font)
-  #break
-
-  # wait for this set of bg commands to finish: dont do too many at once!
-  # if we spawn a background process for each set of fonts it will
-  # end up using too many system resources
-  # however we want to run a certain number in parallel to decrease
-  # the amount of time patching all the fonts will take
-  # for now set a 'wait' for each X set of processes:
-  if [[ $(($i % $max_parallel_process)) == 0 ]];
-  then
-    wait
-  fi
+  generate_info "${source_fonts[$i]}" "$i" 2>/dev/null
 done
-# wait for all bg commands to finish
-wait
 
 res2=$(date +%s)
 dt=$(echo "$res2 - $res1" | bc)
