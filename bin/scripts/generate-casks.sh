@@ -19,8 +19,8 @@ cd $patched_parent_dir || {
   exit 1
 }
 
-#find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
+find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+#find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
 #find . -maxdepth 1 -type d | # uncomment to test 1 font
 while read -r filename
 do
@@ -55,7 +55,7 @@ do
     printf "cask '%s' do\n" "$caskname"
     printf "  version '%s'\n" "$version"
     printf "  sha256 '%s'\n\n" "$sha256sum"
-    printf "  url '%s%s.zip'\n" "$downloadarchive" "$basename"
+    printf "  url \"%s%s.zip\"\n" "$downloadarchive" "$basename"
     printf "  appcast '%s',\n" "$appcast"
     printf "          checkpoint: '%s'\n" "$appcastcheckpoint"
   } >> "$to"
