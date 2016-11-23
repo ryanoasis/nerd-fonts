@@ -152,12 +152,12 @@ The following Sankey flow diagram shows the current glyph sets included:
 | [ProFont (x11) Nerd Font][p-profont]              |                             | NO   | 1000    | [FAILING]         |
 | [ProggyClean Nerd Font][p-proggy-clean]           |                             | NO   | 2048    | [FAILING]         |
 | [Roboto Mono][p-roboto]                           |                             | NO   | 2048    | [FAILING]         |
-| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]          | YES  | 1000    | ![w2]! [m2] ![l2] |
-| [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w2]! [m2] ![l2] |
-| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w2]! [m2] ![l2] |
+| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]          | YES  | 1000    | ![w2] ![m2] ![l2] |
+| [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w2] ![m2] ![l2] |
+| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | [#16][s-terminus] |
-| [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | ![w2] ![m2]! [l2] |
-| [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | ![w2] ![m2]! [l2] |
+| [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
