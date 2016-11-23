@@ -22,17 +22,8 @@ The following Sankey flow diagram shows the current glyph sets included:
 | [![fonts-logo-small](images/nerd-fonts-character-logo-md.png)](#patched-fonts) | [![patcher-logo-small](images/nerd-fonts-patcher-logo-md.png)](#font-patcher) | [![vim-devicons-logo-small][img-visual-toc-vim-devicons]][vim-devicons] |
 
 
-## Features
-* A [FontForge python script](#font-patcher) to patch any font
-* **26** already [patched font families](#patched-fonts)
-* Over **5,700** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **1,000** glyphs/icons combined [(more details)](#combinations)
-  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
-* A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
-
-
 ## Important Notices
-* _`master`_ branch file paths are _not_ considered stable. [Please read if you are directly referencing the repository URI](#unstable-file-paths)
+* `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
 * cloning this repository is **not** recommended unless you are going to be [contributing to development](#contributing)
 
 
@@ -47,13 +38,13 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**6 - Clone Repo**](#option-6-clone-the-repo)
   * [**7 - Patch Your Own Font**](#option-7-patch-your-own-font)
 
-**Features**
+[**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
   * [**Patched Fonts**](#patched-fonts)
   * [**Combinations**](#combinations)
   * [**Font Patcher**](#font-patcher)
 
-[**Developer / Contributor**](#developer)
+[**Developer / Contributor**](#font-patcher)
   * [**Font Patcher**](#font-patcher)
   * [**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all)
   * [**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
@@ -66,6 +57,15 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**Unstable file paths on master**](#unstable-file-paths)
   * [**Changelog**](#changelog)
   * [**License**](#license)
+
+
+## Features
+* A [FontForge python script](#font-patcher) to patch any font
+* **26** already [patched font families](#patched-fonts)
+* Over **5,700** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **1,000** glyphs/icons combined [(more details)](#combinations)
+  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
+* A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
 
 ## Glyph Sets
@@ -251,8 +251,7 @@ Use the provided python command line script to generate a patched font from your
 See: [Font Patcher](#font-patcher) for usage
 
 * use this option if you do __not__ want to use one of the [fonts provided](#patched-fonts)
-
-Put any font you would like to use into the `~/.local/share/fonts` (Linux) or `~/Library/Fonts/`(OS X) folder. For example:
+* you will still need to copy the generated font to the correct font directory on your system
 
 
 <h2 align="center" id="font-patcher">
@@ -351,6 +350,12 @@ optional arguments:
 ./gotta-patch-em-all-font-patcher\!.sh Hermit
 ```
 
+
+## Contributing
+
+See [contributing.md](contributing.md)
+
+
 ## Unstable File Paths
 
 | Unstable file paths warning |
@@ -360,6 +365,7 @@ optional arguments:
 | Use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf |
 | Not: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf~~ |
 
+
 ## Other Good Fonts to Patch
 
 * a list of additional good fonts to patch that I cannot provide or share due to the license:
@@ -367,6 +373,7 @@ optional arguments:
    * Possibly coming with external hosting :)
  * [PragmataPro][pragmatapro] (not free)
  * [Consolas][consolas] (proprietary)
+
 
 ## Project History
 
@@ -376,9 +383,6 @@ optional arguments:
 
 * project and repository previously known as 'nerd-filetype-glyphs-fonts-patcher' and 'font-nerd-icons'
 
-## Contributing
-
-See [contributing.md](contributing.md)
 
 ## Changelog
 
