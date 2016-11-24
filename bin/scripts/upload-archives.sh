@@ -26,36 +26,29 @@ OWNER="ryanoasis"
 REPO="nerd-fonts"
 # release id from tag:
 #RELEASE="v0.8.0"
-RELEASE=3229472
-FILEPATH="test-asset-upload.txt"
-#FILE="https://api.github.com/repos/$OWNER/$REPO/releases/$FILEPATH"
-FILE="https://uploads.github.com/repos/$OWNER/$REPO/releases/tags/$RELEASE/assets{?name,label}"
+RELEASE=3229472 # @todo get dynamically based on tag from first param?
+#FILEPATH="test-asset-upload.txt"
+#FILE="https://uploads.github.com/repos/$OWNER/$REPO/releases/tags/$RELEASE/assets{?name,label}"
 
-#curl --header 'Authorization: token $TOKEN' \
-#     --header 'Accept: application/vnd.github.v3.raw' \
-#     --remote-name \
-#     --location $FILE
-
-#curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @$FILEPATH https://uploads.github.com/repos/$OWNER/$REPO/releases/tags/$RELEASE/assets?name=$(basename $FILEPATH)&url=xyz
-curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @$FILEPATH https://uploads.github.com/repos/$OWNER/$REPO/releases/$RELEASE/assets?name=$(basename $FILEPATH)&url=xyz
+#curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @$FILEPATH https://uploads.github.com/repos/$OWNER/$REPO/releases/$RELEASE/assets?name=$(basename $FILEPATH)&url=xyz
 
 # just test a basic upload for now:
-exit
+#exit
 
-find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-#find . -maxdepth 1 -type d | # uncomment to test all font
+#find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+find ./ -name "*.zip" | # uncomment to test all font
 while read -r filename
 do
 
-	#dirname=$(dirname "$filename")
 	basename=$(basename "$filename")
-	searchdir=$filename
+	#searchdir=$filename
 	#fontdir=$(basename "$(dirname "$dirname")")
-	outputdir=$PWD/../archives/
+	#outputdir=$PWD/../archives/
 
-	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
+	printf "Uploading %s" "$basename"
 
-	zip "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf' -x '*Windows*'
-	#zip "$outputdir/$basename" -r "$searchdir" -i '*.[o,t]tf' -x '*Windows*'
+	curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @"$basename" https://uploads.github.com/repos/$OWNER/$REPO/releases/$RELEASE/assets?name="$basename"
+
+	#exit # uncomment to test only 1 zip
 
 done
