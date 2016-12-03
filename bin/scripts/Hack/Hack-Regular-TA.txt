@@ -1,0 +1,5 @@
+# [ U+0030 ] Adjust fill in the zero glyph
+zero  left  40
+zero  touch 39,40,71  y -0.5 @ 7
+zero  touch 39,40,71  y -1   @ 8,12-18
+zero  touch 55,56,57  y -1   @ 19-25

@@ -1,0 +1,5 @@
+# [ U+002B ] adjust the space in the vertical stroke of bar glyph
+bar touch 2,3  y 0.25  @ 6
+bar touch 2,3  y 1     @ 10,11,12,13
+bar touch 4,5  y -0.25 @ 6
+bar touch 4,5  y -1    @ 10

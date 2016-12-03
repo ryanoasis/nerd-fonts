@@ -21,6 +21,7 @@ import argparse
 from argparse import RawTextHelpFormatter
 import errno
 import time
+import subprocess
 
 try:
     #Load the module
@@ -48,6 +49,7 @@ parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Ad
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
+parser.add_argument('--postprocess', type=str, nargs='?', dest='postprocess', help='Specify a Script for Post Processing', default=False)
 
 # http://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
 progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
@@ -684,3 +686,8 @@ print "\nDone with Path Sets, generating font..."
 sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
 
 print "\nGenerated: " + sourceFont.fullname
+
+if args.postprocess:
+    subprocess.call([args.postprocess, args.outputdir + "/" + sourceFont.fullname + extension])
+    print "\nPost Processed: " + sourceFont.fullname
+
