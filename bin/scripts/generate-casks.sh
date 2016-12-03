@@ -27,6 +27,7 @@ function clear_file {
 
 function write_header {
   local outputfile=$1
+  local caskname=$2
 
   {
     printf "cask '%s' do\n" "$caskname"
@@ -77,9 +78,9 @@ function write_footer {
   } >> "$outputfile"
 }
 
-find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
+#find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
-#find . -maxdepth 1 -type d | # uncomment to test 1 font
+find . -maxdepth 1 -type d | # uncomment to test 1 font
 while read -r filename
 do
 
@@ -113,10 +114,10 @@ do
 	to_mono="$outputdir/${caskname_mono}.rb"
 
   clear_file "$to"
-  write_header "$to"
+  write_header "$to" "$caskname"
 
   clear_file "$to_mono"
-  write_header "$to_mono"
+  write_header "$to_mono" "$caskname_mono"
 
   write_body "$to" "${FONTS[@]}"
   write_body "$to_mono" "${MONOFONTS[@]}"
