@@ -19,6 +19,64 @@ cd $patched_parent_dir || {
   exit 1
 }
 
+function clear_file {
+  local outputfile=$1
+	# clear output file (needed for multiple runs or updates):
+	> "$outputfile" 2> /dev/null
+}
+
+function write_header {
+  local outputfile=$1
+
+  {
+    printf "cask '%s' do\n" "$caskname"
+    printf "  version '%s'\n" "$version"
+    printf "  sha256 '%s'\n\n" "$sha256sum"
+    printf "  url \"%s%s.zip\"\n" "$downloadarchive" "$basename"
+    printf "  appcast '%s',\n" "$appcast"
+    printf "          checkpoint: '%s'\n" "$appcastcheckpoint"
+  } >> "$outputfile"
+}
+
+function write_body {
+	local outputfile=$1
+	shift;
+	local fonts=("$@")
+
+	if [ "${fonts[0]}" ];
+	then
+		for i in "${!fonts[@]}"
+		do
+			individualfont=$(basename "${fonts[$i]}")
+
+			printf "## Found Font: %s\n" "${fonts[$i]}"
+
+			if [ "$i" == 0 ];
+			then
+				familyname=$(fc-query --format='%{family}' "${fonts[$i]}")
+				{
+					printf "  name '%s (%s)'\n" "$familyname" "$basename"
+					printf "  homepage '%s'" "$homepage"
+					printf "\n\n"
+				} >> "$outputfile"
+			fi
+
+			printf "  font '%s'\n" "$individualfont" >> "$outputfile"
+
+		done
+	else
+		echo "# Did not find TTF or OTF"
+	fi
+}
+
+function write_footer {
+  local outputfile=$1
+
+  {
+    printf "end\n"
+  } >> "$outputfile"
+}
+
 find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
 #find . -maxdepth 1 -type d | # uncomment to test 1 font
@@ -31,10 +89,15 @@ do
 	searchdir=$filename
 	fontdir=$(basename "$(dirname "$dirname")")
 
+	MONOFONTS=()
+	while IFS= read -d $'\0' -r file ; do
+	  MONOFONTS=("${MONOFONTS[@]}" "$file")
+	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*mono.*' \) -print0)
+
 	FONTS=()
 	while IFS= read -d $'\0' -r file ; do
 	  FONTS=("${FONTS[@]}" "$file")
-	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' \) -print0)
+	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iwholename '*mono.*' \) -print0)
 
 	outputdir=$PWD/../casks/
 
@@ -45,50 +108,21 @@ do
 	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
 	caskname="font-$formattedbasename-nerd-font"
+	caskname_mono="${caskname}-mono"
 	to="$outputdir/${caskname}.rb"
+	to_mono="$outputdir/${caskname_mono}.rb"
 
-	# clear output file (needed for multiple runs or updates):
-	> "$to" 2> /dev/null
+  clear_file "$to"
+  write_header "$to"
 
-  # add to the file
-  {
-    printf "cask '%s' do\n" "$caskname"
-    printf "  version '%s'\n" "$version"
-    printf "  sha256 '%s'\n\n" "$sha256sum"
-    printf "  url \"%s%s.zip\"\n" "$downloadarchive" "$basename"
-    printf "  appcast '%s',\n" "$appcast"
-    printf "          checkpoint: '%s'\n" "$appcastcheckpoint"
-  } >> "$to"
+  clear_file "$to_mono"
+  write_header "$to_mono"
 
+  write_body "$to" "${FONTS[@]}"
+  write_body "$to_mono" "${MONOFONTS[@]}"
 
-	if [ "${FONTS[0]}" ];
-	then
-		for i in "${!FONTS[@]}"
-		do
-			individualfont=$(basename "${FONTS[$i]}")
-
-			printf "## Found Font: %s\n" "${FONTS[$i]}"
-
-			if [ "$i" == 0 ];
-			then
-				familyname=$(fc-query --format='%{family}' "${FONTS[$i]}")
-				{
-					printf "  name '%s (%s)'\n" "$familyname" "$basename"
-					printf "  homepage '%s'" "$homepage"
-					printf "\n\n"
-				} >> "$to"
-			fi
-
-			printf "  font '%s'\n" "$individualfont" >> "$to"
-
-		done
-	else
-		echo "# Did not find TTF or OTF"
-	fi
-
-  # add to the file
-  {
-    printf "end\n"
-  } >> "$to"
+  write_footer "$to"
+  write_footer "$to_mono"
 
 done
+
