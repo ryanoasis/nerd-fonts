@@ -9,9 +9,12 @@ function print-decimal-unicode-range() {
     local count="${continuedCount:-0}"
     # Use alternating colors to see which symbols extend out of the bounding
     # box.
-    local bgColor='\x1b[48;2;54;11;0m'
-    local alternateBgColor='\x1b[48;2;0;54;11m'
+    #local bgColor='\x1b[48;2;54;11;0m'
+    #local alternateBgColor='\x1b[48;2;0;54;11m'
+    local bgColor='\e[48;5;124m%03d'
+    local alternateBgColor='\e[48;5;202m%03d'
     local currentColor="${bgColor}"
+    local reset_color='\e[0m'
 
     local allChars="${currentColor}"
     local wrapAt=25
@@ -30,7 +33,7 @@ function print-decimal-unicode-range() {
     done
     printf "${allChars}${reset_color}"
 }
-# TODO COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 function print-unicode-ranges() {
     local count=0
 	 local arr=($@)
@@ -55,48 +58,50 @@ function print-unicode-ranges() {
 }
 
 function test-fonts() {
-    echo "Nerd - Pomicons"
+    echo "Nerd Fonts - Pomicons"
     print-unicode-ranges e000 e00a
     echo; echo
 
-	 echo "Nerd - Powerline"
+	 echo "Nerd Fonts - Powerline"
 	 print-unicode-ranges e0a0 e0a2 e0b0 e0b3
 	 echo; echo
 
-	 echo "Nerd - Powerline Extra"
+	 echo "Nerd Fonts - Powerline Extra"
 	 print-unicode-ranges e0a3 e0a3 e0b4 e0c8 e0cc e0d2 e0d4 e0d4
 	 echo; echo
 
-	 echo "Nerd - Symbols original"
+	 echo "Nerd Fonts - Symbols original"
 	 print-unicode-ranges e5fa e62b
 	 echo; echo
 
-	 echo "Nerd - Devicons"
+	 echo "Nerd Fonts - Devicons"
 	 print-unicode-ranges e700 e7c5
 	 echo; echo
 
-	 echo "Nerd - Font awesome"
+	 echo "Nerd Fonts - Font awesome"
 	 print-unicode-ranges f000 f2e0
 	 echo; echo
 
-	 echo "Nerd - Font awesome extension"
+	 echo "Nerd Fonts - Font awesome extension"
 	 print-unicode-ranges e200 e2a9
 	 echo; echo
 
-	 echo "Nerd - Octicons"
+	 echo "Nerd Fonts - Octicons"
 	 print-unicode-ranges f400 f4a8 2665 2665 26A1 26A1 f27c f27c
 	 echo; echo
 
-	 echo "Nerd - Font Linux"
+	 echo "Nerd Fonts - Font Linux"
 	 print-unicode-ranges f300 f313
 	 echo; echo
 
-	 echo "Nerd - Font Power Symbols"
+	 echo "Nerd Fonts - Font Power Symbols"
 	 print-unicode-ranges 23fb 23fe 2b58 2b58
 	 echo; echo
 
-	 echo "Nerd - All"
+	 echo "Nerd Fonts - All"
 	 print-unicode-ranges e000 e00a e0a0 e0a2 e0b0 e0b3 e0a3 e0a3 e0b4 e0c8 e0cc e0d2 e0d4 e0d4 e5fa e62b e700 e7c5 f000 f2e0 e200 e2a9 f400 f4a8 2665 2665 26A1 26A1 f27c f27c f300 f313 23fb 23fe 2b58 2b58
+
+	 echo; echo
 }
 
 test-fonts
