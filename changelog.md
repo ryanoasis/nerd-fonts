@@ -51,7 +51,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
     - Windows and macOS issues (fixes #111)
   - Fixed font name for glyph font 'PowerlineExtraSymbols.otf' (fixes #109)
   - Fixed and tweaked various powerline gaps (PR #107 @sharkusk)
-  - Fixed Hack hints being removed in patched versions (Knack) (fixes #70)
+  - Fixed Hack hints being removed in patched versions (Knack) (fixes #70, with help from @chrissimpkins)
   - Fixed various issues with '--careful' flag (PR #107 @sharkusk)
   - Fixed and refactored various code logic and style 
 
