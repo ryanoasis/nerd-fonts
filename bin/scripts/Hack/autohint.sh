@@ -24,19 +24,24 @@ command -v ttfautohint >/dev/null 2>&1 || {
 # ttfautohint - Input and output file names must not be identical
 cp "$fontfile" "${fontfile}.tmp"
 
-if [[ "$fontfile" == *"Hack-Regular"* ]]
+if [[ "$fontfile" == *" Regular"* ]]
 then
-	echo "[Nerd Fonts] Hinting Hack Regular"
+	echo "[Nerd Fonts] Hinting Knack (Hack) Regular"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 181 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Regular-TA.txt" "${fontfile}.tmp" "$fontfile"
-elif [[ "$fontfile" == *"Hack-Bold"* ]]
-	echo "[Nerd Fonts] Hinting Hack Bold"
+elif [[ "$fontfile" == *" Bold"* ]]
+then
+	echo "[Nerd Fonts] Hinting Knack (Hack) Bold"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 260 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Bold-TA.txt" "${fontfile}.tmp" "$fontfile"
-elif [[ "$fontfile" == *"Hack-Italic"* ]]
-	echo "[Nerd Fonts] Hinting Hack Italic"
+elif [[ "$fontfile" == *" Italic"* ]]
+then
+	echo "[Nerd Fonts] Hinting Knack (Hack) Italic"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 145 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Bold-TA.txt" "${fontfile}.tmp" "$fontfile"
-elif [[ "$fontfile" == *"Hack-BoldItalic"* ]]
-	echo "[Nerd Fonts] Hinting Hack Bold Italic"
+elif [[ "$fontfile" == *" BoldItalic"* ]]
+then
+	echo "[Nerd Fonts] Hinting Knack (Hack) Bold Italic"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 265 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Bold-TA.txt" "${fontfile}.tmp" "$fontfile"
+else
+    echo "[Nerd Fonts] Could not find any Knack (Hack) fonts to hint..."
 fi
 
 # clean-up

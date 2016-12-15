@@ -140,7 +140,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
-| [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | [#70][s-hack]     |
+| [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | ![w2] ![m2] ![l2] |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]  | YES  | 2048    | ![w2] ![m2] ![l2] |
 | [Meslo Nerd Font][p-meslo]                        |                             | NO   | 2048    | ![w2] ![m2] ![l2] |
