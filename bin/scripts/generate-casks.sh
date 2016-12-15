@@ -1,12 +1,12 @@
 #!/bin/bash
-# version: 0.9.0
+# version: 1.0.0
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # only adds non-Windows versions of the fonts
 
 #set -x
 
-version="0.8.0"
+version="1.0.0"
 patched_parent_dir="../../patched-fonts/"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"

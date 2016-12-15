@@ -1,8 +1,8 @@
 #!/usr/bin/env python2
 # coding=utf8
-# version: 0.9.0
+# version: 1.0.0
 
-version = "0.9.0"
+version = "1.0.0"
 projectName = "Nerd Fonts"
 projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]

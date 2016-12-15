@@ -1,6 +1,6 @@
 #!/bin/bash
 # project: Nerd Fonts (https://github.com/ryanoasis/nerd-fonts)
-# version: 0.9.0
+# version: 1.0.0
 # Executes the 2to3 conversion to generate latest py3 version of font patcher
 
 # Check for 2to3

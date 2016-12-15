@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 0.9.0
+# version: 1.0.0
 
 fontfile=$1
 dir=$(dirname "$0")
