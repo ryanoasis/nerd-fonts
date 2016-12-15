@@ -17,6 +17,9 @@ parent_dir="${PWD}/../../"
 # Set source and target directories
 source_fonts_dir="${PWD}/../../src/unpatched-fonts"
 like_pattern=''
+complete_variations_per_family=4
+font_typefaces_count=0
+font_families_count=0
 complete_variation_count=0
 total_variation_count=0
 total_count=0
@@ -124,6 +127,7 @@ function generate_info {
   if [ "$config_parent_dir_name" == "unpatched-fonts" ]
   then
     is_unpatched_fonts_root=1
+    font_typefaces_count=$((font_typefaces_count+1))
   fi
 
   # source the font config file if exists:
@@ -144,7 +148,8 @@ function generate_info {
     combinations=$(printf "./font-patcher ${f##*/} %s\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
   fi
 
-  complete_variation_count=$((complete_variation_count+4))
+  font_families_count=$((font_families_count+1))
+  complete_variation_count=$((complete_variation_count+complete_variations_per_family))
   combination_count=$(printf "%s" "$combinations" | wc -l)
 
   # generate the readmes:
@@ -161,7 +166,7 @@ function generate_info {
   last_parent_dir=$config_parent_dir
 
   total_variation_count=$((total_variation_count+combination_count))
-  total_count=$((total_count+complete_variation_count+combination_count))
+  total_count=$((total_count+complete_variations_per_family+combination_count))
 
 }
 
@@ -240,7 +245,9 @@ ds=$(echo "$dt3-60*$dm" | bc)
 
 printf "# Total runtime: %d:%02d:%02d:%02d\n" "$dd" "$dh" "$dm" "$ds"
 
-printf "# All fonts patched to sub-directories in '%s'\n" "$patched_parent_dir"
-printf "# The total number of 'variation' patched fonts created was '%s'\n" "$total_variation_count"
-printf "# The total number of 'complete' patched fonts created was '%s'\n" "$complete_variation_count"
-printf "# The total number of patched fonts created was '%s'\n" "$total_count"
+printf "# All fonts patched to sub-directories in \t\t\t'%s'\n" "$patched_parent_dir"
+printf "# The total number of font typefaces patched was \t\t'%s'\n" "$font_typefaces_count"
+printf "# The total number of font families patched was \t\t'%s'\n" "$font_families_count"
+printf "# The total number of 'complete' patched fonts created was \t'%s'\n" "$complete_variation_count"
+printf "# The total number of 'variation' patched fonts created was \t'%s'\n" "$total_variation_count"
+printf "# The total number of patched fonts created was \t\t'%s'\n" "$total_count"
