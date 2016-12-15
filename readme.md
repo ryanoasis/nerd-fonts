@@ -155,7 +155,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 | [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]          | YES  | 1000    | ![w2] ![m2] ![l2] |
 | [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w2] ![m2] ![l2] |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w2] ![m2] ![l2] |
-| [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | [#16][s-terminus] |
+| [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | ![w2] ![m2] ![l2] |
 | [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | ![w2] ![m2] ![l2] |
 
@@ -504,6 +504,4 @@ Patched Font Statuses
 [l2]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/linux-unknown-sm.png "Linux status is Unknown/Un-tested"
 [m2]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-unknown-sm.png "macOS (OSX) status is Unknown/Un-tested"
 
-[s-hack]:https://github.com/ryanoasis/nerd-fonts/issues/70
-[s-terminus]:https://github.com/ryanoasis/nerd-fonts/issues/16
 [s-iosevka]:https://github.com/ryanoasis/nerd-fonts/issues/83
