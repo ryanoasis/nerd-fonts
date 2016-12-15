@@ -41,6 +41,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Updated readme with better readability, prose, and removes some passive voice issues
   - Updated sankey diagram in readme with a more visual representation of the glyphs combined
   - Updated readability and format of changelog (even past versions)
+  - Removed redundant flag `--limit-font-name-length`
 
 ### Fixes
   - Added missing glyphs in range `2630` through `2637` (trigrams) to DejaVu Sans Mono (fixes #100)

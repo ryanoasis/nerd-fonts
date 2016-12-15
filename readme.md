@@ -281,12 +281,15 @@ Patching the font of your own choosing for use with the [VimDevIcons][vim-devico
 usage: font-patcher [-h] [-v] [-s] [-q] [-w] [-c] [--fontawesome]
                     [--fontawesomeextension] [--fontlinux] [--octicons]
                     [--powersymbols] [--pomicons] [--powerline]
-                    [--powerlineextra] [--careful] [-ext [EXTENSION]]
-                    [-out [OUTPUTDIR]]
+                    [--powerlineextra] [--custom [CUSTOM]]
+                    [--postprocess [POSTPROCESS]]
+                    [--progressbars | --no-progressbars] [--careful]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
                     font
 
-Patches a given font with programming and web development related glyphs
-(mainly for https://github.com/ryanoasis/vim-devicons)
+Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
+
+Website: https://github.com/ryanoasis/nerd-fonts
 
 positional arguments:
   font                  The path to the font to patch (e.g., Inconsolata.otf)
@@ -294,29 +297,26 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
-  -s, --use-single-width-glyphs
-                        Whether to generate the glyphs as single-width not
-                        double-width (default is double-width)
+  -s, --mono, --use-single-width-glyphs
+                        Whether to generate the glyphs as single-width not double-width (default is double-width)
   -q, --quiet, --shutup
                         Do not generate verbose output
-  -w, --windows, --limit-font-name-length
-                        Limit the internal font name to 31 characters (for
-                        Windows compatibility)
+  -w, --windows         Limit the internal font name to 31 characters (for Windows compatibility)
   -c, --complete        Add all available Glyphs
-  --fontawesome         Add Font Awesome Glyphs (http://fortawesome.github.io
-                        /Font-Awesome)
+  --fontawesome         Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)
   --fontawesomeextension
-                        Add Font Awesome Extension Glyphs
-                        (http://andrelgava.github.io/font-awesome-extension)
-  --fontlinux           Add Font Linux Glyphs (https://github.com/Lukas-W
-                        /font-linux)
+                        Add Font Awesome Extension Glyphs (http://andrelgava.github.io/font-awesome-extension)
+  --fontlinux           Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)
   --octicons            Add Octicons Glyphs (https://octicons.github.com)
   --powersymbols        Add IEC Power Symbols (http://unicodepowersymbol.com)
-  --pomicons            Add Pomicon Glyphs
-                        (https://github.com/gabrielelana/pomicons)
+  --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
   --powerline           Add Powerline Glyphs
-  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis
-                        /powerline-extra-symbols)
+  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
+  --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
+  --postprocess [POSTPROCESS]
+                        Specify a Script for Post Processing
+  --progressbars        Show percentage completion progress bars per Glyph Set
+  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
   --careful             Do not overwrite existing glyphs if detected
   -ext [EXTENSION], --extension [EXTENSION]
                         Change font file type to create (e.g., ttf, otf)
