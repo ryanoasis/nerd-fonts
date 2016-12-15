@@ -163,10 +163,12 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Combinations
 
-* Over `5,700` unique variations/combinations (Power Set) of patched fonts:
- * `102` unpatched font variations (otf and ttf)
- * `56` combinations
- * Calculated combinations `(56 * 102) = 5,712`
+* Over `74,000` unique variations/combinations (Power Set) of patched fonts:
+ * `35` patched font typefaces
+ * `140` patched font families
+ * `560` 'complete' variations/combinations
+ * `73,960` _possible_ variations/combinations
+ * `74,520` total calculated combinations (560 + 73,960)
  * Combinations for each font are any combination of (plus no flags option) [Variations](#variations)
     
 ### Variations
