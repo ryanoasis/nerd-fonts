@@ -54,6 +54,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Fixed and tweaked various powerline gaps (PR #107 @sharkusk)
   - Fixed Hack hints being removed in patched versions (Knack) (fixes #70, with help from @chrissimpkins)
   - Fixed various issues with '--careful' flag (PR #107 @sharkusk)
+  - Fixed missing codepoint conflict information for Octicons & Font Awesome (fixes #116) (image from @kaymmm)
   - Fixed and refactored various code logic and style 
 
 ## v0.8.0
