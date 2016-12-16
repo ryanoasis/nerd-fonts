@@ -96,7 +96,11 @@ The following Sankey flow diagram shows the current glyph sets included:
 ### [Octicons][octicons]
 > GitHub's icons. / ([repo][octicons]) / ([website](https://octicons.github.com))
 
+#### Nerd Font Complete Codepoints:*
+
 ![image](https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/fontforge-glyph-set-octicons.png)
+
+<sub>* To avoid conflicts between icon sets, these were modified in the 'Complete' fonts. To view the original codepoints see the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki/Codepoint-Conflicts).</sub>
 
 ### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 > Provides extra Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
