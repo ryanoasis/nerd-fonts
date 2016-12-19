@@ -1,9 +1,5 @@
 <h1 align="center">
-	<img src="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/images/nerd-fonts-logo.png" alt="Nerd Fonts" />
-</h1>
-
-<h1 align="center">
-<img src="https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/custom-sankey-glyphs-combined-diagram.png" alt="Nerd Fonts Sankey Diagram" />
+  <img src="https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/custom-sankey-glyphs-combined-diagram.png" alt="Nerd Fonts Sankey Diagram" />
 </h1>
 
 ## Downloads
