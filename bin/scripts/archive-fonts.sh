@@ -6,14 +6,26 @@
 
 #set -x
 
+LINE_PREFIX="# [Nerd Fonts] "
+
 cd ../../patched-fonts/ || {
   echo >&2 "# Could not find patched fonts directory"
   exit 1
 }
 
+# limit archiving to given pattern (first script param) or entire root folder if no param given:
+if [ $# -eq 1 ]
+  then
+    pattern="./$1"
+    echo "$LINE_PREFIX Limiting archive to pattern './$pattern'"
+else
+    pattern="."
+    echo "$LINE_PREFIX No limting pattern given, will search entire folder"
+fi
+
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 0 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -type d | # uncomment to test all fonts
+find $pattern -maxdepth 1 -type d | # uncomment to test all fonts
 while read -r filename
 do
 
