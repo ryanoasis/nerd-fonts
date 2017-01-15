@@ -202,7 +202,7 @@ reservedFontNameReplacements = {
     'hack'    : 'knack',
     'Hack'    : 'Knack',
     'hasklig' : 'hasklug',
-    'hasklig' : 'hasklug',
+    'Hasklig' : 'Hasklug',
     'Share'   : 'Shure',
     'share'   : 'shure',
     'terminus': 'terminess',
