@@ -21,12 +21,28 @@ else
   exit 1
 fi
 
+LINE_PREFIX="# [Nerd Fonts] "
 TOKEN=$github_access_token
 OWNER="ryanoasis"
 REPO="nerd-fonts"
-# release id from tag:
-#RELEASE="v0.8.0"
-RELEASE=3229472 # @todo get dynamically based on tag from first param?
+
+# release id from tag (first script param) or latest if no param given:
+if [ $# -eq 1 ]
+  then
+    tag=$1
+    release_url="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/tags/$tag"
+    echo "$LINE_PREFIX Tag of '$tag' given, will upload to release id based on '$tag'"
+else
+    tag=$1
+    release_url="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest"
+    echo "$LINE_PREFIX No tag given, will upload to release id based on latest"
+fi
+
+RELEASE=$(curl -# -XGET -H "Authorization:token $TOKEN" -H 'Content-Type: application/json' $release_url | jq -r '.id')
+
+echo "$LINE_PREFIX Release id was '$RELEASE'"
+
+
 #FILEPATH="test-asset-upload.txt"
 #FILE="https://uploads.github.com/repos/$OWNER/$REPO/releases/tags/$RELEASE/assets{?name,label}"
 
@@ -45,7 +61,7 @@ do
 	#fontdir=$(basename "$(dirname "$dirname")")
 	#outputdir=$PWD/../archives/
 
-	printf "Uploading %s" "$basename"
+	printf "$LINE_PREFIX Uploading %s" "$basename"
 
 	curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @"$basename" https://uploads.github.com/repos/$OWNER/$REPO/releases/$RELEASE/assets?name="$basename"
 
