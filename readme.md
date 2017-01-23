@@ -234,9 +234,12 @@ Fonts are available for download as packages in the [latest release](https://git
 
 ### `Option 4: Homebrew Fonts`
 
-_Note:_ macOS (OS X) only
+All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) on macOS (OS X)
 
-Coming soon
+```sh
+brew cask search /nerd/
+brew cask install font-hack-nerd-font
+```
 
 ### `Option 5: Download and Install Manually`
 
