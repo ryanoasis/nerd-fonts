@@ -34,9 +34,10 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**2 - Ad Hoc Curl Download**](#option-2-ad-hoc-curl-download)
   * [**3 - Release Archive Download**](#option-3-release-archive-download)
   * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
-  * [**5 - Manual**](#option-5-download-and-install-manually)
-  * [**6 - Clone Repo**](#option-6-clone-the-repo)
-  * [**7 - Patch Your Own Font**](#option-7-patch-your-own-font)
+  * [**5 - Arch User Repository (AUR) (Arch Linux)**](#option-5-unofficial-arch-user-repository-aur)
+  * [**6 - Manual**](#option-6-download-and-install-manually)
+  * [**7 - Clone Repo**](#option-7-clone-the-repo)
+  * [**8 - Patch Your Own Font**](#option-8-patch-your-own-font)
 
 [**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
@@ -240,12 +241,20 @@ All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebre
 brew cask search /nerd/
 brew cask install font-hack-nerd-font
 ```
+### `Option 5: Unofficial Arch User Repository (AUR)`
 
-### `Option 5: Download and Install Manually`
+The following fonts are available via [AUR packages](https://aur.archlinux.org/) on Arch Linux:
+
+* [Nerd Fonts Complete](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
+* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
+* [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
+
+### `Option 6: Download and Install Manually`
 
 Download the specific [patched font](#patched-fonts) of your choice
 
-### `Option 6: Clone the Repo`
+### `Option 7: Clone the Repo`
 
 Cloning of this repository is **not** required nor the most efficient way to get the fonts,
 however if you want all the fonts and want to clone be sure to shallow clone:
@@ -253,7 +262,7 @@ however if you want all the fonts and want to clone be sure to shallow clone:
 
 For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
 
-### `Option 7: Patch Your Own Font`
+### `Option 8: Patch Your Own Font`
 
 Use the provided python command line script to generate a patched font from your own font to get the extra new glyphs
 
