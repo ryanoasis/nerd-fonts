@@ -1,6 +1,6 @@
 title: "Nerd Fonts"
 description: "Collection of 35+ patched fonts (over 74.5k possible variations) with a FontForge font patcher python script for Powerline, Font Awesome, Octicons, Devicons, and other icon fonts. Includes fonts: SourceCodePro, Hack, Droid Sans, Meslo, AnonymousPro, ProFont, Inconsolata, and more"
-google_analytics: 
+google_analytics: 'UA-91070609-1'
 show_downloads: true
 theme: jekyll-theme-minimal
 
