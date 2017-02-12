@@ -144,6 +144,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Inconsolata Go Nerd Font][p-inconsolata-go]      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
 | [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -486,6 +487,7 @@ Patched Font internal links
 [p-heavy-data]:patched-fonts/HeavyData
 [p-hermit]:patched-fonts/Hermit
 [p-inconsolata]:patched-fonts/Inconsolata
+[p-inconsolata-go]:patched-fonts/InconsolataGo
 [p-iosevka]:patched-fonts/Iosevka
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
