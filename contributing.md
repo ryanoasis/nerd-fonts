@@ -14,9 +14,9 @@ Work In Progress, for now the minimum:
 
 * Check the license even allows the font to be modified and shared
 * Add the original (unpatched) version of the font and any readme and/or license files to the `unpatched-sample-fonts` directory inside a new directory
-  * e.g. Adding *XYZ Font*, create directory `unpatched-sample-fonts/xyz/{PUT FONT FILES HERE}`
+  * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
-  * `./font-patcher unpatched-sample-fonts/XYZ/XYZ.ttf --powerline --powerlineextra`
+  * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --powerline --powerlineextra`
   * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts/` directory)
 * When fairly satisfied the font patches correctly, patch **all** of the variations/options, e.g.
   * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
