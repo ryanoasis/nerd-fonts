@@ -18,10 +18,10 @@ type 2to3 >/dev/null 2>&1 || {
 # see: https://docs.python.org/2/library/2to3.html#to3-fixers
 # see: https://github.com/ryanoasis/nerd-fonts/issues/49
 # see: https://github.com/ryanoasis/nerd-fonts/issues/79
-2to3 -x unicode -n -w ../font-patcher --add-suffix=-py3
+2to3 -x unicode -n -w ./font-patcher --add-suffix=-py3
 
 # fix environment (first line in file)
 # from `/usr/bin/env python2` when it should
 # be `/usr/bin/env python3`
 # using 1 as line number and '%' as delimiter:
-sed -i '1s%.*%#!/usr/bin/env python3%' ../../font-patcher-py3
+sed -i '1s%.*%#!/usr/bin/env python3%' ./font-patcher-py3
