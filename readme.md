@@ -124,6 +124,37 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ![image](https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/fontforge-glyph-set-pomicons.png)
 
+### Icon names in shell
+
+Download provided `.sh` files from [bin/scripts/lib/](bin/scripts/lib/)
+directory somewhere, recommended locations are `~/.local/share/fonts/` or
+`~/bin/`.
+
+- `i_all.sh` - helper to load all files you've downloaded at once
+- `i_dev.sh` - Devicons (198 icons, 8 does not have an established name)
+- `i_fa.sh` - Font Awesome (675 icons, 111 aliases)
+- `i_fae.sh` - Font Awesome Extension (170 icons)
+- `i_iec.sh` - IEC Power Symbols (5 icons)
+- `i_linux.sh` - Font Linux (20 icons)
+- `i_oct.sh` - Octicons (172 icons)
+- `i_ple.sh` - Powerline Extra Symbols (37 icons, 2 aliases, 16 does not
+  have an established name)
+- `i_pom.sh` - Pomicons (11 icons)
+- `i_seti.sh` - Seti-UI + Custom (50 icons, 2 aliases, 5 does not have an
+  established name)
+
+Then `source` required file(s) and output `$i_*` variables to see icons:
+
+```sh
+source ~/.local/share/fonts/i_oct.sh
+echo $i_oct_heart
+# Output:
+# ♥
+```
+
+**NOTE:** You have to use one of Nerd fonts to see correct icons for some
+icon sets (Devicons, Font Awesome Extension, Font Linux), but other sets
+should work with their standard fonts too.
 
 ## Patched Fonts
 
