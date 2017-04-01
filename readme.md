@@ -15,7 +15,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 <sub><i>Diagram created using <a href="http://sankeymatic.com/" title="SankeyMATIC (BETA): A Sankey diagram builder for everyone">@SankeyMATIC</a></i></sub>
 
 
-## Quick Links
+## Quick Navigation
 
 | **[Latest Release ➶][release]** | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** | **[Font Package <br/>Downloads ➶][release]** |
 |:-------------------------------:|:---------------------------:|:----------------------------:|:---------------------------------:|:--------------------------------------------:|
@@ -376,12 +376,13 @@ See [contributing.md](contributing.md)
 
 ## Unstable File Paths
 
-| Unstable file paths warning |
-|-----------------------------|
-| Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release |
-| For example: |
-| Use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf |
-| Not: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf~~ |
+⚠ Warning: File paths may change based on releases (especially **major** version bumps)
+
+Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release
+
+* For example:
+  * ✅ Use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf
+  * ❌ Instead of: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf~~
 
 
 ## Other Good Fonts to Patch
