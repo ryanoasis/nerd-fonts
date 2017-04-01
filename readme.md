@@ -17,8 +17,8 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Quick Links
 
-| **[Latest Release ➶][release]** | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** | **[Font Package Downloads][release]** |
-|:-------------------------------:|:---------------------------:|:----------------------------:|:---------------------------------:|:-------------------------------------:|
+| **[Latest Release ➶][release]** | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** | **[Font Package <br/>Downloads ➶][release]** |
+|:-------------------------------:|:---------------------------:|:----------------------------:|:---------------------------------:|:--------------------------------------------:|
 | [![fonts-logo-small][ql-1]][release] | [![fonts-logo-small][ql-2]](#patched-fonts) | [![patcher-logo-small][ql-3]](#font-patcher) | [![vim-devicons-logo-small][ql-4]][vim-devicons] | [![fonts-logo-small][ql-5]][release] |
 
 
@@ -276,7 +276,7 @@ See: [Font Patcher](#font-patcher) for usage
 	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
 </h2>
 
-Patching the font of your own choosing for use with the [VimDevIcons][vim-devicons]:
+Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-devicons]:
 * requires: python2, python-fontforge package (version 20141231 or later, see
   the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * alternative install method on OSX: `brew install fontforge`
@@ -414,7 +414,7 @@ See [changelog.md](changelog.md)
 Repo References
 -->
 
-[vim-devicons]:https://github.com/ryanoasis/vim-devicons
+[vim-devicons]:https://github.com/ryanoasis/vim-devicons "VimDevIcons Vim Plugin (external link) ➶"
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLGava/font-awesome-extension
@@ -447,7 +447,7 @@ Link References
 [input-mono]:http://input.fontbureau.com/download/
 [pragmatapro]:http://www.fsd.it/shop/fonts/pragmatapro/
 
-[release]:https://github.com/ryanoasis/nerd-fonts/releases/latest
+[release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
 
 <!--
 Font repos
