@@ -377,7 +377,7 @@ See [contributing.md](contributing.md)
 ## Unstable File Paths
 
 | Unstable file paths warning |
--------------------------------
+|-----------------------------|
 | Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release |
 | For example: |
 | Use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf |
