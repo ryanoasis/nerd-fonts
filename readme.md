@@ -17,9 +17,9 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Quick Links
 
-**[Latest Release ➶][latest-release]** | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** | **[Font Package <br/>Downloads][latest-release]**
-|---------------------------------------|-----------------------------|------------------------------|------------------------------------|-----------------------------|
-| <p align="center">[![fonts-logo-small][ql-1]][latest-release]</p> | [![fonts-logo-small][ql-2]](#patched-fonts) | [![patcher-logo-small][ql-3]](#font-patcher) | <p align="center">[![vim-devicons-logo-small][ql-4]][vim-devicons]</p> | <p align="center">[![fonts-logo-small][ql-5]][latest-release]</p> | 
+| **[Latest Release ➶][release]** | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** | **[Font Package Downloads][release]** |
+|:-------------------------------:|:---------------------------:|:----------------------------:|:---------------------------------:|:-------------------------------------:|
+| [![fonts-logo-small][ql-1]][release] | [![fonts-logo-small][ql-2]](#patched-fonts) | [![patcher-logo-small][ql-3]](#font-patcher) | [![vim-devicons-logo-small][ql-4]][vim-devicons] | [![fonts-logo-small][ql-5]][release] |
 
 
 ## Important Notices
@@ -447,7 +447,7 @@ Link References
 [input-mono]:http://input.fontbureau.com/download/
 [pragmatapro]:http://www.fsd.it/shop/fonts/pragmatapro/
 
-[latest-release]:https://github.com/ryanoasis/nerd-fonts/releases/latest
+[release]:https://github.com/ryanoasis/nerd-fonts/releases/latest
 
 <!--
 Font repos
