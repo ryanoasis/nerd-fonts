@@ -393,13 +393,9 @@ See [contributing.md](contributing.md)
  * [Consolas][consolas] (proprietary)
 
 
-## Project History
+## Project Motivation
 
-### Motivation (Original Rationale)
-
-* Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path. This project began as a part of the [vim-devicons] repo but soon it became apparent it did not belong tied to the vim plugin. I thought it may benefit others more as a separate project and allow a wider range of uses. This project started before I knew about Fontconfig provided solution, although a patched font still has some benefits over the Fontconfig.
-
-* project and repository previously known as 'nerd-filetype-glyphs-fonts-patcher' and 'font-nerd-icons'
+See [Wiki: Project Purpose][wiki-project-purpose]
 
 
 ## Changelog
@@ -424,6 +420,7 @@ Repo References
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
 [wiki]:https://github.com/ryanoasis/nerd-fonts/wiki
+[wiki-project-purpose]:https://github.com/ryanoasis/nerd-fonts/wiki/Project-Purpose
 [repo]:https://github.com/ryanoasis/nerd-fonts
 [gitter]:https://gitter.im/ryanoasis/nerd-fonts
 
