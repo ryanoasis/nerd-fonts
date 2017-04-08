@@ -1,6 +1,8 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # coding=utf8
 # version: 1.0.0
+
+from __future__ import absolute_import, print_function, unicode_literals
 
 version = "1.0.0"
 projectName = "Nerd Fonts"
@@ -70,8 +72,8 @@ actualVersion = int(fontforge.version())
 # versions tested: 20150612, 20150824
 
 if actualVersion < minimumVersion:
-    print projectName + ": You seem to be using an unsupported (old) version of fontforge: " + str(actualVersion)
-    print projectName + ": Please use at least version: " + str(minimumVersion)
+    print("{}: You seem to be using an unsupported (old) version of fontforge: {}".format(projectName, actualVersion))
+    print("{}: Please use at least version: {}".format(projectName, minimumVersion))
     sys.exit(1)
 
 verboseAdditionalFontNameSuffix = " " + projectNameSingular
@@ -150,7 +152,7 @@ try:
     # now we have the correct item:
     subFamily = sourceFont.sfnt_names[sfntNamesStringIDIndex][subFamilyTupleIndex]
 except IndexError:
-    print projectName + ": Could not find 'SubFamily' for given font, falling back to parsed fontname"
+    print("{}: Could not find 'SubFamily' for given font, falling back to parsed fontname".format(projectName))
     subFamily = fallbackStyle
 
 # some fonts have inaccurate 'SubFamily', if it is Regular let us trust the filename more:
@@ -177,7 +179,7 @@ fontname += '-' + subFamily
 # rename font
 
 def replace_all(text, dic):
-    for i, j in dic.iteritems():
+    for i, j in dic.items():
         text = text.replace(i, j)
     return text
 
@@ -221,9 +223,9 @@ sourceFont.comment = projectInfo
 sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
 
 # todo version not being set for all font types (e.g. ttf)
-#print "Version was " + sourceFont.version
+#print("Version was {}".format(sourceFont.version))
 sourceFont.version += ";" + projectName + " " + version
-#print "Version now is " + sourceFont.version
+#print("Version now is {}".format(sourceFont.version))
 
 # Prevent glyph encoding position conflicts between glyph sets
 
@@ -464,7 +466,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         sourceFontList = []
         sourceFontCounter = 0
 
-        for i in xrange(sourceFontStart, sourceFontEnd + 1):
+        for i in range(sourceFontStart, sourceFontEnd + 1):
             sourceFontList.append(format(i, 'X'))
 
     scale_factor = 0
@@ -508,7 +510,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             sourceFontCounter += 1
 
         if int(copiedToSlot, 16) < 0:
-            print "Found invalid glyph slot number. Skipping."
+            print("Found invalid glyph slot number. Skipping.")
             continue
 
         if args.quiet == False:
@@ -535,7 +537,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             codepoint = int("0x" + copiedToSlot, 16)
             if codepoint in sourceFont:
                 if args.quiet == False:
-                    print "  Found existing Glyph at "+ copiedToSlot +".  Skipping..."
+                    print("  Found existing Glyph at {}. Skipping...".format(copiedToSlot))
                 # We don't want to touch anything so move to next Glyph
                 continue
 
@@ -679,15 +681,15 @@ for patch in PATCH_SET:
 if symfont:
     symfont.close()
 
-print "\nDone with Path Sets, generating font..."
+print("\nDone with Path Sets, generating font...")
 
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
 sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
 
-print "\nGenerated: " + sourceFont.fullname
+print("\nGenerated: {}".format(sourceFont.fullname))
 
 if args.postprocess:
     subprocess.call([args.postprocess, args.outputdir + "/" + sourceFont.fullname + extension])
-    print "\nPost Processed: " + sourceFont.fullname
+    print("\nPost Processed: {}".format(sourceFont.fullname))
 
