@@ -148,7 +148,7 @@ try:
     # String ID is at the second index in the Tuple lists
     sfntNamesStringIDIndex = 2
     # now we have the correct item:
-    subFamily = sourceFont.sfnt_names[sfntNamesStringIDIndex][subFamilyTupleIndex]
+    subFamily = sourceFont.sfnt_names[subFamilyTupleIndex][sfntNamesStringIDIndex]
 except IndexError:
     print projectName + ": Could not find 'SubFamily' for given font, falling back to parsed fontname"
     subFamily = fallbackStyle
