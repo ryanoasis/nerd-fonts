@@ -1,38 +1,20 @@
 #!/bin/bash
 
-# Given a decimal number start and end print all unicode codepoint.
-# If $3 is specified, it's used as the current column number.
+# Given an array of decimal numbers print all unicode codepoint.
 function print-decimal-unicode-range() {
-  #local start="$1"
-  #local end="$2"
   local originalSequence=("$@")
-  #local continuedCount="$3"
-  echo "1 is:"
-  echo "${1}"
-  #echo "2 is $2"
-  #echo "3 is $3"
   local counter=0
-  # Paramater substitution: use zero if not set
-  #local count="${continuedCount:-0}"
-  #echo "count is $count"
   # Use alternating colors to see which symbols extend out of the bounding
   # box.
-  #local bgColor='\033[48;2;54;11;0m'
-  #local alternateBgColor='\033[48;2;0;54;11m'
   local bgColorBorder='\033[48;5;8m'
   local bgColorCode='\033[48;5;246m'
   local alternateBgColorCode='\033[48;5;240m'
   local bgColorChar='\033[48;5;66m'
   local alternateBgColorChar='\033[48;5;60m'
   local underline='\033[4m'
-  #local bgColor='\e[48;5;124m%03d'
-  #local alternateBgColor='\e[48;5;202m%03d'
   local currentColorCode="${bgColorCode}"
   local currentColorChar="${bgColorChar}"
   local reset_color='\033[0m'
-
-  #local allChars="${currentColor}"
-  #local allCodes="${currentColor}"
   local allChars=""
   local allCodes=""
   local wrapAt=5
@@ -40,61 +22,38 @@ function print-decimal-unicode-range() {
   local bottomLine="${bgColorBorder}╚══════╩══════╩══════╩══════╩══════╝${reset_color}"
   local line="${bgColorBorder}╠══════╬══════╬══════╬══════╬══════╣${reset_color}"
   local bar="${bgColorBorder}║${reset_color}"
-  #local originalSequence=($(seq "${start}" "${end}"))
   local originalSequenceLength=${#originalSequence[@]}
   local leftoverSpaces=$((wrapAt - (originalSequenceLength % wrapAt)))
-
-  #printf "\nleftover is %s\n" "$leftoverSpaces"
 
   # add fillers to array to maintain table:
   if [[ "$leftoverSpaces" < "$wrapAt" ]]; then
     for i in $(seq 1 $leftoverSpaces); do
-      #printf "adding a leftover\n"
       originalSequence+=(0)
     done
   fi
 
   local sequenceLength=${#originalSequence[@]}
 
-  #printf "orig seq len %s" "$originalSequenceLength"
-  #printf "\n"
-  #printf "leftover is %s" "$leftoverSpaces"
-  #printf "\n"
-  #printf "seq len %s" "$sequenceLength"
-  #printf "\n"
-  #exit
-  #printf "hey"
-  printf "$topLine\n"
-  #printf "║"
+  printf "%b\n" "$topLine"
+
   for decimalCode in "${originalSequence[@]}"; do
     local hexCode=$(printf '%x' "${decimalCode}")
     local code="${hexCode}"
     local char="\u${hexCode}"
 
-    #echo "hexcode was $hexCode"
-    #echo -e "char was ${char}"
     # fill in placeholder cells properly formatted:
     if [ "${char}" = "\u0" ]; then
-      #echo "IN IF char was '$char'"
       char=" "
       code="    "
-      #else 
-      #echo "IN ELSE char was '$char'"
     fi
 
     allCodes+="${currentColorCode} ${underline}${code}${reset_color}${currentColorCode} ${reset_color}$bar"
     allChars+="${currentColorChar}  ${char}   ${reset_color}$bar"
-    #echo -e "\ncount was $count"
     counter=$((counter + 1))
     count=$(( (count + 1) % wrapAt))
-    #echo -e "\ncount was $count"
-    #echo -e "\nwrap was $wrapAt"
-    #echo -e "\nwrap-1 was $((wrapAt - 1))"
-    #leftoverSpaces=$((wrapAt - count))
+
     if [[ $count -eq 0 ]]; then
-      #printf "║"
-      #echo -e "\ncount is at zero\n"
-      #echo -e "\nleftoversSpaces is $leftoverSpaces\n"
+
       if [[ "${currentColorCode}" = "${alternateBgColorCode}" ]]; then
         currentColorCode="${bgColorCode}"
         currentColorChar="${bgColorChar}"
@@ -103,15 +62,10 @@ function print-decimal-unicode-range() {
         currentColorChar="${alternateBgColorChar}"
       fi
 
-      #allCodes+="${currentColor}"
-      #allChars+="${currentColor}"
-
       printf "%b%b%b" "$bar" "$allCodes" "$reset_color"
       printf "\n"
       printf "%b%b%b" "$bar" "$allChars" "$reset_color"
       printf "\n"
-
-      #printf "counter is %s" "$counter"
 
       if [ "$counter" != "$sequenceLength" ]; then
         printf "%b\n" "$line"
@@ -124,51 +78,26 @@ function print-decimal-unicode-range() {
   done
 
   printf "%b\n" "$bottomLine"
-  # print left-overs:
-  #leftoverSpaces=$((wrapAt - count))
-  # printf "${allCodes}${reset_color}"
-  # printf "\n║${allChars}${reset_color}"
-  #   printf "\n"
-  #printf "$bottomLine\n"
-  #printf "count was %s" $count
-  #printf "\nleftovers was %s" $leftoverSpaces
-  #printf "${allChars}${reset_color}"
+
 }
 
 function print-unicode-ranges() {
   echo ''
-  #local count=0
+
   local arr=($@)
   local len=$#
   local combinedRanges=()
-  #echo "len was $len"
+
   for ((j=0; j<len; j+=2)); do
-    #for i in "${!arr[@]}"
-    #echo "j $j"
-    #local start="$@[i]"
-    #local start="${@[$i]}"
-    #echo 'heyman'
     local start="${arr[$j]}"
-    #echo "start $start"
-    #echo "i+1 $((i+1))"
-    #echo "before inc end -- now i is $j"
-    #local end="$@[i+1]"
     local end="${arr[(($j+1))]}"
-    #echo "after inc end -- now i is $j"
-    #echo "end $end"
     local startDecimal=$((16#$start))
     local endDecimal=$((16#$end))
-    echo "startDec $startDecimal"
-    echo "endDec $endDecimal"
+
     combinedRanges+=($(seq "${startDecimal}" "${endDecimal}"))
-    #echo "end loop - now i is $j"
-    #print-decimal-unicode-range "${startDecimal}" "${endDecimal}" "${count}"
-    #echo "end loop - now i is $j"
-    #count=$(($count + $endDecimal - $startDecimal))
+
   done
 
-  echo "arr"
-  echo "${combinedRanges[@]}"
   print-decimal-unicode-range "${combinedRanges[@]}"
 
 }
