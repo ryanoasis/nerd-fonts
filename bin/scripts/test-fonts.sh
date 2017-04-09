@@ -131,6 +131,7 @@ function print-decimal-unicode-range() {
 }
 
 function print-unicode-ranges() {
+  echo -e ''
     #local count=0
 	 local arr=($@)
 	 local len=$#
