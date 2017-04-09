@@ -13,20 +13,29 @@ function print-decimal-unicode-range() {
     local count="${continuedCount:-0}"
     # Use alternating colors to see which symbols extend out of the bounding
     # box.
-	 local bgColor='\x1b[48;2;54;11;0m'
-	 local alternateBgColor='\x1b[48;2;0;54;11m'
+	 #local bgColor='\033[48;2;54;11;0m'
+	 #local alternateBgColor='\033[48;2;0;54;11m'
+	 local bgColorBorder='\033[48;5;8m'
+	 local bgColorCode='\033[48;5;246m'
+	 local alternateBgColorCode='\033[48;5;240m'
+	 local bgColorChar='\033[48;5;66m'
+	 local alternateBgColorChar='\033[48;5;60m'
+	 local underline='\033[4m'
     #local bgColor='\e[48;5;124m%03d'
     #local alternateBgColor='\e[48;5;202m%03d'
-    local currentColor="${bgColor}"
-    local reset_color='\e[0m'
+    local currentColorCode="${bgColorCode}"
+    local currentColorChar="${bgColorChar}"
+    local reset_color='\033[0m'
 
-    local allChars="${currentColor}"
-    local allCodes="${currentColor}"
+    #local allChars="${currentColor}"
+    #local allCodes="${currentColor}"
+    local allChars=""
+    local allCodes=""
     local wrapAt=5
-	 local topLine='╔══════╦══════╦══════╦══════╦══════╗'
-	 local bottomLine='╚══════╩══════╩══════╩══════╩══════╝'
-	 local line='╠══════╬══════╬══════╬══════╬══════╣'
-	 local bar='║'
+    local topLine="${bgColorBorder}╔══════╦══════╦══════╦══════╦══════╗${reset_color}"
+	 local bottomLine="${bgColorBorder}╚══════╩══════╩══════╩══════╩══════╝${reset_color}"
+	 local line="${bgColorBorder}╠══════╬══════╬══════╬══════╬══════╣${reset_color}"
+	 local bar="${bgColorBorder}║${reset_color}"
 	 local originalSequence=($(seq "${start}" "${end}"))
 	 local originalSequenceLength=${#originalSequence[@]}
 	 local leftoverSpaces=$((wrapAt - (originalSequenceLength % wrapAt)))
@@ -69,8 +78,8 @@ function print-decimal-unicode-range() {
 		    #echo "IN ELSE char was '$char'"
 		  fi
 
-        allCodes+=" ${code} $bar"
-        allChars+="  ${char}   $bar"
+        allCodes+="${currentColorCode} ${underline}${code}${reset_color}${currentColorCode} ${reset_color}$bar"
+        allChars+="${currentColorChar}  ${char}   ${reset_color}$bar"
 		  #echo -e "\ncount was $count"
 		  counter=$((counter + 1))
         count=$(( (count + 1) % wrapAt))
@@ -82,24 +91,26 @@ function print-decimal-unicode-range() {
 			 #printf "║"
 			  #echo -e "\ncount is at zero\n"
 			  #echo -e "\nleftoversSpaces is $leftoverSpaces\n"
-            if [[ "${currentColor}" = "${alternateBgColor}" ]]; then
-                currentColor="${bgColor}"
+            if [[ "${currentColorCode}" = "${alternateBgColorCode}" ]]; then
+                currentColorCode="${bgColorCode}"
+                currentColorChar="${bgColorChar}"
             else
-                currentColor="${alternateBgColor}"
+                currentColorCode="${alternateBgColorCode}"
+                currentColorChar="${alternateBgColorChar}"
             fi
 
-            allCodes+="${currentColor}"
-            allChars+="${currentColor}"
+            #allCodes+="${currentColor}"
+            #allChars+="${currentColor}"
 
-			 printf "%s%b%b" "$bar" "$allCodes" "$reset_color"
+			 printf "%b%b%b" "$bar" "$allCodes" "$reset_color"
 			 printf "\n"
-			 printf "%s%b%b" "$bar" "$allChars" "$reset_color"
+			 printf "%b%b%b" "$bar" "$allChars" "$reset_color"
 			 printf "\n"
 
 			 #printf "counter is %s" "$counter"
 
 			 if [ "$counter" != "$sequenceLength" ]; then
-			   printf "%s\n" $line
+			   printf "%b\n" "$line"
 		    fi
 			 
 			 allCodes=""
