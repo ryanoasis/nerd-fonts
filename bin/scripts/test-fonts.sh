@@ -3,14 +3,18 @@
 # Given a decimal number start and end print all unicode codepoint.
 # If $3 is specified, it's used as the current column number.
 function print-decimal-unicode-range() {
-  local start="$1"
-  local end="$2"
-  local continuedCount="$3"
-  #echo "1 is $1"
+  #local start="$1"
+  #local end="$2"
+  local originalSequence=("$@")
+  #local continuedCount="$3"
+  echo "1 is:"
+  echo "${1}"
   #echo "2 is $2"
   #echo "3 is $3"
   local counter=0
-  local count="${continuedCount:-0}"
+  # Paramater substitution: use zero if not set
+  #local count="${continuedCount:-0}"
+  #echo "count is $count"
   # Use alternating colors to see which symbols extend out of the bounding
   # box.
   #local bgColor='\033[48;2;54;11;0m'
@@ -36,7 +40,7 @@ function print-decimal-unicode-range() {
   local bottomLine="${bgColorBorder}╚══════╩══════╩══════╩══════╩══════╝${reset_color}"
   local line="${bgColorBorder}╠══════╬══════╬══════╬══════╬══════╣${reset_color}"
   local bar="${bgColorBorder}║${reset_color}"
-  local originalSequence=($(seq "${start}" "${end}"))
+  #local originalSequence=($(seq "${start}" "${end}"))
   local originalSequenceLength=${#originalSequence[@]}
   local leftoverSpaces=$((wrapAt - (originalSequenceLength % wrapAt)))
 
@@ -131,10 +135,11 @@ function print-decimal-unicode-range() {
 }
 
 function print-unicode-ranges() {
-  echo -e ''
+  echo ''
   #local count=0
   local arr=($@)
   local len=$#
+  local combinedRanges=()
   #echo "len was $len"
   for ((j=0; j<len; j+=2)); do
     #for i in "${!arr[@]}"
@@ -152,13 +157,19 @@ function print-unicode-ranges() {
     #echo "end $end"
     local startDecimal=$((16#$start))
     local endDecimal=$((16#$end))
-    #echo "startDec $startDecimal"
-    #echo "endDec $endDecimal"
+    echo "startDec $startDecimal"
+    echo "endDec $endDecimal"
+    combinedRanges+=($(seq "${startDecimal}" "${endDecimal}"))
     #echo "end loop - now i is $j"
-    print-decimal-unicode-range "${startDecimal}" "${endDecimal}" "0"
+    #print-decimal-unicode-range "${startDecimal}" "${endDecimal}" "${count}"
     #echo "end loop - now i is $j"
     #count=$(($count + $endDecimal - $startDecimal))
   done
+
+  echo "arr"
+  echo "${combinedRanges[@]}"
+  print-decimal-unicode-range "${combinedRanges[@]}"
+
 }
 
 function test-fonts() {
