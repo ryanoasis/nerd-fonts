@@ -122,7 +122,8 @@ function print-decimal-unicode-range() {
     fi
 
   done
-  printf "$bottomLine\n"
+
+  printf "%b\n" "$bottomLine"
   # print left-overs:
   #leftoverSpaces=$((wrapAt - count))
   # printf "${allCodes}${reset_color}"
@@ -175,14 +176,11 @@ function print-unicode-ranges() {
 function test-fonts() {
   echo "Nerd Fonts - Pomicons"
   print-unicode-ranges e000 e00d
-  #print-unicode-ranges e000 e009
   echo; echo
-
 
   echo "Nerd Fonts - Powerline"
   print-unicode-ranges e0a0 e0a2 e0b0 e0b3
   echo; echo
-
 
   echo "Nerd Fonts - Powerline Extra"
   print-unicode-ranges e0a3 e0a3 e0b4 e0c8 e0cc e0d2 e0d4 e0d4
@@ -216,10 +214,10 @@ function test-fonts() {
   print-unicode-ranges 23fb 23fe 2b58 2b58
   echo; echo
 
-  #echo "Nerd Fonts - All"
-  #print-unicode-ranges e000 e00a e0a0 e0a2 e0b0 e0b3 e0a3 e0a3 e0b4 e0c8 e0cc e0d2 e0d4 e0d4 e5fa e62b e700 e7c5 f000 f2e0 e200 e2a9 f400 f4a8 2665 2665 26A1 26A1 f27c f27c f300 f313 23fb 23fe 2b58 2b58
+  echo "Nerd Fonts - All"
+  print-unicode-ranges e000 e00d e0a0 e0a2 e0b0 e0b3 e0a3 e0a3 e0b4 e0c8 e0cc e0d2 e0d4 e0d4 e5fa e62b e700 e7c5 f000 f2e0 e200 e2a9 f400 f4a8 2665 2665 26A1 26A1 f27c f27c f300 f313 23fb 23fe 2b58 2b58
 
-  #echo; echo
+  echo; echo
 }
 
 test-fonts
