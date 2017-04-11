@@ -38,6 +38,14 @@ Work In Progress, for now the minimum:
 * squash or not to squash into 1 commit ? (@todo)
 * require a specific format for commit messages for consistency ? (@todo)
 
-## Code standards (@todo)
+## Code standards
 
-* tabs or spaces for Python :[ (@todo)
+### Shell Scripts
+
+* Follow [ShellCheck](https://github.com/koalaman/shellcheck) - A shell script static analysis tool
+* Try to follow [Google's Shell Style Guide](https://google.github.io/styleguide/shell.xml)
+
+### Python
+
+* Use 4 spaces for indentation
+* Consider PEP8 and other (@todo)
