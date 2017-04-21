@@ -548,12 +548,14 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
 
+        scale_ratio_x = 1
+        scale_ratio_y = 1
+
         # Now that we have copy/pasted the glyph, if we are creating a monospace
         # font we need to scale and move the glyphs.  It is possible to have
         # empty glyphs, so we need to skip those.
         if args.single and sym_dim['width'] and sym_dim['height']:
-            scale_ratio_x = 1
-            scale_ratio_y = 1
+
             # If we want to preserve that aspect ratio of the glyphs we need to
             # find the largest possible scaling factor that will allow the glyph
             # to fit in both the x and y directions
@@ -571,47 +573,56 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                 if 'x' in sym_attr['stretch']:
                     # Stretch the glyph horizontally to fit the entire available width
                     scale_ratio_x = font_dim['width'] / sym_dim['width']
-                if 'y' in sym_attr['stretch']:
-                    # Stretch the glyph vertically to total line height (good for powerline separators)
-                    scale_ratio_y = font_dim['height'] / sym_dim['height']
 
-            if scale_ratio_x != 1 or scale_ratio_y != 1:
-                if 'overlap' in sym_attr['params']:
-                    scale_ratio_x *= 1+sym_attr['params']['overlap']
-                    scale_ratio_y *= 1+sym_attr['params']['overlap']
-                sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
+        # non-monospace (double width glyphs)
+        # elif sym_dim['width'] and sym_dim['height']:
+                # any special logic we want to apply for double-width variation
+                # would go here
 
-            # Use the dimensions from the newly pasted and stretched glyph
-            sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
+        # end if single width
 
-            y_align_distance = 0
-            if sym_attr['valign'] == 'c':
-                # Center the symbol vertically by matching the center of the line height and center of symbol
-                sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
-                font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
-                y_align_distance = font_ycenter - sym_ycenter
+        if 'y' in sym_attr['stretch']:
+            # Stretch the glyph vertically to total line height (good for powerline separators)
+            # Currently stretching vertically for both monospace and double-width
+            scale_ratio_y = font_dim['height'] / sym_dim['height']
 
-            # Handle glyph l/r/c alignment
-            x_align_distance = 0
-            if sym_attr['align']:
-                # First find the baseline x-alignment (left alignment amount)
-                x_align_distance = font_dim['xmin']-sym_dim['xmin']
-                if sym_attr['align'] == 'c':
-                    # Center align
-                    x_align_distance += (font_dim['width']/2) - (sym_dim['width']/2)
-                elif sym_attr['align'] == 'r':
-                    # Right align
-                    x_align_distance += font_dim['width'] - sym_dim['width']
-
+        if scale_ratio_x != 1 or scale_ratio_y != 1:
             if 'overlap' in sym_attr['params']:
-                overlap_width = font_dim['width'] * sym_attr['params']['overlap']
-                if sym_attr['align'] == 'l':
-                    x_align_distance -= overlap_width
-                if sym_attr['align'] == 'r':
-                    x_align_distance += overlap_width
+                scale_ratio_x *= 1+sym_attr['params']['overlap']
+                scale_ratio_y *= 1+sym_attr['params']['overlap']
+            sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
-            align_matrix = psMat.translate(x_align_distance, y_align_distance)
-            sourceFont.transform(align_matrix)
+        # Use the dimensions from the newly pasted and stretched glyph
+        sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
+
+        y_align_distance = 0
+        if sym_attr['valign'] == 'c':
+            # Center the symbol vertically by matching the center of the line height and center of symbol
+            sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
+            font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
+            y_align_distance = font_ycenter - sym_ycenter
+
+        # Handle glyph l/r/c alignment
+        x_align_distance = 0
+        if sym_attr['align']:
+            # First find the baseline x-alignment (left alignment amount)
+            x_align_distance = font_dim['xmin']-sym_dim['xmin']
+            if sym_attr['align'] == 'c':
+                # Center align
+                x_align_distance += (font_dim['width']/2) - (sym_dim['width']/2)
+            elif sym_attr['align'] == 'r':
+                # Right align
+                x_align_distance += font_dim['width'] - sym_dim['width']
+
+        if 'overlap' in sym_attr['params']:
+            overlap_width = font_dim['width'] * sym_attr['params']['overlap']
+            if sym_attr['align'] == 'l':
+                x_align_distance -= overlap_width
+            if sym_attr['align'] == 'r':
+                x_align_distance += overlap_width
+
+        align_matrix = psMat.translate(x_align_distance, y_align_distance)
+        sourceFont.transform(align_matrix)
 
         if args.single:
             # Ensure the font is considered monospaced on Windows by setting the same
