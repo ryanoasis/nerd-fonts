@@ -441,7 +441,7 @@ def use_scale_glyph( unicode_value, glyph_list ):
 ## modified from: http://stackoverflow.com/questions/3160699/python-progress-bar
 ## Accepts a float between 0 and 1. Any int will be converted to a float.
 ## A value at 1 or bigger represents 100%
-def update_progress(progress, status=""):
+def update_progress(progress):
     barLength = 40 # Modify this to change the length of the progress bar
     if isinstance(progress, int):
         progress = float(progress)
@@ -449,7 +449,7 @@ def update_progress(progress, status=""):
         progress = 1
         status = "Done...\r\n"
     block = int(round(barLength*progress))
-    text = "\r[{0}] {1}% {2}".format( "#"*block + "-"*(barLength-block), progress*100, status)
+    text = "\r[{0}] {1}%".format( "#"*block + "-"*(barLength-block), progress*100)
     sys.stdout.write(text)
     sys.stdout.flush()
 
@@ -513,12 +513,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         if args.quiet == False:
             if args.progressbars:
-                if glyphSetLength == index+1:
-                    progressText = ' '*len(progressText)
-                else:
-                    progressText = " " + str(sym_glyph.glyphname) + " to " + copiedToSlot + " " + str(glyphSetLength) + " " + str(index);
-
-                update_progress(round(float(index)/glyphSetLength,2), progressText)
+                update_progress(round(float(index)/glyphSetLength,2))
             else:
                 progressText = "\nUpdating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot;
                 sys.stdout.write(progressText)
