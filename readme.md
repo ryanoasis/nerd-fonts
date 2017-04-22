@@ -63,7 +63,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 ## Features
 * A [FontForge python script](#font-patcher) to patch any font
 * **`37`** already [patched font families](#patched-fonts)
-* Over **`7,100`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **`71,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
