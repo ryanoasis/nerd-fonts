@@ -38,20 +38,24 @@ Work In Progress, for now the minimum:
     * "Over `X` glyphs/icons combined" -> manual process for now (@todo)
 
 ## Things to keep in mind
-* Smaller PRs are likely to be merged more quickly than bigger changes
-* If it is a useful PR it **will** get merged in eventually
-  * [E.g. see how many have already been merged vs. still open](https://github.com/ryanoasis/nerd-fonts/pulls)
+
+* Smaller Pull Requests are likely to be merged more quickly than bigger changes
+* This project is using a [KISS Workflow][]
+  * Pull Requests and bugfixes are directly merged into `master` after sanity testing
+  * `master` is basically consider the main developer branch
+    * We no longer wait to get changes into master when there is a release/milestone/version!
+  * the release branches and version tags are considered stable and frozen
 * This project is using [Semantic Versioning 2.0.0](http://semver.org/)
-* I try to group fixes into milestones/versions
-  * If your bug or PR is *not* trivial it will likely end up in the next **MINOR** version
-  * If your bug or PR *is* trivial *or* critical it will likely end up in the next **PATCH** version
-* Most of the time PRs and fixes are *not* merged directly into master without being present on a new versioned branch
-  * Sometimes for small items I will make exceptions to get the fix or readme change on master sooner but even after there will *always* be a versioned branch to keep track of each release
+  * If a bugfix or PR is *not* trivial it will likely end up in the next **MINOR** version
+  * If a bugfix or PR *is* trivial *or* critical it will likely end up in the next **PATCH** version
+* Useful Pull Requests **will** get merged in eventually
+  * [E.g. see how many have already been merged vs. still open](https://github.com/ryanoasis/nerd-fonts/pulls)
 
 ## Commit messages
 
-* squash or not to squash into 1 commit ? (@todo)
-* require a specific format for commit messages for consistency ? (@todo)
+* Squashing to 1 commit is **not** required at this time
+* Use sensible commit messages (when in doubt: `git log`)
+* If your PR fixes a specific issue number, include it in the commit message: `"Fixes XYZ error (fixes #123)"`
 
 ## Code standards
 
@@ -68,3 +72,4 @@ Work In Progress, for now the minimum:
 <!-- link references -->
 
 [Features Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#features
+[KISS Workflow]: https://github.com/ryanoasis/nerd-fonts/wiki/Development-Workflow#kiss-workflow
