@@ -1,0 +1,366 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #fff;
+		font: 14px/21px "Raleway", "HelveticaNeue-Light", Arial, sans-serif;
+		color: #444;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 300; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h5 { font-size: 17px; line-height: 24px; }
+	h6 { font-size: 14px; line-height: 21px; }
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; }
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { text-decoration: underline; outline: 0; }
+	a:hover, a:focus { }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ul, ul.square { list-style: square outside; }
+	ul ul, ul.circle { list-style: circle outside; }
+	ul ul ul, ul.disc { list-style: disc outside; }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+
+/* #Buttons
+================================================== */
+
+	.button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		background: #eee; /* Old browsers */
+		background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
+		background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
+		background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
+		background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
+		background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
+		background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+	  border: 1px solid #aaa;
+	  border-top: 1px solid #ccc;
+	  border-left: 1px solid #ccc;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #444;
+	  display: inline-block;
+	  font-size: 11px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(255, 255, 255, .75);
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: normal;
+	  padding: 8px 10px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #222;
+		background: #ddd; /* Old browsers */
+		background: #ddd -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
+		background: #ddd -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(0,0,0,.3))); /* Chrome,Safari4+ */
+		background: #ddd -webkit-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Chrome10+,Safari5.1+ */
+		background: #ddd -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
+		background: #ddd -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
+		background: #ddd linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
+	  border: 1px solid #888;
+	  border-top: 1px solid #aaa;
+	  border-left: 1px solid #aaa; }
+
+	.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		border: 1px solid #666;
+		background: #ccc; /* Old browsers */
+		background: #ccc -moz-linear-gradient(top, rgba(255,255,255,.35) 0%, rgba(10,10,10,.4) 100%); /* FF3.6+ */
+		background: #ccc -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.35)), color-stop(100%,rgba(10,10,10,.4))); /* Chrome,Safari4+ */
+		background: #ccc -webkit-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Chrome10+,Safari5.1+ */
+		background: #ccc -o-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Opera11.10+ */
+		background: #ccc -ms-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* IE10+ */
+		background: #ccc linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* W3C */ }
+
+	.button.full-width,
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width {
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+	}
+
+
+/* #Forms
+================================================== */
+
+	form {
+		margin-bottom: 20px; }
+	fieldset {
+		margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px; }
+	label,
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+
+
+  /* #Syntax highlighting
+  ================================================== */
+
+
+.highlight {
+  color: #f8f8f2;
+  table-layout: fixed;
+  white-space: nowrap;
+  width:90%;
+}
+
+.highlight pre, .highlight code { display:block; margin:0; padding:0; background: none; overflow:auto; word-wrap: normal; }
+
+.highlight, .linenodiv {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWPQ1dU1BgABzQC7XXMTYQAAAABJRU5ErkJggg==);
+  display:block;
+  padding: 10px;
+  margin-bottom:20px;
+}
+.gutter, .lineno { color: #ccc; }
+
+td.gl { width: 40px; }
+
+.gutter {
+  border-right: none;
+  padding: 10px;
+  text-align: right;
+}
+span.lineno {
+  display: block;
+  float: left;
+  width: 40px;
+  padding-right: 8px;
+  text-align: right;
+}
+
+
+.hll { background-color: #49483e }
+.c { color: #75715e } /* Comment */
+.err { color: #960050; background-color: #1e0010 } /* Error */
+.k { color: #66d9ef } /* Keyword */
+.l { color: #ae81ff } /* Literal */
+.n { color: #f8f8f2 } /* Name */
+.o { color: #f92672 } /* Operator */
+.p { color: #f8f8f2 } /* Punctuation */
+.cm { color: #75715e } /* Comment.Multiline */
+.cp { color: #75715e } /* Comment.Preproc */
+.c1 { color: #75715e } /* Comment.Single */
+.cs { color: #75715e } /* Comment.Special */
+.ge { font-style: italic } /* Generic.Emph */
+.gs { font-weight: bold } /* Generic.Strong */
+.kc { color: #66d9ef } /* Keyword.Constant */
+.kd { color: #66d9ef } /* Keyword.Declaration */
+.kn { color: #f92672 } /* Keyword.Namespace */
+.kp { color: #66d9ef } /* Keyword.Pseudo */
+.kr { color: #66d9ef } /* Keyword.Reserved */
+.kt { color: #66d9ef } /* Keyword.Type */
+.ld { color: #e6db74 } /* Literal.Date */
+.m { color: #ae81ff } /* Literal.Number */
+.s { color: #e6db74 } /* Literal.String */
+.na { color: #a6e22e } /* Name.Attribute */
+.nb { color: #f8f8f2 } /* Name.Builtin */
+.nc { color: #a6e22e } /* Name.Class */
+.no { color: #66d9ef } /* Name.Constant */
+.nd { color: #a6e22e } /* Name.Decorator */
+.ni { color: #f8f8f2 } /* Name.Entity */
+.ne { color: #a6e22e } /* Name.Exception */
+.nf { color: #a6e22e } /* Name.Function */
+.nl { color: #f8f8f2 } /* Name.Label */
+.nn { color: #f8f8f2 } /* Name.Namespace */
+.nx { color: #a6e22e } /* Name.Other */
+.py { color: #f8f8f2 } /* Name.Property */
+.nt { color: #f92672 } /* Name.Tag */
+.nv { color: #f8f8f2 } /* Name.Variable */
+.ow { color: #f92672 } /* Operator.Word */
+.w { color: #f8f8f2 } /* Text.Whitespace */
+.mf { color: #ae81ff } /* Literal.Number.Float */
+.mh { color: #ae81ff } /* Literal.Number.Hex */
+.mi { color: #ae81ff } /* Literal.Number.Integer */
+.mo { color: #ae81ff } /* Literal.Number.Oct */
+.sb { color: #e6db74 } /* Literal.String.Backtick */
+.sc { color: #e6db74 } /* Literal.String.Char */
+.sd { color: #e6db74 } /* Literal.String.Doc */
+.s2 { color: #e6db74 } /* Literal.String.Double */
+.se { color: #ae81ff } /* Literal.String.Escape */
+.sh { color: #e6db74 } /* Literal.String.Heredoc */
+.si { color: #e6db74 } /* Literal.String.Interpol */
+.sx { color: #e6db74 } /* Literal.String.Other */
+.sr { color: #e6db74 } /* Literal.String.Regex */
+.s1 { color: #e6db74 } /* Literal.String.Single */
+.ss { color: #e6db74 } /* Literal.String.Symbol */
+.bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.vc { color: #f8f8f2 } /* Name.Variable.Class */
+.vg { color: #f8f8f2 } /* Name.Variable.Global */
+.vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+.gh { } /* Generic Heading & Diff Header */
+.gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
+.gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
+.gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */

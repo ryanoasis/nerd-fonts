@@ -1,8 +1,39 @@
-title: "Nerd Fonts"
-description: "Collection of 35+ patched fonts (over 74.5k possible variations) with a FontForge font patcher python script for Powerline, Font Awesome, Octicons, Devicons, and other icon fonts. Includes fonts: SourceCodePro, Hack, Droid Sans, Meslo, AnonymousPro, ProFont, Inconsolata, and more"
-google_analytics: 'UA-91070609-1'
-show_downloads: true
-theme: jekyll-theme-minimal
+---
 
-gems:
-  - jekyll-mentions
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore, private.cfg, "temp", "archives", "casks"]
+permalink: /:title ## disables post output
+timezone: null
+lsi: false
+markdown: kramdown
+
+
+### content configuration ###
+title:       "Nerd Fonts - Iconic font aggregator, collection, and patcher"
+keywords:    "fonts collection patched-fonts powerline shell statusline python iconic-fonts patcher FontForge font-awesome octicons font-linux SourceCodePro Hack Droid Sans Meslo AnonymousPro ProFont Inconsolata"
+description: "Iconic font aggregator, collection, and patcher: 37 patched fonts (71.4k+ variations). Includes popular glyph collections such as Font Awesome & fonts such as Hack"
+source_link: "https://github.com/t413/SinglePaged"
+favicon:     "img/favicon.ico"
+touch_icon:  #put a path like: "img/apple-touch-icon.png"
+google_analytics_key: 'UA-91070609-1'
+
+
+### template colors, used site-wide via css ###
+colors:
+  black:         '#111111'
+  white:         '#f8f8f8'
+  purewhite:     '#ffffff'
+  blue:          '#49a7e9'
+  green:         '#9bcf2f'
+  purple:        '#c869bf'
+  orange:        '#fab125'
+  turquoise:     '#0fbfcf'
+
+kramdown:
+  auto_ids:  false
+

@@ -1,3 +1,5 @@
+_site/
+.DS_Store
 temp-glyph-source-fonts/*
 temp/*
 patched-fonts/Input*
