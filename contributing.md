@@ -14,12 +14,12 @@ Work In Progress, for now the minimum:
 
 * For removal of font skipt to Step #4
 
-### 1. License
+### 1. Verify license
 * Check the license even allows the font to be modified and shared
 ### 2. Add original (unpatched) version
 * Add the unpatched version of the font and any readme and/or license files to the `unpatched-sample-fonts` directory inside a new directory
   * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
-### 3. Basic testing
+### 3. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
   * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
   * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
@@ -30,12 +30,14 @@ Work In Progress, for now the minimum:
   * Patch **all** of the variations/options, e.g.
     * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
 ### 5. Update readme
-* Add the new font to the readme table of supported fonts
+* Add the new font to the table of [Patched Fonts][]
 * Update the "counts" in the [Features Section][]
   * You can get this information by simply passing a second param to the "all patcher": `./gotta-patch-em-all-font-patcher\!.sh "" info`
     * "`X` already patched font families" -> Give exact number from 'typefaces' line
     * "Over `X` unique combinations/variations..." -> round down to nearest hundred from 'variation' line
     * "Over `X` glyphs/icons combined" -> manual process for now (@todo)
+* Update the "counts" in the [Combinations Section][]
+  * Again, get this info from the "all patcher"
 
 ## Things to keep in mind
 
@@ -49,7 +51,7 @@ Work In Progress, for now the minimum:
   * If a bugfix or PR is *not* trivial it will likely end up in the next **MINOR** version
   * If a bugfix or PR *is* trivial *or* critical it will likely end up in the next **PATCH** version
 * Useful Pull Requests **will** get merged in eventually
-  * [E.g. see how many have already been merged vs. still open](https://github.com/ryanoasis/nerd-fonts/pulls)
+  * [E.g. see how many have already been merged vs. still open][pulls]
 
 ## Commit messages
 
@@ -71,5 +73,8 @@ Work In Progress, for now the minimum:
 
 <!-- link references -->
 
+[pulls]: https://github.com/ryanoasis/nerd-fonts/pulls
 [Features Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#features
+[Combinations Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#combinations
+[Patched Fonts]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#patched-fonts
 [KISS Workflow]: https://github.com/ryanoasis/nerd-fonts/wiki/Development-Workflow#kiss-workflow
