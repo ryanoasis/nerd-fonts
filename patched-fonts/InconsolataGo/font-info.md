@@ -1,16 +1,11 @@
-Inconsolata for Powerline
-=========================
+# InconsolataGo
 
-Font creator
-:   Raph Levien
+[Inconsolata]( http://levien.com/type/myfonts/inconsolata.html) with straight
+quotes.
 
-Source
-:   <http://levien.com/type/myfonts/inconsolata.html>
-
-Patched by
-:   [Kha](https://github.com/Kha)
-
-
+> I also have an experimental version (tentatively titled InconsolataGo) with
+> straight quotes in the [inconsolata](http://levien.com/type/myfonts/inconsolata)
+> directory here.
 
 ## Which font?
 
