@@ -62,8 +62,8 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Features
 * A [FontForge python script](#font-patcher) to patch any font
-* **`35`** already [patched font families](#patched-fonts)
-* Over **`7,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **`37`** already [patched font families](#patched-fonts)
+* Over **`7,100`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
@@ -195,25 +195,26 @@ echo $i_oct_heart
 
 ## Combinations
 
-* Over `74,000` unique variations/combinations (Power Set) of patched fonts:
- * `35` patched font typefaces
- * `140` patched font families
- * `560` 'complete' variations/combinations
- * `73,960` _possible_ variations/combinations
- * `74,520` total calculated combinations (560 + 73,960)
- * Combinations for each font are any combination of [Variations](#variations)
+- Over **`71,000`** unique variations/combinations (Power Set) of patched fonts:
+  - **`37`** patched font typefaces
+  - **`138`** patched font families
+  - **`552`** 'complete' variations/combinations
+  - **`70,892`** _possible_ variations/combinations
+  - **`71,444`** total calculated combinations (552 + 70,892)
+- Combinations for each font are any combination of [Variations](#variations)
     
 ### Variations
- * no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
- * **double _(variable/proportional)_** or **single _(fixed/monospaced)_** width glyphs
- * [Font Awesome][font-awesome]
- * [Font Awesome Extension][font-awesome-extension]
- * [GitHub Octicons][octicons]
- * [Font Linux][font-linux]
- * [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
- * [IEC Power Symbols][website-iecpower]
- * [Pomicons][gabrielelana-pomicons]
- * Windows Compatibility
+
+- no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
+- **double _(variable/proportional)_** or **single _(fixed/monospaced)_** width glyphs
+- [Font Awesome][font-awesome]
+- [Font Awesome Extension][font-awesome-extension]
+- [GitHub Octicons][octicons]
+- [Font Linux][font-linux]
+- [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
+- [IEC Power Symbols][website-iecpower]
+- [Pomicons][gabrielelana-pomicons]
+- Windows Compatibility
 
 
 ## Font Installation
