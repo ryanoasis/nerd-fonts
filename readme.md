@@ -5,7 +5,7 @@
 [![GitHub release][img-version-badge-with-logo]][repo]&nbsp;[![Gitter][img-gitter-badge]][gitter]&nbsp;&nbsp;&nbsp;[![Windows Logo][w-top]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m-top]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![Linux Logo][l-top]](#patched-fonts)
 
 
-**Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
+**Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome ➶][font-awesome], [Devicons ➶][vorillaz-devicons], [Octicons ➶][octicons], and [others](#glyph-sets).
 
 The following Sankey flow diagram shows the current glyph sets included:
 
@@ -126,9 +126,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ### Icon names in shell
 
-Download provided `.sh` files from [bin/scripts/lib/](bin/scripts/lib/)
-directory somewhere, recommended locations are `~/.local/share/fonts/` or
-`~/bin/`.
+Download provided `.sh` files from [bin/scripts/lib/](bin/scripts/lib/) directory somewhere, recommended locations are `~/.local/share/fonts/` or `~/bin/`.
 
 - `i_all.sh` - helper to load all files you've downloaded at once
 - `i_dev.sh` - Devicons (198 icons, 8 does not have an established name)
@@ -137,13 +135,11 @@ directory somewhere, recommended locations are `~/.local/share/fonts/` or
 - `i_iec.sh` - IEC Power Symbols (5 icons)
 - `i_linux.sh` - Font Linux (20 icons)
 - `i_oct.sh` - Octicons (172 icons)
-- `i_ple.sh` - Powerline Extra Symbols (37 icons, 2 aliases, 16 does not
-  have an established name)
+- `i_ple.sh` - Powerline Extra Symbols (37 icons, 2 aliases, 16 does not have an established name)
 - `i_pom.sh` - Pomicons (11 icons)
-- `i_seti.sh` - Seti-UI + Custom (50 icons, 2 aliases, 5 does not have an
-  established name)
+- `i_seti.sh` - Seti-UI + Custom (50 icons, 2 aliases, 5 does not have an established name)
 
-Then `source` required file(s) and output `$i_*` variables to see icons:
+Then `source` the required file(s) and output `$i_*` variables to see icons:
 
 ```sh
 source ~/.local/share/fonts/i_oct.sh
@@ -152,14 +148,13 @@ echo $i_oct_heart
 # ♥
 ```
 
-**NOTE:** You have to use one of Nerd fonts to see correct icons for some
-icon sets (Devicons, Font Awesome Extension, Font Linux), but other sets
-should work with their standard fonts too.
+**NOTE:** You have to use one of the Nerd Fonts to see correct icons for some icon sets (Devicons, Font Awesome Extension, Font Linux), but other sets should work with their standard fonts too.
+
 
 ## Patched Fonts
 
-| Font Name                                         | Font Name and Repository    | *RFN | EM Size | Status            |
-|---------------------------------------------------|-----------------------------|------|---------|-------------------|
+| Font Name                                         | Font Name and Repository    |\*RFN | EM Size | Status            |
+|:--------------------------------------------------|:----------------------------|:-----|:--------|:------------------|
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]              | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -206,11 +201,11 @@ should work with their standard fonts too.
  * `560` 'complete' variations/combinations
  * `73,960` _possible_ variations/combinations
  * `74,520` total calculated combinations (560 + 73,960)
- * Combinations for each font are any combination of (plus no flags option) [Variations](#variations)
+ * Combinations for each font are any combination of [Variations](#variations)
     
 ### Variations
- * no flags given (defaults to only [Seti-UI] and [Devicons][vorillaz-devicons])
- * *double* (variable/proportional) or *single* (fixed/monospaced) width icons/glyphs
+ * no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
+ * **double _(variable/proportional)_** or **single _(fixed/monospaced)_** width glyphs
  * [Font Awesome][font-awesome]
  * [Font Awesome Extension][font-awesome-extension]
  * [GitHub Octicons][octicons]
