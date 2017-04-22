@@ -10,17 +10,25 @@ Work In Progress, for now the minimum:
 * Use sensible commit messages
   * If your PR fixes a separate issue number, include it in the commit message
 
-## Adding a new font
+## Adding a new font or removing an existing font
 
 * Check the license even allows the font to be modified and shared
 * Add the original (unpatched) version of the font and any readme and/or license files to the `unpatched-sample-fonts` directory inside a new directory
   * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
-  * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --powerline --powerlineextra`
-  * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts/` directory)
-* When fairly satisfied the font patches correctly, patch **all** of the variations/options, e.g.
-  * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
+  * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
+  * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
+* When fairly satisfied the font patches correctly, run the following scripts in this order:
+  * Copy all the unpatched readmes to the patched location with additional info on variations appended:
+    * `./standardize-and-complete-readmes.sh`
+  * Patch **all** of the variations/options, e.g.
+    * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
 * Add the new font to the README table of supported fonts
+* Update the "counts" in the [Features Section][]
+  * You can get this information by simply passing a second param to the "all patcher": `./gotta-patch-em-all-font-patcher\!.sh "" info`
+    * "`X` already patched font families" -> Give exact number from 'typefaces' line
+    * "Over `X` unique combinations/variations..." -> round down to nearest hundred from 'variation' line
+    * "Over `X` glyphs/icons combined" -> manual process for now (@todo)
 
 ## Things to keep in mind
 * Smaller PRs are likely to be merged more quickly than bigger changes
@@ -49,3 +57,7 @@ Work In Progress, for now the minimum:
 
 * Use 4 spaces for indentation
 * Consider PEP8 and other (@todo)
+
+<!-- link references -->
+
+[Features Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#features
