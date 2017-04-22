@@ -37,6 +37,7 @@ parser = argparse.ArgumentParser(description='Nerd Fonts Font Patcher: patches a
 parser.add_argument('-v', '--version', action='version', version=projectName + ": %(prog)s ("+version+")")
 parser.add_argument('font', help='The path to the font to patch (e.g., Inconsolata.otf)')
 parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
+parser.add_argument('-l', '--adjust-line-height', dest='adjustLineHeight', action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)', default=False)
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
 parser.add_argument('-w', '--windows', dest='windows', action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)', default=False)
 parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all available Glyphs', default=False)
@@ -148,7 +149,7 @@ try:
     # String ID is at the second index in the Tuple lists
     sfntNamesStringIDIndex = 2
     # now we have the correct item:
-    subFamily = sourceFont.sfnt_names[sfntNamesStringIDIndex][subFamilyTupleIndex]
+    subFamily = sourceFont.sfnt_names[subFamilyTupleIndex][sfntNamesStringIDIndex]
 except IndexError:
     print projectName + ": Could not find 'SubFamily' for given font, falling back to parsed fontname"
     subFamily = fallbackStyle
@@ -352,12 +353,13 @@ PATCH_SET = [
 #
 # Make the total line size even.  This seems to make the powerline separators
 # center more evenly.
-if (sourceFont.os2_winascent + sourceFont.os2_windescent) % 2 != 0:
-    sourceFont.os2_winascent += 1
+if args.adjustLineHeight:
+    if (sourceFont.os2_winascent + sourceFont.os2_windescent) % 2 != 0:
+        sourceFont.os2_winascent += 1
 
-# Make the line size identical for windows and mac
-sourceFont.hhea_ascent = sourceFont.os2_winascent
-sourceFont.hhea_descent = -sourceFont.os2_windescent
+    # Make the line size identical for windows and mac
+    sourceFont.hhea_ascent = sourceFont.os2_winascent
+    sourceFont.hhea_descent = -sourceFont.os2_windescent
 
 # Line gap add extra space on the bottom of the line which doesn't allow
 # the powerline glyphs to fill the entire line.
@@ -441,7 +443,7 @@ def use_scale_glyph( unicode_value, glyph_list ):
 ## modified from: http://stackoverflow.com/questions/3160699/python-progress-bar
 ## Accepts a float between 0 and 1. Any int will be converted to a float.
 ## A value at 1 or bigger represents 100%
-def update_progress(progress, status=""):
+def update_progress(progress):
     barLength = 40 # Modify this to change the length of the progress bar
     if isinstance(progress, int):
         progress = float(progress)
@@ -449,7 +451,7 @@ def update_progress(progress, status=""):
         progress = 1
         status = "Done...\r\n"
     block = int(round(barLength*progress))
-    text = "\r[{0}] {1}% {2}".format( "#"*block + "-"*(barLength-block), progress*100, status)
+    text = "\r[{0}] {1}%".format( "#"*block + "-"*(barLength-block), progress*100)
     sys.stdout.write(text)
     sys.stdout.flush()
 
@@ -513,12 +515,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         if args.quiet == False:
             if args.progressbars:
-                if glyphSetLength == index+1:
-                    progressText = ' '*len(progressText)
-                else:
-                    progressText = " " + str(sym_glyph.glyphname) + " to " + copiedToSlot + " " + str(glyphSetLength) + " " + str(index);
-
-                update_progress(round(float(index)/glyphSetLength,2), progressText)
+                update_progress(round(float(index)/glyphSetLength,2))
             else:
                 progressText = "\nUpdating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot;
                 sys.stdout.write(progressText)
@@ -551,12 +548,14 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
 
+        scale_ratio_x = 1
+        scale_ratio_y = 1
+
         # Now that we have copy/pasted the glyph, if we are creating a monospace
         # font we need to scale and move the glyphs.  It is possible to have
         # empty glyphs, so we need to skip those.
         if args.single and sym_dim['width'] and sym_dim['height']:
-            scale_ratio_x = 1
-            scale_ratio_y = 1
+
             # If we want to preserve that aspect ratio of the glyphs we need to
             # find the largest possible scaling factor that will allow the glyph
             # to fit in both the x and y directions
@@ -574,47 +573,56 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                 if 'x' in sym_attr['stretch']:
                     # Stretch the glyph horizontally to fit the entire available width
                     scale_ratio_x = font_dim['width'] / sym_dim['width']
-                if 'y' in sym_attr['stretch']:
-                    # Stretch the glyph vertically to total line height (good for powerline separators)
-                    scale_ratio_y = font_dim['height'] / sym_dim['height']
 
-            if scale_ratio_x != 1 or scale_ratio_y != 1:
-                if 'overlap' in sym_attr['params']:
-                    scale_ratio_x *= 1+sym_attr['params']['overlap']
-                    scale_ratio_y *= 1+sym_attr['params']['overlap']
-                sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
+        # non-monospace (double width glyphs)
+        # elif sym_dim['width'] and sym_dim['height']:
+                # any special logic we want to apply for double-width variation
+                # would go here
 
-            # Use the dimensions from the newly pasted and stretched glyph
-            sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
+        # end if single width
 
-            y_align_distance = 0
-            if sym_attr['valign'] == 'c':
-                # Center the symbol vertically by matching the center of the line height and center of symbol
-                sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
-                font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
-                y_align_distance = font_ycenter - sym_ycenter
+        if 'y' in sym_attr['stretch']:
+            # Stretch the glyph vertically to total line height (good for powerline separators)
+            # Currently stretching vertically for both monospace and double-width
+            scale_ratio_y = font_dim['height'] / sym_dim['height']
 
-            # Handle glyph l/r/c alignment
-            x_align_distance = 0
-            if sym_attr['align']:
-                # First find the baseline x-alignment (left alignment amount)
-                x_align_distance = font_dim['xmin']-sym_dim['xmin']
-                if sym_attr['align'] == 'c':
-                    # Center align
-                    x_align_distance += (font_dim['width']/2) - (sym_dim['width']/2)
-                elif sym_attr['align'] == 'r':
-                    # Right align
-                    x_align_distance += font_dim['width'] - sym_dim['width']
-
+        if scale_ratio_x != 1 or scale_ratio_y != 1:
             if 'overlap' in sym_attr['params']:
-                overlap_width = font_dim['width'] * sym_attr['params']['overlap']
-                if sym_attr['align'] == 'l':
-                    x_align_distance -= overlap_width
-                if sym_attr['align'] == 'r':
-                    x_align_distance += overlap_width
+                scale_ratio_x *= 1+sym_attr['params']['overlap']
+                scale_ratio_y *= 1+sym_attr['params']['overlap']
+            sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
-            align_matrix = psMat.translate(x_align_distance, y_align_distance)
-            sourceFont.transform(align_matrix)
+        # Use the dimensions from the newly pasted and stretched glyph
+        sym_dim = get_dim(sourceFont[currentSourceFontGlyph])
+
+        y_align_distance = 0
+        if sym_attr['valign'] == 'c':
+            # Center the symbol vertically by matching the center of the line height and center of symbol
+            sym_ycenter = sym_dim['ymax'] - (sym_dim['height'] / 2)
+            font_ycenter = font_dim['ymax'] - (font_dim['height'] / 2)
+            y_align_distance = font_ycenter - sym_ycenter
+
+        # Handle glyph l/r/c alignment
+        x_align_distance = 0
+        if sym_attr['align']:
+            # First find the baseline x-alignment (left alignment amount)
+            x_align_distance = font_dim['xmin']-sym_dim['xmin']
+            if sym_attr['align'] == 'c':
+                # Center align
+                x_align_distance += (font_dim['width']/2) - (sym_dim['width']/2)
+            elif sym_attr['align'] == 'r':
+                # Right align
+                x_align_distance += font_dim['width'] - sym_dim['width']
+
+        if 'overlap' in sym_attr['params']:
+            overlap_width = font_dim['width'] * sym_attr['params']['overlap']
+            if sym_attr['align'] == 'l':
+                x_align_distance -= overlap_width
+            if sym_attr['align'] == 'r':
+                x_align_distance += overlap_width
+
+        align_matrix = psMat.translate(x_align_distance, y_align_distance)
+        sourceFont.transform(align_matrix)
 
         if args.single:
             # Ensure the font is considered monospaced on Windows by setting the same

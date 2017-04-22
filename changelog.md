@@ -47,7 +47,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Added missing glyphs in range `2630` through `2637` (trigrams) to DejaVu Sans Mono (fixes #100)
   - Fixed various missing glyphs such as `heart`, `zap`, `desktop` (fixes #87)
   - Fixed several long standing issues (fix & enhancement PR #107) (@sharkusk)
-    - glyphs (scaling and positioning) (fixes #74)
+    - glyphs (scaling and positioning) (fixes #74, #37)
     - Monospaced font issues
     - Windows and macOS issues (fixes #111)
   - Fixed font name for glyph font 'PowerlineExtraSymbols.otf' (fixes #109)
@@ -55,7 +55,8 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Fixed Hack hints being removed in patched versions (Knack) (fixes #70, with help from @chrissimpkins)
   - Fixed various issues with '--careful' flag (PR #107 @sharkusk)
   - Fixed missing codepoint conflict information for Octicons & Font Awesome (fixes #116) (image from @kaymmm)
-  - Fixed and refactored various code logic and style 
+  - Fixed and refactored various code logic and style
+  - Fixed missing Powerline glyphs in `MPlus` font (fixes #40)
 
 ## v0.8.0
   - Added 2 new fonts:

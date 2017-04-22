@@ -12,14 +12,14 @@ The following Sankey flow diagram shows the current glyph sets included:
 <p align="center">
   <img src="https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/custom-sankey-glyphs-combined-diagram.png" alt="@SankeyMATIC Diagram" />
 </p>
-<sub>_Diagram created using [@SankeyMATIC](http://sankeymatic.com/)_</sub>
+<sub><i>Diagram created using <a href="http://sankeymatic.com/" title="SankeyMATIC (BETA): A Sankey diagram builder for everyone">@SankeyMATIC</a></i></sub>
 
 
-## Quick Links
+## Quick Navigation
 
-**[Latest Release ➶][latest-release]** | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** | **[Font Package <br/>Downloads][latest-release]**
-|---------------------------------------|-----------------------------|------------------------------|------------------------------------|-----------------------------|
-| <p align="center">[![fonts-logo-small][ql-1]][latest-release]</p> | [![fonts-logo-small][ql-2]](#patched-fonts) | [![patcher-logo-small][ql-3]](#font-patcher) | <p align="center">[![vim-devicons-logo-small][ql-4]][vim-devicons]</p> | <p align="center">[![fonts-logo-small][ql-5]][latest-release]</p> | 
+| **[Latest Release ➶][release]** | **[Fonts](#patched-fonts)** | **[Patcher](#font-patcher)** | **[VimDevIcons ➶][vim-devicons]** | **[Font Package <br/>Downloads ➶][release]** |
+|:-------------------------------:|:---------------------------:|:----------------------------:|:---------------------------------:|:--------------------------------------------:|
+| [![fonts-logo-small][ql-1]][release] | [![fonts-logo-small][ql-2]](#patched-fonts) | [![patcher-logo-small][ql-3]](#font-patcher) | [![vim-devicons-logo-small][ql-4]][vim-devicons] | [![fonts-logo-small][ql-5]][release] |
 
 
 ## Important Notices
@@ -307,7 +307,7 @@ See: [Font Patcher](#font-patcher) for usage
 	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
 </h2>
 
-Patching the font of your own choosing for use with the [VimDevIcons][vim-devicons]:
+Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-devicons]:
 * requires: python2, python-fontforge package (version 20141231 or later, see
   the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * alternative install method on OSX: `brew install fontforge`
@@ -407,12 +407,13 @@ See [contributing.md](contributing.md)
 
 ## Unstable File Paths
 
-| Unstable file paths warning |
--------------------------------
-| Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release |
-| For example: |
-| Use: https://github.com/ryanoasis/nerd-fonts/blob/0.9.0/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf |
-| Not: ~~https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf~~ |
+⚠ Warning: File paths may change based on releases (especially **major** version bumps)
+
+Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release
+
+* For example:
+  * ✅ Use: `https://github.com/ryanoasis/nerd-fonts/blob/`**`0.9.0`**`/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf`
+  * ❌ Instead of: `https://github.com/ryanoasis/nerd-fonts/blob/`~~`master`~~`/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf`
 
 
 ## Other Good Fonts to Patch
@@ -424,13 +425,9 @@ See [contributing.md](contributing.md)
  * [Consolas][consolas] (proprietary)
 
 
-## Project History
+## Project Motivation
 
-### Motivation (Original Rationale)
-
-* Originally created for use with [vim-devicons] vim plugin to add glyphs (icons) as labels for files based on the filetype extension or entire path. This project began as a part of the [vim-devicons] repo but soon it became apparent it did not belong tied to the vim plugin. I thought it may benefit others more as a separate project and allow a wider range of uses. This project started before I knew about Fontconfig provided solution, although a patched font still has some benefits over the Fontconfig.
-
-* project and repository previously known as 'nerd-filetype-glyphs-fonts-patcher' and 'font-nerd-icons'
+See [Wiki: Project Purpose][wiki-project-purpose]
 
 
 ## Changelog
@@ -445,7 +442,7 @@ See [changelog.md](changelog.md)
 Repo References
 -->
 
-[vim-devicons]:https://github.com/ryanoasis/vim-devicons
+[vim-devicons]:https://github.com/ryanoasis/vim-devicons "VimDevIcons Vim Plugin (external link) ➶"
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLGava/font-awesome-extension
@@ -455,6 +452,7 @@ Repo References
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
 [wiki]:https://github.com/ryanoasis/nerd-fonts/wiki
+[wiki-project-purpose]:https://github.com/ryanoasis/nerd-fonts/wiki/Project-Purpose
 [repo]:https://github.com/ryanoasis/nerd-fonts
 [gitter]:https://gitter.im/ryanoasis/nerd-fonts
 
@@ -478,7 +476,7 @@ Link References
 [input-mono]:http://input.fontbureau.com/download/
 [pragmatapro]:http://www.fsd.it/shop/fonts/pragmatapro/
 
-[latest-release]:https://github.com/ryanoasis/nerd-fonts/releases/latest
+[release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
 
 <!--
 Font repos
