@@ -1,4 +1,9 @@
 
+#main .nerd-font-button {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
 #main .nerd-font-button a {
 	text-decoration: none;
 	color: inherit;
