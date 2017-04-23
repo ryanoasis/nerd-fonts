@@ -17,10 +17,10 @@ markdown: kramdown
 title:       "Nerd Fonts - Iconic font aggregator, collection, and patcher"
 keywords:    "fonts collection patched-fonts powerline shell statusline python iconic-fonts patcher FontForge font-awesome octicons font-linux SourceCodePro Hack Droid Sans Meslo AnonymousPro ProFont Inconsolata"
 description: "Iconic font aggregator, collection, and patcher: 37 patched fonts (71.4k+ variations). Includes popular glyph collections such as Font Awesome & fonts such as Hack"
-source_link: "https://github.com/t413/SinglePaged"
+source_link: "https://github.com/ryanoasis/nerd-fonts"
 favicon:     "img/favicon.ico"
-touch_icon:  #put a path like: "img/apple-touch-icon.png"
-google_analytics_key: 'UA-91070609-1'
+touch_icon:  "img/apple-touch-icon.png"
+google_analytics_key: "UA-91070609-1"
 
 
 ### template colors, used site-wide via css ###

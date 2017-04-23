@@ -285,7 +285,7 @@ nav ul li:hover, nav ul li.active {
     right:0;
     width:200px;
     overflow:hidden;
-    height:200px;
+    height:206px;
     z-index:9999;
   }
   #forkongithub a {
