@@ -3,3 +3,11 @@
 	text-decoration: none;
 	color: inherit;
 }
+
+#forkongithub .fa {
+	font-size: 1.5rem;
+}
+
+#forkongithub span {
+	font-size: 1.75rem;
+}
