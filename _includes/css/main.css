@@ -80,7 +80,7 @@ hr {
 }
 .container ol, .container ul { padding: 0 8%; }
 .container p:first-of-type {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 /* keep embedded videos fluid! */

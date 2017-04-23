@@ -2,11 +2,16 @@
 #main .nerd-font-button {
 	padding-top: .5rem;
 	padding-bottom: .5rem;
+	margin: 0px;
 }
 
 #main .nerd-font-button a {
 	text-decoration: none;
 	color: inherit;
+}
+
+#main .nerd-font-badges {
+	line-height: 2.3em;
 }
 
 #forkongithub .fa {
@@ -15,4 +20,8 @@
 
 #forkongithub span {
 	font-size: 1.75rem;
+}
+
+#forkongithub a {
+  display: inline-block;
 }
