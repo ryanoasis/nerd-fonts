@@ -14,6 +14,37 @@
 	line-height: 2.3em;
 }
 
+#main .nerd-font-cheat-sheet-search {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 1.25em;
+	width: 400px;
+}
+
+#main .nerd-font-cheat-sheet {
+	max-height: 480px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-top: 20px;
+}
+
+#main .nerd-font-cheat-sheet .column {
+	width: 114px;
+	height: 120px;
+}
+
+#main .nerd-font-cheat-sheet .column span {
+	font-family: 'mono';
+	font-size: 12px;
+	max-width: 98px;
+	display: inline-block;
+	text-align: center;
+}
+
+#main .nerd-font-cheat-sheet .nerd-font {
+	font-size: 2rem;
+}
+
 #forkongithub .fa {
 	font-size: 1.5rem;
 }

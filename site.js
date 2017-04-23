@@ -91,5 +91,32 @@ $(document).ready(function (){
         }
 	});
 
+
+	// extremely basic search
+
+	$('#glyphSearch').on('keyup', searchGlyphs);
+
+	function searchGlyphs() {
+		console.log('searching');
+		var input = $('#glyphSearch');
+		var filter = input.val().toUpperCase();
+		var container = $('#glyphCheatSheet');
+		var i = 0;
+		var elements = container.find('.column');
+		var length = elements.length;
+		var element;
+
+		for (; i < length; i++) {
+		 element = $(elements[i]).find('span');
+		 if (element) {
+			if (element.text().toUpperCase().indexOf(filter) > -1) {
+			  element.parent().show();
+			} else {
+			  element.parent().hide();
+			}
+		 }
+	  }
+	}
+
 });
 
