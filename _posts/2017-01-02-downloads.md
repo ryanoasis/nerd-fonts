@@ -5,9 +5,9 @@ color: white
 fa-icon: download
 ---
 
-#### Downloads
+# Downloads
 
-
+<div class="half column" markdown="1">
 - [3270.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/3270.zip)
 - [AnonymousPro.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/AnonymousPro.zip)
 - [AurulentSansMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/AurulentSansMono.zip)
@@ -24,6 +24,8 @@ fa-icon: download
 - [HeavyData.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/HeavyData.zip)
 - [Hermit.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/Hermit.zip)
 - [Inconsolata.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/Inconsolata.zip)
+</div>
+<div class="half column" markdown="1">
 - [Iosevka.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/Iosevka.zip)
 - [Lekton.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/Lekton.zip)
 - [LiberationMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/LiberationMono.zip)
@@ -40,3 +42,4 @@ fa-icon: download
 - [SpaceMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/SpaceMono.zip)
 - [Terminus.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/Terminus.zip)
 - [UbuntuMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.0.0/UbuntuMono.zip)
+</div>
