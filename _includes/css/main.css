@@ -313,11 +313,17 @@ nav ul li:hover, nav ul li.active {
     min-width:60px;
     line-height:40px;
   }
+  .section:first-of-type {
+    padding-top: 70px;
+  }
 }
 
 /* tiny size (phones) */
 @media only screen and (max-width: 380px) {
   nav ul li { min-width:90px; line-height:20px; }
+  .section:first-of-type {
+    padding-top: 40px;
+  }
 }
 
 /* anything not desktop */
