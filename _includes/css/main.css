@@ -322,7 +322,7 @@ nav ul li:hover, nav ul li.active {
 @media only screen and (max-width: 380px) {
   nav ul li { min-width:90px; line-height:20px; }
   .section:first-of-type {
-    padding-top: 40px;
+    padding-top: 70px;
   }
 }
 
