@@ -5707,3 +5707,13 @@ fa-icon: search
     <span>nf-seti-xml <br/>(e619)</span>
   </div>
 </div>
+
+#### Example Usage
+
+{% highlight text linenos=table %}
+    I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
+{% endhighlight %}
+
+<div class="center">
+  I really <i class="nerd-font nf-fa-heart ow"></i> <i class="nerd-font nf-custom-vim nf"></i>
+</div>
