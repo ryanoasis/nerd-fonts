@@ -50,8 +50,6 @@
 	}
 }
 
-
-
 #main .nerd-font-cheat-sheet .column span {
 	font-family: 'mono';
 	font-size: 12px;
@@ -65,13 +63,23 @@
 }
 
 #forkongithub .fa {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
+/* for any ASCII :) */
 #forkongithub span {
 	font-size: 1.75rem;
 }
 
 #forkongithub a {
   display: inline-block;
+}
+
+/* Release Changelog section */
+
+#release summary {
+	text-align: center;
+	font-size: 1.25em;
+	cursor: pointer;
+	padding: 0px 0px 20px 0px;
 }
