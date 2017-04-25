@@ -75,6 +75,11 @@
   display: inline-block;
 }
 
+/* Example Usage */
+.nerd-fonts-example-usage {
+	font-size: 2rem;
+}
+
 /* Release Changelog section */
 
 #release summary {
