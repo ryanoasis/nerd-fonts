@@ -75,6 +75,16 @@
   display: inline-block;
 }
 
+/* color scheme */
+
+.nf1 { color: #E2DB74 }
+.nf2 { color: #49a7e9 }
+.nf3 { color: #66FF99 }
+.nf4 { color: #Ff66CC }
+.nf5 { color: #00ffff }
+.nf6 { color: #f09f17 }
+.nf7 { color: #DD1B16 }
+
 /* Example Usage */
 .nerd-fonts-example-usage {
 	font-size: 2rem;

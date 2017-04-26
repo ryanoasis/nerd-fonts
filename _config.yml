@@ -26,6 +26,7 @@ google_analytics_key: "UA-91070609-1"
 ### template colors, used site-wide via css ###
 colors:
   black:         '#111111'
+  gray:          '#75715e'
   white:         '#f8f8f8'
   purewhite:     '#ffffff'
   blue:          '#49a7e9'

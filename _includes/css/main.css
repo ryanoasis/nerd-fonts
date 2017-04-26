@@ -112,8 +112,8 @@ hr {
 
 /* ----- top menu ----- */
 
-{% assign navborder = 3 %}
-{% assign navborder_active = 6 %}
+{% assign navborder = 5 %}
+{% assign navborder_active = 10 %}
 
 nav {
   font-size:15px;
@@ -241,6 +241,42 @@ nav ul li:hover, nav ul li.active {
   text-shadow: 1px 1px 3px #333;
 }
 
+#features .sectioninner {
+  position: relative;
+}
+
+#features .sectioninner .nerd-font {
+  font-size: 1.5em;
+}
+
+#features .sectioninner1 {
+  top:-2em;
+  left:5em;
+}
+
+#features .sectioninner2 {
+  top:1em;
+  left:4em;
+  line-height: 2em;
+  word-spacing: .5em;
+}
+
+#features .sectioninner img,
+#features .sectioninner div {
+  border-radius: 50%;
+  width:100%;
+  height:100%;
+  margin-top:0px;
+}
+
+#features .sectioninner2 div {
+  /*background: url('/img/preview2.png');*/
+  /*background-position: -50% 101%;*/
+  /*background-color: {{ site.colors.black }};*/
+  background-color: #2e2e2e;
+  font-weight: bold;
+  padding-top: .75em;
+}
 
 .columned {
   -webkit-column-count: 3;
@@ -316,6 +352,9 @@ nav ul li:hover, nav ul li.active {
   .section:first-of-type {
     padding-top: 70px;
   }
+  #features .sectioninner2 {
+    font-size: .7em;
+  }
 }
 
 /* tiny size (phones) */
@@ -323,6 +362,9 @@ nav ul li:hover, nav ul li.active {
   nav ul li { min-width:90px; line-height:20px; }
   .section:first-of-type {
     padding-top: 70px;
+  }
+  #features .sectioninner2 {
+    font-size: .7em;
   }
 }
 
@@ -354,6 +396,10 @@ nav ul li:hover, nav ul li.active {
     font-size:15px;
     bottom:30px;
     width:170px
+  }
+
+  #features .sectioninner2 {
+    font-size: .7em;
   }
 
   .columned {

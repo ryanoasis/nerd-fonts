@@ -1,6 +1,6 @@
 ---
 title: "Cheat Sheet"
-bg: black
+bg: gray
 color: white
 fa-icon: search
 ---
