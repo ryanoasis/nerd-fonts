@@ -71,6 +71,8 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Glyph Sets
 
+🔍 :mag: You can now search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
+
 ### Seti-UI + Custom
 > Based off of [Seti-UI] Icomoon with extra custom glyphs.
 
@@ -458,6 +460,7 @@ Website References
 -->
 
 [website-iecpower]:http://unicodepowersymbol.com/
+[Cheat Sheet]:http://nerdfonts.com/#cheat-sheet
 
 <!--
 Link References
