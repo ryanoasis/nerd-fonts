@@ -1,21 +1,22 @@
 #!/bin/bash
-# version: 1.0.0
+# version: 1.1.0
 # Generates CSS file for the font
 
 source ./lib/i_all.sh
 
-output_css_file="../../temp/nerd-fonts-generated.css"
+output_css_file="../../css/nerd-fonts-generated.css"
+header_css_file="./css-header.txt"
 output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
 
 # clear files
 > "$output_css_file" 2> /dev/null
 > "$output_cheat_sheet_file" 2> /dev/null
 
-echo $i_oct_heart
-printf "%x" "'$i_oct_heart'"
+# add top section of CSS
+$header_css_file > "$output_css_file"
 
-echo $i_fa_glass
-printf "%x" "'$i_fa_glass'"
+# describe how the classes were established
+printf "\n/* The following is generated from the build script: */\n" > "$output_css_file"
 
 echo;
 
