@@ -1,15 +1,16 @@
-# Seti-UI + Custom (50 icons, 2 aliases, 5 does not have an established name)
+# Seti-UI + Custom (50 icons, 6 aliases)
 # Codepoints: E5FA-E62B
 test -n "$__i_seti_loaded" && return || __i_seti_loaded=1
 i='' i_custom_folder_npm=$i
-i=''
+i='' i_custom_folder_git=$i
+      i_custom_folder_git_branch=$i_custom_folder_git
 i='' i_custom_folder_config=$i
 i='' i_custom_folder_github=$i
 i='' i_custom_folder_open=$i
 i='' i_custom_folder=$i
 i='' i_seti_stylus=$i
 i='' i_seti_project=$i
-i=''
+i='' i_seti_play_arrow=$i
 i='' i_seti_sass=$i
 i='' i_seti_rails=$i
 i='' i_seti_ruby=$i
@@ -26,12 +27,13 @@ i='' i_seti_html=$i
 i='' i_seti_mustache=$i
 i='' i_seti_gulp=$i
 i='' i_seti_grunt=$i
-i=''
+i='' i_seti_default=$i
+      i_seti_text=$i_seti_default
 i='' i_seti_folder=$i
 i='' i_seti_css=$i
 i='' i_seti_config=$i
 i='' i_seti_npm=$i
-i=''
+i='' i_seti_home=$i
 i='' i_seti_ejs=$i
 i='' i_seti_xml=$i
 i='' i_seti_bower=$i
@@ -42,7 +44,9 @@ i='' i_custom_cpp=$i
 i='' i_custom_c=$i
 i='' i_seti_haskell=$i
 i='' i_seti_lua=$i
-i=''
+i='' i_indent_line=$i
+      i_indentation_line=$i_indent_line
+      i_indent_dotted_guide=$i_indent_line
 i='' i_seti_karma=$i
 i='' i_seti_favicon=$i
 i='' i_seti_julia=$i

@@ -1,5 +1,5 @@
 # Font Linux (20 icons)
-# Codepoints: Nerd moved F100-F115 with holes → F300-F313
+# Codepoints: Nerd Fonts moved F100-F115 with holes → F300-F313
 test -n "$__i_linux_loaded" && return || __i_linux_loaded=1
 i='' i_linux_archlinux=$i
 i='' i_linux_centos=$i

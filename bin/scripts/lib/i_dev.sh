@@ -1,4 +1,4 @@
-# Devicons (198 icons, 8 does not have an established name)
+# Devicons (198 icons, 7 do not have an established name)
 # Codepoints: Nerd moved E600-E6C5 → E700-E7C5
 test -n "$__i_dev_loaded" && return || __i_dev_loaded=1
 i='' i_dev_bing_small=$i
@@ -97,7 +97,7 @@ i='' i_dev_jira=$i
 i='' i_dev_envato=$i
 i='' i_dev_snap_svg=$i
 i='' i_dev_raphael=$i
-i=''
+i='' i_dev_chart=$i
 i='' i_dev_compass=$i
 i='' i_dev_onedrive=$i
 i='' i_dev_gulp=$i

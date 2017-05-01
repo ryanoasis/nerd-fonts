@@ -1,5 +1,5 @@
 # Font Awesome Extension (170 icons)
-# Codepoints: Nerd moved E000-E0A9 → E200-E2A9
+# Codepoints: Nerd Fonts moved E000-E0A9 → E200-E2A9
 test -n "$__i_fae_loaded" && return || __i_fae_loaded=1
 i='' i_fae_smaller=$i
 i='' i_fae_snowing=$i
