@@ -4,9 +4,10 @@
 
 # uncomment to debug:
 #set -x
+LINE_PREFIX="# [Nerd Fonts] "
 
 cd ../../archives/ || {
-  echo >&2 "# Could not find archives directory"
+  echo >&2 "$LINE_PREFIX Could not find archives directory"
   exit 1
 }
 
@@ -17,11 +18,10 @@ if [ -f "$private_config" ]
 then
   source "$private_config"
 else
-  echo >&2 "# Could not source private config"
+  echo >&2 "$LINE_PREFIX Could not source private config"
   exit 1
 fi
 
-LINE_PREFIX="# [Nerd Fonts] "
 TOKEN=$github_access_token
 OWNER="ryanoasis"
 REPO="nerd-fonts"
