@@ -16,7 +16,7 @@ output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
 $header_css_file > "$output_css_file"
 
 # describe how the classes were established
-printf "\n/* The following is generated from the build script: */\n" > "$output_css_file"
+printf "\n/*[Nerd Fonts] The following is generated from the build script: */\n" > "$output_css_file"
 
 echo;
 

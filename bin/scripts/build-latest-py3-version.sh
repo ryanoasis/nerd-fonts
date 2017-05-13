@@ -3,9 +3,11 @@
 # version: 1.0.0
 # Executes the 2to3 conversion to generate latest py3 version of font patcher
 
+LINE_PREFIX="# [Nerd Fonts] "
+
 # Check for 2to3
 type 2to3 >/dev/null 2>&1 || {
-  echo >&2 "# 2to3 must be installed before running this script."
+  echo >&2 "$LINE_PREFIX 2to3 must be installed before running this script."
   echo >&2 "# Please see details at"
   echo >&2 "# https://docs.python.org/2/library/2to3.html"
   exit 1

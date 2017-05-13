@@ -10,9 +10,10 @@ parent_dir="${PWD}/../../"
 unpatched_parent_dir="../../src/unpatched-fonts/"
 to="$parent_dir/10-nerd-font-symbols.conf"
 symbolfont="Symbols Nerd Font"
+LINE_PREFIX="# [Nerd Fonts] "
 
 cd $unpatched_parent_dir || {
-  echo >&2 "# Could not find patched fonts directory"
+  echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
   exit 1
 }
 
@@ -43,7 +44,7 @@ do
   then
     familyname=$(fc-query --format='%{family}' "${FONTS[0]}")
 
-    echo "# Generating fontconfig for: $familyname"
+    echo "$LINE_PREFIX Generating fontconfig for: $familyname"
 
     # add to the file
     {

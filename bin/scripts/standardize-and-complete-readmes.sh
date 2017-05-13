@@ -7,9 +7,10 @@
 infofilename="font-info.md"
 unpatched_parent_dir="src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
+LINE_PREFIX="# [Nerd Fonts] "
 
 cd ../../src/unpatched-fonts/ || {
-  echo >&2 "# Could not find source fonts directory"
+  echo >&2 "$LINE_PREFIX Could not find source fonts directory"
   exit 1
 }
 
@@ -36,7 +37,7 @@ do
 	MD=( $(find "$searchdir" -type f -iname 'readme.md') )
 	outputdir=$PWD/../../patched-fonts/$filename/
 
-	echo "# Generating readme for: $filename"
+	echo "$LINE_PREFIX Generating readme for: $filename"
 
 	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
@@ -45,7 +46,7 @@ do
 	then
 		for i in "${RST[@]}"
 		do
-			echo "## Found RST"
+			echo "#$LINE_PREFIX Found RST"
 
 			from="$PWD/$i"
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
@@ -63,7 +64,7 @@ do
 	then
 		for i in "${TXT[@]}"
 		do
-			echo "## Found TXT"
+			echo "#$LINE_PREFIX Found TXT"
 
 			from="$PWD/$i"
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
@@ -81,7 +82,7 @@ do
 	then
 		for i in "${MD[@]}"
 		do
-			echo "## Found MD"
+			echo "#$LINE_PREFIX Found MD"
 
 			from="$PWD/$i"
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
@@ -96,7 +97,7 @@ do
 			cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
 		done
 	else
-		echo "# Did not find RST nor TXT"
+		echo "$LINE_PREFIX Did not find RST nor TXT"
 	fi
 
 done

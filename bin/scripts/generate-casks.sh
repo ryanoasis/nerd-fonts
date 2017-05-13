@@ -13,9 +13,10 @@ downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{ve
 sha256sum=":no_check"
 appcast="https://github.com/ryanoasis/nerd-fonts/releases.atom"
 appcastcheckpoint=$(curl --compressed --location --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36' "https://github.com/ryanoasis/nerd-fonts/releases.atom" | sed 's|<pubDate>[^<]*</pubDate>||g' | shasum --algorithm 256 | head -c 64)
+LINE_PREFIX="# [Nerd Fonts] "
 
 cd $patched_parent_dir || {
-  echo >&2 "# Could not find patched fonts directory"
+  echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
   exit 1
 }
 
@@ -66,7 +67,7 @@ function write_body {
 
 		done
 	else
-		echo "# Did not find TTF or OTF"
+		echo "$LINE_PREFIX Did not find TTF or OTF"
 	fi
 }
 
@@ -104,7 +105,7 @@ do
 
 	formattedbasename=$(echo "$basename" | tr "[:upper:]" "[:lower:]")
 
-	echo "# Generating cask for: $fontdir"
+	echo "$LINE_PREFIX Generating cask for: $fontdir"
 
 	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
