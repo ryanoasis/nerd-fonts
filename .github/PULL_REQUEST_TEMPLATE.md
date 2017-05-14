@@ -6,7 +6,7 @@ _Please explain the changes you made here._
 #### Requirements / Checklist
 
 - [ ] Read the [Contributing Guidelines](https://github.com/ryanoasis/nerd-fonts/blob/master/contributing.md)
-- [ ] Read or at least glanced at the [FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ)
+- [ ] Read or at least glanced at the [FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting)
 - [ ] Read or at least glanced at the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki)
 - [ ] Scripts execute without error (if necessary):
   - If any of the scripts were modified they have been tested and execute without error, e.g.:
