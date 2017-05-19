@@ -159,7 +159,7 @@ function generate_info {
   # if first time with this font then re-build parent dir readme, else skip:
   if [[ $config_parent_dir != "$last_parent_dir"  && (! $is_unpatched_fonts_root) ]];
   then
-    echo "[Nerd Fonts] Re-generate parent directory readme"
+    echo "$LINE_PREFIX Re-generate parent directory readme"
     generate_readme "$patched_font_dir/.."
   fi
 
@@ -221,7 +221,7 @@ then
     # for now set a 'wait' for each X set of processes:
     if [[ $(($i % $max_parallel_process)) == 0 ]];
     then
-      echo "[Nerd Fonts] complete_variation_count after max parallel proc is  $complete_variation_count"
+      echo "$LINE_PREFIX complete_variation_count after max parallel proc is  $complete_variation_count"
       wait
     fi
   done
