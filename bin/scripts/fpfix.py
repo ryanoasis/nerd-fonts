@@ -13,7 +13,7 @@ import sys
 from fontTools import ttLib
 
 if len(sys.argv) < 2:
-    sys.stderr.write("[fpfix.py] ERROR: Please enter a path to the font file")
+    sys.stderr.write("# [Nerd Fonts] [fpfix.py] ERROR: Please enter a path to the font file")
     sys.exit(1)
 
 try:
@@ -21,9 +21,9 @@ try:
     post = tt["post"].__dict__
     post["isFixedPitch"] = 1
     tt.save(sys.argv[1])
-    print("[fpfix.py]: '" + sys.argv[1] + "' fixed pitch setting was changed to 1 in the post table")
+    print("# [Nerd Fonts] [fpfix.py]: '" + sys.argv[1] + "' fixed pitch setting was changed to 1 in the post table")
 except Exception as e:
-    sys.stderr.write("[fpfix.py] ERROR: Unable to update the font isFixedPitch setting. " + str(e))
+    sys.stderr.write("# [Nerd Fonts] [fpfix.py] ERROR: Unable to update the font isFixedPitch setting. " + str(e))
     sys.exit(1)
 
 

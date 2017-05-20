@@ -4,9 +4,11 @@
 # used for debugging
 #set -x
 
+LINE_PREFIX="# [Nerd Fonts] "
+
 # Check for Fontforge
 type fontforge >/dev/null 2>&1 || {
-  echo >&2 "# FontForge must be installed before running this script."
+  echo >&2 "$LINE_PREFIX FontForge must be installed before running this script."
   echo >&2 "# Please see installation instructions at"
   echo >&2 "# http://designwithfontforge.com/en-US/Installing_Fontforge.html"
   exit 1
@@ -31,14 +33,14 @@ max_parallel_process=64
 if [ $# -eq 1 ]
   then
     like_pattern=$1
-    echo "# Parameter given, limiting search and patch to pattern '$like_pattern' given"
+    echo "$LINE_PREFIX Parameter given, limiting search and patch to pattern '$like_pattern' given"
 fi
 
 # simple second param option to allow to regenerate font info without re-patching
 if [ $# -eq 2 ]
   then
     info_only=$2
-    echo "# 'Info Only' Parameter given, only generating font info (not patching)"
+    echo "$LINE_PREFIX 'Info Only' Parameter given, only generating font info (not patching)"
 fi
 
 # correct way to output find results into an array (when files have space chars, etc)
@@ -49,7 +51,7 @@ source_fonts=()
  done < <(find "$source_fonts_dir" -name "$like_pattern*.[o,t]tf" -type f -print0)
 
 # print total number of source fonts found
-echo "# Total source fonts found: ${#source_fonts[*]}"
+echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
 
 
 function patch_font {
@@ -157,7 +159,7 @@ function generate_info {
   # if first time with this font then re-build parent dir readme, else skip:
   if [[ $config_parent_dir != "$last_parent_dir"  && (! $is_unpatched_fonts_root) ]];
   then
-    echo "Re-generate parent directory readme"
+    echo "$LINE_PREFIX Re-generate parent directory readme"
     generate_readme "$patched_font_dir/.."
   fi
 
@@ -184,7 +186,7 @@ function generate_readme {
   then
     cat "$patched_font_dir/font-info.md" >> "$combinations_filename"
   else
-    echo "# Could not append font-info.md (file not found). Was standardize script run? It should be executed first"
+    echo "$LINE_PREFIX Could not append font-info.md (file not found). Was standardize script run? It should be executed first"
     echo "# looked for: $font_info"
   fi
 
@@ -219,7 +221,7 @@ then
     # for now set a 'wait' for each X set of processes:
     if [[ $(($i % $max_parallel_process)) == 0 ]];
     then
-      echo "complete_variation_count after max parallel proc is  $complete_variation_count"
+      echo "$LINE_PREFIX complete_variation_count after max parallel proc is  $complete_variation_count"
       wait
     fi
   done
@@ -243,7 +245,7 @@ dt3=$(echo "$dt2-3600*$dh" | bc)
 dm=$(echo "$dt3/60" | bc)
 ds=$(echo "$dt3-60*$dm" | bc)
 
-printf "# Total runtime: %d:%02d:%02d:%02d\n" "$dd" "$dh" "$dm" "$ds"
+printf "$LINE_PREFIX Total runtime: %d:%02d:%02d:%02d\n" "$dd" "$dh" "$dm" "$ds"
 
 printf "# All fonts patched to sub-directories in \t\t\t'%s'\n" "$patched_parent_dir"
 printf "# The total number of font typefaces patched was \t\t'%s'\n" "$font_typefaces_count"

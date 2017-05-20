@@ -7,6 +7,7 @@ source ./lib/i_all.sh
 output_css_file="../../css/nerd-fonts-generated.css"
 header_css_file="./css-header.txt"
 output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
+LINE_PREFIX="# [Nerd Fonts] "
 
 # clear files
 > "$output_css_file" 2> /dev/null
@@ -16,7 +17,7 @@ output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
 $header_css_file > "$output_css_file"
 
 # describe how the classes were established
-printf "\n/* The following is generated from the build script: */\n" > "$output_css_file"
+printf "\n/*$LINE_PREFIX The following is generated from the build script: */\n" > "$output_css_file"
 
 echo;
 
