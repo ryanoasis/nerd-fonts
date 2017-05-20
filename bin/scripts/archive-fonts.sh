@@ -9,7 +9,7 @@
 LINE_PREFIX="# [Nerd Fonts] "
 
 cd ../../patched-fonts/ || {
-  echo >&2 "# Could not find patched fonts directory"
+  echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
   exit 1
 }
 

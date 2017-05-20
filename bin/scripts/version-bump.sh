@@ -6,9 +6,11 @@
 # todo take some ideas from: https://github.com/fsaintjacques/semver-tool
 
 #set -x
+LINE_PREFIX="# [Nerd Fonts] "
+
 if [ ! $# -eq 1 ]
   then
-    echo "# No release version given, must give semver release versionin format: #.#.#, e.g. 1.1.0"
+    echo "$LINE_PREFIX No release version given, must give semver release versionin format: #.#.#, e.g. 1.1.0"
 fi
 
 release=$1
