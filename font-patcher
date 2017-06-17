@@ -217,9 +217,9 @@ projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ry
 sourceFont.familyname = replace_all(familyname, reservedFontNameReplacements)
 sourceFont.fullname = replace_all(fullname, reservedFontNameReplacements)
 sourceFont.fontname = replace_all(fontname, reservedFontNameReplacements)
-sourceFont.appendSFNTName('English (US)', 'Preferred Family', sourceFont.familyname)
-sourceFont.appendSFNTName('English (US)', 'Compatible Full', sourceFont.fullname)
-sourceFont.appendSFNTName('English (US)', 'SubFamily', subFamily)
+sourceFont.appendSFNTName(str('English (US)'), str('Preferred Family'), sourceFont.familyname)
+sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), sourceFont.fullname)
+sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
 sourceFont.comment = projectInfo
 sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
 
@@ -485,8 +485,8 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         sourceFont.selection.all()
         careful = True
     else:
-        symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
-        sourceFont.selection.select(("ranges","unicode"),sourceFontStart,sourceFontEnd)
+        symbolFont.selection.select((str("ranges"),str("unicode")),symbolFontStart,symbolFontEnd)
+        sourceFont.selection.select((str("ranges"),str("unicode")),sourceFontStart,sourceFontEnd)
 
     glyphSetLength = max(1, symbolFontEnd-symbolFontStart)
 
@@ -638,7 +638,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         if symbolFontStart == 0:
             symbolFont.selection.all()
         else:
-            symbolFont.selection.select(("ranges","unicode"),symbolFontStart,symbolFontEnd)
+            symbolFont.selection.select((str("ranges"),str("unicode")),symbolFontStart,symbolFontEnd)
     # end for
 
     if args.quiet == False or args.progressbars:
@@ -693,7 +693,7 @@ print("\nDone with Path Sets, generating font...")
 
 # the `PfEd-comments` flag is required for Fontforge to save
 # '.comment' and '.fontlog'.
-sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=('opentype', 'PfEd-comments'))
+sourceFont.generate(args.outputdir + "/" + sourceFont.fullname + extension, flags=(str('opentype'), str('PfEd-comments')))
 
 print("\nGenerated: {}".format(sourceFont.fullname))
 
