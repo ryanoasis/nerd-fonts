@@ -172,6 +172,8 @@ if args.windows:
         familyname = familyname[:maxFamilyLength]
 else:
     familyname += " " + projectNameSingular
+    if args.single:
+        familyname += " Mono"
 
 # Don't truncate the subfamily to keep fontname unique.  MacOS treats fonts with
 # the same name as the same font, even if subFamily is different.
