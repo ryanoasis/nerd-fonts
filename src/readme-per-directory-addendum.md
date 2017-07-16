@@ -3,9 +3,12 @@
 
 ### TL;DR
 
-0. Pick your font family and then select from the `'complete'` directory.
-  * Are you on Windows? Pick a font with the suffix `'Windows Compatible'`
-  * Are you limited to mono fonts (because of your terminal, etc)? Pick a font with the suffix `'Mono'`
+
+* Pick your font family and then select from the `'complete'` directory.
+  * If you are on Windows pick a font with the `'Windows Compatible'` suffix.
+    * This includes specific tweaks to ensure the font works on Windows, in particular monospace identification and font name length limitations
+  * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with the `'Mono'` suffix.   
+    * This denotes that the Nerd Font glyphs will be monospaced not necessarily that the entire font will be monospaced
 
 ### Explanation
 
