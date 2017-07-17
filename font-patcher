@@ -336,7 +336,7 @@ PATCH_SET = [
     { 'Enabled': args.powerline,            'Name': "Powerline Symbols", 'Filename': "PowerlineSymbols.otf",        'Exact': True, 'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",   'Exact': True, 'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",   'Exact': True, 'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
-    { 'Enabled': args.powerlineextra,       'Name': "Powerline Extra Symobls", 'Filename': "PowerlineExtraSymbols.otf",   'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
+    { 'Enabled': args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",   'Exact': True, 'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_POWERLINE },
     { 'Enabled': args.pomicons,             'Name': "Pomicons", 'Filename': "Pomicons.otf",                'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  },
     { 'Enabled': args.fontawesome,          'Name': "Font Awesome", 'Filename': "FontAwesome.otf",             'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': FONTA_SCALE_LIST,'Attributes': SYM_ATTR_FONTA },
     { 'Enabled': args.fontawesomeextension, 'Name': "Font Awesome Extension", 'Filename': "font-awesome-extension.ttf",  'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200,  'SrcEnd': 0xE2A9,  'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT }, # Maximize
@@ -568,7 +568,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
                     scale_ratio_x = scale_factor
                     scale_ratio_y = scale_factor
                 else:
-                    # In this case, each glyph is sized independantly to each other
+                    # In this case, each glyph is sized independently to each other
                     scale_ratio_x = get_scale_factor(font_dim, sym_dim)
                     scale_ratio_y = scale_ratio_x
             else:
@@ -633,7 +633,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
             # didn't go through the scaling operations.
             sourceFont[currentSourceFontGlyph].width = font_dim['width']
 
-        # reset selection so iteration works propertly @todo fix? rookie misunderstanding?
+        # reset selection so iteration works properly @todo fix? rookie misunderstanding?
         # This is likely needed because the selection was changed when the glyph was copy/pasted
         if symbolFontStart == 0:
             symbolFont.selection.all()
