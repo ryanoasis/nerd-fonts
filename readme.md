@@ -96,7 +96,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 ![image](images/fontforge-glyph-set-font-awesome-4.png)
 
 ### [Font Awesome Extension][font-awesome-extension]
-> Simple Font Awesome Extension. / ([repo][font-awesome-extension]) / ([website](http://andrelgava.github.io/font-awesome-extension/))
+> Simple Font Awesome Extension. / ([repo][font-awesome-extension]) / ([website](http://andrelzgava.github.io/font-awesome-extension/))
 
 ![image](images/fontforge-glyph-set-font-awesome-extension-1.png)
 
@@ -355,7 +355,7 @@ optional arguments:
   -c, --complete        Add all available Glyphs
   --fontawesome         Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)
   --fontawesomeextension
-                        Add Font Awesome Extension Glyphs (http://andrelgava.github.io/font-awesome-extension)
+                        Add Font Awesome Extension Glyphs (http://andrelzgava.github.io/font-awesome-extension)
   --fontlinux           Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)
   --octicons            Add Octicons Glyphs (https://octicons.github.com)
   --powersymbols        Add IEC Power Symbols (http://unicodepowersymbol.com)
@@ -448,7 +448,7 @@ Repo References
 [vim-devicons]:https://github.com/ryanoasis/vim-devicons "VimDevIcons Vim Plugin (external link) ➶"
 [vorillaz-devicons]:http://vorillaz.github.io/devicons/
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
-[font-awesome-extension]:https://github.com/AndreLGava/font-awesome-extension
+[font-awesome-extension]:https://github.com/AndreLZGava/font-awesome-extension
 [octicons]:https://github.com/github/octicons
 [font-linux]:https://github.com/Lukas-W/font-linux
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons

@@ -13,7 +13,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
     - Share Tech Mono (enhancement #105)
     - Space Mono (enhancement #93)
   - Added new Glyph Sets:
-    - [Font Awesome Extension](http://andrelgava.github.io/font-awesome-extension/) (Over 170 glyphs) (enhancement #96)
+    - [Font Awesome Extension](http://andrelzgava.github.io/font-awesome-extension/) (Over 170 glyphs) (enhancement #96)
     - [IEC Power Symbols](http://unicodepowersymbol.com/) (enhancement #94)
   - Added additional methods to download the fonts:
     - Support for [Home Brew fonts](https://github.com/caskroom/homebrew-fonts) (enhancement #72)

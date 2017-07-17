@@ -44,7 +44,7 @@ parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_tru
 parser.add_argument('-w', '--windows', dest='windows', action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)', default=False)
 parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all available Glyphs', default=False)
 parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)', default=False)
-parser.add_argument('--fontawesomeextension', dest='fontawesomeextension', action='store_true', help='Add Font Awesome Extension Glyphs (http://andrelgava.github.io/font-awesome-extension)', default=False)
+parser.add_argument('--fontawesomeextension', dest='fontawesomeextension', action='store_true', help='Add Font Awesome Extension Glyphs (http://andrelzgava.github.io/font-awesome-extension)', default=False)
 parser.add_argument('--fontlinux', dest='fontlinux', action='store_true', help='Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)', default=False)
 parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)', default=False)
 parser.add_argument('--powersymbols', dest='powersymbols', action='store_true', help='Add IEC Power Symbols (http://unicodepowersymbol.com)', default=False)
