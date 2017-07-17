@@ -65,7 +65,8 @@ parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension'
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
 args = parser.parse_args()
 
-changelog = open("changelog.md", "r")
+__dir__ = os.path.dirname(__file__)
+changelog = open(__dir__ + "/changelog.md", "r")
 minimumVersion = 20141231
 actualVersion = int(fontforge.version())
 # un-comment following line for testing invalid version error handling
@@ -669,7 +670,7 @@ for patch in PATCH_SET:
             if symfont:
                 symfont.close()
                 symfont = None
-            symfont = fontforge.open("src/glyphs/"+patch['Filename'])
+            symfont = fontforge.open(__dir__+"/src/glyphs/"+patch['Filename'])
             # Match the symbol font size to the source font size
             symfont.em = sourceFont.em
             PreviousSymbolFilename = patch['Filename']
