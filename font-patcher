@@ -24,7 +24,6 @@ from argparse import RawTextHelpFormatter
 import errno
 import time
 import subprocess
-import math
 
 try:
     #Load the module
@@ -454,7 +453,7 @@ def update_progress(progress):
         progress = 1
         status = "Done...\r\n"
     block = int(round(barLength*progress))
-    text = "\r[{0}] {1}%".format( "#"*block + "-"*(barLength-block), math.floor(progress*100))
+    text = "\r[{0}] {1}%".format( "#"*block + "-"*(barLength-block), int(progress*100))
     sys.stdout.write(text)
     sys.stdout.flush()
 
