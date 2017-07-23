@@ -157,7 +157,7 @@ function generate_info {
   # generate the readmes:
 
   # if first time with this font then re-build parent dir readme, else skip:
-  if [[ $config_parent_dir != "$last_parent_dir"  && (! $is_unpatched_fonts_root) ]];
+  if [[ $config_parent_dir != "$last_parent_dir" ]] && [ $is_unpatched_fonts_root == "0" ];
   then
     echo "$LINE_PREFIX Re-generate parent directory readme"
     generate_readme "$patched_font_dir/.."
@@ -192,15 +192,18 @@ function generate_readme {
 
   cat "$parent_dir/src/readme-per-directory-variations.md" >> "$combinations_filename"
 
-  # add to the file
-  {
-    printf "\`\`\`sh"
-    printf "\n# %s Possible Combinations:\n" "$combination_count"
-    printf "\n"
-    printf "%s" "$combinations"
-    printf "\n"
-    printf "\`\`\`"
-  } >> "$combinations_filename"
+  if [ $unpatched_parent_dir == "0" ];
+  then
+    # add to the file
+    {
+      printf "\`\`\`sh"
+      printf "\n# %s Possible Combinations:\n" "$combination_count"
+      printf "\n"
+      printf "%s" "$combinations"
+      printf "\n"
+      printf "\`\`\`"
+    } >> "$combinations_filename"
+  fi
 }
 
 if [ ! $info_only ]
@@ -233,6 +236,7 @@ fi
 # Iterate through source fonts
 for i in "${!source_fonts[@]}"
 do
+  echo "Generating info for ${source_fonts[$i]}"
   generate_info "${source_fonts[$i]}" "$i" 2>/dev/null
 done
 
