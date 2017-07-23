@@ -3,11 +3,10 @@
 
 ### TL;DR
 
-
 * Pick your font family and then select from the `'complete'` directory.
   * If you are on Windows pick a font with the `'Windows Compatible'` suffix.
     * This includes specific tweaks to ensure the font works on Windows, in particular monospace identification and font name length limitations
-  * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with the `'Mono'` suffix.   
+  * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with the `'Mono'` suffix.
     * This denotes that the Nerd Font glyphs will be monospaced not necessarily that the entire font will be monospaced
 
 ### Explanation
@@ -36,3 +35,5 @@ For more information see: [The FAQ](https://github.com/ryanoasis/nerd-fonts/wiki
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
+[SIL-RFN]:http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web_fonts_and_RFNs#14cbfd4a
+
