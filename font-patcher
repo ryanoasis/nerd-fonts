@@ -455,7 +455,7 @@ def update_progress(progress):
         progress = 1
         status = "Done...\r\n"
     block = int(round(barLength*progress))
-    text = "\r[{0}] {1}%".format( "#"*block + "-"*(barLength-block), progress*100)
+    text = "\r[{0}] {1}%".format( "#"*block + "-"*(barLength-block), int(progress*100))
     sys.stdout.write(text)
     sys.stdout.flush()
 
