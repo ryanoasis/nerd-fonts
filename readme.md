@@ -418,8 +418,8 @@ See [contributing.md](contributing.md)
 Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release
 
 * For example:
-  * ✅ Use: `https://github.com/ryanoasis/nerd-fonts/blob/`**`0.9.0`**`/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf`
-  * ❌ Instead of: `https://github.com/ryanoasis/nerd-fonts/blob/`~~`master`~~`/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf`
+  * ✅ Use: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+  * ❌ Instead of: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
 
 
 ## Other Good Fonts to Patch
