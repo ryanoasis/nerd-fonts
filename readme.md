@@ -279,7 +279,8 @@ brew cask install font-hack-nerd-font
 
 The following fonts are available via [AUR packages](https://aur.archlinux.org/) on Arch Linux:
 
-* [Nerd Fonts Complete](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+* [Nerd Fonts Complete (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+* [Nerd Fonts Complete (single-width)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
 * [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
 * [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
