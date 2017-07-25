@@ -293,7 +293,9 @@ Download the specific [patched font](#patched-fonts) of your choice
 
 Cloning of this repository is **not** required nor the most efficient way to get the fonts,
 however if you want all the fonts and want to clone be sure to shallow clone:
-> `git clone --depth 1`
+```sh
+git clone --depth 1
+```
 
 For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
 
