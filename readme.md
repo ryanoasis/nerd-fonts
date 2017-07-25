@@ -75,7 +75,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Glyph Sets
 
-🔍 :mag: You can now search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
+:mag: :mag: You can now search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
 
 ### Seti-UI + Custom
 > Based off of [Seti-UI] Icomoon with extra custom glyphs.
@@ -413,13 +413,13 @@ See [contributing.md](contributing.md)
 
 ## Unstable File Paths
 
-⚠ Warning: File paths may change based on releases (especially **major** version bumps)
+:warning: Warning: File paths may change based on releases (especially **major** version bumps)
 
 Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release
 
 * For example:
-  * ✅ Use: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
-  * ❌ Instead of: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+  * :white_check_mark: Use: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+  * :x: Instead of: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
 
 
 ## Other Good Fonts to Patch
