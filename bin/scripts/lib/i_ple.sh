@@ -33,7 +33,7 @@ i='' i_ple_pixelated_squares_small_mirrored=$i
 i='' i_ple_pixelated_squares_big=$i
 i='' i_ple_pixelated_squares_big_mirrored=$i
 i='' i_ple_ice_waveform=$i
-#i='' i_ple_ice_waveform_mirrored=$i # @todo: missing from Nerd Fonts
+i='' i_ple_ice_waveform_mirrored=$i
 i='' i_ple_honeycomb=$i
 i='' i_ple_honeycomb_outline=$i
 i='' i_ple_lego_separator=$i
