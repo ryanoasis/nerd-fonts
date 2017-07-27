@@ -14,8 +14,7 @@ import sys
 try:
     import psMat
 except ImportError:
-    sys.stderr.write(projectName + ": FontForge module is probably not installed. [See: http://designwithfontforge.com/en-US/Installing_Fontforge.html]\n")
-    sys.exit(1)
+    sys.exit(projectName + ": FontForge module is probably not installed. [See: http://designwithfontforge.com/en-US/Installing_Fontforge.html]")
 
 import re
 import os
@@ -29,8 +28,7 @@ try:
     import fontforge
 
 except ImportError:
-    sys.stderr.write(projectName + ": FontForge module could not be loaded. Try installing fontforge python bindings [e.g. on Linux Debian or Ubuntu: `sudo apt-get install fontforge python-fontforge`]\n")
-    sys.exit(1)
+    sys.exit(projectName + ": FontForge module could not be loaded. Try installing fontforge python bindings [e.g. on Linux Debian or Ubuntu: `sudo apt-get install fontforge python-fontforge`]")
 
 # argparse stuff
 
