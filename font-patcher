@@ -22,7 +22,6 @@ import os
 import argparse
 from argparse import RawTextHelpFormatter
 import errno
-import time
 import subprocess
 
 try:
