@@ -28,7 +28,7 @@ try:
     import fontforge
 
 except ImportError:
-    sys.exit(projectName + ": FontForge module could not be loaded. Try installing fontforge python bindings [e.g. on Linux Debian or Ubuntu: `sudo apt-get install fontforge python-fontforge`]")
+    sys.exit(projectName + ": FontForge module could not be loaded. Try installing fontforge python bindings [e.g. on Linux Debian or Ubuntu: `sudo apt install fontforge python-fontforge`]")
 
 # argparse stuff
 
