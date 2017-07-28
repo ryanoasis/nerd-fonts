@@ -2,17 +2,17 @@
 
 ## How to contribute
 
-Work In Progress, for now the minimum:
-
 * Fork the project from the `master` branch and submit a Pull Request (PR)
   * Explain what the PR fixes or improves
   * Screenshots for bonus points
 * Use sensible commit messages
   * If your PR fixes a separate issue number, include it in the commit message
+* Use a sensible number of commit messages as well
+  * e.g. Your PR should not have 100s of commits
 
 ## Steps for adding a new font or removing an existing font
 
-* For removal of font skipt to Step #4
+* For removal of a font skip to [Step #4](#4-run-build-scripts)
 
 ### 1. Verify license
 * Check the license even allows the font to be modified and shared
@@ -57,6 +57,7 @@ Work In Progress, for now the minimum:
 
 * Squashing to 1 commit is **not** required at this time
 * Use sensible commit messages (when in doubt: `git log`)
+* Use a sensible number of commit messages
 * If your PR fixes a specific issue number, include it in the commit message: `"Fixes XYZ error (fixes #123)"`
 
 ## Code standards
