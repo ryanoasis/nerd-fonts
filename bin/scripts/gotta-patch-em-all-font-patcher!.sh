@@ -44,7 +44,7 @@ if [ $# -eq 2 ]
 fi
 
 # correct way to output find results into an array (when files have space chars, etc)
-# source: http://stackoverflow.com/questions/8213328/bash-script-find-output-to-array
+# source: https://stackoverflow.com/questions/8213328/bash-script-find-output-to-array
 source_fonts=()
  while IFS= read -d $'\0' -r file ; do
      source_fonts=("${source_fonts[@]}" "$file")

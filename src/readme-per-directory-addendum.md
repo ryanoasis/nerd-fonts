@@ -25,13 +25,13 @@ Once you narrow down your font choice of family (`Droid Sans`, `Inconsolata`, et
    * This contains a list of _all permutations_ of the various glyphs. E.g. You want the font with only [Octicons][octicons] or you want the font with just [Font Awesome][font-awesome] and [Devicons][vorillaz-devicons]. The goal is to provide every combination possible in this folder.
 
 
-For more information see: [The FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ#which-font)
+For more information see: [The FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#which-font)
 
 
 [vim-devicons]:https://github.com/ryanoasis/vim-devicons
-[vorillaz-devicons]:http://vorillaz.github.io/devicons/
+[vorillaz-devicons]:https://vorillaz.github.io/devicons/
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
-[octicons]:https://github.com/github/octicons
+[octicons]:https://github.com/primer/octicons
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

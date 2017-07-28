@@ -40,18 +40,18 @@ parser.add_argument('-l', '--adjust-line-height', dest='adjustLineHeight', actio
 parser.add_argument('-q', '--quiet', '--shutup', dest='quiet', action='store_true', help='Do not generate verbose output', default=False)
 parser.add_argument('-w', '--windows', dest='windows', action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)', default=False)
 parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all available Glyphs', default=False)
-parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fortawesome.github.io/Font-Awesome)', default=False)
-parser.add_argument('--fontawesomeextension', dest='fontawesomeextension', action='store_true', help='Add Font Awesome Extension Glyphs (http://andrelzgava.github.io/font-awesome-extension)', default=False)
+parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)', default=False)
+parser.add_argument('--fontawesomeextension', dest='fontawesomeextension', action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)', default=False)
 parser.add_argument('--fontlinux', dest='fontlinux', action='store_true', help='Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)', default=False)
 parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)', default=False)
-parser.add_argument('--powersymbols', dest='powersymbols', action='store_true', help='Add IEC Power Symbols (http://unicodepowersymbol.com)', default=False)
+parser.add_argument('--powersymbols', dest='powersymbols', action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)', default=False)
 parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
 parser.add_argument('--postprocess', type=str, nargs='?', dest='postprocess', help='Specify a Script for Post Processing', default=False)
 
-# http://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
+# https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
 progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
 progressbars_group_parser.add_argument('--progressbars', dest='progressbars', action='store_true', help='Show percentage completion progress bars per Glyph Set')
 progressbars_group_parser.add_argument('--no-progressbars', dest='progressbars', action='store_false', help='Don\'t show percentage completion progress bars per Glyph Set')
@@ -443,7 +443,7 @@ def use_scale_glyph( unicode_value, glyph_list ):
                 return True
     return False
 
-## modified from: http://stackoverflow.com/questions/3160699/python-progress-bar
+## modified from: https://stackoverflow.com/questions/3160699/python-progress-bar
 ## Accepts a float between 0 and 1. Any int will be converted to a float.
 ## A value at 1 or bigger represents 100%
 def update_progress(progress):
