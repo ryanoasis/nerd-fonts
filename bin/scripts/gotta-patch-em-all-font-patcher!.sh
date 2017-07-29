@@ -226,7 +226,7 @@ then
     # for now set a 'wait' for each X set of processes:
     if [[ $(($i % $max_parallel_process)) == 0 ]];
     then
-      echo "$LINE_PREFIX complete_variation_count after max parallel proc is  $complete_variation_count"
+      echo "$LINE_PREFIX Complete Variation Count after max parallel process is  $complete_variation_count"
       wait
     fi
   done
@@ -238,8 +238,11 @@ fi
 # Iterate through source fonts
 for i in "${!source_fonts[@]}"
 do
-  echo "Generating info for ${source_fonts[$i]}"
-  generate_info "${source_fonts[$i]}" "$i" 2>/dev/null
+  # only output after last slash (/):
+  path=${source_fonts[$i]}
+  font_file=${path##*/}
+  echo "$LINE_PREFIX Generating info for '$font_file'"
+  generate_info "$path" "$i" 2>/dev/null
 done
 
 res2=$(date +%s)
