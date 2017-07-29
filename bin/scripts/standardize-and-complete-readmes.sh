@@ -44,6 +44,10 @@ do
     if [ -f "$searchdir/config.cfg" ]
     then
       source "$searchdir/config.cfg"
+    else
+      # reset the variables
+      unset config_rfn
+      unset config_rfn_substitue
     fi
 	fi
 
