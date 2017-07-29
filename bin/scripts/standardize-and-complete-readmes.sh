@@ -65,7 +65,7 @@ do
 	then
 		for i in "${RST[@]}"
 		do
-			echo "#$LINE_PREFIX Found RST"
+			echo "$LINE_PREFIX Found RST"
 
 			from="$PWD/$i"
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
@@ -92,7 +92,7 @@ do
 	then
 		for i in "${TXT[@]}"
 		do
-			echo "#$LINE_PREFIX Found TXT"
+			echo "$LINE_PREFIX Found TXT"
 
 			from="$PWD/$i"
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
@@ -119,7 +119,7 @@ do
 	then
 		for i in "${MD[@]}"
 		do
-			echo "#$LINE_PREFIX Found MD"
+			echo "$LINE_PREFIX Found MD"
 
 			from="$PWD/$i"
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
