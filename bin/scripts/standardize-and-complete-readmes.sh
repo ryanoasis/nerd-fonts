@@ -14,6 +14,30 @@ cd ../../src/unpatched-fonts/ || {
   exit 1
 }
 
+
+function appendRfnInfo {
+  local config_rfn=$1; shift
+  local config_rfn_substitue=$1; shift
+  local working_dir=$1; shift
+  local to=$1; shift
+  if [ "$config_rfn" ] && [ "$config_rfn_substitue" ]
+  then
+    # add to the file
+    {
+      printf "\n## Why \`%s\` and not \`%s\`?\n" "$config_rfn_substitue" "$config_rfn"
+      cat "$working_dir/../../src/readme-rfn-addendum.md"
+    } >> "$to"
+  fi
+}
+
+function clearDestination {
+  local to_dir=$1; shift
+  local to=$1; shift
+  [[ -d "$to_dir" ]] || mkdir -p "$to_dir"
+  # clear output file (needed for multiple runs or updates):
+  > "$to" 2> /dev/null
+}
+
 #find ./ProFont -type d | # uncomment to test 1 font (with txt)
 #find ./DejaVuSansMono -type d | # uncomment to test 1 font (with rst)
 #find ./Hasklig -type d | # uncomment to test 1 font
@@ -71,22 +95,12 @@ do
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
 			to="${to_dir}/$infofilename"
 
-			[[ -d "$to_dir" ]] || mkdir -p "$to_dir"
-			# clear output file (needed for multiple runs or updates):
-			> "$to" 2> /dev/null
+      clearDestination "$to_dir" "$to"
 
 			pandoc "$from" --from=rst --to=markdown --output="$to"
 
-      if [ "$config_rfn" ] && [ "$config_rfn_substitue" ]
-      then
-        # add to the file
-        {
-          printf "\n## Why \`%s\` and not \`%s\`?\n" "$config_rfn_substitue" "$config_rfn"
-          cat "$PWD/../../src/readme-rfn-addendum.md"
-        } >> "$to"
-      fi
-
-			cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
+      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
 		done
 	elif [ "${TXT[0]}" ];
 	then
@@ -98,22 +112,12 @@ do
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
 			to="${to_dir}/$infofilename"
 
-			[[ -d "$to_dir" ]] || mkdir -p "$to_dir"
-			# clear output file (needed for multiple runs or updates):
-			> "$to" 2> /dev/null
+      clearDestination "$to_dir" "$to"
 
 			cp "$from" "$to"
 
-      if [ "$config_rfn" ] && [ "$config_rfn_substitue" ]
-      then
-        # add to the file
-        {
-          printf "\n## Why \`%s\` and not \`%s\`?\n" "$config_rfn_substitue" "$config_rfn"
-          cat "$PWD/../../src/readme-rfn-addendum.md"
-        } >> "$to"
-      fi
-
-			cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
+      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
 		done
 	elif [ "${MD[0]}" ];
 	then
@@ -125,22 +129,12 @@ do
 			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
 			to="${to_dir}/$infofilename"
 
-			[[ -d "$to_dir" ]] || mkdir -p "$to_dir"
-			# clear output file (needed for multiple runs or updates):
-			> "$to" 2> /dev/null
+      clearDestination "$to_dir" "$to"
 
 			cp "$from" "$to"
 
-      if [ "$config_rfn" ] && [ "$config_rfn_substitue" ]
-      then
-        # add to the file
-        {
-          printf "\n## Why \`%s\` and not \`%s\`?\n" "$config_rfn_substitue" "$config_rfn"
-          cat "$PWD/../../src/readme-rfn-addendum.md"
-        } >> "$to"
-      fi
-
-			cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
+      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
 		done
 	else
     echo "$LINE_PREFIX Did not find any readme files (RST,TXT,MD) generating just title of Font"
@@ -148,24 +142,14 @@ do
     to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
     to="${to_dir}/$infofilename"
 
-    [[ -d "$to_dir" ]] || mkdir -p "$to_dir"
-    # clear output file (needed for multiple runs or updates):
-    > "$to" 2> /dev/null
+    clearDestination "$to_dir" "$to"
 
     {
       printf "# %s\n\n" "$base_directory"
     } >> "$to"
 
+    appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
     cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
-
-    if [ "$config_rfn" ] && [ "$config_rfn_substitue" ]
-    then
-      # add to the file
-      {
-        printf "\n## Why \`%s\` and not \`%s\`?\n" "$config_rfn_substitue" "$config_rfn"
-        cat "$PWD/../../src/readme-rfn-addendum.md"
-      } >> "$to"
-    fi
 	fi
 
 done
