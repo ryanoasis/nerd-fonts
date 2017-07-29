@@ -25,6 +25,12 @@ find . -type d | # uncomment to do ALL fonts
 while read -r filename
 do
 
+  if [[ "$filename" == "." ]];
+  then
+    echo "$LINE_PREFIX Skipping directory '.'"
+    continue
+  fi
+
 	dirname=$(dirname "$filename")
 	searchdir=$filename
   base_directory=$(echo "$filename" | cut -d "/" -f2)
