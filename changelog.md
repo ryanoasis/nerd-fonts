@@ -2,6 +2,60 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v1.1.0
+
+### New Features
+
+  - Added shell helper script (and shell variables) for referencing glyphs (PR #147 @powerman)
+  - Added new fonts:
+    - `InconsoltaGo` (PR #130 @sodiumjoe)
+    - `Ubuntu` (non mono) (fixes #134)
+  - Added release script (fixes #137)
+  - Added better terminal and font test scripts
+  - Added CSS file for using Nerd Fonts on websites
+  - Added script to build CSS file with classes to use Nerd Font glyphs
+  - Added `--adjust-line-height` option to `font-patcher`
+
+### Updates / Improvements
+
+  - Updated 'Features' section counts (fixes #117) (PR #122 @OmarB97)
+  - Updated location of readme images (PR #149 @agriffis)
+  - Updated `DejaVu` version from `2.33` to `2.37` (and removes the `DejaVu for Powerline`) (PR #151 @agriffis)
+  - Updated Reserved Font Name (RFN) details and provides clarification (fixes #136)
+  - Updated `Ubuntu Mono` version from `0.80` to `0.83` and adds missing Bold and Italic variants (fixes #134)
+  - Updated `FiraCode` version from `1.102` to `1.204` (fixes #180) (PR #181 @aidanharris)
+  - Updated install and Quick Links info in readme
+  - Updated Homebrew font install in readme
+  - Updated readme with AUR package links
+  - Updated readme with links to [NerdFonts.com's Cheat Sheet](http://nerdfonts.com/#cheat-sheet)
+  - Updated readme with 'TL;DR' section and re-ordering of font install options (fixes #124)
+  - Updated readme with more details on font install options
+  - Updated various readme sections
+  - Updated contributing markdown with better information
+  - Updated explanations of `--mono` option and monospace in general (fixes #165)
+  - Updated `font-patcher` progress bars styling
+
+### Fixes
+
+  - Fixed Powerline glyphs sizes, alignment and offsets (fixes #26)
+  - Fixed FAQ links in `.github/` (PR #132 @polyzen)
+  - Fixed Homebrew command instructions in readme (PR #133 @teddy-error)
+  - Fixed markdown rendering issues in readme (PR #148 @aloisdg)
+  - Fixed glyph offsets (especially Powerline) (fixes #142)
+  - Fixed incorrect typeface names on some fonts (fixes #126)
+  - Fixed `Font Linux` screenshot with correct code points (fixes #138) (PR #149 @agriffis)
+  - Fixed trailing spaces in readme (clean-up) (PR #167 @thyrlian)
+  - Fixed wiki link in issue template (fixes #174) (PR #179 @kballard)
+  - Fixed misc typos and link references in readme and `font-patcher` (PR #184 @reujab)
+  - Fixed font family name conflicts by adding `Mono` to single-width fonts (fixes #176) (PR #178 @kballard)
+  - Fixed `font-patcher` progress bar rounding output (PR #183 @reujab)
+  - Fixed executing scripts from other directories (PR #185 @reujab)
+  - Fixed missing glyph `e0ca` (ice waveform mirrored) (fixes #182)
+  - Fixed `Hasklig` (`Hasklug`) SIL OFL compliance issue
+  - Fixed missing or out of date patched font readmes
+  - Fixed `font-patcher` glyph set count not ignoring empty codepoints
+  - Fixed `font-patcher` progress bars stopping at incorrect percentage
+
 ## v1.0.0
 
 ### New Features
