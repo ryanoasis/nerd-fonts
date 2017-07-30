@@ -479,14 +479,16 @@ def update_progress(progress):
         progress = 1
         status = "Done...\r\n"
     block = int(round(barLength*progress))
-    text = "\r[{0}] {1}%".format( "#"*block + "-"*(barLength-block), int(progress*100))
+    text = "\r╢{0}╟ {1}%".format( "█"*block + "░"*(barLength-block), int(progress*100))
     sys.stdout.write(text)
     sys.stdout.flush()
 
-def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding, scaleGlyph, attributes):
+def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding, scaleGlyph, setName, attributes):
 
     progressText = ''
     careful = False
+    glyphSetLength = 0
+
     if args.careful:
         careful = True
 
@@ -514,7 +516,13 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         symbolFont.selection.select((str("ranges"),str("unicode")),symbolFontStart,symbolFontEnd)
         sourceFont.selection.select((str("ranges"),str("unicode")),sourceFontStart,sourceFontEnd)
 
-    glyphSetLength = max(1, symbolFontEnd-symbolFontStart)
+    # Get number of selected non-empty glyphs @todo fixme
+    for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
+        glyphSetLength += 1
+    # end for
+
+    if args.quiet == False:
+        sys.stdout.write("Adding " + str(max(1, glyphSetLength)) + " Glyphs from " + setName + " Set \n")
 
     for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
 
@@ -543,7 +551,7 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         if args.quiet == False:
             if args.progressbars:
-                update_progress(round(float(index)/glyphSetLength,2))
+                update_progress(round(float(index + 1)/glyphSetLength,2))
             else:
                 progressText = "\nUpdating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot;
                 sys.stdout.write(progressText)
@@ -707,10 +715,7 @@ for patch in PATCH_SET:
         if not SrcEnd:
             SrcEnd = patch['SymEnd']
 
-        if args.quiet == False:
-            sys.stdout.write("Adding " + str(max(1, patch['SymEnd']-patch['SymStart'])) + " Glyphs from " + patch['Name'] + " Set \n")
-
-        copy_glyphs(sourceFont, SrcStart, SrcEnd, symfont, patch['SymStart'], patch['SymEnd'],  patch['Exact'], patch['ScaleGlyph'], patch['Attributes'])
+        copy_glyphs(sourceFont, SrcStart, SrcEnd, symfont, patch['SymStart'], patch['SymEnd'], patch['Exact'], patch['ScaleGlyph'], patch['Name'], patch['Attributes'])
 
 if symfont:
     symfont.close()
