@@ -29,14 +29,16 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Table of Contents
 
+[**TL;DR**](#tl;dr)
+
 [**Installation Options**](#font-installation)
-  * [**1 - Install Script**](#option-1-install-script)
-  * [**2 - Ad Hoc Curl Download**](#option-2-ad-hoc-curl-download)
-  * [**3 - Release Archive Download**](#option-3-release-archive-download)
+  * [**1 - Manual**](#option-1-download-and-install-manually)
+  * [**2 - Release Archive Download**](#option-2-release-archive-download)
+  * [**3 - Install Script**](#option-3-install-script)
   * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
-  * [**5 - Arch User Repository (AUR) (Arch Linux)**](#option-5-unofficial-arch-user-repository-aur)
-  * [**6 - Manual**](#option-6-download-and-install-manually)
-  * [**7 - Clone Repo**](#option-7-clone-the-repo)
+  * [**5 - Clone Repo**](#option-5-clone-the-repo)
+  * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
+  * [**7 - Arch User Repository (AUR) (Arch Linux)**](#option-7-unofficial-arch-user-repository-aur)
   * [**8 - Patch Your Own Font**](#option-8-patch-your-own-font)
 
 [**Features**](#features)
@@ -59,6 +61,24 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**Changelog**](#changelog)
   * [**License**](#license)
 
+
+## TL;DR
+  Nerd Fonts takes popular programming fonts and adds a bunch of Glyphs.
+  There is also a [font patcher](#font-patcher) available if your desired font isn't already patched.
+  For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
+
+### Various Download Options for Fonts
+
+_If you..._
+
+  * `Option 1.` want to **quickly** grab an **individual font** download from the [`patched-fonts/` directory](#patched-fonts)
+  * `Option 2.` want to download a **font family** package of variations (bold, italic, etc.) see [download an archive](#option-2-release-archive-download)
+  * `Option 3.` want to **automate** installing or use in **scripts** see the [Install Script](#option-3-install-script)
+  * `Option 4.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-4-homebrew-fonts)
+  * `Option 5.` want **complete control** then see [cloning the repo](#option-5-clone-the-repo)
+  * `Option 6.` want to use **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
+  * `Option 7.` are on **Arch Linux** and want to use **AUR packages** see [Unofficial Arch User Repositories](#option-7-unofficial-arch-user-repository-aur)
+  * `Option 8.` want to patch your own font see the [Font Patcher](#option-8-patch-your-own-font)
 
 ## Features
 * A [FontForge python script](#font-patcher) to patch any font
@@ -225,12 +245,24 @@ echo $i_oct_heart
 
 ## Font Installation
 
+### `Option 1: Download and Install Manually`
+
+> Best option for **quickly** getting a specific **individual font**.
+
+Download the specific [patched font](#patched-fonts) of your choice
+
+### `Option 2: Release Archive Download`
+
+> Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
+
+Fonts are available for download as packages in the [latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+
 ### `Option 3: Install Script`
 
 > Best option if you want to **automate** installing or for use in **scripts**.
 
 _Note_: Only for Linux & macOS (OS X)
-_Note_: Requires cloning the repo as of now
+_Note_: **Requires cloning** the repo as of now
 
 #### All fonts:
 
@@ -248,6 +280,28 @@ _Note_: Requires cloning the repo as of now
 ./install.sh <FontName>
 ./install.sh Hack
 ./install.sh HeavyData
+```
+
+### `Option 4: Homebrew Fonts`
+
+> Best option if on **macOS** and want to use **Homebrew**.
+
+All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) on macOS (OS X)
+
+```sh
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+```
+
+### `Option 5: Clone the Repo`
+
+> Best option for **full control**, **all** or **most** of the fonts, or **contributing** to development.
+
+Cloning of this repository is **not** required nor efficient if you are simply only interested in a limited set of fonts.
+
+However if you do want to clone the repo be sure to _shallow_ clone:
+```sh
+git clone --depth 1
 ```
 
 ### `Option 6: Ad Hoc Curl Download`
@@ -268,22 +322,7 @@ _Note:_ deprecated alternative paths: `~/.fonts`
 ```sh
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 ```
-### `Option 2: Release Archive Download`
 
-> Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
-
-Fonts are available for download as packages in the [latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
-
-### `Option 4: Homebrew Fonts`
-
-> Best option if on **macOS** and want to use **Homebrew**.
-
-All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) on macOS (OS X)
-
-```sh
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
-```
 ### `Option 7: Unofficial Arch User Repository (AUR)`
 
 > Option for **Arch Linux** and wanting to use **AUR packages**.
@@ -295,25 +334,6 @@ The following fonts are available via [AUR packages](https://aur.archlinux.org/)
 * [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
 * [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
-
-### `Option 1: Download and Install Manually`
-
-> Best option for **quickly** getting a specific **individual font**.
-
-Download the specific [patched font](#patched-fonts) of your choice
-
-### `Option 5: Clone the Repo`
-
-> Best option for **full control**, **all** or **most** of the fonts, or **contributing** to development.
-
-Cloning of this repository is **not** required nor efficient if you are simply only interested in a limited set of fonts.
-
-However if you do want to clone the repo be sure to _shallow_ clone:
-```sh
-git clone --depth 1
-```
-
-For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
 
 ### `Option 8: Patch Your Own Font`
 
