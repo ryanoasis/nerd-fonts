@@ -32,7 +32,7 @@ except ImportError:
 
 # argparse stuff
 
-parser = argparse.ArgumentParser(description='Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs\n\nWebsite: https://github.com/ryanoasis/nerd-fonts', formatter_class=RawTextHelpFormatter)
+parser = argparse.ArgumentParser(description='Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs\n\n* Website: https://www.nerdfonts.com\n* Version: ' + version + '\n* Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md', formatter_class=RawTextHelpFormatter)
 parser.add_argument('-v', '--version', action='version', version=projectName + ": %(prog)s ("+version+")")
 parser.add_argument('font', help='The path to the font to patch (e.g., Inconsolata.otf)')
 parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single', action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)', default=False)
