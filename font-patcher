@@ -63,7 +63,6 @@ parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir'
 args = parser.parse_args()
 
 __dir__ = os.path.dirname(__file__)
-changelog = open(__dir__ + "/changelog.md", "r")
 minimumVersion = 20141231
 actualVersion = int(fontforge.version())
 # un-comment following line for testing invalid version error handling
@@ -170,6 +169,7 @@ if args.windows:
         familyname = familyname[:maxFamilyLength]
 else:
     familyname += " " + projectNameSingular
+
     if args.single:
         familyname += " Mono"
 
@@ -212,7 +212,15 @@ reservedFontNameReplacements = {
     'Terminus': 'Terminess'
 }
 
-projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)"
+# remove overly verbose font names
+# particularly regarding Powerline sourced Fonts (https://github.com/powerline/fonts)
+additionalFontNameReplacements = {
+    'for Powerline' : '',
+    'Powerline'     : ''
+}
+
+projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)\n\n* Website: https://www.nerdfonts.com\n* Version: " + version + "\n
+ * Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md"
 
 sourceFont.familyname = replace_all(familyname, reservedFontNameReplacements)
 sourceFont.fullname = replace_all(fullname, reservedFontNameReplacements)
@@ -221,7 +229,7 @@ sourceFont.appendSFNTName(str('English (US)'), str('Preferred Family'), sourceFo
 sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), sourceFont.fullname)
 sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
 sourceFont.comment = projectInfo
-sourceFont.fontlog = projectInfo + "\n\n" + changelog.read()
+sourceFont.fontlog = projectInfo
 
 # todo version not being set for all font types (e.g. ttf)
 #print("Version was {}".format(sourceFont.version))
