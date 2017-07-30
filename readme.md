@@ -85,7 +85,7 @@ _If you..._
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
 * **`37`** already [patched font families](#patched-fonts)
-* Over **`71,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **`77,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
@@ -214,21 +214,21 @@ echo $i_oct_heart
 | [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | ![w] ![m2] ![l]   |
-| [Ubuntu Mono derivative Nerd Font][p-ubuntu]      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
-| [Ubuntu Mono Nerd Font][p-ubuntu]                 |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Ubuntu Nerd Font][p-ubuntu]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
 ## Combinations
 
-- Over **`71,000`** unique variations/combinations (Power Set) of patched fonts:
+- Over **`77,000`** unique variations/combinations (Power Set) of patched fonts:
   - **`37`** patched font typefaces
-  - **`138`** patched font families
-  - **`552`** 'complete' variations/combinations
-  - **`70,892`** _possible_ variations/combinations
-  - **`71,444`** total calculated combinations (552 + 70,892)
+  - **`149`** patched font families
+  - **`596`** 'complete' variations/combinations
+  - **`76,502`** _possible_ variations/combinations
+  - **`77,098`** total calculated combinations (596 + 76,502)
 - Combinations for each font are any combination of [Variations](#variations)
-    
+
 ### Variations
 
 - no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
@@ -580,7 +580,8 @@ Patched Font internal links
 [p-roboto]:patched-fonts/RobotoMono
 [p-source-code-pro]:patched-fonts/SourceCodePro
 [p-terminus]:patched-fonts/Terminus
-[p-ubuntu]:patched-fonts/UbuntuMono
+[p-ubuntu]:patched-fonts/Ubuntu
+[p-ubuntu-mono]:patched-fonts/UbuntuMono
 [p-share-tech-mono]:patched-fonts/ShareTechMono
 [p-space-mono]:patched-fonts/SpaceMono
 [p-gohu]:patched-fonts/Gohu
