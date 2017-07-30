@@ -10,7 +10,7 @@ LINE_PREFIX="# [Nerd Fonts] "
 
 if [ ! $# -eq 1 ]
   then
-    echo "$LINE_PREFIX No release version given, must give semver release versionin format: #.#.#, e.g. 1.1.0"
+    echo "$LINE_PREFIX No release version given, must give semver release version in format: #.#.#, e.g. 1.1.0"
 fi
 
 release=$1
