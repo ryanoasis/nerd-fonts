@@ -29,7 +29,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Table of Contents
 
-[**TL;DR**](#tl;dr)
+[**TL;DR**](#tldr)
 
 [**Installation Options**](#font-installation)
   * [**1 - Manual**](#option-1-download-and-install-manually)
