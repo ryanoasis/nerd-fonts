@@ -4,6 +4,9 @@
 # used for debugging
 #set -x
 
+# for executing script to rebuild JUST the readmes:
+# ./gotta-patch-em-all-font-patcher\!.sh "" info
+
 LINE_PREFIX="# [Nerd Fonts] "
 
 # Check for Fontforge
