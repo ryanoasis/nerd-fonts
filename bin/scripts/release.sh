@@ -13,13 +13,12 @@ fi
 release=$1
 
 ./version-bump.sh "$release"
-#./build-latest-py3-version.sh
 ./standardize-and-complete-readmes.sh
 ./gotta-patch-em-all-font-patcher!.sh
 ./generate-fontconfig.sh
 ./generate-casks.sh
 ./archive-fonts.sh
-./upload-archives.sh
+#./upload-archives.sh # better done as a separate step
 
 exit
 
