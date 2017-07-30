@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install Nerd Fonts
-__ScriptVersion="0.1"
+__ScriptVersion="0.2"
 
 # Default values for option variables:
 quiet=false
