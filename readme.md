@@ -225,9 +225,12 @@ echo $i_oct_heart
 
 ## Font Installation
 
-### `Option 1: Install Script`
+### `Option 3: Install Script`
 
-_Note_: only for Linux & macOS (OS X)
+> Best option if you want to **automate** installing or for use in **scripts**.
+
+_Note_: Only for Linux & macOS (OS X)
+_Note_: Requires cloning the repo as of now
 
 #### All fonts:
 
@@ -247,7 +250,9 @@ _Note_: only for Linux & macOS (OS X)
 ./install.sh HeavyData
 ```
 
-### `Option 2: Ad Hoc Curl Download`
+### `Option 6: Ad Hoc Curl Download`
+
+> Option if you want to use the **`curl` command** or for use in **scripts**.
 
 #### Linux
 
@@ -263,11 +268,15 @@ _Note:_ deprecated alternative paths: `~/.fonts`
 ```sh
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 ```
-### `Option 3: Release Archive Download`
+### `Option 2: Release Archive Download`
+
+> Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
 
 Fonts are available for download as packages in the [latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 
 ### `Option 4: Homebrew Fonts`
+
+> Best option if on **macOS** and want to use **Homebrew**.
 
 All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) on macOS (OS X)
 
@@ -275,7 +284,9 @@ All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebre
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 ```
-### `Option 5: Unofficial Arch User Repository (AUR)`
+### `Option 7: Unofficial Arch User Repository (AUR)`
+
+> Option for **Arch Linux** and wanting to use **AUR packages**.
 
 The following fonts are available via [AUR packages](https://aur.archlinux.org/) on Arch Linux:
 
@@ -285,14 +296,19 @@ The following fonts are available via [AUR packages](https://aur.archlinux.org/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
 * [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
 
-### `Option 6: Download and Install Manually`
+### `Option 1: Download and Install Manually`
+
+> Best option for **quickly** getting a specific **individual font**.
 
 Download the specific [patched font](#patched-fonts) of your choice
 
-### `Option 7: Clone the Repo`
+### `Option 5: Clone the Repo`
 
-Cloning of this repository is **not** required nor the most efficient way to get the fonts,
-however if you want all the fonts and want to clone be sure to shallow clone:
+> Best option for **full control**, **all** or **most** of the fonts, or **contributing** to development.
+
+Cloning of this repository is **not** required nor efficient if you are simply only interested in a limited set of fonts.
+
+However if you do want to clone the repo be sure to _shallow_ clone:
 ```sh
 git clone --depth 1
 ```
@@ -300,6 +316,8 @@ git clone --depth 1
 For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
 
 ### `Option 8: Patch Your Own Font`
+
+> The option for **patching** your **own font** or fully **customizing** the patched font.
 
 Use the provided python command line script to generate a patched font from your own font to get the extra new glyphs
 
