@@ -1,0 +1,4384 @@
+/*
+ *# [Nerd Fonts]  Website: https://www.nerdfonts.com
+ *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
+ *# [Nerd Fonts]  Version: 1.1.0
+ *# [Nerd Fonts]  The following is generated from the build script
+ */
+
+@font-face {
+  font-family: 'NerdFontsSymbols Nerd Font';
+  /* @TODO you need to adjust the path to the font: */
+  src: url("../fonts/NerdFontsSymbols-2048-em Nerd Font Complete.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nf, .nerd-font, .nerd-fonts {
+  font-family: 'NerdFontsSymbols Nerd Font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering (from devicons, et al) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nf-custom-c:before, .nerd-font-custom-c:before, .nerd-fonts-custom-c:before {
+  content: "\e61e";
+}
+.nf-custom-cpp:before, .nerd-font-custom-cpp:before, .nerd-fonts-custom-cpp:before {
+  content: "\e61d";
+}
+.nf-custom-folder:before, .nerd-font-custom-folder:before, .nerd-fonts-custom-folder:before {
+  content: "\e5ff";
+}
+.nf-custom-folder_config:before, .nerd-font-custom-folder_config:before, .nerd-fonts-custom-folder_config:before {
+  content: "\e5fc";
+}
+.nf-custom-folder_git:before, .nerd-font-custom-folder_git:before, .nerd-fonts-custom-folder_git:before {
+  content: "\e5fb";
+}
+.nf-custom-folder_git_branch:before, .nerd-font-custom-folder_git_branch:before, .nerd-fonts-custom-folder_git_branch:before {
+  content: "\e5fb";
+}
+.nf-custom-folder_github:before, .nerd-font-custom-folder_github:before, .nerd-fonts-custom-folder_github:before {
+  content: "\e5fd";
+}
+.nf-custom-folder_npm:before, .nerd-font-custom-folder_npm:before, .nerd-fonts-custom-folder_npm:before {
+  content: "\e5fa";
+}
+.nf-custom-folder_open:before, .nerd-font-custom-folder_open:before, .nerd-fonts-custom-folder_open:before {
+  content: "\e5fe";
+}
+.nf-custom-go:before, .nerd-font-custom-go:before, .nerd-fonts-custom-go:before {
+  content: "\e626";
+}
+.nf-custom-msdos:before, .nerd-font-custom-msdos:before, .nerd-fonts-custom-msdos:before {
+  content: "\e629";
+}
+.nf-custom-vim:before, .nerd-font-custom-vim:before, .nerd-fonts-custom-vim:before {
+  content: "\e62b";
+}
+.nf-custom-windows:before, .nerd-font-custom-windows:before, .nerd-fonts-custom-windows:before {
+  content: "\e62a";
+}
+.nf-dev-android:before, .nerd-font-dev-android:before, .nerd-fonts-dev-android:before {
+  content: "\e70e";
+}
+.nf-dev-angular:before, .nerd-font-dev-angular:before, .nerd-fonts-dev-angular:before {
+  content: "\e753";
+}
+.nf-dev-appcelerator:before, .nerd-font-dev-appcelerator:before, .nerd-fonts-dev-appcelerator:before {
+  content: "\e7ab";
+}
+.nf-dev-apple:before, .nerd-font-dev-apple:before, .nerd-fonts-dev-apple:before {
+  content: "\e711";
+}
+.nf-dev-appstore:before, .nerd-font-dev-appstore:before, .nerd-fonts-dev-appstore:before {
+  content: "\e713";
+}
+.nf-dev-aptana:before, .nerd-font-dev-aptana:before, .nerd-fonts-dev-aptana:before {
+  content: "\e799";
+}
+.nf-dev-asterisk:before, .nerd-font-dev-asterisk:before, .nerd-fonts-dev-asterisk:before {
+  content: "\e7ac";
+}
+.nf-dev-atlassian:before, .nerd-font-dev-atlassian:before, .nerd-fonts-dev-atlassian:before {
+  content: "\e75b";
+}
+.nf-dev-atom:before, .nerd-font-dev-atom:before, .nerd-fonts-dev-atom:before {
+  content: "\e764";
+}
+.nf-dev-aws:before, .nerd-font-dev-aws:before, .nerd-fonts-dev-aws:before {
+  content: "\e7ad";
+}
+.nf-dev-backbone:before, .nerd-font-dev-backbone:before, .nerd-fonts-dev-backbone:before {
+  content: "\e752";
+}
+.nf-dev-bing_small:before, .nerd-font-dev-bing_small:before, .nerd-fonts-dev-bing_small:before {
+  content: "\e700";
+}
+.nf-dev-bintray:before, .nerd-font-dev-bintray:before, .nerd-fonts-dev-bintray:before {
+  content: "\e794";
+}
+.nf-dev-bitbucket:before, .nerd-font-dev-bitbucket:before, .nerd-fonts-dev-bitbucket:before {
+  content: "\e703";
+}
+.nf-dev-blackberry:before, .nerd-font-dev-blackberry:before, .nerd-fonts-dev-blackberry:before {
+  content: "\e723";
+}
+.nf-dev-bootstrap:before, .nerd-font-dev-bootstrap:before, .nerd-fonts-dev-bootstrap:before {
+  content: "\e747";
+}
+.nf-dev-bower:before, .nerd-font-dev-bower:before, .nerd-fonts-dev-bower:before {
+  content: "\e74d";
+}
+.nf-dev-brackets:before, .nerd-font-dev-brackets:before, .nerd-fonts-dev-brackets:before {
+  content: "\e79d";
+}
+.nf-dev-bugsense:before, .nerd-font-dev-bugsense:before, .nerd-fonts-dev-bugsense:before {
+  content: "\e78d";
+}
+.nf-dev-celluloid:before, .nerd-font-dev-celluloid:before, .nerd-fonts-dev-celluloid:before {
+  content: "\e76b";
+}
+.nf-dev-chart:before, .nerd-font-dev-chart:before, .nerd-fonts-dev-chart:before {
+  content: "\e760";
+}
+.nf-dev-chrome:before, .nerd-font-dev-chrome:before, .nerd-fonts-dev-chrome:before {
+  content: "\e743";
+}
+.nf-dev-cisco:before, .nerd-font-dev-cisco:before, .nerd-fonts-dev-cisco:before {
+  content: "\e765";
+}
+.nf-dev-clojure:before, .nerd-font-dev-clojure:before, .nerd-fonts-dev-clojure:before {
+  content: "\e768";
+}
+.nf-dev-clojure_alt:before, .nerd-font-dev-clojure_alt:before, .nerd-fonts-dev-clojure_alt:before {
+  content: "\e76a";
+}
+.nf-dev-cloud9:before, .nerd-font-dev-cloud9:before, .nerd-fonts-dev-cloud9:before {
+  content: "\e79f";
+}
+.nf-dev-coda:before, .nerd-font-dev-coda:before, .nerd-fonts-dev-coda:before {
+  content: "\e793";
+}
+.nf-dev-code:before, .nerd-font-dev-code:before, .nerd-fonts-dev-code:before {
+  content: "\e796";
+}
+.nf-dev-code_badge:before, .nerd-font-dev-code_badge:before, .nerd-fonts-dev-code_badge:before {
+  content: "\e7a3";
+}
+.nf-dev-codeigniter:before, .nerd-font-dev-codeigniter:before, .nerd-fonts-dev-codeigniter:before {
+  content: "\e780";
+}
+.nf-dev-codepen:before, .nerd-font-dev-codepen:before, .nerd-fonts-dev-codepen:before {
+  content: "\e716";
+}
+.nf-dev-codrops:before, .nerd-font-dev-codrops:before, .nerd-fonts-dev-codrops:before {
+  content: "\e72f";
+}
+.nf-dev-coffeescript:before, .nerd-font-dev-coffeescript:before, .nerd-fonts-dev-coffeescript:before {
+  content: "\e751";
+}
+.nf-dev-compass:before, .nerd-font-dev-compass:before, .nerd-fonts-dev-compass:before {
+  content: "\e761";
+}
+.nf-dev-composer:before, .nerd-font-dev-composer:before, .nerd-fonts-dev-composer:before {
+  content: "\e783";
+}
+.nf-dev-creativecommons:before, .nerd-font-dev-creativecommons:before, .nerd-fonts-dev-creativecommons:before {
+  content: "\e789";
+}
+.nf-dev-creativecommons_badge:before, .nerd-font-dev-creativecommons_badge:before, .nerd-fonts-dev-creativecommons_badge:before {
+  content: "\e78a";
+}
+.nf-dev-css3:before, .nerd-font-dev-css3:before, .nerd-fonts-dev-css3:before {
+  content: "\e749";
+}
+.nf-dev-css3_full:before, .nerd-font-dev-css3_full:before, .nerd-fonts-dev-css3_full:before {
+  content: "\e74a";
+}
+.nf-dev-css_tricks:before, .nerd-font-dev-css_tricks:before, .nerd-fonts-dev-css_tricks:before {
+  content: "\e701";
+}
+.nf-dev-cssdeck:before, .nerd-font-dev-cssdeck:before, .nerd-fonts-dev-cssdeck:before {
+  content: "\e72a";
+}
+.nf-dev-dart:before, .nerd-font-dev-dart:before, .nerd-fonts-dev-dart:before {
+  content: "\e798";
+}
+.nf-dev-database:before, .nerd-font-dev-database:before, .nerd-fonts-dev-database:before {
+  content: "\e706";
+}
+.nf-dev-debian:before, .nerd-font-dev-debian:before, .nerd-fonts-dev-debian:before {
+  content: "\e77d";
+}
+.nf-dev-digital_ocean:before, .nerd-font-dev-digital_ocean:before, .nerd-fonts-dev-digital_ocean:before {
+  content: "\e7ae";
+}
+.nf-dev-django:before, .nerd-font-dev-django:before, .nerd-fonts-dev-django:before {
+  content: "\e71d";
+}
+.nf-dev-dlang:before, .nerd-font-dev-dlang:before, .nerd-fonts-dev-dlang:before {
+  content: "\e7af";
+}
+.nf-dev-docker:before, .nerd-font-dev-docker:before, .nerd-fonts-dev-docker:before {
+  content: "\e7b0";
+}
+.nf-dev-doctrine:before, .nerd-font-dev-doctrine:before, .nerd-fonts-dev-doctrine:before {
+  content: "\e774";
+}
+.nf-dev-dojo:before, .nerd-font-dev-dojo:before, .nerd-fonts-dev-dojo:before {
+  content: "\e71c";
+}
+.nf-dev-dotnet:before, .nerd-font-dev-dotnet:before, .nerd-fonts-dev-dotnet:before {
+  content: "\e77f";
+}
+.nf-dev-dreamweaver:before, .nerd-font-dev-dreamweaver:before, .nerd-fonts-dev-dreamweaver:before {
+  content: "\e79c";
+}
+.nf-dev-dropbox:before, .nerd-font-dev-dropbox:before, .nerd-fonts-dev-dropbox:before {
+  content: "\e707";
+}
+.nf-dev-drupal:before, .nerd-font-dev-drupal:before, .nerd-fonts-dev-drupal:before {
+  content: "\e742";
+}
+.nf-dev-eclipse:before, .nerd-font-dev-eclipse:before, .nerd-fonts-dev-eclipse:before {
+  content: "\e79e";
+}
+.nf-dev-ember:before, .nerd-font-dev-ember:before, .nerd-fonts-dev-ember:before {
+  content: "\e71b";
+}
+.nf-dev-envato:before, .nerd-font-dev-envato:before, .nerd-fonts-dev-envato:before {
+  content: "\e75d";
+}
+.nf-dev-erlang:before, .nerd-font-dev-erlang:before, .nerd-fonts-dev-erlang:before {
+  content: "\e7b1";
+}
+.nf-dev-extjs:before, .nerd-font-dev-extjs:before, .nerd-fonts-dev-extjs:before {
+  content: "\e78e";
+}
+.nf-dev-firebase:before, .nerd-font-dev-firebase:before, .nerd-fonts-dev-firebase:before {
+  content: "\e787";
+}
+.nf-dev-firefox:before, .nerd-font-dev-firefox:before, .nerd-fonts-dev-firefox:before {
+  content: "\e745";
+}
+.nf-dev-fsharp:before, .nerd-font-dev-fsharp:before, .nerd-fonts-dev-fsharp:before {
+  content: "\e7a7";
+}
+.nf-dev-ghost:before, .nerd-font-dev-ghost:before, .nerd-fonts-dev-ghost:before {
+  content: "\e71f";
+}
+.nf-dev-ghost_small:before, .nerd-font-dev-ghost_small:before, .nerd-fonts-dev-ghost_small:before {
+  content: "\e714";
+}
+.nf-dev-git:before, .nerd-font-dev-git:before, .nerd-fonts-dev-git:before {
+  content: "\e702";
+}
+.nf-dev-git_branch:before, .nerd-font-dev-git_branch:before, .nerd-fonts-dev-git_branch:before {
+  content: "\e725";
+}
+.nf-dev-git_commit:before, .nerd-font-dev-git_commit:before, .nerd-fonts-dev-git_commit:before {
+  content: "\e729";
+}
+.nf-dev-git_compare:before, .nerd-font-dev-git_compare:before, .nerd-fonts-dev-git_compare:before {
+  content: "\e728";
+}
+.nf-dev-git_merge:before, .nerd-font-dev-git_merge:before, .nerd-fonts-dev-git_merge:before {
+  content: "\e727";
+}
+.nf-dev-git_pull_request:before, .nerd-font-dev-git_pull_request:before, .nerd-fonts-dev-git_pull_request:before {
+  content: "\e726";
+}
+.nf-dev-github:before, .nerd-font-dev-github:before, .nerd-fonts-dev-github:before {
+  content: "\e70a";
+}
+.nf-dev-github_alt:before, .nerd-font-dev-github_alt:before, .nerd-fonts-dev-github_alt:before {
+  content: "\e708";
+}
+.nf-dev-github_badge:before, .nerd-font-dev-github_badge:before, .nerd-fonts-dev-github_badge:before {
+  content: "\e709";
+}
+.nf-dev-github_full:before, .nerd-font-dev-github_full:before, .nerd-fonts-dev-github_full:before {
+  content: "\e717";
+}
+.nf-dev-gnu:before, .nerd-font-dev-gnu:before, .nerd-fonts-dev-gnu:before {
+  content: "\e779";
+}
+.nf-dev-go:before, .nerd-font-dev-go:before, .nerd-fonts-dev-go:before {
+  content: "\e724";
+}
+.nf-dev-google_cloud_platform:before, .nerd-font-dev-google_cloud_platform:before, .nerd-fonts-dev-google_cloud_platform:before {
+  content: "\e7b2";
+}
+.nf-dev-google_drive:before, .nerd-font-dev-google_drive:before, .nerd-fonts-dev-google_drive:before {
+  content: "\e731";
+}
+.nf-dev-grails:before, .nerd-font-dev-grails:before, .nerd-fonts-dev-grails:before {
+  content: "\e7b3";
+}
+.nf-dev-groovy:before, .nerd-font-dev-groovy:before, .nerd-fonts-dev-groovy:before {
+  content: "\e775";
+}
+.nf-dev-grunt:before, .nerd-font-dev-grunt:before, .nerd-fonts-dev-grunt:before {
+  content: "\e74c";
+}
+.nf-dev-gulp:before, .nerd-font-dev-gulp:before, .nerd-fonts-dev-gulp:before {
+  content: "\e763";
+}
+.nf-dev-hackernews:before, .nerd-font-dev-hackernews:before, .nerd-fonts-dev-hackernews:before {
+  content: "\e71a";
+}
+.nf-dev-haskell:before, .nerd-font-dev-haskell:before, .nerd-fonts-dev-haskell:before {
+  content: "\e777";
+}
+.nf-dev-heroku:before, .nerd-font-dev-heroku:before, .nerd-fonts-dev-heroku:before {
+  content: "\e77b";
+}
+.nf-dev-html5:before, .nerd-font-dev-html5:before, .nerd-fonts-dev-html5:before {
+  content: "\e736";
+}
+.nf-dev-html5_3d_effects:before, .nerd-font-dev-html5_3d_effects:before, .nerd-fonts-dev-html5_3d_effects:before {
+  content: "\e735";
+}
+.nf-dev-html5_connectivity:before, .nerd-font-dev-html5_connectivity:before, .nerd-fonts-dev-html5_connectivity:before {
+  content: "\e734";
+}
+.nf-dev-html5_device_access:before, .nerd-font-dev-html5_device_access:before, .nerd-fonts-dev-html5_device_access:before {
+  content: "\e733";
+}
+.nf-dev-html5_multimedia:before, .nerd-font-dev-html5_multimedia:before, .nerd-fonts-dev-html5_multimedia:before {
+  content: "\e732";
+}
+.nf-dev-ie:before, .nerd-font-dev-ie:before, .nerd-fonts-dev-ie:before {
+  content: "\e744";
+}
+.nf-dev-illustrator:before, .nerd-font-dev-illustrator:before, .nerd-fonts-dev-illustrator:before {
+  content: "\e7b4";
+}
+.nf-dev-intellij:before, .nerd-font-dev-intellij:before, .nerd-fonts-dev-intellij:before {
+  content: "\e7b5";
+}
+.nf-dev-ionic:before, .nerd-font-dev-ionic:before, .nerd-fonts-dev-ionic:before {
+  content: "\e7a9";
+}
+.nf-dev-java:before, .nerd-font-dev-java:before, .nerd-fonts-dev-java:before {
+  content: "\e738";
+}
+.nf-dev-javascript:before, .nerd-font-dev-javascript:before, .nerd-fonts-dev-javascript:before {
+  content: "\e74e";
+}
+.nf-dev-javascript_badge:before, .nerd-font-dev-javascript_badge:before, .nerd-fonts-dev-javascript_badge:before {
+  content: "\e781";
+}
+.nf-dev-javascript_shield:before, .nerd-font-dev-javascript_shield:before, .nerd-fonts-dev-javascript_shield:before {
+  content: "\e74f";
+}
+.nf-dev-jekyll_small:before, .nerd-font-dev-jekyll_small:before, .nerd-fonts-dev-jekyll_small:before {
+  content: "\e70d";
+}
+.nf-dev-jenkins:before, .nerd-font-dev-jenkins:before, .nerd-fonts-dev-jenkins:before {
+  content: "\e767";
+}
+.nf-dev-jira:before, .nerd-font-dev-jira:before, .nerd-fonts-dev-jira:before {
+  content: "\e75c";
+}
+.nf-dev-joomla:before, .nerd-font-dev-joomla:before, .nerd-fonts-dev-joomla:before {
+  content: "\e741";
+}
+.nf-dev-jquery:before, .nerd-font-dev-jquery:before, .nerd-fonts-dev-jquery:before {
+  content: "\e750";
+}
+.nf-dev-jquery_ui:before, .nerd-font-dev-jquery_ui:before, .nerd-fonts-dev-jquery_ui:before {
+  content: "\e754";
+}
+.nf-dev-komodo:before, .nerd-font-dev-komodo:before, .nerd-fonts-dev-komodo:before {
+  content: "\e792";
+}
+.nf-dev-krakenjs:before, .nerd-font-dev-krakenjs:before, .nerd-fonts-dev-krakenjs:before {
+  content: "\e785";
+}
+.nf-dev-krakenjs_badge:before, .nerd-font-dev-krakenjs_badge:before, .nerd-fonts-dev-krakenjs_badge:before {
+  content: "\e784";
+}
+.nf-dev-laravel:before, .nerd-font-dev-laravel:before, .nerd-fonts-dev-laravel:before {
+  content: "\e73f";
+}
+.nf-dev-less:before, .nerd-font-dev-less:before, .nerd-fonts-dev-less:before {
+  content: "\e758";
+}
+.nf-dev-linux:before, .nerd-font-dev-linux:before, .nerd-fonts-dev-linux:before {
+  content: "\e712";
+}
+.nf-dev-magento:before, .nerd-font-dev-magento:before, .nerd-fonts-dev-magento:before {
+  content: "\e740";
+}
+.nf-dev-mailchimp:before, .nerd-font-dev-mailchimp:before, .nerd-fonts-dev-mailchimp:before {
+  content: "\e79a";
+}
+.nf-dev-markdown:before, .nerd-font-dev-markdown:before, .nerd-fonts-dev-markdown:before {
+  content: "\e73e";
+}
+.nf-dev-materializecss:before, .nerd-font-dev-materializecss:before, .nerd-fonts-dev-materializecss:before {
+  content: "\e7b6";
+}
+.nf-dev-meteor:before, .nerd-font-dev-meteor:before, .nerd-fonts-dev-meteor:before {
+  content: "\e7a5";
+}
+.nf-dev-meteorfull:before, .nerd-font-dev-meteorfull:before, .nerd-fonts-dev-meteorfull:before {
+  content: "\e7a6";
+}
+.nf-dev-mitlicence:before, .nerd-font-dev-mitlicence:before, .nerd-fonts-dev-mitlicence:before {
+  content: "\e78b";
+}
+.nf-dev-modernizr:before, .nerd-font-dev-modernizr:before, .nerd-fonts-dev-modernizr:before {
+  content: "\e720";
+}
+.nf-dev-mongodb:before, .nerd-font-dev-mongodb:before, .nerd-fonts-dev-mongodb:before {
+  content: "\e7a4";
+}
+.nf-dev-mootools:before, .nerd-font-dev-mootools:before, .nerd-fonts-dev-mootools:before {
+  content: "\e790";
+}
+.nf-dev-mootools_badge:before, .nerd-font-dev-mootools_badge:before, .nerd-fonts-dev-mootools_badge:before {
+  content: "\e78f";
+}
+.nf-dev-mozilla:before, .nerd-font-dev-mozilla:before, .nerd-fonts-dev-mozilla:before {
+  content: "\e786";
+}
+.nf-dev-msql_server:before, .nerd-font-dev-msql_server:before, .nerd-fonts-dev-msql_server:before {
+  content: "\e77c";
+}
+.nf-dev-mysql:before, .nerd-font-dev-mysql:before, .nerd-fonts-dev-mysql:before {
+  content: "\e704";
+}
+.nf-dev-nancy:before, .nerd-font-dev-nancy:before, .nerd-fonts-dev-nancy:before {
+  content: "\e766";
+}
+.nf-dev-netbeans:before, .nerd-font-dev-netbeans:before, .nerd-fonts-dev-netbeans:before {
+  content: "\e79b";
+}
+.nf-dev-netmagazine:before, .nerd-font-dev-netmagazine:before, .nerd-fonts-dev-netmagazine:before {
+  content: "\e72e";
+}
+.nf-dev-nginx:before, .nerd-font-dev-nginx:before, .nerd-fonts-dev-nginx:before {
+  content: "\e776";
+}
+.nf-dev-nodejs:before, .nerd-font-dev-nodejs:before, .nerd-fonts-dev-nodejs:before {
+  content: "\e719";
+}
+.nf-dev-nodejs_small:before, .nerd-font-dev-nodejs_small:before, .nerd-fonts-dev-nodejs_small:before {
+  content: "\e718";
+}
+.nf-dev-npm:before, .nerd-font-dev-npm:before, .nerd-fonts-dev-npm:before {
+  content: "\e71e";
+}
+.nf-dev-onedrive:before, .nerd-font-dev-onedrive:before, .nerd-fonts-dev-onedrive:before {
+  content: "\e762";
+}
+.nf-dev-openshift:before, .nerd-font-dev-openshift:before, .nerd-fonts-dev-openshift:before {
+  content: "\e7b7";
+}
+.nf-dev-opensource:before, .nerd-font-dev-opensource:before, .nerd-fonts-dev-opensource:before {
+  content: "\e771";
+}
+.nf-dev-opera:before, .nerd-font-dev-opera:before, .nerd-fonts-dev-opera:before {
+  content: "\e746";
+}
+.nf-dev-perl:before, .nerd-font-dev-perl:before, .nerd-fonts-dev-perl:before {
+  content: "\e769";
+}
+.nf-dev-phonegap:before, .nerd-font-dev-phonegap:before, .nerd-fonts-dev-phonegap:before {
+  content: "\e730";
+}
+.nf-dev-photoshop:before, .nerd-font-dev-photoshop:before, .nerd-fonts-dev-photoshop:before {
+  content: "\e7b8";
+}
+.nf-dev-php:before, .nerd-font-dev-php:before, .nerd-fonts-dev-php:before {
+  content: "\e73d";
+}
+.nf-dev-postgresql:before, .nerd-font-dev-postgresql:before, .nerd-fonts-dev-postgresql:before {
+  content: "\e76e";
+}
+.nf-dev-prolog:before, .nerd-font-dev-prolog:before, .nerd-fonts-dev-prolog:before {
+  content: "\e7a1";
+}
+.nf-dev-python:before, .nerd-font-dev-python:before, .nerd-fonts-dev-python:before {
+  content: "\e73c";
+}
+.nf-dev-rackspace:before, .nerd-font-dev-rackspace:before, .nerd-fonts-dev-rackspace:before {
+  content: "\e7b9";
+}
+.nf-dev-raphael:before, .nerd-font-dev-raphael:before, .nerd-fonts-dev-raphael:before {
+  content: "\e75f";
+}
+.nf-dev-rasberry_pi:before, .nerd-font-dev-rasberry_pi:before, .nerd-fonts-dev-rasberry_pi:before {
+  content: "\e722";
+}
+.nf-dev-react:before, .nerd-font-dev-react:before, .nerd-fonts-dev-react:before {
+  content: "\e7ba";
+}
+.nf-dev-redhat:before, .nerd-font-dev-redhat:before, .nerd-fonts-dev-redhat:before {
+  content: "\e7bb";
+}
+.nf-dev-redis:before, .nerd-font-dev-redis:before, .nerd-fonts-dev-redis:before {
+  content: "\e76d";
+}
+.nf-dev-requirejs:before, .nerd-font-dev-requirejs:before, .nerd-fonts-dev-requirejs:before {
+  content: "\e770";
+}
+.nf-dev-responsive:before, .nerd-font-dev-responsive:before, .nerd-fonts-dev-responsive:before {
+  content: "\e797";
+}
+.nf-dev-ruby:before, .nerd-font-dev-ruby:before, .nerd-fonts-dev-ruby:before {
+  content: "\e739";
+}
+.nf-dev-ruby_on_rails:before, .nerd-font-dev-ruby_on_rails:before, .nerd-fonts-dev-ruby_on_rails:before {
+  content: "\e73b";
+}
+.nf-dev-ruby_rough:before, .nerd-font-dev-ruby_rough:before, .nerd-fonts-dev-ruby_rough:before {
+  content: "\e791";
+}
+.nf-dev-rust:before, .nerd-font-dev-rust:before, .nerd-fonts-dev-rust:before {
+  content: "\e7a8";
+}
+.nf-dev-safari:before, .nerd-font-dev-safari:before, .nerd-fonts-dev-safari:before {
+  content: "\e748";
+}
+.nf-dev-sass:before, .nerd-font-dev-sass:before, .nerd-fonts-dev-sass:before {
+  content: "\e74b";
+}
+.nf-dev-scala:before, .nerd-font-dev-scala:before, .nerd-fonts-dev-scala:before {
+  content: "\e737";
+}
+.nf-dev-scriptcs:before, .nerd-font-dev-scriptcs:before, .nerd-fonts-dev-scriptcs:before {
+  content: "\e7bc";
+}
+.nf-dev-scrum:before, .nerd-font-dev-scrum:before, .nerd-fonts-dev-scrum:before {
+  content: "\e7a0";
+}
+.nf-dev-senchatouch:before, .nerd-font-dev-senchatouch:before, .nerd-fonts-dev-senchatouch:before {
+  content: "\e78c";
+}
+.nf-dev-sizzlejs:before, .nerd-font-dev-sizzlejs:before, .nerd-fonts-dev-sizzlejs:before {
+  content: "\e788";
+}
+.nf-dev-smashing_magazine:before, .nerd-font-dev-smashing_magazine:before, .nerd-fonts-dev-smashing_magazine:before {
+  content: "\e72d";
+}
+.nf-dev-snap_svg:before, .nerd-font-dev-snap_svg:before, .nerd-fonts-dev-snap_svg:before {
+  content: "\e75e";
+}
+.nf-dev-sqllite:before, .nerd-font-dev-sqllite:before, .nerd-fonts-dev-sqllite:before {
+  content: "\e7c4";
+}
+.nf-dev-stackoverflow:before, .nerd-font-dev-stackoverflow:before, .nerd-fonts-dev-stackoverflow:before {
+  content: "\e710";
+}
+.nf-dev-streamline:before, .nerd-font-dev-streamline:before, .nerd-fonts-dev-streamline:before {
+  content: "\e705";
+}
+.nf-dev-stylus:before, .nerd-font-dev-stylus:before, .nerd-fonts-dev-stylus:before {
+  content: "\e759";
+}
+.nf-dev-sublime:before, .nerd-font-dev-sublime:before, .nerd-fonts-dev-sublime:before {
+  content: "\e7aa";
+}
+.nf-dev-swift:before, .nerd-font-dev-swift:before, .nerd-fonts-dev-swift:before {
+  content: "\e755";
+}
+.nf-dev-symfony:before, .nerd-font-dev-symfony:before, .nerd-fonts-dev-symfony:before {
+  content: "\e756";
+}
+.nf-dev-symfony_badge:before, .nerd-font-dev-symfony_badge:before, .nerd-fonts-dev-symfony_badge:before {
+  content: "\e757";
+}
+.nf-dev-techcrunch:before, .nerd-font-dev-techcrunch:before, .nerd-fonts-dev-techcrunch:before {
+  content: "\e72c";
+}
+.nf-dev-terminal:before, .nerd-font-dev-terminal:before, .nerd-fonts-dev-terminal:before {
+  content: "\e795";
+}
+.nf-dev-terminal_badge:before, .nerd-font-dev-terminal_badge:before, .nerd-fonts-dev-terminal_badge:before {
+  content: "\e7a2";
+}
+.nf-dev-travis:before, .nerd-font-dev-travis:before, .nerd-fonts-dev-travis:before {
+  content: "\e77e";
+}
+.nf-dev-trello:before, .nerd-font-dev-trello:before, .nerd-fonts-dev-trello:before {
+  content: "\e75a";
+}
+.nf-dev-typo3:before, .nerd-font-dev-typo3:before, .nerd-fonts-dev-typo3:before {
+  content: "\e772";
+}
+.nf-dev-ubuntu:before, .nerd-font-dev-ubuntu:before, .nerd-fonts-dev-ubuntu:before {
+  content: "\e73a";
+}
+.nf-dev-uikit:before, .nerd-font-dev-uikit:before, .nerd-fonts-dev-uikit:before {
+  content: "\e773";
+}
+.nf-dev-unity_small:before, .nerd-font-dev-unity_small:before, .nerd-fonts-dev-unity_small:before {
+  content: "\e721";
+}
+.nf-dev-vim:before, .nerd-font-dev-vim:before, .nerd-fonts-dev-vim:before {
+  content: "\e7c5";
+}
+.nf-dev-visualstudio:before, .nerd-font-dev-visualstudio:before, .nerd-fonts-dev-visualstudio:before {
+  content: "\e70c";
+}
+.nf-dev-w3c:before, .nerd-font-dev-w3c:before, .nerd-fonts-dev-w3c:before {
+  content: "\e76c";
+}
+.nf-dev-webplatform:before, .nerd-font-dev-webplatform:before, .nerd-fonts-dev-webplatform:before {
+  content: "\e76f";
+}
+.nf-dev-windows:before, .nerd-font-dev-windows:before, .nerd-fonts-dev-windows:before {
+  content: "\e70f";
+}
+.nf-dev-wordpress:before, .nerd-font-dev-wordpress:before, .nerd-fonts-dev-wordpress:before {
+  content: "\e70b";
+}
+.nf-dev-yahoo:before, .nerd-font-dev-yahoo:before, .nerd-fonts-dev-yahoo:before {
+  content: "\e715";
+}
+.nf-dev-yahoo_small:before, .nerd-font-dev-yahoo_small:before, .nerd-fonts-dev-yahoo_small:before {
+  content: "\e72b";
+}
+.nf-dev-yeoman:before, .nerd-font-dev-yeoman:before, .nerd-fonts-dev-yeoman:before {
+  content: "\e77a";
+}
+.nf-dev-yii:before, .nerd-font-dev-yii:before, .nerd-fonts-dev-yii:before {
+  content: "\e782";
+}
+.nf-dev-zend:before, .nerd-font-dev-zend:before, .nerd-fonts-dev-zend:before {
+  content: "\e778";
+}
+.nf-fa-500px:before, .nerd-font-fa-500px:before, .nerd-fonts-fa-500px:before {
+  content: "\f26e";
+}
+.nf-fa-address_book:before, .nerd-font-fa-address_book:before, .nerd-fonts-fa-address_book:before {
+  content: "\f2b9";
+}
+.nf-fa-address_book_o:before, .nerd-font-fa-address_book_o:before, .nerd-fonts-fa-address_book_o:before {
+  content: "\f2ba";
+}
+.nf-fa-address_card:before, .nerd-font-fa-address_card:before, .nerd-fonts-fa-address_card:before {
+  content: "\f2bb";
+}
+.nf-fa-address_card_o:before, .nerd-font-fa-address_card_o:before, .nerd-fonts-fa-address_card_o:before {
+  content: "\f2bc";
+}
+.nf-fa-adjust:before, .nerd-font-fa-adjust:before, .nerd-fonts-fa-adjust:before {
+  content: "\f042";
+}
+.nf-fa-adn:before, .nerd-font-fa-adn:before, .nerd-fonts-fa-adn:before {
+  content: "\f170";
+}
+.nf-fa-align_center:before, .nerd-font-fa-align_center:before, .nerd-fonts-fa-align_center:before {
+  content: "\f037";
+}
+.nf-fa-align_justify:before, .nerd-font-fa-align_justify:before, .nerd-fonts-fa-align_justify:before {
+  content: "\f039";
+}
+.nf-fa-align_left:before, .nerd-font-fa-align_left:before, .nerd-fonts-fa-align_left:before {
+  content: "\f036";
+}
+.nf-fa-align_right:before, .nerd-font-fa-align_right:before, .nerd-fonts-fa-align_right:before {
+  content: "\f038";
+}
+.nf-fa-amazon:before, .nerd-font-fa-amazon:before, .nerd-fonts-fa-amazon:before {
+  content: "\f270";
+}
+.nf-fa-ambulance:before, .nerd-font-fa-ambulance:before, .nerd-fonts-fa-ambulance:before {
+  content: "\f0f9";
+}
+.nf-fa-american_sign_language_interpreting:before, .nerd-font-fa-american_sign_language_interpreting:before, .nerd-fonts-fa-american_sign_language_interpreting:before {
+  content: "\f2a3";
+}
+.nf-fa-anchor:before, .nerd-font-fa-anchor:before, .nerd-fonts-fa-anchor:before {
+  content: "\f13d";
+}
+.nf-fa-android:before, .nerd-font-fa-android:before, .nerd-fonts-fa-android:before {
+  content: "\f17b";
+}
+.nf-fa-angellist:before, .nerd-font-fa-angellist:before, .nerd-fonts-fa-angellist:before {
+  content: "\f209";
+}
+.nf-fa-angle_double_down:before, .nerd-font-fa-angle_double_down:before, .nerd-fonts-fa-angle_double_down:before {
+  content: "\f103";
+}
+.nf-fa-angle_double_left:before, .nerd-font-fa-angle_double_left:before, .nerd-fonts-fa-angle_double_left:before {
+  content: "\f100";
+}
+.nf-fa-angle_double_right:before, .nerd-font-fa-angle_double_right:before, .nerd-fonts-fa-angle_double_right:before {
+  content: "\f101";
+}
+.nf-fa-angle_double_up:before, .nerd-font-fa-angle_double_up:before, .nerd-fonts-fa-angle_double_up:before {
+  content: "\f102";
+}
+.nf-fa-angle_down:before, .nerd-font-fa-angle_down:before, .nerd-fonts-fa-angle_down:before {
+  content: "\f107";
+}
+.nf-fa-angle_left:before, .nerd-font-fa-angle_left:before, .nerd-fonts-fa-angle_left:before {
+  content: "\f104";
+}
+.nf-fa-angle_right:before, .nerd-font-fa-angle_right:before, .nerd-fonts-fa-angle_right:before {
+  content: "\f105";
+}
+.nf-fa-angle_up:before, .nerd-font-fa-angle_up:before, .nerd-fonts-fa-angle_up:before {
+  content: "\f106";
+}
+.nf-fa-apple:before, .nerd-font-fa-apple:before, .nerd-fonts-fa-apple:before {
+  content: "\f179";
+}
+.nf-fa-archive:before, .nerd-font-fa-archive:before, .nerd-fonts-fa-archive:before {
+  content: "\f187";
+}
+.nf-fa-area_chart:before, .nerd-font-fa-area_chart:before, .nerd-fonts-fa-area_chart:before {
+  content: "\f1fe";
+}
+.nf-fa-arrow_circle_down:before, .nerd-font-fa-arrow_circle_down:before, .nerd-fonts-fa-arrow_circle_down:before {
+  content: "\f0ab";
+}
+.nf-fa-arrow_circle_left:before, .nerd-font-fa-arrow_circle_left:before, .nerd-fonts-fa-arrow_circle_left:before {
+  content: "\f0a8";
+}
+.nf-fa-arrow_circle_o_down:before, .nerd-font-fa-arrow_circle_o_down:before, .nerd-fonts-fa-arrow_circle_o_down:before {
+  content: "\f01a";
+}
+.nf-fa-arrow_circle_o_left:before, .nerd-font-fa-arrow_circle_o_left:before, .nerd-fonts-fa-arrow_circle_o_left:before {
+  content: "\f190";
+}
+.nf-fa-arrow_circle_o_right:before, .nerd-font-fa-arrow_circle_o_right:before, .nerd-fonts-fa-arrow_circle_o_right:before {
+  content: "\f18e";
+}
+.nf-fa-arrow_circle_o_up:before, .nerd-font-fa-arrow_circle_o_up:before, .nerd-fonts-fa-arrow_circle_o_up:before {
+  content: "\f01b";
+}
+.nf-fa-arrow_circle_right:before, .nerd-font-fa-arrow_circle_right:before, .nerd-fonts-fa-arrow_circle_right:before {
+  content: "\f0a9";
+}
+.nf-fa-arrow_circle_up:before, .nerd-font-fa-arrow_circle_up:before, .nerd-fonts-fa-arrow_circle_up:before {
+  content: "\f0aa";
+}
+.nf-fa-arrow_down:before, .nerd-font-fa-arrow_down:before, .nerd-fonts-fa-arrow_down:before {
+  content: "\f063";
+}
+.nf-fa-arrow_left:before, .nerd-font-fa-arrow_left:before, .nerd-fonts-fa-arrow_left:before {
+  content: "\f060";
+}
+.nf-fa-arrow_right:before, .nerd-font-fa-arrow_right:before, .nerd-fonts-fa-arrow_right:before {
+  content: "\f061";
+}
+.nf-fa-arrow_up:before, .nerd-font-fa-arrow_up:before, .nerd-fonts-fa-arrow_up:before {
+  content: "\f062";
+}
+.nf-fa-arrows:before, .nerd-font-fa-arrows:before, .nerd-fonts-fa-arrows:before {
+  content: "\f047";
+}
+.nf-fa-arrows_alt:before, .nerd-font-fa-arrows_alt:before, .nerd-fonts-fa-arrows_alt:before {
+  content: "\f0b2";
+}
+.nf-fa-arrows_h:before, .nerd-font-fa-arrows_h:before, .nerd-fonts-fa-arrows_h:before {
+  content: "\f07e";
+}
+.nf-fa-arrows_v:before, .nerd-font-fa-arrows_v:before, .nerd-fonts-fa-arrows_v:before {
+  content: "\f07d";
+}
+.nf-fa-asl_interpreting:before, .nerd-font-fa-asl_interpreting:before, .nerd-fonts-fa-asl_interpreting:before {
+  content: "\f2a3";
+}
+.nf-fa-assistive_listening_systems:before, .nerd-font-fa-assistive_listening_systems:before, .nerd-fonts-fa-assistive_listening_systems:before {
+  content: "\f2a2";
+}
+.nf-fa-asterisk:before, .nerd-font-fa-asterisk:before, .nerd-fonts-fa-asterisk:before {
+  content: "\f069";
+}
+.nf-fa-at:before, .nerd-font-fa-at:before, .nerd-fonts-fa-at:before {
+  content: "\f1fa";
+}
+.nf-fa-audio_description:before, .nerd-font-fa-audio_description:before, .nerd-fonts-fa-audio_description:before {
+  content: "\f29e";
+}
+.nf-fa-automobile:before, .nerd-font-fa-automobile:before, .nerd-fonts-fa-automobile:before {
+  content: "\f1b9";
+}
+.nf-fa-backward:before, .nerd-font-fa-backward:before, .nerd-fonts-fa-backward:before {
+  content: "\f04a";
+}
+.nf-fa-balance_scale:before, .nerd-font-fa-balance_scale:before, .nerd-fonts-fa-balance_scale:before {
+  content: "\f24e";
+}
+.nf-fa-ban:before, .nerd-font-fa-ban:before, .nerd-fonts-fa-ban:before {
+  content: "\f05e";
+}
+.nf-fa-bandcamp:before, .nerd-font-fa-bandcamp:before, .nerd-fonts-fa-bandcamp:before {
+  content: "\f2d5";
+}
+.nf-fa-bank:before, .nerd-font-fa-bank:before, .nerd-fonts-fa-bank:before {
+  content: "\f19c";
+}
+.nf-fa-bar_chart:before, .nerd-font-fa-bar_chart:before, .nerd-fonts-fa-bar_chart:before {
+  content: "\f080";
+}
+.nf-fa-bar_chart_o:before, .nerd-font-fa-bar_chart_o:before, .nerd-fonts-fa-bar_chart_o:before {
+  content: "\f080";
+}
+.nf-fa-barcode:before, .nerd-font-fa-barcode:before, .nerd-fonts-fa-barcode:before {
+  content: "\f02a";
+}
+.nf-fa-bars:before, .nerd-font-fa-bars:before, .nerd-fonts-fa-bars:before {
+  content: "\f0c9";
+}
+.nf-fa-bath:before, .nerd-font-fa-bath:before, .nerd-fonts-fa-bath:before {
+  content: "\f2cd";
+}
+.nf-fa-bathtub:before, .nerd-font-fa-bathtub:before, .nerd-fonts-fa-bathtub:before {
+  content: "\f2cd";
+}
+.nf-fa-battery:before, .nerd-font-fa-battery:before, .nerd-fonts-fa-battery:before {
+  content: "\f240";
+}
+.nf-fa-battery_0:before, .nerd-font-fa-battery_0:before, .nerd-fonts-fa-battery_0:before {
+  content: "\f244";
+}
+.nf-fa-battery_1:before, .nerd-font-fa-battery_1:before, .nerd-fonts-fa-battery_1:before {
+  content: "\f243";
+}
+.nf-fa-battery_2:before, .nerd-font-fa-battery_2:before, .nerd-fonts-fa-battery_2:before {
+  content: "\f242";
+}
+.nf-fa-battery_3:before, .nerd-font-fa-battery_3:before, .nerd-fonts-fa-battery_3:before {
+  content: "\f241";
+}
+.nf-fa-battery_4:before, .nerd-font-fa-battery_4:before, .nerd-fonts-fa-battery_4:before {
+  content: "\f240";
+}
+.nf-fa-battery_empty:before, .nerd-font-fa-battery_empty:before, .nerd-fonts-fa-battery_empty:before {
+  content: "\f244";
+}
+.nf-fa-battery_full:before, .nerd-font-fa-battery_full:before, .nerd-fonts-fa-battery_full:before {
+  content: "\f240";
+}
+.nf-fa-battery_half:before, .nerd-font-fa-battery_half:before, .nerd-fonts-fa-battery_half:before {
+  content: "\f242";
+}
+.nf-fa-battery_quarter:before, .nerd-font-fa-battery_quarter:before, .nerd-fonts-fa-battery_quarter:before {
+  content: "\f243";
+}
+.nf-fa-battery_three_quarters:before, .nerd-font-fa-battery_three_quarters:before, .nerd-fonts-fa-battery_three_quarters:before {
+  content: "\f241";
+}
+.nf-fa-bed:before, .nerd-font-fa-bed:before, .nerd-fonts-fa-bed:before {
+  content: "\f236";
+}
+.nf-fa-beer:before, .nerd-font-fa-beer:before, .nerd-fonts-fa-beer:before {
+  content: "\f0fc";
+}
+.nf-fa-behance:before, .nerd-font-fa-behance:before, .nerd-fonts-fa-behance:before {
+  content: "\f1b4";
+}
+.nf-fa-behance_square:before, .nerd-font-fa-behance_square:before, .nerd-fonts-fa-behance_square:before {
+  content: "\f1b5";
+}
+.nf-fa-bell:before, .nerd-font-fa-bell:before, .nerd-fonts-fa-bell:before {
+  content: "\f0f3";
+}
+.nf-fa-bell_o:before, .nerd-font-fa-bell_o:before, .nerd-fonts-fa-bell_o:before {
+  content: "\f0a2";
+}
+.nf-fa-bell_slash:before, .nerd-font-fa-bell_slash:before, .nerd-fonts-fa-bell_slash:before {
+  content: "\f1f6";
+}
+.nf-fa-bell_slash_o:before, .nerd-font-fa-bell_slash_o:before, .nerd-fonts-fa-bell_slash_o:before {
+  content: "\f1f7";
+}
+.nf-fa-bicycle:before, .nerd-font-fa-bicycle:before, .nerd-fonts-fa-bicycle:before {
+  content: "\f206";
+}
+.nf-fa-binoculars:before, .nerd-font-fa-binoculars:before, .nerd-fonts-fa-binoculars:before {
+  content: "\f1e5";
+}
+.nf-fa-birthday_cake:before, .nerd-font-fa-birthday_cake:before, .nerd-fonts-fa-birthday_cake:before {
+  content: "\f1fd";
+}
+.nf-fa-bitbucket:before, .nerd-font-fa-bitbucket:before, .nerd-fonts-fa-bitbucket:before {
+  content: "\f171";
+}
+.nf-fa-bitbucket_square:before, .nerd-font-fa-bitbucket_square:before, .nerd-fonts-fa-bitbucket_square:before {
+  content: "\f172";
+}
+.nf-fa-bitcoin:before, .nerd-font-fa-bitcoin:before, .nerd-fonts-fa-bitcoin:before {
+  content: "\f15a";
+}
+.nf-fa-black_tie:before, .nerd-font-fa-black_tie:before, .nerd-fonts-fa-black_tie:before {
+  content: "\f27e";
+}
+.nf-fa-blind:before, .nerd-font-fa-blind:before, .nerd-fonts-fa-blind:before {
+  content: "\f29d";
+}
+.nf-fa-bluetooth:before, .nerd-font-fa-bluetooth:before, .nerd-fonts-fa-bluetooth:before {
+  content: "\f293";
+}
+.nf-fa-bluetooth_b:before, .nerd-font-fa-bluetooth_b:before, .nerd-fonts-fa-bluetooth_b:before {
+  content: "\f294";
+}
+.nf-fa-bold:before, .nerd-font-fa-bold:before, .nerd-fonts-fa-bold:before {
+  content: "\f032";
+}
+.nf-fa-bolt:before, .nerd-font-fa-bolt:before, .nerd-fonts-fa-bolt:before {
+  content: "\f0e7";
+}
+.nf-fa-bomb:before, .nerd-font-fa-bomb:before, .nerd-fonts-fa-bomb:before {
+  content: "\f1e2";
+}
+.nf-fa-book:before, .nerd-font-fa-book:before, .nerd-fonts-fa-book:before {
+  content: "\f02d";
+}
+.nf-fa-bookmark:before, .nerd-font-fa-bookmark:before, .nerd-fonts-fa-bookmark:before {
+  content: "\f02e";
+}
+.nf-fa-bookmark_o:before, .nerd-font-fa-bookmark_o:before, .nerd-fonts-fa-bookmark_o:before {
+  content: "\f097";
+}
+.nf-fa-braille:before, .nerd-font-fa-braille:before, .nerd-fonts-fa-braille:before {
+  content: "\f2a1";
+}
+.nf-fa-briefcase:before, .nerd-font-fa-briefcase:before, .nerd-fonts-fa-briefcase:before {
+  content: "\f0b1";
+}
+.nf-fa-btc:before, .nerd-font-fa-btc:before, .nerd-fonts-fa-btc:before {
+  content: "\f15a";
+}
+.nf-fa-bug:before, .nerd-font-fa-bug:before, .nerd-fonts-fa-bug:before {
+  content: "\f188";
+}
+.nf-fa-building:before, .nerd-font-fa-building:before, .nerd-fonts-fa-building:before {
+  content: "\f1ad";
+}
+.nf-fa-building_o:before, .nerd-font-fa-building_o:before, .nerd-fonts-fa-building_o:before {
+  content: "\f0f7";
+}
+.nf-fa-bullhorn:before, .nerd-font-fa-bullhorn:before, .nerd-fonts-fa-bullhorn:before {
+  content: "\f0a1";
+}
+.nf-fa-bullseye:before, .nerd-font-fa-bullseye:before, .nerd-fonts-fa-bullseye:before {
+  content: "\f140";
+}
+.nf-fa-bus:before, .nerd-font-fa-bus:before, .nerd-fonts-fa-bus:before {
+  content: "\f207";
+}
+.nf-fa-buysellads:before, .nerd-font-fa-buysellads:before, .nerd-fonts-fa-buysellads:before {
+  content: "\f20d";
+}
+.nf-fa-cab:before, .nerd-font-fa-cab:before, .nerd-fonts-fa-cab:before {
+  content: "\f1ba";
+}
+.nf-fa-calculator:before, .nerd-font-fa-calculator:before, .nerd-fonts-fa-calculator:before {
+  content: "\f1ec";
+}
+.nf-fa-calendar:before, .nerd-font-fa-calendar:before, .nerd-fonts-fa-calendar:before {
+  content: "\f073";
+}
+.nf-fa-calendar_check_o:before, .nerd-font-fa-calendar_check_o:before, .nerd-fonts-fa-calendar_check_o:before {
+  content: "\f274";
+}
+.nf-fa-calendar_minus_o:before, .nerd-font-fa-calendar_minus_o:before, .nerd-fonts-fa-calendar_minus_o:before {
+  content: "\f272";
+}
+.nf-fa-calendar_o:before, .nerd-font-fa-calendar_o:before, .nerd-fonts-fa-calendar_o:before {
+  content: "\f133";
+}
+.nf-fa-calendar_plus_o:before, .nerd-font-fa-calendar_plus_o:before, .nerd-fonts-fa-calendar_plus_o:before {
+  content: "\f271";
+}
+.nf-fa-calendar_times_o:before, .nerd-font-fa-calendar_times_o:before, .nerd-fonts-fa-calendar_times_o:before {
+  content: "\f273";
+}
+.nf-fa-camera:before, .nerd-font-fa-camera:before, .nerd-fonts-fa-camera:before {
+  content: "\f030";
+}
+.nf-fa-camera_retro:before, .nerd-font-fa-camera_retro:before, .nerd-fonts-fa-camera_retro:before {
+  content: "\f083";
+}
+.nf-fa-car:before, .nerd-font-fa-car:before, .nerd-fonts-fa-car:before {
+  content: "\f1b9";
+}
+.nf-fa-caret_down:before, .nerd-font-fa-caret_down:before, .nerd-fonts-fa-caret_down:before {
+  content: "\f0d7";
+}
+.nf-fa-caret_left:before, .nerd-font-fa-caret_left:before, .nerd-fonts-fa-caret_left:before {
+  content: "\f0d9";
+}
+.nf-fa-caret_right:before, .nerd-font-fa-caret_right:before, .nerd-fonts-fa-caret_right:before {
+  content: "\f0da";
+}
+.nf-fa-caret_square_o_down:before, .nerd-font-fa-caret_square_o_down:before, .nerd-fonts-fa-caret_square_o_down:before {
+  content: "\f150";
+}
+.nf-fa-caret_square_o_left:before, .nerd-font-fa-caret_square_o_left:before, .nerd-fonts-fa-caret_square_o_left:before {
+  content: "\f191";
+}
+.nf-fa-caret_square_o_right:before, .nerd-font-fa-caret_square_o_right:before, .nerd-fonts-fa-caret_square_o_right:before {
+  content: "\f152";
+}
+.nf-fa-caret_square_o_up:before, .nerd-font-fa-caret_square_o_up:before, .nerd-fonts-fa-caret_square_o_up:before {
+  content: "\f151";
+}
+.nf-fa-caret_up:before, .nerd-font-fa-caret_up:before, .nerd-fonts-fa-caret_up:before {
+  content: "\f0d8";
+}
+.nf-fa-cart_arrow_down:before, .nerd-font-fa-cart_arrow_down:before, .nerd-fonts-fa-cart_arrow_down:before {
+  content: "\f218";
+}
+.nf-fa-cart_plus:before, .nerd-font-fa-cart_plus:before, .nerd-fonts-fa-cart_plus:before {
+  content: "\f217";
+}
+.nf-fa-cc:before, .nerd-font-fa-cc:before, .nerd-fonts-fa-cc:before {
+  content: "\f20a";
+}
+.nf-fa-cc_amex:before, .nerd-font-fa-cc_amex:before, .nerd-fonts-fa-cc_amex:before {
+  content: "\f1f3";
+}
+.nf-fa-cc_diners_club:before, .nerd-font-fa-cc_diners_club:before, .nerd-fonts-fa-cc_diners_club:before {
+  content: "\f24c";
+}
+.nf-fa-cc_discover:before, .nerd-font-fa-cc_discover:before, .nerd-fonts-fa-cc_discover:before {
+  content: "\f1f2";
+}
+.nf-fa-cc_jcb:before, .nerd-font-fa-cc_jcb:before, .nerd-fonts-fa-cc_jcb:before {
+  content: "\f24b";
+}
+.nf-fa-cc_mastercard:before, .nerd-font-fa-cc_mastercard:before, .nerd-fonts-fa-cc_mastercard:before {
+  content: "\f1f1";
+}
+.nf-fa-cc_paypal:before, .nerd-font-fa-cc_paypal:before, .nerd-fonts-fa-cc_paypal:before {
+  content: "\f1f4";
+}
+.nf-fa-cc_stripe:before, .nerd-font-fa-cc_stripe:before, .nerd-fonts-fa-cc_stripe:before {
+  content: "\f1f5";
+}
+.nf-fa-cc_visa:before, .nerd-font-fa-cc_visa:before, .nerd-fonts-fa-cc_visa:before {
+  content: "\f1f0";
+}
+.nf-fa-certificate:before, .nerd-font-fa-certificate:before, .nerd-fonts-fa-certificate:before {
+  content: "\f0a3";
+}
+.nf-fa-chain:before, .nerd-font-fa-chain:before, .nerd-fonts-fa-chain:before {
+  content: "\f0c1";
+}
+.nf-fa-chain_broken:before, .nerd-font-fa-chain_broken:before, .nerd-fonts-fa-chain_broken:before {
+  content: "\f127";
+}
+.nf-fa-check:before, .nerd-font-fa-check:before, .nerd-fonts-fa-check:before {
+  content: "\f00c";
+}
+.nf-fa-check_circle:before, .nerd-font-fa-check_circle:before, .nerd-fonts-fa-check_circle:before {
+  content: "\f058";
+}
+.nf-fa-check_circle_o:before, .nerd-font-fa-check_circle_o:before, .nerd-fonts-fa-check_circle_o:before {
+  content: "\f05d";
+}
+.nf-fa-check_square:before, .nerd-font-fa-check_square:before, .nerd-fonts-fa-check_square:before {
+  content: "\f14a";
+}
+.nf-fa-check_square_o:before, .nerd-font-fa-check_square_o:before, .nerd-fonts-fa-check_square_o:before {
+  content: "\f046";
+}
+.nf-fa-chevron_circle_down:before, .nerd-font-fa-chevron_circle_down:before, .nerd-fonts-fa-chevron_circle_down:before {
+  content: "\f13a";
+}
+.nf-fa-chevron_circle_left:before, .nerd-font-fa-chevron_circle_left:before, .nerd-fonts-fa-chevron_circle_left:before {
+  content: "\f137";
+}
+.nf-fa-chevron_circle_right:before, .nerd-font-fa-chevron_circle_right:before, .nerd-fonts-fa-chevron_circle_right:before {
+  content: "\f138";
+}
+.nf-fa-chevron_circle_up:before, .nerd-font-fa-chevron_circle_up:before, .nerd-fonts-fa-chevron_circle_up:before {
+  content: "\f139";
+}
+.nf-fa-chevron_down:before, .nerd-font-fa-chevron_down:before, .nerd-fonts-fa-chevron_down:before {
+  content: "\f078";
+}
+.nf-fa-chevron_left:before, .nerd-font-fa-chevron_left:before, .nerd-fonts-fa-chevron_left:before {
+  content: "\f053";
+}
+.nf-fa-chevron_right:before, .nerd-font-fa-chevron_right:before, .nerd-fonts-fa-chevron_right:before {
+  content: "\f054";
+}
+.nf-fa-chevron_up:before, .nerd-font-fa-chevron_up:before, .nerd-fonts-fa-chevron_up:before {
+  content: "\f077";
+}
+.nf-fa-child:before, .nerd-font-fa-child:before, .nerd-fonts-fa-child:before {
+  content: "\f1ae";
+}
+.nf-fa-chrome:before, .nerd-font-fa-chrome:before, .nerd-fonts-fa-chrome:before {
+  content: "\f268";
+}
+.nf-fa-circle:before, .nerd-font-fa-circle:before, .nerd-fonts-fa-circle:before {
+  content: "\f111";
+}
+.nf-fa-circle_o:before, .nerd-font-fa-circle_o:before, .nerd-fonts-fa-circle_o:before {
+  content: "\f10c";
+}
+.nf-fa-circle_o_notch:before, .nerd-font-fa-circle_o_notch:before, .nerd-fonts-fa-circle_o_notch:before {
+  content: "\f1ce";
+}
+.nf-fa-circle_thin:before, .nerd-font-fa-circle_thin:before, .nerd-fonts-fa-circle_thin:before {
+  content: "\f1db";
+}
+.nf-fa-clipboard:before, .nerd-font-fa-clipboard:before, .nerd-fonts-fa-clipboard:before {
+  content: "\f0ea";
+}
+.nf-fa-clock_o:before, .nerd-font-fa-clock_o:before, .nerd-fonts-fa-clock_o:before {
+  content: "\f017";
+}
+.nf-fa-clone:before, .nerd-font-fa-clone:before, .nerd-fonts-fa-clone:before {
+  content: "\f24d";
+}
+.nf-fa-close:before, .nerd-font-fa-close:before, .nerd-fonts-fa-close:before {
+  content: "\f00d";
+}
+.nf-fa-cloud:before, .nerd-font-fa-cloud:before, .nerd-fonts-fa-cloud:before {
+  content: "\f0c2";
+}
+.nf-fa-cloud_download:before, .nerd-font-fa-cloud_download:before, .nerd-fonts-fa-cloud_download:before {
+  content: "\f0ed";
+}
+.nf-fa-cloud_upload:before, .nerd-font-fa-cloud_upload:before, .nerd-fonts-fa-cloud_upload:before {
+  content: "\f0ee";
+}
+.nf-fa-cny:before, .nerd-font-fa-cny:before, .nerd-fonts-fa-cny:before {
+  content: "\f157";
+}
+.nf-fa-code:before, .nerd-font-fa-code:before, .nerd-fonts-fa-code:before {
+  content: "\f121";
+}
+.nf-fa-code_fork:before, .nerd-font-fa-code_fork:before, .nerd-fonts-fa-code_fork:before {
+  content: "\f126";
+}
+.nf-fa-codepen:before, .nerd-font-fa-codepen:before, .nerd-fonts-fa-codepen:before {
+  content: "\f1cb";
+}
+.nf-fa-codiepie:before, .nerd-font-fa-codiepie:before, .nerd-fonts-fa-codiepie:before {
+  content: "\f284";
+}
+.nf-fa-coffee:before, .nerd-font-fa-coffee:before, .nerd-fonts-fa-coffee:before {
+  content: "\f0f4";
+}
+.nf-fa-cog:before, .nerd-font-fa-cog:before, .nerd-fonts-fa-cog:before {
+  content: "\f013";
+}
+.nf-fa-cogs:before, .nerd-font-fa-cogs:before, .nerd-fonts-fa-cogs:before {
+  content: "\f085";
+}
+.nf-fa-columns:before, .nerd-font-fa-columns:before, .nerd-fonts-fa-columns:before {
+  content: "\f0db";
+}
+.nf-fa-comment:before, .nerd-font-fa-comment:before, .nerd-fonts-fa-comment:before {
+  content: "\f075";
+}
+.nf-fa-comment_o:before, .nerd-font-fa-comment_o:before, .nerd-fonts-fa-comment_o:before {
+  content: "\f0e5";
+}
+.nf-fa-commenting:before, .nerd-font-fa-commenting:before, .nerd-fonts-fa-commenting:before {
+  content: "\f27a";
+}
+.nf-fa-commenting_o:before, .nerd-font-fa-commenting_o:before, .nerd-fonts-fa-commenting_o:before {
+  content: "\f27b";
+}
+.nf-fa-comments:before, .nerd-font-fa-comments:before, .nerd-fonts-fa-comments:before {
+  content: "\f086";
+}
+.nf-fa-comments_o:before, .nerd-font-fa-comments_o:before, .nerd-fonts-fa-comments_o:before {
+  content: "\f0e6";
+}
+.nf-fa-compass:before, .nerd-font-fa-compass:before, .nerd-fonts-fa-compass:before {
+  content: "\f14e";
+}
+.nf-fa-compress:before, .nerd-font-fa-compress:before, .nerd-fonts-fa-compress:before {
+  content: "\f066";
+}
+.nf-fa-connectdevelop:before, .nerd-font-fa-connectdevelop:before, .nerd-fonts-fa-connectdevelop:before {
+  content: "\f20e";
+}
+.nf-fa-contao:before, .nerd-font-fa-contao:before, .nerd-fonts-fa-contao:before {
+  content: "\f26d";
+}
+.nf-fa-copy:before, .nerd-font-fa-copy:before, .nerd-fonts-fa-copy:before {
+  content: "\f0c5";
+}
+.nf-fa-copyright:before, .nerd-font-fa-copyright:before, .nerd-fonts-fa-copyright:before {
+  content: "\f1f9";
+}
+.nf-fa-creative_commons:before, .nerd-font-fa-creative_commons:before, .nerd-fonts-fa-creative_commons:before {
+  content: "\f25e";
+}
+.nf-fa-credit_card:before, .nerd-font-fa-credit_card:before, .nerd-fonts-fa-credit_card:before {
+  content: "\f09d";
+}
+.nf-fa-credit_card_alt:before, .nerd-font-fa-credit_card_alt:before, .nerd-fonts-fa-credit_card_alt:before {
+  content: "\f283";
+}
+.nf-fa-crop:before, .nerd-font-fa-crop:before, .nerd-fonts-fa-crop:before {
+  content: "\f125";
+}
+.nf-fa-crosshairs:before, .nerd-font-fa-crosshairs:before, .nerd-fonts-fa-crosshairs:before {
+  content: "\f05b";
+}
+.nf-fa-css3:before, .nerd-font-fa-css3:before, .nerd-fonts-fa-css3:before {
+  content: "\f13c";
+}
+.nf-fa-cube:before, .nerd-font-fa-cube:before, .nerd-fonts-fa-cube:before {
+  content: "\f1b2";
+}
+.nf-fa-cubes:before, .nerd-font-fa-cubes:before, .nerd-fonts-fa-cubes:before {
+  content: "\f1b3";
+}
+.nf-fa-cut:before, .nerd-font-fa-cut:before, .nerd-fonts-fa-cut:before {
+  content: "\f0c4";
+}
+.nf-fa-cutlery:before, .nerd-font-fa-cutlery:before, .nerd-fonts-fa-cutlery:before {
+  content: "\f0f5";
+}
+.nf-fa-dashboard:before, .nerd-font-fa-dashboard:before, .nerd-fonts-fa-dashboard:before {
+  content: "\f0e4";
+}
+.nf-fa-dashcube:before, .nerd-font-fa-dashcube:before, .nerd-fonts-fa-dashcube:before {
+  content: "\f210";
+}
+.nf-fa-database:before, .nerd-font-fa-database:before, .nerd-fonts-fa-database:before {
+  content: "\f1c0";
+}
+.nf-fa-deaf:before, .nerd-font-fa-deaf:before, .nerd-fonts-fa-deaf:before {
+  content: "\f2a4";
+}
+.nf-fa-deafness:before, .nerd-font-fa-deafness:before, .nerd-fonts-fa-deafness:before {
+  content: "\f2a4";
+}
+.nf-fa-dedent:before, .nerd-font-fa-dedent:before, .nerd-fonts-fa-dedent:before {
+  content: "\f03b";
+}
+.nf-fa-delicious:before, .nerd-font-fa-delicious:before, .nerd-fonts-fa-delicious:before {
+  content: "\f1a5";
+}
+.nf-fa-desktop:before, .nerd-font-fa-desktop:before, .nerd-fonts-fa-desktop:before {
+  content: "\f108";
+}
+.nf-fa-deviantart:before, .nerd-font-fa-deviantart:before, .nerd-fonts-fa-deviantart:before {
+  content: "\f1bd";
+}
+.nf-fa-diamond:before, .nerd-font-fa-diamond:before, .nerd-fonts-fa-diamond:before {
+  content: "\f219";
+}
+.nf-fa-digg:before, .nerd-font-fa-digg:before, .nerd-fonts-fa-digg:before {
+  content: "\f1a6";
+}
+.nf-fa-dollar:before, .nerd-font-fa-dollar:before, .nerd-fonts-fa-dollar:before {
+  content: "\f155";
+}
+.nf-fa-dot_circle_o:before, .nerd-font-fa-dot_circle_o:before, .nerd-fonts-fa-dot_circle_o:before {
+  content: "\f192";
+}
+.nf-fa-download:before, .nerd-font-fa-download:before, .nerd-fonts-fa-download:before {
+  content: "\f019";
+}
+.nf-fa-dribbble:before, .nerd-font-fa-dribbble:before, .nerd-fonts-fa-dribbble:before {
+  content: "\f17d";
+}
+.nf-fa-drivers_license:before, .nerd-font-fa-drivers_license:before, .nerd-fonts-fa-drivers_license:before {
+  content: "\f2c2";
+}
+.nf-fa-drivers_license_o:before, .nerd-font-fa-drivers_license_o:before, .nerd-fonts-fa-drivers_license_o:before {
+  content: "\f2c3";
+}
+.nf-fa-dropbox:before, .nerd-font-fa-dropbox:before, .nerd-fonts-fa-dropbox:before {
+  content: "\f16b";
+}
+.nf-fa-drupal:before, .nerd-font-fa-drupal:before, .nerd-fonts-fa-drupal:before {
+  content: "\f1a9";
+}
+.nf-fa-edge:before, .nerd-font-fa-edge:before, .nerd-fonts-fa-edge:before {
+  content: "\f282";
+}
+.nf-fa-edit:before, .nerd-font-fa-edit:before, .nerd-fonts-fa-edit:before {
+  content: "\f044";
+}
+.nf-fa-eercast:before, .nerd-font-fa-eercast:before, .nerd-fonts-fa-eercast:before {
+  content: "\f2da";
+}
+.nf-fa-eject:before, .nerd-font-fa-eject:before, .nerd-fonts-fa-eject:before {
+  content: "\f052";
+}
+.nf-fa-ellipsis_h:before, .nerd-font-fa-ellipsis_h:before, .nerd-fonts-fa-ellipsis_h:before {
+  content: "\f141";
+}
+.nf-fa-ellipsis_v:before, .nerd-font-fa-ellipsis_v:before, .nerd-fonts-fa-ellipsis_v:before {
+  content: "\f142";
+}
+.nf-fa-empire:before, .nerd-font-fa-empire:before, .nerd-fonts-fa-empire:before {
+  content: "\f1d1";
+}
+.nf-fa-envelope:before, .nerd-font-fa-envelope:before, .nerd-fonts-fa-envelope:before {
+  content: "\f0e0";
+}
+.nf-fa-envelope_o:before, .nerd-font-fa-envelope_o:before, .nerd-fonts-fa-envelope_o:before {
+  content: "\f003";
+}
+.nf-fa-envelope_open:before, .nerd-font-fa-envelope_open:before, .nerd-fonts-fa-envelope_open:before {
+  content: "\f2b6";
+}
+.nf-fa-envelope_open_o:before, .nerd-font-fa-envelope_open_o:before, .nerd-fonts-fa-envelope_open_o:before {
+  content: "\f2b7";
+}
+.nf-fa-envelope_square:before, .nerd-font-fa-envelope_square:before, .nerd-fonts-fa-envelope_square:before {
+  content: "\f199";
+}
+.nf-fa-envira:before, .nerd-font-fa-envira:before, .nerd-fonts-fa-envira:before {
+  content: "\f299";
+}
+.nf-fa-eraser:before, .nerd-font-fa-eraser:before, .nerd-fonts-fa-eraser:before {
+  content: "\f12d";
+}
+.nf-fa-etsy:before, .nerd-font-fa-etsy:before, .nerd-fonts-fa-etsy:before {
+  content: "\f2d7";
+}
+.nf-fa-eur:before, .nerd-font-fa-eur:before, .nerd-fonts-fa-eur:before {
+  content: "\f153";
+}
+.nf-fa-euro:before, .nerd-font-fa-euro:before, .nerd-fonts-fa-euro:before {
+  content: "\f153";
+}
+.nf-fa-exchange:before, .nerd-font-fa-exchange:before, .nerd-fonts-fa-exchange:before {
+  content: "\f0ec";
+}
+.nf-fa-exclamation:before, .nerd-font-fa-exclamation:before, .nerd-fonts-fa-exclamation:before {
+  content: "\f12a";
+}
+.nf-fa-exclamation_circle:before, .nerd-font-fa-exclamation_circle:before, .nerd-fonts-fa-exclamation_circle:before {
+  content: "\f06a";
+}
+.nf-fa-exclamation_triangle:before, .nerd-font-fa-exclamation_triangle:before, .nerd-fonts-fa-exclamation_triangle:before {
+  content: "\f071";
+}
+.nf-fa-expand:before, .nerd-font-fa-expand:before, .nerd-fonts-fa-expand:before {
+  content: "\f065";
+}
+.nf-fa-expeditedssl:before, .nerd-font-fa-expeditedssl:before, .nerd-fonts-fa-expeditedssl:before {
+  content: "\f23e";
+}
+.nf-fa-external_link:before, .nerd-font-fa-external_link:before, .nerd-fonts-fa-external_link:before {
+  content: "\f08e";
+}
+.nf-fa-external_link_square:before, .nerd-font-fa-external_link_square:before, .nerd-fonts-fa-external_link_square:before {
+  content: "\f14c";
+}
+.nf-fa-eye:before, .nerd-font-fa-eye:before, .nerd-fonts-fa-eye:before {
+  content: "\f06e";
+}
+.nf-fa-eye_slash:before, .nerd-font-fa-eye_slash:before, .nerd-fonts-fa-eye_slash:before {
+  content: "\f070";
+}
+.nf-fa-eyedropper:before, .nerd-font-fa-eyedropper:before, .nerd-fonts-fa-eyedropper:before {
+  content: "\f1fb";
+}
+.nf-fa-fa:before, .nerd-font-fa-fa:before, .nerd-fonts-fa-fa:before {
+  content: "\f2b4";
+}
+.nf-fa-facebook:before, .nerd-font-fa-facebook:before, .nerd-fonts-fa-facebook:before {
+  content: "\f09a";
+}
+.nf-fa-facebook_f:before, .nerd-font-fa-facebook_f:before, .nerd-fonts-fa-facebook_f:before {
+  content: "\f09a";
+}
+.nf-fa-facebook_official:before, .nerd-font-fa-facebook_official:before, .nerd-fonts-fa-facebook_official:before {
+  content: "\f230";
+}
+.nf-fa-facebook_square:before, .nerd-font-fa-facebook_square:before, .nerd-fonts-fa-facebook_square:before {
+  content: "\f082";
+}
+.nf-fa-fast_backward:before, .nerd-font-fa-fast_backward:before, .nerd-fonts-fa-fast_backward:before {
+  content: "\f049";
+}
+.nf-fa-fast_forward:before, .nerd-font-fa-fast_forward:before, .nerd-fonts-fa-fast_forward:before {
+  content: "\f050";
+}
+.nf-fa-fax:before, .nerd-font-fa-fax:before, .nerd-fonts-fa-fax:before {
+  content: "\f1ac";
+}
+.nf-fa-feed:before, .nerd-font-fa-feed:before, .nerd-fonts-fa-feed:before {
+  content: "\f09e";
+}
+.nf-fa-female:before, .nerd-font-fa-female:before, .nerd-fonts-fa-female:before {
+  content: "\f182";
+}
+.nf-fa-fighter_jet:before, .nerd-font-fa-fighter_jet:before, .nerd-fonts-fa-fighter_jet:before {
+  content: "\f0fb";
+}
+.nf-fa-file:before, .nerd-font-fa-file:before, .nerd-fonts-fa-file:before {
+  content: "\f15b";
+}
+.nf-fa-file_archive_o:before, .nerd-font-fa-file_archive_o:before, .nerd-fonts-fa-file_archive_o:before {
+  content: "\f1c6";
+}
+.nf-fa-file_audio_o:before, .nerd-font-fa-file_audio_o:before, .nerd-fonts-fa-file_audio_o:before {
+  content: "\f1c7";
+}
+.nf-fa-file_code_o:before, .nerd-font-fa-file_code_o:before, .nerd-fonts-fa-file_code_o:before {
+  content: "\f1c9";
+}
+.nf-fa-file_excel_o:before, .nerd-font-fa-file_excel_o:before, .nerd-fonts-fa-file_excel_o:before {
+  content: "\f1c3";
+}
+.nf-fa-file_image_o:before, .nerd-font-fa-file_image_o:before, .nerd-fonts-fa-file_image_o:before {
+  content: "\f1c5";
+}
+.nf-fa-file_movie_o:before, .nerd-font-fa-file_movie_o:before, .nerd-fonts-fa-file_movie_o:before {
+  content: "\f1c8";
+}
+.nf-fa-file_o:before, .nerd-font-fa-file_o:before, .nerd-fonts-fa-file_o:before {
+  content: "\f016";
+}
+.nf-fa-file_pdf_o:before, .nerd-font-fa-file_pdf_o:before, .nerd-fonts-fa-file_pdf_o:before {
+  content: "\f1c1";
+}
+.nf-fa-file_photo_o:before, .nerd-font-fa-file_photo_o:before, .nerd-fonts-fa-file_photo_o:before {
+  content: "\f1c5";
+}
+.nf-fa-file_picture_o:before, .nerd-font-fa-file_picture_o:before, .nerd-fonts-fa-file_picture_o:before {
+  content: "\f1c5";
+}
+.nf-fa-file_powerpoint_o:before, .nerd-font-fa-file_powerpoint_o:before, .nerd-fonts-fa-file_powerpoint_o:before {
+  content: "\f1c4";
+}
+.nf-fa-file_sound_o:before, .nerd-font-fa-file_sound_o:before, .nerd-fonts-fa-file_sound_o:before {
+  content: "\f1c7";
+}
+.nf-fa-file_text:before, .nerd-font-fa-file_text:before, .nerd-fonts-fa-file_text:before {
+  content: "\f15c";
+}
+.nf-fa-file_text_o:before, .nerd-font-fa-file_text_o:before, .nerd-fonts-fa-file_text_o:before {
+  content: "\f0f6";
+}
+.nf-fa-file_video_o:before, .nerd-font-fa-file_video_o:before, .nerd-fonts-fa-file_video_o:before {
+  content: "\f1c8";
+}
+.nf-fa-file_word_o:before, .nerd-font-fa-file_word_o:before, .nerd-fonts-fa-file_word_o:before {
+  content: "\f1c2";
+}
+.nf-fa-file_zip_o:before, .nerd-font-fa-file_zip_o:before, .nerd-fonts-fa-file_zip_o:before {
+  content: "\f1c6";
+}
+.nf-fa-files_o:before, .nerd-font-fa-files_o:before, .nerd-fonts-fa-files_o:before {
+  content: "\f0c5";
+}
+.nf-fa-film:before, .nerd-font-fa-film:before, .nerd-fonts-fa-film:before {
+  content: "\f008";
+}
+.nf-fa-filter:before, .nerd-font-fa-filter:before, .nerd-fonts-fa-filter:before {
+  content: "\f0b0";
+}
+.nf-fa-fire:before, .nerd-font-fa-fire:before, .nerd-fonts-fa-fire:before {
+  content: "\f06d";
+}
+.nf-fa-fire_extinguisher:before, .nerd-font-fa-fire_extinguisher:before, .nerd-fonts-fa-fire_extinguisher:before {
+  content: "\f134";
+}
+.nf-fa-firefox:before, .nerd-font-fa-firefox:before, .nerd-fonts-fa-firefox:before {
+  content: "\f269";
+}
+.nf-fa-first_order:before, .nerd-font-fa-first_order:before, .nerd-fonts-fa-first_order:before {
+  content: "\f2b0";
+}
+.nf-fa-flag:before, .nerd-font-fa-flag:before, .nerd-fonts-fa-flag:before {
+  content: "\f024";
+}
+.nf-fa-flag_checkered:before, .nerd-font-fa-flag_checkered:before, .nerd-fonts-fa-flag_checkered:before {
+  content: "\f11e";
+}
+.nf-fa-flag_o:before, .nerd-font-fa-flag_o:before, .nerd-fonts-fa-flag_o:before {
+  content: "\f11d";
+}
+.nf-fa-flash:before, .nerd-font-fa-flash:before, .nerd-fonts-fa-flash:before {
+  content: "\f0e7";
+}
+.nf-fa-flask:before, .nerd-font-fa-flask:before, .nerd-fonts-fa-flask:before {
+  content: "\f0c3";
+}
+.nf-fa-flickr:before, .nerd-font-fa-flickr:before, .nerd-fonts-fa-flickr:before {
+  content: "\f16e";
+}
+.nf-fa-floppy_o:before, .nerd-font-fa-floppy_o:before, .nerd-fonts-fa-floppy_o:before {
+  content: "\f0c7";
+}
+.nf-fa-folder:before, .nerd-font-fa-folder:before, .nerd-fonts-fa-folder:before {
+  content: "\f07b";
+}
+.nf-fa-folder_o:before, .nerd-font-fa-folder_o:before, .nerd-fonts-fa-folder_o:before {
+  content: "\f114";
+}
+.nf-fa-folder_open:before, .nerd-font-fa-folder_open:before, .nerd-fonts-fa-folder_open:before {
+  content: "\f07c";
+}
+.nf-fa-folder_open_o:before, .nerd-font-fa-folder_open_o:before, .nerd-fonts-fa-folder_open_o:before {
+  content: "\f115";
+}
+.nf-fa-font:before, .nerd-font-fa-font:before, .nerd-fonts-fa-font:before {
+  content: "\f031";
+}
+.nf-fa-font_awesome:before, .nerd-font-fa-font_awesome:before, .nerd-fonts-fa-font_awesome:before {
+  content: "\f2b4";
+}
+.nf-fa-fonticons:before, .nerd-font-fa-fonticons:before, .nerd-fonts-fa-fonticons:before {
+  content: "\f280";
+}
+.nf-fa-fort_awesome:before, .nerd-font-fa-fort_awesome:before, .nerd-fonts-fa-fort_awesome:before {
+  content: "\f286";
+}
+.nf-fa-forumbee:before, .nerd-font-fa-forumbee:before, .nerd-fonts-fa-forumbee:before {
+  content: "\f211";
+}
+.nf-fa-forward:before, .nerd-font-fa-forward:before, .nerd-fonts-fa-forward:before {
+  content: "\f04e";
+}
+.nf-fa-foursquare:before, .nerd-font-fa-foursquare:before, .nerd-fonts-fa-foursquare:before {
+  content: "\f180";
+}
+.nf-fa-free_code_camp:before, .nerd-font-fa-free_code_camp:before, .nerd-fonts-fa-free_code_camp:before {
+  content: "\f2c5";
+}
+.nf-fa-frown_o:before, .nerd-font-fa-frown_o:before, .nerd-fonts-fa-frown_o:before {
+  content: "\f119";
+}
+.nf-fa-futbol_o:before, .nerd-font-fa-futbol_o:before, .nerd-fonts-fa-futbol_o:before {
+  content: "\f1e3";
+}
+.nf-fa-gamepad:before, .nerd-font-fa-gamepad:before, .nerd-fonts-fa-gamepad:before {
+  content: "\f11b";
+}
+.nf-fa-gavel:before, .nerd-font-fa-gavel:before, .nerd-fonts-fa-gavel:before {
+  content: "\f0e3";
+}
+.nf-fa-gbp:before, .nerd-font-fa-gbp:before, .nerd-fonts-fa-gbp:before {
+  content: "\f154";
+}
+.nf-fa-ge:before, .nerd-font-fa-ge:before, .nerd-fonts-fa-ge:before {
+  content: "\f1d1";
+}
+.nf-fa-gear:before, .nerd-font-fa-gear:before, .nerd-fonts-fa-gear:before {
+  content: "\f013";
+}
+.nf-fa-gears:before, .nerd-font-fa-gears:before, .nerd-fonts-fa-gears:before {
+  content: "\f085";
+}
+.nf-fa-genderless:before, .nerd-font-fa-genderless:before, .nerd-fonts-fa-genderless:before {
+  content: "\f22d";
+}
+.nf-fa-get_pocket:before, .nerd-font-fa-get_pocket:before, .nerd-fonts-fa-get_pocket:before {
+  content: "\f265";
+}
+.nf-fa-gg:before, .nerd-font-fa-gg:before, .nerd-fonts-fa-gg:before {
+  content: "\f260";
+}
+.nf-fa-gg_circle:before, .nerd-font-fa-gg_circle:before, .nerd-fonts-fa-gg_circle:before {
+  content: "\f261";
+}
+.nf-fa-gift:before, .nerd-font-fa-gift:before, .nerd-fonts-fa-gift:before {
+  content: "\f06b";
+}
+.nf-fa-git:before, .nerd-font-fa-git:before, .nerd-fonts-fa-git:before {
+  content: "\f1d3";
+}
+.nf-fa-git_square:before, .nerd-font-fa-git_square:before, .nerd-fonts-fa-git_square:before {
+  content: "\f1d2";
+}
+.nf-fa-github:before, .nerd-font-fa-github:before, .nerd-fonts-fa-github:before {
+  content: "\f09b";
+}
+.nf-fa-github_alt:before, .nerd-font-fa-github_alt:before, .nerd-fonts-fa-github_alt:before {
+  content: "\f113";
+}
+.nf-fa-github_square:before, .nerd-font-fa-github_square:before, .nerd-fonts-fa-github_square:before {
+  content: "\f092";
+}
+.nf-fa-gitlab:before, .nerd-font-fa-gitlab:before, .nerd-fonts-fa-gitlab:before {
+  content: "\f296";
+}
+.nf-fa-gittip:before, .nerd-font-fa-gittip:before, .nerd-fonts-fa-gittip:before {
+  content: "\f184";
+}
+.nf-fa-glass:before, .nerd-font-fa-glass:before, .nerd-fonts-fa-glass:before {
+  content: "\f000";
+}
+.nf-fa-glide:before, .nerd-font-fa-glide:before, .nerd-fonts-fa-glide:before {
+  content: "\f2a5";
+}
+.nf-fa-glide_g:before, .nerd-font-fa-glide_g:before, .nerd-fonts-fa-glide_g:before {
+  content: "\f2a6";
+}
+.nf-fa-globe:before, .nerd-font-fa-globe:before, .nerd-fonts-fa-globe:before {
+  content: "\f0ac";
+}
+.nf-fa-google:before, .nerd-font-fa-google:before, .nerd-fonts-fa-google:before {
+  content: "\f1a0";
+}
+.nf-fa-google_plus:before, .nerd-font-fa-google_plus:before, .nerd-fonts-fa-google_plus:before {
+  content: "\f0d5";
+}
+.nf-fa-google_plus_circle:before, .nerd-font-fa-google_plus_circle:before, .nerd-fonts-fa-google_plus_circle:before {
+  content: "\f2b3";
+}
+.nf-fa-google_plus_official:before, .nerd-font-fa-google_plus_official:before, .nerd-fonts-fa-google_plus_official:before {
+  content: "\f2b3";
+}
+.nf-fa-google_plus_square:before, .nerd-font-fa-google_plus_square:before, .nerd-fonts-fa-google_plus_square:before {
+  content: "\f0d4";
+}
+.nf-fa-google_wallet:before, .nerd-font-fa-google_wallet:before, .nerd-fonts-fa-google_wallet:before {
+  content: "\f1ee";
+}
+.nf-fa-graduation_cap:before, .nerd-font-fa-graduation_cap:before, .nerd-fonts-fa-graduation_cap:before {
+  content: "\f19d";
+}
+.nf-fa-gratipay:before, .nerd-font-fa-gratipay:before, .nerd-fonts-fa-gratipay:before {
+  content: "\f184";
+}
+.nf-fa-grav:before, .nerd-font-fa-grav:before, .nerd-fonts-fa-grav:before {
+  content: "\f2d6";
+}
+.nf-fa-group:before, .nerd-font-fa-group:before, .nerd-fonts-fa-group:before {
+  content: "\f0c0";
+}
+.nf-fa-h_square:before, .nerd-font-fa-h_square:before, .nerd-fonts-fa-h_square:before {
+  content: "\f0fd";
+}
+.nf-fa-hacker_news:before, .nerd-font-fa-hacker_news:before, .nerd-fonts-fa-hacker_news:before {
+  content: "\f1d4";
+}
+.nf-fa-hand_grab_o:before, .nerd-font-fa-hand_grab_o:before, .nerd-fonts-fa-hand_grab_o:before {
+  content: "\f255";
+}
+.nf-fa-hand_lizard_o:before, .nerd-font-fa-hand_lizard_o:before, .nerd-fonts-fa-hand_lizard_o:before {
+  content: "\f258";
+}
+.nf-fa-hand_o_down:before, .nerd-font-fa-hand_o_down:before, .nerd-fonts-fa-hand_o_down:before {
+  content: "\f0a7";
+}
+.nf-fa-hand_o_left:before, .nerd-font-fa-hand_o_left:before, .nerd-fonts-fa-hand_o_left:before {
+  content: "\f0a5";
+}
+.nf-fa-hand_o_right:before, .nerd-font-fa-hand_o_right:before, .nerd-fonts-fa-hand_o_right:before {
+  content: "\f0a4";
+}
+.nf-fa-hand_o_up:before, .nerd-font-fa-hand_o_up:before, .nerd-fonts-fa-hand_o_up:before {
+  content: "\f0a6";
+}
+.nf-fa-hand_paper_o:before, .nerd-font-fa-hand_paper_o:before, .nerd-fonts-fa-hand_paper_o:before {
+  content: "\f256";
+}
+.nf-fa-hand_peace_o:before, .nerd-font-fa-hand_peace_o:before, .nerd-fonts-fa-hand_peace_o:before {
+  content: "\f25b";
+}
+.nf-fa-hand_pointer_o:before, .nerd-font-fa-hand_pointer_o:before, .nerd-fonts-fa-hand_pointer_o:before {
+  content: "\f25a";
+}
+.nf-fa-hand_rock_o:before, .nerd-font-fa-hand_rock_o:before, .nerd-fonts-fa-hand_rock_o:before {
+  content: "\f255";
+}
+.nf-fa-hand_scissors_o:before, .nerd-font-fa-hand_scissors_o:before, .nerd-fonts-fa-hand_scissors_o:before {
+  content: "\f257";
+}
+.nf-fa-hand_spock_o:before, .nerd-font-fa-hand_spock_o:before, .nerd-fonts-fa-hand_spock_o:before {
+  content: "\f259";
+}
+.nf-fa-hand_stop_o:before, .nerd-font-fa-hand_stop_o:before, .nerd-fonts-fa-hand_stop_o:before {
+  content: "\f256";
+}
+.nf-fa-handshake_o:before, .nerd-font-fa-handshake_o:before, .nerd-fonts-fa-handshake_o:before {
+  content: "\f2b5";
+}
+.nf-fa-hard_of_hearing:before, .nerd-font-fa-hard_of_hearing:before, .nerd-fonts-fa-hard_of_hearing:before {
+  content: "\f2a4";
+}
+.nf-fa-hashtag:before, .nerd-font-fa-hashtag:before, .nerd-fonts-fa-hashtag:before {
+  content: "\f292";
+}
+.nf-fa-hdd_o:before, .nerd-font-fa-hdd_o:before, .nerd-fonts-fa-hdd_o:before {
+  content: "\f0a0";
+}
+.nf-fa-header:before, .nerd-font-fa-header:before, .nerd-fonts-fa-header:before {
+  content: "\f1dc";
+}
+.nf-fa-headphones:before, .nerd-font-fa-headphones:before, .nerd-fonts-fa-headphones:before {
+  content: "\f025";
+}
+.nf-fa-heart:before, .nerd-font-fa-heart:before, .nerd-fonts-fa-heart:before {
+  content: "\f004";
+}
+.nf-fa-heart_o:before, .nerd-font-fa-heart_o:before, .nerd-fonts-fa-heart_o:before {
+  content: "\f08a";
+}
+.nf-fa-heartbeat:before, .nerd-font-fa-heartbeat:before, .nerd-fonts-fa-heartbeat:before {
+  content: "\f21e";
+}
+.nf-fa-history:before, .nerd-font-fa-history:before, .nerd-fonts-fa-history:before {
+  content: "\f1da";
+}
+.nf-fa-home:before, .nerd-font-fa-home:before, .nerd-fonts-fa-home:before {
+  content: "\f015";
+}
+.nf-fa-hospital_o:before, .nerd-font-fa-hospital_o:before, .nerd-fonts-fa-hospital_o:before {
+  content: "\f0f8";
+}
+.nf-fa-hotel:before, .nerd-font-fa-hotel:before, .nerd-fonts-fa-hotel:before {
+  content: "\f236";
+}
+.nf-fa-hourglass:before, .nerd-font-fa-hourglass:before, .nerd-fonts-fa-hourglass:before {
+  content: "\f254";
+}
+.nf-fa-hourglass_1:before, .nerd-font-fa-hourglass_1:before, .nerd-fonts-fa-hourglass_1:before {
+  content: "\f251";
+}
+.nf-fa-hourglass_2:before, .nerd-font-fa-hourglass_2:before, .nerd-fonts-fa-hourglass_2:before {
+  content: "\f252";
+}
+.nf-fa-hourglass_3:before, .nerd-font-fa-hourglass_3:before, .nerd-fonts-fa-hourglass_3:before {
+  content: "\f253";
+}
+.nf-fa-hourglass_end:before, .nerd-font-fa-hourglass_end:before, .nerd-fonts-fa-hourglass_end:before {
+  content: "\f253";
+}
+.nf-fa-hourglass_half:before, .nerd-font-fa-hourglass_half:before, .nerd-fonts-fa-hourglass_half:before {
+  content: "\f252";
+}
+.nf-fa-hourglass_o:before, .nerd-font-fa-hourglass_o:before, .nerd-fonts-fa-hourglass_o:before {
+  content: "\f250";
+}
+.nf-fa-hourglass_start:before, .nerd-font-fa-hourglass_start:before, .nerd-fonts-fa-hourglass_start:before {
+  content: "\f251";
+}
+.nf-fa-houzz:before, .nerd-font-fa-houzz:before, .nerd-fonts-fa-houzz:before {
+  content: "\f27c";
+}
+.nf-fa-html5:before, .nerd-font-fa-html5:before, .nerd-fonts-fa-html5:before {
+  content: "\f13b";
+}
+.nf-fa-i_cursor:before, .nerd-font-fa-i_cursor:before, .nerd-fonts-fa-i_cursor:before {
+  content: "\f246";
+}
+.nf-fa-id_badge:before, .nerd-font-fa-id_badge:before, .nerd-fonts-fa-id_badge:before {
+  content: "\f2c1";
+}
+.nf-fa-id_card:before, .nerd-font-fa-id_card:before, .nerd-fonts-fa-id_card:before {
+  content: "\f2c2";
+}
+.nf-fa-id_card_o:before, .nerd-font-fa-id_card_o:before, .nerd-fonts-fa-id_card_o:before {
+  content: "\f2c3";
+}
+.nf-fa-ils:before, .nerd-font-fa-ils:before, .nerd-fonts-fa-ils:before {
+  content: "\f20b";
+}
+.nf-fa-image:before, .nerd-font-fa-image:before, .nerd-fonts-fa-image:before {
+  content: "\f03e";
+}
+.nf-fa-imdb:before, .nerd-font-fa-imdb:before, .nerd-fonts-fa-imdb:before {
+  content: "\f2d8";
+}
+.nf-fa-inbox:before, .nerd-font-fa-inbox:before, .nerd-fonts-fa-inbox:before {
+  content: "\f01c";
+}
+.nf-fa-indent:before, .nerd-font-fa-indent:before, .nerd-fonts-fa-indent:before {
+  content: "\f03c";
+}
+.nf-fa-industry:before, .nerd-font-fa-industry:before, .nerd-fonts-fa-industry:before {
+  content: "\f275";
+}
+.nf-fa-info:before, .nerd-font-fa-info:before, .nerd-fonts-fa-info:before {
+  content: "\f129";
+}
+.nf-fa-info_circle:before, .nerd-font-fa-info_circle:before, .nerd-fonts-fa-info_circle:before {
+  content: "\f05a";
+}
+.nf-fa-inr:before, .nerd-font-fa-inr:before, .nerd-fonts-fa-inr:before {
+  content: "\f156";
+}
+.nf-fa-instagram:before, .nerd-font-fa-instagram:before, .nerd-fonts-fa-instagram:before {
+  content: "\f16d";
+}
+.nf-fa-institution:before, .nerd-font-fa-institution:before, .nerd-fonts-fa-institution:before {
+  content: "\f19c";
+}
+.nf-fa-internet_explorer:before, .nerd-font-fa-internet_explorer:before, .nerd-fonts-fa-internet_explorer:before {
+  content: "\f26b";
+}
+.nf-fa-intersex:before, .nerd-font-fa-intersex:before, .nerd-fonts-fa-intersex:before {
+  content: "\f224";
+}
+.nf-fa-ioxhost:before, .nerd-font-fa-ioxhost:before, .nerd-fonts-fa-ioxhost:before {
+  content: "\f208";
+}
+.nf-fa-italic:before, .nerd-font-fa-italic:before, .nerd-fonts-fa-italic:before {
+  content: "\f033";
+}
+.nf-fa-joomla:before, .nerd-font-fa-joomla:before, .nerd-fonts-fa-joomla:before {
+  content: "\f1aa";
+}
+.nf-fa-jpy:before, .nerd-font-fa-jpy:before, .nerd-fonts-fa-jpy:before {
+  content: "\f157";
+}
+.nf-fa-jsfiddle:before, .nerd-font-fa-jsfiddle:before, .nerd-fonts-fa-jsfiddle:before {
+  content: "\f1cc";
+}
+.nf-fa-key:before, .nerd-font-fa-key:before, .nerd-fonts-fa-key:before {
+  content: "\f084";
+}
+.nf-fa-keyboard_o:before, .nerd-font-fa-keyboard_o:before, .nerd-fonts-fa-keyboard_o:before {
+  content: "\f11c";
+}
+.nf-fa-krw:before, .nerd-font-fa-krw:before, .nerd-fonts-fa-krw:before {
+  content: "\f159";
+}
+.nf-fa-language:before, .nerd-font-fa-language:before, .nerd-fonts-fa-language:before {
+  content: "\f1ab";
+}
+.nf-fa-laptop:before, .nerd-font-fa-laptop:before, .nerd-fonts-fa-laptop:before {
+  content: "\f109";
+}
+.nf-fa-lastfm:before, .nerd-font-fa-lastfm:before, .nerd-fonts-fa-lastfm:before {
+  content: "\f202";
+}
+.nf-fa-lastfm_square:before, .nerd-font-fa-lastfm_square:before, .nerd-fonts-fa-lastfm_square:before {
+  content: "\f203";
+}
+.nf-fa-leaf:before, .nerd-font-fa-leaf:before, .nerd-fonts-fa-leaf:before {
+  content: "\f06c";
+}
+.nf-fa-leanpub:before, .nerd-font-fa-leanpub:before, .nerd-fonts-fa-leanpub:before {
+  content: "\f212";
+}
+.nf-fa-legal:before, .nerd-font-fa-legal:before, .nerd-fonts-fa-legal:before {
+  content: "\f0e3";
+}
+.nf-fa-lemon_o:before, .nerd-font-fa-lemon_o:before, .nerd-fonts-fa-lemon_o:before {
+  content: "\f094";
+}
+.nf-fa-level_down:before, .nerd-font-fa-level_down:before, .nerd-fonts-fa-level_down:before {
+  content: "\f149";
+}
+.nf-fa-level_up:before, .nerd-font-fa-level_up:before, .nerd-fonts-fa-level_up:before {
+  content: "\f148";
+}
+.nf-fa-life_bouy:before, .nerd-font-fa-life_bouy:before, .nerd-fonts-fa-life_bouy:before {
+  content: "\f1cd";
+}
+.nf-fa-life_buoy:before, .nerd-font-fa-life_buoy:before, .nerd-fonts-fa-life_buoy:before {
+  content: "\f1cd";
+}
+.nf-fa-life_ring:before, .nerd-font-fa-life_ring:before, .nerd-fonts-fa-life_ring:before {
+  content: "\f1cd";
+}
+.nf-fa-life_saver:before, .nerd-font-fa-life_saver:before, .nerd-fonts-fa-life_saver:before {
+  content: "\f1cd";
+}
+.nf-fa-lightbulb_o:before, .nerd-font-fa-lightbulb_o:before, .nerd-fonts-fa-lightbulb_o:before {
+  content: "\f0eb";
+}
+.nf-fa-line_chart:before, .nerd-font-fa-line_chart:before, .nerd-fonts-fa-line_chart:before {
+  content: "\f201";
+}
+.nf-fa-link:before, .nerd-font-fa-link:before, .nerd-fonts-fa-link:before {
+  content: "\f0c1";
+}
+.nf-fa-linkedin:before, .nerd-font-fa-linkedin:before, .nerd-fonts-fa-linkedin:before {
+  content: "\f0e1";
+}
+.nf-fa-linkedin_square:before, .nerd-font-fa-linkedin_square:before, .nerd-fonts-fa-linkedin_square:before {
+  content: "\f08c";
+}
+.nf-fa-linode:before, .nerd-font-fa-linode:before, .nerd-fonts-fa-linode:before {
+  content: "\f2b8";
+}
+.nf-fa-linux:before, .nerd-font-fa-linux:before, .nerd-fonts-fa-linux:before {
+  content: "\f17c";
+}
+.nf-fa-list:before, .nerd-font-fa-list:before, .nerd-fonts-fa-list:before {
+  content: "\f03a";
+}
+.nf-fa-list_alt:before, .nerd-font-fa-list_alt:before, .nerd-fonts-fa-list_alt:before {
+  content: "\f022";
+}
+.nf-fa-list_ol:before, .nerd-font-fa-list_ol:before, .nerd-fonts-fa-list_ol:before {
+  content: "\f0cb";
+}
+.nf-fa-list_ul:before, .nerd-font-fa-list_ul:before, .nerd-fonts-fa-list_ul:before {
+  content: "\f0ca";
+}
+.nf-fa-location_arrow:before, .nerd-font-fa-location_arrow:before, .nerd-fonts-fa-location_arrow:before {
+  content: "\f124";
+}
+.nf-fa-lock:before, .nerd-font-fa-lock:before, .nerd-fonts-fa-lock:before {
+  content: "\f023";
+}
+.nf-fa-long_arrow_down:before, .nerd-font-fa-long_arrow_down:before, .nerd-fonts-fa-long_arrow_down:before {
+  content: "\f175";
+}
+.nf-fa-long_arrow_left:before, .nerd-font-fa-long_arrow_left:before, .nerd-fonts-fa-long_arrow_left:before {
+  content: "\f177";
+}
+.nf-fa-long_arrow_right:before, .nerd-font-fa-long_arrow_right:before, .nerd-fonts-fa-long_arrow_right:before {
+  content: "\f178";
+}
+.nf-fa-long_arrow_up:before, .nerd-font-fa-long_arrow_up:before, .nerd-fonts-fa-long_arrow_up:before {
+  content: "\f176";
+}
+.nf-fa-low_vision:before, .nerd-font-fa-low_vision:before, .nerd-fonts-fa-low_vision:before {
+  content: "\f2a8";
+}
+.nf-fa-magic:before, .nerd-font-fa-magic:before, .nerd-fonts-fa-magic:before {
+  content: "\f0d0";
+}
+.nf-fa-magnet:before, .nerd-font-fa-magnet:before, .nerd-fonts-fa-magnet:before {
+  content: "\f076";
+}
+.nf-fa-mail_forward:before, .nerd-font-fa-mail_forward:before, .nerd-fonts-fa-mail_forward:before {
+  content: "\f064";
+}
+.nf-fa-mail_reply:before, .nerd-font-fa-mail_reply:before, .nerd-fonts-fa-mail_reply:before {
+  content: "\f112";
+}
+.nf-fa-mail_reply_all:before, .nerd-font-fa-mail_reply_all:before, .nerd-fonts-fa-mail_reply_all:before {
+  content: "\f122";
+}
+.nf-fa-male:before, .nerd-font-fa-male:before, .nerd-fonts-fa-male:before {
+  content: "\f183";
+}
+.nf-fa-map:before, .nerd-font-fa-map:before, .nerd-fonts-fa-map:before {
+  content: "\f279";
+}
+.nf-fa-map_marker:before, .nerd-font-fa-map_marker:before, .nerd-fonts-fa-map_marker:before {
+  content: "\f041";
+}
+.nf-fa-map_o:before, .nerd-font-fa-map_o:before, .nerd-fonts-fa-map_o:before {
+  content: "\f278";
+}
+.nf-fa-map_pin:before, .nerd-font-fa-map_pin:before, .nerd-fonts-fa-map_pin:before {
+  content: "\f276";
+}
+.nf-fa-map_signs:before, .nerd-font-fa-map_signs:before, .nerd-fonts-fa-map_signs:before {
+  content: "\f277";
+}
+.nf-fa-mars:before, .nerd-font-fa-mars:before, .nerd-fonts-fa-mars:before {
+  content: "\f222";
+}
+.nf-fa-mars_double:before, .nerd-font-fa-mars_double:before, .nerd-fonts-fa-mars_double:before {
+  content: "\f227";
+}
+.nf-fa-mars_stroke:before, .nerd-font-fa-mars_stroke:before, .nerd-fonts-fa-mars_stroke:before {
+  content: "\f229";
+}
+.nf-fa-mars_stroke_h:before, .nerd-font-fa-mars_stroke_h:before, .nerd-fonts-fa-mars_stroke_h:before {
+  content: "\f22b";
+}
+.nf-fa-mars_stroke_v:before, .nerd-font-fa-mars_stroke_v:before, .nerd-fonts-fa-mars_stroke_v:before {
+  content: "\f22a";
+}
+.nf-fa-maxcdn:before, .nerd-font-fa-maxcdn:before, .nerd-fonts-fa-maxcdn:before {
+  content: "\f136";
+}
+.nf-fa-meanpath:before, .nerd-font-fa-meanpath:before, .nerd-fonts-fa-meanpath:before {
+  content: "\f20c";
+}
+.nf-fa-medium:before, .nerd-font-fa-medium:before, .nerd-fonts-fa-medium:before {
+  content: "\f23a";
+}
+.nf-fa-medkit:before, .nerd-font-fa-medkit:before, .nerd-fonts-fa-medkit:before {
+  content: "\f0fa";
+}
+.nf-fa-meetup:before, .nerd-font-fa-meetup:before, .nerd-fonts-fa-meetup:before {
+  content: "\f2e0";
+}
+.nf-fa-meh_o:before, .nerd-font-fa-meh_o:before, .nerd-fonts-fa-meh_o:before {
+  content: "\f11a";
+}
+.nf-fa-mercury:before, .nerd-font-fa-mercury:before, .nerd-fonts-fa-mercury:before {
+  content: "\f223";
+}
+.nf-fa-microchip:before, .nerd-font-fa-microchip:before, .nerd-fonts-fa-microchip:before {
+  content: "\f2db";
+}
+.nf-fa-microphone:before, .nerd-font-fa-microphone:before, .nerd-fonts-fa-microphone:before {
+  content: "\f130";
+}
+.nf-fa-microphone_slash:before, .nerd-font-fa-microphone_slash:before, .nerd-fonts-fa-microphone_slash:before {
+  content: "\f131";
+}
+.nf-fa-minus:before, .nerd-font-fa-minus:before, .nerd-fonts-fa-minus:before {
+  content: "\f068";
+}
+.nf-fa-minus_circle:before, .nerd-font-fa-minus_circle:before, .nerd-fonts-fa-minus_circle:before {
+  content: "\f056";
+}
+.nf-fa-minus_square:before, .nerd-font-fa-minus_square:before, .nerd-fonts-fa-minus_square:before {
+  content: "\f146";
+}
+.nf-fa-minus_square_o:before, .nerd-font-fa-minus_square_o:before, .nerd-fonts-fa-minus_square_o:before {
+  content: "\f147";
+}
+.nf-fa-mixcloud:before, .nerd-font-fa-mixcloud:before, .nerd-fonts-fa-mixcloud:before {
+  content: "\f289";
+}
+.nf-fa-mobile:before, .nerd-font-fa-mobile:before, .nerd-fonts-fa-mobile:before {
+  content: "\f10b";
+}
+.nf-fa-mobile_phone:before, .nerd-font-fa-mobile_phone:before, .nerd-fonts-fa-mobile_phone:before {
+  content: "\f10b";
+}
+.nf-fa-modx:before, .nerd-font-fa-modx:before, .nerd-fonts-fa-modx:before {
+  content: "\f285";
+}
+.nf-fa-money:before, .nerd-font-fa-money:before, .nerd-fonts-fa-money:before {
+  content: "\f0d6";
+}
+.nf-fa-moon_o:before, .nerd-font-fa-moon_o:before, .nerd-fonts-fa-moon_o:before {
+  content: "\f186";
+}
+.nf-fa-mortar_board:before, .nerd-font-fa-mortar_board:before, .nerd-fonts-fa-mortar_board:before {
+  content: "\f19d";
+}
+.nf-fa-motorcycle:before, .nerd-font-fa-motorcycle:before, .nerd-fonts-fa-motorcycle:before {
+  content: "\f21c";
+}
+.nf-fa-mouse_pointer:before, .nerd-font-fa-mouse_pointer:before, .nerd-fonts-fa-mouse_pointer:before {
+  content: "\f245";
+}
+.nf-fa-music:before, .nerd-font-fa-music:before, .nerd-fonts-fa-music:before {
+  content: "\f001";
+}
+.nf-fa-navicon:before, .nerd-font-fa-navicon:before, .nerd-fonts-fa-navicon:before {
+  content: "\f0c9";
+}
+.nf-fa-neuter:before, .nerd-font-fa-neuter:before, .nerd-fonts-fa-neuter:before {
+  content: "\f22c";
+}
+.nf-fa-newspaper_o:before, .nerd-font-fa-newspaper_o:before, .nerd-fonts-fa-newspaper_o:before {
+  content: "\f1ea";
+}
+.nf-fa-object_group:before, .nerd-font-fa-object_group:before, .nerd-fonts-fa-object_group:before {
+  content: "\f247";
+}
+.nf-fa-object_ungroup:before, .nerd-font-fa-object_ungroup:before, .nerd-fonts-fa-object_ungroup:before {
+  content: "\f248";
+}
+.nf-fa-odnoklassniki:before, .nerd-font-fa-odnoklassniki:before, .nerd-fonts-fa-odnoklassniki:before {
+  content: "\f263";
+}
+.nf-fa-odnoklassniki_square:before, .nerd-font-fa-odnoklassniki_square:before, .nerd-fonts-fa-odnoklassniki_square:before {
+  content: "\f264";
+}
+.nf-fa-opencart:before, .nerd-font-fa-opencart:before, .nerd-fonts-fa-opencart:before {
+  content: "\f23d";
+}
+.nf-fa-openid:before, .nerd-font-fa-openid:before, .nerd-fonts-fa-openid:before {
+  content: "\f19b";
+}
+.nf-fa-opera:before, .nerd-font-fa-opera:before, .nerd-fonts-fa-opera:before {
+  content: "\f26a";
+}
+.nf-fa-optin_monster:before, .nerd-font-fa-optin_monster:before, .nerd-fonts-fa-optin_monster:before {
+  content: "\f23c";
+}
+.nf-fa-outdent:before, .nerd-font-fa-outdent:before, .nerd-fonts-fa-outdent:before {
+  content: "\f03b";
+}
+.nf-fa-pagelines:before, .nerd-font-fa-pagelines:before, .nerd-fonts-fa-pagelines:before {
+  content: "\f18c";
+}
+.nf-fa-paint_brush:before, .nerd-font-fa-paint_brush:before, .nerd-fonts-fa-paint_brush:before {
+  content: "\f1fc";
+}
+.nf-fa-paper_plane:before, .nerd-font-fa-paper_plane:before, .nerd-fonts-fa-paper_plane:before {
+  content: "\f1d8";
+}
+.nf-fa-paper_plane_o:before, .nerd-font-fa-paper_plane_o:before, .nerd-fonts-fa-paper_plane_o:before {
+  content: "\f1d9";
+}
+.nf-fa-paperclip:before, .nerd-font-fa-paperclip:before, .nerd-fonts-fa-paperclip:before {
+  content: "\f0c6";
+}
+.nf-fa-paragraph:before, .nerd-font-fa-paragraph:before, .nerd-fonts-fa-paragraph:before {
+  content: "\f1dd";
+}
+.nf-fa-paste:before, .nerd-font-fa-paste:before, .nerd-fonts-fa-paste:before {
+  content: "\f0ea";
+}
+.nf-fa-pause:before, .nerd-font-fa-pause:before, .nerd-fonts-fa-pause:before {
+  content: "\f04c";
+}
+.nf-fa-pause_circle:before, .nerd-font-fa-pause_circle:before, .nerd-fonts-fa-pause_circle:before {
+  content: "\f28b";
+}
+.nf-fa-pause_circle_o:before, .nerd-font-fa-pause_circle_o:before, .nerd-fonts-fa-pause_circle_o:before {
+  content: "\f28c";
+}
+.nf-fa-paw:before, .nerd-font-fa-paw:before, .nerd-fonts-fa-paw:before {
+  content: "\f1b0";
+}
+.nf-fa-paypal:before, .nerd-font-fa-paypal:before, .nerd-fonts-fa-paypal:before {
+  content: "\f1ed";
+}
+.nf-fa-pencil:before, .nerd-font-fa-pencil:before, .nerd-fonts-fa-pencil:before {
+  content: "\f040";
+}
+.nf-fa-pencil_square:before, .nerd-font-fa-pencil_square:before, .nerd-fonts-fa-pencil_square:before {
+  content: "\f14b";
+}
+.nf-fa-pencil_square_o:before, .nerd-font-fa-pencil_square_o:before, .nerd-fonts-fa-pencil_square_o:before {
+  content: "\f044";
+}
+.nf-fa-percent:before, .nerd-font-fa-percent:before, .nerd-fonts-fa-percent:before {
+  content: "\f295";
+}
+.nf-fa-phone:before, .nerd-font-fa-phone:before, .nerd-fonts-fa-phone:before {
+  content: "\f095";
+}
+.nf-fa-phone_square:before, .nerd-font-fa-phone_square:before, .nerd-fonts-fa-phone_square:before {
+  content: "\f098";
+}
+.nf-fa-photo:before, .nerd-font-fa-photo:before, .nerd-fonts-fa-photo:before {
+  content: "\f03e";
+}
+.nf-fa-picture_o:before, .nerd-font-fa-picture_o:before, .nerd-fonts-fa-picture_o:before {
+  content: "\f03e";
+}
+.nf-fa-pie_chart:before, .nerd-font-fa-pie_chart:before, .nerd-fonts-fa-pie_chart:before {
+  content: "\f200";
+}
+.nf-fa-pied_piper:before, .nerd-font-fa-pied_piper:before, .nerd-fonts-fa-pied_piper:before {
+  content: "\f2ae";
+}
+.nf-fa-pied_piper_alt:before, .nerd-font-fa-pied_piper_alt:before, .nerd-fonts-fa-pied_piper_alt:before {
+  content: "\f1a8";
+}
+.nf-fa-pied_piper_pp:before, .nerd-font-fa-pied_piper_pp:before, .nerd-fonts-fa-pied_piper_pp:before {
+  content: "\f1a7";
+}
+.nf-fa-pinterest:before, .nerd-font-fa-pinterest:before, .nerd-fonts-fa-pinterest:before {
+  content: "\f0d2";
+}
+.nf-fa-pinterest_p:before, .nerd-font-fa-pinterest_p:before, .nerd-fonts-fa-pinterest_p:before {
+  content: "\f231";
+}
+.nf-fa-pinterest_square:before, .nerd-font-fa-pinterest_square:before, .nerd-fonts-fa-pinterest_square:before {
+  content: "\f0d3";
+}
+.nf-fa-plane:before, .nerd-font-fa-plane:before, .nerd-fonts-fa-plane:before {
+  content: "\f072";
+}
+.nf-fa-play:before, .nerd-font-fa-play:before, .nerd-fonts-fa-play:before {
+  content: "\f04b";
+}
+.nf-fa-play_circle:before, .nerd-font-fa-play_circle:before, .nerd-fonts-fa-play_circle:before {
+  content: "\f144";
+}
+.nf-fa-play_circle_o:before, .nerd-font-fa-play_circle_o:before, .nerd-fonts-fa-play_circle_o:before {
+  content: "\f01d";
+}
+.nf-fa-plug:before, .nerd-font-fa-plug:before, .nerd-fonts-fa-plug:before {
+  content: "\f1e6";
+}
+.nf-fa-plus:before, .nerd-font-fa-plus:before, .nerd-fonts-fa-plus:before {
+  content: "\f067";
+}
+.nf-fa-plus_circle:before, .nerd-font-fa-plus_circle:before, .nerd-fonts-fa-plus_circle:before {
+  content: "\f055";
+}
+.nf-fa-plus_square:before, .nerd-font-fa-plus_square:before, .nerd-fonts-fa-plus_square:before {
+  content: "\f0fe";
+}
+.nf-fa-plus_square_o:before, .nerd-font-fa-plus_square_o:before, .nerd-fonts-fa-plus_square_o:before {
+  content: "\f196";
+}
+.nf-fa-podcast:before, .nerd-font-fa-podcast:before, .nerd-fonts-fa-podcast:before {
+  content: "\f2ce";
+}
+.nf-fa-power_off:before, .nerd-font-fa-power_off:before, .nerd-fonts-fa-power_off:before {
+  content: "\f011";
+}
+.nf-fa-print:before, .nerd-font-fa-print:before, .nerd-fonts-fa-print:before {
+  content: "\f02f";
+}
+.nf-fa-product_hunt:before, .nerd-font-fa-product_hunt:before, .nerd-fonts-fa-product_hunt:before {
+  content: "\f288";
+}
+.nf-fa-puzzle_piece:before, .nerd-font-fa-puzzle_piece:before, .nerd-fonts-fa-puzzle_piece:before {
+  content: "\f12e";
+}
+.nf-fa-qq:before, .nerd-font-fa-qq:before, .nerd-fonts-fa-qq:before {
+  content: "\f1d6";
+}
+.nf-fa-qrcode:before, .nerd-font-fa-qrcode:before, .nerd-fonts-fa-qrcode:before {
+  content: "\f029";
+}
+.nf-fa-question:before, .nerd-font-fa-question:before, .nerd-fonts-fa-question:before {
+  content: "\f128";
+}
+.nf-fa-question_circle:before, .nerd-font-fa-question_circle:before, .nerd-fonts-fa-question_circle:before {
+  content: "\f059";
+}
+.nf-fa-question_circle_o:before, .nerd-font-fa-question_circle_o:before, .nerd-fonts-fa-question_circle_o:before {
+  content: "\f29c";
+}
+.nf-fa-quora:before, .nerd-font-fa-quora:before, .nerd-fonts-fa-quora:before {
+  content: "\f2c4";
+}
+.nf-fa-quote_left:before, .nerd-font-fa-quote_left:before, .nerd-fonts-fa-quote_left:before {
+  content: "\f10d";
+}
+.nf-fa-quote_right:before, .nerd-font-fa-quote_right:before, .nerd-fonts-fa-quote_right:before {
+  content: "\f10e";
+}
+.nf-fa-ra:before, .nerd-font-fa-ra:before, .nerd-fonts-fa-ra:before {
+  content: "\f1d0";
+}
+.nf-fa-random:before, .nerd-font-fa-random:before, .nerd-fonts-fa-random:before {
+  content: "\f074";
+}
+.nf-fa-ravelry:before, .nerd-font-fa-ravelry:before, .nerd-fonts-fa-ravelry:before {
+  content: "\f2d9";
+}
+.nf-fa-rebel:before, .nerd-font-fa-rebel:before, .nerd-fonts-fa-rebel:before {
+  content: "\f1d0";
+}
+.nf-fa-recycle:before, .nerd-font-fa-recycle:before, .nerd-fonts-fa-recycle:before {
+  content: "\f1b8";
+}
+.nf-fa-reddit:before, .nerd-font-fa-reddit:before, .nerd-fonts-fa-reddit:before {
+  content: "\f1a1";
+}
+.nf-fa-reddit_alien:before, .nerd-font-fa-reddit_alien:before, .nerd-fonts-fa-reddit_alien:before {
+  content: "\f281";
+}
+.nf-fa-reddit_square:before, .nerd-font-fa-reddit_square:before, .nerd-fonts-fa-reddit_square:before {
+  content: "\f1a2";
+}
+.nf-fa-refresh:before, .nerd-font-fa-refresh:before, .nerd-fonts-fa-refresh:before {
+  content: "\f021";
+}
+.nf-fa-registered:before, .nerd-font-fa-registered:before, .nerd-fonts-fa-registered:before {
+  content: "\f25d";
+}
+.nf-fa-remove:before, .nerd-font-fa-remove:before, .nerd-fonts-fa-remove:before {
+  content: "\f00d";
+}
+.nf-fa-renren:before, .nerd-font-fa-renren:before, .nerd-fonts-fa-renren:before {
+  content: "\f18b";
+}
+.nf-fa-reorder:before, .nerd-font-fa-reorder:before, .nerd-fonts-fa-reorder:before {
+  content: "\f0c9";
+}
+.nf-fa-repeat:before, .nerd-font-fa-repeat:before, .nerd-fonts-fa-repeat:before {
+  content: "\f01e";
+}
+.nf-fa-reply:before, .nerd-font-fa-reply:before, .nerd-fonts-fa-reply:before {
+  content: "\f112";
+}
+.nf-fa-reply_all:before, .nerd-font-fa-reply_all:before, .nerd-fonts-fa-reply_all:before {
+  content: "\f122";
+}
+.nf-fa-resistance:before, .nerd-font-fa-resistance:before, .nerd-fonts-fa-resistance:before {
+  content: "\f1d0";
+}
+.nf-fa-retweet:before, .nerd-font-fa-retweet:before, .nerd-fonts-fa-retweet:before {
+  content: "\f079";
+}
+.nf-fa-rmb:before, .nerd-font-fa-rmb:before, .nerd-fonts-fa-rmb:before {
+  content: "\f157";
+}
+.nf-fa-road:before, .nerd-font-fa-road:before, .nerd-fonts-fa-road:before {
+  content: "\f018";
+}
+.nf-fa-rocket:before, .nerd-font-fa-rocket:before, .nerd-fonts-fa-rocket:before {
+  content: "\f135";
+}
+.nf-fa-rotate_left:before, .nerd-font-fa-rotate_left:before, .nerd-fonts-fa-rotate_left:before {
+  content: "\f0e2";
+}
+.nf-fa-rotate_right:before, .nerd-font-fa-rotate_right:before, .nerd-fonts-fa-rotate_right:before {
+  content: "\f01e";
+}
+.nf-fa-rouble:before, .nerd-font-fa-rouble:before, .nerd-fonts-fa-rouble:before {
+  content: "\f158";
+}
+.nf-fa-rss:before, .nerd-font-fa-rss:before, .nerd-fonts-fa-rss:before {
+  content: "\f09e";
+}
+.nf-fa-rss_square:before, .nerd-font-fa-rss_square:before, .nerd-fonts-fa-rss_square:before {
+  content: "\f143";
+}
+.nf-fa-rub:before, .nerd-font-fa-rub:before, .nerd-fonts-fa-rub:before {
+  content: "\f158";
+}
+.nf-fa-ruble:before, .nerd-font-fa-ruble:before, .nerd-fonts-fa-ruble:before {
+  content: "\f158";
+}
+.nf-fa-rupee:before, .nerd-font-fa-rupee:before, .nerd-fonts-fa-rupee:before {
+  content: "\f156";
+}
+.nf-fa-s15:before, .nerd-font-fa-s15:before, .nerd-fonts-fa-s15:before {
+  content: "\f2cd";
+}
+.nf-fa-safari:before, .nerd-font-fa-safari:before, .nerd-fonts-fa-safari:before {
+  content: "\f267";
+}
+.nf-fa-save:before, .nerd-font-fa-save:before, .nerd-fonts-fa-save:before {
+  content: "\f0c7";
+}
+.nf-fa-scissors:before, .nerd-font-fa-scissors:before, .nerd-fonts-fa-scissors:before {
+  content: "\f0c4";
+}
+.nf-fa-scribd:before, .nerd-font-fa-scribd:before, .nerd-fonts-fa-scribd:before {
+  content: "\f28a";
+}
+.nf-fa-search:before, .nerd-font-fa-search:before, .nerd-fonts-fa-search:before {
+  content: "\f002";
+}
+.nf-fa-search_minus:before, .nerd-font-fa-search_minus:before, .nerd-fonts-fa-search_minus:before {
+  content: "\f010";
+}
+.nf-fa-search_plus:before, .nerd-font-fa-search_plus:before, .nerd-fonts-fa-search_plus:before {
+  content: "\f00e";
+}
+.nf-fa-sellsy:before, .nerd-font-fa-sellsy:before, .nerd-fonts-fa-sellsy:before {
+  content: "\f213";
+}
+.nf-fa-send:before, .nerd-font-fa-send:before, .nerd-fonts-fa-send:before {
+  content: "\f1d8";
+}
+.nf-fa-send_o:before, .nerd-font-fa-send_o:before, .nerd-fonts-fa-send_o:before {
+  content: "\f1d9";
+}
+.nf-fa-server:before, .nerd-font-fa-server:before, .nerd-fonts-fa-server:before {
+  content: "\f233";
+}
+.nf-fa-share:before, .nerd-font-fa-share:before, .nerd-fonts-fa-share:before {
+  content: "\f064";
+}
+.nf-fa-share_alt:before, .nerd-font-fa-share_alt:before, .nerd-fonts-fa-share_alt:before {
+  content: "\f1e0";
+}
+.nf-fa-share_alt_square:before, .nerd-font-fa-share_alt_square:before, .nerd-fonts-fa-share_alt_square:before {
+  content: "\f1e1";
+}
+.nf-fa-share_square:before, .nerd-font-fa-share_square:before, .nerd-fonts-fa-share_square:before {
+  content: "\f14d";
+}
+.nf-fa-share_square_o:before, .nerd-font-fa-share_square_o:before, .nerd-fonts-fa-share_square_o:before {
+  content: "\f045";
+}
+.nf-fa-shekel:before, .nerd-font-fa-shekel:before, .nerd-fonts-fa-shekel:before {
+  content: "\f20b";
+}
+.nf-fa-sheqel:before, .nerd-font-fa-sheqel:before, .nerd-fonts-fa-sheqel:before {
+  content: "\f20b";
+}
+.nf-fa-shield:before, .nerd-font-fa-shield:before, .nerd-fonts-fa-shield:before {
+  content: "\f132";
+}
+.nf-fa-ship:before, .nerd-font-fa-ship:before, .nerd-fonts-fa-ship:before {
+  content: "\f21a";
+}
+.nf-fa-shirtsinbulk:before, .nerd-font-fa-shirtsinbulk:before, .nerd-fonts-fa-shirtsinbulk:before {
+  content: "\f214";
+}
+.nf-fa-shopping_bag:before, .nerd-font-fa-shopping_bag:before, .nerd-fonts-fa-shopping_bag:before {
+  content: "\f290";
+}
+.nf-fa-shopping_basket:before, .nerd-font-fa-shopping_basket:before, .nerd-fonts-fa-shopping_basket:before {
+  content: "\f291";
+}
+.nf-fa-shopping_cart:before, .nerd-font-fa-shopping_cart:before, .nerd-fonts-fa-shopping_cart:before {
+  content: "\f07a";
+}
+.nf-fa-shower:before, .nerd-font-fa-shower:before, .nerd-fonts-fa-shower:before {
+  content: "\f2cc";
+}
+.nf-fa-sign_in:before, .nerd-font-fa-sign_in:before, .nerd-fonts-fa-sign_in:before {
+  content: "\f090";
+}
+.nf-fa-sign_language:before, .nerd-font-fa-sign_language:before, .nerd-fonts-fa-sign_language:before {
+  content: "\f2a7";
+}
+.nf-fa-sign_out:before, .nerd-font-fa-sign_out:before, .nerd-fonts-fa-sign_out:before {
+  content: "\f08b";
+}
+.nf-fa-signal:before, .nerd-font-fa-signal:before, .nerd-fonts-fa-signal:before {
+  content: "\f012";
+}
+.nf-fa-signing:before, .nerd-font-fa-signing:before, .nerd-fonts-fa-signing:before {
+  content: "\f2a7";
+}
+.nf-fa-simplybuilt:before, .nerd-font-fa-simplybuilt:before, .nerd-fonts-fa-simplybuilt:before {
+  content: "\f215";
+}
+.nf-fa-sitemap:before, .nerd-font-fa-sitemap:before, .nerd-fonts-fa-sitemap:before {
+  content: "\f0e8";
+}
+.nf-fa-skyatlas:before, .nerd-font-fa-skyatlas:before, .nerd-fonts-fa-skyatlas:before {
+  content: "\f216";
+}
+.nf-fa-skype:before, .nerd-font-fa-skype:before, .nerd-fonts-fa-skype:before {
+  content: "\f17e";
+}
+.nf-fa-slack:before, .nerd-font-fa-slack:before, .nerd-fonts-fa-slack:before {
+  content: "\f198";
+}
+.nf-fa-sliders:before, .nerd-font-fa-sliders:before, .nerd-fonts-fa-sliders:before {
+  content: "\f1de";
+}
+.nf-fa-slideshare:before, .nerd-font-fa-slideshare:before, .nerd-fonts-fa-slideshare:before {
+  content: "\f1e7";
+}
+.nf-fa-smile_o:before, .nerd-font-fa-smile_o:before, .nerd-fonts-fa-smile_o:before {
+  content: "\f118";
+}
+.nf-fa-snapchat:before, .nerd-font-fa-snapchat:before, .nerd-fonts-fa-snapchat:before {
+  content: "\f2ab";
+}
+.nf-fa-snapchat_ghost:before, .nerd-font-fa-snapchat_ghost:before, .nerd-fonts-fa-snapchat_ghost:before {
+  content: "\f2ac";
+}
+.nf-fa-snapchat_square:before, .nerd-font-fa-snapchat_square:before, .nerd-fonts-fa-snapchat_square:before {
+  content: "\f2ad";
+}
+.nf-fa-snowflake_o:before, .nerd-font-fa-snowflake_o:before, .nerd-fonts-fa-snowflake_o:before {
+  content: "\f2dc";
+}
+.nf-fa-soccer_ball_o:before, .nerd-font-fa-soccer_ball_o:before, .nerd-fonts-fa-soccer_ball_o:before {
+  content: "\f1e3";
+}
+.nf-fa-sort:before, .nerd-font-fa-sort:before, .nerd-fonts-fa-sort:before {
+  content: "\f0dc";
+}
+.nf-fa-sort_alpha_asc:before, .nerd-font-fa-sort_alpha_asc:before, .nerd-fonts-fa-sort_alpha_asc:before {
+  content: "\f15d";
+}
+.nf-fa-sort_alpha_desc:before, .nerd-font-fa-sort_alpha_desc:before, .nerd-fonts-fa-sort_alpha_desc:before {
+  content: "\f15e";
+}
+.nf-fa-sort_amount_asc:before, .nerd-font-fa-sort_amount_asc:before, .nerd-fonts-fa-sort_amount_asc:before {
+  content: "\f160";
+}
+.nf-fa-sort_amount_desc:before, .nerd-font-fa-sort_amount_desc:before, .nerd-fonts-fa-sort_amount_desc:before {
+  content: "\f161";
+}
+.nf-fa-sort_asc:before, .nerd-font-fa-sort_asc:before, .nerd-fonts-fa-sort_asc:before {
+  content: "\f0de";
+}
+.nf-fa-sort_desc:before, .nerd-font-fa-sort_desc:before, .nerd-fonts-fa-sort_desc:before {
+  content: "\f0dd";
+}
+.nf-fa-sort_down:before, .nerd-font-fa-sort_down:before, .nerd-fonts-fa-sort_down:before {
+  content: "\f0dd";
+}
+.nf-fa-sort_numeric_asc:before, .nerd-font-fa-sort_numeric_asc:before, .nerd-fonts-fa-sort_numeric_asc:before {
+  content: "\f162";
+}
+.nf-fa-sort_numeric_desc:before, .nerd-font-fa-sort_numeric_desc:before, .nerd-fonts-fa-sort_numeric_desc:before {
+  content: "\f163";
+}
+.nf-fa-sort_up:before, .nerd-font-fa-sort_up:before, .nerd-fonts-fa-sort_up:before {
+  content: "\f0de";
+}
+.nf-fa-soundcloud:before, .nerd-font-fa-soundcloud:before, .nerd-fonts-fa-soundcloud:before {
+  content: "\f1be";
+}
+.nf-fa-space_shuttle:before, .nerd-font-fa-space_shuttle:before, .nerd-fonts-fa-space_shuttle:before {
+  content: "\f197";
+}
+.nf-fa-spinner:before, .nerd-font-fa-spinner:before, .nerd-fonts-fa-spinner:before {
+  content: "\f110";
+}
+.nf-fa-spoon:before, .nerd-font-fa-spoon:before, .nerd-fonts-fa-spoon:before {
+  content: "\f1b1";
+}
+.nf-fa-spotify:before, .nerd-font-fa-spotify:before, .nerd-fonts-fa-spotify:before {
+  content: "\f1bc";
+}
+.nf-fa-square:before, .nerd-font-fa-square:before, .nerd-fonts-fa-square:before {
+  content: "\f0c8";
+}
+.nf-fa-square_o:before, .nerd-font-fa-square_o:before, .nerd-fonts-fa-square_o:before {
+  content: "\f096";
+}
+.nf-fa-stack_exchange:before, .nerd-font-fa-stack_exchange:before, .nerd-fonts-fa-stack_exchange:before {
+  content: "\f18d";
+}
+.nf-fa-stack_overflow:before, .nerd-font-fa-stack_overflow:before, .nerd-fonts-fa-stack_overflow:before {
+  content: "\f16c";
+}
+.nf-fa-star:before, .nerd-font-fa-star:before, .nerd-fonts-fa-star:before {
+  content: "\f005";
+}
+.nf-fa-star_half:before, .nerd-font-fa-star_half:before, .nerd-fonts-fa-star_half:before {
+  content: "\f089";
+}
+.nf-fa-star_half_empty:before, .nerd-font-fa-star_half_empty:before, .nerd-fonts-fa-star_half_empty:before {
+  content: "\f123";
+}
+.nf-fa-star_half_full:before, .nerd-font-fa-star_half_full:before, .nerd-fonts-fa-star_half_full:before {
+  content: "\f123";
+}
+.nf-fa-star_half_o:before, .nerd-font-fa-star_half_o:before, .nerd-fonts-fa-star_half_o:before {
+  content: "\f123";
+}
+.nf-fa-star_o:before, .nerd-font-fa-star_o:before, .nerd-fonts-fa-star_o:before {
+  content: "\f006";
+}
+.nf-fa-steam:before, .nerd-font-fa-steam:before, .nerd-fonts-fa-steam:before {
+  content: "\f1b6";
+}
+.nf-fa-steam_square:before, .nerd-font-fa-steam_square:before, .nerd-fonts-fa-steam_square:before {
+  content: "\f1b7";
+}
+.nf-fa-step_backward:before, .nerd-font-fa-step_backward:before, .nerd-fonts-fa-step_backward:before {
+  content: "\f048";
+}
+.nf-fa-step_forward:before, .nerd-font-fa-step_forward:before, .nerd-fonts-fa-step_forward:before {
+  content: "\f051";
+}
+.nf-fa-stethoscope:before, .nerd-font-fa-stethoscope:before, .nerd-fonts-fa-stethoscope:before {
+  content: "\f0f1";
+}
+.nf-fa-sticky_note:before, .nerd-font-fa-sticky_note:before, .nerd-fonts-fa-sticky_note:before {
+  content: "\f249";
+}
+.nf-fa-sticky_note_o:before, .nerd-font-fa-sticky_note_o:before, .nerd-fonts-fa-sticky_note_o:before {
+  content: "\f24a";
+}
+.nf-fa-stop:before, .nerd-font-fa-stop:before, .nerd-fonts-fa-stop:before {
+  content: "\f04d";
+}
+.nf-fa-stop_circle:before, .nerd-font-fa-stop_circle:before, .nerd-fonts-fa-stop_circle:before {
+  content: "\f28d";
+}
+.nf-fa-stop_circle_o:before, .nerd-font-fa-stop_circle_o:before, .nerd-fonts-fa-stop_circle_o:before {
+  content: "\f28e";
+}
+.nf-fa-street_view:before, .nerd-font-fa-street_view:before, .nerd-fonts-fa-street_view:before {
+  content: "\f21d";
+}
+.nf-fa-strikethrough:before, .nerd-font-fa-strikethrough:before, .nerd-fonts-fa-strikethrough:before {
+  content: "\f0cc";
+}
+.nf-fa-stumbleupon:before, .nerd-font-fa-stumbleupon:before, .nerd-fonts-fa-stumbleupon:before {
+  content: "\f1a4";
+}
+.nf-fa-stumbleupon_circle:before, .nerd-font-fa-stumbleupon_circle:before, .nerd-fonts-fa-stumbleupon_circle:before {
+  content: "\f1a3";
+}
+.nf-fa-subscript:before, .nerd-font-fa-subscript:before, .nerd-fonts-fa-subscript:before {
+  content: "\f12c";
+}
+.nf-fa-subway:before, .nerd-font-fa-subway:before, .nerd-fonts-fa-subway:before {
+  content: "\f239";
+}
+.nf-fa-suitcase:before, .nerd-font-fa-suitcase:before, .nerd-fonts-fa-suitcase:before {
+  content: "\f0f2";
+}
+.nf-fa-sun_o:before, .nerd-font-fa-sun_o:before, .nerd-fonts-fa-sun_o:before {
+  content: "\f185";
+}
+.nf-fa-superpowers:before, .nerd-font-fa-superpowers:before, .nerd-fonts-fa-superpowers:before {
+  content: "\f2dd";
+}
+.nf-fa-superscript:before, .nerd-font-fa-superscript:before, .nerd-fonts-fa-superscript:before {
+  content: "\f12b";
+}
+.nf-fa-support:before, .nerd-font-fa-support:before, .nerd-fonts-fa-support:before {
+  content: "\f1cd";
+}
+.nf-fa-table:before, .nerd-font-fa-table:before, .nerd-fonts-fa-table:before {
+  content: "\f0ce";
+}
+.nf-fa-tablet:before, .nerd-font-fa-tablet:before, .nerd-fonts-fa-tablet:before {
+  content: "\f10a";
+}
+.nf-fa-tachometer:before, .nerd-font-fa-tachometer:before, .nerd-fonts-fa-tachometer:before {
+  content: "\f0e4";
+}
+.nf-fa-tag:before, .nerd-font-fa-tag:before, .nerd-fonts-fa-tag:before {
+  content: "\f02b";
+}
+.nf-fa-tags:before, .nerd-font-fa-tags:before, .nerd-fonts-fa-tags:before {
+  content: "\f02c";
+}
+.nf-fa-tasks:before, .nerd-font-fa-tasks:before, .nerd-fonts-fa-tasks:before {
+  content: "\f0ae";
+}
+.nf-fa-taxi:before, .nerd-font-fa-taxi:before, .nerd-fonts-fa-taxi:before {
+  content: "\f1ba";
+}
+.nf-fa-telegram:before, .nerd-font-fa-telegram:before, .nerd-fonts-fa-telegram:before {
+  content: "\f2c6";
+}
+.nf-fa-television:before, .nerd-font-fa-television:before, .nerd-fonts-fa-television:before {
+  content: "\f26c";
+}
+.nf-fa-tencent_weibo:before, .nerd-font-fa-tencent_weibo:before, .nerd-fonts-fa-tencent_weibo:before {
+  content: "\f1d5";
+}
+.nf-fa-terminal:before, .nerd-font-fa-terminal:before, .nerd-fonts-fa-terminal:before {
+  content: "\f120";
+}
+.nf-fa-text_height:before, .nerd-font-fa-text_height:before, .nerd-fonts-fa-text_height:before {
+  content: "\f034";
+}
+.nf-fa-text_width:before, .nerd-font-fa-text_width:before, .nerd-fonts-fa-text_width:before {
+  content: "\f035";
+}
+.nf-fa-th:before, .nerd-font-fa-th:before, .nerd-fonts-fa-th:before {
+  content: "\f00a";
+}
+.nf-fa-th_large:before, .nerd-font-fa-th_large:before, .nerd-fonts-fa-th_large:before {
+  content: "\f009";
+}
+.nf-fa-th_list:before, .nerd-font-fa-th_list:before, .nerd-fonts-fa-th_list:before {
+  content: "\f00b";
+}
+.nf-fa-themeisle:before, .nerd-font-fa-themeisle:before, .nerd-fonts-fa-themeisle:before {
+  content: "\f2b2";
+}
+.nf-fa-thermometer:before, .nerd-font-fa-thermometer:before, .nerd-fonts-fa-thermometer:before {
+  content: "\f2c7";
+}
+.nf-fa-thermometer_0:before, .nerd-font-fa-thermometer_0:before, .nerd-fonts-fa-thermometer_0:before {
+  content: "\f2cb";
+}
+.nf-fa-thermometer_1:before, .nerd-font-fa-thermometer_1:before, .nerd-fonts-fa-thermometer_1:before {
+  content: "\f2ca";
+}
+.nf-fa-thermometer_2:before, .nerd-font-fa-thermometer_2:before, .nerd-fonts-fa-thermometer_2:before {
+  content: "\f2c9";
+}
+.nf-fa-thermometer_3:before, .nerd-font-fa-thermometer_3:before, .nerd-fonts-fa-thermometer_3:before {
+  content: "\f2c8";
+}
+.nf-fa-thermometer_4:before, .nerd-font-fa-thermometer_4:before, .nerd-fonts-fa-thermometer_4:before {
+  content: "\f2c7";
+}
+.nf-fa-thermometer_empty:before, .nerd-font-fa-thermometer_empty:before, .nerd-fonts-fa-thermometer_empty:before {
+  content: "\f2cb";
+}
+.nf-fa-thermometer_full:before, .nerd-font-fa-thermometer_full:before, .nerd-fonts-fa-thermometer_full:before {
+  content: "\f2c7";
+}
+.nf-fa-thermometer_half:before, .nerd-font-fa-thermometer_half:before, .nerd-fonts-fa-thermometer_half:before {
+  content: "\f2c9";
+}
+.nf-fa-thermometer_quarter:before, .nerd-font-fa-thermometer_quarter:before, .nerd-fonts-fa-thermometer_quarter:before {
+  content: "\f2ca";
+}
+.nf-fa-thermometer_three_quarters:before, .nerd-font-fa-thermometer_three_quarters:before, .nerd-fonts-fa-thermometer_three_quarters:before {
+  content: "\f2c8";
+}
+.nf-fa-thumb_tack:before, .nerd-font-fa-thumb_tack:before, .nerd-fonts-fa-thumb_tack:before {
+  content: "\f08d";
+}
+.nf-fa-thumbs_down:before, .nerd-font-fa-thumbs_down:before, .nerd-fonts-fa-thumbs_down:before {
+  content: "\f165";
+}
+.nf-fa-thumbs_o_down:before, .nerd-font-fa-thumbs_o_down:before, .nerd-fonts-fa-thumbs_o_down:before {
+  content: "\f088";
+}
+.nf-fa-thumbs_o_up:before, .nerd-font-fa-thumbs_o_up:before, .nerd-fonts-fa-thumbs_o_up:before {
+  content: "\f087";
+}
+.nf-fa-thumbs_up:before, .nerd-font-fa-thumbs_up:before, .nerd-fonts-fa-thumbs_up:before {
+  content: "\f164";
+}
+.nf-fa-ticket:before, .nerd-font-fa-ticket:before, .nerd-fonts-fa-ticket:before {
+  content: "\f145";
+}
+.nf-fa-times:before, .nerd-font-fa-times:before, .nerd-fonts-fa-times:before {
+  content: "\f00d";
+}
+.nf-fa-times_circle:before, .nerd-font-fa-times_circle:before, .nerd-fonts-fa-times_circle:before {
+  content: "\f057";
+}
+.nf-fa-times_circle_o:before, .nerd-font-fa-times_circle_o:before, .nerd-fonts-fa-times_circle_o:before {
+  content: "\f05c";
+}
+.nf-fa-times_rectangle:before, .nerd-font-fa-times_rectangle:before, .nerd-fonts-fa-times_rectangle:before {
+  content: "\f2d3";
+}
+.nf-fa-times_rectangle_o:before, .nerd-font-fa-times_rectangle_o:before, .nerd-fonts-fa-times_rectangle_o:before {
+  content: "\f2d4";
+}
+.nf-fa-tint:before, .nerd-font-fa-tint:before, .nerd-fonts-fa-tint:before {
+  content: "\f043";
+}
+.nf-fa-toggle_down:before, .nerd-font-fa-toggle_down:before, .nerd-fonts-fa-toggle_down:before {
+  content: "\f150";
+}
+.nf-fa-toggle_left:before, .nerd-font-fa-toggle_left:before, .nerd-fonts-fa-toggle_left:before {
+  content: "\f191";
+}
+.nf-fa-toggle_off:before, .nerd-font-fa-toggle_off:before, .nerd-fonts-fa-toggle_off:before {
+  content: "\f204";
+}
+.nf-fa-toggle_on:before, .nerd-font-fa-toggle_on:before, .nerd-fonts-fa-toggle_on:before {
+  content: "\f205";
+}
+.nf-fa-toggle_right:before, .nerd-font-fa-toggle_right:before, .nerd-fonts-fa-toggle_right:before {
+  content: "\f152";
+}
+.nf-fa-toggle_up:before, .nerd-font-fa-toggle_up:before, .nerd-fonts-fa-toggle_up:before {
+  content: "\f151";
+}
+.nf-fa-trademark:before, .nerd-font-fa-trademark:before, .nerd-fonts-fa-trademark:before {
+  content: "\f25c";
+}
+.nf-fa-train:before, .nerd-font-fa-train:before, .nerd-fonts-fa-train:before {
+  content: "\f238";
+}
+.nf-fa-transgender:before, .nerd-font-fa-transgender:before, .nerd-fonts-fa-transgender:before {
+  content: "\f224";
+}
+.nf-fa-transgender_alt:before, .nerd-font-fa-transgender_alt:before, .nerd-fonts-fa-transgender_alt:before {
+  content: "\f225";
+}
+.nf-fa-trash:before, .nerd-font-fa-trash:before, .nerd-fonts-fa-trash:before {
+  content: "\f1f8";
+}
+.nf-fa-trash_o:before, .nerd-font-fa-trash_o:before, .nerd-fonts-fa-trash_o:before {
+  content: "\f014";
+}
+.nf-fa-tree:before, .nerd-font-fa-tree:before, .nerd-fonts-fa-tree:before {
+  content: "\f1bb";
+}
+.nf-fa-trello:before, .nerd-font-fa-trello:before, .nerd-fonts-fa-trello:before {
+  content: "\f181";
+}
+.nf-fa-tripadvisor:before, .nerd-font-fa-tripadvisor:before, .nerd-fonts-fa-tripadvisor:before {
+  content: "\f262";
+}
+.nf-fa-trophy:before, .nerd-font-fa-trophy:before, .nerd-fonts-fa-trophy:before {
+  content: "\f091";
+}
+.nf-fa-truck:before, .nerd-font-fa-truck:before, .nerd-fonts-fa-truck:before {
+  content: "\f0d1";
+}
+.nf-fa-try:before, .nerd-font-fa-try:before, .nerd-fonts-fa-try:before {
+  content: "\f195";
+}
+.nf-fa-tty:before, .nerd-font-fa-tty:before, .nerd-fonts-fa-tty:before {
+  content: "\f1e4";
+}
+.nf-fa-tumblr:before, .nerd-font-fa-tumblr:before, .nerd-fonts-fa-tumblr:before {
+  content: "\f173";
+}
+.nf-fa-tumblr_square:before, .nerd-font-fa-tumblr_square:before, .nerd-fonts-fa-tumblr_square:before {
+  content: "\f174";
+}
+.nf-fa-turkish_lira:before, .nerd-font-fa-turkish_lira:before, .nerd-fonts-fa-turkish_lira:before {
+  content: "\f195";
+}
+.nf-fa-tv:before, .nerd-font-fa-tv:before, .nerd-fonts-fa-tv:before {
+  content: "\f26c";
+}
+.nf-fa-twitch:before, .nerd-font-fa-twitch:before, .nerd-fonts-fa-twitch:before {
+  content: "\f1e8";
+}
+.nf-fa-twitter:before, .nerd-font-fa-twitter:before, .nerd-fonts-fa-twitter:before {
+  content: "\f099";
+}
+.nf-fa-twitter_square:before, .nerd-font-fa-twitter_square:before, .nerd-fonts-fa-twitter_square:before {
+  content: "\f081";
+}
+.nf-fa-umbrella:before, .nerd-font-fa-umbrella:before, .nerd-fonts-fa-umbrella:before {
+  content: "\f0e9";
+}
+.nf-fa-underline:before, .nerd-font-fa-underline:before, .nerd-fonts-fa-underline:before {
+  content: "\f0cd";
+}
+.nf-fa-undo:before, .nerd-font-fa-undo:before, .nerd-fonts-fa-undo:before {
+  content: "\f0e2";
+}
+.nf-fa-universal_access:before, .nerd-font-fa-universal_access:before, .nerd-fonts-fa-universal_access:before {
+  content: "\f29a";
+}
+.nf-fa-university:before, .nerd-font-fa-university:before, .nerd-fonts-fa-university:before {
+  content: "\f19c";
+}
+.nf-fa-unlink:before, .nerd-font-fa-unlink:before, .nerd-fonts-fa-unlink:before {
+  content: "\f127";
+}
+.nf-fa-unlock:before, .nerd-font-fa-unlock:before, .nerd-fonts-fa-unlock:before {
+  content: "\f09c";
+}
+.nf-fa-unlock_alt:before, .nerd-font-fa-unlock_alt:before, .nerd-fonts-fa-unlock_alt:before {
+  content: "\f13e";
+}
+.nf-fa-unsorted:before, .nerd-font-fa-unsorted:before, .nerd-fonts-fa-unsorted:before {
+  content: "\f0dc";
+}
+.nf-fa-upload:before, .nerd-font-fa-upload:before, .nerd-fonts-fa-upload:before {
+  content: "\f093";
+}
+.nf-fa-usb:before, .nerd-font-fa-usb:before, .nerd-fonts-fa-usb:before {
+  content: "\f287";
+}
+.nf-fa-usd:before, .nerd-font-fa-usd:before, .nerd-fonts-fa-usd:before {
+  content: "\f155";
+}
+.nf-fa-user:before, .nerd-font-fa-user:before, .nerd-fonts-fa-user:before {
+  content: "\f007";
+}
+.nf-fa-user_circle:before, .nerd-font-fa-user_circle:before, .nerd-fonts-fa-user_circle:before {
+  content: "\f2bd";
+}
+.nf-fa-user_circle_o:before, .nerd-font-fa-user_circle_o:before, .nerd-fonts-fa-user_circle_o:before {
+  content: "\f2be";
+}
+.nf-fa-user_md:before, .nerd-font-fa-user_md:before, .nerd-fonts-fa-user_md:before {
+  content: "\f0f0";
+}
+.nf-fa-user_o:before, .nerd-font-fa-user_o:before, .nerd-fonts-fa-user_o:before {
+  content: "\f2c0";
+}
+.nf-fa-user_plus:before, .nerd-font-fa-user_plus:before, .nerd-fonts-fa-user_plus:before {
+  content: "\f234";
+}
+.nf-fa-user_secret:before, .nerd-font-fa-user_secret:before, .nerd-fonts-fa-user_secret:before {
+  content: "\f21b";
+}
+.nf-fa-user_times:before, .nerd-font-fa-user_times:before, .nerd-fonts-fa-user_times:before {
+  content: "\f235";
+}
+.nf-fa-users:before, .nerd-font-fa-users:before, .nerd-fonts-fa-users:before {
+  content: "\f0c0";
+}
+.nf-fa-vcard:before, .nerd-font-fa-vcard:before, .nerd-fonts-fa-vcard:before {
+  content: "\f2bb";
+}
+.nf-fa-vcard_o:before, .nerd-font-fa-vcard_o:before, .nerd-fonts-fa-vcard_o:before {
+  content: "\f2bc";
+}
+.nf-fa-venus:before, .nerd-font-fa-venus:before, .nerd-fonts-fa-venus:before {
+  content: "\f221";
+}
+.nf-fa-venus_double:before, .nerd-font-fa-venus_double:before, .nerd-fonts-fa-venus_double:before {
+  content: "\f226";
+}
+.nf-fa-venus_mars:before, .nerd-font-fa-venus_mars:before, .nerd-fonts-fa-venus_mars:before {
+  content: "\f228";
+}
+.nf-fa-viacoin:before, .nerd-font-fa-viacoin:before, .nerd-fonts-fa-viacoin:before {
+  content: "\f237";
+}
+.nf-fa-viadeo:before, .nerd-font-fa-viadeo:before, .nerd-fonts-fa-viadeo:before {
+  content: "\f2a9";
+}
+.nf-fa-viadeo_square:before, .nerd-font-fa-viadeo_square:before, .nerd-fonts-fa-viadeo_square:before {
+  content: "\f2aa";
+}
+.nf-fa-video_camera:before, .nerd-font-fa-video_camera:before, .nerd-fonts-fa-video_camera:before {
+  content: "\f03d";
+}
+.nf-fa-vimeo:before, .nerd-font-fa-vimeo:before, .nerd-fonts-fa-vimeo:before {
+  content: "\f27d";
+}
+.nf-fa-vimeo_square:before, .nerd-font-fa-vimeo_square:before, .nerd-fonts-fa-vimeo_square:before {
+  content: "\f194";
+}
+.nf-fa-vine:before, .nerd-font-fa-vine:before, .nerd-fonts-fa-vine:before {
+  content: "\f1ca";
+}
+.nf-fa-vk:before, .nerd-font-fa-vk:before, .nerd-fonts-fa-vk:before {
+  content: "\f189";
+}
+.nf-fa-volume_control_phone:before, .nerd-font-fa-volume_control_phone:before, .nerd-fonts-fa-volume_control_phone:before {
+  content: "\f2a0";
+}
+.nf-fa-volume_down:before, .nerd-font-fa-volume_down:before, .nerd-fonts-fa-volume_down:before {
+  content: "\f027";
+}
+.nf-fa-volume_off:before, .nerd-font-fa-volume_off:before, .nerd-fonts-fa-volume_off:before {
+  content: "\f026";
+}
+.nf-fa-volume_up:before, .nerd-font-fa-volume_up:before, .nerd-fonts-fa-volume_up:before {
+  content: "\f028";
+}
+.nf-fa-warning:before, .nerd-font-fa-warning:before, .nerd-fonts-fa-warning:before {
+  content: "\f071";
+}
+.nf-fa-wechat:before, .nerd-font-fa-wechat:before, .nerd-fonts-fa-wechat:before {
+  content: "\f1d7";
+}
+.nf-fa-weibo:before, .nerd-font-fa-weibo:before, .nerd-fonts-fa-weibo:before {
+  content: "\f18a";
+}
+.nf-fa-weixin:before, .nerd-font-fa-weixin:before, .nerd-fonts-fa-weixin:before {
+  content: "\f1d7";
+}
+.nf-fa-whatsapp:before, .nerd-font-fa-whatsapp:before, .nerd-fonts-fa-whatsapp:before {
+  content: "\f232";
+}
+.nf-fa-wheelchair:before, .nerd-font-fa-wheelchair:before, .nerd-fonts-fa-wheelchair:before {
+  content: "\f193";
+}
+.nf-fa-wheelchair_alt:before, .nerd-font-fa-wheelchair_alt:before, .nerd-fonts-fa-wheelchair_alt:before {
+  content: "\f29b";
+}
+.nf-fa-wifi:before, .nerd-font-fa-wifi:before, .nerd-fonts-fa-wifi:before {
+  content: "\f1eb";
+}
+.nf-fa-wikipedia_w:before, .nerd-font-fa-wikipedia_w:before, .nerd-fonts-fa-wikipedia_w:before {
+  content: "\f266";
+}
+.nf-fa-window_close:before, .nerd-font-fa-window_close:before, .nerd-fonts-fa-window_close:before {
+  content: "\f2d3";
+}
+.nf-fa-window_close_o:before, .nerd-font-fa-window_close_o:before, .nerd-fonts-fa-window_close_o:before {
+  content: "\f2d4";
+}
+.nf-fa-window_maximize:before, .nerd-font-fa-window_maximize:before, .nerd-fonts-fa-window_maximize:before {
+  content: "\f2d0";
+}
+.nf-fa-window_minimize:before, .nerd-font-fa-window_minimize:before, .nerd-fonts-fa-window_minimize:before {
+  content: "\f2d1";
+}
+.nf-fa-window_restore:before, .nerd-font-fa-window_restore:before, .nerd-fonts-fa-window_restore:before {
+  content: "\f2d2";
+}
+.nf-fa-windows:before, .nerd-font-fa-windows:before, .nerd-fonts-fa-windows:before {
+  content: "\f17a";
+}
+.nf-fa-won:before, .nerd-font-fa-won:before, .nerd-fonts-fa-won:before {
+  content: "\f159";
+}
+.nf-fa-wordpress:before, .nerd-font-fa-wordpress:before, .nerd-fonts-fa-wordpress:before {
+  content: "\f19a";
+}
+.nf-fa-wpbeginner:before, .nerd-font-fa-wpbeginner:before, .nerd-fonts-fa-wpbeginner:before {
+  content: "\f297";
+}
+.nf-fa-wpexplorer:before, .nerd-font-fa-wpexplorer:before, .nerd-fonts-fa-wpexplorer:before {
+  content: "\f2de";
+}
+.nf-fa-wpforms:before, .nerd-font-fa-wpforms:before, .nerd-fonts-fa-wpforms:before {
+  content: "\f298";
+}
+.nf-fa-wrench:before, .nerd-font-fa-wrench:before, .nerd-fonts-fa-wrench:before {
+  content: "\f0ad";
+}
+.nf-fa-xing:before, .nerd-font-fa-xing:before, .nerd-fonts-fa-xing:before {
+  content: "\f168";
+}
+.nf-fa-xing_square:before, .nerd-font-fa-xing_square:before, .nerd-fonts-fa-xing_square:before {
+  content: "\f169";
+}
+.nf-fa-y_combinator:before, .nerd-font-fa-y_combinator:before, .nerd-fonts-fa-y_combinator:before {
+  content: "\f23b";
+}
+.nf-fa-y_combinator_square:before, .nerd-font-fa-y_combinator_square:before, .nerd-fonts-fa-y_combinator_square:before {
+  content: "\f1d4";
+}
+.nf-fa-yahoo:before, .nerd-font-fa-yahoo:before, .nerd-fonts-fa-yahoo:before {
+  content: "\f19e";
+}
+.nf-fa-yc:before, .nerd-font-fa-yc:before, .nerd-fonts-fa-yc:before {
+  content: "\f23b";
+}
+.nf-fa-yc_square:before, .nerd-font-fa-yc_square:before, .nerd-fonts-fa-yc_square:before {
+  content: "\f1d4";
+}
+.nf-fa-yelp:before, .nerd-font-fa-yelp:before, .nerd-fonts-fa-yelp:before {
+  content: "\f1e9";
+}
+.nf-fa-yen:before, .nerd-font-fa-yen:before, .nerd-fonts-fa-yen:before {
+  content: "\f157";
+}
+.nf-fa-yoast:before, .nerd-font-fa-yoast:before, .nerd-fonts-fa-yoast:before {
+  content: "\f2b1";
+}
+.nf-fa-youtube:before, .nerd-font-fa-youtube:before, .nerd-fonts-fa-youtube:before {
+  content: "\f167";
+}
+.nf-fa-youtube_play:before, .nerd-font-fa-youtube_play:before, .nerd-fonts-fa-youtube_play:before {
+  content: "\f16a";
+}
+.nf-fa-youtube_square:before, .nerd-font-fa-youtube_square:before, .nerd-fonts-fa-youtube_square:before {
+  content: "\f166";
+}
+.nf-fae-apple_fruit:before, .nerd-font-fae-apple_fruit:before, .nerd-fonts-fae-apple_fruit:before {
+  content: "\e29e";
+}
+.nf-fae-atom:before, .nerd-font-fae-atom:before, .nerd-fonts-fae-atom:before {
+  content: "\e27f";
+}
+.nf-fae-bacteria:before, .nerd-font-fae-bacteria:before, .nerd-fonts-fae-bacteria:before {
+  content: "\e280";
+}
+.nf-fae-banana:before, .nerd-font-fae-banana:before, .nerd-fonts-fae-banana:before {
+  content: "\e281";
+}
+.nf-fae-bath:before, .nerd-font-fae-bath:before, .nerd-fonts-fae-bath:before {
+  content: "\e282";
+}
+.nf-fae-bed:before, .nerd-font-fae-bed:before, .nerd-fonts-fae-bed:before {
+  content: "\e283";
+}
+.nf-fae-benzene:before, .nerd-font-fae-benzene:before, .nerd-fonts-fae-benzene:before {
+  content: "\e284";
+}
+.nf-fae-bigger:before, .nerd-font-fae-bigger:before, .nerd-fonts-fae-bigger:before {
+  content: "\e285";
+}
+.nf-fae-biohazard:before, .nerd-font-fae-biohazard:before, .nerd-fonts-fae-biohazard:before {
+  content: "\e286";
+}
+.nf-fae-blogger_circle:before, .nerd-font-fae-blogger_circle:before, .nerd-fonts-fae-blogger_circle:before {
+  content: "\e287";
+}
+.nf-fae-blogger_square:before, .nerd-font-fae-blogger_square:before, .nerd-fonts-fae-blogger_square:before {
+  content: "\e288";
+}
+.nf-fae-bones:before, .nerd-font-fae-bones:before, .nerd-fonts-fae-bones:before {
+  content: "\e289";
+}
+.nf-fae-book_open:before, .nerd-font-fae-book_open:before, .nerd-fonts-fae-book_open:before {
+  content: "\e28a";
+}
+.nf-fae-book_open_o:before, .nerd-font-fae-book_open_o:before, .nerd-fonts-fae-book_open_o:before {
+  content: "\e28b";
+}
+.nf-fae-brain:before, .nerd-font-fae-brain:before, .nerd-fonts-fae-brain:before {
+  content: "\e28c";
+}
+.nf-fae-bread:before, .nerd-font-fae-bread:before, .nerd-fonts-fae-bread:before {
+  content: "\e28d";
+}
+.nf-fae-butterfly:before, .nerd-font-fae-butterfly:before, .nerd-fonts-fae-butterfly:before {
+  content: "\e28e";
+}
+.nf-fae-carot:before, .nerd-font-fae-carot:before, .nerd-fonts-fae-carot:before {
+  content: "\e28f";
+}
+.nf-fae-cc_by:before, .nerd-font-fae-cc_by:before, .nerd-fonts-fae-cc_by:before {
+  content: "\e290";
+}
+.nf-fae-cc_cc:before, .nerd-font-fae-cc_cc:before, .nerd-fonts-fae-cc_cc:before {
+  content: "\e291";
+}
+.nf-fae-cc_nc:before, .nerd-font-fae-cc_nc:before, .nerd-fonts-fae-cc_nc:before {
+  content: "\e292";
+}
+.nf-fae-cc_nc_eu:before, .nerd-font-fae-cc_nc_eu:before, .nerd-fonts-fae-cc_nc_eu:before {
+  content: "\e293";
+}
+.nf-fae-cc_nc_jp:before, .nerd-font-fae-cc_nc_jp:before, .nerd-fonts-fae-cc_nc_jp:before {
+  content: "\e294";
+}
+.nf-fae-cc_nd:before, .nerd-font-fae-cc_nd:before, .nerd-fonts-fae-cc_nd:before {
+  content: "\e295";
+}
+.nf-fae-cc_remix:before, .nerd-font-fae-cc_remix:before, .nerd-fonts-fae-cc_remix:before {
+  content: "\e296";
+}
+.nf-fae-cc_sa:before, .nerd-font-fae-cc_sa:before, .nerd-fonts-fae-cc_sa:before {
+  content: "\e297";
+}
+.nf-fae-cc_share:before, .nerd-font-fae-cc_share:before, .nerd-fonts-fae-cc_share:before {
+  content: "\e298";
+}
+.nf-fae-cc_zero:before, .nerd-font-fae-cc_zero:before, .nerd-fonts-fae-cc_zero:before {
+  content: "\e299";
+}
+.nf-fae-checklist_o:before, .nerd-font-fae-checklist_o:before, .nerd-fonts-fae-checklist_o:before {
+  content: "\e29a";
+}
+.nf-fae-cherry:before, .nerd-font-fae-cherry:before, .nerd-fonts-fae-cherry:before {
+  content: "\e29b";
+}
+.nf-fae-chess_bishop:before, .nerd-font-fae-chess_bishop:before, .nerd-fonts-fae-chess_bishop:before {
+  content: "\e29c";
+}
+.nf-fae-chess_horse:before, .nerd-font-fae-chess_horse:before, .nerd-fonts-fae-chess_horse:before {
+  content: "\e25f";
+}
+.nf-fae-chess_king:before, .nerd-font-fae-chess_king:before, .nerd-fonts-fae-chess_king:before {
+  content: "\e260";
+}
+.nf-fae-chess_pawn:before, .nerd-font-fae-chess_pawn:before, .nerd-fonts-fae-chess_pawn:before {
+  content: "\e261";
+}
+.nf-fae-chess_queen:before, .nerd-font-fae-chess_queen:before, .nerd-fonts-fae-chess_queen:before {
+  content: "\e262";
+}
+.nf-fae-chess_tower:before, .nerd-font-fae-chess_tower:before, .nerd-fonts-fae-chess_tower:before {
+  content: "\e263";
+}
+.nf-fae-chesse:before, .nerd-font-fae-chesse:before, .nerd-fonts-fae-chesse:before {
+  content: "\e264";
+}
+.nf-fae-chicken_thigh:before, .nerd-font-fae-chicken_thigh:before, .nerd-fonts-fae-chicken_thigh:before {
+  content: "\e29f";
+}
+.nf-fae-chilli:before, .nerd-font-fae-chilli:before, .nerd-fonts-fae-chilli:before {
+  content: "\e265";
+}
+.nf-fae-chip:before, .nerd-font-fae-chip:before, .nerd-fonts-fae-chip:before {
+  content: "\e266";
+}
+.nf-fae-cicling:before, .nerd-font-fae-cicling:before, .nerd-fonts-fae-cicling:before {
+  content: "\e267";
+}
+.nf-fae-cloud:before, .nerd-font-fae-cloud:before, .nerd-fonts-fae-cloud:before {
+  content: "\e268";
+}
+.nf-fae-cockroach:before, .nerd-font-fae-cockroach:before, .nerd-fonts-fae-cockroach:before {
+  content: "\e269";
+}
+.nf-fae-coffe_beans:before, .nerd-font-fae-coffe_beans:before, .nerd-fonts-fae-coffe_beans:before {
+  content: "\e26a";
+}
+.nf-fae-coins:before, .nerd-font-fae-coins:before, .nerd-fonts-fae-coins:before {
+  content: "\e26b";
+}
+.nf-fae-comb:before, .nerd-font-fae-comb:before, .nerd-fonts-fae-comb:before {
+  content: "\e26c";
+}
+.nf-fae-comet:before, .nerd-font-fae-comet:before, .nerd-fonts-fae-comet:before {
+  content: "\e26d";
+}
+.nf-fae-crown:before, .nerd-font-fae-crown:before, .nerd-fonts-fae-crown:before {
+  content: "\e26e";
+}
+.nf-fae-cup_coffe:before, .nerd-font-fae-cup_coffe:before, .nerd-fonts-fae-cup_coffe:before {
+  content: "\e26f";
+}
+.nf-fae-dice:before, .nerd-font-fae-dice:before, .nerd-fonts-fae-dice:before {
+  content: "\e270";
+}
+.nf-fae-disco:before, .nerd-font-fae-disco:before, .nerd-fonts-fae-disco:before {
+  content: "\e271";
+}
+.nf-fae-dna:before, .nerd-font-fae-dna:before, .nerd-fonts-fae-dna:before {
+  content: "\e272";
+}
+.nf-fae-donut:before, .nerd-font-fae-donut:before, .nerd-fonts-fae-donut:before {
+  content: "\e273";
+}
+.nf-fae-dress:before, .nerd-font-fae-dress:before, .nerd-fonts-fae-dress:before {
+  content: "\e274";
+}
+.nf-fae-drop:before, .nerd-font-fae-drop:before, .nerd-fonts-fae-drop:before {
+  content: "\e275";
+}
+.nf-fae-ello:before, .nerd-font-fae-ello:before, .nerd-fonts-fae-ello:before {
+  content: "\e276";
+}
+.nf-fae-envelope_open:before, .nerd-font-fae-envelope_open:before, .nerd-fonts-fae-envelope_open:before {
+  content: "\e277";
+}
+.nf-fae-envelope_open_o:before, .nerd-font-fae-envelope_open_o:before, .nerd-fonts-fae-envelope_open_o:before {
+  content: "\e278";
+}
+.nf-fae-equal:before, .nerd-font-fae-equal:before, .nerd-fonts-fae-equal:before {
+  content: "\e279";
+}
+.nf-fae-equal_bigger:before, .nerd-font-fae-equal_bigger:before, .nerd-fonts-fae-equal_bigger:before {
+  content: "\e27a";
+}
+.nf-fae-feedly:before, .nerd-font-fae-feedly:before, .nerd-fonts-fae-feedly:before {
+  content: "\e27b";
+}
+.nf-fae-file_export:before, .nerd-font-fae-file_export:before, .nerd-fonts-fae-file_export:before {
+  content: "\e27c";
+}
+.nf-fae-file_import:before, .nerd-font-fae-file_import:before, .nerd-fonts-fae-file_import:before {
+  content: "\e27d";
+}
+.nf-fae-fingerprint:before, .nerd-font-fae-fingerprint:before, .nerd-fonts-fae-fingerprint:before {
+  content: "\e23f";
+}
+.nf-fae-floppy:before, .nerd-font-fae-floppy:before, .nerd-fonts-fae-floppy:before {
+  content: "\e240";
+}
+.nf-fae-footprint:before, .nerd-font-fae-footprint:before, .nerd-fonts-fae-footprint:before {
+  content: "\e241";
+}
+.nf-fae-freecodecamp:before, .nerd-font-fae-freecodecamp:before, .nerd-fonts-fae-freecodecamp:before {
+  content: "\e242";
+}
+.nf-fae-galaxy:before, .nerd-font-fae-galaxy:before, .nerd-fonts-fae-galaxy:before {
+  content: "\e243";
+}
+.nf-fae-galery:before, .nerd-font-fae-galery:before, .nerd-fonts-fae-galery:before {
+  content: "\e244";
+}
+.nf-fae-gift_card:before, .nerd-font-fae-gift_card:before, .nerd-fonts-fae-gift_card:before {
+  content: "\e2a0";
+}
+.nf-fae-glass:before, .nerd-font-fae-glass:before, .nerd-fonts-fae-glass:before {
+  content: "\e245";
+}
+.nf-fae-google_drive:before, .nerd-font-fae-google_drive:before, .nerd-fonts-fae-google_drive:before {
+  content: "\e246";
+}
+.nf-fae-google_play:before, .nerd-font-fae-google_play:before, .nerd-fonts-fae-google_play:before {
+  content: "\e247";
+}
+.nf-fae-gps:before, .nerd-font-fae-gps:before, .nerd-fonts-fae-gps:before {
+  content: "\e248";
+}
+.nf-fae-grav:before, .nerd-font-fae-grav:before, .nerd-fonts-fae-grav:before {
+  content: "\e249";
+}
+.nf-fae-guitar:before, .nerd-font-fae-guitar:before, .nerd-fonts-fae-guitar:before {
+  content: "\e24a";
+}
+.nf-fae-gut:before, .nerd-font-fae-gut:before, .nerd-fonts-fae-gut:before {
+  content: "\e24b";
+}
+.nf-fae-halter:before, .nerd-font-fae-halter:before, .nerd-fonts-fae-halter:before {
+  content: "\e24c";
+}
+.nf-fae-hamburger:before, .nerd-font-fae-hamburger:before, .nerd-fonts-fae-hamburger:before {
+  content: "\e24d";
+}
+.nf-fae-hat:before, .nerd-font-fae-hat:before, .nerd-fonts-fae-hat:before {
+  content: "\e24e";
+}
+.nf-fae-hexagon:before, .nerd-font-fae-hexagon:before, .nerd-fonts-fae-hexagon:before {
+  content: "\e24f";
+}
+.nf-fae-high_heel:before, .nerd-font-fae-high_heel:before, .nerd-fonts-fae-high_heel:before {
+  content: "\e250";
+}
+.nf-fae-hotdog:before, .nerd-font-fae-hotdog:before, .nerd-fonts-fae-hotdog:before {
+  content: "\e251";
+}
+.nf-fae-ice_cream:before, .nerd-font-fae-ice_cream:before, .nerd-fonts-fae-ice_cream:before {
+  content: "\e252";
+}
+.nf-fae-id_card:before, .nerd-font-fae-id_card:before, .nerd-fonts-fae-id_card:before {
+  content: "\e253";
+}
+.nf-fae-imdb:before, .nerd-font-fae-imdb:before, .nerd-fonts-fae-imdb:before {
+  content: "\e254";
+}
+.nf-fae-infinity:before, .nerd-font-fae-infinity:before, .nerd-fonts-fae-infinity:before {
+  content: "\e255";
+}
+.nf-fae-injection:before, .nerd-font-fae-injection:before, .nerd-fonts-fae-injection:before {
+  content: "\e2a1";
+}
+.nf-fae-isle:before, .nerd-font-fae-isle:before, .nerd-fonts-fae-isle:before {
+  content: "\e2a2";
+}
+.nf-fae-java:before, .nerd-font-fae-java:before, .nerd-fonts-fae-java:before {
+  content: "\e256";
+}
+.nf-fae-layers:before, .nerd-font-fae-layers:before, .nerd-fonts-fae-layers:before {
+  content: "\e257";
+}
+.nf-fae-lips:before, .nerd-font-fae-lips:before, .nerd-fonts-fae-lips:before {
+  content: "\e258";
+}
+.nf-fae-lipstick:before, .nerd-font-fae-lipstick:before, .nerd-fonts-fae-lipstick:before {
+  content: "\e259";
+}
+.nf-fae-liver:before, .nerd-font-fae-liver:before, .nerd-fonts-fae-liver:before {
+  content: "\e25a";
+}
+.nf-fae-lollipop:before, .nerd-font-fae-lollipop:before, .nerd-fonts-fae-lollipop:before {
+  content: "\e2a3";
+}
+.nf-fae-loyalty_card:before, .nerd-font-fae-loyalty_card:before, .nerd-fonts-fae-loyalty_card:before {
+  content: "\e2a4";
+}
+.nf-fae-lung:before, .nerd-font-fae-lung:before, .nerd-fonts-fae-lung:before {
+  content: "\e25b";
+}
+.nf-fae-makeup_brushes:before, .nerd-font-fae-makeup_brushes:before, .nerd-fonts-fae-makeup_brushes:before {
+  content: "\e25c";
+}
+.nf-fae-maximize:before, .nerd-font-fae-maximize:before, .nerd-fonts-fae-maximize:before {
+  content: "\e25d";
+}
+.nf-fae-meat:before, .nerd-font-fae-meat:before, .nerd-fonts-fae-meat:before {
+  content: "\e2a5";
+}
+.nf-fae-medicine:before, .nerd-font-fae-medicine:before, .nerd-fonts-fae-medicine:before {
+  content: "\e221";
+}
+.nf-fae-microscope:before, .nerd-font-fae-microscope:before, .nerd-fonts-fae-microscope:before {
+  content: "\e222";
+}
+.nf-fae-milk_bottle:before, .nerd-font-fae-milk_bottle:before, .nerd-fonts-fae-milk_bottle:before {
+  content: "\e223";
+}
+.nf-fae-minimize:before, .nerd-font-fae-minimize:before, .nerd-fonts-fae-minimize:before {
+  content: "\e224";
+}
+.nf-fae-molecule:before, .nerd-font-fae-molecule:before, .nerd-fonts-fae-molecule:before {
+  content: "\e225";
+}
+.nf-fae-moon_cloud:before, .nerd-font-fae-moon_cloud:before, .nerd-fonts-fae-moon_cloud:before {
+  content: "\e226";
+}
+.nf-fae-mountains:before, .nerd-font-fae-mountains:before, .nerd-fonts-fae-mountains:before {
+  content: "\e2a6";
+}
+.nf-fae-mushroom:before, .nerd-font-fae-mushroom:before, .nerd-fonts-fae-mushroom:before {
+  content: "\e227";
+}
+.nf-fae-mustache:before, .nerd-font-fae-mustache:before, .nerd-fonts-fae-mustache:before {
+  content: "\e228";
+}
+.nf-fae-mysql:before, .nerd-font-fae-mysql:before, .nerd-fonts-fae-mysql:before {
+  content: "\e229";
+}
+.nf-fae-nintendo:before, .nerd-font-fae-nintendo:before, .nerd-fonts-fae-nintendo:before {
+  content: "\e22a";
+}
+.nf-fae-orange:before, .nerd-font-fae-orange:before, .nerd-fonts-fae-orange:before {
+  content: "\e2a7";
+}
+.nf-fae-palette_color:before, .nerd-font-fae-palette_color:before, .nerd-fonts-fae-palette_color:before {
+  content: "\e22b";
+}
+.nf-fae-peach:before, .nerd-font-fae-peach:before, .nerd-fonts-fae-peach:before {
+  content: "\e2a8";
+}
+.nf-fae-pear:before, .nerd-font-fae-pear:before, .nerd-fonts-fae-pear:before {
+  content: "\e2a9";
+}
+.nf-fae-pi:before, .nerd-font-fae-pi:before, .nerd-fonts-fae-pi:before {
+  content: "\e22c";
+}
+.nf-fae-pizza:before, .nerd-font-fae-pizza:before, .nerd-fonts-fae-pizza:before {
+  content: "\e22d";
+}
+.nf-fae-planet:before, .nerd-font-fae-planet:before, .nerd-fonts-fae-planet:before {
+  content: "\e22e";
+}
+.nf-fae-plant:before, .nerd-font-fae-plant:before, .nerd-fonts-fae-plant:before {
+  content: "\e22f";
+}
+.nf-fae-playstation:before, .nerd-font-fae-playstation:before, .nerd-fonts-fae-playstation:before {
+  content: "\e230";
+}
+.nf-fae-poison:before, .nerd-font-fae-poison:before, .nerd-fonts-fae-poison:before {
+  content: "\e231";
+}
+.nf-fae-popcorn:before, .nerd-font-fae-popcorn:before, .nerd-fonts-fae-popcorn:before {
+  content: "\e232";
+}
+.nf-fae-popsicle:before, .nerd-font-fae-popsicle:before, .nerd-fonts-fae-popsicle:before {
+  content: "\e233";
+}
+.nf-fae-pulse:before, .nerd-font-fae-pulse:before, .nerd-fonts-fae-pulse:before {
+  content: "\e234";
+}
+.nf-fae-python:before, .nerd-font-fae-python:before, .nerd-fonts-fae-python:before {
+  content: "\e235";
+}
+.nf-fae-quora_circle:before, .nerd-font-fae-quora_circle:before, .nerd-fonts-fae-quora_circle:before {
+  content: "\e236";
+}
+.nf-fae-quora_square:before, .nerd-font-fae-quora_square:before, .nerd-fonts-fae-quora_square:before {
+  content: "\e237";
+}
+.nf-fae-radioactive:before, .nerd-font-fae-radioactive:before, .nerd-fonts-fae-radioactive:before {
+  content: "\e238";
+}
+.nf-fae-raining:before, .nerd-font-fae-raining:before, .nerd-fonts-fae-raining:before {
+  content: "\e239";
+}
+.nf-fae-real_heart:before, .nerd-font-fae-real_heart:before, .nerd-fonts-fae-real_heart:before {
+  content: "\e23a";
+}
+.nf-fae-refrigerator:before, .nerd-font-fae-refrigerator:before, .nerd-fonts-fae-refrigerator:before {
+  content: "\e23b";
+}
+.nf-fae-restore:before, .nerd-font-fae-restore:before, .nerd-fonts-fae-restore:before {
+  content: "\e23c";
+}
+.nf-fae-ring:before, .nerd-font-fae-ring:before, .nerd-fonts-fae-ring:before {
+  content: "\e23d";
+}
+.nf-fae-ruby:before, .nerd-font-fae-ruby:before, .nerd-fonts-fae-ruby:before {
+  content: "\e23e";
+}
+.nf-fae-ruby_o:before, .nerd-font-fae-ruby_o:before, .nerd-fonts-fae-ruby_o:before {
+  content: "\e21e";
+}
+.nf-fae-ruler:before, .nerd-font-fae-ruler:before, .nerd-fonts-fae-ruler:before {
+  content: "\e21f";
+}
+.nf-fae-shirt:before, .nerd-font-fae-shirt:before, .nerd-fonts-fae-shirt:before {
+  content: "\e218";
+}
+.nf-fae-slash:before, .nerd-font-fae-slash:before, .nerd-fonts-fae-slash:before {
+  content: "\e216";
+}
+.nf-fae-smaller:before, .nerd-font-fae-smaller:before, .nerd-fonts-fae-smaller:before {
+  content: "\e200";
+}
+.nf-fae-snowing:before, .nerd-font-fae-snowing:before, .nerd-fonts-fae-snowing:before {
+  content: "\e201";
+}
+.nf-fae-soda:before, .nerd-font-fae-soda:before, .nerd-fonts-fae-soda:before {
+  content: "\e202";
+}
+.nf-fae-sofa:before, .nerd-font-fae-sofa:before, .nerd-fonts-fae-sofa:before {
+  content: "\e203";
+}
+.nf-fae-soup:before, .nerd-font-fae-soup:before, .nerd-fonts-fae-soup:before {
+  content: "\e204";
+}
+.nf-fae-spermatozoon:before, .nerd-font-fae-spermatozoon:before, .nerd-fonts-fae-spermatozoon:before {
+  content: "\e205";
+}
+.nf-fae-spin_double:before, .nerd-font-fae-spin_double:before, .nerd-fonts-fae-spin_double:before {
+  content: "\e206";
+}
+.nf-fae-stomach:before, .nerd-font-fae-stomach:before, .nerd-fonts-fae-stomach:before {
+  content: "\e207";
+}
+.nf-fae-storm:before, .nerd-font-fae-storm:before, .nerd-fonts-fae-storm:before {
+  content: "\e208";
+}
+.nf-fae-sun_cloud:before, .nerd-font-fae-sun_cloud:before, .nerd-fonts-fae-sun_cloud:before {
+  content: "\e21d";
+}
+.nf-fae-sushi:before, .nerd-font-fae-sushi:before, .nerd-fonts-fae-sushi:before {
+  content: "\e21a";
+}
+.nf-fae-tacos:before, .nerd-font-fae-tacos:before, .nerd-fonts-fae-tacos:before {
+  content: "\e219";
+}
+.nf-fae-telegram:before, .nerd-font-fae-telegram:before, .nerd-fonts-fae-telegram:before {
+  content: "\e217";
+}
+.nf-fae-telegram_circle:before, .nerd-font-fae-telegram_circle:before, .nerd-fonts-fae-telegram_circle:before {
+  content: "\e215";
+}
+.nf-fae-telescope:before, .nerd-font-fae-telescope:before, .nerd-fonts-fae-telescope:before {
+  content: "\e209";
+}
+.nf-fae-thermometer:before, .nerd-font-fae-thermometer:before, .nerd-fonts-fae-thermometer:before {
+  content: "\e20a";
+}
+.nf-fae-thermometer_high:before, .nerd-font-fae-thermometer_high:before, .nerd-fonts-fae-thermometer_high:before {
+  content: "\e20b";
+}
+.nf-fae-thermometer_low:before, .nerd-font-fae-thermometer_low:before, .nerd-fonts-fae-thermometer_low:before {
+  content: "\e20c";
+}
+.nf-fae-thin_close:before, .nerd-font-fae-thin_close:before, .nerd-fonts-fae-thin_close:before {
+  content: "\e20d";
+}
+.nf-fae-toilet:before, .nerd-font-fae-toilet:before, .nerd-fonts-fae-toilet:before {
+  content: "\e20e";
+}
+.nf-fae-tools:before, .nerd-font-fae-tools:before, .nerd-fonts-fae-tools:before {
+  content: "\e20f";
+}
+.nf-fae-tooth:before, .nerd-font-fae-tooth:before, .nerd-fonts-fae-tooth:before {
+  content: "\e210";
+}
+.nf-fae-tree:before, .nerd-font-fae-tree:before, .nerd-fonts-fae-tree:before {
+  content: "\e21c";
+}
+.nf-fae-triangle_ruler:before, .nerd-font-fae-triangle_ruler:before, .nerd-fonts-fae-triangle_ruler:before {
+  content: "\e21b";
+}
+.nf-fae-umbrella:before, .nerd-font-fae-umbrella:before, .nerd-fonts-fae-umbrella:before {
+  content: "\e220";
+}
+.nf-fae-uterus:before, .nerd-font-fae-uterus:before, .nerd-fonts-fae-uterus:before {
+  content: "\e211";
+}
+.nf-fae-virus:before, .nerd-font-fae-virus:before, .nerd-fonts-fae-virus:before {
+  content: "\e214";
+}
+.nf-fae-w3c:before, .nerd-font-fae-w3c:before, .nerd-fonts-fae-w3c:before {
+  content: "\e212";
+}
+.nf-fae-walking:before, .nerd-font-fae-walking:before, .nerd-fonts-fae-walking:before {
+  content: "\e213";
+}
+.nf-fae-wallet:before, .nerd-font-fae-wallet:before, .nerd-fonts-fae-wallet:before {
+  content: "\e25e";
+}
+.nf-fae-wind:before, .nerd-font-fae-wind:before, .nerd-fonts-fae-wind:before {
+  content: "\e27e";
+}
+.nf-fae-xbox:before, .nerd-font-fae-xbox:before, .nerd-fonts-fae-xbox:before {
+  content: "\e29d";
+}
+.nf-iec-power:before, .nerd-font-iec-power:before, .nerd-fonts-iec-power:before {
+  content: "\23fb";
+}
+.nf-iec-power_off:before, .nerd-font-iec-power_off:before, .nerd-fonts-iec-power_off:before {
+  content: "\2b58";
+}
+.nf-iec-power_on:before, .nerd-font-iec-power_on:before, .nerd-fonts-iec-power_on:before {
+  content: "\23fd";
+}
+.nf-iec-sleep_mode:before, .nerd-font-iec-sleep_mode:before, .nerd-fonts-iec-sleep_mode:before {
+  content: "\23fe";
+}
+.nf-iec-toggle_power:before, .nerd-font-iec-toggle_power:before, .nerd-fonts-iec-toggle_power:before {
+  content: "\23fc";
+}
+.nf-indent-dotted_guide:before, .nerd-font-indent-dotted_guide:before, .nerd-fonts-indent-dotted_guide:before {
+  content: "\e621";
+}
+.nf-indent-line:before, .nerd-font-indent-line:before, .nerd-fonts-indent-line:before {
+  content: "\e621";
+}
+.nf-indentation-line:before, .nerd-font-indentation-line:before, .nerd-fonts-indentation-line:before {
+  content: "\e621";
+}
+.nf-linux-archlinux:before, .nerd-font-linux-archlinux:before, .nerd-fonts-linux-archlinux:before {
+  content: "\f300";
+}
+.nf-linux-centos:before, .nerd-font-linux-centos:before, .nerd-fonts-linux-centos:before {
+  content: "\f301";
+}
+.nf-linux-coreos:before, .nerd-font-linux-coreos:before, .nerd-fonts-linux-coreos:before {
+  content: "\f30f";
+}
+.nf-linux-debian:before, .nerd-font-linux-debian:before, .nerd-fonts-linux-debian:before {
+  content: "\f302";
+}
+.nf-linux-elementary:before, .nerd-font-linux-elementary:before, .nerd-fonts-linux-elementary:before {
+  content: "\f311";
+}
+.nf-linux-fedora:before, .nerd-font-linux-fedora:before, .nerd-fonts-linux-fedora:before {
+  content: "\f303";
+}
+.nf-linux-fedora_inverse:before, .nerd-font-linux-fedora_inverse:before, .nerd-fonts-linux-fedora_inverse:before {
+  content: "\f312";
+}
+.nf-linux-freebsd:before, .nerd-font-linux-freebsd:before, .nerd-fonts-linux-freebsd:before {
+  content: "\f30e";
+}
+.nf-linux-gentoo:before, .nerd-font-linux-gentoo:before, .nerd-fonts-linux-gentoo:before {
+  content: "\f310";
+}
+.nf-linux-linuxmint:before, .nerd-font-linux-linuxmint:before, .nerd-fonts-linux-linuxmint:before {
+  content: "\f304";
+}
+.nf-linux-linuxmint_inverse:before, .nerd-font-linux-linuxmint_inverse:before, .nerd-fonts-linux-linuxmint_inverse:before {
+  content: "\f305";
+}
+.nf-linux-mageia:before, .nerd-font-linux-mageia:before, .nerd-fonts-linux-mageia:before {
+  content: "\f306";
+}
+.nf-linux-mandriva:before, .nerd-font-linux-mandriva:before, .nerd-fonts-linux-mandriva:before {
+  content: "\f307";
+}
+.nf-linux-opensuse:before, .nerd-font-linux-opensuse:before, .nerd-fonts-linux-opensuse:before {
+  content: "\f308";
+}
+.nf-linux-redhat:before, .nerd-font-linux-redhat:before, .nerd-fonts-linux-redhat:before {
+  content: "\f309";
+}
+.nf-linux-sabayon:before, .nerd-font-linux-sabayon:before, .nerd-fonts-linux-sabayon:before {
+  content: "\f313";
+}
+.nf-linux-slackware:before, .nerd-font-linux-slackware:before, .nerd-fonts-linux-slackware:before {
+  content: "\f30a";
+}
+.nf-linux-slackware_inverse:before, .nerd-font-linux-slackware_inverse:before, .nerd-fonts-linux-slackware_inverse:before {
+  content: "\f30b";
+}
+.nf-linux-ubuntu:before, .nerd-font-linux-ubuntu:before, .nerd-fonts-linux-ubuntu:before {
+  content: "\f30c";
+}
+.nf-linux-ubuntu_inverse:before, .nerd-font-linux-ubuntu_inverse:before, .nerd-fonts-linux-ubuntu_inverse:before {
+  content: "\f30d";
+}
+.nf-oct-alert:before, .nerd-font-oct-alert:before, .nerd-fonts-oct-alert:before {
+  content: "\f421";
+}
+.nf-oct-arrow_down:before, .nerd-font-oct-arrow_down:before, .nerd-fonts-oct-arrow_down:before {
+  content: "\f433";
+}
+.nf-oct-arrow_left:before, .nerd-font-oct-arrow_left:before, .nerd-fonts-oct-arrow_left:before {
+  content: "\f434";
+}
+.nf-oct-arrow_right:before, .nerd-font-oct-arrow_right:before, .nerd-fonts-oct-arrow_right:before {
+  content: "\f432";
+}
+.nf-oct-arrow_small_down:before, .nerd-font-oct-arrow_small_down:before, .nerd-fonts-oct-arrow_small_down:before {
+  content: "\f479";
+}
+.nf-oct-arrow_small_left:before, .nerd-font-oct-arrow_small_left:before, .nerd-fonts-oct-arrow_small_left:before {
+  content: "\f47a";
+}
+.nf-oct-arrow_small_right:before, .nerd-font-oct-arrow_small_right:before, .nerd-fonts-oct-arrow_small_right:before {
+  content: "\f45c";
+}
+.nf-oct-arrow_small_up:before, .nerd-font-oct-arrow_small_up:before, .nerd-fonts-oct-arrow_small_up:before {
+  content: "\f478";
+}
+.nf-oct-arrow_up:before, .nerd-font-oct-arrow_up:before, .nerd-fonts-oct-arrow_up:before {
+  content: "\f431";
+}
+.nf-oct-beaker:before, .nerd-font-oct-beaker:before, .nerd-fonts-oct-beaker:before {
+  content: "\f499";
+}
+.nf-oct-bell:before, .nerd-font-oct-bell:before, .nerd-fonts-oct-bell:before {
+  content: "\f49a";
+}
+.nf-oct-bold:before, .nerd-font-oct-bold:before, .nerd-fonts-oct-bold:before {
+  content: "\f49d";
+}
+.nf-oct-book:before, .nerd-font-oct-book:before, .nerd-fonts-oct-book:before {
+  content: "\f405";
+}
+.nf-oct-bookmark:before, .nerd-font-oct-bookmark:before, .nerd-fonts-oct-bookmark:before {
+  content: "\f461";
+}
+.nf-oct-briefcase:before, .nerd-font-oct-briefcase:before, .nerd-fonts-oct-briefcase:before {
+  content: "\f491";
+}
+.nf-oct-broadcast:before, .nerd-font-oct-broadcast:before, .nerd-fonts-oct-broadcast:before {
+  content: "\f43c";
+}
+.nf-oct-browser:before, .nerd-font-oct-browser:before, .nerd-fonts-oct-browser:before {
+  content: "\f488";
+}
+.nf-oct-bug:before, .nerd-font-oct-bug:before, .nerd-fonts-oct-bug:before {
+  content: "\f46f";
+}
+.nf-oct-calendar:before, .nerd-font-oct-calendar:before, .nerd-fonts-oct-calendar:before {
+  content: "\f455";
+}
+.nf-oct-check:before, .nerd-font-oct-check:before, .nerd-fonts-oct-check:before {
+  content: "\f42e";
+}
+.nf-oct-checklist:before, .nerd-font-oct-checklist:before, .nerd-fonts-oct-checklist:before {
+  content: "\f45e";
+}
+.nf-oct-chevron_down:before, .nerd-font-oct-chevron_down:before, .nerd-fonts-oct-chevron_down:before {
+  content: "\f47c";
+}
+.nf-oct-chevron_left:before, .nerd-font-oct-chevron_left:before, .nerd-fonts-oct-chevron_left:before {
+  content: "\f47d";
+}
+.nf-oct-chevron_right:before, .nerd-font-oct-chevron_right:before, .nerd-fonts-oct-chevron_right:before {
+  content: "\f460";
+}
+.nf-oct-chevron_up:before, .nerd-font-oct-chevron_up:before, .nerd-fonts-oct-chevron_up:before {
+  content: "\f47b";
+}
+.nf-oct-circle_slash:before, .nerd-font-oct-circle_slash:before, .nerd-fonts-oct-circle_slash:before {
+  content: "\f468";
+}
+.nf-oct-circuit_board:before, .nerd-font-oct-circuit_board:before, .nerd-fonts-oct-circuit_board:before {
+  content: "\f493";
+}
+.nf-oct-clippy:before, .nerd-font-oct-clippy:before, .nerd-fonts-oct-clippy:before {
+  content: "\f429";
+}
+.nf-oct-clock:before, .nerd-font-oct-clock:before, .nerd-fonts-oct-clock:before {
+  content: "\f43a";
+}
+.nf-oct-cloud_download:before, .nerd-font-oct-cloud_download:before, .nerd-fonts-oct-cloud_download:before {
+  content: "\f409";
+}
+.nf-oct-cloud_upload:before, .nerd-font-oct-cloud_upload:before, .nerd-fonts-oct-cloud_upload:before {
+  content: "\f40a";
+}
+.nf-oct-code:before, .nerd-font-oct-code:before, .nerd-fonts-oct-code:before {
+  content: "\f44f";
+}
+.nf-oct-comment:before, .nerd-font-oct-comment:before, .nerd-fonts-oct-comment:before {
+  content: "\f41f";
+}
+.nf-oct-comment_discussion:before, .nerd-font-oct-comment_discussion:before, .nerd-fonts-oct-comment_discussion:before {
+  content: "\f442";
+}
+.nf-oct-credit_card:before, .nerd-font-oct-credit_card:before, .nerd-fonts-oct-credit_card:before {
+  content: "\f439";
+}
+.nf-oct-dash:before, .nerd-font-oct-dash:before, .nerd-fonts-oct-dash:before {
+  content: "\f48b";
+}
+.nf-oct-dashboard:before, .nerd-font-oct-dashboard:before, .nerd-fonts-oct-dashboard:before {
+  content: "\f463";
+}
+.nf-oct-database:before, .nerd-font-oct-database:before, .nerd-fonts-oct-database:before {
+  content: "\f472";
+}
+.nf-oct-desktop_download:before, .nerd-font-oct-desktop_download:before, .nerd-fonts-oct-desktop_download:before {
+  content: "\f498";
+}
+.nf-oct-device_camera:before, .nerd-font-oct-device_camera:before, .nerd-fonts-oct-device_camera:before {
+  content: "\f446";
+}
+.nf-oct-device_camera_video:before, .nerd-font-oct-device_camera_video:before, .nerd-fonts-oct-device_camera_video:before {
+  content: "\f447";
+}
+.nf-oct-device_desktop:before, .nerd-font-oct-device_desktop:before, .nerd-fonts-oct-device_desktop:before {
+  content: "\f67c";
+}
+.nf-oct-device_mobile:before, .nerd-font-oct-device_mobile:before, .nerd-fonts-oct-device_mobile:before {
+  content: "\f42c";
+}
+.nf-oct-diff:before, .nerd-font-oct-diff:before, .nerd-fonts-oct-diff:before {
+  content: "\f440";
+}
+.nf-oct-diff_added:before, .nerd-font-oct-diff_added:before, .nerd-fonts-oct-diff_added:before {
+  content: "\f457";
+}
+.nf-oct-diff_ignored:before, .nerd-font-oct-diff_ignored:before, .nerd-fonts-oct-diff_ignored:before {
+  content: "\f474";
+}
+.nf-oct-diff_modified:before, .nerd-font-oct-diff_modified:before, .nerd-fonts-oct-diff_modified:before {
+  content: "\f459";
+}
+.nf-oct-diff_removed:before, .nerd-font-oct-diff_removed:before, .nerd-fonts-oct-diff_removed:before {
+  content: "\f458";
+}
+.nf-oct-diff_renamed:before, .nerd-font-oct-diff_renamed:before, .nerd-fonts-oct-diff_renamed:before {
+  content: "\f45a";
+}
+.nf-oct-ellipses:before, .nerd-font-oct-ellipses:before, .nerd-fonts-oct-ellipses:before {
+  content: "\f4a4";
+}
+.nf-oct-ellipsis:before, .nerd-font-oct-ellipsis:before, .nerd-fonts-oct-ellipsis:before {
+  content: "\f475";
+}
+.nf-oct-eye:before, .nerd-font-oct-eye:before, .nerd-fonts-oct-eye:before {
+  content: "\f441";
+}
+.nf-oct-file:before, .nerd-font-oct-file:before, .nerd-fonts-oct-file:before {
+  content: "\f4a5";
+}
+.nf-oct-file_binary:before, .nerd-font-oct-file_binary:before, .nerd-fonts-oct-file_binary:before {
+  content: "\f471";
+}
+.nf-oct-file_code:before, .nerd-font-oct-file_code:before, .nerd-fonts-oct-file_code:before {
+  content: "\f40d";
+}
+.nf-oct-file_directory:before, .nerd-font-oct-file_directory:before, .nerd-fonts-oct-file_directory:before {
+  content: "\f413";
+}
+.nf-oct-file_media:before, .nerd-font-oct-file_media:before, .nerd-fonts-oct-file_media:before {
+  content: "\f40f";
+}
+.nf-oct-file_pdf:before, .nerd-font-oct-file_pdf:before, .nerd-fonts-oct-file_pdf:before {
+  content: "\f411";
+}
+.nf-oct-file_submodule:before, .nerd-font-oct-file_submodule:before, .nerd-fonts-oct-file_submodule:before {
+  content: "\f414";
+}
+.nf-oct-file_symlink_directory:before, .nerd-font-oct-file_symlink_directory:before, .nerd-fonts-oct-file_symlink_directory:before {
+  content: "\f482";
+}
+.nf-oct-file_symlink_file:before, .nerd-font-oct-file_symlink_file:before, .nerd-fonts-oct-file_symlink_file:before {
+  content: "\f481";
+}
+.nf-oct-file_text:before, .nerd-font-oct-file_text:before, .nerd-fonts-oct-file_text:before {
+  content: "\f40e";
+}
+.nf-oct-file_zip:before, .nerd-font-oct-file_zip:before, .nerd-fonts-oct-file_zip:before {
+  content: "\f410";
+}
+.nf-oct-flame:before, .nerd-font-oct-flame:before, .nerd-fonts-oct-flame:before {
+  content: "\f490";
+}
+.nf-oct-fold:before, .nerd-font-oct-fold:before, .nerd-fonts-oct-fold:before {
+  content: "\f48c";
+}
+.nf-oct-gear:before, .nerd-font-oct-gear:before, .nerd-fonts-oct-gear:before {
+  content: "\f423";
+}
+.nf-oct-gift:before, .nerd-font-oct-gift:before, .nerd-fonts-oct-gift:before {
+  content: "\f436";
+}
+.nf-oct-gist:before, .nerd-font-oct-gist:before, .nerd-fonts-oct-gist:before {
+  content: "\f40c";
+}
+.nf-oct-gist_secret:before, .nerd-font-oct-gist_secret:before, .nerd-fonts-oct-gist_secret:before {
+  content: "\f46c";
+}
+.nf-oct-git_branch:before, .nerd-font-oct-git_branch:before, .nerd-fonts-oct-git_branch:before {
+  content: "\f418";
+}
+.nf-oct-git_commit:before, .nerd-font-oct-git_commit:before, .nerd-fonts-oct-git_commit:before {
+  content: "\f417";
+}
+.nf-oct-git_compare:before, .nerd-font-oct-git_compare:before, .nerd-fonts-oct-git_compare:before {
+  content: "\f47f";
+}
+.nf-oct-git_merge:before, .nerd-font-oct-git_merge:before, .nerd-fonts-oct-git_merge:before {
+  content: "\f419";
+}
+.nf-oct-git_pull_request:before, .nerd-font-oct-git_pull_request:before, .nerd-fonts-oct-git_pull_request:before {
+  content: "\f407";
+}
+.nf-oct-globe:before, .nerd-font-oct-globe:before, .nerd-fonts-oct-globe:before {
+  content: "\f484";
+}
+.nf-oct-grabber:before, .nerd-font-oct-grabber:before, .nerd-fonts-oct-grabber:before {
+  content: "\f4a6";
+}
+.nf-oct-graph:before, .nerd-font-oct-graph:before, .nerd-fonts-oct-graph:before {
+  content: "\f437";
+}
+.nf-oct-heart:before, .nerd-font-oct-heart:before, .nerd-fonts-oct-heart:before {
+  content: "\2665";
+}
+.nf-oct-history:before, .nerd-font-oct-history:before, .nerd-fonts-oct-history:before {
+  content: "\f464";
+}
+.nf-oct-home:before, .nerd-font-oct-home:before, .nerd-fonts-oct-home:before {
+  content: "\f46d";
+}
+.nf-oct-horizontal_rule:before, .nerd-font-oct-horizontal_rule:before, .nerd-fonts-oct-horizontal_rule:before {
+  content: "\f45b";
+}
+.nf-oct-hubot:before, .nerd-font-oct-hubot:before, .nerd-fonts-oct-hubot:before {
+  content: "\f477";
+}
+.nf-oct-inbox:before, .nerd-font-oct-inbox:before, .nerd-fonts-oct-inbox:before {
+  content: "\f48d";
+}
+.nf-oct-info:before, .nerd-font-oct-info:before, .nerd-fonts-oct-info:before {
+  content: "\f449";
+}
+.nf-oct-issue_closed:before, .nerd-font-oct-issue_closed:before, .nerd-fonts-oct-issue_closed:before {
+  content: "\f41d";
+}
+.nf-oct-issue_opened:before, .nerd-font-oct-issue_opened:before, .nerd-fonts-oct-issue_opened:before {
+  content: "\f41b";
+}
+.nf-oct-issue_reopened:before, .nerd-font-oct-issue_reopened:before, .nerd-fonts-oct-issue_reopened:before {
+  content: "\f41c";
+}
+.nf-oct-italic:before, .nerd-font-oct-italic:before, .nerd-fonts-oct-italic:before {
+  content: "\f49f";
+}
+.nf-oct-jersey:before, .nerd-font-oct-jersey:before, .nerd-fonts-oct-jersey:before {
+  content: "\f416";
+}
+.nf-oct-key:before, .nerd-font-oct-key:before, .nerd-fonts-oct-key:before {
+  content: "\f43d";
+}
+.nf-oct-keyboard:before, .nerd-font-oct-keyboard:before, .nerd-fonts-oct-keyboard:before {
+  content: "\f40b";
+}
+.nf-oct-law:before, .nerd-font-oct-law:before, .nerd-fonts-oct-law:before {
+  content: "\f495";
+}
+.nf-oct-light_bulb:before, .nerd-font-oct-light_bulb:before, .nerd-fonts-oct-light_bulb:before {
+  content: "\f400";
+}
+.nf-oct-link:before, .nerd-font-oct-link:before, .nerd-fonts-oct-link:before {
+  content: "\f44c";
+}
+.nf-oct-link_external:before, .nerd-font-oct-link_external:before, .nerd-fonts-oct-link_external:before {
+  content: "\f465";
+}
+.nf-oct-list_ordered:before, .nerd-font-oct-list_ordered:before, .nerd-fonts-oct-list_ordered:before {
+  content: "\f452";
+}
+.nf-oct-list_unordered:before, .nerd-font-oct-list_unordered:before, .nerd-fonts-oct-list_unordered:before {
+  content: "\f451";
+}
+.nf-oct-location:before, .nerd-font-oct-location:before, .nerd-fonts-oct-location:before {
+  content: "\f450";
+}
+.nf-oct-lock:before, .nerd-font-oct-lock:before, .nerd-fonts-oct-lock:before {
+  content: "\f456";
+}
+.nf-oct-logo_gist:before, .nerd-font-oct-logo_gist:before, .nerd-fonts-oct-logo_gist:before {
+  content: "\f480";
+}
+.nf-oct-logo_github:before, .nerd-font-oct-logo_github:before, .nerd-fonts-oct-logo_github:before {
+  content: "\f470";
+}
+.nf-oct-mail:before, .nerd-font-oct-mail:before, .nerd-fonts-oct-mail:before {
+  content: "\f42f";
+}
+.nf-oct-mail_read:before, .nerd-font-oct-mail_read:before, .nerd-fonts-oct-mail_read:before {
+  content: "\f430";
+}
+.nf-oct-mail_reply:before, .nerd-font-oct-mail_reply:before, .nerd-fonts-oct-mail_reply:before {
+  content: "\f443";
+}
+.nf-oct-mark_github:before, .nerd-font-oct-mark_github:before, .nerd-fonts-oct-mark_github:before {
+  content: "\f408";
+}
+.nf-oct-markdown:before, .nerd-font-oct-markdown:before, .nerd-fonts-oct-markdown:before {
+  content: "\f48a";
+}
+.nf-oct-megaphone:before, .nerd-font-oct-megaphone:before, .nerd-fonts-oct-megaphone:before {
+  content: "\f45f";
+}
+.nf-oct-mention:before, .nerd-font-oct-mention:before, .nerd-fonts-oct-mention:before {
+  content: "\f486";
+}
+.nf-oct-milestone:before, .nerd-font-oct-milestone:before, .nerd-fonts-oct-milestone:before {
+  content: "\f45d";
+}
+.nf-oct-mirror:before, .nerd-font-oct-mirror:before, .nerd-fonts-oct-mirror:before {
+  content: "\f41a";
+}
+.nf-oct-mortar_board:before, .nerd-font-oct-mortar_board:before, .nerd-fonts-oct-mortar_board:before {
+  content: "\f494";
+}
+.nf-oct-mute:before, .nerd-font-oct-mute:before, .nerd-fonts-oct-mute:before {
+  content: "\f466";
+}
+.nf-oct-no_newline:before, .nerd-font-oct-no_newline:before, .nerd-fonts-oct-no_newline:before {
+  content: "\f476";
+}
+.nf-oct-octoface:before, .nerd-font-oct-octoface:before, .nerd-fonts-oct-octoface:before {
+  content: "\f406";
+}
+.nf-oct-organization:before, .nerd-font-oct-organization:before, .nerd-fonts-oct-organization:before {
+  content: "\f42b";
+}
+.nf-oct-package:before, .nerd-font-oct-package:before, .nerd-fonts-oct-package:before {
+  content: "\f487";
+}
+.nf-oct-paintcan:before, .nerd-font-oct-paintcan:before, .nerd-fonts-oct-paintcan:before {
+  content: "\f48f";
+}
+.nf-oct-pencil:before, .nerd-font-oct-pencil:before, .nerd-fonts-oct-pencil:before {
+  content: "\f448";
+}
+.nf-oct-person:before, .nerd-font-oct-person:before, .nerd-fonts-oct-person:before {
+  content: "\f415";
+}
+.nf-oct-pin:before, .nerd-font-oct-pin:before, .nerd-fonts-oct-pin:before {
+  content: "\f435";
+}
+.nf-oct-plug:before, .nerd-font-oct-plug:before, .nerd-fonts-oct-plug:before {
+  content: "\f492";
+}
+.nf-oct-plus:before, .nerd-font-oct-plus:before, .nerd-fonts-oct-plus:before {
+  content: "\f44d";
+}
+.nf-oct-plus_small:before, .nerd-font-oct-plus_small:before, .nerd-fonts-oct-plus_small:before {
+  content: "\f4a7";
+}
+.nf-oct-primitive_dot:before, .nerd-font-oct-primitive_dot:before, .nerd-fonts-oct-primitive_dot:before {
+  content: "\f444";
+}
+.nf-oct-primitive_square:before, .nerd-font-oct-primitive_square:before, .nerd-fonts-oct-primitive_square:before {
+  content: "\f445";
+}
+.nf-oct-pulse:before, .nerd-font-oct-pulse:before, .nerd-fonts-oct-pulse:before {
+  content: "\f469";
+}
+.nf-oct-question:before, .nerd-font-oct-question:before, .nerd-fonts-oct-question:before {
+  content: "\f420";
+}
+.nf-oct-quote:before, .nerd-font-oct-quote:before, .nerd-fonts-oct-quote:before {
+  content: "\f453";
+}
+.nf-oct-radio_tower:before, .nerd-font-oct-radio_tower:before, .nerd-fonts-oct-radio_tower:before {
+  content: "\f424";
+}
+.nf-oct-reply:before, .nerd-font-oct-reply:before, .nerd-fonts-oct-reply:before {
+  content: "\f4a8";
+}
+.nf-oct-repo:before, .nerd-font-oct-repo:before, .nerd-fonts-oct-repo:before {
+  content: "\f401";
+}
+.nf-oct-repo_clone:before, .nerd-font-oct-repo_clone:before, .nerd-fonts-oct-repo_clone:before {
+  content: "\f43f";
+}
+.nf-oct-repo_force_push:before, .nerd-font-oct-repo_force_push:before, .nerd-fonts-oct-repo_force_push:before {
+  content: "\f43e";
+}
+.nf-oct-repo_forked:before, .nerd-font-oct-repo_forked:before, .nerd-fonts-oct-repo_forked:before {
+  content: "\f402";
+}
+.nf-oct-repo_pull:before, .nerd-font-oct-repo_pull:before, .nerd-fonts-oct-repo_pull:before {
+  content: "\f404";
+}
+.nf-oct-repo_push:before, .nerd-font-oct-repo_push:before, .nerd-fonts-oct-repo_push:before {
+  content: "\f403";
+}
+.nf-oct-rocket:before, .nerd-font-oct-rocket:before, .nerd-fonts-oct-rocket:before {
+  content: "\f427";
+}
+.nf-oct-rss:before, .nerd-font-oct-rss:before, .nerd-fonts-oct-rss:before {
+  content: "\f428";
+}
+.nf-oct-ruby:before, .nerd-font-oct-ruby:before, .nerd-fonts-oct-ruby:before {
+  content: "\f43b";
+}
+.nf-oct-search:before, .nerd-font-oct-search:before, .nerd-fonts-oct-search:before {
+  content: "\f422";
+}
+.nf-oct-server:before, .nerd-font-oct-server:before, .nerd-fonts-oct-server:before {
+  content: "\f473";
+}
+.nf-oct-settings:before, .nerd-font-oct-settings:before, .nerd-fonts-oct-settings:before {
+  content: "\f462";
+}
+.nf-oct-shield:before, .nerd-font-oct-shield:before, .nerd-fonts-oct-shield:before {
+  content: "\f49c";
+}
+.nf-oct-sign_in:before, .nerd-font-oct-sign_in:before, .nerd-fonts-oct-sign_in:before {
+  content: "\f42a";
+}
+.nf-oct-sign_out:before, .nerd-font-oct-sign_out:before, .nerd-fonts-oct-sign_out:before {
+  content: "\f426";
+}
+.nf-oct-smiley:before, .nerd-font-oct-smiley:before, .nerd-fonts-oct-smiley:before {
+  content: "\f4a2";
+}
+.nf-oct-squirrel:before, .nerd-font-oct-squirrel:before, .nerd-fonts-oct-squirrel:before {
+  content: "\f483";
+}
+.nf-oct-star:before, .nerd-font-oct-star:before, .nerd-fonts-oct-star:before {
+  content: "\f41e";
+}
+.nf-oct-stop:before, .nerd-font-oct-stop:before, .nerd-fonts-oct-stop:before {
+  content: "\f46e";
+}
+.nf-oct-sync:before, .nerd-font-oct-sync:before, .nerd-fonts-oct-sync:before {
+  content: "\f46a";
+}
+.nf-oct-tag:before, .nerd-font-oct-tag:before, .nerd-fonts-oct-tag:before {
+  content: "\f412";
+}
+.nf-oct-tasklist:before, .nerd-font-oct-tasklist:before, .nerd-fonts-oct-tasklist:before {
+  content: "\f4a0";
+}
+.nf-oct-telescope:before, .nerd-font-oct-telescope:before, .nerd-fonts-oct-telescope:before {
+  content: "\f46b";
+}
+.nf-oct-terminal:before, .nerd-font-oct-terminal:before, .nerd-fonts-oct-terminal:before {
+  content: "\f489";
+}
+.nf-oct-text_size:before, .nerd-font-oct-text_size:before, .nerd-fonts-oct-text_size:before {
+  content: "\f49e";
+}
+.nf-oct-three_bars:before, .nerd-font-oct-three_bars:before, .nerd-fonts-oct-three_bars:before {
+  content: "\f44e";
+}
+.nf-oct-thumbsdown:before, .nerd-font-oct-thumbsdown:before, .nerd-fonts-oct-thumbsdown:before {
+  content: "\f497";
+}
+.nf-oct-thumbsup:before, .nerd-font-oct-thumbsup:before, .nerd-fonts-oct-thumbsup:before {
+  content: "\f496";
+}
+.nf-oct-tools:before, .nerd-font-oct-tools:before, .nerd-fonts-oct-tools:before {
+  content: "\f425";
+}
+.nf-oct-trashcan:before, .nerd-font-oct-trashcan:before, .nerd-fonts-oct-trashcan:before {
+  content: "\f48e";
+}
+.nf-oct-triangle_down:before, .nerd-font-oct-triangle_down:before, .nerd-fonts-oct-triangle_down:before {
+  content: "\f44b";
+}
+.nf-oct-triangle_left:before, .nerd-font-oct-triangle_left:before, .nerd-fonts-oct-triangle_left:before {
+  content: "\f438";
+}
+.nf-oct-triangle_right:before, .nerd-font-oct-triangle_right:before, .nerd-fonts-oct-triangle_right:before {
+  content: "\f44a";
+}
+.nf-oct-triangle_up:before, .nerd-font-oct-triangle_up:before, .nerd-fonts-oct-triangle_up:before {
+  content: "\f47e";
+}
+.nf-oct-unfold:before, .nerd-font-oct-unfold:before, .nerd-fonts-oct-unfold:before {
+  content: "\f42d";
+}
+.nf-oct-unmute:before, .nerd-font-oct-unmute:before, .nerd-fonts-oct-unmute:before {
+  content: "\f485";
+}
+.nf-oct-unverified:before, .nerd-font-oct-unverified:before, .nerd-fonts-oct-unverified:before {
+  content: "\f4a3";
+}
+.nf-oct-verified:before, .nerd-font-oct-verified:before, .nerd-fonts-oct-verified:before {
+  content: "\f4a1";
+}
+.nf-oct-versions:before, .nerd-font-oct-versions:before, .nerd-fonts-oct-versions:before {
+  content: "\f454";
+}
+.nf-oct-watch:before, .nerd-font-oct-watch:before, .nerd-fonts-oct-watch:before {
+  content: "\f49b";
+}
+.nf-oct-x:before, .nerd-font-oct-x:before, .nerd-fonts-oct-x:before {
+  content: "\f467";
+}
+.nf-oct-zap:before, .nerd-font-oct-zap:before, .nerd-fonts-oct-zap:before {
+  content: "\26a1";
+}
+.nf-pl-branch:before, .nerd-font-pl-branch:before, .nerd-fonts-pl-branch:before {
+  content: "\e0a0";
+}
+.nf-pl-current_line:before, .nerd-font-pl-current_line:before, .nerd-fonts-pl-current_line:before {
+  content: "\e0a1";
+}
+.nf-pl-hostname:before, .nerd-font-pl-hostname:before, .nerd-fonts-pl-hostname:before {
+  content: "\e0a2";
+}
+.nf-pl-left_hard_divider:before, .nerd-font-pl-left_hard_divider:before, .nerd-fonts-pl-left_hard_divider:before {
+  content: "\e0b0";
+}
+.nf-pl-left_soft_divider:before, .nerd-font-pl-left_soft_divider:before, .nerd-fonts-pl-left_soft_divider:before {
+  content: "\e0b1";
+}
+.nf-pl-line_number:before, .nerd-font-pl-line_number:before, .nerd-fonts-pl-line_number:before {
+  content: "\e0a1";
+}
+.nf-pl-readonly:before, .nerd-font-pl-readonly:before, .nerd-fonts-pl-readonly:before {
+  content: "\e0a2";
+}
+.nf-pl-right_hard_divider:before, .nerd-font-pl-right_hard_divider:before, .nerd-fonts-pl-right_hard_divider:before {
+  content: "\e0b2";
+}
+.nf-pl-right_soft_divider:before, .nerd-font-pl-right_soft_divider:before, .nerd-fonts-pl-right_soft_divider:before {
+  content: "\e0b3";
+}
+.nf-ple-backslash_separator:before, .nerd-font-ple-backslash_separator:before, .nerd-fonts-ple-backslash_separator:before {
+  content: "\e0b9";
+}
+.nf-ple-backslash_separator_redundant:before, .nerd-font-ple-backslash_separator_redundant:before, .nerd-fonts-ple-backslash_separator_redundant:before {
+  content: "\e0bf";
+}
+.nf-ple-column_number:before, .nerd-font-ple-column_number:before, .nerd-fonts-ple-column_number:before {
+  content: "\e0a3";
+}
+.nf-ple-current_column:before, .nerd-font-ple-current_column:before, .nerd-fonts-ple-current_column:before {
+  content: "\e0a3";
+}
+.nf-ple-flame_thick:before, .nerd-font-ple-flame_thick:before, .nerd-fonts-ple-flame_thick:before {
+  content: "\e0c0";
+}
+.nf-ple-flame_thick_mirrored:before, .nerd-font-ple-flame_thick_mirrored:before, .nerd-fonts-ple-flame_thick_mirrored:before {
+  content: "\e0c2";
+}
+.nf-ple-flame_thin:before, .nerd-font-ple-flame_thin:before, .nerd-fonts-ple-flame_thin:before {
+  content: "\e0c1";
+}
+.nf-ple-flame_thin_mirrored:before, .nerd-font-ple-flame_thin_mirrored:before, .nerd-fonts-ple-flame_thin_mirrored:before {
+  content: "\e0c3";
+}
+.nf-ple-forwardslash_separator:before, .nerd-font-ple-forwardslash_separator:before, .nerd-fonts-ple-forwardslash_separator:before {
+  content: "\e0bb";
+}
+.nf-ple-forwardslash_separator_redundant:before, .nerd-font-ple-forwardslash_separator_redundant:before, .nerd-fonts-ple-forwardslash_separator_redundant:before {
+  content: "\e0bd";
+}
+.nf-ple-honeycomb:before, .nerd-font-ple-honeycomb:before, .nerd-fonts-ple-honeycomb:before {
+  content: "\e0cc";
+}
+.nf-ple-honeycomb_outline:before, .nerd-font-ple-honeycomb_outline:before, .nerd-fonts-ple-honeycomb_outline:before {
+  content: "\e0cd";
+}
+.nf-ple-ice_waveform:before, .nerd-font-ple-ice_waveform:before, .nerd-fonts-ple-ice_waveform:before {
+  content: "\e0c8";
+}
+.nf-ple-ice_waveform_mirrored:before, .nerd-font-ple-ice_waveform_mirrored:before, .nerd-fonts-ple-ice_waveform_mirrored:before {
+  content: "\e0ca";
+}
+.nf-ple-left_half_circle_thick:before, .nerd-font-ple-left_half_circle_thick:before, .nerd-fonts-ple-left_half_circle_thick:before {
+  content: "\e0b6";
+}
+.nf-ple-left_half_circle_thin:before, .nerd-font-ple-left_half_circle_thin:before, .nerd-fonts-ple-left_half_circle_thin:before {
+  content: "\e0b7";
+}
+.nf-ple-lego_block_facing:before, .nerd-font-ple-lego_block_facing:before, .nerd-fonts-ple-lego_block_facing:before {
+  content: "\e0d0";
+}
+.nf-ple-lego_block_sideways:before, .nerd-font-ple-lego_block_sideways:before, .nerd-fonts-ple-lego_block_sideways:before {
+  content: "\e0d1";
+}
+.nf-ple-lego_separator:before, .nerd-font-ple-lego_separator:before, .nerd-fonts-ple-lego_separator:before {
+  content: "\e0ce";
+}
+.nf-ple-lego_separator_thin:before, .nerd-font-ple-lego_separator_thin:before, .nerd-fonts-ple-lego_separator_thin:before {
+  content: "\e0cf";
+}
+.nf-ple-lower_left_triangle:before, .nerd-font-ple-lower_left_triangle:before, .nerd-fonts-ple-lower_left_triangle:before {
+  content: "\e0b8";
+}
+.nf-ple-lower_right_triangle:before, .nerd-font-ple-lower_right_triangle:before, .nerd-fonts-ple-lower_right_triangle:before {
+  content: "\e0ba";
+}
+.nf-ple-pixelated_squares_big:before, .nerd-font-ple-pixelated_squares_big:before, .nerd-fonts-ple-pixelated_squares_big:before {
+  content: "\e0c6";
+}
+.nf-ple-pixelated_squares_big_mirrored:before, .nerd-font-ple-pixelated_squares_big_mirrored:before, .nerd-fonts-ple-pixelated_squares_big_mirrored:before {
+  content: "\e0c7";
+}
+.nf-ple-pixelated_squares_small:before, .nerd-font-ple-pixelated_squares_small:before, .nerd-fonts-ple-pixelated_squares_small:before {
+  content: "\e0c4";
+}
+.nf-ple-pixelated_squares_small_mirrored:before, .nerd-font-ple-pixelated_squares_small_mirrored:before, .nerd-fonts-ple-pixelated_squares_small_mirrored:before {
+  content: "\e0c5";
+}
+.nf-ple-right_half_circle_thick:before, .nerd-font-ple-right_half_circle_thick:before, .nerd-fonts-ple-right_half_circle_thick:before {
+  content: "\e0b4";
+}
+.nf-ple-right_half_circle_thin:before, .nerd-font-ple-right_half_circle_thin:before, .nerd-fonts-ple-right_half_circle_thin:before {
+  content: "\e0b5";
+}
+.nf-ple-trapezoid_top_bottom:before, .nerd-font-ple-trapezoid_top_bottom:before, .nerd-fonts-ple-trapezoid_top_bottom:before {
+  content: "\e0d2";
+}
+.nf-ple-trapezoid_top_bottom_mirrored:before, .nerd-font-ple-trapezoid_top_bottom_mirrored:before, .nerd-fonts-ple-trapezoid_top_bottom_mirrored:before {
+  content: "\e0d4";
+}
+.nf-ple-upper_left_triangle:before, .nerd-font-ple-upper_left_triangle:before, .nerd-fonts-ple-upper_left_triangle:before {
+  content: "\e0bc";
+}
+.nf-ple-upper_right_triangle:before, .nerd-font-ple-upper_right_triangle:before, .nerd-fonts-ple-upper_right_triangle:before {
+  content: "\e0be";
+}
+.nf-pom-away:before, .nerd-font-pom-away:before, .nerd-fonts-pom-away:before {
+  content: "\e007";
+}
+.nf-pom-clean_code:before, .nerd-font-pom-clean_code:before, .nerd-fonts-pom-clean_code:before {
+  content: "\e000";
+}
+.nf-pom-external_interruption:before, .nerd-font-pom-external_interruption:before, .nerd-fonts-pom-external_interruption:before {
+  content: "\e00a";
+}
+.nf-pom-internal_interruption:before, .nerd-font-pom-internal_interruption:before, .nerd-fonts-pom-internal_interruption:before {
+  content: "\e009";
+}
+.nf-pom-long_pause:before, .nerd-font-pom-long_pause:before, .nerd-fonts-pom-long_pause:before {
+  content: "\e006";
+}
+.nf-pom-pair_programming:before, .nerd-font-pom-pair_programming:before, .nerd-fonts-pom-pair_programming:before {
+  content: "\e008";
+}
+.nf-pom-pomodoro_done:before, .nerd-font-pom-pomodoro_done:before, .nerd-fonts-pom-pomodoro_done:before {
+  content: "\e001";
+}
+.nf-pom-pomodoro_estimated:before, .nerd-font-pom-pomodoro_estimated:before, .nerd-fonts-pom-pomodoro_estimated:before {
+  content: "\e002";
+}
+.nf-pom-pomodoro_squashed:before, .nerd-font-pom-pomodoro_squashed:before, .nerd-fonts-pom-pomodoro_squashed:before {
+  content: "\e004";
+}
+.nf-pom-pomodoro_ticking:before, .nerd-font-pom-pomodoro_ticking:before, .nerd-fonts-pom-pomodoro_ticking:before {
+  content: "\e003";
+}
+.nf-pom-short_pause:before, .nerd-font-pom-short_pause:before, .nerd-fonts-pom-short_pause:before {
+  content: "\e005";
+}
+.nf-seti-bower:before, .nerd-font-seti-bower:before, .nerd-fonts-seti-bower:before {
+  content: "\e61a";
+}
+.nf-seti-cjsx:before, .nerd-font-seti-cjsx:before, .nerd-fonts-seti-cjsx:before {
+  content: "\e61b";
+}
+.nf-seti-coffee:before, .nerd-font-seti-coffee:before, .nerd-fonts-seti-coffee:before {
+  content: "\e61b";
+}
+.nf-seti-config:before, .nerd-font-seti-config:before, .nerd-fonts-seti-config:before {
+  content: "\e615";
+}
+.nf-seti-css:before, .nerd-font-seti-css:before, .nerd-fonts-seti-css:before {
+  content: "\e614";
+}
+.nf-seti-default:before, .nerd-font-seti-default:before, .nerd-fonts-seti-default:before {
+  content: "\e612";
+}
+.nf-seti-ejs:before, .nerd-font-seti-ejs:before, .nerd-fonts-seti-ejs:before {
+  content: "\e618";
+}
+.nf-seti-favicon:before, .nerd-font-seti-favicon:before, .nerd-fonts-seti-favicon:before {
+  content: "\e623";
+}
+.nf-seti-folder:before, .nerd-font-seti-folder:before, .nerd-fonts-seti-folder:before {
+  content: "\e613";
+}
+.nf-seti-go:before, .nerd-font-seti-go:before, .nerd-fonts-seti-go:before {
+  content: "\e627";
+}
+.nf-seti-grunt:before, .nerd-font-seti-grunt:before, .nerd-fonts-seti-grunt:before {
+  content: "\e611";
+}
+.nf-seti-gulp:before, .nerd-font-seti-gulp:before, .nerd-fonts-seti-gulp:before {
+  content: "\e610";
+}
+.nf-seti-haskell:before, .nerd-font-seti-haskell:before, .nerd-fonts-seti-haskell:before {
+  content: "\e61f";
+}
+.nf-seti-heroku:before, .nerd-font-seti-heroku:before, .nerd-fonts-seti-heroku:before {
+  content: "\e607";
+}
+.nf-seti-home:before, .nerd-font-seti-home:before, .nerd-fonts-seti-home:before {
+  content: "\e617";
+}
+.nf-seti-html:before, .nerd-font-seti-html:before, .nerd-fonts-seti-html:before {
+  content: "\e60e";
+}
+.nf-seti-image:before, .nerd-font-seti-image:before, .nerd-fonts-seti-image:before {
+  content: "\e60d";
+}
+.nf-seti-javascript:before, .nerd-font-seti-javascript:before, .nerd-fonts-seti-javascript:before {
+  content: "\e60c";
+}
+.nf-seti-json:before, .nerd-font-seti-json:before, .nerd-fonts-seti-json:before {
+  content: "\e60b";
+}
+.nf-seti-julia:before, .nerd-font-seti-julia:before, .nerd-fonts-seti-julia:before {
+  content: "\e624";
+}
+.nf-seti-karma:before, .nerd-font-seti-karma:before, .nerd-fonts-seti-karma:before {
+  content: "\e622";
+}
+.nf-seti-less:before, .nerd-font-seti-less:before, .nerd-fonts-seti-less:before {
+  content: "\e60b";
+}
+.nf-seti-license:before, .nerd-font-seti-license:before, .nerd-fonts-seti-license:before {
+  content: "\e60a";
+}
+.nf-seti-lua:before, .nerd-font-seti-lua:before, .nerd-fonts-seti-lua:before {
+  content: "\e620";
+}
+.nf-seti-markdown:before, .nerd-font-seti-markdown:before, .nerd-fonts-seti-markdown:before {
+  content: "\e609";
+}
+.nf-seti-mustache:before, .nerd-font-seti-mustache:before, .nerd-fonts-seti-mustache:before {
+  content: "\e60f";
+}
+.nf-seti-npm:before, .nerd-font-seti-npm:before, .nerd-fonts-seti-npm:before {
+  content: "\e616";
+}
+.nf-seti-php:before, .nerd-font-seti-php:before, .nerd-fonts-seti-php:before {
+  content: "\e608";
+}
+.nf-seti-play_arrow:before, .nerd-font-seti-play_arrow:before, .nerd-fonts-seti-play_arrow:before {
+  content: "\e602";
+}
+.nf-seti-project:before, .nerd-font-seti-project:before, .nerd-fonts-seti-project:before {
+  content: "\e601";
+}
+.nf-seti-python:before, .nerd-font-seti-python:before, .nerd-fonts-seti-python:before {
+  content: "\e606";
+}
+.nf-seti-rails:before, .nerd-font-seti-rails:before, .nerd-fonts-seti-rails:before {
+  content: "\e604";
+}
+.nf-seti-react:before, .nerd-font-seti-react:before, .nerd-fonts-seti-react:before {
+  content: "\e625";
+}
+.nf-seti-ruby:before, .nerd-font-seti-ruby:before, .nerd-fonts-seti-ruby:before {
+  content: "\e605";
+}
+.nf-seti-sass:before, .nerd-font-seti-sass:before, .nerd-fonts-seti-sass:before {
+  content: "\e603";
+}
+.nf-seti-stylus:before, .nerd-font-seti-stylus:before, .nerd-fonts-seti-stylus:before {
+  content: "\e600";
+}
+.nf-seti-text:before, .nerd-font-seti-text:before, .nerd-fonts-seti-text:before {
+  content: "\e612";
+}
+.nf-seti-twig:before, .nerd-font-seti-twig:before, .nerd-fonts-seti-twig:before {
+  content: "\e61c";
+}
+.nf-seti-typescript:before, .nerd-font-seti-typescript:before, .nerd-fonts-seti-typescript:before {
+  content: "\e628";
+}
+.nf-seti-xml:before, .nerd-font-seti-xml:before, .nerd-fonts-seti-xml:before {
+  content: "\e619";
+}
