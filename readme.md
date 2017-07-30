@@ -369,7 +369,7 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-q] [-w] [-c] [--fontawesome]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
                     [--fontawesomeextension] [--fontlinux] [--octicons]
                     [--powersymbols] [--pomicons] [--powerline]
                     [--powerlineextra] [--custom [CUSTOM]]
@@ -380,7 +380,10 @@ usage: font-patcher [-h] [-v] [-s] [-q] [-w] [-c] [--fontawesome]
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
-Website: https://github.com/ryanoasis/nerd-fonts
+* Website: https://www.nerdfonts.com
+* Version: 1.1.0
+* Development Website: https://github.com/ryanoasis/nerd-fonts
+* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
 positional arguments:
   font                  The path to the font to patch (e.g., Inconsolata.otf)
@@ -390,6 +393,8 @@ optional arguments:
   -v, --version         show program's version number and exit
   -s, --mono, --use-single-width-glyphs
                         Whether to generate the glyphs as single-width not double-width (default is double-width)
+  -l, --adjust-line-height
+                        Whether to adjust line heights (attempt to center powerline separators more evenly)
   -q, --quiet, --shutup
                         Do not generate verbose output
   -w, --windows         Limit the internal font name to 31 characters (for Windows compatibility)
@@ -413,6 +418,7 @@ optional arguments:
                         Change font file type to create (e.g., ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
                         The directory to output the patched font file to
+
 ```
 
 #### Examples
