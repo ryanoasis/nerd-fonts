@@ -219,8 +219,7 @@ additionalFontNameReplacements = {
     'Powerline'     : ''
 }
 
-projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)\n\n* Website: https://www.nerdfonts.com\n* Version: " + version + "\n
- * Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md"
+projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)\n\n* Website: https://www.nerdfonts.com\n* Version: " + version + "\n* Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md"
 
 sourceFont.familyname = replace_all(familyname, reservedFontNameReplacements)
 sourceFont.fullname = replace_all(fullname, reservedFontNameReplacements)
