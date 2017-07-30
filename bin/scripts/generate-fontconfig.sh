@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 1.0.0
+# version: 1.1.0
 # Iterates over all patched fonts directories
 # to generate a fontconfig based on the Nerd Fonts Symbols font
 # that contains only the glyphs
