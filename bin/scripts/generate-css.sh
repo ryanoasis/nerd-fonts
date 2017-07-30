@@ -8,16 +8,24 @@ output_css_file="../../css/nerd-fonts-generated.css"
 header_css_file="./css-header.txt"
 output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
 LINE_PREFIX="# [Nerd Fonts] "
+version="1.1.0"
 
 # clear files
 > "$output_css_file" 2> /dev/null
 > "$output_cheat_sheet_file" 2> /dev/null
 
-# add top section of CSS
-$header_css_file > "$output_css_file"
-
 # describe how the classes were established
-printf "\n/*$LINE_PREFIX The following is generated from the build script: */\n" > "$output_css_file"
+{
+  printf "/*\n"
+  printf " *%s Website: https://www.nerdfonts.com\n" "$LINE_PREFIX"
+  printf " *%s Development Website: https://github.com/ryanoasis/nerd-fonts\n" "$LINE_PREFIX"
+  printf " *%s Version: %s\n" "$LINE_PREFIX" "$version"
+  printf " *%s The following is generated from the build script\n" "$LINE_PREFIX"
+  printf " */\n\n"
+  # add top section of CSS
+  cat $header_css_file
+} >> "$output_css_file"
+
 
 echo;
 
