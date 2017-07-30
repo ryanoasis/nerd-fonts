@@ -215,18 +215,33 @@ reservedFontNameReplacements = {
 # remove overly verbose font names
 # particularly regarding Powerline sourced Fonts (https://github.com/powerline/fonts)
 additionalFontNameReplacements = {
-    'for Powerline' : '',
+    'for Powerline' : ''
+}
+additionalFontNameReplacements2 = {
     'Powerline'     : ''
 }
 
 projectInfo = "Patched with '" + projectName + " Patcher' (https://github.com/ryanoasis/nerd-fonts)\n\n* Website: https://www.nerdfonts.com\n* Version: " + version + "\n* Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md"
 
-sourceFont.familyname = replace_all(familyname, reservedFontNameReplacements)
-sourceFont.fullname = replace_all(fullname, reservedFontNameReplacements)
-sourceFont.fontname = replace_all(fontname, reservedFontNameReplacements)
-sourceFont.familyname = replace_all(familyname, additionalFontNameReplacements)
-sourceFont.fullname = replace_all(fullname, additionalFontNameReplacements)
-sourceFont.fontname = replace_all(fontname, additionalFontNameReplacements)
+familyname = replace_all(familyname, reservedFontNameReplacements)
+fullname = replace_all(fullname, reservedFontNameReplacements)
+fontname = replace_all(fontname, reservedFontNameReplacements)
+familyname = replace_all(familyname, additionalFontNameReplacements)
+fullname = replace_all(fullname, additionalFontNameReplacements)
+fontname = replace_all(fontname, additionalFontNameReplacements)
+familyname = replace_all(familyname, additionalFontNameReplacements2)
+fullname = replace_all(fullname, additionalFontNameReplacements2)
+fontname = replace_all(fontname, additionalFontNameReplacements2)
+
+# replace any extra whitespace characters:
+familyname = " ".join(familyname.split())
+fullname = " ".join(fullname.split())
+fontname = " ".join(fontname.split())
+
+sourceFont.familyname = familyname
+sourceFont.fullname = fullname
+sourceFont.fontname = fontname
+
 sourceFont.appendSFNTName(str('English (US)'), str('Preferred Family'), sourceFont.familyname)
 sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), sourceFont.fullname)
 sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
