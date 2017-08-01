@@ -215,7 +215,8 @@ reservedFontNameReplacements = {
 # remove overly verbose font names
 # particularly regarding Powerline sourced Fonts (https://github.com/powerline/fonts)
 additionalFontNameReplacements = {
-    'for Powerline' : ''
+    'for Powerline' : '',
+    'ForPowerline' : ''
 }
 additionalFontNameReplacements2 = {
     'Powerline'     : ''
