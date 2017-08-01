@@ -34,6 +34,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Updated contributing markdown with better information
   - Updated explanations of `--mono` option and monospace in general (fixes #165)
   - Updated `font-patcher` progress bars styling
+  - Updated `installh.sh` script to support installing to global system paths via `-U` (default) or `-S` flags (PR #187 @brennanfee)
 
 ### Fixes
 
