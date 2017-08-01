@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install Nerd Fonts
-__ScriptVersion="0.1"
+__ScriptVersion="0.2"
 
 # Default values for option variables:
 quiet=false
@@ -11,12 +11,14 @@ windows=false
 extension="otf"
 patches=("Complete")
 compat=()
+installpath="user"
 
 # Usage info
 usage() {
   cat << EOF
 Usage: ./install.sh [-q -v -h] [[--copy | --link] --clean | --list]
                     [--use-single-width-glyphs] [--windows] [--otf | --ttf]
+                    [--install-to-user-path | --install-to-system-path ]
                     [--complete | --minimal | <patches>] [FONT...]
 
 General options:
@@ -34,6 +36,9 @@ General options:
 
   -s, --use-single-width-glyphs Install single-width glyphs variants.
   -w, --windows                 Install with limited internal font names.
+
+  -U, --install-to-user-path    Install fonts to users home font path [default].
+  -S, --install-to-system-path  Install fonts to global system path for all users, requires root.
 
   -O, --otf                     Prefer OTF font files [default].
   -T, --ttf                     Prefer TTF font files.
@@ -59,7 +64,7 @@ version() {
 }
 
 # Parse options
-optspec=":qvhclLCswOTAM-:"
+optspec=":qvhclLCsSUwOTAM-:"
 while getopts "$optspec" optchar; do
   case "${optchar}" in
 
@@ -77,6 +82,8 @@ while getopts "$optspec" optchar; do
     T) extension="ttf";;
     A) patches=("Complete");;
     M) patches=();;
+    S) installpath="system";;
+    U) installpath="user";;
 
     -)
       case "${OPTARG}" in
@@ -94,6 +101,8 @@ while getopts "$optspec" optchar; do
         ttf) extension="ttf";;
         complete) patches=("Complete");;
         minimal) patches=();;
+        install-to-system-path) installpath="system";;
+        install-to-user-path) installpath="user";;
         *)
           case "${OPTARG}" in
             # Long options that define variations
@@ -231,10 +240,18 @@ done
 # Get target root directory
 if [[ $(uname) == 'Darwin' ]]; then
   # MacOS
-  font_dir="$HOME/Library/Fonts"
+  if [[ "system" == "$installpath" ]]; then
+    font_dir="/Library/Fonts"
+  else
+    font_dir="$HOME/Library/Fonts"
+  fi
 else
   # Linux
-  font_dir="$HOME/.local/share/fonts"
+  if [[ "system" == "$installpath" ]]; then
+    font_dir="/usr/local/share/fonts"
+  else
+    font_dir="$HOME/.local/share/fonts"
+  fi
 fi
 font_dir="${font_dir}/NerdFonts"
 
