@@ -1,19 +1,44 @@
+ ----------------------
+  Ubuntu Font Family
+ ======================
+
+The Ubuntu Font Family are a set of matching new libre/open fonts in
+development during 2010--2011.  And with further expansion work and
+bug fixing during 2015.  The development is being funded by
+Canonical Ltd on behalf the wider Free Software community and the
+Ubuntu project.  The technical font design work and implementation is
+being undertaken by Dalton Maag.
+
+Both the final font Truetype/OpenType files and the design files used
+to produce the font family are distributed under an open licence and
+you are expressly encouraged to experiment, modify, share and improve.
+
+  http://font.ubuntu.com/
 
 ## Which font?
 
 ### TL;DR
 
-0. Pick your font family and then select from the `'complete'` directory.
-  * Are you on Windows? Pick a font with the suffix `'Windows Compatible'`
-  * Are you limited to mono fonts (because of your terminal, etc)? Pick a font with the suffix `'Mono'`
+* Pick your font family and then select from the `'complete'` directory.
+  * If you are on Windows pick a font with the `'Windows Compatible'` suffix.
+    * This includes specific tweaks to ensure the font works on Windows, in particular monospace identification and font name length limitations
+  * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with the `'Mono'` suffix.
+    * This denotes that the Nerd Font glyphs will be monospaced not necessarily that the entire font will be monospaced
 
 ### Explanation
 
-Once you narrow done your font choice of family (`Droid Sans`, `Inconsolata`, etc) and style (`bold`, `italic`, etc) you have 2 main choices:
+Once you narrow down your font choice of family (`Droid Sans`, `Inconsolata`, etc) and style (`bold`, `italic`, etc) you have 2 main choices:
+
+#### `Option 1: Download already patched font`
+
  * download an already patched font from the `complete` folder
-  * This is most likely the one you want. It includes **all** of the glyphs from all of the glyph sets. Only caution here is that some fonts have glyphs in the _same_ code point so to include everything some had to be moved to alternate code points.
+   * This is most likely the one you want. It includes **all** of the glyphs from all of the glyph sets. Only caution here is that some fonts have glyphs in the _same_ code point so to include everything some had to be moved to alternate code points.
+
+#### `Option 2: Patch your own font`
+
  * patch your own variations with the various options provided by the font patcher (see each font's readme for full list of combinations available)
-  * This contains a list of _all permutations_ of the various glyphs. E.g. You want the font with only [Octicons][octicons] or you want the font with just [Font Awesome][font-awesome] and [Devicons][vorillaz-devicons]. The goal is to provide every combination possible in this folder.
+   * This is the option you want if the font you use is _not_ already included or you want maximum control of what's included
+   * This contains a list of _all permutations_ of the various glyphs. E.g. You want the font with only [Octicons][octicons] or you want the font with just [Font Awesome][font-awesome] and [Devicons][vorillaz-devicons]. The goal is to provide every combination possible in this folder.
 
 
 For more information see: [The FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#which-font)
@@ -26,6 +51,8 @@ For more information see: [The FAQ](https://github.com/ryanoasis/nerd-fonts/wiki
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
+[SIL-RFN]:http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web_fonts_and_RFNs#14cbfd4a
+
 
 ## Variations (Combinations)
 
@@ -39,515 +66,515 @@ Combinations are no longer included by default because of the large inflation in
 ```sh
 # 510 Possible Combinations:
 
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesome
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --windows
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesome
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --use-single-width-glyphs
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesome
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --windows
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesome
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --octicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontlinux
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --pomicons
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --powerlineextra --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --powerlineextra --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --powerlineextra
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesomeextension --powersymbols
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --fontawesomeextension
-./font-patcher Ubuntu Mono derivative Powerline.ttf  --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --octicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesome
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --octicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --windows
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --octicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesome
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --octicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontlinux
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --pomicons
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs --powersymbols
+./font-patcher UbuntuMono-R.ttf  --use-single-width-glyphs
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --octicons
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontlinux
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesome
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --octicons
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontlinux
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --pomicons
+./font-patcher UbuntuMono-R.ttf  --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --windows --powersymbols
+./font-patcher UbuntuMono-R.ttf  --windows
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --octicons
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontlinux
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --pomicons
+./font-patcher UbuntuMono-R.ttf  --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontawesome --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesome
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontlinux
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --pomicons
+./font-patcher UbuntuMono-R.ttf  --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --octicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --octicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --octicons
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux --pomicons
+./font-patcher UbuntuMono-R.ttf  --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontlinux --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontlinux --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --fontlinux --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontlinux
+./font-patcher UbuntuMono-R.ttf  --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --pomicons --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --pomicons --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --pomicons --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --pomicons --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --pomicons --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --pomicons --powersymbols
+./font-patcher UbuntuMono-R.ttf  --pomicons
+./font-patcher UbuntuMono-R.ttf  --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --powerlineextra --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --powerlineextra --powersymbols
+./font-patcher UbuntuMono-R.ttf  --powerlineextra
+./font-patcher UbuntuMono-R.ttf  --fontawesomeextension --powersymbols
+./font-patcher UbuntuMono-R.ttf  --fontawesomeextension
+./font-patcher UbuntuMono-R.ttf  --powersymbols
 ```
