@@ -81,7 +81,7 @@ _If you..._
   * `Option 8.` want to patch your own font see the [Font Patcher](#option-8-patch-your-own-font)
 
 ## Features
-* A [FontForge python script](#font-patcher) to patch any font
+* A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
 * **`37`** already [patched font families](#patched-fonts)
@@ -339,7 +339,7 @@ The following fonts are available via [AUR packages](https://aur.archlinux.org/)
 
 > The option for **patching** your **own font** or fully **customizing** the patched font.
 
-Use the provided python command line script to generate a patched font from your own font to get the extra new glyphs
+Use the provided Python command line script to generate a patched font from your own font to get the extra new glyphs
 
 See: [Font Patcher](#font-patcher) for usage
 
