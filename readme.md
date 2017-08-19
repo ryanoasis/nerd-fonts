@@ -84,7 +84,7 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`37`** already [patched font families](#patched-fonts)
+* **`34`** already [patched font families](#patched-fonts)
 * Over **`77,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
@@ -222,7 +222,7 @@ echo $i_oct_heart
 ## Combinations
 
 - Over **`77,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`37`** patched font typefaces
+  - **`34`** patched font typefaces
   - **`149`** patched font families
   - **`596`** 'complete' variations/combinations
   - **`76,502`** _possible_ variations/combinations
