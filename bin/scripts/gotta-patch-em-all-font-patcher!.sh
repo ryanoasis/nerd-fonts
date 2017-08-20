@@ -248,6 +248,8 @@ do
   generate_info "$path" "$i" 2>/dev/null
 done
 
+font_typefaces_count=$(find "${PWD}/../../${patched_parent_dir}/"* -maxdepth 0 -type d | wc -l)
+
 res2=$(date +%s)
 dt=$(echo "$res2 - $res1" | bc)
 dd=$(echo "$dt/86400" | bc)
