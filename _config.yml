@@ -16,7 +16,7 @@ markdown: kramdown
 ### content configuration ###
 title:       "Nerd Fonts - Iconic font aggregator, collection, and patcher"
 keywords:    "fonts collection patched-fonts powerline shell statusline python iconic-fonts patcher FontForge font-awesome octicons font-linux SourceCodePro Hack Droid Sans Meslo AnonymousPro ProFont Inconsolata"
-description: "Iconic font aggregator, collection, and patcher. Over 37 patched fonts: Hack, Source Code Pro, +. Popular glyph collections: Font Awesome, Octicons, +."
+description: "Iconic font aggregator, collection, and patcher: 34 patched fonts: Hack, Source Code Pro, +. Popular glyph collections: Font Awesome, Octicons, +."
 source_link: "https://github.com/ryanoasis/nerd-fonts"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
