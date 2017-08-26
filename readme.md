@@ -53,8 +53,7 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
   * [**Contributing**](#contributing)
 
-[**Project History**](#project-history)
-  * [**Motivation**](#motivation-original-rationale)
+[**Project Motivation**](#project-motivation)
 
 **Additional Info**
   * [**Unstable file paths on master**](#unstable-file-paths)
