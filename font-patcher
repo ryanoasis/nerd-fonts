@@ -62,7 +62,7 @@ parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension'
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
 args = parser.parse_args()
 
-__dir__ = os.path.dirname(__file__)
+__dir__ = os.path.dirname(os.path.abspath(__file__))
 minimumVersion = 20141231
 actualVersion = int(fontforge.version())
 # un-comment following line for testing invalid version error handling
