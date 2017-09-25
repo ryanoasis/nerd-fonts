@@ -340,11 +340,12 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
-
+li.p-downloads a:after { content: ' Downloads'; }
 
 /* mid size (tablets, landscapes) */
 @media only screen and (max-width: 679px) {
-  nav { font-size:11px; }
+  nav { font-size:10px; }
+  li.p-downloads a:after { content: ''; }
   nav ul li {
     min-width:60px;
     line-height:40px;
@@ -359,7 +360,8 @@ nav ul li:hover, nav ul li.active {
 
 /* tiny size (phones) */
 @media only screen and (max-width: 380px) {
-  nav ul li { min-width:90px; line-height:20px; }
+  nav ul li { min-width:initial; line-height:20px; }
+  li.p-downloads a:after { content: ''; }
   .section:first-of-type {
     padding-top: 70px;
   }
