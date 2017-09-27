@@ -136,7 +136,7 @@ done
 shift $(($OPTIND-1))
 
 # Set source and target directories, default: all fonts
-nerdfonts_root_dir="${PWD}/patched-fonts"
+nerdfonts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/patched-fonts"
 nerdfonts_dirs=("$nerdfonts_root_dir")
 
 # Accept font / directory names, to avoid installing all fonts
