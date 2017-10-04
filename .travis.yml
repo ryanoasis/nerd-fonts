@@ -11,7 +11,7 @@ addons:
     - shellcheck
 
 script:
- - bash -c 'shopt -s globstar; shellcheck **/*.sh'
+ - bash -c 'shopt -s globstar; shellcheck --exclude SC2034 **/*.sh'
 
 matrix:
   fast_finish: true
