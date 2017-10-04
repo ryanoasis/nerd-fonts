@@ -11,7 +11,7 @@ addons:
     - shellcheck
 
 script:
- - bash -c 'echo bacon; true'
+ - bash -c 'shopt -s globstar; shellcheck **/*.sh'
 
 matrix:
   fast_finish: true
