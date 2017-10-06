@@ -83,8 +83,8 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`34`** already [patched font families](#patched-fonts)
-* Over **`77,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **`35`** already [patched font families](#patched-fonts)
+* Over **`80,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
@@ -190,6 +190,7 @@ echo $i_oct_heart
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]         | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]         | YES  | 1000    | ![w] ![m2] ![l]   |
+| [Go Mono Nerd Font][p-go-mono]                    | [Go-Mono][f-go-mono]        | NO   | 1000    | ![w2] ![m] ![l2]  |
 | [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]        | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -220,12 +221,12 @@ echo $i_oct_heart
 
 ## Combinations
 
-- Over **`77,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`34`** patched font typefaces
-  - **`149`** patched font families
-  - **`596`** 'complete' variations/combinations
-  - **`76,502`** _possible_ variations/combinations
-  - **`77,098`** total calculated combinations (596 + 76,502)
+- Over **`80,000`** unique variations/combinations (Power Set) of patched fonts:
+  - **`35`** patched font typefaces
+  - **`153`** patched font families
+  - **`612`** 'complete' variations/combinations
+  - **`80,078`** _possible_ variations/combinations
+  - **`80,690`** total calculated combinations (612 + 80,078)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
@@ -551,6 +552,7 @@ Font repos
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
+[f-go-mono]:https://go.googlesource.com/image/+/master/font/gofont/ttfs/
 [f-gohu]:http://font.gohu.org/
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
@@ -589,6 +591,7 @@ Patched Font internal links
 [p-ubuntu-mono]:patched-fonts/UbuntuMono
 [p-share-tech-mono]:patched-fonts/ShareTechMono
 [p-space-mono]:patched-fonts/SpaceMono
+[p-go-mono]:patched-fonts/Go-Mono
 [p-gohu]:patched-fonts/Gohu
 [p-mononoki]:patched-fonts/Mononoki
 [p-code-nr]:patched-fonts/CodeNewRoman
