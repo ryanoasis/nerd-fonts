@@ -555,6 +555,7 @@ Font repos
 [f-gohu]:http://font.gohu.org/
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
+[f-tinos]: https://fonts.google.com/specimen/Tinos
 
 <!--
 Patched Font internal links
@@ -594,6 +595,7 @@ Patched Font internal links
 [p-mononoki]:patched-fonts/Mononoki
 [p-code-nr]:patched-fonts/CodeNewRoman
 [p-hasklig]:patched-fonts/Hasklig
+[p-tinos]: patched-fonts/Tinos
 
 
 <!--
