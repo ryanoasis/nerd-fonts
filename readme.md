@@ -83,8 +83,8 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`34`** already [patched font families](#patched-fonts)
-* Over **`77,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **`35`** already [patched font families](#patched-fonts)
+* Over **`85,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
@@ -196,6 +196,7 @@ echo $i_oct_heart
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
 | [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -220,12 +221,12 @@ echo $i_oct_heart
 
 ## Combinations
 
-- Over **`77,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`34`** patched font typefaces
-  - **`149`** patched font families
-  - **`596`** 'complete' variations/combinations
-  - **`76,502`** _possible_ variations/combinations
-  - **`77,098`** total calculated combinations (596 + 76,502)
+- Over **`85,000`** unique variations/combinations (Power Set) of patched fonts:
+  - **`35`** patched font typefaces
+  - **`153`** patched font families
+  - **`612`** 'complete' variations/combinations
+  - **`85,198`** _possible_ variations/combinations
+  - **`85,810`** total calculated combinations (612 + 85,198)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
@@ -572,6 +573,7 @@ Patched Font internal links
 [p-hermit]:patched-fonts/Hermit
 [p-inconsolata]:patched-fonts/Inconsolata
 [p-inconsolata-go]:patched-fonts/InconsolataGo
+[p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-iosevka]:patched-fonts/Iosevka
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
