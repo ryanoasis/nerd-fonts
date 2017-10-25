@@ -19,6 +19,7 @@
 ### 2. Add original (unpatched) version
 * Add the unpatched version of the font and any readme and/or license files to the `unpatched-sample-fonts` directory inside a new directory
   * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
+  * Try to make subfolders for each font style (e.g. ``src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
 ### 3. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
   * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
