@@ -153,7 +153,7 @@ _如果你..._
 
 从[bin/scripts/lib/](bin/scripts/lib/)路径中下载 `.sh` 文件, 推荐的文件位置为 `~/.local/share/fonts/` 或者 `~/bin/`.
 
-- `i_all.sh` - helper to load all files you've downloaded at once
+- `i_all.sh` - 帮助你加载你下载的所有文件
 - `i_dev.sh` - Devicons (198 icons, 8 does not have an established name)
 - `i_fa.sh` - Font Awesome (675 icons, 111 aliases)
 - `i_fae.sh` - Font Awesome Extension (170 icons)
@@ -164,7 +164,7 @@ _如果你..._
 - `i_pom.sh` - Pomicons (11 icons)
 - `i_seti.sh` - Seti-UI + Custom (50 icons, 2 aliases, 5 does not have an established name)
 
-Then `source` the required file(s) and output `$i_*` variables to see icons:
+然后 `source` 所需的文件并且输出 `$i_*` variables 去寻找字体：
 
 ```sh
 source ~/.local/share/fonts/i_oct.sh
@@ -218,15 +218,15 @@ echo $i_oct_heart
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
-## Combinations
+## 字体集
 
-- Over **`77,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`34`** patched font typefaces
-  - **`149`** patched font families
-  - **`596`** 'complete' variations/combinations
-  - **`76,502`** _possible_ variations/combinations
-  - **`77,098`** total calculated combinations (596 + 76,502)
-- Combinations for each font are any combination of [Variations](#variations)
+- 超过 **`77,000个`** 独立的 变化/组合(Power Set)字体包：
+  - **`34个`** 字体合集
+  - **`149个`** 字体家族
+  - **`596个`** ‘完全’的 变化/组合字体
+  - **`76,502个`** _有可能的_ 变化/组合字体
+  - **`77,098个`** 总字体数 (596 + 76,502)
+- 每种字体的组合都是任意 [Variations](#variations)的组合
 
 ### Variations
 
@@ -242,38 +242,38 @@ echo $i_oct_heart
 - Windows Compatibility
 
 
-## Font Installation
+## 字体安装
 
-### `Option 1: Download and Install Manually`
+### `选项1: 手动下载并安装`
 
-> Best option for **quickly** getting a specific **individual font**.
+> 安装特定 **单独字体** 的**最快**方法。
 
-Download the specific [patched font](#patched-fonts) of your choice
+下载你选中的特定字体 [patched font](#patched-fonts)
 
-### `Option 2: Release Archive Download`
+### `选项2: 下载发布存档`
 
-> Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
+> 适用于当你需要**archive**或者完整的**字体家族**(Bold, Italic, etc.)的情况。
 
-Fonts are available for download as packages in the [latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+你可以以压缩包的形式从[latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)下载所需的字体
 
-### `Option 3: Install Script`
+### `选项3: 安装脚本`
 
-> Best option if you want to **automate** installing or for use in **scripts**.
+> 适用于当你想要 **自动** 安装或者使用 **scripts** 的情况。
 
-_Note_: Only for Linux & macOS (OS X)
-_Note_: **Requires cloning** the repo as of now
+_注_: 仅适用于 Linux & macOS (OS X)
+_注_: **Requires cloning** the repo as of now
 
-#### All fonts:
+#### 所有字体：
 
-* Installs all the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
+* 安装全部的字体包 (_警告：字体的数量众多，需要下载的文件体积巨大_)
 
 ```sh
 ./install.sh
 ```
 
-#### Single font:
+#### 单独字体:
 
-* Installs a single Font of your choice
+* 安装你所需的单独字体
 
 ```sh
 ./install.sh <FontName>
@@ -281,31 +281,31 @@ _Note_: **Requires cloning** the repo as of now
 ./install.sh HeavyData
 ```
 
-### `Option 4: Homebrew Fonts`
+### `选项4: Homebrew 字体`
 
-> Best option if on **macOS** and want to use **Homebrew**.
+> 适用于 **macOS系统**的**Homebrew**使用者。
 
-All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) on macOS (OS X)
+所有字体都可以通过 [Homebrew 字体](https://github.com/caskroom/homebrew-fonts) 从 macOS (OS X)平台上找到
 
 ```sh
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 ```
 
-### `Option 5: Clone the Repo`
+### `选项5: 克隆 Repo`
 
-> Best option for **full control**, **all** or **most** of the fonts, or **contributing** to development.
+> 适用于要使用 **完全控制**, **所有** 或者 **多数** 字体的情况，或者为Nerd Fonts的开发 **添一份力**的情况。
 
-Cloning of this repository is **not** required nor efficient if you are simply only interested in a limited set of fonts.
+基于效率考虑，如果你只想使用有限的几种字体，我们**不推荐**克隆这个 repository。
 
-However if you do want to clone the repo be sure to _shallow_ clone:
+但是如果你想要克隆这个repo，请确认你_shallow_克隆了它：
 ```sh
 git clone --depth 1
 ```
 
-### `Option 6: Ad Hoc Curl Download`
+### `选项6: Ad Hoc Curl 下载`
 
-> Option if you want to use the **`curl` command** or for use in **scripts**.
+> 适用于当你想要使用 **`curl` command** 或者在 **scripts**中使用它的情况。
 
 #### Linux
 
@@ -314,7 +314,7 @@ mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-_Note:_ deprecated alternative paths: `~/.fonts`
+_注:_ deprecated alternative paths: `~/.fonts`
 
 #### macOS (OS X)
 
@@ -322,11 +322,11 @@ _Note:_ deprecated alternative paths: `~/.fonts`
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Option 7: Unofficial Arch User Repository (AUR)`
+### `选项7: 非官方 Arch User Repository (AUR)`
 
-> Option for **Arch Linux** and wanting to use **AUR packages**.
+> 适用于 **Arch Linux** 下使用 **AUR packages**的情况
 
-The following fonts are available via [AUR packages](https://aur.archlinux.org/) on Arch Linux:
+下列字体可以在Arch Linux通过 [AUR packages](https://aur.archlinux.org/) 下载：
 
 * [Nerd Fonts Complete (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
 * [Nerd Fonts Complete (single-width)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
@@ -334,33 +334,32 @@ The following fonts are available via [AUR packages](https://aur.archlinux.org/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
 * [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
 
-### `Option 8: Patch Your Own Font`
+### `选项8: 打包你的个人字体`
 
-> The option for **patching** your **own font** or fully **customizing** the patched font.
+> 适用于 **patching** 你的 **个人字体** 或者深度 **自定义** 字体补丁。
 
-Use the provided Python command line script to generate a patched font from your own font to get the extra new glyphs
+在你的个人字体中使用 Python 命令行脚本去增加新的字形并生成字体包
 
-See: [Font Patcher](#font-patcher) for usage
+请见: [Font Patcher](#font-patcher) 的使用方法
 
-* use this option if you do __not__ want to use one of the [fonts provided](#patched-fonts)
-* you will still need to copy the generated font to the correct font directory on your system
+* 这个选项适用于当你 __不想__ 使用 [fonts provided](#patched-fonts)的情况
+* 你需要复制已经生成好的字体到你系统中正确的字体文件夹中
 
 
 <h2 align="center" id="font-patcher">
 	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
 </h2>
 
-Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-devicons]:
-* requires: Python 2 (or Python 3), python-fontforge package (version 20141231 or later, see
-  the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
-* alternative install method on OSX: `brew install fontforge`
-* Usage:
+可以通过[VimDevIcons ➶][vim-devicons]打包你选中的字体:
+* 需要: Python 2 (or Python 3), python-fontforge package (version 20141231 或者更新版本，请见 [安装说明](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
+* OSX上的替代安装方法为: `brew install fontforge`
+* 使用:
 
 ```
 ./font-patcher PATH_TO_FONT
 ```
 
-* Alternative usage: Execute the patcher with the FontForge binary using the script flag:
+* 替代方案: 使用script flag通过FontForge binary来执行打包:
 
 ```
 ./fontforge -script font-patcher PATH_TO_FONT
@@ -388,39 +387,39 @@ positional arguments:
   font                  The path to the font to patch (e.g., Inconsolata.otf)
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -v, --version         show program's version number and exit
+  -h, --help            显示帮助信息和退出
+  -v, --version         显示程序版本号和退出
   -s, --mono, --use-single-width-glyphs
-                        Whether to generate the glyphs as single-width not double-width (default is double-width)
+                        设置生成的字体是single-width还是double-width (默认是 double-width)
   -l, --adjust-line-height
-                        Whether to adjust line heights (attempt to center powerline separators more evenly)
+                        设置是否调整 line heights (一般应该尝试 center powerline separators)
   -q, --quiet, --shutup
-                        Do not generate verbose output
-  -w, --windows         Limit the internal font name to 31 characters (for Windows compatibility)
-  -c, --complete        Add all available Glyphs
-  --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
+                        不生成 verbose output
+  -w, --windows         将内部字体名称限制在31个字符内 (为了 Windows 兼容性)
+  -c, --complete        加入所有可用的字体
+  --fontawesome         加入 Font Awesome Glyphs字体 (http://fontawesome.io/)
   --fontawesomeextension
-                        Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
-  --fontlinux           Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)
-  --octicons            Add Octicons Glyphs (https://octicons.github.com)
-  --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
-  --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
-  --powerline           Add Powerline Glyphs
-  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
-  --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
+                        加入 Font Awesome 补充字体 (https://andrelzgava.github.io/font-awesome-extension/)
+  --fontlinux           加入 Font Linux 字体 (https://github.com/Lukas-W/font-linux)
+  --octicons            加入 Octicons 字体 (https://octicons.github.com)
+  --powersymbols        加入 IEC Power Symbols (https://unicodepowersymbol.com/)
+  --pomicons            加入 Pomicon 字体 (https://github.com/gabrielelana/pomicons)
+  --powerline           加入 Powerline 字体
+  --powerlineextra      加入 Powerline 字体 (https://github.com/ryanoasis/powerline-extra-symbols)
+  --custom [CUSTOM]     指定一个自定义图标字体，所有新字形都会在不缩放的情况下被拷贝。
   --postprocess [POSTPROCESS]
-                        Specify a Script for Post Processing
-  --progressbars        Show percentage completion progress bars per Glyph Set
-  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
-  --careful             Do not overwrite existing glyphs if detected
+                        指定一个针对后续进程的脚本
+  --progressbars        显示每个Glyph Set的完成度进度条
+  --no-progressbars     不显示每个Glyph Set的完成度进度条
+  --careful             如果发现了已经存在的字形，不要对它进行复写
   -ext [EXTENSION], --extension [EXTENSION]
-                        Change font file type to create (e.g., ttf, otf)
+                        更改字体文件的文件格式去创建新文件 (e.g., ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        The directory to output the patched font file to
+                        将修补后的字体文件输出到特定目录
 
 ```
 
-#### Examples
+#### 例子
 
 	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
 	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
@@ -436,54 +435,54 @@ optional arguments:
 <a name="gotta-patch-em-all"></a>
 ## Gotta Patch 'em All Font Patcher!
 
-* for Contributor or Developer use
+* 针对贡献者和开发者使用
 
-* re-patches **all** fonts in the unpatched directory:
+* 在未打包的路径中re-patches **所有** 字体:
 ```
 ./gotta-patch-em-all-font-patcher\!.sh
 ```
 
-* can optionally limit to specific font name pattern:
+* 可以选择限制到特定字体名称模式:
 ```
 ./gotta-patch-em-all-font-patcher\!.sh Hermit
 ```
 
 
-## Contributing
+## 贡献
 
 See [contributing.md](contributing.md)
 
 
-## Unstable File Paths
+## 不稳定的文件路径
 
-:warning: Warning: File paths may change based on releases (especially **major** version bumps)
+:warning: 警告: 基于后续的新版本发布，文件路径有可能被改变 (特别是 **major** version bumps)
 
-Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release
+注意 **release** 分支 _不是_  ~~master分支~~因为路径会因为新版本发布而改变
 
-* For example:
+* 举例:
   * :white_check_mark: Use: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
   * :x: Instead of: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
 
 
-## Other Good Fonts to Patch
+## 其他的好字体
 
-* a list of additional good fonts to patch that I cannot provide or share due to the license:
+* 一个包含更多好字体的列表，可惜的是，因为许可问题我们不能提供或分享它们:
  * [Input Mono][input-mono] (license restriction)
    * Possibly coming with external hosting :)
  * [PragmataPro][pragmatapro] (not free)
  * [Consolas][consolas] (proprietary)
 
 
-## Project Motivation
+## 项目目的
 
 See [Wiki: Project Purpose][wiki-project-purpose]
 
 
-## Changelog
+## 更新日志
 
 See [changelog.md](changelog.md)
 
-## License
+## 许可
 
 [MIT](LICENSE) © Ryan L McIntyre
 
