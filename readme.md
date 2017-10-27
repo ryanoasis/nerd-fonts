@@ -83,8 +83,8 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`35`** already [patched font families](#patched-fonts)
-* Over **`80,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **`36`** already [patched font families](#patched-fonts)
+* Over **`81,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
@@ -222,12 +222,12 @@ echo $i_oct_heart
 
 ## Combinations
 
-- Over **`80,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`35`** patched font typefaces
-  - **`153`** patched font families
-  - **`612`** 'complete' variations/combinations
-  - **`80,078`** _possible_ variations/combinations
-  - **`80,690`** total calculated combinations (612 + 80,078)
+- Over **`81,000`** unique variations/combinations (Power Set) of patched fonts:
+  - **`36`** patched font typefaces
+  - **`157`** patched font families
+  - **`628`** 'complete' variations/combinations
+  - **`80,582`** _possible_ variations/combinations
+  - **`81,210`** total calculated combinations (628 + 80,582)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
