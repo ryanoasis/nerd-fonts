@@ -214,6 +214,7 @@ echo $i_oct_heart
 | [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | ![w] ![m2] ![l]   |
+| [Tinos Nerd Font][p-tinos]                 	    | [Tinos Font][f-tinos]       | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Nerd Font][p-ubuntu]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 
@@ -556,6 +557,7 @@ Font repos
 [f-gohu]:http://font.gohu.org/
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
+[f-tinos]: https://fonts.google.com/specimen/Tinos
 
 <!--
 Patched Font internal links
@@ -596,6 +598,7 @@ Patched Font internal links
 [p-mononoki]:patched-fonts/Mononoki
 [p-code-nr]:patched-fonts/CodeNewRoman
 [p-hasklig]:patched-fonts/Hasklig
+[p-tinos]: patched-fonts/Tinos
 
 
 <!--
