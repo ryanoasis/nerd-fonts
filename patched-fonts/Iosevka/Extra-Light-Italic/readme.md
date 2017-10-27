@@ -1,7 +1,7 @@
 # Iosevka
 
 
-## Why `Shure` and not `Share`?
+## Why `Hasklug` and not `Hasklig`?
 
 What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in partcular the [Reserved Font Name mechanism][SIL-RFN]
 
