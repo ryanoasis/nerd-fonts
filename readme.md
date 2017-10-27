@@ -214,7 +214,7 @@ echo $i_oct_heart
 | [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | ![w] ![m2] ![l]   |
-| [Tinos Nerd Font][p-tinos]                 	    | [Tinos Font][f-tinos]       | YES  | 1000    | ![w] ![m2] ![l]   |
+| [Tinos Nerd Font][p-tinos]                        | [Tinos Font][f-tinos]       | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Nerd Font][p-ubuntu]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 
