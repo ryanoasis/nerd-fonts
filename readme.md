@@ -83,8 +83,8 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`36`** already [patched font families](#patched-fonts)
-* Over **`81,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* **`35`** already [patched font families](#patched-fonts)
+* Over **`85,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
@@ -190,13 +190,13 @@ echo $i_oct_heart
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]         | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]         | YES  | 1000    | ![w] ![m2] ![l]   |
-| [Go Mono Nerd Font][p-go-mono]                    | [Go-Mono][f-go-mono]        | NO   | 1000    | ![w2] ![m] ![l2]  |
 | [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]        | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata Nerd Font][p-inconsolata]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
 | [Knack Nerd Font][p-hack]                         | [Hack][f-hack]              | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -214,7 +214,6 @@ echo $i_oct_heart
 | [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]  | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus] | YES  | 1000    | ![w] ![m2] ![l]   |
-| [Tinos Nerd Font][p-tinos]                        | [Tinos Font][f-tinos]       | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Nerd Font][p-ubuntu]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 
@@ -222,12 +221,12 @@ echo $i_oct_heart
 
 ## Combinations
 
-- Over **`81,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`36`** patched font typefaces
-  - **`157`** patched font families
-  - **`628`** 'complete' variations/combinations
-  - **`80,582`** _possible_ variations/combinations
-  - **`81,210`** total calculated combinations (628 + 80,582)
+- Over **`85,000`** unique variations/combinations (Power Set) of patched fonts:
+  - **`35`** patched font typefaces
+  - **`153`** patched font families
+  - **`612`** 'complete' variations/combinations
+  - **`85,198`** _possible_ variations/combinations
+  - **`85,810`** total calculated combinations (612 + 85,198)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
@@ -553,11 +552,9 @@ Font repos
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
-[f-go-mono]:https://go.googlesource.com/image/+/master/font/gofont/ttfs/
 [f-gohu]:http://font.gohu.org/
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
-[f-tinos]: https://fonts.google.com/specimen/Tinos
 
 <!--
 Patched Font internal links
@@ -576,6 +573,7 @@ Patched Font internal links
 [p-hermit]:patched-fonts/Hermit
 [p-inconsolata]:patched-fonts/Inconsolata
 [p-inconsolata-go]:patched-fonts/InconsolataGo
+[p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-iosevka]:patched-fonts/Iosevka
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
@@ -593,12 +591,10 @@ Patched Font internal links
 [p-ubuntu-mono]:patched-fonts/UbuntuMono
 [p-share-tech-mono]:patched-fonts/ShareTechMono
 [p-space-mono]:patched-fonts/SpaceMono
-[p-go-mono]:patched-fonts/Go-Mono
 [p-gohu]:patched-fonts/Gohu
 [p-mononoki]:patched-fonts/Mononoki
 [p-code-nr]:patched-fonts/CodeNewRoman
 [p-hasklig]:patched-fonts/Hasklig
-[p-tinos]: patched-fonts/Tinos
 
 
 <!--
