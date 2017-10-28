@@ -183,6 +183,7 @@ echo $i_oct_heart
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]              | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Arimo][p-arimo]                                  | [Arimo][f-arimo]            | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -539,6 +540,7 @@ Link References
 Font repos
 -->
 
+[f-arimo]:https://github.com/google/fonts/tree/master/apache/arimo
 [f-hack]:https://github.com/chrissimpkins/Hack
 [f-a-pro]:https://www.marksimonson.com/fonts/view/anonymous-pro
 [f-3270]:https://github.com/rbanffy/3270font
@@ -563,6 +565,7 @@ Patched Font internal links
 [p-3270]:patched-fonts/3270
 [p-anonymous-pro]:patched-fonts/AnonymousPro
 [p-aurulent]:patched-fonts/AurulentSansMono
+[p-arimo]:patched-fonts/Arimo
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
