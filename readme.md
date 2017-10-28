@@ -183,7 +183,7 @@ echo $i_oct_heart
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]              | NO   | 1000    | ![w2] ![m2] ![l2] |
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | ![w] ![m2] ![l]   |
-| [Arimo][p-arimo]                                  | [Arimo][f-arimo]            | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Arimo][p-arimo]                                  | [Arimo][f-arimo]            | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | ![w] ![m2] ![l]   |
