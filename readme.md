@@ -186,7 +186,7 @@ echo $i_oct_heart
 | [Arimo][p-arimo]                                  | [Arimo][f-arimo]            | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w] ![m2] ![l]   |
-| [Cousine Nerd Font][p-cousine]                    |                             | NO   | 1000    | ![w2] ![m2] ![l] |
+| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]        | NO   | 1000    | ![w2] ![m2] ![l]  |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -545,6 +545,7 @@ Font repos
 [f-hack]:https://github.com/chrissimpkins/Hack
 [f-a-pro]:https://www.marksimonson.com/fonts/view/anonymous-pro
 [f-3270]:https://github.com/rbanffy/3270font
+[f-cousine]:https://fonts.google.com/specimen/Cousine
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-liberation]:https://pagure.io/liberation-fonts
 [f-terminus]:http://terminus-font.sourceforge.net
@@ -568,6 +569,7 @@ Patched Font internal links
 [p-aurulent]:patched-fonts/AurulentSansMono
 [p-arimo]:patched-fonts/Arimo
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
+[p-cousine]:patched-fonts/Cousine
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
 [p-fantasque]:patched-fonts/FantasqueSansMono
