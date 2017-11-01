@@ -186,6 +186,7 @@ echo $i_oct_heart
 | [Arimo][p-arimo]                                  | [Arimo][f-arimo]            | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w] ![m2] ![l]   |
+| [Cousine Nerd Font][p-cousine]                    |                             | NO   | 1000    | ![w2] ![m2] ![l] |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w] ![m2] ![l]   |
