@@ -1,5 +1,7 @@
 # Contributing Guide
 
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub][First PR]
+
 ## How to contribute
 
 * Fork the project from the `master` branch and submit a Pull Request (PR)
@@ -80,3 +82,4 @@
 [Combinations Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#combinations
 [Patched Fonts]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#patched-fonts
 [KISS Workflow]: https://github.com/ryanoasis/nerd-fonts/wiki/Development-Workflow#kiss-workflow
+[First PR]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
