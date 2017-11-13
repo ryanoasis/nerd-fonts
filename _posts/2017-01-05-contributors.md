@@ -163,6 +163,44 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <img src="https://avatars0.githubusercontent.com/u/6800091?v=4" width="100px;"><br/>[<sub>Luke Reed</sub>](https://github.com/lucasreed)<br/>
 [📖](https://github.com/ryanoasis/nerd-fonts/commits?author=lucasreed)
 </td>
+<td markdown="1">
+<img src="https://avatars1.githubusercontent.com/u/6353225?v=4" width="100px;"/><br />[<sub>Andrew Imeson</sub>](https://andrewimeson.com)<br />
+[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=andrewimeson "Code")
+</td>
+<td markdown="1">
+<img src="https://avatars3.githubusercontent.com/u/22199708?v=4" width="100px;"/><br />[<sub>Alexey Salangin</sub>](https://github.com/magauran)<br />
+[🌍](#translation-magauran "Translation")
+</td>
+<td markdown="1">
+<img src="https://avatars3.githubusercontent.com/u/1525809?v=4" width="100px;"/><br />[<sub>Ben Brooks</sub>](https://bbrks.me)<br />
+[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=bbrks "Code")
+</td>
+<td markdown="1">
+<img src="https://avatars3.githubusercontent.com/u/15131502?v=4" width="100px;"/><br />[<sub>De Olagundoye</sub>](https://github.com/de-olagundoye)<br />
+[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=de-olagundoye "Code")
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+<img src="https://avatars2.githubusercontent.com/u/6120130?v=4" width="100px;"/><br />[<sub>CHANG LIU</sub>](https://github.com/hiby90hou)<br />
+[🌍](#translation-hiby90hou "Translation")
+</td>
+<td markdown="1">
+<img src="https://avatars2.githubusercontent.com/u/568036?v=4" width="100px;"/><br />[<sub>Asger Hautop Drewsen</sub>](http://tyilo.com/)<br />
+[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=Tyilo "Code")
+</td>
+<td markdown="1">
+<img src="https://avatars0.githubusercontent.com/u/3585704?v=4" width="100px;"/><br />[<sub>Fernando Mora</sub>](https://github.com/fernandomora)<br />
+[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=fernandomora "Code")
+</td>
+<td markdown="1">
+<img src="https://avatars1.githubusercontent.com/u/23266023?v=4" width="100px;"/><br />[<sub>Ilia Loginov</sub>](https://github.com/iloginow)<br />
+[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=iloginow "Code")
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
 </tr>
 </tbody>
 </table>
