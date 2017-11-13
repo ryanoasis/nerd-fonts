@@ -1,3 +1,14 @@
+Nerd Fonts [Official Website Source](https://nerdfonts.com/)
+============================================================
 
-This is a compressed-commit version of
-[github.com/t413/SinglePaged](https://github.com/t413/SinglePaged)
+## Running locally to test changes
+
+```sh
+jekyll s
+```
+
+## Resource
+
+The base Jeykll theme used was: [SinglePaged - Simple Jekyll template](https://github.com/t413/SinglePaged)
+
+
