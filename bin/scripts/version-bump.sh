@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 1.1.0
+# version: 1.2.0
 # bump version number for release in scripts (bash and python)
 # does not do semver format checking
 # this obviously is not perfect but works good enough for now (YAGNI)

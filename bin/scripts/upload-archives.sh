@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 1.1.0
+# version: 1.2.0
 # Iterates over all archives and uploads to given release
 
 # uncomment to debug:

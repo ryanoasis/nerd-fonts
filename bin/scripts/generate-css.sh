@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 1.1.0
+# version: 1.2.0
 # Generates CSS file for the font
 
 source ./lib/i_all.sh
@@ -8,7 +8,7 @@ output_css_file="../../css/nerd-fonts-generated.css"
 header_css_file="./css-header.txt"
 output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
 LINE_PREFIX="# [Nerd Fonts] "
-version="1.1.0"
+version="1.2.0"
 
 # clear files
 > "$output_css_file" 2> /dev/null
