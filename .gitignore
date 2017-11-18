@@ -5,3 +5,5 @@ unpatched-sample-fonts/Input*
 casks/*
 archives/*
 private.cfg
+# Only apps should have lockfiles
+package-lock.json
