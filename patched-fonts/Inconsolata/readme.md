@@ -1,17 +1,19 @@
+Inconsolata for Powerline
+=========================
 
-## Why `Hasklug` and not `Hasklig`?
+Font creator
 
-What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in partcular the [Reserved Font Name mechanism][SIL-RFN]
+:   Raph Levien
 
-Some fonts have parts of their name "reserved" per the [Reserved Font Name mechanism][SIL-RFN]:
-> No Modified Version of the Font Software may use the Reserved Font
-> Name(s) unless explicit written permission is granted by the corresponding
-> Copyright Holder. This restriction only applies to the primary font name as
-> presented to the users.
+Source
 
-- The main goals seem to be to: `Avoid collisions`, `Protect authors`, `Minimize support`, and `Encourage derivatives`
+:   <http://levien.com/type/myfonts/inconsolata.html>
 
-See the [Reserved Font Name section][SIL-RFN] for additional information
+Patched by
+
+:   [Kha](https://github.com/Kha)
+
+
 
 ## Which font?
 
