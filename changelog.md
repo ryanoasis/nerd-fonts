@@ -2,6 +2,34 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v1.2.0
+
+### New Features
+
+  - Added new fonts:
+    - `Arimo` (fixes #206) (PR #207 @Ksbugbee)
+    - `Go-Mono` (PR #199 @bbrks)
+    - `Tinos` (fixes #200) (PR #201 @jerezereh)
+    - `InconsolataLGC` (PR #205 @iloginow)
+    - `Cousine` (fixes #208) (PR #209 @de-olagundoye)
+  - Added Contributors section to Website and Repo (fixes #160) (PR #202, PR #204 @lucasreed)
+  - Added Travis CI and integrated with ShellCheck script (fixes #120) (#212 PR @andrewimeson)
+  - Added new translations:
+    - Added Russian translation of readme (partially fixes #118) (PR #203 @magauran)
+    - Added Mandarin Chinese translation of readme (partially fixes #118) (PR #214 @hiby90hou)
+
+### Updates / Improvements
+
+  - Updated `Hasklig (Hasklug)` font from version `1.0` to `1.1` (fixes #188) (PR #215 @fernandomora)
+  - Updated fontconfig with `monospace` (PR #211 @Tyilo)
+
+### Fixes
+
+  - Fixed font-patcher relative path issues with glyph sources (PR #193 @theGivingTree)
+  - Fixed install script not being callable from other directories (PR #194 @Twanislas)
+  - Fixed broken links (@reujab)
+  - Fixed minor misc readme issues
+
 ## v1.1.0
 
 ### New Features
