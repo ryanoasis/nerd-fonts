@@ -223,7 +223,7 @@ echo $i_oct_heart
 
 ## Combinations
 
-- Over **`85,000`** unique variations/combinations (Power Set) of patched fonts:
+- Over **`87,000`** unique variations/combinations (Power Set) of patched fonts:
   - **`39`** patched font typefaces
   - **`169`** patched font families
   - **`676`** 'complete' variations/combinations
@@ -383,7 +383,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 1.1.0
+* Version: 1.2.0
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 

@@ -83,8 +83,8 @@ _如果你..._
 * [FontForge Python script](#font-patcher) 可以打包任何字体
   * 包括建立**Monospaced (fixed-pitch, fixed-width)** _或者_ **double-width (non-monospaced)** 字形
   * 更多详情请见 [**Font Patcher**](#font-patcher) 段落
-* **`34`** 已经 [打包了字体家族](#patched-fonts)
-* Over **`77,000`** 独立的 组合/变型 字体 [(更多详情)](#combinations)
+* **`39`** 已经 [打包了字体家族](#patched-fonts)
+* Over **`87,000`** 独立的 组合/变型 字体 [(更多详情)](#combinations)
 * Over **`1,300`** 字形/图标 组合 [(更多详情)](#combinations)
   * 当前的字形集包括： [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * 每种字体的**Monospaced (fixed-pitch, fixed-width)** _和_ **double-width (non-monospaced)** 版本
@@ -220,12 +220,12 @@ echo $i_oct_heart
 
 ## 字体集
 
-- 超过 **`77,000个`** 独立的 变化/组合(Power Set)字体包：
-  - **`34个`** 字体合集
-  - **`149个`** 字体家族
-  - **`596个`** ‘完全’的 变化/组合字体
-  - **`76,502个`** _有可能的_ 变化/组合字体
-  - **`77,098个`** 总字体数 (596 + 76,502)
+- 超过 **`87,000个`** 独立的 变化/组合(Power Set)字体包：
+  - **`39个`** 字体合集
+  - **`169个`** 字体家族
+  - **`676个`** ‘完全’的 变化/组合字体
+  - **`86,702个`** _有可能的_ 变化/组合字体
+  - **`87,378个`** 总字体数 (676 + 86,702)
 - 每种字体的组合都是任意 [Variations](#variations)的组合
 
 ### Variations
@@ -379,7 +379,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 1.1.0
+* Version: 1.2.0
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
