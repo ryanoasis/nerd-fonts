@@ -10,14 +10,17 @@ fa-icon: download
 <div class="half column" markdown="1">
 - [3270.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/3270.zip)
 - [AnonymousPro.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/AnonymousPro.zip)
+- [Arimo.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Arimo.zip)
 - [AurulentSansMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/AurulentSansMono.zip)
 - [BitstreamVeraSansMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/BitstreamVeraSansMono.zip)
 - [CodeNewRoman.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/CodeNewRoman.zip)
+- [Cousine.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Cousine.zip)
 - [DejaVuSansMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/DejaVuSansMono.zip)
 - [DroidSansMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/DroidSansMono.zip)
 - [FantasqueSansMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/FantasqueSansMono.zip)
 - [FiraCode.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/FiraCode.zip)
 - [FiraMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/FiraMono.zip)
+- [Go-Mono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Go-Mono.zip)
 - [Gohu.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Gohu.zip)
 - [Hack.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Hack.zip)
 - [Hasklig.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Hasklig.zip)
@@ -27,6 +30,7 @@ fa-icon: download
 - [InconsolataGo.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/InconsolataGo.zip)
 </div>
 <div class="half column" markdown="1">
+- [InconsolataLGC.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/InconsolataLGC.zip)
 - [Iosevka.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Iosevka.zip)
 - [Lekton.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Lekton.zip)
 - [LiberationMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/LiberationMono.zip)
@@ -42,6 +46,7 @@ fa-icon: download
 - [SourceCodePro.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/SourceCodePro.zip)
 - [SpaceMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/SpaceMono.zip)
 - [Terminus.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Terminus.zip)
+- [Tinos.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Tinos.zip)
 - [Ubuntu.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Ubuntu.zip)
 - [UbuntuMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/UbuntuMono.zip)
 </div>
