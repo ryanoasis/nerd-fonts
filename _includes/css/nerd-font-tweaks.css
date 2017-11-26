@@ -99,8 +99,8 @@
 	padding: 0px 0px 20px 0px;
 }
 
-#contributors table td p {
-	width: 174px;
+#contributors .container .column {
+	height: 160px;
+	width: 100px;
 }
-
 
