@@ -35,6 +35,7 @@ $.extend($.easing,
         	$('html,body').animate({scrollTop: sections[navID] - settings.scrollToOffset},
                 settings.scrollSpeed, "easeInOutExpo", function(){
                     disableScrollFn = false;
+                    window.location.hash = navID;
                 }
             );
     	});
@@ -86,7 +87,9 @@ $(document).ready(function (){
         		event.preventDefault();
                 var target = $(event.target).closest("a");
                 var targetHight =  $(target.attr("href")).offset().top
-            	$('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
+            	$('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo", function() {
+                    window.location.hash = $(this).attr("href").split('#')[1];
+					});
             });
         }
 	});
