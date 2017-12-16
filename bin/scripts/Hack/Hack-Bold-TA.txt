@@ -1,7 +1,21 @@
-# [ U+0069 ] adjust point above lowercase i
-i  touch 0,1, 4,5, 6,7, 10,11  y 1  @  6, 7, 15, 16, 21, 22
 
-# [ U+006A] adjust point above lowercase j
-j  touch 0,1, 4,5, 6,7, 10,11  y 1  @  6, 7, 15, 16, 21, 22
+# U+0021 exclam glyph ID 580
+uni0021 touch 22,23,24,25    y -0.5    @14
 
+# U+0025 percent glyph ID 762
+uni0025 touch 0,1,16                     y 0.75   @10,11
+uni0025 touch 23,24,25                   y 0.25   @10,11
+uni0025 touch 17,18,32,46,47,48          y 0.5    @10,11
+uni0025 touch 57,58,71                   y -0.25  @10,11
+uni0025 touch 33,34,35,36                y 0.5    @10,11
+uni0025 touch 63,64,65                   y 0.75   @10,11
 
+uni0025 touch 23,24,25,63,64,65          y 0.5    @14
+uni0025 touch 17,18,32,57,58,71          y -0.5   @14
+
+# U+002B plus glyph ID 765
+uni002B  touch 0,1,2,3,6,7,8,9           y 0.5    @10,11
+
+# U+0038 eight glyph ID 556
+uni0038  touch 41,42,43                  y 0.25   @12,13,14
+uni0038  touch 34,35,48                  y -0.25  @12,13,14
