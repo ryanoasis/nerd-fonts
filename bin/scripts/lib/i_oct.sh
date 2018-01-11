@@ -1,3 +1,4 @@
+#!/bin/bash
 # Octicons (172 icons)
 # Codepoints: 2665, 26A1, Nerd Fonts moved F000-F105 with holes → F400-F4A8, F27C → F67C
 test -n "$__i_oct_loaded" && return || __i_oct_loaded=1

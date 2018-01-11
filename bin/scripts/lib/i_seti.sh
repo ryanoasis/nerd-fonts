@@ -1,3 +1,4 @@
+#!/bin/bash
 # Seti-UI + Custom (50 icons, 6 aliases)
 # Codepoints: E5FA-E62B
 test -n "$__i_seti_loaded" && return || __i_seti_loaded=1
