@@ -29,6 +29,8 @@ version="1.2.0"
 
 echo;
 
+# shellcheck disable=SC2154
+# we know the '$i' is from the sourced file
 for var in "${!i@}"; do
   # trim 'i_' prefix
   glyph_name=${var#*_}
