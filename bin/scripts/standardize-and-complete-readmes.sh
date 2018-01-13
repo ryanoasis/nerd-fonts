@@ -76,9 +76,9 @@ do
     fi
 	fi
 
-	RST=( $(find "$searchdir" -type f -iname 'readme.rst') )
-	TXT=( $(find "$searchdir" -type f -iname 'readme.txt') )
-	MD=( $(find "$searchdir" -type f -iname 'readme.md') )
+	mapfile -t RST < <(find "$searchdir" -type f -iname 'readme.rst')
+	mapfile -t TXT < <(find "$searchdir" -type f -iname 'readme.txt')
+	mapfile -t MD < <(find "$searchdir" -type f -iname 'readme.md')
 	outputdir=$PWD/../../patched-fonts/$filename/
 
 	echo "$LINE_PREFIX Generating readme for: $filename"
