@@ -23,7 +23,7 @@ cd $patched_parent_dir || {
 function clear_file {
   local outputfile=$1
 	# clear output file (needed for multiple runs or updates):
-	> "$outputfile" 2> /dev/null
+	true > "$outputfile" 2> /dev/null
 }
 
 function write_header {
@@ -31,12 +31,12 @@ function write_header {
   local caskname=$2
 
   {
-    printf "cask '%s' do\n" "$caskname"
-    printf "  version '%s'\n" "$version"
-    printf "  sha256 '%s'\n\n" "$sha256sum"
-    printf "  url \"%s%s.zip\"\n" "$downloadarchive" "$basename"
-    printf "  appcast '%s',\n" "$appcast"
-    printf "          checkpoint: '%s'\n" "$appcastcheckpoint"
+    printf "cask '%s' do\\n" "$caskname"
+    printf "  version '%s'\\n" "$version"
+    printf "  sha256 '%s'\\n\\n" "$sha256sum"
+    printf "  url \"%s%s.zip\"\\n" "$downloadarchive" "$basename"
+    printf "  appcast '%s',\\n" "$appcast"
+    printf "          checkpoint: '%s'\\n" "$appcastcheckpoint"
   } >> "$outputfile"
 }
 
@@ -51,19 +51,19 @@ function write_body {
 		do
 			individualfont=$(basename "${fonts[$i]}")
 
-			printf "## Found Font: %s\n" "${fonts[$i]}"
+			printf "## Found Font: %s\\n" "${fonts[$i]}"
 
 			if [ "$i" == 0 ];
 			then
 				familyname=$(fc-query --format='%{family}' "${fonts[$i]}")
 				{
-					printf "  name '%s (%s)'\n" "$familyname" "$basename"
+					printf "  name '%s (%s)'\\n" "$familyname" "$basename"
 					printf "  homepage '%s'" "$homepage"
-					printf "\n\n"
+					printf "\\n\\n"
 				} >> "$outputfile"
 			fi
 
-			printf "  font '%s'\n" "$individualfont" >> "$outputfile"
+			printf "  font '%s'\\n" "$individualfont" >> "$outputfile"
 
 		done
 	else
@@ -75,7 +75,7 @@ function write_footer {
   local outputfile=$1
 
   {
-    printf "end\n"
+    printf "end\\n"
   } >> "$outputfile"
 }
 
