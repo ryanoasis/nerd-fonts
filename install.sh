@@ -1,13 +1,11 @@
 #!/bin/bash
 # Install Nerd Fonts
-__ScriptVersion="0.2"
+__ScriptVersion="0.3"
 
 # Default values for option variables:
 quiet=false
 mode="copy"
 clean=false
-mono=false
-windows=false
 extension="otf"
 patches=("Complete")
 compat=()
@@ -110,7 +108,7 @@ while getopts "$optspec" optchar; do
               # If the user has picked one of these options,
               # we need to unset `Complete`
               delete=("Complete")
-              patches=( "${patches[@]/$delete}" )
+              patches=( "${patches[@]/${delete[0]}}" )
               case "${OPTARG}" in
                 fontawesome) patches=( "${patches[@]}" "Font Awesome" );;
                 fontlinux) patches=( "${patches[@]}" "Font Linux" );;
@@ -133,7 +131,7 @@ while getopts "$optspec" optchar; do
 
   esac
 done
-shift $(($OPTIND-1))
+shift $((OPTIND-1))
 
 # Set source and target directories, default: all fonts
 nerdfonts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/patched-fonts"
@@ -146,7 +144,7 @@ if [ ! -z "$*" ]; then
     if [ ! -z "$font" ]; then
       # Ensure that directory exists, and offer suggestions if not
       if [[ ! -d "$nerdfonts_root_dir/$font" ]]; then
-        echo -e "Font $font doesn't exist. Options are: \n"
+        echo -e "Font $font doesn't exist. Options are: \\n"
         find "$nerdfonts_root_dir" -maxdepth 1 -type d \( \! -name "$(basename "$nerdfonts_root_dir")" \) -exec basename {} \;
         exit -1
       fi
@@ -164,7 +162,7 @@ implode() {
     # $3... are the elements to join
     local retname=$1 sep=$2 ret=$3
     shift 3 || shift $(($#))
-    printf -v "$retname" "%s" "$ret${@/#/$sep}"
+    printf -v "$retname" "%s" "$ret${*/#/$sep}"
 }
 find_include=
 find_exclude=
@@ -179,7 +177,7 @@ if [ ! -z "${compat[*]}" ]; then
 fi
 # Delete empty elements
 for i in "${!include[@]}"; do
-  [ "${include[$i]}" = '' ] && unset include[$i]
+  [ "${include[$i]}" = '' ] && unset include["$i"]
 done
 if [ ! -z "${include[*]}" ]; then
   implode find_include "*' -and -name '*" "${include[@]}"
@@ -193,11 +191,11 @@ for delete in "${include[@]}"; do
 done
 # Delete empty elements
 for i in "${!exclude[@]}"; do
-  [ "${exclude[$i]}" = '' ] && unset exclude[$i]
+  [ "${exclude[$i]}" = '' ] && unset exclude["$i"]
 done
 if [ ! -z "${exclude[*]}" ]; then
-  implode find_exclude "*' -and \! -name '*" "${exclude[@]}"
-  find_exclude="-and \! -name '*${find_exclude}*'"
+  implode find_exclude "*' -and \\! -name '*" "${exclude[@]}"
+  find_exclude="-and \\! -name '*${find_exclude}*'"
 fi
 
 # Construct directories to be searched
@@ -205,7 +203,7 @@ implode find_dirs "\" \"" "${nerdfonts_dirs[@]}"
 find_dirs="\"$find_dirs\""
 
 # Put it all together into the find command we want
-find_command="find $find_dirs \( \( -name '*.[o,t]tf' -or -name '*.pcf.gz' \) $find_include $find_exclude \) -type f -print0"
+find_command="find $find_dirs \\( \\( -name '*.[o,t]tf' -or -name '*.pcf.gz' \\) $find_include $find_exclude \\) -type f -print0"
 
 # Find all the font files and store in array
 files=()
@@ -226,12 +224,12 @@ done
 # Remove duplicates
 for i in "${!files_dedup[@]}"; do
   for j in "${!files_dedup[@]}"; do
-    [ $i = $j ] && continue
+    [ "$i" = "$j" ] && continue
     if [ "${files_dedup[$i]}" = "${files_dedup[$j]}" ]; then
       ext="${files[$i]##*.}"
       # Only remove if the extension is the one we don’t want
       if [ "$ext" != "$extension" ]; then
-        unset files[$i]
+        unset files["$i"]
       fi
     fi
   done

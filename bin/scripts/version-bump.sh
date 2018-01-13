@@ -15,9 +15,9 @@ fi
 
 release=$1
 
-sed -i "s|[0-9]\.[0-9]\.[0-9]|$release|g" ../../font-patcher
-sed -i "s|\# version: [0-9]\.[0-9]\.[0-9]|\# version: $release|g" ../../bin/scripts/*.sh
-sed -i "s|version=\"[0-9]\.[0-9]\.[0-9]\"|version=\"$release\"|g" ../../bin/scripts/*.sh
+sed -i "s|[0-9]\\.[0-9]\\.[0-9]|$release|g" ../../font-patcher
+sed -i "s|\\# version: [0-9]\\.[0-9]\\.[0-9]|\\# version: $release|g" ../../bin/scripts/*.sh
+sed -i "s|version=\"[0-9]\\.[0-9]\\.[0-9]\"|version=\"$release\"|g" ../../bin/scripts/*.sh
 
 exit
 

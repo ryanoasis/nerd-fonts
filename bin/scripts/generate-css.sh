@@ -2,6 +2,7 @@
 # version: 1.2.0
 # Generates CSS file for the font
 
+# shellcheck disable=SC1091
 source ./lib/i_all.sh
 
 output_css_file="../../css/nerd-fonts-generated.css"
@@ -11,17 +12,17 @@ LINE_PREFIX="# [Nerd Fonts] "
 version="1.2.0"
 
 # clear files
-> "$output_css_file" 2> /dev/null
-> "$output_cheat_sheet_file" 2> /dev/null
+true > "$output_css_file" 2> /dev/null
+true > "$output_cheat_sheet_file" 2> /dev/null
 
 # describe how the classes were established
 {
-  printf "/*\n"
-  printf " *%s Website: https://www.nerdfonts.com\n" "$LINE_PREFIX"
-  printf " *%s Development Website: https://github.com/ryanoasis/nerd-fonts\n" "$LINE_PREFIX"
-  printf " *%s Version: %s\n" "$LINE_PREFIX" "$version"
-  printf " *%s The following is generated from the build script\n" "$LINE_PREFIX"
-  printf " */\n\n"
+  printf "/*\\n"
+  printf " *%s Website: https://www.nerdfonts.com\\n" "$LINE_PREFIX"
+  printf " *%s Development Website: https://github.com/ryanoasis/nerd-fonts\\n" "$LINE_PREFIX"
+  printf " *%s Version: %s\\n" "$LINE_PREFIX" "$version"
+  printf " *%s The following is generated from the build script\\n" "$LINE_PREFIX"
+  printf " */\\n\\n"
   # add top section of CSS
   cat $header_css_file
 } >> "$output_css_file"
@@ -49,25 +50,25 @@ for var in "${!i@}"; do
   # generate css rules
   {
     printf ".nf-%s:before, .nerd-font-%s:before, .nerd-fonts-%s:before {" "$glyph_name" "$glyph_name" "$glyph_name"
-    printf "\n"
-    printf "  content: \"\%s\";" "$glyph_code"
-    printf "\n"
+    printf "\\n"
+    printf "  content: \"\\%s\";" "$glyph_code"
+    printf "\\n"
     printf "}"
-    printf "\n"
+    printf "\\n"
   } >> "$output_css_file"
 
   # generate HTML cheat sheet
   {
     printf "<div class=\"column\">"
-    printf "\n"
+    printf "\\n"
     printf "  <div class=\"nerd-font nerd-font-%s center\"></div>" "$glyph_name"
-    printf "\n"
+    printf "\\n"
     printf "  <span>nf-%s <br/>(%s)</span>" "$glyph_name" "$glyph_code"
-    printf "\n"
+    printf "\\n"
     printf "</div>"
-    printf "\n"
+    printf "\\n"
   } >> "$output_cheat_sheet_file"
 
 done
 
-printf "Generated CSS and Cheat Sheet HTML\n"
+printf "Generated CSS and Cheat Sheet HTML\\n"

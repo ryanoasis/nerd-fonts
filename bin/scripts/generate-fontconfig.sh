@@ -18,7 +18,7 @@ cd $unpatched_parent_dir || {
 }
 
 # clear output file (needed for multiple runs or updates):
-> "$to" 2> /dev/null
+true > "$to" 2> /dev/null
 
 # add to the file
 {
@@ -60,6 +60,6 @@ done
 
 # add to the file
 {
-  printf "\n</fontconfig>\n"
+  printf "\\n</fontconfig>\\n"
 } >> "$to"
 

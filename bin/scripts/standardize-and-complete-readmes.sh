@@ -24,7 +24,7 @@ function appendRfnInfo {
   then
     # add to the file
     {
-      printf "\n## Why \`%s\` and not \`%s\`?\n" "$config_rfn_substitue" "$config_rfn"
+      printf "\\n## Why \`%s\` and not \`%s\`?\\n" "$config_rfn_substitue" "$config_rfn"
       cat "$working_dir/../../src/readme-rfn-addendum.md"
     } >> "$to"
   fi
@@ -35,7 +35,7 @@ function clearDestination {
   local to=$1; shift
   [[ -d "$to_dir" ]] || mkdir -p "$to_dir"
   # clear output file (needed for multiple runs or updates):
-  > "$to" 2> /dev/null
+  true > "$to" 2> /dev/null
 }
 
 #find ./ProFont -type d | # uncomment to test 1 font (with txt)
@@ -67,6 +67,7 @@ do
     # source the font config file if exists:
     if [ -f "$searchdir/config.cfg" ]
     then
+      # shellcheck source=/dev/null
       source "$searchdir/config.cfg"
     else
       # reset the variables
@@ -145,7 +146,7 @@ do
     clearDestination "$to_dir" "$to"
 
     {
-      printf "# %s\n\n" "$base_directory"
+      printf "# %s\\n\\n" "$base_directory"
     } >> "$to"
 
     appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"

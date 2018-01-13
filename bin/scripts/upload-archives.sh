@@ -16,12 +16,15 @@ private_config="../private.cfg"
 # source the private confit file if exists:
 if [ -f "$private_config" ]
 then
+  # shellcheck source=/dev/null
   source "$private_config"
 else
   echo >&2 "$LINE_PREFIX Could not source private config"
   exit 1
 fi
 
+# shellcheck disable=SC2154
+# # we know the '$github_access_token' is from the sourced file
 TOKEN=$github_access_token
 OWNER="ryanoasis"
 REPO="nerd-fonts"
@@ -63,7 +66,7 @@ do
 
 	printf "$LINE_PREFIX Uploading %s" "$basename"
 
-	curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @"$basename" https://uploads.github.com/repos/$OWNER/$REPO/releases/$RELEASE/assets?name="$basename"
+	curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @"$basename" https://uploads.github.com/repos/"$OWNER"/"$REPO"/releases/"$RELEASE"/assets?name="$basename"
 
 	#exit # uncomment to test only 1 zip
 

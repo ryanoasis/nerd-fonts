@@ -9,6 +9,6 @@ echo "dir $dir"
 "${dir}/autohint.sh" "$fontfile"
 "${dir}/../fpfix.py" "$fontfile"
 
-printf "\n"
-printf "[Nerd Fonts] Post Processed Hack '%s'\n" "$fontfile"
+printf "\\n"
+printf "[Nerd Fonts] Post Processed Hack '%s'\\n" "$fontfile"
 
