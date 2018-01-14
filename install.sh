@@ -290,4 +290,13 @@ esac
 if [[ -n $(which fc-cache) ]]; then
   [ "$quiet" = false ] && fc-cache -vf "$font_dir"
   [ "$quiet" = true ] && fc-cache -f "$font_dir"
+  case $? in
+    [0-1])
+      # Catch fc-cache returning 1 on a success
+      exit 0
+      ;;
+    *)
+      exit $?
+      ;;
+  esac
 fi
