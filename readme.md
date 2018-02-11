@@ -86,7 +86,7 @@ _If you..._
 * **`39`** already [patched font families](#patched-fonts)
 * Over **`87,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
-  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
+  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
@@ -139,10 +139,10 @@ _If you..._
 ![image](images/fontforge-glyph-set-font-iec-power-1.png)
 ![image](images/fontforge-glyph-set-font-iec-power-2.png)
 
-### [Font Linux][font-linux]
-> Font-linux is an icon font containing logos of popular linux distributions for inclusion in websites. / ([repo][font-linux])
+### [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
+> Font-logos is an icon font containing logos of popular linux distributions and other open source software for inclusion in websites. / ([repo][font-linux])
 
-![image](images/fontforge-glyph-set-font-linux.png)
+![image](images/fontforge-glyph-set-font-logos.png)
 
 ### [Pomicons][gabrielelana-pomicons]
 > 8 symbols for the ["Pomodoro Technique"®](https://cirillocompany.de/pages/pomodoro-technique). / ([repo][gabrielelana-pomicons])
@@ -238,7 +238,7 @@ echo $i_oct_heart
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
 - [GitHub Octicons][octicons]
-- [Font Linux][font-linux]
+- [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -404,7 +404,8 @@ optional arguments:
   --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
   --fontawesomeextension
                         Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
-  --fontlinux           Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)
+  --fontlinux, --fontlogos
+                        Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)
   --octicons            Add Octicons Glyphs (https://octicons.github.com)
   --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
   --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
@@ -499,7 +500,7 @@ Repo References
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLZGava/font-awesome-extension
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-linux
+[font-linux]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

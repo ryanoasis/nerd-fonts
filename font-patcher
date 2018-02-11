@@ -42,7 +42,7 @@ parser.add_argument('-w', '--windows', dest='windows', action='store_true', help
 parser.add_argument('-c', '--complete', dest='complete', action='store_true', help='Add all available Glyphs', default=False)
 parser.add_argument('--fontawesome', dest='fontawesome', action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)', default=False)
 parser.add_argument('--fontawesomeextension', dest='fontawesomeextension', action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)', default=False)
-parser.add_argument('--fontlinux', dest='fontlinux', action='store_true', help='Add Font Linux Glyphs (https://github.com/Lukas-W/font-linux)', default=False)
+parser.add_argument('--fontlinux', '--fontlogos', dest='fontlinux', action='store_true', help='Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)', default=False)
 parser.add_argument('--octicons', dest='octicons', action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)', default=False)
 parser.add_argument('--powersymbols', dest='powersymbols', action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)', default=False)
 parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)', default=False)
@@ -114,7 +114,7 @@ if args.pomicons:
 
 if args.fontlinux:
     additionalFontNameSuffix += " L"
-    verboseAdditionalFontNameSuffix += " Plus Font Linux"
+    verboseAdditionalFontNameSuffix += " Plus Font Logos (Font Linux)"
 
 # if all source glyphs included simplify the name
 if args.fontawesome and args.fontawesomeextension and args.octicons and args.powersymbols and args.pomicons and args.powerlineextra and args.fontlinux:
@@ -367,7 +367,7 @@ PATCH_SET = [
     { 'Enabled': args.pomicons,             'Name': "Pomicons", 'Filename': "Pomicons.otf",                'Exact': True, 'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  },
     { 'Enabled': args.fontawesome,          'Name': "Font Awesome", 'Filename': "FontAwesome.otf",             'Exact': True, 'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': FONTA_SCALE_LIST,'Attributes': SYM_ATTR_FONTA },
     { 'Enabled': args.fontawesomeextension, 'Name': "Font Awesome Extension", 'Filename': "font-awesome-extension.ttf",  'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200,  'SrcEnd': 0xE2A9,  'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT }, # Maximize
-    { 'Enabled': args.fontlinux,            'Name': "Font Linux", 'Filename': "font-linux.ttf",              'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF115, 'SrcStart': 0xF300, 'SrcEnd': 0xF315, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': args.fontlinux,            'Name': "Font Logos (Font Linux)", 'Filename': "font-logos.ttf",              'Exact': fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF11C, 'SrcStart': 0xF300, 'SrcEnd': 0xF31C, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },
     { 'Enabled': args.powersymbols,         'Name': "Power Symbols", 'Filename': "Unicode_IEC_symbol_font.otf", 'Exact': True, 'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Power, Power On/Off, Power On, Sleep
     { 'Enabled': args.powersymbols,         'Name': "Power Symbols", 'Filename': "Unicode_IEC_symbol_font.otf", 'Exact': True, 'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,  'SrcEnd': None,  'ScaleGlyph': None,  'Attributes': SYM_ATTR_DEFAULT  }, # Heavy Circle (aka Power Off)
     { 'Enabled': args.octicons,             'Name': "Octions", 'Filename': "octicons.ttf",                'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Magnifying glass
