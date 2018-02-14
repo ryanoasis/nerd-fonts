@@ -3530,65 +3530,92 @@
 .nf-indentation-line:before, .nerd-font-indentation-line:before, .nerd-fonts-indentation-line:before {
   content: "\e621";
 }
-.nf-linux-archlinux:before, .nerd-font-linux-archlinux:before, .nerd-fonts-linux-archlinux:before {
+.nf-linux-alpine:before, .nerd-font-linux-alpine:before, .nerd-fonts-linux-alpine:before {
   content: "\f300";
 }
-.nf-linux-centos:before, .nerd-font-linux-centos:before, .nerd-fonts-linux-centos:before {
+.nf-linux-aosc:before, .nerd-font-linux-aosc:before, .nerd-fonts-linux-aosc:before {
   content: "\f301";
 }
-.nf-linux-coreos:before, .nerd-font-linux-coreos:before, .nerd-fonts-linux-coreos:before {
-  content: "\f30f";
-}
-.nf-linux-debian:before, .nerd-font-linux-debian:before, .nerd-fonts-linux-debian:before {
+.nf-linux-apple:before, .nerd-font-linux-apple:before, .nerd-fonts-linux-apple:before {
   content: "\f302";
 }
-.nf-linux-elementary:before, .nerd-font-linux-elementary:before, .nerd-fonts-linux-elementary:before {
-  content: "\f311";
-}
-.nf-linux-fedora:before, .nerd-font-linux-fedora:before, .nerd-fonts-linux-fedora:before {
+.nf-linux-archlinux:before, .nerd-font-linux-archlinux:before, .nerd-fonts-linux-archlinux:before {
   content: "\f303";
 }
-.nf-linux-fedora_inverse:before, .nerd-font-linux-fedora_inverse:before, .nerd-fonts-linux-fedora_inverse:before {
-  content: "\f312";
-}
-.nf-linux-freebsd:before, .nerd-font-linux-freebsd:before, .nerd-fonts-linux-freebsd:before {
-  content: "\f30e";
-}
-.nf-linux-gentoo:before, .nerd-font-linux-gentoo:before, .nerd-fonts-linux-gentoo:before {
-  content: "\f310";
-}
-.nf-linux-linuxmint:before, .nerd-font-linux-linuxmint:before, .nerd-fonts-linux-linuxmint:before {
+.nf-linux-centos:before, .nerd-font-linux-centos:before, .nerd-fonts-linux-centos:before {
   content: "\f304";
 }
-.nf-linux-linuxmint_inverse:before, .nerd-font-linux-linuxmint_inverse:before, .nerd-fonts-linux-linuxmint_inverse:before {
+.nf-linux-coreos:before, .nerd-font-linux-coreos:before, .nerd-fonts-linux-coreos:before {
   content: "\f305";
 }
-.nf-linux-mageia:before, .nerd-font-linux-mageia:before, .nerd-fonts-linux-mageia:before {
+.nf-linux-debian:before, .nerd-font-linux-debian:before, .nerd-fonts-linux-debian:before {
   content: "\f306";
 }
-.nf-linux-mandriva:before, .nerd-font-linux-mandriva:before, .nerd-fonts-linux-mandriva:before {
+.nf-linux-devuan:before, .nerd-font-linux-devuan:before, .nerd-fonts-linux-devuan:before {
   content: "\f307";
 }
-.nf-linux-opensuse:before, .nerd-font-linux-opensuse:before, .nerd-fonts-linux-opensuse:before {
+.nf-linux-docker:before, .nerd-font-linux-docker:before, .nerd-fonts-linux-docker:before {
   content: "\f308";
 }
-.nf-linux-redhat:before, .nerd-font-linux-redhat:before, .nerd-fonts-linux-redhat:before {
+.nf-linux-elementary:before, .nerd-font-linux-elementary:before, .nerd-fonts-linux-elementary:before {
   content: "\f309";
 }
-.nf-linux-sabayon:before, .nerd-font-linux-sabayon:before, .nerd-fonts-linux-sabayon:before {
-  content: "\f313";
-}
-.nf-linux-slackware:before, .nerd-font-linux-slackware:before, .nerd-fonts-linux-slackware:before {
+.nf-linux-fedora:before, .nerd-font-linux-fedora:before, .nerd-fonts-linux-fedora:before {
   content: "\f30a";
 }
-.nf-linux-slackware_inverse:before, .nerd-font-linux-slackware_inverse:before, .nerd-fonts-linux-slackware_inverse:before {
+.nf-linux-fedora_inverse:before, .nerd-font-linux-fedora_inverse:before, .nerd-fonts-linux-fedora_inverse:before {
   content: "\f30b";
 }
-.nf-linux-ubuntu:before, .nerd-font-linux-ubuntu:before, .nerd-fonts-linux-ubuntu:before {
+.nf-linux-freebsd:before, .nerd-font-linux-freebsd:before, .nerd-fonts-linux-freebsd:before {
   content: "\f30c";
 }
-.nf-linux-ubuntu_inverse:before, .nerd-font-linux-ubuntu_inverse:before, .nerd-fonts-linux-ubuntu_inverse:before {
+.nf-linux-gentoo:before, .nerd-font-linux-gentoo:before, .nerd-fonts-linux-gentoo:before {
   content: "\f30d";
+}
+.nf-linux-linuxmint:before, .nerd-font-linux-linuxmint:before, .nerd-fonts-linux-linuxmint:before {
+  content: "\f30e";
+}
+.nf-linux-linuxmint_inverse:before, .nerd-font-linux-linuxmint_inverse:before, .nerd-fonts-linux-linuxmint_inverse:before {
+  content: "\f30f";
+}
+.nf-linux-mageia:before, .nerd-font-linux-mageia:before, .nerd-fonts-linux-mageia:before {
+  content: "\f310";
+}
+.nf-linux-mandriva:before, .nerd-font-linux-mandriva:before, .nerd-fonts-linux-mandriva:before {
+  content: "\f311";
+}
+.nf-linux-manjaro:before, .nerd-font-linux-manjaro:before, .nerd-fonts-linux-manjaro:before {
+  content: "\f312";
+}
+.nf-linux-nixos:before, .nerd-font-linux-nixos:before, .nerd-fonts-linux-nixos:before {
+  content: "\f313";
+}
+.nf-linux-opensuse:before, .nerd-font-linux-opensuse:before, .nerd-fonts-linux-opensuse:before {
+  content: "\f314";
+}
+.nf-linux-raspberry_pi:before, .nerd-font-linux-raspberry_pi:before, .nerd-fonts-linux-raspberry_pi:before {
+  content: "\f315";
+}
+.nf-linux-redhat:before, .nerd-font-linux-redhat:before, .nerd-fonts-linux-redhat:before {
+  content: "\f316";
+}
+.nf-linux-sabayon:before, .nerd-font-linux-sabayon:before, .nerd-fonts-linux-sabayon:before {
+  content: "\f317";
+}
+.nf-linux-slackware:before, .nerd-font-linux-slackware:before, .nerd-fonts-linux-slackware:before {
+  content: "\f318";
+}
+.nf-linux-slackware_inverse:before, .nerd-font-linux-slackware_inverse:before, .nerd-fonts-linux-slackware_inverse:before {
+  content: "\f319";
+}
+.nf-linux-tux:before, .nerd-font-linux-tux:before, .nerd-fonts-linux-tux:before {
+  content: "\f31a";
+}
+.nf-linux-ubuntu:before, .nerd-font-linux-ubuntu:before, .nerd-fonts-linux-ubuntu:before {
+  content: "\f31b";
+}
+.nf-linux-ubuntu_inverse:before, .nerd-font-linux-ubuntu_inverse:before, .nerd-fonts-linux-ubuntu_inverse:before {
+  content: "\f31c";
 }
 .nf-mdi-access_point:before, .nerd-font-mdi-access_point:before, .nerd-fonts-mdi-access_point:before {
   content: "\f501";
