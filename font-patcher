@@ -49,6 +49,7 @@ parser.add_argument('--pomicons', dest='pomicons', action='store_true', help='Ad
 parser.add_argument('--powerline', dest='powerline', action='store_true', help='Add Powerline Glyphs', default=False)
 parser.add_argument('--powerlineextra', dest='powerlineextra', action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)', default=False)
 parser.add_argument('--material', '--materialdesignicons', '--mdi', dest='material', action='store_true', help='Add Material Design Icons (https://github.com/templarian/MaterialDesign)', default=False)
+parser.add_argument('--weather', '--weathericons', dest='weather', action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)', default=False)
 parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
 parser.add_argument('--postprocess', type=str, nargs='?', dest='postprocess', help='Specify a Script for Post Processing', default=False)
 
@@ -87,6 +88,7 @@ if args.complete:
     args.powerline = True
     args.powerlineextra = True
     args.material = True
+    args.weather = True
 
 if args.windows:
     # attempt to shorten here on the additional name BEFORE trimming later
@@ -122,8 +124,12 @@ if args.material:
     additionalFontNameSuffix += " MDI"
     verboseAdditionalFontNameSuffix += " Plus Material Design Icons"
 
+if args.weather:
+    additionalFontNameSuffix += " WEA"
+    verboseAdditionalFontNameSuffix += " Plus Weather Icons"
+
 # if all source glyphs included simplify the name
-if args.fontawesome and args.fontawesomeextension and args.octicons and args.powersymbols and args.pomicons and args.powerlineextra and args.fontlinux and args.material:
+if args.fontawesome and args.fontawesomeextension and args.octicons and args.powersymbols and args.pomicons and args.powerlineextra and args.fontlinux and args.material and args.weather:
     additionalFontNameSuffix = " " + projectNameSingular + " C"
     verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
 
@@ -381,6 +387,7 @@ PATCH_SET = [
     { 'Enabled': args.octicons,             'Name': "Octicons", 'Filename': "octicons.ttf",                'Exact': octiconsExactEncodingPosition,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None, 'SrcEnd': None, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Zap
     { 'Enabled': args.octicons,             'Name': "Octicons", 'Filename': "octicons.ttf",                'Exact': octiconsExactEncodingPosition,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF4A9, 'SrcEnd': 0xF4A9, 'ScaleGlyph': OCTI_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT },  # Desktop
     { 'Enabled': args.material,             'Name': "Material", 'Filename': "materialdesignicons-webfont.ttf",                'Exact': False,  'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'SrcEnd': 0xFD46, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },
+    { 'Enabled': args.weather,             'Name': "Weather Icons", 'Filename': "weathericons-regular-webfont.ttf",                'Exact': False,  'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xF328, 'SrcEnd': 0xF413, 'ScaleGlyph': None, 'Attributes': SYM_ATTR_DEFAULT },
     { 'Enabled': args.custom,               'Name': "Custom", 'Filename': args.custom,                   'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': 0x0000, 'SrcEnd': 0x0000, 'ScaleGlyph': None, 'Attributes': CUSTOM_ATTR },
 ]
 
