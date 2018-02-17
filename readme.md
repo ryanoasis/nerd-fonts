@@ -1,6 +1,7 @@
 <h1 align="center">
   <img src="images/nerd-fonts-logo.png" alt="Nerd Fonts Logo" />
 </h1>
+<h3 align="center">Iconic font aggregator, collection, and patcher</h3>
 
 [![GitHub release][img-version-badge-with-logo]][repo]&nbsp;[![Gitter][img-gitter-badge]][gitter]&nbsp;[![CodeClimate][img-code-climate-badge]][code-climate]&nbsp;[![Build Status][img-travis-ci]][travis-ci]&nbsp;[![Code of Conduct][coc-badge]][coc]&nbsp;[![PRs Welcome][prs-badge]][prs]&nbsp;&nbsp;&nbsp;[![Windows Logo][w-top]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![macOS (OSX) Logo][m-top]](#patched-fonts)&nbsp;&nbsp;&nbsp;[![Linux Logo][l-top]](#patched-fonts)
 
