@@ -22,6 +22,13 @@ import argparse
 from argparse import RawTextHelpFormatter
 import errno
 import subprocess
+import json
+
+try:
+  import configparser
+except ImportError:
+  sys.exit(projectName + ": configparser module is probably not installed. Try `pip install configparser` or equivalent")
+
 
 try:
     #Load the module
@@ -52,6 +59,8 @@ parser.add_argument('--material', '--materialdesignicons', '--mdi', dest='materi
 parser.add_argument('--weather', '--weathericons', dest='weather', action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)', default=False)
 parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
 parser.add_argument('--postprocess', type=str, nargs='?', dest='postprocess', help='Specify a Script for Post Processing', default=False)
+parser.add_argument('--removeligs', '--removeligatures', dest='removeligatures', action='store_true', help='Removes ligatures specificed in JSON configuration file', default=False)
+parser.add_argument('--configfile', type=str, nargs='?', dest='configfile', help='Specify a file path for JSON configuration file (see sample)', default=False)
 
 # https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
 progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
@@ -63,6 +72,8 @@ parser.add_argument('--careful', dest='careful', action='store_true', help='Do n
 parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension', help='Change font file type to create (e.g., ttf, otf)', default="")
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
 args = parser.parse_args()
+
+config = configparser.ConfigParser()
 
 __dir__ = os.path.dirname(os.path.abspath(__file__))
 minimumVersion = 20141231
@@ -139,6 +150,25 @@ if args.single:
     verboseAdditionalFontNameSuffix += " Mono"
 
 sourceFont = fontforge.open(args.font)
+
+# let's deal with ligatures (mostly for monospaced fonts)
+if config.read(args.configfile):
+  print(config.sections())
+  if args.removeligatures:
+    print("Removing ligatures from configfile `Subtables` section")
+    ligature_subtables = json.loads(config.get("Subtables","ligatures"))
+    for subtable in ligature_subtables:
+      print("Removing subtable:", subtable)
+      try:
+        sourceFont.removeLookupSubtable(subtable)
+        print("Successfully removed subtable:", subtable)
+      except Exception:
+        print("Failed to remove subtable:", subtable)
+
+elif args.removeligatures:
+  print("Unable to read configfile, unable to remove ligatures")
+else:
+  print("Unable to read configfile, skipping configfile related actions")
 
 # basically split the font name around the dash "-" to get the fontname and the style (e.g. Bold)
 # this does not seem very reliable so only use the style here as a fallback if the font does not
