@@ -153,7 +153,6 @@ sourceFont = fontforge.open(args.font)
 
 # let's deal with ligatures (mostly for monospaced fonts)
 if config.read(args.configfile):
-  print(config.sections())
   if args.removeligatures:
     print("Removing ligatures from configfile `Subtables` section")
     ligature_subtables = json.loads(config.get("Subtables","ligatures"))
