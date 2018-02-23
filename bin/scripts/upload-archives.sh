@@ -1,5 +1,5 @@
 #!/bin/bash
-# version: 1.2.0
+# version: 1.2.1
 # Iterates over all archives and uploads to given release
 
 # uncomment to debug:
@@ -45,24 +45,12 @@ RELEASE=$(curl -# -XGET -H "Authorization:token $TOKEN" -H 'Content-Type: applic
 
 echo "$LINE_PREFIX Release id was '$RELEASE'"
 
-
-#FILEPATH="test-asset-upload.txt"
-#FILE="https://uploads.github.com/repos/$OWNER/$REPO/releases/tags/$RELEASE/assets{?name,label}"
-
-#curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @$FILEPATH https://uploads.github.com/repos/$OWNER/$REPO/releases/$RELEASE/assets?name=$(basename $FILEPATH)&url=xyz
-
-# just test a basic upload for now:
-#exit
-
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 find ./ -name "*.zip" | # uncomment to test all font
 while read -r filename
 do
 
 	basename=$(basename "$filename")
-	#searchdir=$filename
-	#fontdir=$(basename "$(dirname "$dirname")")
-	#outputdir=$PWD/../archives/
 
 	printf "$LINE_PREFIX Uploading %s" "$basename"
 
