@@ -73,7 +73,7 @@ parser.add_argument('-ext', '--extension', type=str, nargs='?', dest='extension'
 parser.add_argument('-out', '--outputdir', type=str, nargs='?', dest='outputdir', help='The directory to output the patched font file to', default=".")
 args = parser.parse_args()
 
-config = configparser.ConfigParser()
+config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
 
 __dir__ = os.path.dirname(os.path.abspath(__file__))
 minimumVersion = 20141231
@@ -152,7 +152,7 @@ if args.single:
 sourceFont = fontforge.open(args.font)
 
 # let's deal with ligatures (mostly for monospaced fonts)
-if config.read(args.configfile):
+if args.configfile and config.read(args.configfile):
   if args.removeligatures:
     print("Removing ligatures from configfile `Subtables` section")
     ligature_subtables = json.loads(config.get("Subtables","ligatures"))
