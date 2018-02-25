@@ -58,4 +58,7 @@ i='' i_seti_typescript=$i
 i='' i_custom_msdos=$i
 i='' i_custom_windows=$i
 i='' i_custom_vim=$i
+i='' i_custom_elm=$i
+i='' i_custom_elixir=$i
+i='' i_custom_electron=$i
 unset i
