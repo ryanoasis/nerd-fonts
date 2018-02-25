@@ -1,0 +1,4 @@
+[Subtables]
+	ligatures: [
+		"'dlig' Discretionary Ligatures lookup 4 subtable",
+		"'liga' Standard Ligatures lookup 5 subtable" ]
