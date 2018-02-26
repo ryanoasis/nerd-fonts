@@ -163,11 +163,10 @@ if args.configfile and config.read(args.configfile):
         print("Successfully removed subtable:", subtable)
       except Exception:
         print("Failed to remove subtable:", subtable)
-
 elif args.removeligatures:
   print("Unable to read configfile, unable to remove ligatures")
 else:
-  print("Unable to read configfile, skipping configfile related actions")
+  print("No configfile given, skipping configfile related actions")
 
 # basically split the font name around the dash "-" to get the fontname and the style (e.g. Bold)
 # this does not seem very reliable so only use the style here as a fallback if the font does not
