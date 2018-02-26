@@ -1,5 +1,6 @@
 #!/bin/bash
-# version: 1.2.0
+# version: 2.0.0
+# script version: 1.0.0
 # Generates CSS file for the font
 
 # shellcheck disable=SC1091
@@ -9,7 +10,7 @@ output_css_file="../../css/nerd-fonts-generated.css"
 header_css_file="./css-header.txt"
 output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
 LINE_PREFIX="# [Nerd Fonts] "
-version="1.2.0"
+version="2.0.0"
 
 # clear files
 true > "$output_css_file" 2> /dev/null

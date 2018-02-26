@@ -1,4 +1,6 @@
 #!/bin/bash
+# version: 2.0.0
+# script version: 1.0.0
 
 text1='Testing'
 text2='Nerd Fonts'
