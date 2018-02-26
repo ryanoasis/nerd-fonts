@@ -1,5 +1,6 @@
 #!/bin/bash
-# version: 1.2.0
+# version: 2.0.0
+# script version: 1.0.1
 # bump version number for release in scripts (bash and python)
 # does not do semver format checking
 # this obviously is not perfect but works good enough for now (YAGNI)
@@ -16,6 +17,7 @@ fi
 release=$1
 
 sed -i "s|[0-9]\\.[0-9]\\.[0-9]|$release|g" ../../font-patcher
+sed -i "s|\\# nerd fonts version: [0-9]\\.[0-9]\\.[0-9]|\\# version: $release|g" ../../bin/scripts/*.sh
 sed -i "s|\\# version: [0-9]\\.[0-9]\\.[0-9]|\\# version: $release|g" ../../bin/scripts/*.sh
 sed -i "s|version=\"[0-9]\\.[0-9]\\.[0-9]\"|version=\"$release\"|g" ../../bin/scripts/*.sh
 
