@@ -83,6 +83,14 @@ function patch_font {
     source "$config_parent_dir/config.cfg"
   fi
 
+  if [ -f "$config_parent_dir/config.json" ]
+  then
+    # load font configuration file and remove ligatures (for mono fonts):
+    font_config="--removeligatures --configfile $config_parent_dir/config.json"
+  else
+    font_config=""
+  fi
+
   if [ "$post_process" ]
   then
     post_process="--postprocess=$post_process"
@@ -107,9 +115,9 @@ function patch_font {
   }
 
   fontforge -quiet -script ./font-patcher "$f" -q $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script ./font-patcher "$f" -q -s $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
+  fontforge -quiet -script ./font-patcher "$f" -q -s ${font_config} $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
   fontforge -quiet -script ./font-patcher "$f" -q -w $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script ./font-patcher "$f" -q -s -w $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
+  fontforge -quiet -script ./font-patcher "$f" -q -s ${font_config} -w $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
   # wait for this group of background processes to finish to avoid forking too many processes
   # that can add up quickly with the number of combinations
   #wait
