@@ -56,7 +56,7 @@ do
 
   for font in "${FONTS[@]}"; do
     familyname=$(fc-query --format='%{family}' "${font}")
-    if [[ ! "${families[*]}" =~ "${familyname}" ]]; then
+    if [[ ! "${families[*]}" == *"${familyname}"* ]]; then
       # family array doesn't contain the font yet
       # so let's add it
       families+=("$familyname")
