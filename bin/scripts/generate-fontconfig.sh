@@ -28,6 +28,17 @@ true > "$to" 2> /dev/null
   printf '\n<fontconfig>'
 } >> "$to"
 
+
+echo "$LINE_PREFIX Generating fontconfig for: monospace"
+
+# ad hoc add 'monospace' font family
+{
+  printf '\n  <alias>'
+  printf '\n    <family>monospace</family>'
+  printf '\n    <prefer><family>%s</family></prefer>' "$symbolfont"
+  printf '\n  </alias>'
+} >> "$to"
+
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 find . -maxdepth 1 -type d | # uncomment to get all fonts
 while read -r filename
