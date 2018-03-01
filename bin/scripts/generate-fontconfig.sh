@@ -12,6 +12,7 @@ unpatched_parent_dir="../../src/unpatched-fonts/"
 to="$parent_dir/10-nerd-font-symbols.conf"
 symbolfont="Symbols Nerd Font"
 LINE_PREFIX="# [Nerd Fonts] "
+families=()
 
 cd $unpatched_parent_dir || {
   echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
@@ -50,23 +51,31 @@ do
 	while IFS= read -d $'\0' -r file ; do
 	  FONTS=("${FONTS[@]}" "$file")
 	# limit to first variation of family (folder)
-	done < <(find "$searchdir" -type f -iname '*.[o,t]tf' -print0 | head -n 1)
+  done < <(find "$searchdir" -type f -iname '*.[o,t]tf' -print0)
+  #done
 
-  if [ "${FONTS[0]}" ];
-  then
-    familyname=$(fc-query --format='%{family}' "${FONTS[0]}")
+  for font in "${FONTS[@]}"; do
+    familyname=$(fc-query --format='%{family}' "${font}")
+    if [[ ! "${families[*]}" =~ "${familyname}" ]]; then
+      # family array doesn't contain the font yet
+      # so let's add it
+      families+=("$familyname")
+      echo "adding $familyname";
 
-    echo "$LINE_PREFIX Generating fontconfig for: $familyname"
+      echo "$LINE_PREFIX Generating fontconfig for: $familyname"
 
-    # add to the file
-    {
-      printf '\n  <alias>'
-      printf '\n    <family>%s</family>' "$familyname"
-      printf '\n    <prefer><family>%s</family></prefer>' "$symbolfont"
-      printf '\n  </alias>'
-    } >> "$to"
+      # add to the file
+      {
+        printf '\n  <alias>'
+        printf '\n    <family>%s</family>' "$familyname"
+        printf '\n    <prefer><family>%s</family></prefer>' "$symbolfont"
+        printf '\n  </alias>'
+      } >> "$to"
 
-  fi
+    else
+      echo "no need to add $familyname";
+    fi
+  done
 
 done
 
