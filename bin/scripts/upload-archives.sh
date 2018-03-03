@@ -1,6 +1,6 @@
 #!/bin/bash
-# version: 2.0.0
-# script version: 1.0.1
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.0.1
 # Iterates over all archives and uploads to given release
 
 # uncomment to debug:

@@ -1,6 +1,6 @@
 #!/bin/bash
-# version: 2.0.0
-# script version: 1.0.0
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.0.0
 # Generates CSS file for the font
 
 # shellcheck disable=SC1091

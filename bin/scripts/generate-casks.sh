@@ -1,6 +1,6 @@
 #!/bin/bash
-# version: 2.0.0
-# script version: 1.0.0
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.0.0
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # only adds non-Windows versions of the fonts

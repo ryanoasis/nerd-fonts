@@ -1,6 +1,6 @@
 #!/bin/bash
-# version: 2.0.0
-# script version: 1.0.1
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.0.1
 # bump version number for release in scripts (bash and python)
 # does not do semver format checking
 # this obviously is not perfect but works good enough for now (YAGNI)

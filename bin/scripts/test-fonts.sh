@@ -1,6 +1,6 @@
 #!/bin/bash
-# nerd fonts version 2.0.0
-# script version: 1.0.0
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.0.0
 
 # Given an array of decimal numbers print all unicode codepoint.
 function print-decimal-unicode-range() {

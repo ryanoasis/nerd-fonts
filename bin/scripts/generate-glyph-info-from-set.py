@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf8
-# nerd fonts version: 2.0.0
-# script version: 1.0.0
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.0.0
 
 # Example Usage:
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont.ttf --start f001 --end f847 --offset 4ff

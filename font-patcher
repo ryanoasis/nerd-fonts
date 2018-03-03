@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf8
-# nerd fonts version: 2.0.0
+# Nerd Fonts Version: 2.0.0
 # script version: 2.0.0
 
 from __future__ import absolute_import, print_function, unicode_literals
