@@ -3,7 +3,7 @@
 # Codepoints: F000, F0EB, Nerd Fonts moved F328-F413
 # Nerd Fonts Version: 2.0.0
 # Script Version 1.0.0
-test _n "$__i_weather_loaded" && return || __i_weather_loaded=1
+test -n "$__i_weather_loaded" && return || __i_weather_loaded=1
 i='' i_weather_day_cloudy_gusts=$i
 i='' i_weather_day_cloudy_windy=$i
 i='' i_weather_day_cloudy=$i
