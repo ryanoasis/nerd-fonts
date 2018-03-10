@@ -92,515 +92,515 @@ Combinations are no longer included by default because of the large inflation in
 ```sh
 # 510 Possible Combinations:
 
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --octicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesome
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --octicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --windows
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --octicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesome
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --octicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontlinux
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --pomicons
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --powerlineextra
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs --powersymbols
-./font-patcher FiraCode-Light.otf  --use-single-width-glyphs
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --octicons
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontlinux
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --pomicons
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontawesome --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesome
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --octicons
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontlinux
-./font-patcher FiraCode-Light.otf  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --pomicons
-./font-patcher FiraCode-Light.otf  --windows --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --powerlineextra
-./font-patcher FiraCode-Light.otf  --windows --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --windows --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --windows --powersymbols
-./font-patcher FiraCode-Light.otf  --windows
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --octicons
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontlinux
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --pomicons
-./font-patcher FiraCode-Light.otf  --fontawesome --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesome --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontawesome --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesome
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontlinux
-./font-patcher FiraCode-Light.otf  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --octicons --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --pomicons
-./font-patcher FiraCode-Light.otf  --octicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --octicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --octicons --powersymbols
-./font-patcher FiraCode-Light.otf  --octicons
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux --pomicons
-./font-patcher FiraCode-Light.otf  --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontlinux --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontlinux --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --fontlinux --powersymbols
-./font-patcher FiraCode-Light.otf  --fontlinux
-./font-patcher FiraCode-Light.otf  --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --pomicons --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --pomicons --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --pomicons --powerlineextra
-./font-patcher FiraCode-Light.otf  --pomicons --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --pomicons --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --pomicons --powersymbols
-./font-patcher FiraCode-Light.otf  --pomicons
-./font-patcher FiraCode-Light.otf  --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --powerlineextra --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --powerlineextra --powersymbols
-./font-patcher FiraCode-Light.otf  --powerlineextra
-./font-patcher FiraCode-Light.otf  --fontawesomeextension --powersymbols
-./font-patcher FiraCode-Light.otf  --fontawesomeextension
-./font-patcher FiraCode-Light.otf  --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --octicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesome
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --octicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --windows
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --octicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesome
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --octicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontlinux
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --pomicons
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --powerlineextra
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs --powersymbols
+./font-patcher FiraCode-Light.ttf  --use-single-width-glyphs
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --octicons
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontlinux
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesome
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --octicons
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontlinux
+./font-patcher FiraCode-Light.ttf  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --pomicons
+./font-patcher FiraCode-Light.ttf  --windows --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --powerlineextra
+./font-patcher FiraCode-Light.ttf  --windows --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --windows --powersymbols
+./font-patcher FiraCode-Light.ttf  --windows
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --octicons
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontlinux
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --pomicons
+./font-patcher FiraCode-Light.ttf  --fontawesome --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontawesome --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesome
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontlinux
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --pomicons
+./font-patcher FiraCode-Light.ttf  --octicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --octicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --octicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --octicons
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux --pomicons
+./font-patcher FiraCode-Light.ttf  --fontlinux --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontlinux --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontlinux --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --fontlinux --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontlinux
+./font-patcher FiraCode-Light.ttf  --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --pomicons --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --pomicons --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --pomicons --powerlineextra
+./font-patcher FiraCode-Light.ttf  --pomicons --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --pomicons --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --pomicons --powersymbols
+./font-patcher FiraCode-Light.ttf  --pomicons
+./font-patcher FiraCode-Light.ttf  --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --powerlineextra --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --powerlineextra --powersymbols
+./font-patcher FiraCode-Light.ttf  --powerlineextra
+./font-patcher FiraCode-Light.ttf  --fontawesomeextension --powersymbols
+./font-patcher FiraCode-Light.ttf  --fontawesomeextension
+./font-patcher FiraCode-Light.ttf  --powersymbols
 ```
