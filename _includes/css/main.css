@@ -298,7 +298,16 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
+/* gitter adjust sidecar on mobile */
 
+@media screen and (max-width:800px) {
+	.gitter-open-chat-button {
+		bottom: 116px;
+		padding: 1em 1em;
+		transform: rotate(-90deg);
+		right: -28px;
+	}
+}
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
