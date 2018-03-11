@@ -1,6 +1,6 @@
 #!/bin/bash
 # Nerd Fonts Version: 2.0.0
-# Script Version: 1.1.0
+# Script Version: 1.1.1
 
   # used for debugging
   #set -x
@@ -52,7 +52,7 @@ fi
 source_fonts=()
  while IFS= read -d $'\0' -r file ; do
      source_fonts=("${source_fonts[@]}" "$file")
- done < <(find "$source_fonts_dir" -name "$like_pattern*.[o,t]tf" -type f -print0)
+ done < <(find "$source_fonts_dir" -iname "$like_pattern*.[o,t]tf" -type f -print0)
 
 # print total number of source fonts found
 echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
