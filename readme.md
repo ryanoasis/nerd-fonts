@@ -183,19 +183,19 @@ echo $i_oct_heart
 
 | Font Name                                         | Font Name and Repository    |\*RFN | EM Size | Status            |
 |:--------------------------------------------------|:----------------------------|:-----|:--------|:------------------|
-| [3270 Nerd Font][p-3270]                          | [3270][f-3270]              | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [3270 Nerd Font][p-3270]                          | [3270][f-3270]              | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Arimo][p-arimo]                                  | [Arimo][f-arimo]            | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w] ![m2] ![l]   |
-| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]        | NO   | 1000    | ![w2] ![m2] ![l]  |
+| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]        | NO   | 1000    | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fura Code Nerd Font*][p-fira-code]               | [Fira][f-fira-code]         | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Fura Mono Nerd Font*][p-fira-mono]               | [Fira][f-fira-mono]         | YES  | 1000    | ![w] ![m2] ![l]   |
-| [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | ![w2] ![m2] ![l2] |
+| [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Hasklug Nerd Font*][p-hasklig]                   | [Hasklig][f-hasklig]        | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
