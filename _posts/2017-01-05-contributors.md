@@ -1,5 +1,6 @@
 ---
 title: "Contributors"
+short_title: "People"
 bg: 'red'
 color: white
 fa-icon: flask

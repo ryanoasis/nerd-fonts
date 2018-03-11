@@ -1,5 +1,6 @@
 ---
-title: "Fonts"
+title: "Fonts Downloads"
+short_title: "Fonts"
 bg: '#3484bb'
 color: white
 fa-icon: download

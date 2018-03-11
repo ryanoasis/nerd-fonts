@@ -1,5 +1,6 @@
 ---
 title: "Cheat Sheet"
+short_title: "Icons"
 bg: gray
 color: white
 fa-icon: search

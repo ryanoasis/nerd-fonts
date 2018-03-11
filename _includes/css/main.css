@@ -69,6 +69,10 @@ hr {
 .left, .container .left { text-align: left; }
 .right, .container .right { text-align: right; }
 
+.container h1 {
+  margin-top: 10px;
+}
+
 .container h1, .container h2, .container h3, .container h4 {
   margin-bottom: 20px;
   text-align: center;
@@ -340,8 +344,6 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
-li.p-downloads a:after { content: ' Downloads'; }
-
 /* mid size (tablets, landscapes) */
 @media only screen and (max-width: 679px) {
   nav { font-size:10px; }
@@ -370,13 +372,21 @@ li.p-downloads a:after { content: ' Downloads'; }
   }
 }
 
+/*
+ super tiny size (phones)
+ point at which nav wraps
+ without decrease font size
+ */
+@media only screen and (max-width: 326px) {
+  nav { font-size: 9px; }
+}
+
 /* anything not desktop */
 @media only screen and (max-width: 767px) {
 	.container h1 { font-size: 30px; }
 	.container h2 { font-size: 24px; }
 	.container h3 { font-size: 20px; }
 	.container h4 { font-size: 18px; }
-
 
   .section { padding:130px 0; }
   .sectiondivider {
@@ -386,7 +396,6 @@ li.p-downloads a:after { content: ' Downloads'; }
     top:-100px;
     margin-left:-100px;
   }
-  .sectiondivider img {
     width:150px;
     height:180px;
   }
@@ -409,4 +418,5 @@ li.p-downloads a:after { content: ' Downloads'; }
     -moz-column-count:    2;
     column-count:         2;
   }
+
 }

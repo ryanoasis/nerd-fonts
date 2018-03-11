@@ -89,3 +89,17 @@
     width: 0;
     height: 0;
   }
+
+/* top nav tweaks */
+@media(min-width:768px) {
+	.hide-on-larger-view {
+		display: none !important;
+	}
+
+}
+
+@media(max-width:767px) {
+	.hide-on-smaller-view {
+		display: none !important;
+	}
+}
