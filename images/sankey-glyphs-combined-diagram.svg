@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1861"
+     inkscape:window-width="1920"
      inkscape:window-height="1056"
      id="namedview154"
      showgrid="false"
      inkscape:zoom="1.5733334"
-     inkscape:cx="447.77276"
+     inkscape:cx="120.44226"
      inkscape:cy="494.84949"
-     inkscape:window-x="1979"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="sankey_svg"
+     inkscape:current-layer="g5"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -63,7 +63,7 @@
        id="rect7"
        x="0"
        y="0"
-       style="fill:#ffffff" />
+       style="fill:#ffffff;fill-opacity:0" />
     <g
        transform="translate(12,12)"
        id="g9">
