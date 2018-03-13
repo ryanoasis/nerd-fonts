@@ -1,7 +1,7 @@
 /*
  *# [Nerd Fonts]  Website: https://www.nerdfonts.com
  *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
- *# [Nerd Fonts]  Version: 1.2.0
+ *# [Nerd Fonts]  Version: 2.0.0
  *# [Nerd Fonts]  The following is generated from the build script
  */
 
@@ -31,6 +31,15 @@
 }
 .nf-custom-cpp:before, .nerd-font-custom-cpp:before, .nerd-fonts-custom-cpp:before {
   content: "\e61d";
+}
+.nf-custom-electron:before, .nerd-font-custom-electron:before, .nerd-fonts-custom-electron:before {
+  content: "\e62e";
+}
+.nf-custom-elixir:before, .nerd-font-custom-elixir:before, .nerd-fonts-custom-elixir:before {
+  content: "\e62d";
+}
+.nf-custom-elm:before, .nerd-font-custom-elm:before, .nerd-fonts-custom-elm:before {
+  content: "\e62c";
 }
 .nf-custom-folder:before, .nerd-font-custom-folder:before, .nerd-fonts-custom-folder:before {
   content: "\e5ff";
