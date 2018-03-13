@@ -102,55 +102,49 @@ _If you..._
 ### Seti-UI + Custom
 > Based off of [Seti-UI] Icomoon with extra custom glyphs.
 
-![image](images/fontforge-glyph-set-1.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-custom-#cheat-sheet)
 
 ### [Devicons][vorillaz-devicons]
 > An iconic font made for developers, code jedis, ninjas, HTTPsters, evangelists and nerds(sic). / ([repo][vorillaz-devicons]) / ([website](https://vorillaz.github.io/devicons/))
 
-![image](images/fontforge-glyph-set-2.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-dev-#cheat-sheet)
 
 ### [Font Awesome][font-awesome]
 > The iconic font and CSS toolkit. / ([repo][font-awesome]) / ([website](http://fontawesome.io/))
 
-![image](images/fontforge-glyph-set-font-awesome-1.png)
-![image](images/fontforge-glyph-set-font-awesome-2.png)
-![image](images/fontforge-glyph-set-font-awesome-3.png)
-![image](images/fontforge-glyph-set-font-awesome-4.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-fa-#cheat-sheet)
 
 ### [Font Awesome Extension][font-awesome-extension]
 > Simple Font Awesome Extension. / ([repo][font-awesome-extension]) / ([website](https://andrelzgava.github.io/font-awesome-extension/))
 
-![image](images/fontforge-glyph-set-font-awesome-extension-1.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-fae-#cheat-sheet)
 
 ### [Octicons][octicons]
 > GitHub's icons. / ([repo][octicons]) / ([website](https://octicons.github.com))
 
-#### Nerd Font Complete Codepoints:*
-
-![image](images/fontforge-glyph-set-octicons.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-oct-#cheat-sheet)*
 
 <sub>* To avoid conflicts between icon sets, these were modified in the 'Complete' fonts. To view the original codepoints see the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki/Codepoint-Conflicts).</sub>
 
 ### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 > Provides extra Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
 
-![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/master/fontforge.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-ple-#cheat-sheet)
 
 ### [IEC Power Symbols][website-iecpower]
 > Adding new characters into Unicode / ([website][website-iecpower])
 
-![image](images/fontforge-glyph-set-font-iec-power-1.png)
-![image](images/fontforge-glyph-set-font-iec-power-2.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-iec-#cheat-sheet)
 
 ### [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
 > Font-logos is an icon font containing logos of popular linux distributions and other open source software for inclusion in websites. / ([repo][font-linux])
 
-![image](images/fontforge-glyph-set-font-logos.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-linux-#cheat-sheet)
 
 ### [Pomicons][gabrielelana-pomicons]
 > 8 symbols for the ["Pomodoro Technique"®](https://cirillocompany.de/pages/pomodoro-technique). / ([repo][gabrielelana-pomicons])
 
-![image](images/fontforge-glyph-set-pomicons.png)
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-pom-#cheat-sheet)
 
 ### Icon names in shell
 
