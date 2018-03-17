@@ -201,7 +201,7 @@ echo $i_oct_heart
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
-| [Knack Nerd Font*][p-hack]                        | [Hack][f-hack]              | YES  | 2048    | ![w] ![m2] ![l]   |
+| [Hack Nerd Font*][p-hack]                         | [Hack][f-hack]              | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]  | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Meslo Nerd Font][p-meslo]                        |                             | NO   | 2048    | ![w] ![m2] ![l]   |

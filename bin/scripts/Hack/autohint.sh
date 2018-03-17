@@ -1,11 +1,13 @@
 #!/bin/bash
 # ------------------------------------------------------------------
 #
-#  autohint.sh
-#  Copyright 2016 Christopher Simpkins
-#  MIT license
-#  Modified by Ryan L McIntyre
-#  for Nerd Fonts (https://github.com/ryanoasis/nerd-fonts)
+# autohint.sh
+# Copyright 2016 Christopher Simpkins
+# MIT license
+# Modified by Ryan L McIntyre
+# for Nerd Fonts (https://github.com/ryanoasis/nerd-fonts)
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.0.1
 #
 # ------------------------------------------------------------------
 
@@ -26,22 +28,22 @@ cp "$fontfile" "${fontfile}.tmp"
 
 if [[ "$fontfile" == *" Regular"* ]]
 then
-	echo "[Nerd Fonts] Hinting Knack (Hack) Regular"
+	echo "[Nerd Fonts] Hinting Hack Regular"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 181 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Regular-TA.txt" "${fontfile}.tmp" "$fontfile"
 elif [[ "$fontfile" == *" Bold"* ]]
 then
-	echo "[Nerd Fonts] Hinting Knack (Hack) Bold"
+	echo "[Nerd Fonts] Hinting Hack Bold"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 260 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Bold-TA.txt" "${fontfile}.tmp" "$fontfile"
 elif [[ "$fontfile" == *" Italic"* ]]
 then
-	echo "[Nerd Fonts] Hinting Knack (Hack) Italic"
+	echo "[Nerd Fonts] Hinting Hack Italic"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 145 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Bold-TA.txt" "${fontfile}.tmp" "$fontfile"
 elif [[ "$fontfile" == *" BoldItalic"* ]]
 then
-	echo "[Nerd Fonts] Hinting Knack (Hack) Bold Italic"
+	echo "[Nerd Fonts] Hinting Hack Bold Italic"
 	ttfautohint -l 4 -r 80 -G 350 -x 0 -H 265 -D latn -f latn -w G -W -t -X "" -I -m "bin/scripts/Hack/Hack-Bold-TA.txt" "${fontfile}.tmp" "$fontfile"
 else
-    echo "[Nerd Fonts] Could not find any Knack (Hack) fonts to hint..."
+    echo "[Nerd Fonts] Could not find any Hack fonts to hint..."
 fi
 
 # clean-up

@@ -1,5 +1,6 @@
 #!/bin/bash
-# version: 1.1.0
+# Nerd Fonts Version: 2.0.0
+# Script Version: 1.1.0
 
 fontfile=$1
 dir=$(dirname "$0")

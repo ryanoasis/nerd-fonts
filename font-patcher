@@ -243,8 +243,6 @@ reservedFontNameReplacements = {
     'Hermit'  : 'Hurmit',
     'fira'    : 'fura',
     'Fira'    : 'Fura',
-    'hack'    : 'knack',
-    'Hack'    : 'Knack',
     'hasklig' : 'hasklug',
     'Hasklig' : 'Hasklug',
     'Share'   : 'Shure',
