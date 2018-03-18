@@ -90,9 +90,9 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`39`** already [patched font families](#patched-fonts)
-* Over **`87,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
+* **`40`** already [patched font families](#patched-fonts)
+* Over **`305,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **`1,600`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
@@ -240,12 +240,12 @@ echo $i_oct_heart
 
 ## Combinations
 
-- Over **`87,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`39`** patched font typefaces
-  - **`169`** patched font families
-  - **`676`** 'complete' variations/combinations
-  - **`86,702`** _possible_ variations/combinations
-  - **`87,378`** total calculated combinations (676 + 86,702)
+- Over **`305,000`** unique variations/combinations (Power Set) of patched fonts:
+  - **`43`** patched font typefaces
+  - **`594`** patched font families
+  - **`2,376`** 'complete' variations/combinations
+  - **`303,452`** _possible_ variations/combinations
+  - **`305,828`** total calculated combinations (2,376 + 303,452)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
