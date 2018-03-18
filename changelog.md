@@ -2,6 +2,50 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v2.0.0
+
+### New Features
+
+  - Added new fonts:
+    - Noto (all variations) (#213)
+    - Overpass Mono (fixes #177)
+    - BigBlue Terminal (fixes #170)
+    - Dyslexic (fixes #217)
+    - Iosevka Term variant (no ligatures) (fixes #198)
+    - FiraCode TTF variant (fixes #244)
+    - SourceCodePro italics variant (fixes #236)
+  - Added new glyph sets:
+    - [Material Design Icons](https://github.com/templarian/MaterialDesign)
+    - [Weather](https://github.com/erikflowers/weather-icons)
+  - Added new glyphs to core:
+    - Elm (fixes #172)
+    - Elixir (fixes #228)
+    - Electron (fixes #237)
+  - Added new translations:
+    - Added Traditional Chinese of readme (partially fixes #118) (PR #222) (@MindyTai)
+  - Added ability to remove ligatures via the `--removeligatures` option in `font-patcher`
+  - Added `--configfile` option to `font-patcher`
+
+### Updates / Improvements
+
+  - Updated `Hack` font to latest version (`v3.003`) (fixes #216) (with help from @chrissimpkins)
+  - Updated `Iosevka` to the latest version (`v1.14.0`) (fixes #229)
+  - Updated `Fantasque Sans Mono` to the latest version (`v1.7.2`) (fixes #240)
+  - Updated documentation for urxvt wcwidth implementations (fixes #155)
+  - Updated logos and Sankey diagram
+
+### Breaking Updates / Improvements / Changes
+
+  - Updated Font Logos (formerly Font Linux) to latest version (fixes #157)
+
+### Fixes
+
+  - Fixed incorrect exitcode returned from installer (fixes #218) (PR #230 @Phuurl)
+  - Fixed 3270 font not being valid/installable on Windows (fixes #12, #196)
+  - Fixed weather variables script typo (PR #242 @snown)
+  - Fixed Monospaced fonts having ligatures by default (fixed Meslo Mono having ligatures) (fixes #186)
+  - Fixed Hasklig ExtraLight & Light variants (fixes #231)
+
 ## v1.2.0
 
 ### New Features
