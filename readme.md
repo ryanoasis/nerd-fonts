@@ -93,7 +93,7 @@ _If you..._
 * **`39`** already [patched font families](#patched-fonts)
 * Over **`87,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`1,300`** glyphs/icons combined [(more details)](#combinations)
-  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
@@ -122,6 +122,16 @@ _If you..._
 > Simple Font Awesome Extension. / ([repo][font-awesome-extension]) / ([website](https://andrelzgava.github.io/font-awesome-extension/))
 
 #### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-fae-#cheat-sheet)
+
+### [Material Design Icons][font-material-design-icons]
+> The iconic font and CSS toolkit. / ([repo][font-material-design-icons]) / ([website](https://materialdesignicons.com/))
+
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-mdi-#cheat-sheet)
+
+### [Weather][font-weather]
+> The iconic font and CSS toolkit. / ([repo][font-weather]) / ([website](http://weathericons.io/))
+
+#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-weather-#cheat-sheet)
 
 ### [Octicons][octicons]
 > GitHub's icons. / ([repo][octicons]) / ([website](https://octicons.github.com))
@@ -244,6 +254,8 @@ echo $i_oct_heart
 - **double _(variable/proportional)_** or **single _(fixed/monospaced)_** width glyphs
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
+- [Material Design Icons][font-material-design-icons]
+- [Weather][font-weather]
 - [GitHub Octicons][octicons]
 - [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
@@ -381,8 +393,9 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
 usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
                     [--fontawesomeextension] [--fontlinux] [--octicons]
                     [--powersymbols] [--pomicons] [--powerline]
-                    [--powerlineextra] [--custom [CUSTOM]]
-                    [--postprocess [POSTPROCESS]]
+                    [--powerlineextra] [--material] [--weather]
+                    [--custom [CUSTOM]] [--postprocess [POSTPROCESS]]
+                    [--removeligs] [--configfile [CONFIGFILE]]
                     [--progressbars | --no-progressbars] [--careful]
                     [-ext [EXTENSION]] [-out [OUTPUTDIR]]
                     font
@@ -390,7 +403,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 1.2.0
+* Version: 2.0.0
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -418,9 +431,17 @@ optional arguments:
   --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
   --powerline           Add Powerline Glyphs
   --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
+  --material, --materialdesignicons, --mdi
+                        Add Material Design Icons (https://github.com/templarian/MaterialDesign)
+  --weather, --weathericons
+                        Add Weather Icons (https://github.com/erikflowers/weather-icons)
   --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
   --postprocess [POSTPROCESS]
                         Specify a Script for Post Processing
+  --removeligs, --removeligatures
+                        Removes ligatures specificed in JSON configuration file
+  --configfile [CONFIGFILE]
+                        Specify a file path for JSON configuration file (see sample: src/config.sample.json)
   --progressbars        Show percentage completion progress bars per Glyph Set
   --no-progressbars     Don't show percentage completion progress bars per Glyph Set
   --careful             Do not overwrite existing glyphs if detected
@@ -428,7 +449,6 @@ optional arguments:
                         Change font file type to create (e.g., ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
                         The directory to output the patched font file to
-
 ```
 
 #### Examples
@@ -506,6 +526,8 @@ Repo References
 [vorillaz-devicons]:https://vorillaz.github.io/devicons/
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLZGava/font-awesome-extension
+[font-material-design-icons]:https://github.com/Templarian/MaterialDesign
+[font-weather]:https://github.com/erikflowers/weather-icons
 [octicons]:https://github.com/primer/octicons
 [font-linux]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
