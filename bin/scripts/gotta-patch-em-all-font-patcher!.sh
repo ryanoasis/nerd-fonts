@@ -104,10 +104,10 @@ function patch_font {
   if [ "$config_has_powerline" ]
   then
     powerline=""
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   else
     powerline="--powerline"
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   fi
 
   cd "$parent_dir" || {
@@ -162,10 +162,10 @@ function generate_info {
   if [ "$config_has_powerline" ]
   then
     powerline=""
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   else
     powerline="--powerline"
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlinux',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   fi
 
   font_families_count=$((font_families_count+1))
