@@ -185,6 +185,7 @@ echo $i_oct_heart
 | [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Arimo][p-arimo]                                  | [Arimo][f-arimo]            | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [BigBlueTerminal][p-bigblueterm]                  |                             | NO   | 1200    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]        | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -193,7 +194,9 @@ echo $i_oct_heart
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fura Code Nerd Font*][p-fira-code]               | [Fira][f-fira-code]         | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Fura Mono Nerd Font*][p-fira-mono]               | [Fira][f-fira-mono]         | YES  | 1000    | ![w] ![m2] ![l]   |
+| [Go Mono Nerd Font][p-go-mono]                    | [Go-Mono][f-go-mono]        | NO   | 1000    | ![w2] ![m] ![l2]  |
 | [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]              | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Hack Nerd Font][p-hack]                          | [Hack][f-hack]              | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Hasklug Nerd Font*][p-hasklig]                   | [Hasklig][f-hasklig]        | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                             | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Hermut Nerd Font][p-hermit]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -201,7 +204,6 @@ echo $i_oct_heart
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]        | YES  | 1000    | [#83][s-iosevka]  |
-| [Hack Nerd Font*][p-hack]                         | [Hack][f-hack]              | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]  | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Meslo Nerd Font][p-meslo]                        |                             | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -209,6 +211,9 @@ echo $i_oct_heart
 | [Monoid Nerd Font][p-monoid]                      |                             | NO   | 1536    | ![w] ![m2] ![l]   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]      | NO   | 1024    | ![w] ![m2] ![l]   |
 | [M+ (MPlus) Nerd Font][p-mplus]                   |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Noto][p-noto]                                    |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [OpenDyslexic][p-opendyslexic]                    |                             | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Overpass][p-overpass]                            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [ProFont (Windows tweaked) Nerd Font][p-profont]  |                             | NO   | 1200    | ![w] ![m2] ![l]   |
 | [ProFont (x11) Nerd Font][p-profont]              |                             | NO   | 1000    | [FAILING]         |
 | [ProggyClean Nerd Font][p-proggy-clean]           |                             | NO   | 2048    | [FAILING]         |
@@ -217,6 +222,7 @@ echo $i_oct_heart
 | [Shure Tech Mono Nerd Font*][p-share-tech-mono]   | [Share Tech Mono][f-share]  | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]       | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Terminess Nerd Font*][p-terminus]                | [Terminus Font][f-terminus] | YES  | 1000    | ![w] ![m2] ![l]   |
+| [Tinos][p-tinos]                                  |                             | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Ubuntu Nerd Font][p-ubuntu]                      |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                             | NO   | 1000    | ![w] ![m2] ![l]   |
 
@@ -565,6 +571,7 @@ Font repos
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
+[f-go-mono]:https://go.googlesource.com/image/+/master/font/gofont/ttfs/
 [f-gohu]:http://font.gohu.org/
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
@@ -577,6 +584,7 @@ Patched Font internal links
 [p-anonymous-pro]:patched-fonts/AnonymousPro
 [p-aurulent]:patched-fonts/AurulentSansMono
 [p-arimo]:patched-fonts/Arimo
+[p-bigblueterm]:patched-fonts/BigBlueTerminal
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
 [p-cousine]:patched-fonts/Cousine
 [p-dejavu]:patched-fonts/DejaVuSansMono
@@ -597,15 +605,20 @@ Patched Font internal links
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
 [p-mplus]:patched-fonts/MPlus
+[p-noto]:patched-font/Noto
+[p-opendyslexic]:patched-font/OpenDyslexic
+[p-overpass]:patched-font/Overpass
 [p-profont]:patched-fonts/ProFont
 [p-proggy-clean]:patched-fonts/ProggyClean
 [p-roboto]:patched-fonts/RobotoMono
 [p-source-code-pro]:patched-fonts/SourceCodePro
 [p-terminus]:patched-fonts/Terminus
+[p-tinos]:patched-fonts/Tinos
 [p-ubuntu]:patched-fonts/Ubuntu
 [p-ubuntu-mono]:patched-fonts/UbuntuMono
 [p-share-tech-mono]:patched-fonts/ShareTechMono
 [p-space-mono]:patched-fonts/SpaceMono
+[p-go-mono]:patched-fonts/Go-Mono
 [p-gohu]:patched-fonts/Gohu
 [p-mononoki]:patched-fonts/Mononoki
 [p-code-nr]:patched-fonts/CodeNewRoman
