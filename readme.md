@@ -124,12 +124,12 @@ _If you..._
 #### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-fae-#cheat-sheet)
 
 ### [Material Design Icons][font-material-design-icons]
-> The iconic font and CSS toolkit. / ([repo][font-material-design-icons]) / ([website](https://materialdesignicons.com/))
+> 2000+ Material Design Icons from the Community. / ([repo][font-material-design-icons]) / ([website](https://materialdesignicons.com/))
 
 #### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-mdi-#cheat-sheet)
 
 ### [Weather][font-weather]
-> The iconic font and CSS toolkit. / ([repo][font-weather]) / ([website](http://weathericons.io/))
+> 215 Weather Themed Icons and CSS. / ([repo][font-weather]) / ([website](http://weathericons.io/))
 
 #### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-weather-#cheat-sheet)
 
