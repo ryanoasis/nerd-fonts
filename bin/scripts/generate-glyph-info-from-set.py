@@ -5,7 +5,7 @@
 
 # Example Usage:
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont.ttf --start f001 --end f847 --offset 4ff --prefix mdi
-# ./generate-glyph-info-from-set.py --font ../../src/glyphs/weathericons-regular-webfont.ttf --start f000 --end f0eb --negoffset d00 --prefix weather
+# ./generate-glyph-info-from-set.py --font ../../src/glyphs/weathericons-regular-webfont.ttf --start f000 --end f0eb --negoffset d00 --prefix weather --nogaps
 
 from __future__ import absolute_import, print_function, unicode_literals
 
@@ -41,6 +41,7 @@ parser.add_argument('-end', '--end', type=str, nargs='?', dest='symbolFontEnd', 
 parser.add_argument('-offset', '--offset', type=str, nargs='?', dest='symbolOffset', help='The amount (in hex) to offset the range by for the source font')
 parser.add_argument('-negoffset', '--negoffset', type=str, nargs='?', dest='negSymbolOffset', help='The amount (in hex) to negative offset the range by for the source font')
 parser.add_argument('-prefix', '--prefix', type=str, nargs='?', dest='prefix', help='The prefix to use for the shell variables and css names')
+parser.add_argument('-nogaps', '--nogaps', action='store_true', dest='nogaps', help='Generates the codepoints in a continous codepoints with the given range (no empties/gaps)')
 parser.add_argument('-font', '--font', type=str, nargs='?', dest='filepath', help='The file path to the font file to open')
 args = parser.parse_args()
 
@@ -61,16 +62,24 @@ elif args.symbolOffset:
   sign = ''
   offset = args.symbolOffset
 
+signedOffset = int(sign+'0x'+format(offset, 'X'), 16)
+hexPosition = args.symbolFontStart + signedOffset
+
 symbolFont.selection.select((str("ranges"),str("unicode")),args.symbolFontStart,args.symbolFontEnd)
 
 for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
   slot = format(sym_glyph.unicode, 'X')
   name = sym_glyph.glyphname
   sh_name = "i_" + args.prefix + "_" + name.replace("-", "_")
-  char = unichr(int('0x'+slot, 16) + int(sign+'0x'+format(offset, 'X'), 16))
 
-  print("i='" + char + "' " + sh_name + "=$i")
+  if args.nogaps:
+    char = unichr(hexPosition)
+  else:
+    char = unichr(int('0x'+slot, 16) + signedOffset)
+
+  print("i='" + char + "' " + sh_name + "=$i" + " //" + str(hexPosition))
   ctr += 1
+  hexPosition += 1
 
 print("Done, generated " + str(ctr) + " glyphs")
 
