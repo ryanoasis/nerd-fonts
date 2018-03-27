@@ -142,7 +142,7 @@ if args.weather:
 
 # if all source glyphs included simplify the name
 if args.fontawesome and args.fontawesomeextension and args.octicons and args.powersymbols and args.pomicons and args.powerlineextra and args.fontlinux and args.material and args.weather:
-    additionalFontNameSuffix = " " + projectNameSingular + " C"
+    additionalFontNameSuffix = " " + projectNameSingular + " Complete"
     verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
 
 # add mono signifier to end of name
