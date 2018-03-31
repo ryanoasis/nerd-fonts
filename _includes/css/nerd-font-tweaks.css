@@ -36,6 +36,21 @@
 	width: 114px;
 	height: 120px;
 	text-align: center;
+	margin-bottom: 10px;
+}
+
+#main .nerd-font-cheat-sheet .column .class-name {
+	color: antiquewhite;
+	font-family: sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#main .nerd-font-cheat-sheet .column .codepoint {
+	border: 1px dashed;
+	padding: 2px 10px;
+	color: #0fbfcf;
+	display: inline-block;
 }
 
 /* tiny size (phones) */
