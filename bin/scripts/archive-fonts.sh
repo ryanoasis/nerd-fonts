@@ -21,14 +21,16 @@ cd "$scripts_root_dir/../../patched-fonts/" || {
 if [ $# -eq 1 ]
   then
     pattern="./$1"
+    search_pattern="*$1*.zip"
     echo "$LINE_PREFIX Limiting archive to pattern './$pattern'"
 else
     pattern="."
+    search_pattern="*.zip"
     echo "$LINE_PREFIX No limting pattern given, will search entire folder"
 fi
 
 # clear out the directory zips
-find "${outputdir:?}" -name "*.zip" -type f -delete
+find "${outputdir:?}" -name "$search_pattern" -type f -delete
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 0 -type d | # uncomment to test 1 font
