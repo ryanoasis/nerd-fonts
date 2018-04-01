@@ -20,9 +20,9 @@ cd "$scripts_root_dir/../../patched-fonts/" || {
 # limit archiving to given pattern (first script param) or entire root folder if no param given:
 if [ $# -eq 1 ]
   then
-    pattern="./$1"
+    pattern="$1"
     search_pattern="*$1*.zip"
-    echo "$LINE_PREFIX Limiting archive to pattern './$pattern'"
+    echo "$LINE_PREFIX Limiting archive to pattern '$pattern'"
 else
     pattern="."
     search_pattern="*.zip"
@@ -34,7 +34,7 @@ find "${outputdir:?}" -name "$search_pattern" -type f -delete
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 0 -type d | # uncomment to test 1 font
-find $pattern -maxdepth 1 -type d | # uncomment to test all fonts
+find "./$pattern" -maxdepth 0 -type d | # uncomment to test all fonts
 while read -r filename
 do
 
@@ -43,6 +43,7 @@ do
 
 	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
-	zip "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf'
+  # -ic (ignore case not working)
+	zip "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
 
 done
