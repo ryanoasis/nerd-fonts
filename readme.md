@@ -221,7 +221,7 @@ echo $i_oct_heart
 | [Monoid Nerd Font][p-monoid]                      |                                   | NO   | 1536    | ![w] ![m2] ![l]   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | NO   | 1024    | ![w] ![m2] ![l]   |
 | [M+ (MPlus) Nerd Font][p-mplus]                   |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
-| [NerdPlex*][p-nerdplex]                           | [IBM Plex][f-ibm-plex]            | YES  | ????    | ![w] ![m2] ![l]   |
+| [NerdPlex*][p-nerdplex]                           | [IBM Plex][f-ibm-plex]            | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Noto][p-noto]                                    |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [OpenDyslexic][p-opendyslexic]                    |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Overpass][p-overpass]                            |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
