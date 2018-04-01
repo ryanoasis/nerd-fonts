@@ -1,6 +1,6 @@
 
 # U+0021 exclam glyph ID 580
-uni0021 touch 22,23,24,25    y -0.5    @14
+exclam touch 22,23,24,25    y -0.5    @14
 
 # U+0025 percent glyph ID 762
 percent touch 0,1,16                     y 0.75   @10,11
