@@ -1,6 +1,6 @@
 #!/bin/bash
 # Nerd Fonts Version: 2.0.0
-# Script Version: 1.0.0
+# Script Version: 1.1.0
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # adds Windows versions of the fonts as well (casks files just won't download them)
@@ -8,8 +8,11 @@
 #set -x
 
 LINE_PREFIX="# [Nerd Fonts] "
+scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
+echo "dir $scripts_root_dir"
+outputdir=$scripts_root_dir/../../archives/
 
-cd ../../patched-fonts/ || {
+cd "$scripts_root_dir/../../patched-fonts/" || {
   echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
   exit 1
 }
@@ -17,25 +20,30 @@ cd ../../patched-fonts/ || {
 # limit archiving to given pattern (first script param) or entire root folder if no param given:
 if [ $# -eq 1 ]
   then
-    pattern="./$1"
-    echo "$LINE_PREFIX Limiting archive to pattern './$pattern'"
+    pattern="$1"
+    search_pattern="*$1*.zip"
+    echo "$LINE_PREFIX Limiting archive to pattern '$pattern'"
 else
     pattern="."
+    search_pattern="*.zip"
     echo "$LINE_PREFIX No limting pattern given, will search entire folder"
 fi
 
+# clear out the directory zips
+find "${outputdir:?}" -name "$search_pattern" -type f -delete
+
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 0 -type d | # uncomment to test 1 font
-find $pattern -maxdepth 1 -type d | # uncomment to test all fonts
+find "./$pattern" -maxdepth 0 -type d | # uncomment to test all fonts
 while read -r filename
 do
 
 	basename=$(basename "$filename")
 	searchdir=$filename
-	outputdir=$PWD/../archives/
 
 	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
-	zip "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf'
+  # -ic (ignore case not working)
+	zip "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
 
 done
