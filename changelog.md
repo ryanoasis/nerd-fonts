@@ -23,6 +23,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
     - Electron (fixes #237)
   - Added new translations:
     - Added Traditional Chinese of readme (partially fixes #118) (PR #222) (@MindyTai)
+    - Added French readme (partially fixes #118) (PR #251) (@pgrimaud)
   - Added ability to remove ligatures via the `--removeligatures` option in `font-patcher`
   - Added `--configfile` option to `font-patcher`
 
