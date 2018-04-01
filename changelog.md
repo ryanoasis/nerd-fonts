@@ -32,6 +32,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   - Updated `Hack` font to latest version (`v3.003`) (fixes #216) (with help from @chrissimpkins)
   - Updated `Iosevka` to the latest version (`v1.14.0`) (fixes #229)
   - Updated `Fantasque Sans Mono` to the latest version (`v1.7.2`) (fixes #240)
+  - Updated `MPlus` version from `1.018` to `1.063`
   - Updated documentation for urxvt wcwidth implementations (fixes #155)
   - Updated logos and Sankey diagram
 
