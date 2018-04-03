@@ -197,6 +197,7 @@ echo $i_oct_heart
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [BigBlueTerminal][p-bigblueterm]                  |                                   | NO   | 1200    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
+| [Blex*][p-blex]                                   | [IBM Plex][f-ibm-plex]            | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | NO   | 1000    | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -221,7 +222,6 @@ echo $i_oct_heart
 | [Monoid Nerd Font][p-monoid]                      |                                   | NO   | 1536    | ![w] ![m2] ![l]   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | NO   | 1024    | ![w] ![m2] ![l]   |
 | [M+ (MPlus) Nerd Font][p-mplus]                   |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
-| [NerdPlex*][p-nerdplex]                           | [IBM Plex][f-ibm-plex]            | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Noto][p-noto]                                    |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [OpenDyslexic][p-opendyslexic]                    |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Overpass][p-overpass]                            |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -611,6 +611,7 @@ Patched Font internal links
 [p-arimo]:patched-fonts/Arimo
 [p-bigblueterm]:patched-fonts/BigBlueTerminal
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
+[p-blex]:patched-font/Blex
 [p-cousine]:patched-fonts/Cousine
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
@@ -630,7 +631,6 @@ Patched Font internal links
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
 [p-mplus]:patched-fonts/MPlus
-[p-nerdplex]:patched-font/NerdPlex
 [p-noto]:patched-font/Noto
 [p-opendyslexic]:patched-font/OpenDyslexic
 [p-overpass]:patched-font/Overpass
