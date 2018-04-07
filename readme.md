@@ -82,7 +82,7 @@ _If you..._
   * `Option 3.` want to **automate** installing or use in **scripts** see the [Install Script](#option-3-install-script)
   * `Option 4.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-4-homebrew-fonts)
   * `Option 5.` want **complete control** then see [cloning the repo](#option-5-clone-the-repo)
-  * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
+  * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
   * `Option 7.` are on **Arch Linux** and want to use **AUR packages** see [Unofficial Arch User Repositories](#option-7-unofficial-arch-user-repository-aur)
   * `Option 8.` want to patch your own font see the [Font Patcher](#option-8-patch-your-own-font)
 
