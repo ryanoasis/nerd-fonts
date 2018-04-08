@@ -2,7 +2,7 @@
   <img src="images/nerd-fonts-logo.svg" alt="Nerd Fonts Logo" />
 </h1>
 <h2 align="center">
-  <img alt="Iconic font aggregator, collection, and patcher" src="images/project-subtitle-phrase.svg" width="50%">
+  <img alt="Iconic font aggregator, collection, and patcher" src="images/project-subtitle-phrase.svg">
 </h2>
 
 <div align="center">
