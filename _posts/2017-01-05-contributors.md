@@ -184,4 +184,25 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
   <img src="https://avatars1.githubusercontent.com/u/23266023?v=4" width="100px;"/><br />[<sub>Ilia Loginov</sub>](https://github.com/iloginow)<br />
   [💻](https://github.com/ryanoasis/nerd-fonts/commits?author=iloginow "Code")
   </div>
+  <div class="column" markdown="1">
+  [<img src="https://avatars0.githubusercontent.com/u/7506495?v=4" width="100px;"/><br /><sub><b>MindyTai</b></sub>](https://github.com/MindyTai)<br />[🌍](#translation-MindyTai "Translation")
+  </div>
+  <div class="column" markdown="1">
+  [<img src="https://avatars3.githubusercontent.com/u/1835431?v=4" width="100px;"/><br /><sub><b>Phuurl</b></sub>](https://github.com/Phuurl)<br />[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=Phuurl "Code")
+  </div>
+  <div class="column" markdown="1">
+  [<img src="https://avatars0.githubusercontent.com/u/9556697?v=4" width="100px;"/><br /><sub><b>Samuel Ramos</b></sub>](https://github.com/samuelramox)<br />[📖](https://github.com/ryanoasis/nerd-fonts/commits?author=samuelramox "Documentation")
+  </div>
+  <div class="column" markdown="1">
+  [<img src="https://avatars1.githubusercontent.com/u/57392?v=4" width="100px;"/><br /><sub><b>Logan Holmes</b></sub>](http://www.digimarc.com)<br />[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=snown "Code")
+  </div>
+  <div class="column" markdown="1">
+  [<img src="https://avatars1.githubusercontent.com/u/1866496?v=4" width="100px;"/><br /><sub><b>Pierre Grimaud</b></sub>](https://p.ier.re)<br />[🌍](#translation-pgrimaud "Translation")
+  </div>
+  <div class="column" markdown="1">
+  [<img src="https://avatars1.githubusercontent.com/u/1996106?v=4" width="100px;"/><br /><sub><b>jerezereh</b></sub>](https://github.com/jerezereh)<br />[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=jerezereh "Code")
+  </div>
+  <div class="column" markdown="1">
+  [<img src="https://avatars0.githubusercontent.com/u/4249591?v=4" width="100px;"/><br /><sub><b>Chris Simpkins</b></sub>](https://github.com/chrissimpkins)<br />[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=chrissimpkins "Code") [🐛](https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Achrissimpkins "Bug reports") [🤔](#ideas-chrissimpkins "Ideas, Planning, & Feedback") [👀](#review-chrissimpkins "Reviewed Pull Requests")
+  </div>
 </div>
