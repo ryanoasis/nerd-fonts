@@ -247,6 +247,10 @@ reservedFontNameReplacements = {
     'Hasklig' : 'Hasklug',
     'Share'   : 'Shure',
     'share'   : 'shure',
+    'IBMPlex' : 'Blex',
+    'ibmplex' : 'blex',
+    'IBM-Plex': 'Blex',
+    'IBM Plex': 'Blex',
     'terminus': 'terminess',
     'Terminus': 'Terminess'
 }

@@ -93,9 +93,9 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`43`** already [patched font families](#patched-fonts)
+* **`44`** already [patched font families](#patched-fonts)
 * Over **`1,200,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **`1,600`** glyphs/icons combined [(more details)](#combinations)
+* Over **`2,400`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
@@ -200,6 +200,7 @@ echo $i_oct_heart
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [BigBlueTerminal][p-bigblueterm]                  |                                   | NO   | 1200    | ![w] ![m2] ![l]   |
 | [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
+| [Blex*][p-blex]                                   | [IBM Plex][f-ibm-plex]            | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | NO   | 1000    | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -244,11 +245,11 @@ echo $i_oct_heart
 ## Combinations
 
 - Over **`1,200,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`43`** patched font typefaces
-  - **`596`** patched font families
-  - **`2,384`** 'complete' variations/combinations
-  - **`1,221,464`** _possible_ variations/combinations
-  - **`1,223,848`** total calculated combinations (2,384 + 1,221,464)
+  - **`44`** patched font typefaces
+  - **`612`** patched font families
+  - **`2,448`** 'complete' variations/combinations
+  - **`1,264,440`** _possible_ variations/combinations
+  - **`1,266,888`** total calculated combinations (2,448 + 1,264,440)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
@@ -602,6 +603,7 @@ Font repos
 [f-gohu2]:https://github.com/koemaeda/gohufont-ttf
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
+[f-ibm-plex]:https://github.com/IBM/plex
 
 <!--
 Patched Font internal links
@@ -613,6 +615,7 @@ Patched Font internal links
 [p-arimo]:patched-fonts/Arimo
 [p-bigblueterm]:patched-fonts/BigBlueTerminal
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
+[p-blex]:patched-font/Blex
 [p-cousine]:patched-fonts/Cousine
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
