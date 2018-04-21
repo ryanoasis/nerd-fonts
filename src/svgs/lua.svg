@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>lua</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="lua" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15.5,26 C10.2586207,26 6,21.7418284 6,16.5010019 C6,11.2601754 10.2586207,6.89281996 15.7183908,7.00200385 C20.8505747,7.11118774 25,11.2601754 25,16.5010019 C25,21.7418284 20.7413793,26 15.5,26 Z M20,10 C18.3846154,10 17,11.3846154 17,13 C17,14.6153846 18.2692308,16 20,16 C21.6153846,16 23,14.7307692 23,13 C23,11.3846154 21.7307692,10 20,10 Z M24.9446712,10 C23.2994941,10 21.8893423,8.70588235 22.006855,6.94117647 C22.006855,5.29411765 23.2994941,4 25.0621838,4 C26.7073609,4 28,5.41176471 28,7.05882353 C28,8.70588235 26.5898482,10 24.9446712,10 Z" id="Shape" fill="#444444" fill-rule="nonzero"></path>
+    </g>
+</svg>
