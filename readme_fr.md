@@ -632,9 +632,9 @@ Patched Font internal links
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
 [p-mplus]:patched-fonts/MPlus
-[p-noto]:patched-font/Noto
-[p-opendyslexic]:patched-font/OpenDyslexic
-[p-overpass]:patched-font/Overpass
+[p-noto]:patched-fonts/Noto
+[p-opendyslexic]:patched-fonts/OpenDyslexic
+[p-overpass]:patched-fonts/Overpass
 [p-profont]:patched-fonts/ProFont
 [p-proggy-clean]:patched-fonts/ProggyClean
 [p-roboto]:patched-fonts/RobotoMono
