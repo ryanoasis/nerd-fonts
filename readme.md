@@ -615,7 +615,7 @@ Patched Font internal links
 [p-arimo]:patched-fonts/Arimo
 [p-bigblueterm]:patched-fonts/BigBlueTerminal
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
-[p-blex]:patched-font/Blex
+[p-blex]:patched-fonts/Blex
 [p-cousine]:patched-fonts/Cousine
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
@@ -635,9 +635,9 @@ Patched Font internal links
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
 [p-mplus]:patched-fonts/MPlus
-[p-noto]:patched-font/Noto
-[p-opendyslexic]:patched-font/OpenDyslexic
-[p-overpass]:patched-font/Overpass
+[p-noto]:patched-fonts/Noto
+[p-opendyslexic]:patched-fonts/OpenDyslexic
+[p-overpass]:patched-fonts/Overpass
 [p-profont]:patched-fonts/ProFont
 [p-proggy-clean]:patched-fonts/ProggyClean
 [p-roboto]:patched-fonts/RobotoMono
