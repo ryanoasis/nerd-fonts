@@ -486,7 +486,7 @@ See [contributing.md](contributing.md)
 
 :warning: Warning: File paths may change based on releases (especially **major** version bumps)
 
-Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject change for each release
+Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject to change for each release
 
 * For example:
   * :white_check_mark: Use: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
@@ -495,11 +495,13 @@ Reference the **release** branch and _not_ the ~~master~~ branch because paths a
 
 ## Other Good Fonts to Patch
 
-* a list of additional good fonts to patch that I cannot provide or share due to the license:
+* a list of additional good fonts to patch that cannot be provided or shared due to the license:
  * [Input Mono][input-mono] (license restriction)
    * Possibly coming with external hosting :)
  * [PragmataPro][pragmatapro] (not free)
  * [Consolas][consolas] (proprietary)
+ * [Operator Mono][operator] (not free)
+ * [Dank Mono][dank] (not free)
 
 
 ## Project Motivation
@@ -567,6 +569,8 @@ Link References
 [consolas]:https://www.microsoft.com/typography/fonts/family.aspx?FID=300
 [input-mono]:http://input.fontbureau.com/download/
 [pragmatapro]:https://www.fsd.it/shop/fonts/pragmatapro/
+[operator]:https://www.typography.com/fonts/operator/
+[dank]:https://dank.sh/
 
 [release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
 [coc]:https://github.com/ryanoasis/nerd-fonts/blob/master/code_of_conduct.md "Contributor Covenant Code of Conduct"
