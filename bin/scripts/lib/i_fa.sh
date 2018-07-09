@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Font Awesome (version 4.7.0, 675 icons, 111 aliases)
 # Codepoints: F000-F2E0 with holes
 test -n "$__i_fa_loaded" && return || __i_fa_loaded=1

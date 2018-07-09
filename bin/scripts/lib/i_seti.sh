@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Seti-UI + Custom (53 icons, 6 aliases)
 # Codepoints: E5FA-E62E
 # Nerd Fonts Version: 2.0.0

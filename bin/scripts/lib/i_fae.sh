@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Font Awesome Extension (170 icons)
 # Codepoints: Nerd Fonts moved E000-E0A9 → E200-E2A9
 test -n "$__i_fae_loaded" && return || __i_fae_loaded=1

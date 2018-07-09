@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Nerd Fonts Version: 2.0.0
 # calls the necessary scripts in the necessary order to prepare for a release
 

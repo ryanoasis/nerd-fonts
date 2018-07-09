@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Pomicons (11 icons)
 # Codepoints: E000-E00A
 test -n "$__i_pom_loaded" && return || __i_pom_loaded=1
