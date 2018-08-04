@@ -489,9 +489,17 @@ def get_dim(glyph):
     }
 
 def set_width(sourceFont, width):
-    sourceFont.selection.all()
-    for glyph in sourceFont.selection.byGlyphs:
-        glyph.width = width
+    # changed to glyphs() method as selection.byGlyphs was read only
+    for glyph in sourceFont.glyphs():
+        try:
+            if glyph.left_side_bearing < 0.0:
+                glyph.left_side_bearing = 0.0
+            if glyph.right_side_bearing < 0.0:
+                glyph.right_side_bearing = 0.0
+            glyph.width = width
+        except:
+            pass
+
 
 def get_scale_factor(font_dim, sym_dim):
     scale_ratio = 1
@@ -707,13 +715,6 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
         align_matrix = psMat.translate(x_align_distance, y_align_distance)
         sourceFont.transform(align_matrix)
 
-        # Needed for setting 'advance width' on each glyph so they do not overlap,
-        # also ensures the font is considered monospaced on Windows by setting the
-        # same width for all character glyphs.
-        # This needs to be done for all glyphs, even the ones that are empty and
-        # didn't go through the scaling operations.
-        sourceFont[currentSourceFontGlyph].width = font_dim['width']
-
         # Ensure after horizontal adjustments and centering that the glyph
         # does not overlap the bearings (edges)
         if sourceFont[currentSourceFontGlyph].left_side_bearing < 0:
@@ -721,6 +722,15 @@ def copy_glyphs(sourceFont, sourceFontStart, sourceFontEnd, symbolFont, symbolFo
 
         if sourceFont[currentSourceFontGlyph].right_side_bearing < 0:
           sourceFont[currentSourceFontGlyph].right_side_bearing = 0.0
+
+        # Needed for setting 'advance width' on each glyph so they do not overlap,
+        # also ensures the font is considered monospaced on Windows by setting the
+        # same width for all character glyphs.
+        # This needs to be done for all glyphs, even the ones that are empty and
+        # didn't go through the scaling operations.
+        # moved this after changing the bearings because i think it was
+        # messing up the glyph width to have it before
+        sourceFont[currentSourceFontGlyph].width = font_dim['width']
 
         # reset selection so iteration works properly @todo fix? rookie misunderstanding?
         # This is likely needed because the selection was changed when the glyph was copy/pasted
@@ -740,7 +750,8 @@ if args.extension == "":
 else:
     extension = '.'+args.extension
 
-if args.single and extension == '.ttf':
+# removed the ttf condition as i think it is necessary for all monospace fonts to have glyphs of equal width
+if args.single:
     # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
     # This needs to be done on all characters, as some information seems to be lost from the original font file.
     # This is only a problem with ttf files, otf files seem to be okay.
@@ -786,4 +797,3 @@ print("\nGenerated: {}".format(sourceFont.fullname))
 if args.postprocess:
     subprocess.call([args.postprocess, args.outputdir + "/" + sourceFont.fullname + extension])
     print("\nPost Processed: {}".format(sourceFont.fullname))
-
