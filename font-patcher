@@ -47,7 +47,6 @@ class font_patcher:
         self.fontlinuxExactEncodingPosition = True
         self.patch_set = None  # class 'list'
         self.font_dim = None  # class 'dict'
-        self.symbols_complete = None  # class 'list' of bools
         self.onlybitmaps = 0
         self.extension = ""
         self.setup_arguments()
@@ -175,9 +174,7 @@ class font_patcher:
             self.args.material = True
             self.args.weather = True
 
-        if self.args.complete:
-            self.symbols_complete = True
-        else:
+        if not self.args.complete:
             # add the list of arguments for each symbol font to the list self.sym_font_args
             for action in sym_font_group._group_actions:
                 self.sym_font_args.append(action.__dict__['option_strings'])
@@ -191,12 +188,12 @@ class font_patcher:
                         found = True
                 if found is not True:
                     font_complete = False
-            self.symbols_complete = font_complete
+            self.args.complete = font_complete
 
         # this one also works but it needs to be updated every time a font is added
         #
         # if you add a new font, put it in here too, as the others are
-        # self.symbols_complete = all([
+        # self.args.complete = all([
         #     self.args.fontawesome is True,
         #     self.args.fontawesomeextension is True,
         #     self.args.fontlinux is True,
@@ -216,7 +213,7 @@ class font_patcher:
             additionalFontNameSuffix = " " + projectNameAbbreviation
         else:
             additionalFontNameSuffix = verboseAdditionalFontNameSuffix
-        if not self.symbols_complete:
+        if not self.args.complete:
             # NOTE not all symbol fonts have appended their suffix here
             if self.args.fontawesome:
                 additionalFontNameSuffix += " A"
