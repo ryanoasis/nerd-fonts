@@ -162,7 +162,7 @@ class font_patcher:
 
         self.args = parser.parse_args()
 
-        # if you add a new font, put set it to True here inside the if condition and also directly below in the self.symbols_complete assignment
+        # if you add a new font, put set it to True here inside the if condition
         if self.args.complete:
             self.args.fontawesome = True
             self.args.fontawesomeextension = True
