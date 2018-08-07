@@ -161,7 +161,7 @@ class font_patcher:
 
         self.args = parser.parse_args()
 
-        # if you add a new font, put set it to True here inside the if condition
+        # if you add a new font, set it to True here inside the if condition
         if self.args.complete:
             self.args.fontawesome = True
             self.args.fontawesomeextension = True
@@ -191,6 +191,9 @@ class font_patcher:
             self.args.complete = font_complete
 
         # this one also works but it needs to be updated every time a font is added
+        # it was a conditional in self.setup_font_names() before, but it was missing
+        # a symbol font, so it would name the font complete without being so sometimes.
+        # that's why i did the above.
         #
         # if you add a new font, put it in here too, as the others are
         # self.args.complete = all([
