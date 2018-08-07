@@ -40,6 +40,7 @@ except ImportError:
 class font_patcher:
     def __init__(self):
         self.args = None  # class 'argparse.Namespace'
+        self.sym_font_args = []
         self.config = None  # class 'configparser.ConfigParser'
         self.sourceFont = None  # class 'fontforge.font'
         self.octiconsExactEncodingPosition = True
@@ -124,197 +125,44 @@ class font_patcher:
             formatter_class=RawTextHelpFormatter
         )
 
-        # general option arguments
-        parser.add_argument(
-            'font',
-            help='The path to the font to patch (e.g., Inconsolata.otf)'
-        )
-        parser.add_argument(
-            '-out', '--outputdir',
-            type=str,
-            nargs='?',
-            dest='outputdir',
-            help='The directory to output the patched font file to',
-            default="."
-        )
-        parser.add_argument(
-            '-q', '--quiet', '--shutup',
-            dest='quiet',
-            action='store_true',
-            help='Do not generate verbose output',
-            default=False
-        )
+        # optional arguments
+        parser.add_argument('font',                                      help='The path to the font to patch (e.g., Inconsolata.otf)')
+        parser.add_argument('-v', '--version',                           action='version',        version=projectName + ": %(prog)s (" + version + ")")
+        parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
+        parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
+        parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
+        parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)')
+        parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
+        parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
+        parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
+        parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str, nargs='?', help='Specify a Script for Post Processing')
+        parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str, nargs='?', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
+        parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.')
+        parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
+        parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
 
         # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
         progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
-        progressbars_group_parser.add_argument(
-            '--progressbars',
-            dest='progressbars',
-            action='store_true',
-            help='Show percentage completion progress bars per Glyph Set'
-        )
-        progressbars_group_parser.add_argument(
-            '--no-progressbars',
-            dest='progressbars',
-            action='store_false',
-            help='Don\'t show percentage completion progress bars per Glyph Set'
-        )
+        progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set')
+        progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
         parser.set_defaults(progressbars=True)
 
-        # font config arguments
-        parser.add_argument(
-            '-s', '--mono', '--use-single-width-glyphs',
-            dest='single',
-            action='store_true',
-            help='Whether to generate the glyphs as single-width not double-width (default is double-width)',
-            default=False
-        )
-        parser.add_argument(
-            '-l', '--adjust-line-height',
-            dest='adjustLineHeight',
-            action='store_true',
-            help='Whether to adjust line heights (attempt to center powerline separators more evenly)',
-            default=False
-        )
-        parser.add_argument(
-            '-w', '--windows',
-            dest='windows',
-            action='store_true',
-            help='Limit the internal font name to 31 characters (for Windows compatibility)',
-            default=False
-        )
-        parser.add_argument(
-            '--careful',
-            dest='careful',
-            action='store_true',
-            help='Do not overwrite existing glyphs if detected',
-            default=False
-        )
-        parser.add_argument(
-            '-ext', '--extension',
-            type=str,
-            nargs='?',
-            dest='extension',
-            help='Change font file type to create (e.g., ttf, otf)',
-            default=""
-        )
-        parser.add_argument(
-            '--postprocess',
-            type=str,
-            nargs='?',
-            dest='postprocess',
-            help='Specify a Script for Post Processing',
-            default=False
-        )
-        parser.add_argument(
-            '--removeligs', '--removeligatures',
-            dest='removeligatures',
-            action='store_true',
-            help='Removes ligatures specificed in JSON configuration file',
-            default=False
-        )
-        parser.add_argument(
-            '--configfile',
-            type=str,
-            nargs='?',
-            dest='configfile',
-            help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)',
-            default=False
-        )
-        parser.add_argument(
-            '-v', '--version',
-            action='version',
-            version=projectName + ": %(prog)s (" + version + ")"
-        )
-
         # symbol fonts to include arguments
-        parser.add_argument(
-            '-c', '--complete',
-            dest='complete',
-            action='store_true',
-            help='Add all available Glyphs',
-            default=False
-        )
-        parser.add_argument(
-            '--custom',
-            type=str,
-            nargs='?',
-            dest='custom',
-            help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.',
-            default=False
-        )
-        parser.add_argument(
-            '--fontawesome',
-            dest='fontawesome',
-            action='store_true',
-            help='Add Font Awesome Glyphs (http://fontawesome.io/)',
-            default=False
-        )
-        parser.add_argument(
-            '--fontawesomeextension',
-            dest='fontawesomeextension',
-            action='store_true',
-            help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)',
-            default=False
-        )
-        parser.add_argument(
-            '--fontlinux', '--fontlogos',
-            dest='fontlinux',
-            action='store_true',
-            help='Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)',
-            default=False
-        )
-        parser.add_argument(
-            '--octicons',
-            dest='octicons',
-            action='store_true',
-            help='Add Octicons Glyphs (https://octicons.github.com)',
-            default=False
-        )
-        parser.add_argument(
-            '--powersymbols',
-            dest='powersymbols',
-            action='store_true',
-            help='Add IEC Power Symbols (https://unicodepowersymbol.com/)',
-            default=False
-        )
-        parser.add_argument(
-            '--pomicons',
-            dest='pomicons',
-            action='store_true',
-            help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)',
-            default=False
-        )
-        parser.add_argument(
-            '--powerline',
-            dest='powerline',
-            action='store_true',
-            help='Add Powerline Glyphs',
-            default=False
-        )
-        parser.add_argument(
-            '--powerlineextra',
-            dest='powerlineextra',
-            action='store_true',
-            help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)',
-            default=False
-        )
-        parser.add_argument(
-            '--material', '--materialdesignicons', '--mdi',
-            dest='material',
-            action='store_true',
-            help='Add Material Design Icons (https://github.com/templarian/MaterialDesign)',
-            default=False
-        )
-        parser.add_argument(
-            '--weather', '--weathericons',
-            dest='weather',
-            action='store_true',
-            help='Add Weather Icons (https://github.com/erikflowers/weather-icons)',
-            default=False
-        )
+        sym_font_group = parser.add_argument_group('Symbol Fonts')
+        sym_font_group.add_argument('--fontawesome',                                dest='fontawesome',          default=False, action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)')
+        sym_font_group.add_argument('--fontawesomeextension',                       dest='fontawesomeextension', default=False, action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)')
+        sym_font_group.add_argument('--fontlinux', '--fontlogos',                   dest='fontlinux',            default=False, action='store_true', help='Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)')
+        sym_font_group.add_argument('--octicons',                                   dest='octicons',             default=False, action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)')
+        sym_font_group.add_argument('--powersymbols',                               dest='powersymbols',         default=False, action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)')
+        sym_font_group.add_argument('--pomicons',                                   dest='pomicons',             default=False, action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)')
+        sym_font_group.add_argument('--powerline',                                  dest='powerline',            default=False, action='store_true', help='Add Powerline Glyphs')
+        sym_font_group.add_argument('--powerlineextra',                             dest='powerlineextra',       default=False, action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)')
+        sym_font_group.add_argument('--material', '--materialdesignicons', '--mdi', dest='material',             default=False, action='store_true', help='Add Material Design Icons (https://github.com/templarian/MaterialDesign)')
+        sym_font_group.add_argument('--weather', '--weathericons',                  dest='weather',              default=False, action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)')
 
         self.args = parser.parse_args()
+
+        # if you add a new font, put set it to True here inside the if condition and also directly below in the self.symbols_complete assignment
         if self.args.complete:
             self.args.fontawesome = True
             self.args.fontawesomeextension = True
@@ -327,18 +175,39 @@ class font_patcher:
             self.args.material = True
             self.args.weather = True
 
-        self.symbols_complete = all([
-            self.args.fontawesome is True,
-            self.args.fontawesomeextension is True,
-            self.args.fontlinux is True,
-            self.args.octicons is True,
-            self.args.powersymbols is True,
-            self.args.pomicons is True,
-            self.args.powerline is True,
-            self.args.powerlineextra is True,
-            self.args.material is True,
-            self.args.weather is True
-        ])
+        if self.args.complete:
+            self.symbols_complete = True
+        else:
+            # add the list of arguments for each symbol font to the list self.sym_font_args
+            for action in sym_font_group._group_actions:
+                self.sym_font_args.append(action.__dict__['option_strings'])
+
+            # determine whether or not all symbol fonts are to be used
+            font_complete = True
+            for sym_font_arg_aliases in self.sym_font_args:
+                found = False
+                for alias in sym_font_arg_aliases:
+                    if alias in sys.argv:
+                        found = True
+                if found is not True:
+                    font_complete = False
+            self.symbols_complete = font_complete
+
+        # this one also works but it needs to be updated every time a font is added
+        #
+        # if you add a new font, put it in here too, as the others are
+        # self.symbols_complete = all([
+        #     self.args.fontawesome is True,
+        #     self.args.fontawesomeextension is True,
+        #     self.args.fontlinux is True,
+        #     self.args.octicons is True,
+        #     self.args.powersymbols is True,
+        #     self.args.pomicons is True,
+        #     self.args.powerline is True,
+        #     self.args.powerlineextra is True,
+        #     self.args.material is True,
+        #     self.args.weather is True
+        # ])
 
 
     def setup_font_names(self):
@@ -347,34 +216,35 @@ class font_patcher:
             additionalFontNameSuffix = " " + projectNameAbbreviation
         else:
             additionalFontNameSuffix = verboseAdditionalFontNameSuffix
-        # NOTE not all symbol fonts have append the suffix here
-        if self.args.fontawesome:
-            additionalFontNameSuffix += " A"
-            verboseAdditionalFontNameSuffix += " Plus Font Awesome"
-        if self.args.fontawesomeextension:
-            additionalFontNameSuffix += " AE"
-            verboseAdditionalFontNameSuffix += " Plus Font Awesome Extension"
-        if self.args.octicons:
-            additionalFontNameSuffix += " O"
-            verboseAdditionalFontNameSuffix += " Plus Octicons"
-        if self.args.powersymbols:
-            additionalFontNameSuffix += " PS"
-            verboseAdditionalFontNameSuffix += " Plus Power Symbols"
-        if self.args.pomicons:
-            additionalFontNameSuffix += " P"
-            verboseAdditionalFontNameSuffix += " Plus Pomicons"
-        if self.args.fontlinux:
-            additionalFontNameSuffix += " L"
-            verboseAdditionalFontNameSuffix += " Plus Font Logos (Font Linux)"
-        if self.args.material:
-            additionalFontNameSuffix += " MDI"
-            verboseAdditionalFontNameSuffix += " Plus Material Design Icons"
-        if self.args.weather:
-            additionalFontNameSuffix += " WEA"
-            verboseAdditionalFontNameSuffix += " Plus Weather Icons"
+        if not self.symbols_complete:
+            # NOTE not all symbol fonts have appended their suffix here
+            if self.args.fontawesome:
+                additionalFontNameSuffix += " A"
+                verboseAdditionalFontNameSuffix += " Plus Font Awesome"
+            if self.args.fontawesomeextension:
+                additionalFontNameSuffix += " AE"
+                verboseAdditionalFontNameSuffix += " Plus Font Awesome Extension"
+            if self.args.octicons:
+                additionalFontNameSuffix += " O"
+                verboseAdditionalFontNameSuffix += " Plus Octicons"
+            if self.args.powersymbols:
+                additionalFontNameSuffix += " PS"
+                verboseAdditionalFontNameSuffix += " Plus Power Symbols"
+            if self.args.pomicons:
+                additionalFontNameSuffix += " P"
+                verboseAdditionalFontNameSuffix += " Plus Pomicons"
+            if self.args.fontlinux:
+                additionalFontNameSuffix += " L"
+                verboseAdditionalFontNameSuffix += " Plus Font Logos (Font Linux)"
+            if self.args.material:
+                additionalFontNameSuffix += " MDI"
+                verboseAdditionalFontNameSuffix += " Plus Material Design Icons"
+            if self.args.weather:
+                additionalFontNameSuffix += " WEA"
+                verboseAdditionalFontNameSuffix += " Plus Weather Icons"
 
         # if all source glyphs included simplify the name
-        if self.symbols_complete:
+        else:
             additionalFontNameSuffix = " " + projectNameSingular + " Complete"
             verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
 
@@ -499,9 +369,9 @@ class font_patcher:
         self.sourceFont.fontlog = projectInfo
 
         # TODO version not being set for all font types (e.g. ttf)
-        #print("Version was {}".format(sourceFont.version))
+        # print("Version was {}".format(sourceFont.version))
         self.sourceFont.version += ";" + projectName + " " + version
-        #print("Version now is {}".format(sourceFont.version))
+        # print("Version now is {}".format(sourceFont.version))
 
 
     def remove_ligatures(self):
@@ -616,311 +486,34 @@ class font_patcher:
         # Most glyphs we want to maximize during the scale.  However, there are some
         # that need to be small or stay relative in size to each other.
         # The following list are those glyphs.  A tuple represents a range.
-        DEVI_SCALE_LIST  = {
-            'ScaleGlyph': 0xE60E,
-            'GlyphsToScale': [
-                (0xe6bd, 0xe6c3)
-            ]
-        }
-        FONTA_SCALE_LIST = {
-            'ScaleGlyph': 0xF17A,
-            'GlyphsToScale': [
-                0xf005,
-                0xf006,
-                (0xf026, 0xf028),
-                0xf02b,
-                0xf02c,
-                (0xf031, 0xf035),
-                (0xf044, 0xf054),
-                (0xf060, 0xf063),
-                0xf077,
-                0xf078,
-                0xf07d,
-                0xf07e,
-                0xf089,
-                (0xf0d7, 0xf0da),
-                (0xf0dc, 0xf0de),
-                (0xf100, 0xf107),
-                0xf141,
-                0xf142,
-                (0xf153, 0xf15a),
-                (0xf175, 0xf178),
-                0xf182,
-                0xf183,
-                (0xf221, 0xf22d),
-                (0xf255, 0xf25b)
-            ]
-        }
-        OCTI_SCALE_LIST  = {
-            'ScaleGlyph': 0xF02E,
-            'GlyphsToScale': [
-                (0xf03d, 0xf040),
-                0xf044,
-                (0xf051, 0xf053),
-                0xf05a,
-                0xf05b,
-                0xf071,
-                0xf078,
-                (0xf09f, 0xf0aa),
-                0xf0ca
-            ]
-        }
+        DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, 'GlyphsToScale': [(0xe6bd, 0xe6c3)]}
+        FONTA_SCALE_LIST = {'ScaleGlyph': 0xF17A, 'GlyphsToScale': [0xf005, 0xf006, (0xf026, 0xf028), 0xf02b, 0xf02c, (0xf031, 0xf035), (0xf044, 0xf054), (0xf060, 0xf063), 0xf077, 0xf078, 0xf07d, 0xf07e, 0xf089, (0xf0d7, 0xf0da), (0xf0dc, 0xf0de), (0xf100, 0xf107), 0xf141, 0xf142, (0xf153, 0xf15a), (0xf175, 0xf178), 0xf182, 0xf183, (0xf221, 0xf22d), (0xf255, 0xf25b)]}
+        OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, 'GlyphsToScale': [(0xf03d, 0xf040), 0xf044, (0xf051, 0xf053), 0xf05a, 0xf05b, 0xf071, 0xf078, (0xf09f, 0xf0aa), 0xf0ca]}
 
         # Define the character ranges
         # Symbol font ranges
         self.patch_set = [
-            {
-                'Enabled': True,
-                'Name': "Seti-UI + Custom",
-                'Filename': "original-source.otf",
-                'Exact': False,
-                'SymStart': 0xE4FA,
-                'SymEnd': 0xE52E,
-                'SrcStart': 0xE5FA,
-                'SrcEnd': 0xE62E,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {
-                'Enabled': True,
-                'Name': "Devicons",
-                'Filename': "devicons.ttf",
-                'Exact': False,
-                'SymStart': 0xE600,
-                'SymEnd': 0xE6C5,
-                'SrcStart': 0xE700,
-                'SrcEnd': 0xE7C5,
-                'ScaleGlyph': DEVI_SCALE_LIST,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {
-                'Enabled': self.args.powerline,
-                'Name': "Powerline Symbols",
-                'Filename': "PowerlineSymbols.otf",
-                'Exact': True,
-                'SymStart': 0xE0A0,
-                'SymEnd': 0xE0A2,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_POWERLINE
-            },
-            {
-                'Enabled': self.args.powerline,
-                'Name': "Powerline Symbols",
-                'Filename': "PowerlineSymbols.otf",
-                'Exact': True,
-                'SymStart': 0xE0B0,
-                'SymEnd': 0xE0B3,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_POWERLINE
-            },
-            {
-                'Enabled': self.args.powerlineextra,
-                'Name': "Powerline Extra Symbols",
-                'Filename': "PowerlineExtraSymbols.otf",
-                'Exact': True,
-                'SymStart': 0xE0A3,
-                'SymEnd': 0xE0A3,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_POWERLINE
-            },
-            {
-                'Enabled': self.args.powerlineextra,
-                'Name': "Powerline Extra Symbols",
-                'Filename': "PowerlineExtraSymbols.otf",
-                'Exact': True,
-                'SymStart': 0xE0B4,
-                'SymEnd': 0xE0C8,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_POWERLINE
-            },
-            {
-                'Enabled': self.args.powerlineextra,
-                'Name': "Powerline Extra Symbols",
-                'Filename': "PowerlineExtraSymbols.otf",
-                'Exact': True,
-                'SymStart': 0xE0CA,
-                'SymEnd': 0xE0CA,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_POWERLINE
-            },
-            {
-                'Enabled': self.args.powerlineextra,
-                'Name': "Powerline Extra Symbols",
-                'Filename': "PowerlineExtraSymbols.otf",
-                'Exact': True,
-                'SymStart': 0xE0CC,
-                'SymEnd': 0xE0D4,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_POWERLINE
-            },
-            {
-                'Enabled': self.args.pomicons,
-                'Name': "Pomicons",
-                'Filename': "Pomicons.otf",
-                'Exact': True,
-                'SymStart': 0xE000,
-                'SymEnd': 0xE00A,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {
-                'Enabled': self.args.fontawesome,
-                'Name': "Font Awesome",
-                'Filename': "FontAwesome.otf",
-                'Exact': True,
-                'SymStart': 0xF000,
-                'SymEnd': 0xF2E0,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': FONTA_SCALE_LIST,
-                'Attributes': SYM_ATTR_FONTA
-            },
-            {  # Maximize
-                'Enabled': self.args.fontawesomeextension,
-                'Name': "Font Awesome Extension",
-                'Filename': "font-awesome-extension.ttf",
-                'Exact': False,
-                'SymStart': 0xE000,
-                'SymEnd': 0xE0A9,
-                'SrcStart': 0xE200,
-                'SrcEnd': 0xE2A9,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {  # Power, Power On/Off, Power On, Sleep
-                'Enabled': self.args.powersymbols,
-                'Name': "Power Symbols",
-                'Filename': "Unicode_IEC_symbol_font.otf",
-                'Exact': True,
-                'SymStart': 0x23FB,
-                'SymEnd': 0x23FE,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {  # Heavy Circle (aka Power Off)
-                'Enabled': self.args.powersymbols,
-                'Name': "Power Symbols",
-                'Filename': "Unicode_IEC_symbol_font.otf",
-                'Exact': True,
-                'SymStart': 0x2B58,
-                'SymEnd': 0x2B58,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {
-                'Enabled': self.args.material,
-                'Name': "Material",
-                'Filename': "materialdesignicons-webfont.ttf",
-                'Exact': False,
-                'SymStart': 0xF001,
-                'SymEnd': 0xF847,
-                'SrcStart': 0xF500,
-                'SrcEnd': 0xFD46,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {
-                'Enabled': self.args.weather,
-                'Name': "Weather Icons",
-                'Filename': "weathericons-regular-webfont.ttf",
-                'Exact': False,
-                'SymStart': 0xF000,
-                'SymEnd': 0xF0EB,
-                'SrcStart': 0xE300,
-                'SrcEnd': 0xE3EB,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {
-                'Enabled': self.args.fontlinux,
-                'Name': "Font Logos (Font Linux)",
-                'Filename': "font-logos.ttf",
-                'Exact': self.fontlinuxExactEncodingPosition,
-                'SymStart': 0xF100,
-                'SymEnd': 0xF11C,
-                'SrcStart': 0xF300,
-                'SrcEnd': 0xF31C,
-                'ScaleGlyph': None,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {  # Magnifying glass
-                'Enabled': self.args.octicons,
-                'Name': "Octicons",
-                'Filename': "octicons.ttf",
-                'Exact': self.octiconsExactEncodingPosition,
-                'SymStart': 0xF000,
-                'SymEnd': 0xF105,
-                'SrcStart': 0xF400,
-                'SrcEnd': 0xF505,
-                'ScaleGlyph': OCTI_SCALE_LIST,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {  # Heart
-                'Enabled': self.args.octicons,
-                'Name': "Octicons",
-                'Filename': "octicons.ttf",
-                'Exact': self.octiconsExactEncodingPosition,
-                'SymStart': 0x2665,
-                'SymEnd': 0x2665,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': OCTI_SCALE_LIST,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {  # Zap
-                'Enabled': self.args.octicons,
-                'Name': "Octicons",
-                'Filename': "octicons.ttf",
-                'Exact': self.octiconsExactEncodingPosition,
-                'SymStart': 0X26A1,
-                'SymEnd': 0X26A1,
-                'SrcStart': None,
-                'SrcEnd': None,
-                'ScaleGlyph': OCTI_SCALE_LIST,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {  # Desktop
-                'Enabled': self.args.octicons,
-                'Name': "Octicons",
-                'Filename': "octicons.ttf",
-                'Exact': self.octiconsExactEncodingPosition,
-                'SymStart': 0xF27C,
-                'SymEnd': 0xF27C,
-                'SrcStart': 0xF4A9,
-                'SrcEnd': 0xF4A9,
-                'ScaleGlyph': OCTI_SCALE_LIST,
-                'Attributes': SYM_ATTR_DEFAULT
-            },
-            {
-                'Enabled': self.args.custom,
-                'Name': "Custom",
-                'Filename': self.args.custom,
-                'Exact': True,
-                'SymStart': 0x0000,
-                'SymEnd': 0x0000,
-                'SrcStart': 0x0000,
-                'SrcEnd': 0x0000,
-                'ScaleGlyph': None,
-                'Attributes': CUSTOM_ATTR
-            }
+            {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",              'Exact': False,                               'SymStart': 0xE4FA, 'SymEnd': 0xE52E, 'SrcStart': 0xE5FA, 'SrcEnd': 0xE62E, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons.ttf",                     'Exact': False,                               'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'SrcEnd': 0xE7C5, 'ScaleGlyph': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "PowerlineSymbols.otf",             'Exact': True,                                'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "PowerlineSymbols.otf",             'Exact': True,                                'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",        'Exact': True,                                'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",        'Exact': True,                                'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",        'Exact': True,                                'SymStart': 0xE0CA, 'SymEnd': 0xE0CA, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",        'Exact': True,                                'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.pomicons,             'Name': "Pomicons",                'Filename': "Pomicons.otf",                     'Exact': True,                                'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.fontawesome,          'Name': "Font Awesome",            'Filename': "FontAwesome.otf",                  'Exact': True,                                'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': FONTA_SCALE_LIST, 'Attributes': SYM_ATTR_FONTA},
+            {'Enabled': self.args.fontawesomeextension, 'Name': "Font Awesome Extension",  'Filename': "font-awesome-extension.ttf",       'Exact': False,                               'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200, 'SrcEnd': 0xE2A9, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},  # Maximize
+            {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",      'Exact': True,                                'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},  # Power, Power On/Off, Power On, Sleep
+            {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",      'Exact': True,                                'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},  # Heavy Circle (aka Power Off)
+            {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesignicons-webfont.ttf",  'Exact': False,                               'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'SrcEnd': 0xFD46, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.weather,              'Name': "Weather Icons",           'Filename': "weathericons-regular-webfont.ttf", 'Exact': False,                               'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'SrcEnd': 0xE3EB, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.fontlinux,            'Name': "Font Logos (Font Linux)", 'Filename': "font-logos.ttf",                   'Exact': self.fontlinuxExactEncodingPosition, 'SymStart': 0xF100, 'SymEnd': 0xF11C, 'SrcStart': 0xF300, 'SrcEnd': 0xF31C, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                     'Exact': self.octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Magnifying glass
+            {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                     'Exact': self.octiconsExactEncodingPosition,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Heart
+            {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                     'Exact': self.octiconsExactEncodingPosition,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Zap
+            {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                     'Exact': self.octiconsExactEncodingPosition,  'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF4A9, 'SrcEnd': 0xF4A9, 'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Desktop
+            {'Enabled': self.args.custom,               'Name': "Custom",                  'Filename': self.args.custom,                   'Exact': True,                                'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': 0x0000, 'SrcEnd': 0x0000, 'ScaleGlyph': None,             'Attributes': CUSTOM_ATTR}
         ]
 
 
@@ -1279,7 +872,7 @@ def check_fontforge_min_version():
     actualVersion = int(fontforge.version())
 
     # un-comment following line for testing invalid version error handling
-    #actualVersion = 20120731
+    # actualVersion = 20120731
 
     # versions tested: 20150612, 20150824
     if actualVersion < minimumVersion:
@@ -1296,5 +889,4 @@ def main():
 
 if __name__ == "__main__":
     __dir__ = os.path.dirname(os.path.abspath(__file__))
-    print(type(__dir__))
     main()
