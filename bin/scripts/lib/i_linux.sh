@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Font Logos (Font Linux) (29 icons)
 # Codepoints: Nerd Fonts moved F100-F11C with holes → F300-F31C
 # Nerd Fonts Version: 2.0.0

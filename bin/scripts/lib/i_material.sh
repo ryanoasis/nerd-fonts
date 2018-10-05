@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Material Design Icons (2,119 icons)
 # Codepoints: F001, F847, Nerd Fonts moved F500-FD46
 # Nerd Fonts Version: 2.0.0

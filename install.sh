@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Install Nerd Fonts
 __ScriptVersion="0.3"
 

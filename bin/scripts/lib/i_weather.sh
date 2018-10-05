@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Weather Icons (228 icons)
 # Codepoints: F000, F0EB, Nerd Fonts moved E300-E3EB
 # Nerd Fonts Version: 2.0.0
