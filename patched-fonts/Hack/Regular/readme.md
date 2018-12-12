@@ -54,7 +54,7 @@ Frequently asked questions are answered in our [FAQ](FAQ.md).
 1. Download the [latest version of Hack][ttf_latest].
 2. Extract the files from the archive (`.zip`).
 3. Copy the font files to either your system font folder (often `/usr/share/fonts/`) or user font folder (often `~/.local/share/fonts/` or `/usr/local/share/fonts`).
-4. Copy the font configuration file in `config/fontconfig/` to either the system font configuration folder (often `/etc/fonts/conf.d/`) or the font user folder (often `~/.config/fontconfig/conf.d`)
+4. Copy the font configuration file in `.config/fontconfig/` to either the system font configuration folder (often `/etc/fonts/conf.d/`) or the font user folder (often `~/.config/fontconfig/conf.d`)
 5. Clear and regenerate your font cache and indexes with the following command:
 
 ```
