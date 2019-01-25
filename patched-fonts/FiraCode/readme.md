@@ -7,7 +7,7 @@ Font creator
 
 Version
 
-:   1.102
+:   1.206
 
 Source
 
