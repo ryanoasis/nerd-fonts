@@ -70,7 +70,6 @@ Le diagramme de Sankey suivant montre les ensembles de glyphes actuels inclus :
 
 ## TL;DR
   Nerd Fonts récupère des polices de programmation populaires et ajoute de nombreux glyphes.
-  There is also a [font patcher](#font-patcher) available if your desired font isn't already patched.
   Un [généreur de polices](#font-patcher) est aussi disponible si vous souhaitez ajouter une police non présente.
   Pour plus d'informations précises, vous pouvez consulter le [wiki][wiki]. Plugin vim disponible ici : [VimDevIcons ➶][vim-devicons].
 
