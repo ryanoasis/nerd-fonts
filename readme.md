@@ -437,7 +437,7 @@ optional arguments:
   --postprocess [POSTPROCESS]
                         Specify a Script for Post Processing
   --removeligs, --removeligatures
-                        Removes ligatures specificed in JSON configuration file
+                        Removes ligatures specified in JSON configuration file
   --configfile [CONFIGFILE]
                         Specify a file path for JSON configuration file (see sample: src/config.sample.json)
   --progressbars        Show percentage completion progress bars per Glyph Set
