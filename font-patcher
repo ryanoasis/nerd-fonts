@@ -60,7 +60,7 @@ parser.add_argument('--material', '--materialdesignicons', '--mdi', dest='materi
 parser.add_argument('--weather', '--weathericons', dest='weather', action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)', default=False)
 parser.add_argument('--custom', type=str, nargs='?', dest='custom', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.', default=False)
 parser.add_argument('--postprocess', type=str, nargs='?', dest='postprocess', help='Specify a Script for Post Processing', default=False)
-parser.add_argument('--removeligs', '--removeligatures', dest='removeligatures', action='store_true', help='Removes ligatures specificed in JSON configuration file', default=False)
+parser.add_argument('--removeligs', '--removeligatures', dest='removeligatures', action='store_true', help='Removes ligatures specified in JSON configuration file', default=False)
 parser.add_argument('--configfile', type=str, nargs='?', dest='configfile', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)', default=False)
 
 # https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
