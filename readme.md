@@ -305,10 +305,10 @@ _Note_: **Requires cloning** the repo as of now
 
 > Best option if on **macOS** and want to use **Homebrew**.
 
-All fonts are available via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) on macOS (OS X)
+All fonts are available via [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) on macOS (OS X)
 
 ```sh
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 ```
 
