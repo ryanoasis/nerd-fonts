@@ -73,9 +73,38 @@ Some Linux users may find that font rendering is improved on their distro with [
 
 1. Download the [latest version of Hack][ttf_latest].
 2. Extract the files from the archive (`.zip`) and click to open them.
-3. Follow the instructions from your operating system.
+3. Follow the instructions from your operating system and Terminal application.
 4. Enjoy!
 
+#### Terminal.app
+
+1. Open Terminal preferences
+2. Select Profile Tab
+3. Click Change under section for Text
+4. Choose nerd-font
+
+#### iTerm2
+
+1. iTerm2 -> Preferences
+2. Select Profiles
+3.Select Text
+4. Choose Font
+5. Change Font
+6. Select nerd font
+
+#### Hyper
+
+1. Go to Hyper > Preferences
+2. Locate line similar to below:
+```
+fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+```
+3. Add "Hack Nerd Font" to the list of font family available to Hype, for example:
+```  
+fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace, "Hack Nerd Font"',
+```
+4. Save file.
+5. Reload Hyper by going to View > Reload.
 
 ### Windows
 
