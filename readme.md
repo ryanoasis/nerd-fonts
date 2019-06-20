@@ -28,7 +28,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Important Notices
 * `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
-* cloning this repository is **not** recommended unless you are going to be [contributing to development](#contributing)
+* cloning this repository is **not** recommended ([due to Repo size](#option-5-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
 
 
 ## Table of Contents
@@ -316,7 +316,7 @@ brew cask install font-hack-nerd-font
 
 > Best option for **full control**, **all** or **most** of the fonts, or **contributing** to development.
 
-Cloning of this repository is **not** required nor efficient if you are simply only interested in a limited set of fonts.
+Cloning of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.
 
 However if you do want to clone the repo be sure to _shallow_ clone:
 ```sh
