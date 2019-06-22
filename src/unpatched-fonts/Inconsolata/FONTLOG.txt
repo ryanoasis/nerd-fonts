@@ -1,0 +1,66 @@
+FONTLOG for the Inconsolata font
+
+This file provides detailed information on the Inconsolata Bold 
+font Software.
+
+This information should be distributed along with the 
+Inconsolata fonts and any derivative works.
+
+Basic Font Information
+
+Inconsolata Bold is a Unicode typeface family that supports 
+languages that use the Latin script and its variants, and 
+could be expanded to support other scripts.
+
+More specifically, this release supports the following Unicode
+ranges: Latin-1
+
+There are three source files:
+1. sources/legacy/Inconsolata-Regular.glyphs (Legacy version ported to Glyphs)
+2. sources/legacy/Inconsolata Bold-OTF.vfb (Merged contours)
+3. sources/legacy/Inconsolata Bold-TTF.vfb (TTF countours)
+4. sources/Inconsolata.glyphs (latest Glyphs file with two masters)
+
+ChangeLog
+
+20 March 2017 (Marc Foley) Inconsolata v 2.001
+- Fixed bug in google/fonts “Inconsolata: inconsistent ss03, #611”
+
+19 August 2016 (Alexei Vanyashin) Inconsolata v 2.000
+— Extended charset to GF Latin Plus, GF Latin Pro
+— Added custom characters
+— Improved outline quality
+
+21 September 2015 (Dave Crossland) Inconsolata bold v. 1.016
+- Fixed internal metadata
+- Updated ttfautohint to v1.3
+
+18 September 2012 (Alexei Vanyashin) Inconsolata bold v. 1.014
+- Fixed spacing issue associated with the character "4" and "0"
+- Applied ttfautohint (to fix windows rendering problem that occurred in v 1.000)
+
+7 December 2011 (Kirill Tkachev) Inconsolata Bold v. 1.000
+- Completed Bold version of Inconsolata in VBF format.
+
+If you make modifications be sure to add your name (N), 
+email (E), web-address (if you have one) (W) and description (D). 
+This list is in alphabetical order.
+
+N: Marc Foley
+E: m.foley.88@gmail.com
+D: Engineering
+
+N: Alexei Vanyashin
+W: http://cyreal.org
+E: a at cyreal.org
+D: Mastering, Expansion to GF Latin Pro
+
+N: Kirill Tkachev
+W: http://cyreal.org
+E: contact at cyreal.org
+D: Designer of Bold version
+
+N: Raph Levien
+E: firstname.lastname@gmail.com
+W: http://levien.com
+D: Original Designer
