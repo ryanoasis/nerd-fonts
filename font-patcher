@@ -241,8 +241,6 @@ reservedFontNameReplacements = {
     'Source'  : 'Sauce',
     'hermit'  : 'hurmit',
     'Hermit'  : 'Hurmit',
-    'fira'    : 'fura',
-    'Fira'    : 'Fura',
     'hasklig' : 'hasklug',
     'Hasklig' : 'Hasklug',
     'Share'   : 'Shure',
