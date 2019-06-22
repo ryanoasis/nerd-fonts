@@ -1,0 +1,45 @@
+* Mon Mar 4 2019 Vishal Vijayraghavan <vishalvijayraghavan@gmail.com>
+- Releasing liberation-fonts 2.00.5 version
+- Resolved issue-10: Improving lowercase Cyrillic glyps localized for Macedonian and Serbian, Patch fix by Dimitrij Mijoski
+- Resolved #1014357: U+266B incorrect glyph with extra beam
+-- Added two new glyphs U+266C and U+2669
+- Resolved issue-13: COMBINING LONG SOLIDUS OVERLAY (U+0338) not centred on base character.
+- Validated Missing Points at Extrema, Non-integral coordinates, Wrong Direction issues for newly added and existing glyphs  
+
+* Mon Nov 05 2018 Vishal Vijayraghavan <vishalvijayraghavan@gmail.com>
+- Releasing liberation-fonts 2.00.4 version, it includes few bug fixes and enhancements as follows:
+-- Added Bitcoin sign #1533798 
+-- Fixed Incorrect lowercase Cyrillic BE for Macedonian language in liberation v2 (look like Greek delta), Patch fix by Dimitrij Mijoski #1574410
+-- Fixed Liberation Sans Mono Enhancement Request: Modification needed for "l" Character, Patch fix by Nikolaus Waxweiler #1574410 
+
+* Tue Sep 18 2018 Vishal Vijayraghavan <vishalvijayraghavan@gmail.com>
+- Resolved #1574410:  Incorrect lowercase Cyrillic BE for Macedonian language in liberation v2 (look like Greek delta)
+- Patch fix by Dimitrij Mijoski: https://pagure.io/liberation-fonts/pull-request/21
+- Updated LiberationMono-Bold, LiberationMono-Regular, LiberationSans-Bold, LiberationSans-Regular, LiberationSerif-Bold, LiberationSerif-Regular
+
+* Thu May 17 2018 Pravin Satpute <psatpute AT redhat DOT com> - 2.00.3
+- Releasing liberation-fonts 2.00.3 version, it includes fix for few bugs.
+- This release was pending from long time, will work on other open bugs
+  post this release.
+
+* Tue Oct 14 2014 Pravin Satpute <psatpute AT redhat DOT com>
+- Resolved #1096336:  Liberation 2.00.x missing unicode hyphen (U+2010)
+- Added U+2007 character in Liberation Mono
+- Imported missing gpos tables from Arimo #1072095
+- Missing MIDDLE DOT (u+00B7) glyph for Liberation Sans Italic #1084493
+- Rendering of Unicode tie bars could be improved #1076190
+
+* Thu Oct 04 2012 Pravin Satpute <psatpute AT redhat DOT com>
+- Resolved "Glyphs with multiple unicode encodings inhibit subsetting" #851790
+- Resolved #851791, #854601 and #851825
+- Following GASP table version as per Liberation old version. (Anti-aliasing disabled)
+- Added support for Serbian glyphs for wikipedia #657849
+- In Monospace fonts, isFixedPitch bit set via script for getting it recognized as Monospace in putty.exe
+
+* Fri Jul 06 2012 Pravin Satpute <psatpute AT redhat DOT com>
+- Initial version of Liberation fonts based on croscore fonts version 1.21.0
+- Converted TTF files into SFD files to be open source.
+- Update Copyright and License file
+- set fsType bit to 0, Installable Embedding is allowed.
+- Absolute value in HHeadAscent/Descent values for maintaining Metric compatibility.
+

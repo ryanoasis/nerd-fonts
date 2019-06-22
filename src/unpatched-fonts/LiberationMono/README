@@ -1,0 +1,91 @@
+   1. What's this?
+  =================
+
+  The Liberation Fonts is font collection which aims to provide document 
+  layout compatibility as usage of Times New Roman, Arial, Courier New.
+
+
+   2. Requirements
+  =================
+
+  * fontforge is installed.
+    (http://fontforge.sourceforge.net)
+
+  * python fonttools
+    (https://pypi.org/project/fonttools/)
+
+   3. Install
+  ============
+
+  3.1 Get sources
+
+    The latest sources are available via github by checking out
+    the repo:
+
+       $ git clone https://github.com/liberationfonts/liberation-fonts
+
+    Or downloading the tar.gz file via [github](https://github.com/liberationfonts/liberation-fonts/tags).
+    For example 2.004 can be retrieved via:
+
+       $ wget https://github.com/liberationfonts/liberation-fonts/files/2579282/liberation-fonts-2.00.4.tar.gz
+
+    You can extract the files using the following command where VERSION=2.00.4:
+
+      $ tar zxvf liberation-fonts-[VERSION].tar.gz
+
+  3.2 Build from the source
+
+    Change into directory `liberation-fonts/` or `liberation-fonts-[VERSION]/` and build with
+    `make`:
+
+      $ make
+
+    The built font files will be available in 'liberation-fonts-ttf-[VERSION]' directory.
+
+  3.3 Install to system
+
+    For Fedora, you could manually install the fonts by copying the TTFs to 
+    ~/.fonts for user wide usage, or to /usr/share/fonts/truetype/liberation 
+    for system-wide availability. Then, run "fc-cache" to let that cached.
+
+    For other distributions, please check out corresponding documentation.
+
+
+   4. Usage
+  ==========
+
+  Simply select preferred liberation font in applications and start using.
+
+
+   5. License
+  ============
+
+  This Font Software is licensed under the SIL Open Font License,
+  Version 1.1.
+
+  Please read file "LICENSE" for details.
+
+
+   6. For Maintainers
+  ====================
+
+  Before packaging a new release based on a new source tarball, you have to
+  update the version suffix in the Makefile:
+
+    VER = [VERSION]
+
+  Make sure that the defined version corresponds to the font software metadata
+  which you can check with ftinfo/otfinfo or fontforge itself. It is highly 
+  recommended that file 'ChangeLog' is updated to reflect changes.
+
+  Create a tarball with the following command:
+
+    $ make dist
+
+  The new versioned tarball will be available in the dist/ folder as
+  'liberation-fonts-[NEW_VERSION].tar.gz'.
+
+  7. Credits
+ ============
+
+  Please read file "AUTHORS" for list of contributors.
