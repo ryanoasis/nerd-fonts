@@ -305,40 +305,25 @@ class font_patcher:
         # the same name as the same font, even if subFamily is different.
         fontname += '-' + subFamily
 
-# rename font
-
-def replace_all(text, dic):
-    for i, j in dic.items():
-        text = text.replace(i, j)
-    return text
-
-
-def make_sure_path_exists(path):
-    try:
-        os.makedirs(path)
-    except OSError as exception:
-        if exception.errno != errno.EEXIST:
-            raise
-
-make_sure_path_exists(args.outputdir)
-
-# comply with SIL Open Font License (OFL)
-reservedFontNameReplacements = {
-    'source'  : 'sauce',
-    'Source'  : 'Sauce',
-    'hermit'  : 'hurmit',
-    'Hermit'  : 'Hurmit',
-    'hasklig' : 'hasklug',
-    'Hasklig' : 'Hasklug',
-    'Share'   : 'Shure',
-    'share'   : 'shure',
-    'IBMPlex' : 'Blex',
-    'ibmplex' : 'blex',
-    'IBM-Plex': 'Blex',
-    'IBM Plex': 'Blex',
-    'terminus': 'terminess',
-    'Terminus': 'Terminess'
-}
+        # rename font
+        #
+        # comply with SIL Open Font License (OFL)
+        reservedFontNameReplacements = {
+            'source'  : 'sauce',
+            'Source'  : 'Sauce',
+            'hermit'  : 'hurmit',
+            'Hermit'  : 'Hurmit',
+            'hasklig' : 'hasklug',
+            'Hasklig' : 'Hasklug',
+            'Share'   : 'Shure',
+            'share'   : 'shure',
+            'IBMPlex' : 'Blex',
+            'ibmplex' : 'blex',
+            'IBM-Plex': 'Blex',
+            'IBM Plex': 'Blex',
+            'terminus': 'terminess',
+            'Terminus': 'Terminess'
+        }
 
         # remove overly verbose font names
         # particularly regarding Powerline sourced Fonts (https://github.com/powerline/fonts)
