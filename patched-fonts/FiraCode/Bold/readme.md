@@ -1,13 +1,13 @@
 Fura Code Powerline
 ===================
 
-font creator
+Font creator
 
 :   Nikita Prokopov
 
 Version
 
-:   1.206
+:   1.102
 
 Source
 
@@ -90,7 +90,7 @@ Combinations are no longer included by default because of the large inflation in
 
 
 ```sh
-#     2046 Possible Combinations:
+# 2046 Possible Combinations:
 
 ./font-patcher FiraCode-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher FiraCode-Bold.ttf  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
