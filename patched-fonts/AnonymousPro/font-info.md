@@ -44,6 +44,11 @@ are expressly encouraged to experiment, modify, share and improve.
   * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with the `'Mono'` suffix.
     * This denotes that the Nerd Font glyphs will be monospaced not necessarily that the entire font will be monospaced
 
+### Ligatures
+
+By the *Nerd Font* policy, the variant with the `'Mono'` suffix is not supposed to have any ligatures.
+Use the non-*Mono* variants to have ligatures.
+
 ### Explanation
 
 Once you narrow down your font choice of family (`Droid Sans`, `Inconsolata`, etc) and style (`bold`, `italic`, etc) you have 2 main choices:

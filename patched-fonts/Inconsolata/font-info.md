@@ -1,18 +1,4 @@
-Inconsolata for Powerline
-=========================
-
-Font creator
-
-:   Raph Levien
-
-Source
-
-:   <http://levien.com/type/myfonts/inconsolata.html>
-
-Patched by
-
-:   [Kha](https://github.com/Kha)
-
+# Inconsolata
 
 
 ## Which font?
@@ -24,6 +10,11 @@ Patched by
     * This includes specific tweaks to ensure the font works on Windows, in particular monospace identification and font name length limitations
   * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with the `'Mono'` suffix.
     * This denotes that the Nerd Font glyphs will be monospaced not necessarily that the entire font will be monospaced
+
+### Ligatures
+
+By the *Nerd Font* policy, the variant with the `'Mono'` suffix is not supposed to have any ligatures.
+Use the non-*Mono* variants to have ligatures.
 
 ### Explanation
 
