@@ -37,6 +37,7 @@
 	height: 120px;
 	text-align: center;
 	margin-bottom: 10px;
+	display: none; /* don't show any by default */
 }
 
 #main .nerd-font-cheat-sheet .column .class-name {
