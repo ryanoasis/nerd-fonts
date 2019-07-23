@@ -1,6 +1,6 @@
 ---
 
-port: 4000
+port: 4004
 host: 0.0.0.0
 safe: false
 
