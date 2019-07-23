@@ -4,6 +4,7 @@ short_title: "People"
 bg: 'red'
 color: white
 fa-icon: flask
+page: contributors
 ---
 
 # Thanks goes to these wonderful people

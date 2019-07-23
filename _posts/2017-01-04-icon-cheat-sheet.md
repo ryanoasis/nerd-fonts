@@ -4,6 +4,7 @@ short_title: "Icons"
 bg: gray
 color: white
 fa-icon: search
+page: cheat-sheet
 ---
 
 # Cheat Sheet

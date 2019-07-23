@@ -4,16 +4,10 @@
 <html dir="ltr" lang="en">
 {% include header.html %}
 <body>
-  <div id="main">
-
+  <div id="main" class="section-page-wrapper">
+    {% assign page = site.posts[2] %}
     {% include topnav.html %}
-
-    {% for page in site.posts reversed %}
-      {% if page.page == nil %}
-        {% include section.html %}
-      {% endif %}
-    {% endfor %}
-
+    {% include section.html %}
     <div id="footer" class="section text-white">
       <div class="container">
         {% capture foottext %} {% include footer.md %} {% endcapture %}
@@ -21,7 +15,6 @@
       </div>
     </div>
   </div>
-
   {% include analytics.html %}
   {% include scripts.html %}
 </body>
