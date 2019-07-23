@@ -4,6 +4,7 @@ short_title: "Fonts"
 bg: '#3484bb'
 color: white
 fa-icon: download
+page: font-downloads
 ---
 
 # Downloads
