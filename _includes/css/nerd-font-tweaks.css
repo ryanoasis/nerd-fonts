@@ -129,3 +129,27 @@
 	width: 100px;
 }
 
+/* individual pages */
+
+.section-page-wrapper .section {
+	position:relative;
+	display:block;
+	width:100%;
+	min-height:0px;
+	padding:180px 0;
+	background:url(img/bgnoise.png);
+  }
+
+.section-page-wrapper .section:first-of-type {
+    padding-top: 90px;
+}
+
+.section-page-wrapper .sectiondivider {
+	width:270px;
+	height:270px;
+	padding:15px;
+	position:relative;
+	top:0px;
+	left:50%;
+	margin-left:-135px;
+  }
