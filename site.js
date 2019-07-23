@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 $(document).ready(function (){
-
-    $('nav li a').navScroller();
+    // call on all links that start an anchor/hash
+    $('nav li a[href^=#]').navScroller();
 
     //section divider icon click gently scrolls to reveal the section
 	$(".sectiondivider").on('click', function(event) {
