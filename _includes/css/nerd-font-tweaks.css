@@ -1,8 +1,13 @@
 
+p {
+	line-height: 1.75em;
+}
+
 #main .nerd-font-button {
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	margin: 0px;
+	font-weight: 900;
 }
 
 #main .nerd-font-button a {
@@ -62,19 +67,6 @@
 	display: inline-block;
 }
 
-/* tiny size (phones) */
-@media only screen and (max-width: 380px) {
-	#main .nerd-font-cheat-sheet .column {
-		width: 102px;
-		height: 98px;
-	}
-
-	#main .nerd-font-cheat-sheet {
-		max-height: 306px;
-		padding-top: 0px;
-	}
-}
-
 #main .nerd-font-cheat-sheet .column span {
 	font-family: 'mono';
 	font-size: 12px;
@@ -87,11 +79,46 @@
 	font-size: 2rem;
 }
 
-#forkongithub .fa {
+/* gitter chat tweaks */
+
+.gitter-open-chat-button {
+	border-color: white;
+	border-width: 1px 1px 0px 1px;
+	border-style: solid;
+	font-weight: bold;
+}
+
+/* HACK - replicate FA stack */
+.fa-stack {
+	display: inline-block;
+	height: 2em;
+	line-height: 2em;
+	position: relative;
+	vertical-align: middle;
+	width: 2.5em
+}
+
+.fa-stack-1x,.fa-stack-2x {
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%
+}
+
+.fa-stack-1x {
+	line-height: inherit
+}
+
+.fa-stack-2x {
+	font-size: 2em
+}
+
+#forkongithub .nf {
 	font-size: 1.25rem;
 }
 
 /* for any ASCII :) */
+
 #forkongithub span {
 	font-size: 1.75rem;
 }
@@ -130,6 +157,51 @@
 	width: 100px;
 }
 
+/* features section */
+
+.feature-sections {
+
+}
+
+.feature-section {
+	background: #ffffff55;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.feature-section h2, .feature-section h3, .feature-section h4 {
+	font-weight: bold;
+	text-align: left;
+}
+
+.feature-section h2, .feature-section h3 {
+	padding: 10px 0px;
+	margin: 0px;
+	color: #1c1c1c;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.feature-section h3 {
+	font-size: 20px;
+	padding-top: 0px;
+}
+
+.sectioninner3 {
+	line-height: 29px;
+	word-spacing: 3px;
+	top: inherit;
+	left: inherit;
+	margin-left: 0px;
+	font-weight: bold;
+	padding-top: .75em;
+}
+
+.sectioninner3 div {
+	background-color: #2e2e2e;
+	font-weight: bold;
+	padding-top: .75em;
+}
+
 /* individual pages */
 
 .section-page-wrapper .section {
@@ -153,4 +225,42 @@
 	top:0px;
 	left:50%;
 	margin-left:-135px;
+}
+
+/* tiny size (phones) */
+@media only screen and (max-width: 380px) {
+	#main .nerd-font-cheat-sheet .column {
+		width: 102px;
+		height: 98px;
+	}
+
+	#main .nerd-font-cheat-sheet {
+		max-height: 306px;
+		padding-top: 0px;
+	}
+}
+
+/* gitter adjust sidecar on mobile */
+
+@media screen and (max-width:800px) {
+	.gitter-open-chat-button {
+		bottom: 116px;
+		padding: 1em 1em;
+		transform: rotate(-90deg);
+		right: -28px;
+	}
+}
+
+/* anything not desktop */
+@media only screen and (max-width: 767px) {
+  .sectioninner3 {
+    line-height: 21px;
+    font-size: 11px;
   }
+}
+	
+/* util */
+
+.text-left {
+	text-align: left;
+}
