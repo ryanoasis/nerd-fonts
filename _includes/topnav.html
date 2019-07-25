@@ -14,7 +14,7 @@
           {% else %}
           <a href="#{{id}}">
           {% endif %}
-          <i class="fa fa-{{ node.fa-icon }}"></i> {{node.short_title}}</a>
+          <i class="nf nf-fa-{{ node.fa-icon }}"></i> {{node.short_title}}</a>
       </li>
       <li class="p-{{id}} hide-on-smaller-view {{active}}">
             {% if node.page %}
@@ -24,7 +24,7 @@
             {% else %}
             <a href="#{{id}}">
             {% endif %}
-          <i class="fa fa-{{ node.fa-icon }}"></i> {{node.title}}</a>
+          <i class="nf nf-fa-{{ node.fa-icon }}"></i> {{node.title}}</a>
       </li>
     {% endfor %}
 </ul></nav>

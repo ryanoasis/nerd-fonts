@@ -15261,6 +15261,6 @@ page: cheat-sheet
       I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
   {% endhighlight %}
   <span class="nerd-fonts-example-usage">
-    I really <i class="nerd-font nf-fa-heart ow"></i> <i class="nerd-font nf-custom-vim nf"></i>
+    I really <i class="nf nf-fa-heart ow"></i> <i class="nf nf-custom-vim nfunc"></i>
   </span>
 </div>

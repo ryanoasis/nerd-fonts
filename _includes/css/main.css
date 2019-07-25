@@ -175,7 +175,7 @@ nav ul li:hover, nav ul li.active {
   display:block;
   width:100%;
   min-height:300px;
-  padding:180px 0;
+  padding:130px 0;
   background:url(img/bgnoise.png);
   /* generated noise from noisetexturegenerator.com */
 }
@@ -224,9 +224,8 @@ nav ul li:hover, nav ul li.active {
 .sectiondivider .fa-stack {
   font-size: 130px;
   position: static;
-  margin-top: -8px;
 }
-.sectiondivider .fa-circle { color: #fff; }
+.sectiondivider .nf-fa-circle { color: #fff; }
 
 .sectiondivider h5 {
   font-size:15px;
@@ -249,7 +248,7 @@ nav ul li:hover, nav ul li.active {
   position: relative;
 }
 
-#features .sectioninner .nerd-font {
+#features .sectioninner .nf {
   font-size: 1.5em;
 }
 
