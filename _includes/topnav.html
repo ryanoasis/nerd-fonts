@@ -1,10 +1,10 @@
 <nav><ul>
     {% for node in site.posts reversed %}
-      {% if node.page == page.page %}
+      {% if node.page == page.page and (page.page != nil or node.id == '/home') %}
       {% assign active = 'active' %}
       {% else %}
       {% assign active = '' %}
-      {%endif %}
+      {% endif %}
       {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
       <li class="p-{{id}} hide-on-larger-view {{active}}">
           {% if node.page %}
