@@ -330,7 +330,7 @@ span.lineno {
 .nd { color: #a6e22e } /* Name.Decorator */
 .ni { color: #f8f8f2 } /* Name.Entity */
 .ne { color: #a6e22e } /* Name.Exception */
-.nf { color: #a6e22e } /* Name.Function */
+.nfunc { color: #a6e22e } /* Name.Function */
 .nl { color: #f8f8f2 } /* Name.Label */
 .nn { color: #f8f8f2 } /* Name.Namespace */
 .nx { color: #a6e22e } /* Name.Other */
