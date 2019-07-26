@@ -67,7 +67,7 @@ p {
 	display: inline-block;
 }
 
-#main .nerd-font-cheat-sheet .column span {
+#main .nerd-font-cheat-sheet .column .class-name, #main .nerd-font-cheat-sheet .column .codepoint {
 	font-family: 'mono';
 	font-size: 12px;
 	max-width: 98px;
@@ -75,7 +75,7 @@ p {
 	text-align: center;
 }
 
-#main .nerd-font-cheat-sheet .nerd-font {
+#main .nerd-font-cheat-sheet .nf {
 	font-size: 2rem;
 }
 
