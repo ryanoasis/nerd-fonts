@@ -160,11 +160,28 @@ $(document).ready(function (){
 		 return decodeURIComponent(results[2].replace(/\+/g, " "));
 	}
 
-	var set = getParameterByName('set');
+    const set = getParameterByName('set');
+    const onCheatSheet = window.location.href.indexOf('/cheat-sheet') !== -1;
 
 	if (set) {
-		$('#glyphSearch').val(set);
-		searchGlyphs();
+        if (onCheatSheet) {
+            $('#glyphSearch').val(set);
+            gtag('event', 'glyph-search', {
+                'event_category': 'via-url',
+                'event_label': 'Cheat Sheet',
+                'value': set
+              });
+            searchGlyphs();
+        }
+        else {
+            gtag('event', 'glyph-search', {
+                'event_category': 'via-redirect',
+                'event_label': 'Cheat Sheet',
+                'value': set
+              });
+            // redirect to cheat sheet with param
+            window.location.href = window.location.origin + "/cheat-sheet?set=" + set;
+        }
 	}
 
 });
