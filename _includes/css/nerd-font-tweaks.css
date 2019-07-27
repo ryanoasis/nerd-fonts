@@ -152,9 +152,18 @@ p {
 	padding: 0px 0px 20px 0px;
 }
 
-#contributors .container .column {
-	height: 160px;
-	width: 100px;
+#all-contributors .container > div > div {
+	min-height: 160px;
+	width: 130px;
+}
+
+#all-contributors a {
+	display: inline-block;
+}
+
+/* hack fix for emoji key styling */
+#all-contributors a[title] {
+	text-decoration: none;
 }
 
 /* features section */
