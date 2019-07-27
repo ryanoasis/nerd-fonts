@@ -87,9 +87,9 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`44`** already [patched font families](#patched-fonts)
-* Over **`1,200,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **`2,500`** glyphs/icons combined [(more details)](#combinations)
+* **`45`** already [patched font families](#patched-fonts)
+* Over **`1,356,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **`2,600`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
@@ -233,6 +233,7 @@ echo $i_oct_heart
 | [Tinos][p-tinos]                                  |                                   | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Ubuntu Nerd Font][p-ubuntu]                      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Victor Mono][p-victor]                           | [Victor Mono][f-victor]           | NO   | 1000    | ![w] ![m2] ![l]   |
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
@@ -602,6 +603,7 @@ Font repos
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
 [f-ibm-plex]:https://github.com/IBM/plex
+[f-victor]:https://github.com/rubjo/victor-mono
 
 <!--
 Patched Font internal links
@@ -651,6 +653,7 @@ Patched Font internal links
 [p-mononoki]:patched-fonts/Mononoki
 [p-code-nr]:patched-fonts/CodeNewRoman
 [p-hasklig]:patched-fonts/Hasklig
+[p-victor]:patched-fonts/VictorMono
 
 
 <!--
