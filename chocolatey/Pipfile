@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyyaml = "*"
+pyyaml = ">=4.2b1"
 
 [dev-packages]
 
