@@ -5,15 +5,12 @@
 {% include header.html %}
 <body>
   <div id="main">
-
     {% include topnav.html %}
-
     {% for page in site.posts reversed %}
       {% if page.page == nil %}
         {% include section.html %}
       {% endif %}
     {% endfor %}
-
     <div id="footer" class="section text-white">
       <div class="container">
         {% capture foottext %} {% include footer.md %} {% endcapture %}
@@ -21,7 +18,6 @@
       </div>
     </div>
   </div>
-
   {% include analytics.html %}
   {% include scripts.html %}
 </body>
