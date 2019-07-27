@@ -146,7 +146,7 @@ if [ ! -z "$*" ]; then
       if [[ ! -d "$nerdfonts_root_dir/$font" ]]; then
         echo -e "Font $font doesn't exist. Options are: \\n"
         find "$nerdfonts_root_dir" -maxdepth 1 -type d \( \! -name "$(basename "$nerdfonts_root_dir")" \) -exec basename {} \;
-        exit -1
+        exit 255
       fi
       nerdfonts_dirs=( "${nerdfonts_dirs[@]}" "$nerdfonts_root_dir/$font" )
     fi
