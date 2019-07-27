@@ -115,7 +115,14 @@ $(document).ready(function (){
 
 	// extremely basic search
 
-	$('#glyphSearch').on('keyup', searchGlyphs);
+	$('#glyphSearch').on('keyup', function(e) {
+        gtag('event', 'glyph-search', {
+            'event_category': 'via-input',
+            'event_label': 'Cheat Sheet',
+            'value': e.target && e.target.value
+          });
+        searchGlyphs();
+    });
 
 	function searchGlyphs() {
 		console.log('searching');
