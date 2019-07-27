@@ -115,9 +115,9 @@ $(document).ready(function (){
 	// extremely basic search
 
 	$('#glyphSearch').on('keyup', function(e) {
-        gtag('event', 'glyph-search', {
-            'event_category': 'via-input',
-            'event_label': 'Cheat Sheet',
+        gtag('event', 'search-via-input', {
+            'event_category': 'glyph-search',
+            'event_label': 'Cheat Sheet : ' + (e.target && e.target.value),
             'value': e.target && e.target.value
           });
         searchGlyphs();
@@ -164,17 +164,17 @@ $(document).ready(function (){
 	if (set) {
         if (onCheatSheet) {
             $('#glyphSearch').val(set);
-            gtag('event', 'glyph-search', {
-                'event_category': 'via-url',
-                'event_label': 'Cheat Sheet',
+            gtag('event', 'search-via-url', {
+                'event_category': 'glyph-search',
+                'event_label': 'Cheat Sheet : ' + set,
                 'value': set
               });
             searchGlyphs();
         }
         else {
-            gtag('event', 'glyph-search', {
-                'event_category': 'via-redirect',
-                'event_label': 'Cheat Sheet',
+            gtag('event', 'search-via-redirect', {
+                'event_category': 'glyph-search',
+                'event_label': 'Cheat Sheet : ' + set,
                 'value': set
               });
             // redirect to cheat sheet with param
