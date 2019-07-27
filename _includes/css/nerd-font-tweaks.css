@@ -315,7 +315,7 @@ p {
   nav { font-size:10px; }
   li.p-downloads a:after { content: ''; }
   nav ul li {
-    min-width:60px;
+    min-width:50px;
     line-height:40px;
   }
   .section:first-of-type {
