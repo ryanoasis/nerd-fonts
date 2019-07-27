@@ -219,7 +219,7 @@ p {
 	width:100%;
 	min-height:0px;
 	padding:180px 0;
-	background:url(img/bgnoise.png);
+	background:url(/assets/img/bgnoise.png);
   }
 
 .section-page-wrapper .section:first-of-type {

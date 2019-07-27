@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		 entries.forEach((entry) => {
 			  if (entry.isIntersecting) {
 					const lazyImage = entry.target
-					console.log("lazy loading ", lazyImage)
 					lazyImage.src = lazyImage.dataset.src
 			  }
 		 })
@@ -125,7 +124,6 @@ $(document).ready(function (){
     });
 
 	function searchGlyphs() {
-		console.log('searching');
 		var input = $('#glyphSearch');
 		var filter = input.val().toUpperCase();
 		var container = $('#glyphCheatSheet');

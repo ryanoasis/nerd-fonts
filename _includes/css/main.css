@@ -176,7 +176,7 @@ nav ul li:hover, nav ul li.active {
   width:100%;
   min-height:300px;
   padding:130px 0;
-  background:url(img/bgnoise.png);
+  background:url(/assets/img/bgnoise.png);
   /* generated noise from noisetexturegenerator.com */
 }
 
