@@ -240,61 +240,6 @@ $(document).ready(function (){
         }
     }
 
-/*     document.getElementById('glyphCheatSheet').addEventListener('mouseover', function (event) {
-        const target = event.target
-        if (target.matches('.column') && target.children.length > 2 && !target.contains(target.querySelector('.glyph-popout-copy-clipboard'))) {
-          console.log(target.value);
-          const className = target.children[1].innerText;
-          const codePoint = target.children[2].innerText;
-          const unicodeChar = target.children[0].dataset.content && target.children[0].dataset.content.charAt(0);
-          console.log('class', className, 'codepoint', codePoint, 'unicodeChar', unicodeChar);
-          document.getElementById('glyphCheatSheetCopyFrom').innerText = className;
-
-          const newNode = document.createElement('span');
-          const copyClassNode = document.createElement('span');
-          const copyCodePoint = document.createElement('span');
-          newNode.className = 'glyph-popout-copy-clipboard';
-          copyClassNode.innerText = 'Copy Class';
-          copyCodePoint.innerText = 'Copy Hex';
-          newNode.appendChild(copyClassNode);
-          newNode.appendChild(copyCodePoint);
-          target.children[0].before(newNode);
-        //   copyToClipboard('foooo');
-          //document.getElementById('glyphCheatSheet').insertBefore(newNode, target);
-        }
-      }); */
-
-/*       document.getElementById('glyphCheatSheet').addEventListener('click', function (event) {
-          console.log('clicked');
-          copyToClipboard('foooo copied');
-      }); */
-
-/*       document.getElementById('glyphCheatSheet').addEventListener('mouseout', function (event) {
-        const target = event.target;
-        const e = event.toElement || event.relatedTarget;
-        const isOriginalNodeEvent = e.parentNode == this || e == this; // avoid removal on child elements
-        const doesToElementContainOriginalNode = e.contains(this);
-        // no need to capture 'this' > it is always the #glyphCheatSheet
-        console.log('mouse out', 'target', target, 'toElement', event.toElement, 'relatedTarget', event.relatedTarget);
-        console.log('isOriginal', isOriginalNodeEvent, 'doesContain', doesToElementContainOriginalNode);
-        console.log('target matches column', target.matches('.column'));
-        if (isOriginalNodeEvent || doesToElementContainOriginalNode) {
-            if (target.matches('.column')) {
-                console.log('is .column');
-                //target.querySelectorAll('.glyph-popout-copy-clipboard').forEach(el => el.remove()); // @TODO fix reliance on querySelectorAll and use of forEach
-                target.querySelector('.glyph-popout-copy-clipboard').remove();
-            }
-            else if (target.parentNode.matches('.column') && target.parentNode.querySelector('.glyph-popout-copy-clipboard')) {
-                console.log('is parent .column');
-                target.parentNode.querySelector('.glyph-popout-copy-clipboard').remove();
-            }
-            else {
-                console.log('is NOT original event', 'this', this, 'e', e, 'e.parentNode', e.parentNode);
-            }
-        }
-      });
- */
-
       document.getElementById('glyphCheatSheet').addEventListener("mouseenter", function(e) {
         if(e.target.className === "column") {
             console.log("entered column");
@@ -341,15 +286,11 @@ $(document).ready(function (){
                 textToCopy = event.target.parentNode.parentNode.querySelector('.codepoint').innerText;
             }
             else if (event.target.className === 'copy-glyph') {
-                // console.log('copy glyph', event.target.parentNode.parentNode.querySelector('.nf'), event.target.parentNode.parentNode.querySelector('.nf').innerHTML);
-                // textToCopy = event.target.parentNode.parentNode.querySelector('.nf').innerHTML;
                 textToCopy = window.getComputedStyle(
                     document.querySelector(`.${event.target.parentNode.parentNode.querySelector('.class-name').innerText}`), ':before'
                 ).getPropertyValue('content').replace(/"/g,'');
             }
             copyToClipboard(textToCopy);
-            // console.log('clicked');
-            // copyToClipboard('foooo copied');
           }
       });
 });

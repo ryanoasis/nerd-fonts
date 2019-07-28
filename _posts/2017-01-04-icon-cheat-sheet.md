@@ -15263,5 +15263,3 @@ page: cheat-sheet
   <span class="nerd-fonts-example-usage">
     I really <i class="nf nf-fa-heart ow"></i> <i class="nf nf-custom-vim nfunc"></i>
 </div>
-
-<!-- <div id="glyphCheatSheetCopyFrom"></div> -->

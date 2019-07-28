@@ -42,7 +42,6 @@ p {
 	max-height: 480px;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	/* padding-top: 60px; */
 	padding-top: 20px;
 }
 
@@ -67,9 +66,6 @@ p {
 	border: 2px solid #0fbfcf;
 	color: #0fbfcf !important;
 	cursor: pointer;
-	/* border-top: none; */
-	/* border-top-left-radius: unset; */
-	/* border-top-right-radius: unset; */
 }
 
 #main .nerd-font-cheat-sheet .column:hover .codepoint {
@@ -120,22 +116,6 @@ p {
 	text-align: left;
 }
 
-
-/* #main .nerd-font-cheat-sheet .glyph-popout-copy-clipboard {
-	background: #585547;
-	border: 2px solid #0fbfcf;
-	border-bottom: none;
-	display: block;
-	position: absolute;
-	bottom: 144px;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	left: -2px;
-	right: -2px;
-} */
-
 #main .nerd-font-cheat-sheet .glyph-popout-copy-clipboard {
 	background: #585547;
 	border: 2px solid #0fbfcf;
@@ -150,9 +130,6 @@ p {
 }
 
 #main .nerd-font-cheat-sheet span.glyph-popout-copy-clipboard span {
-/* 	font-size: 12px;
-	font-weight: bold;
-	display: block; */
 	font-size: 12px;
 	font-weight: bold;
 	display: block;
@@ -180,12 +157,6 @@ p {
 }
 
 #main .nerd-font-cheat-sheet span.glyph-popout-copy-clipboard span:not(:first-child):hover {
-/* 	background: #767260;
-	text-decoration: underline;
-	border-radius: 2px;
-	border-style: dashed;
-	border-color: #0fbfcf;
-	border-width: 2px; */
 	background: #767260;
 	text-decoration: underline;
 	border-radius: 2px;
@@ -195,7 +166,6 @@ p {
 }
 
 /* gitter chat tweaks */
-
 .gitter-open-chat-button {
 	border-color: white;
 	border-width: 1px 1px 0px 1px;
