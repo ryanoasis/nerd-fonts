@@ -42,41 +42,156 @@ p {
 	max-height: 480px;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	/* padding-top: 60px; */
 	padding-top: 20px;
 }
 
 #main .nerd-font-cheat-sheet .column {
-	width: 114px;
-	height: 120px;
+	width: 146px;
+	height: 146px;
 	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-bottom: 10px;
+	position: relative;
+	border: 2px solid rgba(0,0,0,.25);
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	margin: 10px 5px;
 	display: none; /* don't show any by default */
+}
+
+#main .nerd-font-cheat-sheet .column:hover {
+	background: rgba(0,0,0,.25);
+	border: 2px solid #0fbfcf;
+	color: #0fbfcf !important;
+	cursor: pointer;
+	/* border-top: none; */
+	/* border-top-left-radius: unset; */
+	/* border-top-right-radius: unset; */
+}
+
+#main .nerd-font-cheat-sheet .column:hover .codepoint {
+	border-color: #0fbfcf;
+}
+
+#main .nerd-font-cheat-sheet .column:hover .class-name {
+	color: #0fbfcf;
 }
 
 #main .nerd-font-cheat-sheet .column .class-name {
 	color: antiquewhite;
 	font-family: sans-serif;
-	font-style: italic;
 	font-weight: bold;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	word-break: break-word;
+	font-size: 13px;
 }
 
 #main .nerd-font-cheat-sheet .column .codepoint {
-	border: 1px dashed;
-	padding: 2px 10px;
-	color: #0fbfcf;
-	display: inline-block;
+	border: 2px dashed;
+	padding: 0px 10px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 14px;
+	border-radius: 3px;
+	border-bottom: none;
+	border-right: none;
+	background: rgba(0,0,0,.25);
+	border-color: #565346;
+	font-weight: bold;
+	border-top-right-radius: unset;
+	border-bottom-left-radius: unset;
 }
 
-#main .nerd-font-cheat-sheet .column .class-name, #main .nerd-font-cheat-sheet .column .codepoint {
+#main .nerd-font-cheat-sheet .column .class-name,
+#main .nerd-font-cheat-sheet .column .codepoint {
 	font-family: 'mono';
-	font-size: 12px;
-	max-width: 98px;
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 }
 
 #main .nerd-font-cheat-sheet .nf {
-	font-size: 2rem;
+	font-size: 3.25em;
+	text-align: left;
+}
+
+
+/* #main .nerd-font-cheat-sheet .glyph-popout-copy-clipboard {
+	background: #585547;
+	border: 2px solid #0fbfcf;
+	border-bottom: none;
+	display: block;
+	position: absolute;
+	bottom: 144px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	left: -2px;
+	right: -2px;
+} */
+
+#main .nerd-font-cheat-sheet .glyph-popout-copy-clipboard {
+	background: #585547;
+	border: 2px solid #0fbfcf;
+	display: block;
+	position: absolute;
+	border-bottom-left-radius: 5px;
+	right: 0px;
+	border-right: unset;
+	border-top: unset;
+	top: 0px;
+	width: 76px;
+}
+
+#main .nerd-font-cheat-sheet span.glyph-popout-copy-clipboard span {
+/* 	font-size: 12px;
+	font-weight: bold;
+	display: block; */
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	height: 18px;
+	padding: 0px 5px;
+}
+
+#main .nerd-font-cheat-sheet span.glyph-popout-copy-clipboard span:first-child {
+	writing-mode: vertical-lr;
+	height: 54px;
+	transform: rotate(180deg);
+	background: #0fbfcf;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	float: left;
+	width: 20px;
+	line-height: 13px;
+}
+
+#main .nerd-font-cheat-sheet span.glyph-popout-copy-clipboard span:not(:first-child) {
+	text-align: left;
+	font-size: 14px;
+	padding-left: 28px;
+}
+
+#main .nerd-font-cheat-sheet span.glyph-popout-copy-clipboard span:not(:first-child):hover {
+/* 	background: #767260;
+	text-decoration: underline;
+	border-radius: 2px;
+	border-style: dashed;
+	border-color: #0fbfcf;
+	border-width: 2px; */
+	background: #767260;
+	text-decoration: underline;
+	border-radius: 2px;
+	border-style: dashed;
+	border-color: #0fbfcf;
+	width: 100%;
 }
 
 /* gitter chat tweaks */
