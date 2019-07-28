@@ -290,6 +290,11 @@ $(document).ready(function (){
                     document.querySelector(`.${event.target.parentNode.parentNode.querySelector('.class-name').innerText}`), ':before'
                 ).getPropertyValue('content').replace(/"/g,'');
             }
+            gtag('event', event.target.className, {
+                'event_category': 'clipboard-copy',
+                'event_label': 'Copy To Clipboard : ' + textToCopy,
+                'value': textToCopy
+              });
             copyToClipboard(textToCopy);
           }
       });
