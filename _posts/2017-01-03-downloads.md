@@ -9,6 +9,8 @@ page: font-downloads
 
 # Downloads
 
+### Download already patched fonts from the latest release (v2.0.0):
+
 <div class="half column" markdown="1">
 - [3270](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/3270.zip)
 - [AnonymousPro](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/AnonymousPro.zip)
