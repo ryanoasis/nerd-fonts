@@ -403,6 +403,10 @@ p {
 /* Downloads page */
 #downloads  {}
 
+#downloads a {
+	padding-left: 10px;
+}
+
 #downloads ul {
 	position: relative;
 	list-style: none;
@@ -414,12 +418,17 @@ p {
 	content: "";
 	position: absolute;
 	left: 0;
-	font-size: 36px;
+	font-size: 32px;
+	font-family: 'NerdFontsSymbols Nerd Font';
 }
 
 #downloads li {
 	line-height: 30px;
 	margin-bottom: 12px;
+}
+
+#downloads h3 span {
+	font-family: 'NerdFontsSymbols Nerd Font';
 }
 
 
