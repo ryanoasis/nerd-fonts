@@ -58,3 +58,32 @@ page: font-downloads
 - [Ubuntu](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Ubuntu.zip)
 - [UbuntuMono](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/UbuntuMono.zip)
 </div>
+<div class="clear"></div>
+<div markdown="1">
+
+## Other Download & Install Options
+
+###  Homebrew
+
+```sh
+brew tap homebrew/cask-fonts &&
+brew cask install font-<FONT NAME>-nerd-font
+```
+
+### :// curl
+
+```sh
+curl -fLo "<FONT NAME> Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
+```
+
+###  Bash Install Script
+
+```sh
+./install.sh <FontName>
+```
+
+###  Unofficial Arch User Repository (AUR)
+
+See: [Nerd Fonts Packages](https://aur.archlinux.org/packages/?K=nerd-fonts&SB=p)
+
+</div>

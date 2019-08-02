@@ -45,7 +45,7 @@ p {
 	padding-top: 20px;
 }
 
-#main .nerd-font-cheat-sheet .column {
+#glyphCheatSheet .column {
 	width: 146px;
 	height: 146px;
 	text-align: center;
@@ -59,6 +59,10 @@ p {
 	border-radius: 5px;
 	margin: 10px 5px;
 	display: none; /* don't show any by default */
+}
+
+#glyphCheatSheet .column.is-visible {
+	display: block;
 }
 
 #main .nerd-font-cheat-sheet .column:hover {
@@ -364,6 +368,60 @@ p {
     box-sizing: content-box;
   }
 }
+
+.icon-backdrop {
+/* 	position: absolute;
+	opacity: 0.20;
+	font-size: 2rem;
+	line-height: 1.43em;
+	word-spacing: 1rem;
+	overflow: hidden;
+	word-break: break-all;
+	font-family: 'NerdFontsSymbols Nerd Font';
+	padding: 0px 20px 10px 20px; */
+	position: absolute;
+	opacity: 0.15;
+	font-size: 2em;
+	line-height: 1.43em;
+	word-spacing: 1rem;
+	overflow: hidden;
+	word-break: break-all;
+	font-family: 'NerdFontsSymbols Nerd Font';
+	padding: 0px 20px 10px 20px;
+	height: 444px;
+}
+
+.rainbow {
+	/* fe2 and ff2 with 66601e */
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(.9, #66601e), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #66601e), color-stop(1, #f22) );
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+/* Downloads page */
+#downloads  {}
+
+#downloads ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+	font-size: 22px;
+}
+#downloads ul li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	font-size: 36px;
+}
+
+#downloads li {
+	line-height: 30px;
+	margin-bottom: 12px;
+}
+
 
 /*
  super tiny size (phones)
