@@ -100,62 +100,7 @@ _If you..._
 
 :mag: :mag: You can now search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
 
-### Seti-UI + Custom
-> Based off of [Seti-UI] Icomoon with extra custom glyphs.
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-custom-#cheat-sheet)
-
-### [Devicons][vorillaz-devicons]
-> An iconic font made for developers, code jedis, ninjas, HTTPsters, evangelists and nerds(sic). / ([repo][vorillaz-devicons]) / ([website](https://vorillaz.github.io/devicons/))
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-dev-#cheat-sheet)
-
-### [Font Awesome][font-awesome]
-> The iconic font and CSS toolkit. / ([repo][font-awesome]) / ([website](http://fontawesome.io/))
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-fa-#cheat-sheet)
-
-### [Font Awesome Extension][font-awesome-extension]
-> Simple Font Awesome Extension. / ([repo][font-awesome-extension]) / ([website](https://andrelzgava.github.io/font-awesome-extension/))
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-fae-#cheat-sheet)
-
-### [Material Design Icons][font-material-design-icons]
-> 2000+ Material Design Icons from the Community. / ([repo][font-material-design-icons]) / ([website](https://materialdesignicons.com/))
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-mdi-#cheat-sheet)
-
-### [Weather][font-weather]
-> 215 Weather Themed Icons and CSS. / ([repo][font-weather]) / ([website](http://weathericons.io/))
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-weather-#cheat-sheet)
-
-### [Octicons][octicons]
-> GitHub's icons. / ([repo][octicons]) / ([website](https://octicons.github.com))
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-oct-#cheat-sheet)*
-
-<sub>* To avoid conflicts between icon sets, these were modified in the 'Complete' fonts. To view the original codepoints see the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki/Codepoint-Conflicts).</sub>
-
-### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
-> Provides extra Powerline separator glyphs and a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-ple-#cheat-sheet)
-
-### [IEC Power Symbols][website-iecpower]
-> Adding new characters into Unicode / ([website][website-iecpower])
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-iec-#cheat-sheet)
-
-### [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
-> Font-logos is an icon font containing logos of popular linux distributions and other open source software for inclusion in websites. / ([repo][font-linux])
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-linux-#cheat-sheet)
-
-### [Pomicons][gabrielelana-pomicons]
-> 8 symbols for the ["Pomodoro Technique"®](https://cirillocompany.de/pages/pomodoro-technique). / ([repo][gabrielelana-pomicons])
-
-#### [:mag: :bookmark_tabs: See set on the NerdFonts.com Website](http://nerdfonts.com/?set=nf-pom-#cheat-sheet)
+See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoints]
 
 ### Icon names in shell
 
@@ -535,6 +480,7 @@ Repo References
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
 [wiki]:https://github.com/ryanoasis/nerd-fonts/wiki
 [wiki-project-purpose]:https://github.com/ryanoasis/nerd-fonts/wiki/Project-Purpose
+[wiki-glyph-sets-codepoints]:https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points
 [repo]:https://github.com/ryanoasis/nerd-fonts
 [gitter]:https://gitter.im/ryanoasis/nerd-fonts
 [code-climate]:https://codeclimate.com/github/ryanoasis/nerd-fonts
