@@ -73,7 +73,8 @@ brew cask install font-<FONT NAME>-nerd-font
 <h3> :// curl </h3>
 <div markdown="1">
 ```sh
-curl -fLo "<FONT NAME> Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
+    curl -fLo "<FONT NAME> Nerd Font Complete.otf" \
+    https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
 ```
 </div>
 <h3> <span></span> Bash Install Script </h3>

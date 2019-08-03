@@ -267,21 +267,36 @@ p {
 	margin-bottom: 20px;
 }
 
+.feature-section .faux-logo {
+	text-align: center;
+}
+
 .feature-section h2, .feature-section h3, .feature-section h4 {
 	font-weight: bold;
-	text-align: left;
 }
 
 .feature-section h2, .feature-section h3 {
+	text-align: left;
+}
+
+.feature-section h2, .feature-section h3, .feature-section h4:not(.nerd-font-button) {
 	padding: 10px 0px;
 	margin: 0px;
 	color: #1c1c1c;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-.feature-section h3 {
+.feature-section h3, .feature-section h4 {
 	font-size: 20px;
 	padding-top: 0px;
+	font-size: 20px;
+	padding-top: 0px;
+}
+.feature-section h4 img {
+	max-height: 100px;
+}
+.feature-section div p {
+	text-align: left;
 }
 
 .sectioninner3 {
@@ -421,14 +436,31 @@ p {
 	font-size: 32px;
 	font-family: 'NerdFontsSymbols Nerd Font';
 }
-
 #downloads li {
 	line-height: 30px;
 	margin-bottom: 12px;
 }
 
+#downloads ul li ul {
+	list-style: initial;
+	font-size: 14px;
+}
+#downloads ul li ul li:before {
+	content: initial;
+	position: initial;
+	left: initial;
+	font-size: initial;
+	font-family: initial;
+}
+
 #downloads h3 span {
 	font-family: 'NerdFontsSymbols Nerd Font';
+}
+
+/* kramdown Rouge syntax hacks */
+
+.lineno {
+	visibility: hidden;
 }
 
 
