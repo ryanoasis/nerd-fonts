@@ -1,7 +1,7 @@
 ---
 title: "Fonts Downloads"
 short_title: "Fonts"
-bg: '#3484bb'
+bg: '#1E5D8A'
 color: white
 fa-icon: download
 page: font-downloads

@@ -171,10 +171,12 @@ p {
 
 /* gitter chat tweaks */
 .gitter-open-chat-button {
-	border-color: white;
-	border-width: 1px 1px 0px 1px;
+	border-color: #2e2e2e;
+	color: #2e2e2e;
+	border-width: 2px 2px 0px 2px;
 	border-style: solid;
 	font-weight: bold;
+	font-family: Raleway;
 }
 
 /* HACK - replicate FA stack */
@@ -342,7 +344,8 @@ p {
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
-  color:#fff;
+	color: #fff;
+	background: #1E5D8A;
   text-decoration:none;
   font-family:arial,sans-serif;
   text-align:center;
