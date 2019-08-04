@@ -214,13 +214,6 @@ nav ul li:hover, nav ul li.active {
   margin-left:-135px;
 }
 
-.sectiondivider img {
-  width:200px;
-  height:240px;
-  position: static;
-  margin-top: -20px;
-}
-
 .sectiondivider .fa-stack {
   font-size: 130px;
   position: static;
@@ -267,8 +260,6 @@ nav ul li:hover, nav ul li.active {
 #features .sectioninner img,
 #features .sectioninner div {
   border-radius: 50%;
-  width:100%;
-  height:100%;
   margin-top:0px;
 }
 
