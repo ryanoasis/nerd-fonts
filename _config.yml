@@ -37,6 +37,9 @@ colors:
   yellow:        '#ffce3e'
   red:           '#de3c3c'
 
+sass:
+  style: compressed
+
   # More › http://kramdown.gettalong.org/quickref.html
 # Options › http://kramdown.gettalong.org/options.html
 kramdown:
