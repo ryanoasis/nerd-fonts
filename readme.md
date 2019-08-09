@@ -104,29 +104,7 @@ See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoint
 
 ### Icon names in shell
 
-Download provided `.sh` files from [bin/scripts/lib/](bin/scripts/lib/) directory somewhere, recommended locations are `~/.local/share/fonts/` or `~/bin/`.
-
-- `i_all.sh` - helper to load all files you've downloaded at once
-- `i_dev.sh` - Devicons (198 icons, 8 does not have an established name)
-- `i_fa.sh` - Font Awesome (675 icons, 111 aliases)
-- `i_fae.sh` - Font Awesome Extension (170 icons)
-- `i_iec.sh` - IEC Power Symbols (5 icons)
-- `i_linux.sh` - Font Linux (20 icons)
-- `i_oct.sh` - Octicons (172 icons)
-- `i_ple.sh` - Powerline Extra Symbols (37 icons, 2 aliases, 16 does not have an established name)
-- `i_pom.sh` - Pomicons (11 icons)
-- `i_seti.sh` - Seti-UI + Custom (50 icons, 2 aliases, 5 does not have an established name)
-
-Then `source` the required file(s) and output `$i_*` variables to see icons:
-
-```sh
-source ~/.local/share/fonts/i_oct.sh
-echo $i_oct_heart
-# Output:
-# ♥
-```
-
-**NOTE:** You have to use one of the Nerd Fonts to see correct icons for some icon sets (Devicons, Font Awesome Extension, Font Linux), but other sets should work with their standard fonts too.
+See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 
 ## Patched Fonts
@@ -481,6 +459,7 @@ Repo References
 [wiki]:https://github.com/ryanoasis/nerd-fonts/wiki
 [wiki-project-purpose]:https://github.com/ryanoasis/nerd-fonts/wiki/Project-Purpose
 [wiki-glyph-sets-codepoints]:https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points
+[wiki-icon-names-in-shell]:https://github.com/ryanoasis/nerd-fonts/wiki/Icon-Names-in-Shell
 [repo]:https://github.com/ryanoasis/nerd-fonts
 [gitter]:https://gitter.im/ryanoasis/nerd-fonts
 [code-climate]:https://codeclimate.com/github/ryanoasis/nerd-fonts
