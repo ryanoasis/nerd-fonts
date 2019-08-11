@@ -1,0 +1,102 @@
+legend:
+"cmp" = fully implemented (per designer's whim)
+"prt" = partially implemented
+"add" = additions
+"fix" = modified to eliminate design error
+"imp" = modified as improvement
+" * " = non-design or holistic update
+
+010 (ongoing)
+- [imp] u0041,u00c6 ("AÆ") shape
+- [*] accommodate variants in src/
+- [add] ue0a0-ue0a2,ue0b0-ue0b3 (powerline)
+
+009
+- [*] 07 Feb 2019: no longer provide version without line gap (*-just)
+- [imp] u0050,u0056 ("PV") remove decorations
+- [*] 02 Sep 2016: re-opened license
+- [*] 05 Feb 2016: baikal upload, closed license
+- [*] now provide a version without line gap (ie. one that ignores
+      vertical outliers, ie. accents): *-just.tar.gz
+- [imp] u0028,u0074,u007a ("(tz") shapelier
+- [imp] u1fcd,u1fce,u1fdd,u1fde (greek diacritics)
+
+008
+- [*] 19 May 2013: bitbucket upload
+- [*] switched to cubic representation in fontforge
+- [*] integral rounding of all points
+- [cmp] u1e00-u1eff (latin ext additional)
+- [imp] u0041,u00c6 ("AÆ") shape
+- [imp] u0385 (dialytika-tonos) raised tonos
+- [imp] u1fcd,u1fce,u1fdd,u1fde (greek diacritics) longer top stroke;
+        diacritics above capitals, which is wrong, but perhaps could be
+        forgiven for a monospaced font
+
+007
+- [*] 14 May 2013: bitbucket upload
+- [*] reorganised source archive
+- [cmp] u0250-u02af (ipa)
+- [imp] u0024,u0047,u004f,u0398 ("$GOΘ") metrics
+- [imp] u0057,u0077 ("Ww") now symmetric
+
+006
+- [*] 01 May 2013: bitbucket upload
+- [cmp] u0180-u024f (latin ext-b)
+- [fix] line spacing; os/2 metrics are now all 0 except typo ascent and
+        hhead ascent which are both 64
+- [fix] underline; 128 @ -384
+- [fix] u0052 ("R") metrics
+- [fix] u0074,u03b9,u03c4 ("tιτ") thicker tail
+- [fix] u1fcd,u1fce,u1fdd,u1fde (greek diacritics) wider apart
+- [imp] u004e ("N") narrower slanted stroke
+- [imp] u003f,u0050 ("?P") shapelier
+- [imp] u0053,u005a,u007a ("SZz") shorter top stroke
+- [imp] u0069,u006a ("ij") raised dot, same level as modifiers
+- [imp] u00ab,u00bb ("«»") wider
+- [imp] u014b,u04fa-u04fd,u0512,u0513 (glyphs with hook) shapelier hooks
+
+005
+- [*] 20 Apr 2013: bitbucket upload
+- [*] decided to place font under MIT X license
+- [cmp] u2190-u21ff (arrows)
+- [imp] u2208,u2282 ("∈⊂") shapelier
+
+004
+- [*] 19 Apr 2013: bitbucket upload
+- [cmp] u0400-u051d (cyrillic + supp)
+- [fix] u1fbf,u1ffe (psili,dasia) more distinct
+- [imp] u0047 ("G") rounded spur
+- [imp] u0050 ("P") stylised for case-disambiguity
+- [imp] u0055 ("U") now sans-serif
+- [imp] u0056 ("V") narrower serif
+- [imp] u006d,u0428,u0429,u0448,u0449 ("mШЩшщ") narrower legs
+
+003
+- [*] 01 Apr 2013: bitbucket upload
+- [cmp] u0400-u045f (partial cyrillic)
+- [fix] u0057 ("W") lower apex
+- [imp] u0043,u0050,u0053,u005a ("CPSZ") now sans-serif
+
+002
+- [*] 29 Mar 2013: bitbucket upload
+- [cmp] u0384-u03ce (basic greek)
+- [cmp] u1f00-u1ffe (greek ext)
+- [fix] u004a ("J") now wears baseball cap
+
+001
+- [*] 26 Mar 2013: first upload to bitbucket
+- [cmp] u0100-u017f (latin ext-a)
+- [cmp] u2500-u257f (box drawing) partial
+- [cmp] u2580-u259f (block) partial
+- [prt] u02b0-u036f (modifiers, diacritics)
+- [prt] u0370-u03ff (greek)
+- [prt] u0400-u04ff (cyrillic)
+- [prt] u2000-u206f (general punctuation)
+- [prt] u2070-u209f (super + sub scripts)
+- [prt] u2100-u23ff (letterlike, mathematical, technical)
+- [prt] u25a0-u25ff (geometric)
+- [prt] u2600-u267f (miscellaneous)
+
+000
+- [cmp] 29 Oct 2012: u0020-u007e (ascii)
+- [cmp] 20 Nov 2012: u00a0-u00ff (latin-1 supp)
