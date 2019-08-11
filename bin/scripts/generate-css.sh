@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.0.0
-# Script Version: 1.1.0
+# Script Version: 1.1.1
 # Generates CSS file for the font
 
 # shellcheck disable=SC1091
@@ -50,7 +50,7 @@ for var in "${!i@}"; do
 
   # generate css rules
   {
-    printf ".nf-%s:before, .nerd-font-%s:before, .nerd-fonts-%s:before {" "$glyph_name" "$glyph_name" "$glyph_name"
+    printf ".nf-%s:before {" "$glyph_name"
     printf "\\n"
     printf "  content: \"\\%s\";" "$glyph_code"
     printf "\\n"
@@ -62,7 +62,7 @@ for var in "${!i@}"; do
   {
     printf "<div class=\"column\">"
     printf "\\n"
-    printf "  <div class=\"nerd-font nerd-font-%s center\"></div>" "$glyph_name"
+    printf "  <div class=\"nf nf-%s center\"></div>" "$glyph_name"
     printf "\\n"
     printf "  <span><div class=\"class-name\">nf-%s</div><div class=\"codepoint\">%s</div></span>" "$glyph_name" "$glyph_code"
     printf "\\n"
