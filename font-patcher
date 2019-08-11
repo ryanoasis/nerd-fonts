@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf8
 # Nerd Fonts Version: 2.0.0-alpha
-# script version: 3.0.0
+# script version: 3.0.1
 
 from __future__ import absolute_import, print_function, unicode_literals
 
@@ -309,20 +309,22 @@ class font_patcher:
         #
         # comply with SIL Open Font License (OFL)
         reservedFontNameReplacements = {
-            'source'  : 'sauce',
-            'Source'  : 'Sauce',
-            'hermit'  : 'hurmit',
-            'Hermit'  : 'Hurmit',
-            'hasklig' : 'hasklug',
-            'Hasklig' : 'Hasklug',
-            'Share'   : 'Shure',
-            'share'   : 'shure',
-            'IBMPlex' : 'Blex',
-            'ibmplex' : 'blex',
-            'IBM-Plex': 'Blex',
-            'IBM Plex': 'Blex',
-            'terminus': 'terminess',
-            'Terminus': 'Terminess'
+            'source'    : 'sauce',
+            'Source'    : 'Sauce',
+            'hermit'    : 'hurmit',
+            'Hermit'    : 'Hurmit',
+            'hasklig'   : 'hasklug',
+            'Hasklig'   : 'Hasklug',
+            'Share'     : 'Shure',
+            'share'     : 'shure',
+            'IBMPlex'   : 'Blex',
+            'ibmplex'   : 'blex',
+            'IBM-Plex'  : 'Blex',
+            'IBM Plex'  : 'Blex',
+            'terminus'  : 'terminess',
+            'Terminus'  : 'Terminess',
+            'liberation': 'literation',
+            'Liberation': 'Literation'
         }
 
         # remove overly verbose font names
