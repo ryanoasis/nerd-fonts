@@ -123,8 +123,8 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]          | NO   | 2048    | ![w] ![m2] ![l]   |
-| [Fira Code Nerd Font*][p-fira-code]               | [Fira Code][f-fira-code]          | YES  | 1000    | ![w] ![m2] ![l]   |
-| [Fira Mono Nerd Font*][p-fira-mono]               | [Fira][f-fira-mono]               | YES  | 1000    | ![w] ![m2] ![l]   |
+| [Fira Code Nerd Font][p-fira-code]                | [Fira Code][f-fira-code]          | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Fira Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]               | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Go Mono Nerd Font][p-go-mono]                    | [Go-Mono][f-go-mono]              | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2],[Gohu][f-gohu]| NO   | 1000    | ![w] ![m2] ![l]   |
 | [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                    | NO   | 2048    | ![w] ![m2] ![l]   |
