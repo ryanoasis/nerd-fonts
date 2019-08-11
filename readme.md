@@ -87,7 +87,7 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`45`** already [patched font families](#patched-fonts)
+* **`46`** already [patched font families](#patched-fonts)
 * Over **`1,356,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`2,600`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
@@ -120,6 +120,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Blex*][p-blex]                                   | [IBM Plex][f-ibm-plex]            | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | NO   | 1000    | ![w] ![m2] ![l]   |
+| [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]  | NO   | 1024    | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]          | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -529,6 +530,7 @@ Font repos
 [f-hasklig]:https://github.com/i-tu/Hasklig
 [f-ibm-plex]:https://github.com/IBM/plex
 [f-victor]:https://github.com/rubjo/victor-mono
+[f-daddytimemono]:https://github.com/BourgeoisBear/DaddyTimeMono
 
 <!--
 Patched Font internal links
@@ -579,6 +581,7 @@ Patched Font internal links
 [p-code-nr]:patched-fonts/CodeNewRoman
 [p-hasklig]:patched-fonts/Hasklig
 [p-victor]:patched-fonts/VictorMono
+[p-daddytimemono]:patched-fonts/DaddyTimeMono
 
 
 <!--
