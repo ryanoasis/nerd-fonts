@@ -287,7 +287,7 @@ case $mode in
 esac
 
 # Reset font cache on Linux
-if [[ -n $(which fc-cache) ]]; then
+if [[ -n $(command -v fc-cache) ]]; then
   [ "$quiet" = false ] && fc-cache -vf "$font_dir"
   [ "$quiet" = true ] && fc-cache -f "$font_dir"
   case $? in

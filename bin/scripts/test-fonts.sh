@@ -89,7 +89,7 @@ function print-decimal-unicode-range() {
 function print-unicode-ranges() {
   echo ''
 
-  local arr=($@)
+  local arr=("$@")
   local len=$#
   local combinedRanges=()
 
@@ -99,7 +99,7 @@ function print-unicode-ranges() {
     local startDecimal=$((16#$start))
     local endDecimal=$((16#$end))
 
-    combinedRanges+=($(seq "${startDecimal}" "${endDecimal}"))
+    mapfile -t combinedRanges < <(seq "$startDecimal" "$endDecimal")
 
   done
 
