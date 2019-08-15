@@ -4129,8 +4129,8 @@ page: cheat-sheet
     <div class="class-name">nf-fae-chess_tower</div><div class="codepoint">e263</div>
   </div>
   <div class="column">
-    <div class="nf nf-fae-chesse center"></div>
-    <div class="class-name">nf-fae-chesse</div><div class="codepoint">e264</div>
+    <div class="nf nf-fae-cheese center"></div>
+    <div class="class-name">nf-fae-cheese</div><div class="codepoint">e264</div>
   </div>
   <div class="column">
     <div class="nf nf-fae-chicken_thigh center"></div>
