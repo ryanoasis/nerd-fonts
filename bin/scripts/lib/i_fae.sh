@@ -102,7 +102,7 @@ i='' i_fae_chess_king=$i
 i='' i_fae_chess_pawn=$i
 i='' i_fae_chess_queen=$i
 i='' i_fae_chess_tower=$i
-i='' i_fae_chesse=$i
+i='' i_fae_cheese=$i
 i='' i_fae_chilli=$i
 i='' i_fae_chip=$i
 i='' i_fae_cicling=$i
