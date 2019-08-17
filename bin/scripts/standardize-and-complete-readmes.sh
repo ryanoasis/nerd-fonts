@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.0.0
-# Script Version: 1.0.0
+# Script Version: 1.1.0
 # Iterates over all patched fonts directories
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc
 # adds information on additional-variations and complete font variations
@@ -39,14 +39,17 @@ function clearDestination {
   true > "$to" 2> /dev/null
 }
 
-#find ./ProFont -type d | # uncomment to test 1 font (with txt)
-#find ./DejaVuSansMono -type d | # uncomment to test 1 font (with rst)
-#find ./Hasklig -type d | # uncomment to test 1 font
-#find ./Hack -type d | # uncomment to test 1 font (with md)
-#find ./Gohu -type d | # uncomment to test 1 font (no readme files)
-#find ./FiraCode -type d | # uncomment to test 1 font (no readme files)
-#find ./Hermit -type d | # uncomment to test 1 font (no readme files)
-find . -type d | # uncomment to do ALL fonts
+if [ $# -eq 1 ]; then
+  like_pattern="./$1"
+  # allows one to limit to specific font.
+  # e.g. with ProFont, DejaVuSansMon, Hasklig, Hack, Gohu, FiraCode, Hermit, etc.
+  echo "$LINE_PREFIX Parameter given, limiting find command of directories to pattern '$like_pattern' given"
+else
+  like_pattern="."
+  echo "$LINE_PREFIX No parameter pattern given, generating standardized readmes for all fonts in all font directories"
+fi
+
+find "$like_pattern" -type d |
 while read -r filename
 do
 
