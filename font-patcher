@@ -324,7 +324,10 @@ class font_patcher:
             'terminus'  : 'terminess',
             'Terminus'  : 'Terminess',
             'liberation': 'literation',
-            'Liberation': 'Literation'
+            'Liberation': 'Literation',
+            'iAWriter'  : 'iMWriting',
+            'iA Writer' : 'iM Writing',
+            'iA-Writer' : 'iM-Writing'
         }
 
         # remove overly verbose font names
