@@ -5,6 +5,7 @@ bg: 'red'
 color: white
 fa-icon: flask
 page: contributors
+style: container
 ---
 
 # Thanks goes to these wonderful people

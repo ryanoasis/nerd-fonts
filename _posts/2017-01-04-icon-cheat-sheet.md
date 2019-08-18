@@ -5,9 +5,10 @@ bg: gray
 color: white
 fa-icon: search
 page: cheat-sheet
+style: container
 ---
 
-# Cheat Sheet
+<h1 class="center">Cheat Sheet</h1>
 
 <input type="text" id="glyphSearch" placeholder="Search for glyphs/icons..." title="Type in a glyph name or hex codepoint" class="nerd-font-cheat-sheet-search" />
 

@@ -4,10 +4,10 @@ p {
 }
 
 #main .nerd-font-button {
-	padding-top: .5rem;
-	padding-bottom: .5rem;
 	margin: 0px;
 	font-weight: 900;
+	text-align: center;
+    padding: 8px 18px;
 }
 
 #main .nerd-font-button a {
@@ -419,41 +419,51 @@ p {
 }
 
 /* Downloads page */
-#downloads  {}
-
-#downloads a {
-	padding-left: 10px;
+#downloads  {
+	.item {
+		// max-width: 400px !important;
+		// border: 2px solid white;
+		padding: 10px;
+		margin: 10px;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: space-between;
+		.download-icon {
+			content: "";
+			font-size: 32px;
+			font-family: 'NerdFontsSymbols Nerd Font';
+			display: inline-block;
+			// position: relative;
+			// top: -40px;
+			padding-right: 10px;
+    		padding-top: 5px;
+		}
+		>a:first-of-type {
+			text-decoration: none;
+		}
+		img {
+			vertical-align: top !important;
+		}
+	}
+	.nerd-font-button {
+		border-width: 2px;
+    	border-style: solid;
+	}
 }
 
 #downloads ul {
 	position: relative;
-	list-style: none;
+	//list-style: none;
 	margin-left: 0;
 	padding-left: 1.2em;
-	font-size: 22px;
-}
-#downloads ul li:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	font-size: 32px;
-	font-family: 'NerdFontsSymbols Nerd Font';
-}
-#downloads li {
-	line-height: 30px;
-	margin-bottom: 12px;
+	font-size: 14px;
+	margin-top: 10px;
 }
 
-#downloads ul li ul {
-	list-style: initial;
-	font-size: 14px;
-}
-#downloads ul li ul li:before {
-	content: initial;
-	position: initial;
-	left: initial;
-	font-size: initial;
-	font-family: initial;
+#downloads li {
+	line-height: 24px;
+	margin-bottom: 0px;
+	max-width: 400px;
 }
 
 #downloads h3 span {
