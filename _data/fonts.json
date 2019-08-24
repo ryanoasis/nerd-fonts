@@ -44,10 +44,10 @@
     },
     {
       "unpatchedName": "IBMPlex",
-      "patchedName": "Blex",
-      "imagePreviewFont": "Blex Nerd Font",
+      "patchedName": "BlexMono",
+      "imagePreviewFont": "BlexMono Nerd Font",
       "linkPreviewFont": false,
-      "description": "todo: font release is currently missing"
+      "description": "font release is currently missing"
     },
     {
       "unpatchedName": "CodeNewRoman",
