@@ -24,10 +24,12 @@ page: font-downloads
           <i class="nf nf-fa-download"></i>
           <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/{{ font.unpatchedName }}.zip" class="inlineblock">Download</a>
         </h4>
+        {% if font.linkPreviewFont != false %}
         <h4 class="inlineblock bg-purple border-white text-white nerd-font-button">
           <i class="nf nf-oct-link_external"></i>
           <a href="https://app.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank" alt="Full Preview of {{ font.patchedName }} on ProgrammingFonts.org" class="inlineblock">Preview <span>on ProgrammingFonts.org</span></a>
         </h4>
+        {% endif %}
       </div>
   </div>
 {% endfor %}
