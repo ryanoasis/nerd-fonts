@@ -447,7 +447,11 @@ p {
 	}
 	.nerd-font-button {
 		border-width: 2px;
-    	border-style: solid;
+		border-style: solid;
+		span {
+			font-size: 14px;
+			line-height: 14px;
+		}
 	}
 }
 

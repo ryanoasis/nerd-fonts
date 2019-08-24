@@ -17,8 +17,7 @@ page: font-downloads
         <img src="/assets/img/previews/{{ font.patchedName }} Nerd Font.svg" alt="{{ font.unpatchedName }}" title="Download {{ font.unpatchedName }}">
       </a>
       <ul>
-        <li><strong>Notable:</strong> {{ font.description }}</li>
-        <!-- <li><a href="https://app.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank"><strong>Full Preview on ProgrammingFonts.org </strong></a></li> -->
+        <li><strong>Info:</strong> {{ font.description }}</li>
       </ul>
       <div>
         <h4 class="inlineblock bg-green border-white text-white nerd-font-button">
@@ -27,7 +26,7 @@ page: font-downloads
         </h4>
         <h4 class="inlineblock bg-purple border-white text-white nerd-font-button">
           <i class="nf nf-oct-link_external"></i>
-          <a href="https://app.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank" alt="Full Preview of {{ font.patchedName }} on ProgrammingFonts.org" class="inlineblock">Preview on ProgrammingFonts.org</a>
+          <a href="https://app.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank" alt="Full Preview of {{ font.patchedName }} on ProgrammingFonts.org" class="inlineblock">Preview <span>on ProgrammingFonts.org</span></a>
         </h4>
       </div>
   </div>
