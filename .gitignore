@@ -8,3 +8,5 @@ private.cfg
 node_modules
 # Only apps should have lockfiles
 package-lock.json
+# generated *.uuid files
+*.uuid
