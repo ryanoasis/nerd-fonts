@@ -98,7 +98,7 @@ _Si tu..._
 
 ## Conjuntos de Glifos
 
-:mag: :mag: Puedes buscar glifos fácilmente entrando a [NerdFonts.com][Cheat Sheet] a través de la [Hoja de Trampa][]
+:mag: :mag: Puedes buscar glifos fácilmente entrando a [NerdFonts.com][Cheat Sheet] a través de la [Hoja de Trampa][Cheat Sheet]
 
 Ve a la [Wiki: Conjuntos de Glifos y Puntos de Código para más detalles][wiki-glyph-sets-codepoints]
 
