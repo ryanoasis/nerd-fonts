@@ -1,14 +1,14 @@
-* agave
+# agave
 
-*** about
+### about
 
-*agave* is a fixed-width outline typeface, designed by [[https://b.agaric.net/about][type agaric]].
+*agave* is a fixed-width outline typeface, designed by [type agaric](https://b.agaric.net/about).
 
-Free to use, peruse, and diffuse. Everything (font files, glyph designs, glyph databases, and documentation) is released under the [[https://raw.githubusercontent.com/agarick/agave/master/LICENSE][MIT license]].
+Free to use, peruse, and diffuse. Everything (font files, glyph designs, glyph databases, and documentation) is released under the [MIT license](https://raw.githubusercontent.com/agarick/agave/master/LICENSE).
 
 *more about:* [[https://b.agaric.net/page/agave]]
 
-*** status (ver. 10)
+### status (ver. 10)
 
 - regular:
   - *done:* ascii; latin ext; greek; cyrillic; math; ipa; arrows; box; powerline; etc.
@@ -20,7 +20,7 @@ Free to use, peruse, and diffuse. Everything (font files, glyph designs, glyph d
 - italic:
   - /yet to be designed/
 
-*** distribution
+### distribution
 
 The =ttf= font files are placed in =dist/=.
 
@@ -29,37 +29,37 @@ The =ttf= font files are placed in =dist/=.
 
 Source templates, designs, and databases can be found in =src/=.
 
-*** preview
+### preview
 
 *glyph distinction*, in ASCII:
 
-[[https://raw.githubusercontent.com/agarick/agave/master/img/ascii.png]]
+![](https://raw.githubusercontent.com/agarick/agave/master/img/ascii.png)
 
 *geometric rationale*, sampling the regular Latin letter "b":
 
-[[https://raw.githubusercontent.com/agarick/agave/master/img/metric.png]]
+![](https://raw.githubusercontent.com/agarick/agave/master/img/metric.png)
 
 *terminal*:
 
-[[https://raw.githubusercontent.com/agarick/agave/master/img/term.png]]
+![](https://raw.githubusercontent.com/agarick/agave/master/img/term.png)
 
 *literary text*, sampling ASCII, Greek, and Cyrillic:
 
-[[https://raw.githubusercontent.com/agarick/agave/master/img/text.png]]
+![](https://raw.githubusercontent.com/agarick/agave/master/img/text.png)
 
-*** naming
+### naming
 
 - "Agave" refers either to the green plant or to the daughter of Kadmos in mythology.
-- Agave is sister to [[https://github.com/agarick/autonoe][autonoe]] and [[https://github.com/agarick/ino][ino]].
+- Agave is sister to [autonoe](https://github.com/agarick/autonoe) and [ino](https://github.com/agarick/ino).
 - *type agaric* opted for a slightly eponymic name for their first typeface.
 
-*** discussion
+### discussion
 
 Feedback, questions, suggestions, etc. are welcome and encouraged.
 
-Feel free to use the [[https://github.com/agarick/agave/issues][issue tracker]] or contact *type agaric* via email at =agaric@protonmail.com=.
+Feel free to use the [issue tracker](https://github.com/agarick/agave/issues) or contact *type agaric* via email at =agaric@protonmail.com=.
 
-*** thanks
+### thanks
 
 ... foremost to the respective persons/teams behind FontForge and Inkscape, as I relied on the two programs to design, draw, and generate *agave*,
 
