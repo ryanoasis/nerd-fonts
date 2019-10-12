@@ -1,0 +1,299 @@
+{
+  "fonts": [
+    {
+      "unpatchedName": "3270",
+      "patchedName": "3270",
+      "imagePreviewFont": "3270Medium Nerd Font",
+      "linkPreviewFont": "font3270",
+      "description": "derived from the x3270 font, a modern format of a font with high nostalgic value"
+    },
+    {
+      "unpatchedName": "AnonymousPro",
+      "patchedName": "Anonymice",
+      "imagePreviewFont": "Anonymice Nerd Font",
+      "linkPreviewFont": false,
+      "description": "inspired by Anonymous 9 on Macintosh, since 2009, distinct `O`, `0`, `I`, `l`, `1`"
+    },
+    {
+      "unpatchedName": "Arimo",
+      "patchedName": "Arimo",
+      "imagePreviewFont": "Arimo Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Metrically similar to Arial, pan-European WGL character set, sans serif"
+    },
+    {
+      "unpatchedName": "AurulentSansMono",
+      "patchedName": "AurulentSansMono",
+      "imagePreviewFont": "AurulentSansMono Nerd Font",
+      "linkPreviewFont": "aurulent",
+      "description": "Sans serif, designed by Stephen G. Hartke which also created Verily Serif"
+    },
+    {
+      "unpatchedName": "BigBlueTerminal",
+      "patchedName": "BigBlueTerminal",
+      "imagePreviewFont": "BigBlue_Terminal_437TT Nerd Font",
+      "linkPreviewFont": false,
+      "description": "nostalgic, closely based on IBM's 8x14 EGA/VGA charset"
+    },
+    {
+      "unpatchedName": "BitstreamVeraSansMono",
+      "patchedName": "BitstreamVeraSansMono",
+      "imagePreviewFont": "BitstreamVeraSansMono Nerd Font",
+      "linkPreviewFont": "bitstream-vera",
+      "description": "dotted zero, compact lowercase characters"
+    },
+    {
+      "unpatchedName": "IBMPlex",
+      "patchedName": "BlexMono",
+      "imagePreviewFont": "BlexMono Nerd Font",
+      "linkPreviewFont": false,
+      "description": "font release is currently missing"
+    },
+    {
+      "unpatchedName": "CodeNewRoman",
+      "patchedName": "CodeNewRoman",
+      "imagePreviewFont": "CodeNewRoman Nerd Font",
+      "linkPreviewFont": "code-new-roman",
+      "description": "tunable, slashed zeros, compact smaller characters"
+    },
+    {
+      "unpatchedName": "Cousine",
+      "patchedName": "Cousine",
+      "imagePreviewFont": "Cousine Nerd Font",
+      "linkPreviewFont": "cousine",
+      "description": "similar to Courier New with better readablitiy, dotted zeros"
+    },
+    {
+      "unpatchedName": "DejaVuSansMono",
+      "patchedName": "DejaVuSansMono",
+      "imagePreviewFont": "DejaVuSansMono Nerd Font",
+      "linkPreviewFont": "dejavu",
+      "description": "dotted zero, based on the Bitstream Vera Fonts with a wider range of character"
+    },
+    {
+      "unpatchedName": "DroidSansMono",
+      "patchedName": "DroidSansMono",
+      "imagePreviewFont": "DroidSansMono Nerd Font",
+      "linkPreviewFont": "droid-sans",
+      "description": "good for small screens or font sizes"
+    },
+    {
+      "unpatchedName": "FantasqueSansMono",
+      "patchedName": "FantasqueSansMono",
+      "imagePreviewFont": "FantasqueSansMono Nerd Font",
+      "linkPreviewFont": "fantasque-sans",
+      "description": "\"wibbly-wobbly handwriting-like fuzziness\", takes some inspiration from Inconsolata and Monaco"
+    },
+    {
+      "unpatchedName": "FiraCode",
+      "patchedName": "FiraCode",
+      "imagePreviewFont": "FiraCode Nerd Font",
+      "linkPreviewFont": "firacode",
+      "description": "programming ligatures, extension of Fira Mono font, enlarged operators"
+    },
+    {
+      "unpatchedName": "FiraMono",
+      "patchedName": "FiraMono",
+      "imagePreviewFont": "FiraMono Nerd Font",
+      "linkPreviewFont": "fira",
+      "description": "Mozilla typeface, dotted zero"
+    },
+    {
+      "unpatchedName": "Go-Mono",
+      "patchedName": "Go-Mono",
+      "imagePreviewFont": "GoMono Nerd Font",
+      "linkPreviewFont": "go-mono",
+      "description": "created specifically for the Go project, looks particularly clear for use with the Go language"
+    },
+    {
+      "unpatchedName": "Gohu",
+      "patchedName": "Gohu",
+      "imagePreviewFont": "Gohu Nerd Font",
+      "linkPreviewFont": false,
+      "description": "bitmap font, tall capitals and ascenders, small serifs"
+    },
+    {
+      "unpatchedName": "Hack",
+      "patchedName": "Hack",
+      "imagePreviewFont": "Hack Nerd Font",
+      "linkPreviewFont": "hack",
+      "description": "dotted zero, short descenders, expands upon work done for Bitstream Vera &amp; DejaVu, legible at common sizes"
+    },
+    {
+      "unpatchedName": "Hasklig",
+      "patchedName": "Hasklug",
+      "imagePreviewFont": "Hasklug Nerd Font",
+      "linkPreviewFont": "hasklig",
+      "description": "monospaced ligatures, makes composite glyphs (e.g. ->) more reabable, especially in Haskell"
+    },
+    {
+      "unpatchedName": "HeavyData",
+      "patchedName": "HeavyData",
+      "imagePreviewFont": "HeavyData Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Novel and unique design, dotted zero"
+    },
+    {
+      "unpatchedName": "Hermit",
+      "patchedName": "Hurmit",
+      "imagePreviewFont": "Hurmit Nerd Font",
+      "linkPreviewFont": "hermit",
+      "description": "symbols stand out from common text"
+    },
+    {
+      "unpatchedName": "Inconsolata",
+      "patchedName": "Inconsolata",
+      "imagePreviewFont": "Inconsolata Nerd Font",
+      "linkPreviewFont": "inconsolata",
+      "description": "slashed zero, takes inspiration from many different fonts and glyphs, subtle curves in lowercase"
+    },
+    {
+      "unpatchedName": "InconsolataGo",
+      "patchedName": "InconsolataGo",
+      "imagePreviewFont": "InconsolataGo Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Inconsolata with straight quotes"
+    },
+    {
+      "unpatchedName": "InconsolataLGC",
+      "patchedName": "InconsolataLGC",
+      "imagePreviewFont": "InconsolataLGC Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Inconsolata with added the Cyrillic alphabet"
+    },
+    {
+      "unpatchedName": "Iosevka",
+      "patchedName": "Iosevka",
+      "imagePreviewFont": "Iosevka Nerd Font",
+      "linkPreviewFont": "iosevka",
+      "description": "narrow and horizontally tight characters, slashed zero"
+    },
+    {
+      "unpatchedName": "Lekton",
+      "patchedName": "Lekton",
+      "imagePreviewFont": "Lekton Nerd Font",
+      "linkPreviewFont": "lekton",
+      "description": "very light and thin characters, sharp m's, `0` and `O` very similar"
+    },
+    {
+      "unpatchedName": "LiberationMono",
+      "patchedName": "LiterationMono",
+      "imagePreviewFont": "LiterationMono Nerd Font",
+      "linkPreviewFont": "liberation",
+      "description": "`0` and `O` very similar, very short tight descenders"
+    },
+    {
+      "unpatchedName": "Meslo",
+      "patchedName": "Meslo",
+      "imagePreviewFont": "MesloLGM Nerd Font",
+      "linkPreviewFont": "meslo",
+      "description": "slashed zeros, customized version of Apple's Menlo"
+    },
+    {
+      "unpatchedName": "Monofur",
+      "patchedName": "Monofur",
+      "imagePreviewFont": "Monofur Nerd Font",
+      "linkPreviewFont": "monofur",
+      "description": "dotted zeros, slightly exaggerated curvy characters, compact characters"
+    },
+    {
+      "unpatchedName": "Monoid",
+      "patchedName": "Monoid",
+      "imagePreviewFont": "Monoid Nerd Font",
+      "linkPreviewFont": "monoid",
+      "description": "ligatures, distinguishable glyphs with short ascenders &amp; descenders, large operators &amp; punctuation"
+    },
+    {
+      "unpatchedName": "Mononoki",
+      "patchedName": "Mononoki",
+      "imagePreviewFont": "Mononoki Nerd Font",
+      "linkPreviewFont": "mononoki",
+      "description": "keeps in mind differentiation of characters and resolution sizes"
+    },
+    {
+      "unpatchedName": "MPlus",
+      "patchedName": "MPlus",
+      "imagePreviewFont": "mplus Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Multiple styles and weights, many glyph sets (e.g. Kana glyphs)"
+    },
+    {
+      "unpatchedName": "Noto",
+      "patchedName": "Noto",
+      "imagePreviewFont": "NotoSans Nerd Font",
+      "linkPreviewFont": "noto",
+      "description": "`0` and `O` very similar, characters are either very curvy or straight lined"
+    },
+    {
+      "unpatchedName": "ProFont",
+      "patchedName": "ProFont",
+      "imagePreviewFont": "ProFontIIx Nerd Font",
+      "linkPreviewFont": "profont",
+      "description": "looks best with anti-aliasing turned off, squared off character corners, vertically tight small `s`"
+    },
+    {
+      "unpatchedName": "ProggyClean",
+      "patchedName": "ProggyClean",
+      "imagePreviewFont": "ProggyCleanTT Nerd Font",
+      "linkPreviewFont": "proggy-clean",
+      "description": "Designed particularly for use at small point sizes"
+    },
+    {
+      "unpatchedName": "OpenDyslexic",
+      "patchedName": "OpenDyslexic",
+      "imagePreviewFont": "OpenDyslexic Nerd Font",
+      "linkPreviewFont": "opendyslexic",
+      "description": "designed specifically to alleviate reading errors caused by dyslexia"
+    },
+    {
+      "unpatchedName": "RobotoMono",
+      "patchedName": "RobotoMono",
+      "imagePreviewFont": "RobotoMono Nerd Font",
+      "linkPreviewFont": "roboto",
+      "description": "dashed zero, curved and straight character lines"
+    },
+    {
+      "unpatchedName": "ShareTechMono",
+      "patchedName": "ShureTechMono",
+      "imagePreviewFont": "ShureTechMono Nerd Font",
+      "linkPreviewFont": "share-tech",
+      "description": "dotted zeros, distinguishable 1 and l, curved and straight character lines"
+    },
+    {
+      "unpatchedName": "SpaceMono",
+      "patchedName": "SpaceMono",
+      "imagePreviewFont": "SpaceMono Nerd Font",
+      "linkPreviewFont": "space",
+      "description": "Squarish character lines, dotted zero, aggressive parethesis"
+    },
+    {
+      "unpatchedName": "Terminus",
+      "patchedName": "Terminess",
+      "imagePreviewFont": "TerminessTTF Nerd Font",
+      "linkPreviewFont": "terminus",
+      "description": "Squarish characters that are slightly askew"
+    },
+    {
+      "unpatchedName": "Tinos",
+      "patchedName": "Tinos",
+      "imagePreviewFont": "Tinos Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Some similarities to Times New Roman, designed by Steve Matteson, includes pan-European WGL character set"
+    },
+    {
+      "unpatchedName": "Ubuntu",
+      "patchedName": "Ubuntu",
+      "imagePreviewFont": "Ubuntu Nerd Font",
+      "linkPreviewFont": "ubuntu",
+      "description": "specially created for Ubuntu"
+    },
+    {
+      "unpatchedName": "UbuntuMono",
+      "patchedName": "UbuntuMono",
+      "imagePreviewFont": "UbuntuMono Nerd Font",
+      "linkPreviewFont": "ubuntu",
+      "description": "dotted zeros, used the `n`, `o`, `H` &amp; `O` Latin characters as a base for design"
+    }
+  ]
+}
+  
