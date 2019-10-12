@@ -327,7 +327,8 @@ class font_patcher:
             'Liberation': 'Literation',
             'iAWriter'  : 'iMWriting',
             'iA Writer' : 'iM Writing',
-            'iA-Writer' : 'iM-Writing'
+            'iA-Writer' : 'iM-Writing',
+            'Anka/Coder': 'AnaConder'
         }
 
         # remove overly verbose font names
