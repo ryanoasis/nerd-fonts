@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[Релізи][release]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Шрифти](#patched-fonts)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Патчер Шрифтів](#font-patcher)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Wiki Документація][wiki]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Наклейки][stickers]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Іконки VimDev][vim-devicons]
+[Релізи][release] &nbsp;&nbsp;|&nbsp;&nbsp; [Шрифти](#patched-fonts) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Патчер Шрифтів](#font-patcher) &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Wiki Документація][wiki] &nbsp;&nbsp;| &nbsp;&nbsp;[ Стікери][stickers]&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; [VimDevIcons][vim-devicons]
 
 [![GitHub Реліз][img-version-badge]][repo] [![Gitter][img-gitter-badge]][gitter] [![Build Status][img-travis-ci]][travis-ci] [![Code of Conduct][coc-badge]][coc] [![PRs Welcome][prs-badge]][prs]  <a href="#patched-fonts" title=""><img src="https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg?sanitize=true" alt="Nerd Fonts - підтримка операційных систем"></a> [![Twitter][twitter-badge]][twitter-intent]
 
@@ -302,7 +302,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 -   Використання:
 
 
-    ./font-patcher PATH_TO_FONT
+    ./font-patcher ШЛЯХ_ДО_ШРИФТА
 
 -   Альтернативне використання: Виконайте патч із FontForge binary використовуючи параметри:
 
@@ -481,11 +481,11 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 Посилання на веб-сайт
 -->
 
-[веб-сайт-iecpower]: https://unicodepowersymbol.com/
+[website-iecpower]: https://unicodepowersymbol.com/
 
-[шпаргалка]: https://nerdfonts.com/#cheat-sheet
+[Cheat Sheet]: https://nerdfonts.com/#cheat-sheet
 
-[наклейки]: https://www.redbubble.com/people/ryanoasis/works/30764810-nerd-fonts-iconic-font-aggregator
+[stickers]: https://www.redbubble.com/people/ryanoasis/works/30764810-nerd-fonts-iconic-font-aggregator
 
 <!--
 Посилання на посилання
