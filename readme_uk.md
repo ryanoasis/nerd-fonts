@@ -301,12 +301,12 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 -   альтернативний метод установки на OSX: `brew install fontforge`
 -   Використання:
 
-
+```
     ./font-patcher ШЛЯХ_ДО_ШРИФТА
-
+```
 -   Альтернативне використання: Виконайте патч із FontForge binary використовуючи параметри:
 
-
+```
     ./fontforge -script font-patcher ШЛЯХ_ДО_ШРИФТА
 
     usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
@@ -368,7 +368,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
                             Змініть тип файлу шрифту для створення (наприклад, ttf, otf)
       -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
                             Каталог для виводу виправленого файлу шрифту
-
+```
 #### Приклади
 
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
