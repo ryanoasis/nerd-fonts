@@ -72,7 +72,7 @@
 
 ### Різні параметри завантаження шрифтів
 
-_If you..._
+_Якщо ви..._
 
 -   `Варіант 1.` бажаю **швидко** завантажити **індивідуальний шрифт** з [`patched-fonts/` каталогу](#patched-fonts)
 -   `Варіант 2.` бажаю завантажити **сімейство шрифтів** пакет варіацій (жирний, курсив тощо.) дивись [завантажити архів](#option-2-release-archive-download)
@@ -174,51 +174,51 @@ _If you..._
 
 ### Варіації
 
--   no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
+-   Не дано додаткових параметрів (базові параметри **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
 -   **double _(variable/proportional)_** or **single _(fixed/monospaced)_** width glyphs
 -   [Font Awesome][font-awesome]
 -   [Font Awesome Extension][font-awesome-extension]
 -   [Material Design Icons][font-material-design-icons]
 -   [Weather][font-weather]
 -   [GitHub Octicons][octicons]
--   [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
+-   [Font Logos][font-linux] (Раніше [Font Linux][font-linux])
 -   [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 -   [IEC Power Symbols][website-iecpower]
 -   [Pomicons][gabrielelana-pomicons]
--   Windows Compatibility
+-   Сумісність з Windows
 
-## Font Installation
+## Встановлення шрифту
 
-### `Option 1: Download and Install Manually`
+### `Варіант 1: Завантажте та встановіть вручну`
 
-> Best option for **quickly** getting a specific **individual font**.
+> Найкращий варіант для **швидко** завантажити **індивідуальний шрифт**.
 
-Download the specific [patched font](#patched-fonts) of your choice
+Завантаж конкретний [пропатченний шрифт](#patched-fonts) на ваш вибір
 
-### `Option 2: Release Archive Download`
+### `Варіант 2: Завантажити реліз архіву`
 
-> Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
+> Найкращий варіант, якщо ви хочете **archive** або повне **сімейство шрифтів** в варіації (жирний, курсивний тощо)
 
-Fonts are available for download as packages in the [latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+Шрифти доступні для завантаження як пакети в [останньому релізі](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 
-### `Option 3: Install Script`
+### `Варіант 3: Встановити скрипти`
 
-> Best option if you want to **automate** installing or for use in **scripts**.
+> Найкращий варіант, якщо ви хочете **автоматизувати** встановлення або для використання в **скриптах**.
 
-_Note_: Only for Linux & macOS (OS X)
-_Note_: **Requires cloning** the repo as of now
+_Примітка_: Лише для Linux та macOS (OS X)
+_Примітка_: **необхідне клонування** репозиторії станом на даний час
 
-#### All fonts:
+#### Усі шрифти:
 
--   Installs all the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
+- Встановлює всі пропатченні шрифти (_Увага: Це багато шрифтів, що додають до великого розміру_)
 
 ```sh
 ./install.sh
 ```
 
-#### Single font:
+#### Одиничний шрифт:
 
--   Installs a single Font of your choice
+-   Встановлює єдиний шрифт на ваш вибір
 
 ```sh
 ./install.sh <FontName>
@@ -226,32 +226,32 @@ _Note_: **Requires cloning** the repo as of now
 ./install.sh HeavyData
 ```
 
-### `Option 4: Homebrew Fonts`
+### `Варіант 4:  Рідні шрифти `
 
-> Best option if on **macOS** and want to use **Homebrew**.
+> Найкращий варіант, якщо ти використовуєш  **macOS** і хочете використовувати **рідні шрифти**.
 
-All fonts are available via [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) on macOS (OS X)
+Усі шрифти доступні через [рідні Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) on macOS (OS X)
 
 ```sh
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 ```
 
-### `Option 5: Clone the Repo`
+### `Варіант 5: Клонування репозиторії`
 
-> Best option for **full control**, **all** or **most** of the fonts, or **contributing** to development.
+> Найкращий варіант для **повний контроль**, **всі** чи **майже всі** шрифти, чи **контриб'юції** до розробки.
 
-Cloning of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.
+Клонування ціеї репозиторії **не** не потрібні, ані ефективні (в основному за рахунок розміру репозиторії) якщо вас просто цікавить лише обмежений набір шрифтів.
 
-However if you do want to clone the repo be sure to _shallow_ clone:
+Однак якщо ви хочете клонувати РЕПО, не забудьте зробити це _неглибоке_ клонування:
 
 ```sh
 git clone --depth 1
 ```
 
-### `Option 6: Ad Hoc Curl Download`
+### `Варіант 6: Конкретний випадок завантаження за допомогою Curl`
 
-> Option if you want to use the **`curl` command** or for use in **scripts**.
+> Варіант якщо ви хочете використовувати **`curl` команду** або для використання в **скриптах**.
 
 #### Linux
 
@@ -260,7 +260,7 @@ mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-_Note:_ deprecated alternative paths: `~/.fonts`
+_Примітка:_ застарілі альтернативні шляхи: `~/.fonts`
 
 #### macOS (OS X)
 
@@ -268,47 +268,46 @@ _Note:_ deprecated alternative paths: `~/.fonts`
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Option 7: Unofficial Arch User Repository (AUR)`
+### `Варіант 7: Неофіційні репозиторії користувачів Arch (AUR)`
 
-> Option for **Arch Linux** and wanting to use **AUR packages**.
+> Варіант для **Arch Linux** і бажання використовувати **AUR пакети**.
 
-The following fonts are available via [AUR packages](https://aur.archlinux.org/) on Arch Linux:
+Наступні шрифти доступні через [AUR пакети](https://aur.archlinux.org/) на Arch Linux:
 
--   [Nerd Fonts Complete (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
--   [Nerd Fonts Complete (single-width)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
+-   [Nerd Fonts Complete (подвійної ширини)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+-   [Nerd Fonts Complete (одинарної ширини)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
 -   [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
 -   [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
--   [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
+-   [Nerd Fonts Git (застарілий)](https://aur.archlinux.org/packages/nerd-fonts-git/)
 
-### `Option 8: Patch Your Own Font`
+### `Варіант 8: Налаштуйте свій власний шрифт`
 
-> The option for **patching** your **own font** or fully **customizing** the patched font.
+> Варіант для **пропатчити** твій **особистий шрифт** чи повністю **налаштувати** пропатченний шрифт.
 
-Use the provided Python command line script to generate a patched font from your own font to get the extra new glyphs
+Використовуйте наданий сценарій командної строки Python, щоб створити виправлений шрифт із власного шрифту, щоб отримати нові доповненні гліфи
 
-See: [Font Patcher](#font-patcher) for usage
+Дивіться: [Патчер шрифтів](#font-patcher) для використання
 
--   use this option if you do **not** want to use one of the [fonts provided](#patched-fonts)
--   you will still need to copy the generated font to the correct font directory on your system
+-   використовуйте цю опцію, якщо ви **не** бажаете використовувати один із [наданих шрифтів](#patched-fonts)
+-   вам все одно доведеться скопіювати згенерований шрифт у правильну директорію шрифтів у вашій системі
 
 <h2 align="center" id="font-patcher">
-	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
+	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Патчер шрифтів">
 </h2>
 
-Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-devicons]:
+Виправлення шрифту за власним вибором для використання з [VimDevIcons ➶][vim-devicons]:
 
--   requires: Python 2 (or Python 3), `python-fontforge` package (version `20141231` or later, see
-    the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
--   alternative install method on OSX: `brew install fontforge`
--   Usage:
+-   вимагає: Python 2 (чи Python 3), `python-fontforge` пакет (версіі `20141231` чи пізніше, дивись [інструкції по встановленню](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
+-   альтернативний метод установки на OSX: `brew install fontforge`
+-   Використання:
 
 
     ./font-patcher PATH_TO_FONT
 
--   Alternative usage: Execute the patcher with the FontForge binary using the script flag:
+-   Альтернативне використання: Виконайте патч із FontForge binary використовуючи параметри:
 
 
-    ./fontforge -script font-patcher PATH_TO_FONT
+    ./fontforge -script font-patcher ШЛЯХ_ДО_ШРИФТА
 
     usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
                         [--fontawesomeextension] [--fontlinux] [--octicons]
@@ -320,57 +319,57 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
                         [-ext [EXTENSION]] [-out [OUTPUTDIR]]
                         font
 
-    Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
+    Nerd Fonts Font Patcher: виправляє заданий шрифт програмістами та гліфами, пов'язаними з розробкою
 
-    * Website: https://www.nerdfonts.com
-    * Version: 2.0.0
-    * Development Website: https://github.com/ryanoasis/nerd-fonts
-    * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
+    * Веб-сайт: https://www.nerdfonts.com
+    * Версія: 2.0.0
+    * Веб-сайт для розробки: https://github.com/ryanoasis/nerd-fonts
+    * Журнал змін: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
-    positional arguments:
-      font                  The path to the font to patch (e.g., Inconsolata.otf)
+    позиційні аргументи:
+      font                  Шлях до шрифту для виправлення (наприклад Inconsolata.otf)
 
-    optional arguments:
-      -h, --help            show this help message and exit
-      -v, --version         show program's version number and exit
+    необов'язкові аргументи:
+      -h, --help            показати це довідкове повідомлення та завершує виконання
+      -v, --version         показати номер версії програми та завершує виконання
       -s, --mono, --use-single-width-glyphs
-                            Whether to generate the glyphs as single-width not double-width (default is double-width)
+                            Чи генерувати гліфи як одноширочну, а не подвійну(зазвичай double-width)
       -l, --adjust-line-height
-                            Whether to adjust line heights (attempt to center powerline separators more evenly)
+                            Чи регулювати висоту лінії (намагання більш рівномірно централізувати розподільчі лінії)
       -q, --quiet, --shutup
-                            Do not generate verbose output
-      -w, --windows         Limit the internal font name to 31 characters (for Windows compatibility)
-      -c, --complete        Add all available Glyphs
-      --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
+                            Не генерувати звіт
+      -w, --windows         Обмежте внутрішнє ім'я шрифту до 31 символу (для сумісністі з Windows)
+      -c, --complete        Додайте всі доступні гліфи
+      --fontawesome         Додайте Font Awesome гліфи (http://fontawesome.io/)
       --fontawesomeextension
-                            Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
+                            Додайте Font Awesome Extension гліфи (https://andrelzgava.github.io/font-awesome-extension/)
       --fontlinux, --fontlogos
-                            Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)
-      --octicons            Add Octicons Glyphs (https://octicons.github.com)
-      --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
-      --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
-      --powerline           Add Powerline Glyphs
-      --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
+                            Додайте Font Linux та шнші open source гліфи (https://github.com/Lukas-W/font-logos)
+      --octicons            Додайте Octicons гліфи (https://octicons.github.com)
+      --powersymbols        Додайте IEC Power Symbols (https://unicodepowersymbol.com/)
+      --pomicons            Додайте Pomicon гліфи (https://github.com/gabrielelana/pomicons)
+      --powerline           Додайте Powerline гліфи
+      --powerlineextra      Додайте Powerline гліфи (https://github.com/ryanoasis/powerline-extra-symbols)
       --material, --materialdesignicons, --mdi
-                            Add Material Design Icons (https://github.com/templarian/MaterialDesign)
+                            Додайте Material Design іконки (https://github.com/templarian/MaterialDesign)
       --weather, --weathericons
-                            Add Weather Icons (https://github.com/erikflowers/weather-icons)
-      --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
+                            Додайте Weather іконки (https://github.com/erikflowers/weather-icons)
+      --custom [CUSTOM]     Вкажіть спеціальний шрифт символу. Усі нові гліфи будуть скопійовані без масштабування.
       --postprocess [POSTPROCESS]
-                            Specify a Script for Post Processing
+                            Вкажіть скріпт для постобробки
       --removeligs, --removeligatures
-                            Removes ligatures specified in JSON configuration file
+                            Видаляє лігатури, вказані у файлі конфігурації JSON
       --configfile [CONFIGFILE]
-                            Specify a file path for JSON configuration file (see sample: src/config.sample.json)
-      --progressbars        Show percentage completion progress bars per Glyph Set
-      --no-progressbars     Don't show percentage completion progress bars per Glyph Set
-      --careful             Do not overwrite existing glyphs if detected
+                            Вкажіть шлях до файлу конфігурації JSON (див. зразок: src/config.sample.json)
+      --progressbars        Показати відсоткові смуги виконання обробки кожного гліфу
+      --no-progressbars     Не показувати відсоткові смуги виконання обробки кожного гліфу
+      --careful             Не перезаписуйте наявні гліфи, якщо вони виявлені
       -ext [EXTENSION], --extension [EXTENSION]
-                            Change font file type to create (e.g., ttf, otf)
+                            Змініть тип файлу шрифту для створення (наприклад, ttf, otf)
       -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                            The directory to output the patched font file to
+                            Каталог для виводу виправленого файлу шрифту
 
-#### Examples
+#### Приклади
 
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
@@ -384,58 +383,58 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
 
 <a name="gotta-patch-em-all"></a>
 
-## Gotta Patch 'em All Font Patcher!
+## Збираємося патчить їх всіх, Патчер Всіх Шрифтів!
 
--   for Contributor or Developer use
+-   для використанням контриб'ютором або розробником
 
--   re-patches **all** fonts in the unpatched directory:
+-   повторні патчі **всіх** шрифтшв в не патчаному каталозі:
 
 
     ./gotta-patch-em-all-font-patcher\!.sh
 
--   can optionally limit to specific font name pattern:
+-   може додатково обмежуватися певним шаблоном імені шрифту:
 
 
     ./gotta-patch-em-all-font-patcher\!.sh Hermit
 
-## Contributing
+## Контриб'юция
 
-See [contributing.md](contributing.md)
+Дивись [contributing.md](contributing.md)
 
-## Unstable File Paths
+## Нестабільні шляхи до файлів
 
-:warning: Warning: File paths may change based on releases (especially **major** version bumps)
+:увага: Попередження: шляхи до файлів можуть змінюватися залежно від випусків (особливо **основних** змін версій)
 
-Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject to change for each release
+Посилання на гілку **випуску** та _не_ на гілку ~~ master ~~, оскільки шляхи можуть змінюватися для кожного випуску
 
--   For example:
-    -   :white_check_mark: Use: <code>https\\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
-    -   :x: Instead of: <code>https\\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+-   Наприклад:
+    -   :white_check_mark: Використовуйте: <code>https\\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+    -   :x: Замість: <code>https\\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
 
-## Other Good Fonts to Patch
+## Інші добрі шрифти для патча
 
--   a list of additional good fonts to patch that cannot be provided or shared due to the license:
--   [Input Mono][input-mono] (license restriction)
-    -   Possibly coming with external hosting :)
--   [PragmataPro][pragmatapro] (not free)
--   [Consolas][consolas] (proprietary)
--   [Operator Mono][operator] (not free)
--   [Dank Mono][dank] (not free)
+-   список додаткових хороших шрифтів для виправлення, які неможливо надати або поділити через ліцензію:
+-   [Input Mono][input-mono] (обмеження ліцензії)
+    -   Можливо, із зовнішнім хостингом :)
+-   [PragmataPro][pragmatapro] (не вільний)
+-   [Consolas][consolas] (пропріетарний)
+-   [Operator Mono][operator] (не вільний)
+-   [Dank Mono][dank] (не вільний)
 
-## Project Motivation
+## Мотивація проекту
 
-See [Wiki: Project Purpose][wiki-project-purpose]
+Дивись [Wiki: Мета проекту][wiki-project-purpose]
 
-## Changelog
+## Журнал змін
 
-See [changelog.md](changelog.md)
+Дивись [changelog.md](changelog.md)
 
-## License
+## Ліцензія
 
 [MIT](LICENSE) © Ryan L McIntyre
 
 <!--
-Repo References
+Довідкова література
 -->
 
 [vim-devicons]: https://github.com/ryanoasis/vim-devicons "VimDevIcons Vim Plugin (external link) ➶"
@@ -479,17 +478,17 @@ Repo References
 [twitter-intent]: https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fryanoasis%2Fnerd-fonts&via=%40nerdfonts&text=Nerd%20Fonts%20-%20Iconic%20font%20aggregator%2C%20collection%2C%20and%20patcher&hashtags=iconfont%20font%20github
 
 <!--
-Website References
+Посилання на веб-сайт
 -->
 
-[website-iecpower]: https://unicodepowersymbol.com/
+[веб-сайт-iecpower]: https://unicodepowersymbol.com/
 
-[cheat sheet]: https://nerdfonts.com/#cheat-sheet
+[шпаргалка]: https://nerdfonts.com/#cheat-sheet
 
-[stickers]: https://www.redbubble.com/people/ryanoasis/works/30764810-nerd-fonts-iconic-font-aggregator
+[наклейки]: https://www.redbubble.com/people/ryanoasis/works/30764810-nerd-fonts-iconic-font-aggregator
 
 <!--
-Link References
+Посилання на посилання
 -->
 
 [badge-version]: https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts
@@ -529,7 +528,7 @@ Link References
 [prs]: http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 
 <!--
-Font repos
+Репозіторії шрифтів
 -->
 
 [f-arimo]: https://github.com/google/fonts/tree/master/apache/arimo
@@ -583,7 +582,7 @@ Font repos
 [f-ia-writer]: https://github.com/iaolo/iA-Fonts
 
 <!--
-Patched Font internal links
+Пропатченні шріфти внутрішні посилання
 -->
 
 [p-3270]: patched-fonts/3270
@@ -683,7 +682,7 @@ Patched Font internal links
 [p-im-writing]: patched-fonts/iA-Writer
 
 <!--
-Quick Link Images
+Швидке посилання на зображення
 -->
 
 [ql-1]: images/nerd-fonts-character-logo-md.png "Latest Release (external link) ➶"
@@ -697,7 +696,7 @@ Quick Link Images
 [ql-5]: images/nerd-fonts-character-logo-md.png "Font Package Archive (Zip) Downloads (external link) ➶"
 
 <!--
-Patched Font Statuses
+Статуси  пропатченних шрифтів
 -->
 
 [w-top]: https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png "↓ Windows Compatibility Status ↓"
