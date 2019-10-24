@@ -784,6 +784,11 @@ class font_patcher:
         """ Makes self.sourceFont monospace compliant """
 
         for glyph in self.sourceFont.glyphs():
+            if (glyph.width == self.font_dim['width']):
+                # Don't tough the (negative) bearings if the width is ok
+                # Ligartures will have these.
+                continue
+
             self.remove_glyph_neg_bearings(glyph)
             self.set_glyph_width_mono(glyph)
 
