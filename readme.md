@@ -28,7 +28,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Important Notices
 * `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
-* cloning this repository is **not** recommended ([due to Repo size](#option-5-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
+* cloning this repository is **not** recommended ([due to Repo size](#option-5-clone-the-repo)) unless you are going to be [contributing to development](#contributing).
 
 
 ## Table of Contents
@@ -100,11 +100,11 @@ _If you..._
 
 :mag: :mag: You can now search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
 
-See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoints]
+See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoints].
 
 ### Icon names in shell
 
-See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
+See [Wiki: Icon names in shell][wiki-icon-names-in-shell].
 
 
 ## Patched Fonts
