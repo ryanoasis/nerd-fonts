@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.0.0
+# Nerd Fonts Version: 2.1.0
 # Script Version: 1.0.1
 # Iterates over all archives and uploads to given release
 

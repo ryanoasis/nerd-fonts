@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf8
-# Nerd Fonts Version: 2.0.0
+# Nerd Fonts Version: 2.1.0
 # Script Version: 1.1.0
 
 # Example Usage:
