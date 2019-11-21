@@ -10,7 +10,7 @@
 LINE_PREFIX="# [Nerd Fonts] "
 scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
 echo "dir $scripts_root_dir"
-outputdir=$scripts_root_dir/../../archives/
+outputdir=$scripts_root_dir../../archives
 
 cd "$scripts_root_dir/../../patched-fonts/" || {
   echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
@@ -20,13 +20,13 @@ cd "$scripts_root_dir/../../patched-fonts/" || {
 # limit archiving to given pattern (first script param) or entire root folder if no param given:
 if [ $# -eq 1 ]
   then
-    pattern="$1"
+    pattern=$1
     search_pattern="*$1*.zip"
     echo "$LINE_PREFIX Limiting archive to pattern '$pattern'"
 else
-    pattern="."
+    pattern=".*"
     search_pattern="*.zip"
-    echo "$LINE_PREFIX No limting pattern given, will search entire folder"
+    echo "$LINE_PREFIX No limiting pattern given, will search entire folder"
 fi
 
 # clear out the directory zips
@@ -34,7 +34,8 @@ find "${outputdir:?}" -name "$search_pattern" -type f -delete
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 0 -type d | # uncomment to test 1 font
-find "./$pattern" -maxdepth 0 -type d | # uncomment to test all fonts
+# uncomment to test all fonts:
+find -- * -maxdepth 0 -iregex "$pattern" -type d |
 while read -r filename
 do
 
