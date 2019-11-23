@@ -17,7 +17,10 @@ fi
 release=$1
 
 sed -i "s|[0-9]\\.[0-9]\\.[0-9]|$release|g" ../../font-patcher
-sed -i "s|\\# nerd fonts version: [0-9]\\.[0-9]\\.[0-9]|\\# version: $release|g" ../../bin/scripts/*.sh
+sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/**/*.sh
+sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/**/*.py
+sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/*.sh
+sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/*.py
 sed -i "s|\\# version: [0-9]\\.[0-9]\\.[0-9]|\\# version: $release|g" ../../bin/scripts/*.sh
 sed -i "s|version=\"[0-9]\\.[0-9]\\.[0-9]\"|version=\"$release\"|g" ../../bin/scripts/*.sh
 
