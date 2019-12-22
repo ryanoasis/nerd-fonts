@@ -784,7 +784,19 @@ class font_patcher:
         """ Makes self.sourceFont monospace compliant """
 
         for glyph in self.sourceFont.glyphs():
-            self.remove_glyph_neg_bearings(glyph)
+            if (glyph.width == self.font_dim['width']):
+                # Don't tough the (negative) bearings if the width is ok
+                # Ligartures will have these.
+                continue
+
+            if (glyph.width != 0):
+                # If the width is zero this glyph is intened to be printed on top of another one.
+                # In this case we need to keep the negative bearings to shift it 'left'.
+                # Things like &Auml; have these: composed of U+0041 'A' and U+0308 'double dot above'
+                #
+                # If width is not zero, correct the bearings such that they are within the width:
+                self.remove_glyph_neg_bearings(glyph)
+
             self.set_glyph_width_mono(glyph)
 
 
