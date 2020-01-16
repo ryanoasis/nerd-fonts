@@ -88,8 +88,8 @@ _Якщо ви..._
 -   [FontForge Python script](#font-patcher) щоб патчити будь-який шрифт
     -   Включає можливість створення **Monospaced (фіксований крок, фіксована ширина)** _чи_ **подвійної ширини (non-monospaced)** glyphs
     -   Докладніше дивись [**Патчер шрифтів**](#font-patcher) розділ
--   **`48`** вже [виправлені сімейства шрифтів ](#patched-fonts)
--   Понад **`1,356,400`** унікальні комбінації / варіації пропатченних шрифтів [(детальніше)](#combinations)
+-   **`50`** вже [виправлені сімейства шрифтів ](#patched-fonts)
+-   Понад **`1,571,470`** унікальні комбінації / варіації пропатченних шрифтів [(детальніше)](#combinations)
 -   Понад **`2,600`** гліфи / іконки у поєднанні [(детальніше)](#combinations)
     -   Поточні набори гліфів включають: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Раніше [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 -   **Monospaced (фіксований крок, фіксована ширина)** _чи_ **подвійної ширини (non-monospaced)** версія кожного шрифту
@@ -137,6 +137,7 @@ _Якщо ви..._
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                    | NO    | 1000    | ![w] ![m2] ![l]  |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                                    | NO    | 1000    | ![w] ![m2] ![l]  |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]               | NO    | 1000    | [#83][s-iosevka] |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono] | NO    | 1000    | ![w] ![m2] ![l]  |
 | [Lekton Nerd Font][p-lekton]                      |                                    | NO    | 1000    | ![w] ![m2] ![l]  |
 | [Literation Mono Nerd Font\*][p-liberation]       | [Liberation][f-liberation]         | YES   | 2048    | ![w] ![m2] ![l]  |
 | [Meslo Nerd Font][p-meslo]                        |                                    | NO    | 2048    | ![w] ![m2] ![l]  |
@@ -164,12 +165,12 @@ _Якщо ви..._
 
 ## Комбінації
 
--   Понад **`1,200,000`** унікальні варіанти / комбінації (Power Set) пропатченних шрифтів:
-    -   **`44`** пропатченних типів шрифтів
-    -   **`612`** пропатченних сімейства шрифтів
-    -   **`2,448`** 'завершених' варіації / комбінації
-    -   **`1,264,440`** _можливих_ варіації / комбінації
-    -   **`1,266,888`** загальна кількість обчислених комбінацій (2,448 + 1,264,440)
+-   Понад **`1,571,470`** унікальні варіанти / комбінації (Power Set) пропатченних шрифтів:
+    -   **`50`** пропатченних типів шрифтів
+    -   **`697`** пропатченних сімейства шрифтів
+    -   **`2,788`** 'завершених' варіації / комбінації
+    -   **`1,571,470`** _можливих_ варіації / комбінації
+    -   **`1,574,258`** загальна кількість обчислених комбінацій (2,788 + 1,571,470)
 -   Комбінації для кожного шрифту - це будь-яка комбінація [варіації](#variations)
 
 ### Варіації
@@ -555,6 +556,8 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 [f-iosevka]: https://github.com/be5invis/Iosevka
 
+[f-jetbrains-mono]:https://github.com/JetBrains/JetBrainsMono
+
 [f-fant]: https://github.com/belluzj/fantasque-sans
 
 [f-share]: https://fonts.google.com/specimen/Share+Tech+Mono
@@ -622,6 +625,8 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 [p-inconsolata-lgc]: patched-fonts/InconsolataLGC
 
 [p-iosevka]: patched-fonts/Iosevka
+
+[p-jetbrains-mono]:patched-fonts/JetBrainsMono
 
 [p-hack]: patched-fonts/Hack
 
