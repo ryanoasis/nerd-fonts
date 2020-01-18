@@ -1,9 +1,10 @@
 Fantasque Sans Mono
 ===================
 
-A programming font, designed with functionality in mind, and with some 
+A programming font, designed with functionality in mind, and with some
 wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool.
-[Download](https://github.com/belluzj/fantasque-sans/releases/latest).
+[Download](https://github.com/belluzj/fantasque-sans/releases/latest) or 
+see [installation instructions](#installation).
 
 
 ![](Specimen/urxvt13.png)
@@ -19,7 +20,7 @@ Here is my original explanation:
 > mutant child of Comic Sans and Helvetica Neue. Hopefully it is not the
 > case any more.
 
-Inspirational sources include Inconsolata and Monaco. I have also been using 
+Inspirational sources include Inconsolata and Monaco. I have also been using
 Consolas a lot in my programming life, so it may have some points in common.
 
 ![](Specimen/kdevelop11.png)
@@ -28,7 +29,7 @@ Consolas a lot in my programming life, so it may have some points in common.
 Weights, variants and glyph coverage
 ------------------------------------
 
-The font includes a bold version, with the same metrics as the regular one. 
+The font includes a bold version, with the same metrics as the regular one.
 Both versions include the same ranges of characters : latin letters, some
 accented glyphs (quite a lot), some greek letters, some arrows.
 
@@ -47,6 +48,9 @@ Stylistic set(s)
 ### `ss01`: nondescript `k`
 
 No ~~distractive~~ lovely loop.
+[Get the pre-activated version here](https://github.com/belluzj/fantasque-sans/releases/download/1.8.0/FantasqueSansMono-NoLoopK.zip)
+or see the [issue #67](https://github.com/belluzj/fantasque-sans/issues/67)
+for techniques to activate the stylistic set.
 
 ![](Specimen/noloopk.png)
 
@@ -55,14 +59,27 @@ Author and license
 
 Created by Jany Belluz \<jany.belluz AT hotmail.fr\>
 
-Licensed under the SIL Open Font License (see [OFL.txt](OFL.txt)).
+Licensed under the SIL Open Font License (see [LICENSE.txt](LICENSE.txt)).
 
 Please send me an e-mail or [report an issue on
 Github](http://github.com/belluzj/cosmic-sans-neue/issues) if you stumble upon
 bad design or rendering problems (with screen shot if possible), or if you need
-more characters, or if you want to compliment me (I love compliments). I also
-accept
-[Flattry](https://flattr.com/thing/2258061/belluzjcosmic-sans-neue-on-GitHub).
+more characters, or if you want to compliment me (I love compliments).
+
+Installation
+------------
+
+You can [download the latest version](https://github.com/belluzj/fantasque-sans/releases/latest)
+and install it by hand. In the `NoLoopK` variant, the looped lowercase `k` is 
+replaced with a straight version. The `LargeLineHeight` variant is especially 
+useful for users of accented capitals. For more info, see the [CHANGELOG](CHANGELOG.md).
+
+Automatic installation on macOS with [homebrew](https://brew.sh):
+
+    brew tap homebrew/cask-fonts #You only need to do this once for cask-fonts
+    brew cask install font-fantasque-sans-mono
+
+Instructions for other platforms might follow.
 
 Building installable font files
 -------------------------------
@@ -71,10 +88,8 @@ The build process requires:
 * FontForge with python scripting support,
 * `ttfautohint`
 * `sfnt2woff` (from the `woff-tools` package on Ubuntu)
-* `ttf2eot`, for example from [this
-  repository](https://github.com/harrastia/ttf2eot).
 * `woff2_compress` from [the Google WOFF2
-  tools](https://github.com/google/woff2)
+  tools](https://github.com/google/woff2) or `woff2` package on Ubuntu
 
 Run `make`. You should see green stuff and some "OK" messages.
 
@@ -87,87 +102,24 @@ You are advised to install FontForge from
 Alternatively, you can always [download](https://github.com/belluzj/fantasque-sans/releases/latest)
 the latest prebuilt release of these fonts.
 
-`make install` will install the TTF fonts into your local `.fonts/` directory 
+`make install` will install the TTF fonts into your local `.fonts/` directory
 and update the font cache. It comes in handy while modifying the font.
 
 [![](Specimen/Specimen.png)](Specimen/Specimen.pdf)
 
+Webfonts
+--------
+
+Each variant has a `Webfonts/` folder which contains various font formats for
+use on the web, along with the matching CSS font declarations. To use them,
+you must combine in the same folder:
+* a custom `.css` file that you can assemble from the `*-decl.css` fragments
+  (you can only pick the styles that you need, e.g. normal and bold)
+* the matching `.svg`, `.woff`, `.woff2` files from `Webfonts/`
+* the matching `.ttf` files from the `TTF/` folder
+* the matching `.otf` files from the `OTF/` folder.
+
 Versions
 --------
 
-1.1 - First release.
-
-1.1.1 - Make slashes longer, ensure parenthesis and brackets are rendered at 
-        the same height, and some other minor adjustments.
-        
-1.2 - Add the bold version.
-      Various minor adjustments, new paragraph symbol, slanted dollar.
-      
-1.2.1 - Minor adjustments.
-
-1.3 - Very slight change of metrics to add space between characters and lines.
-      Various small changes : curlier curly brackets, more difference between
-      various quotes, cleaner W, w, m, and rounder @. 
-      Windows compatibility.
-      More latin accents.
-      Greek letters.
-      Powerline characters.
-
-1.3.1 - Various fixes: still cleaning m and w, reworked all ogoneks, changed a
-        bit the dollar, moved some accents, eliminated glitches around
-        Powerline symbols.
-        TTF fonts are now hinted using Freetype's `ttfautohint`, which should
-        give much better results on Windows (and maybe in Java apps and others
-        contexts). In case this is a problem, please let me know and I will
-        provide also an unhinted version.
-        **Windows users should use the TTF (TrueType) files.**
-
-1.3.2 - Various fixes: playing again with bold m, moving accents again, taking
-        care again of Powerline symbols, clean 8 and R.
-        Add a few box drawing characters (for use with vim-indentline).
-        Generate webfonts (goal: this font used for code samples on all cool
-        languages' websites).
-        Add a WIP medium version of the proportional font.
-
-1.4 - Rename font to **Fantasque Sans**, because *fantasque is the new cosmic*.
-      Make W look symetrical at big size.
-
-1.4.1 - Drop Reserved Font Name. **You can now subset, compress, hint and
-        whatnot without worrying about renaming**.
-        Many small improvements (8, s , t, a, e, {, }, W, i, l, g...).
-
-1.5 - Add regular italic version.
-      Some small changes (Q, w, y, n).
-
-1.6 - Add bold italic version.
-
-1.6.1 - Simplify @ to make it look sharp at all sizes.
-        Various fixes.
-
-1.6.2 - Make `+` symmetrical, align dots in `:` and `;`.
-
-1.6.3 - Add block characters.
-        Make the underscore visible on Windows.
-        Generate better CSS.
-
-1.6.4 - Fix line height on Mac. 
-        Move all the italic glyphs to the left.
-        Adjust some accents.
-
-1.6.5 - Make italics visible on Windows.
-
-1.7.0 - Beta version for the 1.7 series.
-        **Add Cyrillic alphabet to the four fonts.**
-        Add some real sub/supscript numbers and fractions.
-        Revamp straight and curly quotes.
-        Fix some Windows rendering issues.
-        Move accents around (why do I do that every time?)
-        Add `fontdiff` script which generates font diffs.
-
-1.7.1 - **Add a stylistic set to replace the looped lowercase `k` with
-        a straight version.**
-        Adjust curly quotes so they behave better as apostrophes.
-        Also, since nobody complained about the new Cyrillic characters,
-        I declare this is their official release! (I did not change
-        anything since 1.7.0 though).
-
+[Check out the changelog](CHANGELOG.md).
