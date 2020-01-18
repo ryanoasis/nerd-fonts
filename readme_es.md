@@ -87,8 +87,8 @@ _Si tu..._
 * Un [script de FontForge en Python](#font-patcher) para parchar cualquier fuente
   * Incluye una opción para crear glifos **monoespaciados (de ancho fijo)** _o_ glifos de **ancho doble (no monoespaciados)**
   * Para más detalles mira la sección del [**Parchador de Fuentes**](#font-patcher)
-* **`48`** [familias de fuentes parchadas](#patched-fonts) hasta ahora
-* Más de **`1,356,400`** combinaciones/variaciones únicas de fuentes parchadas [(más detalles)](#combinations)
+* **`50`** [familias de fuentes parchadas](#patched-fonts) hasta ahora
+* Más de **`1,571,470`** combinaciones/variaciones únicas de fuentes parchadas [(más detalles)](#combinations)
 * Más de **`2,600`** glifos/iconos en total [(más detalles)](#combinations)
   * Conjuntos de glifos actuales incluyen: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * Versiones de glifos **monoespaciados (de ancho fijo)** _o_ de **ancho doble (no monoespaciados)** para cada fuente
@@ -138,6 +138,7 @@ Ve a la [Wiki: Nombres de iconos en la shell][wiki-icon-names-in-shell]
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                   | NO   | 1000      | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                                   | NO   | 1000      | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              | NO   | 1000      | [#83][s-iosevka]  |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| NO   | 1000      | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                                   | NO   | 1000      | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font*][p-liberation]        | [Liberation][f-liberation]        | SI   | 2048      | ![w] ![m2] ![l]   |
 | [Meslo Nerd Font][p-meslo]                        |                                   | NO   | 2048      | ![w] ![m2] ![l]   |
@@ -165,12 +166,12 @@ Ve a la [Wiki: Nombres de iconos en la shell][wiki-icon-names-in-shell]
 
 ## Combinaciones
 
-- Más de **`1,200,000`** variaciones/combinaciones únicas (Power Set) de fuentes parchadas:
-  - **`44`** tipografías de fuentes parchadas
-  - **`612`** familias de fuente parchadas
-  - **`2,448`** variaciones/combinaciones 'completas'
-  - **`1,264,440`** variaciones/combinaciones _posibles_
-  - **`1,266,888`** combinaciones totales calculadas (2,448 + 1,264,440)
+- Más de **`1,571,470`** variaciones/combinaciones únicas (Power Set) de fuentes parchadas:
+  - **`50`** tipografías de fuentes parchadas
+  - **`697`** familias de fuente parchadas
+  - **`2,788`** variaciones/combinaciones 'completas'
+  - **`1,571,470`** variaciones/combinaciones _posibles_
+  - **`1,574,258`** combinaciones totales calculadas (2,788 + 1,571,470)
 - Combinaciones para cada fuente son cualquier combinación de [Variaciones](#variations)
 
 ### Variaciones
@@ -522,6 +523,7 @@ Font repos
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-iosevka]:https://github.com/be5invis/Iosevka
+[f-jetbrains-mono]:https://github.com/JetBrains/JetBrainsMono
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
@@ -559,6 +561,7 @@ Patched Font internal links
 [p-inconsolata-go]:patched-fonts/InconsolataGo
 [p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-iosevka]:patched-fonts/Iosevka
+[p-jetbrains-mono]:patched-fonts/JetBrainsMono
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono

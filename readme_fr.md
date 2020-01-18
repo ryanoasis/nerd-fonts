@@ -92,8 +92,8 @@ _Si vous..._
   * Incluant une option permettant de créer des glyphes **Monospaced (fixed-pitch, fixed-width)** _ou_ **double-width (non-monospaced)**
   * For more details see the [**Font Patcher**](#font-patcher) section
   * Pour plus de détails, voir la section [**Générateur de font**](#font-patcher)
-* Déjà **`43`** [familles de polices générées](#polices-disponibles)
-* Plus de **`1,200,000`** unique variantes/combinaisons uniques de fonts générées [(plus de détail)](#combinations)
+* Déjà **`50`** [familles de polices générées](#polices-disponibles)
+* Plus de **`1,571,470`** unique variantes/combinaisons uniques de fonts générées [(plus de détail)](#combinations)
 * Plus de **`1,600`** glyphes/icones combinés [(plus de détail)](#combinations)
   * Les ensembles de glyphes actuels incluent : [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Anciennement [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _ou_ **double-width (non-monospaced)** pour chaque version de glyphes de chaque police
@@ -217,6 +217,7 @@ echo $i_oct_heart
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              | YES  | 1000    | [#83][s-iosevka]  |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| NO   | 1000    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Meslo Nerd Font][p-meslo]                        |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -243,12 +244,12 @@ echo $i_oct_heart
 
 ## Combinaisons
 
-- Plus de **`1,200,000`** variantes/combinaisons uniques de fonts générées :
-  - **`43`** polices de caractères
-  - **`596`** familles de polices
-  - **`2,384`** 'complètes' variantes/combinaisons
-  - **`1,221,464`** _possibles_ variantes/combinaisons
-  - **`1,223,848`** total des combinaisons calculées (2,384 + 1,221,464)
+- Plus de **`1,571,470`** variantes/combinaisons uniques de fonts générées :
+  - **`50`** polices de caractères
+  - **`697`** familles de polices
+  - **`2,788`** 'complètes' variantes/combinaisons
+  - **`1,571,470`** _possibles_ variantes/combinaisons
+  - **`1,574,258`** total des combinaisons calculées (2,788 + 1,571,470)
 - Les combinaisons pour chaque police sont une combinaison de [Variations](#variations)
 
 ### Variations
@@ -593,6 +594,7 @@ Font repos
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-iosevka]:https://github.com/be5invis/Iosevka
+[f-jetbrains-mono]:https://github.com/JetBrains/JetBrainsMono
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
@@ -624,6 +626,7 @@ Patched Font internal links
 [p-inconsolata-go]:patched-fonts/InconsolataGo
 [p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-iosevka]:patched-fonts/Iosevka
+[p-jetbrains-mono]:patched-fonts/JetBrainsMono
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono
