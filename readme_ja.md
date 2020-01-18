@@ -85,8 +85,8 @@ _あなたがもし……_
 * [FontForge 用 Python スクリプト](#font-patcher)を使ってフォントにパッチを当てます。
   * **半角 (固定ピッチ、固定幅)**、_または_、**全角**のグリフを作成できるオプションを含みます。
   * さらに詳しくは[**パッチスクリプト**](#font-patcher)の節を見てください。
-* **`48`** を数える[パッチ済みフォントファミリー](#パッチ済みフォント)。
-* **`1,356,400`** を超える、パッチ済みフォントの変種とその組み合わせ[（詳細はこちら）](#組み合わせ)。
+* **`50`** を数える[パッチ済みフォントファミリー](#パッチ済みフォント)。
+* **`1,571,470`** を超える、パッチ済みフォントの変種とその組み合わせ[（詳細はこちら）](#組み合わせ)。
 * **`2,600`** を超えるグリフ（アイコン）を合成しています。
   * 現在含まれるグリフセットはこちら: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (以前[Font Linux][font-linux]と呼ばれていたものです), [Pomicons][gabrielelana-pomicons]
 * それぞれのフォントは**半角 (固定ピッチ、固定幅)**、_あるいは_、**全角**グリフを含みます。
@@ -135,6 +135,7 @@ _あなたがもし……_
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                    | NO    | 1000      | ![w] ![m2] ![l]  |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                                    | NO    | 1000      | ![w] ![m2] ![l]  |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]               | NO    | 1000      | [#83][s-iosevka] |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono] | NO    | 1000      | ![w] ![m2] ![l]  |
 | [Lekton Nerd Font][p-lekton]                      |                                    | NO    | 1000      | ![w] ![m2] ![l]  |
 | [Literation Mono Nerd Font*][p-liberation]        | [Liberation][f-liberation]         | YES   | 2048      | ![w] ![m2] ![l]  |
 | [Meslo Nerd Font][p-meslo]                        |                                    | NO    | 2048      | ![w] ![m2] ![l]  |
@@ -162,12 +163,12 @@ _あなたがもし……_
 
 ## 組み合わせ
 
-- **`1,200,000`** を超える、パッチ済みフォントの変種とその組み合わせ (冪集合)。
-  - **`44`** のパッチ済みフォント書体。
-  - **`612`** のパッチ済みフォントファミリー。
-  - **`2,448`** の「完全な」変種とその組み合わせ。
-  - **`1,264,440`** の _理論上可能な_ 変種とその組み合わせ。
-  - 合計 **`1,266,888`** になる組み合わせ (2,448 + 1,264,440)。
+- **`1,571,470`** を超える、パッチ済みフォントの変種とその組み合わせ (冪集合)。
+  - **`50`** のパッチ済みフォント書体。
+  - **`697`** のパッチ済みフォントファミリー。
+  - **`2,788`** の「完全な」変種とその組み合わせ。
+  - **`1,571,470`** の _理論上可能な_ 変種とその組み合わせ。
+  - 合計 **`1,574,258`** になる組み合わせ (2,788 + 1,571,470)。
 - 各々のフォントの「組み合わせ」はそれぞれの[変種](#変種)の組み合わせを表しています。
 
 ### 変種
@@ -204,7 +205,7 @@ _あなたがもし……_
 
 > インストールを**自動化**したい場合や**スクリプト**内で利用したい場合に一番適した選択肢です。
 
-_注意_: Linux と macOS (OS X) でのみ可能です。  
+_注意_: Linux と macOS (OS X) でのみ可能です。
 _注意_: 今の所、リポジトリの**クローンが必要です。**
 
 #### 全てのフォント
@@ -518,6 +519,7 @@ Font repos
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-iosevka]:https://github.com/be5invis/Iosevka
+[f-jetbrains-mono]:https://github.com/JetBrains/JetBrainsMono
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
@@ -555,6 +557,7 @@ Patched Font internal links
 [p-inconsolata-go]:patched-fonts/InconsolataGo
 [p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-iosevka]:patched-fonts/Iosevka
+[p-jetbrains-mono]:patched-fonts/JetBrainsMono
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono

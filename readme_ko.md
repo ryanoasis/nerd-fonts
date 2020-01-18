@@ -25,11 +25,11 @@
 <sub><i>다이어그램은 <a href="http://sankeymatic.com/" title="SankeyMATIC (BETA): A Sankey diagram builder for everyone">@SankeyMATIC</a>으로 만들었습니다.</i></sub>
 
 
-## 중요한 주의 사항 
+## 중요한 주의 사항
 * `master` 브랜치 파일 경로는 안정성이 보장되지 **않습니다.** [저장소의 URI 레퍼런스를 체크해보세요.](#불안정한-파일-경로)
-* 이 저장소를 클론하는 것은 [개발에 기여](#기여하기)하려는 것이 아닌 이상 추천하지 **않습니다.** ([저장소 크기 때문](#옵션-5-저장소-클론)) 
+* 이 저장소를 클론하는 것은 [개발에 기여](#기여하기)하려는 것이 아닌 이상 추천하지 **않습니다.** ([저장소 크기 때문](#옵션-5-저장소-클론))
 
-## 목차 
+## 목차
 
 [**TL;DR**](#tldr)
 
@@ -85,8 +85,8 @@ _만약..._
 * [FontForge 파이썬 스크립트](#font-patcher)를 이용해 어떤 폰트든 패치할 수 있습니다.
   * **고정폭 (monospaced)** _또는_ **가변폭 (non-monospaced)** 글리프를 만드는 옵션을 포함합니다.
   * 더 자세한 정보는 [**폰트 설치기**](#font-patcher) 문단을 확인하세요.
-* **`48`** 개의 [폰트 패밀리](#패치된-폰트들)
-* **`1,356,400`** 개 이상의 폰트 조합/변형 [(자세한 정보)](#조합)
+* **`50`** 개의 [폰트 패밀리](#패치된-폰트들)
+* **`1,571,470`** 개 이상의 폰트 조합/변형 [(자세한 정보)](#조합)
 * **`2,600`** 개 이상의 글리프/아이콘 [(자세한 정보)](#조합)
   * 현재 글리프 세트: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (구 [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * 각 폰트의 **고정폭 (monospaced)** _또는_ **가변폭 (non-monospaced)** 글리프 버전
@@ -136,6 +136,7 @@ _만약..._
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              | NO   | 1000    | [#83][s-iosevka]  |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| NO   | 1000    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font*][p-liberation]        | [Liberation][f-liberation]        | YES  | 2048    | ![w] ![m2] ![l]   |
 | [Meslo Nerd Font][p-meslo]                        |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -163,12 +164,12 @@ _만약..._
 
 ## 조합
 
-- **`1,200,000`** 개 이상의 고유한 폰트 변형/조합 (Power Set):
-  - **`44`** 개의 폰트 타입페이스
-  - **`612`** 개의 폰트 패밀리
-  - **`2,448`** 개의 '완전한' 변형/조합
-  - **`1,264,440`** 개의 _가능한_ 변형/조합
-  - **`1,266,888`** 개의 총 조합 (2,448 + 1,264,440)
+- **`1,571,470`** 개 이상의 고유한 폰트 변형/조합 (Power Set):
+  - **`50`** 개의 폰트 타입페이스
+  - **`697`** 개의 폰트 패밀리
+  - **`2,788`** 개의 '완전한' 변형/조합
+  - **`1,571,470`** 개의 _가능한_ 변형/조합
+  - **`1,574,258`** 개의 총 조합 (2,788 + 1,571,470)
 - 각 폰트의 조합은 [변형](#변형)의 조합들입니다.
 
 ### 변형
@@ -391,7 +392,7 @@ optional arguments:
 
 * 기여자나 개발자를 위한 방법
 
-* 패치되지 않은 디렉토리의 **모든** 폰트를 다시 패치합니다: 
+* 패치되지 않은 디렉토리의 **모든** 폰트를 다시 패치합니다:
 ```
 ./gotta-patch-em-all-font-patcher\!.sh
 ```
@@ -411,7 +412,7 @@ optional arguments:
 
 :warning: 경고: 릴리즈에 따라 파일 경로가 변경될 수 있습니다. (특히 **메이저** 버전 범프)
 
-각 배포에서 경로가 변경될 수 있으므로 ~~마스터~~ 브랜치가 아닌 **릴리즈** 브랜치를 참조하세요. 
+각 배포에서 경로가 변경될 수 있으므로 ~~마스터~~ 브랜치가 아닌 **릴리즈** 브랜치를 참조하세요.
 
 * 예시:
   * :x: 이렇게 하는 대신: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
@@ -519,6 +520,7 @@ Font repos
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-iosevka]:https://github.com/be5invis/Iosevka
+[f-jetbrains-mono]:https://github.com/JetBrains/JetBrainsMono
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
@@ -556,6 +558,7 @@ Patched Font internal links
 [p-inconsolata-go]:patched-fonts/InconsolataGo
 [p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-iosevka]:patched-fonts/Iosevka
+[p-jetbrains-mono]:patched-fonts/JetBrainsMono
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono

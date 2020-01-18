@@ -83,8 +83,8 @@ _Если Вы..._
 * [Python скрипт FontForge](#font-patcher) для улучшения любого шрифта
   * Включена возможность создания **Моноширинных (с фиксированным шагом, с фиксированной шириной)** _или_ **двойных (не моноширинных)** глифов
   * Для получения дополнительной информации смотрите раздел [**Улучшитель шрифтов**](#font-patcher)
-* **`39`** [улучшенных семейства шрифтов](#patched-fonts)
-* Более **`87,000`** уникальных комбинаций/вариантов улучшенненных шрифтов [(больше информации)](#combinations)
+* **`50`** [улучшенных семейства шрифтов](#patched-fonts)
+* Более **`1,571,470`** уникальных комбинаций/вариантов улучшенненных шрифтов [(больше информации)](#combinations)
 * Более **`1,300`** комбинаций глифов/значков [(больше информации)](#combinations)
   * Текущие наборы глифов включают: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
 * **Моноширинная (фиксированный шаг, фиксированная ширина)** _или_ "**двойные (не моноширинные)** глифы" версии каждого шрифта
@@ -178,54 +178,55 @@ echo $i_oct_heart
 
 ## Исправленные Шрифты
 
-| Название Шрифта                                   | Название Шрифта и Репозиторий |\*RFN |Размер EM| Статус            |
-|:--------------------------------------------------|:------------------------------|:-----|:--------|:------------------|
-| [3270 Nerd Font][p-3270]                          | [3270][f-3270]                | НЕТ  | 1000    | ![w2] ![m2] ![l2] |
-| [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]      | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [Aurulent Sans Mono Nerd Font][p-aurulent]        |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                               | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [Code New Roman Nerd Font][p-code-nr]             |                               | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [DejaVu Sans Mono Nerd Font][p-dejavu]            |                               | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [Droid Sans Mono Nerd Font][p-droid]              |                               | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]      | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]           | ДА   | 1000    | ![w] ![m2] ![l]   |
-| [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]           | ДА   | 1000    | ![w] ![m2] ![l]   |
-| [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]                | НЕТ  | 1000    | ![w2] ![m2] ![l2] |
-| [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]          | ДА   | 1000    | ![w] ![m2] ![l]   |
-| [Heavy Data Mono Nerd Font][p-heavy-data]         |                               | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [Hermut Nerd Font][p-hermit]                      |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [Inconsolata Nerd Font][p-inconsolata]            |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [Inconsolata Go Nerd Font][p-inconsolata-go]      |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]          | ДА   | 1000    | [#83][s-iosevka]  |
-| [Knack Nerd Font][p-hack]                         | [Hack][f-hack]                | ДА   | 2048    | ![w] ![m2] ![l]   |
-| [Lekton Nerd Font][p-lekton]                      |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]    | ДА   | 2048    | ![w] ![m2] ![l]   |
-| [Meslo Nerd Font][p-meslo]                        |                               | НЕТ  | 2048    | ![w] ![m2] ![l]   |
-| [Monofur Nerd Font][p-monofur]                    |                               | НЕТ  | 2400    | ![w] ![m2] ![l]   |
-| [Monoid Nerd Font][p-monoid]                      |                               | НЕТ  | 1536    | ![w] ![m2] ![l]   |
-| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]        | НЕТ  | 1024    | ![w] ![m2] ![l]   |
-| [M+ (MPlus) Nerd Font][p-mplus]                   |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [ProFont (Windows tweaked) Nerd Font][p-profont]  |                               | НЕТ  | 1200    | ![w] ![m2] ![l]   |
-| [ProFont (x11) Nerd Font][p-profont]              |                               | НЕТ  | 1000    | [FAILING]         |
-| [ProggyClean Nerd Font][p-proggy-clean]           |                               | НЕТ  | 2048    | [FAILING]         |
-| [Roboto Mono][p-roboto]                           |                               | НЕТ  | 2048    | [FAILING]         |
-| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]            | ДА   | 1000    | ![w] ![m2] ![l]   |
-| [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]    | ДА   | 1000    | ![w] ![m2] ![l]   |
-| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]         | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus]   | ДА   | 1000    | ![w] ![m2] ![l]   |
-| [Ubuntu Nerd Font][p-ubuntu]                      |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
-| [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                               | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| Название Шрифта                                   | Название Шрифта и Репозиторий     |\*RFN |Размер EM| Статус            |
+|:--------------------------------------------------|:----------------------------------|:-----|:--------|:------------------|
+| [3270 Nerd Font][p-3270]                          | [3270][f-3270]                    | НЕТ  | 1000    | ![w2] ![m2] ![l2] |
+| [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]          | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [Aurulent Sans Mono Nerd Font][p-aurulent]        |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                                   | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [Code New Roman Nerd Font][p-code-nr]             |                                   | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [Droid Sans Mono Nerd Font][p-droid]              |                                   | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]          | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [Fura Code Nerd Font][p-fira-code]                | [Fira][f-fira-code]               | ДА   | 1000    | ![w] ![m2] ![l]   |
+| [Fura Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]               | ДА   | 1000    | ![w] ![m2] ![l]   |
+| [Gohu Nerd Font][p-gohu]                          | [Gohu][f-gohu]                    | НЕТ  | 1000    | ![w2] ![m2] ![l2] |
+| [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]              | ДА   | 1000    | ![w] ![m2] ![l]   |
+| [Heavy Data Mono Nerd Font][p-heavy-data]         |                                   | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [Hermut Nerd Font][p-hermit]                      |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [Inconsolata Nerd Font][p-inconsolata]            |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              | ДА   | 1000    | [#83][s-iosevka]  |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| NO   | 1000    | ![w] ![m2] ![l]   |
+| [Knack Nerd Font][p-hack]                         | [Hack][f-hack]                    | ДА   | 2048    | ![w] ![m2] ![l]   |
+| [Lekton Nerd Font][p-lekton]                      |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        | ДА   | 2048    | ![w] ![m2] ![l]   |
+| [Meslo Nerd Font][p-meslo]                        |                                   | НЕТ  | 2048    | ![w] ![m2] ![l]   |
+| [Monofur Nerd Font][p-monofur]                    |                                   | НЕТ  | 2400    | ![w] ![m2] ![l]   |
+| [Monoid Nerd Font][p-monoid]                      |                                   | НЕТ  | 1536    | ![w] ![m2] ![l]   |
+| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | НЕТ  | 1024    | ![w] ![m2] ![l]   |
+| [M+ (MPlus) Nerd Font][p-mplus]                   |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [ProFont (Windows tweaked) Nerd Font][p-profont]  |                                   | НЕТ  | 1200    | ![w] ![m2] ![l]   |
+| [ProFont (x11) Nerd Font][p-profont]              |                                   | НЕТ  | 1000    | [FAILING]         |
+| [ProggyClean Nerd Font][p-proggy-clean]           |                                   | НЕТ  | 2048    | [FAILING]         |
+| [Roboto Mono][p-roboto]                           |                                   | НЕТ  | 2048    | [FAILING]         |
+| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]                | ДА   | 1000    | ![w] ![m2] ![l]   |
+| [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]        | ДА   | 1000    | ![w] ![m2] ![l]   |
+| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]             | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [Terminess Nerd Font][p-terminus]                 | [Terminus Font][f-terminus]       | ДА   | 1000    | ![w] ![m2] ![l]   |
+| [Ubuntu Nerd Font][p-ubuntu]                      |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
+| [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                                   | НЕТ  | 1000    | ![w] ![m2] ![l]   |
 
 <sub>_*RFN (Reserved Font Name) — зарезервированное название шрифта_</sub>
 
 ## Комбинации
 
-- Более **`87,000`** уникальных вариантов/комбинаций (Power Set) улучшенных шрифтов:
-  - **`39`** улучшенных набора шрифтов
-  - **`169`** улучшенных семейств шрифтов
-  - **`676`** 'выполненных' вариантов/комбинаций
-  - **`86,702`** _возможных_ варианта/комбинации
-  - **`87,378`** всего вычислено комбинаций (676 + 86,702)
+- Более **`1,571,470`** уникальных вариантов/комбинаций (Power Set) улучшенных шрифтов:
+  - **`50`** улучшенных набора шрифтов
+  - **`697`** улучшенных семейств шрифтов
+  - **`2,788`** 'выполненных' вариантов/комбинаций
+  - **`1,571,470`** _возможных_ варианта/комбинации
+  - **`1,574,258`** всего вычислено комбинаций (2,788 + 1,571,470)
 - Комбинация для каждого шрифта - это любая комбинация [Вариаций](#variations)
 
 ### Вариации
@@ -547,6 +548,7 @@ Font repos
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-iosevka]:https://github.com/be5invis/Iosevka
+[f-jetbrains-mono]:https://github.com/JetBrains/JetBrainsMono
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-space]:https://fonts.google.com/specimen/Space+Mono
@@ -572,6 +574,7 @@ Patched Font internal links
 [p-inconsolata]:patched-fonts/Inconsolata
 [p-inconsolata-go]:patched-fonts/InconsolataGo
 [p-iosevka]:patched-fonts/Iosevka
+[p-jetbrains-mono]:patched-fonts/JetBrainsMono
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono
