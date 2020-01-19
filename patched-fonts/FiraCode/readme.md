@@ -34,7 +34,7 @@ Erlang:
 
 Elixir:
 
-<img src="/showcases/elixir.png">
+<img src="./showcases/elixir.png">
 
 Go:
 
