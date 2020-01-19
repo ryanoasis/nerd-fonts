@@ -39,12 +39,18 @@ find -- * -maxdepth 0 -iregex "$pattern" -type d |
 while read -r filename
 do
 
-	basename=$(basename "$filename")
-	searchdir=$filename
+  basename=$(basename "$filename")
+  searchdir=$filename
 
-	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
+  [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
   # -ic (ignore case not working)
-	zip "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
-
+  zip "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
+  zipStatus=$?
+  if [ "$zipStatus" != "0" ]
+  then
+    echo "$LINE_PREFIX Could not create archive with the path junked (-j option) - likely same font names for different paths, zip status: $zipStatus"
+    echo "$LINE_PREFIX Retrying with full path"
+    zip "$outputdir/$basename" -r "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
+  fi;
 done
