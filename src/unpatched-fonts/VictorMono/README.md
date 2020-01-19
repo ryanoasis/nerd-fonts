@@ -15,9 +15,16 @@
 2. `import 'victormono'` (in a typical modern setup, eg. webpack)
 3. Style classes with `font-family: 'Victor Mono'`, `font-weight` and `font-style`
 
+##### Alternative CDN hosting,  best for online editors like [CodePen](https://codepen.io/tomByrer/pen/MWWagVp):
+1. `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">` in `<head>` or top of `<body>`
+2. Style classes with `font-family: 'Victor Mono', monospace`
+
 #### If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
 
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/code-sample.png" align="right" width="100%" alt="Code sample">](https://rubjo.github.io/victor-mono)
+### &nbsp;
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/powerline-cropped.png" align="right" alt="Powerline">](https://rubjo.github.io/victor-mono)
+### &nbsp;
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/specimens-cropped.png" align="right" alt="Specimens">](https://rubjo.github.io/victor-mono)
+### &nbsp;
 [<img src="https://github.com/rubjo/victor-mono/raw/master/src/assets/img/glyphs-dark.png" align="right" alt="Design">](https://rubjo.github.io/victor-mono)
