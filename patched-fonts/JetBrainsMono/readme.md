@@ -2,7 +2,7 @@
 
 # JetBrainsMono
 A typeface made for developers. \
-More about font features & design can be found on [it's page](https://jetbrains.com/mono/)
+More about font features & design can be found on [its page](https://jetbrains.com/mono/).
 
 # **Installation**
 
@@ -14,12 +14,12 @@ Select JetBrains Mono in the IDE settings: go to `Preferences/Settings` → `Edi
 
 ### Another IDE or an older version of a JetBrains IDE
 
-1. [Download font](https://download.jetbrains.com/fonts/JetBrainsMono-1.0.0.zip?fromGitHub).
+1. [Download font](https://download.jetbrains.com/fonts/JetBrainsMono-1.0.0.zip?fromGitHub). 
 2. Unzip the archive and install the font:
    - Mac. Select all font files in the folder and double-click them. Click the *"Install Font"* button.
    - Windows. Select all font files in the folder, right-click any of them, then pick *"Install"* from the menu.
    - Ubuntu. Open a terminal with `Ctrl`+`Alt`+`T` and run the following:
-
+   
       ```
       cd <name_of_our_archive.zip>
       unzip "\*.zip" -d ${HOME}/.fonts
@@ -67,8 +67,9 @@ Nikita Prokopov\
 Eugene Auduchinok\
 Tatiana Tulupenko\
 Dmitrij Batrak\
-IntelliJ Platfrom UX Team\
+IntelliJ Platform UX Team\
 Web Team
+
 ## Which font?
 
 ### TL;DR

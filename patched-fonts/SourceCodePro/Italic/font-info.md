@@ -1,37 +1,29 @@
-Sauce Code Powerline
-====================
+# Source Code Pro
 
-Font creator
+Source Code Pro is a set of OpenType fonts that have been designed to work well
+in user interface (UI) environments. In addition to a functional OpenType font, this open
+source project provides all of the source files that were used to build this OpenType font
+by using the AFDKO makeotf tool.
 
-:   Paul D. Hunt (Adobe)
+## Font installation instructions
 
-Version
+* [Mac OS X](http://support.apple.com/kb/HT2509)
+* [Windows](https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx)
+* [Linux/Unix-based systems](https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116)
+* Bower<br/>
+	`bower install git://github.com/adobe-fonts/source-code-pro.git#release`
+* npm 2.x<br/>
+	`npm install --fetch-only git://github.com/adobe-fonts/source-code-pro.git#release`
+* npm 3.x<br/>
+	`npm install git://github.com/adobe-fonts/source-code-pro.git#release`
 
-:   1.017
+## Getting Involved
 
-Source
+Send suggestions for changes to the Source Code OpenType font project maintainer, [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub] Source Code Pro), for consideration.
 
-:   <http://sourceforge.net/projects/sourcecodepro.adobe>
+## Further information
 
-License
-
-:   SIL OPEN FONT LICENSE Version 1.1
-
-Patched by
-
-:   [Carl X. Su](https://github.com/bcbcarl)
-
-Source Code Pro is a set of monospaced OpenType fonts that have been
-designed to work well in coding environments. This family of fonts is a
-complementary design to the Source Sans family.
-
-Sauce Code Powerline is derived from Source Code Pro for Powerline
-users. The Powerline symbols is being made by Kim Silkebækken. The patch
-work is being undertaken by Carl X. Su.
-
-Both the final font Truetype/OpenType files and the design files used to
-produce the font family are distributed under an open licence and you
-are expressly encouraged to experiment, modify, share and improve.
+For information about the design and background of Source Code, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-code-pro-readme.html).
 
 ## Why `Sauce` and not `Source`?
 
@@ -56,6 +48,11 @@ See the [Reserved Font Name section][SIL-RFN] for additional information
     * This includes specific tweaks to ensure the font works on Windows, in particular monospace identification and font name length limitations
   * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with the `'Mono'` suffix.
     * This denotes that the Nerd Font glyphs will be monospaced not necessarily that the entire font will be monospaced
+
+### Ligatures
+
+By the *Nerd Font* policy, the variant with the `'Mono'` suffix is not supposed to have any ligatures.
+Use the non-*Mono* variants to have ligatures.
 
 ### Explanation
 

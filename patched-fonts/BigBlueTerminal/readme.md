@@ -1,25 +1,25 @@
-               _ Ã„ --- Ã„                  _ Ã„ --- Ã„
-            .Ã¹"    ,Ã‚,   ~=Ã’_    .Ã¹.   .Ã¹"          ~=Ã’_
-          .    . .OZZZOÂ¸    ^g,      .    .Ã¾Ã¸~Ã¸Ã¾.      ^%Â·   .s%ZOÂ¿
-              `  Ã€Â¦qZpÂ¦' Ã¸Ã¹  `Z,         `        _.,Ãº  `gZÂ¿  Ã¹:ZZ|
-          _Ã‚g%%oc,  ~ _.,  `  Ã”Z;         _.,Ã‚Â©y%Z=-:Ãº .s%Z%L, `OZZYi%gÃ‚_
-         jOZZËœËœZZOLÃº jOZZËœÂª,  `Zb  _.Ã‚Â©y%ZZZZZZZZ%=:Ã¹ jZZZZZZZb `ZZZZËœZZZb
-        Ã¹ZZ?~ ~\ZZZ| |â€ºZZZZO\ Ãº?Z.Ã¹%ËœZZZZZZÂ¦*ÃŠÃ¼^Ã¸"`' /ZZÂ¦"~"Â¦ZZ\ Ã¹T   ~!ZZÂ´
-         Z6f   Ã¹ZZZOÃ¹Ãº|ZZZ^ZZi ]Z1Ãº:-":ZZZ'      _. Ã¹OZ/     \ZZL :    |6Z'
-     .   `ZZÂª._ ~"^Z| Ã¹ZZZ;\ZZ Ã†ZÂµ   Ãºâ€ºZZZÃº  _Ã‚%ZZÃº l%! .oZo, ]ZZÃºÃ¹  _Ã’ZZ'   .
-      ,    ~^ÃŠ*ÃŠ^~.Zâ€ºÃºÃºZZZl ZZÃ‚ZZ1 Ãº Ã¹ZZZZÃ¹  ^Â¦!ZZÃ¹ :=l dZZZb Ã¹ZZ|  ~^"~
-       Ã¹        g%ZZZÃºÃºZZZZ `ÂZZZÃ¸ : ÃºZZZZ:   Ã¹lZZ| Ã¹;Ã¹ :ZZZF ÃºZZ|         .'
-        ~Ã„_    ÃºZZZZ| Ã¹ZZZZ  Ã€ZZËœ' Ã¹  ?ZZZ!    :ZZÂ³Ãº ÃºÃ¹  "Â¦"  dZgÃº      _Ã„~
-           ~"^ :ZZZOÃ¹Ã¹|ZZZ!   `^'  '  `ÂZZZ    ÃºÂ¦ZZ:  Ãº     ./ZZf ÃºÃ„--`~
-               OZZZÃ¹ jZÂ¦ÃŠ~  `. _ _. .   ~^Â¦L, YZZZZOzzÃ‚Ã‚ ÃºÃ¹:=CO/
-         -V!  jÂ¦ÃŠ^~     .     ~-ÂºÃ¹-~    .     `^ÃŠÂ¦ZÂËœZF'ÃºÃ¹:%CG' . O R G
-                         ~Ã„_    T    _Ã„~             ~'  '^"~
-                            ~"Ã=|=Ã"~
-                                Ã¹
-                                Ãº
-                       .--------------------------------Ãº  Ãº
-                       :  B I G B L U E   T E R M I N A L  :
-                       Ãº  Ãº--------------------------------'
+           _ Ä --- Ä                  _ Ä --- Ä
+        .ù"    ,Â,   ~=Ò_    .ù.   .ù"          ~=Ò_
+      .    . .OZZZO¸    ^g,      .    .şø~øş.      ^%·   .s%ZO¿
+          `  À¦qZp¦' øù  `Z,         `        _.,ú  `gZ¿  ù:ZZ|
+      _Âg%%oc,  ~ _.,  `  ÔZ;         _.,Â©y%Z=-:ú .s%Z%L, `OZZYi%gÂ_
+     jOZZ˜˜ZZOLú jOZZ˜ª,  `Zb  _.Â©y%ZZZZZZZZ%=:ù jZZZZZZZb `ZZZZ˜ZZZb
+    ùZZ?~ ~\ZZZ| |›ZZZZO\ ú?Z.ù%˜ZZZZZZ¦*Êü^ø"`' /ZZ¦"~"¦ZZ\ ùT   ~!ZZ´
+     Z6f   ùZZZOùú|ZZZ^ZZi ]Z1ú:-":ZZZ'      _. ùOZ/     \ZZL :    |6Z'
+ .   `ZZª._ ~"^Z| ùZZZ;\ZZ ÆZµ   ú›ZZZú  _Â%ZZú l%! .oZo, ]ZZúù  _ÒZZ'   .
+  ,    ~^Ê*Ê^~.Z›úúZZZl ZZÂZZ1 ú ùZZZZù  ^¦!ZZù :=l dZZZb ùZZ|  ~^"~
+   ù        g%ZZZúúZZZZ `ZZZø : úZZZZ:   ùlZZ| ù;ù :ZZZF úZZ|         .'
+    ~Ä_    úZZZZ| ùZZZZ  ÀZZ˜' ù  ?ZZZ!    :ZZ³ú úù  "¦"  dZgú      _Ä~
+       ~"^ :ZZZOùù|ZZZ!   `^'  '  `ZZZ    ú¦ZZ:  ú     ./ZZf úÄ--`~
+           OZZZù jZ¦Ê~  `. _ _. .   ~^¦L, YZZZZOzzÂÂ úù:=CO/
+     -V!  j¦Ê^~     .     ~-ºù-~    .     `^Ê¦Z˜ZF'úù:%CG' . O R G
+                     ~Ä_    T    _Ä~             ~'  '^"~
+                        ~"Í=|=Í"~
+                            ù
+                            ú
+                   .--------------------------------ú  ú
+                   :  B I G B L U E   T E R M I N A L  :
+                   ú  ú--------------------------------'
 
                 An oldschool fixed-width pixel font / v1.00
 
@@ -37,7 +37,7 @@
 
 
 ---------------
-## 1. WHAT'S THIS?
+1. WHAT'S THIS?
 ===============
 
 
@@ -57,7 +57,7 @@
 
 
 -----------
-## 2. CONTENTS
+2. CONTENTS
 ===========
 
 
@@ -84,7 +84,7 @@
 
 
 ------------------
-## 3. SIZES & DISPLAY
+3. SIZES & DISPLAY
 ==================
 
 
@@ -120,7 +120,7 @@
 
 
 ----------------------
-## 4. FORMATS & ENCODINGS
+4. FORMATS & ENCODINGS
 ======================
 
 
@@ -178,7 +178,7 @@
 
 
 -------------------------------------
-## 5. 'PLUS' VERSION CHARACTER MAP NOTES
+5. 'PLUS' VERSION CHARACTER MAP NOTES
 =====================================
 
 
@@ -209,24 +209,24 @@
       CP437     Canonical mapping from         Modified 'Plus' mapping
       Char      CP437 to Unicode               from CP437 to Unicode
       -------   ----------------------------   --------------------------
-      Ã  (E0h)   U+03B1 'Greek small Alpha'     U+0251 'Latin small Alpha'
-      Ã¡ (E1h)   U+00DF 'Latin small Sharp S'   U+03D0 'Greek Beta symbol'
-      Ã¢ (E2h)   U+0393 'Greek capital Gamma'   U+1D26 'Small capital Gamma'
-      Ã£ (E3h)   U+03C0 'Greek small Pi'        U+1D28 'Small capital Pi'
-      Ã¤ (E4h)   U+03A3 'Greek capital Sigma'   U+2211 'N-ary Summation'
-      Ã¥ (E5h)   U+03C3 'Greek small Sigma'     U+01A1 'Small o with horn'
-      Ã§ (E7h)   U+03C4 'Greek small Tau'       U+1D1B 'Small capital T'
-      Ã¨ (E8h)   U+03A6 'Greek capital Phi'     U+0278 'Latin small Phi'
-      Ã© (E9h)   U+0398 'Greek capital Theta'   U+03F4 'Capital Theta symbol'
-      Ãª (EAh)   U+03A9 'Greek capital Omega'   U+2126 'Ohm symbol'
-      Ã« (EBh)   U+03B4 'Greek small Delta'     U+1E9F 'Latin small Delta'
-      Ã­ (EDh)   U+03C6 'Greek small Phi'       U+2205 'Empty set'
-      Ã® (EEh)   U+03B5 'Greek small Epsilon'   U+2208 'Element of'
+      à (E0h)   U+03B1 'Greek small Alpha'     U+0251 'Latin small Alpha'
+      á (E1h)   U+00DF 'Latin small Sharp S'   U+03D0 'Greek Beta symbol'
+      â (E2h)   U+0393 'Greek capital Gamma'   U+1D26 'Small capital Gamma'
+      ã (E3h)   U+03C0 'Greek small Pi'        U+1D28 'Small capital Pi'
+      ä (E4h)   U+03A3 'Greek capital Sigma'   U+2211 'N-ary Summation'
+      å (E5h)   U+03C3 'Greek small Sigma'     U+01A1 'Small o with horn'
+      ç (E7h)   U+03C4 'Greek small Tau'       U+1D1B 'Small capital T'
+      è (E8h)   U+03A6 'Greek capital Phi'     U+0278 'Latin small Phi'
+      é (E9h)   U+0398 'Greek capital Theta'   U+03F4 'Capital Theta symbol'
+      ê (EAh)   U+03A9 'Greek capital Omega'   U+2126 'Ohm symbol'
+      ë (EBh)   U+03B4 'Greek small Delta'     U+1E9F 'Latin small Delta'
+      í (EDh)   U+03C6 'Greek small Phi'       U+2205 'Empty set'
+      î (EEh)   U+03B5 'Greek small Epsilon'   U+2208 'Element of'
 
 
 
 ------------------
-## 6. BONUS DOS STUFF
+6. BONUS DOS STUFF
 ==================
 
 
@@ -248,7 +248,7 @@
 
 
 -----------------------------
-## 7. CREDITS & ACKNOWLEDGEMENTS
+7. CREDITS & ACKNOWLEDGEMENTS
 =============================
 
 
@@ -283,7 +283,7 @@
 
 
 ----------
-## 8. CONTACT
+8. CONTACT
 ==========
 
 
@@ -296,7 +296,7 @@
       
 
 --------------
-## 9. LEGAL STUFF
+9. LEGAL STUFF
 ==============
 
 

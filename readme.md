@@ -516,6 +516,7 @@ Font repos
 [f-hack]:https://github.com/chrissimpkins/Hack
 [f-a-pro]:https://www.marksimonson.com/fonts/view/anonymous-pro
 [f-3270]:https://github.com/rbanffy/3270font
+[f-cascadia]:https://github.com/microsoft/cascadia-code
 [f-cousine]:https://fonts.google.com/specimen/Cousine
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-liberation]:https://pagure.io/liberation-fonts
@@ -550,6 +551,7 @@ Patched Font internal links
 [p-bigblueterm]:patched-fonts/BigBlueTerminal
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
 [p-blex]:patched-fonts/IBMPlexMono
+[p-cascadia]:patched-fonts/CascadiaCode
 [p-cousine]:patched-fonts/Cousine
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono

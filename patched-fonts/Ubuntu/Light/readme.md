@@ -15,7 +15,7 @@ you are expressly encouraged to experiment, modify, share and improve.
 
   http://font.ubuntu.com/
 
-## Why `Fura` and not `Fira`?
+## Why `Terminess` and not `Terminus`?
 
 What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in partcular the [Reserved Font Name mechanism][SIL-RFN]
 
