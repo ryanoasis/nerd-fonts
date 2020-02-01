@@ -17,6 +17,7 @@ page: font-downloads
         <img src="/assets/img/previews/{{ font.patchedName }} Nerd Font.svg" alt="{{ font.unpatchedName }}" title="Download {{ font.unpatchedName }}">
       </a>
       <ul>
+        {% if font.unpatchedName != font.patchedName %}<li><strong>Reserved Font Name:</strong> {{ font.unpatchedName }}</li>{% endif %}
         <li><strong>Info:</strong> {{ font.description }}</li>
       </ul>
       <div>
