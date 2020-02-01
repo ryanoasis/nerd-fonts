@@ -54,7 +54,7 @@
      id="layer1"
      transform="translate(-65.194643,-80.308632)">
     <g
-       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:'mplus Nerd Font';text-decoration: underline;text-decoration-line: underline;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:'MPlus Nerd Font';text-decoration: underline;text-decoration-line: underline;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text4136">
       <path
          d="m 65.194643,100.93363 0,-20.074998 2.255,0 6.5725,12.1 0.055,0 6.5725,-12.1 2.3375,0 0,20.074998 -2.2,0 0,-16.389998 -0.055,0 -5.665,10.4225 -2.035,0 -5.665,-10.4225 -0.055,0 0,16.389998 -2.1175,0 z"
@@ -110,7 +110,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:'mplus Nerd Font';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:'MPlus Nerd Font';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text4140">
       <path
          d="m 72.191903,135.15862 0,-0.4725 q 0,-1.0675 -0.49,-1.4875 -0.49,-0.4375 -1.7325,-0.4375 -1.4875,0 -3.185,0.665 l 0,-1.2075 q 1.575,-0.56 3.185,-0.56 2.0125,0 2.7825,0.735 0.77,0.735 0.77,2.6425 l 0,5.8975 -1.26,0 -0.0175,-1.5575 -0.035,0 q -1.05,1.7325 -3.2375,1.7325 -1.19,0 -1.9425,-0.7525 -0.735,-0.7525 -0.735,-1.995 0,-1.4525 1.155,-2.3275 1.155,-0.875 3.6925,-0.875 l 1.05,0 z m 0,0.9625 -1.05,0 q -1.7325,0 -2.625,0.56 -0.875,0.56 -0.875,1.575 0,0.7875 0.4375,1.2775 0.455,0.4725 1.19,0.4725 1.26,0 2.0825,-0.84 0.84,-0.84 0.84,-2.2225 l 0,-0.8225 z"

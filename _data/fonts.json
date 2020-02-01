@@ -8,6 +8,13 @@
       "description": "derived from the x3270 font, a modern format of a font with high nostalgic value"
     },
     {
+      "unpatchedName": "Agave",
+      "patchedName": "Agave",
+      "imagePreviewFont": "Agave Nerd Font",
+      "linkPreviewFont": "agave",
+      "description": "A small, monospace, outline font that is geometrically regular and simple"
+    },
+    {
       "unpatchedName": "AnonymousPro",
       "patchedName": "Anonymice",
       "imagePreviewFont": "Anonymice Nerd Font",
@@ -43,6 +50,13 @@
       "description": "dotted zero, compact lowercase characters"
     },
     {
+      "unpatchedName": "Cascadia Code",
+      "patchedName": "Caskaydia Cove",
+      "imagePreviewFont": "Caskaydia Cove Nerd Font",
+      "linkPreviewFont": "cascadia-code",
+      "description": "A fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal"
+    },
+    {
       "unpatchedName": "IBMPlex",
       "patchedName": "BlexMono",
       "imagePreviewFont": "BlexMono Nerd Font",
@@ -62,6 +76,13 @@
       "imagePreviewFont": "Cousine Nerd Font",
       "linkPreviewFont": "cousine",
       "description": "similar to Courier New with better readablitiy, dotted zeros"
+    },
+    {
+      "unpatchedName": "DaddyTimeMono",
+      "patchedName": "DaddyTimeMono",
+      "imagePreviewFont": "DaddyTimeMono Nerd Font",
+      "linkPreviewFont": "daddytimemono",
+      "description": "A monospaced font for programmers and other terminal groupies"
     },
     {
       "unpatchedName": "DejaVuSansMono",
@@ -141,6 +162,13 @@
       "description": "symbols stand out from common text"
     },
     {
+      "unpatchedName": "iA Writer",
+      "patchedName": "iM Writing",
+      "imagePreviewFont": "iM Writing Nerd Font",
+      "linkPreviewFont": "ia-writer-mono",
+      "description": "A heavy modification of IBM's Plex font"
+    },
+    {
       "unpatchedName": "Inconsolata",
       "patchedName": "Inconsolata",
       "imagePreviewFont": "Inconsolata Nerd Font",
@@ -167,6 +195,13 @@
       "imagePreviewFont": "Iosevka Nerd Font",
       "linkPreviewFont": "iosevka",
       "description": "narrow and horizontally tight characters, slashed zero"
+    },
+    {
+      "unpatchedName": "JetBrainsMono",
+      "patchedName": "JetBrainsMono",
+      "imagePreviewFont": "JetBrainsMono Nerd Font",
+      "linkPreviewFont": "jetbrainsmono",
+      "description": "JetBrains officially created font for developers"
     },
     {
       "unpatchedName": "Lekton",
@@ -246,6 +281,13 @@
       "description": "designed specifically to alleviate reading errors caused by dyslexia"
     },
     {
+      "unpatchedName": "Overpass",
+      "patchedName": "Overpass",
+      "imagePreviewFont": "Overpass Nerd Font",
+      "linkPreviewFont": "overpass",
+      "description": "An open source font family inspired by Highway Gothic"
+    },
+    {
       "unpatchedName": "RobotoMono",
       "patchedName": "RobotoMono",
       "imagePreviewFont": "RobotoMono Nerd Font",
@@ -258,6 +300,13 @@
       "imagePreviewFont": "ShureTechMono Nerd Font",
       "linkPreviewFont": "share-tech",
       "description": "dotted zeros, distinguishable 1 and l, curved and straight character lines"
+    },
+    {
+      "unpatchedName": "Source Code Pro",
+      "patchedName": "Sauce Code Pro",
+      "imagePreviewFont": "Sauce Code Pro Nerd Font",
+      "linkPreviewFont": "source-code-pro",
+      "description": "Monospaced font family for user interface and coding environments"
     },
     {
       "unpatchedName": "SpaceMono",
@@ -293,6 +342,13 @@
       "imagePreviewFont": "UbuntuMono Nerd Font",
       "linkPreviewFont": "ubuntu",
       "description": "dotted zeros, used the `n`, `o`, `H` &amp; `O` Latin characters as a base for design"
+    },
+    {
+      "unpatchedName": "VictorMono",
+      "patchedName": "VictorMono",
+      "imagePreviewFont": "VictorMono Nerd Font",
+      "linkPreviewFont": "victor-mono",
+      "description": "clean, crisp and narrow, with a large x-height and clear punctuation"
     }
   ]
 }
