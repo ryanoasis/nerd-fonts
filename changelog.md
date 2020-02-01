@@ -8,10 +8,10 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
   - Added new fonts:
     - IBM Plex (PR #253 @romen)
-    - iA Writer (PR #326 @xasx)
+    - iA Writer (patched as iM Writing) (PR #326 @xasx)
     - Agave (PR #327 @xasx)
     - DaddyTimeMono (fixes #330)
-    - Cascadia Code (patched as Cascadyia Cove)
+    - Cascadia Code (patched as Caskaydia Cove)
     - JetBrains Mono (PR #421 @Knovour, fixes #420, #425)
   - Added chocolatey install script (PR #259 @rahuliyer95)
   - Added PowerShell installation script for Windows (PR #357 @LZong-tw)
