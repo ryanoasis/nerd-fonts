@@ -12,7 +12,7 @@ page: font-downloads
 <div class="d-flex flex-row flex-wrap align-items-stretch justify-content-betweeen justify-content-aroundd justify-content-center">
 {% for font in site.data.fonts.fonts %}
   <div class="item">
-      <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/{{ font.unpatchedName }}.zip">
+      <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.unpatchedName }}.zip">
         <div class="download-icon"></div>
         <img src="/assets/img/previews/{{ font.patchedName }} Nerd Font.svg" alt="{{ font.unpatchedName }}" title="Download {{ font.unpatchedName }}">
       </a>
@@ -22,7 +22,7 @@ page: font-downloads
       <div>
         <h4 class="inlineblock bg-green border-white text-white nerd-font-button">
           <i class="nf nf-fa-download"></i>
-          <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/{{ font.unpatchedName }}.zip" class="inlineblock">Download</a>
+          <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.unpatchedName }}.zip" class="inlineblock">Download</a>
         </h4>
         {% if font.linkPreviewFont != false %}
         <h4 class="inlineblock bg-purple border-white text-white nerd-font-button">
