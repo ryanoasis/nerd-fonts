@@ -2,6 +2,65 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v2.1.0
+
+### New Features
+
+  - Added new fonts:
+    - IBM Plex (PR #253 @romen)
+    - iA Writer (PR #326 @xasx)
+    - Agave (PR #327 @xasx)
+    - DaddyTimeMono (fixes #330)
+    - Cascadia Code (patched as Cascadyia Cove)
+    - JetBrains Mono (PR #421 @Knovour, fixes #420, #425)
+  - Added chocolatey install script (PR #259 @rahuliyer95)
+  - Added PowerShell installation script for Windows (PR #357 @LZong-tw)
+  - Added font previews to website (fixes #316)
+
+### Updates / Improvements
+
+  - Updated most of the glyphs in the 'original-source' (PR #249 @danbee)
+  - Updated font patcher script via refactor (PR #288 @haasosaurus)
+  - Updated various fonts:
+    - Updated Fira Code to version 1.206 (PR #298 @mashehu)
+    - Updated 'Fura' to 'Fira' (PR #356 @ShalokShalom) (fixes #352)
+    - Updated Fira Code to version 2.0 (PR #372 @hugo-vrijswijk, fixes #424)
+    - Updated Iosevka to version 2.1.0 (PR #328 @MindTooth)
+    - Updated Fantasque Sans Mono to version 1.8.0 (PR #423 @adzenith)
+    - Updated Inconsolata to version 2.001 (fixes #289)
+    - Updated Liberation to version 2.00.5 (fixes #344)
+    - Updated Victor Mono to version 1.3.1 (fixes #388)
+  - Added Cascadia Code to font sources (PR #374 @AaronFriel)
+  - Added new language translations:
+    - Added Polish readme (PR #301 @P1X3L0V4)
+    - Added Spanish readme (PR #378 @Tamh)
+    - Added Korean readme (PR #382 @ParkSB)
+    - Added Ukrainian readme (PR #392 @igavelyuk)
+    - Added Japanese readme (PR #389 @delphinus)
+    - Added Italian readme (PR #427 @JGiola)
+
+### Fixes
+
+  - Fixed monospace overlapping (PR #283 @haasosaurus, fixes #270)
+  - Fixed glyph bears in monospaced variants (PR #394 @Finii)
+  - Fixed archive artifact script not including all fonts (fixes #418)
+  - Fixed URLs in font table (PR #260 @raffclar)
+  - Fixed possible mixed content error on website for Google Fonts (PR #276 @mashehu)
+  - Fixed UX of font-patcher log to be inside <details> block (PR #291 @kevinSuttle)
+  - Fixed bash scripts execution from non-standard bash (PR #282 @deadloko)
+  - Fixed missing variations of Meslo (PR #308 @segevfiner fixes #302)
+  - Fixed typo (PR #331 @mikeshatch)
+  - Fixed typo in css class and cheatsheet (fixes #285)
+  - Fixed including uuid files (ignored) (PR #371 @lebel)
+  - Fixed RFN for Anka Coder (PR #376 @gunman808)
+  - Fixed BigBlueTerminal font formatting in readme (PR #381 @this-is-you)
+  - Fixed formatting of Agave readme (PR #379 @Roshanjossey)
+  - Fixed link to Fish Shell on website (PR #385 @kaykayehnn)
+  - Fixed showcase images in FiraCode readme (PR #405 @equwal)
+  - Fixed outdated AUR references (PR #416 @sudoLife)
+  - Fixed elixir image src in Fira Code readme (PR #419 @kadimisetty)
+  - Fixed missing Italic variation for SourceCodePro (fixes #271)
+
 ## v2.0.0
 
 ### New Features
