@@ -1,4 +1,5 @@
 _site/
+.jekyll-cache/
 .DS_Store
 temp-glyph-source-fonts/*
 temp/*
