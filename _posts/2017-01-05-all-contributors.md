@@ -15,6 +15,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 <div class="d-flex flex-row flex-wrap justify-content-center align-items-start center">
   <!-- do not change/fix the HTML indentation - it messes up the markdown rendering -->
+  <!-- UPDATE START -->
   <div markdown="1">
   [<img class="lzy_img" data-src="https://avatars0.githubusercontent.com/u/8083459?v=4" width="100px;"><br/><sub>Ryan L McIntyre</sub>](http://RyanLMcIntyre.com)<br/>
   [💻](https://github.com/ryanoasis/nerd-fonts/commits?author=ryanoasis)
@@ -207,4 +208,5 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
   <div markdown="1">
   [<img class="lzy_img" data-src="https://avatars0.githubusercontent.com/u/4249591?v=4" width="100px;"/><br /><sub><b>Chris Simpkins</b></sub>](https://github.com/chrissimpkins)<br />[💻](https://github.com/ryanoasis/nerd-fonts/commits?author=chrissimpkins "Code") [🐛](https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Achrissimpkins "Bug reports") [🤔](#ideas-chrissimpkins "Ideas, Planning, & Feedback") [👀](#review-chrissimpkins "Reviewed Pull Requests")
   </div>
+  <!-- UPDATE END -->
 </div>
