@@ -1,4 +1,4 @@
-Cascdia Code
+Cascadia Code
 ============
 
 Font creator
