@@ -14,7 +14,7 @@ page: font-downloads
   <div class="item">
       <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.unpatchedName }}.zip">
         <div class="download-icon"></div>
-        <img src="/assets/img/previews/{{ font.patchedName }} Nerd Font.svg" alt="{{ font.unpatchedName }}" title="Download {{ font.unpatchedName }}">
+        <img src="/assets/img/previews/{{ font.imagePreviewFont }}.svg" alt="{{ font.unpatchedName }}" title="Download {{ font.unpatchedName }}">
       </a>
       <ul>
         {% if font.unpatchedName != font.patchedName %}<li><strong>Reserved Font Name:</strong> {{ font.unpatchedName }}</li>{% endif %}
