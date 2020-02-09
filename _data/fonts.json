@@ -50,14 +50,14 @@
       "description": "dotted zero, compact lowercase characters"
     },
     {
-      "unpatchedName": "Cascadia Code",
+      "unpatchedName": "CascadiaCode",
       "patchedName": "Caskaydia Cove",
       "imagePreviewFont": "Caskaydia Cove Nerd Font",
       "linkPreviewFont": "cascadia-code",
       "description": "A fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal"
     },
     {
-      "unpatchedName": "IBMPlex",
+      "unpatchedName": "IBMPlexMono",
       "patchedName": "BlexMono",
       "imagePreviewFont": "BlexMono Nerd Font",
       "linkPreviewFont": false,
@@ -162,7 +162,7 @@
       "description": "symbols stand out from common text"
     },
     {
-      "unpatchedName": "iA Writer",
+      "unpatchedName": "iA-Writer",
       "patchedName": "iM Writing",
       "imagePreviewFont": "iM Writing Nerd Font",
       "linkPreviewFont": "ia-writer-mono",
@@ -302,8 +302,8 @@
       "description": "dotted zeros, distinguishable 1 and l, curved and straight character lines"
     },
     {
-      "unpatchedName": "Source Code Pro",
-      "patchedName": "Sauce Code Pro",
+      "unpatchedName": "SourceCodePro",
+      "patchedName": "SauceCodePro",
       "imagePreviewFont": "Sauce Code Pro Nerd Font",
       "linkPreviewFont": "source-code-pro",
       "description": "Monospaced font family for user interface and coding environments"
