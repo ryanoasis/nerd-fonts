@@ -5,13 +5,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   viewBox="0 -64 1024 1024"
    id="svg3839"
-   sodipodi:docname="kotlin.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   viewBox="0 -64 1024 1024"
+   version="1.1">
   <metadata
      id="metadata3845">
     <rdf:RDF>
@@ -20,38 +16,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs3843" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1850"
-     inkscape:window-height="1016"
-     id="namedview3841"
-     showgrid="false"
-     inkscape:zoom="0.5772864"
-     inkscape:cx="866.65679"
-     inkscape:cy="454.28888"
-     inkscape:window-x="1350"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3839" />
   <g
-     transform="matrix(0.80376941,0,0,-0.80376941,100.47006,808.08869)"
-     id="g3837">
+     id="g3837"
+     transform="matrix(0.80376941,0,0,-0.80376941,100.47006,808.08869)">
     <path
-       d="M 55,-64 538,427 1024,-64 Z M 0,960 H 512 L 0,427 Z m 572,0 h 452 L 0,-64 v 427 z"
+       style="fill:currentColor"
        id="path3835"
-       inkscape:connector-curvature="0"
-       style="fill:currentColor" />
+       d="M 55,-64 538,427 1024,-64 Z M 0,960 H 512 L 0,427 Z m 572,0 h 452 L 0,-64 v 427 z" />
   </g>
 </svg>
