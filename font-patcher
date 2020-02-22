@@ -105,8 +105,12 @@ class font_patcher:
         print("\nDone with Patch Sets, generating font...")
 
         # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
-        self.sourceFont.generate(self.args.outputdir + "/" + self.sourceFont.fullname + self.extension, flags=(str('opentype'), str('PfEd-comments')))
-        print("\nGenerated: {}".format(self.sourceFont.fullname))
+        if self.sourceFont.fullname != None:
+            self.sourceFont.generate(self.args.outputdir + "/" + self.sourceFont.fullname + self.extension, flags=(str('opentype'), str('PfEd-comments')))
+            print("\nGenerated: {}".format(self.sourceFont.fontname))
+        else:
+            self.sourceFont.generate(self.args.outputdir + "/" + self.sourceFont.cidfontname + self.extension, flags=(str('opentype'), str('PfEd-comments')))
+            print("\nGenerated: {}".format(self.sourceFont.fullname))
 
         if self.args.postprocess:
             subprocess.call([self.args.postprocess, self.args.outputdir + "/" + self.sourceFont.fullname + self.extension])
@@ -264,7 +268,11 @@ class font_patcher:
         familyname = fontname
 
         # fullname (filename) can always use long/verbose font name, even in windows
-        fullname = self.sourceFont.fullname + verboseAdditionalFontNameSuffix
+        if self.sourceFont.fullname != None:
+            fullname = self.sourceFont.fullname + verboseAdditionalFontNameSuffix
+        else:
+            fullname = self.sourceFont.cidfontname + verboseAdditionalFontNameSuffix
+
         fontname = fontname + additionalFontNameSuffix.replace(" ", "")
 
         # let us try to get the 'style' from the font info in sfnt_names and fallback to the
@@ -379,7 +387,10 @@ class font_patcher:
 
         # TODO version not being set for all font types (e.g. ttf)
         # print("Version was {}".format(sourceFont.version))
-        self.sourceFont.version += ";" + projectName + " " + version
+        if self.sourceFont.version != None:
+            self.sourceFont.version += ";" + projectName + " " + version
+        else:
+            self.sourceFont.version = str(self.sourceFont.cidversion) + ";" + projectName + " " + version
         # print("Version now is {}".format(sourceFont.version))
 
 
