@@ -15,7 +15,7 @@
 
 </div>
 
-**Nerd Fonts** é um projecto que adere um grande número de glifos (ícones) a tipos de letra desenhados para programadores. Estes glifos são provenientes de vários «tipos de letra icónicos», tais como: [Font Awesome ➶][font-awesome], [Devicons ➶][vorillaz-devicons], [Octicons ➶][octicons], [entre outros](#conjuntos-de-glifos).
+**Nerd Fonts** é um projeto que adere um grande número de glifos (ícones) a tipos de letra desenhados para programadores. Estes glifos são provenientes de vários «tipos de letra icónicos», tais como: [Font Awesome ➶][font-awesome], [Devicons ➶][vorillaz-devicons], [Octicons ➶][octicons], [entre outros](#conjuntos-de-glifos).
 
 O diagram Sankey mostra os conjuntos de glifos incluídos abaixo:
 
@@ -26,7 +26,7 @@ O diagram Sankey mostra os conjuntos de glifos incluídos abaixo:
 
 ## Avisos Importantes
 * Os caminhos dos ficheiros no *branch* `master` **não são** considerados estáveis. [Verifica as referências URI do teu repositório](#ficheiros-instáveis-no-branch-master).
-* Fazer clone deste repositório **não é** recomendado ([devido ao tamanho do repositório](#opção-5-dar-clone-ao-repositório)). Apenas deves dar clone ao repositório caso pretendas [contribuir para o desenvolvimento do projecto](#contribuir).
+* Fazer clone deste repositório **não é** recomendado ([devido ao tamanho do repositório](#opção-5-dar-clone-ao-repositório)). Apenas deves dar clone ao repositório caso pretendas [contribuir para o desenvolvimento do projeto](#contribuir).
 
 ## Índice de Conteúdo
 
@@ -54,7 +54,7 @@ O diagram Sankey mostra os conjuntos de glifos incluídos abaixo:
   * [**Outros bons tipos de letra para modificar**](#outros-bons-tipos-de-letra-para-modificar)
   * [**Contribuir**](#contribuir)
 
-[**Motivação do projecto**](#motivação-do-projecto)
+[**Motivação do projeto**](#motivação-do-projeto)
 
 **Informações Adicionais**
   * [**Ficheiros instáveis no *branch* `master`**](#ficheiros-instáveis-no-branch-master)
@@ -71,7 +71,7 @@ O diagram Sankey mostra os conjuntos de glifos incluídos abaixo:
 
 _Se tu..._
 
-  * `Opção 1.` queres **rapidamente** utilizar um **tipo de letra individual**, transfere-o do directório: [`patched-fonts/`](#tipos-de-letra)
+  * `Opção 1.` queres **rapidamente** utilizar um **tipo de letra individual**, transfere-o do diretório: [`patched-fonts/`](#tipos-de-letra)
   * `Opção 2.` queres transferir **uma família de tipos de letra** com variações (negrito, itálico, etc.) vê: [Transferir um ficheiro](#opção-2-transferência-do-ficheiro-de-lançamento)
   * `Opção 3.` queres **automatizar** a instalação ou utilizar um **executador** vê: [Execução de instalação](#opção-3-execução-de-instalação)
   * `Opção 4.` utilizas **macOS** e queres utilizar **Homebrew** vê: [Tipos de letras do Homebrew](#opção-4-tipos-de-letra-do-homebrew)
@@ -83,11 +83,11 @@ _Se tu..._
 ## Características
 * Um [executador de FontForge em Python](#font-patcher) para modificar qualquer tipo de letra
   * Inclui a opção de criar glifos **monoespaçados (de largura fixa)** _ou_ glifos de **largura dupla (não monoespaçados)**
-  * Para mais detalhes, vê a secção [**Modificador de tipo de letra**](#font-patcher)
+  * Para mais detalhes, vê a seção [**Modificador de tipo de letra**](#font-patcher)
 * Já existem **`50`** [tipos de letra modificados](#tipos-de-letra)
 * Mais de **`1,428,000`** combinações/variações únicas de tipos de letra modificados [(mais detalhes)](#combinações)
 * Cerca de **`2,600`** glifos/ícones combinados [(mais detalhes)](#combinações)
-  * Os actuais conjuntos de glifos incluem: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Antigamente [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+  * Os atuais conjuntos de glifos incluem: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Antigamente [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * Versões de glifos **monoespaçados (de largura fixa)** _ou_ glifos de **largura dupla (não monoespaçados)** para cada tipo de letra
   * Isto refere-se aos glifos do Nerd Font, não necessariamente ao tipo de letra
 * Um desenvolvedor/contribuidor criou um [executador em Unix Shell](#modifica-tudo) para modificar novamente todos os tipos de letra
@@ -239,7 +239,7 @@ brew cask install font-hack-nerd-font
 
 ### `Opção 5: Dar clone ao repositório`
 
-> Melhor opção para obter **controlo total**, **total** ou **maioritário** dos tipos de letra, ou para **contribuir** para o desenvolvimento do projecto.
+> Melhor opção para obter **controlo total**, **total** ou **maioritário** dos tipos de letra, ou para **contribuir** para o desenvolvimento do projeto.
 
 Dar clone a este repoitório **não é** necessário nem eficiente (devido ao grande tamanho do repositório) caso queiras apenas instalar um número limitado de tipos de letra.
 
@@ -274,10 +274,10 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 Os seguintes tipos de letra estão disponíveis nos [pacotes do AUR](https://aur.archlinux.org/) para Arch Linux:
 
 * [Nerd Fonts Complete (largua fixa)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete (largura simples) (desactualizado)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
+* [Nerd Fonts Complete (largura simples) (desatualizado)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
 * [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
-* [Nerd Fonts Git (desactualizado)](https://aur.archlinux.org/packages/nerd-fonts-git/)
+* [Nerd Fonts Git (desatualizado)](https://aur.archlinux.org/packages/nerd-fonts-git/)
 
 ### `Opção 8: Criar o teu tipo de letra`
 
@@ -288,7 +288,7 @@ Utiliza o executador de linha de comandos em Python fornecido para gerar um tipo
 Vê: [Modificador de tipo de letra](#font-patcher) para instruções de utilização
 
 * utiliza esta opção caso __não__ queiras utilizar um dos tipos de letra [já disponíveis](#tipos-de-letra)
-* depois de modificares, vais precisar de copiar o tipo de letra gerado para o directório de tipos de letra do teu sistema operativo
+* depois de modificares, vais precisar de copiar o tipo de letra gerado para o diretório de tipos de letra do teu sistema operativo
 
 
 <h2 align="center" id="font-patcher">
@@ -371,7 +371,7 @@ argumentos opcionais:
   -ext [EXTENSION], --extension [EXTENSION]
                         Alterar o tipo de ficheiro de fonte para criar (por exemplo, ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        O directório para enviar o ficheiro de tipo de letra modificado para
+                        O diretório para enviar o ficheiro de tipo de letra modificado para
 ```
 
 #### Exemplos
@@ -393,7 +393,7 @@ argumentos opcionais:
 
 * para contribuidor ou desenvolvedor, utiliza
 
-* modifica novamente **todos** os tipos de letra no directório por modificar:
+* modifica novamente **todos** os tipos de letra no diretório por modificar:
   
 ```
 ./gotta-patch-em-all-font-patcher\!.sh
@@ -431,7 +431,7 @@ Utiliza o *branch* **release** e _não_ o branch ~~master~~, visto que os camihn
  * [Dank Mono][dank] (paga)
 
 
-## Motivação do projecto
+## Motivação do projeto
 
 Vê [Wiki: Project Purpose][wiki-project-purpose]
 
