@@ -66,7 +66,7 @@ El siguiente diagrama Sankey muestra los conjuntos de glifos incluidos en la act
 
 
 ## TL;DR
-  Nerd Fonts toma algunas fuentes populares de desarrollo y les añade una cantidad de Glifos.
+  Nerd Fonts toma algunas fuentes populares de desarrollo y les añade una cantidad de glifos.
   También hay un [parchador de fuentes](#font-patcher) disponible si tu fuente preferida no ha sido parchada previamente.
   Para información de más alto nivel revisa la [wiki (en inglés)][wiki]. Si estás buscando el plugin de Vim ve a [VimDevIcons ➶][vim-devicons].
 
@@ -77,7 +77,7 @@ _Si tu..._
   * `Opción 1.` quieres descargar **rápidamente** una **fuente individual**, descárgala desde [el directorio `patched-fonts/`](#patched-fonts)
   * `Opción 2.` quieres descargar un paquete de variaciones de una **familia de fuentes** (negrita, itálica, etc.), ve a [descargar un paquete](#option-2-release-archive-download)
   * `Opción 3.` quieres **automatizar** la instalación o usar esto en un **script**, ve a [Script de Instalación](#option-3-install-script)
-  * `Opción 4.` estas en **macOS** y quiero usar el **Homebrew**, ve a [Fuentes Homebrew](#option-4-homebrew-fonts)
+  * `Opción 4.` estas en **macOS** y quieres usar el **Homebrew**, ve a [Fuentes Homebrew](#option-4-homebrew-fonts)
   * `Opción 5.` quieres **control completo**, entonces ve a [clonar el repo](#option-5-clone-the-repo)
   * `Opción 6.` quieres usar el **comando `curl`** o usar en **scripts**, ve a [Descarga Ad Hoc con Curl](#option-6-ad-hoc-curl-download)
   * `Opción 7.` estas en **Arch Linux** y quieres usar **paquetes AUR**, ve a [Repositorios de Usuarios AUR No Oficiales](#option-7-unofficial-arch-user-repository-aur)
@@ -308,7 +308,7 @@ Parcha la fuente de tu preferencia para usar los [VimDevIcons ➶][vim-devicons]
 ./font-patcher RUTA_A_LA_FUENTE
 ```
 
-* Uso alternativo: Ejecutar el parchador con el binario de FontForge usando el parámetro script:
+* Uso alternativo: Ejecutar el parchador con el binario de FontForge usando el parámetro `-script`:
 
 ```
 ./fontforge -script font-patcher RUTA_A_LA_FUENTE

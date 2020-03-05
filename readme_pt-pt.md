@@ -15,169 +15,166 @@
 
 </div>
 
-**Nerd Fonts** é um projeto que adiciona um grande número de glifos (ícones) a tipos de letra desenhados para programadores. Estes glifos são provenientes de vários 'tipos de letra icónicos', tais como: [Font Awesome ➶][font-awesome], [Devicons ➶][vorillaz-devicons], [Octicons ➶][octicons], [entre outros](#glyph-sets).
+**Nerd Fonts** é um projeto que adere um grande número de glifos (ícones) a tipos de letra desenhados para programadores. Estes glifos são provenientes de vários «tipos de letra icónicos», tais como: [Font Awesome ➶][font-awesome], [Devicons ➶][vorillaz-devicons], [Octicons ➶][octicons], [entre outros](#conjuntos-de-glifos).
 
-O diagram Sankey abaixo mostra os conjuntos de glifos incluídos:
+O diagram Sankey mostra os conjuntos de glifos incluídos abaixo:
 
 <p align="center">
   <img src="images/sankey-glyphs-combined-diagram.svg" alt="@SankeyMATIC Diagrama" />
 </p>
-<sub><i>Diagrama criado usando <a href="http://sankeymatic.com/" title="SankeyMATIC (BETA): Um construtor de diagramas Sankey para todos">@SankeyMATIC</a></i></sub>
-
+<sub><i>Diagrama criado utilizando <a href="http://sankeymatic.com/" title="SankeyMATIC (BETA): Um construtor de diagramas Sankey para todos">@SankeyMATIC</a></i></sub>.
 
 ## Avisos Importantes
-* Os caminhos dos ficheiros no branch `master` **não são** considerados estáveis. [Verifica as referências URI do teu repositório](#unstable-file-paths)
-* Fazer clone deste repositório **não é** recomendado ([devido ao tamanho do repo](#opção-5-dar-clone-ao-repositório)). Apenas deves dar clone ao repositório caso pretendas [contribuir para o desenvolvimento do projeto](#contributing)
+* Os caminhos dos ficheiros no *branch* `master` **não são** considerados estáveis. [Verifica as referências URI do teu repositório](#ficheiros-instáveis-no-branch-master).
+* Fazer clone deste repositório **não é** recomendado ([devido ao tamanho do repositório](#opção-5-dar-clone-ao-repositório)). Apenas deves dar clone ao repositório caso pretendas [contribuir para o desenvolvimento do projeto](#contribuir).
 
-
-## Índice de conteúdo
+## Índice de Conteúdo
 
 [**TL;DR**](#tldr)
 
 [**Opções de instalação**](#opções-de-instalação)
-  * [**1 - Manualmente**](#opção-1-baixar-e-instalar-manualmente)
-  * [**2 - Download do Arquivo de Release**](#opção-2-download-do-arquivo-de-release)
-  * [**3 - Script de instalação**](#opção-3-script-de-instalação)
-  * [**4 - Homebrew Fonts (macOS (OS X))**](#opção-4-homebrew-fonts)
+  * [**1 - Manualmente**](#opção-1-transferir-e-instalar-manualmente)
+  * [**2 - Transferência do ficheiro de lançamento**](#opção-2-transferência-do-ficheiro-de-lançamento)
+  * [**3 - Execução de instalação**](#opção-3-execução-de-instalação)
+  * [**4 - Tipos de letras do Homebrew (macOS (OS X))**](#opção-4-tipos-de-letra-do-homebrew)
   * [**5 - Dar clone ao repositório**](#opção-5-dar-clone-ao-repositório)
-  * [**6 - Ad Hoc Curl Download**](#opção-6-ad-hoc-curl-download)
-  * [**7 - Arch User Repository (AUR) Não Oficial (Arch Linux)**](#opção-7-arch-user-repository-aur-não-oficial)
-  * [**8 - Criar o teu Tipo de Letra**](#opção-8-criar-o-teu-tipo-de-letra)
+  * [**6 - Transferir *ad hoc* com `curl`**](#opção-6-transferir-ad-hoc-com-curl)
+  * [**7 - Repositório do Utilizador do Arch (AUR) não-oficial (Arch Linux)**](#opção-7-repositório-do-utilizador-do-arch-aur-não-oficial-arch-linux)
+  * [**8 - Criar o teu tipo de letra**](#opção-8-criar-o-teu-tipo-de-letra)
 
 [**Características**](#características)
-  * [**Conjuntos de Glifos/Ícones**](#conjuntos-de-glifos)
-  * [**Tipo de Letra modificados**](#tipos-de-letra)
+  * [**Conjuntos de glifos/ícones**](#conjuntos-de-glifos)
+  * [**Tipo de letra modificados**](#tipos-de-letra)
   * [**Combinações**](#combinações)
-  * [**Modificador de Tipo de Letra**](#font-patcher)
+  * [**Modificador de tipo de letra**](#font-patcher)
 
 [**Desenvolvedor / Contribuidor**](#font-patcher)
-  * [**Modificador de Tipo de Letra**](#font-patcher)
-  * [**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all-font-patcher)
-  * [**Outros bons Tipos de Letra para modificar**](#outros-bons-tipos-de-letra-para-modificar)
+  * [**Modificador de tipo de letra**](#font-patcher)
+  * [**Modificador de fontes– «Modifica tudo!»**](#modifica-tudo)
+  * [**Outros bons tipos de letra para modificar**](#outros-bons-tipos-de-letra-para-modificar)
   * [**Contribuir**](#contribuir)
 
 [**Motivação do projeto**](#motivação-do-projeto)
 
 **Informações Adicionais**
-  * [**Ficheiros instáveis no branch master**](#ficheiros-instáveis-no-branch-master)
-  * [**Histórico de Alterações**](#histórico-de-alterações)
+  * [**Ficheiros instáveis no *branch* `master`**](#ficheiros-instáveis-no-branch-master)
+  * [**Histórico de alterações**](#histórico-de-alterações)
   * [**Licença**](#licença)
 
 
 ## TL;DR
-  Nerd Fonts adiciona um conjunto de glifos a tipos de letra populares feitos para programação.
-  Existe também um [modificador de tipo de letra](#font-patcher), caso o tipo de letra que queiras usar ainda não esteja modificado.
-  Para mais informação lê a [wiki][wiki]. Caso estejas à procura do plugin para Vim, vê: [VimDevIcons ➶][vim-devicons].
+  Nerd Fonts adere um conjunto de glifos a tipos de letra populares feitos para programação.
+  Existe também um [modificador de tipo de letra](#font-patcher), caso o tipo de letra que queiras utilizar ainda não esteja modificado.
+  Para mais informação lê a [wiki][wiki]. Caso estejas à procura do *plugin* para Vim, vê: [VimDevIcons ➶][vim-devicons].
 
-### Diferentes opções para baixar os Tipos de Letra
+### Diferentes opções para transferir os tipos de letra
 
 _Se tu..._
 
-  * `Opção 1.` queres **rapidamente** utilizador um **tipo de letra individual**, baixa-o do diretório: [`patched-fonts/` directory](#tipos-de-letra)
-  * `Opção 2.` queres baixar **uma família de tipos de letra** com variações (negrito, itálico, etc.) vê: [baixar um arquivo](#opção-2-download-do-arquivo-de-release)
-  * `Opção 3.` queres **automatizar** a instalação ou usar um **script** vê: [Script de instalação](#opção-3-script-de-instalação)
-  * `Opção 4.` usas **macOS** e queres usar **Homebrew** vê: [Homebrew Fonts](#option-4-homebrew-fonts)
-  * `Opção 5.` queres **controlo total**, então vê: [dar clone ao repositório](#opção-5-dar-clone-ao-repositório)
-  * `Opção 6.` queres usar o **comando `curl`** ou usar **scripts** vê: [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
-  * `Opção 7.` usas **Arch Linux** e queres usar o **AUR packages** vê: [Arch User Repositories Não Oficiais](#opção-7-arch-user-repository-aur-não-oficial)
-  * `Opção 8.` queres modificar o teu tipo de letra vê: [Modificador de Tipo de Letra](#opção-8-criar-o-teu-tipo-de-letra)
+  * `Opção 1.` queres **rapidamente** utilizar um **tipo de letra individual**, transfere-o do diretório: [`patched-fonts/`](#tipos-de-letra)
+  * `Opção 2.` queres transferir **uma família de tipos de letra** com variações (negrito, itálico, etc.) vê: [Transferir um ficheiro](#opção-2-transferência-do-ficheiro-de-lançamento)
+  * `Opção 3.` queres **automatizar** a instalação ou utilizar um **executador** vê: [Execução de instalação](#opção-3-execução-de-instalação)
+  * `Opção 4.` utilizas **macOS** e queres utilizar **Homebrew** vê: [Tipos de letras do Homebrew](#opção-4-tipos-de-letra-do-homebrew)
+  * `Opção 5.` queres **controlo total**, então vê: [Dar clone ao repositório](#opção-5-dar-clone-ao-repositório)
+  * `Opção 6.` queres utilizar o **comando `curl`** ou **executadores** vê: [Transferir *ad hoc* com `curl`](#opção-6-transferir-ad-hoc-com-curl)
+  * `Opção 7.` utilizas **Arch Linux** e queres utilizar o **AUR packages** vê: [Repositório do Utilizador do Arch (AUR) não-oficial](#opção-7-repositório-do-utilizador-do-arch-aur-não-oficial-arch-linux)
+  * `Opção 8.` queres modificar o teu tipo de letra vê: [Modificador de tipo de letra](#opção-8-criar-o-teu-tipo-de-letra)
 
 ## Características
-* Um [script de Python FontForge](#font-patcher) para modificar qualquer tipo de letra
-  * Incluí a opção de criar glifos **Monospaced (fixed-pitch, fixed-width)** _ou_ **double-width (non-monospaced)**
-  * Para mais detalhes vê a secção [**Modificador de Tipos de Letra**](#font-patcher)
+* Um [executador de FontForge em Python](#font-patcher) para modificar qualquer tipo de letra
+  * Inclui a opção de criar glifos **monoespaçados (de largura fixa)** _ou_ glifos de **largura dupla (não monoespaçados)**
+  * Para mais detalhes, vê a seção [**Modificador de tipo de letra**](#font-patcher)
 * Já existem **`50`** [tipos de letra modificados](#tipos-de-letra)
-* Mais de **`1,428,000`** combinações/variações únicas de tipos de letra modificados [(mais detalhes)](#combinations)
-* Cerca de **`2,600`** glifos/ícones combinados [(mais detalhes)](#combinations)
-  * Os atuais conjuntos de glifos incluem:: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Antigamente [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
-* Versões de glifos **Monospaced (fixed-pitch, fixed-width)** _ou_ **double-width (non-monospaced)** para cada tipo de letra
-  * Isto refere-se aos glifos do Nerd Font, não necessariamente ao Tipo de Letra
-* Um Desenvolvedor/Contribuidor criou um [bash script](#gotta-patch-em-all-font-patcher) para modificar novamente todos os tipos de letra
+* Mais de **`1,428,000`** combinações/variações únicas de tipos de letra modificados [(mais detalhes)](#combinações)
+* Cerca de **`2,600`** glifos/ícones combinados [(mais detalhes)](#combinações)
+  * Os atuais conjuntos de glifos incluem: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Antigamente [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+* Versões de glifos **monoespaçados (de largura fixa)** _ou_ glifos de **largura dupla (não monoespaçados)** para cada tipo de letra
+  * Isto refere-se aos glifos do Nerd Font, não necessariamente ao tipo de letra
+* Um desenvolvedor/contribuidor criou um [executador em Unix Shell](#modifica-tudo) para modificar novamente todos os tipos de letra
 
+## Conjuntos de glifos
 
-## Conjuntos de Glifos
+:mag: :mag: Agora podes procurar facilmente por glifos no [NerdFonts.com][Cheat Sheet] através da [Cheat Sheet][]
 
-:mag: :mag: Agora podes procurar facilmente por glifos em [NerdFonts.com][Cheat Sheet] através da [Cheat Sheet][]
+Vê [Wiki: Conjuntos de glifos e pontos de código para obteres mais detalhes][wiki-glyph-sets-codepoints]
 
-Vê [Wiki: Conjuntos de Glifos e Codepoints para obteres mais detalhes][wiki-glyph-sets-codepoints]
+### Nomes dos ícones em Unix Shell
 
-### Nomes dos ícones na shell
+See [Wiki: Nomes dos ícones em Unix Shell][wiki-icon-names-in-shell]
 
-See [Wiki: Nomes dos ícones na shell][wiki-icon-names-in-shell]
+## Tipos de letra
 
+| Nome do tipo de letra                             | Nome do tipo de letra e repositório | \*RFN | Tamanho EM | Estado           |
+| :------------------------------------------------ | :---------------------------------- | :---- | :--------- | :--------------- |
+| [3270 Nerd Font][p-3270]                          | [3270][f-3270]                      | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Agave][p-agave]                                  | [Agave][f-agave]                    | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]            | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Arimo][p-arimo]                                  | [Arimo][f-arimo]                    | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Aurulent Sans Mono Nerd Font][p-aurulent]        |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [BigBlueTerminal][p-bigblueterm]                  |                                     | NÃO   | 1200       | ![w] ![m2] ![l]  |
+| [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Blex*][p-blex]                                   | [IBM Plex Mono][f-ibm-plex]         | SIM   | 1000       | ![w] ![m2] ![l]  |
+| [Caskaydia Cove Nerd Font*][p-cascadia]           | [Cascadia Code][f-cascadia]         | SIM   | 2048       | ![w] ![m2] ![l]  |
+| [Code New Roman Nerd Font][p-code-nr]             |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]    | NÃO   | 1024       | ![w] ![m2] ![l]  |
+| [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Droid Sans Mono Nerd Font][p-droid]              |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]            | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Fira Code Nerd Font][p-fira-code]                | [Fira Code][f-fira-code]            | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Fira Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]                 | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Go Mono Nerd Font][p-go-mono]                    | [Go-Mono][f-go-mono]                | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2],[Gohu][f-gohu]  | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                      | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Hasklug Nerd Font*][p-hasklig]                   | [Hasklig][f-hasklig]                | SIM   | 1000       | ![w] ![m2] ![l]  |
+| [Heavy Data Mono Nerd Font][p-heavy-data]         |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Hermut Nerd Font][p-hermit]                      |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [iM-Writing*][p-im-writing]                       | [iA-Writer][f-ia-writer]            | SIM   | 1000       | ![w] ![m2] ![l]  |
+| [Inconsolata Nerd Font][p-inconsolata]            |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                | NÃO   | 1000       | [#83][s-iosevka] |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]  | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Lekton Nerd Font][p-lekton]                      |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Literation Mono Nerd Font*][p-liberation]        | [Liberation][f-liberation]          | SIM   | 2048       | ![w] ![m2] ![l]  |
+| [Meslo Nerd Font][p-meslo]                        |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Monofur Nerd Font][p-monofur]                    |                                     | NÃO   | 2400       | ![w] ![m2] ![l]  |
+| [Monoid Nerd Font][p-monoid]                      |                                     | NÃO   | 1536       | ![w] ![m2] ![l]  |
+| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]              | NÃO   | 1024       | ![w] ![m2] ![l]  |
+| [M+ (MPlus) Nerd Font][p-mplus]                   |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Noto][p-noto]                                    |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [OpenDyslexic][p-opendyslexic]                    |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Overpass][p-overpass]                            |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [ProFont (Windows tweaked) Nerd Font][p-profont]  |                                     | NÃO   | 1200       | ![w] ![m2] ![l]  |
+| [ProFont (x11) Nerd Font][p-profont]              |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [ProggyClean Nerd Font][p-proggy-clean]           |                                     | NÃO   | 2048       | Imperfeito       |
+| [Roboto Mono][p-roboto]                           |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]                  | SIM   | 1000       | ![w] ![m2] ![l]  |
+| [Shure Tech Mono Nerd Font*][p-share-tech-mono]   | [Share Tech Mono][f-share]          | SIM   | 1000       | ![w] ![m2] ![l]  |
+| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]               | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Terminess Nerd Font*][p-terminus]                | [Terminus Font][f-terminus]         | SIM   | 1000       | ![w] ![m2] ![l]  |
+| [Tinos][p-tinos]                                  |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [Ubuntu Nerd Font][p-ubuntu]                      |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                                | NÃO   | 1000       | ![w] ![m2] ![l]  |
+| [Victor Mono][p-victor]                           | [Victor Mono][f-victor]             | NÃO   | 1000       | ![w] ![m2] ![l]  |
 
-## Tipos de Letra
-
-| Nome do Tipo de Letra                                | Nome do Tipo de Letra e Repositório          |\*RFN | Tamanho EM | Estado            |
-|:--------------------------------------------------|:----------------------------------|:-----|:--------|:------------------|
-| [3270 Nerd Font][p-3270]                          | [3270][f-3270]                    | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Agave][p-agave]                                  | [Agave][f-agave]                  | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]          | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Arimo][p-arimo]                                  | [Arimo][f-arimo]                  | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Aurulent Sans Mono Nerd Font][p-aurulent]        |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [BigBlueTerminal][p-bigblueterm]                  |                                   | NÃO   | 1200    | ![w] ![m2] ![l]   |
-| [Bitstream Vera Sans Mono Nerd Font][p-bitstream] |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Blex*][p-blex]                                   | [IBM Plex Mono][f-ibm-plex]       | SIM  | 1000    | ![w] ![m2] ![l]   |
-| [Caskaydia Cove Nerd Font*][p-cascadia]           | [Cascadia Code][f-cascadia]       | SIM  | 2048    | ![w] ![m2] ![l]   |
-| [Code New Roman Nerd Font][p-code-nr]             |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]  | NÃO   | 1024    | ![w] ![m2] ![l]   |
-| [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Droid Sans Mono Nerd Font][p-droid]              |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]          | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Fira Code Nerd Font][p-fira-code]                | [Fira Code][f-fira-code]          | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Fira Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]               | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Go Mono Nerd Font][p-go-mono]                    | [Go-Mono][f-go-mono]              | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2],[Gohu][f-gohu]| NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                    | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Hasklug Nerd Font*][p-hasklig]                   | [Hasklig][f-hasklig]              | SIM  | 1000    | ![w] ![m2] ![l]   |
-| [Heavy Data Mono Nerd Font][p-heavy-data]         |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Hermut Nerd Font][p-hermit]                      |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [iM-Writing*][p-im-writing]                       | [iA-Writer][f-ia-writer]          | SIM  | 1000    | ![w] ![m2] ![l]   |
-| [Inconsolata Nerd Font][p-inconsolata]            |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              | NÃO   | 1000    | [#83][s-iosevka]  |
-| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Lekton Nerd Font][p-lekton]                      |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Literation Mono Nerd Font*][p-liberation]        | [Liberation][f-liberation]        | SIM  | 2048    | ![w] ![m2] ![l]   |
-| [Meslo Nerd Font][p-meslo]                        |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Monofur Nerd Font][p-monofur]                    |                                   | NÃO   | 2400    | ![w] ![m2] ![l]   |
-| [Monoid Nerd Font][p-monoid]                      |                                   | NÃO   | 1536    | ![w] ![m2] ![l]   |
-| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | NÃO   | 1024    | ![w] ![m2] ![l]   |
-| [M+ (MPlus) Nerd Font][p-mplus]                   |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Noto][p-noto]                                    |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [OpenDyslexic][p-opendyslexic]                    |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Overpass][p-overpass]                            |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [ProFont (Windows tweaked) Nerd Font][p-profont]  |                                   | NÃO   | 1200    | ![w] ![m2] ![l]   |
-| [ProFont (x11) Nerd Font][p-profont]              |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [ProggyClean Nerd Font][p-proggy-clean]           |                                   | NÃO   | 2048    | Imperfeito        |
-| [Roboto Mono][p-roboto]                           |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]                | SIM  | 1000    | ![w] ![m2] ![l]   |
-| [Shure Tech Mono Nerd Font*][p-share-tech-mono]   | [Share Tech Mono][f-share]        | SIM  | 1000    | ![w] ![m2] ![l]   |
-| [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]             | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Terminess Nerd Font*][p-terminus]                | [Terminus Font][f-terminus]       | SIM  | 1000    | ![w] ![m2] ![l]   |
-| [Tinos][p-tinos]                                  |                                   | NÃO   | 2048    | ![w] ![m2] ![l]   |
-| [Ubuntu Nerd Font][p-ubuntu]                      |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Ubuntu Mono Nerd Font][p-ubuntu-mono]            |                                   | NÃO   | 1000    | ![w] ![m2] ![l]   |
-| [Victor Mono][p-victor]                           | [Victor Mono][f-victor]           | NÃO   | 1000    | ![w] ![m2] ![l]   |
-
-<sub>_*RFN = Nome reservado do Tipo de Letra_</sub>
+<sub>_*RFN = Nome reservado do tipo de letra_</sub>
 
 ## Combinações
 
 - Há mais de **`1,428,000`** variações/combinações únicas (Power Set) de tipos de letra modificados:
-  - **`50`** tipos de letra modificados
+  - **`50`** tipos de letra modificado
   - **`697`** famílias de tipo de letra modificadas
-  - **`2,788`** variações/combinações 'completas'
+  - **`2,788`** variações/combinações «completas»
   - **`1,428,110`** variações/combinações _possíveis_
   - **`1,430,898`** combinações totais calculadas (2,788 + 1,428,110)
-- As combinações para cada tipo de letra são quaisquer combinações de [Variações](#variations)
+- As combinações para cada tipo de letra são quaisquer combinações de [Variações](#variações)
 
 ### Variações
 
-- não são usados parâmetros (usa por definição **Seti-UI + Custom** e **[Devicons][vorillaz-devicons]**)
-- glifos com largura **dupla _(variable/proportional)_** ou **normal _(fixed/monospaced)_**
+- não são utilizados parâmetros (utiliza por definição **Seti-UI + Custom** e **[Devicons][vorillaz-devicons]**)
+
+- glifos de largura **dupla _(variável/proportional)_** ou **normal _(fixo/monoespaçado)_**
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
 - [Material Design Icons][font-material-design-icons]
@@ -192,28 +189,28 @@ See [Wiki: Nomes dos ícones na shell][wiki-icon-names-in-shell]
 
 ## Opções de instalação
 
-### `Opção 1: Baixar e Instalar Manualmente`
+### `Opção 1: Transferir e instalar Manualmente`
 
 > Melhor opção para obter **rapidamente** um **tipo de letra** específico.
 
-Baixa o [tipo de letra](#tipos-de-letra) modificado que quiseres
+Transfere o [tipo de letra](#tipos-de-letra) modificado que quiseres
 
-### `Opção 2: Download do Arquivo de Release`
+### `Opção 2: Transferência do Ficheiro de Lançamento`
 
-> Melhor opção caso queiras um **arquivo** ou a família completa do **tipo de letra** com as diferentes variações (Negrito, Itálico, etc.).
+> Melhor opção caso queiras um **ficheiro** ou a família completa do **tipo de letra** com as diferentes variações (negrito, itálico, etc.).
 
-Os tipos de letra estão disponíveis como packages na [última versão](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+Os tipos de letra estão disponíveis como pacotes na [última versão](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 
-### `Opção 3: Script de Instalação`
+### `Opção 3: Execução de instalação`
 
-> Melhor opção caso queiras **automatizar** a instalção ou usar em **scripts**.
+> Melhor opção caso queiras **automatizar** a instalção ou utilizar em **executadores**.
 
 _Nota_: Apenas para Linux & macOS (OS X)
 _Nota_: Por agora, **implica dar clone** do repositório
 
 #### Todos os tipos de letra:
 
-* Instala todos os tipos de letra modificados (_Atenção: Isto são muitos tipos de letra, ocupando assim muito espaço do disco_)
+* Instala todos os tipos de letra modificados (_Atenção: São muitos tipos de letra, ocupando assim muito espaço do disco_)
 
 ```sh
 ./install.sh
@@ -229,9 +226,9 @@ _Nota_: Por agora, **implica dar clone** do repositório
 ./install.sh HeavyData
 ```
 
-### `Opção 4: Homebrew Fonts`
+### `Opção 4: Tipos de Letra do Homebrew`
 
-> Melhor opção caso uses **macOS** e queres usar **Homebrew**.
+> Melhor opção caso utilizes **macOS** e queres utilizar **Homebrew**.
 
 Todos os tipos de letra estão disponíveis através de [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) para macOS (OS X)
 
@@ -246,14 +243,14 @@ brew cask install font-hack-nerd-font
 
 Dar clone a este repoitório **não é** necessário nem eficiente (devido ao grande tamanho do repositório) caso queiras apenas instalar um número limitado de tipos de letra.
 
-No entanto, se quiseres dar clone ao repositório garante que fazes um  _shallow_ clone:
+No entanto, se quiseres dar clone ao repositório garante que fazes um clone *superficial*:
 ```sh
 git clone --depth 1
 ```
 
-### `Opção 6: Ad Hoc Curl Download`
+### `Opção 6: Transferir ad hoc com curl`
 
-> Caso queiras usar o **comando `curl`** ou usar em **scripts**.
+> Caso queiras utilizar o **comando `curl`** ou utilizar em **executadores**.
 
 #### Linux
 
@@ -270,27 +267,27 @@ _Note:_ caminhos alternativos deprecados: `~/.fonts`
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Opção 7: Arch User Repository (AUR) Não Oficial`
+### `Opção 7: Repositório do Utilizador do Arch (AUR) não-oficial (Arch Linux`
 
-> Opção for **Arch Linux** and queresing to use **AUR packages**.
+> E a opção para utilizadores de **Arch Linux** que querem utilizar os **pacotes do AUR**.
 
-Os seguintes tipos de letra estão disponíveis no [AUR packages](https://aur.archlinux.org/) para Arch Linux:
+Os seguintes tipos de letra estão disponíveis nos [pacotes do AUR](https://aur.archlinux.org/) para Arch Linux:
 
-* [Nerd Fonts Complete (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete (single-width) (desatualizado)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
+* [Nerd Fonts Complete (largua fixa)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+* [Nerd Fonts Complete (largura simples) (desatualizado)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
 * [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
 * [Nerd Fonts Git (desatualizado)](https://aur.archlinux.org/packages/nerd-fonts-git/)
 
-### `Opção 8: Criar o teu Tipo de Letra`
+### `Opção 8: Criar o teu tipo de letra`
 
-> A opção a usar caso queiras **modificar** o **teu tipo de letra** or **costumizar** por completo um tipo de letra já modificado.
+> A opção a utilizar caso queiras **modificar** o **teu tipo de letra** or **personalizar** por completo um tipo de letra já modificado.
 
-Usa o script de linha de comandos em Python fornecido para gerar um tipo de letra modificado com glifos através de um tipo de letra teu
+Utiliza o executador de linha de comandos em Python fornecido para gerar um tipo de letra modificado com glifos através dum tipo de letra teu
 
-Vê: [Modificador de Tipo de Letra](#font-patcher) para instruções de uso
+Vê: [Modificador de tipo de letra](#font-patcher) para instruções de utilização
 
-* usa esta opção caso __não__ queiras utilizar um dos tipos de letra [já disponíveis](#tipos-de-letra)
+* utiliza esta opção caso __não__ queiras utilizar um dos tipos de letra [já disponíveis](#tipos-de-letra)
 * depois de modificares, vais precisar de copiar o tipo de letra gerado para o diretório de tipos de letra do teu sistema operativo
 
 
@@ -299,8 +296,8 @@ Vê: [Modificador de Tipo de Letra](#font-patcher) para instruções de uso
 </h2>
 
 Modificar o tipo de letra à tua escolha com [VimDevIcons ➶][vim-devicons]:
-* requer: Python 2 (ou Python 3), o package `python-fontforge` (versão `20141231` ou mais recente, vê
-  as [instruções de instalação (inglês)](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
+* requer: Python 2 (ou Python 3), o pacote `python-fontforge` (versão `20141231` ou mais recente, vê
+  as [instruções de instalação (em inglês)](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * método alternativo para macOS: `brew install fontforge`
 * Utilização:
 
@@ -308,7 +305,7 @@ Modificar o tipo de letra à tua escolha com [VimDevIcons ➶][vim-devicons]:
 ./font-patcher CAMINHO_PARA_O_TIPO_DE_LETRA
 ```
 
-* Utilização alternativa: Executa o modificador com o binário da FontForge e o parâmetro 'script':
+* Utilização alternativa: Executa o modificador com o binário de FontForge utilizando parâmetro `-script`:
 
 ```
 ./fontforge -script font-patcher CAMINHO_PARA_O_TIPO_DE_LETRA
@@ -326,58 +323,58 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
                     [-ext [EXTENSION]] [-out [OUTPUTDIR]]
                     font
 
-Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
+Modificador de Fontes Nerd Fonts: modifica uma determinada fonte com glifos relacionados à programação e ao desenvolvimento
 
 * Website: https://www.nerdfonts.com
-* Version: 2.0.0
-* Development Website: https://github.com/ryanoasis/nerd-fonts
-* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
+* Versão: 2.0.0
+* Website do desenvolvimento: https://github.com/ryanoasis/nerd-fonts
+* Histórico de alterações: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
-positional arguments:
-  font                  The path to the font to patch (e.g., Inconsolata.otf)
+argumentos posicionais:
+  font                   Caminho para a fonte a ser modificada (por exemplo, Inconsolata.otf)
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -v, --version         show program's version number and exit
+argumentos opcionais:
+  -h, --help            mostrar esta mensagem de ajuda e sair
+  -v, --version         mostrar o número da versão do programa e sair
   -s, --mono, --use-single-width-glyphs
-                        Whether to generate the glyphs as single-width not double-width (default is double-width)
+                        Se os glifos devem ser gerados como largura simples e não largura dupla (o padrão é largura dupla)
   -l, --adjust-line-height
-                        Whether to adjust line heights (attempt to center powerline separators more evenly)
+                        Se a altura da linha deve ser ajustada (tentar centralizar os separadores de powerline mais uniformemente)
   -q, --quiet, --shutup
-                        Do not generate verbose output
-  -w, --windows         Limit the internal font name to 31 characters (for Windows compatibility)
-  -c, --complete        Add all available Glyphs
-  --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
+                        Não gerar saída de detalhe
+  -w, --windows         Limitar o nome da fonte interna a 31 caracteres (para compatibilidade com o Windows)
+  -c, --complete        Aderir todos os glifos disponíveis
+  --fontawesome         Aderir os glifos do Font Awesome (http://fontawesome.io/)
   --fontawesomeextension
-                        Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
+                        Aderir os glifos do Font Awesome Extension (https://andrelzgava.github.io/font-awesome-extension/)
   --fontlinux, --fontlogos
-                        Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)
-  --octicons            Add Octicons Glyphs (https://octicons.github.com)
-  --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
-  --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
-  --powerline           Add Powerline Glyphs
-  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
+                        Aderir os glifos do Font Linux e doutros glifos de código-aberto (https://github.com/Lukas-W/font-logos)
+  --octicons            Aderir os glifos do Octicons (https://octicons.github.com)
+  --powersymbols        Aderir os glifos do IEC Power Symbols (https://unicodepowersymbol.com/)
+  --pomicons            Aderir os glifos do Pomicon (https://github.com/gabrielelana/pomicons)
+  --powerline           Aderir os glifos do Powerline
+  --powerlineextra      Aderir os glifos do Powerline (https://github.com/ryanoasis/powerline-extra-symbols)
   --material, --materialdesignicons, --mdi
-                        Add Material Design Icons (https://github.com/templarian/MaterialDesign)
+                        Aderir os ícones do Material Design (https://github.com/templarian/MaterialDesign)
   --weather, --weathericons
-                        Add Weather Icons (https://github.com/erikflowers/weather-icons)
-  --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
+                        Aderir os ícones do Weather (https://github.com/erikflowers/weather-icons)
+  --custom [CUSTOM]     Especificar um tipo de letra de símbolos personalizada. Todos os novos glifos serão copiados, sem escala aplicada.
   --postprocess [POSTPROCESS]
-                        Specify a Script for Post Processing
+                        Especificar um executador para pós-processador
   --removeligs, --removeligatures
-                        Removes ligatures specified in JSON configuration file
+                        Remove as ligaduras especificadas no ficheiro de configuração JSON
   --configfile [CONFIGFILE]
-                        Specify a file path for JSON configuration file (see sample: src/config.sample.json)
-  --progressbars        Show percentage completion progress bars per Glyph Set
-  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
-  --careful             Do not overwrite existing glyphs if detected
+                        Especificar um caminho para o arquivo de configuração JSON (vê a amostra: src/config.sample.json)
+  --progressbars        Mostrar barras de progresso de conclusão percentual por Glyph Set
+  --no-progressbars     Não mostrar barras de progresso de conclusão percentual por Glyph Set
+  --careful             Não substituir os glifos existentes se detectados
   -ext [EXTENSION], --extension [EXTENSION]
-                        Change font file type to create (e.g., ttf, otf)
+                        Alterar o tipo de ficheiro de fonte para criar (por exemplo, ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        The directory to output the patched font file to
+                        O diretório para enviar o ficheiro de tipo de letra modificado para
 ```
 
-#### Examples
+#### Exemplos
 
 	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
 	./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
@@ -391,41 +388,43 @@ optional arguments:
 
 
 <a name="gotta-patch-em-all"></a>
-## Gotta Patch 'em All Font Patcher!
 
-* para Contribuidor or Desenvolvedor usa
+<h2 id="modifica-tudo">Modificador de fontes – «Modifica tudo!»</h2>
+
+* para contribuidor ou desenvolvedor, utiliza
 
 * modifica novamente **todos** os tipos de letra no diretório por modificar:
+  
 ```
 ./gotta-patch-em-all-font-patcher\!.sh
 ```
 
 * podes, opcionalmente, limitar para um certo padrão de nome:
+
 ```
 ./gotta-patch-em-all-font-patcher\!.sh Hermit
 ```
-
 
 ## Contribuir
 
 Vê [contributing.md](contributing.md)
 
-## Ficheiros instáveis no branch master
+## Ficheiros instáveis no *branch* `master`
 
 :warning: Aviso: Os caminhos dos ficheiros podem mudar consoante as versões (especialmente em versões com **grandes** alterações)
 
-Utiliza o branch **release** e _não_ o branch ~~master~~, visto que os camihnos estão sujeitos a alterações na altura do lançamento da nova versão
+Utiliza o *branch* **release** e _não_ o branch ~~master~~, visto que os camihnos estão sujeitos a alterações na altura do lançamento da nova versão
 
 * Por exemplo:
-  * :white_check_mark: Usa: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+  * :white_check_mark: Utiliza: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
   * :x: Em vez de: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
 
 
-## Outros bons Tipos de Letra para modificar
+## Outros bons tipos de letra para modificar
 
 * lista de outros bons tipos de letra a modificar que não podem ser distribuídos devido às suas licenças:
  * [Input Mono][input-mono] (restrição de licença)
-   * Possivelmente será disponivilizada com hosting externo :)
+   * Possivelmente será disponibilizada com hospedagem externa :)
  * [PragmataPro][pragmatapro] (paga)
  * [Consolas][consolas] (proprietária)
  * [Operator Mono][operator] (paga)
@@ -434,7 +433,7 @@ Utiliza o branch **release** e _não_ o branch ~~master~~, visto que os camihnos
 
 ## Motivação do projeto
 
-See [Wiki: Project Purpose][wiki-project-purpose]
+Vê [Wiki: Project Purpose][wiki-project-purpose]
 
 
 ## Histórico de Alterações
@@ -446,7 +445,7 @@ Vê [changelog.md](changelog.md)
 [MIT](LICENSE) © Ryan L McIntyre
 
 <!--
-Repo References
+Referência do repositório
 -->
 
 [vim-devicons]:https://github.com/ryanoasis/vim-devicons "VimDevIcons Vim Plugin (external link) ➶"
@@ -472,7 +471,7 @@ Repo References
 
 
 <!--
-Website References
+Referências do website
 -->
 
 [website-iecpower]:https://unicodepowersymbol.com/
@@ -480,7 +479,7 @@ Website References
 [stickers]:https://www.redbubble.com/people/ryanoasis/works/30764810-nerd-fonts-iconic-font-aggregator
 
 <!--
-Link References
+Referências das ligações
 -->
 
 [badge-version]:https://badge.fury.io/gh/ryanoasis%2Fnerd-fonts
@@ -507,7 +506,7 @@ Link References
 [prs]:http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 
 <!--
-Font repos
+Repositórios dos tipos de letra
 -->
 
 [f-arimo]:https://github.com/google/fonts/tree/master/apache/arimo
@@ -539,7 +538,7 @@ Font repos
 [f-ia-writer]:https://github.com/iaolo/iA-Fonts
 
 <!--
-Patched Font internal links
+LIgações internas do «Patched Font»
 -->
 
 [p-3270]:patched-fonts/3270
@@ -595,7 +594,7 @@ Patched Font internal links
 
 
 <!--
-Quick Link Images
+Imagens do «Quick Link»
 -->
 
 [ql-1]:images/nerd-fonts-character-logo-md.png "Latest Release (external link) ➶"
@@ -605,7 +604,7 @@ Quick Link Images
 [ql-5]:images/nerd-fonts-character-logo-md.png "Font Package Archive (Zip) Downloads (external link) ➶"
 
 <!--
-Patched Font Statuses
+Estados do «Patched Font»
 -->
 
 [w-top]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png "↓ Windows Compatibility Status ↓"
