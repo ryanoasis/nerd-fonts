@@ -172,7 +172,7 @@ See [Wiki: Nomes dos ícones em Unix Shell][wiki-icon-names-in-shell]
 
 ### Variações
 
-- não são utilizados parámetros (utiliza por definição **Seti-UI + Custom** e **[Devicons][vorillaz-devicons]**)
+- não são utilizados parâmetros (utiliza por definição **Seti-UI + Custom** e **[Devicons][vorillaz-devicons]**)
 
 - glifos de largura **dupla _(variável/proportional)_** ou **normal _(fixo/monoespaçado)_**
 - [Font Awesome][font-awesome]
@@ -305,7 +305,7 @@ Modificar o tipo de letra à tua escolha com [VimDevIcons ➶][vim-devicons]:
 ./font-patcher CAMINHO_PARA_O_TIPO_DE_LETRA
 ```
 
-* Utilização alternativa: Executa o modificador com o binário de FontForge utilizando parámetro `-script`:
+* Utilização alternativa: Executa o modificador com o binário de FontForge utilizando parâmetro `-script`:
 
 ```
 ./fontforge -script font-patcher CAMINHO_PARA_O_TIPO_DE_LETRA
