@@ -1,0 +1,25 @@
+name: Docker release
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - bin/scripts/docker-entrypoint.sh
+      - src/glyphs/**
+      - .dockerignore
+      - Dockerfile
+      - font-patcher
+
+jobs:
+  publish-image:
+    name: Publish image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build image
+        run: docker build -t nerdfonts/patcher .
+      - name: Push image
+        run: |
+          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PAT }}
+          docker push nerdfonts/patcher
