@@ -511,7 +511,7 @@ Website References
 -->
 
 [website-iecpower]:https://unicodepowersymbol.com/
-[Cheat Sheet]:https://nerdfonts.com/#cheat-sheet
+[Cheat Sheet]:https://nerdfonts.com/cheat-sheet
 
 <!--
 Link References

@@ -473,7 +473,7 @@ Website References
 -->
 
 [website-iecpower]:https://unicodepowersymbol.com/
-[Cheat Sheet]:https://nerdfonts.com/#cheat-sheet
+[Cheat Sheet]:https://nerdfonts.com/cheat-sheet
 [stickers]:https://www.redbubble.com/people/ryanoasis/works/30764810-nerd-fonts-iconic-font-aggregator
 
 <!--
