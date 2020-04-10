@@ -359,6 +359,13 @@ Les polices suivantes sont disponibles via [AUR packages](https://aur.archlinux.
 * [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
 * [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
+* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
+* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
+* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
+* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
+* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
+* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
+* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
 
 ### `Option 8: Générer votre propre police`
 

@@ -280,6 +280,13 @@ Arch Linux의 [AUR packages](https://aur.archlinux.org/)를 통해 아래 폰트
 * [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
 * [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
 * [Nerd Fonts Git (out of date)](https://aur.archlinux.org/packages/nerd-fonts-git/)
+* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
+* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
+* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
+* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
+* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
+* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
+* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
 
 ### `옵션 8: 자신의 폰트 패치`
 
@@ -617,4 +624,3 @@ Patched Font Statuses
 [m2]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-unknown-sm.png "macOS (OSX) status is Unknown/Un-tested"
 
 [s-iosevka]:https://github.com/ryanoasis/nerd-fonts/issues/83
-
