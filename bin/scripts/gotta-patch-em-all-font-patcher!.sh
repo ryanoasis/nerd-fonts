@@ -52,19 +52,16 @@ fi
 # correct way to output find results into an array (when files have space chars, etc)
 # source: https://stackoverflow.com/questions/8213328/bash-script-find-output-to-array
 source_fonts=()
- while IFS= read -d $'\0' -r file ; do
-     source_fonts=("${source_fonts[@]}" "$file")
- done < <(find "$source_fonts_dir" -iname "$like_pattern*.[o,t]tf" -type f -print0)
+while IFS= read -d $'\0' -r file ; do
+  source_fonts=("${source_fonts[@]}" "$file")
+done < <(find "$source_fonts_dir" -iname "$like_pattern*.[o,t]tf" -type f -print0)
 
 # print total number of source fonts found
 echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
 
-
 function patch_font {
   local f=$1; shift
   local i=$1; shift
-  #echo $i
-  #echo $f
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
   # find replace unpatched parent dir with patched parent dir:
@@ -127,15 +124,18 @@ function patch_font {
 
 }
 
+# Generates font information: readmes, combinations, licenses, and variation counts
+# $1 = fontdir path
+# $2 = font file name (used for metadata)
 function generate_info {
   local f=$1; shift
-  local i=$1; shift
-  #echo $i
-  #echo $f
+  local font_file=$1; shift
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
   # find replace unpatched parent dir with patched parent dir:
   local patched_font_dir="${patched_font_dir/$unpatched_parent_dir/$patched_parent_dir}"
+
+  echo "$LINE_PREFIX Generating info for '$font_file':"
 
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
 
@@ -179,17 +179,34 @@ function generate_info {
   # if first time with this font then re-build parent dir readme, else skip:
   if [[ $config_parent_dir != "$last_parent_dir" ]] && [ $is_unpatched_fonts_root == "0" ];
   then
-    echo "$LINE_PREFIX Re-generate parent directory readme"
+    echo "$LINE_PREFIX * Re-generate parent directory readme"
     generate_readme "$patched_font_dir.." 0
   fi
 
+  echo "$LINE_PREFIX * Adding 'Possible Combinations' section"
   generate_readme "$patched_font_dir" 1
+  echo "$LINE_PREFIX * Copying license files"
+  copy_license "$config_parent_dir" "$patched_font_dir"
 
   last_parent_dir=$config_parent_dir
-
   total_variation_count=$((total_variation_count+combination_count))
   total_count=$((total_count+complete_variations_per_family+combination_count))
 
+}
+
+
+# Copy any license file to the patched font directory
+# $1 = fontdir source path
+# $2 = fontdir destination path
+function copy_license {
+  local src=$1
+  local dest=$2
+  local license_file=""
+
+  while IFS= read -d $'\0' -r license_file ; do
+    cp "$license_file" "$dest"
+    cp "$license_file" "$dest/complete"
+  done < <(find "$src" -iregex ".*license.*" -type f -print0)
 }
 
 # Re-generate all the readmes
@@ -215,7 +232,6 @@ function generate_readme {
 
   if [ "$generate_combinations" == 1 ];
   then
-    echo "$LINE_PREFIX Adding 'Possible Combinations' section"
     # add to the file
     {
       printf "\`\`\`sh"
@@ -261,8 +277,7 @@ do
   # only output after last slash (/):
   path=${source_fonts[$i]}
   font_file=${path##*/}
-  echo "$LINE_PREFIX Generating info for '$font_file'"
-  generate_info "$path" "$i" 2>/dev/null
+  generate_info "$path" "$font_file" 2>/dev/null
 done
 
 font_typefaces_count=$(find "${PWD}/../../${patched_parent_dir}/"* -maxdepth 0 -type d | wc -l)
