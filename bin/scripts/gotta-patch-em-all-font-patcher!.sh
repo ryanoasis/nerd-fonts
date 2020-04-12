@@ -2,11 +2,13 @@
 # Nerd Fonts Version: 2.1.0
 # Script Version: 1.1.1
 
-  # used for debugging
-  #set -x
+# used for debugging
+# set -x
 
 # for executing script to rebuild JUST the readmes:
 # ./gotta-patch-em-all-font-patcher\!.sh "" info
+# to test this script with a single font (pattern):
+# ./gotta-patch-em-all-font-patcher\!.sh "iosevka" info
 
 LINE_PREFIX="# [Nerd Fonts] "
 
@@ -34,7 +36,7 @@ unpatched_parent_dir="bin/scripts/../../src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 max_parallel_process=64
 
-if [ $# -eq 1 ]
+if [ $# -eq 1 ] || [ "$1" != "" ]
   then
     like_pattern=$1
     echo "$LINE_PREFIX Parameter given, limiting search and patch to pattern '$like_pattern' given"
