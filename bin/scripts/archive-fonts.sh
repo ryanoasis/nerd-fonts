@@ -5,12 +5,15 @@
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # adds Windows versions of the fonts as well (casks files just won't download them)
 # used for debugging
-set -x
+# set -x
 # Example run with pattern matching:
 # ./archive-fonts heavydata
+# Example with same font names for different paths
+# ./archive-fonts gohu
 
 LINE_PREFIX="# [Nerd Fonts] "
 scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
+parent_dir="${PWD}/../../"
 echo "dir $scripts_root_dir"
 outputdir=$scripts_root_dir../../archives
 
@@ -31,6 +34,10 @@ else
     echo "$LINE_PREFIX No limiting pattern given, will search entire folder"
 fi
 
+# create a mini readme with basic info on Nerd Fonts project
+mini_readme="$outputdir/readme.md"
+cat "$parent_dir/src/archive-readme.md" >> "$mini_readme"
+
 # clear out the directory zips
 find "${outputdir:?}" -name "$search_pattern" -type f -delete
 
@@ -46,6 +53,7 @@ do
 
   [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
+  # add font files:
   # -ic (ignore case not working)
   zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
   zipStatus=$?
@@ -53,10 +61,18 @@ do
   then
     echo "$LINE_PREFIX Could not create archive with the path junked (-j option) - likely same font names for different paths, zip status: $zipStatus"
     echo "$LINE_PREFIX Retrying with full path"
-    zip -9 "$outputdir/$basename" -r "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
+    # add font files and license files as full paths:
+    zip -9 "$outputdir/$basename" -r "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF' -i '*license*' -i '*LICENSE*'
+  else
+    # we can copy the font files without full paths but not necessarily the license files:
+    # add license files separately:
+    # zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*license*' -i '*LICENSE*'
+    # work around to copy duplicate license files (only the last duplicate found) 
+    # so we don't have to copy entire paths and can still use the junk option (-j)
+    find "$searchdir" -type f -iname "*license*" | awk -F/ '{a[$NF]=$0}END{for(i in a)print a[i]}' | zip -9 -j "$outputdir/$basename" -@
   fi;
-  # we don't want the non junked option (-j option) to depend on license files,
-  # so we do those separately and don't care if duplicates overwritten:
-  zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*license*' -i '*LICENSE*'
 
+  # add mini readme file
+  zip -9 "$outputdir/$basename" -rj "$mini_readme"
+  rm "$mini_readme"
 done
