@@ -204,7 +204,7 @@ function copy_license {
   local license_file=""
 
   while IFS= read -d $'\0' -r license_file ; do
-    cp "$license_file" "$dest"
+    # cp "$license_file" "$dest" # makes archiving multiple harder when we junk the paths for the archive
     cp "$license_file" "$dest/complete"
   done < <(find "$src" -iregex ".*license.*" -type f -print0)
 }

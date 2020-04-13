@@ -4,8 +4,10 @@
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # adds Windows versions of the fonts as well (casks files just won't download them)
-
-#set -x
+# used for debugging
+set -x
+# Example run with pattern matching:
+# ./archive-fonts heavydata
 
 LINE_PREFIX="# [Nerd Fonts] "
 scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
@@ -53,4 +55,8 @@ do
     echo "$LINE_PREFIX Retrying with full path"
     zip -9 "$outputdir/$basename" -r "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF'
   fi;
+  # we don't want the non junked option (-j option) to depend on license files,
+  # so we do those separately and don't care if duplicates overwritten:
+  zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*license*' -i '*LICENSE*'
+
 done
