@@ -206,7 +206,7 @@ function copy_license {
   while IFS= read -d $'\0' -r license_file ; do
     # cp "$license_file" "$dest" # makes archiving multiple harder when we junk the paths for the archive
     cp "$license_file" "$dest/complete"
-  done < <(find "$src" -iregex ".*license.*" -type f -print0)
+  done < <(find "$src" -iregex ".*\(licen[c,s]e\|ofl\).*" -type f -print0)
 }
 
 # Re-generate all the readmes
