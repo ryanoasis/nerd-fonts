@@ -528,6 +528,7 @@ Font repos
 [f-cousine]:https://fonts.google.com/specimen/Cousine
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-liberation]:https://pagure.io/liberation-fonts
+[f-lilex]:https://github.com/mishamyrt/Lilex
 [f-terminus]:http://terminus-font.sourceforge.net
 [f-fira-mono]:https://github.com/mozilla/Fira
 [f-fira-code]:https://github.com/tonsky/FiraCode
@@ -576,6 +577,7 @@ Patched Font internal links
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono
+[p-lilex]:patched-fonts/Lilex
 [p-meslo]:patched-fonts/Meslo
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
