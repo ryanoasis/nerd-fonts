@@ -87,9 +87,9 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`50`** already [patched font families](#patched-fonts)
-* Over **`1,428,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **`2,600`** glyphs/icons combined [(more details)](#combinations)
+* **`51`** already [patched font families](#patched-fonts)
+* Over **`1,444,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **`2,824`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
@@ -142,6 +142,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| NO   | 1000    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font*][p-liberation]        | [Liberation][f-liberation]        | YES  | 2048    | ![w] ![m2] ![l]   |
+| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                  | NO   | ?       | ![m2]             |
 | [Meslo Nerd Font][p-meslo]                        |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Monofur Nerd Font][p-monofur]                    |                                   | NO   | 2400    | ![w] ![m2] ![l]   |
 | [Monoid Nerd Font][p-monoid]                      |                                   | NO   | 1536    | ![w] ![m2] ![l]   |
@@ -168,11 +169,11 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 ## Combinations
 
 - Over **`1,428,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`50`** patched font typefaces
-  - **`697`** patched font families
-  - **`2,788`** 'complete' variations/combinations
-  - **`1,428,110`** _possible_ variations/combinations
-  - **`1,430,898`** total calculated combinations (2,788 + 1,428,110)
+  - **`51`** patched font typefaces
+  - **`706`** patched font families
+  - **`2,824`** 'complete' variations/combinations
+  - **`1,444,476`** _possible_ variations/combinations
+  - **`1,447,300`** total calculated combinations (2,824 + 1,444,476)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
