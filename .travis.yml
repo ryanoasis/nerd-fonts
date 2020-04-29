@@ -11,7 +11,7 @@ addons:
 before-script:
   - "sudo apt-get install --allow-unauthenticated cabal-install"
   - "cabal update"
-  - "cabal install shellcheck"
+  - "cabal install ShellCheck"
 
 script:
  - bash -c 'shopt -s globstar; shellcheck --exclude SC2034 **/*.sh'
