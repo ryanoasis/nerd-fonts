@@ -9,7 +9,7 @@ addons:
     - debian-sid    # Grab shellcheck from the Debian repo (o_O)
 
 before-script:
-  - "sudo apt-get install cabal-install"
+  - "sudo apt-get install --allow-unauthenticated cabal-install"
   - "cabal update"
   - "cabal install shellcheck"
 
