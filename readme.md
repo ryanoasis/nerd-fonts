@@ -88,7 +88,7 @@ _If you..._
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
 * **`50`** already [patched font families](#patched-fonts)
-* Over **`1,428,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **`1,436,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`2,600`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
@@ -167,12 +167,12 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 ## Combinations
 
-- Over **`1,428,000`** unique variations/combinations (Power Set) of patched fonts:
+- Over **`1,436,000`** unique variations/combinations (Power Set) of patched fonts:
   - **`50`** patched font typefaces
-  - **`697`** patched font families
-  - **`2,788`** 'complete' variations/combinations
-  - **`1,428,110`** _possible_ variations/combinations
-  - **`1,430,898`** total calculated combinations (2,788 + 1,428,110)
+  - **`702`** patched font families
+  - **`2,808`** 'complete' variations/combinations
+  - **`1,436,292`** _possible_ variations/combinations
+  - **`1,439,100`** total calculated combinations (2,808 + 1,436,292)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
