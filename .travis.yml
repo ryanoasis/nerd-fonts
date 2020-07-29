@@ -3,16 +3,6 @@ language: bash
 # Use container-based infrastructure for quicker build start-up
 sudo: false
 
-addons:
-  apt:
-    sources:
-    - debian-sid    # Grab shellcheck from the Debian repo (o_O)
-
-before-script:
-  - "sudo apt-get install --allow-unauthenticated cabal-install"
-  - "cabal update"
-  - "cabal install ShellCheck"
-
 script:
  - bash -c 'shopt -s globstar; shellcheck --exclude SC2034 **/*.sh'
 
