@@ -167,12 +167,12 @@ Leggi la [Wiki: Nomi delle Icone per la shell][wiki-icon-names-in-shell]
 
 ## Combinazioni
 
-- Più di **`1.571.470`** variazioni/combinazioni uniche (Power Set) di font modificati:
+- Più di **`1,485,000`** variazioni/combinazioni uniche (Power Set) di font modificati:
   - **`50`** caratteri font modificati
-  - **`697`** famiglie font modificate
-  - **`2.788`** variazioni/combinazioni 'complete'
-  - **`1.571.470`** variazioni/combinazioni _possibili_
-  - **`1.574.258`** combinazioni tatali calcolate (2.788 + 1.571.470)
+  - **`719`** famiglie font modificate
+  - **`2,876`** variazioni/combinazioni 'complete'
+  - **`'1,485,410'`** variazioni/combinazioni _possibili_
+  - **`1,488,286`** combinazioni tatali calcolate (2,876 + 1,428,110)
 - Le combinazioni per ogni font sono qualsiasi combinazione delle [Variazioni](#variations)
 
 ### Variazioni

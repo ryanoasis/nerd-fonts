@@ -167,12 +167,12 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 ## Combinations
 
-- Over **`1,428,000`** unique variations/combinations (Power Set) of patched fonts:
+- Over **`1,485,000`** unique variations/combinations (Power Set) of patched fonts:
   - **`50`** patched font typefaces
-  - **`697`** patched font families
-  - **`2,788`** 'complete' variations/combinations
-  - **`1,428,110`** _possible_ variations/combinations
-  - **`1,430,898`** total calculated combinations (2,788 + 1,428,110)
+  - **`719`** patched font families
+  - **`2,876`** 'complete' variations/combinations
+  - **`'1,485,410'`** _possible_ variations/combinations
+  - - **`1,488,286`** total calculated combinations (2,876 + 1,428,110)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
