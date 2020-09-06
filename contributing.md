@@ -12,6 +12,23 @@
 * Use a sensible number of commit messages as well
   * e.g. Your PR should not have 100s of commits
 
+## Steps for updating an existing font
+
+### 1. Update original (unpatched) version
+* Copy and replace the existing unpatched version of the font and any readme and/or license files in the `src/unpatched-fonts/XYZ-font` directory
+  * e.g. Updating *XYZ Font*, update files in directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
+  * Make sure to update the correct subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
+### 2. Execute basic testing
+* Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
+  * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
+  * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
+### 3. Run build scripts
+* When fairly satisfied the font patches correctly, run the following scripts in this order:
+  * Copy all the unpatched readmes to the patched location with additional info on variations appended:
+    * `./standardize-and-complete-readmes.sh`
+  * Patch **all** of the variations/options, e.g.
+    * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
+
 ## Steps for adding a new font or removing an existing font
 
 * For removal of a font skip to [Step #4](#4-run-build-scripts)
@@ -19,7 +36,7 @@
 ### 1. Verify license
 * Check the license even allows the font to be modified and shared
 ### 2. Add original (unpatched) version
-* Add the unpatched version of the font and any readme and/or license files to the `unpatched-sample-fonts` directory inside a new directory
+* Add the unpatched version of the font and any readme and/or license files to the `src/unpatched-fonts/` directory inside a new directory
   * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
   * Try to make subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
 ### 3. Execute basic testing
