@@ -816,12 +816,12 @@ class font_patcher:
 
 
     def remove_glyph_neg_bearings(self, glyph):
-        """ Sets passed glyph's bearings 0.0 if they are negative. """
+        """ Sets passed glyph's bearings 0 if they are negative. """
         try:
-            if glyph.left_side_bearing < 0.0:
-                glyph.left_side_bearing = 0.0
-            if glyph.right_side_bearing < 0.0:
-                glyph.right_side_bearing = 0.0
+            if glyph.left_side_bearing < 0:
+                glyph.left_side_bearing = 0
+            if glyph.right_side_bearing < 0:
+                glyph.right_side_bearing = 0
         except:
             pass
 
