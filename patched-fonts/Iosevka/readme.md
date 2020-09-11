@@ -10,7 +10,7 @@ Quit your editor/program. Unzip and open the folder.
 
 * **[Instructions for Windows](https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx)**
 * **[Instructions for macOS](http://support.apple.com/kb/HT2509)**
-  * Standard distribution in Homebrew: `brew tap caskroom/fonts && brew cask install font-iosevka` (May be outdated).
+  * Standard distribution in Homebrew: `brew tap homebrew/cask-fonts && brew cask install font-iosevka` (May be outdated).
   * Customizable install using Homebrew: see [robertgzr/homebrew-tap](https://github.com/robertgzr/homebrew-tap).
 * **Linux** : Copy the TTF files to your fonts directory → Run `sudo fc-cache`. 
   - Arch Linux users can install the font from the AUR [here](https://aur.archlinux.org/packages/ttf-iosevka) using an AUR wrapper or by doing it manually. [All variants](https://aur.archlinux.org/packages/?O=0&SeB=nd&K=ttf-iosevka&SB=n&SO=a&PP=50&do_Search=Go).
