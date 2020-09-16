@@ -293,6 +293,11 @@ class font_patcher:
         # some fonts have inaccurate 'SubFamily', if it is Regular let us trust the filename more:
         if subFamily == "Regular":
             subFamily = fallbackStyle
+
+        # This is meant to cover the case where the SubFmaily is "Italic" and the filename is *-BoldItalic.
+        if  len(subFamily) < len(fallbackStyle):
+            subFamily = fallbackStyle
+
         if self.args.windows:
             maxFamilyLength = 31
             maxFontLength = maxFamilyLength - len('-' + subFamily)
