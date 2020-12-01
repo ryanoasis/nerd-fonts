@@ -2,7 +2,7 @@ Cascdia Code
 ============
 
 :Font creator: Microsoft
-:Version: 1911.21
+:Version: 2007.11
 :Source: https://github.com/microsoft/cascadia-code
 :License: SIL OPEN FONT LICENSE Version 1.1
 
