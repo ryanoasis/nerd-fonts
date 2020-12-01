@@ -773,16 +773,15 @@ class font_patcher:
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
             self.sourceFont.transform(align_matrix)
 
-            # Ensure after horizontal adjustments and centering that the glyph
-            # does not overlap the bearings (edges)
-            self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
-
             # Needed for setting 'advance width' on each glyph so they do not overlap,
             # also ensures the font is considered monospaced on Windows by setting the
             # same width for all character glyphs. This needs to be done for all glyphs,
             # even the ones that are empty and didn't go through the scaling operations.
-            # it should come after setting the glyph bearings
             self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
+
+            # Ensure after horizontal adjustments and centering that the glyph
+            # does not overlap the bearings (edges)
+            self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
 
             # reset selection so iteration works properly @TODO fix? rookie misunderstanding?
             # This is likely needed because the selection was changed when the glyph was copy/pasted
@@ -801,7 +800,7 @@ class font_patcher:
 
         for glyph in self.sourceFont.glyphs():
             if (glyph.width == self.font_dim['width']):
-                # Don't tough the (negative) bearings if the width is ok
+                # Don't touch the (negative) bearings if the width is ok
                 # Ligartures will have these.
                 continue
 
@@ -817,12 +816,12 @@ class font_patcher:
 
 
     def remove_glyph_neg_bearings(self, glyph):
-        """ Sets passed glyph's bearings 0.0 if they are negative. """
+        """ Sets passed glyph's bearings 0 if they are negative. """
         try:
-            if glyph.left_side_bearing < 0.0:
-                glyph.left_side_bearing = 0.0
-            if glyph.right_side_bearing < 0.0:
-                glyph.right_side_bearing = 0.0
+            if glyph.left_side_bearing < 0:
+                glyph.left_side_bearing = 0
+            if glyph.right_side_bearing < 0:
+                glyph.right_side_bearing = 0
         except:
             pass
 

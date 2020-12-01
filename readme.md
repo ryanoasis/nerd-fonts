@@ -87,9 +87,9 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`50`** already [patched font families](#patched-fonts)
-* Over **`1,436,000`** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **`2,600`** glyphs/icons combined [(more details)](#combinations)
+* **`51`** already [patched font families](#patched-fonts)
+* Over **`1,444,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
+* Over **`2,824`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
@@ -133,7 +133,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                    | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Hasklug Nerd Font*][p-hasklig]                   | [Hasklig][f-hasklig]              | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Heavy Data Mono Nerd Font][p-heavy-data]         |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
-| [Hermut Nerd Font][p-hermit]                      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
+| [Hurmit Nerd Font][p-hermit]                      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [iM-Writing*][p-im-writing]                       | [iA-Writer][f-ia-writer]          | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata Nerd Font][p-inconsolata]            |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
@@ -142,6 +142,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| NO   | 1000    | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      |                                   | NO   | 1000    | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font*][p-liberation]        | [Liberation][f-liberation]        | YES  | 2048    | ![w] ![m2] ![l]   |
+| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                  | NO   | 2000    | ![w2] ![m2] ![l]  |
 | [Meslo Nerd Font][p-meslo]                        |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Monofur Nerd Font][p-monofur]                    |                                   | NO   | 2400    | ![w] ![m2] ![l]   |
 | [Monoid Nerd Font][p-monoid]                      |                                   | NO   | 1536    | ![w] ![m2] ![l]   |
@@ -168,7 +169,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 ## Combinations
 
 - Over **`1,436,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`50`** patched font typefaces
+  - **`51`** patched font typefaces
   - **`702`** patched font families
   - **`2,808`** 'complete' variations/combinations
   - **`1,436,292`** _possible_ variations/combinations
@@ -527,6 +528,7 @@ Font repos
 [f-cousine]:https://fonts.google.com/specimen/Cousine
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-liberation]:https://pagure.io/liberation-fonts
+[f-lilex]:https://github.com/mishamyrt/Lilex
 [f-terminus]:http://terminus-font.sourceforge.net
 [f-fira-mono]:https://github.com/mozilla/Fira
 [f-fira-code]:https://github.com/tonsky/FiraCode
@@ -575,6 +577,7 @@ Patched Font internal links
 [p-hack]:patched-fonts/Hack
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono
+[p-lilex]:patched-fonts/Lilex
 [p-meslo]:patched-fonts/Meslo
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid

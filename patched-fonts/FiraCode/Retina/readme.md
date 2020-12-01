@@ -1,6 +1,6 @@
-## Fira Code: monospaced font with programming ligatures
+## Fira Code: free monospaced font with programming ligatures
 
-<img src="./showcases/fira_code_logo.svg">
+<img src="./extras/logo.svg">
 
 ### Problem
 
@@ -8,97 +8,74 @@ Programmers use a lot of symbols, often encoded with several characters. For the
 
 ### Solution
 
-#### [Download v.2](https://github.com/tonsky/FiraCode/releases/download/2/FiraCode_2.zip) · [How to install](https://github.com/tonsky/FiraCode/wiki) · [Troubleshooting](https://github.com/tonsky/FiraCode/wiki#troubleshooting) · [News & updates](https://twitter.com/FiraCode)
+Fira Code is a free monospaced font containing ligatures for common programming multi-character combinations. This is just a font rendering feature: underlying code remains ASCII-compatible. This helps to read and understand code faster. For some frequent sequences like `..` or `//`, ligatures allow us to correct spacing.
 
-<a href="https://patreon.com/tonsky" target="_blank"><img src="./fira_code_patreon.png"></a>
+### Download & Install
 
-Fira Code is an extension of the Fira Mono font containing a set of ligatures for common programming multi-character combinations. This is just a font rendering feature: underlying code remains ASCII-compatible. This helps to read and understand code faster. For some frequent sequences like `..` or `//`, ligatures allow us to correct spacing.
+<a href="https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip"><img src="./extras/download.png" width="520" height="130"></a>
 
-<img src="./showcases/all_ligatures.png">
+Then:
 
-### Code examples
+- <a href="https://github.com/tonsky/FiraCode/wiki">How to Install</a>
+- <a href="https://github.com/tonsky/FiraCode/wiki#troubleshooting">Troubleshooting</a>
+- <a href="https://twitter.com/FiraCode">News & Updates</a>
 
-Ruby:
+### Support
 
-<img src="./showcases/ruby.png">
+<a href="https://github.com/sponsors/tonsky" target="_blank"><img src="./extras/sponsor.png"></a>
 
-JavaScript:
+Fira Code is a personal, free-time project with no funding and huge [feature request backlog](https://github.com/tonsky/FiraCode/issues). If you love it, consider supporting its development via [GitHub Sponsors](https://github.com/sponsors/tonsky) or [Patreon](https://patreon.com/tonsky). Any help counts!
 
-<img src="./showcases/javascript.png">
+### What’s in the box?
 
-PHP:
+Left: ligatures as rendered in Fira Code. Right: same character sequences without ligatures.
 
-<img src="./showcases/php.png">
+<img src="./extras/ligatures.png" width="754" height="1326">
 
-Erlang:
+Fira Code comes with huge variety of arrows. Even better: you can make them as long as you like and combine start/middle/end fragments however you want!
 
-<img src="./showcases/erlang.png">
+<img src="./extras/arrows.png" width="754" height="799">
 
-Elixir:
+Fira Code is not only about ligatures. Some fine-tuning is done for punctuation and frequent letter pairs.
 
-<img src="/showcases/elixir.png">
+<img src="./extras/typographics.png" width="754" height="649">
 
-Go:
+Fira Code comes with a few different character variants, so that everyone can choose what’s best for them. [How to enable.](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylistic-sets)
 
-<img src="./showcases/go.png">
+<img src="./extras/stylistic_sets.png" width="754" height="391">
 
-LiveScript:
+Being programming font, Fira Code has fantastic support for ASCII/box drawing, powerline and other forms of console UIs.
 
-<img src="./showcases/livescript.png">
+<img src="./extras/console.png" width="754" height="357">
 
-Clojure:
+Unicode coverage makes Fira Code great choice for mathematical writing.
 
-<img src="./showcases/clojure.png">
+<img src="./extras/math.png" width="754" height="289">
 
-Swift:
+### How does it look?
 
-<img src="./showcases/swift.png">
+<img src="./extras/samples.png" width="754" height="1068">
+<img src="./extras/samples2.png" width="754" height="1257">
 
-Stylistic sets:
-
-See [How to enable](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylistic-sets)
-
-<img src="./showcases/stylistic_sets.png">
-
-
-### Terminal support
-
-| Works              | Doesn’t work       |
-| ------------------ | ------------------ |
-| **Butterfly**      | **Alacritty**      |
-| **crosh** (ChromeOS, [instructions](https://github.com/tonsky/FiraCode/wiki/ChromeOS-Terminal)) | **Windows Console (conhost.exe)** |
-| **Hyper.app**      | **Cmder**          |
-| **iTerm 2** ([3.1+](https://gitlab.com/gnachman/iterm2/issues/3568#note_13118332)) | **ConEmu** |
-| **Kitty**          | **GNOME Terminal** |
-| **Konsole**        | **mate-terminal**  | 
-| **mintty** (partial support [2.8.3+](https://github.com/mintty/mintty/issues/601))| **PuTTY** |
-| **QTerminal**      | **rxvt**           |
-| **Terminal.app**   | **xterm**          |
-| **Termux**         | **ZOC** (Windows)  |
-| **Token2Shell/MD** | **gtkterm, guake, LXTerminal, sakura, Terminator, xfce4-terminal,** and other libvte-based terminals ([bug report](https://bugzilla.gnome.org/show_bug.cgi?id=584160)) |
-| **upterm**         |
-| **Windows Terminal** |
-| **ZOC** (macOS)    |
-
-### Editor support
+### Editor compatibility list
 
 | Works | Doesn’t work   |
-| ----- | -------------- |
+|-------|----------------|
 | **Abricotine** | **Arduino IDE** |
 | **Android Studio** (2.3+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | **Adobe Dreamweaver** |
 | **Anjuta** (unless at the EOF) | **Delphi IDE** |
-| **AppCode** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | **Eclipse** (Win, [vote here](https://bugs.eclipse.org/bugs/show_bug.cgi?id=398656)) |
-| **Atom** 1.1 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/Atom-instructions)) | Standalone **Emacs** ([workaround](https://github.com/tonsky/FiraCode/wiki/Emacs-instructions)) |
-| **BBEdit/TextWrangler** (v. 11 only, [instructions](https://github.com/tonsky/FiraCode/wiki/BBEdit-instructions)) | **gVim** (Windows [workaround](https://github.com/tonsky/FiraCode/issues/462)) |
-| **Brackets** (with [this plugin](https://github.com/polo2ro/firacode-in-brackets)) | **IDLE** |
-| **Chocolat** | **KDevelop 4** |
-| **CLion** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | **Monkey Studio IDE** |
-| **Cloud9** ([instructions](https://github.com/tonsky/FiraCode/wiki/Cloud9-Instructions)) |  |
-| **Coda 2** |  |
-| **CodeLite** |  |
-| **Eclipse** (Mac 4.7+, Linux) |  |
-| **elementary Code** |  |
-| **Geany** |
+| **AppCode** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | Standalone **Emacs** ([workaround](https://github.com/tonsky/FiraCode/wiki/Emacs-instructions)) |
+| **Atom** 1.1 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/Atom-instructions)) | **Geany** (Windows) |
+| **BBEdit/TextWrangler** (v. 11 only, [instructions](https://github.com/tonsky/FiraCode/wiki/BBEdit-instructions)) | **Godot** ([issue](https://github.com/godotengine/godot/issues/9961)) |
+| **Brackets** (with [this plugin](https://github.com/polo2ro/firacode-in-brackets)) | **gVim** (Windows [workaround](https://github.com/tonsky/FiraCode/issues/462)) |
+| **Chocolat** | **IDLE** |
+| **CLion** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | **KDevelop 4** |
+| **Cloud9** ([instructions](https://github.com/tonsky/FiraCode/wiki/Cloud9-Instructions)) | **MATLAB** |
+| **Coda 2** | **Monkey Studio IDE** |
+| **CodeLite** | **UltraEdit** |
+| **Eclipse** |
+| **elementary Code** |
+| **Geany** (macOS) |
 | **gEdit / Pluma** |
 | **GNOME Builder** |
 | **GoormIDE** ([instructions](https://github.com/tonsky/FiraCode/wiki/GoormIDE-Instructions)) |
@@ -116,8 +93,9 @@ See [How to enable](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylis
 | **Mousepad** |
 | **NeoVim-gtk** |
 | **NetBeans** |
-| **Notepad** (Win) |
+| **Notepad** (Windows) |
 | **Notepad++** (with a [workaround](https://github.com/notepad-plus-plus/notepad-plus-plus/issues/2287#issuecomment-256638098))  |
+| **Notepad3** ([instructions](https://github.com/rizonesoft/Notepad3/issues/361#issuecomment-365977420))|
 | **PhpStorm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
 | **PyCharm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
 | **QtCreator** |
@@ -129,7 +107,7 @@ See [How to enable](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylis
 | **SublimeText** (3146+) |
 | **Spyder IDE** (only with Qt5) |
 | **SuperCollider 3** |
-| **TextAdept** (Linux, Mac) |
+| **TextAdept** (Linux, macOS) |
 | **TextEdit** |
 | **TextMate 2** |
 | **VimR** ([instructions](https://github.com/qvacua/vimr/wiki#ligatures)) |
@@ -138,27 +116,51 @@ See [How to enable](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylis
 | **WebStorm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
 | **Xamarin Studio/Monodevelop** |
 | **Xcode** (8.0+, otherwise [with plugin](https://github.com/robertvojta/LigatureXcodePlugin)) |
+| **Xi** |
 | Probably work: **Smultron, Vico** | Under question: **Code::Blocks IDE** |
+
+### Terminal compatibility list
+
+| Works              | Doesn’t work       |
+|--------------------|--------------------|
+| **Butterfly**      | **Alacritty**      |
+| **crosh** (ChromeOS, [instructions](https://github.com/tonsky/FiraCode/wiki/ChromeOS-Terminal)) | **Windows Console (conhost.exe)** |
+| **Hyper.app**      | **Cmder**          |
+| **iTerm 2** ([3.1+](https://gitlab.com/gnachman/iterm2/issues/3568#note_13118332)) | **ConEmu** |
+| **Kitty**          | **GNOME Terminal** |
+| **Konsole**        | **mate-terminal**  |
+| **mintty** (partial support [2.8.3+](https://github.com/mintty/mintty/issues/601))| **PuTTY** |
+| **QTerminal**      | **rxvt**           |
+| **Terminal.app**   | **xterm**          |
+| **Termux**         | **ZOC** (Windows)  |
+| **Token2Shell/MD** | **gtkterm, guake, LXTerminal, sakura, Terminator, xfce4-terminal,** and other libvte-based terminals ([bug report](https://bugzilla.gnome.org/show_bug.cgi?id=584160)) |
+| **upterm**         |
+| **Windows Terminal** |
+| **ZOC** (macOS)    |
+| **st** ([patch](https://st.suckless.org/patches/ligatures/)) |
 
 ### Browser support
 
 ```html
 <!-- HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css">
 ```
 
 ```css
 /* CSS */
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
 ```
 
 ```css
 /* Specify in CSS */
-font-family: 'Fira Code', monospace;
+code { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+}
 ```
 
-
-- IE 10+, Edge: enable with `font-feature-settings: "calt" 1;`
+- IE 10+, Edge Legacy: enable with `font-feature-settings: "calt";`
 - Firefox
 - Safari
 - Chromium-based browsers (Chrome, Opera)
@@ -179,15 +181,21 @@ font-family: 'Fira Code', monospace;
 
 ### Alternatives
 
-Other monospaced fonts with ligatures:
+Free monospaced fonts with ligatures:
 
-- [Hasklig](https://github.com/i-tu/Hasklig) (free)
-- [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm) (€59)
-- [Monoid](http://larsenwork.com/monoid/) (free)
-- [Fixedsys Excelsior](https://github.com/kika/fixedsys) (free)
-- [Iosevka](https://be5invis.github.io/Iosevka/) (free)
-- [DejaVu Sans Code](https://github.com/SSNikolaevich/DejaVuSansCode) (free)
-- [Victor Mono](https://rubjo.github.io/victor-mono/) (free)
+- [Hasklig](https://github.com/i-tu/Hasklig)
+- [Monoid](http://larsenwork.com/monoid/)
+- [Fixedsys Excelsior](https://github.com/kika/fixedsys)
+- [Iosevka](https://be5invis.github.io/Iosevka/)
+- [DejaVu Sans Code](https://github.com/SSNikolaevich/DejaVuSansCode)
+- [Victor Mono](https://rubjo.github.io/victor-mono/)
+- [Cascadia Code](https://github.com/microsoft/cascadia-code)
+- [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)
+
+Paid monospaced fonts with ligatures:
+
+- [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
+- [Mono Lisa](https://monolisa.dev/)
 
 ### Building Fira Code locally
 
@@ -209,20 +217,6 @@ In case you want to alter FiraCode.glyphs and build OTF/TTF/WOFF files yourself,
 - Author: Nikita Prokopov [@nikitonsky](https://twitter.com/nikitonsky)
 - Based on: [Fira Mono](https://github.com/mozilla/Fira)
 - Inspired by: [Hasklig](https://github.com/i-tu/Hasklig)
-
-## Why `Terminess` and not `Terminus`?
-
-What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in partcular the [Reserved Font Name mechanism][SIL-RFN]
-
-Some fonts have parts of their name "reserved" per the [Reserved Font Name mechanism][SIL-RFN]:
-> No Modified Version of the Font Software may use the Reserved Font
-> Name(s) unless explicit written permission is granted by the corresponding
-> Copyright Holder. This restriction only applies to the primary font name as
-> presented to the users.
-
-- The main goals seem to be to: `Avoid collisions`, `Protect authors`, `Minimize support`, and `Encourage derivatives`
-
-See the [Reserved Font Name section][SIL-RFN] for additional information
 
 ## Which font?
 
