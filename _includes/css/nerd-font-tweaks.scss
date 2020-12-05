@@ -107,12 +107,16 @@ a.nerd-font-button:before {
 	max-height: 480px;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	padding-top: 20px;
+	margin-top: 40px;
 	max-width: none;
 	justify-content: center;
 	display: flex;
 	flex-flow: row wrap;
 	margin-bottom: 60px;
+	visibility: hidden; /* don't show any by default */
+	&.has-results {
+		visibility: visible;
+	}
 }
 
 #glyphCheatSheet .column {

@@ -169,11 +169,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function searchGlyphs() {
-    var filter = elementGlyphSearch.value.toLowerCase();
-    var i = 0;
-    var elements = elementGlyphCheatSheet.querySelectorAll('.column');
-    var length = elements.length;
-    var elementClassName, elementCodePoint;
+    const filter = elementGlyphSearch.value.toLowerCase();
+    const elements = elementGlyphCheatSheet.querySelectorAll('.column');
+    const length = elements.length;
+    let i = 0;
+    let elementClassName, elementCodePoint;
+    let anyVisibleColumns = false;
 
     for (; i < length; i++) {
       elementClassName = elements[i].querySelector('div.class-name');
@@ -188,10 +189,18 @@ document.addEventListener('DOMContentLoaded', function () {
             .indexOf(filter) > -1
         ) {
           elementClassName.parentNode.classList.add('is-visible');
+          anyVisibleColumns = true;
         } else {
           elementClassName.parentNode.classList.remove('is-visible');
         }
       }
+    }
+
+    if (anyVisibleColumns) {
+      elementGlyphCheatSheet.classList.add('has-results');
+    }
+    else {
+      elementGlyphCheatSheet.classList.remove('has-results');
     }
   }
 
