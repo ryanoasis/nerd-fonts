@@ -16,6 +16,7 @@
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.nerdfonts.com/assets/img/sankey-glyphs-combined-diagram.png">
+    {% if site.adsbygoogle %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({
@@ -23,4 +24,5 @@
         enable_page_level_ads: true
       });
     </script>
+    {% endif %}
   </head>
