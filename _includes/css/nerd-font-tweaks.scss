@@ -15,6 +15,25 @@ p {
 	color: inherit;
 }
 
+a.nerd-font-button {
+	font-size: 21px;
+	text-decoration: none;
+}
+
+a.nerd-font-button:before {
+	font-weight: normal;
+	margin-right: .25em;
+	/* .nf */
+	font-family: 'NerdFontsSymbols Nerd Font';
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+
 #main .nerd-font-badges {
 	line-height: 2.3em;
 }
@@ -426,8 +445,13 @@ p {
 		padding: 10px;
 		margin: 10px;
 		display: flex;
-    	flex-direction: column;
-    	justify-content: space-between;
+		flex-direction: column;
+		justify-content: space-between;
+
+		// max-width: 600px;
+		// min-width: 400px;
+		width: 595px;
+
 		.download-icon {
 			content: "";
 			font-size: 32px;
@@ -438,20 +462,35 @@ p {
 			padding-right: 10px;
     		padding-top: 5px;
 		}
-		>a:first-of-type {
-			text-decoration: none;
-		}
 		img {
 			vertical-align: top !important;
 		}
+		.font-preview {
+			text-decoration: none;
+			background-size: contain;
+			height: 110px;
+			background-repeat: no-repeat;
+			background-position-x: 34px;
+		}
+		.font-preview:before {
+			content: "";
+			font-size: 32px;
+			font-family: 'NerdFontsSymbols Nerd Font';
+		}
+	}
+	.nerd-font-buttons-wrapper {
+		display: flex;
+    flex-wrap: wrap;
+	}
+	.button-empty-spacer {
+		height: 42px;
+    width: 100%;
 	}
 	.nerd-font-button {
 		border-width: 2px;
 		border-style: solid;
-		span {
-			font-size: 14px;
-			line-height: 14px;
-		}
+		flex-shrink: 1;
+    flex-grow: 1;
 	}
 }
 

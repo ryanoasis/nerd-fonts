@@ -12,24 +12,14 @@ page: font-downloads
 <div class="d-flex flex-row flex-wrap align-items-stretch justify-content-betweeen justify-content-aroundd justify-content-center">
 {% for font in site.data.fonts.fonts %}
   <div class="item">
-      <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.unpatchedName }}.zip">
-        <div class="download-icon"></div>
-        <img src="/assets/img/previews/{{ font.imagePreviewFont }}.svg" alt="{{ font.unpatchedName }}" title="Download {{ font.unpatchedName }}">
+      <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.unpatchedName }}.zip" class="font-preview" style="background-image: url('/assets/img/previews/{{ font.imagePreviewFont }}.svg')">
       </a>
-      <ul>
-        {% if font.unpatchedName != font.patchedName %}<li><strong>Reserved Font Name:</strong> {{ font.unpatchedName }}</li>{% endif %}
-        <li><strong>Info:</strong> {{ font.description }}</li>
-      </ul>
-      <div>
-        <h4 class="inlineblock bg-green border-white text-white nerd-font-button">
-          <i class="nf nf-fa-download"></i>
-          <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.unpatchedName }}.zip" class="inlineblock">Download</a>
-        </h4>
+      {% if font.unpatchedName != font.patchedName %}<div><strong>&bull; Reserved Font Name:</strong> {{ font.unpatchedName }}</div>{% endif %}
+      <div><strong>&bull; Info:</strong> {{ font.description }}</div>
+      <div class="nerd-font-buttons-wrapper">
+        <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.unpatchedName }}.zip" class="inlineblock bg-green border-white text-white nerd-font-button nf-fa-download">Download</a>
         {% if font.linkPreviewFont != false %}
-        <h4 class="inlineblock bg-purple border-white text-white nerd-font-button">
-          <i class="nf nf-oct-link_external"></i>
-          <a href="https://www.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank" alt="Full Preview of {{ font.patchedName }} on ProgrammingFonts.org" class="inlineblock">Preview <span>on ProgrammingFonts.org</span></a>
-        </h4>
+        <a href="https://www.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank" alt="Full Preview of {{ font.patchedName }} on ProgrammingFonts.org" class="inlineblock bg-purple border-white text-white nerd-font-button nf-oct-link_external">Preview on ProgrammingFonts.org</a>
         {% endif %}
       </div>
   </div>
