@@ -46,6 +46,11 @@ a.nerd-font-button:before {
 	}
 }
 
+#icon-cheat-sheet .container {
+	max-width: none;
+	width: auto;
+}
+
 #main .nerd-font-buttons {
 	line-height: 4em;
 }
@@ -62,6 +67,10 @@ a.nerd-font-button:before {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	padding-top: 20px;
+	max-width: none;
+	justify-content: center;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 #glyphCheatSheet .column {

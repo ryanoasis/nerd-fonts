@@ -232,7 +232,6 @@ document.addEventListener('DOMContentLoaded', function () {
     'mouseenter',
     function (e) {
       if (e.target.classList.contains('column')) {
-        console.log('entered column');
         // add Node
         const newNode = document.createElement('span');
         const copyTextNode = document.createElement('span');
@@ -264,7 +263,6 @@ document.addEventListener('DOMContentLoaded', function () {
     'mouseleave',
     function (e) {
       if (e.target.classList.contains('column')) {
-        console.log('left column');
         e.target.querySelector('.glyph-popout-copy-clipboard').remove();
       }
     },

@@ -12,7 +12,7 @@ style: container
 
 <input type="text" id="glyphSearch" placeholder="Search for glyphs/icons..." title="Type in a glyph name or hex codepoint" class="nerd-font-cheat-sheet-search" />
 
-<div id="glyphCheatSheet" class="nerd-font-cheat-sheet container">
+<div id="glyphCheatSheet" class="nerd-font-cheat-sheet">
   <div class="column">
     <div class="nf nf-custom-c center"></div>
     <div class="class-name">nf-custom-c</div><div class="codepoint">e61e</div>
