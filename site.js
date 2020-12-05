@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   const elementGlyphSearch = document.getElementById('glyphSearch');
+  const elementGlyphSearchButton = document.getElementById('glyphSearchButton');
+  const elementGlyphSearchAllButton = document.getElementById('glyphSearchAllButton');
   const elementGlyphCheatSheet = document.getElementById('glyphCheatSheet');
 
   // nice scrolling
@@ -95,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
     scroll();
   }
 
-  // extremely basic search
+  // search via typing in input (debounced)
   elementGlyphSearch && elementGlyphSearch.addEventListener(
     'keyup',
     debounce(function (e) {
@@ -106,6 +108,32 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       searchGlyphs();
     }, 500)
+  );
+
+  // search via search button
+  elementGlyphSearchButton && elementGlyphSearchButton.addEventListener(
+    'click',
+    () => {
+      gtag('event', 'search-via-button', {
+        event_category: 'glyph-search',
+        event_label: 'Cheat Sheet : ' + (e.target && e.target.value),
+        value: e.target && e.target.value
+      });
+      searchGlyphs();
+    }
+  )
+
+  // search all via search all button
+  elementGlyphSearchAllButton && elementGlyphSearchAllButton.addEventListener(
+    'click',
+    () => {
+      gtag('event', 'search-all-via-button', {
+        event_category: 'glyph-search',
+        event_label: 'Cheat Sheet : all',
+        value: 'all'
+      });
+      searchAllGlyphs();
+    }
   );
 
   // Credit David Walsh (https://davidwalsh.name/javascript-debounce-function)
@@ -133,6 +161,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (callNow) func.apply(context, args);
     };
+  }
+
+  function searchAllGlyphs() {
+    elementGlyphSearch.value = '';
+    searchGlyphs();
   }
 
   function searchGlyphs() {

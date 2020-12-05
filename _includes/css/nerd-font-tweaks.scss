@@ -7,7 +7,49 @@ p {
 	margin: 0px;
 	font-weight: 900;
 	text-align: center;
-    padding: 8px 18px;
+	padding: 8px 18px;
+}
+
+input.nerd-font-input {
+	cursor: inherit;
+}
+
+.highlight {
+	display: inline-block;
+	width: auto;
+	margin: 0pt auto;
+}
+
+.nerd-font-button, .nerd-font-input {
+	cursor: pointer;
+	border-width: 2px;
+	font-size: 21px;
+	border-style: solid;
+	border-color: #f8f8f8;
+	color: #f8f8f8;
+	&input {
+		cursor: inherit;
+		border-radius: unset;
+	}
+	&.primary {
+		background: #1E5D8A;
+	}
+	&.secondary {
+		background: #BA45AE;
+	}
+	&.tertiary {
+		background: #565346;
+		border-color: #0fbfcf;
+		color: #0fbfcf;
+	}
+	&.tertiary--inverse {
+		background: #0fbfcf;
+		border-color: #565346;
+		color: #565346;
+	}
+	&.download {
+		background: #0C640C;
+	}
 }
 
 #main .nerd-font-button a {
@@ -55,10 +97,9 @@ a.nerd-font-button:before {
 	line-height: 4em;
 }
 
-#main .nerd-font-cheat-sheet-search {
+#main input.nerd-font-cheat-sheet-search {
 	margin-right: auto;
 	margin-left: auto;
-	font-size: 1.25em;
 	width: 400px;
 }
 
@@ -71,6 +112,7 @@ a.nerd-font-button:before {
 	justify-content: center;
 	display: flex;
 	flex-flow: row wrap;
+	margin-bottom: 60px;
 }
 
 #glyphCheatSheet .column {
@@ -260,6 +302,7 @@ a.nerd-font-button:before {
 
 .nerd-fonts-example-usage {
 	font-size: 2rem;
+	display: block;
 }
 
 /* Release Changelog section */

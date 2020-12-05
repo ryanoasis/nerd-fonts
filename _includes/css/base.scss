@@ -213,19 +213,19 @@
 	input[type="email"],
 	textarea,
 	select {
-		border: 1px solid #ccc;
+		// border: 1px solid #ccc;
 		padding: 6px 4px;
 		outline: none;
-		-moz-border-radius: 2px;
-		-webkit-border-radius: 2px;
-		border-radius: 2px;
-		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #777;
+		// -moz-border-radius: 2px;
+		// -webkit-border-radius: 2px;
+		// border-radius: 2px;
+		// font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		// color: #777;
 		margin: 0;
 		width: 210px;
 		max-width: 100%;
 		display: block;
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		background: #fff; }
 	select {
 		padding: 0; }
@@ -233,8 +233,8 @@
 	input[type="password"]:focus,
 	input[type="email"]:focus,
 	textarea:focus {
-		border: 1px solid #aaa;
- 		color: #444;
+		// border: 1px solid #aaa;
+ 		// color: #444;
  		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		box-shadow:  0 0 3px rgba(0,0,0,.2); }

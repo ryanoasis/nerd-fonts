@@ -2,7 +2,7 @@
 title: "Cheat Sheet"
 short_title: "Icons"
 bg: gray
-color: white
+color: "#0fbfcf"
 fa-icon: search
 page: cheat-sheet
 style: container
@@ -10,7 +10,17 @@ style: container
 
 <h1 class="center">Cheat Sheet</h1>
 
-<input type="text" id="glyphSearch" placeholder="Search for glyphs/icons..." title="Type in a glyph name or hex codepoint" class="nerd-font-cheat-sheet-search" />
+<input type="text" id="glyphSearch" placeholder="Search for glyphs/icons..." title="Type in a glyph name or hex codepoint" class="nerd-font-cheat-sheet-search nerd-font-input tertiary sanity-test" />
+
+<div class="center">
+  <h5 class="inlineblock nerd-font-button tertiary" id="glyphSearchButton">
+    <i class="nf nf-fa-search"></i>&nbsp;Search
+  </h5>
+
+  <h5 class="inlineblock nerd-font-button tertiary" id="glyphSearchAllButton">
+    <i class="nf nf-mdi-select_all"></i>&nbsp;Show All Icons
+  </h5>
+</div>
 
 <div id="glyphCheatSheet" class="nerd-font-cheat-sheet">
   <div class="column">
@@ -15255,13 +15265,16 @@ style: container
   </div>
 </div>
 
-### Example Usage
+<h3>Example Usages</h3>
+
+<h4>CSS</h4>
 
 <div class="center">
   {% highlight html %}
-      I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
+I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
   {% endhighlight %}
   <span class="nerd-fonts-example-usage">
     I really <i class="nf nf-fa-heart ow"></i> <i class="nf nf-custom-vim nfunc"></i>
   </span>
 </div>
+
