@@ -64,4 +64,5 @@ i='' i_custom_elm=$i
 i='' i_custom_elixir=$i
 i='' i_custom_electron=$i
 i='' i_custom_crystal=$i
+i='' i_custom_purescript=$i
 unset i
