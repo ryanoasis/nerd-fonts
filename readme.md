@@ -239,7 +239,7 @@ All fonts are available via [Homebrew Cask Fonts](https://github.com/Homebrew/ho
 
 ```sh
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `Option 5: Clone the Repo`
