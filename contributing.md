@@ -20,7 +20,7 @@
   * Make sure to update the correct subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
 ### 2. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
-  * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
+  * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
   * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
 ### 3. Run build scripts
 * When fairly satisfied the font patches correctly, run the following scripts in this order:
@@ -41,7 +41,7 @@
   * Try to make subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
 ### 3. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
-  * `./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
+  * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
   * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
 ### 4. Run build scripts
 * When fairly satisfied the font patches correctly, run the following scripts in this order:
