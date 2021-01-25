@@ -5,7 +5,7 @@ A font for programming and terminal use.
 
 TrueType automatically traced, with available bitmaps in heights of 11 and 14 pixels.
 
-Copyright 2010 by Hugo Chargois (http://font.gohu.eu)
+Copyright 2010 by Hugo Chargois (https://font.gohu.org)
 
 Converted by Guilherme Maeda (github.com/koemaeda)
 
