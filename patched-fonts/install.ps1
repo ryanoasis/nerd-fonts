@@ -24,10 +24,13 @@ param(
 )
 
 $fontFiles = New-Object 'System.Collections.Generic.List[System.IO.FileInfo]'
+
+Push-Location $PSScriptRoot
 foreach ($aFontName in $FontName) {
-    Get-ChildItem $PSScriptRoot -Filter "${aFontName}.ttf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
-    Get-ChildItem $PSScriptRoot -Filter "${aFontName}.otf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
+    Get-ChildItem $aFontName -Filter "*.ttf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
+    Get-ChildItem $aFontName -Filter "*.otf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
 }
+Pop-Location
 
 $fonts = $null
 foreach ($fontFile in $fontFiles) {
