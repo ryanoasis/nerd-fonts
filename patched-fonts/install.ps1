@@ -16,29 +16,46 @@
     Remove the "-WhatIf" to install the fonts.
 #>
 [CmdletBinding(SupportsShouldProcess)]
-param(
-    # Specifies the font name to install.  Default value will install all fonts.
-    [Parameter(Position=0)]
-    [string[]]
-    $FontName = '*'
-)
+param ()
 
-$fontFiles = New-Object 'System.Collections.Generic.List[System.IO.FileInfo]'
+dynamicparam {
+    $Attributes = [Collections.ObjectModel.Collection[Attribute]]::new()
+    $ParamAttribute = [Parameter]::new()
+    $ParamAttribute.Position = 0
+    $ParamAttribute.ParameterSetName = '__AllParameterSets'
+    $Attributes.Add($ParamAttribute)
 
-Push-Location $PSScriptRoot
-foreach ($aFontName in $FontName) {
-    Get-ChildItem $aFontName -Filter "*.ttf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
-    Get-ChildItem $aFontName -Filter "*.otf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
+    [string[]]$FontNames = Get-ChildItem $PSScriptRoot -Directory -Name
+    $Attributes.Add([ValidateSet]::new(($FontNames)))
+
+    $Parameter = [Management.Automation.RuntimeDefinedParameter]::new('FontName',  [string[]], $Attributes)
+    $RuntimeParams = [Management.Automation.RuntimeDefinedParameterDictionary]::new()
+    $RuntimeParams.Add('FontName', $Parameter)
+
+    return $RuntimeParams
 }
-Pop-Location
 
-$fonts = $null
-foreach ($fontFile in $fontFiles) {
-    if ($PSCmdlet.ShouldProcess($fontFile.Name, "Install Font")) {
-        if (!$fonts) {
-            $shellApp = New-Object -ComObject shell.application
-            $fonts = $shellApp.NameSpace(0x14)
+end {
+    $FontName = $PSBoundParameters.FontName
+    if (-not $FontName) {$FontName = '*'}
+
+    $fontFiles = [Collections.Generic.List[System.IO.FileInfo]]::new()
+
+    Push-Location $PSScriptRoot
+    foreach ($aFontName in $FontName) {
+        Get-ChildItem $aFontName -Filter "*.ttf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
+        Get-ChildItem $aFontName -Filter "*.otf" -Recurse | Foreach-Object {$fontFiles.Add($_)}
+    }
+    Pop-Location
+
+    $fonts = $null
+    foreach ($fontFile in $fontFiles) {
+        if ($PSCmdlet.ShouldProcess($fontFile.Name, "Install Font")) {
+            if (!$fonts) {
+                $shellApp = New-Object -ComObject shell.application
+                $fonts = $shellApp.NameSpace(0x14)
+            }
+            $fonts.CopyHere($fontFile.FullName)
         }
-        $fonts.CopyHere($fontFile.FullName)
     }
 }
