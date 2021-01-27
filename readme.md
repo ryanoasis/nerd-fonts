@@ -221,6 +221,12 @@ _Note_: **Requires cloning** the repo as of now
 ./install.sh
 ```
 
+or, in Powershell (Windows only):
+
+```pwsh
+./install.ps1
+```
+
 #### Single font:
 
 * Installs a single Font of your choice
@@ -229,6 +235,14 @@ _Note_: **Requires cloning** the repo as of now
 ./install.sh <FontName>
 ./install.sh Hack
 ./install.sh HeavyData
+```
+
+or, in Powershell (Windows only):
+
+```pwsh
+./install.ps1 <FontName>
+./install.ps1 Hack
+./install.ps1 HeavyData
 ```
 
 ### `Option 4: Homebrew Fonts`
