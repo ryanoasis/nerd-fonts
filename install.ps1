@@ -8,10 +8,10 @@
     C:\PS> ./install.ps1
     Installs all the fonts located in the Git repository.
 .EXAMPLE
-    C:\PS> ./install.ps1 furamono-, hack-*
-    Installs all the FuraMono and Hack fonts.
+    C:\PS> ./install.ps1 FiraCode, Hack
+    Installs all the FiraCode and Hack fonts.
 .EXAMPLE
-    C:\PS> ./install.ps1 d* -WhatIf
+    C:\PS> ./install.ps1 DejaVuSansMono -WhatIf
     Shows which fonts would be installed without actually installing the fonts.
     Remove the "-WhatIf" to install the fonts.
 #>
