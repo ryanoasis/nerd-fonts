@@ -1,7 +1,7 @@
 # Iosevka ![Version](https://img.shields.io/github/release/be5invis/Iosevka.svg)
 **Iosevka** is an *open-source*, *sans-serif* + *slab-serif*, *monospace* + *quasi‑proportional* typeface family, designed for *writing code*, using in *terminals*, and preparing *technical documents*.
 
-![](images/preview-all.png)
+![](https://github.com/be5invis/Iosevka/raw/master/images/preview-all.png)
 
 ## Installation
 
@@ -29,11 +29,11 @@ Quit your editor/program. Unzip and open the folder.
 
 In the official package, Iosevka provides 6 monospace subfamilies and 3 quasi-proportional subfamilies. In all the monospace subfamilies, 9 weights (Thin to Heavy), 2 widths (Normal and Extended), and 3 slopes (Upright, Italic and Oblique) are included. In the quasi-proportional subfamilies, the quantity of widths is reduced to 1.
 
-![Weights sample](images/weights.png)
+![Weights sample](https://github.com/be5invis/Iosevka/raw/master/images/weights.png)
 
 All versions include the same ranges of characters: Latin letters, Greek letters (including Polytonic), some Cyrillic letters, IPA symbols and common punctuations and some symbols. You can check out the full list [here](http://be5invis.github.io/Iosevka/specimen).
 
-![Languages Sample](images/languages.png)
+![Languages Sample](https://github.com/be5invis/Iosevka/raw/master/images/languages.png)
 
 <!-- BEGIN Section-Language-List -->
 <!-- THIS SECTION IS AUTOMATICALLY GENERATED. DO NOT EDIT. -->
@@ -57,144 +57,144 @@ Monospace Iosevka contains various stylistic sets to change the shape of certain
 <td colspan="3">Andale Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss01-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss01-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss01-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss01-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss02</code></td>
 <td colspan="3">Anonymous Pro Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss02-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss02-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss02-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss02-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss03</code></td>
 <td colspan="3">Consolas Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss03-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss03-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss03-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss03-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss04</code></td>
 <td colspan="3">Menlo Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss04-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss04-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss04-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss04-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss05</code></td>
 <td colspan="3">Fira Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss05-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss05-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss05-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss05-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss06</code></td>
 <td colspan="3">Liberation Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss06-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss06-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss06-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss06-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss07</code></td>
 <td colspan="3">Monaco Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss07-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss07-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss07-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss07-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss08</code></td>
 <td colspan="3">Pragmata Pro Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss08-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss08-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss08-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss08-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss09</code></td>
 <td colspan="3">Source Code Pro Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss09-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss09-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss09-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss09-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss10</code></td>
 <td colspan="3">Envy Code R Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss10-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss10-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss10-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss10-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss11</code></td>
 <td colspan="3">X Window Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss11-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss11-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss11-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss11-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss12</code></td>
 <td colspan="3">Ubuntu Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss12-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss12-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss12-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss12-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss13</code></td>
 <td colspan="3">Lucida Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss13-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss13-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss13-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss13-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss14</code></td>
 <td colspan="3">JetBrains Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss14-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss14-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss14-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss14-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss15</code></td>
 <td colspan="3">IBM Plex Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss15-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss15-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss15-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss15-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss16</code></td>
 <td colspan="3">PT Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss16-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss16-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss16-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss16-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss17</code></td>
 <td colspan="3">Recursive Mono Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss17-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss17-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss17-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss17-1.png"/></td>
 </tr>
 <tr>
 <td><code>ss20</code></td>
 <td colspan="3">Curly Style</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/stylistic-set-u-ss20-1.png"/></td>
-<td colspan="2"><img src="images/stylistic-set-i-ss20-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-u-ss20-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/stylistic-set-i-ss20-1.png"/></td>
 </tr>
 </table>
 
@@ -206,7 +206,7 @@ Alongside stylistic sets, Monospace Iosevka can also be configured to cherry-pic
 
 **Caution :**  Certain software may limit the quantity of OpenType features and drop some of them if the feature list is too long. Please validate your feature configuration to ensure that it worked in your software.
 
-![Character Variants](images/charvars.png)
+![Character Variants](https://github.com/be5invis/Iosevka/raw/master/images/charvars.png)
 
 ### Ligations
 
@@ -221,14 +221,14 @@ Monospace subfamilies support ligations. Iosevka’s default ligation set is ass
 <td>Ligation Off</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-calt-0.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/blob/master/images/ligset-calt-0.png"/></td>
 </tr>
 <tr>
 <td><code>calt</code></td>
 <td>Default setting in text editors</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-calt-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-calt-1.png"/></td>
 </tr>
 </table>
 
@@ -245,70 +245,70 @@ Iosevka supports Language-Specific Ligations, which is the ligation set enabled 
 <td>Discretionary ligatures</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-dlig-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-dlig-1.png"/></td>
 </tr>
 <tr>
 <td><code>CLIK</code>; <code>JSPT</code>; <code>PHPX</code></td>
 <td>C-Like, JavaScript, PHP</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-CLIK-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-CLIK-1.png"/></td>
 </tr>
 <tr>
 <td><code>MLXX</code>; <code>FSHP</code></td>
 <td>ML, F#</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-MLXX-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-MLXX-1.png"/></td>
 </tr>
 <tr>
 <td><code>FSTA</code></td>
 <td>F*</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-FSTA-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-FSTA-1.png"/></td>
 </tr>
 <tr>
 <td><code>HSKL</code>; <code>IDRS</code>; <code>ELMX</code>; <code>PURS</code></td>
 <td>Haskell, Idris, Elm, PureScript</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-HSKL-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-HSKL-1.png"/></td>
 </tr>
 <tr>
 <td><code>SWFT</code></td>
 <td>Swift</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-SWFT-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-SWFT-1.png"/></td>
 </tr>
 <tr>
 <td><code>COQX</code></td>
 <td>Coq</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-COQX-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-COQX-1.png"/></td>
 </tr>
 <tr>
 <td><code>MTLB</code></td>
 <td>Matlab</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-MTLB-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-MTLB-1.png"/></td>
 </tr>
 <tr>
 <td><code>VRLG</code></td>
 <td>Verilog</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-VRLG-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-VRLG-1.png"/></td>
 </tr>
 <tr>
 <td><code>WFLM</code></td>
 <td>Wolfram Language (Mathematica)</td>
 </tr>
 <tr>
-<td colspan="2"><img src="images/ligset-WFLM-1.png"/></td>
+<td colspan="2"><img src="https://github.com/be5invis/Iosevka/raw/master/images/ligset-WFLM-1.png"/></td>
 </tr>
 </table>
 
@@ -1214,4 +1214,4 @@ A sample configuration could be found at [private-build-plans.sample.toml](priva
 
 ---
 
-![Family Matrix](images/matrix.png)
+![Family Matrix](https://github.com/be5invis/Iosevka/raw/master/images/matrix.png)
