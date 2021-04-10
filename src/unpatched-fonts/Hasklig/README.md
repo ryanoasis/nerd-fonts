@@ -6,7 +6,7 @@ Programming languages are limited to relatively few characters. As a result, com
 
 Composite glyphs are problematic in languages such as Haskell which utilize these complicated operators (`=>` `-<` `>>=` etc.) extensively. The readability of such complex code improves with pretty printing. Academic articles featuring Haskell code often use [lhs2tex](https://www.andres-loeh.de/lhs2tex/) to achieve an appealing rendering, but it is of no use when programming.
 
-Some Haskellers have resorted to Unicode symbols (`⇒`, `←` _etc._), which are valid in the <span style="font-variant: small-caps">ghc</span>. However they are one-character-wide and therefore eye-strainingly small. Furthermore, when displayed as substitutes to the underlying multi-character representation, as [vim2hs] (https://github.com/dag/vim2hs) does, the characters go out of alignment.
+Some Haskellers have resorted to Unicode symbols (`⇒`, `←` _etc._), which are valid in the <span style="font-variant: small-caps">ghc</span>. However they are one-character-wide and therefore eye-strainingly small. Furthermore, when displayed as substitutes to the underlying multi-character representation, as [vim2hs](https://github.com/dag/vim2hs) does, the characters go out of alignment.
 
 Hasklig solves the problem the way typographers have always solved ill-fitting characters which co-occur often: [ligatures](https://en.wikipedia.org/wiki/Typographic_ligature). The underlying code stays the same — only the representation changes.
 
@@ -50,6 +50,7 @@ This list is compiled based on reports on the current state of support for code 
 + Atom (*[since v1.1.0](http://blog.atom.io/2015/10/29/atom-1-1-is-out.html)*)
   - Can also be installed as package courtesy of [atom-hasklig](https://atom.io/packages/hasklig) by [adilparvez](https://github.com/adilparvez)
 + BBEdit 11 ([Instructions](https://github.com/i-tu/Hasklig/issues/3#issue-46601683))
++ Brackets
 + Chocolat
 + Geany
 + gEdit
@@ -63,6 +64,7 @@ This list is compiled based on reports on the current state of support for code 
 + QtCreator (_v.3.2.2 on GNU/Linux x64_)
 + RStudio
 + Smultron
++ Sublime Text 3
 + Terminal (OSX)
 + TextEdit
 + TextMate (_from version 2.0-alpha.9549 onwards_)
@@ -77,8 +79,6 @@ This list is compiled based on reports on the current state of support for code 
 - gVim (_output corrupted. A_ [patch](https://groups.google.com/forum/#!topic/vim_dev/0sETSAwe5Wo) _exists, but it has not been incorporated into mainstream gVim._)
 - KDevelop 4
 - Notepad++
-- Sublime Text (_Vote for the enhancement_ [**here**](http://sublimetext.userecho.com/topics/4719-does-sublimetext-support-programming-ligatures-fontlike-fira-code/))
-
 - Xamarin Studio/Monodevelop
 
 
