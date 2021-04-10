@@ -22,7 +22,7 @@ Select JetBrains Mono in the IDE settings: go to `Preferences/Settings` → `Edi
 2. Install it using the `font-jetbrains-mono` cask:
 
    ```console
-   brew cask install font-jetbrains-mono
+   brew install --cask font-jetbrains-mono
    ```
    
 #### Through Chocolatey (Windows only)
@@ -81,9 +81,7 @@ In the terminal:
 ```css
 @font-face{
     font-family: 'JetBrains Mono';
-    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.eot') format('embedded-opentype'),
-         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
-         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff') format('woff'),
+    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
          url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;

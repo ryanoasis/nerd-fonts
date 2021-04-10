@@ -1,11 +1,35 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## 2.220 (Unreleased)
+## 2.225 (27.01.2021)
+- Added exclusion in `<-` ligature to look reasonable in negative arguments for C++ `<-1>` #107
+- `/**` brought back #202
+- `*/` `/*` aligned to match `*`  #215
+- Added multiline bracket characters `⎛` `⎞` `⎝`  `⎠` `⎜` #290
+- Tuned Greek letters construction and contour polish #336
+- Removed `[||]` ligature to more consistence with `[|`  `|]` #353
+- Added `ϖ` #369
+- Fixed monospace breaking by tuning `⟵` `⟶` `⟷` arrows to fit standart width #387
+- Added exclusion in `[<` `>]` to perform in `[<=5]` expression #388
+- Fixed Powerline arrows height #395
+
+## 2.221 (28.12.2020)
 - Tuned Vietnamese diacritics more, removed errors in `Ẫ`
 - Removed `0x0` ligature #346
 - Added `⟵` `⟷` `⟶` #255
 - Corrected vertical placement on BoxDrawing elements
+- Removed `.-` ligature #76
+- Disabled ligatures for lookahead/lookbehind prefixes (regex) #126
+- Added support for combined marks #228
+- Added `∪` #244
+- Added `➜`(U+279C), `✗`(U+2717), and `✓`(U+2713) #246
+- Added `<<~` #291
+- Added `‾` Overline #298
+- Tuned Cyrillic `в` #335
+- Increase height of BoxDraving #382
+- Added `‿` `∁` `∎` `⊸` `⊎` `⨀` `⨆` `∩` `∶` `⊢` `⊤` `⊥` `⊛` `⊖` `⊗` `⊙` `⊕` `◦` `⋆` `ℚ` `ℤ` `slashshortcomb`
+- Corrected placement of bar in `Đ`
+- Polished Digits
 
 ## 2.210 (12.11.2020)
 - Vertical metrics (win, hhea, typo) made equal to prevent different line-height #334 #286. In some cases it will increase line-height by 1px but in some cases it will decrease by 3px

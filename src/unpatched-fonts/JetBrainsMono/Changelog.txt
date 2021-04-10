@@ -1,98 +1,0 @@
-# 2.210
-— Vertical metrics (win, hhea, typo) made equal to prevent different line-height #334 #286. In some cases it will increase line-height by 1px but in some cases it will decrease by 3px
-— Because of vertical metrics unification Vietnamese diacritics was made more compact in capital letters
-— Added symbols □ △ ▽ ◁ ▷ ▻ ◅ ► ◄ ▪ ▫ ▴ ▾ ◂ ▸ ▵ ◃ ▹ ▿ ∘ ❮ ❯ ❰ ❱◌ ◯ ◎ ✕ ⚠ ⚡ ⌂ ◔ ◧ ◨ ◩ ◪ ◫ ⌄ ⌅ ◕ ⌥ ⌃ ⇧ ⌘ #277
-— Added Bitcoin symbol #292
-— Correction in Greek letters Θ ρ #336
-
-# 2.200
-## Major changes
-— Added Greek alphabet #58
-— Reworked diacritics #228
-— Removed x-height increasing from hinting. Affects non Retina screens. #286 #265 #272 #262 #275
-— A lot of tiding up of contours to meet Google Fonts criteria
-## Other updated and fixes
-— Ligature for 0x (hexadecimal) prefix #98
-— Lowered horizontal bar in Florin to make it more distinguishable form italic f #129
-— Changes the 8 construction to make it more distinguishable from B and 0 #188
-— Added Changelog #263
-— Variable font correctly grouped in one family with Italics #270
-— Reverted to previous construction of f #273
-— Corrected OneNote line height #278
-— Removed kerning pair #297
-— Add Overline #298
-— Increased difference between hyphen, en-dash, and em-dash #318
-— Removed the "tail" in the italic a 
-
-# 2.002
-— Changed license from Apache 2.0. to SIL 1.1.
-— Corrected Extra Light weight name in metadata #274
-
-# 2.001
-— Corrected proportion string in metadata in Italic #266
-— Changed the naming of source files to match previous
-
-# 2.000
-## Major changes
-— Added 3 lighter weights with matching italics #1 SemiLight — Special for the dark background. It’s a slightly more thin version of Regular. Light — Will perform best on HiDpi in more big sizes. ExtraLight — If you want to go even thinner. Recommended for presentation mode.	
-— Added Variable format for more precise weight tuning. — Project migrated from FontLab to Glyphs. Source in UFO provided.
-## Other updated and fixes
-— *ML comment ligatures are vertically misaligned #77 — Ligatures in a glob pattern look inconsistent #88 — Zero - hinting the dot #104 — Big space above text in OneNote #210 — Corrected hinting #218 #235 #239 #252 — Monospaced detection errors  #227 #230 — Wrong interpretation in "<||> |>" #234 — Reworked % ‰ #236 — Missing some Powerline symbols #240 — Disable >- ligature when followed by < (>-<) #251 — Add the Latin Capital Letter Sharp S (U+1E9E) #262 — Added superior & inferior numbers ⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉ — Fine tuning of capital, ascender & descender metrics — Raised the bar in f to work better in context of the line — More spacing tuning in arrow ligatures — Corrections in -< -<< <— <!— — More pronounced bar in Ħ Ŧ ћ ħ đ ŧ — Correct u+02C9 placement — Corrected placement of Ogonek in Uogonek — Corrections in Vietnamese diacritics
-
-# 1.0.6
-## Major changes
-— Fixed problems with rendering of Powerline symbols #189 — Added support of Vietnamese language #14 #209 — All diacritics redone. Corrected a bunch of problems of placing & more balanced mass. — Added DesignSpace+UFO source files. Just converted & dumped as they are, for now. There are issues with Masters compatibility. Tested in Glyphs app.
-## Other updated and fixes
-— Fixed construction of † ‡ ∏ ∐ #205 #206 — Added exclusion in /* ligature #88 — Refactored ß — ~= ligature removed #204 — Added >-> ligature #194 — Added u0336 Long stroke overlay #190 — Added ligature //= #185 — Corrected contour of the arrows in ligatures #196
-Known issues
-— In Medium weights the height of [ ] { } decreased by one pixel in 12px, 13px sizes. This is a hinting bug.
-
-# 1.0.5
-— Lowered the height of Powerline arrows #172
-— <*> Interpolation bug fix #180
-— Removed ligatures from loading sequences [-> [=> #151
-— Tuned 1 to be more distinguishable from i in small sizes #176
-— Sorted glyphs by unicode order #170
-— Added U+02BC "Modifier Letter Apostrophe" #168
-— Added new ligature @_
-— Added 29 glyphs: Ə ə Ǧ ǧ Ǫ ǫ Ǵ ǵ ∀ ∃ ∈ ∋ ∐ ⟨ ⟩ ∧ ∨ ∷ ∼ ≈ ≡ ⍴ ­■ ▲ ▶ ▼ ◀ ◆ ●
-— Added support of https://unicodepowersymbol.com/
-— Refactored ¶ l j
-
-# 1.0.4
-— Added No Ligature version. Only in .ttf format. It called JetBrains Mono NL. #19
-— Fixed problems with tiny gaps between the Box Drawing elements. #84
-— Balanced the size of <> </> ligatures to match in mass. #116
-— Fixed problem with not working <-- ligature. #95
-— Added U+FEFF symbol. No-break zero space. #147
-— <!-- --> ligatures now should be on the same heights. #77
-— Corrected ===> behaviour in loading sequences. #151
-— Corrected A placement in italics.
-— Made dot in the 0 smaller, so it will be more distinguishable from 8 at small sizes.
-
-# 1.0.3
-— Added support of Box Drawings 159 symbols #84 #55
-— Added ligature <-- #95
-— Removed the \/ & /\ ligatures #65 #76 #78 #83
-— Corrected behaviour of ligatures in a glob pattern #88
-— Changed the $ & dependent glyphs #110
-— Added no-break space #94
-— Corrected unexpected >= ligature usage in >=< sequence
-— Refactored w, W, m, M
-— Slightly tuned ascenders & descenders
-— Added support of Mongolian language #81
-— Better placement of the dot in 0 #104
-— Reorganised family names #122
-
-# 1.0.2
-— Reorganised font family names for better recognition in Terminal apps
-— Added powerline glyphs
-— Added ₽ λ ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙
-— New ligature <#--
-— Fixed bug with escape sequence ligature \/
-— [+->] excluded from ligature sequence
-— Dutch language now presented in Mac Font Book app
-
-# 1.0.1
-— Update PANOSE and PostScript metadata to be visible as monospaced font on Windows 10
-— Corrected the italic ß ſ
