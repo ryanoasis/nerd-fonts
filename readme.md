@@ -28,7 +28,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Important Notices
 * `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
-* this repository is quite large (several GB) and growing, therefore cloning this repository is **not** recommended ([due to Repo size](#option-5-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
+* cloning this repository is **not** recommended ([due to Repo size](#option-5-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
 
 
 ## Table of Contents
@@ -168,12 +168,12 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 ## Combinations
 
-- Over **`1,436,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`51`** patched font typefaces
-  - **`702`** patched font families
-  - **`2,808`** 'complete' variations/combinations
-  - **`1,436,292`** _possible_ variations/combinations
-  - **`1,439,100`** total calculated combinations (2,808 + 1,436,292)
+- Over **`1,485,000`** unique variations/combinations (Power Set) of patched fonts:
+  - **`50`** patched font typefaces
+  - **`719`** patched font families
+  - **`2,876`** 'complete' variations/combinations
+  - **`'1,485,410'`** _possible_ variations/combinations
+  - - **`1,488,286`** total calculated combinations (2,876 + 1,428,110)
 - Combinations for each font are any combination of [Variations](#variations)
 
 ### Variations
@@ -239,7 +239,7 @@ All fonts are available via [Homebrew Cask Fonts](https://github.com/Homebrew/ho
 
 ```sh
 brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew cask install font-hack-nerd-font
 ```
 
 ### `Option 5: Clone the Repo`

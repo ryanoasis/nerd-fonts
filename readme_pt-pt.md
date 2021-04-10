@@ -162,12 +162,12 @@ See [Wiki: Nomes dos ícones em Unix Shell][wiki-icon-names-in-shell]
 
 ## Combinações
 
-- Há mais de **`1,428,000`** variações/combinações únicas (Power Set) de tipos de letra modificados:
+- Há mais de **`1,485,000`** variações/combinações únicas (Power Set) de tipos de letra modificados:
   - **`50`** tipos de letra modificado
-  - **`697`** famílias de tipo de letra modificadas
-  - **`2,788`** variações/combinações «completas»
-  - **`1,428,110`** variações/combinações _possíveis_
-  - **`1,430,898`** combinações totais calculadas (2,788 + 1,428,110)
+  - **`719`** famílias de tipo de letra modificadas
+  - **`2,876`** variações/combinações «completas»
+  - **`'1,485,410'`** variações/combinações _possíveis_
+  - - **`1,488,286`** combinações totais calculadas (2,876 + 1,428,110)
 - As combinações para cada tipo de letra são quaisquer combinações de [Variações](#variações)
 
 ### Variações

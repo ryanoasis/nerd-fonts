@@ -166,12 +166,12 @@ Ve a la [Wiki: Nombres de iconos en la shell][wiki-icon-names-in-shell]
 
 ## Combinaciones
 
-- Más de **`1,571,470`** variaciones/combinaciones únicas (Power Set) de fuentes parchadas:
+- Más de **`1,485,000`** variaciones/combinaciones únicas (Power Set) de fuentes parchadas:
   - **`50`** tipografías de fuentes parchadas
-  - **`697`** familias de fuente parchadas
-  - **`2,788`** variaciones/combinaciones 'completas'
-  - **`1,571,470`** variaciones/combinaciones _posibles_
-  - **`1,574,258`** combinaciones totales calculadas (2,788 + 1,571,470)
+  - **`719`** familias de fuente parchadas
+  - **`2,876`** variaciones/combinaciones 'completas'
+  - **`'1,485,410'`** variaciones/combinaciones _posibles_
+  - **`1,488,286`** combinaciones totales calculadas (2,876 + 1,428,110)
 - Combinaciones para cada fuente son cualquier combinación de [Variaciones](#variations)
 
 ### Variaciones

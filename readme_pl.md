@@ -238,12 +238,12 @@ echo $i_oct_heart
 
 ## Kombinacje
 
-- Ponad **`1,571,470`** unikalnych wariacji/kombinacji (Power Set) spatchowanych fontów:
+- Ponad **`1,485,000`** unikalnych wariacji/kombinacji (Power Set) spatchowanych fontów:
   - **`50`** spatchowanych fontów (typefaces)
-  - **`697`** spatchowanych rodzin fontów (font families)
-  - **`2,788`** 'kompletne' wariacje/kombinacje
-  - **`1,571,470`** _możliwe_ wariacje/kombinacje
-  - **`1,574,258`** suma wszystkich kombinacji (2,788 + 1,571,470)
+  - **`719`** spatchowanych rodzin fontów (font families)
+  - **`2,876`** 'kompletne' wariacje/kombinacje
+  - **`'1,485,410'`** _możliwe_ wariacje/kombinacje
+  - **`1,488,286`** suma wszystkich kombinacji (2,876 + 1,428,110)
 - Kombinacje dla każdego fontu są dowolnymi kombinacjami [wariacji](#variations)
 
 ### Wariacje
