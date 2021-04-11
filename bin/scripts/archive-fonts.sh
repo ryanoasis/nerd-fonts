@@ -74,5 +74,5 @@ do
 
   # add mini readme file
   zip -9 "$outputdir/$basename" -rj "$mini_readme"
-  rm "$mini_readme"
+  rm -f "$mini_readme"
 done
