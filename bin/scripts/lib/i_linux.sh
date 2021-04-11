@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Font Logos (Font Linux) (29 icons)
-# Codepoints: Nerd Fonts moved F100-F11C with holes → F300-F31C
+# Font Logos (Font Linux) (44 icons)
+# Codepoints: Nerd Fonts moved F100-F12D with holes → F300-F32D
 # Nerd Fonts Version: 2.1.0
 # Script Version: 1.1.0
 test -n "$__i_linux_loaded" && return || __i_linux_loaded=1
@@ -33,4 +33,19 @@ i='' i_linux_slackware_inverse=$i
 i='' i_linux_tux=$i
 i='' i_linux_ubuntu=$i
 i='' i_linux_ubuntu_inverse=$i
+i='' i_linux_flathub=$i
+i='' i_linux_gnu_guix=$i
+i='' i_linux_snappy=$i
+i='' i_linux_void=$i
+i='' i_linux_zorin=$i
+i='' i_linux_budgie=$i
+i='' i_linux_deepin=$i
+i='' i_linux_illumos=$i
+i='' i_linux_openbsd=$i
+i='' i_linux_solus=$i
+i='' i_linux_archlabs=$i
+i='' i_linux_ferris=$i
+i='' i_linux_pop_os=$i
+i='' i_linux_artix=$i
+i='' i_linux_kali_linux=$i
 unset i
