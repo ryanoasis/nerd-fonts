@@ -311,6 +311,7 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
 * requires: Python 2 (or Python 3), `python-fontforge` package (version `20141231` or later, see
   the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * alternative install method on OSX: `brew install fontforge`
+* alternative method using Docker: [Docker Hub](https://hub.docker.com/r/nerdfonts/patcher)
 * Usage:
 
 ```
@@ -323,6 +324,11 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
 ./fontforge -script font-patcher PATH_TO_FONT
 ```
 
+* Patching fonts with Docker:
+
+```
+docker run -v /path/to/fonts:/in -v /path/for/output:/out nerdfonts/patcher [OPTIONS]
+```
 
 ```
 usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
@@ -397,7 +403,8 @@ optional arguments:
 	./font-patcher Inconsolata.otf --fontawesome
 	./font-patcher Inconsolata.otf --fontawesome --octicons --pomicons
 	./font-patcher Inconsolata.otf
-
+    docker run --rm -v ~/myfont/patchme:/in -v ~/myfont/patched:/out nerdfonts/patcher
+    docker run --rm -v ~/Desktop/myfont/patchme:/in -v ~/Desktop/myfont/patched:/out nerdfonts/patcher --fontawesome
 
 <a name="gotta-patch-em-all"></a>
 ## Gotta Patch 'em All Font Patcher!
