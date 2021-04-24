@@ -85,7 +85,7 @@ class font_patcher:
                     if symfont:
                         symfont.close()
                         symfont = None
-                    symfont = fontforge.open(__dir__ + "/src/glyphs/" + patch['Filename'])
+                    symfont = fontforge.open(self.args.glyphdir + patch['Filename'])
 
                     # Match the symbol font size to the source font size
                     symfont.em = self.sourceFont.em
@@ -143,6 +143,7 @@ class font_patcher:
         parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.')
         parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
         parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
+        parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
 
         # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
         progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
