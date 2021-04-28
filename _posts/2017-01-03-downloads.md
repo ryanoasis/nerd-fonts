@@ -35,7 +35,7 @@ page: font-downloads
 
 ```sh
 brew tap homebrew/cask-fonts &&
-brew cask install font-<FONT NAME>-nerd-font
+brew install --cask font-<FONT NAME>-nerd-font
 ```
 
 <h3 class="center"> :// curl </h3>
