@@ -75,7 +75,7 @@
       "patchedName": "Cousine",
       "imagePreviewFont": "Cousine Nerd Font",
       "linkPreviewFont": "cousine",
-      "description": "similar to Courier New with better readablitiy, dotted zeros"
+      "description": "similar to Courier New with better readability, dotted zeros"
     },
     {
       "unpatchedName": "DaddyTimeMono",
@@ -89,7 +89,7 @@
       "patchedName": "DejaVuSansMono",
       "imagePreviewFont": "DejaVuSansMono Nerd Font",
       "linkPreviewFont": "dejavu",
-      "description": "dotted zero, based on the Bitstream Vera Fonts with a wider range of character"
+      "description": "dotted zero, based on the Bitstream Vera Fonts with a wider range of characters"
     },
     {
       "unpatchedName": "DroidSansMono",
@@ -145,7 +145,7 @@
       "patchedName": "Hasklug",
       "imagePreviewFont": "Hasklug Nerd Font",
       "linkPreviewFont": "hasklig",
-      "description": "monospaced ligatures, makes composite glyphs (e.g. ->) more reabable, especially in Haskell"
+      "description": "monospaced ligatures, makes composite glyphs (e.g. ->) more readable, especially in Haskell"
     },
     {
       "unpatchedName": "HeavyData",
