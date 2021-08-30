@@ -244,13 +244,21 @@ brew install --cask font-hack-nerd-font
 
 ### `Option 5: Clone the Repo`
 
-> Best option for **full control**, **all** or **most** of the fonts, or **contributing** to development.
+> Best option for **full control**, **all** or **some** of the fonts, or **contributing** to development.
 
-Cloning of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.
+A full clone of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.  
 
-However if you do want to clone the repo be sure to _shallow_ clone:
+If you do want to clone the entire repo be sure to _shallow_ clone:
 ```sh
 git clone --depth 1
+```
+
+If you want to clone a sub-directory, use `git sparse-checkout`. The following example requires `Git v2.26`:
+
+```sh
+git clone --filter=blob:none --sparse git@github.com:ryanoasis/nerd-fonts
+cd nerd-fonts
+git sparse-checkout add patched-fonts/JetBrainsMono
 ```
 
 ### `Option 6: Ad Hoc Curl Download`
