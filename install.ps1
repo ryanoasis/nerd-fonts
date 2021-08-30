@@ -1,3 +1,4 @@
+#Requires -Version 3.0
 <#
 .SYNOPSIS
     Installs the provided fonts.
