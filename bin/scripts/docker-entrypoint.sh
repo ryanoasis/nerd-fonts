@@ -16,4 +16,4 @@ for i; do
     fi
 done
 
-for f in /in/*.otf /in/*.ttf /in/*.woff /in/*.eot; do [ -f $f ] && fontforge -script /nerd/font-patcher -out /out $args $f; done
+for f in /in/*.otf /in/*.ttf /in/*.woff /in/*.eot /in/*.ttc; do [ -f $f ] && fontforge -script /nerd/font-patcher -out /out $args $f; done
