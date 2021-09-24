@@ -55,7 +55,7 @@ Combinations are no longer included by default because of the large inflation in
 
 
 ```sh
-# 4094 Possible Combinations:
+#     4094 Possible Combinations:
 
 ./font-patcher JetBrainsMonoNL-ExtraBoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher JetBrainsMonoNL-ExtraBoldItalic.ttf  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
