@@ -210,7 +210,6 @@ Fonts are available for download as packages in the [latest release](https://git
 
 > Best option if you want to **automate** installing or for use in **scripts**.
 
-_Note_: Only for Linux & macOS (OS X)
 _Note_: **Requires cloning** the repo as of now
 
 #### All fonts:
