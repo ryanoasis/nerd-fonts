@@ -347,7 +347,7 @@ class font_patcher:
             'Cascadia Code'  : 'Caskaydia Cove',
             'cascadia code'  : 'caskaydia cove',
             'CascadiaCode'   : 'CaskaydiaCove',
-            'cascadiacode'   : 'caskaydiacove'
+            'cascadiacode'   : 'caskaydiacove',
             'Cascadia Mono'  : 'Caskaydia Mono',
             'cascadia mono'  : 'caskaydia mono',
             'CascadiaMono'   : 'CaskaydiaMono',
