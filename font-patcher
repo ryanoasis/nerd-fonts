@@ -348,6 +348,10 @@ class font_patcher:
             'cascadia code'  : 'caskaydia cove',
             'CascadiaCode'   : 'CaskaydiaCove',
             'cascadiacode'   : 'caskaydiacove'
+            'Cascadia Mono'  : 'Caskaydia Mono',
+            'cascadia mono'  : 'caskaydia mono',
+            'CascadiaMono'   : 'CaskaydiaMono',
+            'cascadiamono'   : 'caskaydiamono'
         }
 
         # remove overly verbose font names
