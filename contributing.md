@@ -25,7 +25,8 @@
 ### 3. Run build scripts
 * When fairly satisfied the font patches correctly, run the following scripts in this order:
   * Copy all the unpatched readmes to the patched location with additional info on variations appended:
-    * `./standardize-and-complete-readmes.sh`
+    * `cd bin/scripts`
+    * `./standardize-and-complete-readmes.sh XYZ`
   * Patch **all** of the variations/options, e.g.
     * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
 
