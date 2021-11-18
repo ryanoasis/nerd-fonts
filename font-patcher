@@ -413,10 +413,10 @@ class font_patcher:
                     print("Successfully removed subtable:", subtable)
                 except Exception:
                     print("Failed to remove subtable:", subtable)
-            elif self.args.removeligatures:
-                print("Unable to read configfile, unable to remove ligatures")
-            else:
-                print("No configfile given, skipping configfile related actions")
+        elif self.args.removeligatures:
+            print("Unable to read configfile, unable to remove ligatures")
+        else:
+            print("No configfile given, skipping configfile related actions")
 
 
     def check_position_conflicts(self):
