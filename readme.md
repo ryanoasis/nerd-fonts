@@ -555,7 +555,7 @@ Link References
 
 
 [consolas]:https://docs.microsoft.com/en-us/typography/font-list/consolas
-[input-mono]:http://input.fontbureau.com/download/
+[input-mono]:http://input.djr.com/download/
 [pragmatapro]:https://www.fsd.it/shop/fonts/pragmatapro/
 [operator]:https://www.typography.com/fonts/operator/
 [dank]:https://dank.sh/

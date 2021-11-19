@@ -578,7 +578,7 @@ Link References
 
 
 [consolas]:https://www.microsoft.com/typography/fonts/family.aspx?FID=300
-[input-mono]:http://input.fontbureau.com/download/
+[input-mono]:http://input.djr.com/download/
 [pragmatapro]:https://www.fsd.it/shop/fonts/pragmatapro/
 
 [release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
