@@ -77,6 +77,7 @@ jobs:
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_TAG_VERSION"
           ./standardize-and-complete-readmes.sh
+          head -10 ../../font-patcher
 
       - name: Patch all the fonts (just ShareTechMono for now)
         # let's test just on font family for now to prove it out
