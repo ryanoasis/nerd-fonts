@@ -77,26 +77,23 @@ jobs:
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_TAG_VERSION"
           ./standardize-and-complete-readmes.sh
-          head -10 ../../font-patcher
 
-      - name: Patch all the fonts (just ShareTechMono for now)
+      - name: Patch all the fonts
         # let's test just on font family for now to prove it out
         # once proven we'll remove the font name and the hardcoded release and use the "release" script
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          head -10 ../../font-patcher
           fontforge --script ../../font-patcher --version
-          ./gotta-patch-em-all-font-patcher\!.sh "ShareTechMono"
+          ./gotta-patch-em-all-font-patcher\!.sh
 
       - name: Generate fontconfig and casks
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          head -10 ../../font-patcher
           ./generate-fontconfig.sh
           ./generate-casks.sh
 
-      - name: Archive font package zip files and upload for release (just ShareTechMono for now)
+      - name: Archive font package zip files and upload for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./archive-fonts.sh "ShareTechMono"
+          ./archive-fonts.sh
           GITHUB_TOKEN=$GITHUB_TOKEN ./upload-archives.sh $RELEASE_TAG_VERSION
