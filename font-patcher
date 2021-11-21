@@ -68,6 +68,9 @@ class font_patcher:
 
 
     def patch(self):
+
+        print("{} Patcher v{} executing\n".format(projectName, version))
+
         if self.args.single:
             # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
             # This needs to be done on all characters, as some information seems to be lost from the original font file.
