@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
-# Script Version: 1.0.1
+# Script Version: 1.1.0
 # Iterates over all archives and uploads to given release
 
 # uncomment to debug:
 #set -x
+
 LINE_PREFIX="# [Nerd Fonts] "
 
 cd ../../archives/ || {
@@ -12,39 +13,43 @@ cd ../../archives/ || {
   exit 1
 }
 
-private_config="../private.cfg"
-
-# source the private confit file if exists:
-if [ -f "$private_config" ]
-then
-  # shellcheck source=/dev/null
-  source "$private_config"
-else
-  echo >&2 "$LINE_PREFIX Could not source private config"
-  exit 1
-fi
-
-# shellcheck disable=SC2154
-# # we know the '$github_access_token' is from the sourced file
-TOKEN=$github_access_token
+# We don't need to use a separate access token for accessing Github API when we
+# are in a Github action, can use the auto provided `GITHUB_TOKEN`
+# see: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+TOKEN=$GITHUB_TOKEN
 OWNER="ryanoasis"
 REPO="nerd-fonts"
+RELEASE_TAG=""
 
-# release id from tag (first script param) or latest if no param given:
-if [ $# -eq 1 ]
-  then
-    tag=$1
-    release_url="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/tags/$tag"
-    echo "$LINE_PREFIX Tag of '$tag' given, will upload to release id based on '$tag'"
+if [ -z "$1" ]
+ then
+  # before we used to check for tag param and set release URL to releases/latest
+  # but to simplify things let's just fail and always require a proper release/tag
+  echo "$LINE_PREFIX No Tag Release was given"
+  exit 1
 else
-    tag=$1
-    release_url="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest"
-    echo "$LINE_PREFIX No tag given, will upload to release id based on latest"
+  echo "$LINE_PREFIX Tag/Release was $1"
+  RELEASE_TAG="$1"
 fi
 
-RELEASE=$(curl -# -XGET -H "Authorization:token $TOKEN" -H 'Content-Type: application/json' $release_url | jq -r '.id')
+RELEASE_URL="https://api.github.com/repos/${OWNER}/${REPO}/releases/tags/${RELEASE_TAG}"
 
-echo "$LINE_PREFIX Release id was '$RELEASE'"
+#if [ "$LAST_RELEASE_ID" = null]
+#  then
+# @TODO add error checking around creating new release if release/tag already exists
+echo "$LINE_PREFIX Creating new release/tag of ${RELEASE_TAG}"
+curl \
+  -H "Authorization:token $TOKEN" \
+  -H "Accept: application/vnd.github.v3+json" \
+  https://api.github.com/repos/$OWNER/$REPO/releases \
+  -d "{\"tag_name\":\"${RELEASE_TAG}\", \"prerelease\": true }"
+#else
+#  echo "$LINE_PREFIX A release did exist and the most recent release id was '$RELEASE'"
+#fi
+
+LAST_RELEASE_ID=$(curl -# -XGET -H "Authorization:token $TOKEN" -H 'Content-Type: application/json' "$RELEASE_URL" | jq -r '.id')
+
+echo "$LINE_PREFIX The last release id was $LAST_RELEASE_ID"
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 find ./ -name "*.zip" | # uncomment to test all font
@@ -53,9 +58,13 @@ do
 
 	basename=$(basename "$filename")
 
-	printf "$LINE_PREFIX Uploading %s" "$basename"
+	printf "$LINE_PREFIX Uploading %s \n" "$basename"
 
-	curl -# -XPOST -H "Authorization:token $TOKEN" -H "Content-Type:application/octet-stream" --data-binary @"$basename" https://uploads.github.com/repos/"$OWNER"/"$REPO"/releases/"$RELEASE"/assets?name="$basename"
+	curl \
+    -# -XPOST \
+    -H "Authorization:token $TOKEN" \
+    -H "Content-Type:application/octet-stream" \
+    --data-binary @"$basename" https://uploads.github.com/repos/"$OWNER"/"$REPO"/releases/"$LAST_RELEASE_ID"/assets?name="$basename"
 
 	#exit # uncomment to test only 1 zip
 
