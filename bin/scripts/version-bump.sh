@@ -16,6 +16,8 @@ fi
 
 release=$1
 
+echo "$LINE_PREFIX Bump version to $release"
+
 sed -i "s|[0-9]\\.[0-9]\\.[0-9]|$release|g" ../../font-patcher
 sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/**/*.sh
 sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/**/*.py
