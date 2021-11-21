@@ -75,7 +75,7 @@ jobs:
       - name: Bump version and standardize the readme files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./version-bump.sh "$RELEASE_VERSION"
+          ./version-bump.sh "$RELEASE_TAG_VERSION"
           ./standardize-and-complete-readmes.sh
 
       - name: Patch all the fonts (just ShareTechMono for now)
