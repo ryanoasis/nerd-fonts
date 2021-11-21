@@ -95,4 +95,4 @@ jobs:
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-fonts.sh "ShareTechMono"
-          GITHUB_TOKEN=$GITHUB_TOKEN ./upload-archives-lab.sh $RELEASE_TAG_VERSION
+          GITHUB_TOKEN=$GITHUB_TOKEN ./upload-archives.sh $RELEASE_TAG_VERSION
