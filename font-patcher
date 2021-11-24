@@ -51,7 +51,7 @@ class font_patcher:
         self.extension = ""
         self.setup_arguments()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
-        self.sourceFont = fontforge.open(self.args.font)
+        self.sourceFont = fontforge.open(self.args.font, ("fstypepermitted",))
         self.setup_font_names()
         self.remove_ligatures()
         make_sure_path_exists(self.args.outputdir)
