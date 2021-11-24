@@ -315,7 +315,7 @@ Toutes les polices sont disponibles via [Homebrew Fonts](https://github.com/cask
 
 ```sh
 brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `Option 5: Cloner le dépôt`

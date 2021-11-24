@@ -234,7 +234,7 @@ macOS (OS X) では [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-c
 
 ```sh
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `その 5: リポジトリをクローンする`

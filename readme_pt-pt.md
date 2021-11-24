@@ -234,7 +234,7 @@ Todos os tipos de letra estão disponíveis através de [Homebrew Cask Fonts](ht
 
 ```sh
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `Opção 5: Dar clone ao repositório`
