@@ -309,7 +309,7 @@ Wszystkie fonty są dostępne na [Homebrew Fonts](https://github.com/caskroom/ho
 
 ```sh
 brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `Opcja 5: Klonowanie Repo`

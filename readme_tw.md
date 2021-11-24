@@ -290,7 +290,7 @@ _註_: **Requires cloning** the repo as of now
 
 ```sh
 brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `選項5: 複製 Repo`

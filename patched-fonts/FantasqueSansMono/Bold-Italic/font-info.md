@@ -77,7 +77,7 @@ useful for users of accented capitals. For more info, see the [CHANGELOG](CHANGE
 Automatic installation on macOS with [homebrew](https://brew.sh):
 
     brew tap homebrew/cask-fonts #You only need to do this once for cask-fonts
-    brew cask install font-fantasque-sans-mono
+    brew install --cask font-fantasque-sans-mono
 
 Instructions for other platforms might follow.
 
