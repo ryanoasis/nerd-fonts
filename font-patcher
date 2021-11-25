@@ -394,7 +394,12 @@ class font_patcher:
         self.sourceFont.appendSFNTName(str('English (US)'), str('Preferred Family'), self.sourceFont.familyname)
         self.sourceFont.appendSFNTName(str('English (US)'), str('Family'), self.sourceFont.familyname)
         self.sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), self.sourceFont.fullname)
-        self.sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
+        # Fontforge does not allow to set SubFamily to any value (see commit message), so
+        # instead of self.sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily) we do:
+        sfnt_list = list(self.sourceFont.sfnt_names)
+        sfnt_list[subFamilyTupleIndex] = ( sfnt_list[subFamilyTupleIndex][0], sfnt_list[subFamilyTupleIndex][1], subFamily )
+        self.sourceFont.sfnt_names = tuple(sfnt_list)
+
         self.sourceFont.comment = projectInfo
         self.sourceFont.fontlog = projectInfo
 
