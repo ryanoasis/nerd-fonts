@@ -12,7 +12,9 @@ main() {
   # # stringified json:
   # # printf '%s\n' "${json[@]}" | jq -R . | jq -s . | jq tojson
   # echo "${json[@]}"
-  jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
+  # @TODO uncomment and use FULL set once kinks worked out for Release Candidate Workflow
+  # jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
+  jq '.fonts | .[] | .folderName' lib/fonts-small-subset.json | jq -sc
 }
 
 main; exit
