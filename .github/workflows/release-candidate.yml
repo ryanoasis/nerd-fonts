@@ -21,7 +21,9 @@ jobs:
         run: |
           cd -- $GITHUB_WORKSPACE/bin/scripts/
           fontNames=$(./get-font-names-from-json.sh)
+          echo "${fontNames}"
           echo "::set-output name=matrix::${fontNames}"
+          echo ${{ steps.set-matrix.outputs.matrix }}
 
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
@@ -30,6 +32,8 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    needs: setup-fonts-matrix
 
     env:
       RELEASE_TAG_VERSION: 2.2.0-RC
