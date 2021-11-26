@@ -5,6 +5,17 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
+    paths-ignore:
+      - 'images/**'
+      - '**.md'
+      - '.all-contributorsrc'
+      - 'chocolatey/**'
+      - 'bin/scripts/lib/**'
+      - 'Dockerfile'
+      - 'install.ps1'
+      - 'install.sh'
+      - 'LICENSE'
+      - 'package**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,6 +27,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: '1'
       -
         id: set-matrix
         run: |
@@ -113,5 +127,5 @@ jobs:
       - name: Archive font package zip files and upload for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./archive-fonts.sh
-          GITHUB_TOKEN=$GITHUB_TOKEN ./upload-archives.sh $RELEASE_TAG_VERSION
+          ./archive-fonts.sh "${{ matrix.font }}"
+          GITHUB_TOKEN=$GITHUB_TOKEN ./upload-archives.sh $RELEASE_TAG_VERSION "${{ matrix.font }}"

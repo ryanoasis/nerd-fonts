@@ -32,6 +32,16 @@ else
   RELEASE_TAG="$1"
 fi
 
+if [ -z "$2" ]
+ then
+  search_pattern="*.zip"
+  echo "$LINE_PREFIX No limiting pattern given, will search entire folder"
+else
+  pattern=$2
+  search_pattern="*$2*.zip"
+  echo "$LINE_PREFIX Limiting upload archive to pattern '$pattern'"
+fi
+
 RELEASE_URL="https://api.github.com/repos/${OWNER}/${REPO}/releases/tags/${RELEASE_TAG}"
 
 #if [ "$LAST_RELEASE_ID" = null]
@@ -52,7 +62,7 @@ LAST_RELEASE_ID=$(curl -# -XGET -H "Authorization:token $TOKEN" -H 'Content-Type
 echo "$LINE_PREFIX The last release id was $LAST_RELEASE_ID"
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-find ./ -name "*.zip" | # uncomment to test all font
+find ./ -name "$search_pattern" | # uncomment to test all font
 while read -r filename
 do
 
