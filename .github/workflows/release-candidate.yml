@@ -1,8 +1,6 @@
-# This is a basic workflow to help you get started with Actions
 
 name: CI
 
-# Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -11,8 +9,22 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+
+  setup-fonts-matrix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      -
+        id: set-matrix
+        run: |
+          cd -- $GITHUB_WORKSPACE/bin/scripts/
+          fontNames=$(./get-font-names-from-json.sh)
+          echo "::set-output name=matrix::${fontNames}"
+
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
 
   # Workflow to build and install dependencies
   build:
@@ -22,8 +34,11 @@ jobs:
     env:
       RELEASE_TAG_VERSION: 2.2.0-RC
       GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      SANITY_TEST: ${{ secrets.SANITY_TEST }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    strategy:
+      matrix:
+        font: ${{fromJson(needs.setup-fonts-matrix.outputs.matrix)}}
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -33,6 +48,7 @@ jobs:
           fetch-depth: '1'
 
       # Install and setup Dependencies
+      # @TODO cache the next 4 steps with actions/cache or upload
       - name: Setup core dependencies
         run: |
           sudo apt update -y -q
@@ -68,15 +84,11 @@ jobs:
           fontforge --version
           fontforge --version 2>&1 | grep libfontforge | awk '{print $NF}'
 
-      - name: Patcher test run
-        run: |
-          fontforge --script ./font-patcher src/unpatched-fonts/Hasklig/Regular/Hasklig-Regular.otf --complete --quiet --no-progressbars
-
       - name: Bump version and standardize the readme files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_TAG_VERSION"
-          ./standardize-and-complete-readmes.sh
+          ./standardize-and-complete-readmes.sh "${{ matrix.font }}"
 
       - name: Patch all the fonts
         # let's test just on font family for now to prove it out
@@ -84,14 +96,16 @@ jobs:
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           fontforge --script ../../font-patcher --version
-          ./gotta-patch-em-all-font-patcher\!.sh
+          ./gotta-patch-em-all-font-patcher\!.sh "${{ matrix.font }}"
 
+      # @TODO only run once after patching all fonts
       - name: Generate fontconfig and casks
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./generate-fontconfig.sh
-          ./generate-casks.sh
+          ./generate-casks.sh "${{ matrix.font }}"
 
+      # @TODO only run once after patching all fonts OR modify to archive one font at a time?
       - name: Archive font package zip files and upload for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
