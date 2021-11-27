@@ -51,7 +51,10 @@ class font_patcher:
         self.extension = ""
         self.setup_arguments()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
-        self.sourceFont = fontforge.open(self.args.font)
+        try:
+            self.sourceFont = fontforge.open(self.args.font, ("fstypepermitted",))
+        except Exception:
+            sys.exit(projectName + ": Can not open font, try to open with fontforge interactively to get more information")
         self.setup_font_names()
         self.remove_ligatures()
         make_sure_path_exists(self.args.outputdir)
@@ -68,6 +71,9 @@ class font_patcher:
 
 
     def patch(self):
+
+        print("{} Patcher v{} executing\n".format(projectName, version))
+
         if self.args.single:
             # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
             # This needs to be done on all characters, as some information seems to be lost from the original font file.
@@ -347,7 +353,11 @@ class font_patcher:
             'Cascadia Code'  : 'Caskaydia Cove',
             'cascadia code'  : 'caskaydia cove',
             'CascadiaCode'   : 'CaskaydiaCove',
-            'cascadiacode'   : 'caskaydiacove'
+            'cascadiacode'   : 'caskaydiacove',
+            'Cascadia Mono'  : 'Caskaydia Mono',
+            'cascadia mono'  : 'caskaydia mono',
+            'CascadiaMono'   : 'CaskaydiaMono',
+            'cascadiamono'   : 'caskaydiamono'
         }
 
         # remove overly verbose font names
@@ -413,10 +423,10 @@ class font_patcher:
                     print("Successfully removed subtable:", subtable)
                 except Exception:
                     print("Failed to remove subtable:", subtable)
-            elif self.args.removeligatures:
-                print("Unable to read configfile, unable to remove ligatures")
-            else:
-                print("No configfile given, skipping configfile related actions")
+        elif self.args.removeligatures:
+            print("Unable to read configfile, unable to remove ligatures")
+        else:
+            print("No configfile given, skipping configfile related actions")
 
 
     def check_position_conflicts(self):
@@ -519,7 +529,7 @@ class font_patcher:
         # Define the character ranges
         # Symbol font ranges
         self.patch_set = [
-            {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",              'Exact': False,                               'SymStart': 0xE4FA, 'SymEnd': 0xE530, 'SrcStart': 0xE5FA, 'SrcEnd': 0xE630, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",              'Exact': False,                               'SymStart': 0xE4FA, 'SymEnd': 0xE531, 'SrcStart': 0xE5FA, 'SrcEnd': 0xE631, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons.ttf",                     'Exact': False,                               'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'SrcEnd': 0xE7C5, 'ScaleGlyph': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "PowerlineSymbols.otf",             'Exact': True,                                'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "PowerlineSymbols.otf",             'Exact': True,                                'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_POWERLINE},

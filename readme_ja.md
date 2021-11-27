@@ -234,7 +234,7 @@ macOS (OS X) では [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-c
 
 ```sh
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `その 5: リポジトリをクローンする`
@@ -501,7 +501,7 @@ Link References
 
 
 [consolas]:https://www.microsoft.com/typography/fonts/family.aspx?FID=300
-[input-mono]:http://input.fontbureau.com/download/
+[input-mono]:http://input.djr.com/download/
 [pragmatapro]:https://www.fsd.it/shop/fonts/pragmatapro/
 [operator]:https://www.typography.com/fonts/operator/
 [dank]:https://dank.sh/

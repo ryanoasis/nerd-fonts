@@ -1,0 +1,131 @@
+
+name: CI
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - 'images/**'
+      - '**.md'
+      - '.all-contributorsrc'
+      - 'chocolatey/**'
+      - 'bin/scripts/lib/**'
+      - 'Dockerfile'
+      - 'install.ps1'
+      - 'install.sh'
+      - 'LICENSE'
+      - 'package**'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+
+  setup-fonts-matrix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: '1'
+      -
+        id: set-matrix
+        run: |
+          cd -- $GITHUB_WORKSPACE/bin/scripts/
+          fontNames=$(./get-font-names-from-json.sh)
+          echo "${fontNames}"
+          echo "::set-output name=matrix::${fontNames}"
+          echo ${{ steps.set-matrix.outputs.matrix }}
+
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+
+  # Workflow to build and install dependencies
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    needs: setup-fonts-matrix
+
+    env:
+      RELEASE_TAG_VERSION: 2.2.0-RC
+      GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    strategy:
+      matrix:
+        font: ${{fromJson(needs.setup-fonts-matrix.outputs.matrix)}}
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: '1'
+
+      # Install and setup Dependencies
+      # @TODO cache the next 4 steps with actions/cache or upload
+      - name: Setup core dependencies
+        run: |
+          sudo apt update -y -q
+          sudo apt install software-properties-common -y -q
+          sudo apt update -y -q
+          sudo apt install fontforge -y -q
+          sudo apt install python3-fontforge -y -q
+
+      - name: Setup additional dependencies
+        run: |
+          pip install fonttools --quiet
+
+      - name: Build FreeType from source
+        run: |
+          wget http://downloads.sourceforge.net/project/freetype/freetype2/2.7/freetype-2.7.tar.gz --quiet
+          tar -zxf freetype-2.7.tar.gz
+          cd freetype-2.7
+          ./configure
+          make --quiet
+          sudo make install --quiet
+
+      - name: Build Harfbuzz from source
+        run: |
+          wget http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.3.4.tar.bz2 --quiet
+          tar -xjf harfbuzz-1.3.4.tar.bz2
+          cd harfbuzz-1.3.4
+          ./configure
+          make --quiet
+          sudo make install --quiet
+
+      - name: Verify setup
+        run: |
+          fontforge --version
+          fontforge --version 2>&1 | grep libfontforge | awk '{print $NF}'
+
+      - name: Bump version and standardize the readme files
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./version-bump.sh "$RELEASE_TAG_VERSION"
+          ./standardize-and-complete-readmes.sh "${{ matrix.font }}"
+
+      - name: Patch all the fonts
+        # let's test just on font family for now to prove it out
+        # once proven we'll remove the font name and the hardcoded release and use the "release" script
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          fontforge --script ../../font-patcher --version
+          ./gotta-patch-em-all-font-patcher\!.sh "${{ matrix.font }}"
+
+      # @TODO only run once after patching all fonts
+      - name: Generate fontconfig and casks
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./generate-fontconfig.sh
+          ./generate-casks.sh "${{ matrix.font }}"
+
+      # @TODO only run once after patching all fonts OR modify to archive one font at a time?
+      - name: Archive font package zip files and upload for release
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./archive-fonts.sh "${{ matrix.font }}"
+          GITHUB_TOKEN=$GITHUB_TOKEN ./upload-archives.sh $RELEASE_TAG_VERSION "${{ matrix.font }}"
