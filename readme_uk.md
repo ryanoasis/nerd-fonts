@@ -235,7 +235,7 @@ _Примітка_: **необхідне клонування** репозито
 
 ```sh
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `Варіант 5: Клонування репозиторії`
@@ -521,7 +521,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 [consolas]: https://www.microsoft.com/typography/fonts/family.aspx?FID=300
 
-[input-mono]: http://input.fontbureau.com/download/
+[input-mono]: http://input.djr.com/download/
 
 [pragmatapro]: https://www.fsd.it/shop/fonts/pragmatapro/
 

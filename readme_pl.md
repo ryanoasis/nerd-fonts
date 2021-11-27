@@ -309,7 +309,7 @@ Wszystkie fonty są dostępne na [Homebrew Fonts](https://github.com/caskroom/ho
 
 ```sh
 brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 ### `Opcja 5: Klonowanie Repo`
@@ -575,7 +575,7 @@ Link References
 
 
 [consolas]:https://www.microsoft.com/typography/fonts/family.aspx?FID=300
-[input-mono]:http://input.fontbureau.com/download/
+[input-mono]:http://input.djr.com/download/
 [pragmatapro]:https://www.fsd.it/shop/fonts/pragmatapro/
 [operator]:https://www.typography.com/fonts/operator/
 [dank]:https://dank.sh/

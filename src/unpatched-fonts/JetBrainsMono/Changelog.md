@@ -1,6 +1,39 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.242 Quick Fix (30.07.2021)
+- Added `???` `<:<` ligatures #434
+- Corrected the `⊈` (u+2288) #475
+- Remove second unicode value from `HT` (u+2409 u+0009) `CR` (u+240D u+000D) `LF` (u+240A u+000A) #476
+
+## 2.241 (27.07.2021)
+- Made triple equal ligature `===` more spacious #25
+- Added 70 symbols from #47 `ƛ` `ϕ` `ϖ` `⁅` `⁆` `⦇` `⦈` `‴` `⟪` `⟦` `⟫` `⟧` `≃` `≔` `≅` `≇` `⋎` `∸` `⋐` `⋰` `⋱` `⋮` `≡` `∹` `≳` `≲` `⋯` `⊈` `≯` `≱` `≢` `≮` `≰` `÷` `≥` `≤` `~` `∅` `≺` `≼` `≟` `⤖` `≗` `⊓` `⊔` `⊑` `≋` `↭` `↞` `↠` `↣` `↥` `↦` `↧` `⇉` `⇑` `⇒` `⇓` `⇔` `⇧` `⇨` `⍳` `⍨` `♭` `♯` `𝔽` `𝕊` `⅀`
+- Added `ǒ` `ǐ` `ǔ` `ǖ` `ǘ` `ǚ` `ǜ` #187
+- Added Control code support #241
+- Tuned `#` #275
+- Added `=:` ligature #305
+- Added floor and ceiling mathematical characters `⎪` `⎩` `⎨` `⎧` `⎢` `⎣` `⎡` `⎭` `⎬` `⎫` `⎥` `⎦` `⎤` #328
+- Corrections in `Θ` `θ` `ξ` `Σ` `∑` #351
+- Added `Ɛ` `↋` `↊` `૪` #356
+- Added Cyrillic Kazakh letters #391
+- Added ligature `;;;` #393
+- The ligature `<-` have 3 digit exclusion #403
+- Changed the look of `~@` ligature #415
+- Fixed regression with `<--` ligature #417
+- Fixed interpolation error in Italic #431
+- Added EMQuad (u+2001) #439
+- Reworked `⚠️` #450
+- Made the tail of Italic `f` shorter to render better in kitty #441
+- Added SemiBold weight #453
+- Added more anchors to the marks #463
+- Added replacement (u+FFFD) #461
+- Added zeroWidthNoBreakSpace (u+FEFF) #467
+- Corrected placement of `*` in `*/` ligature in Regular master
+- Tuned `Ч` `ч`
+- Fixed consistency of `J` in italic
+
+
 ## 2.225 (27.01.2021)
 - Added exclusion in `<-` ligature to look reasonable in negative arguments for C++ `<-1>` #107
 - `/**` brought back #202
