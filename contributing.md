@@ -2,7 +2,7 @@
 
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub][First PR]
 
-## How to contribute
+## How to contribute summary
 
 * Fork the project from the `master` branch and submit a Pull Request (PR)
   * Explain what the PR fixes or improves
@@ -11,6 +11,16 @@
   * If your PR fixes a separate issue number, include it in the commit message
 * Use a sensible number of commit messages as well
   * e.g. Your PR should not have 100s of commits
+  
+## How to add yourself to the contributors (give yourself attribution)
+
+Don't forget to give yourself credit! Make sure you add yourself to the contributors list that will eventually propagate to [NerdFonts.com](https://nerdfonts.com)
+
+Either:
+* Invoke the [@all-contributors bot](https://allcontributors.org/docs/en/bot/usage) by commenting on your Pull Request or Issue.
+* Shallow clone repo and exeucte `all-contributors add <YOUR_GITHUB_HANDLE> <CONTRIBUTION_TYPE>`
+
+Common types for this project include: `code`, `doc`, `translation`, `review` .For full list of contribution types see: https://allcontributors.org/docs/en/emoji-key
 
 ## Steps for updating an existing font
 
