@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot">
+  <defs
+     id="defs101">
+    <clipPath
+       id="a">
+      <path
+         d="M 0,792 H 612 V 0 H 0 Z"
+         id="path2" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata104">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="puppet">
+    <g
+       clip-path="url(#a)"
+       transform="matrix(1.2062359,0,0,-1.1952485,-40.141024,931.82481)"
+       id="g19"
+       style="fill:#444444;fill-opacity:1">
+      <g
+         fill="#ffa61a"
+         transform="matrix(0.95837,0,0,0.96866,1.89,23.96)"
+         id="g17"
+         style="fill:#444444;fill-opacity:1">
+        <path
+           d="M 53.407,769.136 H 47.271 V 763 h 6.136 z"
+           id="path7"
+           style="fill:#444444;fill-opacity:1" />
+        <path
+           d="m 43.819,757.631 h -1.918 v 1.918 h 1.918 z m 2.301,4.218 H 39.6 v -6.52 h 6.52 z"
+           id="path9"
+           style="fill:#444444;fill-opacity:1" />
+        <path
+           d="M 0,0 -3.874,3.874 -2.378,5.37 1.496,1.496 Z"
+           transform="translate(47.4,767.58)"
+           id="path11"
+           style="fill:#444444;fill-opacity:1" />
+        <path
+           d="M 0,0 -1.496,1.496 1.57,4.562 3.066,3.066 Z"
+           transform="translate(46.06,760.36)"
+           id="path13"
+           style="fill:#444444;fill-opacity:1" />
+        <path
+           d="m 43.819,772.588 h -1.918 v 1.918 h 1.918 z m 2.301,4.219 H 39.6 v -6.52 h 6.52 z"
+           id="path15"
+           style="fill:#444444;fill-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>
