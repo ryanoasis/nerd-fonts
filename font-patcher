@@ -52,7 +52,7 @@ class font_patcher:
         self.setup_arguments()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         try:
-            self.sourceFont = fontforge.open(self.args.font)
+            self.sourceFont = fontforge.open(self.args.font, 1) # 1 = ("fstypepermitted",))
         except Exception:
             sys.exit(projectName + ": Can not open font, try to open with fontforge interactively to get more information")
         self.setup_font_names()
