@@ -401,12 +401,13 @@ class font_patcher:
         self.sourceFont.comment = projectInfo
         self.sourceFont.fontlog = projectInfo
 
-        # TODO version not being set for all font types (e.g. ttf)
         # print("Version was {}".format(sourceFont.version))
         if self.sourceFont.version != None:
             self.sourceFont.version += ";" + projectName + " " + version
         else:
             self.sourceFont.version = str(self.sourceFont.cidversion) + ";" + projectName + " " + version
+        self.sourceFont.sfntRevision = None # Auto-set (refreshed) by fontforge
+        self.sourceFont.appendSFNTName(str('English (US)'), str('Version'), "Version " + self.sourceFont.version)
         # print("Version now is {}".format(sourceFont.version))
 
 
