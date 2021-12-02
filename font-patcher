@@ -36,6 +36,10 @@ except ImportError:
         )
     )
 
+# This is (for experimenting) far far away...
+sys.path.insert(0, os.path.abspath(os.path.dirname(sys.argv[0])) + '/bin/scripts/name_parser/')
+from FontnameParser import FontnameParser
+from FontnameTools import FontnameTools
 
 class TableHEADWriter:
     """ Access to the HEAD table without external dependencies """
@@ -306,6 +310,7 @@ class font_patcher:
         parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
         parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
         parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
+        parser.add_argument('--parser',                                  dest='parser',           default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
 
         # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
         progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
@@ -424,6 +429,26 @@ class font_patcher:
         if self.args.single:
             additionalFontNameSuffix += " M"
             verboseAdditionalFontNameSuffix += " Mono"
+
+        if self.args.parser:
+            use_fullname = True # Usually the fullname is better to parse
+            # Use fullname if it is 'equal' to the fontname
+            use_fullname |= self.sourceFont.fontname.lower() == FontnameTools.postscript_char_filter(self.sourceFont.fullname).lower()
+            # Use fullname for any of these source fonts (that are impossible to disentangle from the fontname, we need the blanks)
+            for hit in [ 'Meslo' ]:
+                use_fullname |= self.sourceFont.fontname.lower().startswith(hit.lower())
+            parser_name = self.sourceFont.fullname if use_fullname else self.sourceFont.fontname
+            # Gohu fontnames hide the weight, but the file names are ok...
+            if parser_name.startswith('Gohu'):
+                parser_name = os.path.splitext(os.path.basename(self.args.font))[0]
+            n = FontnameParser(parser_name)
+            if not n.parse_ok:
+                print("Have only minimal naming information, check resulting name. Maybe omit --parser option")
+            n.drop_for_powerline()
+            n.enable_short_families(True, "Noto")
+            n.set_for_windows(self.args.windows)
+
+            # All the following stuff is ignored in parser-mode
 
         # basically split the font name around the dash "-" to get the fontname and the style (e.g. Bold)
         # this does not seem very reliable so only use the style here as a fallback if the font does not
@@ -558,15 +583,22 @@ class font_patcher:
         fullname   = replace_font_name(fullname,   additionalFontNameReplacements2)
         fontname   = replace_font_name(fontname,   additionalFontNameReplacements2)
 
-        # replace any extra whitespace characters:
-        self.sourceFont.familyname = " ".join(familyname.split())
-        self.sourceFont.fullname   = " ".join(fullname.split())
-        self.sourceFont.fontname   = " ".join(fontname.split())
+        if not self.args.parser:
+            # replace any extra whitespace characters:
+            self.sourceFont.familyname = " ".join(familyname.split())
+            self.sourceFont.fullname   = " ".join(fullname.split())
+            self.sourceFont.fontname   = " ".join(fontname.split())
 
-        self.sourceFont.appendSFNTName(str('English (US)'), str('Preferred Family'), self.sourceFont.familyname)
-        self.sourceFont.appendSFNTName(str('English (US)'), str('Family'), self.sourceFont.familyname)
-        self.sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), self.sourceFont.fullname)
-        self.sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
+            self.sourceFont.appendSFNTName(str('English (US)'), str('Preferred Family'), self.sourceFont.familyname)
+            self.sourceFont.appendSFNTName(str('English (US)'), str('Family'), self.sourceFont.familyname)
+            self.sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), self.sourceFont.fullname)
+            self.sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
+        else:
+            fam_suffix = projectNameSingular if not self.args.windows else projectNameAbbreviation
+            fam_suffix += ' Mono' if self.args.single else ''
+            n.inject_suffix(verboseAdditionalFontNameSuffix, additionalFontNameSuffix, fam_suffix)
+            n.rename_font(self.sourceFont)
+
         self.sourceFont.comment = projectInfo
         self.sourceFont.fontlog = projectInfo
 
