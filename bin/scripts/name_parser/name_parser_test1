@@ -1,0 +1,160 @@
+#!/usr/bin/env python
+# coding=utf8
+
+import sys
+import re
+import os.path
+import fontforge
+from FontnameParser import FontnameParser
+
+###### Some helpers
+
+def get_sfnt_dict(font):
+    """Extract SFNT table as nice dict"""
+    d = []
+    for i, el in enumerate(font.sfnt_names):
+        d += [(el[1], el[2])]
+    return dict(d)
+
+def format_names(header, *stuff):
+    """Unify outputs (with header)"""
+    f = '{:1.1}|{:50.50} |{:1.1}| {:50.50} |{:1.1}| {:30.30} |{:1.1}| {:30.30} |{:1.1}| {:30.30} |{:1.1}| {:.30}'
+    if header:
+        d = '------------------------------------------------------------'
+        return f.format(*stuff) + '\n' + f.format('', d, d, d, d, d, d, d, d, d, d, d)
+    return f.format(*stuff).rstrip()
+
+def lenient_cmp(s1, s2):
+    """Compare two font name (parts) but be a bit lenient ;->"""
+    # We do not care about:
+    # - Case
+    # - "Display" vs "Disp" (in Noto)
+    # Allow for "IBM 3278" name
+    s = [ s1, s2 ]
+    for i in range(2):
+        # Usually given transform from 'their' to 'our' style
+        s[i] = s[i].lower()
+        s[i] = re.sub(r'\bdisp\b', 'display', s[i])                     # Noto
+        s[i] = s[i].replace('ibm 3270', '3270')                         # 3270
+        s[i] = s[i].replace('3270-', '3270 ')                           # 3270
+        s[i] = s[i].replace('lekton-', 'lekton ')                       # Lekton
+        s[i] = s[i].replace('semi-narrow', 'seminarrow')                # 3270
+        s[i] = s[i].replace('bolditalic', 'bold italic')
+        s[i] = re.sub(r'\bfor\b', '', s[i])                             # Meslo, Monofur
+        s[i] = re.sub(r'\bpowerline\b', '', s[i])                       # Meslo, Monofur
+        s[i] = s[i].replace('fira mono', 'fura mono')                   # Obviously someone forgot to rename the fonts in Fira/
+        s[i] = s[i].replace('aurulentsansmono-', 'aurulent sans mono ') # Aurulent fullname oddity
+        s[i] = s[i].replace('mononoki-', 'mononoki ')                   # Mononoki has somtimes a dash
+        s[i] = re.sub(r'\br\b', 'regular', s[i])                        # Nonstandard style in Agave
+        s[i] = re.sub(r'(bitstream vera sans mono.*) oblique', r'\1 italic', s[i]) # They call it Oblique but the filename says Italic
+        s[i] = re.sub(r'gohufont (uni-)?(11|14)', 'gohufont', s[i])     # They put the 'name' into the subfamily/weight
+        s[i] = s[i].replace('xltobl', 'extralight oblique')             # Iosevka goes inventing names
+        s[i] = re.sub(r'proggyclean(?!TT)( ?)', 'proggycleantt\1', s[i]) # ProggyClean has no TT in filename
+
+        s[i] = re.sub(r' +', ' ', s[i]).strip()
+    return s[0] == s[1]
+
+TEST_TABLE = [
+    ( '(m)plus',   '\\1+'),
+    ( 'IAWriter',  'iA Writer'),
+    ( 'IBMPlex',   'IBM Plex'),
+    ( 'Vera',      'Bitstream Vera Sans'),
+]
+
+###### Let's go!
+
+if len(sys.argv) < 2:
+    print('Usage: {} font_name [font_name ...]\n'.format(sys.argv[0]))
+    sys.exit(1)
+
+try:
+    with open(sys.argv[0] + '.known_issues', 'r') as f:
+        known_issues = f.read().splitlines()
+        # known_issues = [line.rstrip() for line in known_issues]
+        print('Found {:.0f} known issues'.format(len(known_issues) / 3)) # approx ;)
+except OSError:
+    print('Can not open known_issues file')
+    known_issues = []
+new_issues = open(sys.argv[0] + '.known_issues.new', 'w')
+
+print('Examining {} font files'.format(len(sys.argv) - 1))
+all_files = 0
+issue_files = 0
+known_files = 0
+
+print(format_names(True, '', 'Filename', '', 'Fullname', '', 'Family', '', 'Subfamily', '', 'Typogr. Family', '', 'Typogr. Subfamily'))
+
+for filename in sys.argv[1:]:
+    fullfile = os.path.basename(filename)
+    fname = os.path.splitext(fullfile)[0]
+    if fname == 'NotoColorEmoji':
+        continue # font is not patchable
+    n = FontnameParser(fname).enable_short_families(False, 'Noto').add_name_substitution_table(TEST_TABLE)
+    # Example for name injection:
+    # n.inject_suffix("Nerd Font Complete Mono", "Nerd Font Complete M", "Nerd Font Mono")
+
+    font = fontforge.open(filename, 1)
+    sfnt = get_sfnt_dict(font)
+    font.close()
+    all_files += 1
+
+    sfnt_full =    sfnt['Fullname']
+    sfnt_fam =     sfnt['Family']
+    sfnt_subfam =  sfnt['SubFamily']
+    sfnt_pfam =    sfnt['Preferred Family'] if 'Preferred Family' in sfnt else ''
+    sfnt_psubfam = sfnt['Preferred Styles'] if 'Preferred Styles' in sfnt else ''
+
+    t1 = not lenient_cmp(sfnt_full,    n.fullname())
+    t2 = not lenient_cmp(sfnt_fam,     n.family())
+    t3 = not lenient_cmp(sfnt_subfam,  n.subfamily())
+    t4 = not lenient_cmp(sfnt_pfam,    n.preferred_family())
+    t5 = not lenient_cmp(sfnt_psubfam, n.preferred_styles())
+
+    # Lenience: Allow for dropping unneeded prefered stuff:
+    # New (sub)family is same as old preferred sub(family)
+    if t4 and n.preferred_family() == '' and sfnt_pfam.lower() == n.family().lower():
+        t4 = False
+    if t5 and n.preferred_styles() == '' and sfnt_psubfam.lower() == n.subfamily().lower():
+        t5 = False
+
+    if t1 or t2 or t3 or t4 or t5:
+        m1 = '+'; m2 = '-'
+    else:
+        m1 = ''; m2 = ''
+    if not n.parse_ok:
+        m1 = '!'
+    t1_ = 'X' if t1 else ''
+    t2_ = 'X' if t2 else ''
+    t3_ = 'X' if t3 else ''
+    t4_ = 'X' if t4 else ''
+    t5_ = 'X' if t5 else ''
+
+    o1 = format_names(False, m1, fullfile, t1_, n.fullname(), t2_, n.family(), t3_, n.subfamily(), t4_, n.preferred_family(), t5_, n.preferred_styles())
+    o2 = format_names(False, m2, fullfile, '', sfnt_full, '', sfnt_fam, '', sfnt_subfam, '', sfnt_pfam, '', sfnt_psubfam)
+
+    if len(m1):
+        issue_files += 1
+        if not o1 in known_issues or not o2 in known_issues:
+            new_issues.writelines(['#### AUTOGENERATED\n', o1 + '\n', o2 + '\n'])
+        else:
+            known_files += 1
+            idx = known_issues.index(o1) - 1 # should be the index of the explanation  line
+            if known_issues[idx][0] != '#':
+                sys.exit('Problem with known issues file, line', known_issues.index(o1))
+            new_issues.writelines([known_issues[idx] + '\n', o1 + '\n', o2 + '\n'])
+            # remove known_issue triplet
+            known_issues.pop(idx)
+            known_issues.pop(idx)
+            known_issues.pop(idx)
+
+    print(o1, o2, sep='\n')
+
+print('Fonts with different name rendering: {}/{} ({}/{} are in known_issues)'.format(issue_files, all_files, known_files, issue_files))
+
+if len(known_issues) > 0:
+    print('There are {} lines not needed in known_issues, appending commented out in new known_issues'.format(len(known_issues)))
+    new_issues.write('\n#### The following lines are not needed anymore\n\n')
+    for l in known_issues:
+        new_issues.writelines([' ', l, '\n'])
+
+new_issues.close()
