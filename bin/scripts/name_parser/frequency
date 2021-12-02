@@ -1,0 +1,19 @@
+cat name_parser_test2.known_issues | grep '####' | sed -E 's/#### //;s/\] /]\n/g;s/ \[[0-9]+\]//g' | sort | uniq -c | sort -nr
+
+    511 Add weight/style to family
+     43 The fonts name is M+ not Mplus
+     36 Drop unneeded Typogr.Family/Typogr.Style
+     26 'Term' is missing from Family
+     22 Change regular-equivalent name to Regular
+     19 Put Oblique into own SubFamily (and mark it as italic)
+      5 Drop Regular from Style
+      4 We handle (TTF) as sub-name
+      4 Fullname has been missing 'Nerd Font'
+      4 Bold / Bold-Italic are just a styles of Regular
+      2 Original font broken (Light in Family)
+      2 Classify Medium as own weigt and not Bold
+      2 Bold and Italic are styles of a basefont
+      1 Weight Condensed does not belong to base name
+      1 Use only Regular/Bold/Italic in SubFamily
+      1 Handle Retina as Weight and not Style
+      1 Do not call Semibold Light-Bold
