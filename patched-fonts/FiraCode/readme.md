@@ -1,6 +1,6 @@
 ## Fira Code: free monospaced font with programming ligatures
 
-<img src="./extras/logo.svg">
+![Fira Code](./extras/logo.svg)
 
 ### Problem
 
@@ -12,19 +12,19 @@ Fira Code is a free monospaced font containing ligatures for common programming 
 
 ### Download & Install
 
-<a href="https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip"><img src="./extras/download.png" width="520" height="130"></a>
+<a href="https://github.com/tonsky/FiraCode/releases/download/6.1/Fira_Code_v6.1.zip"><img alt="Fira_Code_v6.1.zip - December 3, 2021 - 2.9 MB" src="./extras/download.png" width="520" height="130"></a>
 
 Then:
 
-- <a href="https://github.com/tonsky/FiraCode/wiki">How to Install</a>
-- <a href="https://github.com/tonsky/FiraCode/wiki#troubleshooting">Troubleshooting</a>
-- <a href="https://twitter.com/FiraCode">News & Updates</a>
+- [How to Install](https://github.com/tonsky/FiraCode/wiki)
+- [Troubleshooting](https://github.com/tonsky/FiraCode/wiki#troubleshooting)
+- [News & Updates](https://twitter.com/FiraCode)
 
 ### Support
 
-<a href="https://github.com/sponsors/tonsky" target="_blank"><img src="./extras/sponsor.png"></a>
+<a href="https://github.com/sponsors/tonsky" target="_blank"><img alt="Sponsor" src="./extras/sponsor.png"></a>
 
-Fira Code is a personal, free-time project with no funding and huge [feature request backlog](https://github.com/tonsky/FiraCode/issues). If you love it, consider supporting its development via [GitHub Sponsors](https://github.com/sponsors/tonsky) or [Patreon](https://patreon.com/tonsky). Any help counts!
+Fira Code is a personal, free-time project with no funding and a huge [feature request backlog](https://github.com/tonsky/FiraCode/issues). If you love it, consider supporting its development via [GitHub Sponsors](https://github.com/sponsors/tonsky) or [Patreon](https://patreon.com/tonsky). Any help counts!
 
 ### What’s in the box?
 
@@ -32,7 +32,7 @@ Left: ligatures as rendered in Fira Code. Right: same character sequences withou
 
 <img src="./extras/ligatures.png" width="754" height="1326">
 
-Fira Code comes with huge variety of arrows. Even better: you can make them as long as you like and combine start/middle/end fragments however you want!
+Fira Code comes with a huge variety of arrows. Even better: you can make them as long as you like and combine start/middle/end fragments however you want!
 
 <img src="./extras/arrows.png" width="754" height="799">
 
@@ -40,17 +40,31 @@ Fira Code is not only about ligatures. Some fine-tuning is done for punctuation 
 
 <img src="./extras/typographics.png" width="754" height="649">
 
-Fira Code comes with a few different character variants, so that everyone can choose what’s best for them. [How to enable.](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylistic-sets)
+Fira Code comes with a few different character variants, so that everyone can choose what’s best for them. [How to enable](https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylistic-sets)
 
-<img src="./extras/stylistic_sets.png" width="754" height="391">
+<img src="./extras/character_variants.png" width="754" height="391">
 
-Being programming font, Fira Code has fantastic support for ASCII/box drawing, powerline and other forms of console UIs.
+Some ligatures can be altered or enabled using stylistic sets/character variants:
 
-<img src="./extras/console.png" width="754" height="357">
+<img src="./extras/ligature_variants.png" width="754" height="561">
 
-Unicode coverage makes Fira Code great choice for mathematical writing.
+Being a programming font, Fira Code has fantastic support for ASCII/box drawing, powerline and other forms of console UIs:
 
-<img src="./extras/math.png" width="754" height="289">
+<img src="./extras/console.png" width="754" height="459">
+
+Fira Code is the first programming font to offer dedicated glyphs to render progress bars:
+
+<img src="./extras/progress.png" width="754" height="282">
+
+In action:
+
+<img src="./extras/progress.gif" width="560" height="181">
+
+We hope more programming fonts will adopt this convention and ship their own versions.
+
+Unicode coverage makes Fira Code a great choice for mathematical writing:
+
+<img src="./extras/math.png" width="754" height="323">
 
 ### How does it look?
 
@@ -65,17 +79,19 @@ Unicode coverage makes Fira Code great choice for mathematical writing.
 | **Android Studio** (2.3+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | **Adobe Dreamweaver** |
 | **Anjuta** (unless at the EOF) | **Delphi IDE** |
 | **AppCode** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | Standalone **Emacs** ([workaround](https://github.com/tonsky/FiraCode/wiki/Emacs-instructions)) |
-| **Atom** 1.1 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/Atom-instructions)) | **Geany** (Windows) |
-| **BBEdit/TextWrangler** (v. 11 only, [instructions](https://github.com/tonsky/FiraCode/wiki/BBEdit-instructions)) | **Godot** ([issue](https://github.com/godotengine/godot/issues/9961)) |
-| **Brackets** (with [this plugin](https://github.com/polo2ro/firacode-in-brackets)) | **gVim** (Windows [workaround](https://github.com/tonsky/FiraCode/issues/462)) |
-| **Chocolat** | **IDLE** |
-| **CLion** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | **KDevelop 4** |
-| **Cloud9** ([instructions](https://github.com/tonsky/FiraCode/wiki/Cloud9-Instructions)) | **MATLAB** |
-| **Coda 2** | **Monkey Studio IDE** |
-| **CodeLite** | **UltraEdit** |
+| **Atom** 1.1 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/Atom-instructions)) | **Godot** ([issue](https://github.com/godotengine/godot/issues/9961)) |
+| **BBEdit/TextWrangler** (v. 11 only, [instructions](https://github.com/tonsky/FiraCode/wiki/BBEdit-instructions)) | **gVim** (Windows [workaround](https://github.com/tonsky/FiraCode/issues/462)) |
+| **Brackets** (with [this plugin](https://github.com/polo2ro/firacode-in-brackets)) | **IDLE** |
+| **Chocolat** | **KDevelop 4** |
+| **CLion** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | **Monkey Studio IDE** |
+| **Cloud9** ([instructions](https://github.com/tonsky/FiraCode/wiki/Cloud9-Instructions)) | **UltraEdit** |
+| **Coda 2** |
+| **CodeLite** |
+| **CodeRunner** |
+| **CotEditor** |
 | **Eclipse** |
 | **elementary Code** |
-| **Geany** (macOS) |
+| **Geany** (1.37+) |
 | **gEdit / Pluma** |
 | **GNOME Builder** |
 | **GoormIDE** ([instructions](https://github.com/tonsky/FiraCode/wiki/GoormIDE-Instructions)) |
@@ -89,6 +105,7 @@ Unicode coverage makes Fira Code great choice for mathematical writing.
 | **LINQPad** |
 | **MacVim** 7.4 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/MacVim-instructions)) |
 | **Mancy** |
+| **MATLAB** ([instructions](https://github.com/tonsky/FiraCode/wiki/MATLAB-for-Windows-Instructions)) |
 | **Meld** |
 | **Mousepad** |
 | **NeoVim-gtk** |
@@ -96,8 +113,10 @@ Unicode coverage makes Fira Code great choice for mathematical writing.
 | **Notepad** (Windows) |
 | **Notepad++** (with a [workaround](https://github.com/notepad-plus-plus/notepad-plus-plus/issues/2287#issuecomment-256638098))  |
 | **Notepad3** ([instructions](https://github.com/rizonesoft/Notepad3/issues/361#issuecomment-365977420))|
+| **Nova** |
 | **PhpStorm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
 | **PyCharm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
+| **QOwnNotes** (21.16.6+) |
 | **QtCreator** |
 | **Rider** |
 | **RStudio** ([instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)) |
@@ -121,34 +140,23 @@ Unicode coverage makes Fira Code great choice for mathematical writing.
 
 ### Terminal compatibility list
 
-| Works              | Doesn’t work       |
-|--------------------|--------------------|
-| **Butterfly**      | **Alacritty**      |
-| **crosh** (ChromeOS, [instructions](https://github.com/tonsky/FiraCode/wiki/ChromeOS-Terminal)) | **Windows Console (conhost.exe)** |
-| **Hyper.app**      | **Cmder**          |
-| **iTerm 2** ([3.1+](https://gitlab.com/gnachman/iterm2/issues/3568#note_13118332)) | **ConEmu** |
-| **Kitty**          | **GNOME Terminal** |
-| **Konsole**        | **mate-terminal**  |
-| **mintty** (partial support [2.8.3+](https://github.com/mintty/mintty/issues/601))| **PuTTY** |
-| **QTerminal**      | **rxvt**           |
-| **Terminal.app**   | **xterm**          |
-| **Termux**         | **ZOC** (Windows)  |
-| **Token2Shell/MD** | **gtkterm, guake, LXTerminal, sakura, Terminator, xfce4-terminal,** and other libvte-based terminals ([bug report](https://bugzilla.gnome.org/show_bug.cgi?id=584160)) |
-| **upterm**         |
-| **Windows Terminal** |
-| **ZOC** (macOS)    |
-| **st** ([patch](https://st.suckless.org/patches/ligatures/)) |
+| Platform       | Works | Doesn’t work |
+|----------------|-------|--------------|
+| macOS          | Hyper (see [#3607](https://github.com/vercel/hyper/issues/3607))<br>iTerm 2<br>Kitty<br>Terminal.app<br>ZOC | Alacritty |
+| Windows        | Hyper (see [#3607](https://github.com/vercel/hyper/issues/3607))<br>Mintty<br>Token2Shell<br>Windows Terminal | Alacritty<br>Cmder<br>ConEmu<br>PuTTY<br>Windows Console<br>ZOC |
+| Linux          | Hyper (see [#3607](https://github.com/vercel/hyper/issues/3607))<br>Kitty<br>Konsole<br>QTerminal<br>Termux<br>st ([patch](https://st.suckless.org/patches/ligatures/)) | Alacritty<br>GNOME Terminal<br>libvte-based terminals ([bug report](https://bugzilla.gnome.org/show_bug.cgi?id=584160)): <ul><li>gtkterm<li>guake<li>LXTerminal<li> sakura<li>Terminator<li>xfce4-terminal</ul>mate-terminal<br>rxvt<br>terminology<br>xterm
+| ChromeOS       | crosh ([instructions](https://github.com/tonsky/FiraCode/wiki/ChromeOS-Terminal)) | |
 
 ### Browser support
 
 ```html
 <!-- HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.1.0/distr/fira_code.css">
 ```
 
 ```css
 /* CSS */
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.1.0/distr/fira_code.css);
 ```
 
 ```css
@@ -169,7 +177,6 @@ code { font-family: 'Fira Code', monospace; }
 
 ### Projects using Fira Code
 
-- All [JetBrains products](https://www.jetbrains.com/)
 - [CodePen](https://codepen.io/)
 - [Blink Shell](http://www.blink.sh/)
 - [Klipse](http://app.klipse.tech/)
@@ -195,21 +202,31 @@ Free monospaced fonts with ligatures:
 Paid monospaced fonts with ligatures:
 
 - [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
-- [Mono Lisa](https://monolisa.dev/)
+- [Mono Lisa](https://www.monolisa.dev/)
 
 ### Building Fira Code locally
 
-In case you want to alter FiraCode.glyphs and build OTF/TTF/WOFF files yourself, this is setup I use on macOS:
+In case you want to alter FiraCode.glyphs and build OTF/TTF/WOFF files yourself, this is the setup I use on macOS:
 
 ```bash
 # install all required build tools
-./script/bootstrap
+./script/bootstrap_macos.sh
 
 # build the font files
-./script/build
+./script/build.sh
 
 # install OTFs to ~/Library/Fonts
-./script/install
+cp distr/otf/*.otf ~/Library/Fonts
+```
+
+Alternatively, you can build Fira Code using Docker:
+
+```bash
+# install dependencies in a container and build the font files
+make
+
+# package the font files from dist/ into a zip
+make package
 ```
 
 ### Credits
