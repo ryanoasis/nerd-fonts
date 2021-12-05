@@ -51,6 +51,10 @@ class font_patcher:
         self.extension = ""
         self.setup_arguments()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
+        if not os.path.isfile(self.args.font):
+            sys.exit("{}: Font file does not exist: {}".format(projectName, self.args.font))
+        if not os.access(self.args.font, os.R_OK):
+            sys.exit("{}: Can not open font file for reading: {}".format(projectName, self.args.font))
         try:
             self.sourceFont = fontforge.open(self.args.font)
         except Exception:
