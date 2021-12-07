@@ -106,9 +106,9 @@ class FontnameParser:
     def make_oblique_style(weights, styles):
         """Move "Oblique" from weights to styles for font naming purposes"""
         if 'Oblique' in weights:
-            weights = weights.copy()
+            weights = list(weights)
             weights.remove('Oblique')
-            styles = styles.copy()
+            styles = list(styles)
             styles.append('Oblique')
         return (weights, styles)
 
@@ -138,8 +138,8 @@ class FontnameParser:
         """Expects a filename following the 'FontFamilyName-FontStyle' pattern and returns ... parts"""
         name = re.sub('[_\s]+', ' ', name)
         matches = re.match(r'([^-]+)(?:-(.*))?', name)
-        familyname = FontnameParser.camel_casify(matches[1])
-        style = matches[2]
+        familyname = FontnameParser.camel_casify(matches.group(1))
+        style = matches.group(2)
 
         if not style:
             # No dash in name, maybe we have blanc separated filename?
@@ -187,7 +187,7 @@ class FontnameParser:
         # Recurse to see if unmatched stuff between dashes can belong to familyname
         if '-' in style:
             matches = re.match(r'(\w+)-(.*)', style)
-            return FontnameParser.parse_font_name(familyname + matches[1] + '-' + matches[2])
+            return FontnameParser.parse_font_name(familyname + matches.group(1) + '-' + matches.group(2))
 
         style = re.sub(r'(^|\s)\d+(\.\d+)+(\s|$)', r'\1\3', style) # Remove (free standing) version numbers
         style_parts = style.split(' ')
@@ -205,6 +205,7 @@ class FontnameParser:
         self.for_windows = False
         self.use_short_style = False
         self.keep_regular_in_family = False
+        self.suppress_preferred_if_identical = True
         self.fullname_suff = ''
         self.fontname_suff = ''
         self.family_suff = ''
@@ -220,6 +221,10 @@ class FontnameParser:
     def set_keep_regular_in_family(self, keep):
         """Familyname may contain 'Regular' where it should normally be suppressed"""
         self.keep_regular_in_family = keep
+
+    def set_suppress_preferred(self, suppress):
+        """Suppress ID16/17 if it is identical to ID1/2 (True is default)"""
+        self.suppress_preferred_if_identical = suppress
 
     def inject_suffix(self, fullname, fontname, family):
         """Add a custom additonal string that shows up in the resulting names"""
@@ -306,7 +311,7 @@ class FontnameParser:
         if 'Regular' in styles:
             if (not self.keep_regular_in_family # User says: Regular is the normal font, so it is not mentioned
                     or len(self.weight_token) > 0): # This is actually a malformed font name
-                styles = self.style_token.copy()
+                styles = list(self.style_token)
                 styles.remove('Regular')
         # For naming purposes we want Oblique to be part of the styles
         (weights, styles) = FontnameParser.make_oblique_style(weights, styles)
@@ -328,18 +333,18 @@ class FontnameParser:
 
     def preferred_family(self):
         """Get the SFNT Preferred Familyname (ID 16)"""
-        if len(self.weight_token) == 0:
+        if self.suppress_preferred_if_identical and len(self.weight_token) == 0:
             # Do not set if identical to ID 1
-            return ""
+            return ''
         return FontnameParser.concat(self.basename, self.rest, self.other_token, self.family_suff)
 
     def preferred_styles(self):
         """Get the SFNT Preferred Styles (ID 17)"""
         styles = self.style_token
         weights = self.weight_token
-        if len(weights) == 0:
+        if self.suppress_preferred_if_identical and len(weights) == 0:
             # Do not set if identical to ID 2
-            return ""
+            return ''
         # For naming purposes we want Oblique to be part of the styles
         (weights, styles) = FontnameParser.make_oblique_style(weights, styles)
         return FontnameParser.concat(weights, styles)
@@ -407,3 +412,57 @@ class FontnameParser:
             b |= REGULAR
         b |= WWS # We assert this by our naming process
         return b
+
+    def rename_font(self, font):
+        """Rename the font to include all information we found (font is fontforge font object)"""
+        font.fontname = self.ps_fontname()
+        font.fullname = self.fullname()
+        font.familyname = self.ps_familyname()
+        font.appendSFNTName('English (US)', 'Family', self.family())
+        # NOT: font.appendSFNTName('English (US)', 'SubFamily', self.subfamily())
+        font.appendSFNTName('English (US)', 'Fullname', self.fullname())
+        font.appendSFNTName('English (US)', 'PostScriptName', self.psname())
+
+        # Remove some entries from SFNT table; fontforge has no API function for that
+        sfnt_list = []
+        TO_DEL = ['Preferred Family', 'Preferred Styles', 'Compatible Full', 'SubFamily']
+        for l, k, v in list(font.sfnt_names):
+            if not k in TO_DEL:
+                sfnt_list += [( l, k, v )]
+
+        # Fontforge does not allow to set SubFamily to any value:
+        #
+        # Fontforge lets you set any value, unless it is the default value. If it
+        # is the default value it does not set anything. It also does not remove
+        # a previously existing non-default value. Why it is done this way is
+        # unclear:
+        #   fontforge/python.c SetSFNTName() line 11431
+        #     return( 1 ); /* If they set it to the default, there's nothing to do */
+        #
+        # Then is the question: What is the default? It is taken from the
+        # currently set fontname (??!). The fontname is parsed and everything
+        # behind the dash is the default SubFamily:
+        #   fontforge/tottf.c DefaultTTFEnglishNames()
+        #   fontforge/splinefont.c _GetModifiers()
+        #
+        # To fix this without touching Fontforge we need to set the SubFamily
+        # directly in the SFNT table:
+        sfnt_list += [( 'English (US)', 'SubFamily', self.subfamily() )]
+        font.sfnt_names = tuple(sfnt_list)
+
+        # Fontforge has the bug that it allows to write empty-string to a SFNT field and it is actually embedded as empty string,
+        # but empty strings are not shown if you query the sfnt_names *rolleyes*
+        p_fam = self.preferred_family()
+        if len(p_fam):
+            font.appendSFNTName('English (US)', 'Preferred Family', p_fam)
+        p_sty = self.preferred_styles()
+        if len(p_sty):
+            font.appendSFNTName('English (US)', 'Preferred Styles', p_sty)
+
+        font.macstyle = self.macstyle(font.macstyle)
+
+        # TODO: fsSelection, unfortunately fontforge does not support that directly
+        # but has some automaton to deduce it from macstyle, which means loosing information
+        # https://github.com/fontforge/fontforge/issues/2131
+        # https://github.com/jsomedon/Fix-fsSelection-bits-for-SF-fonts/blob/main/fix_fsSelection.sh
+        # Well, lets ignore it for now, as we always did ;)
