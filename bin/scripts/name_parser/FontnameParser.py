@@ -86,6 +86,7 @@ class FontnameParser:
         # The regex will be anchored to name begin and used case insensitive
         # Replacement can have regex matches, mind to catch the correct source case
         self.name_subst = table
+        self.basename = self._basename
         for regex, replacement in self.name_subst:
             newname = re.sub('^' + regex, replacement, self._basename, 1, re.IGNORECASE)
             if newname != self._basename:
