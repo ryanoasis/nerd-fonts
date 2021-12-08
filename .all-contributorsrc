@@ -1084,6 +1084,19 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "HarshalRathore",
+      "name": "HarshalRathore",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76205196?v=4",
+      "profile": "https://github.com/HarshalRathore",
+      "contributions": [
+        "translation"
+      ]
     }
-  ]
+  ],
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "contributorsPerLine": 7
 }
