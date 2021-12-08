@@ -225,46 +225,52 @@ class FontnameParser:
         font.fontname = self.ps_fontname()
         font.fullname = self.fullname()
         font.familyname = self.ps_familyname()
-        font.appendSFNTName('English (US)', 'Family', self.family())
-        # NOT: font.appendSFNTName('English (US)', 'SubFamily', self.subfamily())
-        font.appendSFNTName('English (US)', 'Fullname', self.fullname())
-        font.appendSFNTName('English (US)', 'PostScriptName', self.psname())
 
-        # Remove some entries from SFNT table; fontforge has no API function for that
+        # We have to work around several issues in fontforge:
+        #
+        # a. Remove some entries from SFNT table; fontforge has no API function for that
+        #
+        # b. Fontforge does not allow to set SubFamily (and other) to any value:
+        #
+        #    Fontforge lets you set any value, unless it is the default value. If it
+        #    is the default value it does not set anything. It also does not remove
+        #    a previously existing non-default value. Why it is done this way is
+        #    unclear:
+        #      fontforge/python.c SetSFNTName() line 11431
+        #        return( 1 ); /* If they set it to the default, there's nothing to do */
+        #
+        #    Then is the question: What is the default? It is taken from the
+        #    currently set fontname (??!). The fontname is parsed and everything
+        #    behind the dash is the default SubFamily:
+        #      fontforge/tottf.c DefaultTTFEnglishNames()
+        #      fontforge/splinefont.c _GetModifiers()
+        #
+        #    To fix this without touching Fontforge we need to set the SubFamily
+        #    directly in the SFNT table:
+        #
+        # c. Fontforge has the bug that it allows to write empty-string to a SFNT field
+        #    and it is actually embedded as empty string, but empty strings are not
+        #    shown if you query the sfnt_names *rolleyes*
+
         sfnt_list = []
-        TO_DEL = ['Preferred Family', 'Preferred Styles', 'Compatible Full', 'SubFamily']
+        TO_DEL = ['Family', 'SubFamily', 'Fullname', 'Postscriptname', 'Preferred Family', 'Preferred Styles', 'Compatible Full']
         for l, k, v in list(font.sfnt_names):
             if not k in TO_DEL:
                 sfnt_list += [( l, k, v )]
 
-        # Fontforge does not allow to set SubFamily to any value:
-        #
-        # Fontforge lets you set any value, unless it is the default value. If it
-        # is the default value it does not set anything. It also does not remove
-        # a previously existing non-default value. Why it is done this way is
-        # unclear:
-        #   fontforge/python.c SetSFNTName() line 11431
-        #     return( 1 ); /* If they set it to the default, there's nothing to do */
-        #
-        # Then is the question: What is the default? It is taken from the
-        # currently set fontname (??!). The fontname is parsed and everything
-        # behind the dash is the default SubFamily:
-        #   fontforge/tottf.c DefaultTTFEnglishNames()
-        #   fontforge/splinefont.c _GetModifiers()
-        #
-        # To fix this without touching Fontforge we need to set the SubFamily
-        # directly in the SFNT table:
+        sfnt_list += [( 'English (US)', 'Family', self.family() )]
         sfnt_list += [( 'English (US)', 'SubFamily', self.subfamily() )]
-        font.sfnt_names = tuple(sfnt_list)
+        sfnt_list += [( 'English (US)', 'Fullname', self.fullname() )]
+        sfnt_list += [( 'English (US)', 'PostScriptName', self.psname() )]
 
-        # Fontforge has the bug that it allows to write empty-string to a SFNT field and it is actually embedded as empty string,
-        # but empty strings are not shown if you query the sfnt_names *rolleyes*
         p_fam = self.preferred_family()
         if len(p_fam):
-            font.appendSFNTName('English (US)', 'Preferred Family', p_fam)
+            sfnt_list += [( 'English (US)', 'Preferred Family', p_fam )]
         p_sty = self.preferred_styles()
         if len(p_sty):
-            font.appendSFNTName('English (US)', 'Preferred Styles', p_sty)
+            sfnt_list += [( 'English (US)', 'Preferred Styles', p_sty )]
+
+        font.sfnt_names = tuple(sfnt_list)
 
         font.macstyle = self.macstyle(font.macstyle)
 
