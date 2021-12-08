@@ -184,6 +184,6 @@ if len(known_issues) > 0:
     print('There are {} lines not needed in known_issues, appending commented out in new known_issues'.format(len(known_issues)))
     new_issues.write('\n#### The following lines are not needed anymore\n\n')
     for l in known_issues:
-        new_issues.writelines([' ', l])
+        new_issues.writelines([' ', l, '\n'])
 
 new_issues.close()
