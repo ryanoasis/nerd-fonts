@@ -5,7 +5,7 @@ import sys
 import re
 import os.path
 import fontforge
-from name_parser import FontnameParser
+from FontnameParser import FontnameParser
 
 ###### Some helpers
 
