@@ -276,6 +276,7 @@ class font_patcher:
             n = FontnameParser(self.sourceFont.fontname)
             if not n.parse_ok:
                 sys.exit("Something with name parsing went wrong")
+            n.drop_for_powerline()
             n.set_for_windows(self.args.windows)
 
             # All the following stuff is ignored in parser-mode

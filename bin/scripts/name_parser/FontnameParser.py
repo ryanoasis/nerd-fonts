@@ -93,6 +93,18 @@ class FontnameParser:
                 break
         return self
 
+    def drop_for_powerline(self):
+        """Remove 'for Powerline' from all names (can not be undone)"""
+        if 'Powerline' in self.other_token:
+            idx = self.other_token.index('Powerline')
+            self.other_token.pop(idx)
+            if idx > 0 and self.other_token[idx - 1] == 'For':
+                self.other_token.pop(idx - 1)
+        self._basename = re.sub(r'\b(for\s?)?powerline\b', '', self._basename, 1, re.IGNORECASE).strip()
+        self.basename = self._basename
+        self.add_name_substitution_table(self.name_subst) # re-evaluate
+        return self
+
     ### Following the creation of the name parts:
     #
     # Relevant websites
