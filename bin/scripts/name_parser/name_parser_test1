@@ -54,23 +54,6 @@ def lenient_cmp(s1, s2):
         s[i] = re.sub(r' +', ' ', s[i]).strip()
     return s[0] == s[1]
 
-SIL_TABLE = [
-    ( '(s)ource',                   r'\1auce' ),
-    ( '(h)ermit',                   r'\1ermit' ),
-    ( '(h)asklig',                  r'\1asklug' ),
-    ( '(s)hare',                    r'\1hure' ),
-    ( 'IBM[- ]?plex',               r'Blex' ), # We do not keep the case here
-    ( '(t)erminus',                 r'\1erminess' ),
-    ( '(l)iberation',               r'\1iteration' ),
-    ( 'iA([- ]?)writer',            r'iM\1Writing' ),
-    ( '(a)nka/(c)oder',             r'\1na\2onder' ),
-    ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\2\3ove' ),
-    ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\2\3ono' ),
-    ( '(m)plus',                    r'\1+'), # Added this, because they use a plus symbol :->
-    # Noone cares that font names starting with a digit are forbidden:
-    # ( '(3270)',                     r'Ibeam\1'),
-]
-
 TEST_TABLE = [
     ( '(m)plus',   '\\1+'),
     ( 'IAWriter',  'iA Writer'),

@@ -20,6 +20,7 @@ class FontnameParser:
         self.name_subst = []
         [ self.parse_ok, self._basename, self.weight_token, self.style_token, self.other_token, self.rest ] = FontnameTools.parse_font_name(filename)
         self.basename = self._basename
+        self.add_name_substitution_table(FontnameTools.SIL_TABLE)
 
     def _make_ps_mame(self, n):
         """Helper to limit font name length in PS names"""

@@ -200,3 +200,20 @@ class FontnameTools:
         style = ' '.join(map(FontnameTools.front_upper, style_parts))
         familyname = FontnameTools.camel_explode(familyname)
         return (True, familyname, weight_token, style_token, other_token, style)
+
+    SIL_TABLE = [
+        ( '(s)ource',                   r'\1auce' ),
+        ( '(h)ermit',                   r'\1ermit' ),
+        ( '(h)asklig',                  r'\1asklug' ),
+        ( '(s)hare',                    r'\1hure' ),
+        ( 'IBM[- ]?plex',               r'Blex' ), # We do not keep the case here
+        ( '(t)erminus',                 r'\1erminess' ),
+        ( '(l)iberation',               r'\1iteration' ),
+        ( 'iA([- ]?)writer',            r'iM\1Writing' ),
+        ( '(a)nka/(c)oder',             r'\1na\2onder' ),
+        ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\3ove' ), # Also drop blank (\2)
+        ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\3ono' ), # Also drop blank (\2)
+        ( '(m)plus',                    r'\1+'), # Added this, because they use a plus symbol :->
+        # Noone cares that font names starting with a digit are forbidden:
+        # ( '(3270)',                     r'Ibeam\1'),
+    ]
