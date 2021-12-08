@@ -211,8 +211,8 @@ class FontnameTools:
         ( '(l)iberation',               r'\1iteration' ),
         ( 'iA([- ]?)writer',            r'iM\1Writing' ),
         ( '(a)nka/(c)oder',             r'\1na\2onder' ),
-        ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\3ove' ), # Also drop blank (\2)
-        ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\3ono' ), # Also drop blank (\2)
+        ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\2\3ove' ),
+        ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\2\3ono' ),
         ( '(m)plus',                    r'\1+'), # Added this, because they use a plus symbol :->
         # Noone cares that font names starting with a digit are forbidden:
         # ( '(3270)',                     r'Ibeam\1'),
