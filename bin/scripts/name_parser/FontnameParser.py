@@ -43,9 +43,9 @@ class FontnameParser:
 
     def inject_suffix(self, fullname, fontname, family):
         """Add a custom additonal string that shows up in the resulting names"""
-        self.fullname_suff = fullname
-        self.fontname_suff = fontname
-        self.family_suff = family
+        self.fullname_suff = fullname.strip()
+        self.fontname_suff = fontname.replace(' ', '')
+        self.family_suff = family.strip()
         return self
         # font-patcher behavior:
         #   verboseSuff  = "Nerd Font"
