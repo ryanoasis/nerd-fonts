@@ -3,7 +3,7 @@
 
 import re
 
-class FontnameParser:
+class FontnameTools:
     """Deconstruct a font filename to get standardized name parts"""
 
     @staticmethod
@@ -14,7 +14,7 @@ class FontnameParser:
     @staticmethod
     def camel_casify(word):
         """Remove blanks and use CamelCase for the new word"""
-        return ''.join(map(FontnameParser.front_upper, word.split(' ')))
+        return ''.join(map(FontnameTools.front_upper, word.split(' ')))
 
     @staticmethod
     def camel_explode(word):
@@ -42,19 +42,20 @@ class FontnameParser:
         return ' '.join(parts)
 
     @staticmethod
+    def drop_empty(l):
+        """Remove empty strings from list of strings"""
+        return [x for x in l if len(x) > 0]
+
+    @staticmethod
     def concat(*all_things):
-        """Flatten a lot (list of) strings to a blank-separated string"""
-        base = ''
+        """Flatten list of (strings or lists of strings) to a blank-separated string"""
+        all = []
         for thing in all_things:
-            if len(thing) == 0: # list or string
-                continue
             if type(thing) == str:
-                base += ' ' + thing
+                all.append(thing)
             else:
-                while '' in thing:
-                    thing.remove('')
-                base += ' ' + ' '.join(thing)
-        return base.strip()
+                all += thing
+        return ' '.join(FontnameTools.drop_empty(all))
 
     @staticmethod
     def unify_style_names(style_name):
@@ -101,7 +102,7 @@ class FontnameParser:
     @staticmethod
     def short_styles(styles):
         """Shorten all style names in a list"""
-        return list(map(FontnameParser.shorten_style_name, styles))
+        return list(map(FontnameTools.shorten_style_name, styles))
     @staticmethod
     def make_oblique_style(weights, styles):
         """Move "Oblique" from weights to styles for font naming purposes"""
@@ -126,7 +127,7 @@ class FontnameParser:
             not_matched += ' ' + j.groups()[0] # Blanc prevents unwanted concatenation of unmatched substrings
             tok = j.groups()[1].lower()
             tok = tokens[lower_tokens.index(tok)]
-            tok = FontnameParser.unify_style_names(tok)
+            tok = FontnameTools.unify_style_names(tok)
             if len(tok):
                 all_tokens.append(tok)
             name = j.groups()[2] # Recurse rest
@@ -138,21 +139,21 @@ class FontnameParser:
         """Expects a filename following the 'FontFamilyName-FontStyle' pattern and returns ... parts"""
         name = re.sub('[_\s]+', ' ', name)
         matches = re.match(r'([^-]+)(?:-(.*))?', name)
-        familyname = FontnameParser.camel_casify(matches.group(1))
+        familyname = FontnameTools.camel_casify(matches.group(1))
         style = matches.group(2)
 
         if not style:
             # No dash in name, maybe we have blanc separated filename?
             if ' ' in name:
-                return FontnameParser.parse_font_name(name.replace(' ', '-'))
+                return FontnameTools.parse_font_name(name.replace(' ', '-'))
             # Do we have a number-name boundary?
             p = re.split('(?<=[0-9])(?=[a-zA-Z])', name)
             if len(p) > 1:
-                return FontnameParser.parse_font_name('-'.join(p))
+                return FontnameTools.parse_font_name('-'.join(p))
             # Or do we have CamelCase?
-            n = FontnameParser.camel_explode(name)
+            n = FontnameTools.camel_explode(name)
             if n != name:
-                return FontnameParser.parse_font_name(n.replace(' ', '-'))
+                return FontnameTools.parse_font_name(n.replace(' ', '-'))
             return (False, familyname, [], [], [], '')
 
         # These are the FontStyle keywords we know, in three categories
@@ -172,12 +173,12 @@ class FontnameParser:
         weight_abbrevs = [ 'ob', 'c', 'm', 'l', ]
         style_abbrevs = [ 'it', 'r', 'b', 'i', ]
 
-        ( style, weight_token ) = FontnameParser.get_name_token(style, weights)
-        ( style, style_token ) = FontnameParser.get_name_token(style, styles)
-        ( style, other_token ) = FontnameParser.get_name_token(style, other)
+        ( style, weight_token ) = FontnameTools.get_name_token(style, weights)
+        ( style, style_token ) = FontnameTools.get_name_token(style, styles)
+        ( style, other_token ) = FontnameTools.get_name_token(style, other)
         if len(style) < 4:
-            ( style, weight_token_abbrevs ) = FontnameParser.get_name_token(style, weight_abbrevs)
-            ( style, style_token_abbrevs ) = FontnameParser.get_name_token(style, style_abbrevs)
+            ( style, weight_token_abbrevs ) = FontnameTools.get_name_token(style, weight_abbrevs)
+            ( style, style_token_abbrevs ) = FontnameTools.get_name_token(style, style_abbrevs)
             weight_token += weight_token_abbrevs
             style_token += style_token_abbrevs
         while 'Regular' in style_token and len(style_token) > 1:
@@ -187,17 +188,19 @@ class FontnameParser:
         # Recurse to see if unmatched stuff between dashes can belong to familyname
         if '-' in style:
             matches = re.match(r'(\w+)-(.*)', style)
-            return FontnameParser.parse_font_name(familyname + matches.group(1) + '-' + matches.group(2))
+            return FontnameTools.parse_font_name(familyname + matches.group(1) + '-' + matches.group(2))
 
         style = re.sub(r'(^|\s)\d+(\.\d+)+(\s|$)', r'\1\3', style) # Remove (free standing) version numbers
         style_parts = style.split(' ')
         while '' in style_parts:
             style_parts.remove('')
-        style = ' '.join(map(FontnameParser.front_upper, style_parts))
-        familyname = FontnameParser.camel_explode(familyname)
+        style = ' '.join(map(FontnameTools.front_upper, style_parts))
+        familyname = FontnameTools.camel_explode(familyname)
         return (True, familyname, weight_token, style_token, other_token, style)
 
-    ### Objectify the parse result:
+
+class FontnameParser:
+    """Parse a font name and generate all kinds of names"""
 
     def __init__(self, filename):
         """Parse a font filename and store the results"""
@@ -210,8 +213,15 @@ class FontnameParser:
         self.fontname_suff = ''
         self.family_suff = ''
         self.name_subst = []
-        [ self.parse_ok, self._basename, self.weight_token, self.style_token, self.other_token, self.rest ] = FontnameParser.parse_font_name(filename)
+        [ self.parse_ok, self._basename, self.weight_token, self.style_token, self.other_token, self.rest ] = FontnameTools.parse_font_name(filename)
         self.basename = self._basename
+
+    def _make_ps_mame(self, n):
+        """Helper to limit font name length in PS names"""
+        if self.for_windows and len(n) > 31:
+            print('Shortening too long PS family name')
+            return n[:31]
+        return n
 
     def set_for_windows(self, for_windows):
         """Create slightly different names, suitable for Windows use"""
@@ -308,14 +318,14 @@ class FontnameParser:
             win = ''
         styles = self.style_token
         weights = self.weight_token
-        if 'Regular' in styles:
-            if (not self.keep_regular_in_family # User says: Regular is the normal font, so it is not mentioned
-                    or len(self.weight_token) > 0): # This is actually a malformed font name
-                styles = list(self.style_token)
-                styles.remove('Regular')
+        if ('Regular' in styles
+                and (not self.keep_regular_in_family # User says: Regular is the normal font, so it is not mentioned
+                    or len(self.weight_token) > 0)): # This is actually a malformed font name
+            styles = list(self.style_token)
+            styles.remove('Regular')
         # For naming purposes we want Oblique to be part of the styles
-        (weights, styles) = FontnameParser.make_oblique_style(weights, styles)
-        return FontnameParser.concat(self.basename, self.rest, self.other_token, self.fullname_suff, win, weights, styles)
+        (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
+        return FontnameTools.concat(self.basename, self.rest, self.other_token, self.fullname_suff, win, weights, styles)
 
     def psname(self):
         """Get the SFNT PostScriptName (ID 6)"""
@@ -323,7 +333,7 @@ class FontnameParser:
         # except for the 10 characters '[', ']', '(', ')', '{', '}', '<', '>', '/', '%'
         out = ""
         # This is almost self.family() + '-' + self.subfamily() but without short styles:
-        for c in FontnameParser.concat(self.basename, self.rest, self.other_token, self.fontname_suff) + '-' + FontnameParser.concat(self.weight_token, self.style_token):
+        for c in FontnameTools.concat(self.basename, self.rest, self.other_token, self.fontname_suff) + '-' + FontnameTools.concat(self.weight_token, self.style_token):
             if c in '[](){}<>/%':
                 continue
             if ord(c) < 33 or ord(c) > 126:
@@ -336,7 +346,7 @@ class FontnameParser:
         if self.suppress_preferred_if_identical and len(self.weight_token) == 0:
             # Do not set if identical to ID 1
             return ''
-        return FontnameParser.concat(self.basename, self.rest, self.other_token, self.family_suff)
+        return FontnameTools.concat(self.basename, self.rest, self.other_token, self.family_suff)
 
     def preferred_styles(self):
         """Get the SFNT Preferred Styles (ID 17)"""
@@ -346,8 +356,8 @@ class FontnameParser:
             # Do not set if identical to ID 2
             return ''
         # For naming purposes we want Oblique to be part of the styles
-        (weights, styles) = FontnameParser.make_oblique_style(weights, styles)
-        return FontnameParser.concat(weights, styles)
+        (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
+        return FontnameTools.concat(weights, styles)
 
     def family(self):
         """Get the SFNT Familyname (ID 1)"""
@@ -355,39 +365,31 @@ class FontnameParser:
         other = self.other_token
         weight = self.weight_token
         if self.use_short_style:
-            other = FontnameParser.short_styles(other)
-            weight = FontnameParser.short_styles(weight)
-        return FontnameParser.concat(self.basename, self.rest, other, self.family_suff, weight)
+            other = FontnameTools.short_styles(other)
+            weight = FontnameTools.short_styles(weight)
+        return FontnameTools.concat(self.basename, self.rest, other, self.family_suff, weight)
 
     def subfamily(self):
         """Get the SFNT SubFamily (ID 2)"""
         if len(self.style_token) == 0:
             if 'Oblique' in self.weight_token:
-                return FontnameParser.concat(self.style_token, 'Italic')
+                return FontnameTools.concat(self.style_token, 'Italic')
             return 'Regular'
         if 'Oblique' in self.weight_token and not 'Italic' in self.style_token:
-                return FontnameParser.concat(self.style_token, 'Italic')
-        return FontnameParser.concat(self.style_token)
+                return FontnameTools.concat(self.style_token, 'Italic')
+        return FontnameTools.concat(self.style_token)
 
     def ps_familyname(self):
         """Get the PS Familyname"""
-        n = self.family()
-        if self.for_windows and len(n) > 31:
-            print('Shortening too long PS family name')
-            return n[:31]
-        return n
+        return self._make_ps_mame(self.family())
 
     def ps_fontname(self):
         """Get the PS fontname"""
-        n = self.psname()
         # This Adobe restriction is classically ignored
         # if len(n) > 29:
         #     print('Shortening too long PS fontname')
         #     return n[:29]
-        if self.for_windows and len(n) > 31:
-            print('Shortening too long PS fontname')
-            return n[:31]
-        return n
+        return self._make_ps_mame(self.psname())
 
     def macstyle(self, style):
         """Modify a given macStyle value for current name, just bits 0 and 1 touched"""
