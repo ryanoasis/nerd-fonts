@@ -24,10 +24,11 @@ sfnt = get_sfnt_dict(font)
 font.close()
 
 if sname:
-    if sname in sfnt:
-        print("SFNT {} is '{}'\n".format(sname, sfnt[sname]));
-    else:
-        print("SFNT {} is not set\n".format(sname));
+    for key in sname.split(','):
+        if key in sfnt:
+            print("SFNT {:20.20} is {:80.80}".format(key, '\'' + sfnt[key] + '\''));
+        else:
+            print("SFNT {:20.20} is not set".format(key));
 else:
     for k in sfnt:
         print("{:20.20} {:80.80}".format(k, sfnt[k]))
