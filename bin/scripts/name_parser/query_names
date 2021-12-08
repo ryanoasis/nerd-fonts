@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+# coding=utf8
+
+import sys
+import os.path
+import fontforge
+
+###### Some helpers
+
+def get_sfnt_dict(font):
+    """Extract SFNT table as nice dict"""
+    return { k: v for l, k, v in font.sfnt_names }
+
+def format_names(header, *stuff):
+    """Unify outputs (with header)"""
+    f = '{:1.1}|{:50.50} |{:1.1}| {:50.50} |{:1.1}| {:30.30} |{:1.1}| {:30.30} |{:1.1}| {:30.30} |{:1.1}| {:.30}'
+    if header:
+        d = '------------------------------------------------------------'
+        return f.format(*stuff) + '\n' + f.format('', d, d, d, d, d, d, d, d, d, d, d)
+    return f.format(*stuff).rstrip()
+
+###### Let's go!
+
+if len(sys.argv) < 2:
+    print('Usage: {} font_name [font_name ...]\n'.format(sys.argv[0]))
+    sys.exit(1)
+
+print('Examining {} font files'.format(len(sys.argv) - 1))
+
+print(format_names(True, '', 'Filename', '', 'Fullname', '', 'Family', '', 'Subfamily', '', 'Typogr. Family', '', 'Typogr. Subfamily'))
+
+for filename in sys.argv[1:]:
+    fullfile = os.path.basename(filename)
+    fname = os.path.splitext(fullfile)[0]
+
+    font = fontforge.open(filename, 1)
+    sfnt = get_sfnt_dict(font)
+    font.close()
+
+    sfnt_full =    sfnt['Fullname']
+    sfnt_fam =     sfnt['Family']
+    sfnt_subfam =  sfnt['SubFamily']
+    sfnt_pfam =    sfnt['Preferred Family'] if 'Preferred Family' in sfnt else ''
+    sfnt_psubfam = sfnt['Preferred Styles'] if 'Preferred Styles' in sfnt else ''
+
+    o2 = format_names(False, '', fullfile, '', sfnt_full, '', sfnt_fam, '', sfnt_subfam, '', sfnt_pfam, '', sfnt_psubfam)
+
+    print(o2)
