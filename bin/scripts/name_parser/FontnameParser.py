@@ -72,10 +72,6 @@ class FontnameParser:
         # fullname => verboseSuff {{ we do the following already: }} + win ? "Windows Compatible" : ""
         # family => win ? "NF" : "Nerd Font" + mono ? "Mono" : ""
 
-    def dump(self):
-        """Get all stored filename parse results, mainly for debugging"""
-        return (self.basename, self.weight_token, self.style_token, self.other_token, self.rest)
-
     def enable_short_style_when(self, prefix):
         """Enable short styles in SFNT Familyname when (original) font name starts with prefix"""
         self.use_short_style = self._basename.startswith(prefix)
