@@ -117,7 +117,7 @@ for filename in sys.argv[1:]:
     fname = os.path.splitext(fullfile)[0]
     if fname == 'NotoColorEmoji':
         continue # font is not patchable
-    n = FontnameParser(fname).enable_short_style_when('Noto').add_name_substitution_table(TEST_TABLE)
+    n = FontnameParser(fname).enable_short_families(False, 'Noto').add_name_substitution_table(TEST_TABLE)
     n.set_keep_regular_in_family(is_keep_regular(n)) # Stardard is FALSE
     # Example for name injection:
     # n.inject_suffix("Nerd Font Complete Mono", "Nerd Font Complete M", "Nerd Font Mono")

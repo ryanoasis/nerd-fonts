@@ -277,6 +277,7 @@ class font_patcher:
             if not n.parse_ok:
                 sys.exit("Something with name parsing went wrong")
             n.drop_for_powerline()
+            n.enable_short_families(True, False)
             n.set_for_windows(self.args.windows)
 
             # All the following stuff is ignored in parser-mode

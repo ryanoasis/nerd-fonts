@@ -11,7 +11,7 @@ class FontnameParser:
         """Parse a font filename and store the results"""
         self.parse_ok = False
         self.for_windows = False
-        self.use_short_style = False
+        self.use_short_families = (False, False) # ( camelcase name, short styles )
         self.keep_regular_in_family = False
         self.suppress_preferred_if_identical = True
         self.fullname_suff = ''
@@ -72,9 +72,11 @@ class FontnameParser:
         # fullname => verboseSuff {{ we do the following already: }} + win ? "Windows Compatible" : ""
         # family => win ? "NF" : "Nerd Font" + mono ? "Mono" : ""
 
-    def enable_short_style_when(self, prefix):
-        """Enable short styles in SFNT Familyname when (original) font name starts with prefix"""
-        self.use_short_style = self._basename.startswith(prefix)
+    def enable_short_families(self, camelcase_name, prefix):
+        """Enable short styles in Family when (original) font name starts with prefix; enable CamelCase basename in (Typog.) Family"""
+        # camelcase_name is boolean
+        # prefix is either a string or False
+        self.use_short_families = ( camelcase_name, prefix and self._basename.startswith(prefix) )
         return self
 
     def add_name_substitution_table(self, table):
@@ -161,7 +163,9 @@ class FontnameParser:
         if self.suppress_preferred_if_identical and len(self.weight_token) == 0:
             # Do not set if identical to ID 1
             return ''
-        return FontnameTools.concat(self.basename, self.rest, self.other_token, self.family_suff)
+        (short_name, _) = self.use_short_families
+        name = self.basename if not short_name else self.basename.replace(' ', '')
+        return FontnameTools.concat(name, self.rest, self.other_token, self.family_suff)
 
     def preferred_styles(self):
         """Get the SFNT Preferred Styles (ID 17)"""
@@ -177,12 +181,16 @@ class FontnameParser:
     def family(self):
         """Get the SFNT Familyname (ID 1)"""
         # We use the short form of the styles to save on number of chars
+        name = self.basename
         other = self.other_token
         weight = self.weight_token
-        if self.use_short_style:
+        (short_name, short_styles) = self.use_short_families
+        if short_styles:
             other = FontnameTools.short_styles(other)
             weight = FontnameTools.short_styles(weight)
-        return FontnameTools.concat(self.basename, self.rest, other, self.family_suff, weight)
+        if short_name:
+            name = self.basename.replace(' ', '')
+        return FontnameTools.concat(name, self.rest, other, self.family_suff, weight)
 
     def subfamily(self):
         """Get the SFNT SubFamily (ID 2)"""
