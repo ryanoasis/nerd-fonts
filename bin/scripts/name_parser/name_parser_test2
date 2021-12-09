@@ -1,0 +1,133 @@
+#!/usr/bin/env python
+# coding=utf8
+
+import sys
+import re
+import os.path
+import glob
+import subprocess
+import fontforge
+
+###### Some helpers
+
+def get_sfnt_dict(font):
+    """Extract SFNT table as nice dict"""
+    d = []
+    for i, el in enumerate(font.sfnt_names):
+        d += [(el[1], el[2])]
+    return dict(d)
+
+def format_names(header, *stuff):
+    """Unify outputs (with header)"""
+    f = '{:1.1}|{:50.50} |{:1.1}| {:50.50} |{:1.1}| {:30.30} |{:1.1}| {:30.30} |{:1.1}| {:30.30} |{:1.1}| {:.30}'
+    if header:
+        d = '------------------------------------------------------------'
+        return f.format(*stuff) + '\n' + f.format('', d, d, d, d, d, d, d, d, d, d, d)
+    return f.format(*stuff).rstrip()
+
+def lenient_cmp(s1, s2, allow_shuffle_all):
+    """Compare two font name (parts) but be a bit lenient ;->"""
+    # We do not care about:
+    # - Case
+    # - "Display" vs "Disp" (in Noto)
+    # Allow for "IBM 3278" name
+    s = [ s1, s2 ]
+    for i in range(2):
+        # Usually given transform from 'their' to 'our' style
+        s[i] = s[i].lower()
+        s[i] = re.sub(r'\bdisp\b', 'display', s[i])                     # Noto
+        s[i] = s[i].replace('ibm 3270', '3270')                         # 3270
+        s[i] = s[i].replace('3270-', '3270 ')                           # 3270
+        s[i] = s[i].replace('lekton-', 'lekton ')                       # Lekton
+        s[i] = s[i].replace('semi-narrow', 'seminarrow')                # 3270
+        s[i] = s[i].replace('bolditalic', 'bold italic')
+        s[i] = re.sub(r'\bfor\b', '', s[i])                             # Meslo, Monofur
+        s[i] = re.sub(r'\bpowerline\b', '', s[i])                       # Meslo, Monofur
+        s[i] = s[i].replace('fira mono', 'fura mono')                   # Obviously someone forgot to rename the fonts in Fira/
+        s[i] = s[i].replace('aurulentsansmono-', 'aurulent sans mono ') # Aurulent fullname oddity
+        s[i] = s[i].replace('mononoki-', 'mononoki ')                   # Mononoki has somtimes a dash
+        s[i] = re.sub(r'\br\b', 'regular', s[i])                        # Nonstandard style in Agave
+        s[i] = re.sub(r'(bitstream vera sans mono.*) oblique', r'\1 italic', s[i]) # They call it Oblique but the filename says Italic
+        s[i] = re.sub(r'gohufont (uni-)?(11|14)', 'gohufont', s[i])     # They put the 'name' into the subfamily/weight
+        s[i] = s[i].replace('xltobl', 'extralight oblique')             # Iosevka goes inventing names
+        s[i] = re.sub(r'proggyclean(?!TT)( ?)', 'proggycleantt\1', s[i]) # ProggyClean has no TT in filename
+
+        s[i] = re.sub(r' +', ' ', s[i]).strip()
+
+    p = []
+    for e in s:
+        parts = e.split(' ')
+        if not allow_shuffle_all and len(parts) > 2:
+            tail = parts[1:]
+            tail.sort()
+            parts = [parts[0]] + tail
+        elif len(parts) > 1:
+            parts.sort()
+        p.append(' '.join(parts))
+    return p[0] == p[1]
+
+###### Let's go!
+
+if len(sys.argv) < 2:
+    print('Usage: {} font_name [font_name ...]\n'.format(sys.argv[0]))
+    sys.exit(1)
+
+existing_font = glob.glob('*.[ot]tf')
+if len(existing_font):
+    sys.exit('Would overwrite any existing *.ttf and *.otf, bailing out (remove them first)')
+
+
+print(format_names(True, '', 'Filename', '', 'Fullname', '', 'Family', '', 'Subfamily', '', 'Typogr. Family', '', 'Typogr. Subfamily'))
+font_patcher = os.path.realpath(os.path.dirname(os.path.realpath(sys.argv[0]))+'/../../../font-patcher')
+
+for filename in sys.argv[1:]:
+    data = []
+    fullfile = os.path.basename(filename)
+    fname = os.path.splitext(fullfile)[0]
+    if fname == 'NotoColorEmoji':
+        continue # font is not patchable
+
+    for option in ['--parser', '--powerline']:
+        subprocess.call(['fontforge', '--script', font_patcher, '--powerline', option, filename ],
+            stdout = subprocess.DEVNULL, stderr = subprocess.DEVNULL)
+        new_font = glob.glob('*.[ot]tf')
+        font = fontforge.open(new_font[0], 1)
+        sfnt = get_sfnt_dict(font)
+        font.close()
+        os.system('rm -f *.[ot]tf')
+
+        sfnt_full =    sfnt['Fullname']
+        sfnt_fam =     sfnt['Family']
+        sfnt_subfam =  sfnt['SubFamily']
+        sfnt_pfam =    sfnt['Preferred Family'] if 'Preferred Family' in sfnt else ''
+        sfnt_psubfam = sfnt['Preferred Styles'] if 'Preferred Styles' in sfnt else ''
+
+        data.append(( os.path.basename(new_font[0]), sfnt_full, sfnt_fam, sfnt_subfam, sfnt_pfam, sfnt_psubfam ))
+
+    t1 = not lenient_cmp(data[0][1], data[1][1], False)
+    t2 = not lenient_cmp(data[0][2], data[1][2], False)
+    t3 = not lenient_cmp(data[0][3], data[1][3], True)
+    t4 = not lenient_cmp(data[0][4], data[1][4], False)
+    t5 = not lenient_cmp(data[0][5], data[1][5], True)
+
+    # Lenience: Allow for dropping unneeded prefered stuff:
+    # New (sub)family is same as old preferred sub(family)
+    if t4 and data[0][4] == '' and data[1][4].lower() == data[0][2].lower():
+        t4 = False
+    if t5 and data[0][5] == '' and data[1][5].lower() == data[0][3].lower():
+        t5 = False
+
+    if t1 or t2 or t3 or t4 or t5:
+        m1 = '+'; m2 = '-'
+    else:
+        m1 = ''; m2 = ''
+    t1_ = 'X' if t1 else ''
+    t2_ = 'X' if t2 else ''
+    t3_ = 'X' if t3 else ''
+    t4_ = 'X' if t4 else ''
+    t5_ = 'X' if t5 else ''
+
+    o1 = format_names(False, m1, data[0][0], t1_, data[0][1], t2_, data[0][2], t3_, data[0][3], t4_, data[0][4], t5_, data[0][5])
+    o2 = format_names(False, m2, data[1][0], '', data[1][1], '', data[1][2], '', data[1][3], '', data[1][4], '', data[1][5])
+
+    print(o1, o2, sep='\n')
