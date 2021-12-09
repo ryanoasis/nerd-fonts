@@ -203,7 +203,7 @@ class FontnameTools:
 
     SIL_TABLE = [
         ( '(s)ource',                   r'\1auce' ),
-        ( '(h)ermit',                   r'\1ermit' ),
+        ( '(h)ermit',                   r'\1urmit' ),
         ( '(h)asklig',                  r'\1asklug' ),
         ( '(s)hare',                    r'\1hure' ),
         ( 'IBM[- ]?plex',               r'Blex' ), # We do not keep the case here
