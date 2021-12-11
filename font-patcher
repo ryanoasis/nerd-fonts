@@ -568,6 +568,9 @@ class font_patcher:
                 self.sourceFont.os2_winascent += 1
 
             # Make the line size identical for windows and mac
+            # ! This is broken because hhea* is changed but os2_typo* is not
+            # ! On the other hand we need intact (i.e. original) typo values
+            # ! in get_sourcefont_dimensions() @TODO FIXME
             self.sourceFont.hhea_ascent = self.sourceFont.os2_winascent
             self.sourceFont.hhea_descent = -self.sourceFont.os2_windescent
 
@@ -587,6 +590,9 @@ class font_patcher:
             'width' : 0,
             'height': 0,
         }
+        if self.sourceFont.os2_use_typo_metrics:
+            self.font_dim['ymin'] = self.sourceFont.os2_typodescent
+            self.font_dim['ymax'] = self.sourceFont.os2_typoascent
 
         # Find the biggest char width
         # Ignore the y-values, os2_winXXXXX values set above are used for line height
