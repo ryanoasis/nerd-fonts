@@ -56,7 +56,7 @@ class font_patcher:
         if not os.access(self.args.font, os.R_OK):
             sys.exit("{}: Can not open font file for reading: {}".format(projectName, self.args.font))
         try:
-            self.sourceFont = fontforge.open(self.args.font)
+            self.sourceFont = fontforge.open(self.args.font, 1) # 1 = ("fstypepermitted",))
         except Exception:
             sys.exit(projectName + ": Can not open font, try to open with fontforge interactively to get more information")
         self.setup_font_names()
