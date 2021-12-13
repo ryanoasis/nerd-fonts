@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[Wydania][release]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Czcionki]()&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Patcher czcionek](#font-patcher)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Dokumentacja Wiki][wiki]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Naklejki][stickers]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[VimDevIcons][vim-devicons]
+[Wydania][release]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Czcionki](#patched-fonts)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Patcher czcionek](#font-patcher)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Dokumentacja Wiki][wiki]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Naklejki][stickers]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[VimDevIcons][vim-devicons]
 
 
 [![GitHub release][img-version-badge]][repo] [![Gitter][img-gitter-badge]][gitter] [![CodeClimate][img-code-climate-badge]][code-climate] [![Build Status][img-travis-ci]][travis-ci] [![Code of Conduct][coc-badge]][coc] [![PRs Welcome][prs-badge]][prs]  <a href="#patched-fonts" title=""><img src="https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg?sanitize=true" alt="Nerd Fonts - OS Support"></a> [![Twitter][twitter-badge]][twitter-intent]
@@ -183,7 +183,7 @@ echo $i_oct_heart
 **NOTE:** Musisz użyć jednego z Nerd Fontów, aby zobaczyć prawidłowe ikony dla niektórych zestawów ikon (Devicons, Font Awesome Extension, Font Linux), ale inne zestawy powinny również działać z ich standardowymi czcionkami.
 
 
-## Spatchowane czcionki [!patched-fonts]
+<h2 id="patched-fonts">Spatchowane czcionki</h2>
 
 | Nazwa fontu                                       | Nazwa fontu i repozytorium        |\*RFN | Rozmiar EM | Status            |
 |:--------------------------------------------------|:----------------------------------|:-----|:--------|:------------------|
