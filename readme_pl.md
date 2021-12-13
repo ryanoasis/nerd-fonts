@@ -183,7 +183,7 @@ echo $i_oct_heart
 **NOTE:** Musisz użyć jednego z Nerd Fontów, aby zobaczyć prawidłowe ikony dla niektórych zestawów ikon (Devicons, Font Awesome Extension, Font Linux), ale inne zestawy powinny również działać z ich standardowymi czcionkami.
 
 
-## Spatchowane czcionki[patched-fonts]
+!## Spatchowane czcionki [!patched-fonts]
 
 | Nazwa fontu                                       | Nazwa fontu i repozytorium        |\*RFN | Rozmiar EM | Status            |
 |:--------------------------------------------------|:----------------------------------|:-----|:--------|:------------------|
