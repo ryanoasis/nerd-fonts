@@ -706,16 +706,20 @@ class font_patcher:
             sym_dim = get_glyph_dimensions(sym_glyph)
 
             # check if a glyph already exists in this location
+            if copiedToSlot.startswith("uni"):
+                copiedToSlot = copiedToSlot[3:]
+            codepoint = int("0x" + copiedToSlot, 16)
             if careful or 'careful' in sym_attr['params']:
-                if copiedToSlot.startswith("uni"):
-                    copiedToSlot = copiedToSlot[3:]
-                codepoint = int("0x" + copiedToSlot, 16)
                 if codepoint in self.sourceFont:
                     if self.args.quiet is False:
                         print("  Found existing Glyph at {}. Skipping...".format(copiedToSlot))
-
                     # We don't want to touch anything so move to next Glyph
                     continue
+            else:
+                # If we overwrite an existing glyph all subtable entries regarding it will be wrong
+                # (Probably; at least if we add a symbol and do not substitude a ligature or such)
+                if codepoint in self.sourceFont:
+                    self.sourceFont[codepoint].removePosSub("*")
 
             # Select and copy symbol from its encoding point
             # We need to do this select after the careful check, this way we don't
