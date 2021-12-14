@@ -1,6 +1,6 @@
 # License audit
 
-So far the most restrictive license Nerd Fonts has to adhere to is SIL OFL 1.1
+So far the most restrictive license Nerd Fonts has to adhere to is CC BY-NC-ND 3.0, but we the required consent from the author.
 
 ## Licenses found and basic summary of each
 
