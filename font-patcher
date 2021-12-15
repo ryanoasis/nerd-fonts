@@ -431,9 +431,10 @@ class font_patcher:
             verboseAdditionalFontNameSuffix += " Mono"
 
         if self.args.parser:
-            use_fullname = True # Usually the fullname is better to parse
+            use_fullname = type(self.sourceFont.fullname) == str # Usually the fullname is better to parse
             # Use fullname if it is 'equal' to the fontname
-            use_fullname |= self.sourceFont.fontname.lower() == FontnameTools.postscript_char_filter(self.sourceFont.fullname).lower()
+            if self.sourceFont.fullname:
+                use_fullname |= self.sourceFont.fontname.lower() == FontnameTools.postscript_char_filter(self.sourceFont.fullname).lower()
             # Use fullname for any of these source fonts (that are impossible to disentangle from the fontname, we need the blanks)
             for hit in [ 'Meslo' ]:
                 use_fullname |= self.sourceFont.fontname.lower().startswith(hit.lower())
