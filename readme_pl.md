@@ -139,7 +139,7 @@ _Jeśli..._
 ### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 > Dodatkowe separatory Powerline i glify numerów kolumn (CN). / ([repo][ryanoasis-powerline-extra-symbols])
 
-#### [:mag: :bookmark_tabs: Zobacz zestaw na stronie Nerdfonts.com](http://nerdfonts.com/?set=nf-ple-#cheat-sheet)
+#### [:mag: :bookmark_tabs: Zobacz zestaw na stronie NerdFonts.com](http://nerdfonts.com/?set=nf-ple-#cheat-sheet)
 
 ### [IEC Power Symbols][website-iecpower]
 > Dodaje nowe znaki do Unicode / ([strona][website-iecpower])
