@@ -69,7 +69,7 @@ class font_patcher:
         self.sourceFont.encoding = 'UnicodeFull'  # Update the font encoding to ensure that the Unicode glyphs are available
         self.onlybitmaps = self.sourceFont.onlybitmaps  # Fetch this property before adding outlines. NOTE self.onlybitmaps initialized and never used
         if self.args.extension == "":
-            self.extension = os.path.splitext(self.sourceFont.path)[1]
+            self.extension = os.path.splitext(self.args.font)[1]
         else:
             self.extension = '.' + self.args.extension
 
