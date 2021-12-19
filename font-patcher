@@ -361,7 +361,15 @@ class font_patcher:
             'Cascadia Mono'  : 'Caskaydia Mono',
             'cascadia mono'  : 'caskaydia mono',
             'CascadiaMono'   : 'CaskaydiaMono',
-            'cascadiamono'   : 'caskaydiamono'
+            'cascadiamono'   : 'caskaydiamono',
+            'Fira Mono'      : 'Fura Mono',
+            'Fira Sans'      : 'Fura Sans',
+            'FiraMono'       : 'FuraMono',
+            'FiraSans'       : 'FuraSans',
+            'fira mono'      : 'fura mono',
+            'fira sans'      : 'fura sans',
+            'firamono'       : 'furamono',
+            'firasans'       : 'furasans',
         }
 
         # remove overly verbose font names
