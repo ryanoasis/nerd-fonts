@@ -547,7 +547,10 @@ class font_patcher:
         # Most glyphs we want to maximize during the scale.  However, there are some
         # that need to be small or stay relative in size to each other.
         # The following list are those glyphs.  A tuple represents a range.
-        DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, 'GlyphsToScale': [(0xe6bd, 0xe6c3)]}
+        DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, # Android logo
+            'GlyphsToScale': [
+                (0xe6bd, 0xe6c3) # very small things
+            ]}
         FONTA_SCALE_LIST = {'GlyphsToScale': [
             [0xf005, 0xf006, 0xf089], # star, star empty, half star
             range(0xf026, 0xf028 + 1), # volume off, down, up
@@ -567,7 +570,15 @@ class font_patcher:
             range(0xf221, 0xf22d + 1), # gender or so
             range(0xf255, 0xf25b + 1), # hand symbols
         ]}
-        OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, 'GlyphsToScale': [(0xf03d, 0xf040), 0xf044, (0xf051, 0xf053), 0xf05a, 0xf05b, 0xf071, 0xf078, (0xf09f, 0xf0aa), 0xf0ca]}
+        OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, # looking glass (probably biggest glyph?)
+            'GlyphsToScale': [
+                (0xf03d, 0xf040), # arrows
+                0xf044, 0xf05a, 0xf05b, 0xf0aa, # triangles
+                (0xf051, 0xf053), # small stuff
+                0xf071, 0xf09f, 0xf0a0, 0xf0a1, # small arrows
+                0xf078, 0xf0a2, 0xf0a3, 0xf0a4, # chevrons
+                0xf0ca, # dash
+            ]}
 
         # Define the character ranges
         # Symbol font ranges
