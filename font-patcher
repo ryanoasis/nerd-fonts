@@ -548,7 +548,25 @@ class font_patcher:
         # that need to be small or stay relative in size to each other.
         # The following list are those glyphs.  A tuple represents a range.
         DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, 'GlyphsToScale': [(0xe6bd, 0xe6c3)]}
-        FONTA_SCALE_LIST = {'ScaleGlyph': 0xF17A, 'GlyphsToScale': [0xf005, 0xf006, (0xf026, 0xf028), 0xf02b, 0xf02c, (0xf031, 0xf035), (0xf044, 0xf054), (0xf060, 0xf063), 0xf077, 0xf078, 0xf07d, 0xf07e, 0xf089, (0xf0d7, 0xf0da), (0xf0dc, 0xf0de), (0xf100, 0xf107), 0xf141, 0xf142, (0xf153, 0xf15a), (0xf175, 0xf178), 0xf182, 0xf183, (0xf221, 0xf22d), (0xf255, 0xf25b)]}
+        FONTA_SCALE_LIST = {'GlyphsToScale': [
+            [0xf005, 0xf006, 0xf089], # star, star empty, half star
+            range(0xf026, 0xf028 + 1), # volume off, down, up
+            range(0xf02b, 0xf02c + 1), # tag, tags
+            range(0xf031, 0xf035 + 1), # font et al
+            range(0xf044, 0xf046 + 1), # edit, share, check (boxes)
+            range(0xf048, 0xf052 + 1), # multimedia buttons
+            range(0xf060, 0xf063 + 1), # arrows
+            [0xf053, 0xf054, 0xf077, 0xf078], # chevron all directions
+            range(0xf07d, 0xf07e + 1), # resize
+            [0xf0d7, 0xf0da, 0xf0dc, 0xf0fe], # caret all directions and same looking sort
+            range(0xf100, 0xf107 + 1), # angle
+            range(0xf141, 0xf142 + 1), # ellipsis
+            range(0xf153, 0xf15a + 1), # currencies
+            range(0xf175, 0xf178 + 1), # long arrows
+            range(0xf182, 0xf183 + 1), # male and female
+            range(0xf221, 0xf22d + 1), # gender or so
+            range(0xf255, 0xf25b + 1), # hand symbols
+        ]}
         OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, 'GlyphsToScale': [(0xf03d, 0xf040), 0xf044, (0xf051, 0xf053), 0xf05a, 0xf05b, 0xf071, 0xf078, (0xf09f, 0xf0aa), 0xf0ca]}
 
         # Define the character ranges
