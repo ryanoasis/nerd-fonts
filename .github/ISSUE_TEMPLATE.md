@@ -1,19 +1,17 @@
 #### 🗹 Requirements
 
-<!--- If you are **not** sure whether or not what you are reporting is actually an issue **or** you have a general question please message in the [Gitter Chat Room](https://gitter.im/ryanoasis/nerd-fonts) -->
+<!-- ⚠️ !!! 
+If you are unsure what you are reporting is an issue or
+it's a general question please go to the gitter chat instead: https://gitter.im/ryanoasis/nerd-fonts
+⚠️ !!! -->
 
+
+<!-- ⚠️ !!! Issues not filled out with the template will be closed straight away and will only be responded to once filled properly ⚠️ !!! -->
 <!--- By posting an issue you acknowledge the following: -->
 
-- [ ] A brief but descriptive _title_ of your issue
 - [ ] I have searched the [issues](https://github.com/ryanoasis/nerd-fonts/issues) for my issue and found nothing related and/or helpful
-- [ ] I have read or scanned the [FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting)
-- [ ] I have read or scanned the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki)
-
-<!---
-These items you must provide answers to. Make sure to add **all the information needed to understand the issue** so that someone can help. If the info is missing we'll add the 'Needs more information' label and _may_ choose to close the issue until there is enough information.
--->
-
-<!--- ^ ----- Please remove all of the above and this line before posting your issue ----- ^ -->
+- [ ] I have searched the [FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting) for help
+- [ ] I have searched the [Wiki](https://github.com/ryanoasis/vim-devicons/wiki) for help
 
 #### 🎯 Subject of the issue
 
@@ -25,6 +23,6 @@ These items you must provide answers to. Make sure to add **all the information 
 - _Which terminal emulator are you using (e.g. `iterm2`, `urxvt`, `gnome`, `konsole`)?_
 - _Are you using OS X, Linux or Windows? And which specific version or distribution?_
 
-#### ★ Optional
+#### ★ Screenshots (Optional)
 
 <!--- Provide screenshots where appropriate -->
