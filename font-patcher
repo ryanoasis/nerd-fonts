@@ -647,10 +647,8 @@ class font_patcher:
             careful = True
 
         if exactEncoding is False:
-            sourceFontList = []
+            sourceFontList = list(range(sourceFontStart, sourceFontEnd + 1))
             sourceFontCounter = 0
-            for i in range(sourceFontStart, sourceFontEnd + 1):
-                sourceFontList.append(format(i, 'X'))
 
         scale_factor = 0
         if scaleGlyph:
@@ -685,25 +683,16 @@ class font_patcher:
             if exactEncoding:
                 # use the exact same hex values for the source font as for the symbol font
                 currentSourceFontGlyph = sym_glyph.encoding
-
-                # Save as a hex string without the '0x' prefix
-                copiedToSlot = format(sym_glyph.unicode, 'X')
             else:
                 # use source font defined hex values based on passed in start and end
-                # convince that this string really is a hex:
-                currentSourceFontGlyph = int("0x" + sourceFontList[sourceFontCounter], 16)
-                copiedToSlot = sourceFontList[sourceFontCounter]
+                currentSourceFontGlyph = sourceFontList[sourceFontCounter]
                 sourceFontCounter += 1
-
-            if int(copiedToSlot, 16) < 0:
-                print("Found invalid glyph slot number. Skipping.")
-                continue
 
             if self.args.quiet is False:
                 if self.args.progressbars:
                     update_progress(round(float(index + 1) / glyphSetLength, 2))
                 else:
-                    progressText = "\nUpdating glyph: " + str(sym_glyph) + " " + str(sym_glyph.glyphname) + " putting at: " + copiedToSlot
+                    progressText = "\nUpdating glyph: {} {} putting at: {:X}".format(sym_glyph, sym_glyph.glyphname, currentSourceFontGlyph)
                     sys.stdout.write(progressText)
                     sys.stdout.flush()
 
@@ -711,20 +700,17 @@ class font_patcher:
             sym_dim = get_glyph_dimensions(sym_glyph)
 
             # check if a glyph already exists in this location
-            if copiedToSlot.startswith("uni"):
-                copiedToSlot = copiedToSlot[3:]
-            codepoint = int("0x" + copiedToSlot, 16)
             if careful or 'careful' in sym_attr['params']:
-                if codepoint in self.sourceFont:
+                if currentSourceFontGlyph in self.sourceFont:
                     if self.args.quiet is False:
-                        print("  Found existing Glyph at {}. Skipping...".format(copiedToSlot))
+                        print("  Found existing Glyph at {:X}. Skipping...".format(currentSourceFontGlyph))
                     # We don't want to touch anything so move to next Glyph
                     continue
             else:
                 # If we overwrite an existing glyph all subtable entries regarding it will be wrong
                 # (Probably; at least if we add a symbol and do not substitude a ligature or such)
-                if codepoint in self.sourceFont:
-                    self.sourceFont[codepoint].removePosSub("*")
+                if currentSourceFontGlyph in self.sourceFont:
+                    self.sourceFont[currentSourceFontGlyph].removePosSub("*")
 
             # Select and copy symbol from its encoding point
             # We need to do this select after the careful check, this way we don't
