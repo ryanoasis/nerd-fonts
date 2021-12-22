@@ -161,6 +161,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/lepht"><img src="https://avatars.githubusercontent.com/u/130093?v=4?s=100" width="100px;" alt=""/><br /><sub><b>petec</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=lepht" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/HarshalRathore"><img src="https://avatars.githubusercontent.com/u/76205196?v=4?s=100" width="100px;" alt=""/><br /><sub><b>HarshalRathore</b></sub></a><br /><a href="#translation-HarshalRathore" title="Translation">🌍</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://cstrahan.com/"><img src="https://avatars.githubusercontent.com/u/143982?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Charles Strahan</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=cstrahan" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
