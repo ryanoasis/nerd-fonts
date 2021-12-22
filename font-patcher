@@ -669,15 +669,14 @@ class font_patcher:
             symbolFont.selection.select((str("ranges"), str("unicode")), symbolFontStart, symbolFontEnd)
             self.sourceFont.selection.select((str("ranges"), str("unicode")), sourceFontStart, sourceFontEnd)
 
-        # Get number of selected non-empty glyphs @TODO FIXME
-        for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
-            glyphSetLength += 1
-        # end for
+        # Get number of selected non-empty glyphs
+        symbolFontSelection = list(symbolFont.selection.byGlyphs)
+        glyphSetLength = len(symbolFontSelection)
 
         if self.args.quiet is False:
             sys.stdout.write("Adding " + str(max(1, glyphSetLength)) + " Glyphs from " + setName + " Set \n")
 
-        for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
+        for index, sym_glyph in enumerate(symbolFontSelection):
             index = max(1, index)
 
             try:
@@ -822,12 +821,6 @@ class font_patcher:
             # does not overlap the bearings (edges)
             self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
 
-            # reset selection so iteration works properly @TODO fix? rookie misunderstanding?
-            # This is likely needed because the selection was changed when the glyph was copy/pasted
-            if symbolFontStart == 0:
-                symbolFont.selection.all()
-            else:
-                symbolFont.selection.select((str("ranges"), str("unicode")), symbolFontStart, symbolFontEnd)
         # end for
 
         if self.args.quiet is False or self.args.progressbars:
