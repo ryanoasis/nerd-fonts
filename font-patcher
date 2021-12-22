@@ -663,11 +663,9 @@ class font_patcher:
         # and only copy those that are not already contained in the source font
         if symbolFontStart == 0:
             symbolFont.selection.all()
-            self.sourceFont.selection.all()
             careful = True
         else:
             symbolFont.selection.select((str("ranges"), str("unicode")), symbolFontStart, symbolFontEnd)
-            self.sourceFont.selection.select((str("ranges"), str("unicode")), sourceFontStart, sourceFontEnd)
 
         # Get number of selected non-empty glyphs
         symbolFontSelection = list(symbolFont.selection.byGlyphs)
