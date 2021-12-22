@@ -82,6 +82,13 @@ class font_patcher:
             # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
             # This needs to be done on all characters, as some information seems to be lost from the original font file.
             self.set_sourcefont_glyph_widths()
+            # For some Windows applications (e.g. 'cmd') that is not enough. But they seem to honour the Panose table
+            # https://forum.high-logic.com/postedfiles/Panose.pdf
+            panose = list(self.sourceFont.os2_panose)
+            if panose[0] == 0 or panose[0] == 2: # 0 (1st value) = family kind; 0 = any (default); 2 = latin text and display
+                panose[0] = 2 # Assert kind
+                panose[3] = 9 # 3 (4th value) = propotion; 9 = monospaced
+                self.sourceFont.os2_panose = tuple(panose)
 
         # Prevent opening and closing the fontforge font. Makes things faster when patching
         # multiple ranges using the same symbol font.
