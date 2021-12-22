@@ -732,9 +732,6 @@ class font_patcher:
                     sys.stdout.write(progressText)
                     sys.stdout.flush()
 
-            # Prepare symbol glyph dimensions
-            sym_dim = get_glyph_dimensions(sym_glyph)
-
             # check if a glyph already exists in this location
             if careful or 'careful' in sym_attr['params']:
                 if currentSourceFontGlyph in self.sourceFont:
@@ -760,6 +757,9 @@ class font_patcher:
             self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
             scale_ratio_x = 1
             scale_ratio_y = 1
+
+            # Prepare symbol glyph dimensions
+            sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
 
             # Now that we have copy/pasted the glyph, if we are creating a monospace
             # font we need to scale and move the glyphs.  It is possible to have
