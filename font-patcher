@@ -770,10 +770,15 @@ class font_patcher:
                 # Currently stretching vertically for both monospace and double-width
                 scale_ratio_y = self.font_dim['height'] / sym_dim['height']
 
+            if 'overlap' in sym_attr['params']:
+                overlap = sym_attr['params']['overlap']
+            else:
+                overlap = 0
+
             if scale_ratio_x != 1 or scale_ratio_y != 1:
-                if 'overlap' in sym_attr['params']:
-                    scale_ratio_x *= 1 + sym_attr['params']['overlap']
-                    scale_ratio_y *= 1 + sym_attr['params']['overlap']
+                if overlap != 0:
+                    scale_ratio_x *= 1 + overlap
+                    scale_ratio_y *= 1 + overlap
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
             # Use the dimensions from the newly pasted and stretched glyph
@@ -797,8 +802,8 @@ class font_patcher:
                     # Right align
                     x_align_distance += self.font_dim['width'] - sym_dim['width']
 
-            if 'overlap' in sym_attr['params']:
-                overlap_width = self.font_dim['width'] * sym_attr['params']['overlap']
+            if overlap != 0:
+                overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
                 if sym_attr['align'] == 'r':
@@ -816,6 +821,13 @@ class font_patcher:
             # Ensure after horizontal adjustments and centering that the glyph
             # does not overlap the bearings (edges)
             self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+
+            # Check if the inserted glyph is scaled correctly for monospace
+            if self.args.single:
+                (xmin, _, xmax, _) = self.sourceFont[currentSourceFontGlyph].boundingBox()
+                if int(xmax - xmin) > self.font_dim['width'] * (1 + overlap):
+                    print("\n  Warning: Scaled glyph U+{:X} wider than one monospace width ({} / {} (overlap {}))".format(
+                        currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], overlap))
 
         # end for
 
