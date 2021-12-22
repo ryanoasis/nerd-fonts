@@ -186,7 +186,16 @@ function generate_info {
   echo "$LINE_PREFIX * Adding 'Possible Combinations' section"
   generate_readme "$patched_font_dir" 1
   echo "$LINE_PREFIX * Copying license files"
-  copy_license "$config_parent_dir" "$patched_font_dir"
+
+  if [ $is_unpatched_fonts_root == "0" ];
+  then
+    # if we are not at the unpatched fonts root, copy all license from config parent dir
+    copy_license "$config_parent_dir" "$patched_font_dir"
+  else
+    # otherwise we nedd to copy files from the config dir itself
+    copy_license "$config_dir" "$patched_font_dir"
+  fi
+
 
   last_parent_dir=$config_parent_dir
   total_variation_count=$((total_variation_count+combination_count))

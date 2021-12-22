@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:latest
 
 LABEL org.opencontainers.image.title="Nerd Fonts Patcher" \
       org.opencontainers.image.description="Patches developer targeted fonts with a high number of glyphs (icons)." \
@@ -6,11 +6,10 @@ LABEL org.opencontainers.image.title="Nerd Fonts Patcher" \
       org.opencontainers.image.source="https://github.com/ryanoasis/nerd-fonts" \
       org.opencontainers.image.licenses="MIT"
 
-RUN apk update && apk upgrade && apk add --no-cache fontforge --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing && \
+RUN apk update && apk upgrade && apk add --no-cache fontforge --repository=https://dl-cdn.alpinelinux.org/alpine/edge/testing && \
     apk add --no-cache py3-pip && \
     pip install configparser
 
-# sys.stdout.write encoding (py)
 ENV PYTHONIOENCODING=utf-8
 
 VOLUME /in /out

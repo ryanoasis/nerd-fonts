@@ -33,12 +33,36 @@
       "description": "dotted zero, short descenders, expands upon work done for Bitstream Vera &amp; DejaVu, legible at common sizes"
     },
     {
+      "unpatchedName": "JetBrainsMono",
+      "patchedName": "JetBrainsMono",
+      "folderName": "JetBrainsMono",
+      "imagePreviewFont": "JetBrainsMono Nerd Font",
+      "linkPreviewFont": "jetbrainsmono",
+      "description": "JetBrains officially created font for developers"
+    },
+    {
       "unpatchedName": "ShareTechMono",
       "patchedName": "ShureTechMono",
       "folderName": "ShareTechMono",
       "imagePreviewFont": "ShureTechMono Nerd Font",
       "linkPreviewFont": "share-tech",
       "description": "dotted zeros, distinguishable 1 and l, curved and straight character lines"
+    },
+    {
+      "unpatchedName": "Symbols Template 1000 EM",
+      "patchedName": "Symbols-1000-em Nerd Font Complete",
+      "folderName": "NerdFontsSymbolsOnly",
+      "imagePreviewFont": "Symbols Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Just the Nerd Font Icons. I.e Symbol font only. 1000 EM size"
+    },
+    {
+      "unpatchedName": "Symbols Template 2048 EM",
+      "patchedName": "Symbols-2048-em Nerd Font Complete",
+      "folderName": "NerdFontsSymbolsOnly",
+      "imagePreviewFont": "Symbols Nerd Font",
+      "linkPreviewFont": false,
+      "description": "Just the Nerd Font Icons. I.e Symbol font only. 2048 EM size"
     }
   ]
 }
