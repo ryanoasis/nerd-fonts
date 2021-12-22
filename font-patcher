@@ -776,7 +776,7 @@ class font_patcher:
                 if 'overlap' in sym_attr['params']:
                     scale_ratio_x *= 1 + sym_attr['params']['overlap']
                     scale_ratio_y *= 1 + sym_attr['params']['overlap']
-                self.sourceFont.transform(psMat.scale(scale_ratio_x, scale_ratio_y))
+                self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
             # Use the dimensions from the newly pasted and stretched glyph
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
@@ -807,7 +807,7 @@ class font_patcher:
                     x_align_distance += overlap_width
 
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
-            self.sourceFont.transform(align_matrix)
+            self.sourceFont[currentSourceFontGlyph].transform(align_matrix)
 
             # Needed for setting 'advance width' on each glyph so they do not overlap,
             # also ensures the font is considered monospaced on Windows by setting the
