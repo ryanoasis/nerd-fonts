@@ -1093,6 +1093,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "cstrahan",
+      "name": "Charles Strahan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143982?v=4",
+      "profile": "http://cstrahan.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
