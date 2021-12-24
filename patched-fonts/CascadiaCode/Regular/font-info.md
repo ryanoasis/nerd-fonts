@@ -1,29 +1,17 @@
-Cascdia Code
-============
 
-Font creator
+## Why `Caskaydia Cove` and not `Cascadia Code`?
 
-:   Microsoft
+What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in particular the [Reserved Font Name mechanism][SIL-RFN]
 
-Version
+Some fonts have parts of their name "reserved" per the [Reserved Font Name mechanism][SIL-RFN]:
+> No Modified Version of the Font Software may use the Reserved Font
+> Name(s) unless explicit written permission is granted by the corresponding
+> Copyright Holder. This restriction only applies to the primary font name as
+> presented to the users.
 
-:   2007.11
+- The main goals seem to be to: `Avoid collisions`, `Protect authors`, `Minimize support`, and `Encourage derivatives`
 
-Source
-
-:   <https://github.com/microsoft/cascadia-code>
-
-License
-
-:   SIL OPEN FONT LICENSE Version 1.1
-
-[Cascadia
-Code](https://devblogs.microsoft.com/commandline/cascadia-code/) is the
-latest monospaced font shipped from Microsoft and provides a fresh
-experience for command line experiences and code editors. Cascadia Code
-was developed hand-in-hand with the new Windows Terminal application.
-This font is most recommended to be used with terminal applications and
-text editors such as Visual Studio and Visual Studio Code.
+See the [Reserved Font Name section][SIL-RFN] for additional information
 
 ## Which font?
 
