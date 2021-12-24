@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
-# Script Version: 1.1.0
+# Script Version: 1.2.0
 # Iterates over all archives and uploads to given release
 
 # uncomment to debug:
@@ -42,6 +42,13 @@ else
   echo "$LINE_PREFIX Limiting upload archive to pattern '$pattern'"
 fi
 
+CURL_DATA="\"tag_name\":\"${RELEASE_TAG}\""
+
+if [ "$PRERELEASE" == "true" ]
+  then
+    CURL_DATA+=", \"prerelease\": true"
+fi
+
 RELEASE_URL="https://api.github.com/repos/${OWNER}/${REPO}/releases/tags/${RELEASE_TAG}"
 
 #if [ "$LAST_RELEASE_ID" = null]
@@ -52,7 +59,7 @@ curl \
   -H "Authorization:token $TOKEN" \
   -H "Accept: application/vnd.github.v3+json" \
   https://api.github.com/repos/$OWNER/$REPO/releases \
-  -d "{\"tag_name\":\"${RELEASE_TAG}\", \"prerelease\": true }"
+  -d "{$CURL_DATA}"
 #else
 #  echo "$LINE_PREFIX A release did exist and the most recent release id was '$RELEASE'"
 #fi

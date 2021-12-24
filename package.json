@@ -1,6 +1,6 @@
 {
   "name": "nerd-fonts",
-  "version": "1.2.0",
+  "version": "2.2.0-RC",
   "description": "Iconic font aggregator, collection, and patcher: 39 patched fonts (87k+ variations). Includes popular glyph collections such as Font Awesome & fonts such as Hack",
   "main": "index.js",
   "dependencies": {},
