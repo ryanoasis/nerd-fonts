@@ -481,14 +481,13 @@ Reference the **release** branch and _not_ the ~~master~~ branch because paths a
 
 ## Other Good Fonts to Patch
 
-A list of additional good fonts to patch that cannot be provided or shared due to their license:
+Non exhaustive list of fonts that would benefit from being patched but are not included in Nerd Fonts due to their license (proprietary, commercial, etc.):
 
-* [Input Mono][input-mono] (license restriction)
-  * Possibly coming with external hosting :)
-* [PragmataPro][pragmatapro] (not free)
-* [Consolas][consolas] (proprietary)
-* [Operator Mono][operator] (not free)
-* [Dank Mono][dank] (not free)
+* [Input Mono][input-mono]
+* [PragmataPro][pragmatapro]
+* [Consolas][consolas]
+* [Operator Mono][operator]
+* [Dank Mono][dank]
 
 
 ## Project Motivation
@@ -502,7 +501,7 @@ See [changelog.md](changelog.md)
 
 ## License
 
-[MIT](LICENSE) © Ryan L McIntyre
+See [LICENSE][LICENSE]
 
 <!--
 Repo References
