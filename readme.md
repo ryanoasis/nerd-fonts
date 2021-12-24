@@ -563,6 +563,7 @@ Link References
 
 [release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
 [coc]:https://github.com/ryanoasis/nerd-fonts/blob/master/code_of_conduct.md "Contributor Covenant Code of Conduct"
+[LICENSE]:https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE
 [prs]:http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 
 <!--
