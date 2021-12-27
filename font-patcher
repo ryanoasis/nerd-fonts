@@ -218,6 +218,10 @@ class font_patcher:
         PreviousSymbolFilename = ""
         symfont = None
 
+        if not os.path.isdir(self.args.glyphdir):
+            sys.exit("{}: Can not find symbol glyph directory {} "
+                "(probably you need to download the src/glyphs/ directory?)".format(projectName, self.args.glyphdir))
+
         for patch in self.patch_set:
             if patch['Enabled']:
                 if PreviousSymbolFilename != patch['Filename']:
@@ -225,6 +229,12 @@ class font_patcher:
                     if symfont:
                         symfont.close()
                         symfont = None
+                    if not os.path.isfile(self.args.glyphdir + patch['Filename']):
+                        sys.exit("{}: Can not find symbol source for '{}'\n{:>{}}  (i.e. {})".format(
+                            projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
+                    if not os.access(self.args.glyphdir + patch['Filename'], os.R_OK):
+                        sys.exit("{}: Can not open symbol source for '{}'\n{:>{}}  (i.e. {})".format(
+                            projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
                     symfont = fontforge.open(os.path.join(self.args.glyphdir, patch['Filename']))
 
                     # Match the symbol font size to the source font size
