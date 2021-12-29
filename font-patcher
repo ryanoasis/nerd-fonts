@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.1.1"
+script_version = "3.2.0"
 
 version = "2.2.2"
 projectName = "Nerd Fonts"
@@ -35,6 +35,12 @@ except ImportError:
             "[e.g. on Linux Debian or Ubuntu: `sudo apt install fontforge python3-fontforge`]"
         )
     )
+
+try:
+    import urllib.request
+    urllib_present = True
+except ImportError:
+    urllib_present = False
 
 # This is for experimenting
 sys.path.insert(0, os.path.abspath(os.path.dirname(sys.argv[0])) + '/bin/scripts/name_parser/')
@@ -272,9 +278,11 @@ class font_patcher:
         PreviousSymbolFilename = ""
         symfont = None
 
-        if not os.path.isdir(self.args.glyphdir):
-            sys.exit("{}: Can not find symbol glyph directory {} "
-                "(probably you need to download the src/glyphs/ directory?)".format(projectName, self.args.glyphdir))
+        if not os.path.isdir(self.args.glyphdir) and not self.args.glyphdownload:
+            sys.exit("{}: Can not find symbol glyph directory {}\n"
+                "{:>{}}  Probably you need to download the src/glyphs/ directory?\n"
+                "{:>{}}  Or specify --glyphdownload to allow downloads".format(
+                    projectName, self.args.glyphdir, '', len(projectName), '', len(projectName)))
 
         for patch in self.patch_set:
             if patch['Enabled']:
@@ -283,13 +291,8 @@ class font_patcher:
                     if symfont:
                         symfont.close()
                         symfont = None
-                    if not os.path.isfile(self.args.glyphdir + patch['Filename']):
-                        sys.exit("{}: Can not find symbol source for '{}'\n{:>{}}  (i.e. {})".format(
-                            projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
-                    if not os.access(self.args.glyphdir + patch['Filename'], os.R_OK):
-                        sys.exit("{}: Can not open symbol source for '{}'\n{:>{}}  (i.e. {})".format(
-                            projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
-                    symfont = fontforge.open(os.path.join(self.args.glyphdir, patch['Filename']))
+                    glyph_filepath = self.check_or_download_glyphs(patch['Filename'], patch['Name'])
+                    symfont = fontforge.open(glyph_filepath)
 
                     # Match the symbol font size to the source font size
                     symfont.em = self.sourceFont.em
@@ -635,6 +638,36 @@ class font_patcher:
             print("Unable to read configfile, unable to remove ligatures")
         else:
             print("No configfile given, skipping configfile related actions")
+
+
+    def check_or_download_glyphs(self, filename, patchname):
+        """ Check if the symbol font file exists and is readable, try to download if not"""
+        filepath = os.path.realpath(os.path.join(self.args.glyphdir + filename))
+        if os.path.isfile(filepath):
+            if not os.access(filepath, os.R_OK):
+                sys.exit("{}: Can not open symbol source for '{}'\n{:>{}}  (i.e. {})".format(
+                            projectName, patchname, '', len(projectName), filepath))
+            return filepath # exists and is readable
+        if not self.args.glyphdownload:
+            sys.exit("{}: Can not find symbol source for '{}'\n"
+                    "{:>{}}  (i.e. {})\n"
+                    "{:>{}}  Specify --glyphdownload to allow download".format(
+                    projectName, patchname, '', len(projectName), filepath))
+        directory = os.path.split(filepath)[0]
+        print("Trying to download {} into {}".format(patchname, directory))
+        if not os.path.exists(directory):
+            try:
+                os.makedirs(directory)
+            except OSError as error:
+                sys.exit("{}: Directory '{}' can not be created: {}".format(projectName, directory, error))
+        url = "https://github.com/ryanoasis/nerd-fonts/raw/master/src/glyphs/" + filename
+        try:
+            filepath, _ = urllib.request.urlretrieve(url, filepath)
+        except HTTPError as error:
+            sys.exit("{}: Can not download glyphs: {}".format(projectName, error))
+        except Exception as error:
+            sys.exit("{}: Can not store glyphs: {}".format(projectName, error))
+        return filepath
 
 
     def assert_monospace(self):
@@ -1288,6 +1321,7 @@ def setup_arguments():
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
     parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
     parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
+    parser.add_argument('--glyphdownload',                           dest='glyphdownload',    default=False, action='store_true', help='Try to download missing symbol glyphs')
 
     # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
     progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
@@ -1370,6 +1404,10 @@ def setup_arguments():
     else:
         if is_ttc:
             sys.exit(projectName + ": Can not create single font files from True Type Collections")
+    if not urllib_present and self.args.glyphdownload:
+        self.args.glyphdownload = False
+        print("'urllib' module is probably not installed. Try `pip install urllib` or equivalent\n"
+                "    Can not download: ignoring --glyphdownload")
 
     return args
 
