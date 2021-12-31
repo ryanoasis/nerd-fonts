@@ -114,10 +114,16 @@ jobs:
           fontforge --version
           fontforge --version 2>&1 | grep libfontforge | awk '{print $NF}'
 
-      - name: Bump version and standardize the readme files
+      - name: Bump version for source files once
+      # @todo fixme - put in a separate job with the releaase env setup and output the release info
+        if: ${{ matrix.font == '3270' }}
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_TAG_VERSION"
+
+      - name: Standardize the readme files
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./standardize-and-complete-readmes.sh "${{ matrix.font }}"
 
       - name: Patch all the variations of the font family
