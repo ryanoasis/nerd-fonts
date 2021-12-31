@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.3.3"
+script_version = "3.4.0"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -976,7 +976,8 @@ class font_patcher:
             return (1.0, 1.0)
 
         # For monospaced fonts all chars need to be maximum 'one' space wide
-        target_width = self.font_dim['width']
+        # other fonts allows double width glyphs (for 'pa', 'x' scale target is still one space)
+        target_width = self.font_dim['width'] * (1.0 if self.args.single or stretch != 'pa' else 2.0)
         scale_ratio_x = target_width / sym_dim['width']
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
@@ -1107,10 +1108,17 @@ class font_patcher:
             if not self.args.single:
                 # any special logic we want to apply for double-width variation
                 # would go here:
-                # non monospaced fonts just scale y, on 'y' scale request (not 'pa')
-                scale_ratio_x = 1.0
-                if not 'y' in sym_attr['stretch']:
-                    scale_ratio_y = 1.0
+                # non monospaced fonts scale y, on 'y' scale request
+                # non monospaced fonts just scale down on 'pa', not up
+                if sym_attr['stretch'] == 'pa':
+                    # both scale factors are the same, thus we can limit them
+                    # individually, which is still the same
+                    scale_ratio_x = min(scale_ratio_x, 1.0)
+                    scale_ratio_y = min(scale_ratio_y, 1.0)
+                else:
+                    scale_ratio_x = 1.0
+                    if not 'y' in sym_attr['stretch']:
+                        scale_ratio_y = 1.0
 
             overlap = sym_attr['params'].get('overlap')
 
