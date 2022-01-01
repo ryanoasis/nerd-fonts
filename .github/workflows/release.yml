@@ -155,7 +155,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: patched-fonts
-          path: "patched-fonts/${{ matrix.font }}"
+          path: "$GITHUB_WORKSPACE/patched-fonts/*/${{ matrix.font }}"
 
   commit:
     name: Commit and push patched fonts to the repo
@@ -173,9 +173,10 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
 
-      - uses: EndBug/add-and-commit@v7
-        with:
-          add: 'patched-fonts'
-          message: Rebuilds patched fonts
-          committer_name: GitHub Actions
-          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+      # uncommment once structure is correct
+      # - uses: EndBug/add-and-commit@v7
+      #   with:
+      #     add: 'patched-fonts'
+      #     message: Rebuilds patched fonts
+      #     committer_name: GitHub Actions
+      #     committer_email: 41898282+github-actions[bot]@users.noreply.github.com

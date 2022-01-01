@@ -1,14 +1,6 @@
 {
   "fonts": [
     {
-      "unpatchedName": "3270",
-      "patchedName": "3270",
-      "folderName": "3270",
-      "imagePreviewFont": "3270 Nerd Font",
-      "linkPreviewFont": "font3270",
-      "description": "derived from the x3270 font, a modern format of a font with high nostalgic value"
-    },
-    {
       "unpatchedName": "Agave",
       "patchedName": "Agave",
       "folderName": "Agave",
@@ -17,36 +9,12 @@
       "description": "A small, monospace, outline font that is geometrically regular and simple"
     },
     {
-      "unpatchedName": "Cascadia Code",
-      "patchedName": "Caskaydia Cove",
-      "folderName": "CascadiaCode",
-      "imagePreviewFont": "Caskaydia Cove Nerd Font",
-      "linkPreviewFont": "cascadia-code",
-      "description": "A fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal"
-    },
-    {
       "unpatchedName": "Hack",
       "patchedName": "Hack",
       "folderName": "Hack",
       "imagePreviewFont": "Hack Nerd Font",
       "linkPreviewFont": "hack",
       "description": "dotted zero, short descenders, expands upon work done for Bitstream Vera &amp; DejaVu, legible at common sizes"
-    },
-    {
-      "unpatchedName": "JetBrainsMono",
-      "patchedName": "JetBrainsMono",
-      "folderName": "JetBrainsMono",
-      "imagePreviewFont": "JetBrainsMono Nerd Font",
-      "linkPreviewFont": "jetbrainsmono",
-      "description": "JetBrains officially created font for developers"
-    },
-    {
-      "unpatchedName": "ShareTechMono",
-      "patchedName": "ShureTechMono",
-      "folderName": "ShareTechMono",
-      "imagePreviewFont": "ShureTechMono Nerd Font",
-      "linkPreviewFont": "share-tech",
-      "description": "dotted zeros, distinguishable 1 and l, curved and straight character lines"
     },
     {
       "unpatchedName": "Symbols Template 1000 EM",
