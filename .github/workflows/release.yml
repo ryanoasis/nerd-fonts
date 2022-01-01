@@ -115,7 +115,7 @@ jobs:
           fontforge --version 2>&1 | grep libfontforge | awk '{print $NF}'
 
       - name: Bump version for source files once
-      # @todo fixme - put in a separate job with the releaase env setup and output the release info
+      # @todo fixme - put in a separate job with the release env setup and output the release info
         if: ${{ matrix.font == '3270' }}
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
@@ -138,15 +138,44 @@ jobs:
           ./generate-fontconfig.sh
           ./generate-casks.sh "${{ matrix.font }}"
 
-      - uses: EndBug/add-and-commit@v7
-        with:
-          add: 'patched-fonts'
-          message: Rebuilds patched fonts
-          committer_name: GitHub Actions
-          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+      # - uses: EndBug/add-and-commit@v7
+      #   with:
+      #     add: 'patched-fonts'
+      #     message: Rebuilds patched fonts
+      #     committer_name: GitHub Actions
+      #     committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
       - name: Archive font package zip files and upload for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-fonts.sh "${{ matrix.font }}"
           GITHUB_TOKEN=$GITHUB_TOKEN PRERELEASE=$RELEASE_CANDIDATE ./upload-archives.sh $RELEASE_TAG_VERSION "${{ matrix.font }}"
+
+      - name: Upload patched fonts as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: patched-fonts
+          path: "patched-fonts/${{ matrix.font }}"
+
+  commit:
+    name: Commit and push patched fonts to the repo
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Download patched fonts from build
+        uses: actions/download-artifact@v2
+        with:
+          name: patched-fonts
+          path: "$GITHUB_WORKSPACE/patched-fonts/"
+
+      - name: Display structure of downloaded files
+        run: ls -R
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: 'patched-fonts'
+          message: Rebuilds patched fonts
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com

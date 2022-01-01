@@ -15,9 +15,9 @@ main() {
   # @TODO uncomment and use FULL set once kinks worked out for Release Candidate Workflow
   # jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
   # for testing:
-  # jq '.fonts | .[] | .folderName' lib/fonts-small-subset.json | jq -sc
+  jq '.fonts | .[] | .folderName' lib/fonts-small-subset.json | jq -sc
   # do all the fonts:
-  jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
+  # jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
 }
 
 main; exit
