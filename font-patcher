@@ -901,10 +901,7 @@ class font_patcher:
 
         # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
         scale_ratio_x = self.font_dim['width'] / sym_dim['width']
-
-        # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
-        # NOTE: is this comment correct? font_dim['height'] isn't used here
-        scale_ratio_y = self.sourceFont.em / sym_dim['height']
+        scale_ratio_y = self.font_dim['height'] / sym_dim['height']
         if scale_ratio_x > scale_ratio_y:
             scale_ratio = scale_ratio_y
         else:
