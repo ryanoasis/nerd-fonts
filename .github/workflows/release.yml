@@ -155,7 +155,9 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: patched-fonts
-          path: "$GITHUB_WORKSPACE/patched-fonts/*/${{ matrix.font }}"
+          path: |
+            "$GITHUB_WORKSPACE/patched-fonts/${{ matrix.font }}/"
+            "$GITHUB_WORKSPACE/LICENSE"
 
   commit:
     name: Commit and push patched fonts to the repo
