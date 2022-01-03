@@ -60,6 +60,7 @@ class font_patcher:
         except Exception:
             sys.exit(projectName + ": Can not open font, try to open with fontforge interactively to get more information")
         self.setup_font_names()
+        self.remove_too_many_lookups()
         self.remove_ligatures()
         make_sure_path_exists(self.args.outputdir)
         self.check_position_conflicts()
@@ -433,6 +434,26 @@ class font_patcher:
         self.sourceFont.sfntRevision = None # Auto-set (refreshed) by fontforge
         self.sourceFont.appendSFNTName(str('English (US)'), str('Version'), "Version " + self.sourceFont.version)
         # print("Version now is {}".format(sourceFont.version))
+
+
+    def remove_too_many_lookups(self):
+        # Iosevka has so many lookup tables that fontforge is unable to save the file
+        lookups = self.sourceFont.gsub_lookups
+        # We identify Iosevka not by name, but by the amount of lookups.
+        # Maybe we want to identify by name?
+        # The number of lookups is not relevant if the save can be done or not,
+        # it depends on the space the tables need.
+        if len(lookups) < 410:
+            return
+        removed = []
+        for l in lookups:
+            # Arbritarily choose to remove CV. SS is too small to help much.
+            hit = re.search('cv[0-9]+', l)
+            if hit:
+                self.sourceFont.removeLookup(l)
+                removed.append(hit.group())
+        if removed:
+            print("Removing lookup: ", ','.join(removed))
 
 
     def remove_ligatures(self):
