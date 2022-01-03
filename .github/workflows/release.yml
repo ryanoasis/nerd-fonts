@@ -138,12 +138,10 @@ jobs:
           ./generate-fontconfig.sh
           ./generate-casks.sh "${{ matrix.font }}"
 
-      # - uses: EndBug/add-and-commit@v7
-      #   with:
-      #     add: 'patched-fonts'
-      #     message: Rebuilds patched fonts
-      #     committer_name: GitHub Actions
-      #     committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Archive font-patcher script for release
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./archive-font-patcher.sh
 
       - name: Archive font package zip files and upload for release
         run: |
@@ -155,9 +153,11 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: patched-fonts
+          # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
+          # of the root directory for artifact path purposes
           path: |
-            "$GITHUB_WORKSPACE/patched-fonts/${{ matrix.font }}/"
-            "$GITHUB_WORKSPACE/LICENSE"
+            patched-fonts/${{ matrix.font }}
+            LICENSE
 
   commit:
     name: Commit and push patched fonts to the repo
@@ -167,13 +167,11 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Download patched fonts from build
+        id: download-patched-fonts
         uses: actions/download-artifact@v2
         with:
           name: patched-fonts
-          path: "$GITHUB_WORKSPACE/patched-fonts/"
-
-      - name: Display structure of downloaded files
-        run: ls -R
+          path: .
 
       # uncommment once structure is correct
       # - uses: EndBug/add-and-commit@v7
