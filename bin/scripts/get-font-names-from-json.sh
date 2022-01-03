@@ -8,9 +8,9 @@
 
 main() {
   # for testing a small subset (useful to prove out significant changes w/o all font overhead):
-  jq '.fonts | .[] | .folderName' lib/fonts-small-subset.json | jq -sc
+  # jq '.fonts | .[] | .folderName' lib/fonts-small-subset.json | jq -sc
   # add all the fonts to the matrix:
-  # jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
+  jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
 }
 
 main; exit
