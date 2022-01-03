@@ -138,11 +138,6 @@ jobs:
           ./generate-fontconfig.sh
           ./generate-casks.sh "${{ matrix.font }}"
 
-      - name: Archive font-patcher script for release
-        run: |
-          cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./archive-font-patcher.sh
-
       - name: Archive font package zip files and upload for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
@@ -158,6 +153,24 @@ jobs:
           path: |
             patched-fonts/${{ matrix.font }}
             LICENSE
+
+  release-font-patcher:
+    name: Archive font patcher and add to release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Archive font-patcher script for release
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./archive-font-patcher.sh
+
+      - name: Archive font package zip files and upload for release
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          GITHUB_TOKEN=$GITHUB_TOKEN PRERELEASE=$RELEASE_CANDIDATE ./upload-archives.sh $RELEASE_TAG_VERSION "FontPatcher"
+
 
   commit:
     name: Commit and push patched fonts to the repo

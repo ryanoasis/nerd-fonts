@@ -1,22 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Nerd Fonts Version: 2.1.0
+# Script Version: 1.1.0
+# Gets all the font folder names to build the matrix for the github actions
+
+# used for debugging
+# set -x
 
 main() {
-  # json=()
-  # for i in $(jq '.fonts | keys | .[]' lib/fonts.json); do
-  #   fontName=$(jq -r ".fonts[$i].patchedName" lib/fonts.json);
-  #   json+=("$fontName");
-  # done
-  # # echo "${json[@]}"
-  # # printf '%s\n' "${json[@]}" | jq tojson | jq -R . | jq -s .
-  # # printf '%s\n' "${json[@]}" | jq -R . | jq -s .
-  # # stringified json:
-  # # printf '%s\n' "${json[@]}" | jq -R . | jq -s . | jq tojson
-  # echo "${json[@]}"
-  # @TODO uncomment and use FULL set once kinks worked out for Release Candidate Workflow
-  # jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
-  # for testing:
+  # for testing a small subset (useful to prove out significant changes w/o all font overhead):
   jq '.fonts | .[] | .folderName' lib/fonts-small-subset.json | jq -sc
-  # do all the fonts:
+  # add all the fonts to the matrix:
   # jq '.fonts | .[] | .folderName' lib/fonts.json | jq -sc
 }
 
