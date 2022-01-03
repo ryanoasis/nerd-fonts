@@ -157,6 +157,11 @@ jobs:
   release-font-patcher:
     name: Archive font patcher and add to release
     needs: build
+
+    env:
+      GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
