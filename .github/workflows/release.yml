@@ -188,7 +188,6 @@ jobs:
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           GITHUB_TOKEN=$GITHUB_TOKEN PRERELEASE=$RELEASE_CANDIDATE ./upload-archives.sh $RELEASE_TAG_VERSION "FontPatcher"
 
-
   commit:
     name: Commit and push patched fonts to the repo
     needs: build
@@ -203,10 +202,9 @@ jobs:
           name: patched-fonts
           path: .
 
-      # uncommment once structure is correct
-      # - uses: EndBug/add-and-commit@v7
-      #   with:
-      #     add: 'patched-fonts'
-      #     message: Rebuilds patched fonts
-      #     committer_name: GitHub Actions
-      #     committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: 'patched-fonts'
+          message: Rebuilds patched fonts
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
