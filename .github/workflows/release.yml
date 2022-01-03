@@ -166,6 +166,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Set release variables
+        run: |
+          cd -- "$GITHUB_WORKSPACE"
+          cat package.json
+          RELEASE_TAG_VERSION=$(cat package.json \
+          | grep version \
+          | head -1 \
+          | awk -F: '{ print $2 }' \
+          | sed 's/[",]//g')
+          echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
+          [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "RELEASE_CANDIDATE=true" || echo "RELEASE_CANDIDATE=false" >> $GITHUB_ENV
+
       - name: Archive font-patcher script for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
