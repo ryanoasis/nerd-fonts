@@ -9,7 +9,7 @@ Please read the licensing file before working with it.
 If you fork or use our fonts, please reference iA Writer clearly.
 ## Why `iM Writing` and not `iA Writer`?
 
-What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in partcular the [Reserved Font Name mechanism][SIL-RFN]
+What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in particular the [Reserved Font Name mechanism][SIL-RFN]
 
 Some fonts have parts of their name "reserved" per the [Reserved Font Name mechanism][SIL-RFN]:
 > No Modified Version of the Font Software may use the Reserved Font

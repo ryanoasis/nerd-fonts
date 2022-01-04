@@ -1,18 +1,9 @@
-iA Writer Duospace comes bundled with [iA Writer for Mac and iOS](https://ia.net/writer/buy/)
-
-For in depth explanation of iA Writer Duospace please read our [blog entry](http://ia.net/topics/in-search-of-the-perfect-writing-font/)
-
-This is a modification of IBM's Plex font. 
-The upstream project is [here](https://github.com/IBM/type)
-
-As required by IBM, we named it differently. 
-Please read the licensing file before working with it. 
-
-If you fork or reuse our version, please reference us, too.
+# iA-Fonts
+These are fonts from iA. Please read the licensing files before using them in any way.
 
 ## Why `iM Writing` and not `iA Writer`?
 
-What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in partcular the [Reserved Font Name mechanism][SIL-RFN]
+What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in particular the [Reserved Font Name mechanism][SIL-RFN]
 
 Some fonts have parts of their name "reserved" per the [Reserved Font Name mechanism][SIL-RFN]:
 > No Modified Version of the Font Software may use the Reserved Font
