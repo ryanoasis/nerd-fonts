@@ -305,10 +305,5 @@ class FontnameParser:
 
         font.sfnt_names = tuple(sfnt_list)
 
-        font.macstyle = self.macstyle(font.macstyle)
-
-        # TODO: fsSelection, unfortunately fontforge does not support that directly
-        # but has some automaton to deduce it from macstyle, which means loosing information
-        # https://github.com/fontforge/fontforge/issues/2131
-        # https://github.com/jsomedon/Fix-fsSelection-bits-for-SF-fonts/blob/main/fix_fsSelection.sh
-        # Well, lets ignore it for now, as we always did ;)
+        font.macstyle = self.macstyle(0)
+        font.os2_stylemap = self.fs_selection(0)
