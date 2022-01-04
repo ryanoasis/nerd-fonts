@@ -285,7 +285,8 @@ class FontnameParser:
         #    shown if you query the sfnt_names *rolleyes*
 
         sfnt_list = []
-        TO_DEL = ['Family', 'SubFamily', 'Fullname', 'Postscriptname', 'Preferred Family', 'Preferred Styles', 'Compatible Full']
+        TO_DEL = ['Family', 'SubFamily', 'Fullname', 'Postscriptname', 'Preferred Family',
+                'Preferred Styles', 'Compatible Full', 'WWS Family', 'WWS Subfamily']
         for l, k, v in list(font.sfnt_names):
             if not k in TO_DEL:
                 sfnt_list += [( l, k, v )]
