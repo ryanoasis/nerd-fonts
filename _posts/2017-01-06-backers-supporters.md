@@ -16,5 +16,8 @@ style: container
 <div markdown="1">
 [<img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/99691?v=4" width="100px;"/><br /><sub><b>Deven Phillips</b></sub>](https://github.com/InfoSec812)
 </div>
+<div markdown="1">
+[<img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/37636?v=4" width="100px;"/><br /><sub><b>Mark Watson</b></sub>](https://github.com/markwatson)
+</div>
 
 </div>
