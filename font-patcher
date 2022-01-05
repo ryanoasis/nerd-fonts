@@ -55,6 +55,9 @@ class font_patcher:
             sys.exit("{}: Font file does not exist: {}".format(projectName, self.args.font))
         if not os.access(self.args.font, os.R_OK):
             sys.exit("{}: Can not open font file for reading: {}".format(projectName, self.args.font))
+        if len(fontforge.fontsInFile(self.args.font)) > 1:
+            sys.exit("{}: Font file contains {} fonts, can only handle single font files".format(projectName,
+                len(fontforge.fontsInFile(self.args.font))))
         try:
             self.sourceFont = fontforge.open(self.args.font, 1) # 1 = ("fstypepermitted",))
         except Exception:
@@ -72,6 +75,8 @@ class font_patcher:
             self.extension = os.path.splitext(self.args.font)[1]
         else:
             self.extension = '.' + self.args.extension
+        if re.match("\.ttc$", self.extension, re.IGNORECASE):
+            sys.exit(projectName + ": Can not create True Type Collections")
 
 
     def patch(self):
