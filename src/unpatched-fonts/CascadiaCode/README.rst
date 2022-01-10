@@ -1,8 +1,8 @@
-Cascdia Code
-============
+Cascadia Code
+=============
 
 :Font creator: Microsoft
-:Version: 2007.11
+:Version: 2111.01
 :Source: https://github.com/microsoft/cascadia-code
 :License: SIL OPEN FONT LICENSE Version 1.1
 
