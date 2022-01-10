@@ -101,6 +101,7 @@ function patch_font {
   config_dir=$( cd "$( dirname "$f" )" && pwd)
 
   # source the font config file if exists:
+  # fetches for example config_patch_flags
   if [ -f "$config_dir/config.cfg" ]
   then
     # shellcheck source=/dev/null
@@ -143,10 +144,10 @@ function patch_font {
   }
   # Use absolute path to allow fontforge being an AppImage (used in CI)
   PWD=`pwd`
-  fontforge -quiet -script $PWD/font-patcher "$f" -q $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script $PWD/font-patcher "$f" -q -s ${font_config} $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script $PWD/font-patcher "$f" -q -w $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
-  fontforge -quiet -script $PWD/font-patcher "$f" -q -s ${font_config} -w $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" 2>/dev/null
+  fontforge -quiet -script $PWD/font-patcher "$f" -q $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>/dev/null
+  fontforge -quiet -script $PWD/font-patcher "$f" -q -s ${font_config} $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>/dev/null
+  fontforge -quiet -script $PWD/font-patcher "$f" -q -w $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>/dev/null
+  fontforge -quiet -script $PWD/font-patcher "$f" -q -s ${font_config} -w $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>/dev/null
   # wait for this group of background processes to finish to avoid forking too many processes
   # that can add up quickly with the number of combinations
   #wait
