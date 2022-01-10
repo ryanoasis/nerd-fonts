@@ -23,12 +23,23 @@ class FontnameParser:
         self.rest = self._rest
         self.add_name_substitution_table(FontnameTools.SIL_TABLE)
 
-    def _make_ps_mame(self, n):
+    def _make_ps_name(self, n, is_family):
         """Helper to limit font name length in PS names"""
-        if self.for_windows and len(n) > 31:
-            print('Shortening too long PS family name')
-            return n[:31]
-        return n
+        fam = 'family ' if is_family else ''
+        if not self.for_windows or len(n) <= 31:
+            return n
+        r = re.search('(.*)(-.*)', n)
+        if not r:
+            new_n = n[:31]
+        else:
+            q = 31 - len(r.groups()[1])
+            if q < 1:
+                q = 1
+                print('Shortening too long PS {}name: Garbage warning'. format(fam))
+            new_n = r.groups()[0][:q] + r.groups()[1]
+        if new_n != n:
+            print('Shortening too long PS {}name: {} -> {}'.format(fam, n, new_n))
+        return new_n
 
     def _shortened_name(self):
         """Return a blank free basename-rest combination"""
@@ -172,9 +183,13 @@ class FontnameParser:
         sub = FontnameTools.camel_casify(FontnameTools.concat(self.weight_token, self.style_token))
         if len(sub) > 0:
             sub = '-' + sub
-        out = FontnameTools.postscript_char_filter(fam + sub)
+        fam = FontnameTools.postscript_char_filter(fam)
+        sub = FontnameTools.postscript_char_filter(sub)
         # The name string must be no longer than 63 characters
-        return out[:63]
+        if len(fam) + len(sub) > 63:
+            print('Shortening too long PostScriptName')
+            fam = fam[:(63 - len(sub))]
+        return fam + sub
 
     def preferred_family(self):
         """Get the SFNT Preferred Familyname (ID 16)"""
@@ -218,7 +233,7 @@ class FontnameParser:
 
     def ps_familyname(self):
         """Get the PS Familyname"""
-        return self._make_ps_mame(self.family())
+        return self._make_ps_name(self.family(), True)
 
     def ps_fontname(self):
         """Get the PS fontname"""
@@ -226,7 +241,7 @@ class FontnameParser:
         # if len(n) > 29:
         #     print('Shortening too long PS fontname')
         #     return n[:29]
-        return self._make_ps_mame(self.psname())
+        return self._make_ps_name(self.psname(), False)
 
     def macstyle(self, style):
         """Modify a given macStyle value for current name, just bits 0 and 1 touched"""
