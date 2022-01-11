@@ -135,15 +135,17 @@ class font_patcher:
 
         # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
         if self.sourceFont.fullname != None:
-            self.sourceFont.generate(self.args.outputdir + "/" + self.sourceFont.fullname + self.extension, flags=(str('opentype'), str('PfEd-comments')))
-            print("\nGenerated: {}".format(self.sourceFont.fontname))
+            outfile = self.args.outputdir + "/" + self.sourceFont.fullname + self.extension
+            self.sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
+            print("\nGenerated: {} in {}".format(self.sourceFont.fontname, outfile))
         else:
-            self.sourceFont.generate(self.args.outputdir + "/" + self.sourceFont.cidfontname + self.extension, flags=(str('opentype'), str('PfEd-comments')))
-            print("\nGenerated: {}".format(self.sourceFont.fullname))
+            outfile = self.sourceFont.generate(self.args.outputdir + "/" + self.sourceFont.cidfontname + self.extension
+            self.sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
+            print("\nGenerated: {} in {}".format(self.sourceFont.fullname, outfile))
 
         if self.args.postprocess:
-            subprocess.call([self.args.postprocess, self.args.outputdir + "/" + self.sourceFont.fullname + self.extension])
-            print("\nPost Processed: {}".format(self.sourceFont.fullname))
+            subprocess.call([self.args.postprocess, outfile])
+            print("\nPost Processed: {}".format(outfile))
 
 
     def setup_arguments(self):
