@@ -89,7 +89,7 @@ _Se tu..._
   * Per maggiori dettagli leggi la sezione [**Font Patcher**](#font-patcher)
 * **`50`** [famiglie di font modificati](#patched-fonts) già presenti
 * Più di **`1.571.470`** combinazioni/variazioni uniche dei font modificati [(maggiori dettagli)](#combinations)
-* Più di **`2.600`** glifi/icone in tutto [(maggiori dettagli)](#combinations)
+* Più di **`9.000`** glifi/icone in tutto [(maggiori dettagli)](#combinations)
   * I set di glifi correnti includono: [Powerline con Simboli Extra][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons]
 * Versioni dei glifi **Monospaziati (passo fisso, larghezza fissa)** _o_ a **doppia larghezza (non monospaziati)** per ogni font
   * Questo si riferisce ai glifi aggiunti da Nerd Font non necessariamente al font nella sua interezza

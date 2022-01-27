@@ -4,7 +4,7 @@
 # Script Version: 1.1.0
 
 # Example Usage:
-# ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont.ttf --start f001 --end f847 --offset 4ff --prefix mdi
+# ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont-6595.ttf --start f0001 --end f19c3 --offset 0 --prefix mdi
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/weathericons-regular-webfont.ttf --start f000 --end f0eb --negoffset d00 --prefix weather --nogaps
 
 from __future__ import absolute_import, print_function, unicode_literals

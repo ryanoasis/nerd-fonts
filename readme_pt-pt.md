@@ -86,7 +86,7 @@ _Se tu..._
   * Para mais detalhes, vê a seção [**Modificador de tipo de letra**](#font-patcher)
 * Já existem **`50`** [tipos de letra modificados](#tipos-de-letra)
 * Mais de **`1,428,000`** combinações/variações únicas de tipos de letra modificados [(mais detalhes)](#combinações)
-* Cerca de **`2,600`** glifos/ícones combinados [(mais detalhes)](#combinações)
+* Cerca de **`9,000`** glifos/ícones combinados [(mais detalhes)](#combinações)
   * Os atuais conjuntos de glifos incluem: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Antigamente Font Linux), [Pomicons][gabrielelana-pomicons]
 * Versões de glifos **monoespaçados (de largura fixa)** _ou_ glifos de **largura dupla (não monoespaçados)** para cada tipo de letra
   * Isto refere-se aos glifos do Nerd Font, não necessariamente ao tipo de letra

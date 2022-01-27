@@ -88,7 +88,7 @@ _Jeśli..._
   * Aby uzyskać więcej szczegółów zajrzyj do sekcji [**Patcher Czcionek**](#font-patcher)
 * **`50`** już [spatchowanych rodziny czcionek](#patched-fonts)
 * Ponad **`1,571,470`** unikalnych kombinacji/wariacji spatchowanych czcionek [(więcej szczegółów)](#combinations)
-* Ponad **`2,400`** kombinacji glifów/ikon [(więcej szczegółów)](#combinations)
+* Ponad **`9,000`** kombinacji glifów/ikon [(więcej szczegółów)](#combinations)
   * Aktualne zestawy glifów zawierają: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _lub_ **double-width (non-monospaced)** wersje glifów dla każdej czcionki
   * To odnosi się do glifów Nerd Fonts, nie koniecznie do czcionki jako całości

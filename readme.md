@@ -91,7 +91,7 @@ _If you..._
   * For more details see the [**Font Patcher**](#font-patcher) section
 * **`51`** already [patched font families](#patched-fonts)
 * Over **`1,444,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
-* Over **`2,824`** glyphs/icons combined [(more details)](#combinations)
+* Over **`9,000`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole

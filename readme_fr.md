@@ -247,7 +247,7 @@ echo $i_oct_heart
 - Plus de **`1,485,000`** variantes/combinaisons uniques de fonts générées :
   - **`50`** polices de caractères
   - **`719`** familles de polices
-  - **`2,876`** 'complètes' variantes/combinaisons
+  - **`9,000+`** 'complètes' variantes/combinaisons
   - **`'1,485,410'`** _possibles_ variantes/combinaisons
   - **`1,488,286`** total des combinaisons calculées (2,876 + 1,428,110)
 - Les combinaisons pour chaque police sont une combinaison de [Variations](#variations)
