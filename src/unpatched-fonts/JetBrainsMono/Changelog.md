@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.251 (Unreleased)
+- Added `‼` `｛` `｝` `⟅` `⟆` `≬` `⋈` `∤` `⋉` `≫` `≪` `⨅` `⋂` `⋃` `⊴` `⋢` `∩` `∪` `⋊` `⊓` `⊔` `⊡` `⊟` `⊞` `⊠` `⊏` `⊑` `⊐` `⊒` `≻` `∄` `⊛` `⊝` `⊜` `⊘` `⊗` `⊕` `↝` `↢` `↩` `↪` `↾` `⇐` `⇛` `◎` `◈` `⍓` #47
+- Removed conflicting unicode from Control Codes #491
+- Remade the Control Codes from scratch. Made them bigger.
+- Remade the `‚` `„` `“` `”` `‘` `’` for better recognition #237 #489
+- Added new ligatures `{{` `}}` `{!--` `{{--` `--}}` `{!!` `!!}` #359
+
 ## 2.242 Quick Fix (30.07.2021)
 - Added `???` `<:<` ligatures #434
 - Corrected the `⊈` (u+2288) #475
