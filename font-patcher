@@ -552,9 +552,38 @@ class font_patcher:
         # Most glyphs we want to maximize during the scale.  However, there are some
         # that need to be small or stay relative in size to each other.
         # The following list are those glyphs.  A tuple represents a range.
-        DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, 'GlyphsToScale': [(0xe6bd, 0xe6c3)]}
-        FONTA_SCALE_LIST = {'ScaleGlyph': 0xF17A, 'GlyphsToScale': [0xf005, 0xf006, (0xf026, 0xf028), 0xf02b, 0xf02c, (0xf031, 0xf035), (0xf044, 0xf054), (0xf060, 0xf063), 0xf077, 0xf078, 0xf07d, 0xf07e, 0xf089, (0xf0d7, 0xf0da), (0xf0dc, 0xf0de), (0xf100, 0xf107), 0xf141, 0xf142, (0xf153, 0xf15a), (0xf175, 0xf178), 0xf182, 0xf183, (0xf221, 0xf22d), (0xf255, 0xf25b)]}
-        OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, 'GlyphsToScale': [(0xf03d, 0xf040), 0xf044, (0xf051, 0xf053), 0xf05a, 0xf05b, 0xf071, 0xf078, (0xf09f, 0xf0aa), 0xf0ca]}
+        DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, # Android logo
+            'GlyphsToScale': [
+                (0xe6bd, 0xe6c3) # very small things
+            ]}
+        FONTA_SCALE_LIST = {'GlyphsToScale': [
+            [0xf005, 0xf006, 0xf089], # star, star empty, half star
+            range(0xf026, 0xf028 + 1), # volume off, down, up
+            range(0xf02b, 0xf02c + 1), # tag, tags
+            range(0xf031, 0xf035 + 1), # font et al
+            range(0xf044, 0xf046 + 1), # edit, share, check (boxes)
+            range(0xf048, 0xf052 + 1), # multimedia buttons
+            range(0xf060, 0xf063 + 1), # arrows
+            [0xf053, 0xf054, 0xf077, 0xf078], # chevron all directions
+            range(0xf07d, 0xf07e + 1), # resize
+            [0xf0d7, 0xf0da, 0xf0dc, 0xf0fe], # caret all directions and same looking sort
+            range(0xf100, 0xf107 + 1), # angle
+            range(0xf141, 0xf142 + 1), # ellipsis
+            range(0xf153, 0xf15a + 1), # currencies
+            range(0xf175, 0xf178 + 1), # long arrows
+            range(0xf182, 0xf183 + 1), # male and female
+            range(0xf221, 0xf22d + 1), # gender or so
+            range(0xf255, 0xf25b + 1), # hand symbols
+        ]}
+        OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, # looking glass (probably biggest glyph?)
+            'GlyphsToScale': [
+                (0xf03d, 0xf040), # arrows
+                0xf044, 0xf05a, 0xf05b, 0xf0aa, # triangles
+                (0xf051, 0xf053), # small stuff
+                0xf071, 0xf09f, 0xf0a0, 0xf0a1, # small arrows
+                0xf078, 0xf0a2, 0xf0a3, 0xf0a4, # chevrons
+                0xf0ca, # dash
+            ]}
 
         # Define the character ranges
         # Symbol font ranges
@@ -667,11 +696,6 @@ class font_patcher:
             sourceFontList = list(range(sourceFontStart, sourceFontEnd + 1))
             sourceFontCounter = 0
 
-        scale_factor = 0
-        if scaleGlyph:
-            sym_dim = get_glyph_dimensions(symbolFont[scaleGlyph['ScaleGlyph']])
-            scale_factor = self.get_scale_factor(sym_dim)
-
         # Create glyphs from symbol font
         #
         # If we are going to copy all Glyphs, then assume we want to be careful
@@ -713,9 +737,6 @@ class font_patcher:
                     sys.stdout.write(progressText)
                     sys.stdout.flush()
 
-            # Prepare symbol glyph dimensions
-            sym_dim = get_glyph_dimensions(sym_glyph)
-
             # check if a glyph already exists in this location
             if careful or 'careful' in sym_attr['params']:
                 if currentSourceFontGlyph in self.sourceFont:
@@ -742,6 +763,9 @@ class font_patcher:
             scale_ratio_x = 1
             scale_ratio_y = 1
 
+            # Prepare symbol glyph dimensions
+            sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
+
             # Now that we have copy/pasted the glyph, if we are creating a monospace
             # font we need to scale and move the glyphs.  It is possible to have
             # empty glyphs, so we need to skip those.
@@ -750,15 +774,14 @@ class font_patcher:
                 # find the largest possible scaling factor that will allow the glyph
                 # to fit in both the x and y directions
                 if sym_attr['stretch'] == 'pa':
-                    if scale_factor and use_scale_glyph(sym_glyph.unicode, scaleGlyph['GlyphsToScale']):
-                        # We want to preserve the relative size of each glyph to other glyphs
-                        # in the same symbol font.
-                        scale_ratio_x = scale_factor
-                        scale_ratio_y = scale_factor
-                    else:
-                        # In this case, each glyph is sized independently to each other
+                    scale_ratio_x = False
+                    if scaleGlyph:
+                        # We want to preserve the relative size of each glyph in a glyph group
+                        scale_ratio_x = self.get_glyph_scale(sym_glyph.unicode, scaleGlyph, symbolFont)
+                    if scale_ratio_x is False:
+                        # In the remaining cases, each glyph is sized independently to each other
                         scale_ratio_x = self.get_scale_factor(sym_dim)
-                        scale_ratio_y = scale_ratio_x
+                    scale_ratio_y = scale_ratio_x
                 else:
                     if 'x' in sym_attr['stretch']:
                         # Stretch the glyph horizontally to fit the entire available width
@@ -775,10 +798,15 @@ class font_patcher:
                 # Currently stretching vertically for both monospace and double-width
                 scale_ratio_y = self.font_dim['height'] / sym_dim['height']
 
+            if 'overlap' in sym_attr['params']:
+                overlap = sym_attr['params']['overlap']
+            else:
+                overlap = 0
+
             if scale_ratio_x != 1 or scale_ratio_y != 1:
-                if 'overlap' in sym_attr['params']:
-                    scale_ratio_x *= 1 + sym_attr['params']['overlap']
-                    scale_ratio_y *= 1 + sym_attr['params']['overlap']
+                if overlap != 0:
+                    scale_ratio_x *= 1 + overlap
+                    scale_ratio_y *= 1 + overlap
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
             # Use the dimensions from the newly pasted and stretched glyph
@@ -802,8 +830,8 @@ class font_patcher:
                     # Right align
                     x_align_distance += self.font_dim['width'] - sym_dim['width']
 
-            if 'overlap' in sym_attr['params']:
-                overlap_width = self.font_dim['width'] * sym_attr['params']['overlap']
+            if overlap != 0:
+                overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
                 if sym_attr['align'] == 'r':
@@ -821,6 +849,13 @@ class font_patcher:
             # Ensure after horizontal adjustments and centering that the glyph
             # does not overlap the bearings (edges)
             self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+
+            # Check if the inserted glyph is scaled correctly for monospace
+            if self.args.single:
+                (xmin, _, xmax, _) = self.sourceFont[currentSourceFontGlyph].boundingBox()
+                if int(xmax - xmin) > self.font_dim['width'] * (1 + overlap):
+                    print("\n  Warning: Scaled glyph U+{:X} wider than one monospace width ({} / {} (overlap {}))".format(
+                        currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], overlap))
 
         # end for
 
@@ -869,6 +904,53 @@ class font_patcher:
         except:
             pass
 
+    def prepareScaleGlyph(self, scaleGlyph, symbolFont):
+        """ Prepare raw ScaleGlyph data for use """
+        # The GlyphData is a dict with these (possible) entries:
+        # 'GlyphsToScale': List of ((lists of glyph codes) or (ranges of glyph codes)) that shall be scaled
+        # 'scales': List of associated scale factors, one for each entry in 'GlyphsToScale' (generated by this function)
+        # Example:
+        # { 'GlyphsToScale': [ range(1, 3), [ 7, 10 ], ],
+        #   'scales':        [ 1.23,        1.33,      ] }
+        #
+        # Each item in 'GlyphsToScale' (a range or an explicit list) forms a group of glyphs that shall be
+        # as rescaled all with the same and maximum possible (for the included glyphs) factor.
+        #
+        # Previously this structure has been used:
+        #   'ScaleGlyph' Lead glyph, which scaling factor is taken
+        #   'GlyphsToScale': List of (glyph code) or (list of two glyph codes that form a closed range)) that shall be scaled
+        #   Note that this allows only one group for the whle symbol font, and that the scaling factor is defined by
+        #   a specific character, which needs to be manually selected (on each symbol font update).
+        #   Previous entries are automatically rewritten to the new style.
+        if 'scales' in scaleGlyph:
+            # Already prepared... must not happen, ignore call
+            return
+        if 'ScaleGlyph' in scaleGlyph:
+            # old method. Rewrite to new.
+            flat_list = []
+            for i in scaleGlyph['GlyphsToScale']:
+                if isinstance(i, tuple):
+                    flat_list += list(range(i[0], i[1] + 1))
+                else:
+                    flat_list.append(i)
+            scaleGlyph['GlyphsToScale'] = [ flat_list ]
+            sym_dim = get_glyph_dimensions(symbolFont[scaleGlyph['ScaleGlyph']])
+            scaleGlyph['scales'] = [ self.get_scale_factor(sym_dim) ]
+        else:
+            scaleGlyph['scales'] = []
+            for group in scaleGlyph['GlyphsToScale']:
+                sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ])
+                scaleGlyph['scales'].append(self.get_scale_factor(sym_dim))
+
+    def get_glyph_scale(self, unicode_value, scaleGlyph, symbolFont):
+        """ Determines whether or not to use scaled glyphs for glyphs in passed glyph_list """
+        if not 'scales' in scaleGlyph:
+            self.prepareScaleGlyph(scaleGlyph, symbolFont)
+        for glyph_list, scale in zip(scaleGlyph['GlyphsToScale'], scaleGlyph['scales']):
+            if unicode_value in glyph_list:
+                return scale
+        return False
+
 
 def replace_font_name(font_name, replacement_dict):
     """ Replaces all keys with vals from replacement_dict in font_name. """
@@ -885,10 +967,18 @@ def make_sure_path_exists(path):
         if exception.errno != errno.EEXIST:
             raise
 
-
-def get_glyph_dimensions(glyph):
-    """ Returns dict of the dimesions of the glyph passed to it. """
-    bbox = glyph.boundingBox()
+def get_multiglyph_boundingBox(glyphs):
+    """ Returns dict of the dimensions of multiple glyphs combined """
+    bbox = [ None, None, None, None ]
+    for glyph in glyphs:
+        if glyph is None:
+            # Glyph has been in defining range but is not in the actual font
+            continue
+        gbb = glyph.boundingBox()
+        bbox[0] = gbb[0] if bbox[0] is None or bbox[0] > gbb[0] else bbox[0]
+        bbox[1] = gbb[1] if bbox[1] is None or bbox[1] > gbb[1] else bbox[1]
+        bbox[2] = gbb[2] if bbox[2] is None or bbox[2] < gbb[2] else bbox[2]
+        bbox[3] = gbb[3] if bbox[3] is None or bbox[3] < gbb[3] else bbox[3]
     return {
         'xmin'  : bbox[0],
         'ymin'  : bbox[1],
@@ -898,18 +988,9 @@ def get_glyph_dimensions(glyph):
         'height': bbox[3] + (-bbox[1]),
     }
 
-
-def use_scale_glyph(unicode_value, glyph_list):
-    """ Determines whether or not to use scaled glyphs for glyphs in passed glyph_list """
-    for i in glyph_list:
-        if isinstance(i, tuple):
-            if unicode_value >= i[0] and unicode_value <= i[1]:
-                return True
-        else:
-            if unicode_value == i:
-                return True
-    return False
-
+def get_glyph_dimensions(glyph):
+    """ Returns dict of the dimesions of the glyph passed to it. """
+    return get_multiglyph_boundingBox([ glyph ])
 
 def update_progress(progress):
     """ Updates progress bar length.
