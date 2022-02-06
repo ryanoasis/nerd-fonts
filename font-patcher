@@ -310,7 +310,7 @@ class font_patcher:
         parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
         parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
         parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-        parser.add_argument('--parser',                                  dest='parser',           default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
+        parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
 
         # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
         progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
@@ -430,7 +430,7 @@ class font_patcher:
             additionalFontNameSuffix += " M"
             verboseAdditionalFontNameSuffix += " Mono"
 
-        if self.args.parser:
+        if self.args.makegroups:
             use_fullname = type(self.sourceFont.fullname) == str # Usually the fullname is better to parse
             # Use fullname if it is 'equal' to the fontname
             if self.sourceFont.fullname:
@@ -444,12 +444,12 @@ class font_patcher:
                 parser_name = os.path.splitext(os.path.basename(self.args.font))[0]
             n = FontnameParser(parser_name)
             if not n.parse_ok:
-                print("Have only minimal naming information, check resulting name. Maybe omit --parser option")
+                print("Have only minimal naming information, check resulting name. Maybe omit --makegroups option")
             n.drop_for_powerline()
             n.enable_short_families(True, "Noto")
             n.set_for_windows(self.args.windows)
 
-            # All the following stuff is ignored in parser-mode
+            # All the following stuff is ignored in makegroups-mode
 
         # basically split the font name around the dash "-" to get the fontname and the style (e.g. Bold)
         # this does not seem very reliable so only use the style here as a fallback if the font does not
@@ -584,7 +584,7 @@ class font_patcher:
         fullname   = replace_font_name(fullname,   additionalFontNameReplacements2)
         fontname   = replace_font_name(fontname,   additionalFontNameReplacements2)
 
-        if not self.args.parser:
+        if not self.args.makegroups:
             # replace any extra whitespace characters:
             self.sourceFont.familyname = " ".join(familyname.split())
             self.sourceFont.fullname   = " ".join(fullname.split())
