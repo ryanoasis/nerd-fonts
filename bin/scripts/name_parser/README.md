@@ -57,9 +57,9 @@ work as it always did.
 In this directory there are two tests.
 
 1. The first test checks the basics of the algorithm. It takes the filenames of all fonts in
-   `src/unpatched\_fonts`, then it calculates the naming and compares it to the original
+   `src/unpatched-fonts/`, then it calculates the naming and compares it to the original
    naming in the font files. Ideally they would be equal.
-2. The second test does a 'production run'. It patches each font in `src/unpatched_fonts/`
+2. The second test does a 'production run'. It patches each font in `src/unpatched-fonts/`
    and patches it two times: Once without `--parser` and once with. Then it compares the
    naming, and it also shows the original font naming (for comparison).
 
@@ -97,7 +97,7 @@ way changes of the algorithm can be tested with a wide base of inputs.
 
 `fontforge name_parser_test2 ../../../src/unpatched-fonts/**/*.[ot]tf 2>/dev/null`
 
-This test compares actually patched fonts. Every font in `src/unpatched_fonts/` is patched two
+This test compares actually patched fonts. Every font in `src/unpatched-fonts/` is patched two
 times: First with the 'old/classic' `font-patcher` naming, and second with the new naming
 algorithm in action (by specifying `--parser`). Again the name parts are compared with some
 lenience and an output generated like test 1 does.
