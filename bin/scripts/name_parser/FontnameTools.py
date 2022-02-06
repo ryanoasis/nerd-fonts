@@ -52,7 +52,7 @@ class FontnameTools:
         """Flatten list of (strings or lists of strings) to a blank-separated string"""
         all = []
         for thing in all_things:
-            if type(thing) == str:
+            if type(thing) is not list:
                 all.append(thing)
             else:
                 all += thing
