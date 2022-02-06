@@ -22,6 +22,7 @@ find "${outputdir:?}" -name "FontPatcher.zip" -type f -delete
 
 cd -- "$scripts_root_dir/../../" || exit 1
 find "src/glyphs" | zip -9 "$outputdir/FontPatcher" -@ 
+find "bin/scripts/name_parser" -name "Fontname*.py" | zip -9 "$outputdir/FontPatcher" -@
 find "font-patcher" | zip -9 "$outputdir/FontPatcher" -@ 
 
 # add mini readme file
