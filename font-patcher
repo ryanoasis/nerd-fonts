@@ -36,10 +36,14 @@ except ImportError:
         )
     )
 
-# This is (for experimenting) far far away...
+# This is for experimenting
 sys.path.insert(0, os.path.abspath(os.path.dirname(sys.argv[0])) + '/bin/scripts/name_parser/')
-from FontnameParser import FontnameParser
-from FontnameTools import FontnameTools
+try:
+    from FontnameParser import FontnameParser
+    from FontnameTools import FontnameTools
+    FontnameParserOK = True
+except ImportError:
+    FontnameParserOK = False
 
 class TableHEADWriter:
     """ Access to the HEAD table without external dependencies """
@@ -334,6 +338,9 @@ class font_patcher:
 
         self.args = parser.parse_args()
 
+        if self.args.makegroups and not FontnameParserOK:
+            sys.exit(projectName + ": FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups".format(projectName))
+
         # if you add a new font, set it to True here inside the if condition
         if self.args.complete:
             self.args.fontawesome = True
@@ -430,7 +437,7 @@ class font_patcher:
             additionalFontNameSuffix += " M"
             verboseAdditionalFontNameSuffix += " Mono"
 
-        if self.args.makegroups:
+        if FontnameParserOK and self.args.makegroups:
             use_fullname = type(self.sourceFont.fullname) == str # Usually the fullname is better to parse
             # Use fullname if it is 'equal' to the fontname
             if self.sourceFont.fullname:
@@ -584,7 +591,7 @@ class font_patcher:
         fullname   = replace_font_name(fullname,   additionalFontNameReplacements2)
         fontname   = replace_font_name(fontname,   additionalFontNameReplacements2)
 
-        if not self.args.makegroups:
+        if not (FontnameParserOK and self.args.makegroups):
             # replace any extra whitespace characters:
             self.sourceFont.familyname = " ".join(familyname.split())
             self.sourceFont.fullname   = " ".join(fullname.split())
