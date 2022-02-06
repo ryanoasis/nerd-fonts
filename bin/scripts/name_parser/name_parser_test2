@@ -116,7 +116,7 @@ for filename in sys.argv[1:]:
     log.write(filename)
     log.close()
 
-    for option in ['--parser', '']:
+    for option in ['--makegroups', '']:
         cmd = ['fontforge', '--script', font_patcher, '--powerline', option, filename ]
         cmd = [ c for c in cmd if len(c) ]
         ff = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, encoding='utf8')
