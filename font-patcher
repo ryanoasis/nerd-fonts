@@ -678,7 +678,7 @@ class font_patcher:
         # Supported params: overlap | careful
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': ''},
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Arrow tips
             0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
@@ -711,23 +711,23 @@ class font_patcher:
             0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
 
             # Small squares
-            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Bigger squares
-            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Waveform
             0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
 
             # Hexagons
-            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Legos
-            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {}},
             0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
 
             # Top and bottom trapezoid
@@ -737,22 +737,22 @@ class font_patcher:
 
         SYM_ATTR_DEFAULT = {
             # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': ''}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
         }
 
         SYM_ATTR_FONTA = {
             # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': ''},
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Don't center these arrows vertically
-            0xf0dc: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': ''},
-            0xf0dd: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': ''},
-            0xf0de: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': ''}
+            0xf0dc: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}},
+            0xf0dd: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}},
+            0xf0de: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}}
         }
 
         CUSTOM_ATTR = {
             # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': ''}
+            'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
         }
 
         # Most glyphs we want to maximize during the scale.  However, there are some
@@ -1017,13 +1017,10 @@ class font_patcher:
                 # Currently stretching vertically for both monospace and double-width
                 scale_ratio_y = self.font_dim['height'] / sym_dim['height']
 
-            if 'overlap' in sym_attr['params']:
-                overlap = sym_attr['params']['overlap']
-            else:
-                overlap = 0
+            overlap = sym_attr['params'].get('overlap')
 
             if scale_ratio_x != 1 or scale_ratio_y != 1:
-                if overlap != 0:
+                if overlap:
                     scale_ratio_x *= 1 + overlap
                     scale_ratio_y *= 1 + overlap
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
@@ -1049,7 +1046,7 @@ class font_patcher:
                     # Right align
                     x_align_distance += self.font_dim['width'] - sym_dim['width']
 
-            if overlap != 0:
+            if overlap:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
@@ -1077,7 +1074,7 @@ class font_patcher:
             # Check if the inserted glyph is scaled correctly for monospace
             if self.args.single:
                 (xmin, _, xmax, _) = self.sourceFont[currentSourceFontGlyph].boundingBox()
-                if int(xmax - xmin) > self.font_dim['width'] * (1 + overlap):
+                if int(xmax - xmin) > self.font_dim['width'] * (1 + (overlap or 0)):
                     print("\n  Warning: Scaled glyph U+{:X} wider than one monospace width ({} / {} (overlap {}))".format(
                         currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], overlap))
 
