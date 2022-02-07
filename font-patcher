@@ -1058,7 +1058,8 @@ class font_patcher:
 
             # Ensure after horizontal adjustments and centering that the glyph
             # does not overlap the bearings (edges)
-            self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+            if not overlap:
+                self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
 
             # Needed for setting 'advance width' on each glyph so they do not overlap,
             # also ensures the font is considered monospaced on Windows by setting the
