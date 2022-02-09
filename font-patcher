@@ -154,8 +154,8 @@ class TableHEADWriter:
 
 
 class font_patcher:
-    def __init__(self):
-        self.args = None  # class 'argparse.Namespace'
+    def __init__(self, args):
+        self.args = args  # class 'argparse.Namespace'
         self.sym_font_args = []
         self.config = None  # class 'configparser.ConfigParser'
         self.sourceFont = None  # class 'fontforge.font'
@@ -165,7 +165,6 @@ class font_patcher:
         self.onlybitmaps = 0
         self.extension = ""
         self.essential = set()
-        self.setup_arguments()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         if not os.path.isfile(self.args.font):
             sys.exit("{}: Font file does not exist: {}".format(projectName, self.args.font))
@@ -198,9 +197,6 @@ class font_patcher:
 
 
     def patch(self):
-
-        print("{} Patcher v{} ({}) executing\n".format(projectName, version, script_version))
-
         if self.args.single:
             # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
             # This needs to be done on all characters, as some information seems to be lost from the original font file.
@@ -300,118 +296,6 @@ class font_patcher:
             subprocess.call([self.args.postprocess, outfile])
             print("\nPost Processed: {}".format(outfile))
 
-
-    def setup_arguments(self):
-        parser = argparse.ArgumentParser(
-            description=(
-                'Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs\n\n'
-                '* Website: https://www.nerdfonts.com\n'
-                '* Version: ' + version + '\n'
-                '* Development Website: https://github.com/ryanoasis/nerd-fonts\n'
-                '* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md'),
-            formatter_class=RawTextHelpFormatter
-        )
-
-        # optional arguments
-        parser.add_argument('font',                                      help='The path to the font to patch (e.g., Inconsolata.otf)')
-        parser.add_argument('-v', '--version',                           action='version',        version=projectName + ": %(prog)s (" + version + ")")
-        parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
-        parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
-        parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
-        parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)')
-        parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
-        parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
-        parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
-        parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str, nargs='?', help='Specify a Script for Post Processing')
-        parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str, nargs='?', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
-        parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.')
-        parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
-        parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
-        parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-        parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
-        parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
-
-        # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
-        progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
-        progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set')
-        progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
-        parser.set_defaults(progressbars=True)
-        parser.add_argument('--also-windows',                            dest='alsowindows',      default=False, action='store_true', help='Create two fonts, the normal and the --windows version')
-
-        # symbol fonts to include arguments
-        sym_font_group = parser.add_argument_group('Symbol Fonts')
-        sym_font_group.add_argument('--fontawesome',                                dest='fontawesome',          default=False, action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)')
-        sym_font_group.add_argument('--fontawesomeextension',                       dest='fontawesomeextension', default=False, action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)')
-        sym_font_group.add_argument('--fontlogos', '--fontlinux',                   dest='fontlogos',            default=False, action='store_true', help='Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)')
-        sym_font_group.add_argument('--octicons',                                   dest='octicons',             default=False, action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)')
-        sym_font_group.add_argument('--codicons',                                   dest='codicons',             default=False, action='store_true', help='Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)')
-        sym_font_group.add_argument('--powersymbols',                               dest='powersymbols',         default=False, action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)')
-        sym_font_group.add_argument('--pomicons',                                   dest='pomicons',             default=False, action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)')
-        sym_font_group.add_argument('--powerline',                                  dest='powerline',            default=False, action='store_true', help='Add Powerline Glyphs')
-        sym_font_group.add_argument('--powerlineextra',                             dest='powerlineextra',       default=False, action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)')
-        sym_font_group.add_argument('--material', '--materialdesignicons', '--mdi', dest='material',             default=False, action='store_true', help='Add Material Design Icons (https://github.com/templarian/MaterialDesign)')
-        sym_font_group.add_argument('--weather', '--weathericons',                  dest='weather',              default=False, action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)')
-
-        self.args = parser.parse_args()
-
-        if self.args.makegroups and not FontnameParserOK:
-            sys.exit(projectName + ": FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups".format(projectName))
-
-        # if you add a new font, set it to True here inside the if condition
-        if self.args.complete:
-            self.args.fontawesome = True
-            self.args.fontawesomeextension = True
-            self.args.fontlogos = True
-            self.args.octicons = True
-            self.args.codicons = True
-            self.args.powersymbols = True
-            self.args.pomicons = True
-            self.args.powerline = True
-            self.args.powerlineextra = True
-            self.args.material = True
-            self.args.weather = True
-
-        if not self.args.complete:
-            # add the list of arguments for each symbol font to the list self.sym_font_args
-            for action in sym_font_group._group_actions:
-                self.sym_font_args.append(action.__dict__['option_strings'])
-
-            # determine whether or not all symbol fonts are to be used
-            font_complete = True
-            for sym_font_arg_aliases in self.sym_font_args:
-                found = False
-                for alias in sym_font_arg_aliases:
-                    if alias in sys.argv:
-                        found = True
-                if found is not True:
-                    font_complete = False
-            self.args.complete = font_complete
-
-        if self.args.alsowindows:
-            self.args.windows = False
-
-        if self.args.nonmono and self.args.single:
-            print("Warniung: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
-            self.args.nonmono = False
-
-        # this one also works but it needs to be updated every time a font is added
-        # it was a conditional in self.setup_font_names() before, but it was missing
-        # a symbol font, so it would name the font complete without being so sometimes.
-        # that's why i did the above.
-        #
-        # if you add a new font, put it in here too, as the others are
-        # self.args.complete = all([
-        #     self.args.fontawesome is True,
-        #     self.args.fontawesomeextension is True,
-        #     self.args.fontlogos is True,
-        #     self.args.octicons is True,
-        #     self.args.powersymbols is True,
-        #     self.args.pomicons is True,
-        #     self.args.powerline is True,
-        #     self.args.powerlineextra is True,
-        #     self.args.material is True,
-        #     self.args.weather is True
-        # ])
 
 
     def setup_name_backup(self):
@@ -1292,10 +1176,108 @@ def check_fontforge_min_version():
         sys.stderr.write("{}: Please use at least version: {}\n".format(projectName, minimumVersion))
         sys.exit(1)
 
+def setup_arguments():
+    parser = argparse.ArgumentParser(
+        description=(
+            'Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs\n\n'
+            '* Website: https://www.nerdfonts.com\n'
+            '* Version: ' + version + '\n'
+            '* Development Website: https://github.com/ryanoasis/nerd-fonts\n'
+            '* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md'),
+        formatter_class=RawTextHelpFormatter
+    )
+
+    # optional arguments
+    parser.add_argument('font',                                      help='The path to the font to patch (e.g., Inconsolata.otf)')
+    parser.add_argument('-v', '--version',                           action='version',        version=projectName + ": %(prog)s (" + version + ")")
+    parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
+    parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
+    parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
+    parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)')
+    parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
+    parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
+    parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
+    parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str, nargs='?', help='Specify a Script for Post Processing')
+    parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str, nargs='?', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
+    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.')
+    parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
+    parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
+    parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
+    parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
+    parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
+
+    # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
+    progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
+    progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set')
+    progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
+    parser.set_defaults(progressbars=True)
+    parser.add_argument('--also-windows',                            dest='alsowindows',      default=False, action='store_true', help='Create two fonts, the normal and the --windows version')
+
+    # symbol fonts to include arguments
+    sym_font_group = parser.add_argument_group('Symbol Fonts')
+    sym_font_group.add_argument('--fontawesome',                                dest='fontawesome',          default=False, action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)')
+    sym_font_group.add_argument('--fontawesomeextension',                       dest='fontawesomeextension', default=False, action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)')
+    sym_font_group.add_argument('--fontlogos', '--fontlinux',                   dest='fontlogos',            default=False, action='store_true', help='Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)')
+    sym_font_group.add_argument('--octicons',                                   dest='octicons',             default=False, action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)')
+    sym_font_group.add_argument('--codicons',                                   dest='codicons',             default=False, action='store_true', help='Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)')
+    sym_font_group.add_argument('--powersymbols',                               dest='powersymbols',         default=False, action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)')
+    sym_font_group.add_argument('--pomicons',                                   dest='pomicons',             default=False, action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)')
+    sym_font_group.add_argument('--powerline',                                  dest='powerline',            default=False, action='store_true', help='Add Powerline Glyphs')
+    sym_font_group.add_argument('--powerlineextra',                             dest='powerlineextra',       default=False, action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)')
+    sym_font_group.add_argument('--material', '--materialdesignicons', '--mdi', dest='material',             default=False, action='store_true', help='Add Material Design Icons (https://github.com/templarian/MaterialDesign)')
+    sym_font_group.add_argument('--weather', '--weathericons',                  dest='weather',              default=False, action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)')
+
+    args = parser.parse_args()
+
+    if args.makegroups and not FontnameParserOK:
+        sys.exit(projectName + ": FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups".format(projectName))
+
+    # if you add a new font, set it to True here inside the if condition
+    if args.complete:
+        args.fontawesome = True
+        args.fontawesomeextension = True
+        args.fontlogos = True
+        args.octicons = True
+        args.codicons = True
+        args.powersymbols = True
+        args.pomicons = True
+        args.powerline = True
+        args.powerlineextra = True
+        args.material = True
+        args.weather = True
+
+    if not args.complete:
+        sym_font_args = []
+        # add the list of arguments for each symbol font to the list sym_font_args
+        for action in sym_font_group._group_actions:
+            sym_font_args.append(action.__dict__['option_strings'])
+
+        # determine whether or not all symbol fonts are to be used
+        font_complete = True
+        for sym_font_arg_aliases in sym_font_args:
+            found = False
+            for alias in sym_font_arg_aliases:
+                if alias in sys.argv:
+                    found = True
+            if found is not True:
+                font_complete = False
+        args.complete = font_complete
+
+    if args.alsowindows:
+        args.windows = False
+
+    if args.nonmono and args.single:
+        print("Warniung: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
+        args.nonmono = False
+
+    return args
+
 
 def main():
+    print("{} Patcher v{} ({}) executing\n".format(projectName, version, script_version))
     check_fontforge_min_version()
-    patcher = font_patcher()
+    args = setup_arguments()
+    patcher = font_patcher(args)
     patcher.patch()
     print("\nDone with Patch Sets, generating font...\n")
     patcher.setup_font_names()
