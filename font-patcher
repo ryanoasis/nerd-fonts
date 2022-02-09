@@ -170,7 +170,7 @@ class font_patcher:
         self.sourceFont = font
         self.setup_version()
         self.get_essential_references()
-        self.setup_name_backup()
+        self.setup_name_backup(font)
         self.remove_ligatures()
         self.check_position_conflicts()
         self.setup_patch_set()
@@ -240,16 +240,27 @@ class font_patcher:
             self.sourceFont["grave"].glyphclass="baseglyph"
 
 
-    def generate(self):
-        # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
-        if self.sourceFont.fullname != None:
-            outfile = self.args.outputdir + "/" + self.sourceFont.fullname + self.args.extension
-            self.sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
-            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
+    def generate(self, sourceFonts):
+        sourceFont = sourceFonts[0]
+        if len(sourceFonts) > 1:
+            layer = None
+            # use first non-background layer
+            for l in sourceFont.layers:
+                if not sourceFont.layers[l].is_background:
+                    layer = l
+                    break
+            outfile = os.path.normpath(os.path.join(self.args.outputdir, sourceFont.familyname + ".ttc"))
+            # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
+            sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=(str('opentype'), str('PfEd-comments')), layer=layer)
+            message = "\nGenerated: {} fonts in '{}'".format(len(sourceFonts), outfile)
         else:
-            outfile = self.args.outputdir + "/" + self.sourceFont.cidfontname + self.args.extension
-            self.sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
-            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fontname, outfile)
+            fontname = sourceFont.fullname
+            if not fontname:
+                fontname = sourceFont.cidfontname
+            outfile = os.path.normpath(os.path.join(self.args.outputdir, fontname + self.args.extension))
+            # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
+            sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
+            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
 
         # Adjust flags that can not be changed via fontforge
         try:
@@ -279,18 +290,19 @@ class font_patcher:
             print("\nPost Processed: {}".format(outfile))
 
 
-
-    def setup_name_backup(self):
+    def setup_name_backup(self, font):
         """ Store the original font names to be able to rename the font multiple times """
-        self.original_fontname = self.sourceFont.fontname
-        self.original_fullname = self.sourceFont.fullname
-        self.original_familyname = self.sourceFont.familyname
+        font.persistent = {
+            "fontname": font.fontname,
+            "fullname": font.fullname,
+            "familyname": font.familyname,
+        }
 
 
-    def setup_font_names(self):
-        self.sourceFont.fontname = self.original_fontname
-        self.sourceFont.fullname = self.original_fullname
-        self.sourceFont.familyname = self.original_familyname
+    def setup_font_names(self, font):
+        font.fontname = font.persistent["fontname"]
+        font.fullname = font.persistent["fullname"]
+        font.familyname = font.persistent["familyname"]
         verboseAdditionalFontNameSuffix = " " + projectNameSingular
         if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
             additionalFontNameSuffix = " " + projectNameAbbreviation
@@ -337,14 +349,14 @@ class font_patcher:
             verboseAdditionalFontNameSuffix += " Mono"
 
         if FontnameParserOK and self.args.makegroups:
-            use_fullname = type(self.sourceFont.fullname) == str # Usually the fullname is better to parse
+            use_fullname = type(font.fullname) == str # Usually the fullname is better to parse
             # Use fullname if it is 'equal' to the fontname
-            if self.sourceFont.fullname:
-                use_fullname |= self.sourceFont.fontname.lower() == FontnameTools.postscript_char_filter(self.sourceFont.fullname).lower()
+            if font.fullname:
+                use_fullname |= font.fontname.lower() == FontnameTools.postscript_char_filter(font.fullname).lower()
             # Use fullname for any of these source fonts (that are impossible to disentangle from the fontname, we need the blanks)
             for hit in [ 'Meslo' ]:
-                use_fullname |= self.sourceFont.fontname.lower().startswith(hit.lower())
-            parser_name = self.sourceFont.fullname if use_fullname else self.sourceFont.fontname
+                use_fullname |= font.fontname.lower().startswith(hit.lower())
+            parser_name = font.fullname if use_fullname else font.fontname
             # Gohu fontnames hide the weight, but the file names are ok...
             if parser_name.startswith('Gohu'):
                 parser_name = os.path.splitext(os.path.basename(self.args.font))[0]
@@ -362,16 +374,16 @@ class font_patcher:
         # have an internal style defined (in sfnt_names)
         # using '([^-]*?)' to get the item before the first dash "-"
         # using '([^-]*(?!.*-))' to get the item after the last dash "-"
-        fontname, fallbackStyle = re.match("^([^-]*).*?([^-]*(?!.*-))$", self.sourceFont.fontname).groups()
+        fontname, fallbackStyle = re.match("^([^-]*).*?([^-]*(?!.*-))$", font.fontname).groups()
 
-        # dont trust 'sourceFont.familyname'
+        # dont trust 'font.familyname'
         familyname = fontname
 
         # fullname (filename) can always use long/verbose font name, even in windows
-        if self.sourceFont.fullname != None:
-            fullname = self.sourceFont.fullname + verboseAdditionalFontNameSuffix
+        if font.fullname != None:
+            fullname = font.fullname + verboseAdditionalFontNameSuffix
         else:
-            fullname = self.sourceFont.cidfontname + verboseAdditionalFontNameSuffix
+            fullname = font.cidfontname + verboseAdditionalFontNameSuffix
 
         fontname = fontname + additionalFontNameSuffix.replace(" ", "")
 
@@ -379,13 +391,13 @@ class font_patcher:
         # parse fontname if it fails:
         try:
             # search tuple:
-            subFamilyTupleIndex = [x[1] for x in self.sourceFont.sfnt_names].index("SubFamily")
+            subFamilyTupleIndex = [x[1] for x in font.sfnt_names].index("SubFamily")
 
             # String ID is at the second index in the Tuple lists
             sfntNamesStringIDIndex = 2
 
             # now we have the correct item:
-            subFamily = self.sourceFont.sfnt_names[subFamilyTupleIndex][sfntNamesStringIDIndex]
+            subFamily = font.sfnt_names[subFamilyTupleIndex][sfntNamesStringIDIndex]
         except IndexError:
             sys.stderr.write("{}: Could not find 'SubFamily' for given font, falling back to parsed fontname\n".format(projectName))
             subFamily = fallbackStyle
@@ -495,22 +507,22 @@ class font_patcher:
 
         if not (FontnameParserOK and self.args.makegroups):
             # replace any extra whitespace characters:
-            self.sourceFont.familyname = " ".join(familyname.split())
-            self.sourceFont.fullname   = " ".join(fullname.split())
-            self.sourceFont.fontname   = " ".join(fontname.split())
+            font.familyname = " ".join(familyname.split())
+            font.fullname   = " ".join(fullname.split())
+            font.fontname   = " ".join(fontname.split())
 
-            self.sourceFont.appendSFNTName(str('English (US)'), str('Preferred Family'), self.sourceFont.familyname)
-            self.sourceFont.appendSFNTName(str('English (US)'), str('Family'), self.sourceFont.familyname)
-            self.sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), self.sourceFont.fullname)
-            self.sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
+            font.appendSFNTName(str('English (US)'), str('Preferred Family'), font.familyname)
+            font.appendSFNTName(str('English (US)'), str('Family'), font.familyname)
+            font.appendSFNTName(str('English (US)'), str('Compatible Full'), font.fullname)
+            font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
             fam_suffix = projectNameSingular if not self.args.windows else projectNameAbbreviation
             fam_suffix += ' Mono' if self.args.single else ''
             n.inject_suffix(verboseAdditionalFontNameSuffix, additionalFontNameSuffix, fam_suffix)
-            n.rename_font(self.sourceFont)
+            n.rename_font(font)
 
-        self.sourceFont.comment = projectInfo
-        self.sourceFont.fontlog = projectInfo
+        font.comment = projectInfo
+        font.fontlog = projectInfo
 
 
     def setup_version(self):
@@ -1257,41 +1269,53 @@ def setup_arguments():
         sys.exit("{}: Font file does not exist: {}".format(projectName, args.font))
     if not os.access(args.font, os.R_OK):
         sys.exit("{}: Can not open font file for reading: {}".format(projectName, args.font))
-    if len(fontforge.fontsInFile(args.font)) > 1:
-        sys.exit("{}: Font file contains {} fonts, can only handle single font files".format(projectName,
-            len(fontforge.fontsInFile(args.font))))
+    is_ttc = len(fontforge.fontsInFile(args.font)) > 1
 
     if args.extension == "":
         args.extension = os.path.splitext(args.font)[1]
     else:
         args.extension = '.' + args.extension
     if re.match("\.ttc$", args.extension, re.IGNORECASE):
-        sys.exit(projectName + ": Can not create True Type Collections")
+        if not is_ttc:
+            sys.exit(projectName + ": Can not create True Type Collections from single font files")
+    else:
+        if is_ttc:
+            sys.exit(projectName + ": Can not create single font files from True Type Collections")
 
     return args
 
 
 def main():
-    print("{} Patcher v{} ({}) executing\n".format(projectName, version, script_version))
+    print("{} Patcher v{} ({}) executing".format(projectName, version, script_version))
     check_fontforge_min_version()
     args = setup_arguments()
     patcher = font_patcher(args)
 
-    try:
-        sourceFont = fontforge.open(args.font, 1) # 1 = ("fstypepermitted",))
-    except Exception:
-        sys.exit(projectName + ": Can not open font, try to open with fontforge interactively to get more information")
+    sourceFonts = []
+    for subfont in fontforge.fontsInFile(args.font):
+        print("\n{}: Processing {}".format(projectName, subfont))
+        try:
+            sourceFonts.append(fontforge.open("{}({})".format(args.font, subfont), 1)) # 1 = ("fstypepermitted",))
+        except Exception:
+            sys.exit("{}: Can not open font '{}', try to open with fontforge interactively to get more information".format(
+                projectName, subfont))
 
-    patcher.patch(sourceFont)
+        patcher.patch(sourceFonts[-1])
 
     print("\nDone with Patch Sets, generating font...\n")
-    patcher.setup_font_names()
-    patcher.generate()
+    for f in sourceFonts:
+        patcher.setup_font_names(f)
+    patcher.generate(sourceFonts)
+
     # This mainly helps to improve CI runtime
     if patcher.args.alsowindows:
         patcher.args.windows = True
-        patcher.setup_font_names()
-        patcher.generate()
+        for f in sourceFonts:
+            patcher.setup_font_names(f)
+        patcher.generate(sourceFonts)
+
+    for f in sourceFonts:
+        f.close()
 
 
 if __name__ == "__main__":
