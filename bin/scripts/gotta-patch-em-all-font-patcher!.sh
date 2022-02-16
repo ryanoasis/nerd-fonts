@@ -81,12 +81,18 @@ echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
 function patch_font {
   local f=$1; shift
   local i=$1; shift
+  local purge=$1; shift
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
   # find replace unpatched parent dir with patched parent dir:
   local patched_font_dir="${patched_font_dir/$unpatched_parent_dir/$patched_parent_dir}"
 
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
+  if [ -n ${purge} -a -d "${patched_font_dir}complete" ]
+  then
+    echo "Purging patched font dir ${patched_font_dir}complete"
+    rm ${patched_font_dir}complete/*.[to]tf
+  fi
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
   config_dir=$( cd "$( dirname "$f" )" && pwd)
@@ -277,7 +283,24 @@ then
   # Iterate through source fonts
   for i in "${!source_fonts[@]}"
   do
-    patch_font "${source_fonts[$i]}" "$i" 2>/dev/null &
+    purge_destination=""
+    current_source_dir=$(dirname ${source_fonts[$i]})
+    if [ "${current_source_dir}" != "${last_source_dir}" ]
+    then
+      # If we are going to patch ALL font files from a certain source directory
+      # the destination directory is purged (all font files therein deleted)
+      # to follow font naming changed. We can not do this if we patch only
+      # some of the source font files in that directory.
+      last_source_dir=${current_source_dir}
+      num_to_patch=$(find "${current_source_dir}" -iname "${like_pattern}*.[o,t]tf" -type f | wc -l)
+      num_existing=$(find "${current_source_dir}" -iname "*.[o,t]tf" -type f | wc -l)
+      if [ ${num_to_patch} -eq ${num_existing} ]
+      then
+        purge_destination="TRUE"
+      fi
+    fi
+    patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null
+
 
     # un-comment to test this script (patch 1 font)
     #break
