@@ -225,7 +225,7 @@ class font_patcher:
                     if symfont:
                         symfont.close()
                         symfont = None
-                    symfont = fontforge.open(self.args.glyphdir + patch['Filename'])
+                    symfont = fontforge.open(os.path.join(self.args.glyphdir, patch['Filename']))
 
                     # Match the symbol font size to the source font size
                     symfont.em = self.sourceFont.em
