@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.0.4"
+script_version = "3.0.5"
 
 version = "2.2.1"
 projectName = "Nerd Fonts"
@@ -949,6 +949,8 @@ class font_patcher:
         if self.args.quiet is False:
             sys.stdout.write("Adding " + str(max(1, glyphSetLength)) + " Glyphs from " + setName + " Set \n")
 
+        currentSourceFontGlyph = -1 # initialize for the exactEncoding case
+
         for index, sym_glyph in enumerate(symbolFontSelection):
             index = max(1, index)
 
@@ -958,8 +960,17 @@ class font_patcher:
                 sym_attr = attributes['default']
 
             if exactEncoding:
-                # use the exact same hex values for the source font as for the symbol font
-                currentSourceFontGlyph = sym_glyph.encoding
+                # Use the exact same hex values for the source font as for the symbol font.
+                # Problem is we do not know the codepoint of the sym_glyph and because it
+                # came from a selection.byGlyphs there might be skipped over glyphs.
+                # The iteration is still in the order of the selection by codepoint,
+                # so we take the next allowed codepoint of the current glyph
+                possible_codes = [ ]
+                if sym_glyph.unicode > currentSourceFontGlyph:
+                    possible_codes += [ sym_glyph.unicode ]
+                if sym_glyph.altuni:
+                    possible_codes += [ v for v, s, r in sym_glyph.altuni if v > currentSourceFontGlyph ]
+                currentSourceFontGlyph = min(possible_codes)
             else:
                 # use source font defined hex values based on passed in start and end
                 currentSourceFontGlyph = sourceFontList[sourceFontCounter]
