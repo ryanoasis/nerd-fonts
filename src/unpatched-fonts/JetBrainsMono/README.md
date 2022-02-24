@@ -1,23 +1,22 @@
 [![official JetBrains project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
-# JetBrains Mono
-A typeface made for developers. \
-More about font features & design can be found on [its page](https://jetbrains.com/mono/). 
+# JetBrains Mono: a typeface made for developers
+![Alt text](images/main-img@2x.png)
 
-By default, JetBrains Mono includes ligatures. The version without ligatures is called **JetBrains Mono NL** and can be found [here](https://github.com/JetBrains/JetBrainsMono/tree/master/fonts/ttf). This version is also stripped of all OpenType features, since they don't have any effect when your IDE doesn't support OpenType.
+JetBrains Mono is available as a standalone download, and is also bundled in all JetBrains IDEs. Discover more font features & design on its [web page](https://jetbrains.com/mono/). 
 
-If your IDE supports OpenType we recommend installing the default version of the font. If you prefer not using ligatures you can turn them off manually in the settings. 
+Default version of JetBrains Mono comes with OpenType features and ligatures (which can always be toggled on & off in the settings). If your IDE doesn’t support OpenType, use a special version of the font — [JetBrains Mono NL](https://github.com/JetBrains/JetBrainsMono/tree/master/fonts/ttf), which doesn’t include any ligatures.
 
 # **Installation**
 
-### **In JetBrains IDEs**
+### **JetBrains IDEs**
 
 The most recent version of JetBrains Mono ships with your JetBrains IDE starting with v2019.3.
 
-Select JetBrains Mono in the IDE settings: go to `Preferences/Settings` → `Editor` → `Font`, and then select JetBrains Mono from the Font dropdown.
+Select JetBrains Mono in the IDE settings: go to `Preferences/Settings` → `Editor` → `Font`, and then select JetBrains Mono from the **Font** dropdown.
 
-### Another IDE or an older version of a JetBrains IDE
-#### Through brew (MacOS only)
+### Brew (macOS only)
+
 1. Tap the font cask to make the Jetbrains Mono font available :
 
     ```console
@@ -28,23 +27,17 @@ Select JetBrains Mono in the IDE settings: go to `Preferences/Settings` → `Edi
    ```console
    brew install --cask font-jetbrains-mono
    ```
-   
-#### Through Chocolatey (Windows only)
-1. Install Chocolatey if you haven't done already. See [this page](https://chocolatey.org/install) for instructions on how to do that.
-2. In an elevated cmd console (Run as administrator...) :
 
-    ```console
-    choco install jetbrainsmono
-    ```
-
-#### Or manually
+### Manual installation
 
 _On Mac/Windows_: 
 
 1. [Download font](https://github.com/JetBrains/JetBrainsMono/releases/latest). 
 2. Unzip the archive and install the font:
-   - Mac. Select all font files in the folder and double-click them. Click the *"Install Font"* button.
-   - Windows. Select all font files in the folder, right-click any of them, then pick *"Install"* from the menu.
+   - _Mac_. Select all font files in the folder and double-click them. Click the **Install Font** button.
+   - _Windows_. Select all font files in the folder, right-click any of them, then pick **Install** from the menu.
+
+📝 Note: If you have previously installed JetBrains Mono, please uninstall all previous versions to exclude conflicts and errors in rendering.
 
 _On Linux_: 
 
@@ -55,53 +48,59 @@ Open a terminal and run the following:
 ```
 
 Once JetBrains Mono is installed in your OS, you are ready to configure the editor.  
-### **JetBrains IDEs** 
-* Restart your IDE.
-* Go to `Preferences/Settings` → `Editor` → `Font`, and pick JetBrains Mono from the Font dropdown.
+
 
 ### **Visual Studio Code** 
 
-* Go to the settings editor, from the File menu choose Preferences, Settings or use keyboard shortcut <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>Cmd</kbd>+<kbd>,</kbd> on Mac).
-* In the *"Font Family"* input box type JetBrains Mono, replacing any content.
-* To enable ligatures turn on the checkbox in *"Font ligatures"*.
+1. From the **File** menu (**Code** on Mac) go to `Preferences` → `Settings, or use keyboard shortcut <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>Cmd</kbd>+<kbd>,</kbd> on Mac).
+2. In the E**ditor: Font Family** input box type `JetBrains Mono`, replacing any content.
+3. To enable ligatures, go to **Editor: Font Ligatures**, click **Edit in settings.json**, and copy this line `"editor.fontLigatures": true` into json file.
 
-#### **Manually editing settings.json**
+### **More ways to install**
+- [Chocolate](https://github.com/JetBrains/JetBrainsMono/wiki/Other-ways-to-install#through-chocolatey-windows-only)
+- [ChromeOS terminal](https://github.com/JetBrains/JetBrainsMono/wiki/Other-ways-to-install#chromeos-terminal)
 
-Visual Studio Code allows you to also edit the underlying settings.json config file. First open the settings editor as described above, then click the "`{}`" icon, at the top right, to open the *"settings.json"* file.
+## Font Styles
+There are 8 font styles available in JetBrains Mono, from Thin to ExtraBold, each coming with its own _italic_ version.
 
-Then paste the following lines and save the file.
+![Alt text](images/font-styles@2x.png)
 
-```json
-"editor.fontFamily": "JetBrains Mono",
-"editor.fontLigatures": true,
-```
+## Font Features
 
-### **ChromeOS Terminal**
-In the terminal:
-1. Use the keyboard shortcut <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> to open up settings.
-2. Scroll down to "Custom CSS (Inline Text)".
-3. Copy & paste the following:
+### Increased x-height
+While characters remain standard in width, the height of the lowercase is maximized. This approach keeps code lines to the length that developers expect, and it helps improve rendering in small size, since each symbol occupies more pixels.
 
-```css
-@font-face{
-    font-family: 'JetBrains Mono';
-    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
-         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+![Alt text](images/ff-increased-height@2x.png)
 
-* {
-    -webkit-font-feature-settings: "liga" on, "calt" on;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: 'JetBrains Mono';
-}
-```
+### Distinctiveness of symbols
 
-## Source files
+![Alt text](images/ff-distinctiveness-of-symbols@2x.gif)
 
-Can be found in the *"Source"* folder. To open them you will need Glyphs app.
+## Ligatures for Code
+A ligature is a character consisting of two or more joined symbols. Traditionally, it was introduced as a space-saving technique in printed texts. In code, this technique is adopted to show operators and is used mainly for two purposes:
+1. To **reduce noise** by merging symbols and removing details so the eyes are processing less:
+
+![Alt text](images/ligatures-1@2x.gif)
+
+2. To balance whitespace more efficiently by shifting the glyphs in certain cases:
+
+![Alt text](images/ligatures-2@2x.gif)
+
+📝 Note: if your IDE doesn’t support OpenType features and ligatures, use [JetBrains Mono NL](https://github.com/JetBrains/JetBrainsMono/tree/master/fonts/ttf) instead.
+
+## Basic Character Set
+
+![Alt text](images/character-set@2x.png)
+You can find full JetBrains Mono character set on our [wiki page](https://github.com/JetBrains/JetBrainsMono/wiki/List-of-supported-symbols).
+
+## Building from source files
+
+The source files can be found in the *"Source"* folder. To open them you will need Glyphs app.\
+To build the `.ttf`, `.otf`, `woff2` & variable `.ttf` you will need:
+- install **gftools** `pip install gftools` (requires python 3.9.5 or higher on BigSur)
+- Navigate to **…JetBrainsMono/sources/** in Terminal app.
+- Type `gftools builder config.yaml` in Terminal and run it.
+- After the script is complete the files can be found in *Fonts* folder.
 
 ## License
 
