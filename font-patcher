@@ -14,10 +14,6 @@ projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]
 
 import sys
-try:
-    import psMat
-except ImportError:
-    sys.exit(projectName + ": FontForge module is probably not installed. [See: http://designwithfontforge.com/en-US/Installing_Fontforge.html]")
 import re
 import os
 import argparse
@@ -30,12 +26,13 @@ try:
 except ImportError:
     sys.exit(projectName + ": configparser module is probably not installed. Try `pip install configparser` or equivalent")
 try:
+    import psMat
     import fontforge
 except ImportError:
     sys.exit(
         projectName + (
             ": FontForge module could not be loaded. Try installing fontforge python bindings "
-            "[e.g. on Linux Debian or Ubuntu: `sudo apt install fontforge python-fontforge`]"
+            "[e.g. on Linux Debian or Ubuntu: `sudo apt install fontforge python3-fontforge`]"
         )
     )
 
