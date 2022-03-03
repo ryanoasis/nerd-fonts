@@ -6,7 +6,7 @@ Weight: Regular
 Copyright: Copyright (c) 2016, Ryan McIntyre
 Version: 001.000
 ItalicAngle: 0
-UnderlinePosition: -204
+UnderlinePosition: -306
 UnderlineWidth: 102
 Ascent: 1638
 Descent: 410
@@ -20,12 +20,13 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1480466430
-ModificationTime: 1480467841
+ModificationTime: 1646316690
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
 LineGap: 184
 VLineGap: 0
+Panose: 2 0 5 9 0 0 0 0 0 0
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
