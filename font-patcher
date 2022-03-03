@@ -804,6 +804,17 @@ class font_patcher:
                 self.font_dim['xmax'] = xmax
 
         # Calculate font height
+        if self.font_dim['height'] == 0:
+            # This can only happen if the input font is empty
+            # Assume we are using our prepared templates
+            self.font_dim = {
+                'xmin'  : 0,
+                'ymin'  : -self.sourceFont.descent,
+                'xmax'  : self.sourceFont.em,
+                'ymax'  : self.sourceFont.ascent,
+                'width' : self.sourceFont.em,
+                'height': 0,
+            }
         self.font_dim['height'] = abs(self.font_dim['ymin']) + self.font_dim['ymax']
 
 
