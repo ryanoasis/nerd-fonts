@@ -47,6 +47,16 @@ jobs:
           sudo ninja
           sudo ninja install
 
+      - name: Compile showttf
+        run: |
+          cd "$GITHUB_WORKSPACE/fontforge-${{matrix.FontForgeRelease.version}}/contrib/fonttools"
+          mkdir build
+          cd build
+          cmake -Wno-dev -GNinja ..
+          ninja showttf
+          echo "SHOWTTF=$(realpath showttf)" >> $GITHUB_ENV
+          cd ../../..
+
       - name: Setup additional dependencies
         run: |
           pip install fonttools --quiet
@@ -82,6 +92,14 @@ jobs:
         run: |
           echo "FONT_FAMILY was ${{ env.FONT_FAMILY }}"
           [[ "${{ env.FONT_FAMILY }}" == "Hack Nerd Font" ]] && echo "Font Family matches expected" || exit 1
+
+      - name: Spot check font properties
+        run: |
+          ${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" | grep 'File Checksum.*diff=0\s*$' && echo "TTF checksum ok" || exit 1
+          ORIG_MINPPEM=$(${{ env.SHOWTTF }} -c "src/unpatched-fonts/Hack/Regular/Hack-Regular.ttf" | grep 'lowestppem=' )
+          PATCH_MINPPEM=$(${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" | grep 'lowestppem=' )
+          echo "${ORIG_MINPPEM} == ${PATCH_MINPPEM}"
+          [[ ${ORIG_MINPPEM} == ${PATCH_MINPPEM} ]] && echo "lowestRecPPEM matches" || exit 1
 
       - name: Patcher monospaced
         run: |
