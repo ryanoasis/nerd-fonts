@@ -20,7 +20,7 @@ it's a general question please go to the gitter chat instead: https://gitter.im/
 
 - [ ] I have searched the [issues](https://github.com/ryanoasis/nerd-fonts/issues) for my request and found nothing related and/or helpful
 - [ ] I have searched the [FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting) for help
-- [ ] I have searched the [Wiki](https://github.com/ryanoasis/vim-devicons/wiki) for help
+- [ ] I have searched the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki) for help
 
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
