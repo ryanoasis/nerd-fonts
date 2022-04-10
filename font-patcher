@@ -516,8 +516,9 @@ class font_patcher:
                 familyname += " Mono"
 
         # Don't truncate the subfamily to keep fontname unique.  MacOS treats fonts with
-        # the same name as the same font, even if subFamily is different.
-        fontname += '-' + subFamily
+        # the same name as the same font, even if subFamily is different. Make sure to
+        # keep the resulting fontname (PostScript name) valid by removing spaces.
+        fontname += '-' + subFamily.replace(' ', '')
 
         # rename font
         #
