@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # Install Nerd Fonts
-__ScriptVersion="0.3"
+__ScriptVersion="0.4"
 
 # Default values for option variables:
 quiet=false
 mode="copy"
 clean=false
+dry=false
 extension="otf"
 patches=("Complete") # There are no other variants then Complete anymore
 compat=()
@@ -14,7 +15,7 @@ installpath="user"
 # Usage info
 usage() {
   cat << EOF
-Usage: ./install.sh [-q -v -h] [[--copy | --link] --clean | --list]
+Usage: ./install.sh [-q -v -h] [[--copy | --link] --clean | --list | --remove]
                     [--use-single-width-glyphs] [--windows] [--otf | --ttf]
                     [--install-to-user-path | --install-to-system-path ]
                     [FONT...]
@@ -31,6 +32,10 @@ General options:
 
   -C, --clean                   Recreate the root Nerd Fonts target directory
                                 (clean out all previous copies or symlinks).
+
+  --remove                      Remove all Nerd Fonts (that have been installed
+                                with this script).
+                                Can be combined with -L for a dry run.
 
   -s, --use-single-width-glyphs Install single-width glyphs variants.
   -w, --windows                 Install with limited internal font names.
@@ -59,7 +64,8 @@ while getopts "$optspec" optchar; do
     h) usage; exit 0;;
     c) mode="copy";;
     l) mode="link";;
-    L) mode="list";;
+    L) dry=true
+       [ "$mode" != "remove" ] && mode="list";;
     C) clean=true;;
     s) compat=( "${compat[@]}" "Nerd Font*Mono" );;
     w) compat=( "${compat[@]}" "Windows Compatible" );;
@@ -76,7 +82,9 @@ while getopts "$optspec" optchar; do
         help) usage; exit 0;;
         copy) mode="copy";;
         link) mode="link";;
-        list) mode="list";;
+        list) dry=true
+              [ "$mode" != "remove" ] && mode="list";;
+        remove) mode="remove";;
         clean) clean=true;;
         use-single-width-glyphs) compat=( "${compat[@]}" "Nerd Font*Mono" );;
         windows) compat=( "${compat[@]}" "Windows Compatible" );;
@@ -206,20 +214,21 @@ done
 # Get target root directory
 if [[ $(uname) == 'Darwin' ]]; then
   # MacOS
-  if [[ "system" == "$installpath" ]]; then
-    font_dir="/Library/Fonts"
-  else
-    font_dir="$HOME/Library/Fonts"
-  fi
+  sys_font_dir="/Library/Fonts"
+  usr_font_dir="$HOME/Library/Fonts"
 else
   # Linux
-  if [[ "system" == "$installpath" ]]; then
-    font_dir="/usr/local/share/fonts"
-  else
-    font_dir="$HOME/.local/share/fonts"
-  fi
+  sys_font_dir="/usr/local/share/fonts"
+  usr_font_dir="$HOME/.local/share/fonts"
 fi
-font_dir="${font_dir}/NerdFonts"
+sys_font_dir="${sys_font_dir}/NerdFonts"
+usr_font_dir="${usr_font_dir}/NerdFonts"
+
+if [[ "system" == "$installpath" ]]; then
+  font_dir="${sys_font_dir}"
+else
+  font_dir="${usr_font_dir}"
+fi
 
 #
 # Take the desired action
@@ -252,12 +261,29 @@ case $mode in
         ;;
     esac;;
 
+  remove)
+    if [[ "true" == "$dry" ]]; then
+      echo "Dry run. Would issue these commands:"
+      [ "$quiet" = false ] && echo rm -rfv "$sys_font_dir" "$usr_font_dir"
+      [ "$quiet" = true ] && echo rm -rf "$sys_font_dir" "$usr_font_dir"
+    else
+      [ "$quiet" = false ] && rm -rfv "$sys_font_dir" "$usr_font_dir"
+      [ "$quiet" = true ] && rm -rf "$sys_font_dir" "$usr_font_dir"
+    fi
+    font_dir="$sys_font_dir $usr_font_dir"
+    ;;
+
 esac
 
 # Reset font cache on Linux
 if [[ -n $(command -v fc-cache) ]]; then
-  [ "$quiet" = false ] && fc-cache -vf "$font_dir"
-  [ "$quiet" = true ] && fc-cache -f "$font_dir"
+  if [[ "true" == "$dry" ]]; then
+    [ "$quiet" = false ] && echo fc-cache -vf "$font_dir"
+    [ "$quiet" = true ] && echo fc-cache -f "$font_dir"
+  else
+    [ "$quiet" = false ] && fc-cache -vf "$font_dir"
+    [ "$quiet" = true ] && fc-cache -f "$font_dir"
+  fi
   case $? in
     [0-1])
       # Catch fc-cache returning 1 on a success
