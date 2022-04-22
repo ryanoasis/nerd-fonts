@@ -5,6 +5,16 @@
 # used for debugging
 # set -x
 
+# The optional first argument to this script is a filter for the fonts to patch.
+# All font files that start with that filter (and are ttf or otf files) will
+# be processed only.
+#   Example ./gotta-patch-em-all-font-patcher\!.sh "iosevka"
+#   Process all font files that start with "iosevka"
+# If the argument starts with a '/' all font files in a directory that matches
+# the filter are processed only.
+#   Example ./gotta-patch-em-all-font-patcher\!.sh "/iosevka"
+#   Process all font files that are in directories that start with "iosevka"
+
 # for executing script to rebuild JUST the readmes:
 # ./gotta-patch-em-all-font-patcher\!.sh "" info
 # to test this script with a single font (pattern):
@@ -40,9 +50,15 @@ patched_parent_dir="patched-fonts"
 max_parallel_process=64
 
 if [ $# -eq 1 ] || [ "$1" != "" ]
+then
+  if [[ "${1:0:1}" == "/" ]]
   then
-    like_pattern=$1
-    echo "$LINE_PREFIX Parameter given, limiting search and patch to pattern '$like_pattern' given"
+    like_pattern="-ipath \"*$1*/*.[o,t]tf\""
+    echo "$LINE_PREFIX Parameter given, limiting search and patch to pathname pattern '$1' given"
+  else
+    like_pattern="-iname \"$1*.[o,t]tf\""
+    echo "$LINE_PREFIX Parameter given, limiting search and patch to filename pattern '$1' given"
+  fi
 fi
 
 # simple second param option to allow to regenerate font info without re-patching
@@ -57,7 +73,7 @@ fi
 source_fonts=()
 while IFS= read -d $'\0' -r file ; do
   source_fonts=("${source_fonts[@]}" "$file")
-done < <(find "$source_fonts_dir" -iname "$like_pattern*.[o,t]tf" -type f -print0)
+done < <(find "$source_fonts_dir" ${like_pattern} -type f -print0)
 
 # print total number of source fonts found
 echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
