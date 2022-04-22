@@ -130,7 +130,7 @@ jobs:
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           fontforge --script ../../font-patcher --version
-          ./gotta-patch-em-all-font-patcher\!.sh "${{ matrix.font }}"
+          ./gotta-patch-em-all-font-patcher\!.sh "/${{ matrix.font }}"
 
       - name: Generate fontconfig and casks
         run: |
