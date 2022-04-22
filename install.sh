@@ -7,7 +7,7 @@ quiet=false
 mode="copy"
 clean=false
 extension="otf"
-patches=("Complete")
+patches=("Complete") # There are no other variants then Complete anymore
 compat=()
 installpath="user"
 
@@ -17,7 +17,7 @@ usage() {
 Usage: ./install.sh [-q -v -h] [[--copy | --link] --clean | --list]
                     [--use-single-width-glyphs] [--windows] [--otf | --ttf]
                     [--install-to-user-path | --install-to-system-path ]
-                    [--complete | --minimal | <patches>] [FONT...]
+                    [FONT...]
 
 General options:
 
@@ -40,19 +40,6 @@ General options:
 
   -O, --otf                     Prefer OTF font files [default].
   -T, --ttf                     Prefer TTF font files.
-
-Variation to install:
-
-  -A, --complete                Variants with patches applied [default].
-  -M, --minimal                 Variants with minimal patches applied.
-
-If you need more control over the included glyphs than when using the above
-two options, use any combination of these <patches>:
-
-  --fontawesome                 Include Font Awesome.
-  --fontlogos                   Include Font Logos.
-  --octicons                    Include Octicons.
-  --pomicons                    Include Pomicons.
 EOF
 }
 
@@ -78,8 +65,6 @@ while getopts "$optspec" optchar; do
     w) compat=( "${compat[@]}" "Windows Compatible" );;
     O) extension="otf";;
     T) extension="ttf";;
-    A) patches=("Complete");;
-    M) patches=();;
     S) installpath="system";;
     U) installpath="user";;
 
@@ -97,30 +82,13 @@ while getopts "$optspec" optchar; do
         windows) compat=( "${compat[@]}" "Windows Compatible" );;
         otf) extension="otf";;
         ttf) extension="ttf";;
-        complete) patches=("Complete");;
-        minimal) patches=();;
         install-to-system-path) installpath="system";;
         install-to-user-path) installpath="user";;
         *)
-          case "${OPTARG}" in
-            # Long options that define variations
-            fontawesome | fontlogos | octicons | pomicons)
-              # If the user has picked one of these options,
-              # we need to unset `Complete`
-              delete=("Complete")
-              patches=( "${patches[@]/${delete[0]}}" )
-              case "${OPTARG}" in
-                fontawesome) patches=( "${patches[@]}" "Font Awesome" );;
-                fontlogos) patches=( "${patches[@]}" "Font Logos" );;
-                octicons) patches=( "${patches[@]}" "Octicons" );;
-                pomicons) patches=( "${patches[@]}" "Pomicons" );;
-              esac;;
-            *)
-              echo "Unknown option --${OPTARG}" >&2
-              usage >&2;
-              exit 1
-              ;;
-          esac;;
+          echo "Unknown option --${OPTARG}" >&2
+          usage >&2;
+          exit 1
+          ;;
       esac;;
 
     *)
