@@ -311,3 +311,8 @@ printf "# The total number of font families patched was \\t\\t'%s'\\n" "$font_fa
 printf "# The total number of 'complete' patched fonts created was \\t'%s'\\n" "$complete_variation_count"
 printf "# The total number of 'variation' patched fonts created was \\t'%s'\\n" "$total_variation_count"
 printf "# The total number of patched fonts created was \\t\\t'%s'\\n" "$total_count"
+
+if [ "$total_count" -lt 1 ]; then
+  # Probably unwanted... alert user
+  exit 1
+fi
