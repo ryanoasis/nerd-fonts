@@ -344,7 +344,7 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
 * Alternative usage: Execute the patcher with the FontForge binary using the script flag:
 
   ```
-  ./fontforge -script font-patcher PATH_TO_FONT
+  fontforge -script font-patcher PATH_TO_FONT
   ```
 
 * Patching fonts using the AppImage:
