@@ -1250,6 +1250,9 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
             destGlyph.font.paste()
             glyph = destGlyph
         gbb = glyph.boundingBox()
+        if len(glyphs) > 1 and gbb[0] == gbb[2] and gbb[1] == gbb[3]:
+            # Ignore empty glyphs if we examine more than one glyph
+            continue
         bbox[0] = gbb[0] if bbox[0] is None or bbox[0] > gbb[0] else bbox[0]
         bbox[1] = gbb[1] if bbox[1] is None or bbox[1] > gbb[1] else bbox[1]
         bbox[2] = gbb[2] if bbox[2] is None or bbox[2] < gbb[2] else bbox[2]
