@@ -126,6 +126,14 @@ class font_patcher:
             symfont.close()
         print("\nDone with Patch Sets, generating font...")
 
+        # The grave accent and fontforge:
+        # If the type is 'auto' fontforge changes it to 'mark' on export.
+        # We can not prevent this. So set it to 'baseglyph' instead, as
+        # that resembles the most common expectations.
+        # This is not needed with fontforge March 2022 Release anymore.
+        if "grave" in self.sourceFont:
+            self.sourceFont["grave"].glyphclass="baseglyph"
+
         # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
         if self.sourceFont.fullname != None:
             self.sourceFont.generate(self.args.outputdir + "/" + self.sourceFont.fullname + self.extension, flags=(str('opentype'), str('PfEd-comments')))
