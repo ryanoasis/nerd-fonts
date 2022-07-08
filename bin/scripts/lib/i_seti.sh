@@ -68,4 +68,5 @@ i='' i_custom_purescript=$i
 i='' i_custom_puppet=$i
 i='' i_custom_emacs=$i
 i='' i_custom_orgmode=$i
+i='' i_custom_kotlin=$i
 unset i
