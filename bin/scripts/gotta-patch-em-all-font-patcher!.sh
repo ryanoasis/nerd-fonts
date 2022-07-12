@@ -20,10 +20,13 @@ type fontforge >/dev/null 2>&1 || {
   exit 1
 }
 
+# Get script directory to set source and target dirs relative to it
+sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
 res1=$(date +%s)
-parent_dir="${PWD}/../../"
+parent_dir="${sd}/../../"
 # Set source and target directories
-source_fonts_dir="${PWD}/../../src/unpatched-fonts"
+source_fonts_dir="${sd}/../../src/unpatched-fonts"
 like_pattern=''
 complete_variations_per_family=4
 font_typefaces_count=0
