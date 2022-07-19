@@ -22,10 +22,10 @@ Select JetBrains Mono in the IDE settings: go to `Preferences/Settings` → `Edi
     ```console
     brew tap homebrew/cask-fonts
     ```
-2. Install it using the `font-jetbrains-mono` cask:
+2. Install it using the `font-jetbrains-mono-nerd-font` cask:
 
    ```console
-   brew install --cask font-jetbrains-mono
+   brew install --cask font-jetbrains-mono-nerd-font
    ```
 
 ### Manual installation
