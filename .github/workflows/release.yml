@@ -77,20 +77,32 @@ jobs:
           sudo apt update -y -q
           sudo apt install software-properties-common -y -q
           sudo apt install python3-fontforge -y -q
+          sudo apt install libjpeg-dev libtiff5-dev libpng-dev libfreetype6-dev libgif-dev libgtk-3-dev libxml2-dev libpango1.0-dev libcairo2-dev libspiro-dev python3-dev ninja-build cmake build-essential gettext libuninameslist-dev -y -q
 
       # Ubuntu 20.04 has only fontforge release 2020, but there are some vital bugfixes in the 2022 release
       # This can be replaced with the ordinary apt package when Ubuntu updates, probably with 22.10?
-      - name: Install FontForge (self built)
+      - name: Cache Fontforge executable
+        id: cache-fontforge
+        uses: actions/cache@v3
+        with:
+          path: fontforge-20220308
+          key: ${{ runner.os }}-fontforge
+
+      - name: Build FontForge
+        if: steps.cache-fontforge.outputs.cache-hit != 'true'
         run: |
-          sudo apt install libjpeg-dev libtiff5-dev libpng-dev libfreetype6-dev libgif-dev libgtk-3-dev libxml2-dev libpango1.0-dev libcairo2-dev libspiro-dev python3-dev ninja-build cmake build-essential gettext libuninameslist-dev -y -q
           curl -Lv "https://github.com/fontforge/fontforge/releases/download/20220308/fontforge-20220308.tar.xz" \
             --output FontForge.tar.xz
           tar -xf FontForge.tar.xz
-          cd fontforge-*
+          cd fontforge-20220308
           sudo mkdir build
           cd build
           sudo cmake -GNinja ..
           sudo ninja
+
+      - name: Install Fontforge
+        run: |
+          cd fontforge-20220308/build
           sudo ninja install
 
       - name: Setup additional dependencies
