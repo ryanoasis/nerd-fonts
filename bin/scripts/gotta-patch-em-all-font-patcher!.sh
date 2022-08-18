@@ -37,6 +37,7 @@ res1=$(date +%s)
 parent_dir="${sd}/../../"
 # Set source and target directories
 source_fonts_dir="${sd}/../../src/unpatched-fonts"
+like_mode=''
 like_pattern=''
 complete_variations_per_family=4
 font_typefaces_count=0
@@ -53,10 +54,12 @@ if [ $# -eq 1 ] || [ "$1" != "" ]
 then
   if [[ "${1:0:1}" == "/" ]]
   then
-    like_pattern="-ipath \"*$1*/*.[o,t]tf\""
+    like_mode="-ipath"
+    like_pattern="*$1*/*.[o,t]tf"
     echo "$LINE_PREFIX Parameter given, limiting search and patch to pathname pattern '$1' given"
   else
-    like_pattern="-iname \"$1*.[o,t]tf\""
+    like_mode="-iname"
+    like_pattern="$1*.[o,t]tf"
     echo "$LINE_PREFIX Parameter given, limiting search and patch to filename pattern '$1' given"
   fi
 fi
@@ -73,7 +76,7 @@ fi
 source_fonts=()
 while IFS= read -d $'\0' -r file ; do
   source_fonts=("${source_fonts[@]}" "$file")
-done < <(find "$source_fonts_dir" ${like_pattern} -type f -print0)
+done < <(find "$source_fonts_dir" ${like_mode} ${like_pattern} -type f -print0)
 
 # print total number of source fonts found
 echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
@@ -292,7 +295,7 @@ then
       # to follow font naming changed. We can not do this if we patch only
       # some of the source font files in that directory.
       last_source_dir=${current_source_dir}
-      num_to_patch=$(find "${current_source_dir}" -iname "${like_pattern}*.[o,t]tf" -type f | wc -l)
+      num_to_patch=$(find "${current_source_dir}" ${like_mode} ${like_pattern} -type f | wc -l)
       num_existing=$(find "${current_source_dir}" -iname "*.[o,t]tf" -type f | wc -l)
       if [ ${num_to_patch} -eq ${num_existing} ]
       then
