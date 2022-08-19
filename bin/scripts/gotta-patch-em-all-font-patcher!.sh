@@ -13,7 +13,7 @@
 # If the argument starts with a '/' all font files in a directory that matches
 # the filter are processed only.
 #   Example ./gotta-patch-em-all-font-patcher\!.sh "/iosevka"
-#   Process all font files that are in directories that start with "iosevka"
+#   Process all font files that are in directory "iosevka"
 
 # for executing script to rebuild JUST the readmes:
 # ./gotta-patch-em-all-font-patcher\!.sh "" info
@@ -55,7 +55,7 @@ then
   if [[ "${1:0:1}" == "/" ]]
   then
     like_mode="-ipath"
-    like_pattern="*$1*/*.[o,t]tf"
+    like_pattern="*$1/*.[o,t]tf"
     echo "$LINE_PREFIX Parameter given, limiting search and patch to pathname pattern '$1' given"
   else
     like_mode="-iname"
