@@ -93,7 +93,8 @@ class TableHEADWriter:
             self.tab_offset = self.getlong()
             self.tab_length = self.getlong()
             if tab_name == b'head':
-                break
+                return
+        raise Exception('No HEAD table found')
 
     def goto(self, where):
         """ Go to a named location in the file or to the specified index """
@@ -251,19 +252,26 @@ class font_patcher:
             message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
 
         # Adjust flags that can not be changed via fontforge
-        source_font = TableHEADWriter(self.args.font)
-        source_font.close()
-        dest_font = TableHEADWriter(outfile)
-        if source_font.flags & 0x08 == 0 and dest_font.flags & 0x08 != 0:
-            print("Changing flags from 0x{:X} to 0x{:X}".format(dest_font.flags, dest_font.flags & ~0x08))
-            dest_font.putshort(dest_font.flags & ~0x08, 'flags') # clear 'ppem_to_int'
-        if source_font.lowppem != dest_font.lowppem:
-            print("Changing lowestRecPPEM from {} to {}".format(dest_font.lowppem, source_font.lowppem))
-            dest_font.putshort(source_font.lowppem, 'lowestRecPPEM')
-        if dest_font.modified:
-            dest_font.reset_table_checksum()
-            dest_font.reset_full_checksum()
-        dest_font.close()
+        try:
+            source_font = TableHEADWriter(self.args.font)
+            dest_font = TableHEADWriter(outfile)
+            if source_font.flags & 0x08 == 0 and dest_font.flags & 0x08 != 0:
+                print("Changing flags from 0x{:X} to 0x{:X}".format(dest_font.flags, dest_font.flags & ~0x08))
+                dest_font.putshort(dest_font.flags & ~0x08, 'flags') # clear 'ppem_to_int'
+            if source_font.lowppem != dest_font.lowppem:
+                print("Changing lowestRecPPEM from {} to {}".format(dest_font.lowppem, source_font.lowppem))
+                dest_font.putshort(source_font.lowppem, 'lowestRecPPEM')
+            if dest_font.modified:
+                dest_font.reset_table_checksum()
+                dest_font.reset_full_checksum()
+        except Exception as error:
+            print("Can not handle font flags ({})".format(repr(error)))
+        finally:
+            try:
+                source_font.close()
+                dest_font.close()
+            except:
+                pass
         print(message)
 
         if self.args.postprocess:
