@@ -287,7 +287,7 @@ then
   for i in "${!source_fonts[@]}"
   do
     purge_destination=""
-    current_source_dir=$(dirname ${source_fonts[$i]})
+    current_source_dir=$(dirname "${source_fonts[$i]}")
     if [ "${current_source_dir}" != "${last_source_dir}" ]
     then
       # If we are going to patch ALL font files from a certain source directory
@@ -296,7 +296,7 @@ then
       # some of the source font files in that directory.
       last_source_dir=${current_source_dir}
       num_to_patch=$(find "${current_source_dir}" -iregex ${like_pattern} -type f | wc -l)
-      num_existing=$(find "${current_source_dir}" -iname "*.[o,t]tf" -type f | wc -l)
+      num_existing=$(find "${current_source_dir}" -iname "*.[o,t]tf" -o -iname "*.sfd" -type f | wc -l)
       if [ ${num_to_patch} -eq ${num_existing} ]
       then
         purge_destination="TRUE"
