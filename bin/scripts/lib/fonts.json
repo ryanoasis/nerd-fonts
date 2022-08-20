@@ -249,6 +249,14 @@
       "description": "`0` and `O` very similar, very short tight descenders"
     },
     {
+      "unpatchedName": "Lilex",
+      "patchedName": "Lilex",
+      "folderName": "Lilex",
+      "imagePreviewFont": "Lilex Nerd Font",
+      "linkPreviewFont": "lilex",
+      "description": "Modern with ligatures"
+    },
+    {
       "unpatchedName": "Meslo",
       "patchedName": "Meslo",
       "folderName": "Meslo",
