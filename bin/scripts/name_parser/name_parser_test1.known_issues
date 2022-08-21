@@ -142,9 +142,6 @@
 #### Limit Subfamiliy to 4 standard styles, put Oblique into Family instead (and mark it Italic so applications know it's slanted) & Keep the grouping in Typographic Family
 +|iosevka-thinoblique.ttf                            | | Iosevka Thin Oblique                               | | Iosevka Thin Oblique           |X| Italic                         | | Iosevka                        | | Thin Oblique
 -|iosevka-thinoblique.ttf                            | | Iosevka Thin Oblique                               | | Iosevka Thin Oblique           | | Regular                        | | Iosevka                        | | Thin Oblique
-#### Do we really base on the VF (variable font) We can not create VF. This makes no sense.
-+|Lilex-VF.ttf                                       |X| Lilex VF                                           |X| Lilex VF                       | | Regular                        | |                                | |
--|Lilex-VF.ttf                                       | | Lilex Regular                                      | | Lilex                          | | Regular                        | |                                | |
 #### Limit Subfamiliy to 4 standard styles, put Retina into Family instead
 +|Monoid-Retina.ttf                                  | | Monoid Retina                                      |X| Monoid Retina                  |X| Regular                        |X| Monoid                         |X| Retina
 -|Monoid-Retina.ttf                                  | | Monoid Retina                                      | | Monoid                         | | Retina                         | |                                | |
