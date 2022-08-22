@@ -1,5 +1,6 @@
 **
 !src/glyphs
 !font-patcher
+!bin/scripts/name_parser/Fontname*.py
 !bin/scripts/docker-entrypoint.sh
 !.codeclimate.yml
