@@ -10,3 +10,5 @@ node_modules
 package-lock.json
 # generated *.uuid files
 *.uuid
+bin/scripts/name_parser/__pycache__/*
+bin/scripts/name_parser/log
