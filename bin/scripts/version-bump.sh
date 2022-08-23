@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
-# Script Version: 1.0.1
+# Script Version: 1.0.2
 # bump version number for release in scripts (bash and python)
 # does not do semver format checking
 # this obviously is not perfect but works good enough for now (YAGNI)
@@ -18,13 +18,12 @@ release=$1
 
 echo "$LINE_PREFIX Bump version to $release"
 
-sed -i "s|[0-9]\\.[0-9]\\.[0-9]|$release|g" ../../font-patcher
-sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/**/*.sh
-sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/**/*.py
-sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/*.sh
-sed -i "s|\\# Nerd Fonts Version: [0-9]\\.[0-9]\\.[0-9]|\\# Nerd Fonts Version: $release|g" ../../bin/scripts/*.py
-sed -i "s|\\# version: [0-9]\\.[0-9]\\.[0-9]|\\# version: $release|g" ../../bin/scripts/*.sh
-sed -i "s|version=\"[0-9]\\.[0-9]\\.[0-9]\"|version=\"$release\"|g" ../../bin/scripts/*.sh
+function patch_file {
+    echo patching $1
+    sed -i -E "s/^(# Nerd Fonts Version: )[0-9]+\.[0-9]+\.[0-9]+.*/\1$release/" "$1"
+    sed -i -E "s/^(version *= *\")[0-9]+\.[0-9]+\.[0-9]+.*(\") *$/\1$release\2/" "$1"
+}
 
-exit
-
+while IFS= read -r file; do
+    patch_file "$file"
+done < <(find ../.. -name "*.sh" -o -name "*.py" -o -name "font-patcher" -type f)

@@ -125,9 +125,7 @@ jobs:
           fontforge --version
           fontforge --version 2>&1 | grep libfontforge | awk '{print $NF}'
 
-      - name: Bump version for source files once
-      # @todo fixme - put in a separate job with the release env setup and output the release info
-        if: ${{ matrix.font == '3270' }}
+      - name: Bump version for source files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_TAG_VERSION"
@@ -194,6 +192,11 @@ jobs:
           echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
           [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "RELEASE_CANDIDATE=true" || echo "RELEASE_CANDIDATE=false" >> $GITHUB_ENV
 
+      - name: Bump version for source files
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./version-bump.sh "$RELEASE_TAG_VERSION"
+
       - name: Archive font-patcher script for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
@@ -223,6 +226,24 @@ jobs:
         with:
           name: patched-fonts
           path: .
+
+      - name: Bump version for source files
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./version-bump.sh "$RELEASE_TAG_VERSION"
+
+      - name: Commit version bump changes
+        # If there are no changes (i.e. we already have that bump commit from a previous run)
+        # the git commit will fail as empty commit (that we do not explicitely allow here),
+        # and the action fails silently (i.e. without stopping the job).
+        # This means there will be only one commit in the repo for each version tag change,
+        # regardless of how often we run the release CI.
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "['font-patcher', 'bin/scripts']"
+          message: Bump release version
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
       - uses: EndBug/add-and-commit@v9
         with:
