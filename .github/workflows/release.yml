@@ -92,11 +92,15 @@ jobs:
           echo Try appimage with path
           fontforge --version
 
+      # It is unclear what this has been needed for
       - name: Setup additional dependencies
+        if: false
         run: |
           pip install fonttools --quiet
 
+      # It is unclear what this has been needed for
       - name: Build FreeType from source
+        if: false
         run: |
           wget http://downloads.sourceforge.net/project/freetype/freetype2/2.7/freetype-2.7.tar.gz --quiet
           tar -zxf freetype-2.7.tar.gz
@@ -105,7 +109,9 @@ jobs:
           make --quiet
           sudo make install --quiet
 
+      # It is unclear what this has been needed for
       - name: Build Harfbuzz from source
+        if: false
         run: |
           wget http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.3.4.tar.bz2 --quiet
           tar -xjf harfbuzz-1.3.4.tar.bz2
