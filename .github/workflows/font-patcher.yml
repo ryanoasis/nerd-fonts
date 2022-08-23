@@ -16,6 +16,7 @@ jobs:
     strategy:
       matrix:
         FontForgeRelease: [
+          { name: "FontForge March 2022 Release", version: "20220308", archiveType: "tar.xz" },
           { name: "FontForge 20th Anniversary Edition", version: "20201107", archiveType: "tar.xz" },
           { name: "FontForge 2020 March Release", version: "20200314", archiveType: "tar.xz" },
           # @TODO we need to build this FontForge version differently or just skip for now:
