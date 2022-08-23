@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
 # calls the necessary scripts in the necessary order to prepare for a release
+#
+# This is not used for production
 
 #set -x
 LINE_PREFIX="# [Nerd Fonts] "
@@ -18,7 +20,7 @@ release=$1
 ./generate-fontconfig.sh
 ./generate-casks.sh
 ./archive-fonts.sh
-#./upload-archives.sh # better done as a separate step
+#./upload-archives.sh # better done as a separate step (via gh action)
 
 exit
 

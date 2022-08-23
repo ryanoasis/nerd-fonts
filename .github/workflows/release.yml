@@ -149,11 +149,17 @@ jobs:
           ./generate-fontconfig.sh
           ./generate-casks.sh "${{ matrix.font }}"
 
-      - name: Archive font package zip files and upload for release
+      - name: Archive font package zip files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-fonts.sh "${{ matrix.font }}"
-          GITHUB_TOKEN=$GITHUB_TOKEN PRERELEASE=$RELEASE_CANDIDATE ./upload-archives.sh $RELEASE_TAG_VERSION "${{ matrix.font }}"
+
+      - name: Upload zip file archive for release
+        uses: softprops/action-gh-release@v0.1.14
+        with:
+          prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
+          tag_name: ${{ env.RELEASE_TAG_VERSION }}
+          files: archives/*
 
       - name: Upload patched fonts as artifacts
         uses: actions/upload-artifact@v2
@@ -193,10 +199,12 @@ jobs:
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-font-patcher.sh
 
-      - name: Archive font package zip files and upload for release
-        run: |
-          cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          GITHUB_TOKEN=$GITHUB_TOKEN PRERELEASE=$RELEASE_CANDIDATE ./upload-archives.sh $RELEASE_TAG_VERSION "FontPatcher"
+      - name: Upload font-patcher archive for release
+        uses: softprops/action-gh-release@v0.1.14
+        with:
+          prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
+          tag_name: ${{ env.RELEASE_TAG_VERSION }}
+          files: archives/*
 
   commit:
     name: Commit and push patched fonts to the repo
