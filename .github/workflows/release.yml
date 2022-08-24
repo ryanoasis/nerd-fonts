@@ -37,8 +37,29 @@ jobs:
           echo "::set-output name=matrix::${fontNames}"
           echo ${{ steps.set-matrix.outputs.matrix }}
 
+      - name: Fetch release version
+        id: rel_ver
+        run: |
+          cd -- "$GITHUB_WORKSPACE"
+          echo "Contents of package.json:"
+          cat package.json
+          RELEASE_TAG_VERSION=$(cat package.json \
+          | grep version \
+          | head -1 \
+          | awk -F: '{ print $2 }' \
+          | sed 's/[",]//g')
+          echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
+          echo "::set-output name=val::$RELEASE_TAG_VERSION"
+
+      - name: Determine candidate status
+        id: rel_can
+        run: |
+          [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
+
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
+      rel_version: ${{ steps.rel_ver.outputs.val }}
+      rel_candidate: ${{ steps.rel_can.outputs.val }}
 
   # Workflow to build and install dependencies
   build:
@@ -50,6 +71,8 @@ jobs:
     env:
       GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_TAG_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+      RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
 
     strategy:
       matrix:
@@ -58,17 +81,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Set release variables
+      - name: Check release variables
         run: |
-          cd -- "$GITHUB_WORKSPACE"
-          cat package.json
-          RELEASE_TAG_VERSION=$(cat package.json \
-          | grep version \
-          | head -1 \
-          | awk -F: '{ print $2 }' \
-          | sed 's/[",]//g')
-          echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
-          [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "RELEASE_CANDIDATE=true" || echo "RELEASE_CANDIDATE=false" >> $GITHUB_ENV
+          echo "$RELEASE_TAG_VERSION"
+          echo "Candidate: $RELEASE_CANDIDATE"
 
       # Install and setup Dependencies
       # @TODO cache the next 4 steps with actions/cache or upload
@@ -171,27 +187,17 @@ jobs:
 
   release-font-patcher:
     name: Archive font patcher and add to release
-    needs: build
+    needs: [ setup-fonts-matrix, build ]
 
     env:
       GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_TAG_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+      RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set release variables
-        run: |
-          cd -- "$GITHUB_WORKSPACE"
-          cat package.json
-          RELEASE_TAG_VERSION=$(cat package.json \
-          | grep version \
-          | head -1 \
-          | awk -F: '{ print $2 }' \
-          | sed 's/[",]//g')
-          echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
-          [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "RELEASE_CANDIDATE=true" || echo "RELEASE_CANDIDATE=false" >> $GITHUB_ENV
-
       - name: Bump version for source files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
@@ -211,7 +217,7 @@ jobs:
 
   commit:
     name: Commit and push patched fonts to the repo
-    needs: build
+    needs: [ setup-fonts-matrix, build ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -228,6 +234,9 @@ jobs:
           path: .
 
       - name: Bump version for source files
+        env:
+          RELEASE_TAG_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+          RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_TAG_VERSION"
