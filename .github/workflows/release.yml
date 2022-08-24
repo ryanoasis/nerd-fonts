@@ -47,7 +47,7 @@ jobs:
           | grep version \
           | head -1 \
           | awk -F: '{ print $2 }' \
-          | sed 's/[",]//g')
+          | sed 's/[ ",]//g')
           echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
           echo "::set-output name=val::$RELEASE_TAG_VERSION"
 
