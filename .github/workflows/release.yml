@@ -266,3 +266,8 @@ jobs:
           message: Rebuilds patched fonts
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Adjust release tag to include previous commit
+        uses: EndBug/latest-tag@v1.5.0
+        with:
+          ref: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
