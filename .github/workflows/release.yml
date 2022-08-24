@@ -32,6 +32,7 @@ jobs:
         with:
           files: package.json bin/scripts/get-font-names-from-json.sh bin/scripts/lib/fonts.json
           branch: ${{ github.head_ref || github.ref_name }}
+
       - name: Determine font matrix
         id: set-matrix
         run: |
@@ -61,10 +62,42 @@ jobs:
         run: |
           [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
 
+      - name: Determine new release or re-release
+        # If the tag exists it is obviously a re-release
+
+        # This would need a complete checkout, that we want to avoid
+        # uses: mukunku/tag-exists-action@v1.0.0
+        #   with:
+        #     tag: "${{ env.RELEASE_TAG_VERSION }}"
+        #   env:
+        #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: rel_pre_existing
+        run: |
+          curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"${{ steps.rel_ver.outputs.val }}"$' \
+            && echo "::set-output name=exists::true" || echo "::set-output name=exists::false"
+          echo "Tag exists: ${{ steps.rel_pre_existing.outputs.exists }}"
+
+      - name: Upload release only on first trigger for release and always on release candidate
+        id: upload
+        # Upload release when:
+        # * This is a new (previously untagged) release
+        # * This is a release candidate
+        run: |
+          [[ "${{ steps.rel_can.outputs.val }}" == "true" || "${{ steps.rel_pre_existing.outputs.exists }}" == "false" ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
+
+      - name: Show outputs
+        run: |
+          echo "rel_version: ${{ steps.rel_ver.outputs.val }}"
+          echo "rel_candidate: ${{ steps.rel_can.outputs.val }}"
+          echo "rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}"
+          echo "rel_upload: ${{ steps.upload.outputs.val }}"
+
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       rel_version: ${{ steps.rel_ver.outputs.val }}
       rel_candidate: ${{ steps.rel_can.outputs.val }}
+      rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}
+      rel_upload: ${{ steps.upload.outputs.val }}
 
   # Workflow to build and install dependencies
   build:
@@ -90,6 +123,7 @@ jobs:
         run: |
           echo "$RELEASE_TAG_VERSION"
           echo "Candidate: $RELEASE_CANDIDATE"
+          echo "Publish/refresh release: ${{ needs.setup-fonts-matrix.outputs.rel_upload }}"
 
       # Install and setup Dependencies
       # @TODO cache the next 4 steps with actions/cache or upload
@@ -175,6 +209,7 @@ jobs:
 
       - name: Upload zip file archive for release
         uses: softprops/action-gh-release@v0.1.14
+        if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
           tag_name: ${{ env.RELEASE_TAG_VERSION }}
@@ -215,6 +250,7 @@ jobs:
 
       - name: Upload font-patcher archive for release
         uses: softprops/action-gh-release@v0.1.14
+        if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
           tag_name: ${{ env.RELEASE_TAG_VERSION }}
@@ -269,5 +305,6 @@ jobs:
 
       - name: Adjust release tag to include previous commit
         uses: EndBug/latest-tag@v1.5.0
+        if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           ref: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
