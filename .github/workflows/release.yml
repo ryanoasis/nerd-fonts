@@ -32,7 +32,7 @@ jobs:
         with:
           files: package.json bin/scripts/get-font-names-from-json.sh bin/scripts/lib/fonts.json
           branch: ${{ github.head_ref || github.ref_name }}
-      -
+      - name: Determine font matrix
         id: set-matrix
         run: |
           cd -- $GITHUB_WORKSPACE/bin/scripts/
@@ -259,7 +259,8 @@ jobs:
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-      - uses: EndBug/add-and-commit@v9
+      - name: Commit patched fonts back to repo
+        uses: EndBug/add-and-commit@v9
         with:
           add: 'patched-fonts'
           message: Rebuilds patched fonts
