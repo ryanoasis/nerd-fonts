@@ -27,11 +27,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      # Faster version instead of - uses: actions/checkout@v3
+      - uses: Bhacaz/checkout-files@v2
+        with:
+          files: package.json bin/scripts/get-font-names-from-json.sh bin/scripts/lib/fonts.json
+          branch: ${{ github.head_ref || github.ref_name }}
       -
         id: set-matrix
         run: |
           cd -- $GITHUB_WORKSPACE/bin/scripts/
+          chmod u+x get-font-names-from-json.sh
           fontNames=$(./get-font-names-from-json.sh)
           echo "${fontNames}"
           echo "::set-output name=matrix::${fontNames}"
