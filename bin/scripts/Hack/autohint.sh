@@ -6,7 +6,7 @@
 # MIT license
 # Modified by Ryan L McIntyre
 # for Nerd Fonts (https://github.com/ryanoasis/nerd-fonts)
-# Nerd Fonts Version: 2.1.0
+# Nerd Fonts Version: 2.2.0-RC
 # Script Version: 1.1.1
 #
 # ------------------------------------------------------------------

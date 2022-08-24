@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.1.0
+# Nerd Fonts Version: 2.2.0-RC
 # Script Version: 1.0.2
 # bump version number for release in scripts (bash and python)
 # does not do semver format checking

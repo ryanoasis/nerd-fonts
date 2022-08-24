@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.1.0
+# Nerd Fonts Version: 2.2.0-RC
 # Script Version: 1.0.0
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
@@ -7,7 +7,7 @@
 
 #set -x
 
-version="2.1.0"
+version="2.2.0-RC"
 patched_parent_dir="../../patched-fonts/"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"

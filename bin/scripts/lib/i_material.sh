@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Material Design Icons (2,119 icons)
 # Codepoints: F001, F847, Nerd Fonts moved F500-FD46
-# Nerd Fonts Version: 2.1.0
+# Nerd Fonts Version: 2.2.0-RC
 # Script Version 1.0.0
 test -n "$__i_mdi_loaded" && return || __i_mdi_loaded=1
 i='' i_mdi_vector_square=$i

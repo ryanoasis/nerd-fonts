@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Font Logos (Font Linux) (48 icons)
 # Codepoints: F300-F32F
-# Nerd Fonts Version: 2.1.0
+# Nerd Fonts Version: 2.2.0-RC
 # Script Version: 1.1.0
 test -n "$__i_linux_loaded" && return || __i_linux_loaded=1
 i='' i_linux_alpine=$i
