@@ -48,18 +48,17 @@ jobs:
           cd -- "$GITHUB_WORKSPACE"
           echo "Contents of package.json:"
           cat package.json
-          RELEASE_TAG_VERSION=$(cat package.json \
+          RELEASE_VERSION=$(cat package.json \
           | grep version \
           | head -1 \
           | awk -F: '{ print $2 }' \
           | sed 's/[ ",]//g')
-          echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
-          echo "::set-output name=val::$RELEASE_TAG_VERSION"
+          echo "::set-output name=val::$RELEASE_VERSION"
 
       - name: Determine candidate status
         id: rel_can
         run: |
-          [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
+          [[ "${{ steps.rel_ver.outputs.val }}" == *"-RC"* ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
 
       - name: Determine new release or re-release
         # If the tag exists it is obviously a re-release
@@ -67,12 +66,12 @@ jobs:
         # This would need a complete checkout, that we want to avoid
         # uses: mukunku/tag-exists-action@v1.0.0
         #   with:
-        #     tag: "${{ env.RELEASE_TAG_VERSION }}"
+        #     tag: "v${{ steps.rel_ver.outputs.val }}"
         #   env:
         #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         id: rel_pre_existing
         run: |
-          curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"${{ steps.rel_ver.outputs.val }}"$' \
+          curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"v${{ steps.rel_ver.outputs.val }}"$' \
             && echo "::set-output name=exists::true" || echo "::set-output name=exists::false"
           echo "Tag exists: ${{ steps.rel_pre_existing.outputs.exists }}"
 
@@ -108,7 +107,7 @@ jobs:
     env:
       GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      RELEASE_TAG_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+      RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
       RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
 
     strategy:
@@ -120,7 +119,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Check release variables
         run: |
-          echo "$RELEASE_TAG_VERSION"
+          echo "$RELEASE_VERSION"
           echo "Candidate: $RELEASE_CANDIDATE"
           echo "Publish/refresh release: ${{ needs.setup-fonts-matrix.outputs.rel_upload }}"
 
@@ -182,7 +181,7 @@ jobs:
       - name: Bump version for source files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./version-bump.sh "$RELEASE_TAG_VERSION"
+          ./version-bump.sh "$RELEASE_VERSION"
 
       - name: Standardize the readme files
         run: |
@@ -212,7 +211,7 @@ jobs:
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
-          tag_name: ${{ env.RELEASE_TAG_VERSION }}
+          tag_name: "v${{ env.RELEASE_VERSION }}"
           files: archives/*
 
       - name: Upload patched fonts as artifacts
@@ -242,7 +241,7 @@ jobs:
     env:
       GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      RELEASE_TAG_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+      RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
       RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
 
     runs-on: ubuntu-latest
@@ -251,7 +250,7 @@ jobs:
       - name: Bump version for source files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./version-bump.sh "$RELEASE_TAG_VERSION"
+          ./version-bump.sh "$RELEASE_VERSION"
 
       - name: Archive font-patcher script for release
         run: |
@@ -263,7 +262,7 @@ jobs:
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
-          tag_name: ${{ env.RELEASE_TAG_VERSION }}
+          tag_name: "v${{ env.RELEASE_VERSION }}"
           files: archives/*
 
   commit:
@@ -286,11 +285,11 @@ jobs:
 
       - name: Bump version for source files
         env:
-          RELEASE_TAG_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+          RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
           RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./version-bump.sh "$RELEASE_TAG_VERSION"
+          ./version-bump.sh "$RELEASE_VERSION"
 
       - name: Commit version bump changes
         # If there are no changes (i.e. we already have that bump commit from a previous run)
@@ -330,4 +329,4 @@ jobs:
         uses: EndBug/latest-tag@v1.5.0
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
-          ref: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+          ref: "v${{ needs.setup-fonts-matrix.outputs.rel_version }}"
