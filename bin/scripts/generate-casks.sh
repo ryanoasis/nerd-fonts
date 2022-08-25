@@ -80,9 +80,14 @@ function write_footer {
   } >> "$outputfile"
 }
 
+pattern=$1
+if [ "$pattern" = "" ]; then
+	pattern=".*"
+fi
+
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -mindepth 1 -type d -iregex "./$1" |
+find . -maxdepth 1 -mindepth 1 -type d -iregex "\./$pattern" |
 while read -r filename
 do
 
