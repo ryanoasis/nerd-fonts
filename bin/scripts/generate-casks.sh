@@ -82,7 +82,7 @@ function write_footer {
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -mindepth 1 -type d | # uncomment to test 1 font
+find . -maxdepth 1 -mindepth 1 -type d -iregex "./$1" |
 while read -r filename
 do
 
