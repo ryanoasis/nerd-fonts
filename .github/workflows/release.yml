@@ -302,7 +302,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: "['font-patcher', 'bin/scripts']"
-          message: Bump release version
+          message: "[ci] Bump release version"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
@@ -310,7 +310,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: 'patched-fonts'
-          message: Rebuilds patched fonts
+          message: "[ci] Rebuilds patched fonts"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
@@ -323,7 +323,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: '10-nerd-font-symbols.conf'
-          message: Regenerate fontconfig
+          message: "[ci] Regenerate fontconfig"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
