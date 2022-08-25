@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # only adds non-Windows versions of the fonts
@@ -99,12 +99,12 @@ do
 	MONOFONTS=()
 	while IFS= read -d $'\0' -r file ; do
 	  MONOFONTS=("${MONOFONTS[@]}" "$file")
-	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*mono.*' \) -print0)
+	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*complete mono*' \) -print0)
 
 	FONTS=()
 	while IFS= read -d $'\0' -r file ; do
 	  FONTS=("${FONTS[@]}" "$file")
-	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iwholename '*mono.*' \) -print0)
+	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iname '*complete mono*' \) -print0)
 
 	outputdir=$PWD/../casks/
 
