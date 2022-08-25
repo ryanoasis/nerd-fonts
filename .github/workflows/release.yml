@@ -196,16 +196,17 @@ jobs:
           fontforge --script `pwd`/../../font-patcher --version
           ./gotta-patch-em-all-font-patcher\!.sh "/${{ matrix.font }}"
 
-      - name: Generate fontconfig and casks
-        run: |
-          cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./generate-fontconfig.sh
-          ./generate-casks.sh "${{ matrix.font }}"
-
       - name: Archive font package zip files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-fonts.sh "${{ matrix.font }}"
+
+      - name: Generate cask
+        # The casks are not used at the moment, but probably Ryan
+        # wanted to push them out somewhere
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./generate-casks.sh "${{ matrix.font }}"
 
       - name: Upload zip file archive for release
         uses: softprops/action-gh-release@v0.1.14
@@ -223,6 +224,16 @@ jobs:
           # of the root directory for artifact path purposes
           path: |
             patched-fonts/${{ matrix.font }}
+            LICENSE
+
+      - name: Upload casks as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: casks
+          # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
+          # of the root directory for artifact path purposes
+          path: |
+            casks/${{ matrix.font }}
             LICENSE
 
   release-font-patcher:
@@ -300,6 +311,19 @@ jobs:
         with:
           add: 'patched-fonts'
           message: Rebuilds patched fonts
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Generate fontconfig
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./generate-fontconfig.sh
+
+      - name: Commit fontconfig back to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '10-nerd-font-symbols.conf'
+          message: Regenerate fontconfig
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
