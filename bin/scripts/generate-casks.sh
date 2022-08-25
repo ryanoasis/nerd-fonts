@@ -95,7 +95,6 @@ do
 	basename=$(basename "$filename")
 	sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
 	searchdir=$filename
-	fontdir=$(basename "$(dirname "$dirname")")
 
 	MONOFONTS=()
 	while IFS= read -d $'\0' -r file ; do
@@ -111,7 +110,7 @@ do
 
 	formattedbasename=$(echo "$basename" | tr "[:upper:]" "[:lower:]")
 
-	echo "$LINE_PREFIX Generating cask for: $fontdir"
+	echo "$LINE_PREFIX Generating cask for: $basename"
 
 	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
