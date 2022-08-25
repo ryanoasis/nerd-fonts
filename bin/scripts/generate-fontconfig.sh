@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 # Iterates over all patched fonts directories
 # to generate a fontconfig based on the Nerd Fonts Symbols font
 # that contains only the glyphs
@@ -41,7 +41,7 @@ echo "$LINE_PREFIX Generating fontconfig for: monospace"
 } >> "$to"
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -type d | # uncomment to get all fonts
+find . -maxdepth 1 -type d | sort | # uncomment to get all fonts
 while read -r filename
 do
 
