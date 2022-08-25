@@ -16,7 +16,6 @@ on:
       - 'install.ps1'
       - 'install.sh'
       - 'LICENSE'
-      - 'package**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
