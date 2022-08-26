@@ -48,11 +48,7 @@ jobs:
           cd -- "$GITHUB_WORKSPACE"
           echo "Contents of package.json:"
           cat package.json
-          RELEASE_VERSION=$(cat package.json \
-          | grep version \
-          | head -1 \
-          | awk -F: '{ print $2 }' \
-          | sed 's/[ ",]//g')
+          RELEASE_VERSION=$(jq '.version' package.json | sed 's/[ ",]//g')
           echo "::set-output name=val::$RELEASE_VERSION"
 
       - name: Determine candidate status
