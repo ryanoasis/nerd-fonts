@@ -206,6 +206,7 @@ jobs:
         uses: softprops/action-gh-release@v0.1.14
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
+          draft: true
           prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
           tag_name: "v${{ env.RELEASE_VERSION }}"
           files: archives/*
@@ -257,13 +258,14 @@ jobs:
         uses: softprops/action-gh-release@v0.1.14
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
+          draft: true
           prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
           tag_name: "v${{ env.RELEASE_VERSION }}"
           files: archives/*
 
   commit:
-    name: Commit and push patched fonts to the repo
-    needs: [ setup-fonts-matrix, build ]
+    name: Commit and push patched fonts to the repo, finalize release
+    needs: [ setup-fonts-matrix, build, release-font-patcher ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
