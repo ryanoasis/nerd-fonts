@@ -289,6 +289,7 @@ I seguenti font sono disponibili attraverso i [pacchetti AUR](https://aur.archli
 * [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
 * [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
 * [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+* [Nerd Fonts Hack](https://aur.archlinux.org/packages/nerd-fonts-hack/)
 
 ### `Opzione 8: Modifica il tuo Font`
 

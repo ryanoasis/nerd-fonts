@@ -309,6 +309,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 -   [बेवकूफ फ़ॉन्ट्स बेनामी प्रो](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
 -   [रूट आरडी फोन टीएस दरवाजा](https://aur.archlinux.org/packages/nerd-fonts-noto/)
 -   [बेवकूफ फ़ॉन्ट्स](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+-   [बेवकूफ फ़ॉन्ट्स हैक](https://aur.archlinux.org/packages/nerd-fonts-hack/)
 
 ### `विकल्प 8: अपना खुद का फ़ॉन्ट पैच करें`
 

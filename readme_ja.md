@@ -285,6 +285,7 @@ Arch Linux 上の [AUR packages](https://aur.archlinux.org/) で以下のフォ�
 * [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
 * [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
 * [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+* [Nerd Fonts Hack](https://aur.archlinux.org/packages/nerd-fonts-hack/)
 
 ### `その 8: 自分でフォントにパッチを当てる`
 

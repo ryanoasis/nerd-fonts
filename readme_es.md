@@ -288,6 +288,7 @@ las siguientes fuentes están disponibles como [paquetes AUR](https://aur.archli
 * [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
 * [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
 * [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+* [Nerd Fonts Hack](https://aur.archlinux.org/packages/nerd-fonts-hack/)
 
 ### `Opción 8: Parchar tu Propia Fuente`
 

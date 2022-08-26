@@ -341,6 +341,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 * [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
 * [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
 * [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+* [Nerd Fonts Hack](https://aur.archlinux.org/packages/nerd-fonts-hack/)
 
 ### `選項8: 打包你的個人字體`
 

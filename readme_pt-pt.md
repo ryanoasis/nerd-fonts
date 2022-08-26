@@ -285,6 +285,7 @@ Os seguintes tipos de letra estão disponíveis nos [pacotes do AUR](https://aur
 * [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
 * [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
 * [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+* [Nerd Fonts Hack](https://aur.archlinux.org/packages/nerd-fonts-hack/)
 
 ### `Opção 8: Criar o teu tipo de letra`
 
