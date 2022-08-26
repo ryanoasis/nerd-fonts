@@ -17,7 +17,7 @@ jobs:
   publish-image:
     name: Publish image
     runs-on: ubuntu-latest
-    if: ${{ secrets.DOCKER_USER }}
+    if: ${{ github.repository_owner == 'ryanoasis' }}
     steps:
       - uses: actions/checkout@v3
       - name: Build image
