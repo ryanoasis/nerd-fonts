@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.1.0
+# Nerd Fonts Version: 2.2.0
 # Script Version: 1.1.2
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
