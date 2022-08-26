@@ -1,3 +1,4 @@
+# Keep this in line with .github/workflows/docker-release.yml
 **
 !src/glyphs
 !font-patcher

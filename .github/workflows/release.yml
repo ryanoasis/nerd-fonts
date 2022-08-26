@@ -16,7 +16,6 @@ on:
       - 'install.ps1'
       - 'install.sh'
       - 'LICENSE'
-      - 'package**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,18 +26,72 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      -
+      # Faster version instead of - uses: actions/checkout@v3
+      - uses: Bhacaz/checkout-files@v2
+        with:
+          files: package.json bin/scripts/get-font-names-from-json.sh bin/scripts/lib/fonts.json
+          branch: ${{ github.head_ref || github.ref_name }}
+
+      - name: Determine font matrix
         id: set-matrix
         run: |
           cd -- $GITHUB_WORKSPACE/bin/scripts/
+          chmod u+x get-font-names-from-json.sh
           fontNames=$(./get-font-names-from-json.sh)
           echo "${fontNames}"
           echo "::set-output name=matrix::${fontNames}"
           echo ${{ steps.set-matrix.outputs.matrix }}
 
+      - name: Fetch release version
+        id: rel_ver
+        run: |
+          cd -- "$GITHUB_WORKSPACE"
+          echo "Contents of package.json:"
+          cat package.json
+          RELEASE_VERSION=$(jq '.version' package.json | sed 's/[ ",]//g')
+          echo "::set-output name=val::$RELEASE_VERSION"
+
+      - name: Determine candidate status
+        id: rel_can
+        run: |
+          [[ "${{ steps.rel_ver.outputs.val }}" == *"-RC"* ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
+
+      - name: Determine new release or re-release
+        # If the tag exists it is obviously a re-release
+
+        # This would need a complete checkout, that we want to avoid
+        # uses: mukunku/tag-exists-action@v1.0.0
+        #   with:
+        #     tag: "v${{ steps.rel_ver.outputs.val }}"
+        #   env:
+        #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: rel_pre_existing
+        run: |
+          curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"v${{ steps.rel_ver.outputs.val }}"$' \
+            && echo "::set-output name=exists::true" || echo "::set-output name=exists::false"
+          echo "Tag exists: ${{ steps.rel_pre_existing.outputs.exists }}"
+
+      - name: Upload release only on first trigger for release and always on release candidate
+        id: upload
+        # Upload release when:
+        # * This is a new (previously untagged) release
+        # * This is a release candidate
+        run: |
+          [[ "${{ steps.rel_can.outputs.val }}" == "true" || "${{ steps.rel_pre_existing.outputs.exists }}" == "false" ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
+
+      - name: Show outputs
+        run: |
+          echo "rel_version: ${{ steps.rel_ver.outputs.val }}"
+          echo "rel_candidate: ${{ steps.rel_can.outputs.val }}"
+          echo "rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}"
+          echo "rel_upload: ${{ steps.upload.outputs.val }}"
+
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
+      rel_version: ${{ steps.rel_ver.outputs.val }}
+      rel_candidate: ${{ steps.rel_can.outputs.val }}
+      rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}
+      rel_upload: ${{ steps.upload.outputs.val }}
 
   # Workflow to build and install dependencies
   build:
@@ -50,6 +103,8 @@ jobs:
     env:
       GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+      RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
 
     strategy:
       matrix:
@@ -58,17 +113,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Set release variables
+      - name: Check release variables
         run: |
-          cd -- "$GITHUB_WORKSPACE"
-          cat package.json
-          RELEASE_TAG_VERSION=$(cat package.json \
-          | grep version \
-          | head -1 \
-          | awk -F: '{ print $2 }' \
-          | sed 's/[",]//g')
-          echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
-          [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "RELEASE_CANDIDATE=true" || echo "RELEASE_CANDIDATE=false" >> $GITHUB_ENV
+          echo "$RELEASE_VERSION"
+          echo "Candidate: $RELEASE_CANDIDATE"
+          echo "Publish/refresh release: ${{ needs.setup-fonts-matrix.outputs.rel_upload }}"
 
       # Install and setup Dependencies
       # @TODO cache the next 4 steps with actions/cache or upload
@@ -92,11 +141,15 @@ jobs:
           echo Try appimage with path
           fontforge --version
 
+      # It is unclear what this has been needed for
       - name: Setup additional dependencies
+        if: false
         run: |
           pip install fonttools --quiet
 
+      # It is unclear what this has been needed for
       - name: Build FreeType from source
+        if: false
         run: |
           wget http://downloads.sourceforge.net/project/freetype/freetype2/2.7/freetype-2.7.tar.gz --quiet
           tar -zxf freetype-2.7.tar.gz
@@ -105,7 +158,9 @@ jobs:
           make --quiet
           sudo make install --quiet
 
+      # It is unclear what this has been needed for
       - name: Build Harfbuzz from source
+        if: false
         run: |
           wget http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.3.4.tar.bz2 --quiet
           tar -xjf harfbuzz-1.3.4.tar.bz2
@@ -119,12 +174,10 @@ jobs:
           fontforge --version
           fontforge --version 2>&1 | grep libfontforge | awk '{print $NF}'
 
-      - name: Bump version for source files once
-      # @todo fixme - put in a separate job with the release env setup and output the release info
-        if: ${{ matrix.font == '3270' }}
+      - name: Bump version for source files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./version-bump.sh "$RELEASE_TAG_VERSION"
+          ./version-bump.sh "$RELEASE_VERSION"
 
       - name: Standardize the readme files
         run: |
@@ -137,17 +190,25 @@ jobs:
           fontforge --script `pwd`/../../font-patcher --version
           ./gotta-patch-em-all-font-patcher\!.sh "/${{ matrix.font }}"
 
-      - name: Generate fontconfig and casks
-        run: |
-          cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./generate-fontconfig.sh
-          ./generate-casks.sh "${{ matrix.font }}"
-
-      - name: Archive font package zip files and upload for release
+      - name: Archive font package zip files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-fonts.sh "${{ matrix.font }}"
-          GITHUB_TOKEN=$GITHUB_TOKEN PRERELEASE=$RELEASE_CANDIDATE ./upload-archives.sh $RELEASE_TAG_VERSION "${{ matrix.font }}"
+
+      - name: Generate cask
+        # The casks are not used at the moment, but probably Ryan
+        # wanted to push them out somewhere
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./generate-casks.sh "${{ matrix.font }}"
+
+      - name: Upload zip file archive for release
+        uses: softprops/action-gh-release@v0.1.14
+        if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
+        with:
+          prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
+          tag_name: "v${{ env.RELEASE_VERSION }}"
+          files: archives/*
 
       - name: Upload patched fonts as artifacts
         uses: actions/upload-artifact@v2
@@ -159,42 +220,50 @@ jobs:
             patched-fonts/${{ matrix.font }}
             LICENSE
 
+      - name: Upload casks as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: casks
+          # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
+          # of the root directory for artifact path purposes
+          path: |
+            casks/${{ matrix.font }}
+            LICENSE
+
   release-font-patcher:
     name: Archive font patcher and add to release
-    needs: build
+    needs: [ setup-fonts-matrix, build ]
 
     env:
       GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+      RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set release variables
+      - name: Bump version for source files
         run: |
-          cd -- "$GITHUB_WORKSPACE"
-          cat package.json
-          RELEASE_TAG_VERSION=$(cat package.json \
-          | grep version \
-          | head -1 \
-          | awk -F: '{ print $2 }' \
-          | sed 's/[",]//g')
-          echo "RELEASE_TAG_VERSION=$RELEASE_TAG_VERSION" >> $GITHUB_ENV
-          [[ "$RELEASE_TAG_VERSION" == *"-RC"* ]] && echo "RELEASE_CANDIDATE=true" || echo "RELEASE_CANDIDATE=false" >> $GITHUB_ENV
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./version-bump.sh "$RELEASE_VERSION"
 
       - name: Archive font-patcher script for release
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-font-patcher.sh
 
-      - name: Archive font package zip files and upload for release
-        run: |
-          cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          GITHUB_TOKEN=$GITHUB_TOKEN PRERELEASE=$RELEASE_CANDIDATE ./upload-archives.sh $RELEASE_TAG_VERSION "FontPatcher"
+      - name: Upload font-patcher archive for release
+        uses: softprops/action-gh-release@v0.1.14
+        if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
+        with:
+          prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
+          tag_name: "v${{ env.RELEASE_VERSION }}"
+          files: archives/*
 
   commit:
     name: Commit and push patched fonts to the repo
-    needs: build
+    needs: [ setup-fonts-matrix, build ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -210,9 +279,50 @@ jobs:
           name: patched-fonts
           path: .
 
-      - uses: EndBug/add-and-commit@v9
+      - name: Bump version for source files
+        env:
+          RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+          RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./version-bump.sh "$RELEASE_VERSION"
+
+      - name: Commit version bump changes
+        # If there are no changes (i.e. we already have that bump commit from a previous run)
+        # the git commit will fail as empty commit (that we do not explicitely allow here),
+        # and the action fails silently (i.e. without stopping the job).
+        # This means there will be only one commit in the repo for each version tag change,
+        # regardless of how often we run the release CI.
+        uses: EndBug/add-and-commit@v9
         with:
-          add: 'patched-fonts'
-          message: Rebuilds patched fonts
+          add: "['font-patcher', 'bin/scripts']"
+          message: "[ci] Bump release version"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Commit patched fonts back to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'patched-fonts'
+          message: "[ci] Rebuilds patched fonts"
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Generate fontconfig
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./generate-fontconfig.sh
+
+      - name: Commit fontconfig back to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '10-nerd-font-symbols.conf'
+          message: "[ci] Regenerate fontconfig"
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Adjust release tag to include previous commit
+        uses: EndBug/latest-tag@v1.5.0
+        if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
+        with:
+          ref: "v${{ needs.setup-fonts-matrix.outputs.rel_version }}"

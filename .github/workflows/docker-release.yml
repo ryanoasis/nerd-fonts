@@ -5,7 +5,9 @@ on:
     branches:
       - master
     paths:
+      # Keep this in line with .dockerignore
       - bin/scripts/docker-entrypoint.sh
+      - bin/scripts/name_parser/Fontname*.py
       - src/glyphs/**
       - .dockerignore
       - Dockerfile
@@ -15,6 +17,7 @@ jobs:
   publish-image:
     name: Publish image
     runs-on: ubuntu-latest
+    if: ${{ secrets.DOCKER_USER }}
     steps:
       - uses: actions/checkout@v3
       - name: Build image

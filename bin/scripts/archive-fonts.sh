@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
-# Script Version: 1.1.1
+# Script Version: 1.1.2
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # adds Windows versions of the fonts as well (casks files just won't download them)
@@ -48,7 +48,7 @@ find "${outputdir:?}" -name "$search_pattern" -type f -delete
 #find ./ProFont -maxdepth 0 -type d | # uncomment to test 1 font
 # find ./IBMPlexMono -maxdepth 0 -type d | # uncomment to test 1 font
 # uncomment to test all fonts:
-find -- * -maxdepth 0 -iregex "$pattern" -type d |
+find . -maxdepth 1 -iregex "\./$pattern" -type d |
 while read -r filename
 do
 
@@ -71,14 +71,14 @@ do
     # we can copy the font files without full paths but not necessarily the license files:
     # add license files separately:
     # zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*license*' -i '*LICENSE*'
-    # work around to copy duplicate license files (only the last duplicate found) 
+    # work around to copy duplicate license files (only the last duplicate found)
     # so we don't have to copy entire paths and can still use the junk option (-j)
     find "$searchdir" -type f -iname "*license*" | awk -F/ '{a[$NF]=$0}END{for(i in a)print a[i]}' | zip -9 -j "$outputdir/$basename" -@
   fi;
 
   # add mini readme file
   zip -9 "$outputdir/$basename" -rj "$mini_readme" -q
-  rm -f "$mini_readme"
 done
+rm -f "$mini_readme"
 
 ls -al "$outputdir"

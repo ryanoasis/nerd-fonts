@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.1.0
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 # Iterates over all patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # only adds non-Windows versions of the fonts
@@ -80,9 +80,14 @@ function write_footer {
   } >> "$outputfile"
 }
 
+pattern=$1
+if [ "$pattern" = "" ]; then
+	pattern=".*"
+fi
+
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -mindepth 1 -type d | # uncomment to test 1 font
+find . -maxdepth 1 -mindepth 1 -type d -iregex "\./$pattern" |
 while read -r filename
 do
 
@@ -90,23 +95,22 @@ do
 	basename=$(basename "$filename")
 	sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
 	searchdir=$filename
-	fontdir=$(basename "$(dirname "$dirname")")
 
 	MONOFONTS=()
 	while IFS= read -d $'\0' -r file ; do
 	  MONOFONTS=("${MONOFONTS[@]}" "$file")
-	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*mono.*' \) -print0)
+	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*complete mono*' \) -print0)
 
 	FONTS=()
 	while IFS= read -d $'\0' -r file ; do
 	  FONTS=("${FONTS[@]}" "$file")
-	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iwholename '*mono.*' \) -print0)
+	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iname '*complete mono*' \) -print0)
 
 	outputdir=$PWD/../casks/
 
 	formattedbasename=$(echo "$basename" | tr "[:upper:]" "[:lower:]")
 
-	echo "$LINE_PREFIX Generating cask for: $fontdir"
+	echo "$LINE_PREFIX Generating cask for: $basename"
 
 	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
