@@ -297,18 +297,23 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 
 निम्नलिखित फोंट के माध्यम से उपलब्ध हैं[और पैकाग्रेस](https://aur.archlinux.org/)आच्‌ लिनक्स पर:
 
--   [बेवकूफ फ़ॉन्ट्स पूर्ण (दोहरी-चौड़ाई)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
--   [बेवकूफ फ़ॉन्ट पूर्ण (एकल-चौड़ाई) (पुराना)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
--   [बेवकूफ फ़ॉन्ट्स DejaVu पूर्ण](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
--   [बेवकूफ फ़ॉन्ट्स स्रोत कोड प्रो पूर्ण](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
--   [बेवकूफ फ़ॉन्ट्स गिट (पुराना)](https://aur.archlinux.org/packages/nerd-fonts-git/)
--   [बेवकूफ फ़ॉन्ट्स फिरा कोड](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
--   [बेवकूफ फ़ॉन्ट्स टर्मिनस](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
--   [बेवकूफ फ़ॉन्ट्स लिबरेशन मोनो](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
--   [रूट rd फोन ts व्यक्ति](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
--   [बेवकूफ फ़ॉन्ट्स बेनामी प्रो](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
--   [रूट आरडी फोन टीएस दरवाजा](https://aur.archlinux.org/packages/nerd-fonts-noto/)
--   [बेवकूफ फ़ॉन्ट्स](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+* [Nerd Fonts Complete Release (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+* [Nerd Fonts Complete Release (single-width) (out of date)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
+* [Nerd Fonts Complete Git (has always the newest fixes)](https://aur.archlinux.org/packages/nerd-fonts-git/)
+
+* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
+* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
+* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
+* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
+* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
+* [Nerd Fonts Jetbrains Mono](https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono)
+* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
+* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
+* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
+* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
+* [Nerd Fonts Victor Mono](https://aur.archlinux.org/packages/nerd-fonts-victor-mono)
+
+The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `विकल्प 8: अपना खुद का फ़ॉन्ट पैच करें`
 
