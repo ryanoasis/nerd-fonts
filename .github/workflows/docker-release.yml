@@ -17,6 +17,7 @@ jobs:
   publish-image:
     name: Publish image
     runs-on: ubuntu-latest
+    if: ${{ secrets.DOCKER_USER }}
     steps:
       - uses: actions/checkout@v3
       - name: Build image
