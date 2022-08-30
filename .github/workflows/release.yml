@@ -199,6 +199,7 @@ jobs:
         # The casks are not used at the moment, but probably Ryan
         # wanted to push them out somewhere
         id: cask_generate
+        if: false
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           gen=$(./generate-casks.sh "${{ matrix.font }}")
@@ -225,6 +226,7 @@ jobs:
             LICENSE
 
       - name: Upload casks as artifacts
+        if: false
         uses: actions/upload-artifact@v2
         with:
           name: casks
