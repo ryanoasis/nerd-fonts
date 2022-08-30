@@ -106,7 +106,7 @@ do
 	  FONTS=("${FONTS[@]}" "$file")
 	done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iname '*complete mono*' \) -print0)
 
-	outputdir=$PWD/../casks/
+	outputdir=$PWD/../casks
 
 	formattedbasename=$(echo "$basename" | tr "[:upper:]" "[:lower:]")
 
@@ -130,6 +130,8 @@ do
 
   write_footer "$to"
   write_footer "$to_mono"
+
+  echo "## Created casks: ${outputdir}/${caskname}*.rb"
 
 done
 

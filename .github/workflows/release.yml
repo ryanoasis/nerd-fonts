@@ -198,9 +198,12 @@ jobs:
       - name: Generate cask
         # The casks are not used at the moment, but probably Ryan
         # wanted to push them out somewhere
+        id: cask_generate
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./generate-casks.sh "${{ matrix.font }}"
+          gen=$(./generate-casks.sh "${{ matrix.font }}")
+          echo $gen
+          echo ::set-output name=path::$(echo "$gen" | grep '^## Created' | sed -E 's/.*: +//')
 
       - name: Upload zip file archive for release
         uses: softprops/action-gh-release@v0.1.14
@@ -228,7 +231,7 @@ jobs:
           # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
           # of the root directory for artifact path purposes
           path: |
-            casks/${{ matrix.font }}
+            ${{ steps.cask_generate.outputs.path }}
             LICENSE
 
   release-font-patcher:
