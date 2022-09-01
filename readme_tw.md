@@ -384,7 +384,7 @@ The list is not complete, but you can [search for a complete list here](https://
 usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
                     [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
                     [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
                     [--fontawesome] [--fontawesomeextension] [--fontlinux]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
@@ -427,6 +427,8 @@ optional arguments:
   --glyphdir [GLYPHDIR]
                         Path to glyphs to be used for patching
   --makegroups          Use alternative method to name patched fonts (experimental)
+  --variable-width-glyphs
+                        Do not adjust advance width (no "overhang")
   --progressbars        顯示每個Glyph Set的完成度進度條
   --no-progressbars     不顯示每個Glyph Set的完成度進度條
   --also-windows        Create two fonts, the normal and the --windows version
