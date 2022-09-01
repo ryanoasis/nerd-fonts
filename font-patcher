@@ -256,11 +256,11 @@ class font_patcher:
         if self.sourceFont.fullname != None:
             outfile = self.args.outputdir + "/" + self.sourceFont.fullname + self.extension
             self.sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
-            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fontname, outfile)
+            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
         else:
             outfile = self.args.outputdir + "/" + self.sourceFont.cidfontname + self.extension
             self.sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
-            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
+            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fontname, outfile)
 
         # Adjust flags that can not be changed via fontforge
         try:
