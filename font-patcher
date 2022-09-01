@@ -1054,15 +1054,16 @@ class font_patcher:
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
             self.sourceFont[currentSourceFontGlyph].transform(align_matrix)
 
+            # Ensure after horizontal adjustments and centering that the glyph
+            # does not overlap the bearings (edges)
+            self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+
             # Needed for setting 'advance width' on each glyph so they do not overlap,
             # also ensures the font is considered monospaced on Windows by setting the
             # same width for all character glyphs. This needs to be done for all glyphs,
             # even the ones that are empty and didn't go through the scaling operations.
+            # It should come after setting the glyph bearings
             self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
-
-            # Ensure after horizontal adjustments and centering that the glyph
-            # does not overlap the bearings (edges)
-            self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
 
             # Check if the inserted glyph is scaled correctly for monospace
             if self.args.single:
