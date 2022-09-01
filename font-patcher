@@ -180,7 +180,7 @@ class font_patcher:
             self.sourceFont = fontforge.open(self.args.font, 1) # 1 = ("fstypepermitted",))
         except Exception:
             sys.exit(projectName + ": Can not open font, try to open with fontforge interactively to get more information")
-        self.setup_font_names()
+        self.setup_version()
         self.remove_ligatures()
         make_sure_path_exists(self.args.outputdir)
         self.check_position_conflicts()
@@ -242,7 +242,6 @@ class font_patcher:
 
         if symfont:
             symfont.close()
-        print("\nDone with Patch Sets, generating font...")
 
         # The grave accent and fontforge:
         # If the type is 'auto' fontforge changes it to 'mark' on export.
@@ -252,6 +251,8 @@ class font_patcher:
         if "grave" in self.sourceFont:
             self.sourceFont["grave"].glyphclass="baseglyph"
 
+
+    def generate(self):
         # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
         if self.sourceFont.fullname != None:
             outfile = self.args.outputdir + "/" + self.sourceFont.fullname + self.extension
@@ -614,6 +615,9 @@ class font_patcher:
         self.sourceFont.comment = projectInfo
         self.sourceFont.fontlog = projectInfo
 
+
+    def setup_version(self):
+        """ Add the Nerd Font version to the original version """
         # print("Version was {}".format(sourceFont.version))
         if self.sourceFont.version != None:
             self.sourceFont.version += ";" + projectName + " " + version
@@ -1225,6 +1229,9 @@ def main():
     check_fontforge_min_version()
     patcher = font_patcher()
     patcher.patch()
+    print("\nDone with Patch Sets, generating font...\n")
+    patcher.setup_font_names()
+    patcher.generate()
 
 
 if __name__ == "__main__":
