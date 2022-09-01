@@ -325,20 +325,20 @@ The list is not complete, but you can [search for a complete list here](https://
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
-                    [--fontawesomeextension] [--fontlinux] [--octicons]
-                    [--powersymbols] [--pomicons] [--powerline]
-                    [--powerlineextra] [--material] [--weather]
-                    [--custom [CUSTOM]] [--postprocess [POSTPROCESS]]
-                    [--removeligs] [--configfile [CONFIGFILE]]
-                    [--progressbars | --no-progressbars] [--careful]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
+                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
+                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--progressbars | --no-progressbars] [--also-windows]
+                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                    [--powerline] [--powerlineextra] [--material] [--weather]
                     font
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.0.0
+* Version: 2.2.1
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -356,12 +356,33 @@ optional arguments:
                         デバッグメッセージを表示しません。
   -w, --windows         内部で利用するフォント名を 31 文字に制限します (Windows の互換性のためのオプションです)。
   -c, --complete        全ての利用可能なグリフを追加します。
+  --careful             既に存在するグリフがあれば、それを上書きしないようにします。
+  --removeligs, --removeligatures
+                        設定ファイルの JSON で指定されたリガチャを除きます。
+  --postprocess [POSTPROCESS]
+                        あと処理を行うためのスクリプトを指定します。
+  --configfile [CONFIGFILE]
+                        設定ファイルの JSON を指定します (src/config.sample.json の例を見てください)。
+  --custom [CUSTOM]     カスタムのシンボルフォントを指定します。全てのグリフがコピーされますが、大きさは変更されません。
+  -ext [EXTENSION], --extension [EXTENSION]
+                        作成するフォントのファイルタイプを変更します (例: ttf, otf)。
+  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                        パッチを当てたファイルを保存するディレクトリ。
+  --glyphdir [GLYPHDIR]
+                        Path to glyphs to be used for patching
+  --makegroups          Use alternative method to name patched fonts (experimental)
+  --progressbars        グリフセットごとに進捗を百分率で表示します。
+  --no-progressbars     グリフセットごとの進捗を表示しません。
+  --also-windows        Create two fonts, the normal and the --windows version
+
+Symbol Fonts:
   --fontawesome         Font Awesome のグリフを追加します (http://fontawesome.io/)。
   --fontawesomeextension
                         Font Awesome Extension のグリフを追加します (https://andrelzgava.github.io/font-awesome-extension/)。
   --fontlinux, --fontlogos
                         Font Linux とその他のオープンソースのグリフを追加します (https://github.com/Lukas-W/font-logos)。
   --octicons            Octicons Glyphs のグリフを追加します (https://octicons.github.com)。
+  --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        IEC Power Symbols のグリフを追加します (https://unicodepowersymbol.com/)。
   --pomicons            Pomicon のグリフを追加します (https://github.com/gabrielelana/pomicons)。
   --powerline           Powerline グリフを追加します。
@@ -370,20 +391,6 @@ optional arguments:
                         Material Design Icons のグリフを追加します (https://github.com/templarian/MaterialDesign)。
   --weather, --weathericons
                         Weather Icons のグリフを追加します (https://github.com/erikflowers/weather-icons)。
-  --custom [CUSTOM]     カスタムのシンボルフォントを指定します。全てのグリフがコピーされますが、大きさは変更されません。
-  --postprocess [POSTPROCESS]
-                        あと処理を行うためのスクリプトを指定します。
-  --removeligs, --removeligatures
-                        設定ファイルの JSON で指定されたリガチャを除きます。
-  --configfile [CONFIGFILE]
-                        設定ファイルの JSON を指定します (src/config.sample.json の例を見てください)。
-  --progressbars        グリフセットごとに進捗を百分率で表示します。
-  --no-progressbars     グリフセットごとの進捗を表示しません。
-  --careful             既に存在するグリフがあれば、それを上書きしないようにします。
-  -ext [EXTENSION], --extension [EXTENSION]
-                        作成するフォントのファイルタイプを変更します (例: ttf, otf)。
-  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        パッチを当てたファイルを保存するディレクトリ。
 ```
 
 #### Examples

@@ -407,27 +407,27 @@ Générer la police de votre choix pour l'utiliser avec [VimDevIcons ➶][vim-de
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
-                    [--fontawesomeextension] [--fontlinux] [--octicons]
-                    [--powersymbols] [--pomicons] [--powerline]
-                    [--powerlineextra] [--material] [--weather]
-                    [--custom [CUSTOM]] [--postprocess [POSTPROCESS]]
-                    [--removeligs] [--configfile [CONFIGFILE]]
-                    [--progressbars | --no-progressbars] [--careful]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
+                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
+                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--progressbars | --no-progressbars] [--also-windows]
+                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                    [--powerline] [--powerlineextra] [--material] [--weather]
                     font
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.0.0
+* Version: 2.2.1
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
 positional arguments:
   font                  The path to the font to patch (e.g., Inconsolata.otf)
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
   -s, --mono, --use-single-width-glyphs
@@ -438,12 +438,33 @@ optional arguments:
                         Do not generate verbose output
   -w, --windows         Limit the internal font name to 31 characters (for Windows compatibility)
   -c, --complete        Add all available Glyphs
+  --careful             Do not overwrite existing glyphs if detected
+  --removeligs, --removeligatures
+                        Removes ligatures specificed in JSON configuration file
+  --postprocess [POSTPROCESS]
+                        Specify a Script for Post Processing
+  --configfile [CONFIGFILE]
+                        Specify a file path for JSON configuration file (see sample: src/config.sample.json)
+  --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
+  -ext [EXTENSION], --extension [EXTENSION]
+                        Change font file type to create (e.g., ttf, otf)
+  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                        The directory to output the patched font file to
+  --glyphdir [GLYPHDIR]
+                        Path to glyphs to be used for patching
+  --makegroups          Use alternative method to name patched fonts (experimental)
+  --progressbars        Show percentage completion progress bars per Glyph Set
+  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
+  --also-windows        Create two fonts, the normal and the --windows version
+
+Symbol Fonts:
   --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
   --fontawesomeextension
                         Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
   --fontlinux, --fontlogos
                         Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)
   --octicons            Add Octicons Glyphs (https://octicons.github.com)
+  --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
   --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
   --powerline           Add Powerline Glyphs
@@ -452,20 +473,6 @@ optional arguments:
                         Add Material Design Icons (https://github.com/templarian/MaterialDesign)
   --weather, --weathericons
                         Add Weather Icons (https://github.com/erikflowers/weather-icons)
-  --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
-  --postprocess [POSTPROCESS]
-                        Specify a Script for Post Processing
-  --removeligs, --removeligatures
-                        Removes ligatures specificed in JSON configuration file
-  --configfile [CONFIGFILE]
-                        Specify a file path for JSON configuration file (see sample: src/config.sample.json)
-  --progressbars        Show percentage completion progress bars per Glyph Set
-  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
-  --careful             Do not overwrite existing glyphs if detected
-  -ext [EXTENSION], --extension [EXTENSION]
-                        Change font file type to create (e.g., ttf, otf)
-  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        The directory to output the patched font file to
 ```
 
 #### Exemples

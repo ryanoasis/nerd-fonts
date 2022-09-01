@@ -326,20 +326,20 @@ Modificar o tipo de letra à tua escolha com [VimDevIcons ➶][vim-devicons]:
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
-                    [--fontawesomeextension] [--fontlinux] [--octicons]
-                    [--powersymbols] [--pomicons] [--powerline]
-                    [--powerlineextra] [--material] [--weather]
-                    [--custom [CUSTOM]] [--postprocess [POSTPROCESS]]
-                    [--removeligs] [--configfile [CONFIGFILE]]
-                    [--progressbars | --no-progressbars] [--careful]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
+                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
+                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--progressbars | --no-progressbars] [--also-windows]
+                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                    [--powerline] [--powerlineextra] [--material] [--weather]
                     font
 
 Modificador de Fontes Nerd Fonts: modifica uma determinada fonte com glifos relacionados à programação e ao desenvolvimento
 
 * Website: https://www.nerdfonts.com
-* Versão: 2.0.0
+* Versão: 2.2.1
 * Website do desenvolvimento: https://github.com/ryanoasis/nerd-fonts
 * Histórico de alterações: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -357,6 +357,26 @@ argumentos opcionais:
                         Não gerar saída de detalhe
   -w, --windows         Limitar o nome da fonte interna a 31 caracteres (para compatibilidade com o Windows)
   -c, --complete        Aderir todos os glifos disponíveis
+  --careful             Não substituir os glifos existentes se detectados
+  --removeligs, --removeligatures
+                        Remove as ligaduras especificadas no ficheiro de configuração JSON
+  --postprocess [POSTPROCESS]
+                        Especificar um executador para pós-processador
+  --configfile [CONFIGFILE]
+                        Especificar um caminho para o arquivo de configuração JSON (vê a amostra: src/config.sample.json)
+  --custom [CUSTOM]     Especificar um tipo de letra de símbolos personalizada. Todos os novos glifos serão copiados, sem escala aplicada.
+  -ext [EXTENSION], --extension [EXTENSION]
+                        Alterar o tipo de ficheiro de fonte para criar (por exemplo, ttf, otf)
+  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                        O diretório para enviar o ficheiro de tipo de letra modificado para
+  --glyphdir [GLYPHDIR]
+                        Path to glyphs to be used for patching
+  --makegroups          Use alternative method to name patched fonts (experimental)
+  --progressbars        Mostrar barras de progresso de conclusão percentual por Glyph Set
+  --no-progressbars     Não mostrar barras de progresso de conclusão percentual por Glyph Set
+  --also-windows        Create two fonts, the normal and the --windows version
+
+Symbol Fonts:
   --fontawesome         Aderir os glifos do Font Awesome (http://fontawesome.io/)
   --fontawesomeextension
                         Aderir os glifos do Font Awesome Extension (https://andrelzgava.github.io/font-awesome-extension/)
@@ -371,20 +391,6 @@ argumentos opcionais:
                         Aderir os ícones do Material Design (https://github.com/templarian/MaterialDesign)
   --weather, --weathericons
                         Aderir os ícones do Weather (https://github.com/erikflowers/weather-icons)
-  --custom [CUSTOM]     Especificar um tipo de letra de símbolos personalizada. Todos os novos glifos serão copiados, sem escala aplicada.
-  --postprocess [POSTPROCESS]
-                        Especificar um executador para pós-processador
-  --removeligs, --removeligatures
-                        Remove as ligaduras especificadas no ficheiro de configuração JSON
-  --configfile [CONFIGFILE]
-                        Especificar um caminho para o arquivo de configuração JSON (vê a amostra: src/config.sample.json)
-  --progressbars        Mostrar barras de progresso de conclusão percentual por Glyph Set
-  --no-progressbars     Não mostrar barras de progresso de conclusão percentual por Glyph Set
-  --careful             Não substituir os glifos existentes se detectados
-  -ext [EXTENSION], --extension [EXTENSION]
-                        Alterar o tipo de ficheiro de fonte para criar (por exemplo, ttf, otf)
-  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        O diretório para enviar o ficheiro de tipo de letra modificado para
 ```
 
 #### Exemplos

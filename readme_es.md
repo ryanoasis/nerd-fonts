@@ -329,20 +329,20 @@ Parcha la fuente de tu preferencia para usar los [VimDevIcons ➶][vim-devicons]
 
 
 ```
-uso: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
-                    [--fontawesomeextension] [--fontlinux] [--octicons]
-                    [--powersymbols] [--pomicons] [--powerline]
-                    [--powerlineextra] [--material] [--weather]
-                    [--custom [CUSTOM]] [--postprocess [POSTPROCESS]]
-                    [--removeligs] [--configfile [CONFIGFILE]]
-                    [--progressbars | --no-progressbars] [--careful]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    font
+uso: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
+                  [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
+                  [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                  [--glyphdir [GLYPHDIR]] [--makegroups]
+                  [--progressbars | --no-progressbars] [--also-windows]
+                  [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                  [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                  [--powerline] [--powerlineextra] [--material] [--weather]
+                  font
 
 Parchador de fuentes Nerd Fonts: parcha una fuente dada con glifos relacionados con la programación y el desarrollo
 
 * Sitio web: https://www.nerdfonts.com
-* Versión: 2.0.0
+* Versión: 2.2.1
 * Sitio de Desarrollo: https://github.com/ryanoasis/nerd-fonts
 * Registro de Cambios: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -360,12 +360,33 @@ argumentos opcionales:
                         No generar salida verbal
   -w, --windows         Limitar el nombre interno de la fuente a 31 caracteres (para compatibilidad con Windows)
   -c, --complete        Añade todos los glifos disponibles
+  --careful             No sobreescribe los glifos que ya existen si son detectados
+  --removeligs, --removeligatures
+                        Remueve ligaturas especificadas en el archivo de configuración JSON
+  --postprocess [POSTPROCESS]
+                        Especifica un Script para Post Procesamiento
+  --configfile [CONFIGFILE]
+                        Especifica una ruta de archivo para un archivo de configuración JSON (mira el ejemplo en: src/config.sample.json)
+  --custom [CUSTOM]     Especifica una fuente de símbolos personalizados. Todos los glifos nuevos serán copiados, sin aplicar escala.
+  -ext [EXTENSION], --extension [EXTENSION]
+                        Cambia el tipo de archivo de fuente a crear (ej., ttf, otf)
+  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                        El directorio donde se generará el archivo de fuente parchado
+  --glyphdir [GLYPHDIR]
+                        Path to glyphs to be used for patching
+  --makegroups          Use alternative method to name patched fonts (experimental)
+  --progressbars        Muestra barras de progreso con porcentajes de completitud por cada Conjunto de Glifos
+  --no-progressbars     No muestra barras de progreso con porcentajes de completitud por cada Conjunto de Glifos
+  --also-windows        Create two fonts, the normal and the --windows version
+
+Symbol Fonts:
   --fontawesome         Añade los glifos de Font Awesome (http://fontawesome.io/)
   --fontawesomeextension
                         Añade los glifos de Font Awesome Extension (https://andrelzgava.github.io/font-awesome-extension/)
   --fontlinux, --fontlogos
                         Añade los glifos de Font Linux y otros glifos de Código Libre (https://github.com/Lukas-W/font-logos)
   --octicons            Añade los glifos de Octicons (https://octicons.github.com)
+  --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        Añade los glifos de IEC Power Symbols (https://unicodepowersymbol.com/)
   --pomicons            Añade los glifos de Pomicon (https://github.com/gabrielelana/pomicons)
   --powerline           Añade los glifos de Powerline
@@ -374,20 +395,6 @@ argumentos opcionales:
                         Añade los glifos de Material Design Icons (https://github.com/templarian/MaterialDesign)
   --weather, --weathericons
                         Añade los glifos de Weather Icons (https://github.com/erikflowers/weather-icons)
-  --custom [CUSTOM]     Especifica una fuente de símbolos personalizados. Todos los glifos nuevos serán copiados, sin aplicar escala.
-  --postprocess [POSTPROCESS]
-                        Especifica un Script para Post Procesamiento
-  --removeligs, --removeligatures
-                        Remueve ligaturas especificadas en el archivo de configuración JSON
-  --configfile [CONFIGFILE]
-                        Especifica una ruta de archivo para un archivo de configuración JSON (mira el ejemplo en: src/config.sample.json)
-  --progressbars        Muestra barras de progreso con porcentajes de completitud por cada Conjunto de Glifos
-  --no-progressbars     No muestra barras de progreso con porcentajes de completitud por cada Conjunto de Glifos
-  --careful             No sobreescribe los glifos que ya existen si son detectados
-  -ext [EXTENSION], --extension [EXTENSION]
-                        Cambia el tipo de archivo de fuente a crear (ej., ttf, otf)
-  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        El directorio donde se generará el archivo de fuente parchado
 ```
 
 #### Ejemplos
