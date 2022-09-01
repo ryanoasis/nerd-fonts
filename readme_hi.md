@@ -362,20 +362,20 @@ The list is not complete, but you can [search for a complete list here](https://
 
 पूर्ण विकल्प:
 
-    प्रयोग: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
-                        [--fontawesomeextension] [--fontlinux] [--octicons]
-                        [--powersymbols] [--pomicons] [--powerline]
-                        [--powerlineextra] [--material] [--weather]
-                        [--custom [CUSTOM]] [--postprocess [POSTPROCESS]]
-                        [--removeligs] [--configfile [CONFIGFILE]]
-                        [--progressbars | --no-progressbars] [--careful]
-                        [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+    प्रयोग: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
+                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
+                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--progressbars | --no-progressbars] [--also-windows]
+                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                    [--powerline] [--powerlineextra] [--material] [--weather]
                         font
     
     Nerd Fonts Font Patcher: किसी दिए गए फ़ॉन्ट को प्रोग्रामिंग और विकास संबंधी ग्लिफ़ के साथ पैच करता है
     
     * वेबसाइट: https://www.nerdfonts.com
-    * संस्करण: 2.0.0
+    * संस्करण: 2.2.1
     * विकास वेबसाइट: https://github.com/ryanoasis/nerd-fonts
     * बदलाव का लॉग: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
     
@@ -393,12 +393,33 @@ The list is not complete, but you can [search for a complete list here](https://
                             वर्बोज़ आउटपुट उत्पन्न न करें
       -w, --windows         आंतरिक फ़ॉन्ट नाम को 31 वर्णों तक सीमित करें (Windows संगतता के लिए)
       -c, --complete        सभी उपलब्ध ग्लिफ़ जोड़ें
+      --careful             पता चलने पर मौजूदा ग्लिफ़ को अधिलेखित न करें
+      --removeligs, --removeligatures
+                            JSON कॉन्फ़िगरेशन फ़ाइल में निर्दिष्ट संयुक्ताक्षर को हटाता है
+      --postprocess [POSTPROCESS]
+                            पोस्ट प्रोसेसिंग के लिए एक स्क्रिप्ट निर्दिष्ट करें
+      --configfile [CONFIGFILE]
+                            JSON कॉन्फ़िगरेशन फ़ाइल के लिए फ़ाइल पथ निर्दिष्ट करें (see sample: src/config.sample.json)
+      --custom [CUSTOM]     एक कस्टम प्रतीक फ़ॉन्ट निर्दिष्ट करें। सभी नए ग्लिफ़ की प्रतिलिपि बनाई जाएगी, जिसमें कोई स्केलिंग लागू नहीं होगी।
+      -ext [EXTENSION], --extension [EXTENSION]
+                            बनाने के लिए फ़ॉन्ट फ़ाइल प्रकार बदलें (e.g., ttf, otf)
+      -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                            पैच की गई फ़ॉन्ट फ़ाइल को आउटपुट करने के लिए निर्देशिका
+      --glyphdir [GLYPHDIR]
+                            Path to glyphs to be used for patching
+      --makegroups          Use alternative method to name patched fonts (experimental)
+      --progressbars        प्रति ग्लिफ़ सेट प्रतिशत पूर्णता प्रगति बार दिखाएं
+      --no-progressbars     प्रति ग्लिफ़ सेट प्रतिशत पूर्णता प्रगति बार न दिखाएं
+      --also-windows        Create two fonts, the normal and the --windows version
+
+    Symbol Fonts:
       --fontawesome         फ़ॉन्ट विस्मयकारी ग्लिफ़ जोड़ें (http://fontawesome.io/)
       --fontawesomeextension
                             फ़ॉन्ट विस्मयकारी एक्सटेंशन ग्लिफ़ जोड़ें (https://andrelzgava.github.io/font-awesome-extension/)
       --fontlinux, --fontlogos
                             फ़ॉन्ट लिनक्स और अन्य ओपन सोर्स ग्लिफ़ जोड़ें (https://github.com/Lukas-W/font-logos)
       --octicons            ऑक्टिकॉन ग्लिफ़ जोड़ें (https://octicons.github.com)
+      --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
       --powersymbols        आईईसी पावर सिंबल जोड़ें (https://unicodepowersymbol.com/)
       --pomicons            पोमिकॉन ग्लिफ़्स जोड़ें (https://github.com/gabrielelana/pomicons)
       --powerline           पावरलाइन ग्लिफ़ जोड़ें
@@ -407,20 +428,6 @@ The list is not complete, but you can [search for a complete list here](https://
                             सामग्री डिजाइन चिह्न जोड़ें (https://github.com/templarian/MaterialDesign)
       --weather, --weathericons
                             मौसम चिह्न जोड़ें (https://github.com/erikflowers/weather-icons)
-      --custom [CUSTOM]     एक कस्टम प्रतीक फ़ॉन्ट निर्दिष्ट करें। सभी नए ग्लिफ़ की प्रतिलिपि बनाई जाएगी, जिसमें कोई स्केलिंग लागू नहीं होगी।
-      --postprocess [POSTPROCESS]
-                            पोस्ट प्रोसेसिंग के लिए एक स्क्रिप्ट निर्दिष्ट करें
-      --removeligs, --removeligatures
-                            JSON कॉन्फ़िगरेशन फ़ाइल में निर्दिष्ट संयुक्ताक्षर को हटाता है
-      --configfile [CONFIGFILE]
-                            JSON कॉन्फ़िगरेशन फ़ाइल के लिए फ़ाइल पथ निर्दिष्ट करें (see sample: src/config.sample.json)
-      --progressbars        प्रति ग्लिफ़ सेट प्रतिशत पूर्णता प्रगति बार दिखाएं
-      --no-progressbars     प्रति ग्लिफ़ सेट प्रतिशत पूर्णता प्रगति बार न दिखाएं
-      --careful             पता चलने पर मौजूदा ग्लिफ़ को अधिलेखित न करें
-      -ext [EXTENSION], --extension [EXTENSION]
-                            बनाने के लिए फ़ॉन्ट फ़ाइल प्रकार बदलें (e.g., ttf, otf)
-      -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                            पैच की गई फ़ॉन्ट फ़ाइल को आउटपुट करने के लिए निर्देशिका
 
 #### उदाहरण
 

@@ -381,19 +381,20 @@ The list is not complete, but you can [search for a complete list here](https://
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--fontawesome]
-                    [--fontawesomeextension] [--fontlinux] [--octicons]
-                    [--powersymbols] [--pomicons] [--powerline]
-                    [--powerlineextra] [--custom [CUSTOM]]
-                    [--postprocess [POSTPROCESS]]
-                    [--progressbars | --no-progressbars] [--careful]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
+                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
+                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--progressbars | --no-progressbars] [--also-windows]
+                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                    [--powerline] [--powerlineextra] [--material] [--weather]
                     font
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 1.2.0
+* Version: 2.2.1
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -411,26 +412,38 @@ optional arguments:
                         不生成 verbose output
   -w, --windows         将内部字体名称限制在31个字符内 (为了 Windows 兼容性)
   -c, --complete        加入所有可用的字体
+  --careful             如果发现了已经存在的字形，不要对它进行复写
+  --removeligs, --removeligatures
+                        Removes ligatures specificed in JSON configuration file
+  --postprocess [POSTPROCESS]
+                        Specify a Script for Post Processing
+  --configfile [CONFIGFILE]
+                        Specify a file path for JSON configuration file (see sample: src/config.sample.json)
+  --custom [CUSTOM]     指定一个自定义图标字体，所有新字形都会在不缩放的情况下被拷贝。
+  -ext [EXTENSION], --extension [EXTENSION]
+                        更改字体文件的文件格式去创建新文件 (e.g., ttf, otf)
+  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                        将修补后的字体文件输出到特定目录
+  --glyphdir [GLYPHDIR]
+                        Path to glyphs to be used for patching
+  --makegroups          Use alternative method to name patched fonts (experimental)
+  --progressbars        显示每个Glyph Set的完成度进度条
+  --no-progressbars     不显示每个Glyph Set的完成度进度条
+  --also-windows        Create two fonts, the normal and the --windows version
+
+Symbol Fonts:
   --fontawesome         加入 Font Awesome Glyphs字体 (http://fontawesome.io/)
   --fontawesomeextension
                         加入 Font Awesome 补充字体 (https://andrelzgava.github.io/font-awesome-extension/)
   --fontlinux           加入 Font Linux 字体 (https://github.com/Lukas-W/font-linux)
   --octicons            加入 Octicons 字体 (https://octicons.github.com)
+  --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        加入 IEC Power Symbols (https://unicodepowersymbol.com/)
   --pomicons            加入 Pomicon 字体 (https://github.com/gabrielelana/pomicons)
   --powerline           加入 Powerline 字体
   --powerlineextra      加入 Powerline 字体 (https://github.com/ryanoasis/powerline-extra-symbols)
-  --custom [CUSTOM]     指定一个自定义图标字体，所有新字形都会在不缩放的情况下被拷贝。
   --postprocess [POSTPROCESS]
                         指定一个针对后续进程的脚本
-  --progressbars        显示每个Glyph Set的完成度进度条
-  --no-progressbars     不显示每个Glyph Set的完成度进度条
-  --careful             如果发现了已经存在的字形，不要对它进行复写
-  -ext [EXTENSION], --extension [EXTENSION]
-                        更改字体文件的文件格式去创建新文件 (e.g., ttf, otf)
-  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        将修补后的字体文件输出到特定目录
-
 ```
 
 #### 例子
