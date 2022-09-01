@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.0.3"
+script_version = "3.0.4"
 
 version = "2.2.1"
 projectName = "Nerd Fonts"
@@ -320,6 +320,7 @@ class font_patcher:
         parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
         parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
         parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
+        parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
 
         # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
         progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
@@ -379,6 +380,10 @@ class font_patcher:
 
         if self.args.alsowindows:
             self.args.windows = False
+
+        if self.args.nonmono and self.args.single:
+            print("Warniung: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
+            self.args.nonmono = False
 
         # this one also works but it needs to be updated every time a font is added
         # it was a conditional in self.setup_font_names() before, but it was missing
@@ -1065,6 +1070,10 @@ class font_patcher:
             # It should come after setting the glyph bearings
             self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
 
+            # Re-remove negative bearings for target font with variable advance width
+            if self.args.nonmono:
+                self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+
             # Check if the inserted glyph is scaled correctly for monospace
             if self.args.single:
                 (xmin, _, xmax, _) = self.sourceFont[currentSourceFontGlyph].boundingBox()
@@ -1115,6 +1124,10 @@ class font_patcher:
         self.font_dim.width is set with self.get_sourcefont_dimensions().
         """
         try:
+            # Fontforge handles the width change like this:
+            # - Keep existing left_side_bearing
+            # - Set width
+            # - Calculate and set new right_side_bearing
             glyph.width = self.font_dim['width']
         except:
             pass
