@@ -163,6 +163,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   </tr>
   <tr>
     <td align="center"><a href="http://cstrahan.com/"><img src="https://avatars.githubusercontent.com/u/143982?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Charles Strahan</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=cstrahan" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/chezbgone"><img src="https://avatars.githubusercontent.com/u/7344128?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jason Chen</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=chezbgone" title="Documentation">📖</a></td>
   </tr>
 </table>
 
