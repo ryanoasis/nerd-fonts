@@ -1102,6 +1102,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "chezbgone",
+      "name": "Jason Chen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7344128?v=4",
+      "profile": "https://github.com/chezbgone",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
