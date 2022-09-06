@@ -164,6 +164,7 @@ class font_patcher:
         self.font_dim = None  # class 'dict'
         self.onlybitmaps = 0
         self.extension = ""
+        self.essential = set()
         self.setup_arguments()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         if not os.path.isfile(self.args.font):
@@ -178,6 +179,7 @@ class font_patcher:
         except Exception:
             sys.exit(projectName + ": Can not open font, try to open with fontforge interactively to get more information")
         self.setup_version()
+        self.get_essential_references()
         self.setup_name_backup()
         self.remove_ligatures()
         make_sure_path_exists(self.args.outputdir)
@@ -837,6 +839,17 @@ class font_patcher:
         self.sourceFont.hhea_linegap = 0
         self.sourceFont.os2_typolinegap = 0
 
+    def get_essential_references(self):
+        """Find glyphs that are needed for the basic glyphs"""
+        # Sometimes basic glyphs are constructed from multiple other glyphs.
+        # Find out which other glyphs are also needed to keep the basic
+        # glyphs intact.
+        # 0x00-0x17f is the Latin Extended-A range
+        for glyph in range(0x21, 0x17f):
+            if not glyph in self.sourceFont:
+                continue
+            for (r, _) in self.sourceFont[glyph].references:
+                self.essential.add(self.sourceFont[r].unicode)
 
     def get_sourcefont_dimensions(self):
         # Initial font dimensions
@@ -954,10 +967,11 @@ class font_patcher:
                     sys.stdout.flush()
 
             # check if a glyph already exists in this location
-            if careful or 'careful' in sym_attr['params']:
+            if careful or 'careful' in sym_attr['params'] or currentSourceFontGlyph in self.essential:
                 if currentSourceFontGlyph in self.sourceFont:
                     if self.args.quiet is False:
-                        print("  Found existing Glyph at {:X}. Skipping...".format(currentSourceFontGlyph))
+                        careful_type = 'essential' if currentSourceFontGlyph in self.essential else 'existing'
+                        print("  Found {} Glyph at {:X}. Skipping...".format(careful_type, currentSourceFontGlyph))
                     # We don't want to touch anything so move to next Glyph
                     continue
             else:
