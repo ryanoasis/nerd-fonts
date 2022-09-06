@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.0.3"
+script_version = "3.0.4"
 
 version = "2.2.1"
 projectName = "Nerd Fonts"
@@ -320,6 +320,7 @@ class font_patcher:
         parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
         parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
         parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
+        parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
 
         # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
         progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
@@ -379,6 +380,10 @@ class font_patcher:
 
         if self.args.alsowindows:
             self.args.windows = False
+
+        if self.args.nonmono and self.args.single:
+            print("Warniung: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
+            self.args.nonmono = False
 
         # this one also works but it needs to be updated every time a font is added
         # it was a conditional in self.setup_font_names() before, but it was missing
@@ -673,7 +678,7 @@ class font_patcher:
         # Supported params: overlap | careful
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': ''},
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Arrow tips
             0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
@@ -706,23 +711,23 @@ class font_patcher:
             0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
 
             # Small squares
-            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Bigger squares
-            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Waveform
             0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
 
             # Hexagons
-            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Legos
-            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': ''},
-            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': ''},
+            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {}},
             0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
 
             # Top and bottom trapezoid
@@ -732,22 +737,22 @@ class font_patcher:
 
         SYM_ATTR_DEFAULT = {
             # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': ''}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
         }
 
         SYM_ATTR_FONTA = {
             # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': ''},
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Don't center these arrows vertically
-            0xf0dc: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': ''},
-            0xf0dd: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': ''},
-            0xf0de: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': ''}
+            0xf0dc: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}},
+            0xf0dd: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}},
+            0xf0de: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}}
         }
 
         CUSTOM_ATTR = {
             # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': ''}
+            'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
         }
 
         # Most glyphs we want to maximize during the scale.  However, there are some
@@ -1012,13 +1017,10 @@ class font_patcher:
                 # Currently stretching vertically for both monospace and double-width
                 scale_ratio_y = self.font_dim['height'] / sym_dim['height']
 
-            if 'overlap' in sym_attr['params']:
-                overlap = sym_attr['params']['overlap']
-            else:
-                overlap = 0
+            overlap = sym_attr['params'].get('overlap')
 
             if scale_ratio_x != 1 or scale_ratio_y != 1:
-                if overlap != 0:
+                if overlap:
                     scale_ratio_x *= 1 + overlap
                     scale_ratio_y *= 1 + overlap
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
@@ -1044,7 +1046,7 @@ class font_patcher:
                     # Right align
                     x_align_distance += self.font_dim['width'] - sym_dim['width']
 
-            if overlap != 0:
+            if overlap:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
@@ -1054,20 +1056,26 @@ class font_patcher:
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
             self.sourceFont[currentSourceFontGlyph].transform(align_matrix)
 
+            # Ensure after horizontal adjustments and centering that the glyph
+            # does not overlap the bearings (edges)
+            if not overlap:
+                self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+
             # Needed for setting 'advance width' on each glyph so they do not overlap,
             # also ensures the font is considered monospaced on Windows by setting the
             # same width for all character glyphs. This needs to be done for all glyphs,
             # even the ones that are empty and didn't go through the scaling operations.
+            # It should come after setting the glyph bearings
             self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
 
-            # Ensure after horizontal adjustments and centering that the glyph
-            # does not overlap the bearings (edges)
-            self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+            # Re-remove negative bearings for target font with variable advance width
+            if self.args.nonmono:
+                self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
 
             # Check if the inserted glyph is scaled correctly for monospace
             if self.args.single:
                 (xmin, _, xmax, _) = self.sourceFont[currentSourceFontGlyph].boundingBox()
-                if int(xmax - xmin) > self.font_dim['width'] * (1 + overlap):
+                if int(xmax - xmin) > self.font_dim['width'] * (1 + (overlap or 0)):
                     print("\n  Warning: Scaled glyph U+{:X} wider than one monospace width ({} / {} (overlap {}))".format(
                         currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], overlap))
 
@@ -1114,6 +1122,10 @@ class font_patcher:
         self.font_dim.width is set with self.get_sourcefont_dimensions().
         """
         try:
+            # Fontforge handles the width change like this:
+            # - Keep existing left_side_bearing
+            # - Set width
+            # - Calculate and set new right_side_bearing
             glyph.width = self.font_dim['width']
         except:
             pass

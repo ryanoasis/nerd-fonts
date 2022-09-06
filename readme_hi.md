@@ -365,7 +365,7 @@ The list is not complete, but you can [search for a complete list here](https://
     प्रयोग: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
                     [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
                     [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
                     [--fontawesome] [--fontawesomeextension] [--fontlinux]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
@@ -408,6 +408,8 @@ The list is not complete, but you can [search for a complete list here](https://
       --glyphdir [GLYPHDIR]
                             Path to glyphs to be used for patching
       --makegroups          Use alternative method to name patched fonts (experimental)
+      --variable-width-glyphs
+                            Do not adjust advance width (no "overhang")
       --progressbars        प्रति ग्लिफ़ सेट प्रतिशत पूर्णता प्रगति बार दिखाएं
       --no-progressbars     प्रति ग्लिफ़ सेट प्रतिशत पूर्णता प्रगति बार न दिखाएं
       --also-windows        Create two fonts, the normal and the --windows version
