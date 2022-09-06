@@ -848,8 +848,8 @@ class font_patcher:
         for glyph in range(0x21, 0x17f):
             if not glyph in self.sourceFont:
                 continue
-            for (r, _) in self.sourceFont[glyph].references:
-                self.essential.add(self.sourceFont[r].unicode)
+            for r in self.sourceFont[glyph].references:
+                self.essential.add(self.sourceFont[r[0]].unicode)
 
     def get_sourcefont_dimensions(self):
         # Initial font dimensions
