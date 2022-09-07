@@ -742,6 +742,8 @@ class font_patcher:
         # Most glyphs we want to maximize during the scale.  However, there are some
         # that need to be small or stay relative in size to each other.
         # The following list are those glyphs.  A tuple represents a range.
+        # See prepareScaleGlyph() for an explanation how this needs to look like.
+        # The codepoints mentioned here are symbol-font-codepoints.
         DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, # Android logo
             'GlyphsToScale': [
                 (0xe6bd, 0xe6c3) # very small things
@@ -776,6 +778,12 @@ class font_patcher:
                 0xf078, 0xf0a2, 0xf0a3, 0xf0a4, # chevrons
                 0xf0ca, # dash
             ]}
+        WEATH_SCALE_LIST = {'GlyphsToScale': [
+            range(0xf095, 0xf0b0 + 1), # moon phases
+            range(0xf0b7, 0xf0c3 + 1), # wind strengths
+            range(0xf053, 0xf055 + 1), # thermometer
+            [0xf06e, 0xf070 ], # solar eclipse
+        ]}
 
         # Define the character ranges
         # Symbol font ranges
@@ -794,7 +802,7 @@ class font_patcher:
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},  # Power, Power On/Off, Power On, Sleep
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},  # Heavy Circle (aka Power Off)
             {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesignicons-webfont.ttf",                'Exact': False, 'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.weather,              'Name': "Weather Icons",           'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.weather,              'Name': "Weather Icons",           'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'ScaleGlyph': WEATH_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.fontlogos,            'Name': "Font Logos",              'Filename': "font-logos.ttf",                                 'Exact': True,  'SymStart': 0xF300, 'SymEnd': 0xF32F, 'SrcStart': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Magnifying glass
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None,   'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Heart
