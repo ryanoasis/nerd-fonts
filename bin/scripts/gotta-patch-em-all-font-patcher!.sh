@@ -338,7 +338,7 @@ do
   generate_info "$path" "$font_file" 2>/dev/null
 done
 
-font_typefaces_count=$(find "${PWD}/../../${patched_parent_dir}/"* -maxdepth 0 -type d | wc -l)
+font_typefaces_count=$(find "${sd}/../../${patched_parent_dir}/"* -maxdepth 0 -type d | wc -l)
 
 res2=$(date +%s)
 dt=$(echo "$res2 - $res1" | bc)
@@ -352,7 +352,7 @@ ds=$(echo "$dt3-60*$dm" | bc)
 printf "$LINE_PREFIX Total runtime: %d:%02d:%02d:%02d\\n" "$dd" "$dh" "$dm" "$ds"
 
 printf "# All fonts patched to sub-directories in \\t\\t\\t'%s'\\n" "$patched_parent_dir"
-printf "# The total number of font typefaces patched was \\t\\t'%s'\\n" "$font_typefaces_count"
+printf "# The total number of font typefaces ever patched \\t\\t'%s'\\n" "$font_typefaces_count"
 printf "# The total number of font families patched was \\t\\t'%s'\\n" "$font_families_count"
 printf "# The total number of 'complete' patched fonts created was \\t'%s'\\n" "$complete_variation_count"
 printf "# The total number of 'variation' patched fonts created was \\t'%s'\\n" "$total_variation_count"
