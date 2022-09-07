@@ -12,7 +12,7 @@ Hasklig solves the problem the way typographers have always solved ill-fitting c
 
 Not only can multi-character glyphs be rendered more vividly, other problematic things in monospaced fonts, such as spacing can be corrected.
 
-[**Download Hasklig Font Family v1.2**](https://github.com/i-tu/Hasklig/releases/download/v1.2/Hasklig-1.2.zip)
+[**Download Hasklig Font Family v1.1**](https://github.com/i-tu/Hasklig/releases/download/1.1/Hasklig-1.1.zip)
 
 #### Hasklig
 ![Hasklig Sample](hasklig_example.png?raw=true)
@@ -21,13 +21,6 @@ Not only can multi-character glyphs be rendered more vividly, other problematic 
 ![Source Code Pro Sample](SourceCodeProSample.png?raw=true)
 
 ### Release notes
-+ [v1.2](https://github.com/i-tu/Hasklig/releases/tag/1.2)
-  + Include latest changes from the Source Code Pro repository `master` branch ([adobe-fonts/source-code-pro@`14875b7`](https://github.com/adobe-fonts/source-code-pro/commit/14875b70293e83159ad85c7d9d9081e76403d1e3)).\
-    The Source Code Versions Hasklig v1.2 is based on are:
-    - Roman 2.032
-    - Italic 1.052
-    - Variable _not supported_
-  + Most notably, this update resolves (https://github.com/i-tu/Hasklig/issues/123).
 + [v1.1](https://github.com/i-tu/Hasklig/releases/tag/1.1)
     + New ligatures `->>`, `:::`, `>=>`, `<=<`, `<=>`, `<->`
     + Switched to newer version of calt code by [Nikita Prokopov](https://github.com/tonsky/FiraCode). It "doesn’t apply ligatures to long sequences of chars, e.g. !!!!, >>>>, etc"
