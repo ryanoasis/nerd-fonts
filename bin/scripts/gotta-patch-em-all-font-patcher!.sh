@@ -120,7 +120,7 @@ function patch_font {
 
   if [ "$post_process" ]
   then
-    post_process="--postprocess=$post_process"
+    post_process="--postprocess=${parent_dir}/${post_process}"
   else
     post_process=""
   fi
