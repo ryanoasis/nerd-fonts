@@ -536,6 +536,8 @@ class font_patcher:
             maxFamilyLength = 31
             maxFontLength = maxFamilyLength - len('-' + subFamily)
             familyname += " " + projectNameAbbreviation
+            if self.args.single:
+                familyname += "M"
             fullname += " Windows Compatible"
 
             # now make sure less than 32 characters name length
