@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.2.1
+# Nerd Fonts Version: 2.2.2
 # Script Version: 1.2.0
 
 fontfile=$1

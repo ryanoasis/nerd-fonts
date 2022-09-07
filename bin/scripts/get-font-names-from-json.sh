@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.2.1
+# Nerd Fonts Version: 2.2.2
 # Script Version: 1.1.0
 # Gets all the font folder names to build the matrix for the github actions
 
