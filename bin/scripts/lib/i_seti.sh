@@ -66,4 +66,6 @@ i='' i_custom_electron=$i
 i='' i_custom_crystal=$i
 i='' i_custom_purescript=$i
 i='' i_custom_puppet=$i
+i='' i_custom_emacs=$i
+i='' i_custom_orgmode=$i
 unset i
