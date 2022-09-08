@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.2.2
-# Script Version: 1.0.1
+# Script Version: 1.0.2
 # Iterates over all patched fonts directories
 # to generate a fontconfig based on the Nerd Fonts Symbols font
 # that contains only the glyphs
 
 #set -x
 
-parent_dir="${PWD}/../../"
+parent_dir="$(pwd)/../../"
 unpatched_parent_dir="../../src/unpatched-fonts/"
 to="$parent_dir/10-nerd-font-symbols.conf"
 symbolfont="Symbols Nerd Font"
