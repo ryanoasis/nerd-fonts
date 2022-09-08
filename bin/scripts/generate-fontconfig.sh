@@ -41,7 +41,7 @@ echo "$LINE_PREFIX Generating fontconfig for: monospace"
 } >> "$to"
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -type d | sort | # uncomment to get all fonts
+find . -mindepth 1 -maxdepth 1 -type d | sort | # uncomment to get all fonts
 while read -r filename
 do
 
