@@ -56,11 +56,18 @@ do
 
   for font in "${FONTS[@]}"; do
     familyname=$(fc-query --format='%{family}' "${font}")
-    if [[ ! "${families[*]}" == *"${familyname}"* ]]; then
+    found=0
+    for e in "${families[@]}"; do
+      if [ "$e" = "$familyname" ]; then
+        found=1
+        break
+      fi
+    done
+    if [ $found -eq 0 ]; then
       # family array doesn't contain the font yet
       # so let's add it
       families+=("$familyname")
-      echo "adding $familyname";
+      # echo "adding $familyname";
 
       echo "$LINE_PREFIX Generating fontconfig for: $familyname"
 
@@ -72,8 +79,8 @@ do
         printf '\n  </alias>'
       } >> "$to"
 
-    else
-      echo "no need to add $familyname";
+    # else
+      # echo "no need to add $familyname";
     fi
   done
 
