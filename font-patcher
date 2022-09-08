@@ -1161,7 +1161,7 @@ class font_patcher:
         except:
             pass
 
-    def prepareScaleGlyph(self, scaleGlyph, symbolFont):
+    def prepareScaleGlyph(self, scaleGlyph, symbolFont, destGlyph):
         """ Prepare raw ScaleGlyph data for use """
         # The GlyphData is a dict with these (possible) entries:
         # 'GlyphsToScale': List of ((lists of glyph codes) or (ranges of glyph codes)) that shall be scaled
@@ -1196,13 +1196,14 @@ class font_patcher:
         else:
             scaleGlyph['scales'] = []
             for group in scaleGlyph['GlyphsToScale']:
-                sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ])
+                sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
                 scaleGlyph['scales'].append(self.get_scale_factor(sym_dim))
 
     def get_glyph_scale(self, unicode_value, scaleGlyph, symbolFont):
         """ Determines whether or not to use scaled glyphs for glyphs in passed glyph_list """
+        # Potentially destorys the contents of self.sourceFont[unicode_value]
         if not 'scales' in scaleGlyph:
-            self.prepareScaleGlyph(scaleGlyph, symbolFont)
+            self.prepareScaleGlyph(scaleGlyph, symbolFont, self.sourceFont[unicode_value])
         for glyph_list, scale in zip(scaleGlyph['GlyphsToScale'], scaleGlyph['scales']):
             if unicode_value in glyph_list:
                 return scale
@@ -1224,13 +1225,22 @@ def make_sure_path_exists(path):
         if exception.errno != errno.EEXIST:
             raise
 
-def get_multiglyph_boundingBox(glyphs):
-    """ Returns dict of the dimensions of multiple glyphs combined """
+def get_multiglyph_boundingBox(glyphs, destGlyph = None):
+    """ Returns dict of the dimensions of multiple glyphs combined(, as if they are copied into destGlyph) """
+    # If destGlyph is given the glyph(s) are first copied over into that
+    # glyph and measured in that font (to avoid rounding errors)
+    # Leaves the destGlyph in unknown state!
     bbox = [ None, None, None, None ]
     for glyph in glyphs:
         if glyph is None:
             # Glyph has been in defining range but is not in the actual font
             continue
+        if destGlyph:
+            glyph.font.selection.select(glyph)
+            glyph.font.copy()
+            destGlyph.font.selection.select(destGlyph)
+            destGlyph.font.paste()
+            glyph = destGlyph
         gbb = glyph.boundingBox()
         bbox[0] = gbb[0] if bbox[0] is None or bbox[0] > gbb[0] else bbox[0]
         bbox[1] = gbb[1] if bbox[1] is None or bbox[1] > gbb[1] else bbox[1]
