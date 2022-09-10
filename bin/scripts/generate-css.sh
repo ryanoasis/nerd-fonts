@@ -8,7 +8,12 @@ source ./lib/i_all.sh
 
 output_css_file="../../css/nerd-fonts-generated.css"
 header_css_file="./css-header.txt"
-output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
+if [ -d "../../temp" ]; then
+  output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
+  text_gen=" and Cheat Sheet HTML"
+else
+  output_cheat_sheet_file="/dev/null"
+fi
 LINE_PREFIX="# [Nerd Fonts] "
 version="2.2.2"
 
@@ -43,9 +48,9 @@ for var in "${!i@}"; do
 
   #echo "$var=${!var}"
 
-  echo "$glyph_name"
-  echo "$glyph_char"
-  echo "$glyph_code"
+  #echo "$glyph_name"
+  #echo "$glyph_char"
+  #echo "$glyph_code"
   #printf "%x" "'$glyph_char'"
 
   # generate css rules
@@ -72,4 +77,4 @@ for var in "${!i@}"; do
 
 done
 
-printf "Generated CSS and Cheat Sheet HTML\\n"
+printf "Generated CSS${text_gen}\\n"
