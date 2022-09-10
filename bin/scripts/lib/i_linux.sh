@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Font Logos (Font Linux) (48 icons)
+# Font Logos (Font Linux) 1.0.1 (48 icons)
 # Codepoints: F300-F32F
 # Nerd Fonts Version: 2.2.2
 # Script Version: 1.1.0
