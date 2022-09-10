@@ -328,6 +328,31 @@ jobs:
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
+      - name: Generate new CSS file
+        run: |
+          cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ./generate-css.sh
+
+      - name: Commit CSS back to repo
+        uses: EndBug/add-and-commit@v9
+        id: push_css
+        with:
+          add: 'css'
+          message: "[ci] Regenerate CSS files"
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Deploy CSS to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: steps.push_css.outputs.pushed
+        with:
+          folder: css
+          target-folder: _includes/css
+          commit-message: "[ci] Regenerate CSS files"
+          git-config-name: GitHub Actions
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
+          clean: false
+
       - name: Adjust release tag to include previous commit
         uses: EndBug/latest-tag@v1.5.0
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
