@@ -159,6 +159,7 @@ explanations that might do not need much attention.
 There are some helper scripts that help examining the font files. Of course there are other,
 more professional tools to dump font information, but here we get all we need in a concise
 way:
+* `query_mono` `font_name [font_name ...]`
 * `query_names` `font_name [font_name ...]`
 * `query_panose` `font_name`
 * `query_sftn` `[<sfnt-name>] font_name`
