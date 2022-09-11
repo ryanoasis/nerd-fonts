@@ -24,12 +24,1564 @@ style: container
 
 <div id="glyphCheatSheet" class="nerd-font-cheat-sheet">
   <div class="column">
+    <div class="nf nf-cod-account center"></div>
+    <div class="class-name">nf-cod-account</div><div class="codepoint">eb99</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-activate_breakpoints center"></div>
+    <div class="class-name">nf-cod-activate_breakpoints</div><div class="codepoint">ea97</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-add center"></div>
+    <div class="class-name">nf-cod-add</div><div class="codepoint">ea60</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-archive center"></div>
+    <div class="class-name">nf-cod-archive</div><div class="codepoint">ea98</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_both center"></div>
+    <div class="class-name">nf-cod-arrow_both</div><div class="codepoint">ea99</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_down center"></div>
+    <div class="class-name">nf-cod-arrow_down</div><div class="codepoint">ea9a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_left center"></div>
+    <div class="class-name">nf-cod-arrow_left</div><div class="codepoint">ea9b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_right center"></div>
+    <div class="class-name">nf-cod-arrow_right</div><div class="codepoint">ea9c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_small_down center"></div>
+    <div class="class-name">nf-cod-arrow_small_down</div><div class="codepoint">ea9d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_small_left center"></div>
+    <div class="class-name">nf-cod-arrow_small_left</div><div class="codepoint">ea9e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_small_right center"></div>
+    <div class="class-name">nf-cod-arrow_small_right</div><div class="codepoint">ea9f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_small_up center"></div>
+    <div class="class-name">nf-cod-arrow_small_up</div><div class="codepoint">eaa0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_swap center"></div>
+    <div class="class-name">nf-cod-arrow_swap</div><div class="codepoint">ebcb</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-arrow_up center"></div>
+    <div class="class-name">nf-cod-arrow_up</div><div class="codepoint">eaa1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-azure center"></div>
+    <div class="class-name">nf-cod-azure</div><div class="codepoint">ebd8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-azure_devops center"></div>
+    <div class="class-name">nf-cod-azure_devops</div><div class="codepoint">ebe8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-beaker center"></div>
+    <div class="class-name">nf-cod-beaker</div><div class="codepoint">ea79</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-beaker_stop center"></div>
+    <div class="class-name">nf-cod-beaker_stop</div><div class="codepoint">ebe1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-bell center"></div>
+    <div class="class-name">nf-cod-bell</div><div class="codepoint">eaa2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-bell_dot center"></div>
+    <div class="class-name">nf-cod-bell_dot</div><div class="codepoint">eb9a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-bold center"></div>
+    <div class="class-name">nf-cod-bold</div><div class="codepoint">eaa3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-book center"></div>
+    <div class="class-name">nf-cod-book</div><div class="codepoint">eaa4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-bookmark center"></div>
+    <div class="class-name">nf-cod-bookmark</div><div class="codepoint">eaa5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-bracket_dot center"></div>
+    <div class="class-name">nf-cod-bracket_dot</div><div class="codepoint">ebe5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-bracket_error center"></div>
+    <div class="class-name">nf-cod-bracket_error</div><div class="codepoint">ebe6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-briefcase center"></div>
+    <div class="class-name">nf-cod-briefcase</div><div class="codepoint">eaac</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-broadcast center"></div>
+    <div class="class-name">nf-cod-broadcast</div><div class="codepoint">eaad</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-browser center"></div>
+    <div class="class-name">nf-cod-browser</div><div class="codepoint">eaae</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-bug center"></div>
+    <div class="class-name">nf-cod-bug</div><div class="codepoint">eaaf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-calendar center"></div>
+    <div class="class-name">nf-cod-calendar</div><div class="codepoint">eab0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-call_incoming center"></div>
+    <div class="class-name">nf-cod-call_incoming</div><div class="codepoint">eb92</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-call_outgoing center"></div>
+    <div class="class-name">nf-cod-call_outgoing</div><div class="codepoint">eb93</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-case_sensitive center"></div>
+    <div class="class-name">nf-cod-case_sensitive</div><div class="codepoint">eab1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-check center"></div>
+    <div class="class-name">nf-cod-check</div><div class="codepoint">eab2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-check_all center"></div>
+    <div class="class-name">nf-cod-check_all</div><div class="codepoint">ebb1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-checklist center"></div>
+    <div class="class-name">nf-cod-checklist</div><div class="codepoint">eab3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chevron_down center"></div>
+    <div class="class-name">nf-cod-chevron_down</div><div class="codepoint">eab4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chevron_left center"></div>
+    <div class="class-name">nf-cod-chevron_left</div><div class="codepoint">eab5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chevron_right center"></div>
+    <div class="class-name">nf-cod-chevron_right</div><div class="codepoint">eab6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chevron_up center"></div>
+    <div class="class-name">nf-cod-chevron_up</div><div class="codepoint">eab7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chrome_close center"></div>
+    <div class="class-name">nf-cod-chrome_close</div><div class="codepoint">eab8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chrome_maximize center"></div>
+    <div class="class-name">nf-cod-chrome_maximize</div><div class="codepoint">eab9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chrome_minimize center"></div>
+    <div class="class-name">nf-cod-chrome_minimize</div><div class="codepoint">eaba</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-chrome_restore center"></div>
+    <div class="class-name">nf-cod-chrome_restore</div><div class="codepoint">eabb</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-circle center"></div>
+    <div class="class-name">nf-cod-circle</div><div class="codepoint">eabc</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-circle_filled center"></div>
+    <div class="class-name">nf-cod-circle_filled</div><div class="codepoint">ea71</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-circle_large center"></div>
+    <div class="class-name">nf-cod-circle_large</div><div class="codepoint">ebb5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-circle_large_filled center"></div>
+    <div class="class-name">nf-cod-circle_large_filled</div><div class="codepoint">ebb4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-circle_slash center"></div>
+    <div class="class-name">nf-cod-circle_slash</div><div class="codepoint">eabd</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-circle_small_filled center"></div>
+    <div class="class-name">nf-cod-circle_small_filled</div><div class="codepoint">eb8a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-circuit_board center"></div>
+    <div class="class-name">nf-cod-circuit_board</div><div class="codepoint">eabe</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-clear_all center"></div>
+    <div class="class-name">nf-cod-clear_all</div><div class="codepoint">eabf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-clippy center"></div>
+    <div class="class-name">nf-cod-clippy</div><div class="codepoint">eac0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-close center"></div>
+    <div class="class-name">nf-cod-close</div><div class="codepoint">ea76</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-close_all center"></div>
+    <div class="class-name">nf-cod-close_all</div><div class="codepoint">eac1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-cloud center"></div>
+    <div class="class-name">nf-cod-cloud</div><div class="codepoint">ebaa</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-cloud_download center"></div>
+    <div class="class-name">nf-cod-cloud_download</div><div class="codepoint">eac2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-cloud_upload center"></div>
+    <div class="class-name">nf-cod-cloud_upload</div><div class="codepoint">eac3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-code center"></div>
+    <div class="class-name">nf-cod-code</div><div class="codepoint">eac4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-collapse_all center"></div>
+    <div class="class-name">nf-cod-collapse_all</div><div class="codepoint">eac5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-color_mode center"></div>
+    <div class="class-name">nf-cod-color_mode</div><div class="codepoint">eac6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-combine center"></div>
+    <div class="class-name">nf-cod-combine</div><div class="codepoint">ebb6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-comment center"></div>
+    <div class="class-name">nf-cod-comment</div><div class="codepoint">ea6b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-comment_discussion center"></div>
+    <div class="class-name">nf-cod-comment_discussion</div><div class="codepoint">eac7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-compass center"></div>
+    <div class="class-name">nf-cod-compass</div><div class="codepoint">ebd5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-compass_active center"></div>
+    <div class="class-name">nf-cod-compass_active</div><div class="codepoint">ebd7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-compass_dot center"></div>
+    <div class="class-name">nf-cod-compass_dot</div><div class="codepoint">ebd6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-copy center"></div>
+    <div class="class-name">nf-cod-copy</div><div class="codepoint">ebcc</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-credit_card center"></div>
+    <div class="class-name">nf-cod-credit_card</div><div class="codepoint">eac9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-dash center"></div>
+    <div class="class-name">nf-cod-dash</div><div class="codepoint">eacc</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-dashboard center"></div>
+    <div class="class-name">nf-cod-dashboard</div><div class="codepoint">eacd</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-database center"></div>
+    <div class="class-name">nf-cod-database</div><div class="codepoint">eace</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug center"></div>
+    <div class="class-name">nf-cod-debug</div><div class="codepoint">ead8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_all center"></div>
+    <div class="class-name">nf-cod-debug_all</div><div class="codepoint">ebdc</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_alt center"></div>
+    <div class="class-name">nf-cod-debug_alt</div><div class="codepoint">eb91</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_alt_small center"></div>
+    <div class="class-name">nf-cod-debug_alt_small</div><div class="codepoint">eba8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_conditional center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_conditional</div><div class="codepoint">eaa7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_conditional_unverified center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_conditional_unverified</div><div class="codepoint">eaa6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_data center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_data</div><div class="codepoint">eaa9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_data_unverified center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_data_unverified</div><div class="codepoint">eaa8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_function center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_function</div><div class="codepoint">eb88</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_function_unverified center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_function_unverified</div><div class="codepoint">eb87</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_log center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_log</div><div class="codepoint">eaab</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_log_unverified center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_log_unverified</div><div class="codepoint">eaaa</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_breakpoint_unsupported center"></div>
+    <div class="class-name">nf-cod-debug_breakpoint_unsupported</div><div class="codepoint">eb8c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_console center"></div>
+    <div class="class-name">nf-cod-debug_console</div><div class="codepoint">eb9b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_continue center"></div>
+    <div class="class-name">nf-cod-debug_continue</div><div class="codepoint">eacf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_continue_small center"></div>
+    <div class="class-name">nf-cod-debug_continue_small</div><div class="codepoint">ebe0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_coverage center"></div>
+    <div class="class-name">nf-cod-debug_coverage</div><div class="codepoint">ebdd</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_disconnect center"></div>
+    <div class="class-name">nf-cod-debug_disconnect</div><div class="codepoint">ead0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_line_by_line center"></div>
+    <div class="class-name">nf-cod-debug_line_by_line</div><div class="codepoint">ebd0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_pause center"></div>
+    <div class="class-name">nf-cod-debug_pause</div><div class="codepoint">ead1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_rerun center"></div>
+    <div class="class-name">nf-cod-debug_rerun</div><div class="codepoint">ebc0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_restart center"></div>
+    <div class="class-name">nf-cod-debug_restart</div><div class="codepoint">ead2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_restart_frame center"></div>
+    <div class="class-name">nf-cod-debug_restart_frame</div><div class="codepoint">eb90</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_reverse_continue center"></div>
+    <div class="class-name">nf-cod-debug_reverse_continue</div><div class="codepoint">eb8e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_stackframe center"></div>
+    <div class="class-name">nf-cod-debug_stackframe</div><div class="codepoint">eb8b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_stackframe_active center"></div>
+    <div class="class-name">nf-cod-debug_stackframe_active</div><div class="codepoint">eb89</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_start center"></div>
+    <div class="class-name">nf-cod-debug_start</div><div class="codepoint">ead3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_step_back center"></div>
+    <div class="class-name">nf-cod-debug_step_back</div><div class="codepoint">eb8f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_step_into center"></div>
+    <div class="class-name">nf-cod-debug_step_into</div><div class="codepoint">ead4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_step_out center"></div>
+    <div class="class-name">nf-cod-debug_step_out</div><div class="codepoint">ead5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_step_over center"></div>
+    <div class="class-name">nf-cod-debug_step_over</div><div class="codepoint">ead6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-debug_stop center"></div>
+    <div class="class-name">nf-cod-debug_stop</div><div class="codepoint">ead7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-desktop_download center"></div>
+    <div class="class-name">nf-cod-desktop_download</div><div class="codepoint">ea78</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-device_camera center"></div>
+    <div class="class-name">nf-cod-device_camera</div><div class="codepoint">eada</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-device_camera_video center"></div>
+    <div class="class-name">nf-cod-device_camera_video</div><div class="codepoint">ead9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-device_mobile center"></div>
+    <div class="class-name">nf-cod-device_mobile</div><div class="codepoint">eadb</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-diff center"></div>
+    <div class="class-name">nf-cod-diff</div><div class="codepoint">eae1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-diff_added center"></div>
+    <div class="class-name">nf-cod-diff_added</div><div class="codepoint">eadc</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-diff_ignored center"></div>
+    <div class="class-name">nf-cod-diff_ignored</div><div class="codepoint">eadd</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-diff_modified center"></div>
+    <div class="class-name">nf-cod-diff_modified</div><div class="codepoint">eade</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-diff_removed center"></div>
+    <div class="class-name">nf-cod-diff_removed</div><div class="codepoint">eadf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-diff_renamed center"></div>
+    <div class="class-name">nf-cod-diff_renamed</div><div class="codepoint">eae0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-discard center"></div>
+    <div class="class-name">nf-cod-discard</div><div class="codepoint">eae2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-edit center"></div>
+    <div class="class-name">nf-cod-edit</div><div class="codepoint">ea73</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-editor_layout center"></div>
+    <div class="class-name">nf-cod-editor_layout</div><div class="codepoint">eae3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-ellipsis center"></div>
+    <div class="class-name">nf-cod-ellipsis</div><div class="codepoint">ea7c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-empty_window center"></div>
+    <div class="class-name">nf-cod-empty_window</div><div class="codepoint">eae4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-error center"></div>
+    <div class="class-name">nf-cod-error</div><div class="codepoint">ea87</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-exclude center"></div>
+    <div class="class-name">nf-cod-exclude</div><div class="codepoint">eae5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-expand_all center"></div>
+    <div class="class-name">nf-cod-expand_all</div><div class="codepoint">eb95</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-export center"></div>
+    <div class="class-name">nf-cod-export</div><div class="codepoint">ebac</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-extensions center"></div>
+    <div class="class-name">nf-cod-extensions</div><div class="codepoint">eae6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-eye center"></div>
+    <div class="class-name">nf-cod-eye</div><div class="codepoint">ea70</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-eye_closed center"></div>
+    <div class="class-name">nf-cod-eye_closed</div><div class="codepoint">eae7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-feedback center"></div>
+    <div class="class-name">nf-cod-feedback</div><div class="codepoint">eb96</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file center"></div>
+    <div class="class-name">nf-cod-file</div><div class="codepoint">ea7b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_binary center"></div>
+    <div class="class-name">nf-cod-file_binary</div><div class="codepoint">eae8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_code center"></div>
+    <div class="class-name">nf-cod-file_code</div><div class="codepoint">eae9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_media center"></div>
+    <div class="class-name">nf-cod-file_media</div><div class="codepoint">eaea</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_pdf center"></div>
+    <div class="class-name">nf-cod-file_pdf</div><div class="codepoint">eaeb</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_submodule center"></div>
+    <div class="class-name">nf-cod-file_submodule</div><div class="codepoint">eaec</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_symlink_directory center"></div>
+    <div class="class-name">nf-cod-file_symlink_directory</div><div class="codepoint">eaed</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_symlink_file center"></div>
+    <div class="class-name">nf-cod-file_symlink_file</div><div class="codepoint">eaee</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-file_zip center"></div>
+    <div class="class-name">nf-cod-file_zip</div><div class="codepoint">eaef</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-files center"></div>
+    <div class="class-name">nf-cod-files</div><div class="codepoint">eaf0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-filter center"></div>
+    <div class="class-name">nf-cod-filter</div><div class="codepoint">eaf1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-filter_filled center"></div>
+    <div class="class-name">nf-cod-filter_filled</div><div class="codepoint">ebce</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-flame center"></div>
+    <div class="class-name">nf-cod-flame</div><div class="codepoint">eaf2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-fold center"></div>
+    <div class="class-name">nf-cod-fold</div><div class="codepoint">eaf5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-fold_down center"></div>
+    <div class="class-name">nf-cod-fold_down</div><div class="codepoint">eaf3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-fold_up center"></div>
+    <div class="class-name">nf-cod-fold_up</div><div class="codepoint">eaf4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-folder center"></div>
+    <div class="class-name">nf-cod-folder</div><div class="codepoint">ea83</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-folder_active center"></div>
+    <div class="class-name">nf-cod-folder_active</div><div class="codepoint">eaf6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-folder_library center"></div>
+    <div class="class-name">nf-cod-folder_library</div><div class="codepoint">ebdf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-folder_opened center"></div>
+    <div class="class-name">nf-cod-folder_opened</div><div class="codepoint">eaf7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-gear center"></div>
+    <div class="class-name">nf-cod-gear</div><div class="codepoint">eaf8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-gift center"></div>
+    <div class="class-name">nf-cod-gift</div><div class="codepoint">eaf9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-gist_secret center"></div>
+    <div class="class-name">nf-cod-gist_secret</div><div class="codepoint">eafa</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-git_commit center"></div>
+    <div class="class-name">nf-cod-git_commit</div><div class="codepoint">eafc</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-git_compare center"></div>
+    <div class="class-name">nf-cod-git_compare</div><div class="codepoint">eafd</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-git_merge center"></div>
+    <div class="class-name">nf-cod-git_merge</div><div class="codepoint">eafe</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-git_pull_request center"></div>
+    <div class="class-name">nf-cod-git_pull_request</div><div class="codepoint">ea64</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-git_pull_request_closed center"></div>
+    <div class="class-name">nf-cod-git_pull_request_closed</div><div class="codepoint">ebda</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-git_pull_request_create center"></div>
+    <div class="class-name">nf-cod-git_pull_request_create</div><div class="codepoint">ebbc</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-git_pull_request_draft center"></div>
+    <div class="class-name">nf-cod-git_pull_request_draft</div><div class="codepoint">ebdb</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-github center"></div>
+    <div class="class-name">nf-cod-github</div><div class="codepoint">ea84</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-github_action center"></div>
+    <div class="class-name">nf-cod-github_action</div><div class="codepoint">eaff</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-github_alt center"></div>
+    <div class="class-name">nf-cod-github_alt</div><div class="codepoint">eb00</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-github_inverted center"></div>
+    <div class="class-name">nf-cod-github_inverted</div><div class="codepoint">eba1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-globe center"></div>
+    <div class="class-name">nf-cod-globe</div><div class="codepoint">eb01</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-go_to_file center"></div>
+    <div class="class-name">nf-cod-go_to_file</div><div class="codepoint">ea94</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-grabber center"></div>
+    <div class="class-name">nf-cod-grabber</div><div class="codepoint">eb02</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-graph center"></div>
+    <div class="class-name">nf-cod-graph</div><div class="codepoint">eb03</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-graph_left center"></div>
+    <div class="class-name">nf-cod-graph_left</div><div class="codepoint">ebad</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-graph_line center"></div>
+    <div class="class-name">nf-cod-graph_line</div><div class="codepoint">ebe2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-graph_scatter center"></div>
+    <div class="class-name">nf-cod-graph_scatter</div><div class="codepoint">ebe3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-gripper center"></div>
+    <div class="class-name">nf-cod-gripper</div><div class="codepoint">eb04</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-group_by_ref_type center"></div>
+    <div class="class-name">nf-cod-group_by_ref_type</div><div class="codepoint">eb97</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-heart center"></div>
+    <div class="class-name">nf-cod-heart</div><div class="codepoint">eb05</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-history center"></div>
+    <div class="class-name">nf-cod-history</div><div class="codepoint">ea82</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-home center"></div>
+    <div class="class-name">nf-cod-home</div><div class="codepoint">eb06</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-horizontal_rule center"></div>
+    <div class="class-name">nf-cod-horizontal_rule</div><div class="codepoint">eb07</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-hubot center"></div>
+    <div class="class-name">nf-cod-hubot</div><div class="codepoint">eb08</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-inbox center"></div>
+    <div class="class-name">nf-cod-inbox</div><div class="codepoint">eb09</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-info center"></div>
+    <div class="class-name">nf-cod-info</div><div class="codepoint">ea74</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-inspect center"></div>
+    <div class="class-name">nf-cod-inspect</div><div class="codepoint">ebd1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-issue_draft center"></div>
+    <div class="class-name">nf-cod-issue_draft</div><div class="codepoint">ebd9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-issue_reopened center"></div>
+    <div class="class-name">nf-cod-issue_reopened</div><div class="codepoint">eb0b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-issues center"></div>
+    <div class="class-name">nf-cod-issues</div><div class="codepoint">eb0c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-italic center"></div>
+    <div class="class-name">nf-cod-italic</div><div class="codepoint">eb0d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-jersey center"></div>
+    <div class="class-name">nf-cod-jersey</div><div class="codepoint">eb0e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-json center"></div>
+    <div class="class-name">nf-cod-json</div><div class="codepoint">eb0f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-kebab_vertical center"></div>
+    <div class="class-name">nf-cod-kebab_vertical</div><div class="codepoint">eb10</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-key center"></div>
+    <div class="class-name">nf-cod-key</div><div class="codepoint">eb11</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-law center"></div>
+    <div class="class-name">nf-cod-law</div><div class="codepoint">eb12</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-layers center"></div>
+    <div class="class-name">nf-cod-layers</div><div class="codepoint">ebd2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-layers_active center"></div>
+    <div class="class-name">nf-cod-layers_active</div><div class="codepoint">ebd4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-layers_dot center"></div>
+    <div class="class-name">nf-cod-layers_dot</div><div class="codepoint">ebd3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-layout center"></div>
+    <div class="class-name">nf-cod-layout</div><div class="codepoint">ebeb</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-library center"></div>
+    <div class="class-name">nf-cod-library</div><div class="codepoint">eb9c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-lightbulb center"></div>
+    <div class="class-name">nf-cod-lightbulb</div><div class="codepoint">ea61</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-lightbulb_autofix center"></div>
+    <div class="class-name">nf-cod-lightbulb_autofix</div><div class="codepoint">eb13</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-link center"></div>
+    <div class="class-name">nf-cod-link</div><div class="codepoint">eb15</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-link_external center"></div>
+    <div class="class-name">nf-cod-link_external</div><div class="codepoint">eb14</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-list_filter center"></div>
+    <div class="class-name">nf-cod-list_filter</div><div class="codepoint">eb83</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-list_flat center"></div>
+    <div class="class-name">nf-cod-list_flat</div><div class="codepoint">eb84</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-list_ordered center"></div>
+    <div class="class-name">nf-cod-list_ordered</div><div class="codepoint">eb16</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-list_selection center"></div>
+    <div class="class-name">nf-cod-list_selection</div><div class="codepoint">eb85</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-list_tree center"></div>
+    <div class="class-name">nf-cod-list_tree</div><div class="codepoint">eb86</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-list_unordered center"></div>
+    <div class="class-name">nf-cod-list_unordered</div><div class="codepoint">eb17</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-live_share center"></div>
+    <div class="class-name">nf-cod-live_share</div><div class="codepoint">eb18</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-loading center"></div>
+    <div class="class-name">nf-cod-loading</div><div class="codepoint">eb19</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-location center"></div>
+    <div class="class-name">nf-cod-location</div><div class="codepoint">eb1a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-lock center"></div>
+    <div class="class-name">nf-cod-lock</div><div class="codepoint">ea75</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-lock_small center"></div>
+    <div class="class-name">nf-cod-lock_small</div><div class="codepoint">ebe7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-magnet center"></div>
+    <div class="class-name">nf-cod-magnet</div><div class="codepoint">ebae</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-mail center"></div>
+    <div class="class-name">nf-cod-mail</div><div class="codepoint">eb1c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-mail_read center"></div>
+    <div class="class-name">nf-cod-mail_read</div><div class="codepoint">eb1b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-markdown center"></div>
+    <div class="class-name">nf-cod-markdown</div><div class="codepoint">eb1d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-megaphone center"></div>
+    <div class="class-name">nf-cod-megaphone</div><div class="codepoint">eb1e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-mention center"></div>
+    <div class="class-name">nf-cod-mention</div><div class="codepoint">eb1f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-menu center"></div>
+    <div class="class-name">nf-cod-menu</div><div class="codepoint">eb94</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-merge center"></div>
+    <div class="class-name">nf-cod-merge</div><div class="codepoint">ebab</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-milestone center"></div>
+    <div class="class-name">nf-cod-milestone</div><div class="codepoint">eb20</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-mirror center"></div>
+    <div class="class-name">nf-cod-mirror</div><div class="codepoint">ea69</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-mortar_board center"></div>
+    <div class="class-name">nf-cod-mortar_board</div><div class="codepoint">eb21</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-move center"></div>
+    <div class="class-name">nf-cod-move</div><div class="codepoint">eb22</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-multiple_windows center"></div>
+    <div class="class-name">nf-cod-multiple_windows</div><div class="codepoint">eb23</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-mute center"></div>
+    <div class="class-name">nf-cod-mute</div><div class="codepoint">eb24</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-new_file center"></div>
+    <div class="class-name">nf-cod-new_file</div><div class="codepoint">ea7f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-new_folder center"></div>
+    <div class="class-name">nf-cod-new_folder</div><div class="codepoint">ea80</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-newline center"></div>
+    <div class="class-name">nf-cod-newline</div><div class="codepoint">ebea</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-no_newline center"></div>
+    <div class="class-name">nf-cod-no_newline</div><div class="codepoint">eb25</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-note center"></div>
+    <div class="class-name">nf-cod-note</div><div class="codepoint">eb26</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-notebook center"></div>
+    <div class="class-name">nf-cod-notebook</div><div class="codepoint">ebaf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-notebook_template center"></div>
+    <div class="class-name">nf-cod-notebook_template</div><div class="codepoint">ebbf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-octoface center"></div>
+    <div class="class-name">nf-cod-octoface</div><div class="codepoint">eb27</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-open_preview center"></div>
+    <div class="class-name">nf-cod-open_preview</div><div class="codepoint">eb28</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-organization center"></div>
+    <div class="class-name">nf-cod-organization</div><div class="codepoint">ea7e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-output center"></div>
+    <div class="class-name">nf-cod-output</div><div class="codepoint">eb9d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-package center"></div>
+    <div class="class-name">nf-cod-package</div><div class="codepoint">eb29</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-paintcan center"></div>
+    <div class="class-name">nf-cod-paintcan</div><div class="codepoint">eb2a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-pass center"></div>
+    <div class="class-name">nf-cod-pass</div><div class="codepoint">eba4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-pass_filled center"></div>
+    <div class="class-name">nf-cod-pass_filled</div><div class="codepoint">ebb3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-person center"></div>
+    <div class="class-name">nf-cod-person</div><div class="codepoint">ea67</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-person_add center"></div>
+    <div class="class-name">nf-cod-person_add</div><div class="codepoint">ebcd</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-pie_chart center"></div>
+    <div class="class-name">nf-cod-pie_chart</div><div class="codepoint">ebe4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-pin center"></div>
+    <div class="class-name">nf-cod-pin</div><div class="codepoint">eb2b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-pinned center"></div>
+    <div class="class-name">nf-cod-pinned</div><div class="codepoint">eba0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-pinned_dirty center"></div>
+    <div class="class-name">nf-cod-pinned_dirty</div><div class="codepoint">ebb2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-play center"></div>
+    <div class="class-name">nf-cod-play</div><div class="codepoint">eb2c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-play_circle center"></div>
+    <div class="class-name">nf-cod-play_circle</div><div class="codepoint">eba6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-plug center"></div>
+    <div class="class-name">nf-cod-plug</div><div class="codepoint">eb2d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-preserve_case center"></div>
+    <div class="class-name">nf-cod-preserve_case</div><div class="codepoint">eb2e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-preview center"></div>
+    <div class="class-name">nf-cod-preview</div><div class="codepoint">eb2f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-primitive_square center"></div>
+    <div class="class-name">nf-cod-primitive_square</div><div class="codepoint">ea72</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-project center"></div>
+    <div class="class-name">nf-cod-project</div><div class="codepoint">eb30</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-pulse center"></div>
+    <div class="class-name">nf-cod-pulse</div><div class="codepoint">eb31</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-question center"></div>
+    <div class="class-name">nf-cod-question</div><div class="codepoint">eb32</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-quote center"></div>
+    <div class="class-name">nf-cod-quote</div><div class="codepoint">eb33</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-radio_tower center"></div>
+    <div class="class-name">nf-cod-radio_tower</div><div class="codepoint">eb34</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-reactions center"></div>
+    <div class="class-name">nf-cod-reactions</div><div class="codepoint">eb35</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-record center"></div>
+    <div class="class-name">nf-cod-record</div><div class="codepoint">eba7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-record_keys center"></div>
+    <div class="class-name">nf-cod-record_keys</div><div class="codepoint">ea65</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-redo center"></div>
+    <div class="class-name">nf-cod-redo</div><div class="codepoint">ebb0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-references center"></div>
+    <div class="class-name">nf-cod-references</div><div class="codepoint">eb36</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-refresh center"></div>
+    <div class="class-name">nf-cod-refresh</div><div class="codepoint">eb37</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-regex center"></div>
+    <div class="class-name">nf-cod-regex</div><div class="codepoint">eb38</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-remote center"></div>
+    <div class="class-name">nf-cod-remote</div><div class="codepoint">eb3a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-remote_explorer center"></div>
+    <div class="class-name">nf-cod-remote_explorer</div><div class="codepoint">eb39</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-remove center"></div>
+    <div class="class-name">nf-cod-remove</div><div class="codepoint">eb3b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-replace center"></div>
+    <div class="class-name">nf-cod-replace</div><div class="codepoint">eb3d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-replace_all center"></div>
+    <div class="class-name">nf-cod-replace_all</div><div class="codepoint">eb3c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-reply center"></div>
+    <div class="class-name">nf-cod-reply</div><div class="codepoint">ea7d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-repo center"></div>
+    <div class="class-name">nf-cod-repo</div><div class="codepoint">ea62</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-repo_clone center"></div>
+    <div class="class-name">nf-cod-repo_clone</div><div class="codepoint">eb3e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-repo_force_push center"></div>
+    <div class="class-name">nf-cod-repo_force_push</div><div class="codepoint">eb3f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-repo_forked center"></div>
+    <div class="class-name">nf-cod-repo_forked</div><div class="codepoint">ea63</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-repo_pull center"></div>
+    <div class="class-name">nf-cod-repo_pull</div><div class="codepoint">eb40</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-repo_push center"></div>
+    <div class="class-name">nf-cod-repo_push</div><div class="codepoint">eb41</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-report center"></div>
+    <div class="class-name">nf-cod-report</div><div class="codepoint">eb42</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-request_changes center"></div>
+    <div class="class-name">nf-cod-request_changes</div><div class="codepoint">eb43</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-rocket center"></div>
+    <div class="class-name">nf-cod-rocket</div><div class="codepoint">eb44</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-root_folder center"></div>
+    <div class="class-name">nf-cod-root_folder</div><div class="codepoint">eb46</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-root_folder_opened center"></div>
+    <div class="class-name">nf-cod-root_folder_opened</div><div class="codepoint">eb45</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-rss center"></div>
+    <div class="class-name">nf-cod-rss</div><div class="codepoint">eb47</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-ruby center"></div>
+    <div class="class-name">nf-cod-ruby</div><div class="codepoint">eb48</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-run_above center"></div>
+    <div class="class-name">nf-cod-run_above</div><div class="codepoint">ebbd</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-run_all center"></div>
+    <div class="class-name">nf-cod-run_all</div><div class="codepoint">eb9e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-run_below center"></div>
+    <div class="class-name">nf-cod-run_below</div><div class="codepoint">ebbe</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-run_errors center"></div>
+    <div class="class-name">nf-cod-run_errors</div><div class="codepoint">ebde</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-save center"></div>
+    <div class="class-name">nf-cod-save</div><div class="codepoint">eb4b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-save_all center"></div>
+    <div class="class-name">nf-cod-save_all</div><div class="codepoint">eb49</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-save_as center"></div>
+    <div class="class-name">nf-cod-save_as</div><div class="codepoint">eb4a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-screen_full center"></div>
+    <div class="class-name">nf-cod-screen_full</div><div class="codepoint">eb4c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-screen_normal center"></div>
+    <div class="class-name">nf-cod-screen_normal</div><div class="codepoint">eb4d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-search center"></div>
+    <div class="class-name">nf-cod-search</div><div class="codepoint">ea6d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-search_stop center"></div>
+    <div class="class-name">nf-cod-search_stop</div><div class="codepoint">eb4e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-server center"></div>
+    <div class="class-name">nf-cod-server</div><div class="codepoint">eb50</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-server_environment center"></div>
+    <div class="class-name">nf-cod-server_environment</div><div class="codepoint">eba3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-server_process center"></div>
+    <div class="class-name">nf-cod-server_process</div><div class="codepoint">eba2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-settings center"></div>
+    <div class="class-name">nf-cod-settings</div><div class="codepoint">eb52</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-settings_gear center"></div>
+    <div class="class-name">nf-cod-settings_gear</div><div class="codepoint">eb51</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-shield center"></div>
+    <div class="class-name">nf-cod-shield</div><div class="codepoint">eb53</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-sign_in center"></div>
+    <div class="class-name">nf-cod-sign_in</div><div class="codepoint">ea6f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-sign_out center"></div>
+    <div class="class-name">nf-cod-sign_out</div><div class="codepoint">ea6e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-smiley center"></div>
+    <div class="class-name">nf-cod-smiley</div><div class="codepoint">eb54</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-sort_precedence center"></div>
+    <div class="class-name">nf-cod-sort_precedence</div><div class="codepoint">eb55</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-source_control center"></div>
+    <div class="class-name">nf-cod-source_control</div><div class="codepoint">ea68</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-split_horizontal center"></div>
+    <div class="class-name">nf-cod-split_horizontal</div><div class="codepoint">eb56</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-split_vertical center"></div>
+    <div class="class-name">nf-cod-split_vertical</div><div class="codepoint">eb57</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-squirrel center"></div>
+    <div class="class-name">nf-cod-squirrel</div><div class="codepoint">eb58</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-star_empty center"></div>
+    <div class="class-name">nf-cod-star_empty</div><div class="codepoint">ea6a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-star_full center"></div>
+    <div class="class-name">nf-cod-star_full</div><div class="codepoint">eb59</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-star_half center"></div>
+    <div class="class-name">nf-cod-star_half</div><div class="codepoint">eb5a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-stop_circle center"></div>
+    <div class="class-name">nf-cod-stop_circle</div><div class="codepoint">eba5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_array center"></div>
+    <div class="class-name">nf-cod-symbol_array</div><div class="codepoint">ea8a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_boolean center"></div>
+    <div class="class-name">nf-cod-symbol_boolean</div><div class="codepoint">ea8f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_class center"></div>
+    <div class="class-name">nf-cod-symbol_class</div><div class="codepoint">eb5b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_color center"></div>
+    <div class="class-name">nf-cod-symbol_color</div><div class="codepoint">eb5c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_constant center"></div>
+    <div class="class-name">nf-cod-symbol_constant</div><div class="codepoint">eb5d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_enum center"></div>
+    <div class="class-name">nf-cod-symbol_enum</div><div class="codepoint">ea95</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_enum_member center"></div>
+    <div class="class-name">nf-cod-symbol_enum_member</div><div class="codepoint">eb5e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_event center"></div>
+    <div class="class-name">nf-cod-symbol_event</div><div class="codepoint">ea86</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_field center"></div>
+    <div class="class-name">nf-cod-symbol_field</div><div class="codepoint">eb5f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_file center"></div>
+    <div class="class-name">nf-cod-symbol_file</div><div class="codepoint">eb60</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_interface center"></div>
+    <div class="class-name">nf-cod-symbol_interface</div><div class="codepoint">eb61</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_key center"></div>
+    <div class="class-name">nf-cod-symbol_key</div><div class="codepoint">ea93</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_keyword center"></div>
+    <div class="class-name">nf-cod-symbol_keyword</div><div class="codepoint">eb62</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_method center"></div>
+    <div class="class-name">nf-cod-symbol_method</div><div class="codepoint">ea8c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_misc center"></div>
+    <div class="class-name">nf-cod-symbol_misc</div><div class="codepoint">eb63</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_namespace center"></div>
+    <div class="class-name">nf-cod-symbol_namespace</div><div class="codepoint">ea8b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_numeric center"></div>
+    <div class="class-name">nf-cod-symbol_numeric</div><div class="codepoint">ea90</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_operator center"></div>
+    <div class="class-name">nf-cod-symbol_operator</div><div class="codepoint">eb64</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_parameter center"></div>
+    <div class="class-name">nf-cod-symbol_parameter</div><div class="codepoint">ea92</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_property center"></div>
+    <div class="class-name">nf-cod-symbol_property</div><div class="codepoint">eb65</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_ruler center"></div>
+    <div class="class-name">nf-cod-symbol_ruler</div><div class="codepoint">ea96</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_snippet center"></div>
+    <div class="class-name">nf-cod-symbol_snippet</div><div class="codepoint">eb66</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_string center"></div>
+    <div class="class-name">nf-cod-symbol_string</div><div class="codepoint">eb8d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_structure center"></div>
+    <div class="class-name">nf-cod-symbol_structure</div><div class="codepoint">ea91</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-symbol_variable center"></div>
+    <div class="class-name">nf-cod-symbol_variable</div><div class="codepoint">ea88</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-sync center"></div>
+    <div class="class-name">nf-cod-sync</div><div class="codepoint">ea77</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-sync_ignored center"></div>
+    <div class="class-name">nf-cod-sync_ignored</div><div class="codepoint">eb9f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-table center"></div>
+    <div class="class-name">nf-cod-table</div><div class="codepoint">ebb7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-tag center"></div>
+    <div class="class-name">nf-cod-tag</div><div class="codepoint">ea66</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-tasklist center"></div>
+    <div class="class-name">nf-cod-tasklist</div><div class="codepoint">eb67</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-telescope center"></div>
+    <div class="class-name">nf-cod-telescope</div><div class="codepoint">eb68</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal center"></div>
+    <div class="class-name">nf-cod-terminal</div><div class="codepoint">ea85</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal_bash center"></div>
+    <div class="class-name">nf-cod-terminal_bash</div><div class="codepoint">ebca</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal_cmd center"></div>
+    <div class="class-name">nf-cod-terminal_cmd</div><div class="codepoint">ebc4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal_debian center"></div>
+    <div class="class-name">nf-cod-terminal_debian</div><div class="codepoint">ebc5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal_linux center"></div>
+    <div class="class-name">nf-cod-terminal_linux</div><div class="codepoint">ebc6</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal_powershell center"></div>
+    <div class="class-name">nf-cod-terminal_powershell</div><div class="codepoint">ebc7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal_tmux center"></div>
+    <div class="class-name">nf-cod-terminal_tmux</div><div class="codepoint">ebc8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-terminal_ubuntu center"></div>
+    <div class="class-name">nf-cod-terminal_ubuntu</div><div class="codepoint">ebc9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-text_size center"></div>
+    <div class="class-name">nf-cod-text_size</div><div class="codepoint">eb69</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-three_bars center"></div>
+    <div class="class-name">nf-cod-three_bars</div><div class="codepoint">eb6a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-thumbsdown center"></div>
+    <div class="class-name">nf-cod-thumbsdown</div><div class="codepoint">eb6b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-thumbsup center"></div>
+    <div class="class-name">nf-cod-thumbsup</div><div class="codepoint">eb6c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-tools center"></div>
+    <div class="class-name">nf-cod-tools</div><div class="codepoint">eb6d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-trash center"></div>
+    <div class="class-name">nf-cod-trash</div><div class="codepoint">ea81</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-triangle_down center"></div>
+    <div class="class-name">nf-cod-triangle_down</div><div class="codepoint">eb6e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-triangle_left center"></div>
+    <div class="class-name">nf-cod-triangle_left</div><div class="codepoint">eb6f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-triangle_right center"></div>
+    <div class="class-name">nf-cod-triangle_right</div><div class="codepoint">eb70</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-triangle_up center"></div>
+    <div class="class-name">nf-cod-triangle_up</div><div class="codepoint">eb71</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-twitter center"></div>
+    <div class="class-name">nf-cod-twitter</div><div class="codepoint">eb72</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-type_hierarchy center"></div>
+    <div class="class-name">nf-cod-type_hierarchy</div><div class="codepoint">ebb9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-type_hierarchy_sub center"></div>
+    <div class="class-name">nf-cod-type_hierarchy_sub</div><div class="codepoint">ebba</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-type_hierarchy_super center"></div>
+    <div class="class-name">nf-cod-type_hierarchy_super</div><div class="codepoint">ebbb</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-unfold center"></div>
+    <div class="class-name">nf-cod-unfold</div><div class="codepoint">eb73</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-ungroup_by_ref_type center"></div>
+    <div class="class-name">nf-cod-ungroup_by_ref_type</div><div class="codepoint">eb98</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-unlock center"></div>
+    <div class="class-name">nf-cod-unlock</div><div class="codepoint">eb74</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-unmute center"></div>
+    <div class="class-name">nf-cod-unmute</div><div class="codepoint">eb75</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-unverified center"></div>
+    <div class="class-name">nf-cod-unverified</div><div class="codepoint">eb76</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-variable_group center"></div>
+    <div class="class-name">nf-cod-variable_group</div><div class="codepoint">ebb8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-verified center"></div>
+    <div class="class-name">nf-cod-verified</div><div class="codepoint">eb77</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-verified_filled center"></div>
+    <div class="class-name">nf-cod-verified_filled</div><div class="codepoint">ebe9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-versions center"></div>
+    <div class="class-name">nf-cod-versions</div><div class="codepoint">eb78</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-vm center"></div>
+    <div class="class-name">nf-cod-vm</div><div class="codepoint">ea7a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-vm_active center"></div>
+    <div class="class-name">nf-cod-vm_active</div><div class="codepoint">eb79</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-vm_connect center"></div>
+    <div class="class-name">nf-cod-vm_connect</div><div class="codepoint">eba9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-vm_outline center"></div>
+    <div class="class-name">nf-cod-vm_outline</div><div class="codepoint">eb7a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-vm_running center"></div>
+    <div class="class-name">nf-cod-vm_running</div><div class="codepoint">eb7b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-wand center"></div>
+    <div class="class-name">nf-cod-wand</div><div class="codepoint">ebcf</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-warning center"></div>
+    <div class="class-name">nf-cod-warning</div><div class="codepoint">ea6c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-watch center"></div>
+    <div class="class-name">nf-cod-watch</div><div class="codepoint">eb7c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-whitespace center"></div>
+    <div class="class-name">nf-cod-whitespace</div><div class="codepoint">eb7d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-whole_word center"></div>
+    <div class="class-name">nf-cod-whole_word</div><div class="codepoint">eb7e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-window center"></div>
+    <div class="class-name">nf-cod-window</div><div class="codepoint">eb7f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-word_wrap center"></div>
+    <div class="class-name">nf-cod-word_wrap</div><div class="codepoint">eb80</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-workspace_trusted center"></div>
+    <div class="class-name">nf-cod-workspace_trusted</div><div class="codepoint">ebc1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-workspace_unknown center"></div>
+    <div class="class-name">nf-cod-workspace_unknown</div><div class="codepoint">ebc3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-workspace_untrusted center"></div>
+    <div class="class-name">nf-cod-workspace_untrusted</div><div class="codepoint">ebc2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-zoom_in center"></div>
+    <div class="class-name">nf-cod-zoom_in</div><div class="codepoint">eb81</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-cod-zoom_out center"></div>
+    <div class="class-name">nf-cod-zoom_out</div><div class="codepoint">eb82</div>
+  </div>
+  <div class="column">
     <div class="nf nf-custom-c center"></div>
     <div class="class-name">nf-custom-c</div><div class="codepoint">e61e</div>
   </div>
   <div class="column">
     <div class="nf nf-custom-cpp center"></div>
     <div class="class-name">nf-custom-cpp</div><div class="codepoint">e61d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-custom-crystal center"></div>
+    <div class="class-name">nf-custom-crystal</div><div class="codepoint">e62f</div>
   </div>
   <div class="column">
     <div class="nf nf-custom-electron center"></div>
@@ -42,6 +1594,10 @@ style: container
   <div class="column">
     <div class="nf nf-custom-elm center"></div>
     <div class="class-name">nf-custom-elm</div><div class="codepoint">e62c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-custom-emacs center"></div>
+    <div class="class-name">nf-custom-emacs</div><div class="codepoint">e632</div>
   </div>
   <div class="column">
     <div class="nf nf-custom-folder center"></div>
@@ -76,8 +1632,24 @@ style: container
     <div class="class-name">nf-custom-go</div><div class="codepoint">e626</div>
   </div>
   <div class="column">
+    <div class="nf nf-custom-kotlin center"></div>
+    <div class="class-name">nf-custom-kotlin</div><div class="codepoint">e634</div>
+  </div>
+  <div class="column">
     <div class="nf nf-custom-msdos center"></div>
     <div class="class-name">nf-custom-msdos</div><div class="codepoint">e629</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-custom-orgmode center"></div>
+    <div class="class-name">nf-custom-orgmode</div><div class="codepoint">e633</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-custom-puppet center"></div>
+    <div class="class-name">nf-custom-puppet</div><div class="codepoint">e631</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-custom-purescript center"></div>
+    <div class="class-name">nf-custom-purescript</div><div class="codepoint">e630</div>
   </div>
   <div class="column">
     <div class="nf nf-custom-vim center"></div>
@@ -4112,6 +5684,10 @@ style: container
     <div class="class-name">nf-fae-checklist_o</div><div class="codepoint">e29a</div>
   </div>
   <div class="column">
+    <div class="nf nf-fae-cheese center"></div>
+    <div class="class-name">nf-fae-cheese</div><div class="codepoint">e264</div>
+  </div>
+  <div class="column">
     <div class="nf nf-fae-cherry center"></div>
     <div class="class-name">nf-fae-cherry</div><div class="codepoint">e29b</div>
   </div>
@@ -4138,10 +5714,6 @@ style: container
   <div class="column">
     <div class="nf nf-fae-chess_tower center"></div>
     <div class="class-name">nf-fae-chess_tower</div><div class="codepoint">e263</div>
-  </div>
-  <div class="column">
-    <div class="nf nf-fae-cheese center"></div>
-    <div class="class-name">nf-fae-cheese</div><div class="codepoint">e264</div>
   </div>
   <div class="column">
     <div class="nf nf-fae-chicken_thigh center"></div>
@@ -4708,6 +6280,10 @@ style: container
     <div class="class-name">nf-indentation-line</div><div class="codepoint">e621</div>
   </div>
   <div class="column">
+    <div class="nf nf-linux-almalinux center"></div>
+    <div class="class-name">nf-linux-almalinux</div><div class="codepoint">f31d</div>
+  </div>
+  <div class="column">
     <div class="nf nf-linux-alpine center"></div>
     <div class="class-name">nf-linux-alpine</div><div class="codepoint">f300</div>
   </div>
@@ -4720,8 +6296,20 @@ style: container
     <div class="class-name">nf-linux-apple</div><div class="codepoint">f302</div>
   </div>
   <div class="column">
+    <div class="nf nf-linux-archlabs center"></div>
+    <div class="class-name">nf-linux-archlabs</div><div class="codepoint">f31e</div>
+  </div>
+  <div class="column">
     <div class="nf nf-linux-archlinux center"></div>
     <div class="class-name">nf-linux-archlinux</div><div class="codepoint">f303</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-artix center"></div>
+    <div class="class-name">nf-linux-artix</div><div class="codepoint">f31f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-budgie center"></div>
+    <div class="class-name">nf-linux-budgie</div><div class="codepoint">f320</div>
   </div>
   <div class="column">
     <div class="nf nf-linux-centos center"></div>
@@ -4736,6 +6324,10 @@ style: container
     <div class="class-name">nf-linux-debian</div><div class="codepoint">f306</div>
   </div>
   <div class="column">
+    <div class="nf nf-linux-deepin center"></div>
+    <div class="class-name">nf-linux-deepin</div><div class="codepoint">f321</div>
+  </div>
+  <div class="column">
     <div class="nf nf-linux-devuan center"></div>
     <div class="class-name">nf-linux-devuan</div><div class="codepoint">f307</div>
   </div>
@@ -4748,6 +6340,10 @@ style: container
     <div class="class-name">nf-linux-elementary</div><div class="codepoint">f309</div>
   </div>
   <div class="column">
+    <div class="nf nf-linux-endeavour center"></div>
+    <div class="class-name">nf-linux-endeavour</div><div class="codepoint">f322</div>
+  </div>
+  <div class="column">
     <div class="nf nf-linux-fedora center"></div>
     <div class="class-name">nf-linux-fedora</div><div class="codepoint">f30a</div>
   </div>
@@ -4756,12 +6352,32 @@ style: container
     <div class="class-name">nf-linux-fedora_inverse</div><div class="codepoint">f30b</div>
   </div>
   <div class="column">
+    <div class="nf nf-linux-ferris center"></div>
+    <div class="class-name">nf-linux-ferris</div><div class="codepoint">f323</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-flathub center"></div>
+    <div class="class-name">nf-linux-flathub</div><div class="codepoint">f324</div>
+  </div>
+  <div class="column">
     <div class="nf nf-linux-freebsd center"></div>
     <div class="class-name">nf-linux-freebsd</div><div class="codepoint">f30c</div>
   </div>
   <div class="column">
     <div class="nf nf-linux-gentoo center"></div>
     <div class="class-name">nf-linux-gentoo</div><div class="codepoint">f30d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-gnu_guix center"></div>
+    <div class="class-name">nf-linux-gnu_guix</div><div class="codepoint">f325</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-illumos center"></div>
+    <div class="class-name">nf-linux-illumos</div><div class="codepoint">f326</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-kali_linux center"></div>
+    <div class="class-name">nf-linux-kali_linux</div><div class="codepoint">f327</div>
   </div>
   <div class="column">
     <div class="nf nf-linux-linuxmint center"></div>
@@ -4788,8 +6404,20 @@ style: container
     <div class="class-name">nf-linux-nixos</div><div class="codepoint">f313</div>
   </div>
   <div class="column">
+    <div class="nf nf-linux-openbsd center"></div>
+    <div class="class-name">nf-linux-openbsd</div><div class="codepoint">f328</div>
+  </div>
+  <div class="column">
     <div class="nf nf-linux-opensuse center"></div>
     <div class="class-name">nf-linux-opensuse</div><div class="codepoint">f314</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-parrot center"></div>
+    <div class="class-name">nf-linux-parrot</div><div class="codepoint">f329</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-pop_os center"></div>
+    <div class="class-name">nf-linux-pop_os</div><div class="codepoint">f32a</div>
   </div>
   <div class="column">
     <div class="nf nf-linux-raspberry_pi center"></div>
@@ -4798,6 +6426,10 @@ style: container
   <div class="column">
     <div class="nf nf-linux-redhat center"></div>
     <div class="class-name">nf-linux-redhat</div><div class="codepoint">f316</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-rocky_linux center"></div>
+    <div class="class-name">nf-linux-rocky_linux</div><div class="codepoint">f32b</div>
   </div>
   <div class="column">
     <div class="nf nf-linux-sabayon center"></div>
@@ -4812,6 +6444,14 @@ style: container
     <div class="class-name">nf-linux-slackware_inverse</div><div class="codepoint">f319</div>
   </div>
   <div class="column">
+    <div class="nf nf-linux-snappy center"></div>
+    <div class="class-name">nf-linux-snappy</div><div class="codepoint">f32c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-solus center"></div>
+    <div class="class-name">nf-linux-solus</div><div class="codepoint">f32d</div>
+  </div>
+  <div class="column">
     <div class="nf nf-linux-tux center"></div>
     <div class="class-name">nf-linux-tux</div><div class="codepoint">f31a</div>
   </div>
@@ -4822,6 +6462,14 @@ style: container
   <div class="column">
     <div class="nf nf-linux-ubuntu_inverse center"></div>
     <div class="class-name">nf-linux-ubuntu_inverse</div><div class="codepoint">f31c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-void center"></div>
+    <div class="class-name">nf-linux-void</div><div class="codepoint">f32e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-linux-zorin center"></div>
+    <div class="class-name">nf-linux-zorin</div><div class="codepoint">f32f</div>
   </div>
   <div class="column">
     <div class="nf nf-mdi-access_point center"></div>
@@ -15277,4 +16925,3 @@ I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
     I really <i class="nf nf-fa-heart ow"></i> <i class="nf nf-custom-vim nfunc"></i>
   </span>
 </div>
-
