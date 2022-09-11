@@ -8,8 +8,8 @@ source ./lib/i_all.sh
 
 output_css_file="../../css/nerd-fonts-generated.css"
 output_css_min_file="../../css/nerd-fonts-generated.min.css"
-header_css_file="./css-header.txt"
-header_css_min_file="./css-min-header.txt"
+header_css_file="./data/css-header.txt"
+header_css_min_file="./data/css-min-header.txt"
 if [ -d "../../temp" ]; then
   output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
   text_gen=" and Cheat Sheet HTML"
