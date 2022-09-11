@@ -22,7 +22,7 @@ favicon:     "assets/img/favicon.ico"
 touch_icon:  "assets/img/apple-touch-icon.png"
 google_analytics_key: "UA-91070609-1"
 adsbygoogle: false
-current_version: 2.1.0
+current_version: 2.2.2
 metrics:
   icons: 3,600
   fonts: 50
