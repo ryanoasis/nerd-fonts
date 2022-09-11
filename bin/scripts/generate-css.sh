@@ -7,7 +7,9 @@
 source ./lib/i_all.sh
 
 output_css_file="../../css/nerd-fonts-generated.css"
+output_css_min_file="../../css/nerd-fonts-generated.min.css"
 header_css_file="./css-header.txt"
+header_css_min_file="./css-min-header.txt"
 if [ -d "../../temp" ]; then
   output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
   text_gen=" and Cheat Sheet HTML"
@@ -19,6 +21,7 @@ version="2.2.2"
 
 # clear files
 true > "$output_css_file" 2> /dev/null
+true > "$output_css_min_file" 2> /dev/null
 true > "$output_cheat_sheet_file" 2> /dev/null
 
 # describe how the classes were established
@@ -28,11 +31,15 @@ true > "$output_cheat_sheet_file" 2> /dev/null
   printf " *%s Development Website: https://github.com/ryanoasis/nerd-fonts\\n" "$LINE_PREFIX"
   printf " *%s Version: %s\\n" "$LINE_PREFIX" "$version"
   printf " *%s The following is generated from the build script\\n" "$LINE_PREFIX"
-  printf " */\\n\\n"
-  # add top section of CSS
-  cat $header_css_file
-} >> "$output_css_file"
+  printf " */\\n"
+} | tee "$output_css_min_file" >> "$output_css_file"
 
+# add top section of CSS
+{
+  printf "\\n"
+  cat "$header_css_file"
+} >> "$output_css_file"
+cat "$header_css_min_file" | tr -d '\n' >> "$output_css_min_file"
 
 echo;
 
@@ -62,6 +69,11 @@ for var in "${!i@}"; do
     printf "}"
     printf "\\n"
   } >> "$output_css_file"
+
+  # generate css min rules
+  {
+    printf ".nf-%s:before{content:\"\\%s\"}" "$glyph_name" "$glyph_code"
+  } >> "$output_css_min_file"
 
   # generate HTML cheat sheet
   {
