@@ -302,6 +302,7 @@ jobs:
         # regardless of how often we run the release CI.
         uses: EndBug/add-and-commit@v9
         with:
+          fetch: false
           add: "['font-patcher', 'bin/scripts']"
           message: "[ci] Bump release version"
           committer_name: GitHub Actions
@@ -310,6 +311,7 @@ jobs:
       - name: Commit patched fonts back to repo
         uses: EndBug/add-and-commit@v9
         with:
+          fetch: false
           add: 'patched-fonts'
           message: "[ci] Rebuilds patched fonts"
           committer_name: GitHub Actions
@@ -323,6 +325,7 @@ jobs:
       - name: Commit fontconfig back to repo
         uses: EndBug/add-and-commit@v9
         with:
+          fetch: false
           add: '10-nerd-font-symbols.conf'
           message: "[ci] Regenerate fontconfig"
           committer_name: GitHub Actions
@@ -337,6 +340,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         id: push_css
         with:
+          fetch: false
           add: 'css'
           message: "[ci] Regenerate CSS files"
           committer_name: GitHub Actions
