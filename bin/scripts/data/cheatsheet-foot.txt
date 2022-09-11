@@ -1,0 +1,14 @@
+</div>
+
+<h3>Example Usages</h3>
+
+<h4>CSS</h4>
+
+<div class="center">
+  {% highlight html %}
+I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
+  {% endhighlight %}
+  <span class="nerd-fonts-example-usage">
+    I really <i class="nf nf-fa-heart ow"></i> <i class="nf nf-custom-vim nfunc"></i>
+  </span>
+</div>

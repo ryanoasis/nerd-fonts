@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.2.2
-# Script Version: 1.1.1
-# Generates CSS file for the font
+# Script Version: 1.2.0
+# Generates CSS file for the font and cheat sheet code
 
 # shellcheck disable=SC1091
 source ./lib/i_all.sh
@@ -10,12 +10,14 @@ output_css_file="../../css/nerd-fonts-generated.css"
 output_css_min_file="../../css/nerd-fonts-generated.min.css"
 header_css_file="./data/css-header.txt"
 header_css_min_file="./data/css-min-header.txt"
-if [ -d "../../temp" ]; then
-  output_cheat_sheet_file="../../temp/nerd-fonts-generated-cheat-sheet.txt"
-  text_gen=" and Cheat Sheet HTML"
-else
-  output_cheat_sheet_file="/dev/null"
+
+if [ ! -d "../../temp" ]; then
+  mkdir "../../temp"
 fi
+output_cheat_sheet_file="../../temp/2017-01-04-icon-cheat-sheet.md"
+cheat_sheet_head_file="./data/cheatsheet-head.txt"
+cheat_sheet_foot_file="./data/cheatsheet-foot.txt"
+
 LINE_PREFIX="# [Nerd Fonts] "
 version="2.2.2"
 
@@ -40,6 +42,8 @@ true > "$output_cheat_sheet_file" 2> /dev/null
   cat "$header_css_file"
 } >> "$output_css_file"
 cat "$header_css_min_file" | tr -d '\n' >> "$output_css_min_file"
+
+cat "$cheat_sheet_head_file" > "$output_cheat_sheet_file"
 
 echo;
 
@@ -77,16 +81,18 @@ for var in "${!i@}"; do
 
   # generate HTML cheat sheet
   {
-    printf "<div class=\"column\">"
+    printf "  <div class=\"column\">"
     printf "\\n"
-    printf "  <div class=\"nf nf-%s center\"></div>" "$glyph_name"
+    printf "    <div class=\"nf nf-%s center\"></div>" "$glyph_name"
     printf "\\n"
-    printf "  <span><div class=\"class-name\">nf-%s</div><div class=\"codepoint\">%s</div></span>" "$glyph_name" "$glyph_code"
+    printf "    <div class=\"class-name\">nf-%s</div><div class=\"codepoint\">%s</div>" "$glyph_name" "$glyph_code"
     printf "\\n"
-    printf "</div>"
+    printf "  </div>"
     printf "\\n"
   } >> "$output_cheat_sheet_file"
 
 done
 
-printf "Generated CSS${text_gen}\\n"
+cat "$cheat_sheet_foot_file" >> "$output_cheat_sheet_file"
+
+printf "Generated CSS and Cheat Sheet HTML\\n"
