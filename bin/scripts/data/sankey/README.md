@@ -1,6 +1,13 @@
 ## How to update the sankey diagram
 
-https://sankeymatic.com/
+![Sankey Generator Screenshot](./sankey_settings.png)
+
+
+### Generate diagram
+
+Goto https://sankeymatic.com/
+
+Enter data:
 
         Powerline Symbols [7] Nerd Fonts
         Powerline Extra Symbols [31] Nerd Fonts
@@ -17,6 +24,8 @@ https://sankeymatic.com/
         Codicons [388] Nerd Fonts
         :Nerd Fonts #3484bb
 
+### Steps
+```
 Nodes Width 18
 Nodes Color Categories
 Flow Curviness 0.7
@@ -46,4 +55,4 @@ Use eyedropper tool and click on colored bar of new diagram
 Save as compressed inkscape svgz
 Save as optimized svg
 Use the later as production file.
-
+```
