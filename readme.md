@@ -370,12 +370,14 @@ Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-de
 Full options:
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
                     [--powerline] [--powerlineextra] [--material] [--weather]
                     font
@@ -383,7 +385,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.2.1
+* Version: 2.2.2
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -426,8 +428,8 @@ Symbol Fonts:
   --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
   --fontawesomeextension
                         Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
-  --fontlinux, --fontlogos
-                        Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)
+  --fontlogos, --fontlinux
+                        Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)
   --octicons            Add Octicons Glyphs (https://octicons.github.com)
   --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)

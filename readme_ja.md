@@ -325,12 +325,14 @@ The list is not complete, but you can [search for a complete list here](https://
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
                     [--powerline] [--powerlineextra] [--material] [--weather]
                     font
@@ -338,7 +340,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.2.1
+* Version: 2.2.2
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -381,8 +383,8 @@ Symbol Fonts:
   --fontawesome         Font Awesome のグリフを追加します (http://fontawesome.io/)。
   --fontawesomeextension
                         Font Awesome Extension のグリフを追加します (https://andrelzgava.github.io/font-awesome-extension/)。
-  --fontlinux, --fontlogos
-                        Font Linux とその他のオープンソースのグリフを追加します (https://github.com/Lukas-W/font-logos)。
+  --fontlogos, --fontlinux
+                        Font Logos とその他のオープンソースのグリフを追加します (https://github.com/Lukas-W/font-logos)。
   --octicons            Octicons Glyphs のグリフを追加します (https://octicons.github.com)。
   --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        IEC Power Symbols のグリフを追加します (https://unicodepowersymbol.com/)。

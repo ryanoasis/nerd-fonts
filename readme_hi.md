@@ -362,20 +362,22 @@ The list is not complete, but you can [search for a complete list here](https://
 
 पूर्ण विकल्प:
 
-    प्रयोग: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
                     [--powerline] [--powerlineextra] [--material] [--weather]
-                        font
+                    font
     
     Nerd Fonts Font Patcher: किसी दिए गए फ़ॉन्ट को प्रोग्रामिंग और विकास संबंधी ग्लिफ़ के साथ पैच करता है
     
     * वेबसाइट: https://www.nerdfonts.com
-    * संस्करण: 2.2.1
+    * संस्करण: 2.2.2
     * विकास वेबसाइट: https://github.com/ryanoasis/nerd-fonts
     * बदलाव का लॉग: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
     
@@ -418,7 +420,7 @@ The list is not complete, but you can [search for a complete list here](https://
       --fontawesome         फ़ॉन्ट विस्मयकारी ग्लिफ़ जोड़ें (http://fontawesome.io/)
       --fontawesomeextension
                             फ़ॉन्ट विस्मयकारी एक्सटेंशन ग्लिफ़ जोड़ें (https://andrelzgava.github.io/font-awesome-extension/)
-      --fontlinux, --fontlogos
+      --fontlogos, --fontlinux
                             फ़ॉन्ट लिनक्स और अन्य ओपन सोर्स ग्लिफ़ जोड़ें (https://github.com/Lukas-W/font-logos)
       --octicons            ऑक्टिकॉन ग्लिफ़ जोड़ें (https://octicons.github.com)
       --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)

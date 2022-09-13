@@ -326,12 +326,14 @@ Modificar o tipo de letra à tua escolha com [VimDevIcons ➶][vim-devicons]:
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
                     [--powerline] [--powerlineextra] [--material] [--weather]
                     font
@@ -339,7 +341,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs
 Modificador de Fontes Nerd Fonts: modifica uma determinada fonte com glifos relacionados à programação e ao desenvolvimento
 
 * Website: https://www.nerdfonts.com
-* Versão: 2.2.1
+* Versão: 2.2.2
 * Website do desenvolvimento: https://github.com/ryanoasis/nerd-fonts
 * Histórico de alterações: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -382,8 +384,8 @@ Symbol Fonts:
   --fontawesome         Aderir os glifos do Font Awesome (http://fontawesome.io/)
   --fontawesomeextension
                         Aderir os glifos do Font Awesome Extension (https://andrelzgava.github.io/font-awesome-extension/)
-  --fontlinux, --fontlogos
-                        Aderir os glifos do Font Linux e doutros glifos de código-aberto (https://github.com/Lukas-W/font-logos)
+  --fontlogos, --fontlinux
+                        Aderir os glifos do Font Logos (https://github.com/Lukas-W/font-logos)
   --octicons            Aderir os glifos do Octicons (https://octicons.github.com)
   --powersymbols        Aderir os glifos do IEC Power Symbols (https://unicodepowersymbol.com/)
   --pomicons            Aderir os glifos do Pomicon (https://github.com/gabrielelana/pomicons)

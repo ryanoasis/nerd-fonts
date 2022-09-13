@@ -329,20 +329,22 @@ Parcha la fuente de tu preferencia para usar los [VimDevIcons ➶][vim-devicons]
 
 
 ```
-uso: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                  [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                  [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                  [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
-                  [--progressbars | --no-progressbars] [--also-windows]
-                  [--fontawesome] [--fontawesomeextension] [--fontlinux]
-                  [--octicons] [--codicons] [--powersymbols] [--pomicons]
-                  [--powerline] [--powerlineextra] [--material] [--weather]
-                  font
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
+                    [--progressbars | --no-progressbars] [--also-windows]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                    [--powerline] [--powerlineextra] [--material] [--weather]
+                    font
 
 Parchador de fuentes Nerd Fonts: parcha una fuente dada con glifos relacionados con la programación y el desarrollo
 
 * Sitio web: https://www.nerdfonts.com
-* Versión: 2.2.1
+* Versión: 2.2.2
 * Sitio de Desarrollo: https://github.com/ryanoasis/nerd-fonts
 * Registro de Cambios: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -385,8 +387,8 @@ Symbol Fonts:
   --fontawesome         Añade los glifos de Font Awesome (http://fontawesome.io/)
   --fontawesomeextension
                         Añade los glifos de Font Awesome Extension (https://andrelzgava.github.io/font-awesome-extension/)
-  --fontlinux, --fontlogos
-                        Añade los glifos de Font Linux y otros glifos de Código Libre (https://github.com/Lukas-W/font-logos)
+  --fontlogos, --fontlinux
+                        Añade los glifos de Font Logos (https://github.com/Lukas-W/font-logos)
   --octicons            Añade los glifos de Octicons (https://octicons.github.com)
   --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        Añade los glifos de IEC Power Symbols (https://unicodepowersymbol.com/)

@@ -381,12 +381,14 @@ The list is not complete, but you can [search for a complete list here](https://
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
                     [--powerline] [--powerlineextra] [--material] [--weather]
                     font
@@ -394,7 +396,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.2.1
+* Version: 2.2.2
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -437,7 +439,8 @@ Symbol Fonts:
   --fontawesome         加入 Font Awesome Glyphs字體 (http://fontawesome.io/)
   --fontawesomeextension
                         加入 Font Awesome 補充字體 (https://andrelzgava.github.io/font-awesome-extension/)
-  --fontlinux           加入 Font Linux 字體 (https://github.com/Lukas-W/font-linux)
+  --fontlogos, --fontlinux
+                        加入 Font Logos 字體 (https://github.com/Lukas-W/font-logos)
   --octicons            加入 Octicons 字體 (https://octicons.github.com)
   --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        加入 IEC Power Symbols (https://unicodepowersymbol.com/)

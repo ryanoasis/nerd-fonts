@@ -381,12 +381,14 @@ The list is not complete, but you can [search for a complete list here](https://
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                    [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                    [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
                     [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlinux]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
                     [--octicons] [--codicons] [--powersymbols] [--pomicons]
                     [--powerline] [--powerlineextra] [--material] [--weather]
                     font
@@ -394,7 +396,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.2.1
+* Version: 2.2.2
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -416,7 +418,7 @@ optional arguments:
   --removeligs, --removeligatures
                         Removes ligatures specificed in JSON configuration file
   --postprocess [POSTPROCESS]
-                        Specify a Script for Post Processing
+                        指定一个针对后续进程的脚本
   --configfile [CONFIGFILE]
                         Specify a file path for JSON configuration file (see sample: src/config.sample.json)
   --custom [CUSTOM]     指定一个自定义图标字体，所有新字形都会在不缩放的情况下被拷贝。
@@ -437,15 +439,18 @@ Symbol Fonts:
   --fontawesome         加入 Font Awesome Glyphs字体 (http://fontawesome.io/)
   --fontawesomeextension
                         加入 Font Awesome 补充字体 (https://andrelzgava.github.io/font-awesome-extension/)
-  --fontlinux           加入 Font Linux 字体 (https://github.com/Lukas-W/font-linux)
+  --fontlogos, --fontlinux
+                        加入 Font Logos 字体 (https://github.com/Lukas-W/font-logos)
   --octicons            加入 Octicons 字体 (https://octicons.github.com)
   --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
   --powersymbols        加入 IEC Power Symbols (https://unicodepowersymbol.com/)
   --pomicons            加入 Pomicon 字体 (https://github.com/gabrielelana/pomicons)
   --powerline           加入 Powerline 字体
   --powerlineextra      加入 Powerline 字体 (https://github.com/ryanoasis/powerline-extra-symbols)
-  --postprocess [POSTPROCESS]
-                        指定一个针对后续进程的脚本
+  --material, --materialdesignicons, --mdi
+                        Add Material Design Icons (https://github.com/templarian/MaterialDesign)
+  --weather, --weathericons
+                        Add Weather Icons (https://github.com/erikflowers/weather-icons)
 ```
 
 #### 例子

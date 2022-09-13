@@ -323,20 +323,22 @@ The list is not complete, but you can [search for a complete list here](https://
 ```
     ./fontforge -script font-patcher ШЛЯХ_ДО_ШРИФТА
 
-    usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful] [--removeligs]
-                        [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]]
-                        [--custom [CUSTOM]] [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                        [--glyphdir [GLYPHDIR]] [--makegroups] [--variable-width-glyphs]
-                        [--progressbars | --no-progressbars] [--also-windows]
-                        [--fontawesome] [--fontawesomeextension] [--fontlinux]
-                        [--octicons] [--codicons] [--powersymbols] [--pomicons]
-                        [--powerline] [--powerlineextra] [--material] [--weather]
-                        font
+    usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
+                    [--removeligs] [--postprocess [POSTPROCESS]]
+                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
+                    [--glyphdir [GLYPHDIR]] [--makegroups]
+                    [--variable-width-glyphs]
+                    [--progressbars | --no-progressbars] [--also-windows]
+                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
+                    [--powerline] [--powerlineextra] [--material] [--weather]
+                    font
 
     Nerd Fonts Font Patcher: виправляє заданий шрифт програмістами та гліфами, пов'язаними з розробкою
 
     * Веб-сайт: https://www.nerdfonts.com
-    * Версія: 2.2.1
+    * Версія: 2.2.2
     * Веб-сайт для розробки: https://github.com/ryanoasis/nerd-fonts
     * Журнал змін: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
 
@@ -379,8 +381,8 @@ The list is not complete, but you can [search for a complete list here](https://
       --fontawesome         Додайте Font Awesome гліфи (http://fontawesome.io/)
       --fontawesomeextension
                             Додайте Font Awesome Extension гліфи (https://andrelzgava.github.io/font-awesome-extension/)
-      --fontlinux, --fontlogos
-                            Додайте Font Linux та інші open source гліфи (https://github.com/Lukas-W/font-logos)
+      --fontlogos, --fontlinux
+                            Додайте Font Logos гліфи (https://github.com/Lukas-W/font-logos)
       --octicons            Додайте Octicons гліфи (https://octicons.github.com)
       --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
       --powersymbols        Додайте IEC Power Symbols (https://unicodepowersymbol.com/)
