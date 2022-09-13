@@ -140,7 +140,7 @@ function test-fonts() {
   print-unicode-ranges f400 f4a8 2665 2665 26A1 26A1 f27c f27c
   echo; echo
 
-  echo "Nerd Fonts - Font Linux"
+  echo "Nerd Fonts - Font Logos"
   print-unicode-ranges f300 f313
   echo; echo
 

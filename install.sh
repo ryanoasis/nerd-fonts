@@ -50,7 +50,7 @@ If you need more control over the included glyphs than when using the above
 two options, use any combination of these <patches>:
 
   --fontawesome                 Include Font Awesome.
-  --fontlinux                   Include Font Linux.
+  --fontlogos                   Include Font Logos.
   --octicons                    Include Octicons.
   --pomicons                    Include Pomicons.
 EOF
@@ -104,14 +104,14 @@ while getopts "$optspec" optchar; do
         *)
           case "${OPTARG}" in
             # Long options that define variations
-            fontawesome | fontlinux | octicons | pomicons)
+            fontawesome | fontlogos | octicons | pomicons)
               # If the user has picked one of these options,
               # we need to unset `Complete`
               delete=("Complete")
               patches=( "${patches[@]/${delete[0]}}" )
               case "${OPTARG}" in
                 fontawesome) patches=( "${patches[@]}" "Font Awesome" );;
-                fontlinux) patches=( "${patches[@]}" "Font Linux" );;
+                fontlogos) patches=( "${patches[@]}" "Font Logos" );;
                 octicons) patches=( "${patches[@]}" "Octicons" );;
                 pomicons) patches=( "${patches[@]}" "Pomicons" );;
               esac;;
@@ -185,7 +185,7 @@ if [ -n "${include[*]}" ]; then
 fi
 
 # Exclude everything we didn’t include
-exclude=("Complete" "Font Awesome" "Font Linux" "Octicons" "Pomicons" "Nerd Font*Mono" "Windows Compatible")
+exclude=("Complete" "Font Awesome" "Font Logos" "Octicons" "Pomicons" "Nerd Font*Mono" "Windows Compatible")
 for delete in "${include[@]}"; do
   exclude=( "${exclude[@]/$delete}" )
 done

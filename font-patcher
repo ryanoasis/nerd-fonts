@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.0.5"
+script_version = "3.0.6"
 
 version = "2.2.2"
 projectName = "Nerd Fonts"
@@ -342,7 +342,7 @@ class font_patcher:
         sym_font_group = parser.add_argument_group('Symbol Fonts')
         sym_font_group.add_argument('--fontawesome',                                dest='fontawesome',          default=False, action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)')
         sym_font_group.add_argument('--fontawesomeextension',                       dest='fontawesomeextension', default=False, action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)')
-        sym_font_group.add_argument('--fontlinux', '--fontlogos',                   dest='fontlinux',            default=False, action='store_true', help='Add Font Linux and other open source Glyphs (https://github.com/Lukas-W/font-logos)')
+        sym_font_group.add_argument('--fontlogos', '--fontlinux',                   dest='fontlogos',            default=False, action='store_true', help='Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)')
         sym_font_group.add_argument('--octicons',                                   dest='octicons',             default=False, action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)')
         sym_font_group.add_argument('--codicons',                                   dest='codicons',             default=False, action='store_true', help='Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)')
         sym_font_group.add_argument('--powersymbols',                               dest='powersymbols',         default=False, action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)')
@@ -361,7 +361,7 @@ class font_patcher:
         if self.args.complete:
             self.args.fontawesome = True
             self.args.fontawesomeextension = True
-            self.args.fontlinux = True
+            self.args.fontlogos = True
             self.args.octicons = True
             self.args.codicons = True
             self.args.powersymbols = True
@@ -403,7 +403,7 @@ class font_patcher:
         # self.args.complete = all([
         #     self.args.fontawesome is True,
         #     self.args.fontawesomeextension is True,
-        #     self.args.fontlinux is True,
+        #     self.args.fontlogos is True,
         #     self.args.octicons is True,
         #     self.args.powersymbols is True,
         #     self.args.pomicons is True,
@@ -450,9 +450,9 @@ class font_patcher:
             if self.args.pomicons:
                 additionalFontNameSuffix += " P"
                 verboseAdditionalFontNameSuffix += " Plus Pomicons"
-            if self.args.fontlinux:
+            if self.args.fontlogos:
                 additionalFontNameSuffix += " L"
-                verboseAdditionalFontNameSuffix += " Plus Font Logos (Font Linux)"
+                verboseAdditionalFontNameSuffix += " Plus Font Logos"
             if self.args.material:
                 additionalFontNameSuffix += " MDI"
                 verboseAdditionalFontNameSuffix += " Plus Material Design Icons"
@@ -820,7 +820,7 @@ class font_patcher:
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,                                'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},  # Heavy Circle (aka Power Off)
             {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesignicons-webfont.ttf",                'Exact': False,                               'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'SrcEnd': 0xFD46, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.weather,              'Name': "Weather Icons",           'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False,                               'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'SrcEnd': 0xE3EB, 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.fontlinux,            'Name': "Font Logos (Font Linux)", 'Filename': "font-logos.ttf",                                 'Exact': True,                                'SymStart': 0xF300, 'SymEnd': 0xF32F, 'SrcStart': None,   'SrcEnd': None  , 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.fontlogos,            'Name': "Font Logos",              'Filename': "font-logos.ttf",                                 'Exact': True,                                'SymStart': 0xF300, 'SymEnd': 0xF32F, 'SrcStart': None,   'SrcEnd': None  , 'ScaleGlyph': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': self.octiconsExactEncodingPosition,  'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'SrcEnd': 0xF505, 'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Magnifying glass
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': self.octiconsExactEncodingPosition,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Heart
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': self.octiconsExactEncodingPosition,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None,   'SrcEnd': None,   'ScaleGlyph': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Zap

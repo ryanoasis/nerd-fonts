@@ -3,6 +3,7 @@
 # Codepoints: F300-F32F
 # Nerd Fonts Version: 2.2.2
 # Script Version: 1.1.0
+# We keep the name 'linux' in the metadata for continuity reasons
 test -n "$__i_linux_loaded" && return || __i_linux_loaded=1
 i='' i_linux_alpine=$i
 i='' i_linux_aosc=$i

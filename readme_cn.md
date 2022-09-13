@@ -86,7 +86,7 @@ _如果你..._
 * **`50`** 已经 [打包了字体家族](#patched-fonts)
 * Over **`1,571,470`** 独立的 组合/变型 字体 [(更多详情)](#combinations)
 * Over **`1,300`** 字形/图标 组合 [(更多详情)](#combinations)
-  * 当前的字形集包括： [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
+  * 当前的字形集包括： [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos], [Pomicons][gabrielelana-pomicons]
 * 每种字体的**Monospaced (fixed-pitch, fixed-width)** _和_ **double-width (non-monospaced)** 版本
   * 这指的是Nerd Font字形本身，并不一定需要将字体作为一个整体考虑
 * 一个 开发者/贡献者提供了 [bash script](#gotta-patch-em-all) 来为所有字体再打包
@@ -139,8 +139,8 @@ _如果你..._
 ![image](images/fontforge-glyph-set-font-iec-power-1.png)
 ![image](images/fontforge-glyph-set-font-iec-power-2.png)
 
-### [Font Linux][font-linux]
-> Font-linux 是一个包含LOGO和linux流行布局的图标字体。 / ([repo][font-linux])
+### [Font Logos][font-logos]
+> Font-logos 是一个包含LOGO和linux流行布局的图标字体。 / ([repo][font-logos])
 
 ![image](images/fontforge-glyph-set-font-linux.png)
 
@@ -158,7 +158,7 @@ _如果你..._
 - `i_fa.sh` - Font Awesome (675 icons, 111 aliases)
 - `i_fae.sh` - Font Awesome Extension (170 icons)
 - `i_iec.sh` - IEC Power Symbols (5 icons)
-- `i_linux.sh` - Font Linux (20 icons)
+- `i_logos.sh` - Font Logos (20 icons)
 - `i_oct.sh` - Octicons (172 icons)
 - `i_ple.sh` - Powerline Extra Symbols (37 icons, 2 aliases, 16 does not have an established name)
 - `i_pom.sh` - Pomicons (11 icons)
@@ -173,7 +173,7 @@ echo $i_oct_heart
 # ♥
 ```
 
-**NOTE:** You have to use one of the Nerd Fonts to see correct icons for some icon sets (Devicons, Font Awesome Extension, Font Linux), but other sets should work with their standard fonts too.
+**NOTE:** You have to use one of the Nerd Fonts to see correct icons for some icon sets (Devicons, Font Awesome Extension, Font Logos), but other sets should work with their standard fonts too.
 
 
 ## 字体补丁
@@ -236,7 +236,7 @@ echo $i_oct_heart
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
 - [GitHub Octicons][octicons]
-- [Font Linux][font-linux]
+- [Font Logos][font-logos]
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -524,7 +524,7 @@ Repo References
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLZGava/font-awesome-extension
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-linux
+[font-logos]:https://github.com/Lukas-W/font-linux
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

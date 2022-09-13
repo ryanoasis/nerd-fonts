@@ -86,7 +86,7 @@ _Если Вы..._
 * **`50`** [улучшенных семейства шрифтов](#patched-fonts)
 * Более **`1,571,470`** уникальных комбинаций/вариантов улучшенненных шрифтов [(больше информации)](#combinations)
 * Более **`1,300`** комбинаций глифов/значков [(больше информации)](#combinations)
-  * Текущие наборы глифов включают: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Linux][font-linux], [Pomicons][gabrielelana-pomicons]
+  * Текущие наборы глифов включают: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos], [Pomicons][gabrielelana-pomicons]
 * **Моноширинная (фиксированный шаг, фиксированная ширина)** _или_ "**двойные (не моноширинные)** глифы" версии каждого шрифта
   * Это относится к самим символам Nerd Font, не обязательно ко всему шрифту в целом
 * Разработчик/Помощник предоставил [bash скрипт](#gotta-patch-em-all) для повторного исправления всех шрифтов
@@ -139,8 +139,8 @@ _Если Вы..._
 ![image](images/fontforge-glyph-set-font-iec-power-1.png)
 ![image](images/fontforge-glyph-set-font-iec-power-2.png)
 
-### [Font Linux][font-linux]
-> Font-linux содержит логотипы популярных дистрибутивов Linux, включая веб-сайты. / ([репозиторий][font-linux])
+### [Font Logos][font-logos]
+> Font-logos содержит логотипы популярных дистрибутивов Linux, включая веб-сайты. / ([репозиторий][font-logos])
 
 ![image](images/fontforge-glyph-set-font-linux.png)
 
@@ -158,7 +158,7 @@ _Если Вы..._
 - `i_fa.sh` - Font Awesome (675 иконок, 111 псевдонимов)
 - `i_fae.sh` - Font Awesome Extension (170 иконок)
 - `i_iec.sh` - IEC Power Symbols (5 иконок)
-- `i_linux.sh` - Font Linux (20 иконок)
+- `i_logos.sh` - Font Logos (20 иконок)
 - `i_oct.sh` - Octicons (172 иконок)
 - `i_ple.sh` - Powerline Extra Symbols (37 иконок, 2 псевдонима, 16 не имеют установленного имени)
 - `i_pom.sh` - Pomicons (11 иконок)
@@ -173,7 +173,7 @@ echo $i_oct_heart
 # ♥
 ```
 
-**ЗАМЕЧАНИЕ:** Вы должны использовать один из Nerd Fonts, чтобы видеть правильные значки для некоторых наборов (Devicons, Font Awesome Extension, Font Linux), но остальные наборы должны работать со стандартными шрифтами тоже.
+**ЗАМЕЧАНИЕ:** Вы должны использовать один из Nerd Fonts, чтобы видеть правильные значки для некоторых наборов (Devicons, Font Awesome Extension, Font Logos), но остальные наборы должны работать со стандартными шрифтами тоже.
 
 
 ## Исправленные Шрифты
@@ -236,7 +236,7 @@ echo $i_oct_heart
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
 - [GitHub Octicons][octicons]
-- [Font Linux][font-linux]
+- [Font Logos][font-logos]
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -527,7 +527,7 @@ Repo References
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLZGava/font-awesome-extension
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-linux
+[font-logos]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

@@ -90,7 +90,7 @@ _Se tu..._
 * **`50`** [famiglie di font modificati](#patched-fonts) già presenti
 * Più di **`1.571.470`** combinazioni/variazioni uniche dei font modificati [(maggiori dettagli)](#combinations)
 * Più di **`2.600`** glifi/icone in tutto [(maggiori dettagli)](#combinations)
-  * I set di glifi correnti includono: [Powerline con Simboli Extra][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+  * I set di glifi correnti includono: [Powerline con Simboli Extra][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons]
 * Versioni dei glifi **Monospaziati (passo fisso, larghezza fissa)** _o_ a **doppia larghezza (non monospaziati)** per ogni font
   * Questo si riferisce ai glifi aggiunti da Nerd Font non necessariamente al font nella sua interezza
 * Uno [script bash](#gotta-patch-em-all) fornito agli sviluppatori/contributori per modificare tutti i font
@@ -184,7 +184,7 @@ Leggi la [Wiki: Nomi delle Icone per la shell][wiki-icon-names-in-shell]
 - [Material Design Icons][font-material-design-icons]
 - [Weather][font-weather]
 - [GitHub Octicons][octicons]
-- [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
+- [Font Logos][font-logos] (Formerly Font Linux)
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -480,7 +480,7 @@ Repo References
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
 [font-weather]:https://github.com/erikflowers/weather-icons
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-logos
+[font-logos]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

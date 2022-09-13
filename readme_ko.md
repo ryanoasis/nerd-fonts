@@ -88,7 +88,7 @@ _만약..._
 * **`50`** 개의 [폰트 패밀리](#패치된-폰트들)
 * **`1,571,470`** 개 이상의 폰트 조합/변형 [(자세한 정보)](#조합)
 * **`2,600`** 개 이상의 글리프/아이콘 [(자세한 정보)](#조합)
-  * 현재 글리프 세트: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (구 [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+  * 현재 글리프 세트: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (구 Font Linux), [Pomicons][gabrielelana-pomicons]
 * 각 폰트의 **고정폭 (monospaced)** _또는_ **가변폭 (non-monospaced)** 글리프 버전
   * 이는 Nerd Font 글리프 자체가 꼭 폰트 전체일 필요는 없다는 의미입니다.
 * 개발자/기여자들이 모든 폰트를 다시 패치하기 위한 [bash 스크립트](#gotta-patch-em-all) 제공했습니다.
@@ -181,7 +181,7 @@ _만약..._
 - [Material Design Icons][font-material-design-icons]
 - [Weather][font-weather]
 - [GitHub Octicons][octicons]
-- [Font Logos][font-linux] (구 [Font Linux][font-linux])
+- [Font Logos][font-logos] (구 Font Linux)
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -476,7 +476,7 @@ Repo References
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
 [font-weather]:https://github.com/erikflowers/weather-icons
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-logos
+[font-logos]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

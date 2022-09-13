@@ -89,7 +89,7 @@ _Jeśli..._
 * **`50`** już [spatchowanych rodziny czcionek](#patched-fonts)
 * Ponad **`1,571,470`** unikalnych kombinacji/wariacji spatchowanych czcionek [(więcej szczegółów)](#combinations)
 * Ponad **`2,400`** kombinacji glifów/ikon [(więcej szczegółów)](#combinations)
-  * Aktualne zestawy glifów zawierają: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Formerly [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+  * Aktualne zestawy glifów zawierają: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _lub_ **double-width (non-monospaced)** wersje glifów dla każdej czcionki
   * To odnosi się do glifów Nerd Fonts, nie koniecznie do czcionki jako całości
 * Deweloper/Contributor dostarczył [bash script](#gotta-patch-em-all) pozwalający re-patchować wszystkie czcionki
@@ -146,8 +146,8 @@ _Jeśli..._
 
 #### [:mag: :bookmark_tabs: Zobacz zestaw na stronie NerdFonts.com](http://nerdfonts.com/?set=nf-iec-#cheat-sheet)
 
-### [Czcionki Logo][font-linux] (Formerly [Font Linux][font-linux])
-> Font-logos to font zawierający ikony z logo popularnych dystrybucji linuksowych i innych programów typu open source do umieszczenia na stronach internetowych. / ([repo][font-linux])
+### [Czcionki Logo][font-logos] (Formerly Font Linux)
+> Font-logos to font zawierający ikony z logo popularnych dystrybucji linuksowych i innych programów typu open source do umieszczenia na stronach internetowych. / ([repo][font-logos])
 
 #### [:mag: :bookmark_tabs: Zobacz zestaw na stronie NerdFonts.com](http://nerdfonts.com/?set=nf-linux-#cheat-sheet)
 
@@ -165,7 +165,7 @@ Download provided `.sh` files from [bin/scripts/lib/](bin/scripts/lib/) director
 - `i_fa.sh` - Font Awesome (675 icons, 111 aliasów)
 - `i_fae.sh` - Font Awesome Extension (170 ikon)
 - `i_iec.sh` - IEC Power Symbols (5 ikon)
-- `i_linux.sh` - Font Linux (20 ikon)
+- `i_logos.sh` - Font Logos (20 ikon)
 - `i_oct.sh` - Octicons (172 ikon)
 - `i_ple.sh` - Powerline Extra Symbols (37 ikon, 2 aliasy, 16 bez ustalonej nazwy)
 - `i_pom.sh` - Pomicons (11 ikon)
@@ -180,7 +180,7 @@ echo $i_oct_heart
 # ♥
 ```
 
-**NOTE:** Musisz użyć jednego z Nerd Fontów, aby zobaczyć prawidłowe ikony dla niektórych zestawów ikon (Devicons, Font Awesome Extension, Font Linux), ale inne zestawy powinny również działać z ich standardowymi czcionkami.
+**NOTE:** Musisz użyć jednego z Nerd Fontów, aby zobaczyć prawidłowe ikony dla niektórych zestawów ikon (Devicons, Font Awesome Extension, Font Logos), ale inne zestawy powinny również działać z ich standardowymi czcionkami.
 
 
 <h2 id="patched-fonts">Spatchowane czcionki</h2>
@@ -255,7 +255,7 @@ echo $i_oct_heart
 - [Material Design Icons][font-material-design-icons]
 - [Weather][font-weather]
 - [GitHub Octicons][octicons]
-- [Font Logos][font-linux] (Wcześniej [Font Linux][font-linux])
+- [Font Logos][font-logos] (Wcześniej Font Linux)
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -552,7 +552,7 @@ Repo References
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
 [font-weather]:https://github.com/erikflowers/weather-icons
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-logos
+[font-logos]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

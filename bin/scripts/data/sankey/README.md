@@ -17,7 +17,7 @@ Enter data:
         Weather Icons [228] Nerd Fonts
         Seti UI + Custom [59] Nerd Fonts
         Octicons [172] Nerd Fonts
-        Font Linux [48] Nerd Fonts
+        Font Logos [48] Nerd Fonts
         IEC Power Symbols [5] Nerd Fonts
         Pomicons [11] Nerd Fonts
         Material Design [2119] Nerd Fonts
@@ -36,7 +36,7 @@ Diagram Size Width 600
 Diagram Size Width 660 (adapt if we add more)
 Deselect 'Include "Made with ..."'
 
-Export as SVG
+Export as SVG (exports into a text window)
 Copy and paste into file
 
 Open in inkscape
@@ -53,6 +53,17 @@ Select icon group
 Use eyedropper tool and click on colored bar of new diagram
 
 Save as compressed inkscape svgz
-Save as optimized svg
-Use the later as production file.
+Store as bin/scripts/data/sankey/sankey-glyphs-x.x.x.svgz
+
+Save as optimized svg, select:
+  Remove XML decl
+  Remove metadata
+  Remove comments
+  Embed raster img
+  Untick Format with line-breaks
+Store as images/sankey-glyphs-combined-diagram.svg
+Store as assets/img/sankey-glyphs-combined-diagram.svg (in gh-pages)
+
+Use Export as PNG... with Z_DEFAULT_COMPTESSION
+Store as assets/img/sankey-glyphs-combined-diagram.png (in gh-pages)
 ```

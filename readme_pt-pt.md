@@ -87,7 +87,7 @@ _Se tu..._
 * Já existem **`50`** [tipos de letra modificados](#tipos-de-letra)
 * Mais de **`1,428,000`** combinações/variações únicas de tipos de letra modificados [(mais detalhes)](#combinações)
 * Cerca de **`2,600`** glifos/ícones combinados [(mais detalhes)](#combinações)
-  * Os atuais conjuntos de glifos incluem: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Antigamente [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+  * Os atuais conjuntos de glifos incluem: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Antigamente Font Linux), [Pomicons][gabrielelana-pomicons]
 * Versões de glifos **monoespaçados (de largura fixa)** _ou_ glifos de **largura dupla (não monoespaçados)** para cada tipo de letra
   * Isto refere-se aos glifos do Nerd Font, não necessariamente ao tipo de letra
 * Um desenvolvedor/contribuidor criou um [executador em Unix Shell](#modifica-tudo) para modificar novamente todos os tipos de letra
@@ -180,7 +180,7 @@ See [Wiki: Nomes dos ícones em Unix Shell][wiki-icon-names-in-shell]
 - [Material Design Icons][font-material-design-icons]
 - [Weather][font-weather]
 - [GitHub Octicons][octicons]
-- [Font Logos][font-linux] (Antigamente [Font Linux][font-linux])
+- [Font Logos][font-logos] (Antigamente Font Linux)
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -476,7 +476,7 @@ Referência do repositório
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
 [font-weather]:https://github.com/erikflowers/weather-icons
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-logos
+[font-logos]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

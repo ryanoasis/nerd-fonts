@@ -90,7 +90,7 @@ _अगर तुम..._
 -   **`51`**पहले से ही[पैच किए गए फ़ॉन्ट परिवार](#patched-fonts)
 -   ऊपर**`1,444,400`**पैच किए गए फोंट के अद्वितीय संयोजन / विविधताएं[(अधिक जानकारी)](#combinations)
 -   ऊपर**`2,824`**ग्लिफ़/आइकन संयुक्त[(अधिक जानकारी)](#combinations)
-    -   वर्तमान ग्लिफ़ सेट में शामिल हैं:[अतिरिक्त प्रतीकों के साथ पावरलाइन][ryanoasis-powerline-extra-symbols],[फ़ॉन्ट विस्मयकारी][font-awesome],[सामग्री डिजाइन प्रतीक][font-material-design-icons],[मौसम][font-weather],[देवीकॉन्स][vorillaz-devicons],[ऑक्टिकॉन्स][octicons],[फ़ॉन्ट लोगो][font-linux](पूर्व में[फ़ॉन्ट लिनक्स][font-linux]),[पोमीकॉन्स][gabrielelana-pomicons]
+    -   वर्तमान ग्लिफ़ सेट में शामिल हैं:[अतिरिक्त प्रतीकों के साथ पावरलाइन][ryanoasis-powerline-extra-symbols],[फ़ॉन्ट विस्मयकारी][font-awesome],[सामग्री डिजाइन प्रतीक][font-material-design-icons],[मौसम][font-weather],[देवीकॉन्स][vorillaz-devicons],[ऑक्टिकॉन्स][octicons],[फ़ॉन्ट लोगो][font-logos],[पोमीकॉन्स][gabrielelana-pomicons]
 -   **मोनोस्पेस्ड (फिक्स्ड-पिच, फिक्स्ड-चौड़ाई)**_या_**डबल-चौड़ाई (गैर-मोनोस्पेस्ड)**प्रत्येक फ़ॉन्ट का ग्लिफ़ संस्करण
     -   यह नर्ड फॉन्ट ग्लिफ़ को संदर्भित करता है, जरूरी नहीं कि यह पूरी तरह से फ़ॉन्ट हो
 -   एक डेवलपर/योगदानकर्ता प्रदान किया गया[बैश स्क्रिप्ट](#gotta-patch-em-all)सभी फोंट को फिर से पैच करने के लिए
@@ -183,7 +183,7 @@ _अगर तुम..._
 -   [सामग्री डिजाइन प्रतीक][font-material-design-icons]
 -   [मौसम][font-weather]
 -   [गिटहब ऑक्टिकॉन्स][octicons]
--   [फ़ॉन्ट लोगो][font-linux](पूर्व में[फ़ॉन्ट लिनक्स][font-linux])
+-   [फ़ॉन्ट लोगो][font-logos](पूर्व में[फ़ॉन्ट लिनक्स][font-logos])
 -   [पावरलाइन अतिरिक्त प्रतीक][ryanoasis-powerline-extra-symbols]
 -   [आईईसी पावर प्रतीक][website-iecpower]
 -   [पोमीकॉन्स][gabrielelana-pomicons]
@@ -519,7 +519,7 @@ Repo References
 
 [octicons]: https://github.com/primer/octicons
 
-[font-linux]: https://github.com/Lukas-W/font-logos
+[font-logos]: https://github.com/Lukas-W/font-logos
 
 [gabrielelana-pomicons]: https://github.com/gabrielelana/pomicons
 

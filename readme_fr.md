@@ -95,7 +95,7 @@ _Si vous..._
 * Déjà **`50`** [familles de polices générées](#polices-disponibles)
 * Plus de **`1,571,470`** unique variantes/combinaisons uniques de fonts générées [(plus de détail)](#combinations)
 * Plus de **`1,600`** glyphes/icones combinés [(plus de détail)](#combinations)
-  * Les ensembles de glyphes actuels incluent : [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Anciennement [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+  * Les ensembles de glyphes actuels incluent : [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Anciennement Font Linux), [Pomicons][gabrielelana-pomicons]
 * **Monospaced (fixed-pitch, fixed-width)** _ou_ **double-width (non-monospaced)** pour chaque version de glyphes de chaque police
   * Ceci fait référence aux glyphes de Nerd Font et pas nécessairement à la police dans son ensemble
 * Un [script bash](#gotta-patch-em-all) fourni pour développeur/contributeur pour re-générer toutes les polices
@@ -153,8 +153,8 @@ _Si vous..._
 
 #### [:mag: :bookmark_tabs: Voir l'ensemble sur le website NerdFonts.com](http://nerdfonts.com/?set=nf-iec-#cheat-sheet)
 
-### [Font Logos][font-linux] (Formerly [Font Linux][font-linux])
-> Font-logos est une police d'icônes contenant des logos de distributions linux populaires et d'autres logiciels open source pour les inclure dans des sites web. / ([dépôt][font-linux])
+### [Font Logos][font-logos] (Formerly Font Linux)
+> Font-logos est une police d'icônes contenant des logos de distributions linux populaires et d'autres logiciels open source pour les inclure dans des sites web. / ([dépôt][font-logos])
 
 #### [:mag: :bookmark_tabs: Voir l'ensemble sur le website NerdFonts.com](http://nerdfonts.com/?set=nf-linux-#cheat-sheet)
 
@@ -172,7 +172,7 @@ Le téléchargement fourni des fichiers `.sh` dans le dossier [bin/scripts/lib/]
 - `i_fa.sh` - Font Awesome (675 icônes, 111 alias)
 - `i_fae.sh` - Font Awesome Extension (170 icônes)
 - `i_iec.sh` - IEC Power Symbols (5 icônes)
-- `i_linux.sh` - Font Linux (20 icônes)
+- `i_logos.sh` - Font Logos (20 icônes)
 - `i_oct.sh` - Octicons (172 icônes)
 - `i_ple.sh` - Powerline Extra Symbols (37 icônes, 2 alias, dont 16 qui n'ont pas de nom)
 - `i_pom.sh` - Pomicons (11 icônes)
@@ -187,7 +187,7 @@ echo $i_oct_heart
 # ♥
 ```
 
-**NOTE :** Vous devez utiliser l'une des Nerd fonts pour voir les bonnes icônes de certains jeux d'icônes (Devicons, Font Awesome Extension, Font Linux), mais d'autres jeux devraient aussi fonctionner avec leurs polices standard.
+**NOTE :** Vous devez utiliser l'une des Nerd fonts pour voir les bonnes icônes de certains jeux d'icônes (Devicons, Font Awesome Extension, Font Logos), mais d'autres jeux devraient aussi fonctionner avec leurs polices standard.
 
 
 ## Polices disponibles
@@ -261,7 +261,7 @@ echo $i_oct_heart
 - [Material Design Icons][font-material-design-icons]
 - [Weather][font-weather]
 - [GitHub Octicons][octicons]
-- [Font Logos][font-linux] (Anciennement [Font Linux][font-linux])
+- [Font Logos][font-logos] (Anciennement Font Linux)
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -555,7 +555,7 @@ Repo References
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
 [font-weather]:https://github.com/erikflowers/weather-icons
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-logos
+[font-logos]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols

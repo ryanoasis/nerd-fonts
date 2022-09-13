@@ -91,7 +91,7 @@ _Якщо ви..._
 -   **`50`** вже [виправлені сімейства шрифтів ](#patched-fonts)
 -   Понад **`1,571,470`** унікальних комбінацій / варіацій пропатченних шрифтів [(детальніше)](#combinations)
 -   Понад **`2,600`** гліфів / іконок у поєднанні [(детальніше)](#combinations)
-    -   Поточні набори гліфів включають: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (Раніше [Font Linux][font-linux]), [Pomicons][gabrielelana-pomicons]
+    -   Поточні набори гліфів включають: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Раніше Font Linux), [Pomicons][gabrielelana-pomicons]
 -   **Monospaced (фіксованої ширини)** _чи_ **подвійної ширини (non-monospaced)** версія кожного шрифту
     -   Це стосується Nerd Font гліфів, але не обов'язково Шрифту в цілому
 -   Розробник/Контриб'ютор постачає [bash скріпт](#gotta-patch-em-all) щоб повторно пропатчити всі шрифти
@@ -182,7 +182,7 @@ _Якщо ви..._
 -   [Material Design Icons][font-material-design-icons]
 -   [Weather][font-weather]
 -   [GitHub Octicons][octicons]
--   [Font Logos][font-linux] (Раніше [Font Linux][font-linux])
+-   [Font Logos][font-logos] (Раніше Font Linux)
 -   [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 -   [IEC Power Symbols][website-iecpower]
 -   [Pomicons][gabrielelana-pomicons]
@@ -474,7 +474,7 @@ The list is not complete, but you can [search for a complete list here](https://
 
 [octicons]: https://github.com/primer/octicons
 
-[font-linux]: https://github.com/Lukas-W/font-logos
+[font-logos]: https://github.com/Lukas-W/font-logos
 
 [gabrielelana-pomicons]: https://github.com/gabrielelana/pomicons
 

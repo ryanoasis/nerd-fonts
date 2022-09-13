@@ -88,7 +88,7 @@ _あなたがもし……_
 * **`50`** を数える[パッチ済みフォントファミリー](#パッチ済みフォント)。
 * **`1,571,470`** を超える、パッチ済みフォントの変種とその組み合わせ[（詳細はこちら）](#組み合わせ)。
 * **`2,600`** を超えるグリフ（アイコン）を合成しています。
-  * 現在含まれるグリフセットはこちら: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-linux] (以前[Font Linux][font-linux]と呼ばれていたものです), [Pomicons][gabrielelana-pomicons]
+  * 現在含まれるグリフセットはこちら: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (以前Font Linuxと呼ばれていたものです), [Pomicons][gabrielelana-pomicons]
 * それぞれのフォントは**半角 (固定ピッチ、固定幅)**、_あるいは_、**全角**グリフを含みます。
   * これは必ずしもフォント全体についてではなく、Nerd Font 由来のグリフについて言っています。
 * 開発者、あるいは、開発に貢献したい人は、付属の [bash スクリプト](#gotta-patch-em-all)を使って全てのフォントにパッチを再び当てることができます。
@@ -180,7 +180,7 @@ _あなたがもし……_
 - [Material Design Icons][font-material-design-icons]
 - [Weather][font-weather]
 - [GitHub Octicons][octicons]
-- [Font Logos][font-linux] (以前[Font Linux][font-linux]と呼ばれていたものです。)
+- [Font Logos][font-logos] (以前Font Linuxと呼ばれていたものです。)
 - [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
@@ -475,7 +475,7 @@ Repo References
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
 [font-weather]:https://github.com/erikflowers/weather-icons
 [octicons]:https://github.com/primer/octicons
-[font-linux]:https://github.com/Lukas-W/font-logos
+[font-logos]:https://github.com/Lukas-W/font-logos
 [gabrielelana-pomicons]:https://github.com/gabrielelana/pomicons
 [Seti-UI]:https://atom.io/themes/seti-ui
 [ryanoasis-powerline-extra-symbols]:https://github.com/ryanoasis/powerline-extra-symbols
