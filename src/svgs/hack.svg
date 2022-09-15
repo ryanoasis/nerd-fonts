@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Source: https://github.com/hhvm/hacklang.org -->
+
+<svg
+   version="1.1"
+   id="Layer_6"
+   x="0px"
+   y="0px"
+   viewBox="0 0 31.999999 31.999999"
+   enable-background="new 0 0 253.6 253.6"
+   xml:space="preserve"
+   sodipodi:docname="hack.svg"
+   width="32"
+   height="32"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs73" /><sodipodi:namedview
+   id="namedview71"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   width="32px"
+   inkscape:zoom="18.781827"
+   inkscape:cx="5.9365897"
+   inkscape:cy="16.531938"
+   inkscape:window-width="1916"
+   inkscape:window-height="1034"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_6" />
+<g
+   id="g68"
+   transform="matrix(0.15436604,0,0,0.15436295,-3.5736139,-5.0167959)"
+   inkscape:label="g68">
+	<polygon
+   fill="#221f20"
+   points="63.6,159.1 63.6,217.8 121.4,159.1 "
+   id="polygon58"
+   style="fill:#444444;fill-opacity:1" />
+	<polygon
+   fill="#221f20"
+   points="123.9,32.5 63.6,91.4 63.6,152.9 123.9,92.6 "
+   id="polygon60"
+   transform="matrix(1,0,0,0.99998412,0,5.1594082e-4)"
+   style="fill:#444444;fill-opacity:1" />
+	<polygon
+   fill="#eeeeee"
+   points="128.1,94.6 128.1,152.1 186.3,94.6 "
+   id="polygon62"
+   style="fill:#444444;fill-opacity:1" />
+	<polygon
+   fill="#221f20"
+   points="128.1,220.7 190,159 190,97.6 128.1,159.2 "
+   id="polygon64"
+   style="fill:#444444;fill-opacity:1" />
+	<polygon
+   fill="#e0a33b"
+   points="123.9,154.4 123.9,98.3 67.6,154.3 "
+   id="polygon66"
+   inkscape:highlight-color="1145324799"
+   style="fill:#444444;fill-opacity:1" />
+</g>
+</svg>

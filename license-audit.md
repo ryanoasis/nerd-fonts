@@ -44,6 +44,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Powerline Extra Symbols                          | MIT             |
 | Powerline Symbols                                | Free License    |
 | Weather Icons                                    | SIL OFL 1.1     |
+| Hacklang Icon                                    | CC BY 4.0       |
 
 ### Additional notes
 

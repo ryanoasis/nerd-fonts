@@ -69,4 +69,6 @@ i='' i_custom_puppet=$i
 i='' i_custom_emacs=$i
 i='' i_custom_orgmode=$i
 i='' i_custom_kotlin=$i
+i='' i_custom_hack=$i
+      i_custom_hacklang=$i_custom_hack
 unset i
