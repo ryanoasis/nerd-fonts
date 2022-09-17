@@ -31,6 +31,29 @@ def hasGaps(data, start_codepoint):
             return True
     return False
 
+def iconFileLineOk(parts):
+    if parts[0].startswith('#'):
+        # Comment lines start with '#'
+        return False
+    if len(parts) != 2 and len(parts) != 3:
+        print('Unexpected data on the line "{}"'.format(line.strip()))
+        return False
+    if int(parts[0]) < 0:
+        print('Offset must be positive on line "{}", ignoring'.format(line.strip()))
+        return False
+    return True
+
+def addLineToData(data, parts, codepoint):
+    if codepoint in data:
+        data[codepoint][0] += [ parts[1] ]
+        if len(parts) > 2 and data[codepoint][1] != parts[2]:
+            print('Conflicting filename for {}, ignoring {}'.format(codepoint, parts[2]))
+            return False
+        #ali += 1
+    else:
+        data[codepoint] = [[parts[1]], parts[2]]
+    return True
+
 def readIconFile(filename, start_codepoint):
     """ Read the database with codepoints, names and files """
     # First line of the file is the header, it is ignored
@@ -43,29 +66,16 @@ def readIconFile(filename, start_codepoint):
     ali = 0
     with open(filename, 'r') as f:
         for line in f.readlines():
-            if line.startswith('#'):
-                # Comment lines start with '#'
-                continue
             parts = re.split('\t+', line.strip())
-            if len(parts) != 2 and len(parts) != 3:
-                print('Unexpected data on the line "{}"'.format(line.strip()))
+            if not iconFileLineOk(parts):
                 continue
             offset = int(parts[0])
-            if offset < 0:
-                print('Offset must be positive on line "{}", ignoring'.format(line.strip()))
-                continue
             codepoint = start_codepoint + offset
             if re.search('[^a-zA-Z0-9_]', parts[1]):
                 print('Invalid characters in name: "{}" replaced by "_"'.format(parts[1]))
                 parts[1] = re.sub('[^a-zA-Z0-9_]', '_', parts[1])
-            if codepoint in data:
-                data[codepoint][0] += [ parts[1] ]
-                if len(parts) > 2 and data[codepoint][1] != parts[2]:
-                    print('Conflicting filename for {}, ignoring {}'.format(codepoint, parts[2]))
-                    continue
-                ali += 1
-            else:
-                data[codepoint] = [[parts[1]], parts[2]]
+            if not addLineToData(data, parts, codepoint):
+                continue
             num += 1
     print('Read glyph data successfully with {} entries ({} aliases)'.format(num, ali))
     return (data, num, ali)
@@ -75,6 +85,9 @@ def widthFromBB(bb):
 
 def heightFromBB(bb):
     return bb[3] - bb[1]
+
+def calcShift(left1, width1, left2, width2):
+    return width1 / 2 + left1 - width2 / 2 - left2
 
 def addIcon(codepoint, name, filename):
     """ Add one outline file and rescale/move """
@@ -89,8 +102,8 @@ def addIcon(codepoint, name, filename):
     glyph.transform(psMat.scale(scale, scale))
     gBB = glyph.boundingBox() # re-get after scaling (rounding errors)
     glyph.transform(psMat.translate(
-        (widthFromBB(dBB) - widthFromBB(gBB)) / 2 + dBB[0] - gBB[0],
-        (heightFromBB(dBB) - heightFromBB(gBB)) / 2 + dBB[1] - gBB[1]))
+        calcShift(dBB[0], widthFromBB(dBB), gBB[0], widthFromBB(gBB)),
+        calcShift(dBB[1], heightFromBB(dBB), gBB[1], heightFromBB(gBB))))
     glyph.width = int(dBB[2] + dBB[0])
 
 def createGlyphInfo(icon_datasets, filepathname, into):
