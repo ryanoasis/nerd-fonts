@@ -1,0 +1,77 @@
+# This file defines the codepoints for the individual glyphs in
+# original-source.otf and their names in the CSS and on the cheat
+# sheet (via i_seti.sh).
+#
+# If you add a svg to the directory you need to add also a line here.
+# Keep the numbers consecutive.
+# You can add aliases by adding a new line with the same offset but
+# different name; omit the filename on those lines.
+# Use generate-original-source.py to regenerate the font used to patch.
+#
+# offset	name (in i_seti.sh)			filename (.svg)
+#
+0		i_custom_folder_npm			npm-folder.svg
+1		i_custom_folder_git			git-folder.svg
+1		i_custom_folder_git_branch
+2		i_custom_folder_config			config-folder.svg
+3		i_custom_folder_github			octocat-folder.svg
+4		i_custom_folder_open			open-folder.svg
+5		i_custom_folder				folder.svg
+6		i_seti_stylus				stylus.svg
+7		i_seti_project				project.svg
+8		i_seti_play_arrow			play-arrow.svg
+9		i_seti_sass				sass.svg
+10		i_seti_rails				rails.svg
+11		i_seti_ruby				ruby.svg
+12		i_seti_python				python.svg
+13		i_seti_heroku				heroku.svg
+14		i_seti_php				php.svg
+15		i_seti_markdown				markdown.svg
+16		i_seti_license				license.svg
+17		i_seti_json				less.svg
+17		i_seti_less
+18		i_seti_javascript			javascript.svg
+19		i_seti_image				image.svg
+20		i_seti_html				html.svg
+21		i_seti_mustache				handlebars.svg
+22		i_seti_gulp				gulp.svg
+23		i_seti_grunt				grunt.svg
+24		i_seti_default				file.svg
+24		i_seti_text
+25		i_seti_folder				seti-folder.svg
+26		i_seti_css				css.svg
+27		i_seti_config				config.svg
+28		i_seti_npm				npm.svg
+29		i_seti_home				home.svg
+30		i_seti_ejs				html.svg
+31		i_seti_xml				rss.svg
+32		i_seti_bower				bower.svg
+33		i_seti_coffee				coffeescript.svg
+33		i_seti_cjsx
+34		i_seti_twig				twig.svg
+35		i_custom_cpp				c++.svg
+36		i_custom_c				c.svg
+37		i_seti_haskell				haskell.svg
+38		i_seti_lua				lua.svg
+39		i_indent_line				separator.svg
+39		i_indentation_line
+39		i_indent_dotted_guide
+40		i_seti_karma				karma.svg
+41		i_seti_favicon				favourite.svg
+42		i_seti_julia				julia.svg
+43		i_seti_react				react.svg
+44		i_custom_go				go2.svg
+45		i_seti_go				go.svg
+46		i_seti_typescript			typescript.svg
+47		i_custom_msdos				ms-dos.svg
+48		i_custom_windows			windows.svg
+49		i_custom_vim				vim.svg
+50		i_custom_elm				elm.svg
+51		i_custom_elixir				elixir.svg
+52		i_custom_electron			electron.svg
+53		i_custom_crystal			crystal.svg
+54		i_custom_purescript			purescript.svg
+55		i_custom_puppet				puppet.svg
+56		i_custom_emacs				emacs.svg
+57		i_custom_orgmode			orgmode.svg
+58		i_custom_kotlin				kotlin.svg
