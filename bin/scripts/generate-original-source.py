@@ -44,15 +44,17 @@ def iconFileLineOk(parts):
     return True
 
 def addLineToData(data, parts, codepoint):
+    """ Add one line to the data. Return (success, is_alias) """
+    ali = False
     if codepoint in data:
         data[codepoint][0] += [ parts[1] ]
         if len(parts) > 2 and data[codepoint][1] != parts[2]:
             print('Conflicting filename for {}, ignoring {}'.format(codepoint, parts[2]))
-            return False
-        #ali += 1
+            return False, False
+        ali = True
     else:
         data[codepoint] = [[parts[1]], parts[2]]
-    return True
+    return True, ali
 
 def readIconFile(filename, start_codepoint):
     """ Read the database with codepoints, names and files """
@@ -74,9 +76,12 @@ def readIconFile(filename, start_codepoint):
             if re.search('[^a-zA-Z0-9_]', parts[1]):
                 print('Invalid characters in name: "{}" replaced by "_"'.format(parts[1]))
                 parts[1] = re.sub('[^a-zA-Z0-9_]', '_', parts[1])
-            if not addLineToData(data, parts, codepoint):
+            added = addLineToData(data, parts, codepoint)
+            if not added[0]:
                 continue
             num += 1
+            if added[1]:
+                ali += 1
     print('Read glyph data successfully with {} entries ({} aliases)'.format(num, ali))
     return (data, num, ali)
 
