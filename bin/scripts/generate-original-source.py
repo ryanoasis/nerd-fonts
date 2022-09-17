@@ -70,6 +70,12 @@ def readIconFile(filename, start_codepoint):
     print('Read glyph data successfully with {} entries ({} aliases)'.format(num, ali))
     return (data, num, ali)
 
+def widthFromBB(bb):
+    return bb[2] - bb[0]
+
+def heightFromBB(bb):
+    return bb[3] - bb[1]
+
 def addIcon(codepoint, name, filename):
     """ Add one outline file and rescale/move """
     dBB = [120, 0, 1000-120, 900] # just some nice sizes
@@ -77,17 +83,15 @@ def addIcon(codepoint, name, filename):
     glyph = font.createChar(codepoint, name)
     glyph.importOutlines(filename)
     gBB = glyph.boundingBox()
-    scale_x = (dBB[2] - dBB[0]) / (gBB[2] - gBB[0])
-    scale_y = (dBB[3] - dBB[1]) / (gBB[3] - gBB[1])
+    scale_x = widthFromBB(dBB) / widthFromBB(gBB)
+    scale_y = heightFromBB(dBB) / heightFromBB(gBB)
     scale = scale_y if scale_y < scale_x else scale_x
     glyph.transform(psMat.scale(scale, scale))
     gBB = glyph.boundingBox() # re-get after scaling (rounding errors)
     glyph.transform(psMat.translate(
-        (dBB[2] - dBB[0]) / 2 + dBB[0] -
-        (gBB[2] - gBB[0]) / 2 - gBB[0],
-        (dBB[3] - dBB[1]) / 2 + dBB[1] -
-        (gBB[3] - gBB[1]) / 2 - gBB[1]))
-    glyph.width = int(dBB[2]+dBB[0])
+        (widthFromBB(dBB) - widthFromBB(gBB)) / 2 + dBB[0] - gBB[0],
+        (heightFromBB(dBB) - heightFromBB(gBB)) / 2 + dBB[1] - gBB[1]))
+    glyph.width = int(dBB[2] + dBB[0])
 
 def createGlyphInfo(icon_datasets, filepathname, into):
     with open(filepathname, 'w', encoding = 'utf8') as f:
