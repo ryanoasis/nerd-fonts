@@ -1,0 +1,33 @@
+name: PackSVGs
+
+on:
+  push:
+    paths:
+      - 'src/svgs/*'
+      - 'bin/scripts/generate-original-source.py'
+  workflow_dispatch:
+
+jobs:
+  create-symbols-font:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fetch fontforge
+        run: |
+          sudo apt update -y -q
+          sudo apt install python3-fontforge -y -q
+
+      - name: Create Seti and original symbols font
+        run: |
+          cd bin/scripts
+          ls -l ../../src/glyphs/original-source.otf
+          ./generate-original-source.py
+          ls -l ../../src/glyphs/original-source.otf
+      - name: Commit patched fonts back to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          fetch: false
+          add: 'src/glyphs/original-source.otf'
+          message: "[ci] Rebuild original-source font"
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
