@@ -9,13 +9,27 @@ on:
 
 jobs:
   create-symbols-font:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - name: Fetch fontforge
+      - name: Fetch dependencies
         run: |
           sudo apt update -y -q
-          sudo apt install python3-fontforge -y -q
+          sudo apt install python3-fontforge inkscape dc -y -q
+
+      - name: Simplify the SVGs
+        run: |
+          cd bin/scripts
+          ./optimize-original-source.sh doit
+
+      - name: Commit simplified SVGs back to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          fetch: false
+          add: 'src/svgs'
+          message: "[ci] Simplify original-source source glyphs"
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
       - name: Create Seti and original symbols font
         run: |
@@ -23,6 +37,7 @@ jobs:
           ls -l ../../src/glyphs/original-source.otf
           ./generate-original-source.py
           ls -l ../../src/glyphs/original-source.otf
+
       - name: Commit patched fonts back to repo
         uses: EndBug/add-and-commit@v9
         with:
