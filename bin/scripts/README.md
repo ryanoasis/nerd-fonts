@@ -13,12 +13,13 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `generate-fontconfig.sh`: Generates font configuration to enable use of unpatched fonts with Symbols Only Nerd Font [1]
 * `generate-font-image-previews.sh`: Generates the preview images for `nerdfonts.com` (i.e. gh-pages) [3]
 * `generate-glyph-info-from-set.py`: Generate the `i_xxx.sh` file from a glyph source (font) file, if the glyphs are named correctly [4]
-* `generate-original-source.py`: Generate `original-source.otf` from single glyph svgs. [3]
+* `generate-original-source.py`: Generate `original-source.otf` from single glyph svgs. [5]
 * `get-font-names-from-json.sh`: Helper to setup the CI font matrix from `data/fonts.json` [1]
 * `gotta-patch-em-all-font-patcher!.sh`: Patch one or more fonts 'complete' with and without `mono` and with and without `windows compat` [1]
 * `Hack/`: Special additional post patching script for Hack, invoked via Hack's `config.cfg` (not used when self-patching)
 * `lib/`: See its own README
 * `name_parser/`: Suite to set up sane Family and SubFamily names, used by `font-patcher` (on demand)
+* `optimize-original-source.sh`: Run all icons in `src/svgs` through inkscape to simplify (remove nodes and edges) [5]
 * `release.sh`: Rough process how a release is created, not used (see `.github/workflows/release.yml`)
 * `standardize-and-complete-readmes.sh` [1]
 * `test-fonts.sh`: Print-to-debug all glyphs we patch in [4]
@@ -31,4 +32,5 @@ Note: Usually you need to call the scripts in this directory while actually bein
 [2] Used by CI (github docker-release workflow)
 [3] To be used manually (sigh)
 [4] To be used manually
+[5] Used by CI (github packsvgs workflow)
 [x] Probably not used by anything
