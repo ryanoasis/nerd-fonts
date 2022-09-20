@@ -161,7 +161,7 @@ for codepoint, data in icon_datasets.items():
 num_icons = len(icon_datasets)
 
 print('Generating {} with {} glyphs'.format(fontfile, num_icons))
-font.generate(os.path.join(fontdir, fontfile))
+font.generate(os.path.join(fontdir, fontfile), flags=("no-FFTM-table",))
 
 # We create the font, but ... patch it in on other codepoints :-}
 icon_datasets = { code + codepoint_shift : data for (code, data) in icon_datasets.items() }
