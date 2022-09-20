@@ -5,6 +5,7 @@ on:
     paths:
       - 'src/svgs/*'
       - 'bin/scripts/generate-original-source.py'
+      - 'bin/scripts/optimize-original-source.sh'
   workflow_dispatch:
 
 jobs:
@@ -15,7 +16,9 @@ jobs:
       - name: Fetch dependencies
         run: |
           sudo apt update -y -q
-          sudo apt install python3-fontforge inkscape dc -y -q
+          # ttfdump comes with texlive-binaries
+          # We use ttfdump instead of showttf, because the later core dumps at the moment
+          sudo apt install python3-fontforge inkscape texlive-binaries dc -y -q
 
       - name: Simplify the SVGs
         run: |
@@ -31,14 +34,41 @@ jobs:
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-      - name: Create Seti and original symbols font
+      - name: Dummy create Seti-and-original-symbols font and CHECK FOR CHANGES
+        id: compare_font
         run: |
           cd bin/scripts
-          ls -l ../../src/glyphs/original-source.otf
+          echo "OLD_FONT_LS=$(ls -l ../../src/glyphs/original-source.otf)" >> $GITHUB_ENV
+          # First we create a 'test' font with the same timestamp as the old to see if
+          # there are any differences (apart from the timestamp)
+          export CURRENT_FONT_DATE=$(ttfdump -t head ../../src/glyphs/original-source.otf | \
+            grep -E '[^a-z]created:.*0x' | sed 's/.*x//' | tr 'a-f' 'A-F')
+          echo "Font creation date (1904): 0x${CURRENT_FONT_DATE}"
+          # The timestamp in the HEAD table is given in 1904 seconds, we convert that
+          # to 1970 (unix) seconds.
+          export SOURCE_DATE_EPOCH=$(dc -e "16i ${CURRENT_FONT_DATE} Ai 86400 24107 * - p")
+          echo "Font creation date (1970): ${SOURCE_DATE_EPOCH}"
+          echo "Create font with previous timestamp"
           ./generate-original-source.py
+          # Check if the new font file has changed
+          CHANGE=$(git diff --quiet ../../src/glyphs/original-source.otf && echo false || echo true)
+          echo "Change detected: ${CHANGE}"
+          echo "::set-output name=changed::${CHANGE}"
+
+      - name: Create Seti-and-original-symbols font for real with current timestamp
+        if: steps.compare_font.outputs.changed == 'true'
+        run: |
+          cd bin/scripts
+          echo "Create font with current timestamp"
+          # We need to force creation and modification timestamp to be identical
+          # to make the compare_font step work next time
+          export SOURCE_DATE_EPOCH=$(date +%s)
+          ./generate-original-source.py
+          echo "${OLD_FONT_LS}"
           ls -l ../../src/glyphs/original-source.otf
 
-      - name: Commit patched fonts back to repo
+      - name: Commit created font back to repo
+        if: steps.compare_font.outputs.changed == 'true'
         uses: EndBug/add-and-commit@v9
         with:
           fetch: false
