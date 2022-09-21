@@ -21,11 +21,16 @@ jobs:
           sudo apt install python3-fontforge inkscape texlive-binaries dc -y -q
 
       - name: Simplify the SVGs
+        id: optimize
         run: |
           cd bin/scripts
-          ./optimize-original-source.sh doit
+          ./optimize-original-source.sh doit | tee optlog.txt
+          changenum=$(tail -n 1 optlog.txt | sed -E 's/[^0-9]*([0-9]+).*/\1/')
+          echo "Script claims number of changed files: ${changenum}"
+          echo "::set-output name=num_of_files::${changenum}"
 
       - name: Commit simplified SVGs back to repo
+        if: steps.optimize.outputs.num_of_files > 0
         uses: EndBug/add-and-commit@v9
         with:
           fetch: false
