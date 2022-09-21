@@ -28,4 +28,4 @@ Only glyphs listed here could be found with the cheat sheet.
 * `weather-icons/weathericons-regular-webfont.ttf`: `i_weather.sh`
 * `font-logos.ttf`: `i_linux.sh`
 * `octicons.ttf`: `i_oct.sh`
- * `codicons/codicon.ttf`: _missing_
+ * `codicons/codicon.ttf`: `i_cod.sh`
