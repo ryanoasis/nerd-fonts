@@ -667,11 +667,11 @@ class font_patcher:
                 ligature_subtables = json.loads(self.config.get("Subtables", "ligatures"))
                 for subtable in ligature_subtables:
                     print("Removing subtable:", subtable)
-                try:
-                    self.sourceFont.removeLookupSubtable(subtable)
-                    print("Successfully removed subtable:", subtable)
-                except Exception:
-                    print("Failed to remove subtable:", subtable)
+                    try:
+                        self.sourceFont.removeLookupSubtable(subtable)
+                        print("Successfully removed subtable:", subtable)
+                    except Exception:
+                        print("Failed to remove subtable:", subtable)
         elif self.args.removeligatures:
             print("Unable to read configfile, unable to remove ligatures")
         else:
