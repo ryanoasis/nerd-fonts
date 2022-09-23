@@ -271,7 +271,11 @@ class font_patcher:
                 fontname = sourceFont.cidfontname
             outfile = os.path.normpath(os.path.join(self.args.outputdir, fontname + self.args.extension))
             # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
-            sourceFont.generate(outfile, flags=(str('opentype'), str('PfEd-comments')))
+            bitmaps = str()
+            if len(self.sourceFont.bitmapSizes):
+                print("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
+                bitmaps = str('otf') # otf/ttf, both is bf_ttf
+            sourceFont.generate(outfile, bitmap_type=bitmaps, flags=(str('opentype'), str('PfEd-comments')))
             message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
 
         # Adjust flags that can not be changed via fontforge
