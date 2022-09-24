@@ -145,11 +145,11 @@ function patch_font {
   echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars \
                     --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
-  if [ $? -ne 0 ]; then printf "$OUT\n"; fi
+  if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
   echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars \
                     --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
-  if [ $? -ne 0 ]; then printf "$OUT\n"; fi
+  if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
   # wait for this group of background processes to finish to avoid forking too many processes
   # that can add up quickly with the number of combinations
   #wait

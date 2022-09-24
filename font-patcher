@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.1.0"
+script_version = "3.1.1"
 
 version = "2.2.2"
 projectName = "Nerd Fonts"
@@ -169,6 +169,65 @@ class TableHEADWriter:
         self.lowppem = self.getshort('lowestRecPPEM')
         self.checksum_adj = self.getlong('checksumAdjustment')
 
+def check_panose_monospaced(font):
+    """ Check if the font's Panose flags say it is monospaced """
+    # https://forum.high-logic.com/postedfiles/Panose.pdf
+    panose = list(font.os2_panose)
+    if panose[0] < 2 or panose[0] > 5:
+        return -1 # invalid Panose info
+    panose_mono = ((panose[0] == 2 and panose[3] == 9) or
+                   (panose[0] == 3 and panose[3] == 3))
+    return 1 if panose_mono else 0
+
+def is_monospaced(font):
+    """ Check if a font is probably monospaced """
+    # Some fonts lie (or have not any Panose flag set), spot check monospaced:
+    width = -1
+    width_mono = True
+    for glyph in [ 0x49, 0x4D, 0x57, 0x61, 0x69, 0x2E ]: # wide and slim glyphs 'I', 'M', 'W', 'a', 'i', '.'
+        if not glyph in font:
+            # A 'strange' font, believe Panose
+            return check_panose_monospaced(font) == 1
+        # print(" -> {} {}".format(glyph, font[glyph].width))
+        if width < 0:
+            width = font[glyph].width
+            continue
+        if font[glyph].width != width:
+            # Exception for fonts like Code New Roman Regular or Hermit Light/Bold:
+            # Allow small 'i' and dot to be smaller than normal
+            # I believe the source fonts are buggy
+            if glyph in [ 0x69, 0x2E ]:
+                if width > font[glyph].width:
+                    continue
+                (xmin, _, xmax, _) = font[glyph].boundingBox()
+                if width > xmax - xmin:
+                    continue
+            width_mono = False
+            break
+    # We believe our own check more then Panose ;-D
+    return width_mono
+
+def get_advance_width(font, extended, minimum):
+    """ Get the maximum/minimum advance width in the extended(?) range """
+    width = 0
+    if extended:
+        end = 0x17f
+    else:
+        end = 0x07e
+    for glyph in range(0x21, end):
+        if not glyph in font:
+            continue
+        if glyph in range(0x7F, 0xBF):
+            continue # ignore special characters like '1/4' etc
+        if width == 0:
+            width = font[glyph].width
+            continue
+        if not minimum and width < font[glyph].width:
+            width = font[glyph].width
+        elif minimum and width > font[glyph].width:
+            width = font[glyph].width
+    return width
+
 
 class font_patcher:
     def __init__(self, args):
@@ -187,6 +246,8 @@ class font_patcher:
         self.setup_version()
         self.get_essential_references()
         self.setup_name_backup(font)
+        if self.args.single:
+            self.assert_monospace()
         self.remove_ligatures()
         self.setup_patch_set()
         self.setup_line_dimensions()
@@ -576,6 +637,21 @@ class font_patcher:
             print("No configfile given, skipping configfile related actions")
 
 
+    def assert_monospace(self):
+        # Check if the sourcefont is monospaced
+        width_mono = is_monospaced(self.sourceFont)
+        panose_mono = check_panose_monospaced(self.sourceFont)
+        # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
+        if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
+            print("  Warning: Monospaced check: Panose assumed to be wrong")
+            print("     Glyph widths {} / {} - {} and Panose says \"monospace {}\" ({})".format(get_advance_width(self.sourceFont, False, True),
+                get_advance_width(self.sourceFont, False, False), get_advance_width(self.sourceFont, True, False), panose_mono, list(self.sourceFont.os2_panose)))
+        if not width_mono:
+            print("  Warning: Sourcefont is not monospaced - forcing to monospace not advisable, results might be useless")
+            if self.args.single <= 1:
+                sys.exit(projectName + ": Font will not be patched! Give --mono (or -s, or --use-single-width-glyphs) twice to force patching")
+
+
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
         # Supported params: overlap | careful
@@ -782,8 +858,10 @@ class font_patcher:
                 continue
             if self.font_dim['width'] < self.sourceFont[glyph].width:
                 self.font_dim['width'] = self.sourceFont[glyph].width
+                # print("New MAXWIDTH-A {} {} {}".format(glyph, self.sourceFont[glyph].width, xmax))
             if xmax > self.font_dim['xmax']:
                 self.font_dim['xmax'] = xmax
+                # print("New MAXWIDTH-B {} {} {}".format(glyph, self.sourceFont[glyph].width, xmax))
 
         # Calculate font height
         self.font_dim['height'] = abs(self.font_dim['ymin']) + self.font_dim['ymax']
@@ -1195,7 +1273,7 @@ def setup_arguments():
     # optional arguments
     parser.add_argument('font',                                      help='The path to the font to patch (e.g., Inconsolata.otf)')
     parser.add_argument('-v', '--version',                           action='version',        version=projectName + ": %(prog)s (" + version + ")")
-    parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='store_true', help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
+    parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='count',      help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
     parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
     parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
     parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)')
