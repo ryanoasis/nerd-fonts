@@ -243,6 +243,9 @@ or, in Powershell (Windows only):
 ./install.ps1 <FontName>
 ./install.ps1 Hack
 ./install.ps1 HeavyData
+./install.ps1 FiraCode, Hack
+./install.ps1 CascadiaCode -WindowsCompatibleOnly
+./install.ps1 DejaVuSansMono -WhatIf
 ```
 
 ### `Option 4: Homebrew Fonts`
