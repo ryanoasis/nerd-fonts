@@ -814,11 +814,6 @@ class font_patcher:
             self.sourceFont.hhea_ascent = self.sourceFont.os2_winascent
             self.sourceFont.hhea_descent = -self.sourceFont.os2_windescent
 
-        # Line gap add extra space on the bottom of the line which
-        # doesn't allow the powerline glyphs to fill the entire line.
-        self.sourceFont.hhea_linegap = 0
-        self.sourceFont.os2_typolinegap = 0
-
     def get_essential_references(self):
         """Find glyphs that are needed for the basic glyphs"""
         # Sometimes basic glyphs are constructed from multiple other glyphs.
@@ -844,6 +839,23 @@ class font_patcher:
         if self.sourceFont.os2_use_typo_metrics:
             self.font_dim['ymin'] = self.sourceFont.os2_typodescent
             self.font_dim['ymax'] = self.sourceFont.os2_typoascent
+
+        # Line gap add extra space on the bottom of the line which
+        # doesn't allow the powerline glyphs to fill the entire line.
+        # Put half of the gap into the 'cell', each top and bottom
+        gap = max(self.sourceFont.hhea_linegap, self.sourceFont.os2_typolinegap) # TODO probably wrong
+        if self.sourceFont.os2_use_typo_metrics:
+            gap = self.sourceFont.os2_typolinegap
+        self.sourceFont.hhea_linegap = 0
+        self.sourceFont.os2_typolinegap = 0
+        if gap > 0:
+            gap_top = int(gap / 2)
+            gap_bottom = gap - gap_top
+            self.font_dim['ymin'] -= gap_bottom
+            self.font_dim['ymax'] += gap_top
+            self.sourceFont.os2_typoascent = self.sourceFont.os2_typoascent + gap_top
+            self.sourceFont.os2_typodescent = self.sourceFont.os2_typodescent - gap_bottom
+            # TODO Check what to do with win and hhea values
 
         # Find the biggest char width
         # Ignore the y-values, os2_winXXXXX values set above are used for line height
