@@ -1118,6 +1118,7 @@ class font_patcher:
             self.sourceFont.selection.select(currentSourceFontGlyph)
             self.sourceFont.paste()
             self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
+            self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
