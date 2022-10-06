@@ -1,10 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf8
 # Nerd Fonts Version: 2.3.0-RC
-# Script Version: 1.1.0
+# Script Version: 1.1.1
 
 # Example Usage:
-# ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont-6595.ttf --start f0001 --end f19c3 --offset 0 --prefix mdi
+# ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont.ttf --start f001 --end f847 --offset 4ff --prefix mdi
+# ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesign/*.ttf --start f0001 --end f1af0 --offset 0 --prefix md
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/weathericons-regular-webfont.ttf --start f000 --end f0eb --negoffset d00 --prefix weather --nogaps
 
 from __future__ import absolute_import, print_function, unicode_literals
@@ -73,11 +74,11 @@ for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
   sh_name = "i_" + args.prefix + "_" + name.replace("-", "_")
 
   if args.nogaps:
-    char = unichr(hexPosition)
+    char = chr(hexPosition)
   else:
-    char = unichr(int('0x'+slot, 16) + signedOffset)
+    char = chr(int('0x'+slot, 16) + signedOffset)
 
-  print("i='" + char + "' " + sh_name + "=$i" + " //" + str(hexPosition))
+  print("i='" + char + "' " + sh_name + "=$i")
   ctr += 1
   hexPosition += 1
 
