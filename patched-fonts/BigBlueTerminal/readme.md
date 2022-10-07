@@ -363,70 +363,70 @@ Combinations are no longer included by default because of the large inflation in
 ```sh
 # 4094 Possible Combinations:
 
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -491,70 +491,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -619,70 +619,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -747,70 +747,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -875,70 +875,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --windows
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1003,70 +1003,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1131,70 +1131,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1259,70 +1259,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1387,70 +1387,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --use-single-width-glyphs
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1515,70 +1515,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1643,70 +1643,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1771,70 +1771,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -1899,70 +1899,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --windows
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2027,70 +2027,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2155,70 +2155,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2283,70 +2283,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2411,70 +2411,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --powerline
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2539,70 +2539,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2667,70 +2667,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2795,70 +2795,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -2923,70 +2923,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --windows
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3051,70 +3051,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3179,70 +3179,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3307,70 +3307,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3435,70 +3435,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --use-single-width-glyphs
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3563,70 +3563,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3691,70 +3691,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3819,70 +3819,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --windows --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -3947,70 +3947,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --windows
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -4075,70 +4075,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -4203,70 +4203,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --fontawesome
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
@@ -4331,70 +4331,70 @@ Combinations are no longer included by default because of the large inflation in
 ./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --octicons --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --octicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --pomicons
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powerlineextra
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --fontawesomeextension
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powersymbols --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powersymbols --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powersymbols --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --powersymbols
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --weather --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --weather
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux --material
-./font-patcher BigBlue_Terminal_437TT.TTF  --fontlinux
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --pomicons
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powerlineextra
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --fontawesomeextension
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powersymbols --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powersymbols --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powersymbols --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --powersymbols
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --weather --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --weather
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos --material
+./font-patcher BigBlue_Terminal_437TT.TTF  --fontlogos
 ./font-patcher BigBlue_Terminal_437TT.TTF  --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather --material
 ./font-patcher BigBlue_Terminal_437TT.TTF  --pomicons --powerlineextra --fontawesomeextension --powersymbols --weather
 ./font-patcher BigBlue_Terminal_437TT.TTF  --pomicons --powerlineextra --fontawesomeextension --powersymbols --material
