@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.2.2
+# Nerd Fonts Version: 2.3.0-RC
 # Script Version: 1.2.0
 # Generates CSS file for the font and cheat sheet code
 
@@ -19,7 +19,7 @@ cheat_sheet_head_file="./data/cheatsheet-head.txt"
 cheat_sheet_foot_file="./data/cheatsheet-foot.txt"
 
 LINE_PREFIX="# [Nerd Fonts] "
-version="2.2.2"
+version="2.3.0-RC"
 
 # clear files
 true > "$output_css_file" 2> /dev/null
