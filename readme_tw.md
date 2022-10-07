@@ -142,7 +142,7 @@ _如果你..._
 ### [Font Logos][font-logos]
 > Font-logos 是一個包含LOGO和linux流行布局的圖示字體。 / ([repo][font-logos])
 
-![image](images/fontforge-glyph-set-font-linux.png)
+![image](images/fontforge-glyph-set-font-logos.png)
 
 ### [Pomicons][gabrielelana-pomicons]
 > 8 個符號 ["Pomodoro Technique"®](https://cirillocompany.de/pages/pomodoro-technique). / ([repo][gabrielelana-pomicons])
