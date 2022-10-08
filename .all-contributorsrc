@@ -1118,12 +1118,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/32745146?v=4",
       "profile": "https://blog.kurtstories.com/",
       "contributions": [
-        "doc"
+        "doc",
+        "translation"
       ]
     }
   ],
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "commitConvention": "angular"
 }
