@@ -2,6 +2,139 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v2.2.2
+
+This makes all the prepached `Nerd Fonts` monospaced again, like v2.1.0 had it.
+
+### New Features
+
+  - Make Nerd Fonts Monospaced Again by @Finii in #764
+  - Add new icons:
+    - Add icons for Emacs and Orgmode by @ashfinal in #833
+    - Add Kotlin icon by @Finii in #862
+
+### Updates / Improvements
+
+  - Update Hasklig readme by @chezbgone in #910
+  - font-patcher:
+    - Correct python module missing message by @Finii in #798
+    - Do not overwrite glyphs that are needed for basic glyphs by @Finii in #914
+    - Correct mono scaling of thin glyphs by @Finii in #749
+    - Allow to specify custom symbolfont with absolute path by @Finii in #794
+    - Allow glyphs with altuni for exactEncoding by @Finii in #793
+
+## v2.2.1
+
+### Fixes
+
+  - Monospaced fonts wrong width (b71a9e474b4f2e8c416c32949e6c0f76949a14ee)
+
+## v2.2.0
+
+### New Features
+
+  - Add new fonts:
+    - Add Lilex font by @adavidzh in #474
+  - Add new icons:
+    - Add Crystal icon by @mamantoha in #429
+    - Add PureScript Icon by @andys8 in #545
+    - Add the official Puppet icon as a custom icon by @dhollinger in #652
+  - Add Docker support by @mdschweda in #449
+  - Add support for codicons by @cstrahan in #705
+  - Use fontforge 2022 for release by @Finii in #884
+
+### Updates / Improvements
+
+  - Update various fonts:
+    - Update Cascadia Code to its latest release by @LuanVSO in #433
+    - Update Cascadia Code to version 2007.01 by @natebwangsut in #499
+    - Update Cascadia to 2111.01 by @Finii in #723
+    - Update JetBrains Mono to 1.0.3 by @alindeman in #437
+    - Update JetBrains Mono to 1.0.5 by @alindeman in #459
+    - Update JetBrains Mono to version v2.001 by @moritzdietz in #518
+    - Update JetBrains Mono to version v2.210 by @moritzdietz in #540
+    - Update JetBrains Mono to version v2.225 by @moritzdietz in #572
+    - Update JetBrains Mono to version v2.242 by @moritzdietz in #648
+    - Update JetBrains Mono to version v2.251 by @moritzdietz in #776
+    - Upgrade Victor Mono to 1.4.1 by @ea2809 in #516
+    - Update Fira Code to v3.1 by @iamolivinius in #473
+    - Update Fira Code to latest version by @gitfool in #497
+    - Update Fira Code to latest version by @gitfool in #704
+    - Update Hasklig to v1.2 by @Tehnix in #555
+    - Update Iosevka font to 6.1.3 by @FollieHiyuki in #622
+  - Update Symbols-only fonts for #249 and #429 by @polyzen in #461
+  - Automatic symbols only font generation by @Finii in #801
+  - Update source icons:
+    - Update font-logos with new linux icons by @daniruiz in #551
+    - Update Font Logos to 1.0.1 by @Finii in #859
+  - Add new language translations:
+    - Add pt-pt language to readme.md by @LiTO773 in #431
+    - Add Hindi version of readme.md. by @HarshalRathore in #707
+  - font-patcher:
+    - Take the style from the filename if it's longer than the subfamily (fixes #257) by @duganchen in #526
+    - font-patcher: remove\_ligatures() never displays warnings by @fracsinus in #644
+    - Allow setting custom glyph storage directory by @epsilon-0 in #613
+    - Give meaningful error messages on trivial open fails by @Finii in #699
+    - Feature: correct small rendering by @Finii in #761
+  - Docu
+    - Add additional Archlinux links by @quinnjr in #462
+    - Add AppImage patching instructions to Readme by @adrian5 in #624
+    - Add sparse-checkout example to only clone one font by @vnys in #625
+    - List AUR packages for Jetbrains & Victor Mono by @avalonv in #887
+  - Allow running gotta-patch-em-all from any dir by @RL-S in #863
+
+### Fixes
+
+  - Fix #412 by @onokatio in #439
+  - CI's error by @get-me-power in #493
+  - Change bearing to int, since an int is expected by @WhyNotHugo in #471
+  - Add Caskyadia Mono to RFN replacements by @KexyBiscuit in #681
+  - Bugfix/fstype font does not open by @Finii in #687
+  - font-patcher: Use correct source font metrics by @Finii in #593
+  - font-patcher: Reintroduce fsType fix by @Finii in #692
+  - font-patcher: Set SFNT Version by @Finii in #693
+  - font-patcher: Remove obsolete metadata on glyph exchange by @Finii in #711
+  - font-patcher: Allow patching without --ext by @Finii in #720
+  - font-patcher: Improve 'Mono' compatibility with Windows by @Finii in #695
+  - font-patcher: Copy selection instead of continuously regenerating by @Finii in #736
+  - Handle TTCs gracefully by @Finii in #752
+  - Bugfix monospaced glyph scaling by @Finii in #732
+  - patcher: Fix grave (backtick) zero width by @Finii in #860
+  - Fix Noto too wide by @Finii in #830
+  - Docu
+    - Fix European Portuguese and Spanish translations errors by @gusbemacbe in #446
+    - Restore new line in README.ja by @delphinus in #447
+    - Update link to cheat sheet in readme's by @polyzen in #457
+    - Fix misleading note: Only for Linux & macOS (OS X) | Option 3: Install Script by @GiorgosXou in #671
+    - readme.md (et al): fix FQDN for input font (input.djr.com) by @atomicstack in #680
+    - Update command about Homebrew cask option by @ktanoooo in #689
+    - Replace non-existent polish words with other words that do exist in readme\_pl.md. by @MarcelskyXD in #710
+    - font info: Remove references to 'Terminess' from non-Terminus fonts by @Finii in #724
+    - Correct example patch call through fontforge [skip ci] by @Finii in #827
+    - Fix grammar mistakes in readme\_uk.md by @dev99problems in #853
+    - Fix (jetbrain-mono-font): installation guide by @GervinFung in #867
+  - Typos
+    - spelling: hermut -> hurmit by @Harwood in #537
+    - Fix homebrew cask tap command by @lepht in #525
+    - Fix typo in Cascadia Code README by @adrian5 in #529
+    - Fix typo: partcular -> particular by @alexislefebvre in #550
+    - Fix typo: partcular -> particular #550 by @alexislefebvre in #557
+    - Fix typo: orignal -> original by @pajlero in #737
+  - Update command for Mac OSX Homebrew install by @jesdavpet in #552
+  - Update contribution instructions with fontforge --script by @Tehnix in #554
+  - Link to gohu.eu is dead by @Skeeve in #567
+  - Brew cask install update by @JakobFerdinand in #611
+  - Fix ps installer by @fsackur in #570
+  - Docker:
+    - Update docker-entrypoint.sh by @diddledani in #654
+    - Consider .ttc in docker entrypoint by @kraftwerk28 in #664
+    - Update Dockerfile to use supported version of alpine and Python by @dgswilkins in #626
+    - Update Dockerfile to use latest alpine and py3-pip by @cmarincia in #684
+    - Fix Failing Docker Builds by @frankhinek in #882
+  - Update issue templates by @Finii in #782
+  - patch-em-all: Purge destination dirs if possible by @Finii in #787
+  - CI: Add Lilex to release by @Finii in #886
+
 ## v2.1.0
 
 ### New Features
