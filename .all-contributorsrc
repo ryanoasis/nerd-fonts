@@ -1121,6 +1121,15 @@
         "doc",
         "translation"
       ]
+    },
+    {
+      "login": "mrienstra",
+      "name": "Michael Rienstra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/669326?v=4",
+      "profile": "https://github.com/mrienstra",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
