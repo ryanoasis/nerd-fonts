@@ -82,9 +82,9 @@ class TableHEADWriter:
         i += 4
         extra = 0
         for j in range(4):
+            extra = extra << 8
             if i + j <= end:
                 extra += ord(self.f.read(1))
-            extra = extra << 8
         checksum = (checksum + extra) & 0xFFFFFFFF
         return checksum
 
