@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.3.1"
+script_version = "3.3.2"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -88,8 +88,8 @@ class TableHEADWriter:
         checksum = (checksum + extra) & 0xFFFFFFFF
         return checksum
 
-    def find_head_table(self, idx):
-        """ Search all tables for the HEAD table and store its metadata """
+    def find_table(self, tablenames, idx):
+        """ Search all tables for one of the tables in tablenames and store its metadata """
         # Use font with index idx if this is a font collection file
         self.f.seek(0, 0)
         tag = self.f.read(4)
@@ -117,9 +117,17 @@ class TableHEADWriter:
             self.tab_check = self.getlong()
             self.tab_offset = self.getlong()
             self.tab_length = self.getlong()
-            if tab_name == b'head':
-                return
-        raise Exception('No HEAD table found in font idx {}'.format(idx))
+            if tab_name in tablenames:
+                return True
+        return False
+
+    def find_head_table(self, idx):
+        """ Search all tables for the HEAD table and store its metadata """
+        # Use font with index idx if this is a font collection file
+        found = self.find_table([ b'head' ], idx)
+        if not found:
+            raise Exception('No HEAD table found in font idx {}'.format(idx))
+
 
     def goto(self, where):
         """ Go to a named location in the file or to the specified index """
@@ -376,6 +384,8 @@ class font_patcher:
                     dest_font.close()
                 except:
                     pass
+        if self.args.is_variable:
+            print("Warning: Source font is a variable open type font (VF) and the patch results will most likely not be what you want")
         print(message)
 
         if self.args.postprocess:
@@ -1534,7 +1544,7 @@ def setup_arguments():
         args.windows = False
 
     if args.nonmono and args.single:
-        print("Warniung: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
+        print("Warning: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
         args.nonmono = False
 
     make_sure_path_exists(args.outputdir)
@@ -1543,6 +1553,18 @@ def setup_arguments():
     if not os.access(args.font, os.R_OK):
         sys.exit("{}: Can not open font file for reading: {}".format(projectName, args.font))
     is_ttc = len(fontforge.fontsInFile(args.font)) > 1
+    try:
+        source_font_test = TableHEADWriter(args.font)
+        args.is_variable = source_font_test.find_table([b'avar', b'cvar', b'fvar', b'gvarb', b'HVAR', b'MVAR', b'VVAR'], 0)
+        if args.is_variable:
+            print("  Warning: Source font is a variable open type font (VF), opening might fail...")
+    except:
+        args.is_variable = False
+    finally:
+        try:
+            source_font_test.close()
+        except:
+            pass
 
     if args.extension == "":
         args.extension = os.path.splitext(args.font)[1]
