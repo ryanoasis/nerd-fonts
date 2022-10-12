@@ -876,7 +876,7 @@ class font_patcher:
                 # print("New MAXWIDTH-B {} {} {}".format(glyph, self.sourceFont[glyph].width, xmax))
 
         # Calculate font height
-        self.font_dim['height'] = abs(self.font_dim['ymin']) + self.font_dim['ymax']
+        self.font_dim['height'] = -self.font_dim['ymin'] + self.font_dim['ymax']
         if self.font_dim['height'] == 0:
             # This can only happen if the input font is empty
             # Assume we are using our prepared templates
@@ -886,7 +886,7 @@ class font_patcher:
                 'xmax'  : self.sourceFont.em,
                 'ymax'  : self.sourceFont.ascent,
                 'width' : self.sourceFont.em,
-                'height': abs(self.sourceFont.descent) + self.sourceFont.ascent,
+                'height': self.sourceFont.descent + self.sourceFont.ascent,
             }
 
 
