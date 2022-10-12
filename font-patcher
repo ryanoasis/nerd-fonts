@@ -870,6 +870,7 @@ class font_patcher:
         if gap > 0:
             gap_top = int(gap / 2)
             gap_bottom = gap - gap_top
+            print("Redistributing line gap of {} ({} top and {} bottom)".format(gap, gap_top, gap_bottom))
             self.font_dim['ymin'] -= gap_bottom
             self.font_dim['ymax'] += gap_top
             self.font_dim['height'] = -self.font_dim['ymin'] + self.font_dim['ymax']
