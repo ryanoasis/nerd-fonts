@@ -110,4 +110,4 @@ Common types for this project include: `code`, `doc`, `translation`, `review` .F
 [Combinations Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#combinations
 [Patched Fonts]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#patched-fonts
 [KISS Workflow]: https://github.com/ryanoasis/nerd-fonts/wiki/Development-Workflow#kiss-workflow
-[First PR]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
+[First PR]: https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github
