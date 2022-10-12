@@ -127,7 +127,7 @@ function patch_font {
 
   # shellcheck disable=SC2154
   # we know the '$config_has_powerline' is from the sourced file
-  if [ "$config_has_powerline" ]
+  if [ "$config_has_powerline" -gt 0 ]
   then
     powerline=""
     combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
@@ -193,7 +193,7 @@ function generate_info {
     source "$config_parent_dir/config.cfg"
   fi
 
-  if [ "$config_has_powerline" ]
+  if [ "$config_has_powerline" -gt 0 ]
   then
     powerline=""
     combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
