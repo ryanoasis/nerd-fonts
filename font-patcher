@@ -988,6 +988,9 @@ class font_patcher:
                 if currentSourceFontGlyph in self.sourceFont:
                     self.sourceFont[currentSourceFontGlyph].removePosSub("*")
 
+            # This will destroy any content currently in currentSourceFontGlyph, so do it first
+            scale_glyph_data = self.get_glyph_scale(sym_glyph.encoding, scaleGlyph, symbolFont, currentSourceFontGlyph) if scaleGlyph else None
+
             # Select and copy symbol from its encoding point
             # We need to do this select after the careful check, this way we don't
             # reset our selection before starting the next loop
@@ -1015,7 +1018,7 @@ class font_patcher:
                     scale_ratio_x = False
                     if scaleGlyph:
                         # We want to preserve the relative size of each glyph in a glyph group
-                        scale_ratio_x = self.get_glyph_scale(sym_glyph.unicode, scaleGlyph, symbolFont)
+                        scale_ratio_x = scale_glyph_data
                     if scale_ratio_x is False:
                         # In the remaining cases, each glyph is sized independently to each other
                         scale_ratio_x = self.get_scale_factor(sym_dim)
@@ -1187,13 +1190,15 @@ class font_patcher:
                 sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
                 scaleGlyph['scales'].append(self.get_scale_factor(sym_dim))
 
-    def get_glyph_scale(self, unicode_value, scaleGlyph, symbolFont):
+    def get_glyph_scale(self, symbol_unicode, scaleGlyph, symbolFont, dest_unicode):
         """ Determines whether or not to use scaled glyphs for glyphs in passed glyph_list """
-        # Potentially destorys the contents of self.sourceFont[unicode_value]
+        # Potentially destorys the contents of self.sourceFont[dest_unicode]
         if not 'scales' in scaleGlyph:
-            self.prepareScaleGlyph(scaleGlyph, symbolFont, self.sourceFont[unicode_value])
+            if not dest_unicode in self.sourceFont:
+                self.sourceFont.createChar(dest_unicode)
+            self.prepareScaleGlyph(scaleGlyph, symbolFont, self.sourceFont[dest_unicode])
         for glyph_list, scale in zip(scaleGlyph['GlyphsToScale'], scaleGlyph['scales']):
-            if unicode_value in glyph_list:
+            if symbol_unicode in glyph_list:
                 return scale
         return False
 
