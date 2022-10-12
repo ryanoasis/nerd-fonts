@@ -313,7 +313,7 @@ jobs:
         with:
           fetch: false
           add: 'patched-fonts'
-          message: "[ci] Rebuilds patched fonts"
+          message: "[ci] Rebuild patched fonts"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
