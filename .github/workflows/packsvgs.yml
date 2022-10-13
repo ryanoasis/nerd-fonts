@@ -27,7 +27,7 @@ jobs:
           ./optimize-original-source.sh doit | tee optlog.txt
           changenum=$(tail -n 1 optlog.txt | sed -E 's/[^0-9]*([0-9]+).*/\1/')
           echo "Script claims number of changed files: ${changenum}"
-          echo "::set-output name=num_of_files::${changenum}"
+          echo "num_of_files=${changenum}" >> $GITHUB_OUTPUT
 
       - name: Commit simplified SVGs back to repo
         if: steps.optimize.outputs.num_of_files > 0
@@ -58,7 +58,7 @@ jobs:
           # Check if the new font file has changed
           CHANGE=$(git diff --quiet ../../src/glyphs/original-source.otf && echo false || echo true)
           echo "Change detected: ${CHANGE}"
-          echo "::set-output name=changed::${CHANGE}"
+          echo "changed=${CHANGE}" >> $GITHUB_OUTPUT
 
       - name: Create Seti-and-original-symbols font for real with current timestamp
         if: steps.compare_font.outputs.changed == 'true'

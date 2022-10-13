@@ -39,8 +39,7 @@ jobs:
           chmod u+x get-font-names-from-json.sh
           fontNames=$(./get-font-names-from-json.sh)
           echo "${fontNames}"
-          echo "::set-output name=matrix::${fontNames}"
-          echo ${{ steps.set-matrix.outputs.matrix }}
+          echo "matrix=${fontNames}" >> $GITHUB_OUTPUT
 
       - name: Fetch release version
         id: rel_ver
@@ -49,12 +48,12 @@ jobs:
           echo "Contents of package.json:"
           cat package.json
           RELEASE_VERSION=$(jq '.version' package.json | sed 's/[ ",]//g')
-          echo "::set-output name=val::$RELEASE_VERSION"
+          echo "val=$RELEASE_VERSION" >> $GITHUB_OUTPUT
 
       - name: Determine candidate status
         id: rel_can
         run: |
-          [[ "${{ steps.rel_ver.outputs.val }}" == *"-RC"* ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
+          [[ "${{ steps.rel_ver.outputs.val }}" == *"-RC"* ]] && echo "val=true" || echo "val=false" >> $GITHUB_OUTPUT
 
       - name: Determine new release or re-release
         # If the tag exists it is obviously a re-release
@@ -68,7 +67,7 @@ jobs:
         id: rel_pre_existing
         run: |
           curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"v${{ steps.rel_ver.outputs.val }}"$' \
-            && echo "::set-output name=exists::true" || echo "::set-output name=exists::false"
+            && echo "exists=true" || echo "exists=false" >> $GITHUB_OUTPUT
           echo "Tag exists: ${{ steps.rel_pre_existing.outputs.exists }}"
 
       - name: Upload release only on first trigger for release and always on release candidate
@@ -77,7 +76,7 @@ jobs:
         # * This is a new (previously untagged) release
         # * This is a release candidate
         run: |
-          [[ "${{ steps.rel_can.outputs.val }}" == "true" || "${{ steps.rel_pre_existing.outputs.exists }}" == "false" ]] && echo "::set-output name=val::true" || echo "::set-output name=val::false"
+          [[ "${{ steps.rel_can.outputs.val }}" == "true" || "${{ steps.rel_pre_existing.outputs.exists }}" == "false" ]] && echo "val=true" || echo "val=false" >> $GITHUB_OUTPUT
 
       - name: Show outputs
         run: |
@@ -204,7 +203,7 @@ jobs:
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           gen=$(./generate-casks.sh "${{ matrix.font }}")
           echo $gen
-          echo ::set-output name=path::$(echo "$gen" | grep '^## Created' | sed -E 's/.*: +//')
+          echo path=$(echo "$gen" | grep '^## Created' | sed -E 's/.*: +//') >> $GITHUB_OUTPUT
 
       - name: Upload zip file archive for release
         uses: softprops/action-gh-release@v0.1.14
