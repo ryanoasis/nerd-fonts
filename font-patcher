@@ -1248,7 +1248,7 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
     # If destGlyph is given the glyph(s) are first copied over into that
     # glyph and measured in that font (to avoid rounding errors)
     # Leaves the destGlyph in unknown state!
-    bbox = [ None, None, None, None ]
+    bbox = [ None, None, None, None, None ]
     for glyph in glyphs:
         if glyph is None:
             # Glyph has been in defining range but is not in the actual font
@@ -1260,6 +1260,7 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
             destGlyph.font.paste()
             glyph = destGlyph
         gbb = glyph.boundingBox()
+        gadvance = glyph.width
         if len(glyphs) > 1 and gbb[0] == gbb[2] and gbb[1] == gbb[3]:
             # Ignore empty glyphs if we examine more than one glyph
             continue
@@ -1267,6 +1268,13 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
         bbox[1] = gbb[1] if bbox[1] is None or bbox[1] > gbb[1] else bbox[1]
         bbox[2] = gbb[2] if bbox[2] is None or bbox[2] < gbb[2] else bbox[2]
         bbox[3] = gbb[3] if bbox[3] is None or bbox[3] < gbb[3] else bbox[3]
+        if not bbox[4]:
+            bbox[4] = gadvance
+        else:
+            if bbox[4] != gadvance:
+                bbox[4] = -1 # Marker for not-monospaced
+    if bbox[4] and bbox[4] < 0:
+        bbox[4] = None
     return {
         'xmin'  : bbox[0],
         'ymin'  : bbox[1],
@@ -1274,6 +1282,7 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
         'ymax'  : bbox[3],
         'width' : bbox[2] + (-bbox[0]),
         'height': bbox[3] + (-bbox[1]),
+        'advance': bbox[4], # advance width if monospaced
     }
 
 def get_glyph_dimensions(glyph):
