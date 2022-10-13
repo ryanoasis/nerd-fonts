@@ -1002,11 +1002,11 @@ class font_patcher:
             self.sourceFont.selection.select(currentSourceFontGlyph)
             self.sourceFont.paste()
             self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
-            scale_ratio_x = 1
-            scale_ratio_y = 1
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
+            scale_ratio_x = 1
+            scale_ratio_y = 1
 
             # Now that we have copy/pasted the glyph, if we are creating a monospace
             # font we need to scale and move the glyphs.  It is possible to have
@@ -1288,12 +1288,12 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
     if bbox[4] and bbox[4] < 0:
         bbox[4] = None
     return {
-        'xmin'  : bbox[0],
-        'ymin'  : bbox[1],
-        'xmax'  : bbox[2],
-        'ymax'  : bbox[3],
-        'width' : bbox[2] + (-bbox[0]),
-        'height': bbox[3] + (-bbox[1]),
+        'xmin'   : bbox[0],
+        'ymin'   : bbox[1],
+        'xmax'   : bbox[2],
+        'ymax'   : bbox[3],
+        'width'  : bbox[2] + (-bbox[0]),
+        'height' : bbox[3] + (-bbox[1]),
         'advance': bbox[4], # advance width if monospaced
     }
 
