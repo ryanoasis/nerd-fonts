@@ -756,8 +756,10 @@ class font_patcher:
             range(0xf060, 0xf063 + 1), # arrows
             [0xf053, 0xf054, 0xf077, 0xf078], # chevron all directions
             range(0xf07d, 0xf07e + 1), # resize
+            range(0xf0a4, 0xf0a7 + 1), # pointing hands
             [0xf0d7, 0xf0d8, 0xf0d9, 0xf0da, 0xf0dc, 0xf0dd, 0xf0de], # caret all directions and same looking sort
             range(0xf100, 0xf107 + 1), # angle
+            range(0xf130, 0xf131 + 1), # mic
             range(0xf141, 0xf142 + 1), # ellipsis
             range(0xf153, 0xf15a + 1), # currencies
             range(0xf175, 0xf178 + 1), # long arrows
