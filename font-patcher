@@ -1048,8 +1048,20 @@ class font_patcher:
                     scale_ratio_y *= 1 + overlap
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
-            # Use the dimensions from the newly pasted and stretched glyph
+            # We pasted and scaled now we want to align/move
+            # Use the dimensions from the newly pasted and stretched glyph to avoid any rounding errors
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
+            # Use combined bounding box?
+            if scale_glyph_data and scale_glyph_data[1] and (scale_ratio_x != 1 or scale_ratio_y != 1):
+                # Simulate scaling on combined bounding box
+                scaleglyph_dim = scale_bounding_box(scale_glyph_data[1], scale_ratio_x, scale_ratio_y)
+                if not scaleglyph_dim['advance']:
+                    # On monospaced symbol collections use their advance with, otherwise align horizontally individually
+                    scaleglyph_dim['xmin'] = sym_dim['xmin']
+                    scaleglyph_dim['xmax'] = sym_dim['xmax']
+                    scaleglyph_dim['width'] = sym_dim['width']
+                sym_dim = scaleglyph_dim
+
             y_align_distance = 0
             if sym_attr['valign'] == 'c':
                 # Center the symbol vertically by matching the center of the line height and center of symbol
@@ -1288,6 +1300,19 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
 def get_glyph_dimensions(glyph):
     """ Returns dict of the dimesions of the glyph passed to it. """
     return get_multiglyph_boundingBox([ glyph ])
+
+def scale_bounding_box(bbox, scale_x, scale_y):
+    """ Return a scaled version of a glyph dimensions dict """
+    new_dim = {
+        'xmin'   : int(bbox['xmin'] * scale_x),
+        'ymin'   : int(bbox['ymin'] * scale_y),
+        'xmax'   : int(bbox['xmax'] * scale_x),
+        'ymax'   : int(bbox['ymax'] * scale_y),
+        'advance': int(bbox['advance'] * scale_y) if bbox['advance'] else None,
+        }
+    new_dim['width'] = new_dim['xmax'] + (-new_dim['xmin'])
+    new_dim['height'] = new_dim['ymax'] + (-new_dim['ymin'])
+    return new_dim
 
 def update_progress(progress):
     """ Updates progress bar length.
