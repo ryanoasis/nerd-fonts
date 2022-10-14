@@ -676,6 +676,7 @@ class font_patcher:
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
         # Supported params: overlap | careful
+        # Overlap value is used horizontally but vertically limited to 0.01
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
@@ -1118,7 +1119,8 @@ class font_patcher:
             overlap = sym_attr['params'].get('overlap')
             if overlap:
                 scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
-                scale_ratio_y *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_y)) * overlap
+                y_overlap = min(0.01, overlap) # never aggressive vertical overlap
+                scale_ratio_y *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_y)) * y_overlap
 
             # Size in x to size in y ratio limit (to prevent over-wide glyphs)
             xy_ratio_max = sym_attr['params'].get('xy-ratio')
