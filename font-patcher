@@ -246,6 +246,7 @@ class font_patcher:
         self.setup_version()
         self.get_essential_references()
         self.setup_name_backup(font)
+        self.font_monospaced = is_monospaced(self.sourceFont)
         if self.args.single:
             self.assert_monospace()
         self.remove_ligatures()
@@ -639,7 +640,7 @@ class font_patcher:
 
     def assert_monospace(self):
         # Check if the sourcefont is monospaced
-        width_mono = is_monospaced(self.sourceFont)
+        width_mono = self.font_monospaced
         panose_mono = check_panose_monospaced(self.sourceFont)
         # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
         if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
@@ -654,34 +655,35 @@ class font_patcher:
 
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
-        # Supported params: overlap | careful
+        # Supported params: overlap | careful | single
+        # 'single' is ignored on proportional input fonts or if --variable-width-glyphs is given
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Arrow tips
-            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
 
             # Rounded arcs
-            0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
+            0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.01}},
+            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.01}},
+            0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.01}},
+            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.01}},
 
             # Bottom Triangles
-            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
 
             # Top Triangles
-            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
+            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'single': True, 'overlap': 0.02}},
 
             # Flames
             0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
@@ -940,6 +942,8 @@ class font_patcher:
                 sym_attr = attributes[sym_glyph.unicode]
             except KeyError:
                 sym_attr = attributes['default']
+            if not self.font_monospaced:
+                sym_attr['params'].pop('single') # We have no valid advance width to begin with
 
             if exactEncoding:
                 # Use the exact same hex values for the source font as for the symbol font.
@@ -999,7 +1003,7 @@ class font_patcher:
             # Now that we have copy/pasted the glyph, if we are creating a monospace
             # font we need to scale and move the glyphs.  It is possible to have
             # empty glyphs, so we need to skip those.
-            if self.args.single and sym_dim['width'] and sym_dim['height']:
+            if (self.args.single or sym_attr['params'].get('single')) and sym_dim['width'] and sym_dim['height']:
                 # If we want to preserve that aspect ratio of the glyphs we need to
                 # find the largest possible scaling factor that will allow the glyph
                 # to fit in both the x and y directions
