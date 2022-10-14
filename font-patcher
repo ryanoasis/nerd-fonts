@@ -1038,7 +1038,7 @@ class font_patcher:
             if scale_ratio_x != 1 or scale_ratio_y != 1:
                 if overlap:
                     scale_ratio_x *= 1 + overlap
-                    scale_ratio_y *= 1 + overlap
+                    scale_ratio_y *= 1 + max(0.01, overlap) # never aggressive vertical overlap
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
             # Use the dimensions from the newly pasted and stretched glyph
