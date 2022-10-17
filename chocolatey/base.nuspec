@@ -17,7 +17,7 @@
     <iconUrl>https://imgur.com/pEDFEje</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/ryanoasis/nerd-fonts/-/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ryanoasis/nerd-fonts</projectSourceUrl>
     <docsUrl>https://github.com/ryanoasis/nerd-fonts/wiki</docsUrl>

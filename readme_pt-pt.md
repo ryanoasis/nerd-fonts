@@ -256,7 +256,7 @@ git clone --depth 1
 
 ```sh
 mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 _Note:_ caminhos alternativos deprecados: `~/.fonts`
@@ -264,7 +264,7 @@ _Note:_ caminhos alternativos deprecados: `~/.fonts`
 #### macOS (OS X)
 
 ```sh
-cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 ### `Opção 7: Repositório do Utilizador do Arch (AUR) não-oficial (Arch Linux`
@@ -343,7 +343,7 @@ Modificador de Fontes Nerd Fonts: modifica uma determinada fonte com glifos rela
 * Website: https://www.nerdfonts.com
 * Versão: 2.2.2
 * Website do desenvolvimento: https://github.com/ryanoasis/nerd-fonts
-* Histórico de alterações: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
+* Histórico de alterações: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
 argumentos posicionais:
   font                   Caminho para a fonte a ser modificada (por exemplo, Inconsolata.otf)
@@ -525,7 +525,7 @@ Referências das ligações
 [dank]:https://dank.sh/
 
 [release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
-[coc]:https://github.com/ryanoasis/nerd-fonts/blob/master/code_of_conduct.md "Contributor Covenant Code of Conduct"
+[coc]:https://github.com/ryanoasis/nerd-fonts/blob/-/code_of_conduct.md "Contributor Covenant Code of Conduct"
 [prs]:http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 
 <!--

@@ -258,7 +258,7 @@ git clone --depth 1
 
 ```sh
 mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 _주의:_ 사용되지 않는 대체 경로: `~/.fonts`
@@ -266,7 +266,7 @@ _주의:_ 사용되지 않는 대체 경로: `~/.fonts`
 #### macOS (OS X)
 
 ```sh
-cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 ### `옵션 7: 비공식 Arch User Repository (AUR)`
@@ -343,7 +343,7 @@ Nerd Fonts Font Patcher: patches a given font with programming and development r
 * Website: https://www.nerdfonts.com
 * Version: 2.2.2
 * Development Website: https://github.com/ryanoasis/nerd-fonts
-* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
+* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
 positional arguments:
   font                  The path to the font to patch (e.g., Inconsolata.otf)
@@ -525,7 +525,7 @@ Link References
 [dank]:https://dank.sh/
 
 [release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
-[coc]:https://github.com/ryanoasis/nerd-fonts/blob/master/code_of_conduct.md "Contributor Covenant Code of Conduct"
+[coc]:https://github.com/ryanoasis/nerd-fonts/blob/-/code_of_conduct.md "Contributor Covenant Code of Conduct"
 [prs]:http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 
 <!--

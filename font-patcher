@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.1.1"
+script_version = "3.1.2"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -573,7 +573,7 @@ class font_patcher:
             "* Website: https://www.nerdfonts.com\n"
             "* Version: " + version + "\n"
             "* Development Website: https://github.com/ryanoasis/nerd-fonts\n"
-            "* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md"
+            "* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md"
         )
 
         familyname = replace_font_name(familyname, reservedFontNameReplacements)
@@ -1279,7 +1279,7 @@ def setup_arguments():
             '* Website: https://www.nerdfonts.com\n'
             '* Version: ' + version + '\n'
             '* Development Website: https://github.com/ryanoasis/nerd-fonts\n'
-            '* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md'),
+            '* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md'),
         formatter_class=RawTextHelpFormatter
     )
 

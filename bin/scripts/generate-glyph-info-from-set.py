@@ -35,7 +35,7 @@ try:
 except ImportError:
     sys.exit(projectName + ": FontForge module could not be loaded. Try installing fontforge python bindings [e.g. on Linux Debian or Ubuntu: `sudo apt install fontforge python-fontforge`]")
 
-parser = argparse.ArgumentParser(description='Nerd Fonts Glyph Info Generator: displays code point and glyph names from given set\n\n* Website: https://www.nerdfonts.com\n* Version: ' + version + '\n* Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md', formatter_class=RawTextHelpFormatter)
+parser = argparse.ArgumentParser(description='Nerd Fonts Glyph Info Generator: displays code point and glyph names from given set\n\n* Website: https://www.nerdfonts.com\n* Version: ' + version + '\n* Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md', formatter_class=RawTextHelpFormatter)
 parser.add_argument('-start', '--start', type=str, nargs='?', dest='symbolFontStart', help='The starting unicode hex codepoint')
 parser.add_argument('-end', '--end', type=str, nargs='?', dest='symbolFontEnd', help='The ending unicode hex codepoint')
 parser.add_argument('-offset', '--offset', type=str, nargs='?', dest='symbolOffset', help='The amount (in hex) to offset the range by for the source font')

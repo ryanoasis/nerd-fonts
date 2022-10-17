@@ -4,7 +4,7 @@
 
 ## How to contribute summary
 
-* Fork the project from the `master` branch and submit a Pull Request (PR)
+* Fork the project and submit a Pull Request (PR)
   * Explain what the PR fixes or improves
   * Screenshots for bonus points
 * Use sensible commit messages
@@ -74,9 +74,9 @@ Common types for this project include: `code`, `doc`, `translation`, `review` .F
 
 * Smaller Pull Requests are likely to be merged more quickly than bigger changes
 * This project is using a [KISS Workflow][]
-  * Pull Requests and bugfixes are directly merged into `master` after sanity testing
-  * `master` is basically consider the main developer branch
-    * We no longer wait to get changes into master when there is a release/milestone/version!
+  * Pull Requests and bugfixes are directly merged into the default branch after sanity testing
+  * The default branch is basically consider the main developer branch
+    * We no longer wait to get changes into the default branch when there is a release/milestone/version!
   * the release branches and version tags are considered stable and frozen
 * This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   * If a bugfix or PR is *not* trivial it will likely end up in the next **MINOR** version
@@ -106,8 +106,8 @@ Common types for this project include: `code`, `doc`, `translation`, `review` .F
 <!-- link references -->
 
 [pulls]: https://github.com/ryanoasis/nerd-fonts/pulls
-[Features Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#features
-[Combinations Section]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#combinations
-[Patched Fonts]: https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#patched-fonts
+[Features Section]: https://github.com/ryanoasis/nerd-fonts/blob/-/readme.md#features
+[Combinations Section]: https://github.com/ryanoasis/nerd-fonts/blob/-/readme.md#combinations
+[Patched Fonts]: https://github.com/ryanoasis/nerd-fonts/blob/-/readme.md#patched-fonts
 [KISS Workflow]: https://github.com/ryanoasis/nerd-fonts/wiki/Development-Workflow#kiss-workflow
 [First PR]: https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github

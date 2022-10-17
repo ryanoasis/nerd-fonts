@@ -283,7 +283,7 @@ git sparse-checkout add patched-fonts/JetBrainsMono
 
 ```sh
 mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 _ध्यान दें:_बहिष्कृत वैकल्पिक पथ:`~/.fonts`
@@ -291,7 +291,7 @@ _ध्यान दें:_बहिष्कृत वैकल्पिक �
 #### मैकओएस (ओएस एक्स)
 
 ```sh
-cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 ### `विकल्प 7: अनौपचारिक आच्‌ यूजर रिपोजिटरी (AUR)`
@@ -382,7 +382,7 @@ usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
     * वेबसाइट: https://www.nerdfonts.com
     * संस्करण: 2.2.2
     * विकास वेबसाइट: https://github.com/ryanoasis/nerd-fonts
-    * बदलाव का लॉग: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
+    * बदलाव का लॉग: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
     
     स्थितीय तर्क:
       font                  फ़ॉन्ट को पैच करने का पथ (उदा., Inconsolata.otf)
@@ -596,7 +596,7 @@ Link References
 
 [release]: https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
 
-[coc]: https://github.com/ryanoasis/nerd-fonts/blob/master/code_of_conduct.md "Contributor Covenant Code of Conduct"
+[coc]: https://github.com/ryanoasis/nerd-fonts/blob/-/code_of_conduct.md "Contributor Covenant Code of Conduct"
 
 [prs]: http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 

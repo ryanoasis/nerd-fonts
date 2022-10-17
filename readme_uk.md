@@ -258,7 +258,7 @@ git clone --depth 1
 
 ```sh
 mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 _Примітка:_ застарілі альтернативні шляхи: `~/.fonts`
@@ -266,7 +266,7 @@ _Примітка:_ застарілі альтернативні шляхи: `~
 #### macOS (OS X)
 
 ```sh
-cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 ### `Варіант 7: Неофіційні репозиторії користувачів Arch (AUR)`
@@ -340,7 +340,7 @@ The list is not complete, but you can [search for a complete list here](https://
     * Веб-сайт: https://www.nerdfonts.com
     * Версія: 2.2.2
     * Веб-сайт для розробки: https://github.com/ryanoasis/nerd-fonts
-    * Журнал змін: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
+    * Журнал змін: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
     позиційні аргументи:
       font                  Шлях до шрифту для виправлення (наприклад Inconsolata.otf)
@@ -548,7 +548,7 @@ The list is not complete, but you can [search for a complete list here](https://
 
 [release]: https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
 
-[coc]: https://github.com/ryanoasis/nerd-fonts/blob/master/code_of_conduct.md "Contributor Covenant Code of Conduct"
+[coc]: https://github.com/ryanoasis/nerd-fonts/blob/-/code_of_conduct.md "Contributor Covenant Code of Conduct"
 
 [prs]: http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 

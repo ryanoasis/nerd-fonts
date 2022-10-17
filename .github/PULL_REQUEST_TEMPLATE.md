@@ -5,7 +5,7 @@ _Please explain the changes you made here._
 
 #### Requirements / Checklist
 
-- [ ] Read the [Contributing Guidelines](https://github.com/ryanoasis/nerd-fonts/blob/master/contributing.md)
+- [ ] Read the [Contributing Guidelines](https://github.com/ryanoasis/nerd-fonts/blob/-/contributing.md)
 - [ ] Verified the license of any newly added font, glyph, or glyph set
 
 #### What does this Pull Request (PR) do?

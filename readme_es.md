@@ -259,7 +259,7 @@ git clone --depth 1
 
 ```sh
 mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 Nota:_ Rutas alternativas deprecadas: `~/.fonts`
@@ -267,7 +267,7 @@ Nota:_ Rutas alternativas deprecadas: `~/.fonts`
 #### macOS (OS X)
 
 ```sh
-cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/-/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
 ### `Opción 7: Repositorio de Usuarios de Arch (AUR) No Oficial`
@@ -346,7 +346,7 @@ Parchador de fuentes Nerd Fonts: parcha una fuente dada con glifos relacionados 
 * Sitio web: https://www.nerdfonts.com
 * Versión: 2.2.2
 * Sitio de Desarrollo: https://github.com/ryanoasis/nerd-fonts
-* Registro de Cambios: https://github.com/ryanoasis/nerd-fonts/blob/master/changelog.md
+* Registro de Cambios: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
 argumentos posicionales:
   font                  Ruta a la fuente a parchar (e.g., Inconsolata.otf)
@@ -528,7 +528,7 @@ Link References
 [dank]:https://dank.sh/
 
 [release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
-[coc]:https://github.com/ryanoasis/nerd-fonts/blob/master/code_of_conduct.md "Contributor Covenant Code of Conduct"
+[coc]:https://github.com/ryanoasis/nerd-fonts/blob/-/code_of_conduct.md "Contributor Covenant Code of Conduct"
 [prs]:http://makeapullrequest.com "Make a Pull Request (external link) ➶"
 
 <!--
