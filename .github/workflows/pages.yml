@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - bin/scripts/lib/fonts.json
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -14,22 +15,30 @@ jobs:
         uses: Bhacaz/checkout-files@v2
         with:
           files: bin/scripts/lib/fonts.json
-          branch: ${{ github.head_ref || github.ref_name }}
+          branch: ${{ github.sha }}
 
       - name: Prepare file
         run: |
-          mkdir _data
-          cp bin/scripts/lib/fonts.json _data
+          echo "Temp dir is /tmp"
+          cp bin/scripts/lib/fonts.json /tmp
+          ls -l /tmp/fonts.json
 
       - name: Fetch gh-pages
         uses: actions/checkout@v3
         with:
           ref: gh-pages
 
+      - name: Prepare file 2
+        run: |
+          ls -l /tmp/fonts.json
+          mkdir temp_data
+          cp /tmp/fonts.json temp_data
+
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _data
+          folder: temp_data
+          target-folder: _data
           commit-message: "[ci] Sync fonts.json"
           git-config-name: GitHub Actions
           git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
