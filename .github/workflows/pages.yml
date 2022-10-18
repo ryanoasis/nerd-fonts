@@ -1,0 +1,32 @@
+name: Update gh-pages
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - bin/scripts/lib/fonts.json
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+
+      # Faster version instead of - uses: actions/checkout@v3
+      - name: Fetch files
+        uses: Bhacaz/checkout-files@v2
+        with:
+          files: bin/scripts/lib/fonts.json
+          branch: ${{ github.head_ref || github.ref_name }}
+
+      # This only works because we check out only one single file of
+      # the 'folder' folder that we want to deploy. We do not want to
+      # deploy all files that are in 'folder' in the original repo
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: bin/scripts/lib
+          target-folder: _data
+          commit-message: "[ci] Sync fonts.json"
+          git-config-name: GitHub Actions
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
+          clean: false
