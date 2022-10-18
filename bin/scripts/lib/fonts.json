@@ -405,7 +405,7 @@
       "patchedName": "Ubuntu",
       "folderName": "Ubuntu",
       "imagePreviewFont": "Ubuntu Nerd Font",
-      "linkPreviewFont": "ubuntu",
+      "linkPreviewFont": false,
       "description": "specially created for Ubuntu"
     },
     {
