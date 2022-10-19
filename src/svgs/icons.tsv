@@ -36,7 +36,8 @@
 21		i_seti_mustache				handlebars.svg
 22		i_seti_gulp				gulp.svg
 23		i_seti_grunt				grunt.svg
-24		i_seti_default				file.svg
+24		i_custom_default			file_nf.svg
+24		i_seti_default
 24		i_seti_text
 25		i_seti_folder				seti-folder.svg
 26		i_seti_css				css.svg
