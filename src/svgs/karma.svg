@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
-    <title>karma</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="karma" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="path63" fill="#444444" fill-rule="nonzero" points="6.5 3.63333061 13.3666671 3.63333061 13.3666671 9.76666265 14.4666673 9.76666265 18.5333296 3.5 25.9333318 3.5 18.0666684 14.9333267 18.0666684 15.6666681 26.5 28.3666587 19.3666685 28.3666587 14.4666704 21.1999989 13.3666703 21.1999989 13.3666703 28.3666587 11.3333351 28.3666587 6.50000476 10.6333299"></polygon>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#8CC148" d="M9 7.4v4.8l3.3 12.5h1.5v-5h.8l3.4 5h5l-5.9-8.9v-.5l5.5-8h-5.3l-2.7 4.4h-.8V7.4z"/></svg>
