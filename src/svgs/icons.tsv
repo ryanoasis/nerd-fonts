@@ -98,6 +98,7 @@
 069		i_seti_checkbox				checkbox.svg
 070		i_seti_checkbox_unchecked		checkbox-unchecked.svg
 071		i_seti_clock				clock.svg
+071		i_seti_time_cop
 072		i_seti_clojure				clojure.svg
 073		i_seti_code_climate			code-climate.svg
 074		i_seti_code_search			code-search.svg
@@ -123,11 +124,11 @@
 094		i_seti_firefox				firefox.svg
 095		i_seti_font				font.svg
 096		i_seti_f_sharp				f-sharp.svg
-097		i_seti_git_folder			git_folder.svg
 098		i_seti_github				github.svg
-099		i_seti_git_ignore			git_ignore.svg
 100		i_seti_gitlab				gitlab.svg
 101		i_seti_git				git.svg
+101		i_seti_git_folder
+101		i_seti_git_ignore
 102		i_seti_go2				go2.svg
 103		i_seti_godot				godot.svg
 104		i_seti_gradle				gradle.svg
@@ -146,7 +147,6 @@
 117		i_seti_java				java.svg
 118		i_seti_jenkins				jenkins.svg
 119		i_seti_jinja				jinja.svg
-120		i_seti_json				json.svg
 121		i_seti_liquid				liquid.svg
 122		i_seti_livescript			livescript.svg
 123		i_seti_lock				lock.svg
@@ -192,7 +192,6 @@
 163		i_seti_swift				swift.svg
 164		i_seti_terraform			terraform.svg
 165		i_seti_tex				tex.svg
-166		i_seti_time_cop				time-cop.svg
 167		i_seti_todo				todo.svg
 168		i_seti_tsconfig				tsconfig.svg
 169		i_seti_vala				vala.svg
