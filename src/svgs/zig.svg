@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-43 -50 240 240"><g fill="#F7A41D"><path d="M46 22L28 44l-9-14z"/><path d="M46 22L33 33l-5 11h-6v51h9l-11 5-8 17H0V22z"/><path d="M31 95l-19 22-8-11zm25-73l6 14-25 8z"/><path d="M56 22h55v22H37l19-12zm60 73l-19 22-7-13z"/><path d="M116 95l-16 9-3 13H42V95z"/><path d="M150 0L52 117 3 140l98-118zM141 22l-1 18-18 5z"/><path d="M153 22v95h-47l14-12 5-10h6V45h-9l10-9 9-14z"/><path d="M125 95l5 15-24 7z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-43 -50 240 240"
+   version="1.1"
+   id="svg1040"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1044" />
+  <path
+     id="path1022"
+     style="fill:#f7a41d"
+     d="M 193 50 L 144 72 L 99 72 L 80 94 L 125.72852 94 L 46 190 L 95 167 L 140 167 L 159 145 L 113.42773 145 L 193 50 z M 43 72 L 43 167 L 55 167 L 74 145 L 65 145 L 65 94 L 71 94 L 89 72 L 43 72 z M 184 72 L 165 95 L 174 95 L 174 145 L 168 145 L 149 167 L 196 167 L 196 72 L 184 72 z "
+     transform="translate(-43,-50)" />
+</svg>
