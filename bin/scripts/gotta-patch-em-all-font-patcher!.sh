@@ -113,6 +113,7 @@ function patch_font {
   if [ -f "$config_parent_dir/config.json" ]
   then
     # load font configuration file and remove ligatures (for mono fonts):
+    # (tables have been removed from the repo with >this< commit)
     font_config="--removeligatures --configfile $config_parent_dir/config.json"
   else
     font_config=""
