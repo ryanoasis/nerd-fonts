@@ -620,6 +620,7 @@ class font_patcher:
 
     def remove_ligatures(self):
         # let's deal with ligatures (mostly for monospaced fonts)
+        # the tables have been removed from the repo with >this< commit
         if self.args.configfile and self.config.read(self.args.configfile):
             if self.args.removeligatures:
                 print("Removing ligatures from configfile `Subtables` section")

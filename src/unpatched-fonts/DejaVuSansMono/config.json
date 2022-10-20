@@ -1,4 +1,0 @@
-[Subtables]
-	ligatures: [ "'rlig' Required Ligatures in Arabic lookup 6 subtable",
-		"'liga' Standard Ligatures in Arabic lookup 7 subtable",
-		"'dlig' Discretionary Ligatures in Latin lookup 8 subtable" ]
