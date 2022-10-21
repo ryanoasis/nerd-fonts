@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
-    <title>project</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M16.6800093,11.9999963 L25.4399919,11.9999963 L25.4399919,14.0399938 L16.6800093,14.0399938 L16.6800093,11.9999963 Z M6.8400114,11.9999963 L13.8000002,11.9999963 L13.8000002,14.0399938 L6.8400114,14.0399938 L6.8400114,11.9999963 Z M10.76,16.9199934 L19.2799961,16.9199934 L19.2799961,18.9199931 L10.76,18.9199931 L10.76,16.9199934 Z M7.11999562,21.4799917 L14.3599876,21.4799917 L14.3599876,23.3999902 L7.11999562,23.3999902 L7.11999562,21.4799917 Z M4,7 L14.0000079,7 L14.0000079,8.91999848 L4,8.91999848 L4,7 Z M22.200003,16.9199934 L28,16.9199934 L28,18.9199931 L22.200003,18.9199931 L22.200003,16.9199934 Z" id="path98" fill="#444444" fill-rule="nonzero"></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#D4E3E5" d="M8.7 23H16v1.9H8.7z"/><path fill="#5099D3" d="M17.3 15.4h6.4v1.9h-6.4z"/><path fill="#9FC955" d="M7 7.1h6.6V9H7z"/><path fill="#9F75B3" d="M10.9 15.4h5v1.9h-5z"/><path fill="#5099D3" d="M10.9 19.3h6.2v1.9h-6.2z"/><path fill="#9F75B3" d="M21.8 19.3H25v1.9h-3.2z"/><path fill="#D4E3E5" d="M8.7 11.3H16v1.9H8.7z"/><path fill="#9FC955" d="M18.5 19.3h2v1.9h-2z"/></svg>
