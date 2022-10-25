@@ -32,6 +32,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 
 | Project                                          | License         |
 | ------------------------------------------------ | ----------------|
+| Codicons                                         | CC BY 4.0       |
 | Devicons                                         | MIT             |
 | Font Awesome                                     | SIL OFL 1.1     |
 | Font Awesome Extension                           | MIT             |
