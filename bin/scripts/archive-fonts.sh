@@ -59,21 +59,21 @@ do
 
   # add font files:
   # -ic (ignore case not working)
-  zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF' -q
+  zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*.[ot]tf' -i '*.[OT]TF' -q
   zipStatus=$?
   if [ "$zipStatus" != "0" ]
   then
     echo "$LINE_PREFIX Could not create archive with the path junked (-j option) - likely same font names for different paths, zip status: $zipStatus"
     echo "$LINE_PREFIX Retrying with full path"
     # add font files and license files as full paths:
-    zip -9 "$outputdir/$basename" -r "$searchdir" -i '*.[o,t]tf' -i '*.[O,T]TF' -i '*license*' -i '*LICENSE*' -q
+    zip -9 "$outputdir/$basename" -r "$searchdir" -i '*.[ot]tf' -i '*.[OT]TF' -i '*[Ll]icen[sc]e*' -i '*LICEN[SC]E*' -i 'OFL*' -i 'ofl*' -q
   else
     # we can copy the font files without full paths but not necessarily the license files:
     # add license files separately:
     # zip -9 "$outputdir/$basename" -rj "$searchdir" -i '*license*' -i '*LICENSE*'
     # work around to copy duplicate license files (only the last duplicate found)
     # so we don't have to copy entire paths and can still use the junk option (-j)
-    find "$searchdir" -type f -iname "*license*" | awk -F/ '{a[$NF]=$0}END{for(i in a)print a[i]}' | zip -9 -j "$outputdir/$basename" -@
+    find "$searchdir" -type f -iname "*licen[sc]e*" -o -iname 'ofl*' | awk -F/ '{a[$NF]=$0}END{for(i in a)print a[i]}' | zip -9 -j "$outputdir/$basename" -@
   fi;
 
   # add mini readme file

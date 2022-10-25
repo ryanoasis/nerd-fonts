@@ -92,7 +92,7 @@ function patch_font {
   if [ -n ${purge} -a -d "${patched_font_dir}complete" ]
   then
     echo "Purging patched font dir ${patched_font_dir}complete"
-    rm ${patched_font_dir}complete/*.[to]tf
+    rm ${patched_font_dir}complete/*
   fi
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
