@@ -12,6 +12,7 @@ on:
       - .dockerignore
       - Dockerfile
       - font-patcher
+  workflow_dispatch:
 
 jobs:
   publish-image:
