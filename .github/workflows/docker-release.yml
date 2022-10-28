@@ -34,6 +34,8 @@ jobs:
         # QEMU allows us to build container images for multiple architectures (amd64, ARM etc...)
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
+        with:
+          platforms: linux/amd64,linux/arm64
 
         # Docker Buildx provides Buildkit support
       - name: Set up Docker Buildx
@@ -51,6 +53,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          platforms: linux/amd64,linux/arm64
           push: true
           tags:  ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
