@@ -29,7 +29,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: nerdfonts/patcher
-          flavor: latest=auto
+          flavor: latest=true
 
         # QEMU allows us to build container images for multiple architectures (amd64, ARM etc...)
       - name: Set up QEMU
