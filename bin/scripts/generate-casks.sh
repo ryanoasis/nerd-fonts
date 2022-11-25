@@ -6,14 +6,12 @@
 # only adds non-Windows versions of the fonts
 
 #set -x
+set -e
 
 version="2.3.0-RC"
 patched_parent_dir="../../patched-fonts/"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"
-sha256sum=":no_check"
-appcast="https://github.com/ryanoasis/nerd-fonts/releases.atom"
-appcastcheckpoint=$(curl --compressed --location --user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36' "https://github.com/ryanoasis/nerd-fonts/releases.atom" | sed 's|<pubDate>[^<]*</pubDate>||g' | shasum --algorithm 256 | head -c 64)
 LINE_PREFIX="# [Nerd Fonts] "
 
 cd $patched_parent_dir || {
@@ -36,8 +34,6 @@ function write_header {
         printf "  version \"%s\"\\n" "$version"
         printf "  sha256 \"%s\"\\n\\n" "$sha256sum"
         printf "  url \"%s%s.zip\"\\n" "$downloadarchive" "$basename"
-        printf "  appcast '%s',\\n" "$appcast"
-        printf "          checkpoint: '%s'\\n" "$appcastcheckpoint"
     } >> "$outputfile"
 }
 
@@ -56,8 +52,13 @@ function write_body {
                 familyname=$(fc-query --format='%{family}' "${fonts[$i]}")
                 {
                     printf "  name \"%s (%s)\"\\n" "$familyname" "$basename"
+                    printf "  desc \"Developer targeted fonts with a high number of glyphs\"\\n"
                     printf "  homepage \"%s\"" "$homepage"
                     printf "\\n\\n"
+                    printf "  livecheck do\\n"
+                    printf "    url :url\\n"
+                    printf "    strategy :github_latest\\n"
+                    printf "  end\\n\\n"
                 } >> "$outputfile"
             fi
 
@@ -84,11 +85,15 @@ fi
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
 #find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
-find . -maxdepth 1 -mindepth 1 -type d -iregex "\./$pattern" |
+find . -maxdepth 1 -mindepth 1 -type d -iregex "\./$pattern" | sort |
 while read -r filename; do
 
     dirname=$(dirname "$filename")
     basename=$(basename "$filename")
+    if [ ! -f "../archives/${basename}.zip" ]; then
+        echo "${LINE_PREFIX} No archive for: ${basename}, skipping..."
+        continue
+    fi
     sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
     searchdir=$filename
 
