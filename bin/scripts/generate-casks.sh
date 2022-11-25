@@ -9,10 +9,11 @@
 set -e
 
 version="2.3.0-RC"
-patched_parent_dir="../../patched-fonts/"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"
 LINE_PREFIX="# [Nerd Fonts] "
+scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
+patched_parent_dir="${scripts_root_dir}/../../patched-fonts/"
 
 cd $patched_parent_dir || {
     echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
@@ -38,8 +39,9 @@ function write_header {
 }
 
 function write_body {
-    local outputfile=$1
-    shift;
+    local unpatchedname=$1
+    local outputfile=$2
+    shift; shift;
     local fonts=("$@")
 
     if [ "${fonts[0]}" ]; then
@@ -61,7 +63,7 @@ function write_body {
             if [ "$i" == 0 ]; then
                 familyname=$(fc-query --format='%{family}' "${fonts[$i]}")
                 {
-                    printf "  name \"%s (%s)\"\\n" "$familyname" "$basename"
+                    printf "  name \"%s (%s)\"\\n" "$familyname" "$unpatchedname"
                     printf "  desc \"Developer targeted fonts with a high number of glyphs\"\\n"
                     printf "  homepage \"%s\"" "$homepage"
                     printf "\\n\\n"
@@ -107,6 +109,12 @@ while read -r filename; do
     sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
     searchdir=$filename
 
+    originalname=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json")
+    if [ -z "$originalname" ]; then
+        echo "${LINE_PREFIX} Can not find ${basename} in fonts.json, skipping..."
+        continue
+    fi
+
     MONOFONTS=()
     while IFS= read -d $'\0' -r file; do
         MONOFONTS=("${MONOFONTS[@]}" "$file")
@@ -136,8 +144,8 @@ while read -r filename; do
     clear_file "$to_mono"
     write_header "$to_mono" "$caskname_mono"
 
-    write_body "$to" "${FONTS[@]}"
-    write_body "$to_mono" "${MONOFONTS[@]}"
+    write_body "$originalname" "$to" "${FONTS[@]}"
+    write_body "$originalname" "$to_mono" "${MONOFONTS[@]}"
 
     write_footer "$to"
     write_footer "$to_mono"
