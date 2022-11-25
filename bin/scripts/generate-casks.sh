@@ -43,10 +43,20 @@ function write_body {
     local fonts=("$@")
 
     if [ "${fonts[0]}" ]; then
+        longest=-1
+        # Find longest filename for pretty printing
+        for i in "${!fonts[@]}"; do
+            basename=$(basename "${fonts[$i]}")
+            if [ ${#basename} -gt $longest ]; then
+                longest=${#basename}
+            fi
+        done
+        # Process font files
         for i in "${!fonts[@]}"; do
             individualfont=$(basename "${fonts[$i]}")
+            individualdir=$(dirname "${fonts[$i]}")
 
-            printf "## Found Font: %s\\n" "${fonts[$i]}"
+            printf "                    %-${longest}s  %s\\n" "${individualfont}" "${individualdir}"
 
             if [ "$i" == 0 ]; then
                 familyname=$(fc-query --format='%{family}' "${fonts[$i]}")
@@ -100,12 +110,12 @@ while read -r filename; do
     MONOFONTS=()
     while IFS= read -d $'\0' -r file; do
         MONOFONTS=("${MONOFONTS[@]}" "$file")
-    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*complete mono*' \) -print0)
+    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*complete mono*' \) -print0 | sort -z)
 
     FONTS=()
     while IFS= read -d $'\0' -r file; do
         FONTS=("${FONTS[@]}" "$file")
-    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iname '*complete mono*' \) -print0)
+    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iname '*complete mono*' \) -print0 | sort -z)
 
     outputdir=$PWD/../casks
 
@@ -132,5 +142,5 @@ while read -r filename; do
     write_footer "$to"
     write_footer "$to_mono"
 
-    echo "## Created casks: ${outputdir}/${caskname}*.rb"
+    echo "## Created casks: $(realpath ${outputdir}/${caskname})*.rb"
 done
