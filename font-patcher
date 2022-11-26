@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.2.0"
+script_version = "3.2.1"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -925,8 +925,8 @@ class font_patcher:
         else:
             symbolFont.selection.select((str("ranges"), str("unicode")), symbolFontStart, symbolFontEnd)
 
-        # Get number of selected non-empty glyphs
-        symbolFontSelection = list(symbolFont.selection.byGlyphs)
+        # Get number of selected non-empty glyphs with codes >=0 (i.e. not -1 == notdef)
+        symbolFontSelection = [ x for x in symbolFont.selection.byGlyphs if x.unicode >= 0 ]
         glyphSetLength = len(symbolFontSelection)
 
         if self.args.quiet is False:
@@ -953,6 +953,9 @@ class font_patcher:
                     possible_codes += [ sym_glyph.unicode ]
                 if sym_glyph.altuni:
                     possible_codes += [ v for v, s, r in sym_glyph.altuni if v > currentSourceFontGlyph ]
+                if len(possible_codes) == 0:
+                    print("  Can not determine codepoint of {:X}. Skipping...".format(sym_glyph.unicode))
+                    continue
                 currentSourceFontGlyph = min(possible_codes)
             else:
                 # use source font defined hex values based on passed in start (fills gaps; symbols are packed)
