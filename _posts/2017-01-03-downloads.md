@@ -14,7 +14,9 @@ page: font-downloads
   <div class="item">
       <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.folderName }}.zip" class="font-preview" style="background-image: url('/assets/img/previews/{{ font.imagePreviewFont }}.svg')">
       </a>
-      {% if font.unpatchedName != font.patchedName %}<div><strong>&bull; Reserved Font Name:</strong> {{ font.unpatchedName }}</div>{% endif %}
+      {% assign upN = font.unpatchedName | split: " " | join: "" %}
+      {% assign pN = font.patchedName | split: " " | join: "" %}
+      {% if  upN != pN %}<div><strong>&bull; Reserved Font Name:</strong> {{ font.unpatchedName }}</div>{% endif %}
       <div><strong>&bull; Info:</strong> {{ font.description }}</div>
       <div class="nerd-font-buttons-wrapper">
         <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.folderName }}.zip" class="inlineblock bg-green border-white text-white nerd-font-button nf-fa-download">Download</a>
@@ -41,8 +43,8 @@ brew install --cask font-<FONT NAME>-nerd-font
 <h3 class="center"> :// curl </h3>
 <div markdown="1">
 ```sh
-    curl -fLo "<FONT NAME> Nerd Font Complete.otf" \
-    https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
+curl -fLo "<FONT NAME> Nerd Font Complete.otf" \
+https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
 ```
 </div>
 <h3 class="center"> <span></span> Bash Install Script </h3>
