@@ -2,6 +2,7 @@
   "fonts": [
     {
       "unpatchedName": "3270",
+      "RFN": false,
       "patchedName": "3270",
       "folderName": "3270",
       "imagePreviewFont": "3270 Nerd Font",
@@ -10,6 +11,7 @@
     },
     {
       "unpatchedName": "Agave",
+      "RFN": false,
       "patchedName": "Agave",
       "folderName": "Agave",
       "imagePreviewFont": "Agave Nerd Font",
@@ -17,7 +19,8 @@
       "description": "A small, monospace, outline font that is geometrically regular and simple"
     },
     {
-      "unpatchedName": "AnonymousPro",
+      "unpatchedName": "Anonymous Pro",
+      "RFN": true,
       "patchedName": "Anonymice",
       "folderName": "AnonymousPro",
       "imagePreviewFont": "Anonymice Nerd Font",
@@ -26,6 +29,7 @@
     },
     {
       "unpatchedName": "Arimo",
+      "RFN": false,
       "patchedName": "Arimo",
       "folderName": "Arimo",
       "imagePreviewFont": "Arimo Nerd Font",
@@ -33,7 +37,8 @@
       "description": "Metrically similar to Arial, pan-European WGL character set, sans serif"
     },
     {
-      "unpatchedName": "AurulentSansMono",
+      "unpatchedName": "Aurulent Sans Mono",
+      "RFN": false,
       "patchedName": "AurulentSansMono",
       "folderName": "AurulentSansMono",
       "imagePreviewFont": "AurulentSansMono Nerd Font",
@@ -41,7 +46,8 @@
       "description": "Sans serif, designed by Stephen G. Hartke which also created Verily Serif"
     },
     {
-      "unpatchedName": "BigBlueTerminal",
+      "unpatchedName": "BigBlue Terminal",
+      "RFN": false,
       "patchedName": "BigBlueTerminal",
       "folderName": "BigBlueTerminal",
       "imagePreviewFont": "BigBlueTerminal Nerd Font",
@@ -49,7 +55,8 @@
       "description": "Nostalgic, closely based on IBM's 8x14 EGA/VGA charset"
     },
     {
-      "unpatchedName": "BitstreamVeraSansMono",
+      "unpatchedName": "Bitstream Vera Sans Mono",
+      "RFN": false,
       "patchedName": "BitstreamVeraSansMono",
       "folderName": "BitstreamVeraSansMono",
       "imagePreviewFont": "BitstreamVeraSansMono Nerd Font",
@@ -58,6 +65,7 @@
     },
     {
       "unpatchedName": "Cascadia Code",
+      "RFN": true,
       "patchedName": "Caskaydia Cove",
       "folderName": "CascadiaCode",
       "imagePreviewFont": "Caskaydia Cove Nerd Font",
@@ -66,6 +74,7 @@
     },
     {
       "unpatchedName": "IBM Plex Mono",
+      "RFN": true,
       "patchedName": "Blex Mono",
       "folderName": "IBMPlexMono",
       "imagePreviewFont": "BlexMono Nerd Font",
@@ -73,7 +82,8 @@
       "description": "It's global, it's versatile and it's distinctly IBM"
     },
     {
-      "unpatchedName": "CodeNewRoman",
+      "unpatchedName": "Code New Roman",
+      "RFN": false,
       "patchedName": "CodeNewRoman",
       "folderName": "CodeNewRoman",
       "imagePreviewFont": "CodeNewRoman Nerd Font",
@@ -82,6 +92,7 @@
     },
     {
       "unpatchedName": "Cousine",
+      "RFN": false,
       "patchedName": "Cousine",
       "folderName": "Cousine",
       "imagePreviewFont": "Cousine Nerd Font",
@@ -90,6 +101,7 @@
     },
     {
       "unpatchedName": "DaddyTimeMono",
+      "RFN": false,
       "patchedName": "DaddyTimeMono",
       "folderName": "DaddyTimeMono",
       "imagePreviewFont": "DaddyTimeMono Nerd Font",
@@ -97,7 +109,8 @@
       "description": "A monospaced font for programmers and other terminal groupies"
     },
     {
-      "unpatchedName": "DejaVuSansMono",
+      "unpatchedName": "DejaVu Sans Mono",
+      "RFN": false,
       "patchedName": "DejaVuSansMono",
       "folderName": "DejaVuSansMono",
       "imagePreviewFont": "DejaVuSansMono Nerd Font",
@@ -105,7 +118,8 @@
       "description": "Dotted zero, based on the Bitstream Vera Fonts with a wider range of character"
     },
     {
-      "unpatchedName": "DroidSansMono",
+      "unpatchedName": "Droid Sans Mono",
+      "RFN": false,
       "patchedName": "DroidSansMono",
       "folderName": "DroidSansMono",
       "imagePreviewFont": "DroidSansMono Nerd Font",
@@ -113,7 +127,8 @@
       "description": "Good for small screens or font sizes"
     },
     {
-      "unpatchedName": "FantasqueSansMono",
+      "unpatchedName": "Fantasque Sans Mono",
+      "RFN": false,
       "patchedName": "FantasqueSansMono",
       "folderName": "FantasqueSansMono",
       "imagePreviewFont": "FantasqueSansMono Nerd Font",
@@ -121,7 +136,8 @@
       "description": "\"Wibbly-wobbly handwriting-like fuzziness\", takes some inspiration from Inconsolata and Monaco"
     },
     {
-      "unpatchedName": "FiraCode",
+      "unpatchedName": "Fira Code",
+      "RFN": false,
       "patchedName": "FiraCode",
       "folderName": "FiraCode",
       "imagePreviewFont": "FiraCode Nerd Font",
@@ -129,7 +145,8 @@
       "description": "Programming ligatures, extension of Fira Mono font, enlarged operators"
     },
     {
-      "unpatchedName": "FiraMono",
+      "unpatchedName": "Fira Mono",
+      "RFN": false,
       "patchedName": "FiraMono",
       "folderName": "FiraMono",
       "imagePreviewFont": "FiraMono Nerd Font",
@@ -137,7 +154,8 @@
       "description": "Mozilla typeface, dotted zero"
     },
     {
-      "unpatchedName": "Go-Mono",
+      "unpatchedName": "Go Mono",
+      "RFN": false,
       "patchedName": "Go-Mono",
       "folderName": "Go-Mono",
       "imagePreviewFont": "Go-Mono Nerd Font",
@@ -146,6 +164,7 @@
     },
     {
       "unpatchedName": "Gohu",
+      "RFN": false,
       "patchedName": "Gohu",
       "folderName": "Gohu",
       "imagePreviewFont": "Gohu Nerd Font",
@@ -154,6 +173,7 @@
     },
     {
       "unpatchedName": "Hack",
+      "RFN": false,
       "patchedName": "Hack",
       "folderName": "Hack",
       "imagePreviewFont": "Hack Nerd Font",
@@ -162,6 +182,7 @@
     },
     {
       "unpatchedName": "Hasklig",
+      "RFN": true,
       "patchedName": "Hasklug",
       "folderName": "Hasklig",
       "imagePreviewFont": "Hasklug Nerd Font",
@@ -169,7 +190,8 @@
       "description": "Monospaced ligatures, makes composite glyphs (e.g. ->) more reabable, especially in Haskell"
     },
     {
-      "unpatchedName": "HeavyData",
+      "unpatchedName": "Heavy Data",
+      "RFN": false,
       "patchedName": "HeavyData",
       "folderName": "HeavyData",
       "imagePreviewFont": "HeavyData Nerd Font",
@@ -178,6 +200,7 @@
     },
     {
       "unpatchedName": "Hermit",
+      "RFN": true,
       "patchedName": "Hurmit",
       "folderName": "Hermit",
       "imagePreviewFont": "Hurmit Nerd Font",
@@ -186,6 +209,7 @@
     },
     {
       "unpatchedName": "iA Writer",
+      "RFN": true,
       "patchedName": "iM Writing",
       "folderName": "iA-Writer",
       "imagePreviewFont": "iM Writing Nerd Font",
@@ -194,6 +218,7 @@
     },
     {
       "unpatchedName": "Inconsolata",
+      "RFN": false,
       "patchedName": "Inconsolata",
       "folderName": "Inconsolata",
       "imagePreviewFont": "Inconsolata Nerd Font",
@@ -202,6 +227,7 @@
     },
     {
       "unpatchedName": "InconsolataGo",
+      "RFN": false,
       "patchedName": "InconsolataGo",
       "folderName": "InconsolataGo",
       "imagePreviewFont": "InconsolataGo Nerd Font",
@@ -209,7 +235,8 @@
       "description": "Inconsolata with straight quotes"
     },
     {
-      "unpatchedName": "InconsolataLGC",
+      "unpatchedName": "Inconsolata LGC",
+      "RFN": false,
       "patchedName": "InconsolataLGC",
       "folderName": "InconsolataLGC",
       "imagePreviewFont": "InconsolataLGC Nerd Font",
@@ -218,6 +245,7 @@
     },
     {
       "unpatchedName": "Iosevka",
+      "RFN": false,
       "patchedName": "Iosevka",
       "folderName": "Iosevka",
       "imagePreviewFont": "Iosevka Nerd Font",
@@ -225,7 +253,8 @@
       "description": "Narrow and horizontally tight characters, slashed zero"
     },
     {
-      "unpatchedName": "JetBrainsMono",
+      "unpatchedName": "JetBrains Mono",
+      "RFN": false,
       "patchedName": "JetBrainsMono",
       "folderName": "JetBrainsMono",
       "imagePreviewFont": "JetBrainsMono Nerd Font",
@@ -234,6 +263,7 @@
     },
     {
       "unpatchedName": "Lekton",
+      "RFN": false,
       "patchedName": "Lekton",
       "folderName": "Lekton",
       "imagePreviewFont": "Lekton Nerd Font",
@@ -241,7 +271,8 @@
       "description": "Very light and thin characters, sharp m's, `0` and `O` very similar"
     },
     {
-      "unpatchedName": "LiberationMono",
+      "unpatchedName": "Liberation Mono",
+      "RFN": true,
       "patchedName": "LiterationMono",
       "folderName": "LiberationMono",
       "imagePreviewFont": "LiterationMono Nerd Font",
@@ -250,6 +281,7 @@
     },
     {
       "unpatchedName": "Lilex",
+      "RFN": false,
       "patchedName": "Lilex",
       "folderName": "Lilex",
       "imagePreviewFont": "Lilex Nerd Font",
@@ -258,6 +290,7 @@
     },
     {
       "unpatchedName": "Meslo",
+      "RFN": false,
       "patchedName": "Meslo",
       "folderName": "Meslo",
       "imagePreviewFont": "Meslo Nerd Font",
@@ -266,6 +299,7 @@
     },
     {
       "unpatchedName": "Monofur",
+      "RFN": false,
       "patchedName": "Monofur",
       "folderName": "Monofur",
       "imagePreviewFont": "Monofur Nerd Font",
@@ -274,6 +308,7 @@
     },
     {
       "unpatchedName": "Monoid",
+      "RFN": false,
       "patchedName": "Monoid",
       "folderName": "Monoid",
       "imagePreviewFont": "Monoid Nerd Font",
@@ -282,6 +317,7 @@
     },
     {
       "unpatchedName": "Mononoki",
+      "RFN": false,
       "patchedName": "Mononoki",
       "folderName": "Mononoki",
       "imagePreviewFont": "Mononoki Nerd Font",
@@ -289,7 +325,8 @@
       "description": "Keeps in mind differentiation of characters and resolution sizes"
     },
     {
-      "unpatchedName": "MPlus",
+      "unpatchedName": "M+",
+      "RFN": false,
       "patchedName": "MPlus",
       "folderName": "MPlus",
       "imagePreviewFont": "MPlus Nerd Font",
@@ -298,6 +335,7 @@
     },
     {
       "unpatchedName": "Noto",
+      "RFN": false,
       "patchedName": "Noto",
       "folderName": "Noto",
       "imagePreviewFont": "Noto Nerd Font",
@@ -306,6 +344,7 @@
     },
     {
       "unpatchedName": "ProFont",
+      "RFN": false,
       "patchedName": "ProFont",
       "folderName": "ProFont",
       "imagePreviewFont": "ProFont Nerd Font",
@@ -314,6 +353,7 @@
     },
     {
       "unpatchedName": "ProggyClean",
+      "RFN": false,
       "patchedName": "ProggyClean",
       "folderName": "ProggyClean",
       "imagePreviewFont": "ProggyClean Nerd Font",
@@ -322,6 +362,7 @@
     },
     {
       "unpatchedName": "OpenDyslexic",
+      "RFN": false,
       "patchedName": "OpenDyslexic",
       "folderName": "OpenDyslexic",
       "imagePreviewFont": "OpenDyslexic Nerd Font",
@@ -330,6 +371,7 @@
     },
     {
       "unpatchedName": "Overpass",
+      "RFN": false,
       "patchedName": "Overpass",
       "folderName": "Overpass",
       "imagePreviewFont": "Overpass Nerd Font",
@@ -337,7 +379,8 @@
       "description": "An open source font family inspired by Highway Gothic"
     },
     {
-      "unpatchedName": "RobotoMono",
+      "unpatchedName": "Roboto Mono",
+      "RFN": false,
       "patchedName": "RobotoMono",
       "folderName": "RobotoMono",
       "imagePreviewFont": "RobotoMono Nerd Font",
@@ -345,7 +388,8 @@
       "description": "Dashed zero, curved and straight character lines"
     },
     {
-      "unpatchedName": "ShareTechMono",
+      "unpatchedName": "Share Tech Mono",
+      "RFN": true,
       "patchedName": "ShureTechMono",
       "folderName": "ShareTechMono",
       "imagePreviewFont": "ShureTechMono Nerd Font",
@@ -353,7 +397,8 @@
       "description": "Dotted zeros, distinguishable 1 and l, curved and straight character lines"
     },
     {
-      "unpatchedName": "SourceCodePro",
+      "unpatchedName": "Source Code Pro",
+      "RFN": true,
       "patchedName": "SauceCodePro",
       "folderName": "SourceCodePro",
       "imagePreviewFont": "Sauce Code Pro Nerd Font",
@@ -361,7 +406,8 @@
       "description": "Monospaced font family for user interface and coding environments"
     },
     {
-      "unpatchedName": "SpaceMono",
+      "unpatchedName": "Space Mono",
+      "RFN": false,
       "patchedName": "SpaceMono",
       "folderName": "SpaceMono",
       "imagePreviewFont": "SpaceMono Nerd Font",
@@ -370,6 +416,7 @@
     },
     {
       "unpatchedName": "Symbols Template 1000 EM",
+      "RFN": false,
       "patchedName": "Symbols-1000-em Nerd Font Complete",
       "folderName": "NerdFontsSymbolsOnly",
       "imagePreviewFont": "",
@@ -378,6 +425,7 @@
     },
     {
       "unpatchedName": "Symbols Template 2048 EM",
+      "RFN": false,
       "patchedName": "Symbols-2048-em Nerd Font Complete",
       "folderName": "NerdFontsSymbolsOnly",
       "imagePreviewFont": "",
@@ -386,6 +434,7 @@
     },
     {
       "unpatchedName": "Terminus",
+      "RFN": true,
       "patchedName": "Terminess",
       "folderName": "Terminus",
       "imagePreviewFont": "TerminessTTF Nerd Font",
@@ -394,6 +443,7 @@
     },
     {
       "unpatchedName": "Tinos",
+      "RFN": false,
       "patchedName": "Tinos",
       "folderName": "Tinos",
       "imagePreviewFont": "Tinos Nerd Font",
@@ -402,6 +452,7 @@
     },
     {
       "unpatchedName": "Ubuntu",
+      "RFN": false,
       "patchedName": "Ubuntu",
       "folderName": "Ubuntu",
       "imagePreviewFont": "Ubuntu Nerd Font",
@@ -409,7 +460,8 @@
       "description": "Specially created for Ubuntu"
     },
     {
-      "unpatchedName": "UbuntuMono",
+      "unpatchedName": "Ubuntu Mono",
+      "RFN": false,
       "patchedName": "UbuntuMono",
       "folderName": "UbuntuMono",
       "imagePreviewFont": "UbuntuMono Nerd Font",
@@ -417,7 +469,8 @@
       "description": "Dotted zeros, used the `n`, `o`, `H` &amp; `O` Latin characters as a base for design"
     },
     {
-      "unpatchedName": "VictorMono",
+      "unpatchedName": "Victor Mono",
+      "RFN": false,
       "patchedName": "VictorMono",
       "folderName": "VictorMono",
       "imagePreviewFont": "VictorMono Nerd Font",
