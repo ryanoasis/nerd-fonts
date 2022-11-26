@@ -95,8 +95,6 @@ if [ "$pattern" = "" ]; then
     pattern=".*"
 fi
 
-#find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-#find ./ProFont -maxdepth 2 -type d | # uncomment to test 1 font
 find . -maxdepth 1 -mindepth 1 -type d -iregex "\./$pattern" | sort |
 while read -r filename; do
 
@@ -115,15 +113,10 @@ while read -r filename; do
         continue
     fi
 
-    MONOFONTS=()
-    while IFS= read -d $'\0' -r file; do
-        MONOFONTS=("${MONOFONTS[@]}" "$file")
-    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' -iname '*complete mono*' \) -print0 | sort -z)
-
     FONTS=()
     while IFS= read -d $'\0' -r file; do
         FONTS=("${FONTS[@]}" "$file")
-    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' ! -iname '*complete mono*' \) -print0 | sort -z)
+    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[o,t]tf' ! -wholename '*Windows*' \) -print0 | sort -z)
 
     outputdir=$PWD/../casks
 
@@ -134,21 +127,12 @@ while read -r filename; do
     [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
     caskname="font-$formattedbasename-nerd-font"
-    caskname_mono="${caskname}-mono"
     to="$outputdir/${caskname}.rb"
-    to_mono="$outputdir/${caskname_mono}.rb"
 
     clear_file "$to"
     write_header "$to" "$caskname"
-
-    clear_file "$to_mono"
-    write_header "$to_mono" "$caskname_mono"
-
     write_body "$originalname" "$to" "${FONTS[@]}"
-    write_body "$originalname" "$to_mono" "${MONOFONTS[@]}"
-
     write_footer "$to"
-    write_footer "$to_mono"
 
-    echo "## Created casks: $(realpath ${outputdir}/${caskname})*.rb"
+    echo "## Created casks: $(realpath ${to})"
 done
