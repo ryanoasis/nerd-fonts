@@ -108,6 +108,7 @@ while read -r filename; do
     searchdir=$filename
 
     originalname=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json")
+    caskbasename=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .caskName" "${scripts_root_dir}/lib/fonts.json")
     if [ -z "$originalname" ]; then
         echo "${LINE_PREFIX} Can not find ${basename} in fonts.json, skipping..."
         continue
@@ -120,13 +121,11 @@ while read -r filename; do
 
     outputdir=$PWD/../casks
 
-    formattedbasename=$(echo "$basename" | tr "[:upper:]" "[:lower:]")
-
     echo "$LINE_PREFIX Generating cask for: $basename"
 
     [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
-    caskname="font-$formattedbasename-nerd-font"
+    caskname="font-${caskbasename}-nerd-font"
     to="$outputdir/${caskname}.rb"
 
     clear_file "$to"
