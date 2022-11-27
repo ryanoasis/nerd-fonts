@@ -8,7 +8,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `data/sankey/`: Contains instructions on how to create the sankey glyph table manually [3]
 * `docker-entrypoint.sh`: This script is packaged into the docker container and is usually used to start patching [2]
 * `fpfix.py`: Can be used to set isFixedPitch property in a font [x]
-* `generate-casks.sh`: Generates cask files for fonts from data in `patched-fonts/` and `archives/`, unused and not recommended by homebrew-fonts
+* `generate-casks.sh`: Generates cask files for fonts from data in `patched-fonts/` and `archives/` [3]
 * `generate-css.sh`: Generates the Nerd Fonts CCS, which can be used to access the glyphs on a web page [1]
 * `generate-fontconfig.sh`: Generates font configuration to enable use of unpatched fonts with Symbols Only Nerd Font [1]
 * `generate-font-image-previews.sh`: Generates the preview images for `nerdfonts.com` (i.e. gh-pages) [3]
