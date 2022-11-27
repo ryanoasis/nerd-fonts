@@ -38,6 +38,25 @@ function write_header {
     } >> "$outputfile"
 }
 
+# Query all Family names of a font individually and return the first
+# we found that has "Nerd" in it. We need this because some fonts have
+# broken Family names.
+function find_nerdish_family {
+    local fontfile=$1
+    local idx=0
+    while :; do
+        local fn=$(fc-query --format="%{family[${idx}]}" "${fontfile}")
+        if [ -z "$fn" ]; then
+            return
+        fi
+        if [[ "${fn}" == *Nerd* ]]; then
+            echo "${fn}"
+            return
+        fi
+        idx=$((${idx} + 1))
+    done
+}
+
 function write_body {
     local unpatchedname=$1
     local outputfile=$2
@@ -53,14 +72,21 @@ function write_body {
                 longest=${#basename}
             fi
         done
-	# Find familyname of non Mono variant (well, rather shortest because we can contain multiple families)
-        familyname=$(fc-query --format='%{family}' "${fonts[0]}")
+        # Find familyname of non Mono variant (well, rather shortest because we can contain multiple families)
+        familyname=$(find_nerdish_family "${fonts[0]}")
         for i in "${!fonts[@]}"; do
-            fn=$(fc-query --format='%{family}' "${fonts[$i]}")
+            fn=$(find_nerdish_family "${fonts[$i]}")
+            if [ -z "${fn}" ]; then
+                break
+            fi
             if [ "${#fn}" -lt "${#familyname}" ]; then
                 familyname=${fn}
             fi
         done
+        if [ -z "${familyname}" ]; then
+            echo >&2 "${LINE_PREFIX} Can not determine family name"
+            exit 2
+        fi
         # Process font files
         for i in "${!fonts[@]}"; do
             individualfont=$(basename "${fonts[$i]}")
