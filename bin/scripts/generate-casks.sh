@@ -53,6 +53,14 @@ function write_body {
                 longest=${#basename}
             fi
         done
+	# Find familyname of non Mono variant (well, rather shortest because we can contain multiple families)
+        familyname=$(fc-query --format='%{family}' "${fonts[0]}")
+        for i in "${!fonts[@]}"; do
+            fn=$(fc-query --format='%{family}' "${fonts[$i]}")
+            if [ "${#fn}" -lt "${#familyname}" ]; then
+                familyname=${fn}
+            fi
+        done
         # Process font files
         for i in "${!fonts[@]}"; do
             individualfont=$(basename "${fonts[$i]}")
@@ -61,7 +69,6 @@ function write_body {
             printf "                    %-${longest}s  %s\\n" "${individualfont}" "${individualdir}"
 
             if [ "$i" == 0 ]; then
-                familyname=$(fc-query --format='%{family}' "${fonts[$i]}")
                 {
                     printf "  name \"%s (%s)\"\\n" "$familyname" "$unpatchedname"
                     printf "  desc \"Developer targeted fonts with a high number of glyphs\"\\n"
