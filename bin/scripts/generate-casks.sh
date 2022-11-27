@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.0-RC
-# Script Version: 1.0.1
-# Iterates over all patched fonts directories
+# Script Version: 2.0.0
+# Iterates over all [*] patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
-# only adds non-Windows versions of the fonts
+# * Only adds non-Windows versions of the fonts
+# * Needs the zip archives in archives/ (i.e. run `./archive-fonts.sh` first)
+#
+# [1] Accepts one parameter, a pattern which fonts to examine, if not given defaults
+# to "*" which is all fonts. Example `./generate-casks.sh 'Hasklig'`
 
 #set -x
 set -e
