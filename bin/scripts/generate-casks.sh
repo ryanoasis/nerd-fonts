@@ -1,26 +1,52 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.0-RC
-# Script Version: 2.1.1
-# Iterates over all [*] patched fonts directories
+# Script Version: 2.2.0
+#
+# Iterates over all [*] archived fonts
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # * Only adds non-Windows versions of the fonts
 # * Needs the zip archives in archives/ (i.e. run `./archive-fonts.sh` first)
 #
+# Uses the current release version (including drafts) of the repo.
+# You can specify a different version with the --setversion parameter.
+# A leading 'v' from the version is removed.
+# Must be the first parameter.
+#
 # [1] Accepts one parameter, a pattern which fonts to examine, if not given defaults
-# to "*" which is all fonts. Example `./generate-casks.sh 'Hasklig'`
+# to "*" which is all fonts.
+#
+# Example runs
+#   generate-casks.sh Hasklig
+#   generate-casks.sh --setversion 2.2.0
+#   generate-casks.sh Hasklig
+#   generate-casks.sh --setversion 2.2.0 Hasklig
 
-#set -x
+# set -x
 set -e
 
 version="2.3.0-RC"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"
 LINE_PREFIX="# [Nerd Fonts] "
-scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
-patched_parent_dir="${scripts_root_dir}/../../patched-fonts/"
+scripts_root_dir="$(cd "$(dirname "$0")" && pwd)"
+archivedir=$(realpath "${scripts_root_dir}/../../archives")
 
-cd $patched_parent_dir || {
-    echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
+if [ $# -ge 1 ]; then
+    if [ "$1" = "--setversion" ]; then
+        if [ $# -lt 2 ]; then
+            echo >&2 "$LINE_PREFIX Missing argument for --setversion"
+            exit 1
+        fi
+        version=$2
+        shift; shift
+        if [ "${version:0:1}" = "v" ]; then
+            version="${version:1}"
+        fi
+    fi
+fi
+
+cd ${archivedir} || {
+    echo >&2 "$LINE_PREFIX Could not find archives directory"
     exit 1
 }
 
@@ -109,7 +135,7 @@ function write_body {
             individualfont=$(basename "${fonts[$i]}")
             individualdir=$(dirname "${fonts[$i]}")
 
-            printf "                    %-${longest}s  %s\\n" "${individualfont}" "${individualdir}"
+            printf "                    %-${longest}s  %s\\n" "${individualfont}" "${individualdir}/"
 
             if [ "$i" == 0 ]; then
                 {
@@ -140,16 +166,16 @@ function write_footer {
     } >> "$outputfile"
 }
 
-pattern=$1
+pattern="$1.*"
 if [ "$pattern" = "" ]; then
     pattern=".*"
 fi
 
-find . -maxdepth 1 -mindepth 1 -type d -iregex "\./$pattern" | sort |
+find . -maxdepth 1 -mindepth 1 -type f -iregex "\./$pattern" -regex ".*\.zip" | sort |
 while read -r filename; do
 
     dirname=$(dirname "$filename")
-    basename=$(basename "$filename")
+    basename=$(basename "$filename" .zip)
     if [ ! -f "../archives/${basename}.zip" ]; then
         echo "${LINE_PREFIX} No archive for: ${basename}, skipping..."
         continue
@@ -163,6 +189,11 @@ while read -r filename; do
         echo "${LINE_PREFIX} Can not find ${basename} in fonts.json, skipping..."
         continue
     fi
+
+    rm -Rf "${basename}"
+    echo "$LINE_PREFIX Unpacking $basename"
+    unzip -q "${basename}" -d "${basename}"
+    searchdir=${basename}
 
     FONTS=()
     while IFS= read -d $'\0' -r file; do
@@ -182,6 +213,8 @@ while read -r filename; do
     write_header "$to" "$caskname"
     write_body "$originalname" "$to" "${FONTS[@]}"
     write_footer "$to"
+
+    rm -Rf "${basename}"
 
     echo "## Created casks: $(realpath ${to})"
 done
