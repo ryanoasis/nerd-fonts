@@ -157,8 +157,8 @@ while read -r filename; do
     sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
     searchdir=$filename
 
-    originalname=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json")
-    caskbasename=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .caskName" "${scripts_root_dir}/lib/fonts.json")
+    originalname=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
+    caskbasename=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .caskName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
     if [ -z "$originalname" ]; then
         echo "${LINE_PREFIX} Can not find ${basename} in fonts.json, skipping..."
         continue
@@ -177,6 +177,7 @@ while read -r filename; do
 
     caskname="font-${caskbasename}-nerd-font"
     to="$outputdir/${caskname}.rb"
+    echo "@@@$caskname@@@"
 
     clear_file "$to"
     write_header "$to" "$caskname"
