@@ -7,9 +7,9 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `data/`: Contains plain text files used to generate the CSS and cheat sheet files
 * `data/sankey/`: Contains instructions on how to create the sankey glyph table manually [3]
 * `docker-entrypoint.sh`: This script is packaged into the docker container and is usually used to start patching [2]
-* `fetch-archives.sh`: Script to download the release zip archives [4]
+* `fetch-archives.sh`: Script to download the release zip archives [6]
 * `fpfix.py`: Can be used to set isFixedPitch property in a font [x]
-* `generate-casks.sh`: Generates cask files for fonts from data in `archives/` [3]
+* `generate-casks.sh`: Generates cask files for fonts from data in `archives/` [6]
 * `generate-css.sh`: Generates the Nerd Fonts CCS, which can be used to access the glyphs on a web page [1]
 * `generate-fontconfig.sh`: Generates font configuration to enable use of unpatched fonts with Symbols Only Nerd Font [1]
 * `generate-font-image-previews.sh`: Generates the preview images for `nerdfonts.com` (i.e. gh-pages) [3]
@@ -34,4 +34,5 @@ Note: Usually you need to call the scripts in this directory while actually bein
 [3] To be used manually (sigh)
 [4] To be used manually
 [5] Used by CI (github packsvgs workflow)
+[6] Used by CI (github casks workflow)
 [x] Probably not used by anything
