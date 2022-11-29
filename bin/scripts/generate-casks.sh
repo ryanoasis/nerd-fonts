@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.0-RC
-# Script Version: 2.0.0
+# Script Version: 2.1.1
 # Iterates over all [*] patched fonts directories
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # * Only adds non-Windows versions of the fonts
@@ -93,17 +93,17 @@ function write_body {
         familyname=$(find_nerdish_family "${fonts[0]}")
         for i in "${!fonts[@]}"; do
             fn=$(find_nerdish_family "${fonts[$i]}")
-	    familyname=$(find_common_stem "${fn}" "${familyname}")
+            familyname=$(find_common_stem "${fn}" "${familyname}")
         done
         if [ -z "${familyname}" ]; then
             echo >&2 "${LINE_PREFIX} Can not determine family name"
             exit 2
         fi
-	# Family names differ in front of "Nerd Font" (stem is short)
+        # Family names differ in front of "Nerd Font" (stem is short)
         if [[ "${familyname}" != *Nerd* ]]; then
             familyname="${familyname} Nerd Font families"
         fi
-	familyname="$(tr [:lower:] [:upper:] <<< ${familyname:0:1})${familyname:1}"
+        familyname="$(tr [:lower:] [:upper:] <<< ${familyname:0:1})${familyname:1}"
         # Process font files
         for i in "${!fonts[@]}"; do
             individualfont=$(basename "${fonts[$i]}")
@@ -157,8 +157,8 @@ while read -r filename; do
     sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
     searchdir=$filename
 
-    originalname=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
-    caskbasename=$(cat "${scripts_root_dir}/lib/fonts.json" | jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .caskName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
+    originalname=$(jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
+    caskbasename=$(jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .caskName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
     if [ -z "$originalname" ]; then
         echo "${LINE_PREFIX} Can not find ${basename} in fonts.json, skipping..."
         continue
@@ -177,7 +177,6 @@ while read -r filename; do
 
     caskname="font-${caskbasename}-nerd-font"
     to="$outputdir/${caskname}.rb"
-    echo "@@@$caskname@@@"
 
     clear_file "$to"
     write_header "$to" "$caskname"
