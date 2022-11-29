@@ -1,56 +1,72 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.0-RC
-# Script Version: 1.0.1
+# Script Version: 2.0.0
 #
-# Iterates over all patched fonts directories and fetches the current release zip files.
-# It fetches the latest release, not release candidate
+# Fetches the current release files.
+# It fetches the latest release, not release candidate.
+# Or fetches the specified release's files.
 #
-# set -x
+# The second parameter specifies the beginning of the artifact
+# name that shall be fetched. If unspecified all artifacts will
+# be fetched.
 #
 # Example runs
-# ./fetch-archives
-# ./fetch-archives v2.2.2
-# ./fetch-archives v2.2.2 heavydata
+#   fetch-archives
+#   fetch-archives v2.2.2
+#   fetch-archives v2.2.2 Heavy
+#   fetch-archives latest HeavyDat
 
-# The following version is automatically updated on releases
-version="2.3.0-RC"
+set -e
 
 LINE_PREFIX="# [Nerd Fonts] "
-scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
-outputdir=$(realpath "${scripts_root_dir}../../archives")
+scripts_root_dir="$(cd "$(dirname "$0")" && pwd)"
+outputdir=$(realpath "${scripts_root_dir}/../../archives")
 
-mkdir -p "$outputdir"
-
-cd "$scripts_root_dir/../../patched-fonts/" || {
-  echo >&2 "${LINE_PREFIX} Could not find patched fonts directory"
-  exit 1
-}
-
-if [ $# -eq 0 ]; then
-    versiontag="v${version}"
-else
+if [ $# -ge 1 ]; then
     versiontag=$1
-fi
-
-echo "${LINE_PREFIX} Fetching release archives with version tag '${versiontag}'"
-
-# limit archiving to given pattern (first script param) or entire root folder if no param given:
-if [ $# -eq 2 ]
-  then
-    pattern=$2
-    search_pattern="*$2*.zip"
-    echo "$LINE_PREFIX Limiting archive to pattern '$pattern'"
 else
-    pattern=".*"
-    search_pattern="*.zip"
-    echo "$LINE_PREFIX No limiting pattern given, will search entire folder"
+    versiontag="latest"
 fi
 
-find . -maxdepth 1 -iregex "\./$pattern" -type d |
-while read -r filename
-do
-    basename=$(basename "$filename")
-    echo >&2 "${LINE_PREFIX} Fetching ${versiontag}/${basename}.zip"
-    curl --fail -Lso "${outputdir}/${basename}.zip" "https://github.com/ryanoasis/nerd-fonts/releases/download/${versiontag}/${basename}.zip" \
+if [ "${versiontag}" != "latest" ]; then
+    echo "${LINE_PREFIX} Fetching release archives with version tag '${versiontag}'"
+    releasedata=$(curl -Lf "https://api.github.com/repos/ryanoasis/nerd-fonts/releases")
+    num=$(jq ".[] | select(.tag_name == \"${versiontag}\") | .assets | length" <<< ${releasedata})
+    if [ -z "${num}" ]; then
+        echo "${LINE_PREFIX} Release tag ${versiontag} unknown"
+        exit 1
+    fi
+    files=($(jq -r ".[] | select(.tag_name == \"${versiontag}\") | .assets[].name | @sh" <<< ${releasedata}))
+else
+    echo "${LINE_PREFIX} Fetching latest release archives"
+    releasedata=$(curl -Lf "https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest")
+    versiontag=$(jq -r ".tag_name" <<< ${releasedata})
+    num=$(jq ".assets | length" <<< ${releasedata})
+    files=($(jq -r ".assets[].name | @sh" <<< ${releasedata}))
+fi
+
+echo "${LINE_PREFIX} Found ${num} artifacts"
+
+if [ $# -ge 2 ]; then
+    pattern=$2
+    echo "${LINE_PREFIX} Limiting archive to pattern '${pattern}'"
+else
+    pattern=""
+    echo "${LINE_PREFIX} No limiting pattern given"
+fi
+if [ $# -gt 2 ]; then
+    echo "${LINE_PREFIX} Too many parameters, exiting"
+    exit 2
+fi
+
+for assetname in ${files[@]}; do
+    assetname=${assetname:1:-1}
+    if [[ ! "${assetname}" =~ ^"${pattern}" ]]; then
+        continue
+    fi
+    echo >&2 "${LINE_PREFIX} Fetching ${versiontag}/${assetname}"
+    mkdir -p "${outputdir}"
+    touch "${outputdir}/_Release_${versiontag}"
+    curl --fail -Lo "${outputdir}/${assetname}" "https://github.com/ryanoasis/nerd-fonts/releases/download/${versiontag}/${assetname}" \
         || echo "   => error fetching"
 done
