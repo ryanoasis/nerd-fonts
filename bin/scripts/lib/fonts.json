@@ -321,9 +321,9 @@
       "description": "Modern with ligatures"
     },
     {
-      "unpatchedName": "Meslo",
+      "unpatchedName": "Meslo LG",
       "RFN": false,
-      "patchedName": "Meslo",
+      "patchedName": "MesloLG",
       "folderName": "Meslo",
       "imagePreviewFont": "Meslo Nerd Font",
       "linkPreviewFont": "meslo",
