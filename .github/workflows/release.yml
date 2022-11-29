@@ -196,14 +196,6 @@ jobs:
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-fonts.sh "${{ matrix.font }}"
 
-      - name: Generate casks
-        id: cask_generate
-        run: |
-          cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          gen=$(./generate-casks.sh "${{ matrix.font }}")
-          echo $gen
-          echo path=$(echo "$gen" | grep '^## Created' | sed -E 's/.*: +//') >> $GITHUB_OUTPUT
-
       - name: Upload zip file archive for release
         uses: softprops/action-gh-release@v0.1.14
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
@@ -221,16 +213,6 @@ jobs:
           # of the root directory for artifact path purposes
           path: |
             patched-fonts/${{ matrix.font }}
-            LICENSE
-
-      - name: Upload casks as artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: casks
-          # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
-          # of the root directory for artifact path purposes
-          path: |
-            ${{ steps.cask_generate.outputs.path }}
             LICENSE
 
   release-font-patcher:
