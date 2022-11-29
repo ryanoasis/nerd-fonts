@@ -61,6 +61,19 @@ function find_nerdish_family {
     done
 }
 
+# Return the longest common starting part of two strings
+# This is the stem, the basic base name of the fonts
+function find_common_stem {
+    local first=$1
+    local second=$2
+    for i in $(seq ${#first} -1 1); do
+        if [ "${first:0:$i}" == "${second:0:$i}" ]; then
+            echo "${first:0:$i}"
+            return
+        fi
+    done
+}
+
 function write_body {
     local unpatchedname=$1
     local outputfile=$2
@@ -80,17 +93,17 @@ function write_body {
         familyname=$(find_nerdish_family "${fonts[0]}")
         for i in "${!fonts[@]}"; do
             fn=$(find_nerdish_family "${fonts[$i]}")
-            if [ -z "${fn}" ]; then
-                break
-            fi
-            if [ "${#fn}" -lt "${#familyname}" ]; then
-                familyname=${fn}
-            fi
+	    familyname=$(find_common_stem "${fn}" "${familyname}")
         done
         if [ -z "${familyname}" ]; then
             echo >&2 "${LINE_PREFIX} Can not determine family name"
             exit 2
         fi
+	# Family names differ in front of "Nerd Font" (stem is short)
+        if [[ "${familyname}" != *Nerd* ]]; then
+            familyname="${familyname} Nerd Font families"
+        fi
+	familyname="$(tr [:lower:] [:upper:] <<< ${familyname:0:1})${familyname:1}"
         # Process font files
         for i in "${!fonts[@]}"; do
             individualfont=$(basename "${fonts[$i]}")
