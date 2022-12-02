@@ -42,8 +42,9 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
   * [**5 - Clone Repo**](#option-5-clone-the-repo)
   * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
-  * [**7 - Arch User Repository (AUR) (Arch Linux)**](#option-7-unofficial-arch-user-repository-aur)
-  * [**8 - Patch Your Own Font**](#option-8-patch-your-own-font)
+  * [**7 - Chocolatey or Scoop (Windows)**](#option-7-unofficial-chocolatey-or-scoop-repositories)
+  * [**8 - Arch User Repository (AUR) (Arch Linux)**](#option-8-unofficial-arch-user-repository-aur)
+  * [**9 - Patch Your Own Font**](#option-9-patch-your-own-font)
 
 [**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
@@ -80,8 +81,9 @@ _If you..._
   * `Option 4.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-4-homebrew-fonts)
   * `Option 5.` want **complete control** then see [cloning the repo](#option-5-clone-the-repo)
   * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
-  * `Option 7.` are on **Arch Linux** and want to use **AUR packages** see [Unofficial Arch User Repositories](#option-7-unofficial-arch-user-repository-aur)
-  * `Option 8.` want to patch your own font see the [Font Patcher](#option-8-patch-your-own-font)
+  * `Option 7`. are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-7-unofficial-chocolatey-or-scoop-repositories)
+  * `Option 8.` are on **Arch Linux** and want to use **AUR packages** see [Unofficial Arch User Repositories](#option-8-unofficial-arch-user-repository-aur)
+  * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
 
 ## Features
 * A [FontForge Python script](#font-patcher) to patch any font
@@ -297,7 +299,24 @@ _Note:_ deprecated alternative paths: `~/.fonts`
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Option 7: Unofficial Arch User Repository (AUR)`
+### `Option 7: Unofficial Chocolatey or Scoop Repositories`
+
+> Option for **Windows** and wanting to use **Chocolatey** or **Scoop**.
+
+Chocolatey users can download fonts published to the [Chocolatey Community Repository (CCR)](https://community.chocolatey.org/packages):
+
+```powershell
+choco install nerd-fonts-hack
+```
+
+Scoop users can download fonts using the [Scoop bucket for Nerd Fonts](https://github.com/matthewjberger/scoop-nerd-fonts):
+
+```powershell
+scoop bucket add nerd-fonts
+scoop install Hack-NF
+```
+
+### `Option 8: Unofficial Arch User Repository (AUR)`
 
 > Option for **Arch Linux** and wanting to use **AUR packages**.
 
@@ -322,7 +341,7 @@ The following fonts are available via [AUR packages](https://aur.archlinux.org/)
 
 The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
-### `Option 8: Patch Your Own Font`
+### `Option 9: Patch Your Own Font`
 
 > The option for **patching** your **own font** or fully **customizing** the patched font.
 
