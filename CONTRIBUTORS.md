@@ -167,6 +167,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center"><a href="https://github.com/chezbgone"><img src="https://avatars.githubusercontent.com/u/7344128?v=4?s=100" width="100px;" alt="Jason Chen"/><br /><sub><b>Jason Chen</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=chezbgone" title="Documentation">📖</a></td>
       <td align="center"><a href="https://blog.kurtstories.com/"><img src="https://avatars.githubusercontent.com/u/32745146?v=4?s=100" width="100px;" alt="Kurt"/><br /><sub><b>Kurt</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=kurt-liao" title="Documentation">📖</a> <a href="#translation-kurt-liao" title="Translation">🌍</a></td>
       <td align="center"><a href="https://github.com/mrienstra"><img src="https://avatars.githubusercontent.com/u/669326?v=4?s=100" width="100px;" alt="Michael Rienstra"/><br /><sub><b>Michael Rienstra</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=mrienstra" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://chrislong.me/"><img src="https://avatars.githubusercontent.com/u/137214?v=4?s=100" width="100px;" alt="Chris Long"/><br /><sub><b>Chris Long</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=cglong" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
