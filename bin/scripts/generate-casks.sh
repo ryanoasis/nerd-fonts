@@ -100,6 +100,18 @@ function find_common_stem {
     done
 }
 
+# Check if an element already exists in an array
+function contains {
+    local what=$1
+    shift
+    for e; do
+        if [ "${e}" = "${what}" ]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
 function write_body {
     local unpatchedname=$1
     local outputfile=$2
@@ -131,11 +143,22 @@ function write_body {
         fi
         familyname="$(tr [:lower:] [:upper:] <<< ${familyname:0:1})${familyname:1}"
         # Process font files
+        local all_individual_fonts=( )
+        local warned=0
         for i in "${!fonts[@]}"; do
             local individualfont=$(basename "${fonts[$i]}")
             local individualdir=$(dirname "${fonts[$i]}")
 
-            printf "                    %-${longest}s  %s\\n" "${individualfont}" "${individualdir}/"
+	    if [ $(dirname "${individualdir}") = "." ]; then
+                individualdir=""
+            else
+                if [ ${warned} -eq 0 ]; then
+                    echo "$LINE_PREFIX WARNING: Non-flat directory structure in archive! We might have problems..."
+                    warned=1
+                fi
+                # Remove leftmost directory (on Linux), the base directory of the zip file
+                individualdir=$(sed -E 's!/+!/!;s!^([^/]*/)|(/[^/]+/?)|([^/]*$)!!' <<< "${individualdir}")/
+            fi
 
             if [ "$i" == 0 ]; then
                 {
@@ -150,7 +173,19 @@ function write_body {
                 } >> "$outputfile"
             fi
 
-            printf "  font \"%s\"\\n" "$individualfont" >> "$outputfile"
+            # When we have a 'deep' directory structure there can be multiple files with the same name
+            # (in different subdirectories). We can not install two files with the same name, that does
+            # not make sense. Someone has to choose which alternative is wanted.
+            # Here we just take the first one.
+            # This is only occuring at the moment with GohuFont.
+            $(contains "$individualfont" "${all_individual_fonts[@]}") && {
+                printf "      SKIPPING:     %-${longest}s  %s\\n" "${individualfont}" "${individualdir}/"
+                continue
+            }
+            all_individual_fonts+=("$individualfont")
+
+            printf "  font \"%s\"\\n" "${individualdir}${individualfont}" >> "${outputfile}"
+            printf "                    %-${longest}s  %s\\n" "${individualfont}" "${individualdir}/"
 
         done
     else
