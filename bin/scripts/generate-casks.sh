@@ -107,18 +107,18 @@ function write_body {
     local fonts=("$@")
 
     if [ "${fonts[0]}" ]; then
-        longest=-1
+        local longest=-1
         # Find longest filename for pretty printing
         for i in "${!fonts[@]}"; do
-            basename=$(basename "${fonts[$i]}")
+            local basename=$(basename "${fonts[$i]}")
             if [ ${#basename} -gt $longest ]; then
                 longest=${#basename}
             fi
         done
         # Find familyname of non Mono variant (well, rather shortest because we can contain multiple families)
-        familyname=$(find_nerdish_family "${fonts[0]}")
+        local familyname=$(find_nerdish_family "${fonts[0]}")
         for i in "${!fonts[@]}"; do
-            fn=$(find_nerdish_family "${fonts[$i]}")
+            local fn=$(find_nerdish_family "${fonts[$i]}")
             familyname=$(find_common_stem "${fn}" "${familyname}")
         done
         if [ -z "${familyname}" ]; then
@@ -132,8 +132,8 @@ function write_body {
         familyname="$(tr [:lower:] [:upper:] <<< ${familyname:0:1})${familyname:1}"
         # Process font files
         for i in "${!fonts[@]}"; do
-            individualfont=$(basename "${fonts[$i]}")
-            individualdir=$(dirname "${fonts[$i]}")
+            local individualfont=$(basename "${fonts[$i]}")
+            local individualdir=$(dirname "${fonts[$i]}")
 
             printf "                    %-${longest}s  %s\\n" "${individualfont}" "${individualdir}/"
 
