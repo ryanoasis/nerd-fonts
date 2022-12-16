@@ -1584,6 +1584,10 @@ style: container
     <div class="class-name">nf-custom-crystal</div><div class="codepoint">e62f</div>
   </div>
   <div class="column">
+    <div class="nf nf-custom-default center"></div>
+    <div class="class-name">nf-custom-default</div><div class="codepoint">e612</div>
+  </div>
+  <div class="column">
     <div class="nf nf-custom-electron center"></div>
     <div class="class-name">nf-custom-electron</div><div class="codepoint">e62e</div>
   </div>
@@ -1632,6 +1636,10 @@ style: container
     <div class="class-name">nf-custom-go</div><div class="codepoint">e626</div>
   </div>
   <div class="column">
+    <div class="nf nf-custom-home center"></div>
+    <div class="class-name">nf-custom-home</div><div class="codepoint">e617</div>
+  </div>
+  <div class="column">
     <div class="nf nf-custom-kotlin center"></div>
     <div class="class-name">nf-custom-kotlin</div><div class="codepoint">e634</div>
   </div>
@@ -1642,6 +1650,10 @@ style: container
   <div class="column">
     <div class="nf nf-custom-orgmode center"></div>
     <div class="class-name">nf-custom-orgmode</div><div class="codepoint">e633</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-custom-play_arrow center"></div>
+    <div class="class-name">nf-custom-play_arrow</div><div class="codepoint">e602</div>
   </div>
   <div class="column">
     <div class="nf nf-custom-puppet center"></div>
@@ -15844,44 +15856,244 @@ style: container
     <div class="class-name">nf-pom-short_pause</div><div class="codepoint">e005</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-apple center"></div>
+    <div class="class-name">nf-seti-apple</div><div class="codepoint">e635</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-argdown center"></div>
+    <div class="class-name">nf-seti-argdown</div><div class="codepoint">e636</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-asm center"></div>
+    <div class="class-name">nf-seti-asm</div><div class="codepoint">e637</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-audio center"></div>
+    <div class="class-name">nf-seti-audio</div><div class="codepoint">e638</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-babel center"></div>
+    <div class="class-name">nf-seti-babel</div><div class="codepoint">e639</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-bazel center"></div>
+    <div class="class-name">nf-seti-bazel</div><div class="codepoint">e63a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-bicep center"></div>
+    <div class="class-name">nf-seti-bicep</div><div class="codepoint">e63b</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-bower center"></div>
     <div class="class-name">nf-seti-bower</div><div class="codepoint">e61a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-bsl center"></div>
+    <div class="class-name">nf-seti-bsl</div><div class="codepoint">e63c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-c center"></div>
+    <div class="class-name">nf-seti-c</div><div class="codepoint">e649</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-c_sharp center"></div>
+    <div class="class-name">nf-seti-c_sharp</div><div class="codepoint">e648</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-cake center"></div>
+    <div class="class-name">nf-seti-cake</div><div class="codepoint">e63e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-cake_php center"></div>
+    <div class="class-name">nf-seti-cake_php</div><div class="codepoint">e63d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-checkbox center"></div>
+    <div class="class-name">nf-seti-checkbox</div><div class="codepoint">e63f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-checkbox_unchecked center"></div>
+    <div class="class-name">nf-seti-checkbox_unchecked</div><div class="codepoint">e640</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-cjsx center"></div>
     <div class="class-name">nf-seti-cjsx</div><div class="codepoint">e61b</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-clock center"></div>
+    <div class="class-name">nf-seti-clock</div><div class="codepoint">e641</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-clojure center"></div>
+    <div class="class-name">nf-seti-clojure</div><div class="codepoint">e642</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-code_climate center"></div>
+    <div class="class-name">nf-seti-code_climate</div><div class="codepoint">e643</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-code_search center"></div>
+    <div class="class-name">nf-seti-code_search</div><div class="codepoint">e644</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-coffee center"></div>
     <div class="class-name">nf-seti-coffee</div><div class="codepoint">e61b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-coldfusion center"></div>
+    <div class="class-name">nf-seti-coldfusion</div><div class="codepoint">e645</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-config center"></div>
     <div class="class-name">nf-seti-config</div><div class="codepoint">e615</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-cpp center"></div>
+    <div class="class-name">nf-seti-cpp</div><div class="codepoint">e646</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-crystal center"></div>
+    <div class="class-name">nf-seti-crystal</div><div class="codepoint">e62f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-crystal_embedded center"></div>
+    <div class="class-name">nf-seti-crystal_embedded</div><div class="codepoint">e647</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-css center"></div>
     <div class="class-name">nf-seti-css</div><div class="codepoint">e614</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-csv center"></div>
+    <div class="class-name">nf-seti-csv</div><div class="codepoint">e64a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-cu center"></div>
+    <div class="class-name">nf-seti-cu</div><div class="codepoint">e64b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-d center"></div>
+    <div class="class-name">nf-seti-d</div><div class="codepoint">e651</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-dart center"></div>
+    <div class="class-name">nf-seti-dart</div><div class="codepoint">e64c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-db center"></div>
+    <div class="class-name">nf-seti-db</div><div class="codepoint">e64d</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-default center"></div>
-    <div class="class-name">nf-seti-default</div><div class="codepoint">e612</div>
+    <div class="class-name">nf-seti-default</div><div class="codepoint">e64e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-deprecation_cop center"></div>
+    <div class="class-name">nf-seti-deprecation_cop</div><div class="codepoint">e64f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-docker center"></div>
+    <div class="class-name">nf-seti-docker</div><div class="codepoint">e650</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-editorconfig center"></div>
+    <div class="class-name">nf-seti-editorconfig</div><div class="codepoint">e652</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-ejs center"></div>
     <div class="class-name">nf-seti-ejs</div><div class="codepoint">e618</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-elixir center"></div>
+    <div class="class-name">nf-seti-elixir</div><div class="codepoint">e62d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-elixir_script center"></div>
+    <div class="class-name">nf-seti-elixir_script</div><div class="codepoint">e653</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-elm center"></div>
+    <div class="class-name">nf-seti-elm</div><div class="codepoint">e62c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-error center"></div>
+    <div class="class-name">nf-seti-error</div><div class="codepoint">e654</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-eslint center"></div>
+    <div class="class-name">nf-seti-eslint</div><div class="codepoint">e655</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-ethereum center"></div>
+    <div class="class-name">nf-seti-ethereum</div><div class="codepoint">e656</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-f_sharp center"></div>
+    <div class="class-name">nf-seti-f_sharp</div><div class="codepoint">e65a</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-favicon center"></div>
     <div class="class-name">nf-seti-favicon</div><div class="codepoint">e623</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-firebase center"></div>
+    <div class="class-name">nf-seti-firebase</div><div class="codepoint">e657</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-firefox center"></div>
+    <div class="class-name">nf-seti-firefox</div><div class="codepoint">e658</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-folder center"></div>
     <div class="class-name">nf-seti-folder</div><div class="codepoint">e613</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-font center"></div>
+    <div class="class-name">nf-seti-font</div><div class="codepoint">e659</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-git center"></div>
+    <div class="class-name">nf-seti-git</div><div class="codepoint">e65d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-git_folder center"></div>
+    <div class="class-name">nf-seti-git_folder</div><div class="codepoint">e65d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-git_ignore center"></div>
+    <div class="class-name">nf-seti-git_ignore</div><div class="codepoint">e65d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-github center"></div>
+    <div class="class-name">nf-seti-github</div><div class="codepoint">e65b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-gitlab center"></div>
+    <div class="class-name">nf-seti-gitlab</div><div class="codepoint">e65c</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-go center"></div>
     <div class="class-name">nf-seti-go</div><div class="codepoint">e627</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-go2 center"></div>
+    <div class="class-name">nf-seti-go2</div><div class="codepoint">e65e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-godot center"></div>
+    <div class="class-name">nf-seti-godot</div><div class="codepoint">e65f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-gradle center"></div>
+    <div class="class-name">nf-seti-gradle</div><div class="codepoint">e660</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-grails center"></div>
+    <div class="class-name">nf-seti-grails</div><div class="codepoint">e661</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-graphql center"></div>
+    <div class="class-name">nf-seti-graphql</div><div class="codepoint">e662</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-grunt center"></div>
@@ -15892,12 +16104,32 @@ style: container
     <div class="class-name">nf-seti-gulp</div><div class="codepoint">e610</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-hacklang center"></div>
+    <div class="class-name">nf-seti-hacklang</div><div class="codepoint">e663</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-haml center"></div>
+    <div class="class-name">nf-seti-haml</div><div class="codepoint">e664</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-happenings center"></div>
+    <div class="class-name">nf-seti-happenings</div><div class="codepoint">e665</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-haskell center"></div>
     <div class="class-name">nf-seti-haskell</div><div class="codepoint">e61f</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-haxe center"></div>
+    <div class="class-name">nf-seti-haxe</div><div class="codepoint">e666</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-heroku center"></div>
     <div class="class-name">nf-seti-heroku</div><div class="codepoint">e607</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-hex center"></div>
+    <div class="class-name">nf-seti-hex</div><div class="codepoint">e667</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-home center"></div>
@@ -15908,12 +16140,44 @@ style: container
     <div class="class-name">nf-seti-html</div><div class="codepoint">e60e</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-ignored center"></div>
+    <div class="class-name">nf-seti-ignored</div><div class="codepoint">e668</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-illustrator center"></div>
+    <div class="class-name">nf-seti-illustrator</div><div class="codepoint">e669</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-image center"></div>
     <div class="class-name">nf-seti-image</div><div class="codepoint">e60d</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-info center"></div>
+    <div class="class-name">nf-seti-info</div><div class="codepoint">e66a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-ionic center"></div>
+    <div class="class-name">nf-seti-ionic</div><div class="codepoint">e66b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-jade center"></div>
+    <div class="class-name">nf-seti-jade</div><div class="codepoint">e66c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-java center"></div>
+    <div class="class-name">nf-seti-java</div><div class="codepoint">e66d</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-javascript center"></div>
     <div class="class-name">nf-seti-javascript</div><div class="codepoint">e60c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-jenkins center"></div>
+    <div class="class-name">nf-seti-jenkins</div><div class="codepoint">e66e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-jinja center"></div>
+    <div class="class-name">nf-seti-jinja</div><div class="codepoint">e66f</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-json center"></div>
@@ -15928,6 +16192,10 @@ style: container
     <div class="class-name">nf-seti-karma</div><div class="codepoint">e622</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-kotlin center"></div>
+    <div class="class-name">nf-seti-kotlin</div><div class="codepoint">e634</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-less center"></div>
     <div class="class-name">nf-seti-less</div><div class="codepoint">e60b</div>
   </div>
@@ -15936,36 +16204,144 @@ style: container
     <div class="class-name">nf-seti-license</div><div class="codepoint">e60a</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-liquid center"></div>
+    <div class="class-name">nf-seti-liquid</div><div class="codepoint">e670</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-livescript center"></div>
+    <div class="class-name">nf-seti-livescript</div><div class="codepoint">e671</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-lock center"></div>
+    <div class="class-name">nf-seti-lock</div><div class="codepoint">e672</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-lua center"></div>
     <div class="class-name">nf-seti-lua</div><div class="codepoint">e620</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-makefile center"></div>
+    <div class="class-name">nf-seti-makefile</div><div class="codepoint">e673</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-markdown center"></div>
     <div class="class-name">nf-seti-markdown</div><div class="codepoint">e609</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-maven center"></div>
+    <div class="class-name">nf-seti-maven</div><div class="codepoint">e674</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-mdo center"></div>
+    <div class="class-name">nf-seti-mdo</div><div class="codepoint">e675</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-mustache center"></div>
     <div class="class-name">nf-seti-mustache</div><div class="codepoint">e60f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-new_file center"></div>
+    <div class="class-name">nf-seti-new_file</div><div class="codepoint">e676</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-nim center"></div>
+    <div class="class-name">nf-seti-nim</div><div class="codepoint">e677</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-notebook center"></div>
+    <div class="class-name">nf-seti-notebook</div><div class="codepoint">e678</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-npm center"></div>
     <div class="class-name">nf-seti-npm</div><div class="codepoint">e616</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-npm_ignored center"></div>
+    <div class="class-name">nf-seti-npm_ignored</div><div class="codepoint">e616</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-nunjucks center"></div>
+    <div class="class-name">nf-seti-nunjucks</div><div class="codepoint">e679</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-ocaml center"></div>
+    <div class="class-name">nf-seti-ocaml</div><div class="codepoint">e67a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-odata center"></div>
+    <div class="class-name">nf-seti-odata</div><div class="codepoint">e67b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-pddl center"></div>
+    <div class="class-name">nf-seti-pddl</div><div class="codepoint">e67c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-pdf center"></div>
+    <div class="class-name">nf-seti-pdf</div><div class="codepoint">e67d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-perl center"></div>
+    <div class="class-name">nf-seti-perl</div><div class="codepoint">e67e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-photoshop center"></div>
+    <div class="class-name">nf-seti-photoshop</div><div class="codepoint">e67f</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-php center"></div>
     <div class="class-name">nf-seti-php</div><div class="codepoint">e608</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-pipeline center"></div>
+    <div class="class-name">nf-seti-pipeline</div><div class="codepoint">e680</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-plan center"></div>
+    <div class="class-name">nf-seti-plan</div><div class="codepoint">e681</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-platformio center"></div>
+    <div class="class-name">nf-seti-platformio</div><div class="codepoint">e682</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-play_arrow center"></div>
     <div class="class-name">nf-seti-play_arrow</div><div class="codepoint">e602</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-powershell center"></div>
+    <div class="class-name">nf-seti-powershell</div><div class="codepoint">e683</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-prisma center"></div>
+    <div class="class-name">nf-seti-prisma</div><div class="codepoint">e684</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-project center"></div>
     <div class="class-name">nf-seti-project</div><div class="codepoint">e601</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-prolog center"></div>
+    <div class="class-name">nf-seti-prolog</div><div class="codepoint">e685</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-pug center"></div>
+    <div class="class-name">nf-seti-pug</div><div class="codepoint">e686</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-puppet center"></div>
+    <div class="class-name">nf-seti-puppet</div><div class="codepoint">e631</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-purescript center"></div>
+    <div class="class-name">nf-seti-purescript</div><div class="codepoint">e630</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-python center"></div>
     <div class="class-name">nf-seti-python</div><div class="codepoint">e606</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-r center"></div>
+    <div class="class-name">nf-seti-r</div><div class="codepoint">e68a</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-rails center"></div>
@@ -15976,20 +16352,112 @@ style: container
     <div class="class-name">nf-seti-react</div><div class="codepoint">e625</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-reasonml center"></div>
+    <div class="class-name">nf-seti-reasonml</div><div class="codepoint">e687</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-rescript center"></div>
+    <div class="class-name">nf-seti-rescript</div><div class="codepoint">e688</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-rollup center"></div>
+    <div class="class-name">nf-seti-rollup</div><div class="codepoint">e689</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-ruby center"></div>
     <div class="class-name">nf-seti-ruby</div><div class="codepoint">e605</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-rust center"></div>
+    <div class="class-name">nf-seti-rust</div><div class="codepoint">e68b</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-salesforce center"></div>
+    <div class="class-name">nf-seti-salesforce</div><div class="codepoint">e68c</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-sass center"></div>
     <div class="class-name">nf-seti-sass</div><div class="codepoint">e603</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-sbt center"></div>
+    <div class="class-name">nf-seti-sbt</div><div class="codepoint">e68d</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-scala center"></div>
+    <div class="class-name">nf-seti-scala</div><div class="codepoint">e68e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-search center"></div>
+    <div class="class-name">nf-seti-search</div><div class="codepoint">e68f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-settings center"></div>
+    <div class="class-name">nf-seti-settings</div><div class="codepoint">e690</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-shell center"></div>
+    <div class="class-name">nf-seti-shell</div><div class="codepoint">e691</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-slim center"></div>
+    <div class="class-name">nf-seti-slim</div><div class="codepoint">e692</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-smarty center"></div>
+    <div class="class-name">nf-seti-smarty</div><div class="codepoint">e693</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-spring center"></div>
+    <div class="class-name">nf-seti-spring</div><div class="codepoint">e694</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-stylelint center"></div>
+    <div class="class-name">nf-seti-stylelint</div><div class="codepoint">e695</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-stylus center"></div>
     <div class="class-name">nf-seti-stylus</div><div class="codepoint">e600</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-sublime center"></div>
+    <div class="class-name">nf-seti-sublime</div><div class="codepoint">e696</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-svelte center"></div>
+    <div class="class-name">nf-seti-svelte</div><div class="codepoint">e697</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-svg center"></div>
+    <div class="class-name">nf-seti-svg</div><div class="codepoint">e698</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-swift center"></div>
+    <div class="class-name">nf-seti-swift</div><div class="codepoint">e699</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-terraform center"></div>
+    <div class="class-name">nf-seti-terraform</div><div class="codepoint">e69a</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-tex center"></div>
+    <div class="class-name">nf-seti-tex</div><div class="codepoint">e69b</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-text center"></div>
     <div class="class-name">nf-seti-text</div><div class="codepoint">e612</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-time_cop center"></div>
+    <div class="class-name">nf-seti-time_cop</div><div class="codepoint">e641</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-todo center"></div>
+    <div class="class-name">nf-seti-todo</div><div class="codepoint">e69c</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-tsconfig center"></div>
+    <div class="class-name">nf-seti-tsconfig</div><div class="codepoint">e69d</div>
   </div>
   <div class="column">
     <div class="nf nf-seti-twig center"></div>
@@ -16000,8 +16468,60 @@ style: container
     <div class="class-name">nf-seti-typescript</div><div class="codepoint">e628</div>
   </div>
   <div class="column">
+    <div class="nf nf-seti-vala center"></div>
+    <div class="class-name">nf-seti-vala</div><div class="codepoint">e69e</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-video center"></div>
+    <div class="class-name">nf-seti-video</div><div class="codepoint">e69f</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-vue center"></div>
+    <div class="class-name">nf-seti-vue</div><div class="codepoint">e6a0</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-wasm center"></div>
+    <div class="class-name">nf-seti-wasm</div><div class="codepoint">e6a1</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-wat center"></div>
+    <div class="class-name">nf-seti-wat</div><div class="codepoint">e6a2</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-webpack center"></div>
+    <div class="class-name">nf-seti-webpack</div><div class="codepoint">e6a3</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-wgt center"></div>
+    <div class="class-name">nf-seti-wgt</div><div class="codepoint">e6a4</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-word center"></div>
+    <div class="class-name">nf-seti-word</div><div class="codepoint">e6a5</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-xls center"></div>
+    <div class="class-name">nf-seti-xls</div><div class="codepoint">e6a6</div>
+  </div>
+  <div class="column">
     <div class="nf nf-seti-xml center"></div>
     <div class="class-name">nf-seti-xml</div><div class="codepoint">e619</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-yarn center"></div>
+    <div class="class-name">nf-seti-yarn</div><div class="codepoint">e6a7</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-yml center"></div>
+    <div class="class-name">nf-seti-yml</div><div class="codepoint">e6a8</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-zig center"></div>
+    <div class="class-name">nf-seti-zig</div><div class="codepoint">e6a9</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-seti-zip center"></div>
+    <div class="class-name">nf-seti-zip</div><div class="codepoint">e6aa</div>
   </div>
   <div class="column">
     <div class="nf nf-weather-alien center"></div>
