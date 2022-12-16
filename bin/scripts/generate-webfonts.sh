@@ -15,5 +15,5 @@ if [ ! -d "${webfontdir}" ]; then
   mkdir "${webfontdir}"
 fi
 
-fontforge -lang=ff -c "Open(\"${patched_dir}/${font_file}.ttf\"); Generate(\"${webfontdir}/${font_file}.woff\")"
-fontforge -lang=ff -c "Open(\"${patched_dir}/${font_file}.ttf\"); Generate(\"${webfontdir}/${font_file}.woff2\")"
+fontforge -lang=ff -c "Open(\"${patched_dir}/${font_file} Mono.ttf\"); Generate(\"${webfontdir}/${font_file}.woff\")"
+fontforge -lang=ff -c "Open(\"${patched_dir}/${font_file} Mono.ttf\"); Generate(\"${webfontdir}/${font_file}.woff2\")"
