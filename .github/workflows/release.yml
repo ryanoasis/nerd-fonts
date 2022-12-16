@@ -336,6 +336,17 @@ jobs:
           git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
           clean: false
 
+      - name: Deploy Cheat Sheet to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: steps.push_css.outputs.pushed
+        with:
+          folder: temp
+          target-folder: _posts
+          commit-message: "[ci] Regenerate Cheat Sheet"
+          git-config-name: GitHub Actions
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
+          clean: false
+
       - name: Adjust release tag to include previous commit
         uses: EndBug/latest-tag@v1.5.0
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
