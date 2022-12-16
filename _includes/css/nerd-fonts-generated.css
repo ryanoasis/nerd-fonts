@@ -1196,6 +1196,9 @@
 .nf-custom-crystal:before {
   content: "\e62f";
 }
+.nf-custom-default:before {
+  content: "\e612";
+}
 .nf-custom-electron:before {
   content: "\e62e";
 }
@@ -1232,6 +1235,9 @@
 .nf-custom-go:before {
   content: "\e626";
 }
+.nf-custom-home:before {
+  content: "\e617";
+}
 .nf-custom-kotlin:before {
   content: "\e634";
 }
@@ -1240,6 +1246,9 @@
 }
 .nf-custom-orgmode:before {
   content: "\e633";
+}
+.nf-custom-play_arrow:before {
+  content: "\e602";
 }
 .nf-custom-puppet:before {
   content: "\e631";
@@ -11891,35 +11900,185 @@
 .nf-pom-short_pause:before {
   content: "\e005";
 }
+.nf-seti-apple:before {
+  content: "\e635";
+}
+.nf-seti-argdown:before {
+  content: "\e636";
+}
+.nf-seti-asm:before {
+  content: "\e637";
+}
+.nf-seti-audio:before {
+  content: "\e638";
+}
+.nf-seti-babel:before {
+  content: "\e639";
+}
+.nf-seti-bazel:before {
+  content: "\e63a";
+}
+.nf-seti-bicep:before {
+  content: "\e63b";
+}
 .nf-seti-bower:before {
   content: "\e61a";
+}
+.nf-seti-bsl:before {
+  content: "\e63c";
+}
+.nf-seti-c:before {
+  content: "\e649";
+}
+.nf-seti-c_sharp:before {
+  content: "\e648";
+}
+.nf-seti-cake:before {
+  content: "\e63e";
+}
+.nf-seti-cake_php:before {
+  content: "\e63d";
+}
+.nf-seti-checkbox:before {
+  content: "\e63f";
+}
+.nf-seti-checkbox_unchecked:before {
+  content: "\e640";
 }
 .nf-seti-cjsx:before {
   content: "\e61b";
 }
+.nf-seti-clock:before {
+  content: "\e641";
+}
+.nf-seti-clojure:before {
+  content: "\e642";
+}
+.nf-seti-code_climate:before {
+  content: "\e643";
+}
+.nf-seti-code_search:before {
+  content: "\e644";
+}
 .nf-seti-coffee:before {
   content: "\e61b";
+}
+.nf-seti-coldfusion:before {
+  content: "\e645";
 }
 .nf-seti-config:before {
   content: "\e615";
 }
+.nf-seti-cpp:before {
+  content: "\e646";
+}
+.nf-seti-crystal:before {
+  content: "\e62f";
+}
+.nf-seti-crystal_embedded:before {
+  content: "\e647";
+}
 .nf-seti-css:before {
   content: "\e614";
 }
+.nf-seti-csv:before {
+  content: "\e64a";
+}
+.nf-seti-cu:before {
+  content: "\e64b";
+}
+.nf-seti-d:before {
+  content: "\e651";
+}
+.nf-seti-dart:before {
+  content: "\e64c";
+}
+.nf-seti-db:before {
+  content: "\e64d";
+}
 .nf-seti-default:before {
-  content: "\e612";
+  content: "\e64e";
+}
+.nf-seti-deprecation_cop:before {
+  content: "\e64f";
+}
+.nf-seti-docker:before {
+  content: "\e650";
+}
+.nf-seti-editorconfig:before {
+  content: "\e652";
 }
 .nf-seti-ejs:before {
   content: "\e618";
 }
+.nf-seti-elixir:before {
+  content: "\e62d";
+}
+.nf-seti-elixir_script:before {
+  content: "\e653";
+}
+.nf-seti-elm:before {
+  content: "\e62c";
+}
+.nf-seti-error:before {
+  content: "\e654";
+}
+.nf-seti-eslint:before {
+  content: "\e655";
+}
+.nf-seti-ethereum:before {
+  content: "\e656";
+}
+.nf-seti-f_sharp:before {
+  content: "\e65a";
+}
 .nf-seti-favicon:before {
   content: "\e623";
+}
+.nf-seti-firebase:before {
+  content: "\e657";
+}
+.nf-seti-firefox:before {
+  content: "\e658";
 }
 .nf-seti-folder:before {
   content: "\e613";
 }
+.nf-seti-font:before {
+  content: "\e659";
+}
+.nf-seti-git:before {
+  content: "\e65d";
+}
+.nf-seti-git_folder:before {
+  content: "\e65d";
+}
+.nf-seti-git_ignore:before {
+  content: "\e65d";
+}
+.nf-seti-github:before {
+  content: "\e65b";
+}
+.nf-seti-gitlab:before {
+  content: "\e65c";
+}
 .nf-seti-go:before {
   content: "\e627";
+}
+.nf-seti-go2:before {
+  content: "\e65e";
+}
+.nf-seti-godot:before {
+  content: "\e65f";
+}
+.nf-seti-gradle:before {
+  content: "\e660";
+}
+.nf-seti-grails:before {
+  content: "\e661";
+}
+.nf-seti-graphql:before {
+  content: "\e662";
 }
 .nf-seti-grunt:before {
   content: "\e611";
@@ -11927,11 +12086,26 @@
 .nf-seti-gulp:before {
   content: "\e610";
 }
+.nf-seti-hacklang:before {
+  content: "\e663";
+}
+.nf-seti-haml:before {
+  content: "\e664";
+}
+.nf-seti-happenings:before {
+  content: "\e665";
+}
 .nf-seti-haskell:before {
   content: "\e61f";
 }
+.nf-seti-haxe:before {
+  content: "\e666";
+}
 .nf-seti-heroku:before {
   content: "\e607";
+}
+.nf-seti-hex:before {
+  content: "\e667";
 }
 .nf-seti-home:before {
   content: "\e617";
@@ -11939,11 +12113,35 @@
 .nf-seti-html:before {
   content: "\e60e";
 }
+.nf-seti-ignored:before {
+  content: "\e668";
+}
+.nf-seti-illustrator:before {
+  content: "\e669";
+}
 .nf-seti-image:before {
   content: "\e60d";
 }
+.nf-seti-info:before {
+  content: "\e66a";
+}
+.nf-seti-ionic:before {
+  content: "\e66b";
+}
+.nf-seti-jade:before {
+  content: "\e66c";
+}
+.nf-seti-java:before {
+  content: "\e66d";
+}
 .nf-seti-javascript:before {
   content: "\e60c";
+}
+.nf-seti-jenkins:before {
+  content: "\e66e";
+}
+.nf-seti-jinja:before {
+  content: "\e66f";
 }
 .nf-seti-json:before {
   content: "\e60b";
@@ -11954,35 +12152,119 @@
 .nf-seti-karma:before {
   content: "\e622";
 }
+.nf-seti-kotlin:before {
+  content: "\e634";
+}
 .nf-seti-less:before {
   content: "\e60b";
 }
 .nf-seti-license:before {
   content: "\e60a";
 }
+.nf-seti-liquid:before {
+  content: "\e670";
+}
+.nf-seti-livescript:before {
+  content: "\e671";
+}
+.nf-seti-lock:before {
+  content: "\e672";
+}
 .nf-seti-lua:before {
   content: "\e620";
+}
+.nf-seti-makefile:before {
+  content: "\e673";
 }
 .nf-seti-markdown:before {
   content: "\e609";
 }
+.nf-seti-maven:before {
+  content: "\e674";
+}
+.nf-seti-mdo:before {
+  content: "\e675";
+}
 .nf-seti-mustache:before {
   content: "\e60f";
+}
+.nf-seti-new_file:before {
+  content: "\e676";
+}
+.nf-seti-nim:before {
+  content: "\e677";
+}
+.nf-seti-notebook:before {
+  content: "\e678";
 }
 .nf-seti-npm:before {
   content: "\e616";
 }
+.nf-seti-npm_ignored:before {
+  content: "\e616";
+}
+.nf-seti-nunjucks:before {
+  content: "\e679";
+}
+.nf-seti-ocaml:before {
+  content: "\e67a";
+}
+.nf-seti-odata:before {
+  content: "\e67b";
+}
+.nf-seti-pddl:before {
+  content: "\e67c";
+}
+.nf-seti-pdf:before {
+  content: "\e67d";
+}
+.nf-seti-perl:before {
+  content: "\e67e";
+}
+.nf-seti-photoshop:before {
+  content: "\e67f";
+}
 .nf-seti-php:before {
   content: "\e608";
+}
+.nf-seti-pipeline:before {
+  content: "\e680";
+}
+.nf-seti-plan:before {
+  content: "\e681";
+}
+.nf-seti-platformio:before {
+  content: "\e682";
 }
 .nf-seti-play_arrow:before {
   content: "\e602";
 }
+.nf-seti-powershell:before {
+  content: "\e683";
+}
+.nf-seti-prisma:before {
+  content: "\e684";
+}
 .nf-seti-project:before {
   content: "\e601";
 }
+.nf-seti-prolog:before {
+  content: "\e685";
+}
+.nf-seti-pug:before {
+  content: "\e686";
+}
+.nf-seti-puppet:before {
+  content: "\e631";
+}
+.nf-seti-purescript:before {
+  content: "\e630";
+}
 .nf-seti-python:before {
   content: "\e606";
+}
+.nf-seti-r:before {
+  content: "\e68a";
 }
 .nf-seti-rails:before {
   content: "\e604";
@@ -11990,17 +12272,86 @@
 .nf-seti-react:before {
   content: "\e625";
 }
+.nf-seti-reasonml:before {
+  content: "\e687";
+}
+.nf-seti-rescript:before {
+  content: "\e688";
+}
+.nf-seti-rollup:before {
+  content: "\e689";
+}
 .nf-seti-ruby:before {
   content: "\e605";
+}
+.nf-seti-rust:before {
+  content: "\e68b";
+}
+.nf-seti-salesforce:before {
+  content: "\e68c";
 }
 .nf-seti-sass:before {
   content: "\e603";
 }
+.nf-seti-sbt:before {
+  content: "\e68d";
+}
+.nf-seti-scala:before {
+  content: "\e68e";
+}
+.nf-seti-search:before {
+  content: "\e68f";
+}
+.nf-seti-settings:before {
+  content: "\e690";
+}
+.nf-seti-shell:before {
+  content: "\e691";
+}
+.nf-seti-slim:before {
+  content: "\e692";
+}
+.nf-seti-smarty:before {
+  content: "\e693";
+}
+.nf-seti-spring:before {
+  content: "\e694";
+}
+.nf-seti-stylelint:before {
+  content: "\e695";
+}
 .nf-seti-stylus:before {
   content: "\e600";
 }
+.nf-seti-sublime:before {
+  content: "\e696";
+}
+.nf-seti-svelte:before {
+  content: "\e697";
+}
+.nf-seti-svg:before {
+  content: "\e698";
+}
+.nf-seti-swift:before {
+  content: "\e699";
+}
+.nf-seti-terraform:before {
+  content: "\e69a";
+}
+.nf-seti-tex:before {
+  content: "\e69b";
+}
 .nf-seti-text:before {
   content: "\e612";
+}
+.nf-seti-time_cop:before {
+  content: "\e641";
+}
+.nf-seti-todo:before {
+  content: "\e69c";
+}
+.nf-seti-tsconfig:before {
+  content: "\e69d";
 }
 .nf-seti-twig:before {
   content: "\e61c";
@@ -12008,8 +12359,47 @@
 .nf-seti-typescript:before {
   content: "\e628";
 }
+.nf-seti-vala:before {
+  content: "\e69e";
+}
+.nf-seti-video:before {
+  content: "\e69f";
+}
+.nf-seti-vue:before {
+  content: "\e6a0";
+}
+.nf-seti-wasm:before {
+  content: "\e6a1";
+}
+.nf-seti-wat:before {
+  content: "\e6a2";
+}
+.nf-seti-webpack:before {
+  content: "\e6a3";
+}
+.nf-seti-wgt:before {
+  content: "\e6a4";
+}
+.nf-seti-word:before {
+  content: "\e6a5";
+}
+.nf-seti-xls:before {
+  content: "\e6a6";
+}
 .nf-seti-xml:before {
   content: "\e619";
+}
+.nf-seti-yarn:before {
+  content: "\e6a7";
+}
+.nf-seti-yml:before {
+  content: "\e6a8";
+}
+.nf-seti-zig:before {
+  content: "\e6a9";
+}
+.nf-seti-zip:before {
+  content: "\e6aa";
 }
 .nf-weather-alien:before {
   content: "\e36e";
