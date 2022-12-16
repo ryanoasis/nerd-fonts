@@ -310,10 +310,11 @@ jobs:
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-      - name: Generate new CSS file
+      - name: Generate new CSS file and webfonts
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./generate-css.sh
+          ./generate-webfonts.sh
 
       - name: Commit CSS back to repo
         uses: EndBug/add-and-commit@v9
@@ -343,6 +344,16 @@ jobs:
           folder: temp
           target-folder: _posts
           commit-message: "[ci] Regenerate Cheat Sheet"
+          git-config-name: GitHub Actions
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
+          clean: false
+
+      - name: Deploy webfonts to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: webfonts
+          target-folder: assets/fonts
+          commit-message: "[ci] Update webfonts"
           git-config-name: GitHub Actions
           git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
           clean: false
