@@ -10,7 +10,7 @@ ver=$(inkscape --version)
 echo "Check generator version: $ver"
 
 output_dir="../../assets/img/previews/"
-template_svg="lib/inkscape-template-font-preview.svg"
+template_svg="lib/template-font-preview.svg"
 
 main() {
   mkdir -p "$output_dir"
