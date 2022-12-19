@@ -463,22 +463,12 @@
     {
       "unpatchedName": "Symbols Only",
       "RFN": false,
-      "patchedName": "Symbols-1000-em Nerd Font Complete",
+      "patchedName": "Symbols",
       "folderName": "NerdFontsSymbolsOnly",
-      "imagePreviewFont": "",
+      "imagePreviewFont": "Symbols Nerd Font Mono",
       "linkPreviewFont": false,
       "caskName": "symbols-only",
-      "description": "Just the Nerd Font Icons. I.e Symbol font only. 1000 EM size"
-    },
-    {
-      "unpatchedName": "Symbols Only",
-      "RFN": false,
-      "patchedName": "Symbols-2048-em Nerd Font Complete",
-      "folderName": "NerdFontsSymbolsOnly",
-      "imagePreviewFont": "",
-      "linkPreviewFont": false,
-      "caskName": "symbols-only",
-      "description": "Just the Nerd Font Icons. I.e Symbol font only. 2048 EM size"
+      "description": "Just the Nerd Font Icons. I.e Symbol font only"
     },
     {
       "unpatchedName": "Terminus",
