@@ -1063,9 +1063,12 @@ class font_patcher:
             # Use the dimensions from the newly pasted and stretched glyph to avoid any rounding errors
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
             # Use combined bounding box?
-            if scale_glyph_data and scale_glyph_data[1] and (scale_ratio_x != 1 or scale_ratio_y != 1):
-                # Simulate scaling on combined bounding box
-                scaleglyph_dim = scale_bounding_box(scale_glyph_data[1], scale_ratio_x, scale_ratio_y)
+            if scale_glyph_data and scale_glyph_data[1]:
+                if scale_ratio_x != 1 or scale_ratio_y != 1:
+                    # Simulate scaling on combined bounding box
+                    scaleglyph_dim = scale_bounding_box(scale_glyph_data[1], scale_ratio_x, scale_ratio_y)
+                else:
+                    scaleglyph_dim = scale_glyph_data[1]
                 if not scaleglyph_dim['advance']:
                     # On monospaced symbol collections use their advance with, otherwise align horizontally individually
                     scaleglyph_dim['xmin'] = sym_dim['xmin']
