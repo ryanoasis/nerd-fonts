@@ -1085,7 +1085,9 @@ class font_patcher:
 
             # Handle glyph l/r/c alignment
             x_align_distance = 0
-            if sym_attr['align']:
+            if self.args.nonmono:
+                pass
+            elif sym_attr['align']:
                 # First find the baseline x-alignment (left alignment amount)
                 x_align_distance = self.font_dim['xmin'] - sym_dim['xmin']
                 if sym_attr['align'] == 'c':
@@ -1117,9 +1119,13 @@ class font_patcher:
             # It should come after setting the glyph bearings
             self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
 
-            # Re-remove negative bearings for target font with variable advance width
+            # Target font with variable advance width get the icons with their native advance
+            # or at least width
             if self.args.nonmono:
-                self.remove_glyph_neg_bearings(self.sourceFont[currentSourceFontGlyph])
+                if sym_dim['advance']:
+                    self.sourceFont[currentSourceFontGlyph].width = int(sym_dim['advance'])
+                else:
+                    self.sourceFont[currentSourceFontGlyph].width = int(sym_dim['width'])
 
             # Check if the inserted glyph is scaled correctly for monospace
             if self.args.single:
