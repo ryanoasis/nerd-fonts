@@ -783,6 +783,7 @@ class font_patcher:
             range(0xf0b7, 0xf0c3 + 1), # wind strengths
             range(0xf053, 0xf055 + 1), # thermometer
             [0xf06e, 0xf070 ], # solar eclipse
+            [0xf042, 0xf045 ], # degree sign
         ]}
 
         # Define the character ranges
