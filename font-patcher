@@ -529,6 +529,9 @@ class font_patcher:
         if self.args.single:
             additionalFontNameSuffix = " M" + additionalFontNameSuffix
             verboseAdditionalFontNameSuffix = " Mono" + verboseAdditionalFontNameSuffix
+        elif self.args.nonmono:
+            additionalFontNameSuffix = " P" + additionalFontNameSuffix
+            verboseAdditionalFontNameSuffix = " Propo" + verboseAdditionalFontNameSuffix
 
         # add 'Nerd Font' to beginning of name suffix
         verboseAdditionalFontNameSuffix = " " + projectNameSingular + verboseAdditionalFontNameSuffix
@@ -714,6 +717,11 @@ class font_patcher:
                     fam_suffix += 'M'
                 else:
                     fam_suffix += ' Mono'
+            elif self.args.nonmono:
+                if self.args.windows:
+                    fam_suffix += 'P'
+                else:
+                    fam_suffix += ' Propo'
             n.inject_suffix(verboseAdditionalFontNameSuffix, additionalFontNameSuffix, fam_suffix)
             n.rename_font(font)
 
