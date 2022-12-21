@@ -488,11 +488,8 @@ class font_patcher:
             font.fullname = font.persistent["fullname"]
         if isinstance(font.persistent["familyname"], str):
             font.familyname = font.persistent["familyname"]
-        verboseAdditionalFontNameSuffix = " " + projectNameSingular
-        if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
-            additionalFontNameSuffix = " " + projectNameAbbreviation
-        else:
-            additionalFontNameSuffix = verboseAdditionalFontNameSuffix
+        verboseAdditionalFontNameSuffix = ""
+        additionalFontNameSuffix = ""
         if not self.args.complete:
             # NOTE not all symbol fonts have appended their suffix here
             if self.args.fontawesome:
@@ -525,13 +522,20 @@ class font_patcher:
 
         # if all source glyphs included simplify the name
         else:
-            additionalFontNameSuffix = " " + projectNameSingular + " Complete"
-            verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
+            additionalFontNameSuffix = " Complete"
+            verboseAdditionalFontNameSuffix = " Complete"
 
-        # add mono signifier to end of name
+        # add mono signifier to beginning of name suffix
         if self.args.single:
-            additionalFontNameSuffix += " M"
-            verboseAdditionalFontNameSuffix += " Mono"
+            additionalFontNameSuffix = " M" + additionalFontNameSuffix
+            verboseAdditionalFontNameSuffix = " Mono" + verboseAdditionalFontNameSuffix
+
+        # add 'Nerd Font' to beginning of name suffix
+        verboseAdditionalFontNameSuffix = " " + projectNameSingular + verboseAdditionalFontNameSuffix
+        if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
+            additionalFontNameSuffix = " " + projectNameAbbreviation + additionalFontNameSuffix
+        else:
+            additionalFontNameSuffix = " " + projectNameSingular + additionalFontNameSuffix
 
         if FontnameParserOK and self.args.makegroups:
             use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse

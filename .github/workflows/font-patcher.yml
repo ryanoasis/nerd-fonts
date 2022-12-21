@@ -111,7 +111,7 @@ jobs:
 
       - name: Check if patched font generated
         run: |
-          [ -e "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete Mono.ttf" ] && echo "File exists" || exit 1
+          [ -e "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Mono Complete.ttf" ] && echo "File exists" || exit 1
 
       - name: Patcher OTF, Bold variant, and RFN compliance
         run: |
