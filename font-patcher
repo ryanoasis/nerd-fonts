@@ -629,7 +629,11 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
             fam_suffix = projectNameSingular if not self.args.windows else projectNameAbbreviation
-            fam_suffix += ' Mono' if self.args.single else ''
+            if self.args.single:
+                if self.args.windows:
+                    fam_suffix += 'M'
+                else:
+                    fam_suffix += ' Mono'
             n.inject_suffix(verboseAdditionalFontNameSuffix, additionalFontNameSuffix, fam_suffix)
             n.rename_font(font)
 
