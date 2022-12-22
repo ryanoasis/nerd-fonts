@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.2.1"
+script_version = "3.2.2"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -322,7 +322,9 @@ class font_patcher:
                 if not sourceFont.layers[l].is_background:
                     layer = l
                     break
-            outfile = os.path.normpath(os.path.join(self.args.outputdir, sourceFont.familyname + ".ttc"))
+            outfile = os.path.normpath(os.path.join(
+                sanitize_filename(self.args.outputdir, True),
+                sanitize_filename(sourceFont.familyname) + ".ttc"))
             # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
             sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=(str('opentype'), str('PfEd-comments')), layer=layer)
             message = "\nGenerated: {} fonts in '{}'".format(len(sourceFonts), outfile)
@@ -330,7 +332,9 @@ class font_patcher:
             fontname = sourceFont.fullname
             if not fontname:
                 fontname = sourceFont.cidfontname
-            outfile = os.path.normpath(os.path.join(self.args.outputdir, fontname + self.args.extension))
+            outfile = os.path.normpath(os.path.join(
+                sanitize_filename(self.args.outputdir, True),
+                sanitize_filename(fontname) + self.args.extension))
             # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
             bitmaps = str()
             if len(self.sourceFont.bitmapSizes):
@@ -1208,6 +1212,20 @@ def make_sure_path_exists(path):
     except OSError as exception:
         if exception.errno != errno.EEXIST:
             raise
+
+def sanitize_filename(filename, allow_dirs = False):
+    """ Enforces to not use forbitten characters in a filename/path. """
+    if filename == '.' and not allow_dirs:
+        return '_'
+    trans = filename.maketrans('<>:"|?*', '_______')
+    for i in range(0x00, 0x20):
+        trans[i] = ord('_')
+    if not allow_dirs:
+        trans[ord('/')] = ord('_')
+        trans[ord('\\')] = ord('_')
+    else:
+        trans[ord('\\')] = ord('/') # We use posix paths
+    return filename.translate(trans)
 
 def get_multiglyph_boundingBox(glyphs, destGlyph = None):
     """ Returns dict of the dimensions of multiple glyphs combined(, as if they are copied into destGlyph) """
