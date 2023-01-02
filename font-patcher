@@ -1086,7 +1086,8 @@ class font_patcher:
             # Handle glyph l/r/c alignment
             x_align_distance = 0
             if self.args.nonmono:
-                pass
+                # Remove left side bearing
+                x_align_distance = -self.sourceFont[currentSourceFontGlyph].left_side_bearing
             elif sym_attr['align']:
                 # First find the baseline x-alignment (left alignment amount)
                 x_align_distance = self.font_dim['xmin'] - sym_dim['xmin']
@@ -1101,7 +1102,8 @@ class font_patcher:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
-                if sym_attr['align'] == 'r':
+                if sym_attr['align'] == 'r' and not self.args.nonmono:
+                    # Nonmono is 'left aligned' per definition, translation does not help here
                     x_align_distance += overlap_width
 
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
@@ -1117,15 +1119,20 @@ class font_patcher:
             # same width for all character glyphs. This needs to be done for all glyphs,
             # even the ones that are empty and didn't go through the scaling operations.
             # It should come after setting the glyph bearings
-            self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
-
-            # Target font with variable advance width get the icons with their native advance
-            # or at least width
-            if self.args.nonmono:
-                if sym_dim['advance']:
-                    self.sourceFont[currentSourceFontGlyph].width = int(sym_dim['advance'])
-                else:
-                    self.sourceFont[currentSourceFontGlyph].width = int(sym_dim['width'])
+            if not self.args.nonmono:
+                self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
+            else:
+                # Target font with variable advance width get the icons with their native widths
+                # and keeping possible (negative) bearings in effect
+                width = sym_dim['width']
+                # If we have overlap we need to subtract that to keep/get negative bearings
+                if overlap and (sym_attr['align'] == 'l' or sym_attr['align'] == 'r'):
+                    width -= overlap_width
+                # Fontforge handles the width change like this:
+                # - Keep existing left_side_bearing
+                # - Set width
+                # - Calculate and set new right_side_bearing
+                self.sourceFont[currentSourceFontGlyph].width = int(width)
 
             # Check if the inserted glyph is scaled correctly for monospace
             if self.args.single:
