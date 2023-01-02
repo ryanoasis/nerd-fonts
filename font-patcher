@@ -1001,7 +1001,7 @@ class font_patcher:
                     self.sourceFont[currentSourceFontGlyph].removePosSub("*")
 
             # This will destroy any content currently in currentSourceFontGlyph, so do it first
-            scale_glyph_data = self.get_glyph_scale(sym_glyph.encoding, scaleGlyph, symbolFont, currentSourceFontGlyph) if scaleGlyph else None
+            scale_glyph_data = self.get_glyph_scale(sym_glyph.encoding, scaleGlyph, symbolFont, currentSourceFontGlyph) if scaleGlyph is not None else None
 
             # Select and copy symbol from its encoding point
             # We need to do this select after the careful check, this way we don't
@@ -1027,18 +1027,22 @@ class font_patcher:
                 # find the largest possible scaling factor that will allow the glyph
                 # to fit in both the x and y directions
                 if sym_attr['stretch'] == 'pa':
-                    scale_ratio_x = False
+                    scale_ratio_x = None
                     if scale_glyph_data:
                         # We want to preserve the relative size of each glyph in a glyph group
                         scale_ratio_x = scale_glyph_data[0]
-                    if scale_ratio_x is False:
+                    if scale_ratio_x is None:
                         # In the remaining cases, each glyph is sized independently to each other
                         scale_ratio_x = self.get_scale_factor(sym_dim)
                     scale_ratio_y = scale_ratio_x
                 else:
                     if 'x' in sym_attr['stretch']:
                         # Stretch the glyph horizontally to fit the entire available width
-                        scale_ratio_x = self.font_dim['width'] / sym_dim['width']
+                        scale_ratio_x = None
+                        if scale_glyph_data is not None and scale_glyph_data[1] is not None:
+                            scale_ratio_x = self.font_dim['width'] / scale_glyph_data[1]['width']
+                        if scale_ratio_x is None:
+                            scale_ratio_x = self.font_dim['width'] / sym_dim['width']
             # end if single width
 
             # non-monospace (double width glyphs)
@@ -1049,7 +1053,11 @@ class font_patcher:
             if 'y' in sym_attr['stretch']:
                 # Stretch the glyph vertically to total line height (good for powerline separators)
                 # Currently stretching vertically for both monospace and double-width
-                scale_ratio_y = self.font_dim['height'] / sym_dim['height']
+                scale_ratio_y = None
+                if scale_glyph_data is not None and scale_glyph_data[1] is not None:
+                    scale_ratio_y = self.font_dim['height'] / scale_glyph_data[1]['height']
+                if scale_ratio_y is None:
+                    scale_ratio_y = self.font_dim['height'] / sym_dim['height']
 
             overlap = sym_attr['params'].get('overlap')
 
@@ -1063,13 +1071,13 @@ class font_patcher:
             # Use the dimensions from the newly pasted and stretched glyph to avoid any rounding errors
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
             # Use combined bounding box?
-            if scale_glyph_data and scale_glyph_data[1]:
+            if scale_glyph_data is not None and scale_glyph_data[1] is not None:
                 if scale_ratio_x != 1 or scale_ratio_y != 1:
                     # Simulate scaling on combined bounding box
                     scaleglyph_dim = scale_bounding_box(scale_glyph_data[1], scale_ratio_x, scale_ratio_y)
                 else:
                     scaleglyph_dim = scale_glyph_data[1]
-                if not scaleglyph_dim['advance']:
+                if scaleglyph_dim['advance'] is None:
                     # On monospaced symbol collections use their advance with, otherwise align horizontally individually
                     scaleglyph_dim['xmin'] = sym_dim['xmin']
                     scaleglyph_dim['xmax'] = sym_dim['xmax']
@@ -1250,7 +1258,7 @@ class font_patcher:
         for glyph_list, scale, box in zip(scaleGlyph['GlyphsToScale'], scaleGlyph['scales'], scaleGlyph['bbdims']):
             if symbol_unicode in glyph_list:
                 return (scale, box)
-        return False
+        return None
 
 
 def replace_font_name(font_name, replacement_dict):
