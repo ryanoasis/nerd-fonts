@@ -1316,11 +1316,14 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
         bbox[2] = gbb[2] if bbox[2] is None or bbox[2] < gbb[2] else bbox[2]
         bbox[3] = gbb[3] if bbox[3] is None or bbox[3] < gbb[3] else bbox[3]
         if not bbox[4]:
-            bbox[4] = gadvance
+            bbox[4] = -gadvance # Negative for one/first glyph
         else:
-            if bbox[4] != gadvance:
+            if abs(bbox[4]) != gadvance:
                 bbox[4] = -1 # Marker for not-monospaced
+            else:
+                bbox[4] = gadvance # Positive for 2 or more glyphs
     if bbox[4] and bbox[4] < 0:
+        # Not monospaced when only one glyph is used or multiple glyphs with different advance widths
         bbox[4] = None
     return {
         'xmin'   : bbox[0],
