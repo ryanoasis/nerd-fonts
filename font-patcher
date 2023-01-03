@@ -1346,7 +1346,7 @@ def scale_bounding_box(bbox, scale_x, scale_y):
         'ymin'   : int(bbox['ymin'] * scale_y),
         'xmax'   : int(bbox['xmax'] * scale_x),
         'ymax'   : int(bbox['ymax'] * scale_y),
-        'advance': int(bbox['advance'] * scale_y) if bbox['advance'] else None,
+        'advance': int(bbox['advance'] * scale_x) if bbox['advance'] else None,
         }
     new_dim['width'] = new_dim['xmax'] + (-new_dim['xmin'])
     new_dim['height'] = new_dim['ymax'] + (-new_dim['ymin'])
