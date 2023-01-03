@@ -1072,11 +1072,7 @@ class font_patcher:
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
             # Use combined bounding box?
             if scale_glyph_data is not None and scale_glyph_data[1] is not None:
-                if scale_ratio_x != 1 or scale_ratio_y != 1:
-                    # Simulate scaling on combined bounding box
-                    scaleglyph_dim = scale_bounding_box(scale_glyph_data[1], scale_ratio_x, scale_ratio_y)
-                else:
-                    scaleglyph_dim = scale_glyph_data[1]
+                scaleglyph_dim = scale_bounding_box(scale_glyph_data[1], scale_ratio_x, scale_ratio_y)
                 if scaleglyph_dim['advance'] is None:
                     # On monospaced symbol collections use their advance with, otherwise align horizontally individually
                     scaleglyph_dim['xmin'] = sym_dim['xmin']
@@ -1341,12 +1337,13 @@ def get_glyph_dimensions(glyph):
 
 def scale_bounding_box(bbox, scale_x, scale_y):
     """ Return a scaled version of a glyph dimensions dict """
+    # Simulate scaling on combined bounding box, round values for better simulation
     new_dim = {
         'xmin'   : int(bbox['xmin'] * scale_x),
         'ymin'   : int(bbox['ymin'] * scale_y),
         'xmax'   : int(bbox['xmax'] * scale_x),
         'ymax'   : int(bbox['ymax'] * scale_y),
-        'advance': int(bbox['advance'] * scale_x) if bbox['advance'] else None,
+        'advance': int(bbox['advance'] * scale_x) if bbox['advance'] is not None else None,
         }
     new_dim['width'] = new_dim['xmax'] + (-new_dim['xmin'])
     new_dim['height'] = new_dim['ymax'] + (-new_dim['ymin'])
