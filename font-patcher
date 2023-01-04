@@ -1089,8 +1089,9 @@ class font_patcher:
 
             # Handle glyph l/r/c alignment
             x_align_distance = 0
-            if self.args.nonmono:
+            if self.args.nonmono and sym_dim['advance'] is None:
                 # Remove left side bearing
+                # (i.e. do not remove left side bearing when combined BB is in use)
                 x_align_distance = -self.sourceFont[currentSourceFontGlyph].left_side_bearing
             elif sym_attr['align']:
                 # First find the baseline x-alignment (left alignment amount)
@@ -1127,8 +1128,12 @@ class font_patcher:
                 self.set_glyph_width_mono(self.sourceFont[currentSourceFontGlyph])
             else:
                 # Target font with variable advance width get the icons with their native widths
-                # and keeping possible (negative) bearings in effect
-                width = sym_dim['width']
+                # and keeping possible (right and/or negative) bearings in effect
+                if sym_dim['advance'] is not None:
+                    # 'Width' from monospaced scale group
+                    width = sym_dim['advance']
+                else:
+                    width = sym_dim['width']
                 # If we have overlap we need to subtract that to keep/get negative bearings
                 if overlap and (sym_attr['align'] == 'l' or sym_attr['align'] == 'r'):
                     width -= overlap_width
