@@ -315,6 +315,11 @@ class font_patcher:
 
     def generate(self, sourceFonts):
         sourceFont = sourceFonts[0]
+        # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
+        if int(fontforge.version()) >= 20201107:
+            gen_flags = (str('opentype'), str('PfEd-comments'), str('no-FFTM-table'))
+        else:
+            gen_flags = (str('opentype'), str('PfEd-comments'))
         if len(sourceFonts) > 1:
             layer = None
             # use first non-background layer
@@ -325,8 +330,7 @@ class font_patcher:
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(sourceFont.familyname) + ".ttc"))
-            # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
-            sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=(str('opentype'), str('PfEd-comments')), layer=layer)
+            sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=gen_flags, layer=layer)
             message = "\nGenerated: {} fonts in '{}'".format(len(sourceFonts), outfile)
         else:
             fontname = sourceFont.fullname
@@ -335,12 +339,11 @@ class font_patcher:
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(fontname) + self.args.extension))
-            # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
             bitmaps = str()
             if len(self.sourceFont.bitmapSizes):
                 print("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
                 bitmaps = str('otf') # otf/ttf, both is bf_ttf
-            sourceFont.generate(outfile, bitmap_type=bitmaps, flags=(str('opentype'), str('PfEd-comments')))
+            sourceFont.generate(outfile, bitmap_type=bitmaps, flags=gen_flags)
             message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
 
         # Adjust flags that can not be changed via fontforge

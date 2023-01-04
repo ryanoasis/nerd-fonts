@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.0-RC
-# Script Version: 1.1.1
+# Script Version: 1.2.0
 
 # used for debugging
 # set -x
@@ -60,7 +60,6 @@ while getopts ":h-:" option; do
           info_only=$2
           echo "${LINE_PREFIX} 'Info Only' option given, only generating font info (not patching)"
           ;;
-          ;;
         *)
           echo >&2 "Option '${OPTARG}' unknown"
           exit 1;;
@@ -99,6 +98,17 @@ done < <(find "$source_fonts_dir" -iregex ${like_pattern} -type f -print0)
 
 # print total number of source fonts found
 echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
+
+# Use one date-time for ALL fonts and for creation and modification date in the font file
+if [ -z "${SOURCE_DATE_EPOCH}" ]
+then
+  export SOURCE_DATE_EPOCH=$(date +%s)
+fi
+release_timestamp=$(date -R --date=@${SOURCE_DATE_EPOCH} 2>/dev/null) || {
+  echo >&2 "$LINE_PREFIX Invalid release timestamp SOURCE_DATE_EPOCH: ${SOURCE_DATE_EPOCH}"
+  exit 2
+}
+echo "$LINE_PREFIX Release timestamp is ${release_timestamp}"
 
 function patch_font {
   local f=$1; shift
