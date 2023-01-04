@@ -5,22 +5,6 @@
 # used for debugging
 # set -x
 
-# The optional first argument to this script is a filter for the fonts to patch.
-# The filter is a regex (glob "*" is expressed as "[^/]*", see `man 7 glob`)
-# All font files that start with that filter (and are ttf, otf, or sfd files) will
-# be processed only.
-#   Example ./gotta-patch-em-all-font-patcher\!.sh "iosevka"
-#   Process all font files that start with "iosevka"
-# If the argument starts with a '/' all font files in a directory that matches
-# the filter are processed only.
-#   Example ./gotta-patch-em-all-font-patcher\!.sh "/iosevka"
-#   Process all font files that are in directory "iosevka"
-
-# for executing script to rebuild JUST the readmes:
-# ./gotta-patch-em-all-font-patcher\!.sh "" info
-# to test this script with a single font (pattern):
-# ./gotta-patch-em-all-font-patcher\!.sh "iosevka" info
-
 LINE_PREFIX="# [Nerd Fonts] "
 
 # Check for Fontforge
@@ -50,23 +34,60 @@ unpatched_parent_dir="bin/scripts/../../src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 max_parallel_process=64
 
-if [ $# -eq 1 ] || [ "$1" != "" ]
+while getopts ":h-:" option; do
+  case "${option}" in
+    h)
+      echo "Usage: $0 [OPTION] [FILTER]"
+      echo
+      echo "    OPTION:"
+      echo "        --info              Rebuild JUST the readmes"
+      echo
+      echo "    FILTER:"
+      echo "        The filter argument to this script is a filter for the fonts to patch."
+      echo "        The filter is a regex (glob "*" is expressed as "[^/]*", see \`man 7 glob\`)"
+      echo "        All font files that start with that filter (and are ttf, otf, or sfd files) will"
+      echo "        be processed only."
+      echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"iosevka\""
+      echo "          Process all font files that start with \"iosevka\""
+      echo "        If the argument starts with a '/' all font files in a directory that matches"
+      echo "        the filter are processed only."
+      echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"/iosevka\""
+      echo "          Process all font files that are in directory \"iosevka\""
+      exit 0;;
+    -)
+      case "${OPTARG}" in
+        info)
+          info_only=$2
+          echo "${LINE_PREFIX} 'Info Only' option given, only generating font info (not patching)"
+          ;;
+          ;;
+        *)
+          echo >&2 "Option '${OPTARG}' unknown"
+          exit 1;;
+      esac;;
+    *)
+      echo >&2 "Option '${OPTARG}' unknown"
+      exit 1;;
+  esac
+done
+shift $((${OPTIND}-1))
+
+if [ $# -gt 1 ]
+then
+  echo >&2 "Unknown parameter(s): $2.."
+  exit 1
+fi
+
+if [ $# -eq 1 ]
 then
   if [[ "${1:0:1}" == "/" ]]
   then
     like_pattern=".*$1/.*\.\(otf\|ttf\|sfd\)"
-    echo "$LINE_PREFIX Parameter given, limiting search and patch to pathname pattern '$1' given"
+    echo "$LINE_PREFIX Filter given, limiting search and patch to pathname pattern '$1'"
   else
     like_pattern=".*/$1[^/]*\.\(otf\|ttf\|sfd\)"
-    echo "$LINE_PREFIX Parameter given, limiting search and patch to filename pattern '$1' given"
+    echo "$LINE_PREFIX Filter given, limiting search and patch to filename pattern '$1'"
   fi
-fi
-
-# simple second param option to allow to regenerate font info without re-patching
-if [ $# -eq 2 ]
-  then
-    info_only=$2
-    echo "$LINE_PREFIX 'Info Only' Parameter given, only generating font info (not patching)"
 fi
 
 # correct way to output find results into an array (when files have space chars, etc)
@@ -139,7 +160,7 @@ function patch_font {
 
   cd "$parent_dir" || {
     echo >&2 "# Could not find project parent directory"
-    exit 1
+    exit 3
   }
   # Use absolute path to allow fontforge being an AppImage (used in CI)
   PWD=`pwd`
@@ -361,5 +382,5 @@ printf "# The total number of patched fonts created was \\t\\t'%s'\\n" "$total_c
 
 if [ "$total_count" -lt 1 ]; then
   # Probably unwanted... alert user
-  exit 1
+  exit 10
 fi
