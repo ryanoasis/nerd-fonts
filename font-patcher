@@ -665,16 +665,16 @@ class font_patcher:
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Arrow tips
-            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
 
             # Rounded arcs
-            0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
+            0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.59}},
+            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.5}},
+            0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.59}},
+            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.5}},
 
             # Bottom Triangles
             0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
@@ -1100,6 +1100,17 @@ class font_patcher:
                 if overlap:
                     scale_ratio_x *= 1 + overlap
                     scale_ratio_y *= 1 + overlap
+                # Size in x to size in y ratio limit (to prevent over-wide glyphs)
+                xy_ratio_max = sym_attr['params'].get('xy-ratio')
+                if (xy_ratio_max):
+                    if glyph_scale_data is not None and glyph_scale_data[1] is not None:
+                        dim = glyph_scale_data[1]
+                    else:
+                        dim = sym_dim
+                    xy_ratio = dim['width'] * scale_ratio_x / (dim['height'] * scale_ratio_y)
+                    if xy_ratio > xy_ratio_max:
+                        scale_ratio_x = scale_ratio_x * xy_ratio_max / xy_ratio
+
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
             # We pasted and scaled now we want to align/move
