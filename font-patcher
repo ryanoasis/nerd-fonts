@@ -945,7 +945,7 @@ class font_patcher:
         symbolFontSelection = [ x for x in symbolFont.selection.byGlyphs if x.unicode >= 0 ]
         glyphSetLength = len(symbolFontSelection)
 
-        if self.args.quiet is False:
+        if not self.args.quiet:
             sys.stdout.write("Adding " + str(max(1, glyphSetLength)) + " Glyphs from " + setName + " Set \n")
 
         currentSourceFontGlyph = -1 # initialize for the exactEncoding case
@@ -978,7 +978,7 @@ class font_patcher:
                 currentSourceFontGlyph = sourceFontStart + sourceFontCounter
                 sourceFontCounter += 1
 
-            if self.args.quiet is False:
+            if not self.args.quiet:
                 if self.args.progressbars:
                     update_progress(round(float(index + 1) / glyphSetLength, 2))
                 else:
@@ -989,7 +989,7 @@ class font_patcher:
             # check if a glyph already exists in this location
             if careful or 'careful' in sym_attr['params'] or currentSourceFontGlyph in self.essential:
                 if currentSourceFontGlyph in self.sourceFont:
-                    if self.args.quiet is False:
+                    if not self.args.quiet:
                         careful_type = 'essential' if currentSourceFontGlyph in self.essential else 'existing'
                         print("  Found {} Glyph at {:X}. Skipping...".format(careful_type, currentSourceFontGlyph))
                     # We don't want to touch anything so move to next Glyph
@@ -1152,7 +1152,7 @@ class font_patcher:
 
         # end for
 
-        if self.args.quiet is False or self.args.progressbars:
+        if not self.args.quiet or self.args.progressbars:
             sys.stdout.write("\n")
 
 
@@ -1470,7 +1470,7 @@ def setup_arguments():
             for alias in sym_font_arg_aliases:
                 if alias in sys.argv:
                     found = True
-            if found is not True:
+            if not found:
                 font_complete = False
         args.complete = font_complete
 
