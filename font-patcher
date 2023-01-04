@@ -1226,6 +1226,17 @@ class font_patcher:
         if 'scales' in scaleRules:
             # Already prepared... must not happen, ignore call
             return
+
+        scaleRules['scales'] = []
+        scaleRules['bbdims'] = []
+        if 'ScaleGroups' not in scaleRules:
+            scaleRules['ScaleGroups'] = []
+        for group in scaleRules['ScaleGroups']:
+            sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
+            scale = self.get_scale_factor(sym_dim)
+            scaleRules['scales'].append(scale)
+            scaleRules['bbdims'].append(sym_dim)
+
         if 'ScaleGlyph' in scaleRules:
             # old method. Rewrite to new.
             flat_list = []
@@ -1234,20 +1245,11 @@ class font_patcher:
                     flat_list += list(range(i[0], i[1] + 1))
                 else:
                     flat_list.append(i)
-            scaleRules['ScaleGroups'] = [ flat_list ]
             sym_dim = get_glyph_dimensions(symbolFont[scaleRules['ScaleGlyph']])
             scale = self.get_scale_factor(sym_dim)
-            scaleRules['scales'] = [ scale ]
-            # The 'old' style keeps just the scale, not the positioning
-            scaleRules['bbdims'] = [ None ]
-        else:
-            scaleRules['scales'] = []
-            scaleRules['bbdims'] = []
-            for group in scaleRules['ScaleGroups']:
-                sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
-                scale = self.get_scale_factor(sym_dim)
-                scaleRules['scales'].append(scale)
-                scaleRules['bbdims'].append(sym_dim)
+            scaleRules['ScaleGroups'].append(flat_list)
+            scaleRules['scales'].append(scale)
+            scaleRules['bbdims'].append(None) # The 'old' style keeps just the scale, not the positioning
 
     def get_glyph_scale(self, symbol_unicode, scaleRules, symbolFont, dest_unicode):
         """ Determines whether or not to use scaled glyphs for glyph in passed symbol_unicode """
