@@ -38,7 +38,7 @@ res1=$(date +%s)
 parent_dir="${sd}/../../"
 # Set source and target directories
 source_fonts_dir="${sd}/../../src/unpatched-fonts"
-like_pattern=''
+like_pattern='.*\.\(otf\|ttf\|sfd\)'
 complete_variations_per_family=4
 font_typefaces_count=0
 font_families_count=0
