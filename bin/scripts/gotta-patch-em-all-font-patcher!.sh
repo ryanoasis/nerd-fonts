@@ -33,7 +33,7 @@ last_parent_dir=""
 unpatched_parent_dir="bin/scripts/../../src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 timestamp_parent_dir=${patched_parent_dir}
-max_parallel_process=64
+max_parallel_process=8
 
 function activate_keeptime {
   type ttfdump >/dev/null 2>&1 || {
@@ -61,6 +61,7 @@ function show_help {
   echo "                            font in patched-fonts/ directory"
   echo "        -v, --verbose       Show more information when running"
   echo "        -i, --info          Rebuild JUST the readmes"
+  echo "        -j, --jobs          Run up to 8 patch processes in parallel"
   echo "        -h, --help          Show this help"
   echo
   echo "    FILTER:"
@@ -76,7 +77,7 @@ function show_help {
   echo "          Process all font files that are in directory \"iosevka\""
 }
 
-while getopts ":chitv-:" option; do
+while getopts ":chijtv-:" option; do
   case "${option}" in
     c)
       activate_checkfont
@@ -86,6 +87,9 @@ while getopts ":chitv-:" option; do
       exit 0;;
     i)
       activate_info
+      ;;
+    j)
+      parallel=TRUE
       ;;
     t)
       activate_keeptime
@@ -100,6 +104,9 @@ while getopts ":chitv-:" option; do
           ;;
         info)
           activate_info
+          ;;
+        jobs)
+          parallel=TRUE
           ;;
         keeptime)
           activate_keeptime
@@ -412,7 +419,12 @@ then
       fi
     fi
     echo "$LINE_PREFIX Processing font $((i+1))/${#source_fonts[@]}"
-    patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null
+    if [ -n "${parallel}" ]
+    then
+      patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null &
+    else
+      patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null
+    fi
 
 
     # un-comment to test this script (patch 1 font)
@@ -424,7 +436,7 @@ then
     # however we want to run a certain number in parallel to decrease
     # the amount of time patching all the fonts will take
     # for now set a 'wait' for each X set of processes:
-    if [[ $((i % max_parallel_process)) == 0 ]];
+    if [[ $(((i + 1) % max_parallel_process)) == 0 ]];
     then
       echo "$LINE_PREFIX Complete Variation Count after max parallel process is  $complete_variation_count"
       wait
