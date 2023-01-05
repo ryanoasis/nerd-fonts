@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.3.0"
+script_version = "3.3.1"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -331,7 +331,7 @@ class font_patcher:
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(sourceFont.familyname) + ".ttc"))
             sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=gen_flags, layer=layer)
-            message = "\nGenerated: {} fonts in '{}'".format(len(sourceFonts), outfile)
+            message = "   Generated {} fonts\n   \===> '{}'".format(len(sourceFonts), outfile)
         else:
             fontname = sourceFont.fullname
             if not fontname:
@@ -341,36 +341,41 @@ class font_patcher:
                 sanitize_filename(fontname) + self.args.extension))
             bitmaps = str()
             if len(self.sourceFont.bitmapSizes):
-                print("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
+                if not self.args.quiet:
+                    print("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
                 bitmaps = str('otf') # otf/ttf, both is bf_ttf
             sourceFont.generate(outfile, bitmap_type=bitmaps, flags=gen_flags)
-            message = "\nGenerated: {} in '{}'".format(self.sourceFont.fullname, outfile)
+            message = "   {}\n   \===> '{}'".format(self.sourceFont.fullname, outfile)
 
         # Adjust flags that can not be changed via fontforge
-        try:
-            source_font = TableHEADWriter(self.args.font)
-            dest_font = TableHEADWriter(outfile)
-            for idx in range(source_font.num_fonts):
-                print("{}: Tweaking {}/{}".format(projectName, idx + 1, source_font.num_fonts))
-                source_font.find_head_table(idx)
-                dest_font.find_head_table(idx)
-                if source_font.flags & 0x08 == 0 and dest_font.flags & 0x08 != 0:
-                    print("Changing flags from 0x{:X} to 0x{:X}".format(dest_font.flags, dest_font.flags & ~0x08))
-                    dest_font.putshort(dest_font.flags & ~0x08, 'flags') # clear 'ppem_to_int'
-                if source_font.lowppem != dest_font.lowppem:
-                    print("Changing lowestRecPPEM from {} to {}".format(dest_font.lowppem, source_font.lowppem))
-                    dest_font.putshort(source_font.lowppem, 'lowestRecPPEM')
-                if dest_font.modified:
-                    dest_font.reset_table_checksum()
-                    dest_font.reset_full_checksum()
-        except Exception as error:
-            print("Can not handle font flags ({})".format(repr(error)))
-        finally:
+        if re.search('\\.[ot]tf$', self.args.font, re.IGNORECASE) and re.search('\\.[ot]tf$', outfile, re.IGNORECASE):
             try:
-                source_font.close()
-                dest_font.close()
-            except:
-                pass
+                source_font = TableHEADWriter(self.args.font)
+                dest_font = TableHEADWriter(outfile)
+                for idx in range(source_font.num_fonts):
+                    if not self.args.quiet:
+                        print("{}: Tweaking {}/{}".format(projectName, idx + 1, source_font.num_fonts))
+                    source_font.find_head_table(idx)
+                    dest_font.find_head_table(idx)
+                    if source_font.flags & 0x08 == 0 and dest_font.flags & 0x08 != 0:
+                        if not self.args.quiet:
+                            print("Changing flags from 0x{:X} to 0x{:X}".format(dest_font.flags, dest_font.flags & ~0x08))
+                        dest_font.putshort(dest_font.flags & ~0x08, 'flags') # clear 'ppem_to_int'
+                    if source_font.lowppem != dest_font.lowppem:
+                        if not self.args.quiet:
+                            print("Changing lowestRecPPEM from {} to {}".format(dest_font.lowppem, source_font.lowppem))
+                        dest_font.putshort(source_font.lowppem, 'lowestRecPPEM')
+                    if dest_font.modified:
+                        dest_font.reset_table_checksum()
+                        dest_font.reset_full_checksum()
+            except Exception as error:
+                print("Can not handle font flags ({})".format(repr(error)))
+            finally:
+                try:
+                    source_font.close()
+                    dest_font.close()
+                except:
+                    pass
         print(message)
 
         if self.args.postprocess:
@@ -641,8 +646,6 @@ class font_patcher:
                         print("Failed to remove subtable:", subtable)
         elif self.args.removeligatures:
             print("Unable to read configfile, unable to remove ligatures")
-        else:
-            print("No configfile given, skipping configfile related actions")
 
 
     def assert_monospace(self):
@@ -1564,7 +1567,8 @@ def main():
     sourceFonts = []
     all_fonts = fontforge.fontsInFile(args.font)
     for i, subfont in enumerate(all_fonts):
-        print("\n{}: Processing {} ({}/{})".format(projectName, subfont, i + 1, len(all_fonts)))
+        if len(all_fonts) > 1:
+          print("\n{}: Processing {} ({}/{})".format(projectName, subfont, i + 1, len(all_fonts)))
         try:
             sourceFonts.append(fontforge.open("{}({})".format(args.font, subfont), 1)) # 1 = ("fstypepermitted",))
         except Exception:
@@ -1573,7 +1577,7 @@ def main():
 
         patcher.patch(sourceFonts[-1])
 
-    print("\nDone with Patch Sets, generating font...\n")
+    print("Done with Patch Sets, generating font...")
     for f in sourceFonts:
         patcher.setup_font_names(f)
     patcher.generate(sourceFonts)

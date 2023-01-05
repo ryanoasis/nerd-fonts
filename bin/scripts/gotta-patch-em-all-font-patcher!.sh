@@ -59,6 +59,7 @@ function show_help {
   echo "        -c, --checkfont     Create the font(s) in check-fonts/ instead"
   echo "        -t, --keeptime      Try to preserve timestamp of previously patched"
   echo "                            font in patched-fonts/ directory"
+  echo "        -v, --verbose       Show more information when running"
   echo "        -i, --info          Rebuild JUST the readmes"
   echo "        -h, --help          Show this help"
   echo
@@ -75,7 +76,7 @@ function show_help {
   echo "          Process all font files that are in directory \"iosevka\""
 }
 
-while getopts ":chit-:" option; do
+while getopts ":chitv-:" option; do
   case "${option}" in
     c)
       activate_checkfont
@@ -89,16 +90,22 @@ while getopts ":chit-:" option; do
     t)
       activate_keeptime
       ;;
+    v)
+      verbose=TRUE
+      ;;
     -)
       case "${OPTARG}" in
+        checkfont)
+          activate_checkfont
+          ;;
         info)
           activate_info
           ;;
         keeptime)
           activate_keeptime
           ;;
-        checkfont)
-          activate_checkfont
+        verbose)
+          verbose=TRUE
           ;;
         *)
           echo >&2 "Option '--${OPTARG}' unknown"
@@ -179,7 +186,10 @@ function patch_font {
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
   if [ -n ${purge} -a -d "${patched_font_dir}complete" ]
   then
-    echo "Purging patched font dir ${patched_font_dir}complete"
+    if [ -n "${verbose}" ]
+    then
+      echo "Purging patched font dir ${patched_font_dir}complete"
+    fi
     rm ${patched_font_dir}complete/*
   fi
 
@@ -231,11 +241,17 @@ function patch_font {
   }
   # Use absolute path to allow fontforge being an AppImage (used in CI)
   PWD=`pwd`
-  echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  if [ -n "${verbose}" ]
+  then
+    echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  fi
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars \
                     --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
-  echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  if [ -n "${verbose}" ]
+  then
+    echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  fi
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars \
                     --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
@@ -395,6 +411,7 @@ then
         purge_destination="TRUE"
       fi
     fi
+    echo "$LINE_PREFIX Processing font $((i+1))/${#source_fonts[@]}"
     patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null
 
 
