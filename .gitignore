@@ -1,6 +1,7 @@
 temp-glyph-source-fonts/*
 temp/*
 patched-fonts/Input*
+check-fonts/*
 unpatched-sample-fonts/Input*
 casks/*
 archives/*

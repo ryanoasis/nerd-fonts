@@ -32,40 +32,80 @@ total_count=0
 last_parent_dir=""
 unpatched_parent_dir="bin/scripts/../../src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
+timestamp_parent_dir=${patched_parent_dir}
 max_parallel_process=64
 
-while getopts ":h-:" option; do
+function activate_keeptime {
+  type ttfdump >/dev/null 2>&1 || {
+    echo >&2 "$LINE_PREFIX ttfdump must be installed for option --keeptime"
+    exit 1
+  }
+  keeptime=TRUE
+}
+
+function activate_checkfont {
+  patched_parent_dir="check-fonts"
+}
+
+function activate_info {
+  info_only=$2
+  echo "${LINE_PREFIX} 'Info Only' option given, only generating font info (not patching)"
+}
+
+function show_help {
+  echo "Usage: $0 [OPTION] [FILTER]"
+  echo
+  echo "    OPTION:"
+  echo "        -c, --checkfont     Create the font(s) in check-fonts/ instead"
+  echo "        -t, --keeptime      Try to preserve timestamp of previously patched"
+  echo "                            font in patched-fonts/ directory"
+  echo "        -i, --info          Rebuild JUST the readmes"
+  echo "        -h, --help          Show this help"
+  echo
+  echo "    FILTER:"
+  echo "        The filter argument to this script is a filter for the fonts to patch."
+  echo "        The filter is a regex (glob "*" is expressed as "[^/]*", see \`man 7 glob\`)"
+  echo "        All font files that start with that filter (and are ttf, otf, or sfd files) will"
+  echo "        be processed only."
+  echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"iosevka\""
+  echo "          Process all font files that start with \"iosevka\""
+  echo "        If the argument starts with a '/' all font files in a directory that matches"
+  echo "        the filter are processed only."
+  echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"/iosevka\""
+  echo "          Process all font files that are in directory \"iosevka\""
+}
+
+while getopts ":chit-:" option; do
   case "${option}" in
+    c)
+      activate_checkfont
+      ;;
     h)
-      echo "Usage: $0 [OPTION] [FILTER]"
-      echo
-      echo "    OPTION:"
-      echo "        --info              Rebuild JUST the readmes"
-      echo
-      echo "    FILTER:"
-      echo "        The filter argument to this script is a filter for the fonts to patch."
-      echo "        The filter is a regex (glob "*" is expressed as "[^/]*", see \`man 7 glob\`)"
-      echo "        All font files that start with that filter (and are ttf, otf, or sfd files) will"
-      echo "        be processed only."
-      echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"iosevka\""
-      echo "          Process all font files that start with \"iosevka\""
-      echo "        If the argument starts with a '/' all font files in a directory that matches"
-      echo "        the filter are processed only."
-      echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"/iosevka\""
-      echo "          Process all font files that are in directory \"iosevka\""
+      show_help
       exit 0;;
+    i)
+      activate_info
+      ;;
+    t)
+      activate_keeptime
+      ;;
     -)
       case "${OPTARG}" in
         info)
-          info_only=$2
-          echo "${LINE_PREFIX} 'Info Only' option given, only generating font info (not patching)"
+          activate_info
+          ;;
+        keeptime)
+          activate_keeptime
+          ;;
+        checkfont)
+          activate_checkfont
           ;;
         *)
-          echo >&2 "Option '${OPTARG}' unknown"
+          echo >&2 "Option '--${OPTARG}' unknown"
           exit 1;;
       esac;;
     *)
-      echo >&2 "Option '${OPTARG}' unknown"
+      echo >&2 "Option '-${OPTARG}' unknown"
       exit 1;;
   esac
 done
@@ -73,7 +113,7 @@ shift $((${OPTIND}-1))
 
 if [ $# -gt 1 ]
 then
-  echo >&2 "Unknown parameter(s): $2.."
+  echo >&2 "Unknown parameter(s): $2 ..."
   exit 1
 fi
 
@@ -114,6 +154,23 @@ function patch_font {
   local f=$1; shift
   local i=$1; shift
   local purge=$1; shift
+
+  # Try to copy the release date from the 'original' patch
+  if [ -n "${keeptime}" ]
+  then
+    # take everything before the last slash (/) to start building the full path
+    local ts_font_dir="${f%/*}/"
+    local ts_font_dir="${ts_font_dir/$unpatched_parent_dir/$timestamp_parent_dir}"
+    local one_font=$(find ${ts_font_dir} -name '*.[ot]tf' | head -n 1)
+    if [ -n "${one_font}" ]
+    then
+      orig_font_date=$(ttfdump -t head "${one_font}" | \
+        grep -E '[^a-z]modified:.*0x' | sed 's/.*x//' | tr 'a-f' 'A-F')
+      SOURCE_DATE_EPOCH=$(dc -e "16i ${orig_font_date} Ai 86400 24107 * - p")
+      echo "$LINE_PREFIX Release timestamp adjusted to $(date -R --date=@${SOURCE_DATE_EPOCH})"
+    fi
+  fi
+
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
   # find replace unpatched parent dir with patched parent dir:
