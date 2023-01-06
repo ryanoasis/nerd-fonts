@@ -135,6 +135,7 @@ jobs:
           sudo apt update -y -q
           sudo apt install software-properties-common -y -q
           sudo apt install python3-fontforge -y -q
+          sudo apt install fuse -y -q
 
       # Ubuntu 20.04 has only fontforge release 2020, but there are some vital bugfixes in the 2022 release
       # This can be replaced with the ordinary apt package when Ubuntu updates, probably with 22.10?
