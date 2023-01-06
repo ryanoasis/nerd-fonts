@@ -55,22 +55,29 @@ jobs:
       - name: Determine candidate status
         id: rel_can
         run: |
-          [[ "${{ steps.rel_ver.outputs.val }}" == *"-RC"* ]] && echo "val=true" || echo "val=false" >> $GITHUB_OUTPUT
+          if [[ "${{ steps.rel_ver.outputs.val }}" == *"-RC"* ]]; then
+            CAN="val=true"
+          else
+            CAN="val=false"
+          fi
+          echo "${CAN}"
+          echo "${CAN}" >> $GITHUB_OUTPUT
 
       - name: Determine new release or re-release
         # If the tag exists it is obviously a re-release
 
         # This would need a complete checkout, that we want to avoid
-        # uses: mukunku/tag-exists-action@v1.0.0
+        # uses: mukunku/tag-exists-action@v1.2.0
         #   with:
         #     tag: "v${{ steps.rel_ver.outputs.val }}"
         #   env:
         #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         id: rel_pre_existing
         run: |
-          curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"v${{ steps.rel_ver.outputs.val }}"$' \
-            && echo "exists=true" || echo "exists=false" >> $GITHUB_OUTPUT
-          echo "Tag exists: ${{ steps.rel_pre_existing.outputs.exists }}"
+          RPE=$(curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"v${{ steps.rel_ver.outputs.val }}"$' \
+            && echo "exists=true" || echo "exists=false")
+          echo "${RPE}" >> $GITHUB_OUTPUT
+          echo "Tag exists: ${RPE}"
 
       - name: Upload release only on first trigger for release and always on release candidate
         id: upload
@@ -78,7 +85,18 @@ jobs:
         # * This is a new (previously untagged) release
         # * This is a release candidate
         run: |
-          [[ "${{ steps.rel_can.outputs.val }}" == "true" || "${{ steps.rel_pre_existing.outputs.exists }}" == "false" ]] && echo "val=true" || echo "val=false" >> $GITHUB_OUTPUT
+          if [[ "${{ steps.rel_can.outputs.val }}" == "true" || "${{ steps.rel_pre_existing.outputs.exists }}" == "false" ]]; then
+            UP="val=true"
+          else
+            UP="val=false"
+          fi
+          echo "${UP}"
+          echo "${UP}" >> $GITHUB_OUTPUT
+
+      - name: Determine release timestamp
+        id: timestamp
+        run: |
+          echo "val=$(date +%s)" >> $GITHUB_OUTPUT
 
       - name: Show outputs
         run: |
@@ -86,6 +104,7 @@ jobs:
           echo "rel_candidate: ${{ steps.rel_can.outputs.val }}"
           echo "rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}"
           echo "rel_upload: ${{ steps.upload.outputs.val }}"
+          echo "rel_timestamp: ${{ steps.timestamp.outputs.val }} ($(date -R --date=@${{ steps.timestamp.outputs.val }}))"
 
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
@@ -93,6 +112,7 @@ jobs:
       rel_candidate: ${{ steps.rel_can.outputs.val }}
       rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}
       rel_upload: ${{ steps.upload.outputs.val }}
+      rel_timestamp: ${{ steps.timestamp.outputs.val }}
 
   # Workflow to build and install dependencies
   build:
@@ -106,6 +126,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
       RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
+      SOURCE_DATE_EPOCH: ${{ needs.setup-fonts-matrix.outputs.rel_timestamp }}
 
     strategy:
       matrix:
@@ -127,6 +148,7 @@ jobs:
           sudo apt update -y -q
           sudo apt install software-properties-common -y -q
           sudo apt install python3-fontforge -y -q
+          sudo apt install fuse -y -q
 
       # Ubuntu 20.04 has only fontforge release 2020, but there are some vital bugfixes in the 2022 release
       # This can be replaced with the ordinary apt package when Ubuntu updates, probably with 22.10?
@@ -189,7 +211,7 @@ jobs:
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           fontforge --script `pwd`/../../font-patcher --version
-          ./gotta-patch-em-all-font-patcher\!.sh "/${{ matrix.font }}"
+          ./gotta-patch-em-all-font-patcher\!.sh -j "/${{ matrix.font }}"
 
       - name: Archive font package zip files
         run: |
@@ -197,7 +219,7 @@ jobs:
           ./archive-fonts.sh "${{ matrix.font }}"
 
       - name: Upload zip file archive for release
-        uses: softprops/action-gh-release@v0.1.14
+        uses: softprops/action-gh-release@v0.1.15
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -206,7 +228,7 @@ jobs:
           files: archives/*
 
       - name: Upload patched fonts as artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: patched-fonts
           # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
@@ -239,7 +261,7 @@ jobs:
           ./archive-font-patcher.sh
 
       - name: Upload font-patcher archive for release
-        uses: softprops/action-gh-release@v0.1.14
+        uses: softprops/action-gh-release@v0.1.15
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -260,7 +282,7 @@ jobs:
 
       - name: Download patched fonts from build
         id: download-patched-fonts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: patched-fonts
           path: .
@@ -359,7 +381,7 @@ jobs:
           clean: false
 
       - name: Adjust release tag to include previous commit
-        uses: EndBug/latest-tag@v1.5.0
+        uses: EndBug/latest-tag@v1.5.1
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           ref: "v${{ needs.setup-fonts-matrix.outputs.rel_version }}"

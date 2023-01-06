@@ -1,25 +1,9 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.0-RC
-# Script Version: 1.1.1
+# Script Version: 1.2.0
 
 # used for debugging
 # set -x
-
-# The optional first argument to this script is a filter for the fonts to patch.
-# The filter is a regex (glob "*" is expressed as "[^/]*", see `man 7 glob`)
-# All font files that start with that filter (and are ttf, otf, or sfd files) will
-# be processed only.
-#   Example ./gotta-patch-em-all-font-patcher\!.sh "iosevka"
-#   Process all font files that start with "iosevka"
-# If the argument starts with a '/' all font files in a directory that matches
-# the filter are processed only.
-#   Example ./gotta-patch-em-all-font-patcher\!.sh "/iosevka"
-#   Process all font files that are in directory "iosevka"
-
-# for executing script to rebuild JUST the readmes:
-# ./gotta-patch-em-all-font-patcher\!.sh "" info
-# to test this script with a single font (pattern):
-# ./gotta-patch-em-all-font-patcher\!.sh "iosevka" info
 
 LINE_PREFIX="# [Nerd Fonts] "
 
@@ -38,7 +22,7 @@ res1=$(date +%s)
 parent_dir="${sd}/../../"
 # Set source and target directories
 source_fonts_dir="${sd}/../../src/unpatched-fonts"
-like_pattern=''
+like_pattern='.*\.\(otf\|ttf\|sfd\)'
 complete_variations_per_family=4
 font_typefaces_count=0
 font_families_count=0
@@ -48,25 +32,115 @@ total_count=0
 last_parent_dir=""
 unpatched_parent_dir="bin/scripts/../../src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
-max_parallel_process=64
+timestamp_parent_dir=${patched_parent_dir}
+max_parallel_process=8
 
-if [ $# -eq 1 ] || [ "$1" != "" ]
+function activate_keeptime {
+  type ttfdump >/dev/null 2>&1 || {
+    echo >&2 "$LINE_PREFIX ttfdump must be installed for option --keeptime"
+    exit 1
+  }
+  keeptime=TRUE
+}
+
+function activate_checkfont {
+  patched_parent_dir="check-fonts"
+}
+
+function activate_info {
+  info_only=$2
+  echo "${LINE_PREFIX} 'Info Only' option given, only generating font info (not patching)"
+}
+
+function show_help {
+  echo "Usage: $0 [OPTION] [FILTER]"
+  echo
+  echo "    OPTION:"
+  echo "        -c, --checkfont     Create the font(s) in check-fonts/ instead"
+  echo "        -t, --keeptime      Try to preserve timestamp of previously patched"
+  echo "                            font in patched-fonts/ directory"
+  echo "        -v, --verbose       Show more information when running"
+  echo "        -i, --info          Rebuild JUST the readmes"
+  echo "        -j, --jobs          Run up to 8 patch processes in parallel"
+  echo "        -h, --help          Show this help"
+  echo
+  echo "    FILTER:"
+  echo "        The filter argument to this script is a filter for the fonts to patch."
+  echo "        The filter is a regex (glob "*" is expressed as "[^/]*", see \`man 7 glob\`)"
+  echo "        All font files that start with that filter (and are ttf, otf, or sfd files) will"
+  echo "        be processed only."
+  echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"iosevka\""
+  echo "          Process all font files that start with \"iosevka\""
+  echo "        If the argument starts with a '/' all font files in a directory that matches"
+  echo "        the filter are processed only."
+  echo "          Example ./gotta-patch-em-all-font-patcher\!.sh \"/iosevka\""
+  echo "          Process all font files that are in directory \"iosevka\""
+}
+
+while getopts ":chijtv-:" option; do
+  case "${option}" in
+    c)
+      activate_checkfont
+      ;;
+    h)
+      show_help
+      exit 0;;
+    i)
+      activate_info
+      ;;
+    j)
+      parallel=TRUE
+      ;;
+    t)
+      activate_keeptime
+      ;;
+    v)
+      verbose=TRUE
+      ;;
+    -)
+      case "${OPTARG}" in
+        checkfont)
+          activate_checkfont
+          ;;
+        info)
+          activate_info
+          ;;
+        jobs)
+          parallel=TRUE
+          ;;
+        keeptime)
+          activate_keeptime
+          ;;
+        verbose)
+          verbose=TRUE
+          ;;
+        *)
+          echo >&2 "Option '--${OPTARG}' unknown"
+          exit 1;;
+      esac;;
+    *)
+      echo >&2 "Option '-${OPTARG}' unknown"
+      exit 1;;
+  esac
+done
+shift $((${OPTIND}-1))
+
+if [ $# -gt 1 ]
+then
+  echo >&2 "Unknown parameter(s): $2 ..."
+  exit 1
+fi
+
+if [ $# -eq 1 ]
 then
   if [[ "${1:0:1}" == "/" ]]
   then
     like_pattern=".*$1/.*\.\(otf\|ttf\|sfd\)"
-    echo "$LINE_PREFIX Parameter given, limiting search and patch to pathname pattern '$1' given"
+    echo "$LINE_PREFIX Filter given, limiting search and patch to pathname pattern '$1'"
   else
     like_pattern=".*/$1[^/]*\.\(otf\|ttf\|sfd\)"
-    echo "$LINE_PREFIX Parameter given, limiting search and patch to filename pattern '$1' given"
+    echo "$LINE_PREFIX Filter given, limiting search and patch to filename pattern '$1'"
   fi
-fi
-
-# simple second param option to allow to regenerate font info without re-patching
-if [ $# -eq 2 ]
-  then
-    info_only=$2
-    echo "$LINE_PREFIX 'Info Only' Parameter given, only generating font info (not patching)"
 fi
 
 # correct way to output find results into an array (when files have space chars, etc)
@@ -79,10 +153,38 @@ done < <(find "$source_fonts_dir" -iregex ${like_pattern} -type f -print0)
 # print total number of source fonts found
 echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
 
+# Use one date-time for ALL fonts and for creation and modification date in the font file
+if [ -z "${SOURCE_DATE_EPOCH}" ]
+then
+  export SOURCE_DATE_EPOCH=$(date +%s)
+fi
+release_timestamp=$(date -R --date=@${SOURCE_DATE_EPOCH} 2>/dev/null) || {
+  echo >&2 "$LINE_PREFIX Invalid release timestamp SOURCE_DATE_EPOCH: ${SOURCE_DATE_EPOCH}"
+  exit 2
+}
+echo "$LINE_PREFIX Release timestamp is ${release_timestamp}"
+
 function patch_font {
   local f=$1; shift
   local i=$1; shift
   local purge=$1; shift
+
+  # Try to copy the release date from the 'original' patch
+  if [ -n "${keeptime}" ]
+  then
+    # take everything before the last slash (/) to start building the full path
+    local ts_font_dir="${f%/*}/"
+    local ts_font_dir="${ts_font_dir/$unpatched_parent_dir/$timestamp_parent_dir}"
+    local one_font=$(find ${ts_font_dir} -name '*.[ot]tf' | head -n 1)
+    if [ -n "${one_font}" ]
+    then
+      orig_font_date=$(ttfdump -t head "${one_font}" | \
+        grep -E '[^a-z]modified:.*0x' | sed 's/.*x//' | tr 'a-f' 'A-F')
+      SOURCE_DATE_EPOCH=$(dc -e "16i ${orig_font_date} Ai 86400 24107 * - p")
+      echo "$LINE_PREFIX Release timestamp adjusted to $(date -R --date=@${SOURCE_DATE_EPOCH})"
+    fi
+  fi
+
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
   # find replace unpatched parent dir with patched parent dir:
@@ -91,7 +193,10 @@ function patch_font {
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
   if [ -n ${purge} -a -d "${patched_font_dir}complete" ]
   then
-    echo "Purging patched font dir ${patched_font_dir}complete"
+    if [ -n "${verbose}" ]
+    then
+      echo "Purging patched font dir ${patched_font_dir}complete"
+    fi
     rm ${patched_font_dir}complete/*
   fi
 
@@ -139,15 +244,21 @@ function patch_font {
 
   cd "$parent_dir" || {
     echo >&2 "# Could not find project parent directory"
-    exit 1
+    exit 3
   }
   # Use absolute path to allow fontforge being an AppImage (used in CI)
   PWD=`pwd`
-  echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  if [ -n "${verbose}" ]
+  then
+    echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  fi
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars \
                     --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
-  echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  if [ -n "${verbose}" ]
+  then
+    echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+  fi
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars \
                     --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
@@ -307,7 +418,13 @@ then
         purge_destination="TRUE"
       fi
     fi
-    patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null
+    echo "$LINE_PREFIX Processing font $((i+1))/${#source_fonts[@]}"
+    if [ -n "${parallel}" ]
+    then
+      patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null &
+    else
+      patch_font "${source_fonts[$i]}" "$i" "$purge_destination" 2>/dev/null
+    fi
 
 
     # un-comment to test this script (patch 1 font)
@@ -319,7 +436,7 @@ then
     # however we want to run a certain number in parallel to decrease
     # the amount of time patching all the fonts will take
     # for now set a 'wait' for each X set of processes:
-    if [[ $((i % max_parallel_process)) == 0 ]];
+    if [[ $(((i + 1) % max_parallel_process)) == 0 ]];
     then
       echo "$LINE_PREFIX Complete Variation Count after max parallel process is  $complete_variation_count"
       wait
@@ -361,5 +478,5 @@ printf "# The total number of patched fonts created was \\t\\t'%s'\\n" "$total_c
 
 if [ "$total_count" -lt 1 ]; then
   # Probably unwanted... alert user
-  exit 1
+  exit 10
 fi
