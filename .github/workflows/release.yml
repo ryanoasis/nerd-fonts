@@ -67,7 +67,7 @@ jobs:
         # If the tag exists it is obviously a re-release
 
         # This would need a complete checkout, that we want to avoid
-        # uses: mukunku/tag-exists-action@v1.0.0
+        # uses: mukunku/tag-exists-action@v1.2.0
         #   with:
         #     tag: "v${{ steps.rel_ver.outputs.val }}"
         #   env:
@@ -219,7 +219,7 @@ jobs:
           ./archive-fonts.sh "${{ matrix.font }}"
 
       - name: Upload zip file archive for release
-        uses: softprops/action-gh-release@v0.1.14
+        uses: softprops/action-gh-release@v0.1.15
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -228,7 +228,7 @@ jobs:
           files: archives/*
 
       - name: Upload patched fonts as artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: patched-fonts
           # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
@@ -261,7 +261,7 @@ jobs:
           ./archive-font-patcher.sh
 
       - name: Upload font-patcher archive for release
-        uses: softprops/action-gh-release@v0.1.14
+        uses: softprops/action-gh-release@v0.1.15
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -282,7 +282,7 @@ jobs:
 
       - name: Download patched fonts from build
         id: download-patched-fonts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: patched-fonts
           path: .
@@ -381,7 +381,7 @@ jobs:
           clean: false
 
       - name: Adjust release tag to include previous commit
-        uses: EndBug/latest-tag@v1.5.0
+        uses: EndBug/latest-tag@v1.5.1
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           ref: "v${{ needs.setup-fonts-matrix.outputs.rel_version }}"

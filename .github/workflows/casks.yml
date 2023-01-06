@@ -35,7 +35,7 @@ jobs:
           cd bin/scripts
           ./generate-casks.sh --setversion ${{ steps.releasetag.outputs.tag }}
       - name: Upload casks as artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: casks
           path: casks
@@ -67,7 +67,7 @@ jobs:
           git reset --hard upstream/master
           git push --force origin HEAD:nerdfonts
       - name: Retrieve new casks
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: casks
           path: casks
