@@ -152,9 +152,10 @@ jobs:
 
       # Ubuntu 20.04 has only fontforge release 2020, but there are some vital bugfixes in the 2022 release
       # This can be replaced with the ordinary apt package when Ubuntu updates, probably with 22.10?
+      # On the other hand ... why not be on the latest release always?
       - name: Fetch FontForge
         run: |
-          curl -L "https://github.com/fontforge/fontforge/releases/download/20220308/FontForge-2022-03-08-582bd41-x86_64.AppImage" \
+          curl -L "https://github.com/fontforge/fontforge/releases/download/20230101/FontForge-2023-01-01-a1dad3e-x86_64.AppImage" \
             --output fontforge
           chmod u+x fontforge
           echo Try appimage
