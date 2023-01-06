@@ -80,12 +80,18 @@ jobs:
         run: |
           [[ "${{ steps.rel_can.outputs.val }}" == "true" || "${{ steps.rel_pre_existing.outputs.exists }}" == "false" ]] && echo "val=true" || echo "val=false" >> $GITHUB_OUTPUT
 
+      - name: Determine release timestamp
+        id: timestamp
+        run: |
+          echo "val=$(date +%s)" >> $GITHUB_OUTPUT
+
       - name: Show outputs
         run: |
           echo "rel_version: ${{ steps.rel_ver.outputs.val }}"
           echo "rel_candidate: ${{ steps.rel_can.outputs.val }}"
           echo "rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}"
           echo "rel_upload: ${{ steps.upload.outputs.val }}"
+          echo "rel_timestamp: ${{ steps.timestamp.outputs.val }} ($(date -R --date=@${{ steps.timestamp.outputs.val }}))"
 
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
@@ -93,6 +99,7 @@ jobs:
       rel_candidate: ${{ steps.rel_can.outputs.val }}
       rel_pre_existing: ${{ steps.rel_pre_existing.outputs.exists }}
       rel_upload: ${{ steps.upload.outputs.val }}
+      rel_timestamp: ${{ steps.timestamp.outputs.val }}
 
   # Workflow to build and install dependencies
   build:
@@ -106,6 +113,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
       RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
+      SOURCE_DATE_EPOCH: ${{ needs.setup-fonts-matrix.outputs.rel_timestamp }}
 
     strategy:
       matrix:
