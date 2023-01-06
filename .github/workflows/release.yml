@@ -197,7 +197,7 @@ jobs:
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           fontforge --script `pwd`/../../font-patcher --version
-          ./gotta-patch-em-all-font-patcher\!.sh "/${{ matrix.font }}"
+          ./gotta-patch-em-all-font-patcher\!.sh -j "/${{ matrix.font }}"
 
       - name: Archive font package zip files
         run: |
