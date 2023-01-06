@@ -1303,15 +1303,15 @@ class font_patcher:
 
         if 'ScaleGlyph' in scaleRules:
             # Rewrite to equivalent ScaleGroup
-            flat_list = []
+            group_list = []
             for i in scaleRules['GlyphsToScale']:
                 if isinstance(i, tuple):
-                    flat_list += list(range(i[0], i[1] + 1))
+                    group_list.append(range(i[0], i[1] + 1))
                 else:
-                    flat_list.append(i)
+                    group_list.append(i)
             sym_dim = get_glyph_dimensions(symbolFont[scaleRules['ScaleGlyph']])
             scale = self.get_scale_factor(sym_dim)
-            scaleRules['ScaleGroups'].append(flat_list)
+            scaleRules['ScaleGroups'].append(group_list)
             scaleRules['scales'].append(scale)
             scaleRules['bbdims'].append(None) # The 'old' style keeps just the scale, not the positioning
 
@@ -1323,8 +1323,12 @@ class font_patcher:
                 self.sourceFont.createChar(dest_unicode)
             self.prepareScaleRules(scaleRules, symbolFont, self.sourceFont[dest_unicode])
         for glyph_list, scale, box in zip(scaleRules['ScaleGroups'], scaleRules['scales'], scaleRules['bbdims']):
-            if symbol_unicode in glyph_list:
-                return (scale, box)
+            for e in glyph_list:
+                if isinstance(e, range):
+                    if symbol_unicode in e:
+                        return (scale, box)
+                elif symbol_unicode == e:
+                    return (scale, box)
         return None
 
 
