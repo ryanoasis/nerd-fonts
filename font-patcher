@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.4.2"
+script_version = "3.4.3"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -850,6 +850,10 @@ class font_patcher:
             [0xf06e, 0xf070 ], # solar eclipse
             [0xf042, 0xf045 ], # degree sign
         ]}
+        MDI_SCALE_LIST = {'ScaleGlyph': 0xf068d, # 'solid' fills complete design space
+            'GlyphsToScale+': [
+                (0xf0000, 0xfffff) # all because they are very well scaled already
+        ]}
 
         # Define the character ranges
         # Symbol font ranges
@@ -868,7 +872,7 @@ class font_patcher:
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Power, Power On/Off, Power On, Sleep
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Heavy Circle (aka Power Off)
             {'Enabled': self.args.material,             'Name': "Material legacy",         'Filename': "materialdesignicons-webfont.ttf",                'Exact': False, 'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesign/MaterialDesignIconsDesktop.ttf",  'Exact': True,  'SymStart': 0xF0001,'SymEnd': 0xF1AF0,'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesign/MaterialDesignIconsDesktop.ttf",  'Exact': True,  'SymStart': 0xF0001,'SymEnd': 0xF1AF0,'SrcStart': None,   'ScaleRules': MDI_SCALE_LIST,   'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.weather,              'Name': "Weather Icons",           'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'ScaleRules': WEATH_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.fontlogos,            'Name': "Font Logos",              'Filename': "font-logos.ttf",                                 'Exact': True,  'SymStart': 0xF300, 'SymEnd': 0xF32F, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Magnifying glass
