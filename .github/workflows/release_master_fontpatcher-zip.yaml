@@ -49,6 +49,6 @@ jobs:
     - run: cp archives/FontPatcher.zip . -f
     - run: git add FontPatcher.zip
     - run: git config user.name "Github Actions" && git config user.email "actions@github.com"      
-    - run: git commit
+    - run: git commit -m"Update FontPatcher.zip"
     - run: git push
 
