@@ -29,36 +29,12 @@ jobs:
           bin/scripts/archive-font-patcher.sh
           bin/scripts/name_parser
           
-#  # Faster version instead of - uses: actions/checkout@v3
-#      uses: Bhacaz/checkout-files@v2
-#      with:
-#        files: 
-#          /font-patcher
-#          /src/glyphs
-#          /src/archive-font-patcher-readme.md
-#          /bin/scripts/archive-font-patcher.sh
-#          /bin/scripts/name_parser
-#        branch: master # ${{ github.head_ref || github.ref_name }}
-
-#      run: |
-#        #!/bin/sh
-#        git clone \
-#          --depth 1 \
-#          --single-branch \
-#          --no-checkout \
-#          https://oauth2:${{  secrets.GITHUB_TOKEN  }}@github.com/${GITHUB_REPOSITORY} ${GITHUB_REF} nerd-fonts
-#        cd nerd-fonts && git checkout HEAD src font-patcher
     - run: chmod +x 
         font-patcher
         bin/scripts/archive-font-patcher.sh
         bin/scripts/name_parser        
     - run: bin/scripts/archive-font-patcher.sh
     - run: cp archives/FontPatcher.zip . -f
-#    - run: git add FontPatcher.zip
-#    - run: git config user.name "Github Actions" && git config user.email "actions@github.com"      
-#    - run: git commit -m"Update FontPatcher.zip"
-#    - run: git push
-
     - uses: EndBug/add-and-commit@v9
       with:
         fetch: false
