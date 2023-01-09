@@ -16,13 +16,12 @@ jobs:
       uses: snow-actions/sparse-checkout@v1.2.0
       with:
         patterns: |
-          /font-patcher
-          /src/glyphs
-          /src/archive-font-patcher-readme.md
-          /bin/scripts/archive-font-patcher.sh
-          /bin/scripts/name_parser
-          /.gitignore
-    
+          font-patcher
+          src/glyphs
+          src/archive-font-patcher-readme.md
+          bin/scripts/archive-font-patcher.sh
+          bin/scripts/name_parser
+          
 #  # Faster version instead of - uses: actions/checkout@v3
 #      uses: Bhacaz/checkout-files@v2
 #      with:
