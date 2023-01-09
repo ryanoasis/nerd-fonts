@@ -21,17 +21,10 @@ jobs:
           --no-checkout \
           https://github.com/ryanoasis/nerd-fonts
         cd nerd-fonts && git checkout HEAD src font-patcher
-    
-    - name: remove git tracking info
-      run: rm -fR nerd-fonts/.git
-      
+        
     - run: rm -fR nerd-fonts/src/unpatched-fonts
     
     - run: zip -r fontpatcher.zip nerd-fonts/*
-       
-    - name: Release
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: fontpatcher_master
-        files: "fontpatcher.zip"
-                    
+    
+    - working-directory: nerd-fonts
+      run: cp -f ../fontpatcher.zip . && git add fontpatcher.zip && git commit -m"Update fontpatcher.zip"
