@@ -31,7 +31,10 @@ jobs:
 #          --no-checkout \
 #          https://oauth2:${{  secrets.GITHUB_TOKEN  }}@github.com/${GITHUB_REPOSITORY} ${GITHUB_REF} nerd-fonts
 #        cd nerd-fonts && git checkout HEAD src font-patcher
-        
+    - run: chmod +x 
+        font-patcher
+        bin/scripts/archive-font-patcher.sh
+        bin/scripts/name_parser        
     - run: bin/scripts/archive-font-patcher.sh
     - run: cp archives/FontPatcher.zip . -f
     - run: git add FontPatcher.zip
