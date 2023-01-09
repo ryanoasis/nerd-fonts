@@ -16,7 +16,7 @@ jobs:
   # Faster version instead of - uses: actions/checkout@v3
       uses: Bhacaz/checkout-files@v2
       with:
-        files: |
+        files: 
           /font-patcher
           /src/glyphs
           /src/archive-font-patcher-readme.md
