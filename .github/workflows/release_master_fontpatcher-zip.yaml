@@ -3,6 +3,13 @@ name: Release font patcher from master
 on:
   create:
   push:
+    paths:
+      - font-patcher
+      - src/glyphs/**
+      - src/archive-font-patcher-readme.me
+      - bin/scripts/archive-font-patcher.sh
+      - bin/scripts/name_parser
+      - .github/workflows/release_master_fontpatcher-zip.yaml
   workflow_dispatch:
   
 
@@ -11,29 +18,27 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-#    - uses: actions/checkout@v3
-     
-        
+    
     - name: Grab the script and its dependencies from the repo
-      run: |
-        #!/bin/sh
-        git clone \
-          --depth 1 \
-          --single-branch \
-          --quiet --progress \
-          --no-checkout \
-          https://oauth2:${{  secrets.GITHUB_TOKEN  }}@github.com/${GITHUB_REPOSITORY}
-        cd nerd-fonts && git checkout HEAD src font-patcher
-        
-    - run: rm -fR nerd-fonts/src/unpatched-fonts
-    
-    - run: zip -r fontpatcher.zip nerd-fonts/*
-    
-    - run: git config user.name "Github Actions" && git config user.email "actions@github.com"
-      working-directory: nerd-fonts
-    
-    - working-directory: nerd-fonts
-      run: cp -f ../fontpatcher.zip . && git add fontpatcher.zip && git commit -m"Update fontpatcher.zip"
-
-    - uses: mxschmitt/action-tmate@v3
-
+      uses: snow-actions/sparse-checkout@v1.2.0
+      with:
+        patterns: |
+          font-patcher
+          src/glyphs
+          src/archive-font-patcher-readme.md
+          bin/scripts/archive-font-patcher.sh
+          bin/scripts/name_parser
+          
+    - run: chmod +x 
+        font-patcher
+        bin/scripts/archive-font-patcher.sh
+        bin/scripts/name_parser        
+    - run: bin/scripts/archive-font-patcher.sh
+    - run: cp archives/FontPatcher.zip . -f
+    - uses: EndBug/add-and-commit@v9
+      with:
+        fetch: false
+        add: "FontPatcher.zip"
+        message: "[ci] update FontPatcher.zip"
+        committer_name: GitHub Actions
+        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
