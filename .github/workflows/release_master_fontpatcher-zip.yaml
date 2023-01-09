@@ -47,8 +47,15 @@ jobs:
         bin/scripts/name_parser        
     - run: bin/scripts/archive-font-patcher.sh
     - run: cp archives/FontPatcher.zip . -f
-    - run: git add FontPatcher.zip
-    - run: git config user.name "Github Actions" && git config user.email "actions@github.com"      
-    - run: git commit -m"Update FontPatcher.zip"
-    - run: git push
+#    - run: git add FontPatcher.zip
+#    - run: git config user.name "Github Actions" && git config user.email "actions@github.com"      
+#    - run: git commit -m"Update FontPatcher.zip"
+#    - run: git push
 
+    - uses: EndBug/add-and-commit@v9
+      with:
+        fetch: false
+        add: "FontPatcher.zip"
+        message: "[ci] update FontPatcher.zip"
+        committer_name: GitHub Actions
+        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
