@@ -1,0 +1,39 @@
+name: Release font patcher from master
+
+on:
+  create:
+  push:
+  workflow_dispatch:
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+#    - uses: actions/checkout@v3
+     
+        
+    - name: Grab the script and its dependencies from the repo
+      run: |
+        #!/bin/sh
+        git clone \
+          --depth 1 \
+          --single-branch \
+          --quiet --progress \
+          --no-checkout \
+          https://oauth2:${{  secrets.GITHUB_TOKEN  }}@github.com/${GITHUB_REPOSITORY}
+        cd nerd-fonts && git checkout HEAD src font-patcher
+        
+    - run: rm -fR nerd-fonts/src/unpatched-fonts
+    
+    - run: zip -r fontpatcher.zip nerd-fonts/*
+    
+    - run: git config user.name "Github Actions" && git config user.email "actions@github.com"
+      working-directory: nerd-fonts
+    
+    - working-directory: nerd-fonts
+      run: cp -f ../fontpatcher.zip . && git add fontpatcher.zip && git commit -m"Update fontpatcher.zip"
+
+    - uses: mxschmitt/action-tmate@v3
+
