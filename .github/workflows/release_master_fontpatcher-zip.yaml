@@ -1,0 +1,38 @@
+name: VyOS v1.4 Rolling Release
+
+on:
+  create:
+  push:
+  workflow_dispatch:
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: vyos/vyos-build:current
+      options: --workdir /vyos --privileged
+
+    steps:
+    - name: Grab the script and its dependencies from the repo
+      run: |
+        #!/bin/sh
+        git clone \
+          --depth 1 \
+          --single-branch \
+          --quiet --progress \
+          --no-checkout \
+          https://github.com/ryanoasis/nerd-fonts
+        cd nerd-fonts && git checkout HEAD src font-patcher
+    
+    - name: remove git tracking info
+      run: rm -fR nerd-fonts/.git
+    
+    - run: zip -r fontpatcher.zip nerd-fonts/*
+       
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: fontpatcher_master
+        files: "fontpatcher.zip"
+                    
