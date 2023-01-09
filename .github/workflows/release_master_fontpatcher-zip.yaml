@@ -24,6 +24,8 @@ jobs:
     
     - name: remove git tracking info
       run: rm -fR nerd-fonts/.git
+      
+    - run: rm -fR nerd-fonts/src/unpatched-fonts
     
     - run: zip -r fontpatcher.zip nerd-fonts/*
        
