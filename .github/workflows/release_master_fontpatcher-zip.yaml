@@ -11,29 +11,31 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-#    - uses: actions/checkout@v3
-     
-        
+    
     - name: Grab the script and its dependencies from the repo
-      run: |
-        #!/bin/sh
-        git clone \
-          --depth 1 \
-          --single-branch \
-          --quiet --progress \
-          --no-checkout \
-          https://oauth2:${{  secrets.GITHUB_TOKEN  }}@github.com/${GITHUB_REPOSITORY}
-        cd nerd-fonts && git checkout HEAD src font-patcher
+  # Faster version instead of - uses: actions/checkout@v3
+    - uses: Bhacaz/checkout-files@v2
+      with:
+        files: |
+          /font-patcher
+          /src/glyphs
+          /src/archive-font-patcher-readme.md
+          /bin/scripts/archive-font-patcher.sh
+          /bin/scripts/name_parser
+        branch: master # ${{ github.head_ref || github.ref_name }}
+#      run: |
+#        #!/bin/sh
+#        git clone \
+#          --depth 1 \
+#          --single-branch \
+#          --no-checkout \
+#          https://oauth2:${{  secrets.GITHUB_TOKEN  }}@github.com/${GITHUB_REPOSITORY} ${GITHUB_REF} nerd-fonts
+#        cd nerd-fonts && git checkout HEAD src font-patcher
         
-    - run: rm -fR nerd-fonts/src/unpatched-fonts
-    
-    - run: zip -r fontpatcher.zip nerd-fonts/*
-    
-    - run: git config user.name "Github Actions" && git config user.email "actions@github.com"
-      working-directory: nerd-fonts
-    
-    - working-directory: nerd-fonts
-      run: cp -f ../fontpatcher.zip . && git add fontpatcher.zip && git commit -m"Update fontpatcher.zip"
-
-    - uses: mxschmitt/action-tmate@v3
+    - run: bin/scripts/archive-font-patcher.sh
+    - run: cp archives/FontPatcher.zip . -f
+    - run: git add FontPatcher.zip
+    - run: git config user.name "Github Actions" && git config user.email "actions@github.com"      
+    - run: git commit
+    - run: git push
 
