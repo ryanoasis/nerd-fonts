@@ -3,6 +3,13 @@ name: Release font patcher from master
 on:
   create:
   push:
+    paths:
+      - font-patcher
+      - src/glyphs/**
+      - src/archive-font-patcher-readme.me
+      - bin/scripts/archive-font-patcher.sh
+      - bin/scripts/name_parser
+      - .github/workflows/release_master_fontpatcher-zip.yaml
   workflow_dispatch:
   
 
