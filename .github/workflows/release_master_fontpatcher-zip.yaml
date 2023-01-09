@@ -13,16 +13,27 @@ jobs:
     steps:
     
     - name: Grab the script and its dependencies from the repo
-  # Faster version instead of - uses: actions/checkout@v3
-      uses: Bhacaz/checkout-files@v2
+      uses: snow-actions/sparse-checkout@v1.2.0
       with:
-        files: 
+        patterns: |
           /font-patcher
           /src/glyphs
           /src/archive-font-patcher-readme.md
           /bin/scripts/archive-font-patcher.sh
           /bin/scripts/name_parser
-        branch: master # ${{ github.head_ref || github.ref_name }}
+          /.gitignore
+    
+#  # Faster version instead of - uses: actions/checkout@v3
+#      uses: Bhacaz/checkout-files@v2
+#      with:
+#        files: 
+#          /font-patcher
+#          /src/glyphs
+#          /src/archive-font-patcher-readme.md
+#          /bin/scripts/archive-font-patcher.sh
+#          /bin/scripts/name_parser
+#        branch: master # ${{ github.head_ref || github.ref_name }}
+
 #      run: |
 #        #!/bin/sh
 #        git clone \
