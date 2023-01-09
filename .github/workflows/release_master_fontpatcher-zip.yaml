@@ -22,7 +22,7 @@ jobs:
           --single-branch \
           --quiet --progress \
           --no-checkout \
-          ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}
+          https://oauth2:${{  secrets.GITHUB_TOKEN  }}@github.com/${GITHUB_REPOSITORY}
         cd nerd-fonts && git checkout HEAD src font-patcher
         
     - run: rm -fR nerd-fonts/src/unpatched-fonts
