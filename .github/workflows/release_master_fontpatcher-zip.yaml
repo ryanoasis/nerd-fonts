@@ -34,3 +34,6 @@ jobs:
     
     - working-directory: nerd-fonts
       run: cp -f ../fontpatcher.zip . && git add fontpatcher.zip && git commit -m"Update fontpatcher.zip"
+
+    - uses: mxschmitt/action-tmate@v3
+
