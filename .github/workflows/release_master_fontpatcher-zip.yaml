@@ -27,6 +27,7 @@ jobs:
     - run: zip -r fontpatcher.zip nerd-fonts/*
     
     - run: git config user.name "Github Actions" && git config user.email "actions@github.com"
+      working-directory: nerd-fonts
     
     - working-directory: nerd-fonts
       run: cp -f ../fontpatcher.zip . && git add fontpatcher.zip && git commit -m"Update fontpatcher.zip"
