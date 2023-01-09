@@ -1,4 +1,4 @@
-name: VyOS v1.4 Rolling Release
+name: Release font patcher from master
 
 on:
   create:
@@ -9,10 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: vyos/vyos-build:current
-      options: --workdir /vyos --privileged
-
+    
     steps:
     - name: Grab the script and its dependencies from the repo
       run: |
