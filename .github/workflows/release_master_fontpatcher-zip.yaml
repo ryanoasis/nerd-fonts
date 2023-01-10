@@ -3,6 +3,7 @@ name: Release font patcher from master
 on:
   create:
   push:
+    branches: master
     paths:
       - font-patcher
       - src/glyphs/**
