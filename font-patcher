@@ -945,8 +945,8 @@ class font_patcher:
         #
         # 0x00-0x17f is the Latin Extended-A range
         for glyph in range(0x21, 0x17f):
-            if glyph in range(0x7F, 0xBF):
-                continue # ignore special characters like '1/4' etc
+            if glyph in range(0x7F, 0xBF) or glyph in range(0x132, 0x134):
+                continue # ignore special characters like '1/4' etc and 'IJ' 'ij'
             try:
                 (_, _, xmax, _) = self.sourceFont[glyph].boundingBox()
             except TypeError:
