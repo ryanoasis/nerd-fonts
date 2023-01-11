@@ -989,10 +989,14 @@ class font_patcher:
         if stretch == 'pa':
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
+            if not self.args.single:
+                # non monospaced fonts just scale down on 'pa', not up
+                scale_ratio_x = min(scale_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
         else:
             # Keep the not-stretched direction
-            if not 'x' in stretch:
+            if not self.args.single or not 'x' in stretch:
+                # non monospaced fonts scale y, on 'y' scale request (not x)
                 scale_ratio_x = 1.0
             if not 'y' in stretch:
                 scale_ratio_y = 1.0
@@ -1105,21 +1109,6 @@ class font_patcher:
                 (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
             else:
                 (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
-
-            if not self.args.single:
-                # any special logic we want to apply for double-width variation
-                # would go here:
-                # non monospaced fonts scale y, on 'y' scale request
-                # non monospaced fonts just scale down on 'pa', not up
-                if sym_attr['stretch'] == 'pa':
-                    # both scale factors are the same, thus we can limit them
-                    # individually, which is still the same
-                    scale_ratio_x = min(scale_ratio_x, 1.0)
-                    scale_ratio_y = min(scale_ratio_y, 1.0)
-                else:
-                    scale_ratio_x = 1.0
-                    if not 'y' in sym_attr['stretch']:
-                        scale_ratio_y = 1.0
 
             overlap = sym_attr['params'].get('overlap')
 
