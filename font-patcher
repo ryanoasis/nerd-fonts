@@ -720,6 +720,7 @@ class font_patcher:
 
             # Waveform
             0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
+            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
 
             # Hexagons
             0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
