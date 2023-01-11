@@ -978,7 +978,11 @@ class font_patcher:
 
         # For monospaced fonts all chars need to be maximum 'one' space wide
         # other fonts allows double width glyphs (for 'pa', 'x' scale target is still one space)
-        target_width = self.font_dim['width'] * (1.0 if self.args.single or stretch != 'pa' else 2.0)
+        if self.args.single or stretch != 'pa':
+            relative_width = 1.0
+        else:
+            relative_width = 2.0
+        target_width = self.font_dim['width'] * relative_width
         scale_ratio_x = target_width / sym_dim['width']
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
