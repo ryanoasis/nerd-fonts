@@ -245,6 +245,7 @@ class font_patcher:
         self.sourceFont = None  # class 'fontforge.font'
         self.patch_set = None  # class 'list'
         self.font_dim = None  # class 'dict'
+        self.font_extrawide = False
         self.onlybitmaps = 0
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -274,6 +275,11 @@ class font_patcher:
                 panose[0] = 2 # Assert kind
                 panose[3] = 9 # 3 (4th value) = propotion; 9 = monospaced
                 self.sourceFont.os2_panose = tuple(panose)
+
+        # For very wide (almost square or wider) fonts we do not want to generate 2 cell wide Powerline glyphs
+        if self.font_dim['height'] * 1.8 < self.font_dim['width'] * 2:
+            print("Very wide and short font, disabling 2 cell Powerline glyphs")
+            self.font_extrawide = True
 
         # Prevent opening and closing the fontforge font. Makes things faster when patching
         # multiple ranges using the same symbol font.
@@ -1036,14 +1042,18 @@ class font_patcher:
             sys.stdout.write("Adding " + str(max(1, glyphSetLength)) + " Glyphs from " + setName + " Set \n")
 
         currentSourceFontGlyph = -1 # initialize for the exactEncoding case
+        width_warning = False
 
         for index, sym_glyph in enumerate(symbolFontSelection):
             index = max(1, index)
 
-            try:
-                sym_attr = attributes[sym_glyph.unicode]
-            except KeyError:
+            sym_attr = attributes.get(sym_glyph.unicode)
+            if sym_attr is None:
                 sym_attr = attributes['default']
+
+            if self.font_extrawide:
+                # Do not allow 'xy2' scaling
+                sym_attr['stretch'] = sym_attr['stretch'].replace('2', '')
 
             if exactEncoding:
                 # Use the exact same hex values for the source font as for the symbol font.
