@@ -1130,7 +1130,7 @@ class font_patcher:
             if overlap:
                 scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
                 y_overlap = min(0.01, overlap) # never aggressive vertical overlap
-                scale_ratio_y *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_y)) * y_overlap
+                scale_ratio_y *= 1.0 + (self.font_dim['height'] / (sym_dim['height'] * scale_ratio_y)) * y_overlap
 
             # Size in x to size in y ratio limit (to prevent over-wide glyphs)
             xy_ratio_max = sym_attr['params'].get('xy-ratio')
