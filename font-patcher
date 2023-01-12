@@ -1116,17 +1116,18 @@ class font_patcher:
 
             overlap = sym_attr['params'].get('overlap')
 
-            if scale_ratio_x != 1 or scale_ratio_y != 1:
+            if scale_ratio_x != 1.0 or scale_ratio_y != 1.0:
+                if glyph_scale_data is not None and glyph_scale_data[1] is not None:
+                    dim = glyph_scale_data[1]
+                else:
+                    dim = sym_dim
                 if overlap:
-                    scale_ratio_x *= 1 + overlap
-                    scale_ratio_y *= 1 + overlap
+                    scale_ratio_x *= 1.0 + (self.font_dim['width'] / (dim['width'] * scale_ratio_x)) * overlap
+                    scale_ratio_y *= 1.0 + (self.font_dim['width'] / (dim['width'] * scale_ratio_y)) * overlap
+
                 # Size in x to size in y ratio limit (to prevent over-wide glyphs)
                 xy_ratio_max = sym_attr['params'].get('xy-ratio')
                 if (xy_ratio_max):
-                    if glyph_scale_data is not None and glyph_scale_data[1] is not None:
-                        dim = glyph_scale_data[1]
-                    else:
-                        dim = sym_dim
                     xy_ratio = dim['width'] * scale_ratio_x / (dim['height'] * scale_ratio_y)
                     if xy_ratio > xy_ratio_max:
                         scale_ratio_x = scale_ratio_x * xy_ratio_max / xy_ratio
