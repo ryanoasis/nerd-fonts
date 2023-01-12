@@ -102,6 +102,9 @@ while getopts ":chijtv-:" option; do
         checkfont)
           activate_checkfont
           ;;
+        help)
+          show_help
+          exit 0;;
         info)
           activate_info
           ;;
