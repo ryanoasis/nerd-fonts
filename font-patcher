@@ -682,33 +682,33 @@ class font_patcher:
 
             # Arrow tips
             0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
-            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
             0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
-            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
 
             # Rounded arcs
             0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.59}},
-            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.5}},
+            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.5}},
             0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.59}},
-            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.5}},
+            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.5}},
 
             # Bottom Triangles
             0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
             0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Top Triangles
             0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
             0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Flames
             0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
+            0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
             0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
+            0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Small squares
             0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
