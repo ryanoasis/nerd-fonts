@@ -999,8 +999,7 @@ class font_patcher:
             scale_ratio_y = scale_ratio_x
         else:
             # Keep the not-stretched direction
-            if not self.args.single or not 'x' in stretch:
-                # non monospaced fonts scale y, on 'y' scale request (not x)
+            if not 'x' in stretch:
                 scale_ratio_x = 1.0
             if not 'y' in stretch:
                 scale_ratio_y = 1.0
