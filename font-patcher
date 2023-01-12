@@ -739,8 +739,8 @@ class font_patcher:
             0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
 
             # Top and bottom trapezoid
-            0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}}
+            0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}}
         }
 
         SYM_ATTR_DEFAULT = {
