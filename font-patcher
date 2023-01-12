@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.3.3"
+script_version = "3.4.0"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -245,6 +245,7 @@ class font_patcher:
         self.sourceFont = None  # class 'fontforge.font'
         self.patch_set = None  # class 'list'
         self.font_dim = None  # class 'dict'
+        self.font_extrawide = False
         self.onlybitmaps = 0
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -274,6 +275,11 @@ class font_patcher:
                 panose[0] = 2 # Assert kind
                 panose[3] = 9 # 3 (4th value) = propotion; 9 = monospaced
                 self.sourceFont.os2_panose = tuple(panose)
+
+        # For very wide (almost square or wider) fonts we do not want to generate 2 cell wide Powerline glyphs
+        if self.font_dim['height'] * 1.8 < self.font_dim['width'] * 2:
+            print("Very wide and short font, disabling 2 cell Powerline glyphs")
+            self.font_extrawide = True
 
         # Prevent opening and closing the fontforge font. Makes things faster when patching
         # multiple ranges using the same symbol font.
@@ -676,39 +682,40 @@ class font_patcher:
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
         # Supported params: overlap | careful
+        # Overlap value is used horizontally but vertically limited to 0.01
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Arrow tips
             0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
-            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
             0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
-            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
 
             # Rounded arcs
             0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.59}},
-            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.5}},
+            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.5}},
             0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.59}},
-            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01, 'xy-ratio': 0.5}},
+            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.5}},
 
             # Bottom Triangles
-            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
+            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
+            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
+            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
 
             # Top Triangles
-            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
+            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
+            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
+            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
 
             # Flames
-            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
-            0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
+            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
+            0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
+            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
+            0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
 
             # Small squares
             0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
@@ -719,10 +726,11 @@ class font_patcher:
             0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Waveform
-            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.01}},
+            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
+            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
 
             # Hexagons
-            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
             0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Legos
@@ -731,8 +739,8 @@ class font_patcher:
             0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
 
             # Top and bottom trapezoid
-            0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}}
+            0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}}
         }
 
         SYM_ATTR_DEFAULT = {
@@ -969,17 +977,41 @@ class font_patcher:
         # print("FINAL", self.font_dim)
 
 
-    def get_scale_factor(self, sym_dim):
-        scale_ratio = 1
+    def get_scale_factors(self, sym_dim, stretch):
+        """ Get scale in x and y as tuple """
+        # It is possible to have empty glyphs, so we need to skip those.
+        if not sym_dim['width'] or not sym_dim['height']:
+            return (1.0, 1.0)
 
-        # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
-        scale_ratio_x = self.font_dim['width'] / sym_dim['width']
-        scale_ratio_y = self.font_dim['height'] / sym_dim['height']
-        if scale_ratio_x > scale_ratio_y:
-            scale_ratio = scale_ratio_y
+        # For monospaced fonts all chars need to be maximum 'one' space wide
+        # other fonts allows double width glyphs for 'pa' or if requested with '2'
+        if self.args.single or (stretch != 'pa' and '2' not in stretch):
+            relative_width = 1.0
         else:
-            scale_ratio = scale_ratio_x
-        return scale_ratio
+            relative_width = 2.0
+        target_width = self.font_dim['width'] * relative_width
+        scale_ratio_x = target_width / sym_dim['width']
+
+        # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
+        # Use the font_dim['height'] only for explicit 'y' scaling (not 'pa')
+        target_height = self.font_dim['height']
+        scale_ratio_y = target_height / sym_dim['height']
+
+        if stretch == 'pa':
+            # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
+            scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
+            if not self.args.single:
+                # non monospaced fonts just scale down on 'pa', not up
+                scale_ratio_x = min(scale_ratio_x, 1.0)
+            scale_ratio_y = scale_ratio_x
+        else:
+            # Keep the not-stretched direction
+            if not 'x' in stretch:
+                scale_ratio_x = 1.0
+            if not 'y' in stretch:
+                scale_ratio_y = 1.0
+
+        return (scale_ratio_x, scale_ratio_y)
 
 
     def copy_glyphs(self, sourceFontStart, symbolFont, symbolFontStart, symbolFontEnd, exactEncoding, scaleRules, setName, attributes):
@@ -1010,14 +1042,18 @@ class font_patcher:
             sys.stdout.write("Adding " + str(max(1, glyphSetLength)) + " Glyphs from " + setName + " Set \n")
 
         currentSourceFontGlyph = -1 # initialize for the exactEncoding case
+        width_warning = False
 
         for index, sym_glyph in enumerate(symbolFontSelection):
             index = max(1, index)
 
-            try:
-                sym_attr = attributes[sym_glyph.unicode]
-            except KeyError:
+            sym_attr = attributes.get(sym_glyph.unicode)
+            if sym_attr is None:
                 sym_attr = attributes['default']
+
+            if self.font_extrawide:
+                # Do not allow 'xy2' scaling
+                sym_attr['stretch'] = sym_attr['stretch'].replace('2', '')
 
             if exactEncoding:
                 # Use the exact same hex values for the source font as for the symbol font.
@@ -1038,6 +1074,10 @@ class font_patcher:
                 # use source font defined hex values based on passed in start (fills gaps; symbols are packed)
                 currentSourceFontGlyph = sourceFontStart + sourceFontCounter
                 sourceFontCounter += 1
+
+            # For debugging process only limited glyphs
+            # if currentSourceFontGlyph != 0xe7bd:
+            #     continue
 
             if not self.args.quiet:
                 if self.args.progressbars:
@@ -1077,66 +1117,29 @@ class font_patcher:
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
-            scale_ratio_x = 1
-            scale_ratio_y = 1
-
-            # Now that we have copy/pasted the glyph, if we are creating a monospace
-            # font we need to scale and move the glyphs.  It is possible to have
-            # empty glyphs, so we need to skip those.
-            if self.args.single and sym_dim['width'] and sym_dim['height']:
-                # If we want to preserve that aspect ratio of the glyphs we need to
-                # find the largest possible scaling factor that will allow the glyph
-                # to fit in both the x and y directions
-                if sym_attr['stretch'] == 'pa':
-                    scale_ratio_x = None
-                    if glyph_scale_data:
-                        # We want to preserve the relative size of each glyph in a glyph group
-                        scale_ratio_x = glyph_scale_data[0]
-                    if scale_ratio_x is None:
-                        # In the remaining cases, each glyph is sized independently to each other
-                        scale_ratio_x = self.get_scale_factor(sym_dim)
-                    scale_ratio_y = scale_ratio_x
-                else:
-                    if 'x' in sym_attr['stretch']:
-                        # Stretch the glyph horizontally to fit the entire available width
-                        scale_ratio_x = None
-                        if glyph_scale_data is not None and glyph_scale_data[1] is not None:
-                            scale_ratio_x = self.font_dim['width'] / glyph_scale_data[1]['width']
-                        if scale_ratio_x is None:
-                            scale_ratio_x = self.font_dim['width'] / sym_dim['width']
-            # end if single width
-
-            # non-monospace (double width glyphs)
-            # elif sym_dim['width'] and sym_dim['height']:
-                    # any special logic we want to apply for double-width variation
-                    # would go here
-
-            if 'y' in sym_attr['stretch']:
-                # Stretch the glyph vertically to total line height (good for powerline separators)
-                # Currently stretching vertically for both monospace and double-width
-                scale_ratio_y = None
-                if glyph_scale_data is not None and glyph_scale_data[1] is not None:
-                    scale_ratio_y = self.font_dim['height'] / glyph_scale_data[1]['height']
-                if scale_ratio_y is None:
-                    scale_ratio_y = self.font_dim['height'] / sym_dim['height']
+            if glyph_scale_data is not None:
+                if glyph_scale_data[1] is not None:
+                    sym_dim = glyph_scale_data[1] # Use combined bounding box
+                # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
+                # Except we do not have glyph_scale_data[1] always...
+                (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
+            else:
+                (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
 
             overlap = sym_attr['params'].get('overlap')
+            if overlap:
+                scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
+                y_overlap = min(0.01, overlap) # never aggressive vertical overlap
+                scale_ratio_y *= 1.0 + (self.font_dim['height'] / (sym_dim['height'] * scale_ratio_y)) * y_overlap
 
-            if scale_ratio_x != 1 or scale_ratio_y != 1:
-                if overlap:
-                    scale_ratio_x *= 1 + overlap
-                    scale_ratio_y *= 1 + overlap
-                # Size in x to size in y ratio limit (to prevent over-wide glyphs)
-                xy_ratio_max = sym_attr['params'].get('xy-ratio')
-                if (xy_ratio_max):
-                    if glyph_scale_data is not None and glyph_scale_data[1] is not None:
-                        dim = glyph_scale_data[1]
-                    else:
-                        dim = sym_dim
-                    xy_ratio = dim['width'] * scale_ratio_x / (dim['height'] * scale_ratio_y)
-                    if xy_ratio > xy_ratio_max:
-                        scale_ratio_x = scale_ratio_x * xy_ratio_max / xy_ratio
+            # Size in x to size in y ratio limit (to prevent over-wide glyphs)
+            xy_ratio_max = sym_attr['params'].get('xy-ratio')
+            if (xy_ratio_max):
+                xy_ratio = sym_dim['width'] * scale_ratio_x / (sym_dim['height'] * scale_ratio_y)
+                if xy_ratio > xy_ratio_max:
+                    scale_ratio_x = scale_ratio_x * xy_ratio_max / xy_ratio
 
+            if scale_ratio_x != 1.0 or scale_ratio_y != 1.0:
                 self.sourceFont[currentSourceFontGlyph].transform(psMat.scale(scale_ratio_x, scale_ratio_y))
 
             # We pasted and scaled now we want to align/move
@@ -1174,6 +1177,8 @@ class font_patcher:
                 elif sym_attr['align'] == 'r':
                     # Right align
                     x_align_distance += self.font_dim['width'] - sym_dim['width']
+                    if not self.args.single and '2' in sym_attr['stretch']:
+                        x_align_distance += self.font_dim['width']
 
             if overlap:
                 overlap_width = self.font_dim['width'] * overlap
@@ -1286,7 +1291,7 @@ class font_patcher:
         #   'bbdims':      [ dim_dict1,   dim_dict2, ] }
         #
         # Each item in 'ScaleGroups' (a range or an explicit list) forms a group of glyphs that shall be
-        # as rescaled all with the same and maximum possible (for the included glyphs) factor.
+        # as rescaled all with the same and maximum possible (for the included glyphs) 'pa' factor.
         # If the 'bbdims' is present they all shall be shifted in the same way.
         #
         # Previously this structure has been used:
@@ -1307,7 +1312,7 @@ class font_patcher:
             scaleRules['ScaleGroups'] = []
         for group in scaleRules['ScaleGroups']:
             sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
-            scale = self.get_scale_factor(sym_dim)
+            scale = self.get_scale_factors(sym_dim, 'pa')[0]
             scaleRules['scales'].append(scale)
             scaleRules['bbdims'].append(sym_dim)
 
@@ -1320,7 +1325,7 @@ class font_patcher:
                 else:
                     group_list.append(i)
             sym_dim = get_glyph_dimensions(symbolFont[scaleRules['ScaleGlyph']])
-            scale = self.get_scale_factor(sym_dim)
+            scale = self.get_scale_factors(sym_dim, 'pa')[0]
             scaleRules['ScaleGroups'].append(group_list)
             scaleRules['scales'].append(scale)
             scaleRules['bbdims'].append(None) # The 'old' style keeps just the scale, not the positioning
