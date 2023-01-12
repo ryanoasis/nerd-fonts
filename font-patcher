@@ -724,7 +724,7 @@ class font_patcher:
             0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
 
             # Hexagons
-            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
             0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Legos
