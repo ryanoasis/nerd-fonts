@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.4.0"
+script_version = "3.4.1"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -512,12 +512,15 @@ class font_patcher:
             subFamily = fallbackStyle
 
         # some fonts have inaccurate 'SubFamily', if it is Regular let us trust the filename more:
-        if subFamily == "Regular":
+        if subFamily == "Regular" and len(fallbackStyle):
             subFamily = fallbackStyle
 
         # This is meant to cover the case where the SubFamily is "Italic" and the filename is *-BoldItalic.
         if  len(subFamily) < len(fallbackStyle):
             subFamily = fallbackStyle
+
+        if len(subFamily) == 0:
+            subFamily = "Regular"
 
         if self.args.windows:
             maxFamilyLength = 31
