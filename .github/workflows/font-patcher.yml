@@ -97,7 +97,7 @@ jobs:
 
       - name: Spot check font properties
         run: |
-          ${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" | grep 'File Checksum.*diff=0\s*$' && echo "TTF checksum ok" || exit 1
+          ${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" | grep -q 'File Checksum.*diff=0\s*$' && echo "TTF checksum ok" || exit 1
           ORIG_MINPPEM=$(${{ env.SHOWTTF }} -c "src/unpatched-fonts/Hack/Regular/Hack-Regular.ttf" | grep 'lowestppem=' )
           PATCH_MINPPEM=$(${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" | grep 'lowestppem=' )
           echo "${ORIG_MINPPEM} == ${PATCH_MINPPEM}"

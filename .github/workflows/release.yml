@@ -74,7 +74,7 @@ jobs:
         #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         id: rel_pre_existing
         run: |
-          RPE=$(curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep '^"v${{ steps.rel_ver.outputs.val }}"$' \
+          RPE=$(curl -v "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/tags" | jq '.[].name' | grep -q '^"v${{ steps.rel_ver.outputs.val }}"$' \
             && echo "exists=true" || echo "exists=false")
           echo "${RPE}" >> $GITHUB_OUTPUT
           echo "Tag exists: ${RPE}"
