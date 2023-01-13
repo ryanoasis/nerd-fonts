@@ -302,6 +302,9 @@ class FontnameParser:
         sfnt_list = []
         TO_DEL = ['Family', 'SubFamily', 'Fullname', 'Postscriptname', 'Preferred Family',
                 'Preferred Styles', 'Compatible Full', 'WWS Family', 'WWS Subfamily']
+        # Remove these entries in all languages and add (at least the vital ones) some
+        # back, but only as 'English (US)'. This makes sure we do not leave contradicting
+        # names over different languages.
         for l, k, v in list(font.sfnt_names):
             if not k in TO_DEL:
                 sfnt_list += [( l, k, v )]
