@@ -77,7 +77,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           fetch: false
-          add: 'src/glyphs/original-source.otf'
+          add: "['src/glyphs/original-source.otf', 'bin/scripts/lib/i_seti.sh']"
           message: "[ci] Rebuild original-source font"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
