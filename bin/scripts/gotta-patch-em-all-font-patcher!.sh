@@ -330,8 +330,9 @@ function generate_info {
     generate_readme "$patched_font_dir.." 0
   fi
 
-  echo "$LINE_PREFIX * Adding 'Possible Combinations' section"
-  generate_readme "$patched_font_dir" 1
+  # echo "$LINE_PREFIX * Adding 'Possible Combinations' section"
+  # generate_readme "$patched_font_dir" 1
+  generate_readme "$patched_font_dir" 0
   echo "$LINE_PREFIX * Copying license files"
 
   if [ $is_unpatched_fonts_root == "0" ];
@@ -384,11 +385,10 @@ function generate_readme {
     echo "# looked for: $font_info"
   fi
 
-  cat "$parent_dir/src/readme-per-directory-variations.md" >> "$combinations_filename"
-
   if [ "$generate_combinations" == 1 ];
   then
     # add to the file
+    cat "$parent_dir/src/readme-per-directory-variations.md" >> "$combinations_filename"
     {
       printf "\`\`\`sh"
       printf "\\n# %s Possible Combinations:\\n" "$combination_count"
