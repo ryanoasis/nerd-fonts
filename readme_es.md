@@ -89,7 +89,7 @@ _Si tu..._
   * Para más detalles mira la sección del [**Parchador de Fuentes**](#font-patcher)
 * **`50`** [familias de fuentes parchadas](#patched-fonts) hasta ahora
 * Más de **`1,571,470`** combinaciones/variaciones únicas de fuentes parchadas [(más detalles)](#combinations)
-* Más de **`2,600`** glifos/iconos en total [(más detalles)](#combinations)
+* Más de **`9,000`** glifos/iconos en total [(más detalles)](#combinations)
   * Conjuntos de glifos actuales incluyen: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons]
 * Versiones de glifos **monoespaciados (de ancho fijo)** _o_ de **ancho doble (no monoespaciados)** para cada fuente
   * Esto se refiere a los glifos de Nerd Fonts, no necesariamente a la fuente en general

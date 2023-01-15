@@ -90,7 +90,7 @@ _Якщо ви..._
     -   Докладніше дивись розділ [**Патчер шрифтів**](#font-patcher)
 -   **`50`** вже [виправлені сімейства шрифтів ](#patched-fonts)
 -   Понад **`1,571,470`** унікальних комбінацій / варіацій пропатченних шрифтів [(детальніше)](#combinations)
--   Понад **`2,600`** гліфів / іконок у поєднанні [(детальніше)](#combinations)
+-   Понад **`9,000`** гліфів / іконок у поєднанні [(детальніше)](#combinations)
     -   Поточні набори гліфів включають: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Раніше Font Linux), [Pomicons][gabrielelana-pomicons]
 -   **Monospaced (фіксованої ширини)** _чи_ **подвійної ширини (non-monospaced)** версія кожного шрифту
     -   Це стосується Nerd Font гліфів, але не обов'язково Шрифту в цілому

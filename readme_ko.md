@@ -87,7 +87,7 @@ _만약..._
   * 더 자세한 정보는 [**폰트 설치기**](#font-patcher) 문단을 확인하세요.
 * **`50`** 개의 [폰트 패밀리](#패치된-폰트들)
 * **`1,571,470`** 개 이상의 폰트 조합/변형 [(자세한 정보)](#조합)
-* **`2,600`** 개 이상의 글리프/아이콘 [(자세한 정보)](#조합)
+* **`9,000`** 개 이상의 글리프/아이콘 [(자세한 정보)](#조합)
   * 현재 글리프 세트: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (구 Font Linux), [Pomicons][gabrielelana-pomicons]
 * 각 폰트의 **고정폭 (monospaced)** _또는_ **가변폭 (non-monospaced)** 글리프 버전
   * 이는 Nerd Font 글리프 자체가 꼭 폰트 전체일 필요는 없다는 의미입니다.

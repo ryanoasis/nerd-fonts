@@ -85,7 +85,7 @@ _如果你..._
   * 更多详情请见 [**Font Patcher**](#font-patcher) 段落
 * **`50`** 已经 [打包了字体家族](#patched-fonts)
 * Over **`1,571,470`** 独立的 组合/变型 字体 [(更多详情)](#combinations)
-* Over **`1,300`** 字形/图标 组合 [(更多详情)](#combinations)
+* Over **`9,000`** 字形/图标 组合 [(更多详情)](#combinations)
   * 当前的字形集包括： [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome],  [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos], [Pomicons][gabrielelana-pomicons]
 * 每种字体的**Monospaced (fixed-pitch, fixed-width)** _和_ **double-width (non-monospaced)** 版本
   * 这指的是Nerd Font字形本身，并不一定需要将字体作为一个整体考虑

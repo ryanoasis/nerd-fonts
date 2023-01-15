@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.4.1"
+script_version = "3.4.3"
 
 version = "2.3.0-RC"
 projectName = "Nerd Fonts"
@@ -776,6 +776,7 @@ class font_patcher:
         #       Here one specific glyph is used as 'scale blueprint'. Other glyphs are
         #       scaled by the same factor as this glyph. This is useful if you have one
         #       'biggest' glyph and all others should stay relatively in size.
+        #       Shifting in addition to scaling can be selected too (see below).
         #   - ScaleGroups:
         #       Here you specify a group of glyphs that should be handled together
         #       with the same scaling and shifting. The basis for it is a 'combined
@@ -785,12 +786,14 @@ class font_patcher:
         # The ScaleGlyph method: You set 'ScaleGlyph' to the unicode of the reference glyph.
         # Note that there can be only one per patch-set.
         # Additionally you set 'GlyphsToScale' that contains all the glyphs that shall be
-        # handled like the reference glyph.
+        # handled (scaled) like the reference glyph.
         # It is a List of: ((glyph code) or (tuple of two glyph codes that form a closed range))
         #    'GlyphsToScale': [
         #        0x0100, 0x0300, 0x0400,  # The single glyphs 0x0100, 0x0300, and 0x0400
         #        (0x0200, 0x0210),        # All glyphs 0x0200 to 0x0210 including both 0x0200 and 0x0210
         #    ]}
+        # If you want to not only scale but also shift as the refenerce glyph you give the
+        # data as 'GlyphsToScale+'. Note that only one set is used and the plus version is preferred.
         #
         # For the ScaleGroup method you define any number groups of glyphs and each group is
         # handled separately. The combined bounding box of all glyphs in the group is determined
@@ -847,6 +850,10 @@ class font_patcher:
             [0xf06e, 0xf070 ], # solar eclipse
             [0xf042, 0xf045 ], # degree sign
         ]}
+        MDI_SCALE_LIST = {'ScaleGlyph': 0xf068d, # 'solid' fills complete design space
+            'GlyphsToScale+': [
+                (0xf0000, 0xfffff) # all because they are very well scaled already
+        ]}
 
         # Define the character ranges
         # Symbol font ranges
@@ -864,7 +871,8 @@ class font_patcher:
             {'Enabled': self.args.fontawesomeextension, 'Name': "Font Awesome Extension",  'Filename': "font-awesome-extension.ttf",                     'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Maximize
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Power, Power On/Off, Power On, Sleep
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",           'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Heavy Circle (aka Power Off)
-            {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesignicons-webfont.ttf",                'Exact': False, 'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.material,             'Name': "Material legacy",         'Filename': "materialdesignicons-webfont.ttf",                'Exact': False, 'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesign/MaterialDesignIconsDesktop.ttf",  'Exact': True,  'SymStart': 0xF0001,'SymEnd': 0xF1AF0,'SrcStart': None,   'ScaleRules': MDI_SCALE_LIST,   'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.weather,              'Name': "Weather Icons",           'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'ScaleRules': WEATH_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.fontlogos,            'Name': "Font Logos",              'Filename': "font-logos.ttf",                                 'Exact': True,  'SymStart': 0xF300, 'SymEnd': 0xF32F, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Magnifying glass
@@ -1117,6 +1125,7 @@ class font_patcher:
             self.sourceFont.selection.select(currentSourceFontGlyph)
             self.sourceFont.paste()
             self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
+            self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
@@ -1322,7 +1331,13 @@ class font_patcher:
         if 'ScaleGlyph' in scaleRules:
             # Rewrite to equivalent ScaleGroup
             group_list = []
-            for i in scaleRules['GlyphsToScale']:
+            if 'GlyphsToScale+' in scaleRules:
+                key = 'GlyphsToScale+'
+                plus = True
+            else:
+                key = 'GlyphsToScale'
+                plus = False
+            for i in scaleRules[key]:
                 if isinstance(i, tuple):
                     group_list.append(range(i[0], i[1] + 1))
                 else:
@@ -1331,7 +1346,10 @@ class font_patcher:
             scale = self.get_scale_factors(sym_dim, 'pa')[0]
             scaleRules['ScaleGroups'].append(group_list)
             scaleRules['scales'].append(scale)
-            scaleRules['bbdims'].append(None) # The 'old' style keeps just the scale, not the positioning
+            if plus:
+                scaleRules['bbdims'].append(sym_dim)
+            else:
+                scaleRules['bbdims'].append(None) # The 'old' style keeps just the scale, not the positioning
 
     def get_glyph_scale(self, symbol_unicode, scaleRules, symbolFont, dest_unicode):
         """ Determines whether or not to use scaled glyphs for glyph in passed symbol_unicode """

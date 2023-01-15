@@ -83,14 +83,12 @@ _如果你..._
 - `選項 7.` 是**Arch Linux**的使用者，並且想要使用**AUR packages**，請見 [Unofficial Arch User Repositories](#選項7-非官方-arch-user-repository-aur)
 - `選項 8.` 想要打包你自訂的字體，請見 [字體包](#選項8-打包你的個人字體)
 
-## 特徵
-
 - [FontForge Python script](#font-patcher) 可以打包任何字體
   - 包括建立**Monospaced (fixed-pitch, fixed-width)** _或者_ **double-width (non-monospaced)** 字形
   - 更多詳情請見 [**Font Patcher**](#font-patcher) 段落
 - **`51`** 已經 [打包了字體家族](#字體包)
-- Over **`1,444,400`** 獨立的 組合/變型 字體 [(更多詳情)](#組合)
-- Over **`2,824`** 字形/圖示 組合 [(更多詳情)](#組合)
+- Over **`1,571,470`** 獨立的 組合/變型 字體 [(更多詳情)](#組合)
+- Over **`9,000`** 字形/圖示 組合 [(更多詳情)](#組合)
   - 當前的字形集包括： [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 - 每種字體的**Monospaced (fixed-pitch, fixed-width)** _和_ **double-width (non-monospaced)** 版本
   - 這指的是 Nerd Font 字形本身，並不一定需要將字體作為一個整體考慮
