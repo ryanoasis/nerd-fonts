@@ -311,6 +311,7 @@ class font_patcher:
         self.font_dim = None  # class 'dict'
         self.font_extrawide = False
         self.source_monospaced = None # Later True or False
+        self.symbolsonly = False
         self.onlybitmaps = 0
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -529,7 +530,7 @@ class font_patcher:
         if self.args.single:
             additionalFontNameSuffix = " M" + additionalFontNameSuffix
             verboseAdditionalFontNameSuffix = " Mono" + verboseAdditionalFontNameSuffix
-        elif self.args.nonmono:
+        elif self.args.nonmono and not self.symbolsonly:
             additionalFontNameSuffix = " P" + additionalFontNameSuffix
             verboseAdditionalFontNameSuffix = " Propo" + verboseAdditionalFontNameSuffix
 
@@ -717,7 +718,7 @@ class font_patcher:
                     fam_suffix += 'M'
                 else:
                     fam_suffix += ' Mono'
-            elif self.args.nonmono:
+            elif self.args.nonmono and not self.symbolsonly:
                 if self.args.windows:
                     fam_suffix += 'P'
                 else:
@@ -1141,6 +1142,7 @@ class font_patcher:
         if self.font_dim['height'] == 0:
             # This can only happen if the input font is empty
             # Assume we are using our prepared templates
+            self.symbolsonly = True
             self.font_dim = {
                 'xmin'  : 0,
                 'ymin'  : -self.sourceFont.descent,
