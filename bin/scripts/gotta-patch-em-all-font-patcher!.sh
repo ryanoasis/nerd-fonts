@@ -48,7 +48,7 @@ function activate_checkfont {
 }
 
 function activate_info {
-  info_only=$2
+  info_only=TRUE
   echo "${LINE_PREFIX} 'Info Only' option given, only generating font info (not patching)"
 }
 
