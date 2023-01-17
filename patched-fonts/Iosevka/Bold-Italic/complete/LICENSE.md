@@ -1,4 +1,4 @@
-Copyright 2015-2021, Renzhi Li (aka. Belleve Invis, belleve@typeof.net)
+Copyright (c) 2015-2023, Renzhi Li (aka. Belleve Invis, belleve@typeof.net)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 

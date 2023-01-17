@@ -1,5 +1,5 @@
-Copyright (c) 2013, Matthias Tellen matthias.tellen@googlemail.com,
-with Reserved Font Name monoOne.
+Copyright (c) 2022, Matthias Tellen matthias.tellen@googlemail.com,
+with Reserved Font Name mononoki.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
