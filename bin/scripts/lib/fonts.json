@@ -352,7 +352,7 @@
     },
     {
       "unpatchedName": "Mononoki",
-      "RFN": false,
+      "RFN": true,
       "patchedName": "Mononoki",
       "folderName": "Mononoki",
       "imagePreviewFont": "Mononoki Nerd Font",
