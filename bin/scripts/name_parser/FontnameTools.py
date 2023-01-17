@@ -176,7 +176,7 @@ class FontnameTools:
         ( '(m)plus',                    r'\1+'), # Added this, because they use a plus symbol :->
         ( 'Gohufont',                   r'GohuFont'), # Correct to CamelCase
         # Noone cares that font names starting with a digit are forbidden:
-        # ( '(3270)',                     r'Ibeam\1'),
+        ( 'IBM 3270',                   r'3270'), # for historical reasons and 'IBM' is a TM or something
     ]
 
     @staticmethod

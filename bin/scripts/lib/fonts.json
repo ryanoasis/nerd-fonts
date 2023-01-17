@@ -1,7 +1,7 @@
 {
   "fonts": [
     {
-      "unpatchedName": "3270",
+      "unpatchedName": "IBM 3270",
       "RFN": false,
       "patchedName": "3270",
       "folderName": "3270",
