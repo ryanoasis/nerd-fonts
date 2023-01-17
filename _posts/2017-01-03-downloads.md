@@ -16,7 +16,7 @@ page: font-downloads
       </a>
       {% assign upN = font.unpatchedName | split: " " | join: "" %}
       {% assign pN = font.patchedName | split: " " | join: "" %}
-      {% if  upN != pN %}<div><strong>&bull; {% if font.RFN == true %}Reserved{% else %}Original{% endif %} Font Name:</strong> {{ font.unpatchedName }}</div>{% endif %}
+      {% if font.RFN == true or upN != pN %}<div><strong>&bull; {% if font.RFN == true %}Reserved{% else %}Original{% endif %} Font Name:</strong> {{ font.unpatchedName }}</div>{% endif %}
       <div><strong>&bull; Info:</strong> {{ font.description }}</div>
       <div class="nerd-font-buttons-wrapper">
         <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.folderName }}.zip" class="inlineblock bg-green border-white text-white nerd-font-button nf-fa-download">Download</a>
