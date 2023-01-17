@@ -227,7 +227,7 @@ class FontnameTools:
     @staticmethod
     def parse_font_name(name):
         """Expects a filename following the 'FontFamilyName-FontStyle' pattern and returns ... parts"""
-        name = re.sub(r'\bsemi-narrow\b', 'SemiNarrow', name, 1, re.IGNORECASE) # Just for "3270 Semi-Narrow" :-/
+        name = re.sub(r'\bsemi-condensed\b', 'SemiCondensed', name, 1, re.IGNORECASE) # Just for "3270 Semi-Condensed" :-/
         name = re.sub('[_\s]+', ' ', name)
         matches = re.match(r'([^-]+)(?:-(.*))?', name)
         familyname = FontnameTools.camel_casify(matches.group(1))
