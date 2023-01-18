@@ -6900,3 +6900,4 @@ i='󱫭' i_md_timer_sync_outline=$i
 i='󱫮' i_md_ear_hearing_loop=$i
 i='󱫯' i_md_sail_boat_sink=$i
 i='󱫰' i_md_lecturn=$i
+unset i

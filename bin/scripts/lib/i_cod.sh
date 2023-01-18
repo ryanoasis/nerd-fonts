@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Codicons (5 icons)
+# Codicons (387 icons)
 # Codepoints: EA60-EBEB with holes
 test -n "$__i_cod_loaded" && return || __i_cod_loaded=1
 i='' i_cod_add=$i
