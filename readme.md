@@ -140,7 +140,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]      | 3.000 | NO   | ![w] ![m2] ![l]   |
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      | [InconsolataGo][f-inconsolatago]  | 1.013 | NO   | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc] | 1.3 | NO   | ![w] ![m2] ![l]   |
-| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              |11.0.1 | NO   | [#83][s-iosevka]  |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              |17.0.4 | NO   | [#83][s-iosevka]  |
 | [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| 2.304 | NO   | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                | 34    | NO   | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        |2.00.5 | YES  | ![w] ![m2] ![l]   |
@@ -148,7 +148,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                  | 1.21  | NO   | ![w] ![m2] ![l]   |
 | [Monofur Nerd Font][p-monofur]                    | Tobias B Koehler                  | 1.0   | NO   | ![w] ![m2] ![l]   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                | 0.61  | NO   | ![w] ![m2] ![l]   |
-| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | 1.2   | NO   | ![w] ![m2] ![l]   |
+| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | 1.5   | NO   | ![w] ![m2] ![l]   |
 | [M+ (MPlus) Nerd Font][p-mplus]                   | [M+ Fonts][f-mplus]               | 1.063 | NO   | ![w] ![m2] ![l]   |
 | [Noto][p-noto]                                    | [Noto][f-noto]                    | div   | NO   | ![w] ![m2] ![l]   |
 | [OpenDyslexic][p-opendyslexic]                    | [OpenDyslexic][f-opendyslexic]    | 2.001 | NO   | ![w] ![m2] ![l]   |
