@@ -335,6 +335,8 @@ jobs:
 
       - name: Generate new CSS file and webfonts
         run: |
+          sudo apt update -y -q
+          sudo apt install fontforge -y -q
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./generate-css.sh
           ./generate-webfonts.sh
