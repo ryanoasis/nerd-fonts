@@ -141,7 +141,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      | [InconsolataGo][f-inconsolatago]  | 1.013 | NO   | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc] | 1.3 | NO   | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              |11.0.1 | NO   | [#83][s-iosevka]  |
-| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| 2.251 | NO   | ![w] ![m2] ![l]   |
+| [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| 2.304 | NO   | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                | 34    | NO   | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        |2.00.5 | YES  | ![w] ![m2] ![l]   |
 | [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                  | 1.000 | NO   | ![w2] ![m2] ![l]  |
