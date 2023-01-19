@@ -921,13 +921,11 @@ class font_patcher:
                 # that means it has gone through this function before.
                 # Therefore we skip it to avoid infinite loop.
                 # A unicode value of -1 basically means unused and is also worth skipping.
-                if r[0] in self.essential or r[0] == -1:
-                    continue
-                self.add_glyphrefs_to_essential(r[0])
+                if r[0] not in self.essential and r[0] >= 0:
+                    self.add_glyphrefs_to_essential(r[0])
         for r in self.sourceFont[unicode].references:
-            if self.sourceFont[r[0]].unicode in self.essential or self.sourceFont[r[0]].unicode == -1:
-                continue
-            self.add_glyphrefs_to_essential(self.sourceFont[r[0]].unicode)
+            if self.sourceFont[r[0]].unicode not in self.essential and self.sourceFont[r[0]].unicode >= 0:
+                self.add_glyphrefs_to_essential(self.sourceFont[r[0]].unicode)
 
     def get_essential_references(self):
         """Find glyphs that are needed for the basic glyphs"""
