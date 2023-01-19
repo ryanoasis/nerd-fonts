@@ -912,6 +912,23 @@ class font_patcher:
                 self.sourceFont.os2_typoascent += 1
                 self.sourceFont.os2_winascent += 1
 
+    def add_glyphrefs_to_essential(self, unicode):
+        self.essential.add(unicode)
+        # According to fontforge spec, altuni is either None or a tuple of tuples
+        if self.sourceFont[unicode].altuni is not None:
+            for r in self.sourceFont[unicode].altuni:
+                # If alternate unicode already exists in self.essential,
+                # that means it has gone through this function before.
+                # Therefore we skip it to avoid infinite loop.
+                # A unicode value of -1 basically means unused and is also worth skipping.
+                if r[0] in self.essential or r[0] == -1:
+                    continue
+                self.add_glyphrefs_to_essential(r[0])
+        for r in self.sourceFont[unicode].references:
+            if self.sourceFont[r[0]].unicode in self.essential or self.sourceFont[r[0]].unicode == -1:
+                continue
+            self.add_glyphrefs_to_essential(self.sourceFont[r[0]].unicode)
+
     def get_essential_references(self):
         """Find glyphs that are needed for the basic glyphs"""
         # Sometimes basic glyphs are constructed from multiple other glyphs.
@@ -921,8 +938,7 @@ class font_patcher:
         for glyph in range(0x21, 0x17f):
             if not glyph in self.sourceFont:
                 continue
-            for r in self.sourceFont[glyph].references:
-                self.essential.add(self.sourceFont[r[0]].unicode)
+            self.add_glyphrefs_to_essential(glyph)
 
     def get_sourcefont_dimensions(self):
         """ This gets the font dimensions (cell width and height), and makes them equal on all platforms """
