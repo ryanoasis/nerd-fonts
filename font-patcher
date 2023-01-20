@@ -271,7 +271,7 @@ class font_patcher:
             self.assert_monospace()
         self.remove_ligatures()
         self.setup_patch_set()
-        self.setup_line_dimensions()
+        self.improve_line_dimensions()
         self.get_sourcefont_dimensions()
         self.sourceFont.encoding = 'UnicodeFull'  # Update the font encoding to ensure that the Unicode glyphs are available
         self.onlybitmaps = self.sourceFont.onlybitmaps  # Fetch this property before adding outlines. NOTE self.onlybitmaps initialized and never used
@@ -902,22 +902,14 @@ class font_patcher:
             {'Enabled': self.args.custom,               'Name': "Custom",                  'Filename': self.args.custom,                                 'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': CUSTOM_ATTR}
         ]
 
-    def setup_line_dimensions(self):
-        # win_ascent and win_descent are used to set the line height for windows fonts.
-        # hhead_ascent and hhead_descent are used to set the line height for mac fonts.
-        #
+    def improve_line_dimensions(self):
         # Make the total line size even.  This seems to make the powerline separators
         # center more evenly.
         if self.args.adjustLineHeight:
             if (self.sourceFont.os2_winascent + self.sourceFont.os2_windescent) % 2 != 0:
+                self.sourceFont.hhea_ascent += 1
+                self.sourceFont.os2_typoascent += 1
                 self.sourceFont.os2_winascent += 1
-
-            # Make the line size identical for windows and mac
-            # ! This is broken because hhea* is changed but os2_typo* is not
-            # ! On the other hand we need intact (i.e. original) typo values
-            # ! in get_sourcefont_dimensions() @TODO FIXME
-            self.sourceFont.hhea_ascent = self.sourceFont.os2_winascent
-            self.sourceFont.hhea_descent = -self.sourceFont.os2_windescent
 
     def get_essential_references(self):
         """Find glyphs that are needed for the basic glyphs"""
