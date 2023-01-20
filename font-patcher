@@ -1566,7 +1566,7 @@ def setup_arguments():
     args = parser.parse_args()
 
     if args.makegroups and not FontnameParserOK:
-        sys.exit(projectName + ": FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups".format(projectName))
+        sys.exit("{}: FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups".format(projectName))
 
     # if you add a new font, set it to True here inside the if condition
     if args.complete:
