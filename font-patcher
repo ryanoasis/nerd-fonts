@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.4.5"
+script_version = "3.5.0"
 
 version = "2.3.0"
 projectName = "Nerd Fonts"
@@ -271,8 +271,8 @@ class font_patcher:
             self.assert_monospace()
         self.remove_ligatures()
         self.setup_patch_set()
-        self.improve_line_dimensions()
         self.get_sourcefont_dimensions()
+        self.improve_line_dimensions()
         self.sourceFont.encoding = 'UnicodeFull'  # Update the font encoding to ensure that the Unicode glyphs are available
         self.onlybitmaps = self.sourceFont.onlybitmaps  # Fetch this property before adding outlines. NOTE self.onlybitmaps initialized and never used
 
@@ -907,6 +907,7 @@ class font_patcher:
         # center more evenly.
         if self.args.adjustLineHeight:
             if (self.sourceFont.os2_winascent + self.sourceFont.os2_windescent) % 2 != 0:
+                # All three are equal before due to get_sourcefont_dimensions()
                 self.sourceFont.hhea_ascent += 1
                 self.sourceFont.os2_typoascent += 1
                 self.sourceFont.os2_winascent += 1
@@ -924,18 +925,56 @@ class font_patcher:
                 self.essential.add(self.sourceFont[r[0]].unicode)
 
     def get_sourcefont_dimensions(self):
-        # Initial font dimensions
-        self.font_dim = {
-            'xmin'  : 0,
-            'ymin'  : -self.sourceFont.os2_windescent,
-            'xmax'  : 0,
-            'ymax'  : self.sourceFont.os2_winascent,
-            'width' : 0,
-            'height': 0,
-        }
-        if self.sourceFont.os2_use_typo_metrics:
-            self.font_dim['ymin'] = self.sourceFont.os2_typodescent
-            self.font_dim['ymax'] = self.sourceFont.os2_typoascent
+        """ This gets the font dimensions (cell width and height), and makes them equal on all platforms """
+        # Step 1
+        # There are three ways to discribe the baseline to baseline distance
+        # (a.k.a. line spacing) of a font. That is all a kuddelmuddel
+        # and we try to sort this out here
+        # See also https://glyphsapp.com/learn/vertical-metrics
+        # See also https://github.com/source-foundry/font-line
+        hhea_height = self.sourceFont.hhea_ascent - self.sourceFont.hhea_descent
+        typo_height = self.sourceFont.os2_typoascent - self.sourceFont.os2_typodescent
+        win_height = self.sourceFont.os2_winascent + self.sourceFont.os2_windescent
+        win_gap = max(0, self.sourceFont.hhea_linegap - win_height + hhea_height)
+        hhea_btb = hhea_height + self.sourceFont.hhea_linegap
+        typo_btb = typo_height + self.sourceFont.os2_typolinegap
+        win_btb = win_height + win_gap
+        use_typo = self.sourceFont.os2_use_typo_metrics != 0
+
+        # We use either TYPO (1) or WIN (2) and compare with HHEA
+        # and use HHEA (0) if the fonts seems broken
+        our_btb = typo_btb if use_typo else win_btb
+        if our_btb == hhea_btb:
+            metrics = 1 if use_typo else 2 # conforming font
+        elif abs(our_btb - hhea_btb) / our_btb < 0.03:
+            print("{}: Font vertical metrics slightly off ({:.1f}%)".format(projectName, (our_btb - hhea_btb) / our_btb * 100.0))
+            metrics = 1 if use_typo else 2
+        else:
+            # Try the other metric
+            our_btb = typo_btb if not use_typo else win_btb
+            if our_btb == hhea_btb:
+                print("{}: Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. {})".format(projectName, not use_typo))
+                use_typo = not use_typo
+                self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
+                metrics = 1 if use_typo else 2
+            else:
+                print("{}: WARNING Font vertical metrics inconsistent ({:.1f}%), using HHEA".format(projectName, (our_btb - hhea_btb) / our_btb * 100.0))
+                our_btb = hhea_btb
+                metrics = 0
+
+        # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
+
+        self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0}
+
+        if metrics == 0:
+            self.font_dim['ymin'] = self.sourceFont.hhea_descent + half_gap(self.sourceFont.hhea_linegap, False)
+            self.font_dim['ymax'] = self.sourceFont.hhea_ascent + half_gap(self.sourceFont.hhea_linegap, True)
+        elif metrics == 1:
+            self.font_dim['ymin'] = self.sourceFont.os2_typodescent + half_gap(self.sourceFont.os2_typolinegap, False)
+            self.font_dim['ymax'] = self.sourceFont.os2_typoascent + half_gap(self.sourceFont.os2_typolinegap, True)
+        else:
+            self.font_dim['ymin'] = -self.sourceFont.os2_windescent + half_gap(win_gap, False)
+            self.font_dim['ymax'] = self.sourceFont.os2_winascent + half_gap(win_gap, True)
 
         # Calculate font height
         self.font_dim['height'] = -self.font_dim['ymin'] + self.font_dim['ymax']
@@ -950,26 +989,21 @@ class font_patcher:
                 'width' : self.sourceFont.em,
                 'height': self.sourceFont.descent + self.sourceFont.ascent,
             }
+        elif self.font_dim['height'] < 0:
+            sys.exit("{}: Can not detect sane font height".format(projectName))
 
-        # Line gap add extra space on the bottom of the line which
-        # doesn't allow the powerline glyphs to fill the entire line.
-        # Put half of the gap into the 'cell', each top and bottom
-        gap = max(self.sourceFont.hhea_linegap, self.sourceFont.os2_typolinegap) # TODO probably wrong
-        if self.sourceFont.os2_use_typo_metrics:
-            gap = self.sourceFont.os2_typolinegap
-        self.sourceFont.hhea_linegap = 0
+        # Make all metrics equal
         self.sourceFont.os2_typolinegap = 0
-        if gap > 0:
-            gap_top = int(gap / 2)
-            gap_bottom = gap - gap_top
-            print("Redistributing line gap of {} ({} top and {} bottom)".format(gap, gap_top, gap_bottom))
-            self.font_dim['ymin'] -= gap_bottom
-            self.font_dim['ymax'] += gap_top
-            self.font_dim['height'] = -self.font_dim['ymin'] + self.font_dim['ymax']
-            self.sourceFont.os2_typoascent = self.sourceFont.os2_typoascent + gap_top
-            self.sourceFont.os2_typodescent = self.sourceFont.os2_typodescent - gap_bottom
-            # TODO Check what to do with win and hhea values
+        self.sourceFont.os2_typoascent = self.font_dim['ymax']
+        self.sourceFont.os2_typodescent = self.font_dim['ymin']
+        self.sourceFont.os2_winascent = self.sourceFont.os2_typoascent
+        self.sourceFont.os2_windescent = -self.sourceFont.os2_typodescent
+        self.sourceFont.hhea_ascent = self.sourceFont.os2_typoascent
+        self.sourceFont.hhea_descent = self.sourceFont.os2_typodescent
+        self.sourceFont.hhea_linegap = self.sourceFont.os2_typolinegap
+        self.sourceFont.os2_use_typo_metrics = 1
 
+        # Step 2
         # Find the biggest char width and advance width
         # 0x00-0x17f is the Latin Extended-A range
         warned = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
@@ -1378,6 +1412,20 @@ class font_patcher:
                     return (scale, box)
         return None
 
+
+def half_gap(gap, top):
+    """ Divides integer value into two new integers """
+    # Line gap add extra space on the bottom of the line which
+    # doesn't allow the powerline glyphs to fill the entire line.
+    # Put half of the gap into the 'cell', each top and bottom
+    if gap <= 0:
+        return 0
+    gap_top = int(gap / 2)
+    gap_bottom = gap - gap_top
+    if top:
+        print("Redistributing line gap of {} ({} top and {} bottom)".format(gap, gap_top, gap_bottom))
+        return gap_top
+    return gap_bottom
 
 def replace_font_name(font_name, replacement_dict):
     """ Replaces all keys with vals from replacement_dict in font_name. """
