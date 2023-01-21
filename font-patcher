@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.4.4"
+script_version = "3.4.5"
 
 version = "2.3.0"
 projectName = "Nerd Fonts"
@@ -970,7 +970,7 @@ class font_patcher:
         warned = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
         for glyph in range(0x21, 0x17f):
             if glyph in range(0x7F, 0xBF) or glyph in [
-                    0x132, 0x134, # IJ, ij (in Overpass Mono)
+                    0x132, 0x133, # IJ, ij (in Overpass Mono)
                     0x022, 0x027, 0x060, # Single and double quotes in Inconsolata LGC
                     0x0D0, 0x10F, 0x110, 0x111, 0x127, 0x13E, 0x140, 0x165, # Eth and others with stroke or caron in RobotoMono
                     ]:
