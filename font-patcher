@@ -36,7 +36,6 @@ except ImportError:
         )
     )
 
-# This is for experimenting
 sys.path.insert(0, os.path.abspath(os.path.dirname(sys.argv[0])) + '/bin/scripts/name_parser/')
 try:
     from FontnameParser import FontnameParser
