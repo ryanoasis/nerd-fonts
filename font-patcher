@@ -186,6 +186,14 @@ def check_panose_monospaced(font):
                    (panose[0] == 3 and panose[3] == 3))
     return 1 if panose_mono else 0
 
+def panose_check_to_text(value, panose = False):
+    """ Convert value from check_panose_monospaced() to human readable string """
+    if value == 0:
+        return "Panose says \"not monospaced\""
+    if value == 1:
+        return "Panose says \"monospaced\""
+    return "Panose is invalid" + (" ({})".format(list(panose)) if panose else "")
+
 def is_monospaced(font):
     """ Check if a font is probably monospaced """
     # Some fonts lie (or have not any Panose flag set), spot check monospaced:
@@ -234,6 +242,11 @@ def get_advance_width(font, extended, minimum):
         elif minimum and width > font[glyph].width:
             width = font[glyph].width
     return width
+
+def report_advance_widths(font):
+    return "Advance widths (base/extended): {} - {} / {} - {}".format(
+        get_advance_width(font, True, True), get_advance_width(font, False, True),
+        get_advance_width(font, False, False), get_advance_width(font, True, False))
 
 
 class font_patcher:
@@ -677,8 +690,9 @@ class font_patcher:
         # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
         if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
             print("  Warning: Monospaced check: Panose assumed to be wrong")
-            print("     Glyph widths {} / {} - {} and Panose says \"monospace {}\" ({})".format(get_advance_width(self.sourceFont, False, True),
-                get_advance_width(self.sourceFont, False, False), get_advance_width(self.sourceFont, True, False), panose_mono, list(self.sourceFont.os2_panose)))
+            print("  {} and {}".format(
+                report_advance_widths(self.sourceFont),
+                panose_check_to_text(panose_mono, self.sourceFont.os2_panose)))
         if not width_mono:
             print("  Warning: Sourcefont is not monospaced - forcing to monospace not advisable, results might be useless")
             if self.args.single <= 1:
@@ -962,9 +976,7 @@ class font_patcher:
             self.sourceFont.os2_typodescent = self.sourceFont.os2_typodescent - gap_bottom
             # TODO Check what to do with win and hhea values
 
-        # Find the biggest char width
-        # Ignore the y-values, os2_winXXXXX values set above are used for line height
-        #
+        # Find the biggest char width and advance width
         # 0x00-0x17f is the Latin Extended-A range
         warned = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
         for glyph in range(0x21, 0x17f):
@@ -982,7 +994,8 @@ class font_patcher:
             if self.font_dim['width'] < self.sourceFont[glyph].width:
                 self.font_dim['width'] = self.sourceFont[glyph].width
                 if not warned and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
-                    print("Extended glyphs wider than basic glyphs")
+                    print("Warning: Extended glyphs wider than basic glyphs, results might be useless\n  {}".format(
+                        report_advance_widths(self.sourceFont)))
                     warned = True
                 # print("New MAXWIDTH-A {} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if xmax > self.font_dim['xmax']:
