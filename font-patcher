@@ -946,21 +946,11 @@ class font_patcher:
         our_btb = typo_btb if use_typo else win_btb
         if our_btb == hhea_btb:
             metrics = 1 if use_typo else 2 # conforming font
-        elif abs(our_btb - hhea_btb) / our_btb < 0.03:
-            print("{}: Font vertical metrics slightly off ({:.1f}%)".format(projectName, (our_btb - hhea_btb) / our_btb * 100.0))
-            metrics = 1 if use_typo else 2
         else:
-            # Try the other metric
-            our_btb = typo_btb if not use_typo else win_btb
-            if our_btb == hhea_btb:
-                print("{}: Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. {})".format(projectName, not use_typo))
-                use_typo = not use_typo
-                self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
-                metrics = 1 if use_typo else 2
-            else:
-                print("{}: WARNING Font vertical metrics inconsistent ({:.1f}%), using HHEA".format(projectName, (our_btb - hhea_btb) / our_btb * 100.0))
-                our_btb = hhea_btb
-                metrics = 0
+            # We trust the WIN metric more, see experiments in #1056
+            print("{}: WARNING Font vertical metrics inconsistent (HHEA {} / TYPO {} / WIN {}), using WIN".format(projectName, hhea_btb, typo_btb, win_btb))
+            our_btb = win_btb
+            metrics = 1
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
