@@ -199,10 +199,10 @@ def is_monospaced(font):
     # Some fonts lie (or have not any Panose flag set), spot check monospaced:
     width = -1
     width_mono = True
-    for glyph in [ 0x49, 0x4D, 0x57, 0x61, 0x69, 0x2E ]: # wide and slim glyphs 'I', 'M', 'W', 'a', 'i', '.'
+    for glyph in [ 0x49, 0x4D, 0x57, 0x61, 0x69, 0x6d, 0x2E ]: # wide and slim glyphs 'I', 'M', 'W', 'a', 'i', 'm', '.'
         if not glyph in font:
             # A 'strange' font, believe Panose
-            return check_panose_monospaced(font) == 1
+            return (check_panose_monospaced(font) == 1, None)
         # print(" -> {} {}".format(glyph, font[glyph].width))
         if width < 0:
             width = font[glyph].width
@@ -220,7 +220,7 @@ def is_monospaced(font):
             width_mono = False
             break
     # We believe our own check more then Panose ;-D
-    return width_mono
+    return (width_mono, None if width_mono else glyph)
 
 def get_advance_width(font, extended, minimum):
     """ Get the maximum/minimum advance width in the extended(?) range """
@@ -685,7 +685,7 @@ class font_patcher:
 
     def assert_monospace(self):
         # Check if the sourcefont is monospaced
-        width_mono = is_monospaced(self.sourceFont)
+        width_mono, offending_char = is_monospaced(self.sourceFont)
         panose_mono = check_panose_monospaced(self.sourceFont)
         # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
         if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
@@ -695,6 +695,8 @@ class font_patcher:
                 panose_check_to_text(panose_mono, self.sourceFont.os2_panose)))
         if not width_mono:
             print("  Warning: Sourcefont is not monospaced - forcing to monospace not advisable, results might be useless")
+            if offending_char is not None:
+                print("           Offending char: 0x{:X}".format(offending_char))
             if self.args.single <= 1:
                 sys.exit(projectName + ": Font will not be patched! Give --mono (or -s, or --use-single-width-glyphs) twice to force patching")
 
