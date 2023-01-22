@@ -4,18 +4,18 @@ name: Release
 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-    paths-ignore:
-      - 'images/**'
-      - '**.md'
-      - '.all-contributorsrc'
-      - 'chocolatey/**'
-      - 'bin/scripts/lib/**'
-      - 'Dockerfile'
-      - 'install.ps1'
-      - 'install.sh'
-      - 'LICENSE'
+  # push:
+  #   branches: [ master ]
+  #   paths-ignore:
+  #     - 'images/**'
+  #     - '**.md'
+  #     - '.all-contributorsrc'
+  #     - 'chocolatey/**'
+  #     - 'bin/scripts/lib/**'
+  #     - 'Dockerfile'
+  #     - 'install.ps1'
+  #     - 'install.sh'
+  #     - 'LICENSE'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
