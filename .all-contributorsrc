@@ -1148,6 +1148,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "nathanielevan",
+      "name": "Nathaniel Evan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9361126?v=4",
+      "profile": "https://github.com/nathanielevan",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
