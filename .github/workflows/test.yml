@@ -85,5 +85,6 @@ jobs:
       - name: Archive font package zip files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
+          ls -lR ../../patched-fonts/JetBrainsMono
           ./archive-fonts.sh "JetBrainsMono"
 
