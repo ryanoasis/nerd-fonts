@@ -1,12 +1,6 @@
-iA Writer Duo comes bundled with [iA Writer for Mac and iOS](https://ia.net/writer/)
+# iA-Fonts
+These are fonts from iA. Please read the licensing files before using them in any way.
 
-For in depth explanation of iA Writer Mono, Duo, and Quattro please read our [blog entry on Duospace](http://ia.net/topics/in-search-of-the-perfect-writing-font/) and on [iA Writer Mono, Duo, and Quattro](https://ia.net/writer/blog/a-typographic-christmas)
-
-This is a modification of IBM's Plex font. 
-The upstream project is [here](https://github.com/IBM/type)
-Please read the licensing file before working with it. 
-
-If you fork or use our fonts, please reference iA Writer clearly.
 ## Why `iM Writing` and not `iA Writer`?
 
 What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in particular the [Reserved Font Name mechanism][SIL-RFN]
