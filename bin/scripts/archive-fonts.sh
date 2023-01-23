@@ -5,7 +5,7 @@
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
 # adds Windows versions of the fonts as well (casks files just won't download them)
 # used for debugging
-# set -x
+set -x
 # Example run with pattern matching:
 # ./archive-fonts heavydata
 # Example with same font names for different paths
