@@ -28,18 +28,18 @@ LineGap: 0
 VLineGap: 0
 Panose: 2 0 5 9 0 0 0 0 0 0
 OS2TypoAscent: 0
-OS2TypoAOffset: 1
+OS2TypoAOffset: 0
 OS2TypoDescent: 0
-OS2TypoDOffset: 1
+OS2TypoDOffset: 0
 OS2TypoLinegap: 0
 OS2WinAscent: 0
-OS2WinAOffset: 1
+OS2WinAOffset: 0
 OS2WinDescent: 0
-OS2WinDOffset: 1
+OS2WinDOffset: 0
 HheadAscent: 0
-HheadAOffset: 1
+HheadAOffset: 0
 HheadDescent: 0
-HheadDOffset: 1
+HheadDOffset: 0
 OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
