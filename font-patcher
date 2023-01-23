@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.0"
+script_version = "3.5.1"
 
 version = "2.3.0"
 projectName = "Nerd Fonts"
@@ -912,6 +912,28 @@ class font_patcher:
                 self.sourceFont.os2_typoascent += 1
                 self.sourceFont.os2_winascent += 1
 
+    def add_glyphrefs_to_essential(self, unicode):
+        self.essential.add(unicode)
+        # According to fontforge spec, altuni is either None or a tuple of tuples
+        # Those tuples contained in altuni are of the following "format":
+        # (unicode-value, variation-selector, reserved-field)
+        altuni = self.sourceFont[unicode].altuni
+        if altuni is not None:
+            for altcode in [ v for v, s, r in altuni if v >= 0 ]:
+                # If alternate unicode already exists in self.essential,
+                # that means it has gone through this function before.
+                # Therefore we skip it to avoid infinite loop.
+                # A unicode value of -1 basically means unused and is also worth skipping.
+                if altcode not in self.essential:
+                    self.add_glyphrefs_to_essential(altcode)
+        # From fontforge documentation:
+        # glyph.references return a tuple of tuples containing, for each reference in foreground,
+        # a glyph name, a transformation matrix, and whether the reference is currently selected.
+        references = self.sourceFont[unicode].references
+        for refcode in [ self.sourceFont[n].unicode for n, m, s in references ]:
+            if refcode not in self.essential and refcode >= 0:
+                self.add_glyphrefs_to_essential(refcode)
+
     def get_essential_references(self):
         """Find glyphs that are needed for the basic glyphs"""
         # Sometimes basic glyphs are constructed from multiple other glyphs.
@@ -921,8 +943,7 @@ class font_patcher:
         for glyph in range(0x21, 0x17f):
             if not glyph in self.sourceFont:
                 continue
-            for r in self.sourceFont[glyph].references:
-                self.essential.add(self.sourceFont[r[0]].unicode)
+            self.add_glyphrefs_to_essential(glyph)
 
     def get_sourcefont_dimensions(self):
         """ This gets the font dimensions (cell width and height), and makes them equal on all platforms """
