@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Nerd Fonts Version: 2.3.2
+# Nerd Fonts Version: 2.3.3
 # Script Version: 1.0.0
 # Generates original-source.otf from individual glyphs
 #
@@ -12,7 +12,7 @@ import fontforge
 import psMat
 
 # Double-quotes required here, for version-bump.sh:
-version = "2.3.2"
+version = "2.3.3"
 
 start_codepoint = 0xE4FA
 codepoint_shift = 0x0100 # shift introduced by font-patcher

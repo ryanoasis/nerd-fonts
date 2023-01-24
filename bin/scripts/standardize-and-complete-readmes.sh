@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.3.2
+# Nerd Fonts Version: 2.3.3
 # Script Version: 1.1.0
 # Iterates over all patched fonts directories
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.3.2
+# Nerd Fonts Version: 2.3.3
 # Script Version: 1.2.0
 
 # used for debugging
