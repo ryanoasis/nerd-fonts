@@ -9,7 +9,7 @@
 
 [Релізи][release] &nbsp;&nbsp;|&nbsp;&nbsp; [Шрифти](#patched-fonts) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Патчер Шрифтів](#font-patcher) &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Wiki Документація][wiki] &nbsp;&nbsp;| &nbsp;&nbsp;[ Стікери][stickers]&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; [VimDevIcons][vim-devicons]
 
-[![GitHub Реліз][img-version-badge]][repo] [![Gitter][img-gitter-badge]][gitter] [![Build Status][img-travis-ci]][travis-ci] [![Code of Conduct][coc-badge]][coc] [![PRs Welcome][prs-badge]][prs]  <a href="#patched-fonts" title=""><img src="https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg?sanitize=true" alt="Nerd Fonts - підтримка операційных систем"></a> [![Twitter][twitter-badge]][twitter-intent]
+[![GitHub Реліз][img-version-badge]][repo] [![Gitter][img-gitter-badge]][gitter] [![Code of Conduct][coc-badge]][coc] [![PRs Welcome][prs-badge]][prs]  <a href="#patched-fonts" title=""><img src="https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg?sanitize=true" alt="Nerd Fonts - підтримка операційных систем"></a> [![Twitter][twitter-badge]][twitter-intent]
 
 </div>
 
@@ -498,8 +498,6 @@ The list is not complete, but you can [search for a complete list here](https://
 
 [code-climate]: https://codeclimate.com/github/ryanoasis/nerd-fonts
 
-[travis-ci]: https://travis-ci.org/ryanoasis/nerd-fonts
-
 [twitter-intent]: https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fryanoasis%2Fnerd-fonts&via=%40nerdfonts&text=Nerd%20Fonts%20-%20Iconic%20font%20aggregator%2C%20collection%2C%20and%20patcher&hashtags=iconfont%20font%20github
 
 <!--
@@ -525,8 +523,6 @@ The list is not complete, but you can [search for a complete list here](https://
 [img-gitter-badge]: https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge
 
 [img-code-climate-badge]: https://img.shields.io/codeclimate/issues/ryanoasis/nerd-fonts.svg?style=for-the-badge
-
-[img-travis-ci]: https://img.shields.io/travis/ryanoasis/nerd-fonts.svg?branch=master&style=for-the-badge
 
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge
 
