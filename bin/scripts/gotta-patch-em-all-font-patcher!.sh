@@ -19,9 +19,9 @@ type fontforge >/dev/null 2>&1 || {
 sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 res1=$(date +%s)
-parent_dir="${sd}/../../"
+parent_dir=$(dirname $(dirname ${sd})) # two levels up (i.e. ../../)
 # Set source and target directories
-source_fonts_dir="${sd}/../../src/unpatched-fonts"
+source_fonts_dir="${parent_dir}/src/unpatched-fonts"
 like_pattern='.*\.\(otf\|ttf\|sfd\)'
 complete_variations_per_family=4
 font_typefaces_count=0
@@ -30,7 +30,7 @@ complete_variation_count=0
 total_variation_count=0
 total_count=0
 last_parent_dir=""
-unpatched_parent_dir="bin/scripts/../../src/unpatched-fonts"
+unpatched_parent_dir="src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 timestamp_parent_dir=${patched_parent_dir}
 max_parallel_process=8
