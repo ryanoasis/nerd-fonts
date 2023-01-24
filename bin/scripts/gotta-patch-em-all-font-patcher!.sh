@@ -19,9 +19,8 @@ type fontforge >/dev/null 2>&1 || {
 sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 res1=$(date +%s)
-parent_dir=$(dirname $(dirname ${sd})) # two levels up (i.e. ../../)
+repo_root_dir=$(dirname $(dirname ${sd})) # two levels up (i.e. ../../)
 # Set source and target directories
-source_fonts_dir="${parent_dir}/src/unpatched-fonts"
 like_pattern='.*\.\(otf\|ttf\|sfd\)'
 complete_variations_per_family=4
 font_typefaces_count=0
@@ -33,6 +32,7 @@ last_parent_dir=""
 unpatched_parent_dir="src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 timestamp_parent_dir=${patched_parent_dir}
+source_fonts_dir="${repo_root_dir}/${unpatched_parent_dir}"
 max_parallel_process=8
 
 function activate_keeptime {
@@ -229,7 +229,7 @@ function patch_font {
 
   if [ "$post_process" ]
   then
-    post_process="--postprocess=${parent_dir}/${post_process}"
+    post_process="--postprocess=${repo_root_dir}/${post_process}"
   else
     post_process=""
   fi
@@ -245,7 +245,7 @@ function patch_font {
     combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   fi
 
-  cd "$parent_dir" || {
+  cd "$repo_root_dir" || {
     echo >&2 "# Could not find project parent directory"
     exit 3
   }
@@ -389,7 +389,7 @@ function generate_readme {
   if [ "$generate_combinations" == 1 ];
   then
     # add to the file
-    cat "$parent_dir/src/readme-per-directory-variations.md" >> "$combinations_filename"
+    cat "$repo_root_dir/src/readme-per-directory-variations.md" >> "$combinations_filename"
     {
       printf "\`\`\`sh"
       printf "\\n# %s Possible Combinations:\\n" "$combination_count"
