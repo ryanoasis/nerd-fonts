@@ -77,6 +77,11 @@ function show_help {
   echo "          Process all font files that are in directory \"iosevka\""
 }
 
+function find_font_root {
+  # e.g. /a/b/c/nerd-fonts/src/unpatched-fonts/Meslo
+  sed -E "s|(${unpatched_parent_dir}/[^/]*).*|\1|" <<< "$1"
+}
+
 while getopts ":chijtv-:" option; do
   case "${option}" in
     c)
@@ -335,15 +340,10 @@ function generate_info {
   generate_readme "$patched_font_dir" 0
   echo "$LINE_PREFIX * Copying license files"
 
-  if [ $is_unpatched_fonts_root == "0" ];
-  then
-    # if we are not at the unpatched fonts root, copy all license from config parent dir
-    copy_license "$config_parent_dir" "$patched_font_dir"
-  else
-    # otherwise we nedd to copy files from the config dir itself
-    copy_license "$config_dir" "$patched_font_dir"
-  fi
-
+  # Copy 'all' license files found in the complete font's source tree
+  # into the destination. This will overwrite all same-names files
+  # so make sure all licenses of one fontface are identical
+  copy_license "$(find_font_root $config_dir)" "$patched_font_dir"
 
   last_parent_dir=$config_parent_dir
   total_variation_count=$((total_variation_count+combination_count))
