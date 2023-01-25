@@ -150,6 +150,11 @@ a.nerd-font-button:before {
 	border-color: #0fbfcf;
 }
 
+#main .nerd-font-cheat-sheet .column .codepoint:hover {
+	background: #767260;
+	text-decoration: underline;
+}
+
 #main .nerd-font-cheat-sheet .column:hover .class-name {
 	color: #0fbfcf;
 }

@@ -318,8 +318,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (parent.className === 'glyph-popout-copy-clipboard') {
       if (target.className === 'copy-class') {
         textToCopy = parent.parentNode.querySelector('.class-name').innerText;
-      } else if (target.className === 'copy-hex') {
-        textToCopy = parent.parentNode.querySelector('.codepoint').innerText;
       } else if (target.className === 'copy-glyph') {
         textToCopy = window
           .getComputedStyle(document.querySelector(`.${parent.parentNode.querySelector('.class-name').innerText}`), ':before')
@@ -340,6 +338,10 @@ document.addEventListener('DOMContentLoaded', function () {
           textToCopy += glyph.charCodeAt(i++).toString(16);
         }
       }
+    } else if (parent.className.startsWith('column') && target.className === 'codepoint') {
+        textToCopy = parent.parentNode.querySelector('.codepoint').innerText;
+    }
+    if (textToCopy.length > 0) {
       gtag('event', event.target.className, {
         event_category: 'clipboard-copy',
         event_label: 'Copy To Clipboard : ' + textToCopy,
