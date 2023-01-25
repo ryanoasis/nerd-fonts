@@ -284,13 +284,13 @@ document.addEventListener('DOMContentLoaded', function () {
         copyTextNode.innerText = 'Copy';
         copyGlyphNode.innerText = 'Icon';
         copyClassNode.innerText = 'Class';
-        copyCodePoint.innerText = 'Hex';
+        copyCodePoint.innerText = 'UTF';
         copyGlyphNode.title = 'Copy Icon to Clipboard';
         copyClassNode.title = 'Copy Class Name to Clipboard';
-        copyCodePoint.title = 'Copy Hex Code Point to Clipboard';
+        copyCodePoint.title = 'Copy UTF-16 Codes to Clipboard';
         copyGlyphNode.className = 'copy-glyph';
         copyClassNode.className = 'copy-class';
-        copyCodePoint.className = 'copy-hex';
+        copyCodePoint.className = 'copy-utf16';
         newNode.appendChild(copyTextNode);
         newNode.appendChild(copyGlyphNode);
         newNode.appendChild(copyClassNode);
@@ -325,6 +325,20 @@ document.addEventListener('DOMContentLoaded', function () {
           .getComputedStyle(document.querySelector(`.${parent.parentNode.querySelector('.class-name').innerText}`), ':before')
           .getPropertyValue('content')
           .replace(/"/g, '');
+      } else if (target.className === 'copy-utf16') {
+        const glyph = window
+          .getComputedStyle(document.querySelector(`.${parent.parentNode.querySelector('.class-name').innerText}`), ':before')
+          .getPropertyValue('content')
+          .replace(/"/g, '');
+        textToCopy = '';
+        let i = 0;
+        while (i < 10) {
+          let c = glyph.charCodeAt(i); // js strings are utf16 already :-)
+          if (!(c > 0)) break;
+          if (c < 0x32) continue;
+          if (i) textToCopy += ' ';
+          textToCopy += glyph.charCodeAt(i++).toString(16);
+        }
       }
       gtag('event', event.target.className, {
         event_category: 'clipboard-copy',
