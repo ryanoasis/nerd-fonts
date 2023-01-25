@@ -85,7 +85,7 @@ for var in "${!i@}"; do
     printf "\\n"
     printf "    <div class=\"nf nf-%s center\"></div>" "$glyph_name"
     printf "\\n"
-    printf "    <div class=\"class-name\">nf-%s</div><div class=\"codepoint\">%s</div>" "$glyph_name" "$glyph_code"
+    printf "    <div class=\"class-name\">nf-%s</div><div title=\"Copy Hex Code to Clipboard\" class=\"codepoint\">%s</div>" "$glyph_name" "$glyph_code"
     printf "\\n"
     printf "  </div>"
     printf "\\n"
