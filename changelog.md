@@ -2,6 +2,80 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v2.3.3
+
+### Fixes
+  - Fix licenses in archives 8a749ab21
+  - Fix Nerd Fonts Symbols Only metrics 4939ac5
+
+## v2.3.2
+
+### Fixes
+  - Update `JetBrains Mono` to 2.304 c6b3b0841
+  - Cover alternate unicode encodings _(for Input Mono)_ by @nathanielevan #1058
+  - Fix some Nerd Font Mono too wide #1062
+  - Fix line gap calculation #1060
+
+## v2.3.1
+
+### Fixes
+  - Fix windows Mono family names with --makegroups f240e073
+
+## v2.3.0
+
+The `v2.3.x` release is an interim release that tackles a lot technical issues and some updates. It is the preparatory step for `v3.0.0` that will update 'everything' and introduce new concepts. See [#1074](https://github.com/ryanoasis/nerd-fonts/discussions/1074).
+
+### Features
+  - Process `TTC` files #783
+  - Preserve existing bitmaps #939
+  - Symbol scaling in nonmono (down to 2 'widths') #748
+  - Add New Material Design Icons to **its own region** by @earboxer #773
+  - Calculate line gap correctly #1060
+
+### Updates
+  - Update `Inconsolata` to v3.000 #775
+  - Update `3270font` to v3.0.1 #948
+  - Update `Mononoki` to 1.5 fec587385
+  - Update `Seti` glyph set #978
+  - Update `JetBrains Mono` by @rluvaton #1053
+
+### Improvements
+  - `install.sh --remove` #822
+  - Stable codepoints #778
+  - Add `-WindowsCompatibleOnly` on `install.ps1` by @ev-dev #841
+  - Sunset ligature removal #977
+  - Fix Iosevka Family names #1019
+  - Fix unequal weather icon scale #916
+  - Use Fontforge January 2023 Release #1037
+  - Warn if sourcefont is a variable font `VF` #960
+  - Improve Assembly icon by @ignamartinoli #990
+
+### Fixes
+  - Fix `fontconfig` #920
+  - Fix scaling related rounding error #921
+  - Fix hasklug ligature #938
+  - Avoid patching proportional sources #912
+  - Fix JetBrains Mono `!=` ligature #964
+  - Fix crash on some custom sets #1006
+  - Sanitize output filenames #1029
+  - Fix unexpected 'Book' SubFamily #1047
+  - Fix licenses in archives 8a749ab21
+  - Fix some Nerd Font Mono too wide #1045
+  - Fix line gap calculation #943
+
+### Next Release Outlook
+
+The `v3.0.0` release will bring two bigger changes:
+
+#### Material Design Icons
+The Material Design Icons have to move codepoints. Historically we patch them in between `F500` - `FD46`; but part of that range is needed for Chinese and other glyphs. With #773 and _Plan 5+_ of #365 their new home will be after `F0001`. And they grow considerably.
+
+The `v2.3.x` release has both, the 'old' and the 'new' codepoints to enable you an easier transision. **Please change** already **now** your prompts and other uses to the new codepoints. Release `v3.0.0` will finally drop the old codepoints (`F500` - `FD46`).
+
+#### Naming
+Naming will also change. The name parts will move to places where they are customarily expected (e.g. weight and style comes last). This will fix some more problems. Probably we will drop the `Complete` monicker, as ... everyone uses the complete versions, it just takes precious space in the names.
+The details are not fixed yet, follow [#1074](https://github.com/ryanoasis/nerd-fonts/discussions/1074) to keep up to date.
+
 ## v2.2.2
 
 This makes all the prepached `Nerd Fonts` monospaced again, like v2.1.0 had it.
