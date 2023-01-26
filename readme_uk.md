@@ -235,7 +235,7 @@ _Примітка_: **необхідне клонування** репозито
 
 ```sh
 brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew install font-hack-nerd-font
 ```
 
 ### `Варіант 5: Клонування репозиторію`

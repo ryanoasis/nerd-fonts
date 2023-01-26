@@ -310,7 +310,7 @@ Wszystkie czcionki są dostępne na [Homebrew Fonts](https://github.com/caskroom
 
 ```sh
 brew tap caskroom/fonts
-brew install --cask font-hack-nerd-font
+brew install font-hack-nerd-font
 ```
 
 ### `Opcja 5: Klonowanie Repo`

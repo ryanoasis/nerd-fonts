@@ -235,7 +235,7 @@ macOS (OS X)의 [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-
 
 ```sh
 brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew install font-hack-nerd-font
 ```
 
 ### `옵션 5: 저장소 클론`

@@ -290,7 +290,7 @@ _Замечание_: **Необходимо клонировать** текущ
 
 ```sh
 brew tap caskroom/fonts
-brew install --cask font-hack-nerd-font
+brew install font-hack-nerd-font
 ```
 
 ### `Вариант 5: Клонировать Репозиторий`
