@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.3
-# Script Version: 1.2.0
+# Script Version: 1.2.1
 
 # used for debugging
 # set -x
@@ -221,6 +221,10 @@ function patch_font {
   then
     # shellcheck source=/dev/null
     source "$config_parent_dir/config.cfg"
+  elif [ -f "$(find_font_root $config_parent_dir)/config.cfg" ]
+  then
+    # shellcheck source=/dev/null
+    source "$(find_font_root $config_parent_dir)/config.cfg"
   fi
 
   if [ -f "$config_parent_dir/config.json" ]
@@ -303,6 +307,7 @@ function generate_info {
   fi
 
   # source the font config file if exists:
+  # fetches for example config_has_powerline, that we ignore anyhow :-}
   if [ -f "$config_dir/config.cfg" ]
   then
     # shellcheck source=/dev/null
@@ -311,6 +316,10 @@ function generate_info {
   then
     # shellcheck source=/dev/null
     source "$config_parent_dir/config.cfg"
+  elif [ -f "$(find_font_root $config_parent_dir)/config.cfg" ]
+  then
+    # shellcheck source=/dev/null
+    source "$(find_font_root $config_parent_dir)/config.cfg"
   fi
 
   if [ "$config_has_powerline" -gt 0 ]
