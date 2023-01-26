@@ -252,7 +252,7 @@ _ध्यान दें_:**क्लोनिंग की आवश्यक
 
 ```sh
 brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew install font-hack-nerd-font
 ```
 
 ### `विकल्प 5: रेपो का क्लोन बनाएं`
