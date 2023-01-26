@@ -331,11 +331,10 @@ document.addEventListener('DOMContentLoaded', function () {
         textToCopy = '';
         let i = 0;
         while (i < 10) {
-          let c = glyph.charCodeAt(i); // js strings are utf16 already :-)
+          let c = glyph.charCodeAt(i++); // js strings are utf16 already :-)
           if (!(c > 0)) break;
-          if (c < 0x32) continue;
-          if (i) textToCopy += ' ';
-          textToCopy += glyph.charCodeAt(i++).toString(16);
+          if (c <= 0x32) continue;
+          textToCopy += '\\u' + c.toString(16);
         }
       }
     } else if (parent.className.startsWith('column') && target.className === 'codepoint') {
