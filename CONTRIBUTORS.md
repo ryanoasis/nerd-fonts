@@ -171,6 +171,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="http://t.me/mrtnvgr"><img src="https://avatars.githubusercontent.com/u/48406064?v=4?s=100" width="100px;" alt="Егор Мартынов"/><br /><sub><b>Егор Мартынов</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=mrtnvgr" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nathanielevan"><img src="https://avatars.githubusercontent.com/u/9361126?v=4?s=100" width="100px;" alt="Nathaniel Evan"/><br /><sub><b>Nathaniel Evan</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=nathanielevan" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://goooler.github.io"><img src="https://avatars.githubusercontent.com/u/10363352?v=4?s=100" width="100px;" alt="Goooler"/><br /><sub><b>Goooler</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Goooler" title="Documentation">📖</a></td>
+    </tr>
   </tbody>
 </table>
 
