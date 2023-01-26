@@ -1157,6 +1157,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Goooler",
+      "name": "Goooler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363352?v=4",
+      "profile": "http://goooler.github.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
