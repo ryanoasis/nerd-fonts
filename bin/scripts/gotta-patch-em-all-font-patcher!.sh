@@ -364,7 +364,7 @@ function copy_license {
     # cp "$license_file" "$dest" # makes archiving multiple harder when we junk the paths for the archive
     [[ -d "$dest/complete" ]] || mkdir -p "$dest/complete"
     cp "$license_file" -t "$dest/complete"
-  done < <(find "$src" -iregex ".*\(licen[c,s]e\|ofl\).*" -type f -print0)
+  done < <(find "$src" -iregex ".*\(licen[cs]e\|ofl\).*" -type f -print0)
 }
 
 # Re-generate all the readmes
@@ -416,7 +416,7 @@ then
       # some of the source font files in that directory.
       last_source_dir=${current_source_dir}
       num_to_patch=$(find "${current_source_dir}" -iregex ${like_pattern} -type f | wc -l)
-      num_existing=$(find "${current_source_dir}" -iname "*.[o,t]tf" -o -iname "*.sfd" -type f | wc -l)
+      num_existing=$(find "${current_source_dir}" -iname "*.[ot]tf" -o -iname "*.sfd" -type f | wc -l)
       if [ ${num_to_patch} -eq ${num_existing} ]
       then
         purge_destination="TRUE"

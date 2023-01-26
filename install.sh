@@ -179,7 +179,7 @@ implode find_dirs "\" \"" "${nerdfonts_dirs[@]}"
 find_dirs="\"$find_dirs\""
 
 # Put it all together into the find command we want
-find_command="find $find_dirs \\( \\( -name '*.[o,t]tf' -or -name '*.pcf.gz' \\) $find_include $find_exclude \\) -type f -print0"
+find_command="find $find_dirs \\( \\( -name '*.[ot]tf' -or -name '*.pcf.gz' \\) $find_include $find_exclude \\) -type f -print0"
 
 # Find all the font files and store in array
 files=()

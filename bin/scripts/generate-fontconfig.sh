@@ -51,7 +51,7 @@ do
 	while IFS= read -d $'\0' -r file ; do
 	  FONTS=("${FONTS[@]}" "$file")
 	# limit to first variation of family (folder)
-  done < <(find "$searchdir" -type f -iname '*.[o,t]tf' -print0)
+  done < <(find "$searchdir" -type f -iname '*.[ot]tf' -print0)
   #done
 
   for font in "${FONTS[@]}"; do
