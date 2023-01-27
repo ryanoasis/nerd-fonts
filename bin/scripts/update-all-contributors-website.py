@@ -1,54 +1,39 @@
+#!/usr/bin/env python3
 import fileinput
 import string
 import re
 
+print("* reading CONTRIBUTORS.md")
 file = open("../../CONTRIBUTORS.md", "r")
 contributorContents = file.read()
 file.close()
 
-# print(contributorContents)
-
-
-file = open("/home/ryan/projects/nerd-fonts-gh-pages/_posts/2017-01-05-all-contributors.md", "r")
+print("* reading post")
+file = open("../../_posts/2017-01-05-all-contributors.md", "r")
 webContributorContents = file.read()
 file.close()
 
-# print(webContributorContents)
-
-# search and replace
+print("* find fences")
 starting_text = '<!-- UPDATE START -->'
 ending_text = '<!-- UPDATE END -->'
-to_replace = webContributorContents[webContributorContents.find(starting_text)+len(starting_text):webContributorContents.rfind(ending_text)]
+wCC_start = webContributorContents.find(starting_text) + len(starting_text)
+wCC_end = webContributorContents.rfind(ending_text)
 
-print('re replace')
-print('-------------------------------------------------')
-print(to_replace)
+starting_text = '<!-- ALL-CONTRIBUTORS-LIST:START '
+ending_text = '<!-- ALL-CONTRIBUTORS-LIST:END -->'
+cC_start = contributorContents.find(starting_text)
+cC_end = contributorContents.rfind(ending_text) + len(ending_text)
 
-# Remove markdown that won't work as-is in the jekyll page:
-transformedContributorContents = re.sub('[![All Contributors](.*)\(#contributors\)\n', '', contributorContents)
-transformedContributorContents = re.sub('Thanks goes to these wonderful people(.*):\n', '', transformedContributorContents)
-transformedContributorContents = string.replace(transformedContributorContents, '## Contributors\n\n', '')
-transformedContributorContents = string.replace(transformedContributorContents, 'This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!', '')
+transformedContributorContents = contributorContents[cC_start:cC_end]
 
-# Fix the formatting for the grid table:
-transformedContributorContents = string.replace(transformedContributorContents, ' [<img src=', '\n<div markdown="1">\n[<img class="lzy_img" data-src=')
-transformedContributorContents = string.replace(transformedContributorContents, '") |', '")\n</div>')
-transformedContributorContents = string.replace(transformedContributorContents, '| :---: | :---: | :---: | :---: | :---: | :---: | :---: |', '')
-transformedContributorContents = string.replace(transformedContributorContents, '<!-- ALL-CONTRIBUTORS-LIST:END -->', '')
-transformedContributorContents = string.replace(transformedContributorContents, '|\n', '') # @TODO fixme
+print('* improving table')
+transformedContributorContents = transformedContributorContents.replace('<img src=', '<img class="lzy_img" data-src=')
 
+print('* final out')
+webContributorContents = (webContributorContents[:wCC_start]
+    + "\n" + transformedContributorContents
+    + "\n" + webContributorContents[wCC_end:])
 
-print('transformed contr contents')
-print('-------------------------------------------------')
-print(transformedContributorContents)
-
-webContributorContents = string.replace(webContributorContents, to_replace, transformedContributorContents)
-
-print('final out')
-print('-------------------------------------------------')
-print(webContributorContents)
-
-
-# write the updated all contributors to the website
-file = open("/home/ryan/projects/nerd-fonts-gh-pages/_posts/2017-01-05-all-contributors.md", "w")
+file = open("../../_posts/2017-01-05-all-contributors.md", "w")
 file.write(webContributorContents)
+file.close()
