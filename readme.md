@@ -43,7 +43,7 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**5 - Clone Repo**](#option-5-clone-the-repo)
   * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
   * [**7 - Chocolatey or Scoop (Windows)**](#option-7-unofficial-chocolatey-or-scoop-repositories)
-  * [**8 - Arch User Repository (AUR) (Arch Linux)**](#option-8-unofficial-arch-user-repository-aur)
+  * [**8 - Arch Linux Repository (Community, AUR)**](#option-8-arch-community-repository)
   * [**9 - Patch Your Own Font**](#option-9-patch-your-own-font)
 
 [**Features**](#features)
@@ -82,7 +82,7 @@ _If you..._
   * `Option 5.` want **complete control** then see [cloning the repo](#option-5-clone-the-repo)
   * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
   * `Option 7`. are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-7-unofficial-chocolatey-or-scoop-repositories)
-  * `Option 8.` are on **Arch Linux** and want to use **AUR packages** see [Unofficial Arch User Repositories](#option-8-unofficial-arch-user-repository-aur)
+  * `Option 8.` are on **Arch Linux** and want to use **Community packages** see [Arch Community Repositories](#option-8-arch-community-repository)
   * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
 
 ## Features
@@ -316,30 +316,12 @@ scoop bucket add nerd-fonts
 scoop install Hack-NF
 ```
 
-### `Option 8: Unofficial Arch User Repository (AUR)`
+### `Option 8: Arch Community Repository`
 
-> Option for **Arch Linux** and wanting to use **AUR packages**.
+> Option for **Arch Linux** and wanting to use **Community packages**.
 
-The following fonts are available via [AUR packages](https://aur.archlinux.org/) on Arch Linux:
-
-* [Nerd Fonts Complete Release (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete Release (single-width) (out of date)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
-* [Nerd Fonts Complete Git (has always the newest fixes)](https://aur.archlinux.org/packages/nerd-fonts-git/)
-
-* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
-* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
-* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
-* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
-* [Nerd Fonts Hack](https://archlinux.org/packages/community/any/ttf-hack-nerd/)
-* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
-* [Nerd Fonts Jetbrains Mono](https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono)
-* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
-* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
-* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
-* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
-* [Nerd Fonts Victor Mono](https://aur.archlinux.org/packages/nerd-fonts-victor-mono)
-
-The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
+Most fonts are available via [Arch Community packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd).
+Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `Option 9: Patch Your Own Font`
 

@@ -42,7 +42,7 @@ Il seguente diagramma di flusso Sankey mostra gli attuali set di glifi inclusi:
   * [**4 - Homebrew Fonts (macOS (OS X))**](#opzione-4-homebrew-fonts)
   * [**5 - Clonare il Repo**](#opzione-5-clonare-il-repo)
   * [**6 - Download Ad Hoc con Curl**](#opzione-6-download-ad-hoc-con-curl)
-  * [**7 - Arch User Repository (AUR) (Arch Linux)**](#opzione-7-arch-user-repositories-non-ufficiali-aur)
+  * [**7 - Arch Community Repository(Arch Linux)**](#opzione-7-arch-community-repositories)
   * [**8 - Modifica il tuo Font**](#opzione-8-modifica-il-tuo-font)
 
 [**Caratteristiche**](#caratteristiche)
@@ -80,7 +80,7 @@ _Se tu..._
   * `Opzione 4.` sei su **macOS** e preferisci usare **Homebrew**, guarda come fare con [Homebrew Fonts](#option-4-homebrew-fonts)
   * `Opzione 5.` vuoi il **controllo completo**, guarda come [clonare il repo](#option-5-clone-the-repo)
   * `Opzione 6.` vuoi usare il **comando `curl`** o utilizzarlo nei tuoi **script**, guarda le istruzioni per [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
-  * `Opzione 7.` sei su **Arch Linux** e preferisci usare i **pacchetti AUR**, guarda come fare con gli [Arch User Repositories Non Ufficiali](#option-7-unofficial-arch-user-repository-aur)
+  * `Opzione 7.` sei su **Arch Linux** e preferisci usare i **pacchetti Community**, guarda come fare con gli [Arch Community Repositories](#opzione-7-arch-community-repositories)
   * `Opzione 8.` vuoi modificare un font in tuoi possesso, guarda come usare il [Font Patcher](#option-8-patch-your-own-font)
 
 ## Caratteristiche
@@ -271,30 +271,10 @@ _Nota:_ path alternativo deprecato: `~/.fonts`
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Opzione 7: Arch User Repositories Non Ufficiali (AUR)`
+### `Opzione 7: Arch Community Repositories`
 
-> Opzione per gli utilizzatori di **Arch Linux** che vogliono usare i **pacchetti AUR**.
-
-I seguenti font sono disponibili attraverso i [pacchetti AUR](https://aur.archlinux.org/) su Arch Linux:
-
-* [Nerd Fonts Complete Release (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete Release (single-width) (out of date)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
-* [Nerd Fonts Complete Git (has always the newest fixes)](https://aur.archlinux.org/packages/nerd-fonts-git/)
-
-* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
-* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
-* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
-* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
-* [Nerd Fonts Hack](https://archlinux.org/packages/community/any/ttf-hack-nerd/)
-* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
-* [Nerd Fonts Jetbrains Mono](https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono)
-* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
-* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
-* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
-* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
-* [Nerd Fonts Victor Mono](https://aur.archlinux.org/packages/nerd-fonts-victor-mono)
-
-The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
+Most fonts are available via [Arch Community packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd).
+Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `Opzione 8: Modifica il tuo Font`
 

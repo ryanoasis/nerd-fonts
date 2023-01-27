@@ -39,7 +39,7 @@ O diagram Sankey mostra os conjuntos de glifos incluídos abaixo:
   * [**4 - Tipos de letras do Homebrew (macOS (OS X))**](#opção-4-tipos-de-letra-do-homebrew)
   * [**5 - Dar clone ao repositório**](#opção-5-dar-clone-ao-repositório)
   * [**6 - Transferir *ad hoc* com `curl`**](#opção-6-transferir-ad-hoc-com-curl)
-  * [**7 - Repositório do Utilizador do Arch (AUR) não-oficial (Arch Linux)**](#opção-7-repositório-do-utilizador-do-arch-aur-não-oficial-arch-linux)
+  * [**7 - Repositório do Community do Arch (Arch Linux)**](#opção-7-repositório-arch-linux)
   * [**8 - Criar o teu tipo de letra**](#opção-8-criar-o-teu-tipo-de-letra)
 
 [**Características**](#características)
@@ -77,7 +77,7 @@ _Se tu..._
   * `Opção 4.` utilizas **macOS** e queres utilizar **Homebrew** vê: [Tipos de letras do Homebrew](#opção-4-tipos-de-letra-do-homebrew)
   * `Opção 5.` queres **controlo total**, então vê: [Dar clone ao repositório](#opção-5-dar-clone-ao-repositório)
   * `Opção 6.` queres utilizar o **comando `curl`** ou **executadores** vê: [Transferir *ad hoc* com `curl`](#opção-6-transferir-ad-hoc-com-curl)
-  * `Opção 7.` utilizas **Arch Linux** e queres utilizar o **AUR packages** vê: [Repositório do Utilizador do Arch (AUR) não-oficial](#opção-7-repositório-do-utilizador-do-arch-aur-não-oficial-arch-linux)
+  * `Opção 7.` utilizas **Arch Linux** e queres utilizar o **Community packages** vê: [Repositório do Utilizador do Community](#opção-7-repositório-arch-linux)
   * `Opção 8.` queres modificar o teu tipo de letra vê: [Modificador de tipo de letra](#opção-8-criar-o-teu-tipo-de-letra)
 
 ## Características
@@ -267,30 +267,10 @@ _Note:_ caminhos alternativos deprecados: `~/.fonts`
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Opção 7: Repositório do Utilizador do Arch (AUR) não-oficial (Arch Linux`
+### `Opção 7: Repositório Arch Linux`
 
-> E a opção para utilizadores de **Arch Linux** que querem utilizar os **pacotes do AUR**.
-
-Os seguintes tipos de letra estão disponíveis nos [pacotes do AUR](https://aur.archlinux.org/) para Arch Linux:
-
-* [Nerd Fonts Complete Release (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete Release (single-width) (out of date)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
-* [Nerd Fonts Complete Git (has always the newest fixes)](https://aur.archlinux.org/packages/nerd-fonts-git/)
-
-* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
-* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
-* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
-* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
-* [Nerd Fonts Hack](https://archlinux.org/packages/community/any/ttf-hack-nerd/)
-* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
-* [Nerd Fonts Jetbrains Mono](https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono)
-* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
-* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
-* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
-* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
-* [Nerd Fonts Victor Mono](https://aur.archlinux.org/packages/nerd-fonts-victor-mono)
-
-The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
+Most fonts are available via [Arch Community packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd).
+Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `Opção 8: Criar o teu tipo de letra`
 
