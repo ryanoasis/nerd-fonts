@@ -44,8 +44,8 @@ Le diagramme de Sankey suivant montre les ensembles de glyphes actuels inclus :
   * [**3 - Install Script**](#option-3-install-script)
   * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
   * [**5 - Cloner le dépôt**](#option-5-clone-the-repo)
-  * [**6 - Téléchargement Ad Hoc avec Curl*](#option-6-ad-hoc-curl-download)
-  * [**7 - Non-officiel Arch User dépôt (AUR)**](#option-7-unofficial-arch-user-repository-aur)
+  * [**6 - Téléchargement Ad Hoc avec Curl**](#option-6-ad-hoc-curl-download)
+  * [**7 - Arch Community dépôt**](#option-7-arch-community-repository)
   * [**8 - Générer votre propre police**](#option-8-patch-your-own-font)
 
 [**Fonctionnalités**](#features)
@@ -83,7 +83,7 @@ _Si vous..._
   * `Option 4.` vous êtes sur **macOS** et que vous voulez utiliser **Homebrew**, voir [Homebrew Fonts](#option-4-homebrew-fonts)
   * `Option 5.` voulez un **contrôle total**, voir [cloner le dépôt](#option-5-clone-the-repo)
   * `Option 6.` voulez utiliser la **commande `curl`** ou pour l'utiliser via des **scripts**, voir [Téléchargement Ad Hoc avec Curl](#option-6-ad-hoc-curl-download)
-  * `Option 7.` êtes sur **Arch Linux** et que vous voulez utiliser les **AUR packages**, voir [Dépôts non-officiel Arch User](#option-7-unofficial-arch-user-repository-aur)
+  * `Option 7.` êtes sur **Arch Linux** et que vous voulez utiliser les **Community packages**, voir [Dépôts Arch Community](#option-7-arch-community-repository)
   * `Option 8.` générer votre propre police [Générateur de police](#option-8-patch-your-own-font)
 
 ## Fonctionnalités
@@ -348,30 +348,12 @@ _Note:_ chemins alternatifs dépréciés: `~/.fonts`
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Option 7: Dépôts non-officiel Arch User (AUR)`
+### `Option 7: Dépôts Arch Community`
 
 > L'option pour **Arch Linux** et voulant utiliser les **AUR packages**.
 
-Les polices suivantes sont disponibles via [AUR packages](https://aur.archlinux.org/) sur Arch Linux:
-
-* [Nerd Fonts Complete Release (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete Release (single-width) (out of date)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
-* [Nerd Fonts Complete Git (has always the newest fixes)](https://aur.archlinux.org/packages/nerd-fonts-git/)
-
-* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
-* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
-* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
-* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
-* [Nerd Fonts Hack](https://archlinux.org/packages/community/any/ttf-hack-nerd/)
-* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
-* [Nerd Fonts Jetbrains Mono](https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono)
-* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
-* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
-* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
-* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
-* [Nerd Fonts Victor Mono](https://aur.archlinux.org/packages/nerd-fonts-victor-mono)
-
-The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
+Most fonts are available via [Arch Community packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd).
+Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `Option 8: Générer votre propre police`
 

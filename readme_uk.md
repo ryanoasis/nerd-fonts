@@ -39,7 +39,7 @@
 -   [**4 - Нативні шрифти (macOS (OS X))**](#option-4-homebrew-fonts)
 -   [**5 - Клонування репозиторію**](#option-5-clone-the-repo)
 -   [**6 - Конкретний випадок завантаження за допомогою Curl**](#option-6-ad-hoc-curl-download)
--   [**7 - Репозиторій користувачів Arch (AUR) (Arch Linux)**](#option-7-unofficial-arch-user-repository-aur)
+-   [**7 - Репозиторій користувачів Arch (Community) (Arch Linux)**](#варіант-7-неофіційні-репозиторії-користувачів-arch-community`)
 -   [**8 - Налаштуйте свій власний шрифт**](#option-8-patch-your-own-font)
 
 [**Особливості**](#features)
@@ -80,7 +80,7 @@ _Якщо ви..._
 -   `Варіант 4.` Я на **macOS** та бажаю використовувати **нативні шрифти**, дивись [Нативні Шрифти](#option-4-homebrew-fonts)
 -   `Варіант 5.` бажаю **повний контроль**, дивись [клонування репозиторії](#option-5-clone-the-repo)
 -   `Варіант 6.` бажаю використовувати **`curl` команду** або використовувати в **скриптах** дивись [Конкретний випадок завантаження за допомогою Curl](#option-6-ad-hoc-curl-download)
--   `Варіант 7.` Я на **Arch Linux** та бажаю використовувати **AUR packages**, дивись [Неофіційні репозиторії користувачів Arch](#option-7-unofficial-arch-user-repository-aur)
+-   `Варіант 7.` Я на **Arch Linux** та бажаю використовувати **Community packages**, дивись [Неофіційні репозиторії користувачів Arch](#варіант-7-неофіційні-репозиторії-користувачів-arch-community`)
 -   `Варіант 8.` Бажаю пропатчити власний шрифт, дивись [Патчер шрифтів](#option-8-patch-your-own-font)
 
 ## Особливості
@@ -269,30 +269,10 @@ _Примітка:_ застарілі альтернативні шляхи: `~
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `Варіант 7: Неофіційні репозиторії користувачів Arch (AUR)`
+### `Варіант 7: Неофіційні репозиторії користувачів Arch (Community)`
 
-> Варіант для **Arch Linux** і бажання використовувати **AUR пакети**.
-
-Наступні шрифти доступні через [AUR пакети](https://aur.archlinux.org/) на Arch Linux:
-
-* [Nerd Fonts Complete Release (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete Release (single-width) (out of date)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
-* [Nerd Fonts Complete Git (has always the newest fixes)](https://aur.archlinux.org/packages/nerd-fonts-git/)
-
-* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
-* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
-* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
-* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
-* [Nerd Fonts Hack](https://archlinux.org/packages/community/any/ttf-hack-nerd/)
-* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
-* [Nerd Fonts Jetbrains Mono](https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono)
-* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
-* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
-* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
-* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
-* [Nerd Fonts Victor Mono](https://aur.archlinux.org/packages/nerd-fonts-victor-mono)
-
-The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
+Most fonts are available via [Arch Community packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd).
+Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `Варіант 8: Налаштуйте свій власний шрифт`
 

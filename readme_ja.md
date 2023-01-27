@@ -42,7 +42,7 @@
   * [**4 - Homebrew Fonts (macOS (OS X) 用)**](#その-4-homebrew-fonts)
   * [**5 - リポジトリのクローン**](#その-5-リポジトリをクローンする)
   * [**6 - Curl で直接ダウンロード**](#その-6-curl-で直接ダウンロード)
-  * [**7 - Arch User Repository (AUR) (Arch Linux用)**](#その-7-非公式-arch-user-repository-aur)
+  * [**7 - Arch Community Repository (Arch Linux用)**](#その-7-非公式-arch-community-repository)
   * [**8 - 自分でパッチを当てる**](#その-8-自分でフォントにパッチを当てる)
 
 [**特徴**](#特徴)
@@ -78,7 +78,7 @@ _あなたがもし……_
   * `その 4` **macOS** 利用者で **Homebrew** を使いたい方なら、[Homebrew Fonts](#その-4-homebrew-fonts)を見てください。
   * `その 5` **あなたの手で全てを管理したいのなら**、[リポジトリのクローン](#その-5-リポジトリをクローンする)を見てください。
   * `その 6` **`curl` コマンド**を使いたい、あるいは、**スクリプト**内で利用したい場合は [Curl で直接ダウンロード](#その-6-curl-で直接ダウンロード)を見てください。
-  * `その 7` **Arch Linux** 利用者で、**AUR packages** を使いたいならば、[非公式 Arch User Repository](#その-7-非公式-arch-user-repository-aur)を見てください。
+  * `その 7` **Arch Linux** 利用者で、**Community packages** を使いたいならば、[非公式 Arch Community Repository](#その-7-非公式-arch-community-repository)を見てください。
   * `その 8` 自分でフォントにパッチを当てたいのなら、[パッチスクリプト](#その-8-自分でフォントにパッチを当てる)を見てください。
 
 ## 特徴
@@ -267,30 +267,10 @@ _注意_: 以前別の選択肢として利用できたパス (`~/.fonts`) は d
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
 
-### `その 7: 非公式 Arch User Repository (AUR)`
+### `その 7: 非公式 Arch Community Repository`
 
-> **Arch Linux**、かつ、 **AUR packages** を使いたい場合の選択肢です。
-
-Arch Linux 上の [AUR packages](https://aur.archlinux.org/) で以下のフォントが利用できます。
-
-* [Nerd Fonts Complete Release (double-width)](https://aur.archlinux.org/packages/nerd-fonts-complete/)
-* [Nerd Fonts Complete Release (single-width) (out of date)](https://aur.archlinux.org/packages/nerd-fonts-complete-mono-glyphs/)
-* [Nerd Fonts Complete Git (has always the newest fixes)](https://aur.archlinux.org/packages/nerd-fonts-git/)
-
-* [Nerd Fonts Anonymous Pro](https://aur.archlinux.org/packages/nerd-fonts-anonymous-pro/)
-* [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
-* [Nerd Fonts Fira Code](https://aur.archlinux.org/packages/nerd-fonts-fira-code/)
-* [Nerd Fonts Go Mono](https://aur.archlinux.org/packages/nerd-fonts-go-mono/)
-* [Nerd Fonts Hack](https://archlinux.org/packages/community/any/ttf-hack-nerd/)
-* [Nerd Fonts Inconsolata](https://aur.archlinux.org/packages/nerd-fonts-inconsolata/)
-* [Nerd Fonts Jetbrains Mono](https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono)
-* [Nerd Fonts Liberation Mono](https://aur.archlinux.org/packages/nerd-fonts-liberation-mono/)
-* [Nerd Fonts Noto](https://aur.archlinux.org/packages/nerd-fonts-noto/)
-* [Nerd Fonts Source Code Pro Complete](https://aur.archlinux.org/packages/nerd-fonts-source-code-pro/)
-* [Nerd Fonts Terminus](https://aur.archlinux.org/packages/nerd-fonts-terminus/)
-* [Nerd Fonts Victor Mono](https://aur.archlinux.org/packages/nerd-fonts-victor-mono)
-
-The list is not complete, but you can [search for a complete list here](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
+Most fonts are available via [Arch Community packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd).
+Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `その 8: 自分でフォントにパッチを当てる`
 
