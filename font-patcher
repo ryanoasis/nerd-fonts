@@ -1588,6 +1588,34 @@ def check_fontforge_min_version():
         sys.stderr.write("{}: Please use at least version: {}\n".format(projectName, minimumVersion))
         sys.exit(1)
 
+def check_version_with_git(version):
+    """ Upgraded the version to the current git tag version (starting with 'v') """
+    git = subprocess.run("git describe --tags",
+            cwd=os.path.dirname(__file__),
+            shell=True,
+            stdout=subprocess.PIPE, stderr=subprocess.DEVNULL
+        ).stdout.decode('utf-8')
+    if len(git) == 0:
+        return False
+    tag = git.strip()
+    if len(tag) == 0 or not tag.startswith('v'):
+        return False
+    tag = tag[1:]
+    r = re.search('(.*?)(-[0-9]+)-g[0-9a-fA-F]+$', tag)
+    if r:
+        tag = r.group(1)
+        patchlevel = r.group(2)
+    else:
+        patchlevel = ""
+    # Inspired by Phaxmohdem's versiontuple https://stackoverflow.com/a/28568003
+
+    versiontuple = lambda v: tuple( p.zfill(8) for p in v.split(".") )
+    if versiontuple(tag) > versiontuple(version):
+        return tag + patchlevel
+    if versiontuple(tag) == versiontuple(version) and len(patchlevel) > 0:
+        return tag + patchlevel
+    return False
+
 def setup_arguments():
     parser = argparse.ArgumentParser(
         description=(
@@ -1716,7 +1744,12 @@ def setup_arguments():
 
 
 def main():
-    print("{} Patcher v{} ({}) executing".format(projectName, version, script_version))
+    global version
+    git_version = check_version_with_git(version)
+    print("{} Patcher v{} ({}) (ff {}) executing".format(
+        projectName, git_version if git_version else version, script_version, fontforge.version()))
+    if git_version:
+        version = git_version
     check_fontforge_min_version()
     args = setup_arguments()
     patcher = font_patcher(args)
