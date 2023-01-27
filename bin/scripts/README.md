@@ -27,7 +27,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `test-fonts.sh`: Print-to-debug all glyphs we patch in [4]
 * `test-powerlines.sh`: Print-to-debug powerline examples [4]
 * `tests.sh`: Create some font usage gif movie? [x]
-* `update-all-contributors-website.py`: Update the contributors page on `nerdfonts.com` (i.e. gh-pages) (Hardcoded paths!) [3]
+* `update-all-contributors-website.py`: Update the contributors page on `nerdfonts.com` (i.e. gh-pages) [7]
 * `version-bump.sh`: Change version number in all scripts on a new release [1]
 
 [1] Used by CI (github release workflow)
@@ -36,4 +36,5 @@ Note: Usually you need to call the scripts in this directory while actually bein
 [4] To be used manually
 [5] Used by CI (github packsvgs workflow)
 [6] Used by CI (github casks workflow)
+[7] Used by CI (github contributors workflow)
 [x] Probably not used by anything

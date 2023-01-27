@@ -1,0 +1,40 @@
+name: Update contributors
+
+on:
+  push:
+     branches: [ master ]
+     paths:
+       - CONTRIBUTORS.md
+       - bin/scripts/update-all-contributors-website.py
+
+  workflow_dispatch:
+
+jobs:
+  create-casks:
+    name: Update gh-pages contributors
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch from master
+        uses: Bhacaz/checkout-files@v2
+        with:
+          files: CONTRIBUTORS.md bin/scripts/update-all-contributors-website.py
+          branch: master
+      - name: Fetch from gh-pages
+        uses: Bhacaz/checkout-files@v2
+        with:
+          files: _posts/2017-01-05-all-contributors.md
+          branch: gh-pages
+      - name: Update the page
+        run: |
+          cd bin/scripts
+          chmod u+x *
+          ./update-all-contributors-website.py
+      - name: Deploy page to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _posts
+          target-folder: _posts
+          commit-message: "[ci] Regenerate contributors"
+          git-config-name: GitHub Actions
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
+          clean: false
