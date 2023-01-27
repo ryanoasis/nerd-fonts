@@ -14,12 +14,8 @@ jobs:
     name: Update gh-pages contributors
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch from master
-        uses: Bhacaz/checkout-files@v2
-        with:
-          files: CONTRIBUTORS.md bin/scripts/update-all-contributors-website.py
-          branch: master
-      - name: Fetch from gh-pages
+      - uses: actions/checkout@v3
+      - name: Fetch old from gh-pages
         uses: Bhacaz/checkout-files@v2
         with:
           files: _posts/2017-01-05-all-contributors.md
@@ -28,7 +24,9 @@ jobs:
         run: |
           cd bin/scripts
           chmod u+x *
+          ls -l ../../_posts
           ./update-all-contributors-website.py
+          ls -l ../../_posts
       - name: Deploy page to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
