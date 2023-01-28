@@ -940,9 +940,17 @@ class font_patcher:
         # Find out which other glyphs are also needed to keep the basic
         # glyphs intact.
         # 0x00-0x17f is the Latin Extended-A range
-        for glyph in range(0x21, 0x17f):
+        basic_glyphs = set()
+        # Collect substitution destinations
+        for glyph in range(0x21, 0x17f + 1):
             if not glyph in self.sourceFont:
                 continue
+            basic_glyphs.add(glyph)
+            for possub in self.sourceFont[glyph].getPosSub('*'):
+                if possub[1] == 'Substitution' or possub[1] == 'Ligature':
+                    basic_glyphs.add(self.sourceFont[possub[2]].unicode)
+        basic_glyphs.discard(-1) # the .notdef glyph
+        for glyph in basic_glyphs:
             self.add_glyphrefs_to_essential(glyph)
 
     def get_sourcefont_dimensions(self):
@@ -1297,7 +1305,7 @@ class font_patcher:
 
         # end for
 
-        if not self.args.quiet or self.args.progressbars:
+        if not self.args.quiet:
             sys.stdout.write("\n")
 
 
