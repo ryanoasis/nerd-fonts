@@ -138,7 +138,11 @@ implode() {
     # $3... are the elements to join
     local retname=$1 sep=$2 ret=$3
     shift 3 || shift $(($#))
-    printf -v "$retname" "%s" "$ret${*/#/$sep}"
+    while [ $# -gt 0 ]; do
+        ret=$ret$sep$1
+        shift
+    done
+    printf -v "$retname" "%s" "$ret"
 }
 find_include=
 find_exclude=
