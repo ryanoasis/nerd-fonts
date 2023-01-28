@@ -1305,7 +1305,7 @@ class font_patcher:
 
         # end for
 
-        if not self.args.quiet or self.args.progressbars:
+        if not self.args.quiet:
             sys.stdout.write("\n")
 
 
