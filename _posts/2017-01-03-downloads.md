@@ -34,25 +34,28 @@ page: font-downloads
 <h2 class="center"> Other Download & Install Options </h2>
 
 <h3 class="center"> <span></span> Homebrew </h3>
-
+<div class="center" markdown="1">
 ```sh
 brew tap homebrew/cask-fonts &&
 brew install --cask font-<FONT NAME>-nerd-font
 ```
-
+</div>
+<p/>
 <h3 class="center"> :// curl </h3>
-<div markdown="1">
+<div align="center" markdown="1">
 ```sh
 curl -fLo "<FONT NAME> Nerd Font Complete.otf" \
 https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
 ```
 </div>
+<p/>
 <h3 class="center"> <span></span> Bash Install Script </h3>
-<div markdown="1">
+<div align="center" markdown="1">
 ```sh
 ./install.sh <FontName>
 ```
 </div>
+<p/>
 <h3 class="center"> <span></span> Arch Community Repository</h3>
 <div markdown="1" class="center">
 Search [Nerd Fonts Packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd) or some special packages in [AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off)
