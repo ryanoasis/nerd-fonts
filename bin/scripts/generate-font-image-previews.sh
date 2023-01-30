@@ -56,4 +56,72 @@ generate_preview_symbols() {
   # svgo "${output_dir}${font}.svg"
 }
 
+image_font_files=( \
+  '3270/Regular/complete/IBM 3270 Nerd Font Complete.ttf' \
+  'Agave/complete/agave regular Nerd Font Complete.ttf' \
+  'AnonymousPro/complete/Anonymice Nerd Font Complete.ttf' \
+  'Arimo/Regular/complete/Arimo Regular Nerd Font Complete.ttf' \
+  'AurulentSansMono/complete/AurulentSansMono-Regular Nerd Font Complete.otf' \
+  'BigBlueTerminal/complete/BigBlue TerminalPlus Nerd Font Complete.TTF' \
+  'BitstreamVeraSansMono/Regular/complete/Bitstream Vera Sans Mono Nerd Font Complete.ttf' \
+  'CascadiaCode/Regular/complete/Caskaydia Cove Nerd Font Complete Regular.otf' \
+  'CodeNewRoman/Regular/complete/Code New Roman Nerd Font Complete.otf' \
+  'Cousine/Regular/complete/Cousine Regular Nerd Font Complete.ttf' \
+  'DaddyTimeMono/complete/DaddyTimeMono Nerd Font Complete.ttf' \
+  'DejaVuSansMono/Regular/complete/DejaVu Sans Mono Nerd Font Complete.ttf' \
+  'DroidSansMono/complete/Droid Sans Mono Nerd Font Complete.otf' \
+  'FantasqueSansMono/Regular/complete/Fantasque Sans Mono Regular Nerd Font Complete.ttf' \
+  'FiraCode/Regular/complete/Fira Code Regular Nerd Font Complete.ttf' \
+  'FiraMono/Regular/complete/Fura Mono Regular Nerd Font Complete.otf' \
+  'Gohu/uni-14/complete/GohuFont Nerd Font Complete.ttf' \
+  'Go-Mono/Regular/complete/Go Mono Nerd Font Complete.ttf' \
+  'Hack/Regular/complete/Hack Regular Nerd Font Complete.ttf' \
+  'Hasklig/Regular/complete/Hasklug Nerd Font Complete.otf' \
+  'HeavyData/complete/Heavy Data Nerd Font Complete.ttf' \
+  'Hermit/Medium/complete/Hurmit Medium Nerd Font Complete.otf' \
+  'iA-Writer/iA Writer Mono/Regular/complete/iM Writing Mono S Regular Nerd Font Complete.ttf' \
+  'IBMPlexMono/Mono/complete/Blex Mono Nerd Font Complete.ttf' \
+  'Inconsolata/complete/Inconsolata Regular Nerd Font Complete.ttf' \
+  'InconsolataGo/Regular/complete/InconsolataGo Nerd Font Complete.ttf' \
+  'InconsolataLGC/Regular/complete/Inconsolata LGC Nerd Font Complete.ttf' \
+  'Iosevka/Regular/complete/Iosevka Term Nerd Font Complete.ttf' \
+  'JetBrainsMono/Ligatures/Regular/complete/JetBrains Mono Nerd Font Complete Regular.ttf' \
+  'Lekton/Regular/complete/Lekton Nerd Font Complete.ttf' \
+  'LiberationMono/complete/Literation Mono Nerd Font Complete.ttf' \
+  'Lilex/Regular/complete/Lilex Regular Nerd Font Complete.ttf' \
+  'Meslo/M/Regular/complete/Meslo LG M Regular Nerd Font Complete.ttf' \
+  'Monofur/Regular/complete/monofur Nerd Font Complete.ttf' \
+  'Monoid/Regular/complete/Monoid Regular Nerd Font Complete.ttf' \
+  'Mononoki/Regular/complete/Mononoki Nerd Font Complete Regular.ttf' \
+  'MPlus/Regular/complete/M+ 1m Nerd Font Complete.ttf' \
+  'NerdFontsSymbolsOnly/complete/Symbols-2048-em Nerd Font Complete Mono.ttf' \
+  'Noto/Sans-Mono/complete/Noto Sans Mono Regular Nerd Font Complete.ttf' \
+  'OpenDyslexic/Regular/complete/OpenDyslexic Regular Nerd Font Complete.otf' \
+  'Overpass/Mono/Regular/complete/Overpass Mono Regular Nerd Font Complete.otf' \
+  'ProFont/profontiix/complete/ProFont IIx Nerd Font Complete.ttf' \
+  'ProggyClean/Regular/complete/ProggyCleanTT Nerd Font Complete.ttf' \
+  'RobotoMono/Regular/complete/Roboto Mono Nerd Font Complete.ttf' \
+  'ShareTechMono/complete/Shure Tech Mono Nerd Font Complete.ttf' \
+  'SourceCodePro/Regular/complete/Sauce Code Pro Nerd Font Complete.ttf' \
+  'SpaceMono/Regular/complete/Space Mono Nerd Font Complete.ttf' \
+  'Terminus/terminus-ttf-4.40.1/Regular/complete/Terminess (TTF) Nerd Font Complete.ttf' \
+  'Tinos/Regular/complete/Tinos Nerd Font Complete.ttf' \
+  'Ubuntu/Regular/complete/Ubuntu Nerd Font Complete.ttf' \
+  'UbuntuMono/Regular/complete/Ubuntu Mono Nerd Font Complete.ttf' \
+  'VictorMono/Regular/complete/Victor Mono Regular Nerd Font Complete.ttf' \
+)
+
+# Enable this to get a list of instruction to install all the needed fonts
+#
+# for f in "${image_font_files[@]}"; do
+#   echo "cp '../../patched-fonts/$f' ~/.local/share/fonts"
+# done
+# exit
+
+# Enable this to get a list of Family names
+#
+# for f in "${image_font_files[@]}"; do
+#   fc-query "../../patched-fonts/$f" '-f %{family}\n'
+# done
+
 main "$@"; exit

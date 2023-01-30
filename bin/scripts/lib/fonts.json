@@ -55,7 +55,7 @@
       "RFN": false,
       "patchedName": "BigBlueTerminal",
       "folderName": "BigBlueTerminal",
-      "imagePreviewFont": "BigBlueTerminal Nerd Font",
+      "imagePreviewFont": "BigBlue_TerminalPlus Nerd Font",
       "linkPreviewFont": false,
       "caskName": "bigblue-terminal",
       "description": "Nostalgic, closely based on IBM's 8x14 EGA/VGA charset"
@@ -165,7 +165,7 @@
       "RFN": false,
       "patchedName": "FiraMono",
       "folderName": "FiraMono",
-      "imagePreviewFont": "FiraMono Nerd Font",
+      "imagePreviewFont": "FuraMono Nerd Font",
       "linkPreviewFont": "fira",
       "caskName": "fira-mono",
       "description": "Mozilla typeface, dotted zero"
@@ -175,7 +175,7 @@
       "RFN": false,
       "patchedName": "Go-Mono",
       "folderName": "Go-Mono",
-      "imagePreviewFont": "Go-Mono Nerd Font",
+      "imagePreviewFont": "GoMono Nerd Font",
       "linkPreviewFont": "go-mono",
       "caskName": "go-mono",
       "description": "Created specifically for the Go project, looks particularly clear for use with the Go language"
@@ -185,7 +185,7 @@
       "RFN": false,
       "patchedName": "Gohu",
       "folderName": "Gohu",
-      "imagePreviewFont": "Gohu Nerd Font",
+      "imagePreviewFont": "GohuFont Nerd Font",
       "linkPreviewFont": false,
       "caskName": "gohufont",
       "description": "Bitmap font, tall capitals and ascenders, small serifs"
@@ -235,7 +235,7 @@
       "RFN": true,
       "patchedName": "iM Writing",
       "folderName": "iA-Writer",
-      "imagePreviewFont": "iM Writing Nerd Font",
+      "imagePreviewFont": "iMWritingMonoS Nerd Font",
       "linkPreviewFont": "ia-writer-mono",
       "caskName": "im-writing",
       "description": "A heavy modification of IBM's Plex font"
@@ -275,7 +275,7 @@
       "RFN": false,
       "patchedName": "Iosevka",
       "folderName": "Iosevka",
-      "imagePreviewFont": "Iosevka Nerd Font",
+      "imagePreviewFont": "IosevkaTerm Nerd Font",
       "linkPreviewFont": "iosevka",
       "caskName": "iosevka",
       "description": "Narrow and horizontally tight characters, slashed zero"
@@ -325,7 +325,7 @@
       "RFN": false,
       "patchedName": "MesloLG",
       "folderName": "Meslo",
-      "imagePreviewFont": "Meslo Nerd Font",
+      "imagePreviewFont": "MesloLGM Nerd Font",
       "linkPreviewFont": "meslo",
       "caskName": "meslo-lg",
       "description": "Slashed zeros, customized version of Apple's Menlo"
@@ -365,7 +365,7 @@
       "RFN": false,
       "patchedName": "MPlus",
       "folderName": "MPlus",
-      "imagePreviewFont": "MPlus Nerd Font",
+      "imagePreviewFont": "M+ 1m",
       "linkPreviewFont": false,
       "caskName": "mplus",
       "description": "Multiple styles and weights, many glyph sets (e.g. Kana glyphs)"
@@ -375,7 +375,7 @@
       "RFN": false,
       "patchedName": "Noto",
       "folderName": "Noto",
-      "imagePreviewFont": "Noto Nerd Font",
+      "imagePreviewFont": "NotoSansMono Nerd Font",
       "linkPreviewFont": "noto",
       "caskName": "noto",
       "description": "`0` and `O` very similar, characters are either very curvy or straight lined"
@@ -385,7 +385,7 @@
       "RFN": false,
       "patchedName": "ProFont",
       "folderName": "ProFont",
-      "imagePreviewFont": "ProFont Nerd Font",
+      "imagePreviewFont": "ProFontIIx Nerd Font",
       "linkPreviewFont": "profont",
       "caskName": "profont",
       "description": "Looks best with anti-aliasing turned off, squared off character corners, vertically tight small `s`"
@@ -395,7 +395,7 @@
       "RFN": false,
       "patchedName": "ProggyClean",
       "folderName": "ProggyClean",
-      "imagePreviewFont": "ProggyClean Nerd Font",
+      "imagePreviewFont": "ProggyCleanTT Nerd Font",
       "linkPreviewFont": "proggy-clean",
       "caskName": "proggy-clean-tt",
       "description": "Designed particularly for use at small point sizes"
@@ -415,7 +415,7 @@
       "RFN": false,
       "patchedName": "Overpass",
       "folderName": "Overpass",
-      "imagePreviewFont": "Overpass Nerd Font",
+      "imagePreviewFont": "OverpassMono Nerd Font",
       "linkPreviewFont": "overpass",
       "caskName": "overpass",
       "description": "An open source font family inspired by Highway Gothic"
