@@ -83,6 +83,9 @@ for var in "${!i@}"; do
   {
     printf "  <div class=\"column\">"
     printf "\\n"
+    if [[ "$glyph_name" = mdi-* ]]; then
+      printf "    <span class=\"corner-red\"></span><span class=\"corner-text\">obsolete</span>\\n"
+    fi
     printf "    <div class=\"nf nf-%s center\"></div>" "$glyph_name"
     printf "\\n"
     printf "    <div class=\"class-name\">nf-%s</div><div title=\"Copy Hex Code to Clipboard\" class=\"codepoint\">%s</div>" "$glyph_name" "$glyph_code"
