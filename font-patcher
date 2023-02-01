@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.2"
+script_version = "3.5.3"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -222,6 +222,20 @@ def is_monospaced(font):
     # We believe our own check more then Panose ;-D
     return (width_mono, None if width_mono else glyph)
 
+def force_panose_monospace(font):
+    """ Forces the Panose flag to monospace if they are unset or halfway ok already """
+    # For some Windows applications (e.g. 'cmd'), they seem to honour the Panose table
+    # https://forum.high-logic.com/postedfiles/Panose.pdf
+    panose = list(font.os2_panose)
+    if panose[0] == 0: # 0 (1st value) = family kind; 0 = any (default)
+        panose[0] = 2 # make kind latin text and display
+        print("  Setting Panose 'Family Kind' to 'Latin Text and Display'")
+        font.os2_panose = tuple(panose)
+    if panose[0] == 2 and panose[3] != 9:
+        panose[3] = 9 # 3 (4th value) = propotion; 9 = monospaced
+        print("  Setting Panose 'Proportion' to 'Monospace'")
+        font.os2_panose = tuple(panose)
+
 def get_advance_width(font, extended, minimum):
     """ Get the maximum/minimum advance width in the extended(?) range """
     width = 0
@@ -267,7 +281,7 @@ class font_patcher:
         self.setup_version()
         self.get_essential_references()
         self.setup_name_backup(font)
-        if self.args.single:
+        if not self.args.nonmono:
             self.assert_monospace()
         self.remove_ligatures()
         self.setup_patch_set()
@@ -280,13 +294,6 @@ class font_patcher:
             # Force width to be equal on all glyphs to ensure the font is considered monospaced on Windows.
             # This needs to be done on all characters, as some information seems to be lost from the original font file.
             self.set_sourcefont_glyph_widths()
-            # For some Windows applications (e.g. 'cmd') that is not enough. But they seem to honour the Panose table
-            # https://forum.high-logic.com/postedfiles/Panose.pdf
-            panose = list(self.sourceFont.os2_panose)
-            if panose[0] == 0 or panose[0] == 2: # 0 (1st value) = family kind; 0 = any (default); 2 = latin text and display
-                panose[0] = 2 # Assert kind
-                panose[3] = 9 # 3 (4th value) = propotion; 9 = monospaced
-                self.sourceFont.os2_panose = tuple(panose)
 
         # For very wide (almost square or wider) fonts we do not want to generate 2 cell wide Powerline glyphs
         if self.font_dim['height'] * 1.8 < self.font_dim['width'] * 2:
@@ -693,12 +700,14 @@ class font_patcher:
             print("  {} and {}".format(
                 report_advance_widths(self.sourceFont),
                 panose_check_to_text(panose_mono, self.sourceFont.os2_panose)))
-        if not width_mono:
+        if self.args.single and not width_mono:
             print("  Warning: Sourcefont is not monospaced - forcing to monospace not advisable, results might be useless")
             if offending_char is not None:
                 print("           Offending char: 0x{:X}".format(offending_char))
             if self.args.single <= 1:
                 sys.exit(projectName + ": Font will not be patched! Give --mono (or -s, or --use-single-width-glyphs) twice to force patching")
+        if width_mono:
+            force_panose_monospace(self.sourceFont)
 
 
     def setup_patch_set(self):
