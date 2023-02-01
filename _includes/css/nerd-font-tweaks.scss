@@ -210,6 +210,8 @@ a.nerd-font-button:before {
 	border-top: unset;
 	top: 0px;
 	width: 76px;
+	z-index: 5;
+	pointer-events: auto;
 }
 
 #main .nerd-font-cheat-sheet span.glyph-popout-copy-clipboard span {
@@ -246,6 +248,36 @@ a.nerd-font-button:before {
 	border-style: dashed;
 	border-color: #0fbfcf;
 	width: 100%;
+}
+
+.corner-red {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0px;
+	height: 0px;
+	border-top: 65px solid #e11e2d;
+	border-left: 65px solid transparent;
+	z-index: 11;
+	pointer-events: none;
+}
+
+.corner-text {
+	position: absolute;
+	right: 0%;
+	top: 10%;
+	color: white;
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: 'mono';
+	text-align: center;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-sand-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 12;
 }
 
 /* gitter chat tweaks */
