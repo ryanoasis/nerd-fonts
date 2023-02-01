@@ -34012,8478 +34012,10597 @@ style: container
     <div class="class-name">nf-md-zodiac_virgo</div><div title="Copy Hex Code to Clipboard" class="codepoint">f0a88</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-access_point center"></div>
     <div class="class-name">nf-mdi-access_point</div><div title="Copy Hex Code to Clipboard" class="codepoint">f501</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-access_point_network center"></div>
     <div class="class-name">nf-mdi-access_point_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">f502</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account center"></div>
     <div class="class-name">nf-mdi-account</div><div title="Copy Hex Code to Clipboard" class="codepoint">f503</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_alert center"></div>
     <div class="class-name">nf-mdi-account_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f504</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_box center"></div>
     <div class="class-name">nf-mdi-account_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f505</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_box_outline center"></div>
     <div class="class-name">nf-mdi-account_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f506</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_card_details center"></div>
     <div class="class-name">nf-mdi-account_card_details</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_check center"></div>
     <div class="class-name">nf-mdi-account_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f507</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_circle center"></div>
     <div class="class-name">nf-mdi-account_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f508</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_convert center"></div>
     <div class="class-name">nf-mdi-account_convert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f509</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_edit center"></div>
     <div class="class-name">nf-mdi-account_edit</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_key center"></div>
     <div class="class-name">nf-mdi-account_key</div><div title="Copy Hex Code to Clipboard" class="codepoint">f50a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_location center"></div>
     <div class="class-name">nf-mdi-account_location</div><div title="Copy Hex Code to Clipboard" class="codepoint">f50b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_minus center"></div>
     <div class="class-name">nf-mdi-account_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f50c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_multiple center"></div>
     <div class="class-name">nf-mdi-account_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f50d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_multiple_minus center"></div>
     <div class="class-name">nf-mdi-account_multiple_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_multiple_outline center"></div>
     <div class="class-name">nf-mdi-account_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f50e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_multiple_plus center"></div>
     <div class="class-name">nf-mdi-account_multiple_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f50f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_multiple_plus_outline center"></div>
     <div class="class-name">nf-mdi-account_multiple_plus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcfe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_network center"></div>
     <div class="class-name">nf-mdi-account_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">f510</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_off center"></div>
     <div class="class-name">nf-mdi-account_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f511</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_outline center"></div>
     <div class="class-name">nf-mdi-account_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f512</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_plus center"></div>
     <div class="class-name">nf-mdi-account_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f513</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_plus_outline center"></div>
     <div class="class-name">nf-mdi-account_plus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_remove center"></div>
     <div class="class-name">nf-mdi-account_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f514</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_search center"></div>
     <div class="class-name">nf-mdi-account_search</div><div title="Copy Hex Code to Clipboard" class="codepoint">f515</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_settings center"></div>
     <div class="class-name">nf-mdi-account_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb2f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_settings_variant center"></div>
     <div class="class-name">nf-mdi-account_settings_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb30</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_star center"></div>
     <div class="class-name">nf-mdi-account_star</div><div title="Copy Hex Code to Clipboard" class="codepoint">f516</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-account_switch center"></div>
     <div class="class-name">nf-mdi-account_switch</div><div title="Copy Hex Code to Clipboard" class="codepoint">f518</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-adjust center"></div>
     <div class="class-name">nf-mdi-adjust</div><div title="Copy Hex Code to Clipboard" class="codepoint">f519</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-air_conditioner center"></div>
     <div class="class-name">nf-mdi-air_conditioner</div><div title="Copy Hex Code to Clipboard" class="codepoint">f51a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-airballoon center"></div>
     <div class="class-name">nf-mdi-airballoon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f51b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-airplane center"></div>
     <div class="class-name">nf-mdi-airplane</div><div title="Copy Hex Code to Clipboard" class="codepoint">f51c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-airplane_landing center"></div>
     <div class="class-name">nf-mdi-airplane_landing</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-airplane_off center"></div>
     <div class="class-name">nf-mdi-airplane_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f51d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-airplane_takeoff center"></div>
     <div class="class-name">nf-mdi-airplane_takeoff</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-airplay center"></div>
     <div class="class-name">nf-mdi-airplay</div><div title="Copy Hex Code to Clipboard" class="codepoint">f51e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm center"></div>
     <div class="class-name">nf-mdi-alarm</div><div title="Copy Hex Code to Clipboard" class="codepoint">f51f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm_bell center"></div>
     <div class="class-name">nf-mdi-alarm_bell</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc8c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm_check center"></div>
     <div class="class-name">nf-mdi-alarm_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f520</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm_light center"></div>
     <div class="class-name">nf-mdi-alarm_light</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc8d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm_multiple center"></div>
     <div class="class-name">nf-mdi-alarm_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f521</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm_off center"></div>
     <div class="class-name">nf-mdi-alarm_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f522</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm_plus center"></div>
     <div class="class-name">nf-mdi-alarm_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f523</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alarm_snooze center"></div>
     <div class="class-name">nf-mdi-alarm_snooze</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb8c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-album center"></div>
     <div class="class-name">nf-mdi-album</div><div title="Copy Hex Code to Clipboard" class="codepoint">f524</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert center"></div>
     <div class="class-name">nf-mdi-alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f525</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert_box center"></div>
     <div class="class-name">nf-mdi-alert_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f526</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert_circle center"></div>
     <div class="class-name">nf-mdi-alert_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f527</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert_circle_outline center"></div>
     <div class="class-name">nf-mdi-alert_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert_decagram center"></div>
     <div class="class-name">nf-mdi-alert_decagram</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbbb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert_octagon center"></div>
     <div class="class-name">nf-mdi-alert_octagon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f528</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert_octagram center"></div>
     <div class="class-name">nf-mdi-alert_octagram</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc65</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alert_outline center"></div>
     <div class="class-name">nf-mdi-alert_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f529</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-all_inclusive center"></div>
     <div class="class-name">nf-mdi-all_inclusive</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbbc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-allo center"></div>
     <div class="class-name">nf-mdi-allo</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd00</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alpha center"></div>
     <div class="class-name">nf-mdi-alpha</div><div title="Copy Hex Code to Clipboard" class="codepoint">f52a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-alphabetical center"></div>
     <div class="class-name">nf-mdi-alphabetical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f52b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-altimeter center"></div>
     <div class="class-name">nf-mdi-altimeter</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-amazon center"></div>
     <div class="class-name">nf-mdi-amazon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f52c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-amazon_clouddrive center"></div>
     <div class="class-name">nf-mdi-amazon_clouddrive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f52d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ambulance center"></div>
     <div class="class-name">nf-mdi-ambulance</div><div title="Copy Hex Code to Clipboard" class="codepoint">f52e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-amplifier center"></div>
     <div class="class-name">nf-mdi-amplifier</div><div title="Copy Hex Code to Clipboard" class="codepoint">f52f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-anchor center"></div>
     <div class="class-name">nf-mdi-anchor</div><div title="Copy Hex Code to Clipboard" class="codepoint">f530</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-android center"></div>
     <div class="class-name">nf-mdi-android</div><div title="Copy Hex Code to Clipboard" class="codepoint">f531</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-android_debug_bridge center"></div>
     <div class="class-name">nf-mdi-android_debug_bridge</div><div title="Copy Hex Code to Clipboard" class="codepoint">f532</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-android_head center"></div>
     <div class="class-name">nf-mdi-android_head</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc8e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-android_studio center"></div>
     <div class="class-name">nf-mdi-android_studio</div><div title="Copy Hex Code to Clipboard" class="codepoint">f533</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-angular center"></div>
     <div class="class-name">nf-mdi-angular</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-angularjs center"></div>
     <div class="class-name">nf-mdi-angularjs</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbbd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-animation center"></div>
     <div class="class-name">nf-mdi-animation</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple center"></div>
     <div class="class-name">nf-mdi-apple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f534</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_finder center"></div>
     <div class="class-name">nf-mdi-apple_finder</div><div title="Copy Hex Code to Clipboard" class="codepoint">f535</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_ios center"></div>
     <div class="class-name">nf-mdi-apple_ios</div><div title="Copy Hex Code to Clipboard" class="codepoint">f536</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_keyboard_caps center"></div>
     <div class="class-name">nf-mdi-apple_keyboard_caps</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb31</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_keyboard_command center"></div>
     <div class="class-name">nf-mdi-apple_keyboard_command</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb32</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_keyboard_control center"></div>
     <div class="class-name">nf-mdi-apple_keyboard_control</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb33</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_keyboard_option center"></div>
     <div class="class-name">nf-mdi-apple_keyboard_option</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb34</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_keyboard_shift center"></div>
     <div class="class-name">nf-mdi-apple_keyboard_shift</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb35</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_mobileme center"></div>
     <div class="class-name">nf-mdi-apple_mobileme</div><div title="Copy Hex Code to Clipboard" class="codepoint">f537</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apple_safari center"></div>
     <div class="class-name">nf-mdi-apple_safari</div><div title="Copy Hex Code to Clipboard" class="codepoint">f538</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-application center"></div>
     <div class="class-name">nf-mdi-application</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb13</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-approval center"></div>
     <div class="class-name">nf-mdi-approval</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc8f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-apps center"></div>
     <div class="class-name">nf-mdi-apps</div><div title="Copy Hex Code to Clipboard" class="codepoint">f53a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-archive center"></div>
     <div class="class-name">nf-mdi-archive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f53b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrange_bring_forward center"></div>
     <div class="class-name">nf-mdi-arrange_bring_forward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f53c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrange_bring_to_front center"></div>
     <div class="class-name">nf-mdi-arrange_bring_to_front</div><div title="Copy Hex Code to Clipboard" class="codepoint">f53d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrange_send_backward center"></div>
     <div class="class-name">nf-mdi-arrange_send_backward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f53e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrange_send_to_back center"></div>
     <div class="class-name">nf-mdi-arrange_send_to_back</div><div title="Copy Hex Code to Clipboard" class="codepoint">f53f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_all center"></div>
     <div class="class-name">nf-mdi-arrow_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f540</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_bottom_left center"></div>
     <div class="class-name">nf-mdi-arrow_bottom_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f541</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_bottom_right center"></div>
     <div class="class-name">nf-mdi-arrow_bottom_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f542</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_collapse center"></div>
     <div class="class-name">nf-mdi-arrow_collapse</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb14</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_collapse_all center"></div>
     <div class="class-name">nf-mdi-arrow_collapse_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f543</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_collapse_down center"></div>
     <div class="class-name">nf-mdi-arrow_collapse_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc90</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_collapse_left center"></div>
     <div class="class-name">nf-mdi-arrow_collapse_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc91</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_collapse_right center"></div>
     <div class="class-name">nf-mdi-arrow_collapse_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc92</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_collapse_up center"></div>
     <div class="class-name">nf-mdi-arrow_collapse_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc93</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down center"></div>
     <div class="class-name">nf-mdi-arrow_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">f544</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_bold center"></div>
     <div class="class-name">nf-mdi-arrow_down_bold</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc2c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_bold_box center"></div>
     <div class="class-name">nf-mdi-arrow_down_bold_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc2d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_bold_box_outline center"></div>
     <div class="class-name">nf-mdi-arrow_down_bold_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc2e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_bold_circle center"></div>
     <div class="class-name">nf-mdi-arrow_down_bold_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f546</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_bold_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_down_bold_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f547</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_bold_hexagon_outline center"></div>
     <div class="class-name">nf-mdi-arrow_down_bold_hexagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f548</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_box center"></div>
     <div class="class-name">nf-mdi-arrow_down_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbbe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_drop_circle center"></div>
     <div class="class-name">nf-mdi-arrow_down_drop_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f549</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_drop_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_down_drop_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f54a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_down_thick center"></div>
     <div class="class-name">nf-mdi-arrow_down_thick</div><div title="Copy Hex Code to Clipboard" class="codepoint">f545</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_expand center"></div>
     <div class="class-name">nf-mdi-arrow_expand</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb15</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_expand_all center"></div>
     <div class="class-name">nf-mdi-arrow_expand_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f54b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_expand_down center"></div>
     <div class="class-name">nf-mdi-arrow_expand_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc94</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_expand_left center"></div>
     <div class="class-name">nf-mdi-arrow_expand_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc95</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_expand_right center"></div>
     <div class="class-name">nf-mdi-arrow_expand_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc96</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_expand_up center"></div>
     <div class="class-name">nf-mdi-arrow_expand_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc97</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left center"></div>
     <div class="class-name">nf-mdi-arrow_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f54c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_bold center"></div>
     <div class="class-name">nf-mdi-arrow_left_bold</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc2f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_bold_box center"></div>
     <div class="class-name">nf-mdi-arrow_left_bold_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc30</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_bold_box_outline center"></div>
     <div class="class-name">nf-mdi-arrow_left_bold_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc31</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_bold_circle center"></div>
     <div class="class-name">nf-mdi-arrow_left_bold_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f54e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_bold_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_left_bold_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f54f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_bold_hexagon_outline center"></div>
     <div class="class-name">nf-mdi-arrow_left_bold_hexagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f550</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_box center"></div>
     <div class="class-name">nf-mdi-arrow_left_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbbf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_drop_circle center"></div>
     <div class="class-name">nf-mdi-arrow_left_drop_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f551</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_drop_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_left_drop_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f552</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_left_thick center"></div>
     <div class="class-name">nf-mdi-arrow_left_thick</div><div title="Copy Hex Code to Clipboard" class="codepoint">f54d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right center"></div>
     <div class="class-name">nf-mdi-arrow_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f553</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_bold center"></div>
     <div class="class-name">nf-mdi-arrow_right_bold</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc32</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_bold_box center"></div>
     <div class="class-name">nf-mdi-arrow_right_bold_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc33</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_bold_box_outline center"></div>
     <div class="class-name">nf-mdi-arrow_right_bold_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc34</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_bold_circle center"></div>
     <div class="class-name">nf-mdi-arrow_right_bold_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f555</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_bold_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_right_bold_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f556</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_bold_hexagon_outline center"></div>
     <div class="class-name">nf-mdi-arrow_right_bold_hexagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f557</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_box center"></div>
     <div class="class-name">nf-mdi-arrow_right_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_drop_circle center"></div>
     <div class="class-name">nf-mdi-arrow_right_drop_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f558</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_drop_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_right_drop_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f559</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_right_thick center"></div>
     <div class="class-name">nf-mdi-arrow_right_thick</div><div title="Copy Hex Code to Clipboard" class="codepoint">f554</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_top_left center"></div>
     <div class="class-name">nf-mdi-arrow_top_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f55a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_top_right center"></div>
     <div class="class-name">nf-mdi-arrow_top_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f55b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up center"></div>
     <div class="class-name">nf-mdi-arrow_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">f55c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_bold center"></div>
     <div class="class-name">nf-mdi-arrow_up_bold</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc35</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_bold_box center"></div>
     <div class="class-name">nf-mdi-arrow_up_bold_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc36</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_bold_box_outline center"></div>
     <div class="class-name">nf-mdi-arrow_up_bold_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc37</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_bold_circle center"></div>
     <div class="class-name">nf-mdi-arrow_up_bold_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f55e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_bold_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_up_bold_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f55f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_bold_hexagon_outline center"></div>
     <div class="class-name">nf-mdi-arrow_up_bold_hexagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f560</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_box center"></div>
     <div class="class-name">nf-mdi-arrow_up_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_drop_circle center"></div>
     <div class="class-name">nf-mdi-arrow_up_drop_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f561</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_drop_circle_outline center"></div>
     <div class="class-name">nf-mdi-arrow_up_drop_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f562</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-arrow_up_thick center"></div>
     <div class="class-name">nf-mdi-arrow_up_thick</div><div title="Copy Hex Code to Clipboard" class="codepoint">f55d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-artist center"></div>
     <div class="class-name">nf-mdi-artist</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd01</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-assistant center"></div>
     <div class="class-name">nf-mdi-assistant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f563</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-asterisk center"></div>
     <div class="class-name">nf-mdi-asterisk</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-at center"></div>
     <div class="class-name">nf-mdi-at</div><div title="Copy Hex Code to Clipboard" class="codepoint">f564</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-atlassian center"></div>
     <div class="class-name">nf-mdi-atlassian</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd02</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-atom center"></div>
     <div class="class-name">nf-mdi-atom</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc66</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-attachment center"></div>
     <div class="class-name">nf-mdi-attachment</div><div title="Copy Hex Code to Clipboard" class="codepoint">f565</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-audiobook center"></div>
     <div class="class-name">nf-mdi-audiobook</div><div title="Copy Hex Code to Clipboard" class="codepoint">f566</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-auto_fix center"></div>
     <div class="class-name">nf-mdi-auto_fix</div><div title="Copy Hex Code to Clipboard" class="codepoint">f567</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-auto_upload center"></div>
     <div class="class-name">nf-mdi-auto_upload</div><div title="Copy Hex Code to Clipboard" class="codepoint">f568</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-autorenew center"></div>
     <div class="class-name">nf-mdi-autorenew</div><div title="Copy Hex Code to Clipboard" class="codepoint">f569</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-av_timer center"></div>
     <div class="class-name">nf-mdi-av_timer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f56a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-azure center"></div>
     <div class="class-name">nf-mdi-azure</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd03</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-baby center"></div>
     <div class="class-name">nf-mdi-baby</div><div title="Copy Hex Code to Clipboard" class="codepoint">f56b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-baby_buggy center"></div>
     <div class="class-name">nf-mdi-baby_buggy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb8d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-backburger center"></div>
     <div class="class-name">nf-mdi-backburger</div><div title="Copy Hex Code to Clipboard" class="codepoint">f56c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-backspace center"></div>
     <div class="class-name">nf-mdi-backspace</div><div title="Copy Hex Code to Clipboard" class="codepoint">f56d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-backup_restore center"></div>
     <div class="class-name">nf-mdi-backup_restore</div><div title="Copy Hex Code to Clipboard" class="codepoint">f56e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bandcamp center"></div>
     <div class="class-name">nf-mdi-bandcamp</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb73</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bank center"></div>
     <div class="class-name">nf-mdi-bank</div><div title="Copy Hex Code to Clipboard" class="codepoint">f56f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-barcode center"></div>
     <div class="class-name">nf-mdi-barcode</div><div title="Copy Hex Code to Clipboard" class="codepoint">f570</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-barcode_scan center"></div>
     <div class="class-name">nf-mdi-barcode_scan</div><div title="Copy Hex Code to Clipboard" class="codepoint">f571</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-barley center"></div>
     <div class="class-name">nf-mdi-barley</div><div title="Copy Hex Code to Clipboard" class="codepoint">f572</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-barrel center"></div>
     <div class="class-name">nf-mdi-barrel</div><div title="Copy Hex Code to Clipboard" class="codepoint">f573</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-basecamp center"></div>
     <div class="class-name">nf-mdi-basecamp</div><div title="Copy Hex Code to Clipboard" class="codepoint">f574</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-basket center"></div>
     <div class="class-name">nf-mdi-basket</div><div title="Copy Hex Code to Clipboard" class="codepoint">f575</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-basket_fill center"></div>
     <div class="class-name">nf-mdi-basket_fill</div><div title="Copy Hex Code to Clipboard" class="codepoint">f576</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-basket_unfill center"></div>
     <div class="class-name">nf-mdi-basket_unfill</div><div title="Copy Hex Code to Clipboard" class="codepoint">f577</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-basketball center"></div>
     <div class="class-name">nf-mdi-basketball</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd04</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery center"></div>
     <div class="class-name">nf-mdi-battery</div><div title="Copy Hex Code to Clipboard" class="codepoint">f578</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_10 center"></div>
     <div class="class-name">nf-mdi-battery_10</div><div title="Copy Hex Code to Clipboard" class="codepoint">f579</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_20 center"></div>
     <div class="class-name">nf-mdi-battery_20</div><div title="Copy Hex Code to Clipboard" class="codepoint">f57a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_30 center"></div>
     <div class="class-name">nf-mdi-battery_30</div><div title="Copy Hex Code to Clipboard" class="codepoint">f57b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_40 center"></div>
     <div class="class-name">nf-mdi-battery_40</div><div title="Copy Hex Code to Clipboard" class="codepoint">f57c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_50 center"></div>
     <div class="class-name">nf-mdi-battery_50</div><div title="Copy Hex Code to Clipboard" class="codepoint">f57d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_60 center"></div>
     <div class="class-name">nf-mdi-battery_60</div><div title="Copy Hex Code to Clipboard" class="codepoint">f57e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_70 center"></div>
     <div class="class-name">nf-mdi-battery_70</div><div title="Copy Hex Code to Clipboard" class="codepoint">f57f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_80 center"></div>
     <div class="class-name">nf-mdi-battery_80</div><div title="Copy Hex Code to Clipboard" class="codepoint">f580</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_90 center"></div>
     <div class="class-name">nf-mdi-battery_90</div><div title="Copy Hex Code to Clipboard" class="codepoint">f581</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_alert center"></div>
     <div class="class-name">nf-mdi-battery_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f582</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging center"></div>
     <div class="class-name">nf-mdi-battery_charging</div><div title="Copy Hex Code to Clipboard" class="codepoint">f583</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_100 center"></div>
     <div class="class-name">nf-mdi-battery_charging_100</div><div title="Copy Hex Code to Clipboard" class="codepoint">f584</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_20 center"></div>
     <div class="class-name">nf-mdi-battery_charging_20</div><div title="Copy Hex Code to Clipboard" class="codepoint">f585</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_30 center"></div>
     <div class="class-name">nf-mdi-battery_charging_30</div><div title="Copy Hex Code to Clipboard" class="codepoint">f586</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_40 center"></div>
     <div class="class-name">nf-mdi-battery_charging_40</div><div title="Copy Hex Code to Clipboard" class="codepoint">f587</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_60 center"></div>
     <div class="class-name">nf-mdi-battery_charging_60</div><div title="Copy Hex Code to Clipboard" class="codepoint">f588</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_80 center"></div>
     <div class="class-name">nf-mdi-battery_charging_80</div><div title="Copy Hex Code to Clipboard" class="codepoint">f589</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_90 center"></div>
     <div class="class-name">nf-mdi-battery_charging_90</div><div title="Copy Hex Code to Clipboard" class="codepoint">f58a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd05</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_10 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_10</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd06</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_20 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_20</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd07</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_30 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_30</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd08</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_40 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_40</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd09</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_50 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_50</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd0a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_60 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_60</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd0b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_70 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_70</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd0c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_80 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_80</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd0d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_90 center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_90</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd0e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_alert center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd0f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_charging_wireless_outline center"></div>
     <div class="class-name">nf-mdi-battery_charging_wireless_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd10</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_minus center"></div>
     <div class="class-name">nf-mdi-battery_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f58b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_negative center"></div>
     <div class="class-name">nf-mdi-battery_negative</div><div title="Copy Hex Code to Clipboard" class="codepoint">f58c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_outline center"></div>
     <div class="class-name">nf-mdi-battery_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f58d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_plus center"></div>
     <div class="class-name">nf-mdi-battery_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f58e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_positive center"></div>
     <div class="class-name">nf-mdi-battery_positive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f58f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-battery_unknown center"></div>
     <div class="class-name">nf-mdi-battery_unknown</div><div title="Copy Hex Code to Clipboard" class="codepoint">f590</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-beach center"></div>
     <div class="class-name">nf-mdi-beach</div><div title="Copy Hex Code to Clipboard" class="codepoint">f591</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-beaker center"></div>
     <div class="class-name">nf-mdi-beaker</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb8e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-beats center"></div>
     <div class="class-name">nf-mdi-beats</div><div title="Copy Hex Code to Clipboard" class="codepoint">f596</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-beer center"></div>
     <div class="class-name">nf-mdi-beer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f597</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-behance center"></div>
     <div class="class-name">nf-mdi-behance</div><div title="Copy Hex Code to Clipboard" class="codepoint">f598</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bell center"></div>
     <div class="class-name">nf-mdi-bell</div><div title="Copy Hex Code to Clipboard" class="codepoint">f599</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bell_off center"></div>
     <div class="class-name">nf-mdi-bell_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f59a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bell_outline center"></div>
     <div class="class-name">nf-mdi-bell_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f59b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bell_plus center"></div>
     <div class="class-name">nf-mdi-bell_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f59c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bell_ring center"></div>
     <div class="class-name">nf-mdi-bell_ring</div><div title="Copy Hex Code to Clipboard" class="codepoint">f59d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bell_ring_outline center"></div>
     <div class="class-name">nf-mdi-bell_ring_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f59e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bell_sleep center"></div>
     <div class="class-name">nf-mdi-bell_sleep</div><div title="Copy Hex Code to Clipboard" class="codepoint">f59f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-beta center"></div>
     <div class="class-name">nf-mdi-beta</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bible center"></div>
     <div class="class-name">nf-mdi-bible</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bike center"></div>
     <div class="class-name">nf-mdi-bike</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bing center"></div>
     <div class="class-name">nf-mdi-bing</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-binoculars center"></div>
     <div class="class-name">nf-mdi-binoculars</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bio center"></div>
     <div class="class-name">nf-mdi-bio</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-biohazard center"></div>
     <div class="class-name">nf-mdi-biohazard</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bitbucket center"></div>
     <div class="class-name">nf-mdi-bitbucket</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bitcoin center"></div>
     <div class="class-name">nf-mdi-bitcoin</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd11</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-black_mesa center"></div>
     <div class="class-name">nf-mdi-black_mesa</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blackberry center"></div>
     <div class="class-name">nf-mdi-blackberry</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5a9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blender center"></div>
     <div class="class-name">nf-mdi-blender</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5aa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blinds center"></div>
     <div class="class-name">nf-mdi-blinds</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-block_helper center"></div>
     <div class="class-name">nf-mdi-block_helper</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blogger center"></div>
     <div class="class-name">nf-mdi-blogger</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bluetooth center"></div>
     <div class="class-name">nf-mdi-bluetooth</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bluetooth_audio center"></div>
     <div class="class-name">nf-mdi-bluetooth_audio</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5af</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bluetooth_connect center"></div>
     <div class="class-name">nf-mdi-bluetooth_connect</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bluetooth_off center"></div>
     <div class="class-name">nf-mdi-bluetooth_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bluetooth_settings center"></div>
     <div class="class-name">nf-mdi-bluetooth_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bluetooth_transfer center"></div>
     <div class="class-name">nf-mdi-bluetooth_transfer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blur center"></div>
     <div class="class-name">nf-mdi-blur</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blur_linear center"></div>
     <div class="class-name">nf-mdi-blur_linear</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blur_off center"></div>
     <div class="class-name">nf-mdi-blur_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-blur_radial center"></div>
     <div class="class-name">nf-mdi-blur_radial</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bomb center"></div>
     <div class="class-name">nf-mdi-bomb</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb8f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bomb_off center"></div>
     <div class="class-name">nf-mdi-bomb_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bone center"></div>
     <div class="class-name">nf-mdi-bone</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book center"></div>
     <div class="class-name">nf-mdi-book</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5b9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_minus center"></div>
     <div class="class-name">nf-mdi-book_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_multiple center"></div>
     <div class="class-name">nf-mdi-book_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_multiple_variant center"></div>
     <div class="class-name">nf-mdi-book_multiple_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5bb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_open center"></div>
     <div class="class-name">nf-mdi-book_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5bc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_open_page_variant center"></div>
     <div class="class-name">nf-mdi-book_open_page_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_open_variant center"></div>
     <div class="class-name">nf-mdi-book_open_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5bd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_plus center"></div>
     <div class="class-name">nf-mdi-book_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fada</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_secure center"></div>
     <div class="class-name">nf-mdi-book_secure</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc98</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_unsecure center"></div>
     <div class="class-name">nf-mdi-book_unsecure</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc99</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-book_variant center"></div>
     <div class="class-name">nf-mdi-book_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5be</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bookmark center"></div>
     <div class="class-name">nf-mdi-bookmark</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5bf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bookmark_check center"></div>
     <div class="class-name">nf-mdi-bookmark_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bookmark_music center"></div>
     <div class="class-name">nf-mdi-bookmark_music</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bookmark_outline center"></div>
     <div class="class-name">nf-mdi-bookmark_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bookmark_plus center"></div>
     <div class="class-name">nf-mdi-bookmark_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bookmark_plus_outline center"></div>
     <div class="class-name">nf-mdi-bookmark_plus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bookmark_remove center"></div>
     <div class="class-name">nf-mdi-bookmark_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-boombox center"></div>
     <div class="class-name">nf-mdi-boombox</div><div title="Copy Hex Code to Clipboard" class="codepoint">fadb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bootstrap center"></div>
     <div class="class-name">nf-mdi-bootstrap</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_all center"></div>
     <div class="class-name">nf-mdi-border_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_bottom center"></div>
     <div class="class-name">nf-mdi-border_bottom</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_color center"></div>
     <div class="class-name">nf-mdi-border_color</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_horizontal center"></div>
     <div class="class-name">nf-mdi-border_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5c9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_inside center"></div>
     <div class="class-name">nf-mdi-border_inside</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_left center"></div>
     <div class="class-name">nf-mdi-border_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5cb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_none center"></div>
     <div class="class-name">nf-mdi-border_none</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5cc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_outside center"></div>
     <div class="class-name">nf-mdi-border_outside</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5cd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_right center"></div>
     <div class="class-name">nf-mdi-border_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ce</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_style center"></div>
     <div class="class-name">nf-mdi-border_style</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5cf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_top center"></div>
     <div class="class-name">nf-mdi-border_top</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-border_vertical center"></div>
     <div class="class-name">nf-mdi-border_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bow_tie center"></div>
     <div class="class-name">nf-mdi-bow_tie</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb76</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bowl center"></div>
     <div class="class-name">nf-mdi-bowl</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb16</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bowling center"></div>
     <div class="class-name">nf-mdi-bowling</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-box center"></div>
     <div class="class-name">nf-mdi-box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-box_cutter center"></div>
     <div class="class-name">nf-mdi-box_cutter</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-box_shadow center"></div>
     <div class="class-name">nf-mdi-box_shadow</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb36</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bridge center"></div>
     <div class="class-name">nf-mdi-bridge</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb17</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-briefcase center"></div>
     <div class="class-name">nf-mdi-briefcase</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-briefcase_check center"></div>
     <div class="class-name">nf-mdi-briefcase_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-briefcase_download center"></div>
     <div class="class-name">nf-mdi-briefcase_download</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-briefcase_outline center"></div>
     <div class="class-name">nf-mdi-briefcase_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd12</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-briefcase_upload center"></div>
     <div class="class-name">nf-mdi-briefcase_upload</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_1 center"></div>
     <div class="class-name">nf-mdi-brightness_1</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5d9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_2 center"></div>
     <div class="class-name">nf-mdi-brightness_2</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5da</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_3 center"></div>
     <div class="class-name">nf-mdi-brightness_3</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5db</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_4 center"></div>
     <div class="class-name">nf-mdi-brightness_4</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5dc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_5 center"></div>
     <div class="class-name">nf-mdi-brightness_5</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5dd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_6 center"></div>
     <div class="class-name">nf-mdi-brightness_6</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5de</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_7 center"></div>
     <div class="class-name">nf-mdi-brightness_7</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5df</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brightness_auto center"></div>
     <div class="class-name">nf-mdi-brightness_auto</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-broom center"></div>
     <div class="class-name">nf-mdi-broom</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-brush center"></div>
     <div class="class-name">nf-mdi-brush</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-buffer center"></div>
     <div class="class-name">nf-mdi-buffer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb18</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bug center"></div>
     <div class="class-name">nf-mdi-bug</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bulletin_board center"></div>
     <div class="class-name">nf-mdi-bulletin_board</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bullhorn center"></div>
     <div class="class-name">nf-mdi-bullhorn</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bullseye center"></div>
     <div class="class-name">nf-mdi-bullseye</div><div title="Copy Hex Code to Clipboard" class="codepoint">fadc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bus center"></div>
     <div class="class-name">nf-mdi-bus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bus_articulated_end center"></div>
     <div class="class-name">nf-mdi-bus_articulated_end</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc9a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bus_articulated_front center"></div>
     <div class="class-name">nf-mdi-bus_articulated_front</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc9b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bus_double_decker center"></div>
     <div class="class-name">nf-mdi-bus_double_decker</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc9c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bus_school center"></div>
     <div class="class-name">nf-mdi-bus_school</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc9d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-bus_side center"></div>
     <div class="class-name">nf-mdi-bus_side</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc9e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cached center"></div>
     <div class="class-name">nf-mdi-cached</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cake center"></div>
     <div class="class-name">nf-mdi-cake</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cake_layered center"></div>
     <div class="class-name">nf-mdi-cake_layered</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5e9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cake_variant center"></div>
     <div class="class-name">nf-mdi-cake_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calculator center"></div>
     <div class="class-name">nf-mdi-calculator</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5eb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar center"></div>
     <div class="class-name">nf-mdi-calendar</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_blank center"></div>
     <div class="class-name">nf-mdi-calendar_blank</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ed</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_check center"></div>
     <div class="class-name">nf-mdi-calendar_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_clock center"></div>
     <div class="class-name">nf-mdi-calendar_clock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_multiple center"></div>
     <div class="class-name">nf-mdi-calendar_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_multiple_check center"></div>
     <div class="class-name">nf-mdi-calendar_multiple_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_plus center"></div>
     <div class="class-name">nf-mdi-calendar_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_question center"></div>
     <div class="class-name">nf-mdi-calendar_question</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb90</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_range center"></div>
     <div class="class-name">nf-mdi-calendar_range</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb77</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_remove center"></div>
     <div class="class-name">nf-mdi-calendar_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_text center"></div>
     <div class="class-name">nf-mdi-calendar_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-calendar_today center"></div>
     <div class="class-name">nf-mdi-calendar_today</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-call_made center"></div>
     <div class="class-name">nf-mdi-call_made</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-call_merge center"></div>
     <div class="class-name">nf-mdi-call_merge</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-call_missed center"></div>
     <div class="class-name">nf-mdi-call_missed</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-call_received center"></div>
     <div class="class-name">nf-mdi-call_received</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5f9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-call_split center"></div>
     <div class="class-name">nf-mdi-call_split</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5fa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camcorder center"></div>
     <div class="class-name">nf-mdi-camcorder</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5fb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camcorder_box center"></div>
     <div class="class-name">nf-mdi-camcorder_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5fc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camcorder_box_off center"></div>
     <div class="class-name">nf-mdi-camcorder_box_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5fd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camcorder_off center"></div>
     <div class="class-name">nf-mdi-camcorder_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5fe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera center"></div>
     <div class="class-name">nf-mdi-camera</div><div title="Copy Hex Code to Clipboard" class="codepoint">f5ff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_burst center"></div>
     <div class="class-name">nf-mdi-camera_burst</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb91</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_enhance center"></div>
     <div class="class-name">nf-mdi-camera_enhance</div><div title="Copy Hex Code to Clipboard" class="codepoint">f600</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_front center"></div>
     <div class="class-name">nf-mdi-camera_front</div><div title="Copy Hex Code to Clipboard" class="codepoint">f601</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_front_variant center"></div>
     <div class="class-name">nf-mdi-camera_front_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f602</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_gopro center"></div>
     <div class="class-name">nf-mdi-camera_gopro</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc9f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_iris center"></div>
     <div class="class-name">nf-mdi-camera_iris</div><div title="Copy Hex Code to Clipboard" class="codepoint">f603</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_metering_center center"></div>
     <div class="class-name">nf-mdi-camera_metering_center</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_metering_matrix center"></div>
     <div class="class-name">nf-mdi-camera_metering_matrix</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_metering_partial center"></div>
     <div class="class-name">nf-mdi-camera_metering_partial</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_metering_spot center"></div>
     <div class="class-name">nf-mdi-camera_metering_spot</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_off center"></div>
     <div class="class-name">nf-mdi-camera_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fade</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_party_mode center"></div>
     <div class="class-name">nf-mdi-camera_party_mode</div><div title="Copy Hex Code to Clipboard" class="codepoint">f604</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_rear center"></div>
     <div class="class-name">nf-mdi-camera_rear</div><div title="Copy Hex Code to Clipboard" class="codepoint">f605</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_rear_variant center"></div>
     <div class="class-name">nf-mdi-camera_rear_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f606</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_switch center"></div>
     <div class="class-name">nf-mdi-camera_switch</div><div title="Copy Hex Code to Clipboard" class="codepoint">f607</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-camera_timer center"></div>
     <div class="class-name">nf-mdi-camera_timer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f608</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cancel center"></div>
     <div class="class-name">nf-mdi-cancel</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc38</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-candle center"></div>
     <div class="class-name">nf-mdi-candle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-candycane center"></div>
     <div class="class-name">nf-mdi-candycane</div><div title="Copy Hex Code to Clipboard" class="codepoint">f609</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cannabis center"></div>
     <div class="class-name">nf-mdi-cannabis</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car center"></div>
     <div class="class-name">nf-mdi-car</div><div title="Copy Hex Code to Clipboard" class="codepoint">f60a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_battery center"></div>
     <div class="class-name">nf-mdi-car_battery</div><div title="Copy Hex Code to Clipboard" class="codepoint">f60b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_connected center"></div>
     <div class="class-name">nf-mdi-car_connected</div><div title="Copy Hex Code to Clipboard" class="codepoint">f60c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_convertible center"></div>
     <div class="class-name">nf-mdi-car_convertible</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_estate center"></div>
     <div class="class-name">nf-mdi-car_estate</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_hatchback center"></div>
     <div class="class-name">nf-mdi-car_hatchback</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_pickup center"></div>
     <div class="class-name">nf-mdi-car_pickup</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_side center"></div>
     <div class="class-name">nf-mdi-car_side</div><div title="Copy Hex Code to Clipboard" class="codepoint">fca9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_sports center"></div>
     <div class="class-name">nf-mdi-car_sports</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcaa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-car_wash center"></div>
     <div class="class-name">nf-mdi-car_wash</div><div title="Copy Hex Code to Clipboard" class="codepoint">f60d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-caravan center"></div>
     <div class="class-name">nf-mdi-caravan</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cards center"></div>
     <div class="class-name">nf-mdi-cards</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb37</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cards_outline center"></div>
     <div class="class-name">nf-mdi-cards_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb38</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cards_playing_outline center"></div>
     <div class="class-name">nf-mdi-cards_playing_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb39</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cards_variant center"></div>
     <div class="class-name">nf-mdi-cards_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-carrot center"></div>
     <div class="class-name">nf-mdi-carrot</div><div title="Copy Hex Code to Clipboard" class="codepoint">f60e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cart center"></div>
     <div class="class-name">nf-mdi-cart</div><div title="Copy Hex Code to Clipboard" class="codepoint">f60f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cart_off center"></div>
     <div class="class-name">nf-mdi-cart_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb6a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cart_outline center"></div>
     <div class="class-name">nf-mdi-cart_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f610</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cart_plus center"></div>
     <div class="class-name">nf-mdi-cart_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f611</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-case_sensitive_alt center"></div>
     <div class="class-name">nf-mdi-case_sensitive_alt</div><div title="Copy Hex Code to Clipboard" class="codepoint">f612</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cash center"></div>
     <div class="class-name">nf-mdi-cash</div><div title="Copy Hex Code to Clipboard" class="codepoint">f613</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cash_100 center"></div>
     <div class="class-name">nf-mdi-cash_100</div><div title="Copy Hex Code to Clipboard" class="codepoint">f614</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cash_multiple center"></div>
     <div class="class-name">nf-mdi-cash_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f615</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cash_usd center"></div>
     <div class="class-name">nf-mdi-cash_usd</div><div title="Copy Hex Code to Clipboard" class="codepoint">f616</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cast center"></div>
     <div class="class-name">nf-mdi-cast</div><div title="Copy Hex Code to Clipboard" class="codepoint">f617</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cast_connected center"></div>
     <div class="class-name">nf-mdi-cast_connected</div><div title="Copy Hex Code to Clipboard" class="codepoint">f618</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cast_off center"></div>
     <div class="class-name">nf-mdi-cast_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc88</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-castle center"></div>
     <div class="class-name">nf-mdi-castle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f619</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cat center"></div>
     <div class="class-name">nf-mdi-cat</div><div title="Copy Hex Code to Clipboard" class="codepoint">f61a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cctv center"></div>
     <div class="class-name">nf-mdi-cctv</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ceiling_light center"></div>
     <div class="class-name">nf-mdi-ceiling_light</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc67</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone center"></div>
     <div class="class-name">nf-mdi-cellphone</div><div title="Copy Hex Code to Clipboard" class="codepoint">f61b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_android center"></div>
     <div class="class-name">nf-mdi-cellphone_android</div><div title="Copy Hex Code to Clipboard" class="codepoint">f61c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_basic center"></div>
     <div class="class-name">nf-mdi-cellphone_basic</div><div title="Copy Hex Code to Clipboard" class="codepoint">f61d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_dock center"></div>
     <div class="class-name">nf-mdi-cellphone_dock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f61e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_iphone center"></div>
     <div class="class-name">nf-mdi-cellphone_iphone</div><div title="Copy Hex Code to Clipboard" class="codepoint">f61f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_link center"></div>
     <div class="class-name">nf-mdi-cellphone_link</div><div title="Copy Hex Code to Clipboard" class="codepoint">f620</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_link_off center"></div>
     <div class="class-name">nf-mdi-cellphone_link_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f621</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_settings center"></div>
     <div class="class-name">nf-mdi-cellphone_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">f622</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cellphone_wireless center"></div>
     <div class="class-name">nf-mdi-cellphone_wireless</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd13</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-certificate center"></div>
     <div class="class-name">nf-mdi-certificate</div><div title="Copy Hex Code to Clipboard" class="codepoint">f623</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chair_school center"></div>
     <div class="class-name">nf-mdi-chair_school</div><div title="Copy Hex Code to Clipboard" class="codepoint">f624</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_arc center"></div>
     <div class="class-name">nf-mdi-chart_arc</div><div title="Copy Hex Code to Clipboard" class="codepoint">f625</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_areaspline center"></div>
     <div class="class-name">nf-mdi-chart_areaspline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f626</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_bar center"></div>
     <div class="class-name">nf-mdi-chart_bar</div><div title="Copy Hex Code to Clipboard" class="codepoint">f627</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_bar_stacked center"></div>
     <div class="class-name">nf-mdi-chart_bar_stacked</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc68</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_bubble center"></div>
     <div class="class-name">nf-mdi-chart_bubble</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_donut center"></div>
     <div class="class-name">nf-mdi-chart_donut</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_donut_variant center"></div>
     <div class="class-name">nf-mdi-chart_donut_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_gantt center"></div>
     <div class="class-name">nf-mdi-chart_gantt</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb6b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_histogram center"></div>
     <div class="class-name">nf-mdi-chart_histogram</div><div title="Copy Hex Code to Clipboard" class="codepoint">f628</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_line center"></div>
     <div class="class-name">nf-mdi-chart_line</div><div title="Copy Hex Code to Clipboard" class="codepoint">f629</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_line_stacked center"></div>
     <div class="class-name">nf-mdi-chart_line_stacked</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc69</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_line_variant center"></div>
     <div class="class-name">nf-mdi-chart_line_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcaf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_pie center"></div>
     <div class="class-name">nf-mdi-chart_pie</div><div title="Copy Hex Code to Clipboard" class="codepoint">f62a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_scatterplot_hexbin center"></div>
     <div class="class-name">nf-mdi-chart_scatterplot_hexbin</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb6c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chart_timeline center"></div>
     <div class="class-name">nf-mdi-chart_timeline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb6d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-check center"></div>
     <div class="class-name">nf-mdi-check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f62b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-check_all center"></div>
     <div class="class-name">nf-mdi-check_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f62c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-check_circle center"></div>
     <div class="class-name">nf-mdi-check_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fadf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-check_circle_outline center"></div>
     <div class="class-name">nf-mdi-check_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_blank center"></div>
     <div class="class-name">nf-mdi-checkbox_blank</div><div title="Copy Hex Code to Clipboard" class="codepoint">f62d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_blank_circle center"></div>
     <div class="class-name">nf-mdi-checkbox_blank_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f62e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_blank_circle_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_blank_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f62f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_blank_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_blank_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f630</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_marked center"></div>
     <div class="class-name">nf-mdi-checkbox_marked</div><div title="Copy Hex Code to Clipboard" class="codepoint">f631</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_marked_circle center"></div>
     <div class="class-name">nf-mdi-checkbox_marked_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f632</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_marked_circle_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_marked_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f633</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_marked_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_marked_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f634</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_blank center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_blank</div><div title="Copy Hex Code to Clipboard" class="codepoint">f635</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_blank_circle center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_blank_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb3a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_blank_circle_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_blank_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb3b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_blank_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_blank_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f636</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_marked center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_marked</div><div title="Copy Hex Code to Clipboard" class="codepoint">f637</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_marked_circle center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_marked_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb3c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_marked_circle_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_marked_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb3d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkbox_multiple_marked_outline center"></div>
     <div class="class-name">nf-mdi-checkbox_multiple_marked_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f638</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-checkerboard center"></div>
     <div class="class-name">nf-mdi-checkerboard</div><div title="Copy Hex Code to Clipboard" class="codepoint">f639</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chemical_weapon center"></div>
     <div class="class-name">nf-mdi-chemical_weapon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f63a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_double_down center"></div>
     <div class="class-name">nf-mdi-chevron_double_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">f63b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_double_left center"></div>
     <div class="class-name">nf-mdi-chevron_double_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f63c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_double_right center"></div>
     <div class="class-name">nf-mdi-chevron_double_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f63d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_double_up center"></div>
     <div class="class-name">nf-mdi-chevron_double_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">f63e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_down center"></div>
     <div class="class-name">nf-mdi-chevron_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">f63f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_left center"></div>
     <div class="class-name">nf-mdi-chevron_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f640</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_right center"></div>
     <div class="class-name">nf-mdi-chevron_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f641</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chevron_up center"></div>
     <div class="class-name">nf-mdi-chevron_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">f642</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chili_hot center"></div>
     <div class="class-name">nf-mdi-chili_hot</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chili_medium center"></div>
     <div class="class-name">nf-mdi-chili_medium</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chili_mild center"></div>
     <div class="class-name">nf-mdi-chili_mild</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-chip center"></div>
     <div class="class-name">nf-mdi-chip</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb19</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-church center"></div>
     <div class="class-name">nf-mdi-church</div><div title="Copy Hex Code to Clipboard" class="codepoint">f643</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-circle center"></div>
     <div class="class-name">nf-mdi-circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc63</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-circle_outline center"></div>
     <div class="class-name">nf-mdi-circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc64</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cisco_webex center"></div>
     <div class="class-name">nf-mdi-cisco_webex</div><div title="Copy Hex Code to Clipboard" class="codepoint">f644</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-city center"></div>
     <div class="class-name">nf-mdi-city</div><div title="Copy Hex Code to Clipboard" class="codepoint">f645</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard center"></div>
     <div class="class-name">nf-mdi-clipboard</div><div title="Copy Hex Code to Clipboard" class="codepoint">f646</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_account center"></div>
     <div class="class-name">nf-mdi-clipboard_account</div><div title="Copy Hex Code to Clipboard" class="codepoint">f647</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_alert center"></div>
     <div class="class-name">nf-mdi-clipboard_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f648</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_arrow_down center"></div>
     <div class="class-name">nf-mdi-clipboard_arrow_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">f649</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_arrow_left center"></div>
     <div class="class-name">nf-mdi-clipboard_arrow_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f64a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_check center"></div>
     <div class="class-name">nf-mdi-clipboard_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f64b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_flow center"></div>
     <div class="class-name">nf-mdi-clipboard_flow</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_outline center"></div>
     <div class="class-name">nf-mdi-clipboard_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f64c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_plus center"></div>
     <div class="class-name">nf-mdi-clipboard_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc4f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clipboard_text center"></div>
     <div class="class-name">nf-mdi-clipboard_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f64d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clippy center"></div>
     <div class="class-name">nf-mdi-clippy</div><div title="Copy Hex Code to Clipboard" class="codepoint">f64e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clock center"></div>
     <div class="class-name">nf-mdi-clock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f64f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clock_alert center"></div>
     <div class="class-name">nf-mdi-clock_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">facd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clock_end center"></div>
     <div class="class-name">nf-mdi-clock_end</div><div title="Copy Hex Code to Clipboard" class="codepoint">f650</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clock_fast center"></div>
     <div class="class-name">nf-mdi-clock_fast</div><div title="Copy Hex Code to Clipboard" class="codepoint">f651</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clock_in center"></div>
     <div class="class-name">nf-mdi-clock_in</div><div title="Copy Hex Code to Clipboard" class="codepoint">f652</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clock_out center"></div>
     <div class="class-name">nf-mdi-clock_out</div><div title="Copy Hex Code to Clipboard" class="codepoint">f653</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clock_start center"></div>
     <div class="class-name">nf-mdi-clock_start</div><div title="Copy Hex Code to Clipboard" class="codepoint">f654</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close center"></div>
     <div class="class-name">nf-mdi-close</div><div title="Copy Hex Code to Clipboard" class="codepoint">f655</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_box center"></div>
     <div class="class-name">nf-mdi-close_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f656</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_box_outline center"></div>
     <div class="class-name">nf-mdi-close_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f657</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_circle center"></div>
     <div class="class-name">nf-mdi-close_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f658</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_circle_outline center"></div>
     <div class="class-name">nf-mdi-close_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f659</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_network center"></div>
     <div class="class-name">nf-mdi-close_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">f65a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_octagon center"></div>
     <div class="class-name">nf-mdi-close_octagon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f65b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_octagon_outline center"></div>
     <div class="class-name">nf-mdi-close_octagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f65c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-close_outline center"></div>
     <div class="class-name">nf-mdi-close_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-closed_caption center"></div>
     <div class="class-name">nf-mdi-closed_caption</div><div title="Copy Hex Code to Clipboard" class="codepoint">f65d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud center"></div>
     <div class="class-name">nf-mdi-cloud</div><div title="Copy Hex Code to Clipboard" class="codepoint">f65e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_braces center"></div>
     <div class="class-name">nf-mdi-cloud_braces</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_check center"></div>
     <div class="class-name">nf-mdi-cloud_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f65f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_circle center"></div>
     <div class="class-name">nf-mdi-cloud_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f660</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_download center"></div>
     <div class="class-name">nf-mdi-cloud_download</div><div title="Copy Hex Code to Clipboard" class="codepoint">f661</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_off_outline center"></div>
     <div class="class-name">nf-mdi-cloud_off_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f663</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_outline center"></div>
     <div class="class-name">nf-mdi-cloud_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f662</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_print center"></div>
     <div class="class-name">nf-mdi-cloud_print</div><div title="Copy Hex Code to Clipboard" class="codepoint">f664</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_print_outline center"></div>
     <div class="class-name">nf-mdi-cloud_print_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f665</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_sync center"></div>
     <div class="class-name">nf-mdi-cloud_sync</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb3e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_tags center"></div>
     <div class="class-name">nf-mdi-cloud_tags</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cloud_upload center"></div>
     <div class="class-name">nf-mdi-cloud_upload</div><div title="Copy Hex Code to Clipboard" class="codepoint">f666</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-clover center"></div>
     <div class="class-name">nf-mdi-clover</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd14</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_array center"></div>
     <div class="class-name">nf-mdi-code_array</div><div title="Copy Hex Code to Clipboard" class="codepoint">f667</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_braces center"></div>
     <div class="class-name">nf-mdi-code_braces</div><div title="Copy Hex Code to Clipboard" class="codepoint">f668</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_brackets center"></div>
     <div class="class-name">nf-mdi-code_brackets</div><div title="Copy Hex Code to Clipboard" class="codepoint">f669</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_equal center"></div>
     <div class="class-name">nf-mdi-code_equal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f66a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_greater_than center"></div>
     <div class="class-name">nf-mdi-code_greater_than</div><div title="Copy Hex Code to Clipboard" class="codepoint">f66b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_greater_than_or_equal center"></div>
     <div class="class-name">nf-mdi-code_greater_than_or_equal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f66c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_less_than center"></div>
     <div class="class-name">nf-mdi-code_less_than</div><div title="Copy Hex Code to Clipboard" class="codepoint">f66d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_less_than_or_equal center"></div>
     <div class="class-name">nf-mdi-code_less_than_or_equal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f66e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_not_equal center"></div>
     <div class="class-name">nf-mdi-code_not_equal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f66f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_not_equal_variant center"></div>
     <div class="class-name">nf-mdi-code_not_equal_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f670</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_parentheses center"></div>
     <div class="class-name">nf-mdi-code_parentheses</div><div title="Copy Hex Code to Clipboard" class="codepoint">f671</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_string center"></div>
     <div class="class-name">nf-mdi-code_string</div><div title="Copy Hex Code to Clipboard" class="codepoint">f672</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_tags center"></div>
     <div class="class-name">nf-mdi-code_tags</div><div title="Copy Hex Code to Clipboard" class="codepoint">f673</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-code_tags_check center"></div>
     <div class="class-name">nf-mdi-code_tags_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb92</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-codepen center"></div>
     <div class="class-name">nf-mdi-codepen</div><div title="Copy Hex Code to Clipboard" class="codepoint">f674</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-coffee center"></div>
     <div class="class-name">nf-mdi-coffee</div><div title="Copy Hex Code to Clipboard" class="codepoint">f675</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-coffee_outline center"></div>
     <div class="class-name">nf-mdi-coffee_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-coffee_to_go center"></div>
     <div class="class-name">nf-mdi-coffee_to_go</div><div title="Copy Hex Code to Clipboard" class="codepoint">f676</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-coin center"></div>
     <div class="class-name">nf-mdi-coin</div><div title="Copy Hex Code to Clipboard" class="codepoint">f677</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-coins center"></div>
     <div class="class-name">nf-mdi-coins</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb93</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-collage center"></div>
     <div class="class-name">nf-mdi-collage</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb3f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-color_helper center"></div>
     <div class="class-name">nf-mdi-color_helper</div><div title="Copy Hex Code to Clipboard" class="codepoint">f678</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment center"></div>
     <div class="class-name">nf-mdi-comment</div><div title="Copy Hex Code to Clipboard" class="codepoint">f679</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_account center"></div>
     <div class="class-name">nf-mdi-comment_account</div><div title="Copy Hex Code to Clipboard" class="codepoint">f67a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_account_outline center"></div>
     <div class="class-name">nf-mdi-comment_account_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f67b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_alert center"></div>
     <div class="class-name">nf-mdi-comment_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f67c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_alert_outline center"></div>
     <div class="class-name">nf-mdi-comment_alert_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f67d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_check center"></div>
     <div class="class-name">nf-mdi-comment_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f67e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_check_outline center"></div>
     <div class="class-name">nf-mdi-comment_check_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f67f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_multiple_outline center"></div>
     <div class="class-name">nf-mdi-comment_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f680</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_outline center"></div>
     <div class="class-name">nf-mdi-comment_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f681</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_plus_outline center"></div>
     <div class="class-name">nf-mdi-comment_plus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f682</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_processing center"></div>
     <div class="class-name">nf-mdi-comment_processing</div><div title="Copy Hex Code to Clipboard" class="codepoint">f683</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_processing_outline center"></div>
     <div class="class-name">nf-mdi-comment_processing_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f684</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_question center"></div>
     <div class="class-name">nf-mdi-comment_question</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd15</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_question_outline center"></div>
     <div class="class-name">nf-mdi-comment_question_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f685</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_remove center"></div>
     <div class="class-name">nf-mdi-comment_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">fadd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_remove_outline center"></div>
     <div class="class-name">nf-mdi-comment_remove_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f686</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_text center"></div>
     <div class="class-name">nf-mdi-comment_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f687</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-comment_text_outline center"></div>
     <div class="class-name">nf-mdi-comment_text_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f688</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-compare center"></div>
     <div class="class-name">nf-mdi-compare</div><div title="Copy Hex Code to Clipboard" class="codepoint">f689</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-compass center"></div>
     <div class="class-name">nf-mdi-compass</div><div title="Copy Hex Code to Clipboard" class="codepoint">f68a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-compass_outline center"></div>
     <div class="class-name">nf-mdi-compass_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f68b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-console center"></div>
     <div class="class-name">nf-mdi-console</div><div title="Copy Hex Code to Clipboard" class="codepoint">f68c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-console_line center"></div>
     <div class="class-name">nf-mdi-console_line</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-contact_mail center"></div>
     <div class="class-name">nf-mdi-contact_mail</div><div title="Copy Hex Code to Clipboard" class="codepoint">f68d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-contacts center"></div>
     <div class="class-name">nf-mdi-contacts</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbc9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_copy center"></div>
     <div class="class-name">nf-mdi-content_copy</div><div title="Copy Hex Code to Clipboard" class="codepoint">f68e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_cut center"></div>
     <div class="class-name">nf-mdi-content_cut</div><div title="Copy Hex Code to Clipboard" class="codepoint">f68f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_duplicate center"></div>
     <div class="class-name">nf-mdi-content_duplicate</div><div title="Copy Hex Code to Clipboard" class="codepoint">f690</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_paste center"></div>
     <div class="class-name">nf-mdi-content_paste</div><div title="Copy Hex Code to Clipboard" class="codepoint">f691</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_save center"></div>
     <div class="class-name">nf-mdi-content_save</div><div title="Copy Hex Code to Clipboard" class="codepoint">f692</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_save_all center"></div>
     <div class="class-name">nf-mdi-content_save_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f693</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_save_outline center"></div>
     <div class="class-name">nf-mdi-content_save_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd16</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-content_save_settings center"></div>
     <div class="class-name">nf-mdi-content_save_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb1a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-contrast center"></div>
     <div class="class-name">nf-mdi-contrast</div><div title="Copy Hex Code to Clipboard" class="codepoint">f694</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-contrast_box center"></div>
     <div class="class-name">nf-mdi-contrast_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f695</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-contrast_circle center"></div>
     <div class="class-name">nf-mdi-contrast_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f696</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cookie center"></div>
     <div class="class-name">nf-mdi-cookie</div><div title="Copy Hex Code to Clipboard" class="codepoint">f697</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-copyright center"></div>
     <div class="class-name">nf-mdi-copyright</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-corn center"></div>
     <div class="class-name">nf-mdi-corn</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-counter center"></div>
     <div class="class-name">nf-mdi-counter</div><div title="Copy Hex Code to Clipboard" class="codepoint">f698</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cow center"></div>
     <div class="class-name">nf-mdi-cow</div><div title="Copy Hex Code to Clipboard" class="codepoint">f699</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-creation center"></div>
     <div class="class-name">nf-mdi-creation</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-credit_card center"></div>
     <div class="class-name">nf-mdi-credit_card</div><div title="Copy Hex Code to Clipboard" class="codepoint">f69a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-credit_card_multiple center"></div>
     <div class="class-name">nf-mdi-credit_card_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f69b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-credit_card_off center"></div>
     <div class="class-name">nf-mdi-credit_card_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-credit_card_plus center"></div>
     <div class="class-name">nf-mdi-credit_card_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb74</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-credit_card_scan center"></div>
     <div class="class-name">nf-mdi-credit_card_scan</div><div title="Copy Hex Code to Clipboard" class="codepoint">f69c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crop center"></div>
     <div class="class-name">nf-mdi-crop</div><div title="Copy Hex Code to Clipboard" class="codepoint">f69d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crop_free center"></div>
     <div class="class-name">nf-mdi-crop_free</div><div title="Copy Hex Code to Clipboard" class="codepoint">f69e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crop_landscape center"></div>
     <div class="class-name">nf-mdi-crop_landscape</div><div title="Copy Hex Code to Clipboard" class="codepoint">f69f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crop_portrait center"></div>
     <div class="class-name">nf-mdi-crop_portrait</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crop_rotate center"></div>
     <div class="class-name">nf-mdi-crop_rotate</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb94</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crop_square center"></div>
     <div class="class-name">nf-mdi-crop_square</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crosshairs center"></div>
     <div class="class-name">nf-mdi-crosshairs</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crosshairs_gps center"></div>
     <div class="class-name">nf-mdi-crosshairs_gps</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-crown center"></div>
     <div class="class-name">nf-mdi-crown</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cube center"></div>
     <div class="class-name">nf-mdi-cube</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cube_outline center"></div>
     <div class="class-name">nf-mdi-cube_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cube_send center"></div>
     <div class="class-name">nf-mdi-cube_send</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cube_unfolded center"></div>
     <div class="class-name">nf-mdi-cube_unfolded</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cup center"></div>
     <div class="class-name">nf-mdi-cup</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6a9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cup_off center"></div>
     <div class="class-name">nf-mdi-cup_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cup_water center"></div>
     <div class="class-name">nf-mdi-cup_water</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6aa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_btc center"></div>
     <div class="class-name">nf-mdi-currency_btc</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_chf center"></div>
     <div class="class-name">nf-mdi-currency_chf</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_cny center"></div>
     <div class="class-name">nf-mdi-currency_cny</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_eth center"></div>
     <div class="class-name">nf-mdi-currency_eth</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcb9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_eur center"></div>
     <div class="class-name">nf-mdi-currency_eur</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_gbp center"></div>
     <div class="class-name">nf-mdi-currency_gbp</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_inr center"></div>
     <div class="class-name">nf-mdi-currency_inr</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_jpy center"></div>
     <div class="class-name">nf-mdi-currency_jpy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_krw center"></div>
     <div class="class-name">nf-mdi-currency_krw</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcbb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_ngn center"></div>
     <div class="class-name">nf-mdi-currency_ngn</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6af</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_rub center"></div>
     <div class="class-name">nf-mdi-currency_rub</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_sign center"></div>
     <div class="class-name">nf-mdi-currency_sign</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcbc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_try center"></div>
     <div class="class-name">nf-mdi-currency_try</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_twd center"></div>
     <div class="class-name">nf-mdi-currency_twd</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcbd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_usd center"></div>
     <div class="class-name">nf-mdi-currency_usd</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-currency_usd_off center"></div>
     <div class="class-name">nf-mdi-currency_usd_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb78</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cursor_default center"></div>
     <div class="class-name">nf-mdi-cursor_default</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cursor_default_outline center"></div>
     <div class="class-name">nf-mdi-cursor_default_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cursor_move center"></div>
     <div class="class-name">nf-mdi-cursor_move</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cursor_pointer center"></div>
     <div class="class-name">nf-mdi-cursor_pointer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-cursor_text center"></div>
     <div class="class-name">nf-mdi-cursor_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-database center"></div>
     <div class="class-name">nf-mdi-database</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-database_minus center"></div>
     <div class="class-name">nf-mdi-database_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-database_plus center"></div>
     <div class="class-name">nf-mdi-database_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6b9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-debug_step_into center"></div>
     <div class="class-name">nf-mdi-debug_step_into</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-debug_step_out center"></div>
     <div class="class-name">nf-mdi-debug_step_out</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6bb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-debug_step_over center"></div>
     <div class="class-name">nf-mdi-debug_step_over</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6bc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-decagram center"></div>
     <div class="class-name">nf-mdi-decagram</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc6a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-decagram_outline center"></div>
     <div class="class-name">nf-mdi-decagram_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc6b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-decimal_decrease center"></div>
     <div class="class-name">nf-mdi-decimal_decrease</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6bd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-decimal_increase center"></div>
     <div class="class-name">nf-mdi-decimal_increase</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6be</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delete center"></div>
     <div class="class-name">nf-mdi-delete</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6bf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delete_circle center"></div>
     <div class="class-name">nf-mdi-delete_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb81</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delete_empty center"></div>
     <div class="class-name">nf-mdi-delete_empty</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delete_forever center"></div>
     <div class="class-name">nf-mdi-delete_forever</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delete_restore center"></div>
     <div class="class-name">nf-mdi-delete_restore</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd17</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delete_sweep center"></div>
     <div class="class-name">nf-mdi-delete_sweep</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delete_variant center"></div>
     <div class="class-name">nf-mdi-delete_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-delta center"></div>
     <div class="class-name">nf-mdi-delta</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-deskphone center"></div>
     <div class="class-name">nf-mdi-deskphone</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-desktop_classic center"></div>
     <div class="class-name">nf-mdi-desktop_classic</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcbe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-desktop_mac center"></div>
     <div class="class-name">nf-mdi-desktop_mac</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-desktop_tower center"></div>
     <div class="class-name">nf-mdi-desktop_tower</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-details center"></div>
     <div class="class-name">nf-mdi-details</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-developer_board center"></div>
     <div class="class-name">nf-mdi-developer_board</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb95</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-deviantart center"></div>
     <div class="class-name">nf-mdi-deviantart</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dialpad center"></div>
     <div class="class-name">nf-mdi-dialpad</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb1b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-diamond center"></div>
     <div class="class-name">nf-mdi-diamond</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_1 center"></div>
     <div class="class-name">nf-mdi-dice_1</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6c9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_2 center"></div>
     <div class="class-name">nf-mdi-dice_2</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_3 center"></div>
     <div class="class-name">nf-mdi-dice_3</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6cb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_4 center"></div>
     <div class="class-name">nf-mdi-dice_4</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6cc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_5 center"></div>
     <div class="class-name">nf-mdi-dice_5</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6cd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_6 center"></div>
     <div class="class-name">nf-mdi-dice_6</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ce</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_d10 center"></div>
     <div class="class-name">nf-mdi-dice_d10</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc6d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_d20 center"></div>
     <div class="class-name">nf-mdi-dice_d20</div><div title="Copy Hex Code to Clipboard" class="codepoint">fae9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_d4 center"></div>
     <div class="class-name">nf-mdi-dice_d4</div><div title="Copy Hex Code to Clipboard" class="codepoint">faea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_d6 center"></div>
     <div class="class-name">nf-mdi-dice_d6</div><div title="Copy Hex Code to Clipboard" class="codepoint">faeb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_d8 center"></div>
     <div class="class-name">nf-mdi-dice_d8</div><div title="Copy Hex Code to Clipboard" class="codepoint">faec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dice_multiple center"></div>
     <div class="class-name">nf-mdi-dice_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc6c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dictionary center"></div>
     <div class="class-name">nf-mdi-dictionary</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb1c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dip_switch center"></div>
     <div class="class-name">nf-mdi-dip_switch</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcbf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-directions center"></div>
     <div class="class-name">nf-mdi-directions</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6cf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-directions_fork center"></div>
     <div class="class-name">nf-mdi-directions_fork</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb40</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-discord center"></div>
     <div class="class-name">nf-mdi-discord</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb6e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-disk center"></div>
     <div class="class-name">nf-mdi-disk</div><div title="Copy Hex Code to Clipboard" class="codepoint">faed</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-disk_alert center"></div>
     <div class="class-name">nf-mdi-disk_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-disqus center"></div>
     <div class="class-name">nf-mdi-disqus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-disqus_outline center"></div>
     <div class="class-name">nf-mdi-disqus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-division center"></div>
     <div class="class-name">nf-mdi-division</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-division_box center"></div>
     <div class="class-name">nf-mdi-division_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dna center"></div>
     <div class="class-name">nf-mdi-dna</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb82</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dns center"></div>
     <div class="class-name">nf-mdi-dns</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-do_not_disturb center"></div>
     <div class="class-name">nf-mdi-do_not_disturb</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb96</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-do_not_disturb_off center"></div>
     <div class="class-name">nf-mdi-do_not_disturb_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb97</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dolby center"></div>
     <div class="class-name">nf-mdi-dolby</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-domain center"></div>
     <div class="class-name">nf-mdi-domain</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-donkey center"></div>
     <div class="class-name">nf-mdi-donkey</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-door center"></div>
     <div class="class-name">nf-mdi-door</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd18</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-door_closed center"></div>
     <div class="class-name">nf-mdi-door_closed</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd19</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-door_open center"></div>
     <div class="class-name">nf-mdi-door_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd1a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dots_horizontal center"></div>
     <div class="class-name">nf-mdi-dots_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dots_horizontal_circle center"></div>
     <div class="class-name">nf-mdi-dots_horizontal_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dots_vertical center"></div>
     <div class="class-name">nf-mdi-dots_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dots_vertical_circle center"></div>
     <div class="class-name">nf-mdi-dots_vertical_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-douban center"></div>
     <div class="class-name">nf-mdi-douban</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb98</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-download center"></div>
     <div class="class-name">nf-mdi-download</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6d9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-download_network center"></div>
     <div class="class-name">nf-mdi-download_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-drag center"></div>
     <div class="class-name">nf-mdi-drag</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6da</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-drag_horizontal center"></div>
     <div class="class-name">nf-mdi-drag_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6db</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-drag_vertical center"></div>
     <div class="class-name">nf-mdi-drag_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6dc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-drawing center"></div>
     <div class="class-name">nf-mdi-drawing</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6dd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-drawing_box center"></div>
     <div class="class-name">nf-mdi-drawing_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6de</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dribbble center"></div>
     <div class="class-name">nf-mdi-dribbble</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6df</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dribbble_box center"></div>
     <div class="class-name">nf-mdi-dribbble_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-drone center"></div>
     <div class="class-name">nf-mdi-drone</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dropbox center"></div>
     <div class="class-name">nf-mdi-dropbox</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-drupal center"></div>
     <div class="class-name">nf-mdi-drupal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-duck center"></div>
     <div class="class-name">nf-mdi-duck</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-dumbbell center"></div>
     <div class="class-name">nf-mdi-dumbbell</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ear_hearing center"></div>
     <div class="class-name">nf-mdi-ear_hearing</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-earth center"></div>
     <div class="class-name">nf-mdi-earth</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-earth_box center"></div>
     <div class="class-name">nf-mdi-earth_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbcb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-earth_box_off center"></div>
     <div class="class-name">nf-mdi-earth_box_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbcc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-earth_off center"></div>
     <div class="class-name">nf-mdi-earth_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-edge center"></div>
     <div class="class-name">nf-mdi-edge</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eject center"></div>
     <div class="class-name">nf-mdi-eject</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6e9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-elephant center"></div>
     <div class="class-name">nf-mdi-elephant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-elevation_decline center"></div>
     <div class="class-name">nf-mdi-elevation_decline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-elevation_rise center"></div>
     <div class="class-name">nf-mdi-elevation_rise</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6eb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-elevator center"></div>
     <div class="class-name">nf-mdi-elevator</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-email center"></div>
     <div class="class-name">nf-mdi-email</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ed</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-email_alert center"></div>
     <div class="class-name">nf-mdi-email_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbcd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-email_open center"></div>
     <div class="class-name">nf-mdi-email_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-email_open_outline center"></div>
     <div class="class-name">nf-mdi-email_open_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">faee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-email_outline center"></div>
     <div class="class-name">nf-mdi-email_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-email_secure center"></div>
     <div class="class-name">nf-mdi-email_secure</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-email_variant center"></div>
     <div class="class-name">nf-mdi-email_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">faef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emby center"></div>
     <div class="class-name">nf-mdi-emby</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon center"></div>
     <div class="class-name">nf-mdi-emoticon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_cool center"></div>
     <div class="class-name">nf-mdi-emoticon_cool</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_dead center"></div>
     <div class="class-name">nf-mdi-emoticon_dead</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb99</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_devil center"></div>
     <div class="class-name">nf-mdi-emoticon_devil</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_excited center"></div>
     <div class="class-name">nf-mdi-emoticon_excited</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb9a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_happy center"></div>
     <div class="class-name">nf-mdi-emoticon_happy</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_neutral center"></div>
     <div class="class-name">nf-mdi-emoticon_neutral</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_poop center"></div>
     <div class="class-name">nf-mdi-emoticon_poop</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_sad center"></div>
     <div class="class-name">nf-mdi-emoticon_sad</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-emoticon_tongue center"></div>
     <div class="class-name">nf-mdi-emoticon_tongue</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-engine center"></div>
     <div class="class-name">nf-mdi-engine</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6f9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-engine_outline center"></div>
     <div class="class-name">nf-mdi-engine_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6fa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-equal center"></div>
     <div class="class-name">nf-mdi-equal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6fb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-equal_box center"></div>
     <div class="class-name">nf-mdi-equal_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6fc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eraser center"></div>
     <div class="class-name">nf-mdi-eraser</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6fd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eraser_variant center"></div>
     <div class="class-name">nf-mdi-eraser_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb41</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-escalator center"></div>
     <div class="class-name">nf-mdi-escalator</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6fe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ethernet center"></div>
     <div class="class-name">nf-mdi-ethernet</div><div title="Copy Hex Code to Clipboard" class="codepoint">f6ff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ethernet_cable center"></div>
     <div class="class-name">nf-mdi-ethernet_cable</div><div title="Copy Hex Code to Clipboard" class="codepoint">f700</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ethernet_cable_off center"></div>
     <div class="class-name">nf-mdi-ethernet_cable_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f701</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-etsy center"></div>
     <div class="class-name">nf-mdi-etsy</div><div title="Copy Hex Code to Clipboard" class="codepoint">f702</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ev_station center"></div>
     <div class="class-name">nf-mdi-ev_station</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eventbrite center"></div>
     <div class="class-name">nf-mdi-eventbrite</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-evernote center"></div>
     <div class="class-name">nf-mdi-evernote</div><div title="Copy Hex Code to Clipboard" class="codepoint">f703</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-exclamation center"></div>
     <div class="class-name">nf-mdi-exclamation</div><div title="Copy Hex Code to Clipboard" class="codepoint">f704</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-exit_to_app center"></div>
     <div class="class-name">nf-mdi-exit_to_app</div><div title="Copy Hex Code to Clipboard" class="codepoint">f705</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-export center"></div>
     <div class="class-name">nf-mdi-export</div><div title="Copy Hex Code to Clipboard" class="codepoint">f706</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eye center"></div>
     <div class="class-name">nf-mdi-eye</div><div title="Copy Hex Code to Clipboard" class="codepoint">f707</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eye_off center"></div>
     <div class="class-name">nf-mdi-eye_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f708</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eye_off_outline center"></div>
     <div class="class-name">nf-mdi-eye_off_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbcf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eye_outline center"></div>
     <div class="class-name">nf-mdi-eye_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbce</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eyedropper center"></div>
     <div class="class-name">nf-mdi-eyedropper</div><div title="Copy Hex Code to Clipboard" class="codepoint">f709</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-eyedropper_variant center"></div>
     <div class="class-name">nf-mdi-eyedropper_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f70a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-face center"></div>
     <div class="class-name">nf-mdi-face</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb42</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-face_profile center"></div>
     <div class="class-name">nf-mdi-face_profile</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb43</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-facebook center"></div>
     <div class="class-name">nf-mdi-facebook</div><div title="Copy Hex Code to Clipboard" class="codepoint">f70b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-facebook_box center"></div>
     <div class="class-name">nf-mdi-facebook_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f70c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-facebook_messenger center"></div>
     <div class="class-name">nf-mdi-facebook_messenger</div><div title="Copy Hex Code to Clipboard" class="codepoint">f70d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-factory center"></div>
     <div class="class-name">nf-mdi-factory</div><div title="Copy Hex Code to Clipboard" class="codepoint">f70e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fan center"></div>
     <div class="class-name">nf-mdi-fan</div><div title="Copy Hex Code to Clipboard" class="codepoint">f70f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fan_off center"></div>
     <div class="class-name">nf-mdi-fan_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd1b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fast_forward center"></div>
     <div class="class-name">nf-mdi-fast_forward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f710</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fast_forward_outline center"></div>
     <div class="class-name">nf-mdi-fast_forward_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fax center"></div>
     <div class="class-name">nf-mdi-fax</div><div title="Copy Hex Code to Clipboard" class="codepoint">f711</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-feather center"></div>
     <div class="class-name">nf-mdi-feather</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ferry center"></div>
     <div class="class-name">nf-mdi-ferry</div><div title="Copy Hex Code to Clipboard" class="codepoint">f712</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file center"></div>
     <div class="class-name">nf-mdi-file</div><div title="Copy Hex Code to Clipboard" class="codepoint">f713</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_account center"></div>
     <div class="class-name">nf-mdi-file_account</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc39</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_chart center"></div>
     <div class="class-name">nf-mdi-file_chart</div><div title="Copy Hex Code to Clipboard" class="codepoint">f714</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_check center"></div>
     <div class="class-name">nf-mdi-file_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f715</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_cloud center"></div>
     <div class="class-name">nf-mdi-file_cloud</div><div title="Copy Hex Code to Clipboard" class="codepoint">f716</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_delimited center"></div>
     <div class="class-name">nf-mdi-file_delimited</div><div title="Copy Hex Code to Clipboard" class="codepoint">f717</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_document center"></div>
     <div class="class-name">nf-mdi-file_document</div><div title="Copy Hex Code to Clipboard" class="codepoint">f718</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_document_box center"></div>
     <div class="class-name">nf-mdi-file_document_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f719</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_excel center"></div>
     <div class="class-name">nf-mdi-file_excel</div><div title="Copy Hex Code to Clipboard" class="codepoint">f71a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_excel_box center"></div>
     <div class="class-name">nf-mdi-file_excel_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f71b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_export center"></div>
     <div class="class-name">nf-mdi-file_export</div><div title="Copy Hex Code to Clipboard" class="codepoint">f71c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_find center"></div>
     <div class="class-name">nf-mdi-file_find</div><div title="Copy Hex Code to Clipboard" class="codepoint">f71d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_hidden center"></div>
     <div class="class-name">nf-mdi-file_hidden</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb12</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_image center"></div>
     <div class="class-name">nf-mdi-file_image</div><div title="Copy Hex Code to Clipboard" class="codepoint">f71e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_import center"></div>
     <div class="class-name">nf-mdi-file_import</div><div title="Copy Hex Code to Clipboard" class="codepoint">f71f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_lock center"></div>
     <div class="class-name">nf-mdi-file_lock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f720</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_multiple center"></div>
     <div class="class-name">nf-mdi-file_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f721</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_music center"></div>
     <div class="class-name">nf-mdi-file_music</div><div title="Copy Hex Code to Clipboard" class="codepoint">f722</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_outline center"></div>
     <div class="class-name">nf-mdi-file_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f723</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_pdf center"></div>
     <div class="class-name">nf-mdi-file_pdf</div><div title="Copy Hex Code to Clipboard" class="codepoint">f724</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_pdf_box center"></div>
     <div class="class-name">nf-mdi-file_pdf_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f725</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_percent center"></div>
     <div class="class-name">nf-mdi-file_percent</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd1c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_plus center"></div>
     <div class="class-name">nf-mdi-file_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc50</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_powerpoint center"></div>
     <div class="class-name">nf-mdi-file_powerpoint</div><div title="Copy Hex Code to Clipboard" class="codepoint">f726</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_powerpoint_box center"></div>
     <div class="class-name">nf-mdi-file_powerpoint_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f727</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_presentation_box center"></div>
     <div class="class-name">nf-mdi-file_presentation_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f728</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_restore center"></div>
     <div class="class-name">nf-mdi-file_restore</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb6f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_send center"></div>
     <div class="class-name">nf-mdi-file_send</div><div title="Copy Hex Code to Clipboard" class="codepoint">f729</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_tree center"></div>
     <div class="class-name">nf-mdi-file_tree</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb44</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_video center"></div>
     <div class="class-name">nf-mdi-file_video</div><div title="Copy Hex Code to Clipboard" class="codepoint">f72a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_word center"></div>
     <div class="class-name">nf-mdi-file_word</div><div title="Copy Hex Code to Clipboard" class="codepoint">f72b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_word_box center"></div>
     <div class="class-name">nf-mdi-file_word_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f72c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-file_xml center"></div>
     <div class="class-name">nf-mdi-file_xml</div><div title="Copy Hex Code to Clipboard" class="codepoint">f72d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-film center"></div>
     <div class="class-name">nf-mdi-film</div><div title="Copy Hex Code to Clipboard" class="codepoint">f72e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-filmstrip center"></div>
     <div class="class-name">nf-mdi-filmstrip</div><div title="Copy Hex Code to Clipboard" class="codepoint">f72f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-filmstrip_off center"></div>
     <div class="class-name">nf-mdi-filmstrip_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f730</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-filter center"></div>
     <div class="class-name">nf-mdi-filter</div><div title="Copy Hex Code to Clipboard" class="codepoint">f731</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-filter_outline center"></div>
     <div class="class-name">nf-mdi-filter_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f732</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-filter_remove center"></div>
     <div class="class-name">nf-mdi-filter_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f733</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-filter_remove_outline center"></div>
     <div class="class-name">nf-mdi-filter_remove_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f734</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-filter_variant center"></div>
     <div class="class-name">nf-mdi-filter_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f735</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-finance center"></div>
     <div class="class-name">nf-mdi-finance</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd1d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-find_replace center"></div>
     <div class="class-name">nf-mdi-find_replace</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fingerprint center"></div>
     <div class="class-name">nf-mdi-fingerprint</div><div title="Copy Hex Code to Clipboard" class="codepoint">f736</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fire center"></div>
     <div class="class-name">nf-mdi-fire</div><div title="Copy Hex Code to Clipboard" class="codepoint">f737</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-firefox center"></div>
     <div class="class-name">nf-mdi-firefox</div><div title="Copy Hex Code to Clipboard" class="codepoint">f738</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fish center"></div>
     <div class="class-name">nf-mdi-fish</div><div title="Copy Hex Code to Clipboard" class="codepoint">f739</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flag center"></div>
     <div class="class-name">nf-mdi-flag</div><div title="Copy Hex Code to Clipboard" class="codepoint">f73a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flag_checkered center"></div>
     <div class="class-name">nf-mdi-flag_checkered</div><div title="Copy Hex Code to Clipboard" class="codepoint">f73b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flag_outline center"></div>
     <div class="class-name">nf-mdi-flag_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f73c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flag_triangle center"></div>
     <div class="class-name">nf-mdi-flag_triangle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f73e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flag_variant center"></div>
     <div class="class-name">nf-mdi-flag_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f73f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flag_variant_outline center"></div>
     <div class="class-name">nf-mdi-flag_variant_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f73d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flash center"></div>
     <div class="class-name">nf-mdi-flash</div><div title="Copy Hex Code to Clipboard" class="codepoint">f740</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flash_auto center"></div>
     <div class="class-name">nf-mdi-flash_auto</div><div title="Copy Hex Code to Clipboard" class="codepoint">f741</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flash_circle center"></div>
     <div class="class-name">nf-mdi-flash_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd1e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flash_off center"></div>
     <div class="class-name">nf-mdi-flash_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f742</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flash_outline center"></div>
     <div class="class-name">nf-mdi-flash_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flash_red_eye center"></div>
     <div class="class-name">nf-mdi-flash_red_eye</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb79</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flashlight center"></div>
     <div class="class-name">nf-mdi-flashlight</div><div title="Copy Hex Code to Clipboard" class="codepoint">f743</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flashlight_off center"></div>
     <div class="class-name">nf-mdi-flashlight_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f744</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flask center"></div>
     <div class="class-name">nf-mdi-flask</div><div title="Copy Hex Code to Clipboard" class="codepoint">f592</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flask_empty center"></div>
     <div class="class-name">nf-mdi-flask_empty</div><div title="Copy Hex Code to Clipboard" class="codepoint">f593</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flask_empty_outline center"></div>
     <div class="class-name">nf-mdi-flask_empty_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f594</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flask_outline center"></div>
     <div class="class-name">nf-mdi-flask_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f595</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flattr center"></div>
     <div class="class-name">nf-mdi-flattr</div><div title="Copy Hex Code to Clipboard" class="codepoint">f745</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flip_to_back center"></div>
     <div class="class-name">nf-mdi-flip_to_back</div><div title="Copy Hex Code to Clipboard" class="codepoint">f746</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flip_to_front center"></div>
     <div class="class-name">nf-mdi-flip_to_front</div><div title="Copy Hex Code to Clipboard" class="codepoint">f747</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-floor_plan center"></div>
     <div class="class-name">nf-mdi-floor_plan</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd1f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-floppy center"></div>
     <div class="class-name">nf-mdi-floppy</div><div title="Copy Hex Code to Clipboard" class="codepoint">f748</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-flower center"></div>
     <div class="class-name">nf-mdi-flower</div><div title="Copy Hex Code to Clipboard" class="codepoint">f749</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder center"></div>
     <div class="class-name">nf-mdi-folder</div><div title="Copy Hex Code to Clipboard" class="codepoint">f74a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_account center"></div>
     <div class="class-name">nf-mdi-folder_account</div><div title="Copy Hex Code to Clipboard" class="codepoint">f74b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_download center"></div>
     <div class="class-name">nf-mdi-folder_download</div><div title="Copy Hex Code to Clipboard" class="codepoint">f74c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_google_drive center"></div>
     <div class="class-name">nf-mdi-folder_google_drive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f74d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_image center"></div>
     <div class="class-name">nf-mdi-folder_image</div><div title="Copy Hex Code to Clipboard" class="codepoint">f74e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_lock center"></div>
     <div class="class-name">nf-mdi-folder_lock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f74f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_lock_open center"></div>
     <div class="class-name">nf-mdi-folder_lock_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">f750</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_move center"></div>
     <div class="class-name">nf-mdi-folder_move</div><div title="Copy Hex Code to Clipboard" class="codepoint">f751</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_multiple center"></div>
     <div class="class-name">nf-mdi-folder_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f752</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_multiple_image center"></div>
     <div class="class-name">nf-mdi-folder_multiple_image</div><div title="Copy Hex Code to Clipboard" class="codepoint">f753</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_multiple_outline center"></div>
     <div class="class-name">nf-mdi-folder_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f754</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_open center"></div>
     <div class="class-name">nf-mdi-folder_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc6e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_outline center"></div>
     <div class="class-name">nf-mdi-folder_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f755</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_plus center"></div>
     <div class="class-name">nf-mdi-folder_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f756</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_remove center"></div>
     <div class="class-name">nf-mdi-folder_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f757</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_star center"></div>
     <div class="class-name">nf-mdi-folder_star</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb9b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-folder_upload center"></div>
     <div class="class-name">nf-mdi-folder_upload</div><div title="Copy Hex Code to Clipboard" class="codepoint">f758</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-font_awesome center"></div>
     <div class="class-name">nf-mdi-font_awesome</div><div title="Copy Hex Code to Clipboard" class="codepoint">f539</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-food center"></div>
     <div class="class-name">nf-mdi-food</div><div title="Copy Hex Code to Clipboard" class="codepoint">f759</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-food_apple center"></div>
     <div class="class-name">nf-mdi-food_apple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f75a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-food_croissant center"></div>
     <div class="class-name">nf-mdi-food_croissant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-food_fork_drink center"></div>
     <div class="class-name">nf-mdi-food_fork_drink</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-food_off center"></div>
     <div class="class-name">nf-mdi-food_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-food_variant center"></div>
     <div class="class-name">nf-mdi-food_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f75b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-football center"></div>
     <div class="class-name">nf-mdi-football</div><div title="Copy Hex Code to Clipboard" class="codepoint">f75c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-football_australian center"></div>
     <div class="class-name">nf-mdi-football_australian</div><div title="Copy Hex Code to Clipboard" class="codepoint">f75d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-football_helmet center"></div>
     <div class="class-name">nf-mdi-football_helmet</div><div title="Copy Hex Code to Clipboard" class="codepoint">f75e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-forklift center"></div>
     <div class="class-name">nf-mdi-forklift</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_align_bottom center"></div>
     <div class="class-name">nf-mdi-format_align_bottom</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc51</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_align_center center"></div>
     <div class="class-name">nf-mdi-format_align_center</div><div title="Copy Hex Code to Clipboard" class="codepoint">f75f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_align_justify center"></div>
     <div class="class-name">nf-mdi-format_align_justify</div><div title="Copy Hex Code to Clipboard" class="codepoint">f760</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_align_left center"></div>
     <div class="class-name">nf-mdi-format_align_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f761</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_align_middle center"></div>
     <div class="class-name">nf-mdi-format_align_middle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc52</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_align_right center"></div>
     <div class="class-name">nf-mdi-format_align_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f762</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_align_top center"></div>
     <div class="class-name">nf-mdi-format_align_top</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc53</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_annotation_plus center"></div>
     <div class="class-name">nf-mdi-format_annotation_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb45</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_bold center"></div>
     <div class="class-name">nf-mdi-format_bold</div><div title="Copy Hex Code to Clipboard" class="codepoint">f763</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_clear center"></div>
     <div class="class-name">nf-mdi-format_clear</div><div title="Copy Hex Code to Clipboard" class="codepoint">f764</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_color_fill center"></div>
     <div class="class-name">nf-mdi-format_color_fill</div><div title="Copy Hex Code to Clipboard" class="codepoint">f765</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_color_text center"></div>
     <div class="class-name">nf-mdi-format_color_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb9c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_float_center center"></div>
     <div class="class-name">nf-mdi-format_float_center</div><div title="Copy Hex Code to Clipboard" class="codepoint">f766</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_float_left center"></div>
     <div class="class-name">nf-mdi-format_float_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f767</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_float_none center"></div>
     <div class="class-name">nf-mdi-format_float_none</div><div title="Copy Hex Code to Clipboard" class="codepoint">f768</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_float_right center"></div>
     <div class="class-name">nf-mdi-format_float_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f769</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_font center"></div>
     <div class="class-name">nf-mdi-format_font</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_1 center"></div>
     <div class="class-name">nf-mdi-format_header_1</div><div title="Copy Hex Code to Clipboard" class="codepoint">f76a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_2 center"></div>
     <div class="class-name">nf-mdi-format_header_2</div><div title="Copy Hex Code to Clipboard" class="codepoint">f76b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_3 center"></div>
     <div class="class-name">nf-mdi-format_header_3</div><div title="Copy Hex Code to Clipboard" class="codepoint">f76c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_4 center"></div>
     <div class="class-name">nf-mdi-format_header_4</div><div title="Copy Hex Code to Clipboard" class="codepoint">f76d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_5 center"></div>
     <div class="class-name">nf-mdi-format_header_5</div><div title="Copy Hex Code to Clipboard" class="codepoint">f76e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_6 center"></div>
     <div class="class-name">nf-mdi-format_header_6</div><div title="Copy Hex Code to Clipboard" class="codepoint">f76f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_decrease center"></div>
     <div class="class-name">nf-mdi-format_header_decrease</div><div title="Copy Hex Code to Clipboard" class="codepoint">f770</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_equal center"></div>
     <div class="class-name">nf-mdi-format_header_equal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f771</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_increase center"></div>
     <div class="class-name">nf-mdi-format_header_increase</div><div title="Copy Hex Code to Clipboard" class="codepoint">f772</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_header_pound center"></div>
     <div class="class-name">nf-mdi-format_header_pound</div><div title="Copy Hex Code to Clipboard" class="codepoint">f773</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_horizontal_align_center center"></div>
     <div class="class-name">nf-mdi-format_horizontal_align_center</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb1d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_horizontal_align_left center"></div>
     <div class="class-name">nf-mdi-format_horizontal_align_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb1e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_horizontal_align_right center"></div>
     <div class="class-name">nf-mdi-format_horizontal_align_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb1f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_indent_decrease center"></div>
     <div class="class-name">nf-mdi-format_indent_decrease</div><div title="Copy Hex Code to Clipboard" class="codepoint">f774</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_indent_increase center"></div>
     <div class="class-name">nf-mdi-format_indent_increase</div><div title="Copy Hex Code to Clipboard" class="codepoint">f775</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_italic center"></div>
     <div class="class-name">nf-mdi-format_italic</div><div title="Copy Hex Code to Clipboard" class="codepoint">f776</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_line_spacing center"></div>
     <div class="class-name">nf-mdi-format_line_spacing</div><div title="Copy Hex Code to Clipboard" class="codepoint">f777</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_line_style center"></div>
     <div class="class-name">nf-mdi-format_line_style</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_line_weight center"></div>
     <div class="class-name">nf-mdi-format_line_weight</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_list_bulleted center"></div>
     <div class="class-name">nf-mdi-format_list_bulleted</div><div title="Copy Hex Code to Clipboard" class="codepoint">f778</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_list_bulleted_type center"></div>
     <div class="class-name">nf-mdi-format_list_bulleted_type</div><div title="Copy Hex Code to Clipboard" class="codepoint">f779</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_list_checks center"></div>
     <div class="class-name">nf-mdi-format_list_checks</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc54</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_list_numbers center"></div>
     <div class="class-name">nf-mdi-format_list_numbers</div><div title="Copy Hex Code to Clipboard" class="codepoint">f77a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_page_break center"></div>
     <div class="class-name">nf-mdi-format_page_break</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_paint center"></div>
     <div class="class-name">nf-mdi-format_paint</div><div title="Copy Hex Code to Clipboard" class="codepoint">f77b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_paragraph center"></div>
     <div class="class-name">nf-mdi-format_paragraph</div><div title="Copy Hex Code to Clipboard" class="codepoint">f77c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_pilcrow center"></div>
     <div class="class-name">nf-mdi-format_pilcrow</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_quote_close center"></div>
     <div class="class-name">nf-mdi-format_quote_close</div><div title="Copy Hex Code to Clipboard" class="codepoint">f77d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_quote_open center"></div>
     <div class="class-name">nf-mdi-format_quote_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc55</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_rotate_90 center"></div>
     <div class="class-name">nf-mdi-format_rotate_90</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_section center"></div>
     <div class="class-name">nf-mdi-format_section</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb9d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_size center"></div>
     <div class="class-name">nf-mdi-format_size</div><div title="Copy Hex Code to Clipboard" class="codepoint">f77e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_strikethrough center"></div>
     <div class="class-name">nf-mdi-format_strikethrough</div><div title="Copy Hex Code to Clipboard" class="codepoint">f77f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_strikethrough_variant center"></div>
     <div class="class-name">nf-mdi-format_strikethrough_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f780</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_subscript center"></div>
     <div class="class-name">nf-mdi-format_subscript</div><div title="Copy Hex Code to Clipboard" class="codepoint">f781</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_superscript center"></div>
     <div class="class-name">nf-mdi-format_superscript</div><div title="Copy Hex Code to Clipboard" class="codepoint">f782</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_text center"></div>
     <div class="class-name">nf-mdi-format_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f783</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_textdirection_l_to_r center"></div>
     <div class="class-name">nf-mdi-format_textdirection_l_to_r</div><div title="Copy Hex Code to Clipboard" class="codepoint">f784</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_textdirection_r_to_l center"></div>
     <div class="class-name">nf-mdi-format_textdirection_r_to_l</div><div title="Copy Hex Code to Clipboard" class="codepoint">f785</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_title center"></div>
     <div class="class-name">nf-mdi-format_title</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_underline center"></div>
     <div class="class-name">nf-mdi-format_underline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f786</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_vertical_align_bottom center"></div>
     <div class="class-name">nf-mdi-format_vertical_align_bottom</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb20</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_vertical_align_center center"></div>
     <div class="class-name">nf-mdi-format_vertical_align_center</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb21</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_vertical_align_top center"></div>
     <div class="class-name">nf-mdi-format_vertical_align_top</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb22</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_wrap_inline center"></div>
     <div class="class-name">nf-mdi-format_wrap_inline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f787</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_wrap_square center"></div>
     <div class="class-name">nf-mdi-format_wrap_square</div><div title="Copy Hex Code to Clipboard" class="codepoint">f788</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_wrap_tight center"></div>
     <div class="class-name">nf-mdi-format_wrap_tight</div><div title="Copy Hex Code to Clipboard" class="codepoint">f789</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-format_wrap_top_bottom center"></div>
     <div class="class-name">nf-mdi-format_wrap_top_bottom</div><div title="Copy Hex Code to Clipboard" class="codepoint">f78a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-forum center"></div>
     <div class="class-name">nf-mdi-forum</div><div title="Copy Hex Code to Clipboard" class="codepoint">f78b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-forum_outline center"></div>
     <div class="class-name">nf-mdi-forum_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd20</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-forward center"></div>
     <div class="class-name">nf-mdi-forward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f78c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-foursquare center"></div>
     <div class="class-name">nf-mdi-foursquare</div><div title="Copy Hex Code to Clipboard" class="codepoint">f78d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fridge center"></div>
     <div class="class-name">nf-mdi-fridge</div><div title="Copy Hex Code to Clipboard" class="codepoint">f78e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fridge_filled center"></div>
     <div class="class-name">nf-mdi-fridge_filled</div><div title="Copy Hex Code to Clipboard" class="codepoint">f78f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fridge_filled_bottom center"></div>
     <div class="class-name">nf-mdi-fridge_filled_bottom</div><div title="Copy Hex Code to Clipboard" class="codepoint">f790</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fridge_filled_top center"></div>
     <div class="class-name">nf-mdi-fridge_filled_top</div><div title="Copy Hex Code to Clipboard" class="codepoint">f791</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fuel center"></div>
     <div class="class-name">nf-mdi-fuel</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fullscreen center"></div>
     <div class="class-name">nf-mdi-fullscreen</div><div title="Copy Hex Code to Clipboard" class="codepoint">f792</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-fullscreen_exit center"></div>
     <div class="class-name">nf-mdi-fullscreen_exit</div><div title="Copy Hex Code to Clipboard" class="codepoint">f793</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-function center"></div>
     <div class="class-name">nf-mdi-function</div><div title="Copy Hex Code to Clipboard" class="codepoint">f794</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gamepad center"></div>
     <div class="class-name">nf-mdi-gamepad</div><div title="Copy Hex Code to Clipboard" class="codepoint">f795</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gamepad_variant center"></div>
     <div class="class-name">nf-mdi-gamepad_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f796</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-garage center"></div>
     <div class="class-name">nf-mdi-garage</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-garage_open center"></div>
     <div class="class-name">nf-mdi-garage_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gas_cylinder center"></div>
     <div class="class-name">nf-mdi-gas_cylinder</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb46</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gas_station center"></div>
     <div class="class-name">nf-mdi-gas_station</div><div title="Copy Hex Code to Clipboard" class="codepoint">f797</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gate center"></div>
     <div class="class-name">nf-mdi-gate</div><div title="Copy Hex Code to Clipboard" class="codepoint">f798</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gauge center"></div>
     <div class="class-name">nf-mdi-gauge</div><div title="Copy Hex Code to Clipboard" class="codepoint">f799</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gavel center"></div>
     <div class="class-name">nf-mdi-gavel</div><div title="Copy Hex Code to Clipboard" class="codepoint">f79a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gender_female center"></div>
     <div class="class-name">nf-mdi-gender_female</div><div title="Copy Hex Code to Clipboard" class="codepoint">f79b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gender_male center"></div>
     <div class="class-name">nf-mdi-gender_male</div><div title="Copy Hex Code to Clipboard" class="codepoint">f79c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gender_male_female center"></div>
     <div class="class-name">nf-mdi-gender_male_female</div><div title="Copy Hex Code to Clipboard" class="codepoint">f79d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gender_transgender center"></div>
     <div class="class-name">nf-mdi-gender_transgender</div><div title="Copy Hex Code to Clipboard" class="codepoint">f79e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture center"></div>
     <div class="class-name">nf-mdi-gesture</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcc9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_double_tap center"></div>
     <div class="class-name">nf-mdi-gesture_double_tap</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc3a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_swipe_down center"></div>
     <div class="class-name">nf-mdi-gesture_swipe_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc3b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_swipe_left center"></div>
     <div class="class-name">nf-mdi-gesture_swipe_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc3c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_swipe_right center"></div>
     <div class="class-name">nf-mdi-gesture_swipe_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc3d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_swipe_up center"></div>
     <div class="class-name">nf-mdi-gesture_swipe_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc3e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_tap center"></div>
     <div class="class-name">nf-mdi-gesture_tap</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc3f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_two_double_tap center"></div>
     <div class="class-name">nf-mdi-gesture_two_double_tap</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc40</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gesture_two_tap center"></div>
     <div class="class-name">nf-mdi-gesture_two_tap</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc41</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ghost center"></div>
     <div class="class-name">nf-mdi-ghost</div><div title="Copy Hex Code to Clipboard" class="codepoint">f79f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gift center"></div>
     <div class="class-name">nf-mdi-gift</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-git center"></div>
     <div class="class-name">nf-mdi-git</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-github_box center"></div>
     <div class="class-name">nf-mdi-github_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-github_circle center"></div>
     <div class="class-name">nf-mdi-github_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-github_face center"></div>
     <div class="class-name">nf-mdi-github_face</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbd9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-glass_flute center"></div>
     <div class="class-name">nf-mdi-glass_flute</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-glass_mug center"></div>
     <div class="class-name">nf-mdi-glass_mug</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-glass_stange center"></div>
     <div class="class-name">nf-mdi-glass_stange</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-glass_tulip center"></div>
     <div class="class-name">nf-mdi-glass_tulip</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-glassdoor center"></div>
     <div class="class-name">nf-mdi-glassdoor</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-glasses center"></div>
     <div class="class-name">nf-mdi-glasses</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7a9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gmail center"></div>
     <div class="class-name">nf-mdi-gmail</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7aa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gnome center"></div>
     <div class="class-name">nf-mdi-gnome</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-golf center"></div>
     <div class="class-name">nf-mdi-golf</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd21</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gondola center"></div>
     <div class="class-name">nf-mdi-gondola</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb84</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google center"></div>
     <div class="class-name">nf-mdi-google</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_analytics center"></div>
     <div class="class-name">nf-mdi-google_analytics</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_assistant center"></div>
     <div class="class-name">nf-mdi-google_assistant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fccb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_cardboard center"></div>
     <div class="class-name">nf-mdi-google_cardboard</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_chrome center"></div>
     <div class="class-name">nf-mdi-google_chrome</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_circles center"></div>
     <div class="class-name">nf-mdi-google_circles</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7af</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_circles_communities center"></div>
     <div class="class-name">nf-mdi-google_circles_communities</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_circles_extended center"></div>
     <div class="class-name">nf-mdi-google_circles_extended</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_circles_group center"></div>
     <div class="class-name">nf-mdi-google_circles_group</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_controller center"></div>
     <div class="class-name">nf-mdi-google_controller</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_controller_off center"></div>
     <div class="class-name">nf-mdi-google_controller_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_drive center"></div>
     <div class="class-name">nf-mdi-google_drive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_earth center"></div>
     <div class="class-name">nf-mdi-google_earth</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_glass center"></div>
     <div class="class-name">nf-mdi-google_glass</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_home center"></div>
     <div class="class-name">nf-mdi-google_home</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd22</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_keep center"></div>
     <div class="class-name">nf-mdi-google_keep</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbda</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_maps center"></div>
     <div class="class-name">nf-mdi-google_maps</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_nearby center"></div>
     <div class="class-name">nf-mdi-google_nearby</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_pages center"></div>
     <div class="class-name">nf-mdi-google_pages</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7b9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_photos center"></div>
     <div class="class-name">nf-mdi-google_photos</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbdb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_physical_web center"></div>
     <div class="class-name">nf-mdi-google_physical_web</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_play center"></div>
     <div class="class-name">nf-mdi-google_play</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7bb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_plus center"></div>
     <div class="class-name">nf-mdi-google_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7bc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_plus_box center"></div>
     <div class="class-name">nf-mdi-google_plus_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7bd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_translate center"></div>
     <div class="class-name">nf-mdi-google_translate</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7be</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-google_wallet center"></div>
     <div class="class-name">nf-mdi-google_wallet</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7bf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-gradient center"></div>
     <div class="class-name">nf-mdi-gradient</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb9e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-grease_pencil center"></div>
     <div class="class-name">nf-mdi-grease_pencil</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb47</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-grid center"></div>
     <div class="class-name">nf-mdi-grid</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-grid_large center"></div>
     <div class="class-name">nf-mdi-grid_large</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc56</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-grid_off center"></div>
     <div class="class-name">nf-mdi-grid_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-group center"></div>
     <div class="class-name">nf-mdi-group</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-guitar_acoustic center"></div>
     <div class="class-name">nf-mdi-guitar_acoustic</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc6f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-guitar_electric center"></div>
     <div class="class-name">nf-mdi-guitar_electric</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-guitar_pick center"></div>
     <div class="class-name">nf-mdi-guitar_pick</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-guitar_pick_outline center"></div>
     <div class="class-name">nf-mdi-guitar_pick_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-guy_fawkes_mask center"></div>
     <div class="class-name">nf-mdi-guy_fawkes_mask</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd23</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hackernews center"></div>
     <div class="class-name">nf-mdi-hackernews</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb23</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hamburger center"></div>
     <div class="class-name">nf-mdi-hamburger</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb83</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hand_pointing_right center"></div>
     <div class="class-name">nf-mdi-hand_pointing_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hanger center"></div>
     <div class="class-name">nf-mdi-hanger</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hangouts center"></div>
     <div class="class-name">nf-mdi-hangouts</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-harddisk center"></div>
     <div class="class-name">nf-mdi-harddisk</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7c9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-headphones center"></div>
     <div class="class-name">nf-mdi-headphones</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-headphones_box center"></div>
     <div class="class-name">nf-mdi-headphones_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7cb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-headphones_off center"></div>
     <div class="class-name">nf-mdi-headphones_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fccc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-headphones_settings center"></div>
     <div class="class-name">nf-mdi-headphones_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7cc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-headset center"></div>
     <div class="class-name">nf-mdi-headset</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7cd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-headset_dock center"></div>
     <div class="class-name">nf-mdi-headset_dock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ce</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-headset_off center"></div>
     <div class="class-name">nf-mdi-headset_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7cf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart center"></div>
     <div class="class-name">nf-mdi-heart</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_box center"></div>
     <div class="class-name">nf-mdi-heart_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_box_outline center"></div>
     <div class="class-name">nf-mdi-heart_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_broken center"></div>
     <div class="class-name">nf-mdi-heart_broken</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_half center"></div>
     <div class="class-name">nf-mdi-heart_half</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbdd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_half_full center"></div>
     <div class="class-name">nf-mdi-heart_half_full</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbdc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_half_outline center"></div>
     <div class="class-name">nf-mdi-heart_half_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbde</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_off center"></div>
     <div class="class-name">nf-mdi-heart_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc57</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_outline center"></div>
     <div class="class-name">nf-mdi-heart_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-heart_pulse center"></div>
     <div class="class-name">nf-mdi-heart_pulse</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-help center"></div>
     <div class="class-name">nf-mdi-help</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-help_box center"></div>
     <div class="class-name">nf-mdi-help_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc89</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-help_circle center"></div>
     <div class="class-name">nf-mdi-help_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-help_circle_outline center"></div>
     <div class="class-name">nf-mdi-help_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb24</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-help_network center"></div>
     <div class="class-name">nf-mdi-help_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hexagon center"></div>
     <div class="class-name">nf-mdi-hexagon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hexagon_multiple center"></div>
     <div class="class-name">nf-mdi-hexagon_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbdf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hexagon_outline center"></div>
     <div class="class-name">nf-mdi-hexagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-high_definition center"></div>
     <div class="class-name">nf-mdi-high_definition</div><div title="Copy Hex Code to Clipboard" class="codepoint">fccd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-highway center"></div>
     <div class="class-name">nf-mdi-highway</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-history center"></div>
     <div class="class-name">nf-mdi-history</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7d9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hololens center"></div>
     <div class="class-name">nf-mdi-hololens</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7da</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home center"></div>
     <div class="class-name">nf-mdi-home</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7db</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_account center"></div>
     <div class="class-name">nf-mdi-home_account</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd24</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_assistant center"></div>
     <div class="class-name">nf-mdi-home_assistant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcce</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_automation center"></div>
     <div class="class-name">nf-mdi-home_automation</div><div title="Copy Hex Code to Clipboard" class="codepoint">fccf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_circle center"></div>
     <div class="class-name">nf-mdi-home_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_heart center"></div>
     <div class="class-name">nf-mdi-home_heart</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd25</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_map_marker center"></div>
     <div class="class-name">nf-mdi-home_map_marker</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_modern center"></div>
     <div class="class-name">nf-mdi-home_modern</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7dc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_outline center"></div>
     <div class="class-name">nf-mdi-home_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb9f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-home_variant center"></div>
     <div class="class-name">nf-mdi-home_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7dd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hook center"></div>
     <div class="class-name">nf-mdi-hook</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hook_off center"></div>
     <div class="class-name">nf-mdi-hook_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hops center"></div>
     <div class="class-name">nf-mdi-hops</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7de</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hospital center"></div>
     <div class="class-name">nf-mdi-hospital</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7df</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hospital_building center"></div>
     <div class="class-name">nf-mdi-hospital_building</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hospital_marker center"></div>
     <div class="class-name">nf-mdi-hospital_marker</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hot_tub center"></div>
     <div class="class-name">nf-mdi-hot_tub</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd26</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hotel center"></div>
     <div class="class-name">nf-mdi-hotel</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-houzz center"></div>
     <div class="class-name">nf-mdi-houzz</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-houzz_box center"></div>
     <div class="class-name">nf-mdi-houzz_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-hulu center"></div>
     <div class="class-name">nf-mdi-hulu</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd27</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human center"></div>
     <div class="class-name">nf-mdi-human</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_child center"></div>
     <div class="class-name">nf-mdi-human_child</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_female center"></div>
     <div class="class-name">nf-mdi-human_female</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb48</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_greeting center"></div>
     <div class="class-name">nf-mdi-human_greeting</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb49</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_handsdown center"></div>
     <div class="class-name">nf-mdi-human_handsdown</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb4a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_handsup center"></div>
     <div class="class-name">nf-mdi-human_handsup</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb4b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_male center"></div>
     <div class="class-name">nf-mdi-human_male</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb4c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_male_female center"></div>
     <div class="class-name">nf-mdi-human_male_female</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-human_pregnant center"></div>
     <div class="class-name">nf-mdi-human_pregnant</div><div title="Copy Hex Code to Clipboard" class="codepoint">face</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-humble_bundle center"></div>
     <div class="class-name">nf-mdi-humble_bundle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc42</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ice_cream center"></div>
     <div class="class-name">nf-mdi-ice_cream</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd28</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image center"></div>
     <div class="class-name">nf-mdi-image</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_album center"></div>
     <div class="class-name">nf-mdi-image_album</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7e9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_area center"></div>
     <div class="class-name">nf-mdi-image_area</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_area_close center"></div>
     <div class="class-name">nf-mdi-image_area_close</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7eb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_broken center"></div>
     <div class="class-name">nf-mdi-image_broken</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_broken_variant center"></div>
     <div class="class-name">nf-mdi-image_broken_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ed</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter center"></div>
     <div class="class-name">nf-mdi-image_filter</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_black_white center"></div>
     <div class="class-name">nf-mdi-image_filter_black_white</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_center_focus center"></div>
     <div class="class-name">nf-mdi-image_filter_center_focus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_center_focus_weak center"></div>
     <div class="class-name">nf-mdi-image_filter_center_focus_weak</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_drama center"></div>
     <div class="class-name">nf-mdi-image_filter_drama</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_frames center"></div>
     <div class="class-name">nf-mdi-image_filter_frames</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_hdr center"></div>
     <div class="class-name">nf-mdi-image_filter_hdr</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_none center"></div>
     <div class="class-name">nf-mdi-image_filter_none</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_tilt_shift center"></div>
     <div class="class-name">nf-mdi-image_filter_tilt_shift</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_filter_vintage center"></div>
     <div class="class-name">nf-mdi-image_filter_vintage</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_multiple center"></div>
     <div class="class-name">nf-mdi-image_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-image_off center"></div>
     <div class="class-name">nf-mdi-image_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd29</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-import center"></div>
     <div class="class-name">nf-mdi-import</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7f9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-inbox center"></div>
     <div class="class-name">nf-mdi-inbox</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb85</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-inbox_arrow_down center"></div>
     <div class="class-name">nf-mdi-inbox_arrow_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7fa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-inbox_arrow_up center"></div>
     <div class="class-name">nf-mdi-inbox_arrow_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-incognito center"></div>
     <div class="class-name">nf-mdi-incognito</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-infinity center"></div>
     <div class="class-name">nf-mdi-infinity</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-information center"></div>
     <div class="class-name">nf-mdi-information</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7fb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-information_outline center"></div>
     <div class="class-name">nf-mdi-information_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7fc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-information_variant center"></div>
     <div class="class-name">nf-mdi-information_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb4d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-instagram center"></div>
     <div class="class-name">nf-mdi-instagram</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7fd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-instapaper center"></div>
     <div class="class-name">nf-mdi-instapaper</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7fe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-internet_explorer center"></div>
     <div class="class-name">nf-mdi-internet_explorer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f7ff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-invert_colors center"></div>
     <div class="class-name">nf-mdi-invert_colors</div><div title="Copy Hex Code to Clipboard" class="codepoint">f800</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-itunes center"></div>
     <div class="class-name">nf-mdi-itunes</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb75</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-jeepney center"></div>
     <div class="class-name">nf-mdi-jeepney</div><div title="Copy Hex Code to Clipboard" class="codepoint">f801</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-jira center"></div>
     <div class="class-name">nf-mdi-jira</div><div title="Copy Hex Code to Clipboard" class="codepoint">f802</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-jsfiddle center"></div>
     <div class="class-name">nf-mdi-jsfiddle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f803</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-json center"></div>
     <div class="class-name">nf-mdi-json</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb25</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-karate center"></div>
     <div class="class-name">nf-mdi-karate</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd2a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keg center"></div>
     <div class="class-name">nf-mdi-keg</div><div title="Copy Hex Code to Clipboard" class="codepoint">f804</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-kettle center"></div>
     <div class="class-name">nf-mdi-kettle</div><div title="Copy Hex Code to Clipboard" class="codepoint">faf9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-key center"></div>
     <div class="class-name">nf-mdi-key</div><div title="Copy Hex Code to Clipboard" class="codepoint">f805</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-key_change center"></div>
     <div class="class-name">nf-mdi-key_change</div><div title="Copy Hex Code to Clipboard" class="codepoint">f806</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-key_minus center"></div>
     <div class="class-name">nf-mdi-key_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f807</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-key_plus center"></div>
     <div class="class-name">nf-mdi-key_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f808</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-key_remove center"></div>
     <div class="class-name">nf-mdi-key_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f809</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-key_variant center"></div>
     <div class="class-name">nf-mdi-key_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f80a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard center"></div>
     <div class="class-name">nf-mdi-keyboard</div><div title="Copy Hex Code to Clipboard" class="codepoint">f80b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard_backspace center"></div>
     <div class="class-name">nf-mdi-keyboard_backspace</div><div title="Copy Hex Code to Clipboard" class="codepoint">f80c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard_caps center"></div>
     <div class="class-name">nf-mdi-keyboard_caps</div><div title="Copy Hex Code to Clipboard" class="codepoint">f80d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard_close center"></div>
     <div class="class-name">nf-mdi-keyboard_close</div><div title="Copy Hex Code to Clipboard" class="codepoint">f80e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard_off center"></div>
     <div class="class-name">nf-mdi-keyboard_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f80f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard_return center"></div>
     <div class="class-name">nf-mdi-keyboard_return</div><div title="Copy Hex Code to Clipboard" class="codepoint">f810</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard_tab center"></div>
     <div class="class-name">nf-mdi-keyboard_tab</div><div title="Copy Hex Code to Clipboard" class="codepoint">f811</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-keyboard_variant center"></div>
     <div class="class-name">nf-mdi-keyboard_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f812</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-kickstarter center"></div>
     <div class="class-name">nf-mdi-kickstarter</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc43</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-kodi center"></div>
     <div class="class-name">nf-mdi-kodi</div><div title="Copy Hex Code to Clipboard" class="codepoint">f813</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-label center"></div>
     <div class="class-name">nf-mdi-label</div><div title="Copy Hex Code to Clipboard" class="codepoint">f814</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-label_outline center"></div>
     <div class="class-name">nf-mdi-label_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f815</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ladybug center"></div>
     <div class="class-name">nf-mdi-ladybug</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd2b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lambda center"></div>
     <div class="class-name">nf-mdi-lambda</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb26</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lamp center"></div>
     <div class="class-name">nf-mdi-lamp</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lan center"></div>
     <div class="class-name">nf-mdi-lan</div><div title="Copy Hex Code to Clipboard" class="codepoint">f816</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lan_connect center"></div>
     <div class="class-name">nf-mdi-lan_connect</div><div title="Copy Hex Code to Clipboard" class="codepoint">f817</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lan_disconnect center"></div>
     <div class="class-name">nf-mdi-lan_disconnect</div><div title="Copy Hex Code to Clipboard" class="codepoint">f818</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lan_pending center"></div>
     <div class="class-name">nf-mdi-lan_pending</div><div title="Copy Hex Code to Clipboard" class="codepoint">f819</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_c center"></div>
     <div class="class-name">nf-mdi-language_c</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb70</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_cpp center"></div>
     <div class="class-name">nf-mdi-language_cpp</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb71</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_csharp center"></div>
     <div class="class-name">nf-mdi-language_csharp</div><div title="Copy Hex Code to Clipboard" class="codepoint">f81a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_css3 center"></div>
     <div class="class-name">nf-mdi-language_css3</div><div title="Copy Hex Code to Clipboard" class="codepoint">f81b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_go center"></div>
     <div class="class-name">nf-mdi-language_go</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_html5 center"></div>
     <div class="class-name">nf-mdi-language_html5</div><div title="Copy Hex Code to Clipboard" class="codepoint">f81c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_javascript center"></div>
     <div class="class-name">nf-mdi-language_javascript</div><div title="Copy Hex Code to Clipboard" class="codepoint">f81d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_php center"></div>
     <div class="class-name">nf-mdi-language_php</div><div title="Copy Hex Code to Clipboard" class="codepoint">f81e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_python center"></div>
     <div class="class-name">nf-mdi-language_python</div><div title="Copy Hex Code to Clipboard" class="codepoint">f81f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_python_text center"></div>
     <div class="class-name">nf-mdi-language_python_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f820</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_r center"></div>
     <div class="class-name">nf-mdi-language_r</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_swift center"></div>
     <div class="class-name">nf-mdi-language_swift</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-language_typescript center"></div>
     <div class="class-name">nf-mdi-language_typescript</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-laptop center"></div>
     <div class="class-name">nf-mdi-laptop</div><div title="Copy Hex Code to Clipboard" class="codepoint">f821</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-laptop_chromebook center"></div>
     <div class="class-name">nf-mdi-laptop_chromebook</div><div title="Copy Hex Code to Clipboard" class="codepoint">f822</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-laptop_mac center"></div>
     <div class="class-name">nf-mdi-laptop_mac</div><div title="Copy Hex Code to Clipboard" class="codepoint">f823</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-laptop_off center"></div>
     <div class="class-name">nf-mdi-laptop_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-laptop_windows center"></div>
     <div class="class-name">nf-mdi-laptop_windows</div><div title="Copy Hex Code to Clipboard" class="codepoint">f824</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lastfm center"></div>
     <div class="class-name">nf-mdi-lastfm</div><div title="Copy Hex Code to Clipboard" class="codepoint">f825</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lastpass center"></div>
     <div class="class-name">nf-mdi-lastpass</div><div title="Copy Hex Code to Clipboard" class="codepoint">f945</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-launch center"></div>
     <div class="class-name">nf-mdi-launch</div><div title="Copy Hex Code to Clipboard" class="codepoint">f826</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lava_lamp center"></div>
     <div class="class-name">nf-mdi-lava_lamp</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-layers center"></div>
     <div class="class-name">nf-mdi-layers</div><div title="Copy Hex Code to Clipboard" class="codepoint">f827</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-layers_off center"></div>
     <div class="class-name">nf-mdi-layers_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f828</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lead_pencil center"></div>
     <div class="class-name">nf-mdi-lead_pencil</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb4e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-leaf center"></div>
     <div class="class-name">nf-mdi-leaf</div><div title="Copy Hex Code to Clipboard" class="codepoint">f829</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-led_off center"></div>
     <div class="class-name">nf-mdi-led_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f82a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-led_on center"></div>
     <div class="class-name">nf-mdi-led_on</div><div title="Copy Hex Code to Clipboard" class="codepoint">f82b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-led_outline center"></div>
     <div class="class-name">nf-mdi-led_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f82c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-led_strip center"></div>
     <div class="class-name">nf-mdi-led_strip</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-led_variant_off center"></div>
     <div class="class-name">nf-mdi-led_variant_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f82d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-led_variant_on center"></div>
     <div class="class-name">nf-mdi-led_variant_on</div><div title="Copy Hex Code to Clipboard" class="codepoint">f82e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-led_variant_outline center"></div>
     <div class="class-name">nf-mdi-led_variant_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f82f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-library center"></div>
     <div class="class-name">nf-mdi-library</div><div title="Copy Hex Code to Clipboard" class="codepoint">f830</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-library_books center"></div>
     <div class="class-name">nf-mdi-library_books</div><div title="Copy Hex Code to Clipboard" class="codepoint">f831</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-library_music center"></div>
     <div class="class-name">nf-mdi-library_music</div><div title="Copy Hex Code to Clipboard" class="codepoint">f832</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-library_plus center"></div>
     <div class="class-name">nf-mdi-library_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f833</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lightbulb center"></div>
     <div class="class-name">nf-mdi-lightbulb</div><div title="Copy Hex Code to Clipboard" class="codepoint">f834</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lightbulb_on center"></div>
     <div class="class-name">nf-mdi-lightbulb_on</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lightbulb_on_outline center"></div>
     <div class="class-name">nf-mdi-lightbulb_on_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lightbulb_outline center"></div>
     <div class="class-name">nf-mdi-lightbulb_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f835</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-link center"></div>
     <div class="class-name">nf-mdi-link</div><div title="Copy Hex Code to Clipboard" class="codepoint">f836</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-link_off center"></div>
     <div class="class-name">nf-mdi-link_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f837</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-link_variant center"></div>
     <div class="class-name">nf-mdi-link_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f838</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-link_variant_off center"></div>
     <div class="class-name">nf-mdi-link_variant_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f839</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-linkedin center"></div>
     <div class="class-name">nf-mdi-linkedin</div><div title="Copy Hex Code to Clipboard" class="codepoint">f83a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-linkedin_box center"></div>
     <div class="class-name">nf-mdi-linkedin_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f83b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-linux center"></div>
     <div class="class-name">nf-mdi-linux</div><div title="Copy Hex Code to Clipboard" class="codepoint">f83c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-loading center"></div>
     <div class="class-name">nf-mdi-loading</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc70</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lock center"></div>
     <div class="class-name">nf-mdi-lock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f83d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lock_open center"></div>
     <div class="class-name">nf-mdi-lock_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">f83e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lock_open_outline center"></div>
     <div class="class-name">nf-mdi-lock_open_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f83f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lock_outline center"></div>
     <div class="class-name">nf-mdi-lock_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f840</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lock_pattern center"></div>
     <div class="class-name">nf-mdi-lock_pattern</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lock_plus center"></div>
     <div class="class-name">nf-mdi-lock_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fafa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lock_reset center"></div>
     <div class="class-name">nf-mdi-lock_reset</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc71</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-locker center"></div>
     <div class="class-name">nf-mdi-locker</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-locker_multiple center"></div>
     <div class="class-name">nf-mdi-locker_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-login center"></div>
     <div class="class-name">nf-mdi-login</div><div title="Copy Hex Code to Clipboard" class="codepoint">f841</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-login_variant center"></div>
     <div class="class-name">nf-mdi-login_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fafb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-logout center"></div>
     <div class="class-name">nf-mdi-logout</div><div title="Copy Hex Code to Clipboard" class="codepoint">f842</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-logout_variant center"></div>
     <div class="class-name">nf-mdi-logout_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fafc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-looks center"></div>
     <div class="class-name">nf-mdi-looks</div><div title="Copy Hex Code to Clipboard" class="codepoint">f843</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-loop center"></div>
     <div class="class-name">nf-mdi-loop</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbe9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-loupe center"></div>
     <div class="class-name">nf-mdi-loupe</div><div title="Copy Hex Code to Clipboard" class="codepoint">f844</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-lumx center"></div>
     <div class="class-name">nf-mdi-lumx</div><div title="Copy Hex Code to Clipboard" class="codepoint">f845</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-magnet center"></div>
     <div class="class-name">nf-mdi-magnet</div><div title="Copy Hex Code to Clipboard" class="codepoint">f846</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-magnet_on center"></div>
     <div class="class-name">nf-mdi-magnet_on</div><div title="Copy Hex Code to Clipboard" class="codepoint">f847</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-magnify center"></div>
     <div class="class-name">nf-mdi-magnify</div><div title="Copy Hex Code to Clipboard" class="codepoint">f848</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-magnify_minus center"></div>
     <div class="class-name">nf-mdi-magnify_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f849</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-magnify_minus_outline center"></div>
     <div class="class-name">nf-mdi-magnify_minus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-magnify_plus center"></div>
     <div class="class-name">nf-mdi-magnify_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f84a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-magnify_plus_outline center"></div>
     <div class="class-name">nf-mdi-magnify_plus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbeb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mail_ru center"></div>
     <div class="class-name">nf-mdi-mail_ru</div><div title="Copy Hex Code to Clipboard" class="codepoint">f84b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mailbox center"></div>
     <div class="class-name">nf-mdi-mailbox</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map center"></div>
     <div class="class-name">nf-mdi-map</div><div title="Copy Hex Code to Clipboard" class="codepoint">f84c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker center"></div>
     <div class="class-name">nf-mdi-map_marker</div><div title="Copy Hex Code to Clipboard" class="codepoint">f84d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker_circle center"></div>
     <div class="class-name">nf-mdi-map_marker_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f84e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker_minus center"></div>
     <div class="class-name">nf-mdi-map_marker_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb4f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker_multiple center"></div>
     <div class="class-name">nf-mdi-map_marker_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f84f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker_off center"></div>
     <div class="class-name">nf-mdi-map_marker_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f850</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker_outline center"></div>
     <div class="class-name">nf-mdi-map_marker_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker_plus center"></div>
     <div class="class-name">nf-mdi-map_marker_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb50</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-map_marker_radius center"></div>
     <div class="class-name">nf-mdi-map_marker_radius</div><div title="Copy Hex Code to Clipboard" class="codepoint">f851</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-margin center"></div>
     <div class="class-name">nf-mdi-margin</div><div title="Copy Hex Code to Clipboard" class="codepoint">f852</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-markdown center"></div>
     <div class="class-name">nf-mdi-markdown</div><div title="Copy Hex Code to Clipboard" class="codepoint">f853</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-marker center"></div>
     <div class="class-name">nf-mdi-marker</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb51</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-marker_check center"></div>
     <div class="class-name">nf-mdi-marker_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">f854</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-martini center"></div>
     <div class="class-name">nf-mdi-martini</div><div title="Copy Hex Code to Clipboard" class="codepoint">f855</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-material_ui center"></div>
     <div class="class-name">nf-mdi-material_ui</div><div title="Copy Hex Code to Clipboard" class="codepoint">f856</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-math_compass center"></div>
     <div class="class-name">nf-mdi-math_compass</div><div title="Copy Hex Code to Clipboard" class="codepoint">f857</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-matrix center"></div>
     <div class="class-name">nf-mdi-matrix</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb27</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-maxcdn center"></div>
     <div class="class-name">nf-mdi-maxcdn</div><div title="Copy Hex Code to Clipboard" class="codepoint">f858</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-medical_bag center"></div>
     <div class="class-name">nf-mdi-medical_bag</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbed</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-medium center"></div>
     <div class="class-name">nf-mdi-medium</div><div title="Copy Hex Code to Clipboard" class="codepoint">f859</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-memory center"></div>
     <div class="class-name">nf-mdi-memory</div><div title="Copy Hex Code to Clipboard" class="codepoint">f85a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-menu center"></div>
     <div class="class-name">nf-mdi-menu</div><div title="Copy Hex Code to Clipboard" class="codepoint">f85b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-menu_down center"></div>
     <div class="class-name">nf-mdi-menu_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">f85c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-menu_down_outline center"></div>
     <div class="class-name">nf-mdi-menu_down_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-menu_left center"></div>
     <div class="class-name">nf-mdi-menu_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f85d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-menu_right center"></div>
     <div class="class-name">nf-mdi-menu_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f85e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-menu_up center"></div>
     <div class="class-name">nf-mdi-menu_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">f85f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-menu_up_outline center"></div>
     <div class="class-name">nf-mdi-menu_up_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message center"></div>
     <div class="class-name">nf-mdi-message</div><div title="Copy Hex Code to Clipboard" class="codepoint">f860</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_alert center"></div>
     <div class="class-name">nf-mdi-message_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f861</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_bulleted center"></div>
     <div class="class-name">nf-mdi-message_bulleted</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_bulleted_off center"></div>
     <div class="class-name">nf-mdi-message_bulleted_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_draw center"></div>
     <div class="class-name">nf-mdi-message_draw</div><div title="Copy Hex Code to Clipboard" class="codepoint">f862</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_image center"></div>
     <div class="class-name">nf-mdi-message_image</div><div title="Copy Hex Code to Clipboard" class="codepoint">f863</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_outline center"></div>
     <div class="class-name">nf-mdi-message_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f864</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_plus center"></div>
     <div class="class-name">nf-mdi-message_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb52</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_processing center"></div>
     <div class="class-name">nf-mdi-message_processing</div><div title="Copy Hex Code to Clipboard" class="codepoint">f865</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_reply center"></div>
     <div class="class-name">nf-mdi-message_reply</div><div title="Copy Hex Code to Clipboard" class="codepoint">f866</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_reply_text center"></div>
     <div class="class-name">nf-mdi-message_reply_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f867</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_settings center"></div>
     <div class="class-name">nf-mdi-message_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_settings_variant center"></div>
     <div class="class-name">nf-mdi-message_settings_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_text center"></div>
     <div class="class-name">nf-mdi-message_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f868</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_text_outline center"></div>
     <div class="class-name">nf-mdi-message_text_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f869</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-message_video center"></div>
     <div class="class-name">nf-mdi-message_video</div><div title="Copy Hex Code to Clipboard" class="codepoint">f86a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-meteor center"></div>
     <div class="class-name">nf-mdi-meteor</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb28</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-metronome center"></div>
     <div class="class-name">nf-mdi-metronome</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-metronome_tick center"></div>
     <div class="class-name">nf-mdi-metronome_tick</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcd9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-micro_sd center"></div>
     <div class="class-name">nf-mdi-micro_sd</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcda</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microphone center"></div>
     <div class="class-name">nf-mdi-microphone</div><div title="Copy Hex Code to Clipboard" class="codepoint">f86b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microphone_off center"></div>
     <div class="class-name">nf-mdi-microphone_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f86c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microphone_outline center"></div>
     <div class="class-name">nf-mdi-microphone_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f86d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microphone_settings center"></div>
     <div class="class-name">nf-mdi-microphone_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">f86e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microphone_variant center"></div>
     <div class="class-name">nf-mdi-microphone_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f86f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microphone_variant_off center"></div>
     <div class="class-name">nf-mdi-microphone_variant_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f870</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microscope center"></div>
     <div class="class-name">nf-mdi-microscope</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb53</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-microsoft center"></div>
     <div class="class-name">nf-mdi-microsoft</div><div title="Copy Hex Code to Clipboard" class="codepoint">f871</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-minecraft center"></div>
     <div class="class-name">nf-mdi-minecraft</div><div title="Copy Hex Code to Clipboard" class="codepoint">f872</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-minus center"></div>
     <div class="class-name">nf-mdi-minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f873</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-minus_box center"></div>
     <div class="class-name">nf-mdi-minus_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f874</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-minus_box_outline center"></div>
     <div class="class-name">nf-mdi-minus_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-minus_circle center"></div>
     <div class="class-name">nf-mdi-minus_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f875</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-minus_circle_outline center"></div>
     <div class="class-name">nf-mdi-minus_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f876</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-minus_network center"></div>
     <div class="class-name">nf-mdi-minus_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">f877</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mixcloud center"></div>
     <div class="class-name">nf-mdi-mixcloud</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb29</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mixer center"></div>
     <div class="class-name">nf-mdi-mixer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcdb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-monitor center"></div>
     <div class="class-name">nf-mdi-monitor</div><div title="Copy Hex Code to Clipboard" class="codepoint">f878</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-monitor_multiple center"></div>
     <div class="class-name">nf-mdi-monitor_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f879</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-more center"></div>
     <div class="class-name">nf-mdi-more</div><div title="Copy Hex Code to Clipboard" class="codepoint">f87a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-motorbike center"></div>
     <div class="class-name">nf-mdi-motorbike</div><div title="Copy Hex Code to Clipboard" class="codepoint">f87b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mouse center"></div>
     <div class="class-name">nf-mdi-mouse</div><div title="Copy Hex Code to Clipboard" class="codepoint">f87c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mouse_off center"></div>
     <div class="class-name">nf-mdi-mouse_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f87d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mouse_variant center"></div>
     <div class="class-name">nf-mdi-mouse_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f87e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mouse_variant_off center"></div>
     <div class="class-name">nf-mdi-mouse_variant_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f87f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-move_resize center"></div>
     <div class="class-name">nf-mdi-move_resize</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb54</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-move_resize_variant center"></div>
     <div class="class-name">nf-mdi-move_resize_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb55</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-movie center"></div>
     <div class="class-name">nf-mdi-movie</div><div title="Copy Hex Code to Clipboard" class="codepoint">f880</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-movie_roll center"></div>
     <div class="class-name">nf-mdi-movie_roll</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcdc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-multiplication center"></div>
     <div class="class-name">nf-mdi-multiplication</div><div title="Copy Hex Code to Clipboard" class="codepoint">f881</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-multiplication_box center"></div>
     <div class="class-name">nf-mdi-multiplication_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f882</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mushroom center"></div>
     <div class="class-name">nf-mdi-mushroom</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcdd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-mushroom_outline center"></div>
     <div class="class-name">nf-mdi-mushroom_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcde</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music center"></div>
     <div class="class-name">nf-mdi-music</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc58</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_box center"></div>
     <div class="class-name">nf-mdi-music_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f883</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_box_outline center"></div>
     <div class="class-name">nf-mdi-music_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f884</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_circle center"></div>
     <div class="class-name">nf-mdi-music_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f885</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note center"></div>
     <div class="class-name">nf-mdi-music_note</div><div title="Copy Hex Code to Clipboard" class="codepoint">f886</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_bluetooth center"></div>
     <div class="class-name">nf-mdi-music_note_bluetooth</div><div title="Copy Hex Code to Clipboard" class="codepoint">fafd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_bluetooth_off center"></div>
     <div class="class-name">nf-mdi-music_note_bluetooth_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fafe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_eighth center"></div>
     <div class="class-name">nf-mdi-music_note_eighth</div><div title="Copy Hex Code to Clipboard" class="codepoint">f887</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_half center"></div>
     <div class="class-name">nf-mdi-music_note_half</div><div title="Copy Hex Code to Clipboard" class="codepoint">f888</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_off center"></div>
     <div class="class-name">nf-mdi-music_note_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f889</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_quarter center"></div>
     <div class="class-name">nf-mdi-music_note_quarter</div><div title="Copy Hex Code to Clipboard" class="codepoint">f88a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_sixteenth center"></div>
     <div class="class-name">nf-mdi-music_note_sixteenth</div><div title="Copy Hex Code to Clipboard" class="codepoint">f88b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_note_whole center"></div>
     <div class="class-name">nf-mdi-music_note_whole</div><div title="Copy Hex Code to Clipboard" class="codepoint">f88c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-music_off center"></div>
     <div class="class-name">nf-mdi-music_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc59</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nature center"></div>
     <div class="class-name">nf-mdi-nature</div><div title="Copy Hex Code to Clipboard" class="codepoint">f88d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nature_people center"></div>
     <div class="class-name">nf-mdi-nature_people</div><div title="Copy Hex Code to Clipboard" class="codepoint">f88e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-navigation center"></div>
     <div class="class-name">nf-mdi-navigation</div><div title="Copy Hex Code to Clipboard" class="codepoint">f88f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-near_me center"></div>
     <div class="class-name">nf-mdi-near_me</div><div title="Copy Hex Code to Clipboard" class="codepoint">facc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-needle center"></div>
     <div class="class-name">nf-mdi-needle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f890</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nest_protect center"></div>
     <div class="class-name">nf-mdi-nest_protect</div><div title="Copy Hex Code to Clipboard" class="codepoint">f891</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nest_thermostat center"></div>
     <div class="class-name">nf-mdi-nest_thermostat</div><div title="Copy Hex Code to Clipboard" class="codepoint">f892</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-netflix center"></div>
     <div class="class-name">nf-mdi-netflix</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc44</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-network center"></div>
     <div class="class-name">nf-mdi-network</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-new_box center"></div>
     <div class="class-name">nf-mdi-new_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f893</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-newspaper center"></div>
     <div class="class-name">nf-mdi-newspaper</div><div title="Copy Hex Code to Clipboard" class="codepoint">f894</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nfc center"></div>
     <div class="class-name">nf-mdi-nfc</div><div title="Copy Hex Code to Clipboard" class="codepoint">f895</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nfc_tap center"></div>
     <div class="class-name">nf-mdi-nfc_tap</div><div title="Copy Hex Code to Clipboard" class="codepoint">f896</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nfc_variant center"></div>
     <div class="class-name">nf-mdi-nfc_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f897</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ninja center"></div>
     <div class="class-name">nf-mdi-ninja</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc72</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nintendo_switch center"></div>
     <div class="class-name">nf-mdi-nintendo_switch</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcdf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nodejs center"></div>
     <div class="class-name">nf-mdi-nodejs</div><div title="Copy Hex Code to Clipboard" class="codepoint">f898</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-note center"></div>
     <div class="class-name">nf-mdi-note</div><div title="Copy Hex Code to Clipboard" class="codepoint">f899</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-note_multiple center"></div>
     <div class="class-name">nf-mdi-note_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-note_multiple_outline center"></div>
     <div class="class-name">nf-mdi-note_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-note_outline center"></div>
     <div class="class-name">nf-mdi-note_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f89a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-note_plus center"></div>
     <div class="class-name">nf-mdi-note_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f89b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-note_plus_outline center"></div>
     <div class="class-name">nf-mdi-note_plus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f89c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-note_text center"></div>
     <div class="class-name">nf-mdi-note_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">f89d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-notebook center"></div>
     <div class="class-name">nf-mdi-notebook</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd2c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-notification_clear_all center"></div>
     <div class="class-name">nf-mdi-notification_clear_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f89e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-npm center"></div>
     <div class="class-name">nf-mdi-npm</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nuke center"></div>
     <div class="class-name">nf-mdi-nuke</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-null center"></div>
     <div class="class-name">nf-mdi-null</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric center"></div>
     <div class="class-name">nf-mdi-numeric</div><div title="Copy Hex Code to Clipboard" class="codepoint">f89f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_0_box center"></div>
     <div class="class-name">nf-mdi-numeric_0_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_0_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_0_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_0_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_0_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_1_box center"></div>
     <div class="class-name">nf-mdi-numeric_1_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_1_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_1_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_1_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_1_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_2_box center"></div>
     <div class="class-name">nf-mdi-numeric_2_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_2_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_2_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_2_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_2_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_3_box center"></div>
     <div class="class-name">nf-mdi-numeric_3_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8a9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_3_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_3_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8aa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_3_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_3_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_4_box center"></div>
     <div class="class-name">nf-mdi-numeric_4_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_4_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_4_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_4_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_4_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_5_box center"></div>
     <div class="class-name">nf-mdi-numeric_5_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8af</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_5_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_5_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_5_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_5_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_6_box center"></div>
     <div class="class-name">nf-mdi-numeric_6_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_6_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_6_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_6_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_6_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_7_box center"></div>
     <div class="class-name">nf-mdi-numeric_7_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_7_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_7_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_7_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_7_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_8_box center"></div>
     <div class="class-name">nf-mdi-numeric_8_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_8_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_8_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8b9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_8_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_8_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_9_box center"></div>
     <div class="class-name">nf-mdi-numeric_9_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8bb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_9_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_9_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8bc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_9_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_9_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8bd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_9_plus_box center"></div>
     <div class="class-name">nf-mdi-numeric_9_plus_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8be</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_9_plus_box_multiple_outline center"></div>
     <div class="class-name">nf-mdi-numeric_9_plus_box_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8bf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-numeric_9_plus_box_outline center"></div>
     <div class="class-name">nf-mdi-numeric_9_plus_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nut center"></div>
     <div class="class-name">nf-mdi-nut</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-nutrition center"></div>
     <div class="class-name">nf-mdi-nutrition</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-oar center"></div>
     <div class="class-name">nf-mdi-oar</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb7a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-octagon center"></div>
     <div class="class-name">nf-mdi-octagon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-octagon_outline center"></div>
     <div class="class-name">nf-mdi-octagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-octagram center"></div>
     <div class="class-name">nf-mdi-octagram</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-octagram_outline center"></div>
     <div class="class-name">nf-mdi-octagram_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc73</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-odnoklassniki center"></div>
     <div class="class-name">nf-mdi-odnoklassniki</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-office center"></div>
     <div class="class-name">nf-mdi-office</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-oil center"></div>
     <div class="class-name">nf-mdi-oil</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-oil_temperature center"></div>
     <div class="class-name">nf-mdi-oil_temperature</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-omega center"></div>
     <div class="class-name">nf-mdi-omega</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-onedrive center"></div>
     <div class="class-name">nf-mdi-onedrive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8c9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-onenote center"></div>
     <div class="class-name">nf-mdi-onenote</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc45</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-opacity center"></div>
     <div class="class-name">nf-mdi-opacity</div><div title="Copy Hex Code to Clipboard" class="codepoint">facb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-open_in_app center"></div>
     <div class="class-name">nf-mdi-open_in_app</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-open_in_new center"></div>
     <div class="class-name">nf-mdi-open_in_new</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8cb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-openid center"></div>
     <div class="class-name">nf-mdi-openid</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8cc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-opera center"></div>
     <div class="class-name">nf-mdi-opera</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8cd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-orbit center"></div>
     <div class="class-name">nf-mdi-orbit</div><div title="Copy Hex Code to Clipboard" class="codepoint">f517</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ornament center"></div>
     <div class="class-name">nf-mdi-ornament</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ce</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ornament_variant center"></div>
     <div class="class-name">nf-mdi-ornament_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8cf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-owl center"></div>
     <div class="class-name">nf-mdi-owl</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-package center"></div>
     <div class="class-name">nf-mdi-package</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-package_down center"></div>
     <div class="class-name">nf-mdi-package_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-package_up center"></div>
     <div class="class-name">nf-mdi-package_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-package_variant center"></div>
     <div class="class-name">nf-mdi-package_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-package_variant_closed center"></div>
     <div class="class-name">nf-mdi-package_variant_closed</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-page_first center"></div>
     <div class="class-name">nf-mdi-page_first</div><div title="Copy Hex Code to Clipboard" class="codepoint">faff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-page_last center"></div>
     <div class="class-name">nf-mdi-page_last</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb00</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-page_layout_body center"></div>
     <div class="class-name">nf-mdi-page_layout_body</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-page_layout_footer center"></div>
     <div class="class-name">nf-mdi-page_layout_footer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-page_layout_header center"></div>
     <div class="class-name">nf-mdi-page_layout_header</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbfa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-page_layout_sidebar_left center"></div>
     <div class="class-name">nf-mdi-page_layout_sidebar_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbfb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-page_layout_sidebar_right center"></div>
     <div class="class-name">nf-mdi-page_layout_sidebar_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbfc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-palette center"></div>
     <div class="class-name">nf-mdi-palette</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-palette_advanced center"></div>
     <div class="class-name">nf-mdi-palette_advanced</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-panda center"></div>
     <div class="class-name">nf-mdi-panda</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8d9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pandora center"></div>
     <div class="class-name">nf-mdi-pandora</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8da</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-panorama center"></div>
     <div class="class-name">nf-mdi-panorama</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8db</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-panorama_fisheye center"></div>
     <div class="class-name">nf-mdi-panorama_fisheye</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8dc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-panorama_horizontal center"></div>
     <div class="class-name">nf-mdi-panorama_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8dd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-panorama_vertical center"></div>
     <div class="class-name">nf-mdi-panorama_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8de</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-panorama_wide_angle center"></div>
     <div class="class-name">nf-mdi-panorama_wide_angle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8df</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-paper_cut_vertical center"></div>
     <div class="class-name">nf-mdi-paper_cut_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-paperclip center"></div>
     <div class="class-name">nf-mdi-paperclip</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-parking center"></div>
     <div class="class-name">nf-mdi-parking</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-passport center"></div>
     <div class="class-name">nf-mdi-passport</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pause center"></div>
     <div class="class-name">nf-mdi-pause</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pause_circle center"></div>
     <div class="class-name">nf-mdi-pause_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pause_circle_outline center"></div>
     <div class="class-name">nf-mdi-pause_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pause_octagon center"></div>
     <div class="class-name">nf-mdi-pause_octagon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pause_octagon_outline center"></div>
     <div class="class-name">nf-mdi-pause_octagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-paw center"></div>
     <div class="class-name">nf-mdi-paw</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-paw_off center"></div>
     <div class="class-name">nf-mdi-paw_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb56</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pen center"></div>
     <div class="class-name">nf-mdi-pen</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8e9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pencil center"></div>
     <div class="class-name">nf-mdi-pencil</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pencil_box center"></div>
     <div class="class-name">nf-mdi-pencil_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8eb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pencil_box_outline center"></div>
     <div class="class-name">nf-mdi-pencil_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pencil_circle center"></div>
     <div class="class-name">nf-mdi-pencil_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbfd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pencil_circle_outline center"></div>
     <div class="class-name">nf-mdi-pencil_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc74</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pencil_lock center"></div>
     <div class="class-name">nf-mdi-pencil_lock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ed</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pencil_off center"></div>
     <div class="class-name">nf-mdi-pencil_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pentagon center"></div>
     <div class="class-name">nf-mdi-pentagon</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbfe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pentagon_outline center"></div>
     <div class="class-name">nf-mdi-pentagon_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-percent center"></div>
     <div class="class-name">nf-mdi-percent</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-periodic_table_co2 center"></div>
     <div class="class-name">nf-mdi-periodic_table_co2</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-periscope center"></div>
     <div class="class-name">nf-mdi-periscope</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc46</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pharmacy center"></div>
     <div class="class-name">nf-mdi-pharmacy</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone center"></div>
     <div class="class-name">nf-mdi-phone</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_bluetooth center"></div>
     <div class="class-name">nf-mdi-phone_bluetooth</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_classic center"></div>
     <div class="class-name">nf-mdi-phone_classic</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb01</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_forward center"></div>
     <div class="class-name">nf-mdi-phone_forward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_hangup center"></div>
     <div class="class-name">nf-mdi-phone_hangup</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_in_talk center"></div>
     <div class="class-name">nf-mdi-phone_in_talk</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_incoming center"></div>
     <div class="class-name">nf-mdi-phone_incoming</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_locked center"></div>
     <div class="class-name">nf-mdi-phone_locked</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_log center"></div>
     <div class="class-name">nf-mdi-phone_log</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_minus center"></div>
     <div class="class-name">nf-mdi-phone_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb57</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_missed center"></div>
     <div class="class-name">nf-mdi-phone_missed</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8f9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_outgoing center"></div>
     <div class="class-name">nf-mdi-phone_outgoing</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8fa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_paused center"></div>
     <div class="class-name">nf-mdi-phone_paused</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8fb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_plus center"></div>
     <div class="class-name">nf-mdi-phone_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb58</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_return center"></div>
     <div class="class-name">nf-mdi-phone_return</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd2d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_settings center"></div>
     <div class="class-name">nf-mdi-phone_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8fc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-phone_voip center"></div>
     <div class="class-name">nf-mdi-phone_voip</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8fd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pi center"></div>
     <div class="class-name">nf-mdi-pi</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8fe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pi_box center"></div>
     <div class="class-name">nf-mdi-pi_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f8ff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-piano center"></div>
     <div class="class-name">nf-mdi-piano</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb7b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pig center"></div>
     <div class="class-name">nf-mdi-pig</div><div title="Copy Hex Code to Clipboard" class="codepoint">f900</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pill center"></div>
     <div class="class-name">nf-mdi-pill</div><div title="Copy Hex Code to Clipboard" class="codepoint">f901</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pillar center"></div>
     <div class="class-name">nf-mdi-pillar</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc00</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pin center"></div>
     <div class="class-name">nf-mdi-pin</div><div title="Copy Hex Code to Clipboard" class="codepoint">f902</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pin_off center"></div>
     <div class="class-name">nf-mdi-pin_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f903</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pine_tree center"></div>
     <div class="class-name">nf-mdi-pine_tree</div><div title="Copy Hex Code to Clipboard" class="codepoint">f904</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pine_tree_box center"></div>
     <div class="class-name">nf-mdi-pine_tree_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f905</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pinterest center"></div>
     <div class="class-name">nf-mdi-pinterest</div><div title="Copy Hex Code to Clipboard" class="codepoint">f906</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pinterest_box center"></div>
     <div class="class-name">nf-mdi-pinterest_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f907</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pipe center"></div>
     <div class="class-name">nf-mdi-pipe</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pipe_disconnected center"></div>
     <div class="class-name">nf-mdi-pipe_disconnected</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pistol center"></div>
     <div class="class-name">nf-mdi-pistol</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc01</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pizza center"></div>
     <div class="class-name">nf-mdi-pizza</div><div title="Copy Hex Code to Clipboard" class="codepoint">f908</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plane_shield center"></div>
     <div class="class-name">nf-mdi-plane_shield</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-play center"></div>
     <div class="class-name">nf-mdi-play</div><div title="Copy Hex Code to Clipboard" class="codepoint">f909</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-play_box_outline center"></div>
     <div class="class-name">nf-mdi-play_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f90a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-play_circle center"></div>
     <div class="class-name">nf-mdi-play_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f90b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-play_circle_outline center"></div>
     <div class="class-name">nf-mdi-play_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f90c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-play_pause center"></div>
     <div class="class-name">nf-mdi-play_pause</div><div title="Copy Hex Code to Clipboard" class="codepoint">f90d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-play_protected_content center"></div>
     <div class="class-name">nf-mdi-play_protected_content</div><div title="Copy Hex Code to Clipboard" class="codepoint">f90e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-playlist_check center"></div>
     <div class="class-name">nf-mdi-playlist_check</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-playlist_minus center"></div>
     <div class="class-name">nf-mdi-playlist_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f90f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-playlist_play center"></div>
     <div class="class-name">nf-mdi-playlist_play</div><div title="Copy Hex Code to Clipboard" class="codepoint">f910</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-playlist_plus center"></div>
     <div class="class-name">nf-mdi-playlist_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f911</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-playlist_remove center"></div>
     <div class="class-name">nf-mdi-playlist_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f912</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-playstation center"></div>
     <div class="class-name">nf-mdi-playstation</div><div title="Copy Hex Code to Clipboard" class="codepoint">f913</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plex center"></div>
     <div class="class-name">nf-mdi-plex</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbb8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus center"></div>
     <div class="class-name">nf-mdi-plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f914</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_box center"></div>
     <div class="class-name">nf-mdi-plus_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f915</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_box_outline center"></div>
     <div class="class-name">nf-mdi-plus_box_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc02</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_circle center"></div>
     <div class="class-name">nf-mdi-plus_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f916</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_circle_multiple_outline center"></div>
     <div class="class-name">nf-mdi-plus_circle_multiple_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f917</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_circle_outline center"></div>
     <div class="class-name">nf-mdi-plus_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f918</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_network center"></div>
     <div class="class-name">nf-mdi-plus_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">f919</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_one center"></div>
     <div class="class-name">nf-mdi-plus_one</div><div title="Copy Hex Code to Clipboard" class="codepoint">f91a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-plus_outline center"></div>
     <div class="class-name">nf-mdi-plus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc03</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pocket center"></div>
     <div class="class-name">nf-mdi-pocket</div><div title="Copy Hex Code to Clipboard" class="codepoint">f91b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pokeball center"></div>
     <div class="class-name">nf-mdi-pokeball</div><div title="Copy Hex Code to Clipboard" class="codepoint">f91c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-poker_chip center"></div>
     <div class="class-name">nf-mdi-poker_chip</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd2e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-polaroid center"></div>
     <div class="class-name">nf-mdi-polaroid</div><div title="Copy Hex Code to Clipboard" class="codepoint">f91d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-poll center"></div>
     <div class="class-name">nf-mdi-poll</div><div title="Copy Hex Code to Clipboard" class="codepoint">f91e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-poll_box center"></div>
     <div class="class-name">nf-mdi-poll_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f91f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-polymer center"></div>
     <div class="class-name">nf-mdi-polymer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f920</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pool center"></div>
     <div class="class-name">nf-mdi-pool</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb05</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-popcorn center"></div>
     <div class="class-name">nf-mdi-popcorn</div><div title="Copy Hex Code to Clipboard" class="codepoint">f921</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pot center"></div>
     <div class="class-name">nf-mdi-pot</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb59</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pot_mix center"></div>
     <div class="class-name">nf-mdi-pot_mix</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb5a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pound center"></div>
     <div class="class-name">nf-mdi-pound</div><div title="Copy Hex Code to Clipboard" class="codepoint">f922</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pound_box center"></div>
     <div class="class-name">nf-mdi-pound_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f923</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power center"></div>
     <div class="class-name">nf-mdi-power</div><div title="Copy Hex Code to Clipboard" class="codepoint">f924</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power_plug center"></div>
     <div class="class-name">nf-mdi-power_plug</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power_plug_off center"></div>
     <div class="class-name">nf-mdi-power_plug_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power_settings center"></div>
     <div class="class-name">nf-mdi-power_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">f925</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power_socket center"></div>
     <div class="class-name">nf-mdi-power_socket</div><div title="Copy Hex Code to Clipboard" class="codepoint">f926</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power_socket_eu center"></div>
     <div class="class-name">nf-mdi-power_socket_eu</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power_socket_uk center"></div>
     <div class="class-name">nf-mdi-power_socket_uk</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-power_socket_us center"></div>
     <div class="class-name">nf-mdi-power_socket_us</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-prescription center"></div>
     <div class="class-name">nf-mdi-prescription</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc04</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-presentation center"></div>
     <div class="class-name">nf-mdi-presentation</div><div title="Copy Hex Code to Clipboard" class="codepoint">f927</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-presentation_play center"></div>
     <div class="class-name">nf-mdi-presentation_play</div><div title="Copy Hex Code to Clipboard" class="codepoint">f928</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-printer center"></div>
     <div class="class-name">nf-mdi-printer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f929</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-printer_3d center"></div>
     <div class="class-name">nf-mdi-printer_3d</div><div title="Copy Hex Code to Clipboard" class="codepoint">f92a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-printer_alert center"></div>
     <div class="class-name">nf-mdi-printer_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f92b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-printer_settings center"></div>
     <div class="class-name">nf-mdi-printer_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc05</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-priority_high center"></div>
     <div class="class-name">nf-mdi-priority_high</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb02</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-priority_low center"></div>
     <div class="class-name">nf-mdi-priority_low</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb03</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-professional_hexagon center"></div>
     <div class="class-name">nf-mdi-professional_hexagon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f92c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-projector center"></div>
     <div class="class-name">nf-mdi-projector</div><div title="Copy Hex Code to Clipboard" class="codepoint">f92d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-projector_screen center"></div>
     <div class="class-name">nf-mdi-projector_screen</div><div title="Copy Hex Code to Clipboard" class="codepoint">f92e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-publish center"></div>
     <div class="class-name">nf-mdi-publish</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-pulse center"></div>
     <div class="class-name">nf-mdi-pulse</div><div title="Copy Hex Code to Clipboard" class="codepoint">f92f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-puzzle center"></div>
     <div class="class-name">nf-mdi-puzzle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f930</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-qqchat center"></div>
     <div class="class-name">nf-mdi-qqchat</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb04</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-qrcode center"></div>
     <div class="class-name">nf-mdi-qrcode</div><div title="Copy Hex Code to Clipboard" class="codepoint">f931</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-qrcode_scan center"></div>
     <div class="class-name">nf-mdi-qrcode_scan</div><div title="Copy Hex Code to Clipboard" class="codepoint">f932</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-quadcopter center"></div>
     <div class="class-name">nf-mdi-quadcopter</div><div title="Copy Hex Code to Clipboard" class="codepoint">f933</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-quality_high center"></div>
     <div class="class-name">nf-mdi-quality_high</div><div title="Copy Hex Code to Clipboard" class="codepoint">f934</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-quicktime center"></div>
     <div class="class-name">nf-mdi-quicktime</div><div title="Copy Hex Code to Clipboard" class="codepoint">f935</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radar center"></div>
     <div class="class-name">nf-mdi-radar</div><div title="Copy Hex Code to Clipboard" class="codepoint">f936</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radiator center"></div>
     <div class="class-name">nf-mdi-radiator</div><div title="Copy Hex Code to Clipboard" class="codepoint">f937</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radio center"></div>
     <div class="class-name">nf-mdi-radio</div><div title="Copy Hex Code to Clipboard" class="codepoint">f938</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radio_handheld center"></div>
     <div class="class-name">nf-mdi-radio_handheld</div><div title="Copy Hex Code to Clipboard" class="codepoint">f939</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radio_tower center"></div>
     <div class="class-name">nf-mdi-radio_tower</div><div title="Copy Hex Code to Clipboard" class="codepoint">f93a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radioactive center"></div>
     <div class="class-name">nf-mdi-radioactive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f93b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radiobox_blank center"></div>
     <div class="class-name">nf-mdi-radiobox_blank</div><div title="Copy Hex Code to Clipboard" class="codepoint">f93c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-radiobox_marked center"></div>
     <div class="class-name">nf-mdi-radiobox_marked</div><div title="Copy Hex Code to Clipboard" class="codepoint">f93d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-raspberrypi center"></div>
     <div class="class-name">nf-mdi-raspberrypi</div><div title="Copy Hex Code to Clipboard" class="codepoint">f93e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ray_end center"></div>
     <div class="class-name">nf-mdi-ray_end</div><div title="Copy Hex Code to Clipboard" class="codepoint">f93f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ray_end_arrow center"></div>
     <div class="class-name">nf-mdi-ray_end_arrow</div><div title="Copy Hex Code to Clipboard" class="codepoint">f940</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ray_start center"></div>
     <div class="class-name">nf-mdi-ray_start</div><div title="Copy Hex Code to Clipboard" class="codepoint">f941</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ray_start_arrow center"></div>
     <div class="class-name">nf-mdi-ray_start_arrow</div><div title="Copy Hex Code to Clipboard" class="codepoint">f942</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ray_start_end center"></div>
     <div class="class-name">nf-mdi-ray_start_end</div><div title="Copy Hex Code to Clipboard" class="codepoint">f943</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ray_vertex center"></div>
     <div class="class-name">nf-mdi-ray_vertex</div><div title="Copy Hex Code to Clipboard" class="codepoint">f944</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-react center"></div>
     <div class="class-name">nf-mdi-react</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc06</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-read center"></div>
     <div class="class-name">nf-mdi-read</div><div title="Copy Hex Code to Clipboard" class="codepoint">f946</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-receipt center"></div>
     <div class="class-name">nf-mdi-receipt</div><div title="Copy Hex Code to Clipboard" class="codepoint">f948</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-record center"></div>
     <div class="class-name">nf-mdi-record</div><div title="Copy Hex Code to Clipboard" class="codepoint">f949</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-record_rec center"></div>
     <div class="class-name">nf-mdi-record_rec</div><div title="Copy Hex Code to Clipboard" class="codepoint">f94a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-recycle center"></div>
     <div class="class-name">nf-mdi-recycle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f94b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-reddit center"></div>
     <div class="class-name">nf-mdi-reddit</div><div title="Copy Hex Code to Clipboard" class="codepoint">f94c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-redo center"></div>
     <div class="class-name">nf-mdi-redo</div><div title="Copy Hex Code to Clipboard" class="codepoint">f94d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-redo_variant center"></div>
     <div class="class-name">nf-mdi-redo_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f94e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-refresh center"></div>
     <div class="class-name">nf-mdi-refresh</div><div title="Copy Hex Code to Clipboard" class="codepoint">f94f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-regex center"></div>
     <div class="class-name">nf-mdi-regex</div><div title="Copy Hex Code to Clipboard" class="codepoint">f950</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-relative_scale center"></div>
     <div class="class-name">nf-mdi-relative_scale</div><div title="Copy Hex Code to Clipboard" class="codepoint">f951</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-reload center"></div>
     <div class="class-name">nf-mdi-reload</div><div title="Copy Hex Code to Clipboard" class="codepoint">f952</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-remote center"></div>
     <div class="class-name">nf-mdi-remote</div><div title="Copy Hex Code to Clipboard" class="codepoint">f953</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rename_box center"></div>
     <div class="class-name">nf-mdi-rename_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f954</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-reorder_horizontal center"></div>
     <div class="class-name">nf-mdi-reorder_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb86</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-reorder_vertical center"></div>
     <div class="class-name">nf-mdi-reorder_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb87</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-repeat center"></div>
     <div class="class-name">nf-mdi-repeat</div><div title="Copy Hex Code to Clipboard" class="codepoint">f955</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-repeat_off center"></div>
     <div class="class-name">nf-mdi-repeat_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f956</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-repeat_once center"></div>
     <div class="class-name">nf-mdi-repeat_once</div><div title="Copy Hex Code to Clipboard" class="codepoint">f957</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-replay center"></div>
     <div class="class-name">nf-mdi-replay</div><div title="Copy Hex Code to Clipboard" class="codepoint">f958</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-reply center"></div>
     <div class="class-name">nf-mdi-reply</div><div title="Copy Hex Code to Clipboard" class="codepoint">f959</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-reply_all center"></div>
     <div class="class-name">nf-mdi-reply_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f95a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-reproduction center"></div>
     <div class="class-name">nf-mdi-reproduction</div><div title="Copy Hex Code to Clipboard" class="codepoint">f95b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-resize_bottom_right center"></div>
     <div class="class-name">nf-mdi-resize_bottom_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f95c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-responsive center"></div>
     <div class="class-name">nf-mdi-responsive</div><div title="Copy Hex Code to Clipboard" class="codepoint">f95d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-restart center"></div>
     <div class="class-name">nf-mdi-restart</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc07</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-restore center"></div>
     <div class="class-name">nf-mdi-restore</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rewind center"></div>
     <div class="class-name">nf-mdi-rewind</div><div title="Copy Hex Code to Clipboard" class="codepoint">f95e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rewind_outline center"></div>
     <div class="class-name">nf-mdi-rewind_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc08</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rhombus center"></div>
     <div class="class-name">nf-mdi-rhombus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc09</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rhombus_outline center"></div>
     <div class="class-name">nf-mdi-rhombus_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc0a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ribbon center"></div>
     <div class="class-name">nf-mdi-ribbon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f95f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rice center"></div>
     <div class="class-name">nf-mdi-rice</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ring center"></div>
     <div class="class-name">nf-mdi-ring</div><div title="Copy Hex Code to Clipboard" class="codepoint">fce9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-road center"></div>
     <div class="class-name">nf-mdi-road</div><div title="Copy Hex Code to Clipboard" class="codepoint">f960</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-road_variant center"></div>
     <div class="class-name">nf-mdi-road_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f961</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-robot center"></div>
     <div class="class-name">nf-mdi-robot</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rocket center"></div>
     <div class="class-name">nf-mdi-rocket</div><div title="Copy Hex Code to Clipboard" class="codepoint">f962</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-roomba center"></div>
     <div class="class-name">nf-mdi-roomba</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc0b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rotate_3d center"></div>
     <div class="class-name">nf-mdi-rotate_3d</div><div title="Copy Hex Code to Clipboard" class="codepoint">f963</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rotate_left center"></div>
     <div class="class-name">nf-mdi-rotate_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">f964</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rotate_left_variant center"></div>
     <div class="class-name">nf-mdi-rotate_left_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f965</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rotate_right center"></div>
     <div class="class-name">nf-mdi-rotate_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">f966</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rotate_right_variant center"></div>
     <div class="class-name">nf-mdi-rotate_right_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f967</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rounded_corner center"></div>
     <div class="class-name">nf-mdi-rounded_corner</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb06</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-router_wireless center"></div>
     <div class="class-name">nf-mdi-router_wireless</div><div title="Copy Hex Code to Clipboard" class="codepoint">f968</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-routes center"></div>
     <div class="class-name">nf-mdi-routes</div><div title="Copy Hex Code to Clipboard" class="codepoint">f969</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rowing center"></div>
     <div class="class-name">nf-mdi-rowing</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb07</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rss center"></div>
     <div class="class-name">nf-mdi-rss</div><div title="Copy Hex Code to Clipboard" class="codepoint">f96a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-rss_box center"></div>
     <div class="class-name">nf-mdi-rss_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f96b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ruler center"></div>
     <div class="class-name">nf-mdi-ruler</div><div title="Copy Hex Code to Clipboard" class="codepoint">f96c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-run center"></div>
     <div class="class-name">nf-mdi-run</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc0c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-run_fast center"></div>
     <div class="class-name">nf-mdi-run_fast</div><div title="Copy Hex Code to Clipboard" class="codepoint">f96d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sale center"></div>
     <div class="class-name">nf-mdi-sale</div><div title="Copy Hex Code to Clipboard" class="codepoint">f96e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sass center"></div>
     <div class="class-name">nf-mdi-sass</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-satellite center"></div>
     <div class="class-name">nf-mdi-satellite</div><div title="Copy Hex Code to Clipboard" class="codepoint">f96f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-satellite_variant center"></div>
     <div class="class-name">nf-mdi-satellite_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f970</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-saxophone center"></div>
     <div class="class-name">nf-mdi-saxophone</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb08</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-scale center"></div>
     <div class="class-name">nf-mdi-scale</div><div title="Copy Hex Code to Clipboard" class="codepoint">f971</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-scale_balance center"></div>
     <div class="class-name">nf-mdi-scale_balance</div><div title="Copy Hex Code to Clipboard" class="codepoint">fad0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-scale_bathroom center"></div>
     <div class="class-name">nf-mdi-scale_bathroom</div><div title="Copy Hex Code to Clipboard" class="codepoint">f972</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-scanner center"></div>
     <div class="class-name">nf-mdi-scanner</div><div title="Copy Hex Code to Clipboard" class="codepoint">fba9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-school center"></div>
     <div class="class-name">nf-mdi-school</div><div title="Copy Hex Code to Clipboard" class="codepoint">f973</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-screen_rotation center"></div>
     <div class="class-name">nf-mdi-screen_rotation</div><div title="Copy Hex Code to Clipboard" class="codepoint">f974</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-screen_rotation_lock center"></div>
     <div class="class-name">nf-mdi-screen_rotation_lock</div><div title="Copy Hex Code to Clipboard" class="codepoint">f975</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-screwdriver center"></div>
     <div class="class-name">nf-mdi-screwdriver</div><div title="Copy Hex Code to Clipboard" class="codepoint">f976</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-script center"></div>
     <div class="class-name">nf-mdi-script</div><div title="Copy Hex Code to Clipboard" class="codepoint">f977</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sd center"></div>
     <div class="class-name">nf-mdi-sd</div><div title="Copy Hex Code to Clipboard" class="codepoint">f978</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seal center"></div>
     <div class="class-name">nf-mdi-seal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f979</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-search_web center"></div>
     <div class="class-name">nf-mdi-search_web</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc0d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_flat center"></div>
     <div class="class-name">nf-mdi-seat_flat</div><div title="Copy Hex Code to Clipboard" class="codepoint">f97a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_flat_angled center"></div>
     <div class="class-name">nf-mdi-seat_flat_angled</div><div title="Copy Hex Code to Clipboard" class="codepoint">f97b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_individual_suite center"></div>
     <div class="class-name">nf-mdi-seat_individual_suite</div><div title="Copy Hex Code to Clipboard" class="codepoint">f97c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_legroom_extra center"></div>
     <div class="class-name">nf-mdi-seat_legroom_extra</div><div title="Copy Hex Code to Clipboard" class="codepoint">f97d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_legroom_normal center"></div>
     <div class="class-name">nf-mdi-seat_legroom_normal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f97e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_legroom_reduced center"></div>
     <div class="class-name">nf-mdi-seat_legroom_reduced</div><div title="Copy Hex Code to Clipboard" class="codepoint">f97f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_recline_extra center"></div>
     <div class="class-name">nf-mdi-seat_recline_extra</div><div title="Copy Hex Code to Clipboard" class="codepoint">f980</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-seat_recline_normal center"></div>
     <div class="class-name">nf-mdi-seat_recline_normal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f981</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-security center"></div>
     <div class="class-name">nf-mdi-security</div><div title="Copy Hex Code to Clipboard" class="codepoint">f982</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-security_home center"></div>
     <div class="class-name">nf-mdi-security_home</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb88</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-security_network center"></div>
     <div class="class-name">nf-mdi-security_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">f983</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-select center"></div>
     <div class="class-name">nf-mdi-select</div><div title="Copy Hex Code to Clipboard" class="codepoint">f984</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-select_all center"></div>
     <div class="class-name">nf-mdi-select_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">f985</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-select_inverse center"></div>
     <div class="class-name">nf-mdi-select_inverse</div><div title="Copy Hex Code to Clipboard" class="codepoint">f986</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-select_off center"></div>
     <div class="class-name">nf-mdi-select_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f987</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-selection center"></div>
     <div class="class-name">nf-mdi-selection</div><div title="Copy Hex Code to Clipboard" class="codepoint">f988</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-selection_off center"></div>
     <div class="class-name">nf-mdi-selection_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc75</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-send center"></div>
     <div class="class-name">nf-mdi-send</div><div title="Copy Hex Code to Clipboard" class="codepoint">f989</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-send_secure center"></div>
     <div class="class-name">nf-mdi-send_secure</div><div title="Copy Hex Code to Clipboard" class="codepoint">fceb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-serial_port center"></div>
     <div class="class-name">nf-mdi-serial_port</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb5b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server center"></div>
     <div class="class-name">nf-mdi-server</div><div title="Copy Hex Code to Clipboard" class="codepoint">f98a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server_minus center"></div>
     <div class="class-name">nf-mdi-server_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f98b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server_network center"></div>
     <div class="class-name">nf-mdi-server_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">f98c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server_network_off center"></div>
     <div class="class-name">nf-mdi-server_network_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f98d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server_off center"></div>
     <div class="class-name">nf-mdi-server_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f98e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server_plus center"></div>
     <div class="class-name">nf-mdi-server_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f98f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server_remove center"></div>
     <div class="class-name">nf-mdi-server_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f990</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-server_security center"></div>
     <div class="class-name">nf-mdi-server_security</div><div title="Copy Hex Code to Clipboard" class="codepoint">f991</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_all center"></div>
     <div class="class-name">nf-mdi-set_all</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc76</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_center center"></div>
     <div class="class-name">nf-mdi-set_center</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc77</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_center_right center"></div>
     <div class="class-name">nf-mdi-set_center_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc78</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_left center"></div>
     <div class="class-name">nf-mdi-set_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc79</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_left_center center"></div>
     <div class="class-name">nf-mdi-set_left_center</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc7a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_left_right center"></div>
     <div class="class-name">nf-mdi-set_left_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc7b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_none center"></div>
     <div class="class-name">nf-mdi-set_none</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc7c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-set_right center"></div>
     <div class="class-name">nf-mdi-set_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc7d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-settings center"></div>
     <div class="class-name">nf-mdi-settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">f992</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-settings_box center"></div>
     <div class="class-name">nf-mdi-settings_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">f993</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shape center"></div>
     <div class="class-name">nf-mdi-shape</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd2f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shape_circle_plus center"></div>
     <div class="class-name">nf-mdi-shape_circle_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb5c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shape_outline center"></div>
     <div class="class-name">nf-mdi-shape_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd30</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shape_plus center"></div>
     <div class="class-name">nf-mdi-shape_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">f994</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shape_polygon_plus center"></div>
     <div class="class-name">nf-mdi-shape_polygon_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb5d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shape_rectangle_plus center"></div>
     <div class="class-name">nf-mdi-shape_rectangle_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb5e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shape_square_plus center"></div>
     <div class="class-name">nf-mdi-shape_square_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb5f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-share center"></div>
     <div class="class-name">nf-mdi-share</div><div title="Copy Hex Code to Clipboard" class="codepoint">f995</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-share_variant center"></div>
     <div class="class-name">nf-mdi-share_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f996</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shield center"></div>
     <div class="class-name">nf-mdi-shield</div><div title="Copy Hex Code to Clipboard" class="codepoint">f997</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shield_half_full center"></div>
     <div class="class-name">nf-mdi-shield_half_full</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc7e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shield_outline center"></div>
     <div class="class-name">nf-mdi-shield_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f998</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ship_wheel center"></div>
     <div class="class-name">nf-mdi-ship_wheel</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd31</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shopping center"></div>
     <div class="class-name">nf-mdi-shopping</div><div title="Copy Hex Code to Clipboard" class="codepoint">f999</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shopping_music center"></div>
     <div class="class-name">nf-mdi-shopping_music</div><div title="Copy Hex Code to Clipboard" class="codepoint">f99a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shovel center"></div>
     <div class="class-name">nf-mdi-shovel</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc0e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shovel_off center"></div>
     <div class="class-name">nf-mdi-shovel_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc0f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shredder center"></div>
     <div class="class-name">nf-mdi-shredder</div><div title="Copy Hex Code to Clipboard" class="codepoint">f99b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shuffle center"></div>
     <div class="class-name">nf-mdi-shuffle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f99c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shuffle_disabled center"></div>
     <div class="class-name">nf-mdi-shuffle_disabled</div><div title="Copy Hex Code to Clipboard" class="codepoint">f99d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-shuffle_variant center"></div>
     <div class="class-name">nf-mdi-shuffle_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f99e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sigma center"></div>
     <div class="class-name">nf-mdi-sigma</div><div title="Copy Hex Code to Clipboard" class="codepoint">f99f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sigma_lower center"></div>
     <div class="class-name">nf-mdi-sigma_lower</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb2a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sign_caution center"></div>
     <div class="class-name">nf-mdi-sign_caution</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sign_direction center"></div>
     <div class="class-name">nf-mdi-sign_direction</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc7f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sign_text center"></div>
     <div class="class-name">nf-mdi-sign_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc80</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal center"></div>
     <div class="class-name">nf-mdi-signal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal_2g center"></div>
     <div class="class-name">nf-mdi-signal_2g</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc10</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal_3g center"></div>
     <div class="class-name">nf-mdi-signal_3g</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc11</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal_4g center"></div>
     <div class="class-name">nf-mdi-signal_4g</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc12</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal_hspa center"></div>
     <div class="class-name">nf-mdi-signal_hspa</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc13</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal_hspa_plus center"></div>
     <div class="class-name">nf-mdi-signal_hspa_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc14</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal_off center"></div>
     <div class="class-name">nf-mdi-signal_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc81</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-signal_variant center"></div>
     <div class="class-name">nf-mdi-signal_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb09</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-silverware center"></div>
     <div class="class-name">nf-mdi-silverware</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-silverware_fork center"></div>
     <div class="class-name">nf-mdi-silverware_fork</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-silverware_spoon center"></div>
     <div class="class-name">nf-mdi-silverware_spoon</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-silverware_variant center"></div>
     <div class="class-name">nf-mdi-silverware_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sim center"></div>
     <div class="class-name">nf-mdi-sim</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sim_alert center"></div>
     <div class="class-name">nf-mdi-sim_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sim_off center"></div>
     <div class="class-name">nf-mdi-sim_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sitemap center"></div>
     <div class="class-name">nf-mdi-sitemap</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9a9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_backward center"></div>
     <div class="class-name">nf-mdi-skip_backward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9aa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_forward center"></div>
     <div class="class-name">nf-mdi-skip_forward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_next center"></div>
     <div class="class-name">nf-mdi-skip_next</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_next_circle center"></div>
     <div class="class-name">nf-mdi-skip_next_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb60</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_next_circle_outline center"></div>
     <div class="class-name">nf-mdi-skip_next_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb61</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_previous center"></div>
     <div class="class-name">nf-mdi-skip_previous</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_previous_circle center"></div>
     <div class="class-name">nf-mdi-skip_previous_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb62</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skip_previous_circle_outline center"></div>
     <div class="class-name">nf-mdi-skip_previous_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb63</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skull center"></div>
     <div class="class-name">nf-mdi-skull</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb8a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skype center"></div>
     <div class="class-name">nf-mdi-skype</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-skype_business center"></div>
     <div class="class-name">nf-mdi-skype_business</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9af</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-slack center"></div>
     <div class="class-name">nf-mdi-slack</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sleep center"></div>
     <div class="class-name">nf-mdi-sleep</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sleep_off center"></div>
     <div class="class-name">nf-mdi-sleep_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-smoking center"></div>
     <div class="class-name">nf-mdi-smoking</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-smoking_off center"></div>
     <div class="class-name">nf-mdi-smoking_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-snapchat center"></div>
     <div class="class-name">nf-mdi-snapchat</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-snowflake center"></div>
     <div class="class-name">nf-mdi-snowflake</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc15</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-snowman center"></div>
     <div class="class-name">nf-mdi-snowman</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-soccer center"></div>
     <div class="class-name">nf-mdi-soccer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-soccer_field center"></div>
     <div class="class-name">nf-mdi-soccer_field</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd32</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sofa center"></div>
     <div class="class-name">nf-mdi-sofa</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-solid center"></div>
     <div class="class-name">nf-mdi-solid</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb8b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sort center"></div>
     <div class="class-name">nf-mdi-sort</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9b9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sort_alphabetical center"></div>
     <div class="class-name">nf-mdi-sort_alphabetical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sort_ascending center"></div>
     <div class="class-name">nf-mdi-sort_ascending</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9bb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sort_descending center"></div>
     <div class="class-name">nf-mdi-sort_descending</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9bc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sort_numeric center"></div>
     <div class="class-name">nf-mdi-sort_numeric</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9bd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sort_variant center"></div>
     <div class="class-name">nf-mdi-sort_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9be</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-soundcloud center"></div>
     <div class="class-name">nf-mdi-soundcloud</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9bf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_branch center"></div>
     <div class="class-name">nf-mdi-source_branch</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb2b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_commit center"></div>
     <div class="class-name">nf-mdi-source_commit</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc16</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_commit_end center"></div>
     <div class="class-name">nf-mdi-source_commit_end</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc17</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_commit_end_local center"></div>
     <div class="class-name">nf-mdi-source_commit_end_local</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc18</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_commit_local center"></div>
     <div class="class-name">nf-mdi-source_commit_local</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc19</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_commit_next_local center"></div>
     <div class="class-name">nf-mdi-source_commit_next_local</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc1a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_commit_start center"></div>
     <div class="class-name">nf-mdi-source_commit_start</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc1b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_commit_start_next_local center"></div>
     <div class="class-name">nf-mdi-source_commit_start_next_local</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc1c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_fork center"></div>
     <div class="class-name">nf-mdi-source_fork</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_merge center"></div>
     <div class="class-name">nf-mdi-source_merge</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb2c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-source_pull center"></div>
     <div class="class-name">nf-mdi-source_pull</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-soy_sauce center"></div>
     <div class="class-name">nf-mdi-soy_sauce</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-speaker center"></div>
     <div class="class-name">nf-mdi-speaker</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-speaker_off center"></div>
     <div class="class-name">nf-mdi-speaker_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-speaker_wireless center"></div>
     <div class="class-name">nf-mdi-speaker_wireless</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc1d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-speedometer center"></div>
     <div class="class-name">nf-mdi-speedometer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-spellcheck center"></div>
     <div class="class-name">nf-mdi-spellcheck</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-spotify center"></div>
     <div class="class-name">nf-mdi-spotify</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-spotlight center"></div>
     <div class="class-name">nf-mdi-spotlight</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-spotlight_beam center"></div>
     <div class="class-name">nf-mdi-spotlight_beam</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-spray center"></div>
     <div class="class-name">nf-mdi-spray</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb64</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-square center"></div>
     <div class="class-name">nf-mdi-square</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc62</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-square_inc center"></div>
     <div class="class-name">nf-mdi-square_inc</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9c9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-square_inc_cash center"></div>
     <div class="class-name">nf-mdi-square_inc_cash</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-square_outline center"></div>
     <div class="class-name">nf-mdi-square_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc61</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-square_root center"></div>
     <div class="class-name">nf-mdi-square_root</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc82</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stack_overflow center"></div>
     <div class="class-name">nf-mdi-stack_overflow</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9cb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stackexchange center"></div>
     <div class="class-name">nf-mdi-stackexchange</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb0a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stadium center"></div>
     <div class="class-name">nf-mdi-stadium</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc1e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stairs center"></div>
     <div class="class-name">nf-mdi-stairs</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9cc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-standard_definition center"></div>
     <div class="class-name">nf-mdi-standard_definition</div><div title="Copy Hex Code to Clipboard" class="codepoint">fced</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-star center"></div>
     <div class="class-name">nf-mdi-star</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9cd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-star_circle center"></div>
     <div class="class-name">nf-mdi-star_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ce</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-star_half center"></div>
     <div class="class-name">nf-mdi-star_half</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9cf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-star_off center"></div>
     <div class="class-name">nf-mdi-star_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-star_outline center"></div>
     <div class="class-name">nf-mdi-star_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-steam center"></div>
     <div class="class-name">nf-mdi-steam</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-steering center"></div>
     <div class="class-name">nf-mdi-steering</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-step_backward center"></div>
     <div class="class-name">nf-mdi-step_backward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-step_backward_2 center"></div>
     <div class="class-name">nf-mdi-step_backward_2</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-step_forward center"></div>
     <div class="class-name">nf-mdi-step_forward</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-step_forward_2 center"></div>
     <div class="class-name">nf-mdi-step_forward_2</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stethoscope center"></div>
     <div class="class-name">nf-mdi-stethoscope</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sticker center"></div>
     <div class="class-name">nf-mdi-sticker</div><div title="Copy Hex Code to Clipboard" class="codepoint">facf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sticker_emoji center"></div>
     <div class="class-name">nf-mdi-sticker_emoji</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc83</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stocking center"></div>
     <div class="class-name">nf-mdi-stocking</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9d9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stop center"></div>
     <div class="class-name">nf-mdi-stop</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9da</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stop_circle center"></div>
     <div class="class-name">nf-mdi-stop_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb65</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stop_circle_outline center"></div>
     <div class="class-name">nf-mdi-stop_circle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb66</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-store center"></div>
     <div class="class-name">nf-mdi-store</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9db</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-store_24_hour center"></div>
     <div class="class-name">nf-mdi-store_24_hour</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9dc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-stove center"></div>
     <div class="class-name">nf-mdi-stove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9dd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-subdirectory_arrow_left center"></div>
     <div class="class-name">nf-mdi-subdirectory_arrow_left</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb0b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-subdirectory_arrow_right center"></div>
     <div class="class-name">nf-mdi-subdirectory_arrow_right</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb0c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-subway center"></div>
     <div class="class-name">nf-mdi-subway</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbaa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-subway_variant center"></div>
     <div class="class-name">nf-mdi-subway_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9de</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-summit center"></div>
     <div class="class-name">nf-mdi-summit</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc84</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sunglasses center"></div>
     <div class="class-name">nf-mdi-sunglasses</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9df</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-surround_sound center"></div>
     <div class="class-name">nf-mdi-surround_sound</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-surround_sound_2_0 center"></div>
     <div class="class-name">nf-mdi-surround_sound_2_0</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-surround_sound_3_1 center"></div>
     <div class="class-name">nf-mdi-surround_sound_3_1</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-surround_sound_5_1 center"></div>
     <div class="class-name">nf-mdi-surround_sound_5_1</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-surround_sound_7_1 center"></div>
     <div class="class-name">nf-mdi-surround_sound_7_1</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-svg center"></div>
     <div class="class-name">nf-mdi-svg</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc1f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-swap_horizontal center"></div>
     <div class="class-name">nf-mdi-swap_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-swap_vertical center"></div>
     <div class="class-name">nf-mdi-swap_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-swim center"></div>
     <div class="class-name">nf-mdi-swim</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-switch center"></div>
     <div class="class-name">nf-mdi-switch</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sword center"></div>
     <div class="class-name">nf-mdi-sword</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sword_cross center"></div>
     <div class="class-name">nf-mdi-sword_cross</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc85</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sync center"></div>
     <div class="class-name">nf-mdi-sync</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sync_alert center"></div>
     <div class="class-name">nf-mdi-sync_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-sync_off center"></div>
     <div class="class-name">nf-mdi-sync_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tab center"></div>
     <div class="class-name">nf-mdi-tab</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tab_plus center"></div>
     <div class="class-name">nf-mdi-tab_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc5a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tab_unselected center"></div>
     <div class="class-name">nf-mdi-tab_unselected</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9e9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table center"></div>
     <div class="class-name">nf-mdi-table</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ea</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_column center"></div>
     <div class="class-name">nf-mdi-table_column</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd33</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_column_plus_after center"></div>
     <div class="class-name">nf-mdi-table_column_plus_after</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9eb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_column_plus_before center"></div>
     <div class="class-name">nf-mdi-table_column_plus_before</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ec</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_column_remove center"></div>
     <div class="class-name">nf-mdi-table_column_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ed</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_column_width center"></div>
     <div class="class-name">nf-mdi-table_column_width</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ee</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_edit center"></div>
     <div class="class-name">nf-mdi-table_edit</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ef</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_large center"></div>
     <div class="class-name">nf-mdi-table_large</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_of_contents center"></div>
     <div class="class-name">nf-mdi-table_of_contents</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd34</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_row center"></div>
     <div class="class-name">nf-mdi-table_row</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd35</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_row_height center"></div>
     <div class="class-name">nf-mdi-table_row_height</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_row_plus_after center"></div>
     <div class="class-name">nf-mdi-table_row_plus_after</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_row_plus_before center"></div>
     <div class="class-name">nf-mdi-table_row_plus_before</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_row_remove center"></div>
     <div class="class-name">nf-mdi-table_row_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-table_settings center"></div>
     <div class="class-name">nf-mdi-table_settings</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd36</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tablet center"></div>
     <div class="class-name">nf-mdi-tablet</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tablet_android center"></div>
     <div class="class-name">nf-mdi-tablet_android</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tablet_ipad center"></div>
     <div class="class-name">nf-mdi-tablet_ipad</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-taco center"></div>
     <div class="class-name">nf-mdi-taco</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc60</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag center"></div>
     <div class="class-name">nf-mdi-tag</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag_faces center"></div>
     <div class="class-name">nf-mdi-tag_faces</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9f9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag_heart center"></div>
     <div class="class-name">nf-mdi-tag_heart</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb89</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag_multiple center"></div>
     <div class="class-name">nf-mdi-tag_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9fa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag_outline center"></div>
     <div class="class-name">nf-mdi-tag_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9fb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag_plus center"></div>
     <div class="class-name">nf-mdi-tag_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc20</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag_remove center"></div>
     <div class="class-name">nf-mdi-tag_remove</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc21</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tag_text_outline center"></div>
     <div class="class-name">nf-mdi-tag_text_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9fc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-target center"></div>
     <div class="class-name">nf-mdi-target</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9fd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-taxi center"></div>
     <div class="class-name">nf-mdi-taxi</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9fe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-teamviewer center"></div>
     <div class="class-name">nf-mdi-teamviewer</div><div title="Copy Hex Code to Clipboard" class="codepoint">f9ff</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-telegram center"></div>
     <div class="class-name">nf-mdi-telegram</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa00</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-television center"></div>
     <div class="class-name">nf-mdi-television</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa01</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-television_box center"></div>
     <div class="class-name">nf-mdi-television_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd37</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-television_classic center"></div>
     <div class="class-name">nf-mdi-television_classic</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-television_classic_off center"></div>
     <div class="class-name">nf-mdi-television_classic_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd38</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-television_guide center"></div>
     <div class="class-name">nf-mdi-television_guide</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa02</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-television_off center"></div>
     <div class="class-name">nf-mdi-television_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd39</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-temperature_celsius center"></div>
     <div class="class-name">nf-mdi-temperature_celsius</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa03</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-temperature_fahrenheit center"></div>
     <div class="class-name">nf-mdi-temperature_fahrenheit</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa04</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-temperature_kelvin center"></div>
     <div class="class-name">nf-mdi-temperature_kelvin</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa05</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tennis center"></div>
     <div class="class-name">nf-mdi-tennis</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa06</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tent center"></div>
     <div class="class-name">nf-mdi-tent</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa07</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-terrain center"></div>
     <div class="class-name">nf-mdi-terrain</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa08</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-test_tube center"></div>
     <div class="class-name">nf-mdi-test_tube</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb67</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-text_shadow center"></div>
     <div class="class-name">nf-mdi-text_shadow</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb68</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-text_to_speech center"></div>
     <div class="class-name">nf-mdi-text_to_speech</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa09</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-text_to_speech_off center"></div>
     <div class="class-name">nf-mdi-text_to_speech_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa0a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-textbox center"></div>
     <div class="class-name">nf-mdi-textbox</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb0d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-textbox_password center"></div>
     <div class="class-name">nf-mdi-textbox_password</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-texture center"></div>
     <div class="class-name">nf-mdi-texture</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa0b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-theater center"></div>
     <div class="class-name">nf-mdi-theater</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa0c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-theme_light_dark center"></div>
     <div class="class-name">nf-mdi-theme_light_dark</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa0d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thermometer center"></div>
     <div class="class-name">nf-mdi-thermometer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa0e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thermometer_lines center"></div>
     <div class="class-name">nf-mdi-thermometer_lines</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa0f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thought_bubble center"></div>
     <div class="class-name">nf-mdi-thought_bubble</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thought_bubble_outline center"></div>
     <div class="class-name">nf-mdi-thought_bubble_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thumb_down center"></div>
     <div class="class-name">nf-mdi-thumb_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa10</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thumb_down_outline center"></div>
     <div class="class-name">nf-mdi-thumb_down_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa11</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thumb_up center"></div>
     <div class="class-name">nf-mdi-thumb_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa12</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thumb_up_outline center"></div>
     <div class="class-name">nf-mdi-thumb_up_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa13</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-thumbs_up_down center"></div>
     <div class="class-name">nf-mdi-thumbs_up_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa14</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ticket center"></div>
     <div class="class-name">nf-mdi-ticket</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa15</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ticket_account center"></div>
     <div class="class-name">nf-mdi-ticket_account</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa16</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ticket_confirmation center"></div>
     <div class="class-name">nf-mdi-ticket_confirmation</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa17</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ticket_percent center"></div>
     <div class="class-name">nf-mdi-ticket_percent</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc22</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tie center"></div>
     <div class="class-name">nf-mdi-tie</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa18</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tilde center"></div>
     <div class="class-name">nf-mdi-tilde</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc23</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timelapse center"></div>
     <div class="class-name">nf-mdi-timelapse</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa19</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timer center"></div>
     <div class="class-name">nf-mdi-timer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa1a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timer_10 center"></div>
     <div class="class-name">nf-mdi-timer_10</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa1b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timer_3 center"></div>
     <div class="class-name">nf-mdi-timer_3</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa1c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timer_off center"></div>
     <div class="class-name">nf-mdi-timer_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa1d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timer_sand center"></div>
     <div class="class-name">nf-mdi-timer_sand</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa1e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timer_sand_empty center"></div>
     <div class="class-name">nf-mdi-timer_sand_empty</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timer_sand_full center"></div>
     <div class="class-name">nf-mdi-timer_sand_full</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc8a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-timetable center"></div>
     <div class="class-name">nf-mdi-timetable</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa1f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-toggle_switch center"></div>
     <div class="class-name">nf-mdi-toggle_switch</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa20</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-toggle_switch_off center"></div>
     <div class="class-name">nf-mdi-toggle_switch_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa21</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tooltip center"></div>
     <div class="class-name">nf-mdi-tooltip</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa22</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tooltip_edit center"></div>
     <div class="class-name">nf-mdi-tooltip_edit</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa23</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tooltip_image center"></div>
     <div class="class-name">nf-mdi-tooltip_image</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa24</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tooltip_outline center"></div>
     <div class="class-name">nf-mdi-tooltip_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa25</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tooltip_outline_plus center"></div>
     <div class="class-name">nf-mdi-tooltip_outline_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa26</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tooltip_text center"></div>
     <div class="class-name">nf-mdi-tooltip_text</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa27</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tooth center"></div>
     <div class="class-name">nf-mdi-tooth</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa28</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tor center"></div>
     <div class="class-name">nf-mdi-tor</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa29</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tower_beach center"></div>
     <div class="class-name">nf-mdi-tower_beach</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb7f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tower_fire center"></div>
     <div class="class-name">nf-mdi-tower_fire</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb80</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-towing center"></div>
     <div class="class-name">nf-mdi-towing</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd3a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trackpad center"></div>
     <div class="class-name">nf-mdi-trackpad</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-traffic_light center"></div>
     <div class="class-name">nf-mdi-traffic_light</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa2a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-train center"></div>
     <div class="class-name">nf-mdi-train</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa2b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tram center"></div>
     <div class="class-name">nf-mdi-tram</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa2c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-transcribe center"></div>
     <div class="class-name">nf-mdi-transcribe</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa2d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-transcribe_close center"></div>
     <div class="class-name">nf-mdi-transcribe_close</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa2e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-transfer center"></div>
     <div class="class-name">nf-mdi-transfer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa2f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-transit_transfer center"></div>
     <div class="class-name">nf-mdi-transit_transfer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-translate center"></div>
     <div class="class-name">nf-mdi-translate</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-treasure_chest center"></div>
     <div class="class-name">nf-mdi-treasure_chest</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc24</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tree center"></div>
     <div class="class-name">nf-mdi-tree</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa30</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trello center"></div>
     <div class="class-name">nf-mdi-trello</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa31</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trending_down center"></div>
     <div class="class-name">nf-mdi-trending_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa32</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trending_neutral center"></div>
     <div class="class-name">nf-mdi-trending_neutral</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa33</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trending_up center"></div>
     <div class="class-name">nf-mdi-trending_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa34</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-triangle center"></div>
     <div class="class-name">nf-mdi-triangle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa35</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-triangle_outline center"></div>
     <div class="class-name">nf-mdi-triangle_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa36</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trophy center"></div>
     <div class="class-name">nf-mdi-trophy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa37</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trophy_award center"></div>
     <div class="class-name">nf-mdi-trophy_award</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa38</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trophy_outline center"></div>
     <div class="class-name">nf-mdi-trophy_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa39</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trophy_variant center"></div>
     <div class="class-name">nf-mdi-trophy_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa3a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-trophy_variant_outline center"></div>
     <div class="class-name">nf-mdi-trophy_variant_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa3b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-truck center"></div>
     <div class="class-name">nf-mdi-truck</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa3c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-truck_delivery center"></div>
     <div class="class-name">nf-mdi-truck_delivery</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa3d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-truck_fast center"></div>
     <div class="class-name">nf-mdi-truck_fast</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc86</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-truck_trailer center"></div>
     <div class="class-name">nf-mdi-truck_trailer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc25</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tshirt_crew center"></div>
     <div class="class-name">nf-mdi-tshirt_crew</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa3e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tshirt_v center"></div>
     <div class="class-name">nf-mdi-tshirt_v</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa3f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tumblr center"></div>
     <div class="class-name">nf-mdi-tumblr</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa40</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tumblr_reblog center"></div>
     <div class="class-name">nf-mdi-tumblr_reblog</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa41</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tune center"></div>
     <div class="class-name">nf-mdi-tune</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb2d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-tune_vertical center"></div>
     <div class="class-name">nf-mdi-tune_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb69</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-twitch center"></div>
     <div class="class-name">nf-mdi-twitch</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa42</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-twitter center"></div>
     <div class="class-name">nf-mdi-twitter</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa43</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-twitter_box center"></div>
     <div class="class-name">nf-mdi-twitter_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa44</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-twitter_circle center"></div>
     <div class="class-name">nf-mdi-twitter_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa45</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-twitter_retweet center"></div>
     <div class="class-name">nf-mdi-twitter_retweet</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa46</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-uber center"></div>
     <div class="class-name">nf-mdi-uber</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc47</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ubuntu center"></div>
     <div class="class-name">nf-mdi-ubuntu</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa47</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ultra_high_definition center"></div>
     <div class="class-name">nf-mdi-ultra_high_definition</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-umbraco center"></div>
     <div class="class-name">nf-mdi-umbraco</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa48</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-umbrella center"></div>
     <div class="class-name">nf-mdi-umbrella</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa49</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-umbrella_outline center"></div>
     <div class="class-name">nf-mdi-umbrella_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa4a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-undo center"></div>
     <div class="class-name">nf-mdi-undo</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa4b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-undo_variant center"></div>
     <div class="class-name">nf-mdi-undo_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa4c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-unfold_less_horizontal center"></div>
     <div class="class-name">nf-mdi-unfold_less_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa4d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-unfold_less_vertical center"></div>
     <div class="class-name">nf-mdi-unfold_less_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc5e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-unfold_more_horizontal center"></div>
     <div class="class-name">nf-mdi-unfold_more_horizontal</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa4e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-unfold_more_vertical center"></div>
     <div class="class-name">nf-mdi-unfold_more_vertical</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc5f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-ungroup center"></div>
     <div class="class-name">nf-mdi-ungroup</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa4f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-unity center"></div>
     <div class="class-name">nf-mdi-unity</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-untappd center"></div>
     <div class="class-name">nf-mdi-untappd</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa50</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-update center"></div>
     <div class="class-name">nf-mdi-update</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-upload center"></div>
     <div class="class-name">nf-mdi-upload</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa51</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-upload_multiple center"></div>
     <div class="class-name">nf-mdi-upload_multiple</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd3b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-upload_network center"></div>
     <div class="class-name">nf-mdi-upload_network</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbf4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-usb center"></div>
     <div class="class-name">nf-mdi-usb</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa52</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-van_passenger center"></div>
     <div class="class-name">nf-mdi-van_passenger</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-van_utility center"></div>
     <div class="class-name">nf-mdi-van_utility</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcf9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vanish center"></div>
     <div class="class-name">nf-mdi-vanish</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcfa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_arrange_above center"></div>
     <div class="class-name">nf-mdi-vector_arrange_above</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa53</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_arrange_below center"></div>
     <div class="class-name">nf-mdi-vector_arrange_below</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa54</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_circle center"></div>
     <div class="class-name">nf-mdi-vector_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa55</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_circle_variant center"></div>
     <div class="class-name">nf-mdi-vector_circle_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa56</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_combine center"></div>
     <div class="class-name">nf-mdi-vector_combine</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa57</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_curve center"></div>
     <div class="class-name">nf-mdi-vector_curve</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa58</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_difference center"></div>
     <div class="class-name">nf-mdi-vector_difference</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa59</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_difference_ab center"></div>
     <div class="class-name">nf-mdi-vector_difference_ab</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa5a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_difference_ba center"></div>
     <div class="class-name">nf-mdi-vector_difference_ba</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa5b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_intersection center"></div>
     <div class="class-name">nf-mdi-vector_intersection</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa5c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_line center"></div>
     <div class="class-name">nf-mdi-vector_line</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa5d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_point center"></div>
     <div class="class-name">nf-mdi-vector_point</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa5e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_polygon center"></div>
     <div class="class-name">nf-mdi-vector_polygon</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa5f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_polyline center"></div>
     <div class="class-name">nf-mdi-vector_polyline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa60</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_radius center"></div>
     <div class="class-name">nf-mdi-vector_radius</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc48</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_rectangle center"></div>
     <div class="class-name">nf-mdi-vector_rectangle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_selection center"></div>
     <div class="class-name">nf-mdi-vector_selection</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa61</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_square center"></div>
     <div class="class-name">nf-mdi-vector_square</div><div title="Copy Hex Code to Clipboard" class="codepoint">f500</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_triangle center"></div>
     <div class="class-name">nf-mdi-vector_triangle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa62</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vector_union center"></div>
     <div class="class-name">nf-mdi-vector_union</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa63</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-venmo center"></div>
     <div class="class-name">nf-mdi-venmo</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa77</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-verified center"></div>
     <div class="class-name">nf-mdi-verified</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa64</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vibrate center"></div>
     <div class="class-name">nf-mdi-vibrate</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa65</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video center"></div>
     <div class="class-name">nf-mdi-video</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa66</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_3d center"></div>
     <div class="class-name">nf-mdi-video_3d</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcfb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_4k_box center"></div>
     <div class="class-name">nf-mdi-video_4k_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd3c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_input_antenna center"></div>
     <div class="class-name">nf-mdi-video_input_antenna</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd3d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_input_component center"></div>
     <div class="class-name">nf-mdi-video_input_component</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd3e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_input_hdmi center"></div>
     <div class="class-name">nf-mdi-video_input_hdmi</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd3f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_input_svideo center"></div>
     <div class="class-name">nf-mdi-video_input_svideo</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd40</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_off center"></div>
     <div class="class-name">nf-mdi-video_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa67</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-video_switch center"></div>
     <div class="class-name">nf-mdi-video_switch</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa68</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_agenda center"></div>
     <div class="class-name">nf-mdi-view_agenda</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa69</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_array center"></div>
     <div class="class-name">nf-mdi-view_array</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa6a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_carousel center"></div>
     <div class="class-name">nf-mdi-view_carousel</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa6b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_column center"></div>
     <div class="class-name">nf-mdi-view_column</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa6c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_dashboard center"></div>
     <div class="class-name">nf-mdi-view_dashboard</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa6d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_dashboard_variant center"></div>
     <div class="class-name">nf-mdi-view_dashboard_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd41</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_day center"></div>
     <div class="class-name">nf-mdi-view_day</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa6e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_grid center"></div>
     <div class="class-name">nf-mdi-view_grid</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa6f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_headline center"></div>
     <div class="class-name">nf-mdi-view_headline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa70</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_list center"></div>
     <div class="class-name">nf-mdi-view_list</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa71</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_module center"></div>
     <div class="class-name">nf-mdi-view_module</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa72</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_parallel center"></div>
     <div class="class-name">nf-mdi-view_parallel</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc26</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_quilt center"></div>
     <div class="class-name">nf-mdi-view_quilt</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa73</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_sequential center"></div>
     <div class="class-name">nf-mdi-view_sequential</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc27</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_stream center"></div>
     <div class="class-name">nf-mdi-view_stream</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa74</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-view_week center"></div>
     <div class="class-name">nf-mdi-view_week</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa75</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vimeo center"></div>
     <div class="class-name">nf-mdi-vimeo</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa76</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-violin center"></div>
     <div class="class-name">nf-mdi-violin</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb0e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-visualstudio center"></div>
     <div class="class-name">nf-mdi-visualstudio</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb0f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vk center"></div>
     <div class="class-name">nf-mdi-vk</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa78</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vk_box center"></div>
     <div class="class-name">nf-mdi-vk_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa79</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vk_circle center"></div>
     <div class="class-name">nf-mdi-vk_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa7a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vlc center"></div>
     <div class="class-name">nf-mdi-vlc</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa7b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-voice center"></div>
     <div class="class-name">nf-mdi-voice</div><div title="Copy Hex Code to Clipboard" class="codepoint">faca</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-voicemail center"></div>
     <div class="class-name">nf-mdi-voicemail</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa7c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-volume_high center"></div>
     <div class="class-name">nf-mdi-volume_high</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa7d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-volume_low center"></div>
     <div class="class-name">nf-mdi-volume_low</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa7e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-volume_medium center"></div>
     <div class="class-name">nf-mdi-volume_medium</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa7f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-volume_minus center"></div>
     <div class="class-name">nf-mdi-volume_minus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc5c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-volume_mute center"></div>
     <div class="class-name">nf-mdi-volume_mute</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc5d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-volume_off center"></div>
     <div class="class-name">nf-mdi-volume_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa80</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-volume_plus center"></div>
     <div class="class-name">nf-mdi-volume_plus</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc5b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vpn center"></div>
     <div class="class-name">nf-mdi-vpn</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa81</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-vuejs center"></div>
     <div class="class-name">nf-mdi-vuejs</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd42</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-walk center"></div>
     <div class="class-name">nf-mdi-walk</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa82</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wall center"></div>
     <div class="class-name">nf-mdi-wall</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcfc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wallet center"></div>
     <div class="class-name">nf-mdi-wallet</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa83</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wallet_giftcard center"></div>
     <div class="class-name">nf-mdi-wallet_giftcard</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa84</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wallet_membership center"></div>
     <div class="class-name">nf-mdi-wallet_membership</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa85</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wallet_travel center"></div>
     <div class="class-name">nf-mdi-wallet_travel</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa86</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wan center"></div>
     <div class="class-name">nf-mdi-wan</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa87</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-washing_machine center"></div>
     <div class="class-name">nf-mdi-washing_machine</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc28</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-watch center"></div>
     <div class="class-name">nf-mdi-watch</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa88</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-watch_export center"></div>
     <div class="class-name">nf-mdi-watch_export</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa89</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-watch_import center"></div>
     <div class="class-name">nf-mdi-watch_import</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa8a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-watch_vibrate center"></div>
     <div class="class-name">nf-mdi-watch_vibrate</div><div title="Copy Hex Code to Clipboard" class="codepoint">fbaf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-water center"></div>
     <div class="class-name">nf-mdi-water</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa8b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-water_off center"></div>
     <div class="class-name">nf-mdi-water_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa8c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-water_percent center"></div>
     <div class="class-name">nf-mdi-water_percent</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa8d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-water_pump center"></div>
     <div class="class-name">nf-mdi-water_pump</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa8e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-watermark center"></div>
     <div class="class-name">nf-mdi-watermark</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb11</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-waves center"></div>
     <div class="class-name">nf-mdi-waves</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc8b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_cloudy center"></div>
     <div class="class-name">nf-mdi-weather_cloudy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa8f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_fog center"></div>
     <div class="class-name">nf-mdi-weather_fog</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa90</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_hail center"></div>
     <div class="class-name">nf-mdi-weather_hail</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa91</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_lightning center"></div>
     <div class="class-name">nf-mdi-weather_lightning</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa92</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_lightning_rainy center"></div>
     <div class="class-name">nf-mdi-weather_lightning_rainy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb7c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_night center"></div>
     <div class="class-name">nf-mdi-weather_night</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa93</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_partlycloudy center"></div>
     <div class="class-name">nf-mdi-weather_partlycloudy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa94</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_pouring center"></div>
     <div class="class-name">nf-mdi-weather_pouring</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa95</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_rainy center"></div>
     <div class="class-name">nf-mdi-weather_rainy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa96</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_snowy center"></div>
     <div class="class-name">nf-mdi-weather_snowy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa97</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_snowy_rainy center"></div>
     <div class="class-name">nf-mdi-weather_snowy_rainy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb7d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_sunny center"></div>
     <div class="class-name">nf-mdi-weather_sunny</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa98</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_sunset center"></div>
     <div class="class-name">nf-mdi-weather_sunset</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa99</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_sunset_down center"></div>
     <div class="class-name">nf-mdi-weather_sunset_down</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa9a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_sunset_up center"></div>
     <div class="class-name">nf-mdi-weather_sunset_up</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa9b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_windy center"></div>
     <div class="class-name">nf-mdi-weather_windy</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa9c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weather_windy_variant center"></div>
     <div class="class-name">nf-mdi-weather_windy_variant</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa9d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-web center"></div>
     <div class="class-name">nf-mdi-web</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa9e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-webcam center"></div>
     <div class="class-name">nf-mdi-webcam</div><div title="Copy Hex Code to Clipboard" class="codepoint">fa9f</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-webhook center"></div>
     <div class="class-name">nf-mdi-webhook</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb2e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-webpack center"></div>
     <div class="class-name">nf-mdi-webpack</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc29</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wechat center"></div>
     <div class="class-name">nf-mdi-wechat</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb10</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weight center"></div>
     <div class="class-name">nf-mdi-weight</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-weight_kilogram center"></div>
     <div class="class-name">nf-mdi-weight_kilogram</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-whatsapp center"></div>
     <div class="class-name">nf-mdi-whatsapp</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wheelchair_accessibility center"></div>
     <div class="class-name">nf-mdi-wheelchair_accessibility</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-white_balance_auto center"></div>
     <div class="class-name">nf-mdi-white_balance_auto</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-white_balance_incandescent center"></div>
     <div class="class-name">nf-mdi-white_balance_incandescent</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-white_balance_iridescent center"></div>
     <div class="class-name">nf-mdi-white_balance_iridescent</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-white_balance_sunny center"></div>
     <div class="class-name">nf-mdi-white_balance_sunny</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-widgets center"></div>
     <div class="class-name">nf-mdi-widgets</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc2a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wifi center"></div>
     <div class="class-name">nf-mdi-wifi</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wifi_off center"></div>
     <div class="class-name">nf-mdi-wifi_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">faa9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wii center"></div>
     <div class="class-name">nf-mdi-wii</div><div title="Copy Hex Code to Clipboard" class="codepoint">faaa</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wiiu center"></div>
     <div class="class-name">nf-mdi-wiiu</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc2b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wikipedia center"></div>
     <div class="class-name">nf-mdi-wikipedia</div><div title="Copy Hex Code to Clipboard" class="codepoint">faab</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-window_close center"></div>
     <div class="class-name">nf-mdi-window_close</div><div title="Copy Hex Code to Clipboard" class="codepoint">faac</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-window_closed center"></div>
     <div class="class-name">nf-mdi-window_closed</div><div title="Copy Hex Code to Clipboard" class="codepoint">faad</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-window_maximize center"></div>
     <div class="class-name">nf-mdi-window_maximize</div><div title="Copy Hex Code to Clipboard" class="codepoint">faae</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-window_minimize center"></div>
     <div class="class-name">nf-mdi-window_minimize</div><div title="Copy Hex Code to Clipboard" class="codepoint">faaf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-window_open center"></div>
     <div class="class-name">nf-mdi-window_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-window_restore center"></div>
     <div class="class-name">nf-mdi-window_restore</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-windows center"></div>
     <div class="class-name">nf-mdi-windows</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wordpress center"></div>
     <div class="class-name">nf-mdi-wordpress</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab3</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-worker center"></div>
     <div class="class-name">nf-mdi-worker</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab4</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wrap center"></div>
     <div class="class-name">nf-mdi-wrap</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab5</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wrench center"></div>
     <div class="class-name">nf-mdi-wrench</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab6</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-wunderlist center"></div>
     <div class="class-name">nf-mdi-wunderlist</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab7</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xamarin center"></div>
     <div class="class-name">nf-mdi-xamarin</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd43</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xamarin_outline center"></div>
     <div class="class-name">nf-mdi-xamarin_outline</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd44</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xaml center"></div>
     <div class="class-name">nf-mdi-xaml</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb72</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox center"></div>
     <div class="class-name">nf-mdi-xbox</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab8</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller center"></div>
     <div class="class-name">nf-mdi-xbox_controller</div><div title="Copy Hex Code to Clipboard" class="codepoint">fab9</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller_battery_alert center"></div>
     <div class="class-name">nf-mdi-xbox_controller_battery_alert</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc49</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller_battery_empty center"></div>
     <div class="class-name">nf-mdi-xbox_controller_battery_empty</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc4a</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller_battery_full center"></div>
     <div class="class-name">nf-mdi-xbox_controller_battery_full</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc4b</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller_battery_low center"></div>
     <div class="class-name">nf-mdi-xbox_controller_battery_low</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc4c</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller_battery_medium center"></div>
     <div class="class-name">nf-mdi-xbox_controller_battery_medium</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc4d</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller_battery_unknown center"></div>
     <div class="class-name">nf-mdi-xbox_controller_battery_unknown</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc4e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xbox_controller_off center"></div>
     <div class="class-name">nf-mdi-xbox_controller_off</div><div title="Copy Hex Code to Clipboard" class="codepoint">faba</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xda center"></div>
     <div class="class-name">nf-mdi-xda</div><div title="Copy Hex Code to Clipboard" class="codepoint">fabb</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xing center"></div>
     <div class="class-name">nf-mdi-xing</div><div title="Copy Hex Code to Clipboard" class="codepoint">fabc</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xing_box center"></div>
     <div class="class-name">nf-mdi-xing_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fabd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xing_circle center"></div>
     <div class="class-name">nf-mdi-xing_circle</div><div title="Copy Hex Code to Clipboard" class="codepoint">fabe</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xml center"></div>
     <div class="class-name">nf-mdi-xml</div><div title="Copy Hex Code to Clipboard" class="codepoint">fabf</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-xmpp center"></div>
     <div class="class-name">nf-mdi-xmpp</div><div title="Copy Hex Code to Clipboard" class="codepoint">fcfd</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-yammer center"></div>
     <div class="class-name">nf-mdi-yammer</div><div title="Copy Hex Code to Clipboard" class="codepoint">fc87</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-yeast center"></div>
     <div class="class-name">nf-mdi-yeast</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac0</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-yelp center"></div>
     <div class="class-name">nf-mdi-yelp</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac1</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-yin_yang center"></div>
     <div class="class-name">nf-mdi-yin_yang</div><div title="Copy Hex Code to Clipboard" class="codepoint">fb7e</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-youtube_creator_studio center"></div>
     <div class="class-name">nf-mdi-youtube_creator_studio</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd45</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-youtube_gaming center"></div>
     <div class="class-name">nf-mdi-youtube_gaming</div><div title="Copy Hex Code to Clipboard" class="codepoint">fd46</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-youtube_play center"></div>
     <div class="class-name">nf-mdi-youtube_play</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac2</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-youtube_tv center"></div>
     <div class="class-name">nf-mdi-youtube_tv</div><div title="Copy Hex Code to Clipboard" class="codepoint">f947</div>
   </div>
   <div class="column">
+    <span class="corner-red"></span><span class="corner-text">obsolete</span>
     <div class="nf nf-mdi-zip_box center"></div>
     <div class="class-name">nf-mdi-zip_box</div><div title="Copy Hex Code to Clipboard" class="codepoint">fac3</div>
   </div>
