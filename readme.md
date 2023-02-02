@@ -81,7 +81,7 @@ _If you..._
   * `Option 4.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-4-homebrew-fonts)
   * `Option 5.` want **complete control** then see [cloning the repo](#option-5-clone-the-repo)
   * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
-  * `Option 7`. are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-7-unofficial-chocolatey-or-scoop-repositories)
+  * `Option 7.` are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-7-unofficial-chocolatey-or-scoop-repositories)
   * `Option 8.` are on **Arch Linux** and want to use **Community packages** see [Arch Community Repositories](#option-8-arch-community-repository)
   * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
 
