@@ -194,6 +194,14 @@ def panose_check_to_text(value, panose = False):
         return "Panose says \"monospaced\""
     return "Panose is invalid" + (" ({})".format(list(panose)) if panose else "")
 
+def panose_proportion_to_text(value):
+    """ Interpret a Panose proportion value (4th value) for family 2 (latin text) """
+    proportion = {
+            0: "Any", 1: "No Fit", 2: "Old Style", 3: "Modern", 4: "Even Width",
+            5: "Extended", 6: "Condensed", 7: "Very Extended", 8: "Very Condensed",
+            9: "Monospaced" }
+    return proportion.get(value, "??? {}".format(value))
+
 def is_monospaced(font):
     """ Check if a font is probably monospaced """
     # Some fonts lie (or have not any Panose flag set), spot check monospaced:
@@ -222,18 +230,18 @@ def is_monospaced(font):
     # We believe our own check more then Panose ;-D
     return (width_mono, None if width_mono else glyph)
 
-def force_panose_monospace(font):
-    """ Forces the Panose flag to monospace if they are unset or halfway ok already """
+def force_panose_monospaced(font):
+    """ Forces the Panose flag to monospaced if they are unset or halfway ok already """
     # For some Windows applications (e.g. 'cmd'), they seem to honour the Panose table
     # https://forum.high-logic.com/postedfiles/Panose.pdf
     panose = list(font.os2_panose)
     if panose[0] == 0: # 0 (1st value) = family kind; 0 = any (default)
         panose[0] = 2 # make kind latin text and display
-        print("  Setting Panose 'Family Kind' to 'Latin Text and Display'")
+        print("  Setting Panose 'Family Kind' to 'Latin Text and Display' (was 'Any')")
         font.os2_panose = tuple(panose)
     if panose[0] == 2 and panose[3] != 9:
-        panose[3] = 9 # 3 (4th value) = propotion; 9 = monospaced
-        print("  Setting Panose 'Proportion' to 'Monospace'")
+        print("  Setting Panose 'Proportion' to 'Monospaced' (was '{}')".format(panose_proportion_to_text(panose[3])))
+        panose[3] = 9 # 3 (4th value) = proportion; 9 = monospaced
         font.os2_panose = tuple(panose)
 
 def get_advance_width(font, extended, minimum):
@@ -707,7 +715,7 @@ class font_patcher:
             if self.args.single <= 1:
                 sys.exit(projectName + ": Font will not be patched! Give --mono (or -s, or --use-single-width-glyphs) twice to force patching")
         if width_mono:
-            force_panose_monospace(self.sourceFont)
+            force_panose_monospaced(self.sourceFont)
 
 
     def setup_patch_set(self):
