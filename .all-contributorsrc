@@ -1179,7 +1179,7 @@
   ],
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true,
+  "skipCi": false,
   "contributorsPerLine": 7,
   "commitConvention": "angular"
 }

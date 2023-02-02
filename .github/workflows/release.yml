@@ -10,6 +10,7 @@ on:
   #     - 'images/**'
   #     - '**.md'
   #     - '.all-contributorsrc'
+  #     - 'CONTRIBUTORS.md'
   #     - 'chocolatey/**'
   #     - 'bin/scripts/lib/**'
   #     - 'Dockerfile'
