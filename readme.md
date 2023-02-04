@@ -339,36 +339,32 @@ See: [Font Patcher](#font-patcher) for usage
 	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
 </h2>
 
-Patching the font of your own choosing for use with the [VimDevIcons ➶][vim-devicons]:
-* requires: Python 2 (or Python 3), `python-fontforge` package (version `20141231` or later, see
-  the [install instructions](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
-* alternative install method on OSX: `brew install fontforge`
-* alternative method on Linux: Using the [AppImage](https://github.com/fontforge/fontforge/releases)
-* alternative method using Docker: [Docker Hub](https://hub.docker.com/r/nerdfonts/patcher)
-* Usage:
-
-  ```
-  ./font-patcher PATH_TO_FONT
-  ```
-
-* Alternative usage: Execute the patcher with the FontForge binary using the script flag:
-
+Patching the font of your own choosing:
+* Use the script
+  * Download script and its helper files as [archive](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip) and extract
+  * Just downloading the `font-patcher` script is not enough.
+  * Requires: Fontforge, Python 3, `python-fontforge` and `argparse` packages
+    * Fontforge can be installed as package
+    * or on OSX via `brew install fontforge`
+    * or as [AppImage](https://github.com/fontforge/fontforge/releases)
+  * Usage, recommended:
   ```
   fontforge -script font-patcher PATH_TO_FONT
   ```
+  * Usage, direct (more convenient call, if it works for you):
+  ```
+  ./font-patcher PATH_TO_FONT
+  ```
+  * Usage, with Fontforge AppImage
 
-* Patching fonts using the AppImage:
-
-  _Note_: `chmod u+x` the AppImage after download. All supplied paths need to be **absolute** and an explicit output path is required! If everything is located in the same directory, you can use the `$PWD` shorthand.
-
+    _Note_: `chmod u+x` the AppImage after download. All supplied paths need to be **absolute** and an explicit output path is required! If everything is located in the same directory, you can use the `$PWD` shorthand.
   ```
   ./FontForge.AppImage -script $PWD/font-patcher $PWD/BaseFont.ttf -out /tmp
   ```
-  
-* Patching fonts with Docker:
 
+* Use docker
   ```
-  docker run -v /path/to/fonts:/in -v /path/for/output:/out nerdfonts/patcher [OPTIONS]
+  docker run --rm -v /path/to/fonts:/in -v /path/for/output:/out nerdfonts/patcher [OPTIONS]
   ```
 
 Full options:
@@ -482,6 +478,12 @@ docker run --rm -v ~/Desktop/myfont/patchme:/in -v ~/Desktop/myfont/patched:/out
 
   ```
   ./gotta-patch-em-all-font-patcher\!.sh Hermit
+  ```
+
+* or to specific directory name start:
+
+  ```
+  ./gotta-patch-em-all-font-patcher\!.sh /Heavy
   ```
 
 ## Contributing
