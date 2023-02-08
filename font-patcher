@@ -899,11 +899,22 @@ class font_patcher:
                 0xf0ca, # dash
             ]}
         WEATH_SCALE_LIST = {'ScaleGroups': [
+            [0xf03c, 0xf042, 0xf045 ], # degree signs
+            [0xf043, 0xf044, 0xf048, 0xf04b, 0xf04c, 0xf04d, 0xf057, 0xf058, 0xf087, 0xf088], # arrows
+            range(0xf053, 0xf055 + 1), # thermometers
+            [*range(0xf059, 0xf061 + 1), 0xf0b1], # wind directions
+            range(0xf089, 0xf094 + 1), # clocks
             range(0xf095, 0xf0b0 + 1), # moon phases
             range(0xf0b7, 0xf0c3 + 1), # wind strengths
-            range(0xf053, 0xf055 + 1), # thermometer
-            [0xf06e, 0xf070 ], # solar eclipse
-            [0xf042, 0xf045 ], # degree sign
+            [0xf06e, 0xf070 ], # solar/lunar eclipse
+            # Note: Codepoints listed before that are also in the following range
+            # will take the scaling of the previous group (the ScaleGroups are
+            # searched through in definition order).
+            # But be careful, the combined bounding box for the following group
+            # _will_ include all glyphs in its definition: Make sure the exempt
+            # glyphs from above are smaller (do not extend) the combined bounding
+            # box of this range:
+            range(0xf000, 0xf0cb + 1), # lots of clouds and other (Please read note above!)
         ]}
         MDI_SCALE_LIST = {'ScaleGlyph': 0xf068d, # 'solid' fills complete design space
             'GlyphsToScale+': [
