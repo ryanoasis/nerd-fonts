@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.9"
+script_version = "3.5.10"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -1302,14 +1302,13 @@ class font_patcher:
                     x_align_distance += self.font_dim['width'] - sym_dim['width']
                     if not self.args.single and '2' in sym_attr['stretch']:
                         x_align_distance += self.font_dim['width']
+                # If symbol glyph is wider than target font cell, just left-align
+                x_align_distance = max(-sym_dim['xmin'], x_align_distance)
 
             if overlap:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
-                if sym_attr['align'] == 'r' and not self.args.nonmono:
-                    # Nonmono is 'left aligned' per definition, translation does not help here
-                    x_align_distance += overlap_width
 
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
             self.sourceFont[currentSourceFontGlyph].transform(align_matrix)
