@@ -3,7 +3,7 @@ name: Release font patcher from master
 on:
   create:
   push:
-    branches: master
+    #branches: master
     paths:
       - font-patcher
       - src/glyphs/**
@@ -17,26 +17,41 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    outputs:
+      changed: ${{ steps.updated-or-not.outputs.updated }}
     steps:
-    
+    - name: install zipcmp
+      run: sudo apt-get install -y zipcmp
     - name: Grab the script and its dependencies from the repo
       uses: snow-actions/sparse-checkout@v1.2.0
       with:
         patterns: |
+          FontPatcher.zip
           font-patcher
           src/glyphs
           src/archive-font-patcher-readme.md
           bin/scripts/archive-font-patcher.sh
           bin/scripts/name_parser
-          
     - run: chmod +x 
         font-patcher
         bin/scripts/archive-font-patcher.sh
         bin/scripts/name_parser        
     - run: bin/scripts/archive-font-patcher.sh
+    - uses: actions/upload-artifact@v2
+      with:
+        name: FontPatcher.zip
+        path: archives/FontPatcher.zip
+    - id: updated-or-not
+      run: |
+        if zipcmp archives/FontPatcher.zip ./FontPatcher.zip ; then
+          echo "updated=false" | tee -a $GITHUB_OUTPUT
+        else
+          echo "updated=true" | tee -a $GITHUB_OUTPUT
+        fi
     - run: cp archives/FontPatcher.zip . -f
     - uses: EndBug/add-and-commit@v9
+      if: steps.updated-or-not.outputs.updated == 'true'
+      #needs to be quoted
       with:
         fetch: false
         add: "FontPatcher.zip"
