@@ -11,6 +11,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `fpfix.py`: Can be used to set isFixedPitch property in a font [x]
 * `generate-casks.sh`: Generates cask files for fonts from data in `archives/` [6]
 * `generate-css.sh`: Generates the Nerd Fonts CCS, which can be used to access the glyphs on a web page, and the Cheat Sheet [1]
+* `generate-extraglyphs.py:` Generates `extraglyphs.sfd` from Hack Regular [4]
 * `generate-fontconfig.sh`: Generates font configuration to enable use of unpatched fonts with Symbols Only Nerd Font [1]
 * `generate-font-image-previews.sh`: Generates the preview images for `nerdfonts.com` (i.e. gh-pages) [3]
 * `generate-glyph-info-from-set.py`: Generate the `i_xxx.sh` file from a glyph source (font) file, if the glyphs are named correctly [4]
