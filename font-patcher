@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.4"
+script_version = "3.5.5"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -269,6 +269,17 @@ def report_advance_widths(font):
     return "Advance widths (base/extended): {} - {} / {} - {}".format(
         get_advance_width(font, True, True), get_advance_width(font, False, True),
         get_advance_width(font, False, False), get_advance_width(font, True, False))
+
+def get_btb_metrics(font):
+    """ Get the baseline to baseline distance for all three metrics """
+    hhea_height = font.hhea_ascent - font.hhea_descent
+    typo_height = font.os2_typoascent - font.os2_typodescent
+    win_height = font.os2_winascent + font.os2_windescent
+    win_gap = max(0, font.hhea_linegap - win_height + hhea_height)
+    hhea_btb = hhea_height + font.hhea_linegap
+    typo_btb = typo_height + font.os2_typolinegap
+    win_btb = win_height + win_gap
+    return (hhea_btb, typo_btb, win_btb, win_gap)
 
 
 class font_patcher:
@@ -982,17 +993,11 @@ class font_patcher:
         # and we try to sort this out here
         # See also https://glyphsapp.com/learn/vertical-metrics
         # See also https://github.com/source-foundry/font-line
-        hhea_height = self.sourceFont.hhea_ascent - self.sourceFont.hhea_descent
-        typo_height = self.sourceFont.os2_typoascent - self.sourceFont.os2_typodescent
-        win_height = self.sourceFont.os2_winascent + self.sourceFont.os2_windescent
-        win_gap = max(0, self.sourceFont.hhea_linegap - win_height + hhea_height)
-        hhea_btb = hhea_height + self.sourceFont.hhea_linegap
-        typo_btb = typo_height + self.sourceFont.os2_typolinegap
-        win_btb = win_height + win_gap
+        (hhea_btb, typo_btb, win_btb, win_gap) = get_btb_metrics(self.sourceFont)
         use_typo = self.sourceFont.os2_use_typo_metrics != 0
 
         # We use either TYPO (1) or WIN (2) and compare with HHEA
-        # and use HHEA (0) if the fonts seems broken
+        # and use HHEA (0) if the fonts seems broken - no WIN, see #1056
         our_btb = typo_btb if use_typo else win_btb
         if our_btb == hhea_btb:
             metrics = 1 if use_typo else 2 # conforming font
@@ -1007,10 +1012,10 @@ class font_patcher:
         self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0}
 
         if metrics == 0:
-            self.font_dim['ymin'] = self.sourceFont.hhea_descent + half_gap(self.sourceFont.hhea_linegap, False)
+            self.font_dim['ymin'] = self.sourceFont.hhea_descent - half_gap(self.sourceFont.hhea_linegap, False)
             self.font_dim['ymax'] = self.sourceFont.hhea_ascent + half_gap(self.sourceFont.hhea_linegap, True)
         elif metrics == 1:
-            self.font_dim['ymin'] = self.sourceFont.os2_typodescent + half_gap(self.sourceFont.os2_typolinegap, False)
+            self.font_dim['ymin'] = self.sourceFont.os2_typodescent - half_gap(self.sourceFont.os2_typolinegap, False)
             self.font_dim['ymax'] = self.sourceFont.os2_typoascent + half_gap(self.sourceFont.os2_typolinegap, True)
         else:
             self.font_dim['ymin'] = -self.sourceFont.os2_windescent + half_gap(win_gap, False)
@@ -1042,6 +1047,9 @@ class font_patcher:
         self.sourceFont.hhea_descent = self.sourceFont.os2_typodescent
         self.sourceFont.hhea_linegap = self.sourceFont.os2_typolinegap
         self.sourceFont.os2_use_typo_metrics = 1
+        (check_hhea_btb, check_typo_btb, check_win_btb, _) = get_btb_metrics(self.sourceFont)
+        if check_hhea_btb != check_typo_btb or check_typo_btb != check_win_btb or check_win_btb != our_btb:
+            sys.exit("{}: Error in baseline to baseline code detected".format(projectName))
 
         # Step 2
         # Find the biggest char width and advance width
