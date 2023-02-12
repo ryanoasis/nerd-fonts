@@ -1039,6 +1039,7 @@ class font_patcher:
                 'width' : self.sourceFont.em,
                 'height': self.sourceFont.descent + self.sourceFont.ascent,
             }
+            our_btb = self.sourceFont.descent + self.sourceFont.ascent
         elif self.font_dim['height'] < 0:
             sys.exit("{}: Can not detect sane font height".format(projectName))
 
