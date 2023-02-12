@@ -294,7 +294,7 @@ Ve a: [Parchador de fuentes](#font-patcher) para ver como usarlo.
 </h2>
 
 Parcha la fuente de tu preferencia para usar los [VimDevIcons ➶][vim-devicons]:
-* requiere: Python 2 (o Python 3), el paquete `python-fontforge` (version `20141231` o superior, mira
+* requiere: Python 3, el paquete `python-fontforge` (version `20141231` o superior, mira
   las [instrucciones de instalación](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * método alternativo de instalación en OSX: `brew install fontforge`
 * Uso:

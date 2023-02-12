@@ -372,7 +372,7 @@ Voir: [Font Patcher](#font-patcher) pour utilisation
 </h2>
 
 Générer la police de votre choix pour l'utiliser avec [VimDevIcons ➶][vim-devicons]:
-* Requis : Python 2 (or Python 3), `python-fontforge` package (version `20141231` ou plus récente, voir
+* Requis : Python 3, `python-fontforge` package (version `20141231` ou plus récente, voir
   les [instructions d'installation](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * Méthode alternative sur OSX : `brew install fontforge`
 * Utilisation:

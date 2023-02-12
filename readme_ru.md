@@ -344,7 +344,7 @@ Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fon
 </h2>
 
 Исправление шрифта по собственному выбору для использования с [VimDevIcons ➶][vim-devicons]:
-* требуется: Python 2 (или Python 3), python-fontforge package (версия 20141231 или более поздние, смотрите
+* требуется: Python 3, python-fontforge package (версия 20141231 или более поздние, смотрите
   [инструкцию по установке](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * альтернативный способ установки на macOS (OS X): `brew install fontforge`
 * Используйте:

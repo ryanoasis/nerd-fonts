@@ -347,7 +347,7 @@ Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fon
 </h2>
 
 可以通过[VimDevIcons ➶][vim-devicons]打包你选中的字体:
-* 需要: Python 2 (or Python 3), python-fontforge package (version 20141231 或者更新版本，请见 [安装说明](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
+* 需要: Python 3, python-fontforge package (version 20141231 或者更新版本，请见 [安装说明](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * OSX上的替代安装方法为: `brew install fontforge`
 * 使用:
 

@@ -291,7 +291,7 @@ Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fon
 
 Виправлення шрифту за власним вибором для використання з [VimDevIcons ➶][vim-devicons]:
 
--   вимагає: Python 2 (чи Python 3), `python-fontforge` пакет (версіі `20141231` чи пізніше, дивись [інструкції по встановленню](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
+-   вимагає: Python 3, `python-fontforge` пакет (версіі `20141231` чи пізніше, дивись [інструкції по встановленню](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 -   альтернативний метод інсталювання на OSX: `brew install fontforge`
 -   Використання:
 
