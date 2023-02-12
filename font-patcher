@@ -1018,7 +1018,7 @@ class font_patcher:
             self.font_dim['ymin'] = self.sourceFont.os2_typodescent - half_gap(self.sourceFont.os2_typolinegap, False)
             self.font_dim['ymax'] = self.sourceFont.os2_typoascent + half_gap(self.sourceFont.os2_typolinegap, True)
         else:
-            self.font_dim['ymin'] = -self.sourceFont.os2_windescent + half_gap(win_gap, False)
+            self.font_dim['ymin'] = -self.sourceFont.os2_windescent - half_gap(win_gap, False)
             self.font_dim['ymax'] = self.sourceFont.os2_winascent + half_gap(win_gap, True)
 
         # Calculate font height
