@@ -1176,6 +1176,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "teatimeguest",
+      "name": "teatimeguest",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90523111?v=4",
+      "profile": "https://github.com/teatimeguest",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
