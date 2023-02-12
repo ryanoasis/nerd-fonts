@@ -289,7 +289,7 @@ Vê: [Modificador de tipo de letra](#font-patcher) para instruções de utiliza�
 </h2>
 
 Modificar o tipo de letra à tua escolha com [VimDevIcons ➶][vim-devicons]:
-* requer: Python 2 (ou Python 3), o pacote `python-fontforge` (versão `20141231` ou mais recente, vê
+* requer: Python 3, o pacote `python-fontforge` (versão `20141231` ou mais recente, vê
   as [instruções de instalação (em inglês)](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * método alternativo para macOS: `brew install fontforge`
 * Utilização:

@@ -293,7 +293,7 @@ Leggi: [Font Patcher](#font-patcher) per come invocarlo
 </h2>
 
 Modificare il font di tua scelta per utilizzare i [VimDevIcons ➶][vim-devicons]:
-* richiede: Python 2 (o Python 3), il modulo `python-fontforge` (versione `20141231` o successiva, leggi
+* richiede: Python 3, il modulo `python-fontforge` (versione `20141231` o successiva, leggi
   le [istruzioni d’installazione](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
 * metodi d’installazione alternativo su OSX: `brew install fontforge`
 * Utilizzo:

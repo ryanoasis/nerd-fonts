@@ -290,7 +290,7 @@ Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fon
 </h2>
 
 [VimDevIcons ➶][vim-devicons]에서 자신이 선택한 폰트를 패치하기:
-* 요구 사항: Python 2 (또는 Python 3), `python-fontforge` 패키지 (버전 `20141231` 또는 그 이상, [설치 안내](http://designwithfontforge.com/en-US/Installing_Fontforge.html)를 참고하세요.)
+* 요구 사항: Python 3, `python-fontforge` 패키지 (버전 `20141231` 또는 그 이상, [설치 안내](http://designwithfontforge.com/en-US/Installing_Fontforge.html)를 참고하세요.)
 * OSX의 설치 방법: `brew install fontforge`
 * 사용법:
 
