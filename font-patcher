@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.6"
+script_version = "3.5.7"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -21,6 +21,7 @@ from argparse import RawTextHelpFormatter
 import errno
 import subprocess
 import json
+from enum import Enum
 try:
     import configparser
 except ImportError:
@@ -996,30 +997,34 @@ class font_patcher:
         (hhea_btb, typo_btb, win_btb, win_gap) = get_btb_metrics(self.sourceFont)
         use_typo = self.sourceFont.os2_use_typo_metrics != 0
 
+        Metric = Enum('Metric', ['HHEA', 'TYPO', 'WIN'])
+
         # We use either TYPO (1) or WIN (2) and compare with HHEA
         # and use HHEA (0) if the fonts seems broken - no WIN, see #1056
         our_btb = typo_btb if use_typo else win_btb
         if our_btb == hhea_btb:
-            metrics = 1 if use_typo else 2 # conforming font
+            metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
         else:
             # We trust the WIN metric more, see experiments in #1056
             print("{}: WARNING Font vertical metrics inconsistent (HHEA {} / TYPO {} / WIN {}), using WIN".format(projectName, hhea_btb, typo_btb, win_btb))
             our_btb = win_btb
-            metrics = 1
+            metrics = Metric.WIN
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
         self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0}
 
-        if metrics == 0:
+        if metrics == Metric.HHEA:
             self.font_dim['ymin'] = self.sourceFont.hhea_descent - half_gap(self.sourceFont.hhea_linegap, False)
             self.font_dim['ymax'] = self.sourceFont.hhea_ascent + half_gap(self.sourceFont.hhea_linegap, True)
-        elif metrics == 1:
+        elif metrics == Metric.TYPO:
             self.font_dim['ymin'] = self.sourceFont.os2_typodescent - half_gap(self.sourceFont.os2_typolinegap, False)
             self.font_dim['ymax'] = self.sourceFont.os2_typoascent + half_gap(self.sourceFont.os2_typolinegap, True)
-        else:
+        elif metrics == Metric.WIN:
             self.font_dim['ymin'] = -self.sourceFont.os2_windescent - half_gap(win_gap, False)
             self.font_dim['ymax'] = self.sourceFont.os2_winascent + half_gap(win_gap, True)
+        else:
+            pass # Will fail the metrics check some line later
 
         # Calculate font height
         self.font_dim['height'] = -self.font_dim['ymin'] + self.font_dim['ymax']
