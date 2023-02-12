@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.8"
+script_version = "3.5.9"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -734,6 +734,9 @@ class font_patcher:
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
         # Supported params: overlap | careful
         # Overlap value is used horizontally but vertically limited to 0.01
+        # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
+        # '1' means occupu 1 cell (default for 'xy')
+        # '2' means occupy 2 cells (default for 'pa')
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
@@ -751,16 +754,16 @@ class font_patcher:
             0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.5}},
 
             # Bottom Triangles
-            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
-            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
-            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
-            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
+            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Top Triangles
-            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
-            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
-            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02}},
-            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
+            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
 
             # Flames
             0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
@@ -769,25 +772,26 @@ class font_patcher:
             0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
 
             # Small squares
-            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
-            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.86}},
+            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.86}},
 
             # Bigger squares
-            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
-            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
+            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
 
             # Waveform
             0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
             0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
 
             # Hexagons
-            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02, 'xy-ratio': 0.85}},
+            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'xy-ratio': 0.865}},
 
             # Legos
-            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
-            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {}},
-            0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
+            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': 'pa', 'params': {}},
+            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
+            0xe0d0: {'align': 'l', 'valign': 'c', 'stretch': 'pa', 'params': {}},
+            0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Top and bottom trapezoid
             0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
@@ -1095,7 +1099,7 @@ class font_patcher:
 
         # For monospaced fonts all chars need to be maximum 'one' space wide
         # other fonts allows double width glyphs for 'pa' or if requested with '2'
-        if self.args.single or (stretch != 'pa' and '2' not in stretch):
+        if self.args.single or ('pa' not in stretch and '2' not in stretch) or '1' in stretch:
             relative_width = 1.0
         else:
             relative_width = 2.0
@@ -1107,7 +1111,7 @@ class font_patcher:
         target_height = self.font_dim['height']
         scale_ratio_y = target_height / sym_dim['height']
 
-        if stretch == 'pa':
+        if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
             if not self.args.single:
