@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.5"
+script_version = "3.5.6"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -908,7 +908,7 @@ class font_patcher:
         # Define the character ranges
         # Symbol font ranges
         self.patch_set = [
-            {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5AA, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5AC, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_HEAVYBRACKETS},
             {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons.ttf",                                   'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
