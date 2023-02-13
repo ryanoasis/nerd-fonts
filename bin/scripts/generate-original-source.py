@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Nerd Fonts Version: 2.3.3
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 # Generates original-source.otf from individual glyphs
 #
 # Idea & original code taken from
@@ -14,7 +14,8 @@ import psMat
 # Double-quotes required here, for version-bump.sh:
 version = "2.3.3"
 
-start_codepoint = 0xE4FA
+start_codepoint = 0xE4FA # with shift this is 0xE5FA
+end_codepoint = 0xE5FF # Next set starts at 0xE700 - 0x0100 shift = 0xE600
 codepoint_shift = 0x0100 # shift introduced by font-patcher
 
 vector_datafile = 'icons.tsv'
@@ -28,7 +29,7 @@ def hasGaps(data, start_codepoint):
     """ Takes a list of integers and checks that it contains no gaps """
     for i in range(min(data) + 1, max(data)):
         if not i in data:
-            print("Gap at offset {}".format(i - start_codepoint))
+            print('Gap at offset {}'.format(i - start_codepoint))
             return True
     return False
 
@@ -157,6 +158,9 @@ icon_datasets, _, num_aliases = readIconFile(os.path.join(vectorsdir, vector_dat
 gaps = ' (with gaps)' if hasGaps(icon_datasets.keys(), start_codepoint) else ''
 
 for codepoint, data in icon_datasets.items():
+    if codepoint not in range(start_codepoint, end_codepoint + 1):
+        print('FATAL: We are leaving the allocated codepoint range with "{}", bailing out'.format(data[0][0]))
+        exit(1)
     addIcon(codepoint, data[0][0], data[1])
 num_icons = len(icon_datasets)
 
