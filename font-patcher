@@ -1127,7 +1127,6 @@ class font_patcher:
         """ Copies symbol glyphs into self.sourceFont """
         progressText = ''
         careful = False
-        glyphSetLength = 0
         sourceFontCounter = 0
 
         if self.args.careful:
@@ -1148,14 +1147,12 @@ class font_patcher:
         glyphSetLength = len(symbolFontSelection)
 
         if not self.args.quiet:
-            sys.stdout.write("Adding " + str(max(1, glyphSetLength)) + " Glyphs from " + setName + " Set \n")
+            sys.stdout.write("Adding {} Glyphs from {} Set\n".format(glyphSetLength, setName))
 
         currentSourceFontGlyph = -1 # initialize for the exactEncoding case
         width_warning = False
 
         for index, sym_glyph in enumerate(symbolFontSelection):
-            index = max(1, index)
-
             sym_attr = attributes.get(sym_glyph.unicode)
             if sym_attr is None:
                 sym_attr = attributes['default']
