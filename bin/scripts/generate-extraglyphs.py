@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Nerd Fonts Version: 2.3.3
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 # Generates extrasymbols.sfd from Hack
 
 import os
@@ -10,7 +10,7 @@ srcdir = '../../src'
 srcfont = 'unpatched-fonts/Hack/Regular/Hack-Regular.ttf'
 outfont = 'glyphs/extraglyphs.sfd'
 
-print('Opening {}'.format(outfont))
+print('Opening {}'.format(srcfont))
 font = fontforge.open(os.path.join(srcdir, srcfont))
 
 font.selection.select(
