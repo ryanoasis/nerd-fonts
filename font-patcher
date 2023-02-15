@@ -1108,7 +1108,14 @@ class font_patcher:
                 # print("New MAXWIDTH-A {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if xmax > self.font_dim['xmax']:
                 self.font_dim['xmax'] = xmax
+                if not warned and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
+                    print("Warning: Extended glyphs wider than basic glyphs\n  {}".format(
+                        report_advance_widths(self.sourceFont)))
+                    warned = True
                 # print("New MAXWIDTH-B {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
+        if not self.args.quiet and self.font_dim['width'] < self.font_dim['xmax']:
+            print("Warning: Font has negative right side bearing in extended glyphs")
+            self.font_dim['xmax'] = self.font_dim['width'] # In fact 'xmax' is never used
         # print("FINAL", self.font_dim)
 
 
