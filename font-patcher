@@ -1260,9 +1260,11 @@ class font_patcher:
             if glyph_scale_data is not None:
                 if glyph_scale_data[1] is not None:
                     sym_dim = glyph_scale_data[1] # Use combined bounding box
-                # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
-                # Except we do not have glyph_scale_data[1] always...
-                (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
+                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
+                else:
+                    # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
+                    # Except we do not have glyph_scale_data[1] always...
+                    (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
             else:
                 (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
 
