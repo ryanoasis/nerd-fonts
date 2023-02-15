@@ -736,6 +736,19 @@ class font_patcher:
 
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
+
+        self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
+        box_glyphs_target = len(list(self.sourceFont.selection))
+        box_glyphs_current = len(list(self.sourceFont.selection.byGlyphs))
+        if box_glyphs_target > box_glyphs_current:
+            # Sourcefont does not have all of these glyphs, do not mix sets
+            if not self.args.quiet and box_glyphs_current > 0:
+                print("INFO: {}/{} box drawing glyphs will be replaced".format(
+                    box_glyphs_current, box_glyphs_target))
+            box_keep = False
+        else:
+            box_keep = True # just scale do not copy
+
         # Supported params: overlap | careful | xy-ratio | dont_copy
         # Overlap value is used horizontally but vertically limited to 0.01
         # Careful does not overwrite/modify existing glyphs
@@ -823,7 +836,7 @@ class font_patcher:
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {'careful': True}}
         }
         SYM_ATTR_BOX = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}}
         }
 
         CUSTOM_ATTR = {
@@ -940,11 +953,6 @@ class font_patcher:
         ]}
         MDI_SCALE_LIST = None # Maybe later add some selected ScaleGroups
 
-        self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
-        if not self.args.quiet and len(list(self.sourceFont.selection.byGlyphs)) > 0:
-            print("INFO: {}/{} box drawing glyphs will be replaced".format(
-                len(list(self.sourceFont.selection.byGlyphs)),
-                len(list(self.sourceFont.selection))))
 
         # Define the character ranges
         # Symbol font ranges
