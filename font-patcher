@@ -735,11 +735,13 @@ class font_patcher:
 
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
-        # Supported params: overlap | careful
+        # Supported params: overlap | careful | xy-ratio | lazy
         # Overlap value is used horizontally but vertically limited to 0.01
+        # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
         # '2' means occupy 2 cells (default for 'pa')
+
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
@@ -874,7 +876,7 @@ class font_patcher:
             [0xea71, *range(0xeaa6, 0xeaab + 1), 0xeabc, 0xeb18, 0xeb87, 0xeb88, 0xeb8a, 0xeb8c, 0xebb4], # cicles
             [0xeacc, 0xeaba], # dash
         ]}
-        DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, # Android logo
+        DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
             'GlyphsToScale': [
                 (0xe6bd, 0xe6c3) # very small things
         ]}
@@ -899,7 +901,7 @@ class font_patcher:
             range(0xf221, 0xf22d + 1), # gender or so
             range(0xf255, 0xf25b + 1), # hand symbols
         ]}
-        OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, # looking glass (probably biggest glyph?)
+        OCTI_SCALE_LIST = {'ScaleGlyph': 0xF02E, # looking glass (probably biggest glyph?)
             'GlyphsToScale': [
                 (0xf03d, 0xf040), # arrows
                 0xf044, 0xf05a, 0xf05b, 0xf0aa, # triangles
