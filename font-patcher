@@ -343,6 +343,7 @@ class font_patcher:
                         sys.exit("{}: Can not open symbol source for '{}'\n{:>{}}  (i.e. {})".format(
                             projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
                     symfont = fontforge.open(os.path.join(self.args.glyphdir, patch['Filename']))
+                    symfont.encoding = 'UnicodeFull'
 
                     # Match the symbol font size to the source font size
                     symfont.em = self.sourceFont.em
