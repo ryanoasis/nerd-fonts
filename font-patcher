@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.12"
+script_version = "3.6.0"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -736,12 +736,13 @@ class font_patcher:
 
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
-        # Supported params: overlap | careful | xy-ratio | lazy
+        # Supported params: overlap | careful | xy-ratio | dont_copy
         # Overlap value is used horizontally but vertically limited to 0.01
         # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
         # '2' means occupy 2 cells (default for 'pa')
+        # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
 
         # Powerline dividers
         SYM_ATTR_POWERLINE = {
@@ -1181,7 +1182,9 @@ class font_patcher:
         glyphSetLength = len(symbolFontSelection)
 
         if not self.args.quiet:
-            sys.stdout.write("Adding {} Glyphs from {} Set\n".format(glyphSetLength, setName))
+            modify = attributes['default']['params'].get('dont_copy')
+            sys.stdout.write("{} {} Glyphs from {} Set\n".format(
+                "Adding" if not modify else "Rescaling", glyphSetLength, setName))
 
         currentSourceFontGlyph = -1 # initialize for the exactEncoding case
         width_warning = False
@@ -1241,20 +1244,26 @@ class font_patcher:
                 if currentSourceFontGlyph in self.sourceFont:
                     self.sourceFont[currentSourceFontGlyph].removePosSub("*")
 
-            # This will destroy any content currently in currentSourceFontGlyph, so do it first
-            glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
+            dont_copy = sym_attr['params'].get('dont_copy')
 
-            # Select and copy symbol from its encoding point
-            # We need to do this select after the careful check, this way we don't
-            # reset our selection before starting the next loop
-            symbolFont.selection.select(sym_glyph.encoding)
-            symbolFont.copy()
+            if dont_copy:
+                # Just prepare scaling of existing glyphs
+                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, self.sourceFont, currentSourceFontGlyph) if scaleRules is not None else None
+            else:
+                # This will destroy any content currently in currentSourceFontGlyph, so do it first
+                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
 
-            # Paste it
-            self.sourceFont.selection.select(currentSourceFontGlyph)
-            self.sourceFont.paste()
-            self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
-            self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
+                # Select and copy symbol from its encoding point
+                # We need to do this select after the careful check, this way we don't
+                # reset our selection before starting the next loop
+                symbolFont.selection.select(sym_glyph.encoding)
+                symbolFont.copy()
+
+                # Paste it
+                self.sourceFont.selection.select(currentSourceFontGlyph)
+                self.sourceFont.paste()
+                self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
+                self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
@@ -1551,7 +1560,7 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
         if glyph is None:
             # Glyph has been in defining range but is not in the actual font
             continue
-        if destGlyph:
+        if destGlyph and glyph.font != destGlyph.font:
             glyph.font.selection.select(glyph)
             glyph.font.copy()
             destGlyph.font.selection.select(destGlyph)
