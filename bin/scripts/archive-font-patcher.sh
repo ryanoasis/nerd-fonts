@@ -19,8 +19,8 @@ mini_readme="$outputdir/readme.md"
 cat "$parent_dir/src/archive-font-patcher-readme.md" >> "$mini_readme"
 if [ $# -ge 1 ]; then
   echo "Intemediate version, adding git version"
-  echo -e "\n## Version\n" >> "$mini_readme"
-  echo "This archive is created from $(git describe --tags --dirty)" >> "$mini_readme"
+  echo -e "\n## Version\nThis archive is created from\n" >> "$mini_readme"
+  git log --pretty=medium --no-decorate --no-abbrev -n 1 HEAD | sed 's/^/        /' >> "$mini_readme"
 fi
 
 # clear out the directory zips
