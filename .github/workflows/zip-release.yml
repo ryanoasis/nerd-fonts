@@ -1,60 +1,54 @@
-name: Create FontPatcher.zip from master
+name: Create FontPatcher.zip
 
 on:
-  create:
   push:
-    #branches: master
+    branches: master
     paths:
       - font-patcher
       - src/glyphs/**
       - src/archive-font-patcher-readme.me
       - bin/scripts/archive-font-patcher.sh
-      - bin/scripts/name_parser
-      - .github/workflows/release_master_fontpatcher-zip.yaml
+      - bin/scripts/name_parser/Fontname*.py
   workflow_dispatch:
-  
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      changed: ${{ steps.updated-or-not.outputs.updated }}
     steps:
-    - name: install zipcmp
-      run: sudo apt-get install -y zipcmp
-    - name: Grab the script and its dependencies from the repo
-      uses: snow-actions/sparse-checkout@v1.2.0
-      with:
-        patterns: |
-          FontPatcher.zip
-          font-patcher
-          src/glyphs
-          src/archive-font-patcher-readme.md
-          bin/scripts/archive-font-patcher.sh
-          bin/scripts/name_parser
-    - run: chmod +x 
-        font-patcher
-        bin/scripts/archive-font-patcher.sh
-        bin/scripts/name_parser        
-    - run: bin/scripts/archive-font-patcher.sh
-    - uses: actions/upload-artifact@v2
-      with:
-        name: FontPatcher.zip
-        path: archives/FontPatcher.zip
-    - id: updated-or-not
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Fetch dependencies
+      run: sudo apt install -y -q zipcmp
+
+    - name: Create archive
       run: |
-        if zipcmp archives/FontPatcher.zip ./FontPatcher.zip ; then
-          echo "updated=false" | tee -a $GITHUB_OUTPUT
-        else
-          echo "updated=true" | tee -a $GITHUB_OUTPUT
-        fi
-    - run: cp archives/FontPatcher.zip . -f
-    - uses: EndBug/add-and-commit@v9
-      if: steps.updated-or-not.outputs.updated == 'true'
-      #needs to be quoted
+        chmod u+x font-patcher bin/scripts/archive-font-patcher.sh
+        cd bin/scripts
+        ./archive-font-patcher.sh
+
+    - name: Upload archive as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        path: archives/FontPatcher.zip
+        retention-days: 1
+
+    - name: Check if archive contents changed
+      id: updated-or-not
+      run: |
+        (zipcmp archives/FontPatcher.zip ./FontPatcher.zip; \
+         echo "updated=$?" >> $GITHUB_OUTPUT) || true
+
+    - name: Prepare commit
+      if: steps.updated-or-not.outputs.updated != 0
+      run: cp -f archives/FontPatcher.zip .
+
+    - name: Commit new archive
+      uses: EndBug/add-and-commit@v9
+      if: steps.updated-or-not.outputs.updated != 0
       with:
         fetch: false
         add: "FontPatcher.zip"
-        message: "[ci] update FontPatcher.zip"
+        message: "[ci] Update FontPatcher.zip"
         committer_name: GitHub Actions
         committer_email: 41898282+github-actions[bot]@users.noreply.github.com
