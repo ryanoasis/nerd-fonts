@@ -1,4 +1,4 @@
-name: Release font patcher from master
+name: Create FontPatcher.zip from master
 
 on:
   create:
