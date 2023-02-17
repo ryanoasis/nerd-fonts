@@ -175,6 +175,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="http://goooler.github.io"><img src="https://avatars.githubusercontent.com/u/10363352?v=4?s=100" width="100px;" alt="Goooler"/><br /><sub><b>Goooler</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Goooler" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MicaelJarniac"><img src="https://avatars.githubusercontent.com/u/19514231?v=4?s=100" width="100px;" alt="Micael Jarniac"/><br /><sub><b>Micael Jarniac</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=MicaelJarniac" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/teatimeguest"><img src="https://avatars.githubusercontent.com/u/90523111?v=4?s=100" width="100px;" alt="teatimeguest"/><br /><sub><b>teatimeguest</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=teatimeguest" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://keybase.io/bri_"><img src="https://avatars.githubusercontent.com/u/284789?v=4?s=100" width="100px;" alt="bri"/><br /><sub><b>bri</b></sub></a><br /><a href="#infra-b-" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     </tr>
   </tbody>
 </table>
