@@ -1185,6 +1185,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "b-",
+      "name": "bri",
+      "avatar_url": "https://avatars.githubusercontent.com/u/284789?v=4",
+      "profile": "https://keybase.io/bri_",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "repoType": "github",
