@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.3
-# Script Version: 1.0.1
+# Script Version: 1.1.0
 
 text1='Testing'
 text2='Nerd Fonts'
 
 leftSymbolsCodes=('E0B0' 'E0B4' 'E0B8' 'E0BC' 'E0C0' 'E0C4' 'E0C6' 'E0C8' 'E0CC' 'E0CE' 'E0CF' 'E0CF' 'E0D1' 'E0D2')
+leftSymbols=('' '' '' '' '' '' '' '' '' '' '' '' '' '')
 rightSymbolsCodes=('E0B2' 'E0B6' 'E0BA' 'E0BE' 'E0C2' 'E0C5' 'E0C7' 'E0CA' 'E0CC' 'E0CE' 'E0CF' 'E0CF' 'E0D1' 'E0D4')
+rightSymbols=('' '' '' '' '' '' '' '' '' '' '' '' '' '')
 
 # shellcheck disable=SC2034
 # don't check unused vars we might want to use them later on
@@ -33,13 +35,13 @@ colorBgDefault='\033[49m'
 echo -e "$colorReset Nerd Fonts :: Testing Powerline Symbol size and alignment"
 
 for i in "${!leftSymbolsCodes[@]}"; do
-	symbol="\\u${leftSymbolsCodes[$i]}"
-	symbol2="\\u${rightSymbolsCodes[$i]}"
+	symbol=${leftSymbols[$i]}
+	symbol2=${rightSymbols[$i]}
 	code="${leftSymbolsCodes[$i]}"
 	code2="${rightSymbolsCodes[$i]}"
 
 	if [ "$code" = "$code2" ]; then
-		symbol2="\\u${rightSymbolsCodes[0]}"
+		symbol2=${rightSymbols[0]}
 		code2='None'
 	fi
 
