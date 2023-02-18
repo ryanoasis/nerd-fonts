@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.3
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 
 text1='Testing'
 text2='Nerd Fonts'
 
 leftSymbolsCodes=('E0B0' 'E0B4' 'E0B8' 'E0BC' 'E0C0' 'E0C4' 'E0C6' 'E0C8' 'E0CC' 'E0CE' 'E0CF' 'E0CF' 'E0D1' 'E0D2')
-rightSymbolsCodes=('E0B2' 'E0B6' 'E0BA' 'E0BE' 'E0C2' 'E0C5' 'E0C7' 'E0C8' 'E0CC' 'E0CE' 'E0CF' 'E0CF' 'E0D1' 'E0D4')
+rightSymbolsCodes=('E0B2' 'E0B6' 'E0BA' 'E0BE' 'E0C2' 'E0C5' 'E0C7' 'E0CA' 'E0CC' 'E0CE' 'E0CF' 'E0CF' 'E0D1' 'E0D4')
 
 # shellcheck disable=SC2034
 # don't check unused vars we might want to use them later on
