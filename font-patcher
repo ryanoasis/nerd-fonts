@@ -131,7 +131,7 @@ class TableHEADWriter:
 
     def goto(self, where):
         """ Go to a named location in the file or to the specified index """
-        if type(where) is str:
+        if isinstance(where, str):
             positions = {'checksumAdjustment': 2+2+4,
                          'flags': 2+2+4+4+4,
                          'lowestRecPPEM': 2+2+4+4+4+2+2+8+8+2+2+2+2+2,
@@ -448,9 +448,12 @@ class font_patcher:
 
 
     def setup_font_names(self, font):
+        print(font.persistent)
         font.fontname = font.persistent["fontname"]
-        font.fullname = font.persistent["fullname"]
-        font.familyname = font.persistent["familyname"]
+        if isinstance(font.persistent["fullname"], str):
+            font.fullname = font.persistent["fullname"]
+        if isinstance(font.persistent["familyname"], str):
+            font.familyname = font.persistent["familyname"]
         verboseAdditionalFontNameSuffix = " " + projectNameSingular
         if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
             additionalFontNameSuffix = " " + projectNameAbbreviation
@@ -497,7 +500,7 @@ class font_patcher:
             verboseAdditionalFontNameSuffix += " Mono"
 
         if FontnameParserOK and self.args.makegroups:
-            use_fullname = type(font.fullname) == str # Usually the fullname is better to parse
+            use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
             # Use fullname if it is 'equal' to the fontname
             if font.fullname:
                 use_fullname |= font.fontname.lower() == FontnameTools.postscript_char_filter(font.fullname).lower()
