@@ -748,6 +748,7 @@ class font_patcher:
         else:
             box_keep = True # just scale do not copy
 
+        # Stretch 'xz' or 'pa' (preserve aspect ratio)
         # Supported params: overlap | careful | xy-ratio | dont_copy
         # Overlap value is used horizontally but vertically limited to 0.01
         # Careful does not overwrite/modify existing glyphs
@@ -756,7 +757,9 @@ class font_patcher:
         # '2' means occupy 2 cells (default for 'pa')
         # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
 
-        # Powerline dividers
+        SYM_ATTR_DEFAULT = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
+        }
         SYM_ATTR_POWERLINE = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
@@ -816,12 +819,6 @@ class font_patcher:
             0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
             0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}}
         }
-
-        SYM_ATTR_DEFAULT = {
-            # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
-        }
-
         SYM_ATTR_FONTA = {
             # 'pa' == preserve aspect ratio
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
@@ -837,7 +834,6 @@ class font_patcher:
         SYM_ATTR_BOX = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}}
         }
-
         CUSTOM_ATTR = {
             # 'pa' == preserve aspect ratio
             'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
