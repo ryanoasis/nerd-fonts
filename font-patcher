@@ -449,7 +449,6 @@ class font_patcher:
 
 
     def setup_font_names(self, font):
-        print(font.persistent)
         font.fontname = font.persistent["fontname"]
         if isinstance(font.persistent["fullname"], str):
             font.fullname = font.persistent["fullname"]
