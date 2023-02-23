@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.6.0"
+script_version = "3.6.1"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -755,6 +755,7 @@ class font_patcher:
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
         # '2' means occupy 2 cells (default for 'pa')
+        # '!' means do the 'pa' scaling even with non mono fonts (else it just scales down, never up)
         # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
 
         SYM_ATTR_DEFAULT = {
@@ -818,6 +819,9 @@ class font_patcher:
             # Top and bottom trapezoid
             0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
             0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}}
+        }
+        SYM_ATTR_TRIGRAPH = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa1!', 'params': {'overlap': -0.10, 'careful': True}}
         }
         SYM_ATTR_FONTA = {
             # 'pa' == preserve aspect ratio
@@ -962,6 +966,7 @@ class font_patcher:
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0xE0CA, 'SymEnd': 0xE0CA, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0x2630, 'SymEnd': 0x2630, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_TRIGRAPH},
             {'Enabled': self.args.pomicons,             'Name': "Pomicons",                'Filename': "Pomicons.otf",                                   'Exact': True,  'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.fontawesome,          'Name': "Font Awesome",            'Filename': "font-awesome/FontAwesome.otf",                   'Exact': True,  'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,   'ScaleRules': FONTA_SCALE_LIST, 'Attributes': SYM_ATTR_FONTA},
             {'Enabled': self.args.fontawesomeextension, 'Name': "Font Awesome Extension",  'Filename': "font-awesome-extension.ttf",                     'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Maximize
@@ -1162,7 +1167,7 @@ class font_patcher:
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
-            if not self.args.single:
+            if not self.args.single and not '!' in stretch:
                 # non monospaced fonts just scale down on 'pa', not up
                 scale_ratio_x = min(scale_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
