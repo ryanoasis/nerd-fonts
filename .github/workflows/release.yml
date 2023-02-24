@@ -329,7 +329,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           fetch: false
-          add: '10-nerd-font-symbols.conf'
+          add: '65-nerd-font-symbols.conf'
           message: "[ci] Regenerate fontconfig"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com

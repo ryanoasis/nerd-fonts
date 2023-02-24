@@ -9,7 +9,7 @@
 
 parent_dir="$(pwd)/../../"
 unpatched_parent_dir="../../src/unpatched-fonts/"
-to="$parent_dir/10-nerd-font-symbols.conf"
+to="$parent_dir/65-nerd-font-symbols.conf"
 symbolfont="Symbols Nerd Font"
 LINE_PREFIX="# [Nerd Fonts] "
 families=()
