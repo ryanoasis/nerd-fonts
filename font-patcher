@@ -867,10 +867,17 @@ class font_patcher:
         # For historic reasons ScaleGroups is sometimes called 'new method' and ScaleGlyph 'old'.
         # The codepoints mentioned here are symbol-font-codepoints.
 
+        CODI_SCALE_LIST = {'ScaleGroups': [
+            range(0xea99, 0xeaa1 + 1), # arrows
+            range(0xeb6e, 0xeb71 + 1), # triangles
+            range(0xeab4, 0xeab7 + 1), # chevrons
+            [0xea71, *range(0xeaa6, 0xeaab + 1), 0xeabc, 0xeb18, 0xeb87, 0xeb88, 0xeb8a, 0xeb8c, 0xebb4], # cicles
+            [0xeacc, 0xeaba], # dash
+        ]}
         DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, # Android logo
             'GlyphsToScale': [
                 (0xe6bd, 0xe6c3) # very small things
-            ]}
+        ]}
         FONTA_SCALE_LIST = {'ScaleGroups': [
             [0xf005, 0xf006, 0xf089], # star, star empty, half star
             range(0xf026, 0xf028 + 1), # volume off, down, up
@@ -900,7 +907,7 @@ class font_patcher:
                 0xf071, 0xf09f, 0xf0a0, 0xf0a1, # small arrows
                 0xf078, 0xf0a2, 0xf0a3, 0xf0a4, # chevrons
                 0xf0ca, # dash
-            ]}
+        ]}
         WEATH_SCALE_LIST = {'ScaleGroups': [
             [0xf03c, 0xf042, 0xf045 ], # degree signs
             [0xf043, 0xf044, 0xf048, 0xf04b, 0xf04c, 0xf04d, 0xf057, 0xf058, 0xf087, 0xf088], # arrows
@@ -946,7 +953,7 @@ class font_patcher:
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Heart
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Zap
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons.ttf",                                   'Exact': False, 'SymStart': 0xF27C, 'SymEnd': 0xF27C, 'SrcStart': 0xF4A9, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Desktop
-            {'Enabled': self.args.codicons,             'Name': "Codicons",                'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEBEB, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.codicons,             'Name': "Codicons",                'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEBEB, 'SrcStart': None,   'ScaleRules': CODI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.custom,               'Name': "Custom",                  'Filename': self.args.custom,                                 'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': CUSTOM_ATTR}
         ]
 
