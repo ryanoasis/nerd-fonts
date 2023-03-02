@@ -347,7 +347,7 @@ jobs:
         id: push_css
         with:
           fetch: false
-          add: 'css'
+          add: "['css', 'glyphnames.json']"
           message: "[ci] Regenerate CSS files"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com

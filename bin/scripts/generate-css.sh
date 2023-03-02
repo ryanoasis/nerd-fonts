@@ -10,6 +10,7 @@ output_css_file="../../css/nerd-fonts-generated.css"
 output_css_min_file="../../css/nerd-fonts-generated.min.css"
 header_css_file="./data/css-header.txt"
 header_css_min_file="./data/css-min-header.txt"
+output_json_file="../../glyphnames.json"
 
 if [ ! -d "../../temp" ]; then
   mkdir "../../temp"
@@ -25,6 +26,7 @@ version="2.3.3"
 true > "$output_css_file" 2> /dev/null
 true > "$output_css_min_file" 2> /dev/null
 true > "$output_cheat_sheet_file" 2> /dev/null
+true > "$output_json_file" 2> /dev/null
 
 # describe how the classes were established
 {
@@ -44,6 +46,16 @@ true > "$output_cheat_sheet_file" 2> /dev/null
 cat "$header_css_min_file" | tr -d '\n' >> "$output_css_min_file"
 
 cat "$cheat_sheet_head_file" > "$output_cheat_sheet_file"
+
+# add top section of json
+{
+  printf "{\"METADATA\":{"
+  printf "\"website\":\"https://www.nerdfonts.com\","
+  printf "\"development-website\":\"https://github.com/ryanoasis/nerd-fonts\","
+  printf "\"version\":\"$version\","
+  printf "\"date\":\"$(date -u --rfc-3339=seconds)\""
+  printf "}"
+} >> "$output_json_file"
 
 echo;
 
@@ -94,8 +106,14 @@ for var in "${!i@}"; do
     printf "\\n"
   } >> "$output_cheat_sheet_file"
 
+  # generate json entry
+  {
+    printf ",\"%s\":\"%s\"" "$glyph_name" "$glyph_char"
+  } >> "$output_json_file"
+
 done
 
 cat "$cheat_sheet_foot_file" >> "$output_cheat_sheet_file"
+printf "}\n" >> "$output_json_file"
 
-printf "Generated CSS and Cheat Sheet HTML\\n"
+printf "Generated CSS, json, and Cheat Sheet HTML\\n"
