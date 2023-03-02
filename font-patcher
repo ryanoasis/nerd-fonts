@@ -1361,6 +1361,14 @@ class font_patcher:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
+                elif sym_attr['align'] == 'c':
+                    if overlap_width > 0:
+                        x_align_distance -= overlap_width / 2
+                elif sym_attr['align'] == 'r':
+                    # Check and correct overlap; it can go wrong if we have a xy-ratio limit
+                    correction = ((self.font_dim['xmin'] + self.font_dim['width'] + overlap_width) -
+                            (sym_dim['xmax'] + x_align_distance))
+                    x_align_distance += correction
 
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
             self.sourceFont[currentSourceFontGlyph].transform(align_matrix)
