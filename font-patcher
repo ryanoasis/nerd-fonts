@@ -1355,7 +1355,7 @@ class font_patcher:
                     if not self.args.single and '2' in sym_attr['stretch']:
                         x_align_distance += self.font_dim['width']
                 # If symbol glyph is wider than target font cell, just left-align
-                x_align_distance = max(-sym_dim['xmin'], x_align_distance)
+                x_align_distance = max(self.font_dim['xmin'] - sym_dim['xmin'], x_align_distance)
 
             if overlap:
                 overlap_width = self.font_dim['width'] * overlap
