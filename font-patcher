@@ -836,7 +836,11 @@ class font_patcher:
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {'careful': True}}
         }
         SYM_ATTR_BOX = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}},
+            # No overlap with checkered greys (commented out because that raises problems on rescaling clients)
+            # 0x2591: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
+            # 0x2592: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
+            # 0x2593: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
         }
         CUSTOM_ATTR = {
             # 'pa' == preserve aspect ratio
@@ -889,7 +893,9 @@ class font_patcher:
         BOX_SCALE_LIST = {'ScaleGroups': [
             [*range(0x2500, 0x2570 + 1), *range(0x2574, 0x257f + 1)], # box drawing
             range(0x2571, 0x2573 + 1), # diagonals
-            range(0x2580, 0x259f + 1), # blocks
+            [*range(0x2580, 0x2590 + 1), 0x2594, 0x2595], # blocks
+            range(0x2591, 0x2593 + 1), # greys
+            range(0x2594, 0x259f + 1), # quards (Note: quard 2597 in Hack is wrong, scales like block!)
         ]}
         CODI_SCALE_LIST = {'ScaleGroups': [
             range(0xea99, 0xeaa1 + 1), # arrows
