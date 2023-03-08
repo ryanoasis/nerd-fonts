@@ -292,6 +292,7 @@ class font_patcher:
         self.patch_set = None  # class 'list'
         self.font_dim = None  # class 'dict'
         self.font_extrawide = False
+        self.source_monospaced = None # Later True or False
         self.onlybitmaps = 0
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -301,8 +302,7 @@ class font_patcher:
         self.setup_version()
         self.get_essential_references()
         self.setup_name_backup(font)
-        if not self.args.nonmono:
-            self.assert_monospace()
+        self.assert_monospace()
         self.remove_ligatures()
         self.setup_patch_set()
         self.get_sourcefont_dimensions()
@@ -716,6 +716,9 @@ class font_patcher:
     def assert_monospace(self):
         # Check if the sourcefont is monospaced
         width_mono, offending_char = is_monospaced(self.sourceFont)
+        self.source_monospaced = width_mono
+        if self.args.nonmono:
+            return
         panose_mono = check_panose_monospaced(self.sourceFont)
         # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
         if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
@@ -736,19 +739,21 @@ class font_patcher:
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
 
-        self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
-        box_glyphs_target = len(list(self.sourceFont.selection))
-        box_glyphs_current = len(list(self.sourceFont.selection.byGlyphs))
-        if box_glyphs_target > box_glyphs_current:
-            # Sourcefont does not have all of these glyphs, do not mix sets
-            if not self.args.quiet and box_glyphs_current > 0:
-                print("INFO: {}/{} box drawing glyphs will be replaced".format(
-                    box_glyphs_current, box_glyphs_target))
-            box_keep = False
-            box_enabled = True
-        else:
-            box_keep = True # just scale do not copy
-            box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
+        box_enabled = self.source_monospaced # Box glyph only for monospaced
+        if box_enabled:
+            self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
+            box_glyphs_target = len(list(self.sourceFont.selection))
+            box_glyphs_current = len(list(self.sourceFont.selection.byGlyphs))
+            if box_glyphs_target > box_glyphs_current:
+                # Sourcefont does not have all of these glyphs, do not mix sets
+                if not self.args.quiet and box_glyphs_current > 0:
+                    print("INFO: {}/{} box drawing glyphs will be replaced".format(
+                        box_glyphs_current, box_glyphs_target))
+                box_keep = False
+                box_enabled = True
+            else:
+                box_keep = True # just scale do not copy
+                box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
         # Supported params: overlap | careful | xy-ratio | dont_copy
