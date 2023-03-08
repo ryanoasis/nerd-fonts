@@ -745,8 +745,10 @@ class font_patcher:
                 print("INFO: {}/{} box drawing glyphs will be replaced".format(
                     box_glyphs_current, box_glyphs_target))
             box_keep = False
+            box_enabled = True
         else:
             box_keep = True # just scale do not copy
+            box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
         # Supported params: overlap | careful | xy-ratio | dont_copy
@@ -964,7 +966,7 @@ class font_patcher:
         self.patch_set = [
             {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_HEAVYBRACKETS},
-            {'Enabled': True,                           'Name': "Box Drawing",             'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
+            {'Enabled': box_enabled,                    'Name': "Box Drawing",             'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
             {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons.ttf",                                   'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
