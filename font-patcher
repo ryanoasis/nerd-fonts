@@ -1116,7 +1116,8 @@ class font_patcher:
         # Step 2
         # Find the biggest char width and advance width
         # 0x00-0x17f is the Latin Extended-A range
-        warned = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
+        warned1 = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
+        warned2 = warned1
         for glyph in range(0x21, 0x17f):
             if glyph in range(0x7F, 0xBF) or glyph in [
                     0x132, 0x133, # IJ, ij (in Overpass Mono)
@@ -1132,20 +1133,20 @@ class font_patcher:
             # print("WIDTH {:X} {} ({} {})".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if self.font_dim['width'] < self.sourceFont[glyph].width:
                 self.font_dim['width'] = self.sourceFont[glyph].width
-                if not warned and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
+                if not warned1 and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
                     print("Warning: Extended glyphs wider than basic glyphs, results might be useless\n  {}".format(
                         report_advance_widths(self.sourceFont)))
-                    warned = True
+                    warned1 = True
                 # print("New MAXWIDTH-A {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if xmax > self.font_dim['xmax']:
                 self.font_dim['xmax'] = xmax
-                if not warned and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
-                    print("Warning: Extended glyphs wider than basic glyphs\n  {}".format(
-                        report_advance_widths(self.sourceFont)))
-                    warned = True
+                if not warned2 and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
+                    print("Info: Extended glyphs wider bounding box than basic glyphs")
+                    warned2 = True
                 # print("New MAXWIDTH-B {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
-        if not self.args.quiet and self.font_dim['width'] < self.font_dim['xmax']:
-            print("Warning: Font has negative right side bearing in extended glyphs")
+        if self.font_dim['width'] < self.font_dim['xmax']:
+            if not self.args.quiet:
+                print("Warning: Font has negative right side bearing in extended glyphs")
             self.font_dim['xmax'] = self.font_dim['width'] # In fact 'xmax' is never used
         # print("FINAL", self.font_dim)
 
