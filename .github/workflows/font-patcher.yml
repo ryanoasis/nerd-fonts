@@ -122,3 +122,10 @@ jobs:
       - name: Check if patched font generated
         run: |
           [ -e "$GITHUB_WORKSPACE/temp/Caskaydia Cove Bold Nerd Font Complete.otf" ] && echo "File exists" || exit 1
+
+      - name: Check if font with references is patched
+        # (patch result not checked)
+        run: |
+          fontforge --script ./font-patcher /usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf \
+          --quiet --no-progressbars --outputdir $GITHUB_WORKSPACE/temp/
+          [ -e "$GITHUB_WORKSPACE/temp/Ubuntu Mono Nerd Font.ttf" ] && echo "File exists" || exit 1
