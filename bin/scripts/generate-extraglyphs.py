@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Nerd Fonts Version: 2.3.3
-# Script Version: 1.0.1
+# Script Version: 1.1.0
 # Generates extrasymbols.sfd from Hack
 
 import os
@@ -21,6 +21,7 @@ font.selection.select(
     0x2770, # heavy left-pointing angle bracket
     0x2771, # heavy right-pointing angle bracket
 )
+font.selection.select(("more", "ranges"), 0x2500, 0x25A0) # Box drawing glyphs
 
 num_icons = len(list(font.selection))
 

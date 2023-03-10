@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.12"
+script_version = "3.6.1"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -292,6 +292,7 @@ class font_patcher:
         self.patch_set = None  # class 'list'
         self.font_dim = None  # class 'dict'
         self.font_extrawide = False
+        self.source_monospaced = None # Later True or False
         self.onlybitmaps = 0
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -301,8 +302,7 @@ class font_patcher:
         self.setup_version()
         self.get_essential_references()
         self.setup_name_backup(font)
-        if not self.args.nonmono:
-            self.assert_monospace()
+        self.assert_monospace()
         self.remove_ligatures()
         self.setup_patch_set()
         self.get_sourcefont_dimensions()
@@ -343,6 +343,7 @@ class font_patcher:
                         sys.exit("{}: Can not open symbol source for '{}'\n{:>{}}  (i.e. {})".format(
                             projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
                     symfont = fontforge.open(os.path.join(self.args.glyphdir, patch['Filename']))
+                    symfont.encoding = 'UnicodeFull'
 
                     # Match the symbol font size to the source font size
                     symfont.em = self.sourceFont.em
@@ -448,7 +449,6 @@ class font_patcher:
 
 
     def setup_font_names(self, font):
-        print(font.persistent)
         font.fontname = font.persistent["fontname"]
         if isinstance(font.persistent["fullname"], str):
             font.fullname = font.persistent["fullname"]
@@ -716,6 +716,9 @@ class font_patcher:
     def assert_monospace(self):
         # Check if the sourcefont is monospaced
         width_mono, offending_char = is_monospaced(self.sourceFont)
+        self.source_monospaced = width_mono
+        if self.args.nonmono:
+            return
         panose_mono = check_panose_monospaced(self.sourceFont)
         # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
         if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
@@ -735,12 +738,36 @@ class font_patcher:
 
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
-        # Supported params: overlap | careful
+
+        box_enabled = self.source_monospaced # Box glyph only for monospaced
+        if box_enabled:
+            self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
+            box_glyphs_target = len(list(self.sourceFont.selection))
+            box_glyphs_current = len(list(self.sourceFont.selection.byGlyphs))
+            if box_glyphs_target > box_glyphs_current:
+                # Sourcefont does not have all of these glyphs, do not mix sets
+                if not self.args.quiet and box_glyphs_current > 0:
+                    print("INFO: {}/{} box drawing glyphs will be replaced".format(
+                        box_glyphs_current, box_glyphs_target))
+                box_keep = False
+                box_enabled = True
+            else:
+                box_keep = True # just scale do not copy
+                box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
+
+        # Stretch 'xz' or 'pa' (preserve aspect ratio)
+        # Supported params: overlap | careful | xy-ratio | dont_copy
         # Overlap value is used horizontally but vertically limited to 0.01
+        # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
         # '2' means occupy 2 cells (default for 'pa')
-        # Powerline dividers
+        # '!' means do the 'pa' scaling even with non mono fonts (else it just scales down, never up)
+        # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
+
+        SYM_ATTR_DEFAULT = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
+        }
         SYM_ATTR_POWERLINE = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
@@ -800,12 +827,9 @@ class font_patcher:
             0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
             0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}}
         }
-
-        SYM_ATTR_DEFAULT = {
-            # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
+        SYM_ATTR_TRIGRAPH = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa1!', 'params': {'overlap': -0.10, 'careful': True}}
         }
-
         SYM_ATTR_FONTA = {
             # 'pa' == preserve aspect ratio
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
@@ -818,7 +842,13 @@ class font_patcher:
         SYM_ATTR_HEAVYBRACKETS = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {'careful': True}}
         }
-
+        SYM_ATTR_BOX = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}},
+            # No overlap with checkered greys (commented out because that raises problems on rescaling clients)
+            # 0x2591: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
+            # 0x2592: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
+            # 0x2593: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
+        }
         CUSTOM_ATTR = {
             # 'pa' == preserve aspect ratio
             'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
@@ -867,6 +897,13 @@ class font_patcher:
         # For historic reasons ScaleGroups is sometimes called 'new method' and ScaleGlyph 'old'.
         # The codepoints mentioned here are symbol-font-codepoints.
 
+        BOX_SCALE_LIST = {'ScaleGroups': [
+            [*range(0x2500, 0x2570 + 1), *range(0x2574, 0x257f + 1)], # box drawing
+            range(0x2571, 0x2573 + 1), # diagonals
+            [*range(0x2580, 0x2590 + 1), 0x2594, 0x2595], # blocks
+            range(0x2591, 0x2593 + 1), # greys
+            range(0x2594, 0x259f + 1), # quards (Note: quard 2597 in Hack is wrong, scales like block!)
+        ]}
         CODI_SCALE_LIST = {'ScaleGroups': [
             range(0xea99, 0xeaa1 + 1), # arrows
             range(0xeb6e, 0xeb71 + 1), # triangles
@@ -874,7 +911,7 @@ class font_patcher:
             [0xea71, *range(0xeaa6, 0xeaab + 1), 0xeabc, 0xeb18, 0xeb87, 0xeb88, 0xeb8a, 0xeb8c, 0xebb4], # cicles
             [0xeacc, 0xeaba], # dash
         ]}
-        DEVI_SCALE_LIST  = {'ScaleGlyph': 0xE60E, # Android logo
+        DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
             'GlyphsToScale': [
                 (0xe6bd, 0xe6c3) # very small things
         ]}
@@ -899,7 +936,7 @@ class font_patcher:
             range(0xf221, 0xf22d + 1), # gender or so
             range(0xf255, 0xf25b + 1), # hand symbols
         ]}
-        OCTI_SCALE_LIST  = {'ScaleGlyph': 0xF02E, # looking glass (probably biggest glyph?)
+        OCTI_SCALE_LIST = {'ScaleGlyph': 0xF02E, # looking glass (probably biggest glyph?)
             'GlyphsToScale': [
                 (0xf03d, 0xf040), # arrows
                 0xf044, 0xf05a, 0xf05b, 0xf0aa, # triangles
@@ -928,11 +965,13 @@ class font_patcher:
         ]}
         MDI_SCALE_LIST = None # Maybe later add some selected ScaleGroups
 
+
         # Define the character ranges
         # Symbol font ranges
         self.patch_set = [
             {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_HEAVYBRACKETS},
+            {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_HEAVYBRACKETS},
+            {'Enabled': box_enabled,                    'Name': "Box Drawing",             'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
             {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons.ttf",                                   'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
@@ -940,6 +979,7 @@ class font_patcher:
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0xE0B4, 'SymEnd': 0xE0C8, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0xE0CA, 'SymEnd': 0xE0CA, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0xE0CC, 'SymEnd': 0xE0D4, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
+            {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "PowerlineExtraSymbols.otf",                      'Exact': True,  'SymStart': 0x2630, 'SymEnd': 0x2630, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_TRIGRAPH},
             {'Enabled': self.args.pomicons,             'Name': "Pomicons",                'Filename': "Pomicons.otf",                                   'Exact': True,  'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.fontawesome,          'Name': "Font Awesome",            'Filename': "font-awesome/FontAwesome.otf",                   'Exact': True,  'SymStart': 0xF000, 'SymEnd': 0xF2E0, 'SrcStart': None,   'ScaleRules': FONTA_SCALE_LIST, 'Attributes': SYM_ATTR_FONTA},
             {'Enabled': self.args.fontawesomeextension, 'Name': "Font Awesome Extension",  'Filename': "font-awesome-extension.ttf",                     'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Maximize
@@ -1083,7 +1123,8 @@ class font_patcher:
         # Step 2
         # Find the biggest char width and advance width
         # 0x00-0x17f is the Latin Extended-A range
-        warned = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
+        warned1 = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
+        warned2 = warned1
         for glyph in range(0x21, 0x17f):
             if glyph in range(0x7F, 0xBF) or glyph in [
                     0x132, 0x133, # IJ, ij (in Overpass Mono)
@@ -1099,16 +1140,31 @@ class font_patcher:
             # print("WIDTH {:X} {} ({} {})".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if self.font_dim['width'] < self.sourceFont[glyph].width:
                 self.font_dim['width'] = self.sourceFont[glyph].width
-                if not warned and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
+                if not warned1 and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
                     print("Warning: Extended glyphs wider than basic glyphs, results might be useless\n  {}".format(
                         report_advance_widths(self.sourceFont)))
-                    warned = True
+                    warned1 = True
                 # print("New MAXWIDTH-A {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if xmax > self.font_dim['xmax']:
                 self.font_dim['xmax'] = xmax
+                if not warned2 and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
+                    print("Info: Extended glyphs wider bounding box than basic glyphs")
+                    warned2 = True
                 # print("New MAXWIDTH-B {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
+        if self.font_dim['width'] < self.font_dim['xmax']:
+            if not self.args.quiet:
+                print("Warning: Font has negative right side bearing in extended glyphs")
+            self.font_dim['xmax'] = self.font_dim['width'] # In fact 'xmax' is never used
         # print("FINAL", self.font_dim)
 
+
+    def get_target_width(self, stretch):
+        """ Get the target width (1 or 2 'cell') for a given stretch parameter """
+        # For monospaced fonts all chars need to be maximum 'one' space wide
+        # other fonts allows double width glyphs for 'pa' or if requested with '2'
+        if self.args.single or ('pa' not in stretch and '2' not in stretch) or '1' in stretch:
+            return 1
+        return 2
 
     def get_scale_factors(self, sym_dim, stretch):
         """ Get scale in x and y as tuple """
@@ -1116,13 +1172,7 @@ class font_patcher:
         if not sym_dim['width'] or not sym_dim['height']:
             return (1.0, 1.0)
 
-        # For monospaced fonts all chars need to be maximum 'one' space wide
-        # other fonts allows double width glyphs for 'pa' or if requested with '2'
-        if self.args.single or ('pa' not in stretch and '2' not in stretch) or '1' in stretch:
-            relative_width = 1.0
-        else:
-            relative_width = 2.0
-        target_width = self.font_dim['width'] * relative_width
+        target_width = self.font_dim['width'] * self.get_target_width(stretch)
         scale_ratio_x = target_width / sym_dim['width']
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
@@ -1133,7 +1183,7 @@ class font_patcher:
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
-            if not self.args.single:
+            if not self.args.single and not '!' in stretch:
                 # non monospaced fonts just scale down on 'pa', not up
                 scale_ratio_x = min(scale_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
@@ -1171,7 +1221,9 @@ class font_patcher:
         glyphSetLength = len(symbolFontSelection)
 
         if not self.args.quiet:
-            sys.stdout.write("Adding {} Glyphs from {} Set\n".format(glyphSetLength, setName))
+            modify = attributes['default']['params'].get('dont_copy')
+            sys.stdout.write("{} {} Glyphs from {} Set\n".format(
+                "Adding" if not modify else "Rescaling", glyphSetLength, setName))
 
         currentSourceFontGlyph = -1 # initialize for the exactEncoding case
         width_warning = False
@@ -1231,29 +1283,37 @@ class font_patcher:
                 if currentSourceFontGlyph in self.sourceFont:
                     self.sourceFont[currentSourceFontGlyph].removePosSub("*")
 
-            # This will destroy any content currently in currentSourceFontGlyph, so do it first
-            glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
+            dont_copy = sym_attr['params'].get('dont_copy')
 
-            # Select and copy symbol from its encoding point
-            # We need to do this select after the careful check, this way we don't
-            # reset our selection before starting the next loop
-            symbolFont.selection.select(sym_glyph.encoding)
-            symbolFont.copy()
+            if dont_copy:
+                # Just prepare scaling of existing glyphs
+                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, self.sourceFont, currentSourceFontGlyph) if scaleRules is not None else None
+            else:
+                # This will destroy any content currently in currentSourceFontGlyph, so do it first
+                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
 
-            # Paste it
-            self.sourceFont.selection.select(currentSourceFontGlyph)
-            self.sourceFont.paste()
-            self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
-            self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
+                # Select and copy symbol from its encoding point
+                # We need to do this select after the careful check, this way we don't
+                # reset our selection before starting the next loop
+                symbolFont.selection.select(sym_glyph.encoding)
+                symbolFont.copy()
+
+                # Paste it
+                self.sourceFont.selection.select(currentSourceFontGlyph)
+                self.sourceFont.paste()
+                self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
+                self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
             if glyph_scale_data is not None:
                 if glyph_scale_data[1] is not None:
                     sym_dim = glyph_scale_data[1] # Use combined bounding box
-                # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
-                # Except we do not have glyph_scale_data[1] always...
-                (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
+                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
+                else:
+                    # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
+                    # Except we do not have glyph_scale_data[1] always...
+                    (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
             else:
                 (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
 
@@ -1307,16 +1367,24 @@ class font_patcher:
                     x_align_distance += (self.font_dim['width'] / 2) - (sym_dim['width'] / 2)
                 elif sym_attr['align'] == 'r':
                     # Right align
-                    x_align_distance += self.font_dim['width'] - sym_dim['width']
-                    if not self.args.single and '2' in sym_attr['stretch']:
-                        x_align_distance += self.font_dim['width']
+                    x_align_distance += self.font_dim['width'] * self.get_target_width(sym_attr['stretch']) - sym_dim['width']
                 # If symbol glyph is wider than target font cell, just left-align
-                x_align_distance = max(-sym_dim['xmin'], x_align_distance)
+                x_align_distance = max(self.font_dim['xmin'] - sym_dim['xmin'], x_align_distance)
 
             if overlap:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
+                elif sym_attr['align'] == 'c':
+                    if overlap_width > 0:
+                        x_align_distance -= overlap_width / 2
+                elif sym_attr['align'] == 'r':
+                    # Check and correct overlap; it can go wrong if we have a xy-ratio limit
+                    target_xmax = (self.font_dim['xmin'] + self.font_dim['width']) * self.get_target_width(sym_attr['stretch'])
+                    target_xmax += overlap_width
+                    glyph_xmax = sym_dim['xmax'] + x_align_distance
+                    correction = target_xmax - glyph_xmax
+                    x_align_distance += correction
 
             align_matrix = psMat.translate(x_align_distance, y_align_distance)
             self.sourceFont[currentSourceFontGlyph].transform(align_matrix)
@@ -1539,7 +1607,7 @@ def get_multiglyph_boundingBox(glyphs, destGlyph = None):
         if glyph is None:
             # Glyph has been in defining range but is not in the actual font
             continue
-        if destGlyph:
+        if destGlyph and glyph.font != destGlyph.font:
             glyph.font.selection.select(glyph)
             glyph.font.copy()
             destGlyph.font.selection.select(destGlyph)
