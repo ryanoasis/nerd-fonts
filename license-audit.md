@@ -1,13 +1,10 @@
 # License audit
 
-So far the most restrictive license Nerd Fonts has to adhere to is CC BY-NC-ND 3.0, but we the required consent from the author.
-
 ## Licenses found and basic summary of each
 
 * MIT - all good do what you want basically
 * CC 4 - share, adapt and change in any format is okay
 * SIL OFL 1.1 - free to use, copy, merge, modify, redistribute with conditions: no selling, must contain this original license, must comply to the RFN (Reserved Font Names)
-* NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0) - share/copy and redistribute in any format
 * Apache 2.0 - Basically permissive like MIT but a few things to note. Must include original copyright, note any significant changes to original code, copy of NOTICE file. Modified code does not need to remain under Apache 2.0.
 * Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0) - free to share and change. Must give proper attribution. Must distribute under same license. The font itself once patched indeed is.
 * Bitstream Vera License v1.00 - do what want, no selling, must rename font.
@@ -41,7 +38,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Material Design Icons                            | Apache 2.0      |
 | Original Source (Seti-UI but modified)           | MIT             |
 | Octicons                                         | MIT             |
-| Pomicons                                         | CC BY-NC-ND 3.0 |
+| Pomicons                                         | SIL OFL 1.1     |
 | Powerline Extra Symbols                          | MIT             |
 | Powerline Symbols                                | Free License    |
 | Weather Icons                                    | SIL OFL 1.1     |
@@ -70,7 +67,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Cousine                       | Apache 2.0                   |
 | DaddyTimeMono                 | SIL OFL 1.1                  |
 | DejaVuSansMono                | Free license                 |
-| DroidSansMono                 | Apache 2.0                   |                
+| DroidSansMono                 | Apache 2.0                   |
 | FantasqueSansMono             | SIL OFL 1.1                  |
 | FiraCode                      | SIL OFL 1.1                  |
 | FiraMono                      | SIL OFL 1.1                  |
