@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.5.11"
+script_version = "3.5.12"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -983,9 +983,10 @@ class font_patcher:
                     self.add_glyphrefs_to_essential(altcode)
         # From fontforge documentation:
         # glyph.references return a tuple of tuples containing, for each reference in foreground,
-        # a glyph name, a transformation matrix, and whether the reference is currently selected.
+        # a glyph name, a transformation matrix, and (depending on ff version) whether the
+        # reference is currently selected.
         references = self.sourceFont[unicode].references
-        for refcode in [ self.sourceFont[n].unicode for n, m, s in references ]:
+        for refcode in [ self.sourceFont[n].unicode for n, *_ in references ]: # tuple of 2 or 3 depending on ff version
             if refcode not in self.essential and refcode >= 0:
                 self.add_glyphrefs_to_essential(refcode)
 
