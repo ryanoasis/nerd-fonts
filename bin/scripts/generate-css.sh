@@ -108,7 +108,7 @@ for var in "${!i@}"; do
 
   # generate json entry
   {
-    printf ",\"%s\":\"%s\"" "$glyph_name" "$glyph_char"
+    printf ",\"%s\":{\"char\":\"%s\",\"code\":\"%s\"}" "$glyph_name" "$glyph_char" "$glyph_code"
   } >> "$output_json_file"
 
 done
