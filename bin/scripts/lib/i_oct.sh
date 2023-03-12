@@ -173,5 +173,5 @@ i='' i_oct_file=$i
 i='' i_oct_grabber=$i
 i='' i_oct_plus_small=$i
 i='' i_oct_reply=$i
-i='' i_oct_device_desktop=$i
+i='' i_oct_device_desktop=$i
 unset i

@@ -42,7 +42,7 @@ i='' i_weather_night_alt_lightning=$i
 i='' i_weather_night_alt_rain_mix=$i
 i='' i_weather_night_alt_rain_wind=$i
 i='' i_weather_night_alt_rain=$i
-i='' i_weather_night_alt_rain_mix=$i
+i='' i_weather_night_alt_showers=$i
 i='' i_weather_night_alt_snow=$i
 i='' i_weather_night_alt_sprinkle=$i
 i='' i_weather_night_alt_storm_showers=$i
