@@ -44772,7 +44772,7 @@ style: container
   </div>
   <div class="column">
     <div class="nf nf-oct-device_desktop center"></div>
-    <div class="class-name">nf-oct-device_desktop</div><div title="Copy Hex Code to Clipboard" class="codepoint">f67c</div>
+    <div class="class-name">nf-oct-device_desktop</div><div title="Copy Hex Code to Clipboard" class="codepoint">f4a9</div>
   </div>
   <div class="column">
     <div class="nf nf-oct-device_mobile center"></div>
@@ -46684,11 +46684,15 @@ style: container
   </div>
   <div class="column">
     <div class="nf nf-weather-night_alt_rain_mix center"></div>
-    <div class="class-name">nf-weather-night_alt_rain_mix</div><div title="Copy Hex Code to Clipboard" class="codepoint">e326</div>
+    <div class="class-name">nf-weather-night_alt_rain_mix</div><div title="Copy Hex Code to Clipboard" class="codepoint">e323</div>
   </div>
   <div class="column">
     <div class="nf nf-weather-night_alt_rain_wind center"></div>
     <div class="class-name">nf-weather-night_alt_rain_wind</div><div title="Copy Hex Code to Clipboard" class="codepoint">e324</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-weather-night_alt_showers center"></div>
+    <div class="class-name">nf-weather-night_alt_showers</div><div title="Copy Hex Code to Clipboard" class="codepoint">e326</div>
   </div>
   <div class="column">
     <div class="nf nf-weather-night_alt_sleet center"></div>
