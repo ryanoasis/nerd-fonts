@@ -31998,7 +31998,7 @@
   content: "\f447";
 }
 .nf-oct-device_desktop:before {
-  content: "\f67c";
+  content: "\f4a9";
 }
 .nf-oct-device_mobile:before {
   content: "\f42c";
@@ -33432,10 +33432,13 @@
   content: "\e325";
 }
 .nf-weather-night_alt_rain_mix:before {
-  content: "\e326";
+  content: "\e323";
 }
 .nf-weather-night_alt_rain_wind:before {
   content: "\e324";
+}
+.nf-weather-night_alt_showers:before {
+  content: "\e326";
 }
 .nf-weather-night_alt_sleet:before {
   content: "\e3ac";
