@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.7.1"
+script_version = "3.8.0"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -520,11 +520,6 @@ class font_patcher:
             if self.args.weather:
                 additionalFontNameSuffix += " WEA"
                 verboseAdditionalFontNameSuffix += " Plus Weather Icons"
-
-        # if all source glyphs included simplify the name
-        else:
-            additionalFontNameSuffix = " Complete"
-            verboseAdditionalFontNameSuffix = " Complete"
 
         # add mono signifier to beginning of name suffix
         if self.args.single:
