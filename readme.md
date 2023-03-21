@@ -164,7 +164,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Tinos][p-tinos]                                  | [Tinos][f-tinos]                  | 1.23  | NO   | ![w] ![m2] ![l]   |
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]           | 0.83  | NO   | ![w] ![m2] ![l]   |
 | [Ubuntu Mono Nerd Font][p-ubuntu-mono]            | [Ubuntu Font][f-ubuntu]           | 0.80  | NO   | ![w] ![m2] ![l]   |
-| [Victor Mono][p-victor]                           | [Victor Mono][f-victor]           | 1.4.1 | NO   | ![w] ![m2] ![l]   |
+| [Victor Mono][p-victor]                           | [Victor Mono][f-victor]           | 1.5.4 | NO   | ![w] ![m2] ![l]   |
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
