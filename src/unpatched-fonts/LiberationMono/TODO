@@ -1,4 +1,0 @@
-Here are todo for next release
-1) Serbian glyph for wikipedia https://bugzilla.redhat.com/show_bug.cgi?id=657849
-2) Liberation Mono not recognizing as Mono in Windows application #861003
-	- presently it is patch, we have to update zero width characters to fixed width
