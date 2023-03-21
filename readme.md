@@ -149,7 +149,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Monofur Nerd Font][p-monofur]                    | Tobias B Koehler                  | 1.0   | NO   | ![w] ![m2] ![l]   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                | 0.61  | NO   | ![w] ![m2] ![l]   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | 1.6   | NO   | ![w] ![m2] ![l]   |
-| [M+ (MPlus) Nerd Font][p-mplus]                   | [M+ Fonts][f-mplus]               | 1.063 | NO   | ![w] ![m2] ![l]   |
+| [M+ (MPlus) Nerd Font][p-mplus]                   | [M+ Fonts][f-mplus]               |2023/03| NO   | ![w] ![m2] ![l]   |
 | [Noto][p-noto]                                    | [Noto][f-noto]                    | div   | NO   | ![w] ![m2] ![l]   |
 | [OpenDyslexic][p-opendyslexic]                    | [OpenDyslexic][f-opendyslexic]    | 2.001 | NO   | ![w] ![m2] ![l]   |
 | [Overpass][p-overpass]                            | [Overpass][f-overpass]            | div   | NO   | ![w] ![m2] ![l]   |
