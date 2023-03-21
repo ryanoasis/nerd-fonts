@@ -156,7 +156,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [ProFont (Windows tweaked) Nerd Font][p-profont]  | [ProFont][f-profont]              | 2.3   | NO   | ![w] ![m2] ![l]   |
 | [ProFont (x11) Nerd Font][p-profont]              | [ProFont][f-profont]              | 2.2   | NO   | ![w] ![m2] ![l]   |
 | [ProggyClean Nerd Font][p-proggy-clean]           | Tristan Grimmer                   |2004/04/15| NO   | Imperfect         |
-| [Roboto Mono][p-roboto]                           | [Roboto Mono][f-roboto]           | 2.0   | NO   | ![w] ![m2] ![l]   |
+| [Roboto Mono][p-roboto]                           | [Roboto Mono][f-roboto]           | 3.0   | NO   | ![w] ![m2] ![l]   |
 | [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]                | 2.030 | YES  | ![w] ![m2] ![l]   |
 | [Shure Tech Mono Nerd Font][p-share-tech-mono]    | [Share Tech Mono][f-share]        | 1.003 | YES  | ![w] ![m2] ![l]   |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]             | 1.001 | NO   | ![w] ![m2] ![l]   |
