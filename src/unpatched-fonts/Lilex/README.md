@@ -1,0 +1,7 @@
+# Lilex
+
+**Lilex** is an open source programming font
+
+For more information have a look at the upstream website: https://github.com/mishamyrt/Lilex
+
+Version: 1.100
