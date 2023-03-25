@@ -1194,6 +1194,15 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "Calciferz",
+      "name": "Calcifer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5092597?v=4",
+      "profile": "https://github.com/Calciferz",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
