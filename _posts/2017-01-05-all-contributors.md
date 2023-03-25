@@ -188,6 +188,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MicaelJarniac"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/19514231?v=4?s=100" width="100px;" alt="Micael Jarniac"/><br /><sub><b>Micael Jarniac</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=MicaelJarniac" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/teatimeguest"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/90523111?v=4?s=100" width="100px;" alt="teatimeguest"/><br /><sub><b>teatimeguest</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=teatimeguest" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://keybase.io/bri_"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/284789?v=4?s=100" width="100px;" alt="bri"/><br /><sub><b>bri</b></sub></a><br /><a href="#infra-b-" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Calciferz"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/5092597?v=4?s=100" width="100px;" alt="Calcifer"/><br /><sub><b>Calcifer</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Calciferz" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
