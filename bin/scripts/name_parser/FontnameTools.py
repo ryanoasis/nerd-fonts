@@ -243,7 +243,7 @@ class FontnameTools:
         weights = [ 'Thin', 'Light', 'ExtraLight', 'SemiBold', 'Demi',
                     'SemiLight', 'Medium', 'Black', 'ExtraBold', 'Heavy',
                     'Oblique', 'Condensed', 'SemiCondensed', 'ExtraCondensed',
-                    'Narrow', 'SemiNarrow', 'Retina', ]
+                    'Narrow', 'SemiNarrow', 'Retina', 'Extended']
         styles = [ 'Bold', 'Italic', 'Regular', 'Normal', ]
         # Some font specialities:
         other = [
