@@ -299,20 +299,25 @@ class FontnameParser:
         #    and it is actually embedded as empty string, but empty strings are not
         #    shown if you query the sfnt_names *rolleyes*
 
+        version_tag = ''
         sfnt_list = []
         TO_DEL = ['Family', 'SubFamily', 'Fullname', 'Postscriptname', 'Preferred Family',
-                'Preferred Styles', 'Compatible Full', 'WWS Family', 'WWS Subfamily']
+                'Preferred Styles', 'Compatible Full', 'WWS Family', 'WWS Subfamily',
+                'UniqueID']
         # Remove these entries in all languages and add (at least the vital ones) some
         # back, but only as 'English (US)'. This makes sure we do not leave contradicting
         # names over different languages.
         for l, k, v in list(font.sfnt_names):
             if not k in TO_DEL:
                 sfnt_list += [( l, k, v )]
+                if k == 'Version' and l == 'English (US)':
+                    version_tag = ' ' + v.split()[-1]
 
         sfnt_list += [( 'English (US)', 'Family', self.family() )]
         sfnt_list += [( 'English (US)', 'SubFamily', self.subfamily() )]
         sfnt_list += [( 'English (US)', 'Fullname', self.fullname() )]
         sfnt_list += [( 'English (US)', 'PostScriptName', self.psname() )]
+        sfnt_list += [( 'English (US)', 'UniqueID', self.fullname() + version_tag )]
 
         p_fam = self.preferred_family()
         if len(p_fam):

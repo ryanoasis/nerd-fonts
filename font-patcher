@@ -734,6 +734,7 @@ class font_patcher:
             self.sourceFont.version = str(self.sourceFont.cidversion) + ";" + projectName + " " + version
         self.sourceFont.sfntRevision = None # Auto-set (refreshed) by fontforge
         self.sourceFont.appendSFNTName(str('English (US)'), str('Version'), "Version " + self.sourceFont.version)
+        # The Version SFNT name is later reused by the NameParser for UniqueID
         # print("Version now is {}".format(sourceFont.version))
 
 
