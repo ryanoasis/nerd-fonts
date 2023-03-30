@@ -4,4 +4,4 @@
 
 For more information have a look at the upstream website: https://github.com/mishamyrt/Lilex
 
-Version: 1.100
+Version: 2.000
