@@ -523,18 +523,21 @@ class font_patcher:
 
         # add mono signifier to beginning of name suffix
         if self.args.single:
-            additionalFontNameSuffix = " M" + additionalFontNameSuffix
-            verboseAdditionalFontNameSuffix = " Mono" + verboseAdditionalFontNameSuffix
+            variant_abbrev = "M"
+            variant_full = " Mono"
         elif self.args.nonmono and not self.symbolsonly:
-            additionalFontNameSuffix = " P" + additionalFontNameSuffix
-            verboseAdditionalFontNameSuffix = " Propo" + verboseAdditionalFontNameSuffix
+            variant_abbrev = "P"
+            variant_full = " Propo"
+        else:
+            variant_abbrev = ""
+            variant_full = ""
 
         # add 'Nerd Font' to beginning of name suffix
-        verboseAdditionalFontNameSuffix = " " + projectNameSingular + verboseAdditionalFontNameSuffix
+        verboseAdditionalFontNameSuffix = " " + projectNameSingular + variant_full + verboseAdditionalFontNameSuffix
         if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
-            additionalFontNameSuffix = " " + projectNameAbbreviation + additionalFontNameSuffix
+            additionalFontNameSuffix = " " + projectNameAbbreviation + variant_abbrev + additionalFontNameSuffix
         else:
-            additionalFontNameSuffix = " " + projectNameSingular + additionalFontNameSuffix
+            additionalFontNameSuffix = " " + projectNameSingular + variant_full + additionalFontNameSuffix
 
         if FontnameParserOK and self.args.makegroups:
             use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
