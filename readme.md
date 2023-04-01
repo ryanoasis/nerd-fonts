@@ -140,7 +140,8 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]      | 3.000 | NO   | ![w] ![m2] ![l]   |
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      | [InconsolataGo][f-inconsolatago]  | 1.013 | NO   | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc] | 1.3 | NO   | ![w] ![m2] ![l]   |
-| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              |21.1.1 | NO   | [#83][s-iosevka]  |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              |21.1.1 | NO   | ![w] ![m2] ![l]   |
+| [Iosevka Term Nerd Font][p-iosevka-term]          | [Iosevka Term][f-iosevka]         |21.1.1 | NO   | ![w] ![m2] ![l]   |
 | [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| 2.304 | NO   | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                | 34    | NO   | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        | 2.1.5 | YES  | ![w] ![m2] ![l]   |
@@ -148,7 +149,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                  | 1.21  | NO   | ![w] ![m2] ![l]   |
 | [Monofur Nerd Font][p-monofur]                    | Tobias B Koehler                  | 1.0   | NO   | ![w] ![m2] ![l]   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                | 0.61  | NO   | ![w] ![m2] ![l]   |
-| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | 1.6   | NO   | ![w] ![m2] ![l]   |
+| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | 1.6   | YES  | ![w] ![m2] ![l]   |
 | [M+ (MPlus) Nerd Font][p-mplus]                   | [M+ Fonts][f-mplus]               |2023/03| NO   | ![w] ![m2] ![l]   |
 | [Noto][p-noto]                                    | [Noto][f-noto]                    | div   | NO   | ![w] ![m2] ![l]   |
 | [OpenDyslexic][p-opendyslexic]                    | [OpenDyslexic][f-opendyslexic]    | 2.001 | NO   | ![w] ![m2] ![l]   |
@@ -667,6 +668,7 @@ Patched Font internal links
 [p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-inconsolata]:patched-fonts/Inconsolata
 [p-iosevka]:patched-fonts/Iosevka
+[p-iosevka-term]:patched-fonts/IosevkaTerm
 [p-jetbrains-mono]:patched-fonts/JetBrainsMono
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono
@@ -717,5 +719,3 @@ Patched Font Statuses
 [w2]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-unknown-sm.png "Windows status is Unknown/Un-tested"
 [l2]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/linux-unknown-sm.png "Linux status is Unknown/Un-tested"
 [m2]:https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-unknown-sm.png "macOS (OSX) status is Unknown/Un-tested"
-
-[s-iosevka]:https://github.com/ryanoasis/nerd-fonts/issues/83
