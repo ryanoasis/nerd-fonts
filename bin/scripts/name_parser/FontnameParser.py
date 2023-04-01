@@ -269,6 +269,7 @@ class FontnameParser:
 
     def rename_font(self, font):
         """Rename the font to include all information we found (font is fontforge font object)"""
+        font.fondname = None
         font.fontname = self.ps_fontname()
         font.fullname = self.fullname()
         font.familyname = self.ps_familyname()
@@ -301,9 +302,9 @@ class FontnameParser:
 
         version_tag = ''
         sfnt_list = []
-        TO_DEL = ['Family', 'SubFamily', 'Fullname', 'Postscriptname', 'Preferred Family',
+        TO_DEL = ['Family', 'SubFamily', 'Fullname', 'PostScriptName', 'Preferred Family',
                 'Preferred Styles', 'Compatible Full', 'WWS Family', 'WWS Subfamily',
-                'UniqueID']
+                'UniqueID', 'CID findfont Name']
         # Remove these entries in all languages and add (at least the vital ones) some
         # back, but only as 'English (US)'. This makes sure we do not leave contradicting
         # names over different languages.
@@ -313,18 +314,18 @@ class FontnameParser:
                 if k == 'Version' and l == 'English (US)':
                     version_tag = ' ' + v.split()[-1]
 
-        sfnt_list += [( 'English (US)', 'Family', self.family() )]
-        sfnt_list += [( 'English (US)', 'SubFamily', self.subfamily() )]
-        sfnt_list += [( 'English (US)', 'Fullname', self.fullname() )]
-        sfnt_list += [( 'English (US)', 'PostScriptName', self.psname() )]
-        sfnt_list += [( 'English (US)', 'UniqueID', self.fullname() + version_tag )]
+        sfnt_list += [( 'English (US)', 'Family', self.family() )] # 1
+        sfnt_list += [( 'English (US)', 'SubFamily', self.subfamily() )] # 2
+        sfnt_list += [( 'English (US)', 'UniqueID', self.fullname() + version_tag )] # 3
+        sfnt_list += [( 'English (US)', 'Fullname', self.fullname() )] # 4
+        sfnt_list += [( 'English (US)', 'PostScriptName', self.psname() )] # 6
 
         p_fam = self.preferred_family()
         if len(p_fam):
-            sfnt_list += [( 'English (US)', 'Preferred Family', p_fam )]
+            sfnt_list += [( 'English (US)', 'Preferred Family', p_fam )] # 16
         p_sty = self.preferred_styles()
         if len(p_sty):
-            sfnt_list += [( 'English (US)', 'Preferred Styles', p_sty )]
+            sfnt_list += [( 'English (US)', 'Preferred Styles', p_sty )] # 17
 
         font.sfnt_names = tuple(sfnt_list)
 
