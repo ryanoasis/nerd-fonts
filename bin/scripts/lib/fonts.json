@@ -275,10 +275,20 @@
       "RFN": false,
       "patchedName": "Iosevka",
       "folderName": "Iosevka",
-      "imagePreviewFont": "IosevkaTerm Nerd Font",
+      "imagePreviewFont": "Iosevka Nerd Font",
       "linkPreviewFont": "iosevka",
       "caskName": "iosevka",
       "description": "Narrow and horizontally tight characters, slashed zero"
+    },
+    {
+      "unpatchedName": "Iosevka Term",
+      "RFN": false,
+      "patchedName": "IosevkaTerm",
+      "folderName": "IosevkaTerm",
+      "imagePreviewFont": "IosevkaTerm Nerd Font",
+      "linkPreviewFont": "false",
+      "caskName": "iosevka-term",
+      "description": "A narrower variant focusing terminal uses: Arrows and geometric symbols will be narrow to follow typical terminal usages"
     },
     {
       "unpatchedName": "JetBrains Mono",

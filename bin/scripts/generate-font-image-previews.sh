@@ -84,7 +84,8 @@ image_font_files=( \
   'Inconsolata/complete/Inconsolata Regular Nerd Font Complete.ttf' \
   'InconsolataGo/Regular/complete/InconsolataGo Nerd Font Complete.ttf' \
   'InconsolataLGC/Regular/complete/Inconsolata LGC Nerd Font Complete.ttf' \
-  'Iosevka/Regular/complete/Iosevka Term Nerd Font Complete.ttf' \
+  'Iosevka/Regular/complete/Iosevka Nerd Font Complete.ttf' \
+  'IosevkaTerm/Regular/complete/Iosevka Term Nerd Font Complete.ttf' \
   'JetBrainsMono/Ligatures/Regular/complete/JetBrains Mono Nerd Font Complete Regular.ttf' \
   'Lekton/Regular/complete/Lekton Nerd Font Complete.ttf' \
   'LiberationMono/complete/Literation Mono Nerd Font Complete.ttf' \
