@@ -300,6 +300,17 @@ def get_old_average_x_width(font):
         s += font[g].width * weights[g]
     return int(s / 1000)
 
+def create_filename(fonts):
+    """ Determine filename from font object(s) """
+    sfnt = { k: v for l, k, v in fonts[0].sfnt_names }
+    sfnt_pfam = sfnt.get('Preferred Family', sfnt['Family'])
+    sfnt_psubfam = sfnt.get('Preferred Styles', sfnt['SubFamily'])
+    if len(fonts) > 1:
+        return sfnt_pfam
+    if len(sfnt_psubfam) > 0:
+        sfnt_psubfam = '-' + sfnt_psubfam
+    return (sfnt_pfam + sfnt_psubfam).replace(' ', '')
+
 
 class font_patcher:
     def __init__(self, args):
@@ -403,11 +414,11 @@ class font_patcher:
                     break
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
-                sanitize_filename(sourceFont.familyname) + ".ttc"))
+                sanitize_filename(create_filename(sourceFonts)) + ".ttc"))
             sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=gen_flags, layer=layer)
             message = "   Generated {} fonts\n   \===> '{}'".format(len(sourceFonts), outfile)
         else:
-            fontname = sourceFont.fullname
+            fontname = create_filename(sourceFonts)
             if not fontname:
                 fontname = sourceFont.cidfontname
             outfile = os.path.normpath(os.path.join(
