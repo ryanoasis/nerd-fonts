@@ -552,7 +552,7 @@ class font_patcher:
         else:
             additionalFontNameSuffix = " " + projectNameSingular + variant_full + additionalFontNameSuffix
 
-        if FontnameParserOK and self.args.makegroups:
+        if FontnameParserOK and self.args.makegroups > 0:
             use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
             # Use fullname if it is 'equal' to the fontname
             if font.fullname:
@@ -568,7 +568,7 @@ class font_patcher:
             if not n.parse_ok:
                 print("Have only minimal naming information, check resulting name. Maybe omit --makegroups option")
             n.drop_for_powerline()
-            n.enable_short_families(True, "Noto")
+            n.enable_short_families(True, self.args.makegroups in [ 1, 3])
 
             # All the following stuff is ignored in makegroups-mode
 
@@ -711,7 +711,7 @@ class font_patcher:
         fullname   = replace_font_name(fullname,   additionalFontNameReplacements2)
         fontname   = replace_font_name(fontname,   additionalFontNameReplacements2)
 
-        if not (FontnameParserOK and self.args.makegroups):
+        if not (FontnameParserOK and self.args.makegroups > 0):
             # replace any extra whitespace characters:
             font.familyname = " ".join(familyname.split())
             font.fullname   = " ".join(fullname.split())
@@ -722,8 +722,9 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('Compatible Full'), font.fullname)
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
+            short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups in [ 2, 3] else projectName + variant_full
             # inject_suffix(family, ps_fontname, short_family)
-            n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, projectNameAbbreviation + variant_abbrev)
+            n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
             n.rename_font(font)
 
         font.comment = projectInfo
@@ -1802,7 +1803,14 @@ def setup_arguments():
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-    parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (recommended)')
+    parser.add_argument('--makegroups',                              dest='makegroups',       default=0,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=3, choices=range(0, 4 + 1))
+    # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 3'.
+    # Possible values with examples:
+    # 0 - turned off, use old naming scheme
+    # 1 - turned on, shortening                         'Bold' to 'Bd'
+    # 2 - turned on, shortening 'Nerd Font' to 'NF'
+    # 3 - turned on, shortening 'Nerd Font' to 'NF' and 'Bold' to 'Bd'
+    # 4 - turned on, no shortening
     parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
 
     # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
@@ -1834,7 +1842,7 @@ def setup_arguments():
 
     args = parser.parse_args()
 
-    if args.makegroups and not FontnameParserOK:
+    if args.makegroups > 0 and not FontnameParserOK:
         sys.exit("{}: FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups".format(projectName))
 
     # if you add a new font, set it to True here inside the if condition
@@ -1871,7 +1879,7 @@ def setup_arguments():
     if args.alsowindows:
         args.windows = False
 
-    if args.makegroups and (args.windows or args.alsowindows):
+    if args.makegroups > 0 and (args.windows or args.alsowindows):
         printf("Warning: --windows and --also-windows are ignored when --makegroups is specified.")
         args.windows = False
         args.alsowindows = False
