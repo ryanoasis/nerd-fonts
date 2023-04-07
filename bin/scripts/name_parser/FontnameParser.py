@@ -10,7 +10,6 @@ class FontnameParser:
     def __init__(self, filename):
         """Parse a font filename and store the results"""
         self.parse_ok = False
-        self.for_windows = False
         self.use_short_families = (False, False) # ( camelcase name, short styles )
         self.keep_regular_in_family = None # None = auto, True, False
         self.suppress_preferred_if_identical = True
@@ -49,11 +48,6 @@ class FontnameParser:
         else:
             return (FontnameTools.concat(self.basename, self.rest).replace(' ', ''), '')
 
-    def set_for_windows(self, for_windows):
-        """Create slightly different names, suitable for Windows use"""
-        self.for_windows = for_windows
-        return self
-
     def set_keep_regular_in_family(self, keep):
         """Familyname may contain 'Regular' where it should normally be suppressed"""
         self.keep_regular_in_family = keep
@@ -68,29 +62,6 @@ class FontnameParser:
         self.fontname_suff = fontname.replace(' ', '')
         self.family_suff = family.strip()
         return self
-        # font-patcher behavior:
-        #   verboseSuff  = "Nerd Font"
-        #   shortSuff    = win ? "NF" : "Nerd Font"
-        #   verboseSuff += "Plus Font Awesome"
-        #   shortSuff   += "A"
-        # OR when complete:
-        #   shortSuff    = "Nerd Font Complete"
-        #   verboseSuff  = "Nerd Font Complete"
-        # AND
-        #   shortSuff   += "M"
-        #   verboseSuff += "Mono"
-        #
-        # fullname += verboseSuff
-        # fontname += shortSuff
-        # if win familyname += "NF"
-        # else   familyname += "Nerd Font"
-        # if win fullname += "Windows Compatible"
-        # if !win familyname += "Mono"
-        #
-        # THUS:
-        # fontname => shortSuff
-        # fullname => verboseSuff {{ we do the following already: }} + win ? "Windows Compatible" : ""
-        # family => win ? "NF" : "Nerd Font" + mono ? "Mono" : ""
 
     def enable_short_families(self, camelcase_name, prefix):
         """Enable short styles in Family when (original) font name starts with prefix; enable CamelCase basename in (Typog.) Family"""
@@ -158,10 +129,6 @@ class FontnameParser:
 
     def fullname(self):
         """Get the SFNT Fullname (ID 4)"""
-        if self.for_windows:
-            win = 'Windows Compatible'
-        else:
-            win = ''
         styles = self.style_token
         weights = self.weight_token
         if self.keep_regular_in_family == None:
@@ -175,7 +142,7 @@ class FontnameParser:
             styles.remove('Regular')
         # For naming purposes we want Oblique to be part of the styles
         (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
-        return FontnameTools.concat(self.basename, self.rest, self.other_token, self.fullname_suff, win, weights, styles)
+        return FontnameTools.concat(self.basename, self.rest, self.other_token, self.fullname_suff, weights, styles)
 
     def psname(self):
         """Get the SFNT PostScriptName (ID 6)"""

@@ -543,6 +543,8 @@ class font_patcher:
             variant_abbrev = ""
             variant_full = ""
 
+        ps_suffix = projectNameAbbreviation + variant_abbrev + additionalFontNameSuffix
+
         # add 'Nerd Font' to beginning of name suffix
         verboseAdditionalFontNameSuffix = " " + projectNameSingular + variant_full + verboseAdditionalFontNameSuffix
         if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
@@ -567,7 +569,6 @@ class font_patcher:
                 print("Have only minimal naming information, check resulting name. Maybe omit --makegroups option")
             n.drop_for_powerline()
             n.enable_short_families(True, "Noto")
-            n.set_for_windows(self.args.windows)
 
             # All the following stuff is ignored in makegroups-mode
 
@@ -721,18 +722,7 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('Compatible Full'), font.fullname)
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
-            fam_suffix = projectNameSingular if not self.args.windows else projectNameAbbreviation
-            if self.args.single:
-                if self.args.windows:
-                    fam_suffix += 'M'
-                else:
-                    fam_suffix += ' Mono'
-            elif self.args.nonmono and not self.symbolsonly:
-                if self.args.windows:
-                    fam_suffix += 'P'
-                else:
-                    fam_suffix += ' Propo'
-            n.inject_suffix(verboseAdditionalFontNameSuffix, additionalFontNameSuffix, fam_suffix)
+            n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, projectNameAbbreviation + variant_abbrev)
             n.rename_font(font)
 
         font.comment = projectInfo
@@ -1801,7 +1791,7 @@ def setup_arguments():
     parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='count',      help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
     parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
     parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
-    parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)')
+    parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility), ignored when --makegroups is given')
     parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
     parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
     parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
@@ -1811,15 +1801,15 @@ def setup_arguments():
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-    parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
+    parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (recommended)')
     parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
 
     # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
     progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
-    progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set')
+    progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
     progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
     parser.set_defaults(progressbars=True)
-    parser.add_argument('--also-windows',                            dest='alsowindows',      default=False, action='store_true', help='Create two fonts, the normal and the --windows version')
+    parser.add_argument('--also-windows',                            dest='alsowindows',      default=False, action='store_true', help='Create two fonts, the normal and the --windows version, ignored when --makegroups is given')
     parser.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
     # Possible values with examples:
@@ -1879,6 +1869,11 @@ def setup_arguments():
 
     if args.alsowindows:
         args.windows = False
+
+    if args.makegroups and (args.windows or args.alsowindows):
+        printf("Warning: --windows and --also-windows are ignored when --makegroups is specified.")
+        args.windows = False
+        args.alsowindows = False
 
     if args.nonmono and args.single:
         print("Warning: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
