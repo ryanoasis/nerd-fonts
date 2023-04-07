@@ -87,52 +87,21 @@ class FontnameTools:
     @staticmethod
     def shorten_style_name(name):
         """Substitude some known styles to short form"""
-        # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
-        known_names = {
-            # Weights
-            'Black': 'Blk',
-            'Medium': 'Md',
-            'Bold': 'Bd',
-            'Nord': 'Nd',
-            'Book': 'Bk',
-            'Poster': 'Po',
-            'Demi': 'Dm', # Demi is sometimes used as a weight, sometimes as a modifier
-            'Regular': 'Rg',
-            'Display': 'DS',
-            'Super': 'Su',
-            'Heavy': 'Hv',
-            'Thin': 'Th',
-            'Light': 'Lt',
-            # Widths
-            'Compressed': 'Cm',
-            'Extended': 'Ex',
-            'Condensed': 'Cn',
-            'Narrow': 'Nr',
-            'Compact': 'Ct',
-            # Slope
-            'Inclined': 'Ic',
-            'Oblique': 'Obl',
-            'Italic': 'It',
-            'Upright': 'Up',
-            'Kursiv': 'Ks',
-            'Sloped': 'Sl',
-        }
-        modifiers = {
-            'Demi': 'Dm',
-            'Ultra': 'Ult',
-            'Semi': 'Sm',
-            'Extra': 'X',
-        }
         name_rest = name
         name_pre = ''
-        for mod in modifiers:
+        for mod in FontnameTools.known_modifiers:
             if not name.startswith(mod) or len(name) <= len(mod):
                 continue
-            name_pre = modifiers[mod]
+            name_pre = FontnameTools.known_modifiers[mod]
             name_rest = name[len(mod):]
             break
-        if name_rest in known_names:
-            return name_pre + known_names[name_rest]
+        for known_names in [ FontnameTools.known_weights2, FontnameTools.known_widths ]:
+            if name_rest in known_names:
+                return name_pre + known_names[name_rest]
+        if len(name_pre) < 1:
+            for known_names in [ FontnameTools.known_weights1, FontnameTools.known_slopes ]:
+                if name_rest in known_names:
+                    return known_names[name_rest]
         return name
 
     @staticmethod
@@ -212,6 +181,47 @@ class FontnameTools:
         ( 'IBM 3270',                   r'3270'), # for historical reasons and 'IBM' is a TM or something
     ]
 
+    # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
+    known_weights1 = { # can not take modifiers
+        'Medium': 'Md',
+        'Nord': 'Nd',
+        'Book': 'Bk',
+        'Poster': 'Po',
+        'Demi': 'Dm', # Demi is sometimes used as a weight, sometimes as a modifier
+        'Regular': 'Rg',
+        'Display': 'DS',
+        'Super': 'Su',
+        'Retina': 'Rt',
+    }
+    known_weights2 = { # can take modifiers
+        'Black': 'Blk',
+        'Bold': 'Bd',
+        'Heavy': 'Hv',
+        'Thin': 'Th',
+        'Light': 'Lt',
+    }
+    known_widths = { # can take modifiers
+        'Compressed': 'Cm',
+        'Extended': 'Ex',
+        'Condensed': 'Cn',
+        'Narrow': 'Nr',
+        'Compact': 'Ct',
+    }
+    known_slopes = {
+        'Inclined': 'Ic',
+        'Oblique': 'Obl',
+        'Italic': 'It',
+        'Upright': 'Up',
+        'Kursiv': 'Ks',
+        'Sloped': 'Sl',
+    }
+    known_modifiers = {
+        'Demi': 'Dm',
+        'Ultra': 'Ult',
+        'Semi': 'Sm',
+        'Extra': 'X',
+    }
+
     @staticmethod
     def is_keep_regular(basename):
         """This has been decided by the font designers, we need to mimic that (for comparison purposes)"""
@@ -273,10 +283,10 @@ class FontnameTools:
         # Weights end up as Typographic Family parts ('after the dash')
         # Styles end up as Family parts (for classic grouping of four)
         # Others also end up in Typographic Family ('before the dash')
-        weights = [ 'Thin', 'Light', 'ExtraLight', 'SemiBold', 'Demi',
-                    'SemiLight', 'Medium', 'Black', 'ExtraBold', 'Heavy',
-                    'Oblique', 'Condensed', 'SemiCondensed', 'ExtraCondensed',
-                    'Narrow', 'SemiNarrow', 'Retina', 'Extended']
+        weights = [ m + s
+                for s in list(FontnameTools.known_weights2) + list(FontnameTools.known_widths)
+                for m in list(FontnameTools.known_modifiers) + [''] if m != s
+            ] + list(FontnameTools.known_weights1)
         styles = [ 'Bold', 'Italic', 'Regular', 'Normal', ]
         weights = [ w for w in weights if w not in styles ]
         # Some font specialities:
