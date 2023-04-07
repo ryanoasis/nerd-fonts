@@ -66,8 +66,8 @@ class FontnameParser:
     def enable_short_families(self, camelcase_name, prefix):
         """Enable short styles in Family when (original) font name starts with prefix; enable CamelCase basename in (Typog.) Family"""
         # camelcase_name is boolean
-        # prefix is either a string or False
-        if prefix:
+        # prefix is either a string or False/True
+        if isinstance(prefix, str):
             prefix = self._basename.startswith(prefix)
         self.use_short_families = ( camelcase_name, prefix )
         return self
