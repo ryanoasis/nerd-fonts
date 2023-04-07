@@ -85,29 +85,40 @@ class FontnameTools:
         return style_name
 
     @staticmethod
+    def find_in_dicts(key, dicts):
+        """Find an entry in a list of dicts"""
+        for d in dicts:
+            if key in d:
+                return d[key]
+        return None
+
+    @staticmethod
     def shorten_style_name(name):
         """Substitude some known styles to short form"""
         name_rest = name
         name_pre = ''
         for mod in FontnameTools.known_modifiers:
-            if not name.startswith(mod) or len(name) <= len(mod):
-                continue
-            name_pre = FontnameTools.known_modifiers[mod]
-            name_rest = name[len(mod):]
-            break
-        for known_names in [ FontnameTools.known_weights2, FontnameTools.known_widths ]:
-            if name_rest in known_names:
-                return name_pre + known_names[name_rest]
-        if len(name_pre) < 1:
-            for known_names in [ FontnameTools.known_weights1, FontnameTools.known_slopes ]:
-                if name_rest in known_names:
-                    return known_names[name_rest]
+            if name.startswith(mod) and len(name) > len(mod): # Second condition specifically for 'Demi'
+                name_pre = FontnameTools.known_modifiers[mod]
+                name_rest = name[len(mod):]
+                break
+        subst = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights2, FontnameTools.known_widths ])
+        if isinstance(subst, str):
+            return name_pre + subst
+        if not len(name_pre):
+            # The following sets do not allow modifiers
+            subst = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights1, FontnameTools.known_slopes ])
+            if isinstance(subst, str):
+                return subst
         return name
 
     @staticmethod
-    def short_styles(styles):
-        """Shorten all style names in a list"""
-        return list(map(FontnameTools.shorten_style_name, styles))
+    def short_styles(lists):
+        """Shorten all style names in a list or a list of lists"""
+        if not len(lists) or not isinstance(lists[0], list):
+            return list(map(FontnameTools.shorten_style_name, lists))
+        return [ list(map(FontnameTools.shorten_style_name, styles)) for styles in lists ]
+
     @staticmethod
     def make_oblique_style(weights, styles):
         """Move "Oblique" from weights to styles for font naming purposes"""

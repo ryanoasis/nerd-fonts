@@ -144,8 +144,7 @@ class FontnameParser:
         (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
         (name, rest) = self._shortened_name()
         if self.use_short_families[1]:
-            weights = FontnameTools.short_styles(weights)
-            styles = FontnameTools.short_styles(styles)
+            [ weights, styles ] = FontnameTools.short_styles([ weights, styles ])
         return FontnameTools.concat(name, rest, self.other_token, self.short_family_suff, weights, styles)
 
     def psname(self):
@@ -190,8 +189,7 @@ class FontnameParser:
         other = self.other_token
         weight = self.weight_token
         if self.use_short_families[1]:
-            other = FontnameTools.short_styles(other)
-            weight = FontnameTools.short_styles(weight)
+            [ other, weight ] = FontnameTools.short_styles([ other, weight ])
         return FontnameTools.concat(name, rest, other, self.short_family_suff, weight)
 
     def subfamily(self):
