@@ -26,13 +26,14 @@ class FontnameParser:
     def _make_ps_name(self, n, is_family):
         """Helper to limit font name length in PS names"""
         fam = 'family ' if is_family else ''
-        if not self.for_windows or len(n) <= 31:
+        limit = 31 if is_family else 63
+        if len(n) <= limit:
             return n
         r = re.search('(.*)(-.*)', n)
         if not r:
-            new_n = n[:31]
+            new_n = n[:limit]
         else:
-            q = 31 - len(r.groups()[1])
+            q = limit - len(r.groups()[1])
             if q < 1:
                 q = 1
                 print('Shortening too long PS {}name: Garbage warning'. format(fam))
