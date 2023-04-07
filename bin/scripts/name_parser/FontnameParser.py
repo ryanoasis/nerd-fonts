@@ -13,9 +13,9 @@ class FontnameParser:
         self.use_short_families = (False, False) # ( camelcase name, short styles )
         self.keep_regular_in_family = None # None = auto, True, False
         self.suppress_preferred_if_identical = True
-        self.fullname_suff = ''
-        self.fontname_suff = ''
         self.family_suff = ''
+        self.ps_fontname_suff = ''
+        self.short_family_suff = ''
         self.name_subst = []
         [ self.parse_ok, self._basename, self.weight_token, self.style_token, self.other_token, self._rest ] = FontnameTools.parse_font_name(filename)
         self.basename = self._basename
@@ -56,11 +56,11 @@ class FontnameParser:
         """Suppress ID16/17 if it is identical to ID1/2 (True is default)"""
         self.suppress_preferred_if_identical = suppress
 
-    def inject_suffix(self, fullname, fontname, family):
+    def inject_suffix(self, family, ps_fontname, short_family):
         """Add a custom additonal string that shows up in the resulting names"""
-        self.fullname_suff = fullname.strip()
-        self.fontname_suff = fontname.replace(' ', '')
         self.family_suff = family.strip()
+        self.ps_fontname_suff = ps_fontname.replace(' ', '')
+        self.short_family_suff = short_family.strip()
         return self
 
     def enable_short_families(self, camelcase_name, prefix):
@@ -146,7 +146,7 @@ class FontnameParser:
         if self.use_short_families[1]:
             weights = FontnameTools.short_styles(weights)
             styles = FontnameTools.short_styles(styles)
-        return FontnameTools.concat(name, rest, self.other_token, self.family_suff, weights, styles)
+        return FontnameTools.concat(name, rest, self.other_token, self.short_family_suff, weights, styles)
 
     def psname(self):
         """Get the SFNT PostScriptName (ID 6)"""
@@ -154,7 +154,7 @@ class FontnameParser:
         (name, rest) = self._shortened_name()
         styles = FontnameTools.short_styles(self.style_token)
         weights = FontnameTools.short_styles(self.weight_token)
-        fam = FontnameTools.camel_casify(FontnameTools.concat(name, rest, self.other_token, self.fontname_suff))
+        fam = FontnameTools.camel_casify(FontnameTools.concat(name, rest, self.other_token, self.ps_fontname_suff))
         sub = FontnameTools.camel_casify(FontnameTools.concat(weights, styles))
         if len(sub) > 0:
             sub = '-' + sub
@@ -165,7 +165,7 @@ class FontnameParser:
     def preferred_family(self):
         """Get the SFNT Preferred Familyname (ID 16)"""
         (name, rest) = self._shortened_name()
-        pfn = FontnameTools.concat(name, rest, self.other_token, self.fullname_suff)
+        pfn = FontnameTools.concat(name, rest, self.other_token, self.family_suff)
         if self.suppress_preferred_if_identical and pfn == self.family():
             # Do not set if identical to ID 1
             return ''
@@ -192,7 +192,7 @@ class FontnameParser:
         if self.use_short_families[1]:
             other = FontnameTools.short_styles(other)
             weight = FontnameTools.short_styles(weight)
-        return FontnameTools.concat(name, rest, other, self.family_suff, weight)
+        return FontnameTools.concat(name, rest, other, self.short_family_suff, weight)
 
     def subfamily(self):
         """Get the SFNT SubFamily (ID 2)"""
