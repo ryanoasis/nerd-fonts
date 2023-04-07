@@ -142,41 +142,46 @@ class FontnameParser:
             styles.remove('Regular')
         # For naming purposes we want Oblique to be part of the styles
         (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
-        return FontnameTools.concat(self.basename, self.rest, self.other_token, self.fullname_suff, weights, styles)
+        (name, rest) = self._shortened_name()
+        if self.use_short_families[1]:
+            weights = FontnameTools.short_styles(weights)
+            styles = FontnameTools.short_styles(styles)
+        return FontnameTools.concat(name, rest, self.other_token, self.family_suff, weights, styles)
 
     def psname(self):
         """Get the SFNT PostScriptName (ID 6)"""
-        # This is almost self.family() + '-' + self.subfamily() but without short styles
-        fam = FontnameTools.camel_casify(FontnameTools.concat(self.basename, self.rest, self.other_token, self.fontname_suff))
-        sub = FontnameTools.camel_casify(FontnameTools.concat(self.weight_token, self.style_token))
+        # This is almost self.family() + '-' + self.subfamily()
+        (name, rest) = self._shortened_name()
+        styles = FontnameTools.short_styles(self.style_token)
+        weights = FontnameTools.short_styles(self.weight_token)
+        fam = FontnameTools.camel_casify(FontnameTools.concat(name, rest, self.other_token, self.fontname_suff))
+        sub = FontnameTools.camel_casify(FontnameTools.concat(weights, styles))
         if len(sub) > 0:
             sub = '-' + sub
         fam = FontnameTools.postscript_char_filter(fam)
         sub = FontnameTools.postscript_char_filter(sub)
-        # The name string must be no longer than 63 characters
-        if len(fam) + len(sub) > 63:
-            print('Shortening too long PostScriptName')
-            fam = fam[:(63 - len(sub))]
-        return fam + sub
+        return self._make_ps_name(fam + sub, False)
 
     def preferred_family(self):
         """Get the SFNT Preferred Familyname (ID 16)"""
-        if self.suppress_preferred_if_identical and len(self.weight_token) == 0:
+        (name, rest) = self._shortened_name()
+        pfn = FontnameTools.concat(name, rest, self.other_token, self.fullname_suff)
+        if self.suppress_preferred_if_identical and pfn == self.family():
             # Do not set if identical to ID 1
             return ''
-        (name, rest) = self._shortened_name()
-        return FontnameTools.concat(name, rest, self.other_token, self.family_suff)
+        return pfn
 
     def preferred_styles(self):
         """Get the SFNT Preferred Styles (ID 17)"""
         styles = self.style_token
         weights = self.weight_token
-        if self.suppress_preferred_if_identical and len(weights) == 0:
-            # Do not set if identical to ID 2
-            return ''
         # For naming purposes we want Oblique to be part of the styles
         (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
-        return FontnameTools.concat(weights, styles)
+        pfs = FontnameTools.concat(weights, styles)
+        if self.suppress_preferred_if_identical and pfs == self.subfamily():
+            # Do not set if identical to ID 2
+            return ''
+        return pfs
 
     def family(self):
         """Get the SFNT Familyname (ID 1)"""
@@ -201,15 +206,10 @@ class FontnameParser:
 
     def ps_familyname(self):
         """Get the PS Familyname"""
-        return self._make_ps_name(self.family(), True)
-
-    def ps_fontname(self):
-        """Get the PS fontname"""
-        # This Adobe restriction is classically ignored
-        # if len(n) > 29:
-        #     print('Shortening too long PS fontname')
-        #     return n[:29]
-        return self._make_ps_name(self.psname(), False)
+        fam = self.preferred_family()
+        if len(fam) < 1:
+            fam = self.family()
+        return self._make_ps_name(fam, True)
 
     def macstyle(self, style):
         """Modify a given macStyle value for current name, just bits 0 and 1 touched"""
@@ -238,7 +238,7 @@ class FontnameParser:
     def rename_font(self, font):
         """Rename the font to include all information we found (font is fontforge font object)"""
         font.fondname = None
-        font.fontname = self.ps_fontname()
+        font.fontname = self.psname()
         font.fullname = self.fullname()
         font.familyname = self.ps_familyname()
 
