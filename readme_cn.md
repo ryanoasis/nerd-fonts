@@ -32,7 +32,7 @@
 [**TL;DR**](#tldr)
 
 [**安装选项**](#font-installation)
-  * [**1 - 手动**](#option-1-download-and-install-manually)
+  * [**1 - 手动**](#选项1-手动下载并安装)
   * [**2 - 下载发布存档**](#option-2-release-archive-download)
   * [**3 - 安装脚本**](#option-3-install-script)
   * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
