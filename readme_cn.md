@@ -33,13 +33,13 @@
 
 [**安装选项**](#font-installation)
   * [**1 - 手动**](#选项1-手动下载并安装)
-  * [**2 - 下载发布存档**](#option-2-release-archive-download)
-  * [**3 - 安装脚本**](#option-3-install-script)
-  * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
-  * [**5 - 克隆 Repo**](#option-5-clone-the-repo)
-  * [**6 - Ad Hoc Curl 下载**](#option-6-ad-hoc-curl-download)
-  * [**8 - Arch Linux Repository (Community, AUR)**](#option-7-arch-community-repository)
-  * [**8 - 你自己的字体补丁**](#option-8-patch-your-own-font)
+  * [**2 - 下载发布存档**](#选项2-下载发布存档)
+  * [**3 - 安装脚本**](#选项3-安装脚本)
+  * [**4 - Homebrew Fonts (macOS (OS X))**](#选项4-homebrew-字体)
+  * [**5 - 克隆 Repo**](#选项5-克隆-repo)
+  * [**6 - Ad Hoc Curl 下载**](#选项6-ad-hoc-curl-下载)
+  * [**8 - Arch Linux Repository (Community, AUR)**](#选项7-非官方-arch-community-repository)
+  * [**8 - 你自己的字体补丁**](#选项8-打包你的个人字体)
 
 [**特征**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
@@ -71,13 +71,13 @@
 _如果你..._
 
   * `选项 1.` 需要**快速**从[`patched-fonts/` directory](#patched-fonts)下载一个 **独立字体**
-  * `选项 2.` 需要去下载包含粗体、斜体等等一系列字体的 **字体家族**，请见 [下载档案](#option-2-release-archive-download)
-  * `选项 3.` 需要**自动安装**或使用**脚本**，请见 [安装脚本](#option-3-install-script)
-  * `选项 4.` 是**macOS**的使用者，并且想要使用**Homebrew**，请见 [Homebrew Fonts](#option-4-homebrew-fonts)
-  * `选项 5.` 想要 **完全控制**，请见 [克隆这个 repo](#option-5-clone-the-repo)
-  * `选项 6.` 想要使用 **`curl` command** 或者使用 **scripts**，请见 [Ad Hoc Curl 下载](#option-6-ad-hoc-curl-download)
-  * `选项 7.` 是**Arch Linux**的使用者，并且想要使用**Community packages**，请见 [Arch Community Repositories](#option-7-arch-community-repository)
-  * `选项 8.` 想要打包你自定义的字体，请见 [字体补丁](#option-8-patch-your-own-font)
+  * `选项 2.` 需要去下载包含粗体、斜体等等一系列字体的 **字体家族**，请见 [下载档案](#选项2-下载发布存档)
+  * `选项 3.` 需要**自动安装**或使用**脚本**，请见 [安装脚本](#选项3-安装脚本)
+  * `选项 4.` 是**macOS**的使用者，并且想要使用**Homebrew**，请见 [Homebrew Fonts](#选项4-homebrew-字体)
+  * `选项 5.` 想要 **完全控制**，请见 [克隆这个 repo](#选项5-克隆-repo)
+  * `选项 6.` 想要使用 **`curl` command** 或者使用 **scripts**，请见 [Ad Hoc Curl 下载](#选项6-ad-hoc-curl-下载)
+  * `选项 7.` 是**Arch Linux**的使用者，并且想要使用**Community packages**，请见 [Arch Community Repositories](#选项7-非官方-arch-community-repository)
+  * `选项 8.` 想要打包你自定义的字体，请见 [字体补丁](#选项8-打包你的个人字体)
 
 ## 特征
 * [FontForge Python script](#font-patcher) 可以打包任何字体
