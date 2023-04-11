@@ -2,6 +2,9 @@
 # Nerd Fonts Version: 2.3.3
 # Script Version: 1.0.0
 
+# Run this script in your local bash:
+# curl https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/test-fonts.sh | bash
+
 # Given an array of decimal numbers print all unicode codepoint.
 function print-decimal-unicode-range() {
   local originalSequence=("$@")
