@@ -421,7 +421,8 @@ class font_patcher:
                         dest_font.putshort(source_font.lowppem, 'lowestRecPPEM')
                     if dest_font.modified:
                         dest_font.reset_table_checksum()
-                        dest_font.reset_full_checksum()
+                if dest_font.modified:
+                    dest_font.reset_full_checksum()
             except Exception as error:
                 print("Can not handle font flags ({})".format(repr(error)))
             finally:
