@@ -1212,6 +1212,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "mtoohey31",
+      "name": "Matthew Toohey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36740602?v=4",
+      "profile": "https://mtoohey.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
