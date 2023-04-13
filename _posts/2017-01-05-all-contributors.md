@@ -190,6 +190,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
       <td align="center" valign="top" width="14.28%"><a href="https://keybase.io/bri_"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/284789?v=4?s=100" width="100px;" alt="bri"/><br /><sub><b>bri</b></sub></a><br /><a href="#infra-b-" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Calciferz"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/5092597?v=4?s=100" width="100px;" alt="Calcifer"/><br /><sub><b>Calcifer</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Calciferz" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Weltolk"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/40228052?v=4?s=100" width="100px;" alt="Weltolk"/><br /><sub><b>Weltolk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Weltolk" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://mtoohey.com"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/36740602?v=4?s=100" width="100px;" alt="Matthew Toohey"/><br /><sub><b>Matthew Toohey</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=mtoohey31" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
