@@ -7,7 +7,7 @@ from FontnameTools import FontnameTools
 class FontnameParser:
     """Parse a font name and generate all kinds of names"""
 
-    def __init__(self, filename):
+    def __init__(self, filename, logger):
         """Parse a font filename and store the results"""
         self.parse_ok = False
         self.use_short_families = (False, False) # ( camelcase name, short styles )
@@ -21,6 +21,7 @@ class FontnameParser:
         self.basename = self._basename
         self.rest = self._rest
         self.add_name_substitution_table(FontnameTools.SIL_TABLE)
+        self.logger = logger
 
     def _make_ps_name(self, n, is_family):
         """Helper to limit font name length in PS names"""
@@ -35,10 +36,10 @@ class FontnameParser:
             q = limit - len(r.groups()[1])
             if q < 1:
                 q = 1
-                print('Shortening too long PS {}name: Garbage warning'. format(fam))
+                self.logger.error('Shortening too long PS {}name: Garbage warning'. format(fam))
             new_n = r.groups()[0][:q] + r.groups()[1]
         if new_n != n:
-            print('Shortening too long PS {}name: {} -> {}'.format(fam, n, new_n))
+            self.logger.error('Shortening too long PS {}name: {} -> {}'.format(fam, n, new_n))
         return new_n
 
     def _shortened_name(self):
