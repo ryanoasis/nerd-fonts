@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     } else if (parent.className.startsWith('column') && target.className === 'codepoint') {
-        textToCopy = parent.parentNode.querySelector('.codepoint').innerText;
+        textToCopy = target.innerText;
     }
     if (textToCopy.length > 0) {
       gtag('event', event.target.className, {
