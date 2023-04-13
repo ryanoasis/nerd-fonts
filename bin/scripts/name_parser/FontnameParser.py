@@ -234,6 +234,13 @@ class FontnameParser:
         b |= WWS # We assert this by our naming process
         return b
 
+    def checklen(self, max_len, entry_id, name):
+        """Check the length of a name string and report violations"""
+        if len(name) <= max_len:
+            return name
+        self.logger.error('{} too long ({} > {}): {}'.format(entry_id, len(name), max_len, name))
+        return name
+
     def rename_font(self, font):
         """Rename the font to include all information we found (font is fontforge font object)"""
         font.fondname = None
@@ -281,18 +288,18 @@ class FontnameParser:
                 if k == 'Version' and l == 'English (US)':
                     version_tag = ' ' + v.split()[-1]
 
-        sfnt_list += [( 'English (US)', 'Family', self.family() )] # 1
-        sfnt_list += [( 'English (US)', 'SubFamily', self.subfamily() )] # 2
+        sfnt_list += [( 'English (US)', 'Family', self.checklen(31, 'Family (ID 1)', self.family()) )] # 1
+        sfnt_list += [( 'English (US)', 'SubFamily', self.checklen(31, 'SubFamily (ID 2)', self.subfamily()) )] # 2
         sfnt_list += [( 'English (US)', 'UniqueID', self.fullname() + version_tag )] # 3
-        sfnt_list += [( 'English (US)', 'Fullname', self.fullname() )] # 4
-        sfnt_list += [( 'English (US)', 'PostScriptName', self.psname() )] # 6
+        sfnt_list += [( 'English (US)', 'Fullname', self.checklen(63, 'Fullname (ID 4)', self.fullname()) )] # 4
+        sfnt_list += [( 'English (US)', 'PostScriptName', self.checklen(63, 'PSN (ID 6)', self.psname()) )] # 6
 
         p_fam = self.preferred_family()
         if len(p_fam):
-            sfnt_list += [( 'English (US)', 'Preferred Family', p_fam )] # 16
+            sfnt_list += [( 'English (US)', 'Preferred Family', self.checklen(31, 'PrefFamily (ID 16)', p_fam) )] # 16
         p_sty = self.preferred_styles()
         if len(p_sty):
-            sfnt_list += [( 'English (US)', 'Preferred Styles', p_sty )] # 17
+            sfnt_list += [( 'English (US)', 'Preferred Styles', self.checklen(31, 'PrefStyles (ID 17)', p_sty) )] # 17
 
         font.sfnt_names = tuple(sfnt_list)
 
