@@ -774,19 +774,20 @@ class font_patcher:
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
 
         box_enabled = self.source_monospaced # Box glyph only for monospaced
+        box_keep = False
         if box_enabled:
             self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
             box_glyphs_target = len(list(self.sourceFont.selection))
             box_glyphs_current = len(list(self.sourceFont.selection.byGlyphs))
             if box_glyphs_target > box_glyphs_current:
-                # Sourcefont does not have all of these glyphs, do not mix sets
+                # Sourcefont does not have all of these glyphs, do not mix sets (overwrite existing)
                 if not self.args.quiet and box_glyphs_current > 0:
                     print("INFO: {}/{} box drawing glyphs will be replaced".format(
                         box_glyphs_current, box_glyphs_target))
-                box_keep = False
                 box_enabled = True
             else:
-                box_keep = True # just scale do not copy
+                # Sourcefont does have all of these glyphs
+                # box_keep = True # just scale do not copy (need to scale to fit new cell size)
                 box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
