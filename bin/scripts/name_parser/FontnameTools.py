@@ -186,10 +186,15 @@ class FontnameTools:
         ( '(a)nka/(c)oder',             r'\1na\2onder' ),
         ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\2\3ove' ),
         ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\2\3ono' ),
-        ( '(m)plus',                    r'\1+'), # Added this, because they use a plus symbol :->
+        ( '(m)( ?)plus',                r'\1+'), # Added this, because they use a plus symbol :->
         ( 'Gohufont',                   r'GohuFont'), # Correct to CamelCase
         # Noone cares that font names starting with a digit are forbidden:
         ( 'IBM 3270',                   r'3270'), # for historical reasons and 'IBM' is a TM or something
+        # Some name parts that are too long for us
+        ( '(.*)Latin Expanded',         r'\1LatinX'), # for 'M PLUS Code Latin Expanded'
+        ( '(.*)Sans Mono',              r'\1SM'), # Various SomenameSansMono fonts
+        ( '(b)ig( ?)(b)lue( ?)(t)erminal', r'\1ig\3lue\5erm'), # Shorten BigBlueTerminal
+        ( '(.*)437TT',                  r'\1437'), # Shorten BigBlueTerminal 437 TT even further
     ]
 
     # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf

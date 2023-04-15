@@ -81,18 +81,17 @@ class FontnameParser:
         self.name_subst = table
         self.basename = self._basename
         self.rest = self._rest
-        base_and_rest = self._basename + (' ' + self._rest if len(self._rest) else '')
         for regex, replacement in self.name_subst:
+            base_and_rest = self.basename + (' ' + self.rest if len(self.rest) else '')
             m = re.match(regex, base_and_rest, re.IGNORECASE)
             if not m:
                 continue
-            i = len(self._basename) - len(m.group(0))
+            i = len(self.basename) - len(m.group(0))
             if i < 0:
                 self.basename = m.expand(replacement)
-                self.rest = self._rest[-(i+1):].lstrip()
+                self.rest = self.rest[-(i+1):].lstrip()
             else:
-                self.basename = m.expand(replacement) + self._basename[len(m.group(0)):]
-            break
+                self.basename = m.expand(replacement) + self.basename[len(m.group(0)):]
         return self
 
     def drop_for_powerline(self):
