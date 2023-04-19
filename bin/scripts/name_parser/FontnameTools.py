@@ -93,31 +93,38 @@ class FontnameTools:
         return None
 
     @staticmethod
-    def shorten_style_name(name):
+    def shorten_style_name(name, aggressive):
         """Substitude some known styles to short form"""
+        # If aggressive is False create the mild short form
+        # aggressive == True: Always use first form of everything
+        # aggressive == False:
+        #               - has no modifier: use the second form
+        #               - has modifier: use second form of mod plus first form of main
         name_rest = name
         name_pre = ''
+        form = 0 if aggressive else 1
         for mod in FontnameTools.known_modifiers:
             if name.startswith(mod) and len(name) > len(mod): # Second condition specifically for 'Demi'
-                name_pre = FontnameTools.known_modifiers[mod]
+                name_pre = FontnameTools.known_modifiers[mod][form]
                 name_rest = name[len(mod):]
                 break
+        form = 0 if aggressive or len(name_pre) else 1
         subst = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights2, FontnameTools.known_widths ])
-        if isinstance(subst, str):
-            return name_pre + subst
+        if isinstance(subst, tuple):
+            return name_pre + subst[form]
         if not len(name_pre):
             # The following sets do not allow modifiers
             subst = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights1, FontnameTools.known_slopes ])
-            if isinstance(subst, str):
-                return subst
+            if isinstance(subst, tuple):
+                return subst[form]
         return name
 
     @staticmethod
-    def short_styles(lists):
+    def short_styles(lists, aggressive):
         """Shorten all style names in a list or a list of lists"""
         if not len(lists) or not isinstance(lists[0], list):
-            return list(map(FontnameTools.shorten_style_name, lists))
-        return [ list(map(FontnameTools.shorten_style_name, styles)) for styles in lists ]
+            return list(map(lambda x: FontnameTools.shorten_style_name(x, aggressive), lists))
+        return [ list(map(lambda x: FontnameTools.shorten_style_name(x, aggressive), styles)) for styles in lists ]
 
     @staticmethod
     def make_oblique_style(weights, styles):
@@ -198,44 +205,52 @@ class FontnameTools:
     ]
 
     # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
+    # The first short variant is from the linked table.
+    # The second (longer) short variant is from diverse fonts like Noto.
+    # We can
+    # - use the long form
+    # - use the very short form (first)
+    # - use mild short form:
+    #   - has no modifier: use the second form
+    #   - has modifier: use second form of mod plus first form of main
     known_weights1 = { # can not take modifiers
-        'Medium': 'Md',
-        'Nord': 'Nd',
-        'Book': 'Bk',
-        'Poster': 'Po',
-        'Demi': 'Dm', # Demi is sometimes used as a weight, sometimes as a modifier
-        'Regular': 'Rg',
-        'Display': 'DS',
-        'Super': 'Su',
-        'Retina': 'Rt',
+        'Medium': ('Md', 'Med'),
+        'Nord': ('Nd', 'Nord'),
+        'Book': ('Bk', 'Book'),
+        'Poster': ('Po', 'Poster'),
+        'Demi': ('Dm', 'Demi'), # Demi is sometimes used as a weight, sometimes as a modifier
+        'Regular': ('Rg', 'Reg'),
+        'Display': ('DS', 'Disp'),
+        'Super': ('Su', 'Sup'),
+        'Retina': ('Rt', 'Ret'),
     }
     known_weights2 = { # can take modifiers
-        'Black': 'Blk',
-        'Bold': 'Bd',
-        'Heavy': 'Hv',
-        'Thin': 'Th',
-        'Light': 'Lt',
+        'Black': ('Blk', 'Black'),
+        'Bold': ('Bd', 'Bold'),
+        'Heavy': ('Hv', 'Heavy'),
+        'Thin': ('Th', 'Thin'),
+        'Light': ('Lt', 'Light'),
     }
     known_widths = { # can take modifiers
-        'Compressed': 'Cm',
-        'Extended': 'Ex',
-        'Condensed': 'Cn',
-        'Narrow': 'Nr',
-        'Compact': 'Ct',
+        'Compressed': ('Cm', 'Comp'),
+        'Extended': ('Ex', 'Extd'),
+        'Condensed': ('Cn', 'Cond'),
+        'Narrow': ('Nr', 'Narrow'),
+        'Compact': ('Ct', 'Compact'),
     }
     known_slopes = {
-        'Inclined': 'Ic',
-        'Oblique': 'Obl',
-        'Italic': 'It',
-        'Upright': 'Up',
-        'Kursiv': 'Ks',
-        'Sloped': 'Sl',
+        'Inclined': ('Ic', 'Incl'),
+        'Oblique': ('Obl', 'Obl'),
+        'Italic': ('It', 'Italic'),
+        'Upright': ('Up', 'Uprght'),
+        'Kursiv': ('Ks', 'Kurs'),
+        'Sloped': ('Sl', 'Slop'),
     }
     known_modifiers = {
-        'Demi': 'Dm',
-        'Ultra': 'Ult',
-        'Semi': 'Sm',
-        'Extra': 'X',
+        'Demi': ('Dm', 'Dem'),
+        'Ultra': ('Ult', 'Ult'),
+        'Semi': ('Sm', 'Sem'),
+        'Extra': ('X', 'Ext'),
     }
 
     @staticmethod

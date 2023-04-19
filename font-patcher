@@ -569,7 +569,7 @@ class font_patcher:
             if not n.parse_ok:
                 logger.warning("Have only minimal naming information, check resulting name. Maybe omit --makegroups option")
             n.drop_for_powerline()
-            n.enable_short_families(True, self.args.makegroups in [ 1, 3])
+            n.enable_short_families(True, self.args.makegroups in [ 2, 3, 5, 6, ], self.args.makegroups in [ 3, 6, ])
 
             # All the following stuff is ignored in makegroups-mode
 
@@ -723,7 +723,7 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('Compatible Full'), font.fullname)
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
-            short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups in [ 2, 3] else projectNameSingular + variant_full
+            short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups >= 4 else projectNameSingular + variant_full
             # inject_suffix(family, ps_fontname, short_family)
             n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
             n.rename_font(font)
@@ -1805,14 +1805,18 @@ def setup_arguments():
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-    parser.add_argument('--makegroups',                              dest='makegroups',       default=0,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=3, choices=range(0, 4 + 1))
-    # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 3'.
-    # Possible values with examples:
-    # 0 - turned off, use old naming scheme
-    # 1 - turned on, shortening                         'Bold' to 'Bd'
-    # 2 - turned on, shortening 'Nerd Font' to 'NF'
-    # 3 - turned on, shortening 'Nerd Font' to 'NF' and 'Bold' to 'Bd'
-    # 4 - turned on, no shortening
+    parser.add_argument('--makegroups',                              dest='makegroups',       default=0,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=1, choices=range(0, 6 + 1))
+    # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 1'.
+    # Original font name: Hugo Sans Mono ExtraCondensed Light Italic
+    #                                                             NF  Fam agg.
+    # 0  turned off, use old naming scheme                        [-] [-] [-]
+    # 1  HugoSansMono Nerd Font ExtraCondensed Light Italic       [ ] [ ] [ ]
+    # 2  HugoSansMono Nerd Font ExtCn Light Italic                [ ] [X] [ ]
+    # 3  HugoSansMono Nerd Font XCn Lt It                         [ ] [X] [X]
+    # 4  HugoSansMono NF ExtraCondensed Light Italic              [X] [ ] [ ]
+    # 5  HugoSansMono NF ExtCn Light Italic                       [X] [X] [ ]
+    # 6  HugoSansMono NF XCn Lt It                                [X] [X] [X]
+
     parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
 
     # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse

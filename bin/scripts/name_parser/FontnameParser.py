@@ -10,7 +10,7 @@ class FontnameParser:
     def __init__(self, filename, logger):
         """Parse a font filename and store the results"""
         self.parse_ok = False
-        self.use_short_families = (False, False) # ( camelcase name, short styles )
+        self.use_short_families = (False, False, False) # ( camelcase name, short styles, aggressive )
         self.keep_regular_in_family = None # None = auto, True, False
         self.suppress_preferred_if_identical = True
         self.family_suff = ''
@@ -65,13 +65,13 @@ class FontnameParser:
         self.short_family_suff = short_family.strip()
         return self
 
-    def enable_short_families(self, camelcase_name, prefix):
+    def enable_short_families(self, camelcase_name, prefix, aggressive):
         """Enable short styles in Family when (original) font name starts with prefix; enable CamelCase basename in (Typog.) Family"""
         # camelcase_name is boolean
         # prefix is either a string or False/True
         if isinstance(prefix, str):
             prefix = self._basename.startswith(prefix)
-        self.use_short_families = ( camelcase_name, prefix )
+        self.use_short_families = ( camelcase_name, prefix, aggressive )
         return self
 
     def add_name_substitution_table(self, table):
@@ -145,15 +145,15 @@ class FontnameParser:
         (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
         (name, rest) = self._shortened_name()
         if self.use_short_families[1]:
-            [ weights, styles ] = FontnameTools.short_styles([ weights, styles ])
+            [ weights, styles ] = FontnameTools.short_styles([ weights, styles ], self.use_short_families[2])
         return FontnameTools.concat(name, rest, self.other_token, self.short_family_suff, weights, styles)
 
     def psname(self):
         """Get the SFNT PostScriptName (ID 6)"""
         # This is almost self.family() + '-' + self.subfamily()
         (name, rest) = self._shortened_name()
-        styles = FontnameTools.short_styles(self.style_token)
-        weights = FontnameTools.short_styles(self.weight_token)
+        styles = FontnameTools.short_styles(self.style_token, self.use_short_families[2])
+        weights = FontnameTools.short_styles(self.weight_token, self.use_short_families[2])
         fam = FontnameTools.camel_casify(FontnameTools.concat(name, rest, self.other_token, self.ps_fontname_suff))
         sub = FontnameTools.camel_casify(FontnameTools.concat(weights, styles))
         if len(sub) > 0:
@@ -190,7 +190,7 @@ class FontnameParser:
         other = self.other_token
         weight = self.weight_token
         if self.use_short_families[1]:
-            [ other, weight ] = FontnameTools.short_styles([ other, weight ])
+            [ other, weight ] = FontnameTools.short_styles([ other, weight ], self.use_short_families[2])
         return FontnameTools.concat(name, rest, other, self.short_family_suff, weight)
 
     def subfamily(self):
