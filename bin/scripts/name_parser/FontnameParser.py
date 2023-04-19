@@ -189,8 +189,9 @@ class FontnameParser:
         (name, rest) = self._shortened_name()
         other = self.other_token
         weight = self.weight_token
+        aggressive = self.use_short_families[2]
         if self.use_short_families[1]:
-            [ other, weight ] = FontnameTools.short_styles([ other, weight ], self.use_short_families[2])
+            [ other, weight ] = FontnameTools.short_styles([ other, weight ], aggressive)
         return FontnameTools.concat(name, rest, other, self.short_family_suff, weight)
 
     def subfamily(self):

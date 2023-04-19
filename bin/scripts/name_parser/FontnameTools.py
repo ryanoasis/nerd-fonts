@@ -86,11 +86,11 @@ class FontnameTools:
 
     @staticmethod
     def find_in_dicts(key, dicts):
-        """Find an entry in a list of dicts"""
-        for d in dicts:
+        """Find an entry in a list of dicts, return entry and in which list it was"""
+        for i, d in enumerate(dicts):
             if key in d:
-                return d[key]
-        return None
+                return ( d[key], i )
+        return (None, 0)
 
     @staticmethod
     def shorten_style_name(name, aggressive):
@@ -99,22 +99,23 @@ class FontnameTools:
         # aggressive == True: Always use first form of everything
         # aggressive == False:
         #               - has no modifier: use the second form
-        #               - has modifier: use second form of mod plus first form of main
+        #               - has modifier: use second form of mod plus first form of weights2
+        #               - has modifier: use second form of mod plus second form of widths
         name_rest = name
         name_pre = ''
-        form = 0 if aggressive else 1
+        form = int(not aggressive) # form = 0 if aggressive else 1
         for mod in FontnameTools.known_modifiers:
             if name.startswith(mod) and len(name) > len(mod): # Second condition specifically for 'Demi'
                 name_pre = FontnameTools.known_modifiers[mod][form]
                 name_rest = name[len(mod):]
                 break
-        form = 0 if aggressive or len(name_pre) else 1
-        subst = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights2, FontnameTools.known_widths ])
+        form -= int(len(name_pre) > 0) # form = 0 if aggressive or len(name_pre) else 1
+        subst, i = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights2, FontnameTools.known_widths ])
         if isinstance(subst, tuple):
-            return name_pre + subst[form]
+            return name_pre + subst[min(1, form + i)]
         if not len(name_pre):
             # The following sets do not allow modifiers
-            subst = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights1, FontnameTools.known_slopes ])
+            subst, _ = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights1, FontnameTools.known_slopes ])
             if isinstance(subst, tuple):
                 return subst[form]
         return name
@@ -212,7 +213,8 @@ class FontnameTools:
     # - use the very short form (first)
     # - use mild short form:
     #   - has no modifier: use the second form
-    #   - has modifier: use second form of mod plus first form of main
+    #   - has modifier: use second form of mod plus first form of weights2
+    #   - has modifier: use second form of mod plus second form of widths
     known_weights1 = { # can not take modifiers
         'Medium': ('Md', 'Med'),
         'Nord': ('Nd', 'Nord'),
@@ -230,6 +232,7 @@ class FontnameTools:
         'Heavy': ('Hv', 'Heavy'),
         'Thin': ('Th', 'Thin'),
         'Light': ('Lt', 'Light'),
+        ' ': (), # Just for CodeClimate :-/
     }
     known_widths = { # can take modifiers
         'Compressed': ('Cm', 'Comp'),
@@ -238,7 +241,7 @@ class FontnameTools:
         'Narrow': ('Nr', 'Narrow'),
         'Compact': ('Ct', 'Compact'),
     }
-    known_slopes = {
+    known_slopes = { # can not take modifiers
         'Inclined': ('Ic', 'Incl'),
         'Oblique': ('Obl', 'Obl'),
         'Italic': ('It', 'Italic'),
