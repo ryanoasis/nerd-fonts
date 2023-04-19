@@ -723,7 +723,7 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('Compatible Full'), font.fullname)
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
-            short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups in [ 2, 3] else projectName + variant_full
+            short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups in [ 2, 3] else projectNameSingular + variant_full
             # inject_suffix(family, ps_fontname, short_family)
             n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
             n.rename_font(font)
