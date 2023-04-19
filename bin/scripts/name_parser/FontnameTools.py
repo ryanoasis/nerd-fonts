@@ -202,7 +202,7 @@ class FontnameTools:
         ( '(.*)Latin Expanded',         r'\1LatinX'), # for 'M PLUS Code Latin Expanded'
         ( '(.*)Sans Mono',              r'\1SM'), # Various SomenameSansMono fonts
         ( '(b)ig( ?)(b)lue( ?)(t)erminal', r'\1ig\3lue\5erm'), # Shorten BigBlueTerminal
-        ( '(.*)437TT',                  r'\1437'), # Shorten BigBlueTerminal 437 TT even further
+        ( '(.*)437TT',                  r'\g<1>437'), # Shorten BigBlueTerminal 437 TT even further
     ]
 
     # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
