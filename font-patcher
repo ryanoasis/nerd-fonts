@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.8.0"
+script_version = "4.0.0"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -548,10 +548,7 @@ class font_patcher:
 
         # add 'Nerd Font' to beginning of name suffix
         verboseAdditionalFontNameSuffix = " " + projectNameSingular + variant_full + verboseAdditionalFontNameSuffix
-        if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
-            additionalFontNameSuffix = " " + projectNameAbbreviation + variant_abbrev + additionalFontNameSuffix
-        else:
-            additionalFontNameSuffix = " " + projectNameSingular + variant_full + additionalFontNameSuffix
+        additionalFontNameSuffix = " " + projectNameSingular + variant_full + additionalFontNameSuffix
 
         if FontnameParserOK and self.args.makegroups > 0:
             use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
@@ -617,23 +614,9 @@ class font_patcher:
         if len(subFamily) == 0:
             subFamily = "Regular"
 
-        if self.args.windows:
-            maxFamilyLength = 31
-            maxFontLength = maxFamilyLength - len('-' + subFamily)
-            familyname += " " + projectNameAbbreviation
-            if self.args.single:
-                familyname += "M"
-            fullname += " Windows Compatible"
-
-            # now make sure less than 32 characters name length
-            if len(fontname) > maxFontLength:
-                fontname = fontname[:maxFontLength]
-            if len(familyname) > maxFamilyLength:
-                familyname = familyname[:maxFamilyLength]
-        else:
-            familyname += " " + projectNameSingular
-            if self.args.single:
-                familyname += " Mono"
+        familyname += " " + projectNameSingular
+        if self.args.single:
+            familyname += " Mono"
 
         # Don't truncate the subfamily to keep fontname unique.  MacOS treats fonts with
         # the same name as the same font, even if subFamily is different. Make sure to
@@ -1795,7 +1778,6 @@ def setup_arguments():
     parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='count',      help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
     parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
     parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
-    parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility), ignored when --makegroups is given')
     parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
     parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
     parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
@@ -1824,7 +1806,6 @@ def setup_arguments():
     progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
     progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
     parser.set_defaults(progressbars=True)
-    parser.add_argument('--also-windows',                            dest='alsowindows',      default=False, action='store_true', help='Create two fonts, the normal and the --windows version, ignored when --makegroups is given')
     parser.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
     # Possible values with examples:
@@ -1882,14 +1863,6 @@ def setup_arguments():
             if not found:
                 font_complete = False
         args.complete = font_complete
-
-    if args.alsowindows:
-        args.windows = False
-
-    if args.makegroups > 0 and (args.windows or args.alsowindows):
-        logger.warning("--windows and --also-windows are ignored when --makegroups is specified.")
-        args.windows = False
-        args.alsowindows = False
 
     if args.nonmono and args.single:
         logger.warning("Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
@@ -1986,13 +1959,6 @@ def main():
     for f in sourceFonts:
         patcher.setup_font_names(f)
     patcher.generate(sourceFonts)
-
-    # This mainly helps to improve CI runtime
-    if patcher.args.alsowindows:
-        patcher.args.windows = True
-        for f in sourceFonts:
-            patcher.setup_font_names(f)
-        patcher.generate(sourceFonts)
 
     for f in sourceFonts:
         f.close()
