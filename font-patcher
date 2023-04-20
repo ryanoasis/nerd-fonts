@@ -1805,7 +1805,7 @@ def setup_arguments():
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-    parser.add_argument('--makegroups',                              dest='makegroups',       default=0,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=1, choices=range(0, 6 + 1))
+    parser.add_argument('--makegroups',                              dest='makegroups',       default=1,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=1, choices=range(0, 6 + 1))
     # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 1'.
     # Original font name: Hugo Sans Mono ExtraCondensed Light Italic
     #                                                             NF  Fam agg.
