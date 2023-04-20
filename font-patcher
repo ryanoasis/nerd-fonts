@@ -363,6 +363,9 @@ class font_patcher:
                 "(probably you need to download the src/glyphs/ directory?)", self.args.glyphdir)
             sys.exit(1)
 
+        if self.args.dry_run:
+            return
+
         for patch in self.patch_set:
             if patch['Enabled']:
                 if PreviousSymbolFilename != patch['Filename']:
@@ -433,6 +436,9 @@ class font_patcher:
             if len(self.sourceFont.bitmapSizes):
                 logger.debug("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
                 bitmaps = str('otf') # otf/ttf, both is bf_ttf
+            if self.args.dry_run:
+                logger.debug("=====> Filename '{}'".format(outfile))
+                return
             sourceFont.generate(outfile, bitmap_type=bitmaps, flags=gen_flags)
             message = "   {}\n   \===> '{}'".format(self.sourceFont.fullname, outfile)
 
@@ -1804,6 +1810,7 @@ def setup_arguments():
     progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
     progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
     parser.set_defaults(progressbars=True)
+    parser.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
     parser.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
     # Possible values with examples:
