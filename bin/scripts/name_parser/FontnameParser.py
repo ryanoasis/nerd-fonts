@@ -36,10 +36,10 @@ class FontnameParser:
             q = limit - len(r.groups()[1])
             if q < 1:
                 q = 1
-                self.logger.error('Shortening too long PS {}name: Garbage warning'. format(fam))
+                self.logger.error('====-< Shortening too long PS {}name: Garbage warning'. format(fam))
             new_n = r.groups()[0][:q] + r.groups()[1]
         if new_n != n:
-            self.logger.error('Shortening too long PS {}name: {} -> {}'.format(fam, n, new_n))
+            self.logger.error('====-< Shortening too long PS {}name: {} -> {}'.format(fam, n, new_n))
         return new_n
 
     def _shortened_name(self):
@@ -238,8 +238,9 @@ class FontnameParser:
     def checklen(self, max_len, entry_id, name):
         """Check the length of a name string and report violations"""
         if len(name) <= max_len:
-            return name
-        self.logger.error('{} too long ({} > {}): {}'.format(entry_id, len(name), max_len, name))
+            self.logger.debug('=====> {:18} ok       ({:2} <={:2}): {}'.format(entry_id, len(name), max_len, name))
+        else:
+            self.logger.error('====-< {:18} too long ({:2} > {:2}): {}'.format(entry_id, len(name), max_len, name))
         return name
 
     def rename_font(self, font):
