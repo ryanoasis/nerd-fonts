@@ -1810,6 +1810,7 @@ def setup_arguments():
     progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
     progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
     parser.set_defaults(progressbars=True)
+    parser.add_argument('--debug',                                   dest='debugmode',        default=False, action='store_true', help='Verbose mode')
     parser.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
     parser.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
@@ -1939,9 +1940,10 @@ def main():
     logger.debug("Options %s", repr(sys.argv[1:]))
     c_handler = logging.StreamHandler(stream=sys.stdout)
     c_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
-    if args.quiet:
+    if not args.debugmode:
         c_handler.setLevel(logging.INFO)
     logger.addHandler(c_handler)
+    logger.debug("Naming mode %d", args.makegroups)
 
     patcher = font_patcher(args)
 
