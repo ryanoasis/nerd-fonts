@@ -88,7 +88,7 @@ class FontnameParser:
                 continue
             i = len(self.basename) - len(m.group(0))
             if i < 0:
-                self.basename = m.expand(replacement)
+                self.basename = m.expand(replacement).rstrip()
                 self.rest = self.rest[-(i+1):].lstrip()
             else:
                 self.basename = m.expand(replacement) + self.basename[len(m.group(0)):]
