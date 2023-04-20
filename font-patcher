@@ -567,7 +567,7 @@ class font_patcher:
                 parser_name = os.path.splitext(os.path.basename(self.args.font))[0]
             n = FontnameParser(parser_name, logger)
             if not n.parse_ok:
-                logger.warning("Have only minimal naming information, check resulting name. Maybe omit --makegroups option")
+                logger.warning("Have only minimal naming information, check resulting name. Maybe specify --makegroups 0")
             n.drop_for_powerline()
             n.enable_short_families(True, self.args.makegroups in [ 2, 3, 5, 6, ], self.args.makegroups in [ 3, 6, ])
 
@@ -1849,7 +1849,7 @@ def setup_arguments():
     args = parser.parse_args()
 
     if args.makegroups > 0 and not FontnameParserOK:
-        logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups")
+        logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
         sys.exit(1)
 
     # if you add a new font, set it to True here inside the if condition
