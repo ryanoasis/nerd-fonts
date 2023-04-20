@@ -68,7 +68,6 @@ class FontnameTools:
             'book':         '',
             'text':         '',
             'ce':           'CE',
-            '(ttf)':        '(TTF)',
             #'semibold':     'Demi',
             'ob':           'Oblique',
             'it':           'Italic',
@@ -208,10 +207,16 @@ class FontnameTools:
         # Noone cares that font names starting with a digit are forbidden:
         ( 'IBM 3270',                   r'3270'), # for historical reasons and 'IBM' is a TM or something
         # Some name parts that are too long for us
-        ( '(.*)Latin Expanded',         r'\1LatinX'), # for 'M PLUS Code Latin Expanded'
-        ( '(.*)Sans Mono',              r'\1SM'), # Various SomenameSansMono fonts
+        ( '(.*sans ?m)ono',             r'\1'), # Various SomenameSansMono fonts
+        ( '(.*code ?lat)in Expanded',   r'\1X'), # for 'M PLUS Code Latin Expanded'
+        ( '(.*code ?lat)in',            r'\1'), # for 'M PLUS Code Latin'
         ( '(b)ig( ?)(b)lue( ?)(t)erminal', r'\1ig\3lue\5erm'), # Shorten BigBlueTerminal
         ( '(.*)437TT',                  r'\g<1>437'), # Shorten BigBlueTerminal 437 TT even further
+        ( '(.*dyslexic ?alt)a',         r'\1'), # Open Dyslexic Alta -> Open Dyslexic Alt
+        ( '(.*dyslexic ?m)ono',         r'\1'), # Open Dyslexic Mono -> Open Dyslexic M
+        ( '(overpass ?m)ono',           r'\1'), # Overpass Mono -> Overpass M
+        ( '(proggyclean) ?tt',          r'\1'), # Remove TT from ProggyClean
+        ( '(terminess) ?\(ttf\)',       r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
     ]
 
     # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
@@ -339,7 +344,6 @@ class FontnameTools:
             'Text',             # Plex
             'IIx',              # Profont IIx
             'LGC',              # Inconsolata LGC
-            r'\(TTF\)',         # Terminus (TTF)
             r'\bCE\b',          # ProggycleanTT CE
             r'[12][cmp]n?',     # MPlus
             r'(?:uni-)?1[14]',  # GohuFont uni
