@@ -93,6 +93,15 @@ class FontnameTools:
         return (None, 0)
 
     @staticmethod
+    def get_shorten_form_idx(aggressive, prefix, form_if_prefixed):
+        """Get the tuple index of known_* data tables"""
+        if aggressive:
+            return 0
+        if len(prefix):
+            return form_if_prefixed
+        return 1
+
+    @staticmethod
     def shorten_style_name(name, aggressive):
         """Substitude some known styles to short form"""
         # If aggressive is False create the mild short form
@@ -103,16 +112,16 @@ class FontnameTools:
         #               - has modifier: use second form of mod plus second form of widths
         name_rest = name
         name_pre = ''
-        form = int(not aggressive) # form = 0 if aggressive else 1
+        form = FontnameTools.get_shorten_form_idx(aggressive, '', 0)
         for mod in FontnameTools.known_modifiers:
             if name.startswith(mod) and len(name) > len(mod): # Second condition specifically for 'Demi'
                 name_pre = FontnameTools.known_modifiers[mod][form]
                 name_rest = name[len(mod):]
                 break
-        form -= int(len(name_pre) > 0) # form = 0 if aggressive or len(name_pre) else 1
         subst, i = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights2, FontnameTools.known_widths ])
+        form = FontnameTools.get_shorten_form_idx(aggressive, name_pre, i)
         if isinstance(subst, tuple):
-            return name_pre + subst[min(1, form + i)]
+            return name_pre + subst[form]
         if not len(name_pre):
             # The following sets do not allow modifiers
             subst, _ = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights1, FontnameTools.known_slopes ])
@@ -215,6 +224,7 @@ class FontnameTools:
     #   - has no modifier: use the second form
     #   - has modifier: use second form of mod plus first form of weights2
     #   - has modifier: use second form of mod plus second form of widths
+    # This is encoded in get_shorten_form_idx()
     known_weights1 = { # can not take modifiers
         'Medium': ('Md', 'Med'),
         'Nord': ('Nd', 'Nord'),
