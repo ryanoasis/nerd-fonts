@@ -614,9 +614,7 @@ class font_patcher:
         if len(subFamily) == 0:
             subFamily = "Regular"
 
-        familyname += " " + projectNameSingular
-        if self.args.single:
-            familyname += " Mono"
+        familyname += " " + projectNameSingular + variant_full
 
         # Don't truncate the subfamily to keep fontname unique.  MacOS treats fonts with
         # the same name as the same font, even if subFamily is different. Make sure to
