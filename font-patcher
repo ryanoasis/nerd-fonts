@@ -1863,7 +1863,7 @@ def setup_arguments():
         args.complete = font_complete
 
     if args.nonmono and args.single:
-        logger.warning("Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
+        logging.warning("Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
         args.nonmono = False
 
     make_sure_path_exists(args.outputdir)
@@ -1878,7 +1878,7 @@ def setup_arguments():
         source_font_test = TableHEADWriter(args.font)
         args.is_variable = source_font_test.find_table([b'avar', b'cvar', b'fvar', b'gvarb', b'HVAR', b'MVAR', b'VVAR'], 0)
         if args.is_variable:
-            logger.warning("Source font is a variable open type font (VF), opening might fail...")
+            logging.warning("Source font is a variable open type font (VF), opening might fail...")
     except:
         args.is_variable = False
     finally:
@@ -1893,19 +1893,19 @@ def setup_arguments():
         args.extension = '.' + args.extension
     if re.match("\.ttc$", args.extension, re.IGNORECASE):
         if not is_ttc:
-            logger.critical("Can not create True Type Collections from single font files")
+            logging.critical("Can not create True Type Collections from single font files")
             sys.exit(1)
     else:
         if is_ttc:
-            logger.critical("Can not create single font files from True Type Collections")
+            logging.critical("Can not create single font files from True Type Collections")
             sys.exit(1)
 
     if isinstance(args.xavgwidth, int) and not isinstance(args.xavgwidth, bool):
         if args.xavgwidth < 0:
-            logger.critical("--xavgcharwidth takes no negative numbers")
+            logging.critical("--xavgcharwidth takes no negative numbers")
             sys.exit(2)
         if args.xavgwidth > 16384:
-            logger.critical("--xavgcharwidth takes only numbers up to 16384")
+            logging.critical("--xavgcharwidth takes only numbers up to 16384")
             sys.exit(2)
 
     return args
