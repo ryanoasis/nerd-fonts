@@ -217,6 +217,8 @@ class FontnameTools:
         ( '(overpass ?m)ono',           r'\1'), # Overpass Mono -> Overpass M
         ( '(proggyclean) ?tt',          r'\1'), # Remove TT from ProggyClean
         ( '(terminess) ?\(ttf\)',       r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
+        ( '(im ?writing ?q)uattro',     r'\1uat'), # Rename iM Writing Quattro to Quat
+        ( '(im ?writing ?(mono|duo|quat)) ?s', r'\1'), # Remove S from all iM Writing styles
     ]
 
     # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
