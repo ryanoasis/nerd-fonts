@@ -162,6 +162,7 @@ class FontnameTools:
         return out
 
     SIL_TABLE = [
+        ( '(a)nonymous',                r'\1nonymice' ),
         ( '(s)ource',                   r'\1auce' ),
         ( '(h)ermit',                   r'\1urmit' ),
         ( '(h)asklig',                  r'\1asklug' ),
@@ -264,7 +265,8 @@ class FontnameTools:
         ( style, weight_token ) = FontnameTools.get_name_token(style, weights)
         ( style, style_token ) = FontnameTools.get_name_token(style, styles)
         ( style, other_token ) = FontnameTools.get_name_token(style, other, True)
-        if len(style) < 4:
+        if (len(style) < 4
+                and style.lower() != 'pro'): # Prevent 'r' of Pro to be detected as style_abbrev
             ( style, weight_token_abbrevs ) = FontnameTools.get_name_token(style, weight_abbrevs)
             ( style, style_token_abbrevs ) = FontnameTools.get_name_token(style, style_abbrevs)
             weight_token += weight_token_abbrevs
