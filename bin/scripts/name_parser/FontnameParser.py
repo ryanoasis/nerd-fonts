@@ -152,8 +152,11 @@ class FontnameParser:
         """Get the SFNT PostScriptName (ID 6)"""
         # This is almost self.family() + '-' + self.subfamily()
         (name, rest) = self._shortened_name()
-        styles = FontnameTools.short_styles(self.style_token, self.use_short_families[2])
-        weights = FontnameTools.short_styles(self.weight_token, self.use_short_families[2])
+        styles = self.style_token
+        weights = self.weight_token
+        if self.use_short_families[1]:
+            styles = FontnameTools.short_styles(styles, self.use_short_families[2])
+            weights = FontnameTools.short_styles(weights, self.use_short_families[2])
         fam = FontnameTools.camel_casify(FontnameTools.concat(name, rest, self.other_token, self.ps_fontname_suff))
         sub = FontnameTools.camel_casify(FontnameTools.concat(weights, styles))
         if len(sub) > 0:
