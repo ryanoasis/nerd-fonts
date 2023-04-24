@@ -47,8 +47,7 @@ class FontnameParser:
         if not self.use_short_families[0]:
             return (self.basename, self.rest)
         else:
-            rest = self.rest.replace('Oblique', 'Obl')
-            return (FontnameTools.concat(self.basename, rest).replace(' ', ''), '')
+            return (FontnameTools.concat(self.basename, self.rest).replace(' ', ''), '')
 
     def set_keep_regular_in_family(self, keep):
         """Familyname may contain 'Regular' where it should normally be suppressed"""
@@ -195,6 +194,7 @@ class FontnameParser:
         aggressive = self.use_short_families[2]
         if self.use_short_families[1]:
             [ other, weight ] = FontnameTools.short_styles([ other, weight ], aggressive)
+        weight = [ w if w != 'Oblique' else 'Obl' for w in weight ]
         return FontnameTools.concat(name, rest, other, self.short_family_suff, weight)
 
     def subfamily(self):

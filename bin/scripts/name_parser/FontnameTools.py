@@ -338,7 +338,7 @@ class FontnameTools:
         weights = [ m + s
                 for s in list(FontnameTools.known_weights2) + list(FontnameTools.known_widths)
                 for m in list(FontnameTools.known_modifiers) + [''] if m != s
-            ] + list(FontnameTools.known_weights1)
+            ] + list(FontnameTools.known_weights1) + list(FontnameTools.known_slopes)
         styles = [ 'Bold', 'Italic', 'Regular', 'Normal', ]
         weights = [ w for w in weights if w not in styles ]
         # Some font specialities:
