@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # coding=utf8
+#
+# Usually called via
+# $ fontforge query_names fontfile.tff 2>/dev/null
 
 import sys
 import os.path
@@ -13,10 +16,10 @@ def get_sfnt_dict(font):
 
 def format_names(header, *stuff):
     """Unify outputs (with header)"""
-    f = '{:1.1}|{:50.50} |{:1.1}| {:65.65} |{:1.1}| {:55.55} |{:1.1}| {:30.30} |{:1.1}| {:40.40} |{:1.1}| {:.40}'
+    f = '| {:50.50}|{:>2.2}| {:64.64}|{:>2.2}| {:64.64}|{:>2.2}| {:55.55}|{:>2.2}| {:30.30}|{:>2.2}| {:40.40}|{:>2.2}| {:40.40}|{:>2.2}|'
     if header:
-        d = '------------------------------------------------------------'
-        return f.format(*stuff) + '\n' + f.format('', d, d, d, d, d, d, d, d, d, d, d)
+        d = ''
+        return f.format(*stuff) + '\n' + f.format(d, d, d, d, d, d, d, d, d, d, d, d, d, d).replace(' ', '-')
     return f.format(*stuff).rstrip()
 
 ###### Let's go!
@@ -27,7 +30,7 @@ if len(sys.argv) < 2:
 
 print('Examining {} font files'.format(len(sys.argv) - 1))
 
-print(format_names(True, '', 'Filename', '', 'Fullname', '', 'Family', '', 'Subfamily', '', 'Typogr. Family', '', 'Typogr. Subfamily'))
+print(format_names(True, 'Filename', '', 'PS Name', '', 'Fullname', '', 'Family', '', 'Subfamily', '', 'Typogr. Family', '', 'Typogr. Subfamily', ''))
 
 for filename in sys.argv[1:]:
     fullfile = os.path.basename(filename)
@@ -35,6 +38,7 @@ for filename in sys.argv[1:]:
 
     font = fontforge.open(filename, 1)
     sfnt = get_sfnt_dict(font)
+    psname = font.fontname
     font.close()
 
     sfnt_full =    sfnt['Fullname']
@@ -43,6 +47,14 @@ for filename in sys.argv[1:]:
     sfnt_pfam =    sfnt['Preferred Family'] if 'Preferred Family' in sfnt else ''
     sfnt_psubfam = sfnt['Preferred Styles'] if 'Preferred Styles' in sfnt else ''
 
-    o2 = format_names(False, '', fullfile, '', sfnt_full, '', sfnt_fam, '', sfnt_subfam, '', sfnt_pfam, '', sfnt_psubfam)
+    o2 = format_names(False,
+            fullfile, str(len(fullfile)),
+            psname, str(len(psname)),
+            sfnt_full, str(len(sfnt_full)),
+            sfnt_fam, str(len(sfnt_fam)),
+            sfnt_subfam, str(len(sfnt_subfam)),
+            # show length zero if a zero length string is stored, show nothing if nothing is stored:
+            sfnt_pfam, str(len(sfnt_pfam)) if 'Preferred Family' in sfnt else '',
+            sfnt_psubfam, str(len(sfnt_psubfam)) if 'Preferred Family' in sfnt else '')
 
     print(o2)

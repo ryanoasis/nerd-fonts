@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "3.7.1"
+script_version = "4.0.0"
 
 version = "2.3.3"
 projectName = "Nerd Fonts"
@@ -22,6 +22,7 @@ import errno
 import subprocess
 import json
 from enum import Enum
+import logging
 try:
     import configparser
 except ImportError:
@@ -239,10 +240,10 @@ def force_panose_monospaced(font):
     panose = list(font.os2_panose)
     if panose[0] == 0: # 0 (1st value) = family kind; 0 = any (default)
         panose[0] = 2 # make kind latin text and display
-        print("  Setting Panose 'Family Kind' to 'Latin Text and Display' (was 'Any')")
+        logger.info("Setting Panose 'Family Kind' to 'Latin Text and Display' (was 'Any')")
         font.os2_panose = tuple(panose)
     if panose[0] == 2 and panose[3] != 9:
-        print("  Setting Panose 'Proportion' to 'Monospaced' (was '{}')".format(panose_proportion_to_text(panose[3])))
+        logger.info("Setting Panose 'Proportion' to 'Monospaced' (was '%s')", panose_proportion_to_text(panose[3]))
         panose[3] = 9 # 3 (4th value) = proportion; 9 = monospaced
         font.os2_panose = tuple(panose)
 
@@ -296,9 +297,21 @@ def get_old_average_x_width(font):
     }
     for g in weights:
         if g not in font:
-            sys.exit("{}: Can not determine ancient style xAvgCharWidth".format(projectName))
+            logger.critical("Can not determine ancient style xAvgCharWidth")
+            sys.exit(1)
         s += font[g].width * weights[g]
     return int(s / 1000)
+
+def create_filename(fonts):
+    """ Determine filename from font object(s) """
+    sfnt = { k: v for l, k, v in fonts[0].sfnt_names }
+    sfnt_pfam = sfnt.get('Preferred Family', sfnt['Family'])
+    sfnt_psubfam = sfnt.get('Preferred Styles', sfnt['SubFamily'])
+    if len(fonts) > 1:
+        return sfnt_pfam
+    if len(sfnt_psubfam) > 0:
+        sfnt_psubfam = '-' + sfnt_psubfam
+    return (sfnt_pfam + sfnt_psubfam).replace(' ', '')
 
 
 class font_patcher:
@@ -311,6 +324,7 @@ class font_patcher:
         self.font_dim = None  # class 'dict'
         self.font_extrawide = False
         self.source_monospaced = None # Later True or False
+        self.symbolsonly = False
         self.onlybitmaps = 0
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -336,7 +350,7 @@ class font_patcher:
 
         # For very wide (almost square or wider) fonts we do not want to generate 2 cell wide Powerline glyphs
         if self.font_dim['height'] * 1.8 < self.font_dim['width'] * 2:
-            print("Very wide and short font, disabling 2 cell Powerline glyphs")
+            logger.warning("Very wide and short font, disabling 2 cell Powerline glyphs")
             self.font_extrawide = True
 
         # Prevent opening and closing the fontforge font. Makes things faster when patching
@@ -345,8 +359,12 @@ class font_patcher:
         symfont = None
 
         if not os.path.isdir(self.args.glyphdir):
-            sys.exit("{}: Can not find symbol glyph directory {} "
-                "(probably you need to download the src/glyphs/ directory?)".format(projectName, self.args.glyphdir))
+            logger.critical("Can not find symbol glyph directory %s "
+                "(probably you need to download the src/glyphs/ directory?)", self.args.glyphdir)
+            sys.exit(1)
+
+        if self.args.dry_run:
+            return
 
         for patch in self.patch_set:
             if patch['Enabled']:
@@ -356,11 +374,13 @@ class font_patcher:
                         symfont.close()
                         symfont = None
                     if not os.path.isfile(self.args.glyphdir + patch['Filename']):
-                        sys.exit("{}: Can not find symbol source for '{}'\n{:>{}}  (i.e. {})".format(
-                            projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
+                        logger.critical("Can not find symbol source for '%s' (i.e. %s)",
+                            patch['Name'], self.args.glyphdir + patch['Filename'])
+                        sys.exit(1)
                     if not os.access(self.args.glyphdir + patch['Filename'], os.R_OK):
-                        sys.exit("{}: Can not open symbol source for '{}'\n{:>{}}  (i.e. {})".format(
-                            projectName, patch['Name'], '', len(projectName), self.args.glyphdir + patch['Filename']))
+                        logger.critical("Can not open symbol source for '%s' (i.e. %s)",
+                            patch['Name'], self.args.glyphdir + patch['Filename'])
+                        sys.exit(1)
                     symfont = fontforge.open(os.path.join(self.args.glyphdir, patch['Filename']))
                     symfont.encoding = 'UnicodeFull'
 
@@ -402,11 +422,11 @@ class font_patcher:
                     break
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
-                sanitize_filename(sourceFont.familyname) + ".ttc"))
+                sanitize_filename(create_filename(sourceFonts)) + ".ttc"))
             sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=gen_flags, layer=layer)
             message = "   Generated {} fonts\n   \===> '{}'".format(len(sourceFonts), outfile)
         else:
-            fontname = sourceFont.fullname
+            fontname = create_filename(sourceFonts)
             if not fontname:
                 fontname = sourceFont.cidfontname
             outfile = os.path.normpath(os.path.join(
@@ -414,9 +434,11 @@ class font_patcher:
                 sanitize_filename(fontname) + self.args.extension))
             bitmaps = str()
             if len(self.sourceFont.bitmapSizes):
-                if not self.args.quiet:
-                    print("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
+                logger.debug("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
                 bitmaps = str('otf') # otf/ttf, both is bf_ttf
+            if self.args.dry_run:
+                logger.debug("=====> Filename '{}'".format(outfile))
+                return
             sourceFont.generate(outfile, bitmap_type=bitmaps, flags=gen_flags)
             message = "   {}\n   \===> '{}'".format(self.sourceFont.fullname, outfile)
 
@@ -426,8 +448,7 @@ class font_patcher:
                 source_font = TableHEADWriter(self.args.font)
                 dest_font = TableHEADWriter(outfile)
                 for idx in range(source_font.num_fonts):
-                    if not self.args.quiet:
-                        print("{}: Tweaking {}/{}".format(projectName, idx + 1, source_font.num_fonts))
+                    logger.debug("Tweaking %d/%d", idx + 1, source_font.num_fonts)
                     xwidth_s = ''
                     xwidth = self.xavgwidth[idx]
                     if isinstance(xwidth, int):
@@ -438,26 +459,23 @@ class font_patcher:
                         dest_font.find_table([b'OS/2'], idx)
                         d_xwidth = dest_font.getshort('avgWidth')
                         if d_xwidth != xwidth:
-                            if not self.args.quiet:
-                                print("Changing xAvgCharWidth from {} to {}{}".format(d_xwidth, xwidth, xwidth_s))
+                            logger.debug("Changing xAvgCharWidth from %d to %d%s", d_xwidth, xwidth, xwidth_s)
                             dest_font.putshort(xwidth, 'avgWidth')
                             dest_font.reset_table_checksum()
                     source_font.find_head_table(idx)
                     dest_font.find_head_table(idx)
                     if source_font.flags & 0x08 == 0 and dest_font.flags & 0x08 != 0:
-                        if not self.args.quiet:
-                            print("Changing flags from 0x{:X} to 0x{:X}".format(dest_font.flags, dest_font.flags & ~0x08))
+                        logger.debug("Changing flags from 0x%X to 0x%X", dest_font.flags, dest_font.flags & ~0x08)
                         dest_font.putshort(dest_font.flags & ~0x08, 'flags') # clear 'ppem_to_int'
                     if source_font.lowppem != dest_font.lowppem:
-                        if not self.args.quiet:
-                            print("Changing lowestRecPPEM from {} to {}".format(dest_font.lowppem, source_font.lowppem))
+                        logger.debug("Changing lowestRecPPEM from %d to %d", dest_font.lowppem, source_font.lowppem)
                         dest_font.putshort(source_font.lowppem, 'lowestRecPPEM')
                     if dest_font.modified:
                         dest_font.reset_table_checksum()
                 if dest_font.modified:
                     dest_font.reset_full_checksum()
             except Exception as error:
-                print("Can not handle font flags ({})".format(repr(error)))
+                logger.error("Can not handle font flags (%s)", repr(error))
             finally:
                 try:
                     source_font.close()
@@ -465,12 +483,13 @@ class font_patcher:
                 except:
                     pass
         if self.args.is_variable:
-            print("Warning: Source font is a variable open type font (VF) and the patch results will most likely not be what you want")
+            logger.error("Source font is a variable open type font (VF) and the patch results will most likely not be what you want")
         print(message)
 
         if self.args.postprocess:
             subprocess.call([self.args.postprocess, outfile])
-            print("\nPost Processed: {}".format(outfile))
+            print("\n")
+            logger.info("Post Processed: %s", outfile)
 
 
     def setup_name_backup(self, font):
@@ -488,11 +507,8 @@ class font_patcher:
             font.fullname = font.persistent["fullname"]
         if isinstance(font.persistent["familyname"], str):
             font.familyname = font.persistent["familyname"]
-        verboseAdditionalFontNameSuffix = " " + projectNameSingular
-        if self.args.windows:  # attempt to shorten here on the additional name BEFORE trimming later
-            additionalFontNameSuffix = " " + projectNameAbbreviation
-        else:
-            additionalFontNameSuffix = verboseAdditionalFontNameSuffix
+        verboseAdditionalFontNameSuffix = ""
+        additionalFontNameSuffix = ""
         if not self.args.complete:
             # NOTE not all symbol fonts have appended their suffix here
             if self.args.fontawesome:
@@ -523,17 +539,24 @@ class font_patcher:
                 additionalFontNameSuffix += " WEA"
                 verboseAdditionalFontNameSuffix += " Plus Weather Icons"
 
-        # if all source glyphs included simplify the name
-        else:
-            additionalFontNameSuffix = " " + projectNameSingular + " Complete"
-            verboseAdditionalFontNameSuffix = " " + projectNameSingular + " Complete"
-
-        # add mono signifier to end of name
+        # add mono signifier to beginning of name suffix
         if self.args.single:
-            additionalFontNameSuffix += " M"
-            verboseAdditionalFontNameSuffix += " Mono"
+            variant_abbrev = "M"
+            variant_full = " Mono"
+        elif self.args.nonmono and not self.symbolsonly:
+            variant_abbrev = "P"
+            variant_full = " Propo"
+        else:
+            variant_abbrev = ""
+            variant_full = ""
 
-        if FontnameParserOK and self.args.makegroups:
+        ps_suffix = projectNameAbbreviation + variant_abbrev + additionalFontNameSuffix
+
+        # add 'Nerd Font' to beginning of name suffix
+        verboseAdditionalFontNameSuffix = " " + projectNameSingular + variant_full + verboseAdditionalFontNameSuffix
+        additionalFontNameSuffix = " " + projectNameSingular + variant_full + additionalFontNameSuffix
+
+        if FontnameParserOK and self.args.makegroups > 0:
             use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
             # Use fullname if it is 'equal' to the fontname
             if font.fullname:
@@ -545,12 +568,11 @@ class font_patcher:
             # Gohu fontnames hide the weight, but the file names are ok...
             if parser_name.startswith('Gohu'):
                 parser_name = os.path.splitext(os.path.basename(self.args.font))[0]
-            n = FontnameParser(parser_name)
+            n = FontnameParser(parser_name, logger)
             if not n.parse_ok:
-                print("Have only minimal naming information, check resulting name. Maybe omit --makegroups option")
+                logger.warning("Have only minimal naming information, check resulting name. Maybe specify --makegroups 0")
             n.drop_for_powerline()
-            n.enable_short_families(True, "Noto")
-            n.set_for_windows(self.args.windows)
+            n.enable_short_families(True, self.args.makegroups in [ 2, 3, 5, 6, ], self.args.makegroups in [ 3, 6, ])
 
             # All the following stuff is ignored in makegroups-mode
 
@@ -598,23 +620,7 @@ class font_patcher:
         if len(subFamily) == 0:
             subFamily = "Regular"
 
-        if self.args.windows:
-            maxFamilyLength = 31
-            maxFontLength = maxFamilyLength - len('-' + subFamily)
-            familyname += " " + projectNameAbbreviation
-            if self.args.single:
-                familyname += "M"
-            fullname += " Windows Compatible"
-
-            # now make sure less than 32 characters name length
-            if len(fontname) > maxFontLength:
-                fontname = fontname[:maxFontLength]
-            if len(familyname) > maxFamilyLength:
-                familyname = familyname[:maxFamilyLength]
-        else:
-            familyname += " " + projectNameSingular
-            if self.args.single:
-                familyname += " Mono"
+        familyname += " " + projectNameSingular + variant_full
 
         # Don't truncate the subfamily to keep fontname unique.  MacOS treats fonts with
         # the same name as the same font, even if subFamily is different. Make sure to
@@ -693,7 +699,7 @@ class font_patcher:
         fullname   = replace_font_name(fullname,   additionalFontNameReplacements2)
         fontname   = replace_font_name(fontname,   additionalFontNameReplacements2)
 
-        if not (FontnameParserOK and self.args.makegroups):
+        if not (FontnameParserOK and self.args.makegroups > 0):
             # replace any extra whitespace characters:
             font.familyname = " ".join(familyname.split())
             font.fullname   = " ".join(fullname.split())
@@ -704,13 +710,9 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('Compatible Full'), font.fullname)
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
-            fam_suffix = projectNameSingular if not self.args.windows else projectNameAbbreviation
-            if self.args.single:
-                if self.args.windows:
-                    fam_suffix += 'M'
-                else:
-                    fam_suffix += ' Mono'
-            n.inject_suffix(verboseAdditionalFontNameSuffix, additionalFontNameSuffix, fam_suffix)
+            short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups >= 4 else projectNameSingular + variant_full
+            # inject_suffix(family, ps_fontname, short_family)
+            n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
             n.rename_font(font)
 
         font.comment = projectInfo
@@ -726,6 +728,7 @@ class font_patcher:
             self.sourceFont.version = str(self.sourceFont.cidversion) + ";" + projectName + " " + version
         self.sourceFont.sfntRevision = None # Auto-set (refreshed) by fontforge
         self.sourceFont.appendSFNTName(str('English (US)'), str('Version'), "Version " + self.sourceFont.version)
+        # The Version SFNT name is later reused by the NameParser for UniqueID
         # print("Version now is {}".format(sourceFont.version))
 
 
@@ -734,17 +737,17 @@ class font_patcher:
         # the tables have been removed from the repo with >this< commit
         if self.args.configfile and self.config.read(self.args.configfile):
             if self.args.removeligatures:
-                print("Removing ligatures from configfile `Subtables` section")
+                logger.info("Removing ligatures from configfile `Subtables` section")
                 ligature_subtables = json.loads(self.config.get("Subtables", "ligatures"))
                 for subtable in ligature_subtables:
-                    print("Removing subtable:", subtable)
+                    logger.debug("Removing subtable: %s", subtable)
                     try:
                         self.sourceFont.removeLookupSubtable(subtable)
-                        print("Successfully removed subtable:", subtable)
+                        logger.debug("Successfully removed subtable: %s", subtable)
                     except Exception:
-                        print("Failed to remove subtable:", subtable)
+                        logger.error("Failed to remove subtable: %s", subtable)
         elif self.args.removeligatures:
-            print("Unable to read configfile, unable to remove ligatures")
+            logger.error("Unable to read configfile, unable to remove ligatures")
 
 
     def assert_monospace(self):
@@ -756,16 +759,17 @@ class font_patcher:
         panose_mono = check_panose_monospaced(self.sourceFont)
         # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
         if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
-            print("  Warning: Monospaced check: Panose assumed to be wrong")
-            print("  {} and {}".format(
+            logger.warning("Monospaced check: Panose assumed to be wrong")
+            logger.warning("  %s and %s",
                 report_advance_widths(self.sourceFont),
-                panose_check_to_text(panose_mono, self.sourceFont.os2_panose)))
+                panose_check_to_text(panose_mono, self.sourceFont.os2_panose))
         if self.args.single and not width_mono:
-            print("  Warning: Sourcefont is not monospaced - forcing to monospace not advisable, results might be useless")
+            logger.warning("Sourcefont is not monospaced - forcing to monospace not advisable, results might be useless")
             if offending_char is not None:
-                print("           Offending char: 0x{:X}".format(offending_char))
+                logger.warning("           Offending char: %X", offending_char)
             if self.args.single <= 1:
-                sys.exit(projectName + ": Font will not be patched! Give --mono (or -s, or --use-single-width-glyphs) twice to force patching")
+                logger.critical("Font will not be patched! Give --mono (or -s, or --use-single-width-glyphs) twice to force patching")
+                sys.exit(1)
         if width_mono:
             force_panose_monospaced(self.sourceFont)
 
@@ -781,9 +785,9 @@ class font_patcher:
             box_glyphs_current = len(list(self.sourceFont.selection.byGlyphs))
             if box_glyphs_target > box_glyphs_current:
                 # Sourcefont does not have all of these glyphs, do not mix sets (overwrite existing)
-                if not self.args.quiet and box_glyphs_current > 0:
-                    print("INFO: {}/{} box drawing glyphs will be replaced".format(
-                        box_glyphs_current, box_glyphs_target))
+                if box_glyphs_current > 0:
+                    logger.debug("%d/%d box drawing glyphs will be replaced",
+                        box_glyphs_current, box_glyphs_target)
                 box_enabled = True
             else:
                 # Sourcefont does have all of these glyphs
@@ -1104,7 +1108,7 @@ class font_patcher:
             metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
         else:
             # We trust the WIN metric more, see experiments in #1056
-            print("{}: WARNING Font vertical metrics inconsistent (HHEA {} / TYPO {} / WIN {}), using WIN".format(projectName, hhea_btb, typo_btb, win_btb))
+            logger.warning("Font vertical metrics inconsistent (HHEA %d / TYPO %d / WIN %d), using WIN", hhea_btb, typo_btb, win_btb)
             our_btb = win_btb
             metrics = Metric.WIN
 
@@ -1129,6 +1133,7 @@ class font_patcher:
         if self.font_dim['height'] == 0:
             # This can only happen if the input font is empty
             # Assume we are using our prepared templates
+            self.symbolsonly = True
             self.font_dim = {
                 'xmin'  : 0,
                 'ymin'  : -self.sourceFont.descent,
@@ -1139,7 +1144,8 @@ class font_patcher:
             }
             our_btb = self.sourceFont.descent + self.sourceFont.ascent
         elif self.font_dim['height'] < 0:
-            sys.exit("{}: Can not detect sane font height".format(projectName))
+            logger.critical("Can not detect sane font height")
+            sys.exit(1)
 
         # Make all metrics equal
         self.sourceFont.os2_typolinegap = 0
@@ -1153,12 +1159,13 @@ class font_patcher:
         self.sourceFont.os2_use_typo_metrics = 1
         (check_hhea_btb, check_typo_btb, check_win_btb, _) = get_btb_metrics(self.sourceFont)
         if check_hhea_btb != check_typo_btb or check_typo_btb != check_win_btb or check_win_btb != our_btb:
-            sys.exit("{}: Error in baseline to baseline code detected".format(projectName))
+            logger.critical("Error in baseline to baseline code detected")
+            sys.exit(1)
 
         # Step 2
         # Find the biggest char width and advance width
         # 0x00-0x17f is the Latin Extended-A range
-        warned1 = self.args.quiet or self.args.nonmono # Do not warn if quiet or proportional target
+        warned1 = self.args.nonmono # Do not warn if proportional target
         warned2 = warned1
         for glyph in range(0x21, 0x17f):
             if glyph in range(0x7F, 0xBF) or glyph in [
@@ -1176,19 +1183,18 @@ class font_patcher:
             if self.font_dim['width'] < self.sourceFont[glyph].width:
                 self.font_dim['width'] = self.sourceFont[glyph].width
                 if not warned1 and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
-                    print("Warning: Extended glyphs wider than basic glyphs, results might be useless\n  {}".format(
-                        report_advance_widths(self.sourceFont)))
+                    logger.debug("Extended glyphs wider than basic glyphs, results might be useless\n  %s",
+                        report_advance_widths(self.sourceFont))
                     warned1 = True
                 # print("New MAXWIDTH-A {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if xmax > self.font_dim['xmax']:
                 self.font_dim['xmax'] = xmax
                 if not warned2 and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
-                    print("Info: Extended glyphs wider bounding box than basic glyphs")
+                    logger.debug("Extended glyphs wider bounding box than basic glyphs")
                     warned2 = True
                 # print("New MAXWIDTH-B {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
         if self.font_dim['width'] < self.font_dim['xmax']:
-            if not self.args.quiet:
-                print("Warning: Font has negative right side bearing in extended glyphs")
+            logger.debug("Font has negative right side bearing in extended glyphs")
             self.font_dim['xmax'] = self.font_dim['width'] # In fact 'xmax' is never used
         # print("FINAL", self.font_dim)
 
@@ -1288,7 +1294,7 @@ class font_patcher:
                 if sym_glyph.altuni:
                     possible_codes += [ v for v, s, r in sym_glyph.altuni if v > currentSourceFontGlyph ]
                 if len(possible_codes) == 0:
-                    print("  Can not determine codepoint of {:X}. Skipping...".format(sym_glyph.unicode))
+                    logger.warning("Can not determine codepoint of %X. Skipping...", sym_glyph.unicode)
                     continue
                 currentSourceFontGlyph = min(possible_codes)
             else:
@@ -1311,9 +1317,8 @@ class font_patcher:
             # check if a glyph already exists in this location
             if careful or 'careful' in sym_attr['params'] or currentSourceFontGlyph in self.essential:
                 if currentSourceFontGlyph in self.sourceFont:
-                    if not self.args.quiet:
-                        careful_type = 'essential' if currentSourceFontGlyph in self.essential else 'existing'
-                        print("  Found {} Glyph at {:X}. Skipping...".format(careful_type, currentSourceFontGlyph))
+                    careful_type = 'essential' if currentSourceFontGlyph in self.essential else 'existing'
+                    logger.debug("Found %s Glyph at %X. Skipping...", careful_type, currentSourceFontGlyph)
                     # We don't want to touch anything so move to next Glyph
                     continue
             else:
@@ -1461,8 +1466,8 @@ class font_patcher:
             if self.args.single:
                 (xmin, _, xmax, _) = self.sourceFont[currentSourceFontGlyph].boundingBox()
                 if int(xmax - xmin) > self.font_dim['width'] * (1 + (overlap or 0)):
-                    print("\n  Warning: Scaled glyph U+{:X} wider than one monospace width ({} / {} (overlap {}))".format(
-                        currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], overlap))
+                    logger.warning("Scaled glyph %X wider than one monospace width (%d / %d (overlap %f))",
+                        currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], overlap)
 
         # end for
 
@@ -1603,7 +1608,7 @@ def half_gap(gap, top):
     gap_top = int(gap / 2)
     gap_bottom = gap - gap_top
     if top:
-        print("Redistributing line gap of {} ({} top and {} bottom)".format(gap, gap_top, gap_bottom))
+        logger.info("Redistributing line gap of %d (%d top and %d bottom)", gap, gap_top, gap_bottom)
         return gap_top
     return gap_bottom
 
@@ -1728,8 +1733,8 @@ def check_fontforge_min_version():
 
     # versions tested: 20150612, 20150824
     if actualVersion < minimumVersion:
-        sys.stderr.write("{}: You seem to be using an unsupported (old) version of fontforge: {}\n".format(projectName, actualVersion))
-        sys.stderr.write("{}: Please use at least version: {}\n".format(projectName, minimumVersion))
+        logger.critical("You seem to be using an unsupported (old) version of fontforge: %d", actualVersion)
+        logger.critical("Please use at least version: %d", minimumVersion)
         sys.exit(1)
 
 def check_version_with_git(version):
@@ -1777,7 +1782,6 @@ def setup_arguments():
     parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='count',      help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
     parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
     parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
-    parser.add_argument('-w', '--windows',                           dest='windows',          default=False, action='store_true', help='Limit the internal font name to 31 characters (for Windows compatibility)')
     parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
     parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
     parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
@@ -1787,15 +1791,27 @@ def setup_arguments():
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-    parser.add_argument('--makegroups',                              dest='makegroups',       default=False, action='store_true', help='Use alternative method to name patched fonts (experimental)')
+    parser.add_argument('--makegroups',                              dest='makegroups',       default=1,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=1, choices=range(0, 6 + 1))
+    # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 1'.
+    # Original font name: Hugo Sans Mono ExtraCondensed Light Italic
+    #                                                             NF  Fam agg.
+    # 0  turned off, use old naming scheme                        [-] [-] [-]
+    # 1  HugoSansMono Nerd Font ExtraCondensed Light Italic       [ ] [ ] [ ]
+    # 2  HugoSansMono Nerd Font ExtCn Light Italic                [ ] [X] [ ]
+    # 3  HugoSansMono Nerd Font XCn Lt It                         [ ] [X] [X]
+    # 4  HugoSansMono NF ExtraCondensed Light Italic              [X] [ ] [ ]
+    # 5  HugoSansMono NF ExtCn Light Italic                       [X] [X] [ ]
+    # 6  HugoSansMono NF XCn Lt It                                [X] [X] [X]
+
     parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
 
     # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
     progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
-    progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set')
+    progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
     progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
     parser.set_defaults(progressbars=True)
-    parser.add_argument('--also-windows',                            dest='alsowindows',      default=False, action='store_true', help='Create two fonts, the normal and the --windows version')
+    parser.add_argument('--debug',                                   dest='debugmode',        default=False, action='store_true', help='Verbose mode')
+    parser.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
     parser.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
     # Possible values with examples:
@@ -1819,8 +1835,9 @@ def setup_arguments():
 
     args = parser.parse_args()
 
-    if args.makegroups and not FontnameParserOK:
-        sys.exit("{}: FontnameParser module missing (bin/scripts/name_parser/Fontname*), can not --makegroups".format(projectName))
+    if args.makegroups > 0 and not FontnameParserOK:
+        logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
+        sys.exit(1)
 
     # if you add a new font, set it to True here inside the if condition
     if args.complete:
@@ -1853,24 +1870,23 @@ def setup_arguments():
                 font_complete = False
         args.complete = font_complete
 
-    if args.alsowindows:
-        args.windows = False
-
     if args.nonmono and args.single:
-        print("Warning: Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
+        logging.warning("Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
         args.nonmono = False
 
     make_sure_path_exists(args.outputdir)
     if not os.path.isfile(args.font):
-        sys.exit("{}: Font file does not exist: {}".format(projectName, args.font))
+        logging.critical("Font file does not exist: %s", args.font)
+        sys.exit(1)
     if not os.access(args.font, os.R_OK):
-        sys.exit("{}: Can not open font file for reading: {}".format(projectName, args.font))
+        logging.critical("Can not open font file for reading: %s", args.font)
+        sys.exit(1)
     is_ttc = len(fontforge.fontsInFile(args.font)) > 1
     try:
         source_font_test = TableHEADWriter(args.font)
         args.is_variable = source_font_test.find_table([b'avar', b'cvar', b'fvar', b'gvarb', b'HVAR', b'MVAR', b'VVAR'], 0)
         if args.is_variable:
-            print("  Warning: Source font is a variable open type font (VF), opening might fail...")
+            logging.warning("Source font is a variable open type font (VF), opening might fail...")
     except:
         args.is_variable = False
     finally:
@@ -1885,16 +1901,20 @@ def setup_arguments():
         args.extension = '.' + args.extension
     if re.match("\.ttc$", args.extension, re.IGNORECASE):
         if not is_ttc:
-            sys.exit(projectName + ": Can not create True Type Collections from single font files")
+            logging.critical("Can not create True Type Collections from single font files")
+            sys.exit(1)
     else:
         if is_ttc:
-            sys.exit(projectName + ": Can not create single font files from True Type Collections")
+            logging.critical("Can not create single font files from True Type Collections")
+            sys.exit(1)
 
     if isinstance(args.xavgwidth, int) and not isinstance(args.xavgwidth, bool):
         if args.xavgwidth < 0:
-            sys.exit(projectName + ": --xavgcharwidth takes no negative numbers")
+            logging.critical("--xavgcharwidth takes no negative numbers")
+            sys.exit(2)
         if args.xavgwidth > 16384:
-            sys.exit(projectName + ": --xavgcharwidth takes only numbers up to 16384")
+            logging.critical("--xavgcharwidth takes only numbers up to 16384")
+            sys.exit(2)
 
     return args
 
@@ -1902,24 +1922,43 @@ def setup_arguments():
 def main():
     global version
     git_version = check_version_with_git(version)
-    print("{} Patcher v{} ({}) (ff {}) executing".format(
-        projectName, git_version if git_version else version, script_version, fontforge.version()))
+    allversions = "Patcher v{} ({}) (ff {})".format(
+        git_version if git_version else version, script_version, fontforge.version())
+    print("{} {}".format(projectName, allversions))
     if git_version:
         version = git_version
     check_fontforge_min_version()
     args = setup_arguments()
+
+    global logger
+    logger = logging.getLogger(os.path.basename(args.font))
+    logger.setLevel(logging.DEBUG)
+    f_handler = logging.FileHandler('font-patcher-log.txt')
+    f_handler.setFormatter(logging.Formatter('%(levelname)s: %(name)s %(message)s'))
+    logger.addHandler(f_handler)
+    logger.debug(allversions)
+    logger.debug("Options %s", repr(sys.argv[1:]))
+    c_handler = logging.StreamHandler(stream=sys.stdout)
+    c_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
+    if not args.debugmode:
+        c_handler.setLevel(logging.INFO)
+    logger.addHandler(c_handler)
+    logger.debug("Naming mode %d", args.makegroups)
+
     patcher = font_patcher(args)
 
     sourceFonts = []
     all_fonts = fontforge.fontsInFile(args.font)
     for i, subfont in enumerate(all_fonts):
         if len(all_fonts) > 1:
-          print("\n{}: Processing {} ({}/{})".format(projectName, subfont, i + 1, len(all_fonts)))
+          print("\n")
+          logger.info("Processing %s (%d/%d)", subfont, i + 1, len(all_fonts))
         try:
             sourceFonts.append(fontforge.open("{}({})".format(args.font, subfont), 1)) # 1 = ("fstypepermitted",))
         except Exception:
-            sys.exit("{}: Can not open font '{}', try to open with fontforge interactively to get more information".format(
-                projectName, subfont))
+            logger.critical("Can not open font '%s', try to open with fontforge interactively to get more information",
+                subfont)
+            sys.exit(1)
 
         patcher.patch(sourceFonts[-1])
 
@@ -1927,13 +1966,6 @@ def main():
     for f in sourceFonts:
         patcher.setup_font_names(f)
     patcher.generate(sourceFonts)
-
-    # This mainly helps to improve CI runtime
-    if patcher.args.alsowindows:
-        patcher.args.windows = True
-        for f in sourceFonts:
-            patcher.setup_font_names(f)
-        patcher.generate(sourceFonts)
 
     for f in sourceFonts:
         f.close()

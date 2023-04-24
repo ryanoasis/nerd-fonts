@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 2.3.3
-# Script Version: 1.2.1
+# Script Version: 1.3.0
+#
+# You can supply options to the font-patcher via environment variable NERDFONTS
+# That option will override the defaults (also defaults of THIS script).
 
 # used for debugging
 # set -x
@@ -248,10 +251,10 @@ function patch_font {
   if [ "$config_has_powerline" -gt 0 ]
   then
     powerline=""
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   else
     powerline="--powerline"
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   fi
 
   cd "$repo_root_dir" || {
@@ -260,19 +263,29 @@ function patch_font {
   }
   # Use absolute path to allow fontforge being an AppImage (used in CI)
   PWD=`pwd`
+  # Create "Nerd Font"
   if [ -n "${verbose}" ]
   then
-    echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS}"
   fi
-  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --also-windows $powerline $post_process --complete --no-progressbars \
-                    --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
+  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q $powerline $post_process -c --no-progressbars \
+                    --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
+  # Create "Nerd Font Mono"
   if [ -n "${verbose}" ]
   then
-    echo   "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags"
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS}"
   fi
-  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} --also-windows $powerline $post_process --complete --no-progressbars \
-                    --outputdir "${patched_font_dir}complete/" $config_patch_flags 2>&1 1>&3 3>&- ); } 3>&1
+  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} $powerline $post_process -c --no-progressbars \
+                    --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
+  if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
+  # Create "Nerd Font Propo"
+  if [ -n "${verbose}" ]
+  then
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS}"
+  fi
+  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable $powerline $post_process -c --no-progressbars \
+                    --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
   # wait for this group of background processes to finish to avoid forking too many processes
   # that can add up quickly with the number of combinations
@@ -325,10 +338,10 @@ function generate_info {
   if [ "$config_has_powerline" -gt 0 ]
   then
     powerline=""
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --use-single-width-glyphs',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   else
     powerline="--powerline"
-    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --windows',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
+    combinations=$(printf "./font-patcher ${f##*/} %s\\n" {' --powerline',}{' --use-single-width-glyphs',}{' --fontawesome',}{' --octicons',}{' --fontlogos',}{' --pomicons',}{' --powerlineextra',}{' --fontawesomeextension',}{' --powersymbols',}{' --weather',}{' --material',})
   fi
 
   font_families_count=$((font_families_count+1))

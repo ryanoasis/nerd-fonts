@@ -79,11 +79,11 @@ jobs:
 
       - name: Check if patched font generated
         run: |
-          [ -e "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" ] && echo "File exists" || exit 1
+          [ -e "$GITHUB_WORKSPACE/temp/HackNerdFont-Regular.ttf" ] && echo "File exists" || exit 1
 
       - name: Setup Spot check font information 1
         run: |
-          echo FONT_INFO=$(fc-scan --format "%{family}:%{fullname}:%{style}\n" "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf") >> $GITHUB_ENV
+          echo FONT_INFO=$(fc-scan --format "%{family}:%{fullname}:%{style}\n" "$GITHUB_WORKSPACE/temp/HackNerdFont-Regular.ttf") >> $GITHUB_ENV
 
       # TODO fix issues setting and getting fullname and style with GITHUB_ENV :(
       - name: Setup Spot check font information 2
@@ -97,9 +97,9 @@ jobs:
 
       - name: Spot check font properties
         run: |
-          ${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" | grep -q 'File Checksum.*diff=0\s*$' && echo "TTF checksum ok" || exit 1
+          ${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/HackNerdFont-Regular.ttf" | grep -q 'File Checksum.*diff=0\s*$' && echo "TTF checksum ok" || exit 1
           ORIG_MINPPEM=$(${{ env.SHOWTTF }} -c "src/unpatched-fonts/Hack/Regular/Hack-Regular.ttf" | grep 'lowestppem=' )
-          PATCH_MINPPEM=$(${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete.ttf" | grep 'lowestppem=' )
+          PATCH_MINPPEM=$(${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/HackNerdFont-Regular.ttf" | grep 'lowestppem=' )
           echo "${ORIG_MINPPEM} == ${PATCH_MINPPEM}"
           [[ ${ORIG_MINPPEM} == ${PATCH_MINPPEM} ]] && echo "lowestRecPPEM matches" || exit 1
 
@@ -111,7 +111,7 @@ jobs:
 
       - name: Check if patched font generated
         run: |
-          [ -e "$GITHUB_WORKSPACE/temp/Hack Regular Nerd Font Complete Mono.ttf" ] && echo "File exists" || exit 1
+          [ -e "$GITHUB_WORKSPACE/temp/HackNerdFontMono-Regular.ttf" ] && echo "File exists" || exit 1
 
       - name: Patcher OTF, Bold variant, and RFN compliance
         run: |
@@ -121,11 +121,11 @@ jobs:
 
       - name: Check if patched font generated
         run: |
-          [ -e "$GITHUB_WORKSPACE/temp/Caskaydia Cove Bold Nerd Font Complete.otf" ] && echo "File exists" || exit 1
+          [ -e "$GITHUB_WORKSPACE/temp/CaskaydiaCoveNerdFont-Bold.otf" ] && echo "File exists" || exit 1
 
       - name: Check if font with references is patched
         # (patch result not checked)
         run: |
           fontforge --script ./font-patcher src/unpatched-fonts/UbuntuMono/Regular/UbuntuMono-R.ttf \
           --quiet --no-progressbars --outputdir $GITHUB_WORKSPACE/temp/
-          [ -e "$GITHUB_WORKSPACE/temp/Ubuntu Mono Nerd Font.ttf" ] && echo "File exists" || exit 1
+          [ -e "$GITHUB_WORKSPACE/temp/UbuntuMonoNerdFont-Regular.ttf" ] && echo "File exists" || exit 1

@@ -68,7 +68,6 @@ class FontnameTools:
             'book':         '',
             'text':         '',
             'ce':           'CE',
-            '(ttf)':        '(TTF)',
             #'semibold':     'Demi',
             'ob':           'Oblique',
             'it':           'Italic',
@@ -85,27 +84,57 @@ class FontnameTools:
         return style_name
 
     @staticmethod
-    def shorten_style_name(name):
+    def find_in_dicts(key, dicts):
+        """Find an entry in a list of dicts, return entry and in which list it was"""
+        for i, d in enumerate(dicts):
+            if key in d:
+                return ( d[key], i )
+        return (None, 0)
+
+    @staticmethod
+    def get_shorten_form_idx(aggressive, prefix, form_if_prefixed):
+        """Get the tuple index of known_* data tables"""
+        if aggressive:
+            return 0
+        if len(prefix):
+            return form_if_prefixed
+        return 1
+
+    @staticmethod
+    def shorten_style_name(name, aggressive):
         """Substitude some known styles to short form"""
-        known_names = {
-            # Chiefly from Noto
-            'SemiCondensed':    'SemCond',
-            'Condensed':        'Cond',
-            'ExtraCondensed':   'ExtCond',
-            'SemiBold':         'SemBd',
-            'ExtraBold':        'ExtBd',
-            'Medium':           'Med',
-            'ExtraLight':       'ExtLt',
-            'Black':            'Blk',
-        }
-        if name in known_names:
-            return known_names[name]
+        # If aggressive is False create the mild short form
+        # aggressive == True: Always use first form of everything
+        # aggressive == False:
+        #               - has no modifier: use the second form
+        #               - has modifier: use second form of mod plus first form of weights2
+        #               - has modifier: use second form of mod plus second form of widths
+        name_rest = name
+        name_pre = ''
+        form = FontnameTools.get_shorten_form_idx(aggressive, '', 0)
+        for mod in FontnameTools.known_modifiers:
+            if name.startswith(mod) and len(name) > len(mod): # Second condition specifically for 'Demi'
+                name_pre = FontnameTools.known_modifiers[mod][form]
+                name_rest = name[len(mod):]
+                break
+        subst, i = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights2, FontnameTools.known_widths ])
+        form = FontnameTools.get_shorten_form_idx(aggressive, name_pre, i)
+        if isinstance(subst, tuple):
+            return name_pre + subst[form]
+        if not len(name_pre):
+            # The following sets do not allow modifiers
+            subst, _ = FontnameTools.find_in_dicts(name_rest, [ FontnameTools.known_weights1, FontnameTools.known_slopes ])
+            if isinstance(subst, tuple):
+                return subst[form]
         return name
 
     @staticmethod
-    def short_styles(styles):
-        """Shorten all style names in a list"""
-        return list(map(FontnameTools.shorten_style_name, styles))
+    def short_styles(lists, aggressive):
+        """Shorten all style names in a list or a list of lists"""
+        if not len(lists) or not isinstance(lists[0], list):
+            return list(map(lambda x: FontnameTools.shorten_style_name(x, aggressive), lists))
+        return [ list(map(lambda x: FontnameTools.shorten_style_name(x, aggressive), styles)) for styles in lists ]
+
     @staticmethod
     def make_oblique_style(weights, styles):
         """Move "Oblique" from weights to styles for font naming purposes"""
@@ -174,11 +203,76 @@ class FontnameTools:
         ( '(a)nka/(c)oder',             r'\1na\2onder' ),
         ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\2\3ove' ),
         ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\2\3ono' ),
-        ( '(m)plus',                    r'\1+'), # Added this, because they use a plus symbol :->
+        ( '(m)( ?)plus',                r'\1+'), # Added this, because they use a plus symbol :->
         ( 'Gohufont',                   r'GohuFont'), # Correct to CamelCase
         # Noone cares that font names starting with a digit are forbidden:
         ( 'IBM 3270',                   r'3270'), # for historical reasons and 'IBM' is a TM or something
+        # Some name parts that are too long for us
+        ( '(.*sans ?m)ono',             r'\1'), # Various SomenameSansMono fonts
+        ( '(.*code ?lat)in Expanded',   r'\1X'), # for 'M PLUS Code Latin Expanded'
+        ( '(.*code ?lat)in',            r'\1'), # for 'M PLUS Code Latin'
+        ( '(b)ig( ?)(b)lue( ?)(t)erminal', r'\1ig\3lue\5erm'), # Shorten BigBlueTerminal
+        ( '(.*)437TT',                  r'\g<1>437'), # Shorten BigBlueTerminal 437 TT even further
+        ( '(.*dyslexic ?alt)a',         r'\1'), # Open Dyslexic Alta -> Open Dyslexic Alt
+        ( '(.*dyslexic ?m)ono',         r'\1'), # Open Dyslexic Mono -> Open Dyslexic M
+        ( '(overpass ?m)ono',           r'\1'), # Overpass Mono -> Overpass M
+        ( '(proggyclean) ?tt',          r'\1'), # Remove TT from ProggyClean
+        ( '(terminess) ?\(ttf\)',       r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
+        ( '(im ?writing ?q)uattro',     r'\1uat'), # Rename iM Writing Quattro to Quat
+        ( '(im ?writing ?(mono|duo|quat)) ?s', r'\1'), # Remove S from all iM Writing styles
     ]
+
+    # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
+    # The first short variant is from the linked table.
+    # The second (longer) short variant is from diverse fonts like Noto.
+    # We can
+    # - use the long form
+    # - use the very short form (first)
+    # - use mild short form:
+    #   - has no modifier: use the second form
+    #   - has modifier: use second form of mod plus first form of weights2
+    #   - has modifier: use second form of mod plus second form of widths
+    # This is encoded in get_shorten_form_idx()
+    known_weights1 = { # can not take modifiers
+        'Medium': ('Md', 'Med'),
+        'Nord': ('Nd', 'Nord'),
+        'Book': ('Bk', 'Book'),
+        'Poster': ('Po', 'Poster'),
+        'Demi': ('Dm', 'Demi'), # Demi is sometimes used as a weight, sometimes as a modifier
+        'Regular': ('Rg', 'Reg'),
+        'Display': ('DS', 'Disp'),
+        'Super': ('Su', 'Sup'),
+        'Retina': ('Rt', 'Ret'),
+    }
+    known_weights2 = { # can take modifiers
+        'Black': ('Blk', 'Black'),
+        'Bold': ('Bd', 'Bold'),
+        'Heavy': ('Hv', 'Heavy'),
+        'Thin': ('Th', 'Thin'),
+        'Light': ('Lt', 'Light'),
+        ' ': (), # Just for CodeClimate :-/
+    }
+    known_widths = { # can take modifiers
+        'Compressed': ('Cm', 'Comp'),
+        'Extended': ('Ex', 'Extd'),
+        'Condensed': ('Cn', 'Cond'),
+        'Narrow': ('Nr', 'Narrow'),
+        'Compact': ('Ct', 'Compact'),
+    }
+    known_slopes = { # can not take modifiers
+        'Inclined': ('Ic', 'Incl'),
+        'Oblique': ('Obl', 'Obl'),
+        'Italic': ('It', 'Italic'),
+        'Upright': ('Up', 'Uprght'),
+        'Kursiv': ('Ks', 'Kurs'),
+        'Sloped': ('Sl', 'Slop'),
+    }
+    known_modifiers = {
+        'Demi': ('Dm', 'Dem'),
+        'Ultra': ('Ult', 'Ult'),
+        'Semi': ('Sm', 'Sem'),
+        'Extra': ('X', 'Ext'),
+    }
 
     @staticmethod
     def is_keep_regular(basename):
@@ -241,18 +335,18 @@ class FontnameTools:
         # Weights end up as Typographic Family parts ('after the dash')
         # Styles end up as Family parts (for classic grouping of four)
         # Others also end up in Typographic Family ('before the dash')
-        weights = [ 'Thin', 'Light', 'ExtraLight', 'SemiBold', 'Demi',
-                    'SemiLight', 'Medium', 'Black', 'ExtraBold', 'Heavy',
-                    'Oblique', 'Condensed', 'SemiCondensed', 'ExtraCondensed',
-                    'Narrow', 'SemiNarrow', 'Retina', ]
+        weights = [ m + s
+                for s in list(FontnameTools.known_weights2) + list(FontnameTools.known_widths)
+                for m in list(FontnameTools.known_modifiers) + [''] if m != s
+            ] + list(FontnameTools.known_weights1)
         styles = [ 'Bold', 'Italic', 'Regular', 'Normal', ]
+        weights = [ w for w in weights if w not in styles ]
         # Some font specialities:
         other = [
             '-', 'Book', 'For', 'Powerline',
             'Text',             # Plex
             'IIx',              # Profont IIx
             'LGC',              # Inconsolata LGC
-            r'\(TTF\)',         # Terminus (TTF)
             r'\bCE\b',          # ProggycleanTT CE
             r'[12][cmp]n?',     # MPlus
             r'(?:uni-)?1[14]',  # GohuFont uni
