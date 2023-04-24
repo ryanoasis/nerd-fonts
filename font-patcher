@@ -573,6 +573,9 @@ class font_patcher:
                 logger.warning("Have only minimal naming information, check resulting name. Maybe specify --makegroups 0")
             n.drop_for_powerline()
             n.enable_short_families(True, self.args.makegroups in [ 2, 3, 5, 6, ], self.args.makegroups in [ 3, 6, ])
+            if not n.set_expect_no_italic(self.args.noitalic):
+                logger.critical("Detected 'Italic' slant but --has-no-italic specified")
+                sys.exit(1)
 
             # All the following stuff is ignored in makegroups-mode
 
@@ -1804,6 +1807,7 @@ def setup_arguments():
     # 6  HugoSansMono NF XCn Lt It                                [X] [X] [X]
 
     parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
+    parser.add_argument('--has-no-italic',                           dest='noitalic',         default=False, action='store_true', help='Font family does not have Italic (but Oblique)')
 
     # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
     progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)

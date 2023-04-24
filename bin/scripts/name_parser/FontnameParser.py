@@ -21,6 +21,7 @@ class FontnameParser:
         self.basename = self._basename
         self.rest = self._rest
         self.add_name_substitution_table(FontnameTools.SIL_TABLE)
+        self.rename_oblique = True
         self.logger = logger
 
     def _make_ps_name(self, n, is_family):
@@ -52,6 +53,21 @@ class FontnameParser:
     def set_keep_regular_in_family(self, keep):
         """Familyname may contain 'Regular' where it should normally be suppressed"""
         self.keep_regular_in_family = keep
+
+    def set_expect_no_italic(self, noitalic):
+        """Prevents rewriting Oblique as family name part"""
+        # To prevent naming clashes usually Oblique is moved out in the family name
+        # because some fonts have Italic and Oblique, and we want to generate pure
+        # RIBBI families in ID1/2.
+        # But some fonts have Oblique instead of Italic, here the prevential movement
+        # is not needed, or rather contraproductive. This can not be detected on a
+        # font file level but needs to be specified per family from the outside.
+        # Returns true if setting was successful.
+        if 'Italic' in self.style_token:
+            self.rename_oblique = True
+            return not noitalic
+        self.rename_oblique = not noitalic
+        return True
 
     def set_suppress_preferred(self, suppress):
         """Suppress ID16/17 if it is identical to ID1/2 (True is default)"""
@@ -190,22 +206,28 @@ class FontnameParser:
         # We use the short form of the styles to save on number of chars
         (name, rest) = self._shortened_name()
         other = self.other_token
-        weight = self.weight_token
+        weights = self.weight_token
         aggressive = self.use_short_families[2]
+        if not self.rename_oblique:
+            (weights, styles) = FontnameTools.make_oblique_style(weights, [])
         if self.use_short_families[1]:
-            [ other, weight ] = FontnameTools.short_styles([ other, weight ], aggressive)
-        weight = [ w if w != 'Oblique' else 'Obl' for w in weight ]
-        return FontnameTools.concat(name, rest, other, self.short_family_suff, weight)
+            [ other, weights ] = FontnameTools.short_styles([ other, weights ], aggressive)
+        weights = [ w if w != 'Oblique' else 'Obl' for w in weights ]
+        return FontnameTools.concat(name, rest, other, self.short_family_suff, weights)
 
     def subfamily(self):
         """Get the SFNT SubFamily (ID 2)"""
-        if len(self.style_token) == 0:
-            if 'Oblique' in self.weight_token:
-                return FontnameTools.concat(self.style_token, 'Italic')
+        styles = self.style_token
+        weights = self.weight_token
+        if not self.rename_oblique:
+            (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
+        if len(styles) == 0:
+            if 'Oblique' in weights:
+                return FontnameTools.concat(styles, 'Italic')
             return 'Regular'
-        if 'Oblique' in self.weight_token and not 'Italic' in self.style_token:
-                return FontnameTools.concat(self.style_token, 'Italic')
-        return FontnameTools.concat(self.style_token)
+        if 'Oblique' in weights and not 'Italic' in styles:
+                return FontnameTools.concat(styles, 'Italic')
+        return FontnameTools.concat(styles)
 
     def ps_familyname(self):
         """Get the PS Familyname"""
