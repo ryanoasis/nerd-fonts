@@ -483,7 +483,7 @@ class font_patcher:
                 except:
                     pass
         if self.args.is_variable:
-            logger.error("Source font is a variable open type font (VF) and the patch results will most likely not be what you want")
+            logger.critical("Source font is a variable open type font (VF) and the patch results will most likely not be what you want")
         print(message)
 
         if self.args.postprocess:
