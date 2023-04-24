@@ -10,7 +10,7 @@ import fontforge
 # Double-quotes required here, for version-bump.sh:
 version = "2.3.3"
 
-archive = 'v18.2.0.tar.gz'
+archive = 'v18.3.0.tar.gz'
 
 vectorsdir = 'icons'
 fontdir = '.'
@@ -53,7 +53,7 @@ def createGlyphInfo(icon_datasets, filepathname, into):
         f.write(u'test -n "$__i_oct_loaded" && return || __i_oct_loaded=1\n')
         for _, codepoint, name in icon_datasets:
             codepoint = int(codepoint, 16)
-            f.write(u"i='{}' i_oct_{}=$i\n".format(chr(codepoint), name))
+            f.write(u"i='{}' i_oct_{}=$i\n".format(chr(codepoint), name.replace('-', '_')))
         f.write(u'unset i\n')
 
 print('\nReading mapping file')
