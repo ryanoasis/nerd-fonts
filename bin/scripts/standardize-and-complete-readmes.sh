@@ -69,14 +69,13 @@ do
 		searchdir=$dirname
   else
     # source the font config file if exists:
+    # reset the variables
+    unset config_rfn
+    unset config_rfn_substitue
     if [ -f "$searchdir/config.cfg" ]
     then
       # shellcheck source=/dev/null
       source "$searchdir/config.cfg"
-    else
-      # reset the variables
-      unset config_rfn
-      unset config_rfn_substitue
     fi
 	fi
 
