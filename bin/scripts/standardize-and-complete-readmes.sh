@@ -5,7 +5,7 @@
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc
 # adds information on additional-variations and complete font variations
 
-infofilename="font-info.md"
+infofilename="README.md"
 unpatched_parent_dir="src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 LINE_PREFIX="# [Nerd Fonts] "
