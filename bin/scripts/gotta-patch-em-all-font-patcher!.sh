@@ -241,6 +241,8 @@ function patch_font {
 
   if [ "$post_process" ]
   then
+    # There is no postprocess active anymore, see the commit that introduced
+    # this comment for the Hack postprocess we once had. It called e.g. ttfautohint.
     post_process="--postprocess=${repo_root_dir}/${post_process}"
   else
     post_process=""
