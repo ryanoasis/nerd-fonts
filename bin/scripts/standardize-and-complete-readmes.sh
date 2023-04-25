@@ -9,6 +9,7 @@ infofilename="font-info.md"
 unpatched_parent_dir="src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 LINE_PREFIX="# [Nerd Fonts] "
+fonts_info="../../bin/scripts/lib/fonts.json"
 
 cd ../../src/unpatched-fonts/ || {
   echo >&2 "$LINE_PREFIX Could not find source fonts directory"
@@ -68,14 +69,20 @@ do
 	then
 		searchdir=$dirname
   else
-    # source the font config file if exists:
     # reset the variables
     unset config_rfn
     unset config_rfn_substitue
-    if [ -f "$searchdir/config.cfg" ]
+    fontdata=$(cat ${fonts_info} | jq ".fonts[] | select(.folderName == \"${base_directory}\")")
+    if [ "$(echo $fontdata | jq .RFN)" = "true" ]
     then
-      # shellcheck source=/dev/null
-      source "$searchdir/config.cfg"
+      config_rfn=$(echo $fontdata | jq -r .unpatchedName)
+      config_rfn_substitue=$(echo $fontdata | jq -r .patchedName)
+      if [ "${config_rfn}" = "${config_rfn_substitue}" ]
+      then
+        # Only the case with Mononoki which is RFN but we do not rename (we got the permission to keep the name)
+        unset config_rfn
+        unset config_rfn_substitue
+      fi
     fi
 	fi
 
