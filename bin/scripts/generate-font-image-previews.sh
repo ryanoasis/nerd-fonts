@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 2.3.3
+# Nerd Fonts Version: 3.0.0
 # Script Version: 1.2.0
 # Create font previews.
 # All fonts need to be installed (or no preview is generated)
