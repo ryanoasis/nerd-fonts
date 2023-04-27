@@ -23,7 +23,7 @@
     {
       "unpatchedName": "Anonymous Pro",
       "RFN": true,
-      "patchedName": "Anonymice",
+      "patchedName": "AnonymicePro",
       "folderName": "AnonymousPro",
       "imagePreviewFont": "Anonymice Nerd Font",
       "linkPreviewFont": false,
@@ -73,7 +73,7 @@
     {
       "unpatchedName": "Cascadia Code",
       "RFN": true,
-      "patchedName": "Caskaydia Cove",
+      "patchedName": "CaskaydiaCove",
       "folderName": "CascadiaCode",
       "imagePreviewFont": "Caskaydia Cove Nerd Font",
       "linkPreviewFont": "cascadia-code",
@@ -83,7 +83,7 @@
     {
       "unpatchedName": "IBM Plex Mono",
       "RFN": true,
-      "patchedName": "Blex Mono",
+      "patchedName": "BlexMono",
       "folderName": "IBMPlexMono",
       "imagePreviewFont": "BlexMono Nerd Font",
       "linkPreviewFont": false,
@@ -173,7 +173,7 @@
     {
       "unpatchedName": "Go Mono",
       "RFN": false,
-      "patchedName": "Go-Mono",
+      "patchedName": "GoMono",
       "folderName": "Go-Mono",
       "imagePreviewFont": "GoMono Nerd Font",
       "linkPreviewFont": "go-mono",
@@ -233,7 +233,7 @@
     {
       "unpatchedName": "iA Writer",
       "RFN": true,
-      "patchedName": "iM Writing",
+      "patchedName": "iMWriting",
       "folderName": "iA-Writer",
       "imagePreviewFont": "iMWritingMonoS Nerd Font",
       "linkPreviewFont": "ia-writer-mono",
@@ -311,7 +311,7 @@
       "description": "Very light and thin characters, sharp m's, `0` and `O` very similar"
     },
     {
-      "unpatchedName": "Liberation",
+      "unpatchedName": "Liberation Mono",
       "RFN": true,
       "patchedName": "LiterationMono",
       "folderName": "LiberationMono",

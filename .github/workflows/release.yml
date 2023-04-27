@@ -204,11 +204,6 @@ jobs:
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_VERSION"
 
-      - name: Standardize the readme files
-        run: |
-          cd -- "$GITHUB_WORKSPACE/bin/scripts"
-          ./standardize-and-complete-readmes.sh "${{ matrix.font }}"
-
       - name: Patch all the variations of the font family
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"

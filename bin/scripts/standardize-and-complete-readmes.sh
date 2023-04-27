@@ -5,10 +5,11 @@
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc
 # adds information on additional-variations and complete font variations
 
-infofilename="font-info.md"
+infofilename="README.md"
 unpatched_parent_dir="src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 LINE_PREFIX="# [Nerd Fonts] "
+fonts_info="../../bin/scripts/lib/fonts.json"
 
 cd ../../src/unpatched-fonts/ || {
   echo >&2 "$LINE_PREFIX Could not find source fonts directory"
@@ -59,89 +60,94 @@ do
     continue
   fi
 
-	dirname=$(dirname "$filename")
-	searchdir=$filename
+  dirname=$(dirname "$filename")
+  searchdir=$filename
   base_directory=$(echo "$filename" | cut -d "/" -f2)
 
-	# limit looking for the readme files in the parent dir not the child dirs:
-	if [[ $dirname != "." ]];
-	then
-		searchdir=$dirname
+  # limit looking for the readme files in the parent dir not the child dirs:
+  if [[ $dirname != "." ]];
+  then
+    searchdir=$dirname
   else
-    # source the font config file if exists:
-    if [ -f "$searchdir/config.cfg" ]
+    # reset the variables
+    unset config_rfn
+    unset config_rfn_substitue
+    fontdata=$(cat ${fonts_info} | jq ".fonts[] | select(.folderName == \"${base_directory}\")")
+    if [ "$(echo $fontdata | jq .RFN)" = "true" ]
     then
-      # shellcheck source=/dev/null
-      source "$searchdir/config.cfg"
-    else
-      # reset the variables
-      unset config_rfn
-      unset config_rfn_substitue
+      config_rfn=$(echo $fontdata | jq -r .unpatchedName)
+      config_rfn_substitue=$(echo $fontdata | jq -r .patchedName)
+      if [ "${config_rfn}" = "${config_rfn_substitue}" ]
+      then
+        # Only the case with Mononoki which is RFN but we do not rename (we got the permission to keep the name)
+        unset config_rfn
+        unset config_rfn_substitue
+      fi
     fi
-	fi
+  fi
 
-	mapfile -t RST < <(find "$searchdir" -type f -iname 'readme.rst')
-	mapfile -t TXT < <(find "$searchdir" -type f -iname 'readme.txt')
-	mapfile -t MD < <(find "$searchdir" -type f -iname 'readme.md')
-	outputdir=$PWD/../../patched-fonts/$filename/
+  mapfile -t RST < <(find "$searchdir" -type f -iname 'readme.rst')
+  mapfile -t TXT < <(find "$searchdir" -type f -iname 'readme.txt')
+  mapfile -t MD < <(find "$searchdir" -type f -iname 'readme.md')
+  outputdir=$PWD/../../patched-fonts/$filename/
 
-	echo "$LINE_PREFIX Generating readme for: $filename"
+  echo "$LINE_PREFIX Generating readme for: $filename"
 
-	[[ -d "$outputdir" ]] || mkdir -p "$outputdir"
+  [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
 
-	if [ "${RST[0]}" ];
-	then
-		for i in "${RST[@]}"
-		do
-			echo "$LINE_PREFIX Found RST"
+  if [ "${RST[0]}" ];
+  then
+    for i in "${RST[@]}"
+    do
+      echo "$LINE_PREFIX Found RST"
 
-			from="$PWD/$i"
-			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
-			to="${to_dir}/$infofilename"
-
-      clearDestination "$to_dir" "$to"
-
-			pandoc "$from" --from=rst --to=markdown --output="$to"
-
-      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
-      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
-		done
-	elif [ "${TXT[0]}" ];
-	then
-		for i in "${TXT[@]}"
-		do
-			echo "$LINE_PREFIX Found TXT"
-
-			from="$PWD/$i"
-			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
-			to="${to_dir}/$infofilename"
+      from="$PWD/$i"
+      to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+      to="${to_dir}/$infofilename"
 
       clearDestination "$to_dir" "$to"
 
-			cp "$from" "$to"
+      pandoc "$from" --from=rst --to=markdown --output="$to"
 
       appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
       cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
-		done
-	elif [ "${MD[0]}" ];
-	then
-		for i in "${MD[@]}"
-		do
-			echo "$LINE_PREFIX Found MD"
+    done
+  elif [ "${TXT[0]}" ];
+  then
+    for i in "${TXT[@]}"
+    do
+      echo "$LINE_PREFIX Found TXT"
 
-			from="$PWD/$i"
-			to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
-			to="${to_dir}/$infofilename"
+      from="$PWD/$i"
+      to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+      to="${to_dir}/$infofilename"
 
       clearDestination "$to_dir" "$to"
 
-			cp "$from" "$to"
+      cp "$from" "$to"
 
       appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
       cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
-		done
-	else
+    done
+  elif [ "${MD[0]}" ];
+  then
+    for i in "${MD[@]}"
+    do
+      echo "$LINE_PREFIX Found MD"
+
+      from="$PWD/$i"
+      to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+      to="${to_dir}/$infofilename"
+
+      clearDestination "$to_dir" "$to"
+
+      cp "$from" "$to"
+
+      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
+      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+    done
+  else
     echo "$LINE_PREFIX Did not find any readme files (RST,TXT,MD) generating just title of Font"
 
     to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
@@ -155,6 +161,6 @@ do
 
     appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
     cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
-	fi
+  fi
 
 done

@@ -15,7 +15,6 @@ fi
 release=$1
 
 ./version-bump.sh "$release"
-./standardize-and-complete-readmes.sh
 ./gotta-patch-em-all-font-patcher!.sh
 ./generate-fontconfig.sh
 ./generate-casks.sh

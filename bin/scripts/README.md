@@ -24,7 +24,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `name_parser/`: Suite to set up sane Family and SubFamily names, used by `font-patcher` (on demand)
 * `optimize-original-source.sh`: Run all icons in `src/svgs` through inkscape to simplify (remove nodes and edges) [5]
 * `release.sh`: Rough process how a release is created, not used (see `.github/workflows/release.yml`)
-* `standardize-and-complete-readmes.sh` [1]
+* `standardize-and-complete-readmes.sh`: Used by `gotta-patch-em-all-font-patcher!.sh`
 * `test-fonts.sh`: Print-to-debug all glyphs we patch in [4]
 * `test-powerlines.sh`: Print-to-debug powerline examples [4]
 * `tests.sh`: Create some font usage gif movie? [x]
