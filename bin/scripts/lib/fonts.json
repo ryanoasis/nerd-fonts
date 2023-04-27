@@ -62,10 +62,10 @@
     },
     {
       "unpatchedName": "Bitstream Vera Sans Mono",
-      "RFN": false,
-      "patchedName": "BitstreamVeraSansMono",
+      "RFN": true,
+      "patchedName": "BitstromWera",
       "folderName": "BitstreamVeraSansMono",
-      "imagePreviewFont": "BitstreamVeraSansMono Nerd Font",
+      "imagePreviewFont": "BitstromWera Nerd Font",
       "linkPreviewFont": "bitstream-vera",
       "caskName": "bitstream-vera-sans-mono",
       "description": "Dotted zero, compact lowercase characters"

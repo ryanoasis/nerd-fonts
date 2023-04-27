@@ -636,6 +636,10 @@ class font_patcher:
         reservedFontNameReplacements = {
             'source'         : 'sauce',
             'Source'         : 'Sauce',
+            'Bitstream Vera' : 'Bitstrom Wera',
+            'BitstreamVera'  : 'BitstromWera',
+            'bitstream vera' : 'bitstrom wera',
+            'bitstreamvera'  : 'bitstromwera',
             'hermit'         : 'hurmit',
             'Hermit'         : 'Hurmit',
             'hasklig'        : 'hasklug',
