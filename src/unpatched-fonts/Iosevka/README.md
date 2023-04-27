@@ -4,4 +4,4 @@
 
 For more information have a look at the upstream website: https://github.com/be5invis/Iosevka
 
-Version: 21.1.1
+Version: 22.1.0
