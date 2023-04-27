@@ -192,7 +192,7 @@ class FontnameTools:
 
     SIL_TABLE = [
         ( '(a)nonymous',                r'\1nonymice' ),
-        ( '(b)itstream( ?)(v)era',      r'\1itstrom\2Wera' ),
+        ( '(b)itstream( ?)(v)era( ?sans ?mono)?', r'\1itstrom\2Wera' ),
         ( '(s)ource',                   r'\1auce' ),
         ( '(h)ermit',                   r'\1urmit' ),
         ( '(h)asklig',                  r'\1asklug' ),
