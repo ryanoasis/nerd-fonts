@@ -23,7 +23,7 @@
     {
       "unpatchedName": "Anonymous Pro",
       "RFN": true,
-      "patchedName": "Anonymice",
+      "patchedName": "AnonymicePro",
       "folderName": "AnonymousPro",
       "imagePreviewFont": "Anonymice Nerd Font",
       "linkPreviewFont": false,
@@ -62,10 +62,10 @@
     },
     {
       "unpatchedName": "Bitstream Vera Sans Mono",
-      "RFN": false,
-      "patchedName": "BitstreamVeraSansMono",
+      "RFN": true,
+      "patchedName": "BitstromWera",
       "folderName": "BitstreamVeraSansMono",
-      "imagePreviewFont": "BitstreamVeraSansMono Nerd Font",
+      "imagePreviewFont": "BitstromWera Nerd Font",
       "linkPreviewFont": "bitstream-vera",
       "caskName": "bitstream-vera-sans-mono",
       "description": "Dotted zero, compact lowercase characters"
@@ -73,7 +73,7 @@
     {
       "unpatchedName": "Cascadia Code",
       "RFN": true,
-      "patchedName": "Caskaydia Cove",
+      "patchedName": "CaskaydiaCove",
       "folderName": "CascadiaCode",
       "imagePreviewFont": "Caskaydia Cove Nerd Font",
       "linkPreviewFont": "cascadia-code",
@@ -83,7 +83,7 @@
     {
       "unpatchedName": "IBM Plex Mono",
       "RFN": true,
-      "patchedName": "Blex Mono",
+      "patchedName": "BlexMono",
       "folderName": "IBMPlexMono",
       "imagePreviewFont": "BlexMono Nerd Font",
       "linkPreviewFont": false,
@@ -173,7 +173,7 @@
     {
       "unpatchedName": "Go Mono",
       "RFN": false,
-      "patchedName": "Go-Mono",
+      "patchedName": "GoMono",
       "folderName": "Go-Mono",
       "imagePreviewFont": "GoMono Nerd Font",
       "linkPreviewFont": "go-mono",
@@ -233,7 +233,7 @@
     {
       "unpatchedName": "iA Writer",
       "RFN": true,
-      "patchedName": "iM Writing",
+      "patchedName": "iMWriting",
       "folderName": "iA-Writer",
       "imagePreviewFont": "iMWritingMonoS Nerd Font",
       "linkPreviewFont": "ia-writer-mono",
@@ -275,10 +275,20 @@
       "RFN": false,
       "patchedName": "Iosevka",
       "folderName": "Iosevka",
-      "imagePreviewFont": "IosevkaTerm Nerd Font",
+      "imagePreviewFont": "Iosevka Nerd Font",
       "linkPreviewFont": "iosevka",
       "caskName": "iosevka",
       "description": "Narrow and horizontally tight characters, slashed zero"
+    },
+    {
+      "unpatchedName": "Iosevka Term",
+      "RFN": false,
+      "patchedName": "IosevkaTerm",
+      "folderName": "IosevkaTerm",
+      "imagePreviewFont": "IosevkaTerm Nerd Font",
+      "linkPreviewFont": "false",
+      "caskName": "iosevka-term",
+      "description": "A narrower variant focusing terminal uses: Arrows and geometric symbols will be narrow to follow typical terminal usages"
     },
     {
       "unpatchedName": "JetBrains Mono",
@@ -301,7 +311,7 @@
       "description": "Very light and thin characters, sharp m's, `0` and `O` very similar"
     },
     {
-      "unpatchedName": "Liberation",
+      "unpatchedName": "Liberation Mono",
       "RFN": true,
       "patchedName": "LiterationMono",
       "folderName": "LiberationMono",
