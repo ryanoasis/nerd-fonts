@@ -101,6 +101,16 @@
       "description": "Tunable, slashed zeros, compact smaller characters"
     },
     {
+      "unpatchedName": "Comic Mono",
+      "RFN": false,
+      "patchedName": "ComicMono",
+      "folderName": "ComicMono",
+      "imagePreviewFont": "ComicMono Nerd Font",
+      "linkPreviewFont": "false",
+      "caskName": "comic-mono",
+      "description": "The very typeface you’ve been trained to recognize since childhood"
+    },
+    {
       "unpatchedName": "Cousine",
       "RFN": false,
       "patchedName": "Cousine",
