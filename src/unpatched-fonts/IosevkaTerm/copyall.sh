@@ -3,7 +3,8 @@
 set -ex
 
 cd ~/Downloads/iosevka
-# unzip ttf-iosevka-term-21.1.1.zip
+rm *.ttf
+unzip ttf-iosevka-term-22.1.0.zip
 mv *-heavyoblique.ttf ~/git/nerd-fonts/src/unpatched-fonts/IosevkaTerm/Heavy-Oblique
 mv *-medium.ttf ~/git/nerd-fonts/src/unpatched-fonts/IosevkaTerm/Medium
 mv *-italic.ttf ~/git/nerd-fonts/src/unpatched-fonts/IosevkaTerm/Italic
