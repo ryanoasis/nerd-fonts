@@ -60,12 +60,11 @@ do
     continue
   fi
 
-  dirname=$(dirname "$filename")
-  searchdir=$filename
   base_directory=$(echo "$filename" | cut -d "/" -f2)
+  searchdir=$base_directory
 
   # limit looking for the readme files in the parent dir not the child dirs:
-  if [[ $dirname != "." ]];
+  if [ "$dirname" != "." -a -n "$dirname" ];
   then
     searchdir=$dirname
   else

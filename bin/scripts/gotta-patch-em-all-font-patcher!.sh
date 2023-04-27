@@ -316,7 +316,7 @@ function generate_info {
   # into the destination. This will overwrite all same-names files
   # so make sure all licenses of one fontface are identical
   echo "$LINE_PREFIX * Copying license files"
-  copy_license "$(find_font_root $config_dir)" "$patched_font_dir"
+  copy_license "$(find_font_root $current_dir)" "$patched_font_dir"
 }
 
 
