@@ -41,7 +41,7 @@ echo "$LINE_PREFIX Generating fontconfig for: monospace"
 } >> "$to"
 
 #find ./Hack -maxdepth 0 -type d | # uncomment to test 1 font
-find . -mindepth 1 -maxdepth 1 -type d | sort | # uncomment to get all fonts
+find . -mindepth 1 -maxdepth 1 -type d | LC_ALL=C sort | # uncomment to get all fonts
 while read -r filename
 do
 
@@ -51,7 +51,7 @@ do
 	while IFS= read -d $'\0' -r file ; do
 	  FONTS=("${FONTS[@]}" "$file")
 	# limit to first variation of family (folder)
-  done < <(find "$searchdir" -type f -iname '*.[ot]tf' -print0)
+  done < <(find "$searchdir" -type f -iname '*.[ot]tf' -print0 | LC_ALL=C sort -z)
   #done
 
   for font in "${FONTS[@]}"; do

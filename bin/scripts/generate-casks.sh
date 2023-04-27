@@ -206,7 +206,7 @@ if [ "$pattern" = "" ]; then
     pattern=".*"
 fi
 
-find . -maxdepth 1 -mindepth 1 -type f -iregex "\./$pattern" -regex ".*\.zip" | sort |
+find . -maxdepth 1 -mindepth 1 -type f -iregex "\./$pattern" -regex ".*\.zip" | LC_ALL=C sort |
 while read -r filename; do
 
     dirname=$(dirname "$filename")
@@ -233,7 +233,7 @@ while read -r filename; do
     FONTS=()
     while IFS= read -d $'\0' -r file; do
         FONTS=("${FONTS[@]}" "$file")
-    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[ot]tf' ! -wholename '*Windows Compatible*' \) -print0 | sort -z)
+    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[ot]tf' ! -wholename '*Windows Compatible*' \) -print0 | LC_ALL=C sort -z)
 
     outputdir=$PWD/../casks
 
