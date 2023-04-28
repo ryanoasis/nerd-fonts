@@ -49,7 +49,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 [**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
   * [**Patched Fonts**](#patched-fonts)
-  * [**Combinations**](#combinations)
+  * [**Variations**](#variations)
   * [**Font Patcher**](#font-patcher)
 
 [**Developer / Contributor**](#font-patcher)
@@ -90,10 +90,9 @@ _If you..._
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
 * **`51`** already [patched font families](#patched-fonts)
-* Over **`1,444,400`** unique combinations/variations of patched fonts [(more details)](#combinations)
 * Over **`9,000`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
-* **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs version of each font
+* **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** _or_ **proportional** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
@@ -169,20 +168,10 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
-## Combinations
-
-- Over **`1,485,000`** unique variations/combinations (Power Set) of patched fonts:
-  - **`50`** patched font typefaces
-  - **`719`** patched font families
-  - **`2,876`** 'complete' variations/combinations
-  - **`'1,485,410'`** _possible_ variations/combinations
-  - - **`1,488,286`** total calculated combinations (2,876 + 1,428,110)
-- Combinations for each font are any combination of [Variations](#variations)
-
 ### Variations
 
 - no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
-- **double _(variable/proportional)_** or **single _(fixed/monospaced)_** width glyphs
+- **double _(variable/proportional)_** or **single _(fixed/monospaced)_** or **proportional** width glyphs
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
 - [Material Design Icons][font-material-design-icons]
@@ -193,8 +182,6 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 - [IEC Power Symbols][website-iecpower]
 - [Pomicons][gabrielelana-pomicons]
 - [Codicons][codicons]
-- Windows Compatibility
-
 
 ## Font Installation
 
@@ -247,7 +234,6 @@ or, in Powershell (Windows only):
 ./install.ps1 Hack
 ./install.ps1 HeavyData
 ./install.ps1 FiraCode, Hack
-./install.ps1 CascadiaCode -WindowsCompatibleOnly
 ./install.ps1 DejaVuSansMono -WhatIf
 ```
 
@@ -371,22 +357,18 @@ Patching the font of your own choosing:
 Full options:
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
-                    [--removeligs] [--postprocess [POSTPROCESS]]
-                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups]
-                    [--variable-width-glyphs]
-                    [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
-                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
-                    [--powerline] [--powerlineextra] [--material] [--weather]
+Nerd Fonts Patcher v3.0.0 (4.1.0) (ff 20230101)
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-c] [--careful] [--removeligs] [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{0,1,2,3,4,5,6}]] [--variable-width-glyphs]
+                    [--has-no-italic] [--progressbars | --no-progressbars] [--debug] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome]
+                    [--fontawesomeextension] [--fontlogos] [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra]
+                    [--material] [--weather]
                     font
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.2.2
+* Version: 3.0.0
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
@@ -402,7 +384,6 @@ options:
                         Whether to adjust line heights (attempt to center powerline separators more evenly)
   -q, --quiet, --shutup
                         Do not generate verbose output
-  -w, --windows         Limit the internal font name to 31 characters (for Windows compatibility)
   -c, --complete        Add all available Glyphs
   --careful             Do not overwrite existing glyphs if detected
   --removeligs, --removeligatures
@@ -418,12 +399,17 @@ options:
                         The directory to output the patched font file to
   --glyphdir [GLYPHDIR]
                         Path to glyphs to be used for patching
-  --makegroups          Use alternative method to name patched fonts (experimental)
+  --makegroups [{0,1,2,3,4,5,6}]
+                        Use alternative method to name patched fonts (recommended)
   --variable-width-glyphs
                         Do not adjust advance width (no "overhang")
-  --progressbars        Show percentage completion progress bars per Glyph Set
+  --has-no-italic       Font family does not have Italic (but Oblique)
+  --progressbars        Show percentage completion progress bars per Glyph Set (default)
   --no-progressbars     Don't show percentage completion progress bars per Glyph Set
-  --also-windows        Create two fonts, the normal and the --windows version
+  --debug               Verbose mode
+  --dry                 Do neither patch nor store the font, to check naming
+  --xavgcharwidth [XAVGWIDTH]
+                        Adjust xAvgCharWidth (optional: concrete value)
 
 Symbol Fonts:
   --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
@@ -449,9 +435,6 @@ Symbol Fonts:
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --use-single-width-glyphs --quiet
-./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -w
-./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --windows --quiet
-./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --windows --pomicons --quiet
 
 ./font-patcher Inconsolata.otf --fontawesome
 ./font-patcher Inconsolata.otf --fontawesome --octicons --pomicons
@@ -463,6 +446,8 @@ Symbol Fonts:
 docker run --rm -v ~/myfont/patchme:/in -v ~/myfont/patched:/out nerdfonts/patcher
 docker run --rm -v ~/Desktop/myfont/patchme:/in -v ~/Desktop/myfont/patched:/out nerdfonts/patcher --fontawesome
 ```
+
+Usually you want the `--complete` option.
 
 <a name="gotta-patch-em-all"></a>
 ## Gotta Patch 'em All Font Patcher!
@@ -486,6 +471,33 @@ docker run --rm -v ~/Desktop/myfont/patchme:/in -v ~/Desktop/myfont/patched:/out
   ```
   ./gotta-patch-em-all-font-patcher\!.sh /Heavy
   ```
+
+Full options:
+
+```
+Usage: ./gotta-patch-em-all-font-patcher!.sh [OPTION] [FILTER]
+
+    OPTION:
+        -c, --checkfont     Create the font(s) in check-fonts/ instead
+        -t, --keeptime      Try to preserve timestamp of previously patched
+                            font in patched-fonts/ directory
+        -v, --verbose       Show more information when running
+        -i, --info          Rebuild JUST the readmes
+        -j, --jobs          Run up to 8 patch processes in parallel
+        -h, --help          Show this help
+
+    FILTER:
+        The filter argument to this script is a filter for the fonts to patch.
+        The filter is a regex (glob * is expressed as [^/]*, see `man 7 glob`)
+        All font files that start with that filter (and are ttf, otf, or sfd files) will
+        be processed only.
+          Example ./gotta-patch-em-all-font-patcher\!.sh "iosevka"
+          Process all font files that start with "iosevka"
+        If the argument starts with a '/' all font files in a directory that matches
+        the filter are processed only.
+          Example ./gotta-patch-em-all-font-patcher\!.sh "/iosevka"
+          Process all font files that are in directory "iosevka"
+```
 
 ## Contributing
 
