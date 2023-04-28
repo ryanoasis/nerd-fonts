@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.0
-# Script Version: 1.3.0
+# Script Version: 1.4.0
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
 # That option will override the defaults (also defaults of THIS script).
@@ -197,13 +197,13 @@ function patch_font {
   local patched_font_dir="${patched_font_dir/$unpatched_parent_dir/$patched_parent_dir}"
 
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
-  if [ -n ${purge} -a -d "${patched_font_dir}complete" ]
+  if [ -n ${purge} ]
   then
     if [ -n "${verbose}" ]
     then
-      echo "Purging patched font dir ${patched_font_dir}complete"
+      echo "Purging patched font dir ${patched_font_dir}"
     fi
-    rm ${patched_font_dir}complete/*
+    rm ${patched_font_dir}/*
   fi
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
@@ -252,26 +252,26 @@ function patch_font {
   # Create "Nerd Font"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
   fi
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q $powerline $post_process -c --no-progressbars \
-                    --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
+                    --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
   # Create "Nerd Font Mono"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
   fi
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} $powerline $post_process -c --no-progressbars \
-                    --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
+                    --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
   # Create "Nerd Font Propo"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
   fi
   { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable $powerline $post_process -c --no-progressbars \
-                    --outputdir "${patched_font_dir}complete/" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
+                    --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
 
   # wait for this group of background processes to finish to avoid forking too many processes
@@ -329,8 +329,8 @@ function copy_license {
   local license_file=""
 
   while IFS= read -d $'\0' -r license_file ; do
-    [[ -d "$dest/complete" ]] || mkdir -p "$dest/complete"
-    cp "$license_file" -t "$dest/complete"
+    [[ -d "$dest" ]] || mkdir -p "$dest"
+    cp "$license_file" -t "$dest"
   done < <(find "$src" -iregex ".*\(licen[cs]e\|ofl\).*" -type f -print0)
 
   # To check which files will or will not be copied and make sure all relevant
