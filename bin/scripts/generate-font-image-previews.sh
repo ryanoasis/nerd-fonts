@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.0
-# Script Version: 1.2.0
+# Script Version: 1.2.1
 # Create font previews.
 # All fonts need to be installed (or no preview is generated)
 # Files should end up in the gh-pages branch
@@ -19,9 +19,9 @@ main() {
   for i in $(jq '.fonts | keys | .[]' lib/fonts.json); do
     patchedName=$(jq -r ".fonts[$i].patchedName" lib/fonts.json);
     imagePreviewFont=$(jq -r ".fonts[$i].imagePreviewFont" lib/fonts.json);
-    # if [ "$imagePreviewFont" != "$patchedName Nerd Font" ]; then
-    #   echo "[mismatch]   $imagePreviewFont != $patchedName Nerd Font"
-    # fi
+    if [ "$imagePreviewFont" != "$patchedName Nerd Font" ]; then
+      echo "[mismatch] (Fam vs name)  $imagePreviewFont <=> $patchedName"
+    fi
     if [ -z "$imagePreviewFont" ]; then
       echo "[Skipping]   $patchedName"
       continue
@@ -57,59 +57,59 @@ generate_preview_symbols() {
 }
 
 image_font_files=( \
-  '3270/Regular/complete/IBM 3270 Nerd Font Complete.ttf' \
-  'Agave/complete/agave regular Nerd Font Complete.ttf' \
-  'AnonymousPro/complete/Anonymice Nerd Font Complete.ttf' \
-  'Arimo/Regular/complete/Arimo Regular Nerd Font Complete.ttf' \
-  'AurulentSansMono/complete/AurulentSansMono-Regular Nerd Font Complete.otf' \
-  'BigBlueTerminal/complete/BigBlue TerminalPlus Nerd Font Complete.TTF' \
-  'BitstreamVeraSansMono/Regular/complete/Bitstream Vera Sans Mono Nerd Font Complete.ttf' \
-  'CascadiaCode/Regular/complete/Caskaydia Cove Nerd Font Complete Regular.otf' \
-  'CodeNewRoman/Regular/complete/Code New Roman Nerd Font Complete.otf' \
-  'Cousine/Regular/complete/Cousine Regular Nerd Font Complete.ttf' \
-  'DaddyTimeMono/complete/DaddyTimeMono Nerd Font Complete.ttf' \
-  'DejaVuSansMono/Regular/complete/DejaVu Sans Mono Nerd Font Complete.ttf' \
-  'DroidSansMono/complete/Droid Sans Mono Nerd Font Complete.otf' \
-  'FantasqueSansMono/Regular/complete/Fantasque Sans Mono Regular Nerd Font Complete.ttf' \
-  'FiraCode/Regular/complete/Fira Code Regular Nerd Font Complete.ttf' \
-  'FiraMono/Regular/complete/Fura Mono Regular Nerd Font Complete.otf' \
-  'Gohu/uni-14/complete/GohuFont Nerd Font Complete.ttf' \
-  'Go-Mono/Regular/complete/Go Mono Nerd Font Complete.ttf' \
-  'Hack/Regular/complete/Hack Regular Nerd Font Complete.ttf' \
-  'Hasklig/Regular/complete/Hasklug Nerd Font Complete.otf' \
-  'HeavyData/complete/Heavy Data Nerd Font Complete.ttf' \
-  'Hermit/Medium/complete/Hurmit Medium Nerd Font Complete.otf' \
-  'iA-Writer/iA Writer Mono/Regular/complete/iM Writing Mono S Regular Nerd Font Complete.ttf' \
-  'IBMPlexMono/Mono/complete/Blex Mono Nerd Font Complete.ttf' \
-  'Inconsolata/complete/Inconsolata Regular Nerd Font Complete.ttf' \
-  'InconsolataGo/Regular/complete/InconsolataGo Nerd Font Complete.ttf' \
-  'InconsolataLGC/Regular/complete/Inconsolata LGC Nerd Font Complete.ttf' \
-  'Iosevka/Regular/complete/Iosevka Nerd Font Complete.ttf' \
-  'IosevkaTerm/Regular/complete/Iosevka Term Nerd Font Complete.ttf' \
-  'JetBrainsMono/Ligatures/Regular/complete/JetBrains Mono Nerd Font Complete Regular.ttf' \
-  'Lekton/Regular/complete/Lekton Nerd Font Complete.ttf' \
-  'LiberationMono/complete/Literation Mono Nerd Font Complete.ttf' \
-  'Lilex/Regular/complete/Lilex Regular Nerd Font Complete.ttf' \
-  'Meslo/M/Regular/complete/Meslo LG M Regular Nerd Font Complete.ttf' \
-  'Monofur/Regular/complete/monofur Nerd Font Complete.ttf' \
-  'Monoid/Regular/complete/Monoid Regular Nerd Font Complete.ttf' \
-  'Mononoki/Regular/complete/Mononoki Nerd Font Complete Regular.ttf' \
-  'MPlus/Regular/complete/M+ 1m Nerd Font Complete.ttf' \
-  'NerdFontsSymbolsOnly/complete/Symbols-2048-em Nerd Font Complete Mono.ttf' \
-  'Noto/Sans-Mono/complete/Noto Sans Mono Regular Nerd Font Complete.ttf' \
-  'OpenDyslexic/Regular/complete/OpenDyslexic Regular Nerd Font Complete.otf' \
-  'Overpass/Mono/Regular/complete/Overpass Mono Regular Nerd Font Complete.otf' \
-  'ProFont/profontiix/complete/ProFont IIx Nerd Font Complete.ttf' \
-  'ProggyClean/Regular/complete/ProggyCleanTT Nerd Font Complete.ttf' \
-  'RobotoMono/Regular/complete/Roboto Mono Nerd Font Complete.ttf' \
-  'ShareTechMono/complete/Shure Tech Mono Nerd Font Complete.ttf' \
-  'SourceCodePro/Regular/complete/Sauce Code Pro Nerd Font Complete.ttf' \
-  'SpaceMono/Regular/complete/Space Mono Nerd Font Complete.ttf' \
-  'Terminus/terminus-ttf-4.40.1/Regular/complete/Terminess (TTF) Nerd Font Complete.ttf' \
-  'Tinos/Regular/complete/Tinos Nerd Font Complete.ttf' \
-  'Ubuntu/Regular/complete/Ubuntu Nerd Font Complete.ttf' \
-  'UbuntuMono/Regular/complete/Ubuntu Mono Nerd Font Complete.ttf' \
-  'VictorMono/Regular/complete/Victor Mono Regular Nerd Font Complete.ttf' \
+  '3270/Regular/3270NerdFont-Regular.ttf' \
+  'Agave/AgaveNerdFont-Regular.ttf' \
+  'AnonymousPro/Regular/AnonymiceProNerdFont-Regular.ttf' \
+  'Arimo/Regular/ArimoNerdFont-Regular.ttf' \
+  'AurulentSansMono/AurulentSansMNerdFont-Regular.otf' \
+  'BigBlueTerminal/BigBlueTermPlusNerdFont-Regular.ttf' \
+  'BitstreamVeraSansMono/Regular/BitstromWeraNerdFont-Regular.ttf' \
+  'CascadiaCode/Regular/CaskaydiaCoveNerdFont-Regular.ttf' \
+  'CodeNewRoman/Regular/CodeNewRomanNerdFont-Regular.otf' \
+  'Cousine/Regular/CousineNerdFont-Regular.ttf' \
+  'DaddyTimeMono/DaddyTimeMonoNerdFont-Regular.ttf' \
+  'DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf' \
+  'DroidSansMono/DroidSansMNerdFont-Regular.otf' \
+  'FantasqueSansMono/Regular/FantasqueSansMNerdFont-Regular.ttf' \
+  'FiraCode/Regular/FiraCodeNerdFont-Regular.ttf' \
+  'FiraMono/Regular/FiraMonoNerdFont-Regular.otf' \
+  'Gohu/14/GohuFont14NerdFont-Regular.ttf' \
+  'Go-Mono/Regular/GoMonoNerdFont-Regular.ttf' \
+  'Hack/Regular/HackNerdFont-Regular.ttf' \
+  'Hasklig/Regular/HasklugNerdFont-Regular.otf' \
+  'HeavyData/HeavyDataNerdFont-Regular.ttf' \
+  'Hermit/Regular/HurmitNerdFont-Regular.otf' \
+  'iA-Writer/Mono/Regular/iMWritingMonoNerdFont-Regular.ttf' \
+  'IBMPlexMono/Mono/BlexMonoNerdFont-Regular.ttf' \
+  'Inconsolata/InconsolataNerdFont-Regular.ttf' \
+  'InconsolataGo/Regular/InconsolataGoNerdFont-Regular.ttf' \
+  'InconsolataLGC/Regular/InconsolataLGCNerdFont-Regular.ttf' \
+  'Iosevka/Regular/IosevkaNerdFont-Regular.ttf' \
+  'IosevkaTerm/Regular/IosevkaTermNerdFont-Regular.ttf' \
+  'JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf' \
+  'Lekton/Regular/LektonNerdFont-Regular.ttf' \
+  'LiberationMono/LiterationMonoNerdFont-Regular.ttf' \
+  'Lilex/Regular/LilexNerdFont-Regular.ttf' \
+  'Meslo/M/Regular/MesloLGMNerdFont-Regular.ttf' \
+  'Monofur/Regular/MonofurNerdFont-Regular.ttf' \
+  'Monoid/Regular/MonoidNerdFont-Regular.ttf' \
+  'Mononoki/Regular/MononokiNerdFont-Regular.ttf' \
+  'MPlus/M_Plus_1_code/M+1CodeNerdFont-Regular.ttf' \
+  'NerdFontsSymbolsOnly/Symbols2048EmNerdFontMono-Regular.ttf' \
+  'Noto/Sans-Mono/NotoSansMNerdFont-Regular.ttf' \
+  'OpenDyslexic/Regular/OpenDyslexicNerdFont-Regular.otf' \
+  'Overpass/Mono/Regular/OverpassMNerdFont-Regular.otf' \
+  'ProFont/profontiix/ProFontIIxNerdFont-Regular.ttf' \
+  'ProggyClean/Regular/ProggyCleanNerdFont-Regular.ttf' \
+  'RobotoMono/Regular/RobotoMonoNerdFont-Regular.ttf' \
+  'ShareTechMono/ShureTechMonoNerdFont-Regular.ttf' \
+  'SourceCodePro/Regular/SauceCodeProNerdFont-Regular.ttf' \
+  'SpaceMono/Regular/SpaceMonoNerdFont-Regular.ttf' \
+  'Terminus/Regular/TerminessNerdFont-Regular.ttf' \
+  'Tinos/Regular/TinosNerdFont-Regular.ttf' \
+  'Ubuntu/Regular/UbuntuNerdFont-Regular.ttf' \
+  'UbuntuMono/Regular/UbuntuMonoNerdFont-Regular.ttf' \
+  'VictorMono/Regular/VictorMonoNerdFont-Regular.ttf' \
 )
 
 # Enable this to get a list of instruction to install all the needed fonts

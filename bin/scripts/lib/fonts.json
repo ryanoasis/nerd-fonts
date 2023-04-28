@@ -25,7 +25,7 @@
       "RFN": true,
       "patchedName": "AnonymicePro",
       "folderName": "AnonymousPro",
-      "imagePreviewFont": "Anonymice Nerd Font",
+      "imagePreviewFont": "AnonymicePro Nerd Font",
       "linkPreviewFont": false,
       "caskName": "anonymice",
       "description": "Inspired by Anonymous 9 on Macintosh, since 2009, distinct `O`, `0`, `I`, `l`, `1`"
@@ -43,9 +43,9 @@
     {
       "unpatchedName": "Aurulent Sans Mono",
       "RFN": false,
-      "patchedName": "AurulentSansMono",
+      "patchedName": "AurulentSansM",
       "folderName": "AurulentSansMono",
-      "imagePreviewFont": "AurulentSansMono Nerd Font",
+      "imagePreviewFont": "AurulentSansM Nerd Font",
       "linkPreviewFont": "aurulent",
       "caskName": "aurulent",
       "description": "Sans serif, designed by Stephen G. Hartke which also created Verily Serif"
@@ -53,9 +53,9 @@
     {
       "unpatchedName": "BigBlue Terminal",
       "RFN": false,
-      "patchedName": "BigBlueTerminal",
+      "patchedName": "BigBlueTerm",
       "folderName": "BigBlueTerminal",
-      "imagePreviewFont": "BigBlue_TerminalPlus Nerd Font",
+      "imagePreviewFont": "BigBlueTermPlus Nerd Font",
       "linkPreviewFont": false,
       "caskName": "bigblue-terminal",
       "description": "Nostalgic, closely based on IBM's 8x14 EGA/VGA charset"
@@ -75,7 +75,7 @@
       "RFN": true,
       "patchedName": "CaskaydiaCove",
       "folderName": "CascadiaCode",
-      "imagePreviewFont": "Caskaydia Cove Nerd Font",
+      "imagePreviewFont": "CaskaydiaCove Nerd Font",
       "linkPreviewFont": "cascadia-code",
       "caskName": "caskaydia-cove",
       "description": "A fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal"
@@ -123,9 +123,9 @@
     {
       "unpatchedName": "DejaVu Sans Mono",
       "RFN": false,
-      "patchedName": "DejaVuSansMono",
+      "patchedName": "DejaVuSansM",
       "folderName": "DejaVuSansMono",
-      "imagePreviewFont": "DejaVuSansMono Nerd Font",
+      "imagePreviewFont": "DejaVuSansM Nerd Font",
       "linkPreviewFont": "dejavu",
       "caskName": "dejavu-sans-mono",
       "description": "Dotted zero, based on the Bitstream Vera Fonts with a wider range of character"
@@ -133,9 +133,9 @@
     {
       "unpatchedName": "Droid Sans Mono",
       "RFN": false,
-      "patchedName": "DroidSansMono",
+      "patchedName": "DroidSansM",
       "folderName": "DroidSansMono",
-      "imagePreviewFont": "DroidSansMono Nerd Font",
+      "imagePreviewFont": "DroidSansM Nerd Font",
       "linkPreviewFont": "droid-sans",
       "caskName": "droid-sans-mono",
       "description": "Good for small screens or font sizes"
@@ -143,9 +143,9 @@
     {
       "unpatchedName": "Fantasque Sans Mono",
       "RFN": false,
-      "patchedName": "FantasqueSansMono",
+      "patchedName": "FantasqueSansM",
       "folderName": "FantasqueSansMono",
-      "imagePreviewFont": "FantasqueSansMono Nerd Font",
+      "imagePreviewFont": "FantasqueSansM Nerd Font",
       "linkPreviewFont": "fantasque-sans",
       "caskName": "fantasque-sans-mono",
       "description": "\"Wibbly-wobbly handwriting-like fuzziness\", takes some inspiration from Inconsolata and Monaco"
@@ -165,10 +165,20 @@
       "RFN": false,
       "patchedName": "FiraMono",
       "folderName": "FiraMono",
-      "imagePreviewFont": "FuraMono Nerd Font",
+      "imagePreviewFont": "FiraMono Nerd Font",
       "linkPreviewFont": "fira",
       "caskName": "fira-mono",
       "description": "Mozilla typeface, dotted zero"
+    },
+    {
+      "unpatchedName": "Gohu",
+      "RFN": false,
+      "patchedName": "GohuFont",
+      "folderName": "Gohu",
+      "imagePreviewFont": "GohuFont 14 Nerd Font",
+      "linkPreviewFont": false,
+      "caskName": "gohufont",
+      "description": "Bitmap font, tall capitals and ascenders, small serifs"
     },
     {
       "unpatchedName": "Go Mono",
@@ -179,16 +189,6 @@
       "linkPreviewFont": "go-mono",
       "caskName": "go-mono",
       "description": "Created specifically for the Go project, looks particularly clear for use with the Go language"
-    },
-    {
-      "unpatchedName": "Gohu",
-      "RFN": false,
-      "patchedName": "Gohu",
-      "folderName": "Gohu",
-      "imagePreviewFont": "GohuFont Nerd Font",
-      "linkPreviewFont": false,
-      "caskName": "gohufont",
-      "description": "Bitmap font, tall capitals and ascenders, small serifs"
     },
     {
       "unpatchedName": "Hack",
@@ -235,7 +235,7 @@
       "RFN": true,
       "patchedName": "iMWriting",
       "folderName": "iA-Writer",
-      "imagePreviewFont": "iMWritingMonoS Nerd Font",
+      "imagePreviewFont": "iMWritingMono Nerd Font",
       "linkPreviewFont": "ia-writer-mono",
       "caskName": "im-writing",
       "description": "A heavy modification of IBM's Plex font"
@@ -263,9 +263,9 @@
     {
       "unpatchedName": "Inconsolata LGC",
       "RFN": false,
-      "patchedName": "InconsolataLGC",
+      "patchedName": "Inconsolata LGC",
       "folderName": "InconsolataLGC",
-      "imagePreviewFont": "InconsolataLGC Nerd Font",
+      "imagePreviewFont": "Inconsolata LGC Nerd Font",
       "linkPreviewFont": false,
       "caskName": "inconsolata-lgc",
       "description": "Inconsolata with added the Cyrillic alphabet"
@@ -371,11 +371,11 @@
       "description": "Keeps in mind differentiation of characters and resolution sizes"
     },
     {
-      "unpatchedName": "M+",
+      "unpatchedName": "MPlus",
       "RFN": false,
-      "patchedName": "MPlus",
+      "patchedName": "M+",
       "folderName": "MPlus",
-      "imagePreviewFont": "M+ 1m",
+      "imagePreviewFont": "M+1Code Nerd Font",
       "linkPreviewFont": false,
       "caskName": "mplus",
       "description": "Multiple styles and weights, many glyph sets (e.g. Kana glyphs)"
@@ -385,30 +385,10 @@
       "RFN": false,
       "patchedName": "Noto",
       "folderName": "Noto",
-      "imagePreviewFont": "NotoSansMono Nerd Font",
+      "imagePreviewFont": "NotoSansM Nerd Font",
       "linkPreviewFont": "noto",
       "caskName": "noto",
       "description": "`0` and `O` very similar, characters are either very curvy or straight lined"
-    },
-    {
-      "unpatchedName": "ProFont",
-      "RFN": false,
-      "patchedName": "ProFont",
-      "folderName": "ProFont",
-      "imagePreviewFont": "ProFontIIx Nerd Font",
-      "linkPreviewFont": "profont",
-      "caskName": "profont",
-      "description": "Looks best with anti-aliasing turned off, squared off character corners, vertically tight small `s`"
-    },
-    {
-      "unpatchedName": "ProggyCleanTT",
-      "RFN": false,
-      "patchedName": "ProggyClean",
-      "folderName": "ProggyClean",
-      "imagePreviewFont": "ProggyCleanTT Nerd Font",
-      "linkPreviewFont": "proggy-clean",
-      "caskName": "proggy-clean-tt",
-      "description": "Designed particularly for use at small point sizes"
     },
     {
       "unpatchedName": "OpenDyslexic",
@@ -425,10 +405,30 @@
       "RFN": false,
       "patchedName": "Overpass",
       "folderName": "Overpass",
-      "imagePreviewFont": "OverpassMono Nerd Font",
+      "imagePreviewFont": "OverpassM Nerd Font",
       "linkPreviewFont": "overpass",
       "caskName": "overpass",
       "description": "An open source font family inspired by Highway Gothic"
+    },
+    {
+      "unpatchedName": "ProFont",
+      "RFN": false,
+      "patchedName": "ProFont",
+      "folderName": "ProFont",
+      "imagePreviewFont": "ProFont IIx Nerd Font",
+      "linkPreviewFont": "profont",
+      "caskName": "profont",
+      "description": "Looks best with anti-aliasing turned off, squared off character corners, vertically tight small `s`"
+    },
+    {
+      "unpatchedName": "ProggyCleanTT",
+      "RFN": false,
+      "patchedName": "ProggyClean",
+      "folderName": "ProggyClean",
+      "imagePreviewFont": "ProggyClean Nerd Font",
+      "linkPreviewFont": "proggy-clean",
+      "caskName": "proggy-clean-tt",
+      "description": "Designed particularly for use at small point sizes"
     },
     {
       "unpatchedName": "Roboto Mono",
@@ -455,7 +455,7 @@
       "RFN": true,
       "patchedName": "SauceCodePro",
       "folderName": "SourceCodePro",
-      "imagePreviewFont": "Sauce Code Pro Nerd Font",
+      "imagePreviewFont": "SauceCodePro Nerd Font",
       "linkPreviewFont": "source-code-pro",
       "caskName": "sauce-code-pro",
       "description": "Monospaced font family for user interface and coding environments"
@@ -475,7 +475,7 @@
       "RFN": false,
       "patchedName": "Symbols",
       "folderName": "NerdFontsSymbolsOnly",
-      "imagePreviewFont": "Symbols Nerd Font Mono",
+      "imagePreviewFont": "Symbols2048Em Nerd Font Mono",
       "linkPreviewFont": false,
       "caskName": "symbols-only",
       "description": "Just the Nerd Font Icons. I.e Symbol font only"
@@ -485,7 +485,7 @@
       "RFN": true,
       "patchedName": "Terminess",
       "folderName": "Terminus",
-      "imagePreviewFont": "TerminessTTF Nerd Font",
+      "imagePreviewFont": "Terminess Nerd Font",
       "linkPreviewFont": "terminus",
       "caskName": "terminess-ttf",
       "description": "Squarish characters that are slightly askew"
