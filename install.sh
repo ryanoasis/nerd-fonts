@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install Nerd Fonts
-__ScriptVersion="0.4"
+__ScriptVersion="0.5"
 
 # Default values for option variables:
 quiet=false
@@ -37,14 +37,16 @@ General options:
                                 with this script).
                                 Can be combined with -L for a dry run.
 
-  -s, --use-single-width-glyphs Install single-width glyphs variants.
-  -w, --windows                 Install with limited internal font names.
+  -s, --use-single-width-glyphs Install single-width glyphs variants. (*)
+  -w, --windows                 Install with limited internal font names. (*)
 
   -U, --install-to-user-path    Install fonts to users home font path [default].
   -S, --install-to-system-path  Install fonts to global system path for all users, requires root.
 
   -O, --otf                     Prefer OTF font files [default].
   -T, --ttf                     Prefer TTF font files.
+
+                                (*) Feature will not work anymore
 EOF
 }
 
