@@ -40,7 +40,7 @@ function clearDestination {
   true > "$to" 2> /dev/null
 }
 
-if [ $# -eq 1 ]; then
+if [ $# -ge 1 ]; then
   like_pattern="./$1"
   # allows one to limit to specific font.
   # e.g. with ProFont, DejaVuSansMon, Hasklig, Hack, Gohu, FiraCode, Hermit, etc.
@@ -48,6 +48,10 @@ if [ $# -eq 1 ]; then
 else
   like_pattern="."
   echo "$LINE_PREFIX No parameter pattern given, generating standardized readmes for all fonts in all font directories"
+fi
+if [ $# -ge 2 ]; then
+  patched_parent_dir=$2
+  echo "$LINE_PREFIX Using destination '${patched_parent_dir}'"
 fi
 
 find "$like_pattern" -type d |
@@ -88,7 +92,7 @@ do
   mapfile -t RST < <(find "$searchdir" -type f -iname 'readme.rst')
   mapfile -t TXT < <(find "$searchdir" -type f -iname 'readme.txt')
   mapfile -t MD < <(find "$searchdir" -type f -iname 'readme.md')
-  outputdir=$PWD/../../patched-fonts/$filename/
+  outputdir=$PWD/../../${patched_parent_dir}/$filename/
 
   echo "$LINE_PREFIX Generating readme for: $filename"
 
