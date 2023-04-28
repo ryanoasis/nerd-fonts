@@ -1,15 +1,15 @@
 SplineFontDB: 3.0
-FontName: Symbols-1000-em
-FullName: Symbols-1000-em
+FontName: Symbols
+FullName: Symbols
 FamilyName: Symbols
 Weight: Regular
 Copyright: Copyright (c) 2016, Ryan McIntyre
 Version: 001.000
 ItalicAngle: 0
-UnderlinePosition: -150
-UnderlineWidth: 50
-Ascent: 800
-Descent: 200
+UnderlinePosition: -306
+UnderlineWidth: 102
+Ascent: 1638
+Descent: 410
 InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
