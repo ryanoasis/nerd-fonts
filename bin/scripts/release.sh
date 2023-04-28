@@ -20,6 +20,8 @@ release=$1
 ./generate-casks.sh
 ./archive-fonts.sh
 #./upload-archives.sh # better done as a separate step (via gh action)
+./generate-css.sh
+./generate-webfonts.sh
 
 exit
 
