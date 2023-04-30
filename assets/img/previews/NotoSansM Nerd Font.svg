@@ -5,7 +5,7 @@
    viewBox="0 0 303.56152 108.93749"
    height="30.744579mm"
    width="85.671806mm"
-   sodipodi:docname="NotoSansMono Nerd Font.svg"
+   sodipodi:docname="NotoSansM Nerd Font.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -52,7 +52,7 @@
     <g
        aria-label="Noto Nerd Font"
        id="text4136"
-       style="font-size:27.5px;line-height:125%;font-family:'NotoSansMono Nerd Font';text-decoration:underline;text-decoration-line:underline;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:1px">
+       style="font-size:27.5px;line-height:125%;font-family:'NotoSansM Nerd Font';text-decoration:underline;text-decoration-line:underline;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:1px">
       <path
          d="M 64.782143,100.93363 V 81.298632 H 68.054643 L 75.204643,97.661132 H 75.287143 Q 75.149643,96.038632 75.094643,94.718632 75.039643,93.371132 75.039643,91.693632 V 81.298632 H 77.432143 V 100.93363 H 74.434643 L 66.927143,83.828632 H 66.817143 Q 66.927143,85.368632 67.037143,86.908632 67.174643,88.448632 67.174643,89.988632 V 100.93363 Z"
          id="path829" />
@@ -93,7 +93,7 @@
     <g
        aria-label="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ oO08 iIlL1 {} [] g9qCGQ ~-+=&gt;"
        id="text4140"
-       style="font-size:27.5px;line-height:125%;font-family:'NotoSansMono Nerd Font';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:1px">
+       style="font-size:27.5px;line-height:125%;font-family:'NotoSansM Nerd Font';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:1px">
       <path
          d="M 69.724403,141.10862 Q 68.341903,141.10862 67.484403,140.42612 66.644403,139.74362 66.644403,138.36112 66.644403,136.83862 67.729403,136.08612 68.831903,135.33362 70.896903,135.28112 L 72.909403,135.22862 V 134.84362 Q 72.909403,133.58362 72.279403,133.12862 71.649403,132.65612 70.581903,132.65612 69.829403,132.65612 69.146903,132.84862 68.464403,133.04112 67.851903,133.39112 L 67.309403,132.20112 Q 67.974403,131.86862 68.779403,131.62362 69.601903,131.37862 70.669403,131.37862 72.419403,131.37862 73.381903,132.18362 74.344403,132.97112 74.344403,134.65112 V 140.93362 H 73.084403 L 72.909403,139.63862 H 72.839403 Q 72.261903,140.37362 71.491903,140.74112 70.739403,141.10862 69.724403,141.10862 Z M 69.986903,139.83112 Q 70.774403,139.83112 71.439403,139.55112 72.104403,139.25362 72.506903,138.67612 72.909403,138.09862 72.909403,137.18862 V 136.34862 L 71.229403,136.40112 Q 69.549403,136.45362 68.831903,136.94362 68.131903,137.43362 68.131903,138.30862 68.131903,139.11362 68.639403,139.48112 69.146903,139.83112 69.986903,139.83112 Z"
          style="font-size:17.5px"
