@@ -307,8 +307,6 @@ function generate_info {
   if [ "$last_font_root" != "$font_root" ]
   then
     echo "$LINE_PREFIX --- Calling standardize-and-complete-readmes for $font_root"
-    echo "./standardize-and-complete-readmes.sh \"$font_root\" \"$patched_parent_dir\""
-    echo "PWD `pwd`"
     ${sd}/standardize-and-complete-readmes.sh "$font_root" "$patched_parent_dir"
     echo "$LINE_PREFIX ---"
     last_font_root=$font_root
