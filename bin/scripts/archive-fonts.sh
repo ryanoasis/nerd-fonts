@@ -11,6 +11,8 @@
 # Example with same font names for different paths
 # ./archive-fonts gohu
 
+set -e
+
 LINE_PREFIX="# [Nerd Fonts] "
 scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
 parent_dir="${PWD}/../../"
