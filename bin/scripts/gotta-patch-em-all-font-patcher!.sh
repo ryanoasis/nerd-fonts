@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.0
-# Script Version: 1.4.1
+# Script Version: 1.4.2
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
 # That option will override the defaults (also defaults of THIS script).
@@ -197,7 +197,7 @@ function patch_font {
   local patched_font_dir="${patched_font_dir/$unpatched_parent_dir/$patched_parent_dir}"
 
   [[ -d "$patched_font_dir" ]] || mkdir -p "$patched_font_dir"
-  if [ -n ${purge} ]
+  if [ -n "${purge}" ]
   then
     if [ -n "${verbose}" ]
     then
