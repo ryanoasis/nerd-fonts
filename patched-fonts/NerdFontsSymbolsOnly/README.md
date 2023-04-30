@@ -1,12 +1,14 @@
 # Symbols Only
 
-This is an empty font that after patching contains just the/all symbol glyphs.
+This font contains (in the patched-fonts folder) all symbols and is intended to be used
+as fallback or together with fontconfig - so that you do not need to individually
+patch all the fonts. YMMV.
 
 ## Which font?
 
 ### TL;DR
 
-* Pick your font family and then select from the `'complete'` directory.
+* Pick your font family:
   * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with `Nerd Font Mono` (or `NFM`).
   * If you want to have bigger icons (usually around 1.5 normal letters wide) pick a font without `Mono` i.e. `Nerd Font` (or `NF`). Most terminals support this, but ymmv.
   * If you work in a proportional context (GUI elements or edit a presentation etc) pick a font with `Nerd Font Propo` (or `NFP`).
