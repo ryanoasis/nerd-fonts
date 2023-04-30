@@ -122,7 +122,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Blex Mono][p-blex]                               | [IBM Plex Mono][f-ibm-plex]       | 2.3   | YES  | ![w] ![m2] ![l]   |
 | [Caskaydia Cove Nerd Font][p-cascadia]            | [Cascadia Code][f-cascadia]       |2111.01| YES  | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             | Sam Radian                        | 2.0   | NO   | ![w] ![m2] ![l]   |
-| [Comic Mono Nerd Font][p-comic]                   | [Comic Mono][f-comic]             | 0.1.1 | NO   | ![w] ![m2] ![l]   |
+| [Comic Shanns Mono Nerd Font][p-comic]            | [Comic Shanns Mono][f-comic]      | 1.3   | NO   | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | 1.211 | NO   | ![w] ![m2] ![l]   |
 | [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]  | 1.2.3 | NO   | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            | [DejaVu][f-dejavu]                | 2.37  | NO   | ![w] ![m2] ![l]   |
@@ -611,7 +611,7 @@ Font repos
 [f-arimo]:https://github.com/googlefonts/Arimo
 [f-cascadia]:https://github.com/microsoft/cascadia-code
 [f-cousine]:https://fonts.google.com/specimen/Cousine
-[f-comic]:https://github.com/dtinth/comic-mono-font
+[f-comic]:https://github.com/jesusmgg/comic-shanns-mono
 [f-daddytimemono]:https://github.com/BourgeoisBear/DaddyTimeMono
 [f-dejavu]:https://github.com/dejavu-fonts/dejavu-fonts
 [f-fant]:https://github.com/belluzj/fantasque-sans
@@ -664,7 +664,7 @@ Patched Font internal links
 [p-blex]:patched-fonts/IBMPlexMono
 [p-cascadia]:patched-fonts/CascadiaCode
 [p-code-nr]:patched-fonts/CodeNewRoman
-[p-comic]:patched-fonts/ComicMono
+[p-comic]:patched-fonts/ComicShannsMono
 [p-cousine]:patched-fonts/Cousine
 [p-daddytimemono]:patched-fonts/DaddyTimeMono
 [p-dejavu]:patched-fonts/DejaVuSansMono

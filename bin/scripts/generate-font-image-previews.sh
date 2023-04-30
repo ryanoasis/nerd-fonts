@@ -66,6 +66,7 @@ image_font_files=( \
   'BitstreamVeraSansMono/Regular/BitstromWeraNerdFont-Regular.ttf' \
   'CascadiaCode/Regular/CaskaydiaCoveNerdFont-Regular.ttf' \
   'CodeNewRoman/Regular/CodeNewRomanNerdFont-Regular.otf' \
+  'ComicShannsMono/ComicShannsMonoNerdFont-Regular.otf' \
   'Cousine/Regular/CousineNerdFont-Regular.ttf' \
   'DaddyTimeMono/DaddyTimeMonoNerdFont-Regular.ttf' \
   'DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf' \
