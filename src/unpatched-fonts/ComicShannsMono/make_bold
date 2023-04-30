@@ -30,6 +30,11 @@ for g in font.selection.byGlyphs:
         g.width = target_width
 font.selection.none()
 
+# WIN line metrics obviously wrong, as Nerd Fonts sometimes prefers that, fix it already
+font.os2_winascent = font.os2_typoascent
+font.os2_windescent = -font.os2_typodescent
+font.os2_use_typo_metrics = 1
+
 font.generate('ComicShannsMono-Regular.otf')
 
 # Create Bold face
