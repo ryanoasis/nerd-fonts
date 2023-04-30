@@ -20,6 +20,7 @@ style: container
   <h5 class="inlineblock nerd-font-button tertiary" id="glyphSearchAllButton">
     <i class="nf nf-mdi-select_all"></i>&nbsp;Show All Icons
   </h5>
+  <h5> Sorry the sheet is still on version 2.3.3, ... </h5>
 </div>
 
 <div id="glyphCheatSheet" class="nerd-font-cheat-sheet">
