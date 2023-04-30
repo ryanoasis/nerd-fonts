@@ -2,6 +2,77 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## V3.0.0
+
+This major release introduces some breaking changes:
+
+### Breaking 1: Naming
+
+This release fixes some long standing issues that are due to the naming of the fonts: There is a completely new naming scheme. This might be inconvientient for existing setups, sorry.
+ - Some fonts will have `Nerd Font` in the name while other have it abbreviated as `NF`. This is needed because some names just were too long. (Same for `Nerd Font Mono` and `NFM`.)
+ - There are no `Windows Compatible` fonts anymore. All fonts work on all platforms.
+ - The `Complete` from the font names (and the repo directories) has been dropped (Complete is the new normal).
+ - The name parts will be ordered as expected with style and weight last (`Somefont Bold Nerd Font` -> `Somefont Nerd Font Bold`).
+ - The filename will have no blanks anymore.
+
+### Breaking 2: Material Design Icons Codepoints
+
+The old Material Design Icon codepoints are finally dropped. Due to an historic mistace we placed them in between some asiatic glyphs, breaking that script.
+Since v2.3.0 the (updated and expanded) Material Design Icons have new codepoints in the 5 digit region.
+ - Dropped codepoints `F500`... and class names `nf-mdi-*`
+ - New codepoints `F0001`... and class names `nf-md-*`
+ - The whole discussions are here: https://github.com/ryanoasis/nerd-fonts/issues/365
+ - A translation table is available here: https://github.com/ryanoasis/nerd-fonts/issues/1059#issuecomment-1404891287
+ - There are tools out there that probably can update your configuration.
+
+Otherwise this is a 'Update release', so now the good stuff:
+
+### Updates
+  - Update `Agave` to v37
+  - Update `Arimo` to 1.33
+  - Update `DaddyTimeMono` to 1.2.3
+  - Update `Fira Mono` to 3.206
+  - Update `Go Mono` to 2.010
+  - Update `Hermit` to 2.0
+  - Update `IBM Plex` to 2.3
+  - Update `Iosevka` to 22.1.0
+  - Update `Literation` to 2.1.5
+  - Update `Lilex` to 2.000
+  - Update `mononoki` to 1.6
+  - Update `MPlus` to ... current
+  - Update `Overpass` to 3.0.5
+  - Update `Roboto Mono` to 3.0
+  - Update `Source Code Pro` to 2.038
+  - Update `Terminus` to 4.49.2
+  - Update `Victor Mono` to 1.5.4
+  - Update the Octicons set to 18.3.0
+
+### Features
+  - New font `ComicShannsMono`
+  - New variant in release `Nerd Font Propo` for GUI usecases
+  - Patch in heavy angle brackets
+  - Patch in boxdrawing glyphs (if the font has no complete set)
+  - Repair Panose info if source font has broken data
+  - Reform PowerlineExtra sizing
+  - Autocreate a `FontPatcher.zip` from `HEAD`
+  - Create a json database with css names
+  - Disentangle `Iosevka` into two packets (one for `Iosevka Term
+  - Add option to manipulate `xAvgCharWidth` (needed rarely by self-patchers)
+  - Add option to allow italic-less fonts with oblique
+  - Add `--debug` and `--dry` to `font-patcher`
+  - Add logging into file to `font-patcher`
+  - Add `NERDFONTS` environment variable to transport options through `gotta-patch-em`
+
+### Improvements
+  - Fix `Caskaydia Code` height different to `Cascadia Code` (hinting problem) (font is now `ttf` instead of `otf`!)
+
+### Fixes
+  - Fix baseline to basline distance (line gap) for some fonts
+  - Fix weather icons cloud scaling
+  - Fix UniqueID of the fonts
+  - Fix `Bitstream Vera` name: Is now `Bitstrom Wera` due to licensing issue
+  - No fix, but: Drop support for Python 2
+
 ## v2.3.3
 
 ### Fixes
