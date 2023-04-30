@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.0
-# Script Version: 1.1.0
+# Script Version: 1.1.1
 # Iterates over all patched fonts directories
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc
 # adds information on additional-variations and complete font variations
 
 infofilename="README.md"
-unpatched_parent_dir="src/unpatched-fonts"
-patched_parent_dir="patched-fonts"
 LINE_PREFIX="# [Nerd Fonts] "
-fonts_info="../../bin/scripts/lib/fonts.json"
+sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+fonts_info="${sd}/lib/fonts.json"
+unpatched_parent_dir="${sd}/../../src/unpatched-fonts"
+patched_parent_dir="${sd}/../../patched-fonts"
 
-cd ../../src/unpatched-fonts/ || {
+cd "$sd/../../src/unpatched-fonts/" || {
   echo >&2 "$LINE_PREFIX Could not find source fonts directory"
   exit 1
 }
@@ -50,8 +51,8 @@ else
   echo "$LINE_PREFIX No parameter pattern given, generating standardized readmes for all fonts in all font directories"
 fi
 if [ $# -ge 2 ]; then
-  patched_parent_dir=$2
-  echo "$LINE_PREFIX Using destination '${patched_parent_dir}'"
+  echo "$LINE_PREFIX Using destination '$2'"
+  patched_parent_dir="${sd}/../../$2"
 fi
 
 find "$like_pattern" -type d |
@@ -92,7 +93,7 @@ do
   mapfile -t RST < <(find "$searchdir" -type f -iname 'readme.rst')
   mapfile -t TXT < <(find "$searchdir" -type f -iname 'readme.txt')
   mapfile -t MD < <(find "$searchdir" -type f -iname 'readme.md')
-  outputdir=$PWD/../../${patched_parent_dir}/$filename/
+  outputdir=$patched_parent_dir/$filename/
 
   echo "$LINE_PREFIX Generating readme for: $filename"
 
@@ -105,16 +106,16 @@ do
     do
       echo "$LINE_PREFIX Found RST"
 
-      from="$PWD/$i"
-      to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+      from="$sd/$i"
+      to_dir="${patched_parent_dir}/$filename"
       to="${to_dir}/$infofilename"
 
       clearDestination "$to_dir" "$to"
 
       pandoc "$from" --from=rst --to=markdown --output="$to"
 
-      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
-      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
+      cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
     done
   elif [ "${TXT[0]}" ];
   then
@@ -122,16 +123,16 @@ do
     do
       echo "$LINE_PREFIX Found TXT"
 
-      from="$PWD/$i"
-      to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+      from="$sd/$i"
+      to_dir="${patched_parent_dir}/$filename"
       to="${to_dir}/$infofilename"
 
       clearDestination "$to_dir" "$to"
 
       cp "$from" "$to"
 
-      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
-      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
+      cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
     done
   elif [ "${MD[0]}" ];
   then
@@ -139,21 +140,21 @@ do
     do
       echo "$LINE_PREFIX Found MD"
 
-      from="$PWD/$i"
-      to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+      from="$sd/$i"
+      to_dir="${patched_parent_dir}/$filename"
       to="${to_dir}/$infofilename"
 
       clearDestination "$to_dir" "$to"
 
       cp "$from" "$to"
 
-      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
-      cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
+      cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
     done
   else
     echo "$LINE_PREFIX Did not find any readme files (RST,TXT,MD) generating just title of Font"
 
-    to_dir="${PWD/$unpatched_parent_dir/$patched_parent_dir}/$filename"
+    to_dir="${$patched_parent_dir}/$filename"
     to="${to_dir}/$infofilename"
 
     clearDestination "$to_dir" "$to"
@@ -162,8 +163,8 @@ do
       printf "# %s\\n\\n" "$base_directory"
     } >> "$to"
 
-    appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$PWD" "$to"
-    cat "$PWD/../../src/readme-per-directory-addendum.md" >> "$to"
+    appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
+    cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
   fi
 
 done

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.0
-# Script Version: 1.4.2
+# Script Version: 1.4.3
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
 # That option will override the defaults (also defaults of THIS script).
@@ -307,7 +307,9 @@ function generate_info {
   if [ "$last_font_root" != "$font_root" ]
   then
     echo "$LINE_PREFIX --- Calling standardize-and-complete-readmes for $font_root"
-    ./standardize-and-complete-readmes.sh "$font_root" "$patched_parent_dir"
+    echo "./standardize-and-complete-readmes.sh \"$font_root\" \"$patched_parent_dir\""
+    echo "PWD `pwd`"
+    ${sd}/standardize-and-complete-readmes.sh "$font_root" "$patched_parent_dir"
     echo "$LINE_PREFIX ---"
     last_font_root=$font_root
   fi
