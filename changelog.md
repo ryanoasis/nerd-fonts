@@ -56,7 +56,7 @@ Otherwise this is a 'Update release', so now the good stuff:
   - Reform PowerlineExtra sizing
   - Autocreate a `FontPatcher.zip` from `HEAD`
   - Create a json database with css names
-  - Disentangle `Iosevka` into two packets (one for `Iosevka Term
+  - Disentangle `Iosevka` into two packets (one for `Iosevka Term`)
   - Add option to manipulate `xAvgCharWidth` (needed rarely by self-patchers)
   - Add option to allow italic-less fonts with oblique
   - Add `--debug` and `--dry` to `font-patcher`
