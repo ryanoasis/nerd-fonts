@@ -308,7 +308,7 @@ scoop install Hack-NF
 
 > Option for **Arch Linux** and wanting to use **Community packages**.
 
-Most fonts are available via [Arch Community packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd).
+Most fonts are available via [Arch Community packages](https://archlinux.org/groups/any/nerd-fonts/).
 Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `Option 9: Patch Your Own Font`
