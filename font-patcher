@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.1.0"
+script_version = "4.1.1"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -1113,11 +1113,22 @@ class font_patcher:
         our_btb = typo_btb if use_typo else win_btb
         if our_btb == hhea_btb:
             metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
+        elif abs(our_btb - hhea_btb) / our_btb < 0.03:
+            logger.info("Font vertical metrics slightly off (%.1f%)", (our_btb - hhea_btb) / our_btb * 100.0)
+            metrics = Metric.TYPO if use_typo else Metric.WIN
         else:
-            # We trust the WIN metric more, see experiments in #1056
-            logger.warning("Font vertical metrics inconsistent (HHEA %d / TYPO %d / WIN %d), using WIN", hhea_btb, typo_btb, win_btb)
-            our_btb = win_btb
-            metrics = Metric.WIN
+            # Try the other metric
+            our_btb = typo_btb if not use_typo else win_btb
+            if our_btb == hhea_btb:
+                logger.warning("Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. %s)", 'True' if not use_typo else 'False')
+                use_typo = not use_typo
+                self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
+                metrics = Metric.TYPO if use_typo else Metric.WIN
+            else:
+                # We trust the WIN metric more, see experiments in #1056
+                logger.warning("Font vertical metrics inconsistent (HHEA %d / TYPO %d / WIN %d), using WIN", hhea_btb, typo_btb, win_btb)
+                our_btb = win_btb
+                metrics = Metric.WIN
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
