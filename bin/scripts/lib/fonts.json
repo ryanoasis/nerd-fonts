@@ -101,13 +101,13 @@
       "description": "Tunable, slashed zeros, compact smaller characters"
     },
     {
-      "unpatchedName": "Comic Mono",
+      "unpatchedName": "Comic Shanns Mono",
       "RFN": false,
-      "patchedName": "ComicMono",
-      "folderName": "ComicMono",
-      "imagePreviewFont": "ComicMono Nerd Font",
+      "patchedName": "ComicShannsMono",
+      "folderName": "ComicShannsMono",
+      "imagePreviewFont": "ComicShannsMono Nerd Font",
       "linkPreviewFont": "false",
-      "caskName": "comic-mono",
+      "caskName": "comic-shanns-mono",
       "description": "The very typeface you’ve been trained to recognize since childhood"
     },
     {

@@ -1,7 +1,7 @@
 MIT License
 
-Original work Copyright (c) 2018 Shannon Miwa
-Modified work Copyright (c) 2019 dtinth
+Copyright (c) 2018 Shannon Miwa
+Copyright (c) 2023 Jesus Gonzalez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
