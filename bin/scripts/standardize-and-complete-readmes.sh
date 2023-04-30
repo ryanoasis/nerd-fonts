@@ -106,7 +106,7 @@ do
     do
       echo "$LINE_PREFIX Found RST"
 
-      from="$sd/$i"
+      from="$unpatched_parent_dir/$i"
       to_dir="${patched_parent_dir}/$filename"
       to="${to_dir}/$infofilename"
 
@@ -123,7 +123,7 @@ do
     do
       echo "$LINE_PREFIX Found TXT"
 
-      from="$sd/$i"
+      from="$unpatched_parent_dir/$i"
       to_dir="${patched_parent_dir}/$filename"
       to="${to_dir}/$infofilename"
 
@@ -140,7 +140,7 @@ do
     do
       echo "$LINE_PREFIX Found MD"
 
-      from="$sd/$i"
+      from="$unpatched_parent_dir/$i"
       to_dir="${patched_parent_dir}/$filename"
       to="${to_dir}/$infofilename"
 
