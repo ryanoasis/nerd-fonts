@@ -26,7 +26,7 @@
       "patchedName": "AnonymicePro",
       "folderName": "AnonymousPro",
       "imagePreviewFont": "AnonymicePro Nerd Font",
-      "linkPreviewFont": false,
+      "linkPreviewFont": "anonymous-pro",
       "caskName": "anonymice",
       "description": "Inspired by Anonymous 9 on Macintosh, since 2009, distinct `O`, `0`, `I`, `l`, `1`"
     },
@@ -56,7 +56,7 @@
       "patchedName": "BigBlueTerm",
       "folderName": "BigBlueTerminal",
       "imagePreviewFont": "BigBlueTermPlus Nerd Font",
-      "linkPreviewFont": false,
+      "linkPreviewFont": "bigblue-terminal",
       "caskName": "bigblue-terminal",
       "description": "Nostalgic, closely based on IBM's 8x14 EGA/VGA charset"
     },
@@ -86,7 +86,7 @@
       "patchedName": "BlexMono",
       "folderName": "IBMPlexMono",
       "imagePreviewFont": "BlexMono Nerd Font",
-      "linkPreviewFont": false,
+      "linkPreviewFont": "plex-mono",
       "caskName": "blex-mono",
       "description": "It's global, it's versatile and it's distinctly IBM"
     },
@@ -386,7 +386,7 @@
       "patchedName": "M+",
       "folderName": "MPlus",
       "imagePreviewFont": "M+1Code Nerd Font",
-      "linkPreviewFont": false,
+      "linkPreviewFont": "mplus",
       "caskName": "mplus",
       "description": "Multiple styles and weights, many glyph sets (e.g. Kana glyphs)"
     },
