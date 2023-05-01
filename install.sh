@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install Nerd Fonts
-__ScriptVersion="0.5"
+__ScriptVersion="0.6"
 
 # Default values for option variables:
 quiet=false
@@ -8,8 +8,7 @@ mode="copy"
 clean=false
 dry=false
 extension="otf"
-patches=("Complete") # There are no other variants then Complete anymore
-compat=()
+variant="R"
 installpath="user"
 
 # Usage info
@@ -37,8 +36,8 @@ General options:
                                 with this script).
                                 Can be combined with -L for a dry run.
 
-  -s, --use-single-width-glyphs Install single-width glyphs variants. (*)
-  -w, --windows                 Install with limited internal font names. (*)
+  -s, --use-single-width-glyphs Install single-width glyphs variants.
+  -p, --use-proportional-glyphs Install proportional glyphs variants.
 
   -U, --install-to-user-path    Install fonts to users home font path [default].
   -S, --install-to-system-path  Install fonts to global system path for all users, requires root.
@@ -56,7 +55,7 @@ version() {
 }
 
 # Parse options
-optspec=":qvhclLCsSUwOTAM-:"
+optspec=":qvhclLCspOTSU-:"
 while getopts "$optspec" optchar; do
   case "${optchar}" in
 
@@ -69,8 +68,8 @@ while getopts "$optspec" optchar; do
     L) dry=true
        [ "$mode" != "remove" ] && mode="list";;
     C) clean=true;;
-    s) compat=( "${compat[@]}" "Nerd Font*Mono" );;
-    w) compat=( "${compat[@]}" "Windows Compatible" );;
+    s) variant="M";;
+    p) variant="P";;
     O) extension="otf";;
     T) extension="ttf";;
     S) installpath="system";;
@@ -88,8 +87,8 @@ while getopts "$optspec" optchar; do
               [ "$mode" != "remove" ] && mode="list";;
         remove) mode="remove";;
         clean) clean=true;;
-        use-single-width-glyphs) compat=( "${compat[@]}" "Nerd Font*Mono" );;
-        windows) compat=( "${compat[@]}" "Windows Compatible" );;
+        use-single-width-glyphs) variant="M";;
+        use-proportional-glyphs) variant="P";;
         otf) extension="otf";;
         ttf) extension="ttf";;
         install-to-system-path) installpath="system";;
@@ -110,6 +109,8 @@ while getopts "$optspec" optchar; do
   esac
 done
 shift $((OPTIND-1))
+
+version
 
 # Set source and target directories, default: all fonts
 nerdfonts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/patched-fonts"
@@ -146,38 +147,14 @@ implode() {
     done
     printf -v "$retname" "%s" "$ret"
 }
-find_include=
-find_exclude=
 
-# If we have patches or compat, define what to include
-include=()
-if [ -n "${patches[*]}" ]; then
-  include=( "${include[@]}" "${patches[@]}" )
-fi
-if [ -n "${compat[*]}" ]; then
-  include=( "${include[@]}" "${compat[@]}" )
-fi
-# Delete empty elements
-for i in "${!include[@]}"; do
-  [ "${include[$i]}" = '' ] && unset include["$i"]
-done
-if [ -n "${include[*]}" ]; then
-  implode find_include "*' -and -name '*" "${include[@]}"
-  find_include="-and -name '*${find_include}*'"
-fi
-
-# Exclude everything we didn’t include
-exclude=("Complete" "Font Awesome" "Font Logos" "Octicons" "Pomicons" "Nerd Font*Mono" "Windows Compatible")
-for delete in "${include[@]}"; do
-  exclude=( "${exclude[@]/$delete}" )
-done
-# Delete empty elements
-for i in "${!exclude[@]}"; do
-  [ "${exclude[$i]}" = '' ] && unset exclude["$i"]
-done
-if [ -n "${exclude[*]}" ]; then
-  implode find_exclude "*' -and \\! -name '*" "${exclude[@]}"
-  find_exclude="-and \\! -name '*${find_exclude}*'"
+# Which Nerd Font variant
+if [ "$variant" = "M" ]; then
+  find_filter="-name '*NerdFontMono*'"
+elif [ "$variant" = "P" ]; then
+  find_filter="-name '*NerdFontPropo*'"
+else
+  find_filter="-not -name '*NerdFontMono*' -and -not -name '*NerdFontPropo*' -and -name '*NerdFont*'"
 fi
 
 # Construct directories to be searched
@@ -185,7 +162,7 @@ implode find_dirs "\" \"" "${nerdfonts_dirs[@]}"
 find_dirs="\"$find_dirs\""
 
 # Put it all together into the find command we want
-find_command="find $find_dirs \\( \\( -name '*.[ot]tf' -or -name '*.pcf.gz' \\) $find_include $find_exclude \\) -type f -print0"
+find_command="find $find_dirs -iname '*.[ot]tf' $find_filter -type f -print0"
 
 # Find all the font files and store in array
 files=()
@@ -234,6 +211,11 @@ if [[ "system" == "$installpath" ]]; then
   font_dir="${sys_font_dir}"
 else
   font_dir="${usr_font_dir}"
+fi
+
+if [ "${#files[@]}" -eq 0 ]; then
+  echo "Did not find any fonts to install"
+  exit 1
 fi
 
 #
