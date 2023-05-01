@@ -233,7 +233,7 @@ while read -r filename; do
     FONTS=()
     while IFS= read -d $'\0' -r file; do
         FONTS=("${FONTS[@]}" "$file")
-    done < <(find "$searchdir" -type f -iwholename '*complete*' \( -iname '*.[ot]tf' ! -wholename '*Windows Compatible*' \) -print0 | LC_ALL=C sort -z)
+    done < <(find "$searchdir" -type f -iname '*.[ot]tf' -print0 | LC_ALL=C sort -z)
 
     outputdir=$PWD/../casks
 
