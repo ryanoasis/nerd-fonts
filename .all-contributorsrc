@@ -1221,6 +1221,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Fxzzi",
+      "name": "Fazzi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18248986?v=4",
+      "profile": "https://github.com/Fxzzi",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
