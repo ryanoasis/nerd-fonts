@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.1.1"
+script_version = "4.1.2"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -741,7 +741,7 @@ class font_patcher:
 
     def remove_ligatures(self):
         # let's deal with ligatures (mostly for monospaced fonts)
-        # the tables have been removed from the repo with >this< commit
+        # Usually removes 'fi' ligs that end up being only one cell wide, and 'ldot'
         if self.args.configfile and self.config.read(self.args.configfile):
             if self.args.removeligatures:
                 logger.info("Removing ligatures from configfile `Subtables` section")

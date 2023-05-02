@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.0
-# Script Version: 1.4.3
+# Script Version: 1.4.4
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
 # That option will override the defaults (also defaults of THIS script).
@@ -228,7 +228,6 @@ function patch_font {
   if [ -f "$config_parent_dir/config.json" ]
   then
     # load font configuration file and remove ligatures (for mono fonts):
-    # (tables have been removed from the repo with >this< commit)
     font_config="--removeligatures --configfile $config_parent_dir/config.json"
   else
     font_config=""
@@ -252,9 +251,9 @@ function patch_font {
   # Create "Nerd Font"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
   fi
-  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q $powerline $post_process -c --no-progressbars \
+  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q ${font_config} $powerline $post_process -c --no-progressbars \
                     --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
   # Create "Nerd Font Mono"
@@ -268,9 +267,9 @@ function patch_font {
   # Create "Nerd Font Propo"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
   fi
-  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable $powerline $post_process -c --no-progressbars \
+  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable ${font_config} $powerline $post_process -c --no-progressbars \
                     --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
 
