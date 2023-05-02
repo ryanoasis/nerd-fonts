@@ -58,5 +58,5 @@ https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/<FONT_PATH>/compl
 <p/>
 <h3 class="center"> <span></span> Arch Community Repository</h3>
 <div markdown="1" class="center">
-Search [Nerd Fonts Packages](https://archlinux.org/packages/?sort=&repo=Community&q=-nerd) or some special packages in [AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off)
+Search [Nerd Fonts Packages](https://archlinux.org/groups/any/nerd-fonts/) or some special packages in [AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off)
 </div>
