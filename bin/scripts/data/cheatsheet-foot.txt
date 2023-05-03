@@ -1,4 +1,9 @@
 </div>
+<h3>Removed Icons</h3>
+<h5 align="center">With Release <code>v3.0.0</code> the Material Design Icons were updated and moved to new codepoints (reasons for that are in the release notes).</h5>
+<h5 align="center">They are still shown here for reference, but are missing in the actual fonts.</h5>
+<h5 align="center">To find for example the replacement for <code>nf-mdi-altimeter</code> enter just <code>altimeter</code> in the search box.</h5>
+<br>
 
 <h3>Example Usages</h3>
 
