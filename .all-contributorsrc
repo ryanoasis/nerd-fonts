@@ -1239,6 +1239,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "mmaaaaz",
+      "name": "Maaz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80816622?v=4",
+      "profile": "http://maazu.xyz",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
