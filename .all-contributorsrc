@@ -1230,6 +1230,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "jimeh",
+      "name": "Jim Myhrberg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39563?v=4",
+      "profile": "https://jimeh.me/",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
