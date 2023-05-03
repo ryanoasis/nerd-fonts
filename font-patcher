@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.1.3"
+script_version = "4.1.4"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -982,14 +982,16 @@ class font_patcher:
             range(0xf221, 0xf22d + 1), # gender or so
             range(0xf255, 0xf25b + 1), # hand symbols
         ]}
-        OCTI_SCALE_LIST = {'ScaleGlyph': 0xF02E, # looking glass (probably biggest glyph?)
-            'GlyphsToScale': [
+        OCTI_SCALE_LIST = {'ScaleGlyph': 0xF0E7, # smily (probably biggest glyph / full design cell)
+            'GlyphsToScale+': [
                 (0xf03d, 0xf040), # arrows
                 0xf044, 0xf05a, 0xf05b, 0xf0aa, # triangles
-                (0xf051, 0xf053), # small stuff
-                0xf071, 0xf09f, 0xf0a0, 0xf0a1, # small arrows
+                0xf052, 0xf053, 0x296, 0xf250, # small stuff
+                0xf019, 0xf030, 0xf04a, 0xf050,  0xf071, 0xf08c, # other arrows
                 0xf078, 0xf0a2, 0xf0a3, 0xf0a4, # chevrons
-                0xf0ca, # dash
+                0xf0ca, 0xf081, 0xf092, # dash, X, github-text
+                0xf09c, 0xf09f, 0xf0de, # bells
+                (0xf2c2, 0xf2c5), # move to
         ]}
         WEATH_SCALE_LIST = {'ScaleGroups': [
             [0xf03c, 0xf042, 0xf045 ], # degree signs
