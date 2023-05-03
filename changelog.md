@@ -17,7 +17,7 @@ This release fixes some long standing issues that are due to the naming of the f
 
 ### Breaking 2: Material Design Icons Codepoints
 
-The old Material Design Icon codepoints are finally dropped. Due to an historic mistace we placed them in between some asiatic glyphs, breaking that script.
+The old Material Design Icon codepoints are finally dropped. Due to an historic mistake we placed them in between some asiatic glyphs, breaking that script.
 Since v2.3.0 the (updated and expanded) Material Design Icons have new codepoints in the 5 digit region.
  - Dropped codepoints `F500`... and class names `nf-mdi-*`
  - New codepoints `F0001`... and class names `nf-md-*`
