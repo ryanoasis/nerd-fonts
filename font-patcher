@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.1.2"
+script_version = "4.1.3"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -434,10 +434,10 @@ class font_patcher:
                 sanitize_filename(fontname) + self.args.extension))
             bitmaps = str()
             if len(self.sourceFont.bitmapSizes):
-                logger.debug("Preserving bitmaps {}".format(self.sourceFont.bitmapSizes))
+                logger.debug("Preserving bitmaps %s", repr(self.sourceFont.bitmapSizes))
                 bitmaps = str('otf') # otf/ttf, both is bf_ttf
             if self.args.dry_run:
-                logger.debug("=====> Filename '{}'".format(outfile))
+                logger.debug("=====> Filename '%s'", outfile)
                 return
             sourceFont.generate(outfile, bitmap_type=bitmaps, flags=gen_flags)
             message = "   {}\n   \===> '{}'".format(self.sourceFont.fullname, outfile)
@@ -1120,8 +1120,8 @@ class font_patcher:
             # Try the other metric
             our_btb = typo_btb if not use_typo else win_btb
             if our_btb == hhea_btb:
-                logger.warning("Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. %s)", 'True' if not use_typo else 'False')
                 use_typo = not use_typo
+                logger.warning("Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. %s)", repr(use_typo))
                 self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
                 metrics = Metric.TYPO if use_typo else Metric.WIN
             else:
@@ -1484,8 +1484,8 @@ class font_patcher:
             if self.args.single:
                 (xmin, _, xmax, _) = self.sourceFont[currentSourceFontGlyph].boundingBox()
                 if int(xmax - xmin) > self.font_dim['width'] * (1 + (overlap or 0)):
-                    logger.warning("Scaled glyph %X wider than one monospace width (%d / %d (overlap %f))",
-                        currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], overlap)
+                    logger.warning("Scaled glyph %X wider than one monospace width (%d / %d (overlap %s))",
+                        currentSourceFontGlyph, int(xmax - xmin), self.font_dim['width'], repr(overlap))
 
         # end for
 
