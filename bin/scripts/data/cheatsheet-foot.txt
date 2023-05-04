@@ -11,6 +11,8 @@
 
 <div class="center">
   {% highlight html %}
+@import "https://www.nerdfonts.com/assets/css/webfont.css"
+
 I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
   {% endhighlight %}
   <span class="nerd-fonts-example-usage">
