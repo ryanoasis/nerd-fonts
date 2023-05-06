@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.0
-# Script Version: 1.4.4
+# Script Version: 1.4.5
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
 # That option will override the defaults (also defaults of THIS script).
@@ -246,6 +246,8 @@ function patch_font {
     echo >&2 "# Could not find project parent directory"
     exit 3
   }
+  # Add logfile always (but can be overridden by config_patch_flags in config.cfg and env var NERDFONTS)
+  config_patch_flags="--debug 1 ${config_patch_flags}"
   # Use absolute path to allow fontforge being an AppImage (used in CI)
   PWD=`pwd`
   # Create "Nerd Font"

@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.1.4"
+script_version = "4.1.5"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -1832,7 +1832,7 @@ def setup_arguments():
     progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
     progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
     parser.set_defaults(progressbars=True)
-    parser.add_argument('--debug',                                   dest='debugmode',        default=False, action='store_true', help='Verbose mode')
+    parser.add_argument('--debug',                                   dest='debugmode',        default=0,     type=int, nargs='?', help='Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)', const=2, choices=range(0, 3 + 1))
     parser.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
     parser.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
@@ -1955,16 +1955,23 @@ def main():
     global logger
     logger = logging.getLogger(os.path.basename(args.font))
     logger.setLevel(logging.DEBUG)
-    f_handler = logging.FileHandler('font-patcher-log.txt')
-    f_handler.setFormatter(logging.Formatter('%(levelname)s: %(name)s %(message)s'))
-    logger.addHandler(f_handler)
-    logger.debug(allversions)
-    logger.debug("Options %s", repr(sys.argv[1:]))
+    log_to_file = (args.debugmode & 1 == 1)
+    if log_to_file:
+        try:
+            f_handler = logging.FileHandler('font-patcher-log.txt')
+            f_handler.setFormatter(logging.Formatter('%(levelname)s: %(name)s %(message)s'))
+            logger.addHandler(f_handler)
+        except:
+            log_to_file = False
+        logger.debug(allversions)
+        logger.debug("Options %s", repr(sys.argv[1:]))
     c_handler = logging.StreamHandler(stream=sys.stdout)
     c_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
-    if not args.debugmode:
+    if not (args.debugmode & 2 == 2):
         c_handler.setLevel(logging.INFO)
     logger.addHandler(c_handler)
+    if (args.debugmode & 1 == 1) and not log_to_file:
+        logger.info("Can not write logfile, disabling")
     logger.debug("Naming mode %d", args.makegroups)
 
     patcher = font_patcher(args)
