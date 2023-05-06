@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.1.4"
+script_version = "4.1.5"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -1955,9 +1955,13 @@ def main():
     global logger
     logger = logging.getLogger(os.path.basename(args.font))
     logger.setLevel(logging.DEBUG)
-    f_handler = logging.FileHandler('font-patcher-log.txt')
-    f_handler.setFormatter(logging.Formatter('%(levelname)s: %(name)s %(message)s'))
-    logger.addHandler(f_handler)
+    log_to_file = True
+    try:
+        f_handler = logging.FileHandler('font-patcher-log.txt')
+        f_handler.setFormatter(logging.Formatter('%(levelname)s: %(name)s %(message)s'))
+        logger.addHandler(f_handler)
+    except:
+        log_to_file = False
     logger.debug(allversions)
     logger.debug("Options %s", repr(sys.argv[1:]))
     c_handler = logging.StreamHandler(stream=sys.stdout)
@@ -1965,6 +1969,8 @@ def main():
     if not args.debugmode:
         c_handler.setLevel(logging.INFO)
     logger.addHandler(c_handler)
+    if not log_to_file:
+        logger.info("Can not write logfile, disabling")
     logger.debug("Naming mode %d", args.makegroups)
 
     patcher = font_patcher(args)
