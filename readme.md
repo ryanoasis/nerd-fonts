@@ -142,6 +142,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc] | 1.3 | NO   | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              |22.1.0 | NO   | ![w] ![m2] ![l]   |
 | [Iosevka Term Nerd Font][p-iosevka-term]          | [Iosevka Term][f-iosevka]         |22.1.0 | NO   | ![w] ![m2] ![l]   |
+| [Iosevka Term Slab Nerd Font][p-iosevka-term-slab]| [Iosevka Term Slab][f-iosevka]    |22.1.1 | NO   | ![w] ![m2] ![l]   |
 | [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| 2.304 | NO   | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                | 34    | NO   | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        | 2.1.5 | YES  | ![w] ![m2] ![l]   |
@@ -682,6 +683,7 @@ Patched Font internal links
 [p-inconsolata]:patched-fonts/Inconsolata
 [p-iosevka]:patched-fonts/Iosevka
 [p-iosevka-term]:patched-fonts/IosevkaTerm
+[p-iosevka-term-slab]:patched-fonts/IosevkaTermSlab
 [p-jetbrains-mono]:patched-fonts/JetBrainsMono
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono

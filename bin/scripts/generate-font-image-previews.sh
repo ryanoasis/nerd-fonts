@@ -87,6 +87,7 @@ image_font_files=( \
   'InconsolataLGC/Regular/InconsolataLGCNerdFont-Regular.ttf' \
   'Iosevka/Regular/IosevkaNerdFont-Regular.ttf' \
   'IosevkaTerm/Regular/IosevkaTermNerdFont-Regular.ttf' \
+  'IosevkaTermSlab/Regular/IosevkaTermSlabNerdFont-Regular.ttf' \
   'JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf' \
   'Lekton/Regular/LektonNerdFont-Regular.ttf' \
   'LiberationMono/LiterationMonoNerdFont-Regular.ttf' \
