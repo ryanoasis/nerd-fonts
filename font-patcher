@@ -324,7 +324,7 @@ class font_patcher:
         self.font_dim = None  # class 'dict'
         self.font_extrawide = False
         self.source_monospaced = None # Later True or False
-        self.symbolsonly = False
+        self.symbolsonly = False # Are we generating the SymbolsOnly font?
         self.onlybitmaps = 0
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -337,8 +337,8 @@ class font_patcher:
         self.setup_name_backup(font)
         self.assert_monospace()
         self.remove_ligatures()
-        self.setup_patch_set()
         self.get_sourcefont_dimensions()
+        self.setup_patch_set()
         self.improve_line_dimensions()
         self.sourceFont.encoding = 'UnicodeFull'  # Update the font encoding to ensure that the Unicode glyphs are available
         self.onlybitmaps = self.sourceFont.onlybitmaps  # Fetch this property before adding outlines. NOTE self.onlybitmaps initialized and never used
@@ -784,7 +784,7 @@ class font_patcher:
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
 
-        box_enabled = self.source_monospaced # Box glyph only for monospaced
+        box_enabled = self.source_monospaced and not self.symbolsonly # Box glyph only for monospaced and not for Symbols Only
         box_keep = False
         if box_enabled:
             self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
