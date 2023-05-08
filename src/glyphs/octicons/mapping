@@ -130,7 +130,7 @@ F0AA F47E triangle-up
 F0AC F47F git-compare
 F0AD F480 logo-gist
 F0B0 F481 file-symlink-file
-F0B1 F482 bookmark-slash
+F0B1 F482 file-symlink-directory
 F0B2 F483 squirrel
 F0B6 F484 globe
 F0BA F485 unmute
@@ -307,3 +307,4 @@ F302 F52F x-circle
 F303 F530 x-circle-fill
 F304 F531 zoom-in
 F305 F532 zoom-out
+F306 F533 bookmark-slash

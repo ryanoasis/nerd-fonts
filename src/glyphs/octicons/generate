@@ -8,7 +8,8 @@ import subprocess
 import fontforge
 
 # Double-quotes required here, for version-bump.sh:
-version = "2.3.3"
+# version-bump.sh is not working here, need to adjust manually!
+version = "3.0.0"
 
 archive = 'v18.3.0.tar.gz'
 
@@ -70,7 +71,7 @@ print('Fetching octicons archive "{}"\n'.format(archive))
 if subprocess.call('curl -OL https://github.com/primer/octicons/archive/' + archive, shell=True):
     sys.exit('Error fetching octicons archive')
 print('\nUnpacking octicons archive')
-if subprocess.call('rm -rf icons octicons-* && tar zxf *.gz && mv octicons-*/icons . && rm -rf octicons-*', shell=True):
+if subprocess.call('rm -rf icons octicons-* && tar zxf *.gz && mv octicons-*/icons . && rm -rf octicons-* && cp file-symlink-directory-*.svg icons', shell=True):
     sys.exit('Error unpacking archive')
 
 svgs = os.listdir(vectorsdir)
