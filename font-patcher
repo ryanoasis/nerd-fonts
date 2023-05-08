@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.3.0"
+script_version = "4.3.1"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -960,6 +960,9 @@ class font_patcher:
             range(0xeab4, 0xeab7 + 1), # chevrons
             [0xea71, *range(0xeaa6, 0xeaab + 1), 0xeabc, 0xeb18, 0xeb87, 0xeb88, 0xeb8a, 0xeb8c, 0xebb4], # cicles
             [0xeacc, 0xeaba], # dash
+            [0xea75, 0xebe7], # lock pair
+            [0xeacf, 0xebe0], # debug-continue pair
+            [0xeb91, 0xeba8], # debug-alt pair
         ]}
         DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
             'GlyphsToScale': [
