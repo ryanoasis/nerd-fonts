@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.2.0"
+script_version = "4.2.1"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -373,15 +373,16 @@ class font_patcher:
                     if symfont:
                         symfont.close()
                         symfont = None
-                    if not os.path.isfile(self.args.glyphdir + patch['Filename']):
+                    symfont_file = os.path.join(self.args.glyphdir, patch['Filename'])
+                    if not os.path.isfile(symfont_file):
                         logger.critical("Can not find symbol source for '%s' (i.e. %s)",
-                            patch['Name'], self.args.glyphdir + patch['Filename'])
+                            patch['Name'], symfont_file)
                         sys.exit(1)
-                    if not os.access(self.args.glyphdir + patch['Filename'], os.R_OK):
+                    if not os.access(symfont_file, os.R_OK):
                         logger.critical("Can not open symbol source for '%s' (i.e. %s)",
-                            patch['Name'], self.args.glyphdir + patch['Filename'])
+                            patch['Name'], symfont_file)
                         sys.exit(1)
-                    symfont = fontforge.open(os.path.join(self.args.glyphdir, patch['Filename']))
+                    symfont = fontforge.open(symfont_file)
                     symfont.encoding = 'UnicodeFull'
 
                     # Match the symbol font size to the source font size
@@ -1810,7 +1811,7 @@ def setup_arguments():
     parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
     parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str, nargs='?', help='Specify a Script for Post Processing')
     parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str, nargs='?', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
-    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font, all glyphs will be copied')
+    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
