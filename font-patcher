@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.1.5"
+script_version = "4.2.0"
 
 version = "3.0.0"
 projectName = "Nerd Fonts"
@@ -896,8 +896,9 @@ class font_patcher:
             # 0x2593: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
         }
         CUSTOM_ATTR = {
-            # 'pa' == preserve aspect ratio
-            'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
+            # previous custom scaling => do not touch the icons
+            # 'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
         }
 
         # Most glyphs we want to maximize (individually) during the scale
@@ -1808,7 +1809,7 @@ def setup_arguments():
     parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
     parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str, nargs='?', help='Specify a Script for Post Processing')
     parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str, nargs='?', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
-    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.')
+    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font, all new glyphs will be copied')
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
