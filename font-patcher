@@ -898,7 +898,7 @@ class font_patcher:
         CUSTOM_ATTR = {
             # previous custom scaling => do not touch the icons
             # 'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {'careful': self.args.careful}}
         }
 
         # Most glyphs we want to maximize (individually) during the scale
@@ -1337,7 +1337,8 @@ class font_patcher:
                     sys.stdout.flush()
 
             # check if a glyph already exists in this location
-            if careful or 'careful' in sym_attr['params'] or currentSourceFontGlyph in self.essential:
+            do_careful = sym_attr['params'].get('careful', careful) # params take precedence
+            if do_careful or currentSourceFontGlyph in self.essential:
                 if currentSourceFontGlyph in self.sourceFont:
                     careful_type = 'essential' if currentSourceFontGlyph in self.essential else 'existing'
                     logger.debug("Found %s Glyph at %X. Skipping...", careful_type, currentSourceFontGlyph)
@@ -1809,7 +1810,7 @@ def setup_arguments():
     parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
     parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str, nargs='?', help='Specify a Script for Post Processing')
     parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str, nargs='?', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
-    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font, all new glyphs will be copied')
+    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font, all glyphs will be copied')
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
