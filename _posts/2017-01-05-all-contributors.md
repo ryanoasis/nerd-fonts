@@ -197,6 +197,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
       <td align="center" valign="top" width="14.28%"><a href="https://jimeh.me/"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/39563?v=4?s=100" width="100px;" alt="Jim Myhrberg"/><br /><sub><b>Jim Myhrberg</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Ajimeh" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://maazu.xyz"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/80816622?v=4?s=100" width="100px;" alt="Maaz"/><br /><sub><b>Maaz</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=mmaaaaz" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://negset.com"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/15167516?v=4?s=100" width="100px;" alt="negset"/><br /><sub><b>negset</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=negset" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/airt"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/5058439?v=4?s=100" width="100px;" alt="airt"/><br /><sub><b>airt</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=airt" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
