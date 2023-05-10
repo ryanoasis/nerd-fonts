@@ -1086,10 +1086,11 @@ class font_patcher:
         # Sometimes basic glyphs are constructed from multiple other glyphs.
         # Find out which other glyphs are also needed to keep the basic
         # glyphs intact.
-        # 0x00-0x17f is the Latin Extended-A range
+        # 0x0000-0x017f is the Latin Extended-A range
+        # 0xfb00-0xfb06 are 'fi' and other ligatures
         basic_glyphs = set()
         # Collect substitution destinations
-        for glyph in range(0x21, 0x17f + 1):
+        for glyph in [*range(0x21, 0x17f + 1), *range(0xfb00, 0xfb06 + 1)]:
             if not glyph in self.sourceFont:
                 continue
             basic_glyphs.add(glyph)
