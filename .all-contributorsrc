@@ -1257,6 +1257,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "airt",
+      "name": "airt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5058439?v=4",
+      "profile": "https://github.com/airt",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
