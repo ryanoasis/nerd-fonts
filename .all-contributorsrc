@@ -1248,6 +1248,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "negset",
+      "name": "negset",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15167516?v=4",
+      "profile": "https://negset.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
