@@ -255,7 +255,7 @@ class FontnameParser:
         elif 'Italic' in self.style_token:
             b |= ITALIC
         # Regular is just the basic weight
-        if len(self.weight_token) == 0:
+        if len(self.weight_token) == 0 and not b & (ITALIC | BOLD | OBLIQUE):
             b |= REGULAR
         b |= WWS # We assert this by our naming process
         return b
