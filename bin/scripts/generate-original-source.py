@@ -102,7 +102,7 @@ def calcShift(left1, width1, left2, width2):
 
 def addIcon(codepoint, name, filename):
     """ Add one outline file and rescale/move """
-    dBB = [120, 0, 1000-120, 900] # just some nice sizes
+    dBB = [53, 0, 1000 - 53, 900] # just some nice sizes
     filename = os.path.join(vectorsdir, filename)
     glyph = font.createChar(codepoint, name)
     glyph.importOutlines(filename)
