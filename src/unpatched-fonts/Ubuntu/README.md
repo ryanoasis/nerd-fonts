@@ -14,3 +14,10 @@ you are expressly encouraged to experiment, modify, share and improve.
 http://font.ubuntu.com/
 
 Version: 0.83
+
+## Preprocessed Source Font
+
+For the _Ubuntu Condensed_ font Nerd Fonts corrected the `OS/2` `usWidthClass` to
+Condensed (3) by direct patching.
+
+The script used is in the `Condensed/` directory.
