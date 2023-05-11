@@ -803,7 +803,7 @@ class font_patcher:
                 box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
-        # Supported params: overlap | careful | xy-ratio | dont_copy
+        # Supported params: overlap | careful | xy-ratio | dont_copy | ypadding
         # Overlap value is used horizontally but vertically limited to 0.01
         # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
@@ -889,7 +889,7 @@ class font_patcher:
             0xf0de: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}}
         }
         SYM_ATTR_HEAVYBRACKETS = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {'careful': True}}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa1!', 'params': {'ypadding': 0.3, 'careful': True}}
         }
         SYM_ATTR_BOX = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}},
@@ -986,6 +986,10 @@ class font_patcher:
             range(0xf221, 0xf22d + 1), # gender or so
             range(0xf255, 0xf25b + 1), # hand symbols
         ]}
+        HEAVY_SCALE_LIST = {'ScaleGlyph': 0x2771, # widest bracket, horizontally
+            'GlyphsToScale': [
+                (0x276c, 0x2771) # all
+        ]}
         OCTI_SCALE_LIST = {'ScaleGroups': [
                 [*range(0xf03d, 0xf040 + 1), 0xf019, 0xf030, 0xf04a, 0xf050,  0xf071, 0xf08c ], # arrows
                 [0xF0E7, # Smily and ...
@@ -1023,7 +1027,7 @@ class font_patcher:
         # Symbol font ranges
         self.patch_set = [
             {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_HEAVYBRACKETS},
+            {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': HEAVY_SCALE_LIST, 'Attributes': SYM_ATTR_HEAVYBRACKETS},
             {'Enabled': box_enabled,                    'Name': "Box Drawing",             'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
             {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons.ttf",                                   'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
@@ -1140,7 +1144,7 @@ class font_patcher:
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
-        self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0}
+        self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0, 'ypadding': 0}
 
         if metrics == Metric.HHEA:
             self.font_dim['ymin'] = self.sourceFont.hhea_descent - half_gap(self.sourceFont.hhea_linegap, False)
@@ -1248,7 +1252,7 @@ class font_patcher:
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
         # Use the font_dim['height'] only for explicit 'y' scaling (not 'pa')
-        target_height = self.font_dim['height']
+        target_height = self.font_dim['height'] * (1.0 - self.font_dim['ypadding'])
         scale_ratio_y = target_height / sym_dim['height']
 
         if 'pa' in stretch:
@@ -1332,6 +1336,9 @@ class font_patcher:
             # if currentSourceFontGlyph != 0xe7bd:
             #     continue
 
+            ypadding = sym_attr['params'].get('ypadding')
+            self.font_dim['ypadding'] = ypadding or 0.0
+
             if not self.args.quiet:
                 if self.args.progressbars:
                     update_progress(round(float(index + 1) / glyphSetLength, 2))
@@ -1390,6 +1397,9 @@ class font_patcher:
                 (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch)
 
             overlap = sym_attr['params'].get('overlap')
+            if overlap and ypadding:
+                logger.critical("Conflicting params: overlap and ypadding")
+                sys.exit(1)
             if overlap:
                 scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
                 y_overlap = min(0.01, overlap) # never aggressive vertical overlap
