@@ -16,6 +16,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `generate-font-image-previews.sh`: Generates the preview images for `nerdfonts.com` (i.e. gh-pages) [3]
 * `generate-glyph-info-from-set.py`: Generate the `i_xxx.sh` file from a glyph source (font) file, if the glyphs are named correctly [4]
 * `generate-original-source.py`: Generate `original-source.otf` from single glyph svgs. [5]
+* `generate-sample-set.sh`: Generate one patched font file from each source font (for manual checks) [4]
 * `generate-webfonts.sh`: Generate woff and woff2 font files from the SymbolsOnly font (for the gh-pages) [1]
 * `get-font-names-from-json.sh`: Helper to setup the CI font matrix from `data/fonts.json` [1]
 * `gotta-patch-em-all-font-patcher!.sh`: Patch one or more fonts 'complete' with and without `mono` and with and without `windows compat` [1]
