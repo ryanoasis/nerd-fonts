@@ -811,6 +811,8 @@ class font_patcher:
         # '2' means occupy 2 cells (default for 'pa')
         # '!' means do the 'pa' scaling even with non mono fonts (else it just scales down, never up)
         # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
+        #
+        # Be careful, stretch may not change within a ScaleRule!
 
         SYM_ATTR_DEFAULT = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
@@ -1352,14 +1354,15 @@ class font_patcher:
                 if currentSourceFontGlyph in self.sourceFont:
                     self.sourceFont[currentSourceFontGlyph].removePosSub("*")
 
+            stretch = sym_attr['stretch']
             dont_copy = sym_attr['params'].get('dont_copy')
 
             if dont_copy:
                 # Just prepare scaling of existing glyphs
-                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, self.sourceFont, currentSourceFontGlyph) if scaleRules is not None else None
+                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, stretch, self.sourceFont, currentSourceFontGlyph) if scaleRules is not None else None
             else:
                 # This will destroy any content currently in currentSourceFontGlyph, so do it first
-                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
+                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, stretch, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
 
                 # Select and copy symbol from its encoding point
                 # We need to do this select after the careful check, this way we don't
@@ -1378,13 +1381,13 @@ class font_patcher:
             if glyph_scale_data is not None:
                 if glyph_scale_data[1] is not None:
                     sym_dim = glyph_scale_data[1] # Use combined bounding box
-                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
+                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch)
                 else:
                     # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
                     # Except we do not have glyph_scale_data[1] always...
                     (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
             else:
-                (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, sym_attr['stretch'])
+                (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch)
 
             overlap = sym_attr['params'].get('overlap')
             if overlap:
@@ -1436,7 +1439,7 @@ class font_patcher:
                     x_align_distance += (self.font_dim['width'] / 2) - (sym_dim['width'] / 2)
                 elif sym_attr['align'] == 'r':
                     # Right align
-                    x_align_distance += self.font_dim['width'] * self.get_target_width(sym_attr['stretch']) - sym_dim['width']
+                    x_align_distance += self.font_dim['width'] * self.get_target_width(stretch) - sym_dim['width']
                 # If symbol glyph is wider than target font cell, just left-align
                 x_align_distance = max(self.font_dim['xmin'] - sym_dim['xmin'], x_align_distance)
 
@@ -1449,7 +1452,7 @@ class font_patcher:
                         x_align_distance -= overlap_width / 2
                 elif sym_attr['align'] == 'r':
                     # Check and correct overlap; it can go wrong if we have a xy-ratio limit
-                    target_xmax = (self.font_dim['xmin'] + self.font_dim['width']) * self.get_target_width(sym_attr['stretch'])
+                    target_xmax = (self.font_dim['xmin'] + self.font_dim['width']) * self.get_target_width(stretch)
                     target_xmax += overlap_width
                     glyph_xmax = sym_dim['xmax'] + x_align_distance
                     correction = target_xmax - glyph_xmax
@@ -1545,7 +1548,7 @@ class font_patcher:
         except:
             pass
 
-    def prepareScaleRules(self, scaleRules, symbolFont, destGlyph):
+    def prepareScaleRules(self, scaleRules, stretch, symbolFont, destGlyph):
         """ Prepare raw ScaleRules data for use """
         # The scaleRules is/will be a dict with these (possible) entries:
         # 'ScaleGroups': List of ((lists of glyph codes) or (ranges of glyph codes)) that shall be scaled
@@ -1579,7 +1582,7 @@ class font_patcher:
             scaleRules['ScaleGroups'] = []
         for group in scaleRules['ScaleGroups']:
             sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
-            scale = self.get_scale_factors(sym_dim, 'pa')[0]
+            scale = self.get_scale_factors(sym_dim, stretch)[0]
             scaleRules['scales'].append(scale)
             scaleRules['bbdims'].append(sym_dim)
 
@@ -1598,7 +1601,7 @@ class font_patcher:
                 else:
                     group_list.append(i)
             sym_dim = get_glyph_dimensions(symbolFont[scaleRules['ScaleGlyph']])
-            scale = self.get_scale_factors(sym_dim, 'pa')[0]
+            scale = self.get_scale_factors(sym_dim, stretch)[0]
             scaleRules['ScaleGroups'].append(group_list)
             scaleRules['scales'].append(scale)
             if plus:
@@ -1606,13 +1609,13 @@ class font_patcher:
             else:
                 scaleRules['bbdims'].append(None) # The 'old' style keeps just the scale, not the positioning
 
-    def get_glyph_scale(self, symbol_unicode, scaleRules, symbolFont, dest_unicode):
+    def get_glyph_scale(self, symbol_unicode, scaleRules, stretch, symbolFont, dest_unicode):
         """ Determines whether or not to use scaled glyphs for glyph in passed symbol_unicode """
         # Potentially destorys the contents of self.sourceFont[dest_unicode]
         if not 'scales' in scaleRules:
             if not dest_unicode in self.sourceFont:
                 self.sourceFont.createChar(dest_unicode)
-            self.prepareScaleRules(scaleRules, symbolFont, self.sourceFont[dest_unicode])
+            self.prepareScaleRules(scaleRules, stretch, symbolFont, self.sourceFont[dest_unicode])
         for glyph_list, scale, box in zip(scaleRules['ScaleGroups'], scaleRules['scales'], scaleRules['bbdims']):
             for e in glyph_list:
                 if isinstance(e, range):
