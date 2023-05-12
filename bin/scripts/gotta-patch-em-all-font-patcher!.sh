@@ -211,6 +211,7 @@ function patch_font {
 
   # source the font config file if exists:
   # fetches for example config_patch_flags
+  unset config_patch_flags
   if [ -f "$config_dir/config.cfg" ]
   then
     # shellcheck source=/dev/null
