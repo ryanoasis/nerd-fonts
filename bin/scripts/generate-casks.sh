@@ -197,6 +197,7 @@ function write_footer {
     local outputfile=$1
 
     {
+        printf "\\n  # No zap stanza required\\n"
         printf "end\\n"
     } >> "$outputfile"
 }
