@@ -1632,6 +1632,10 @@ style: container
     <div class="class-name">nf-custom-folder_npm</div><div title="Copy Hex Code to Clipboard" class="codepoint">e5fa</div>
   </div>
   <div class="column">
+    <div class="nf nf-custom-folder_oct center"></div>
+    <div class="class-name">nf-custom-folder_oct</div><div title="Copy Hex Code to Clipboard" class="codepoint">e6ad</div>
+  </div>
+  <div class="column">
     <div class="nf nf-custom-folder_open center"></div>
     <div class="class-name">nf-custom-folder_open</div><div title="Copy Hex Code to Clipboard" class="codepoint">e5fe</div>
   </div>
@@ -44708,7 +44712,7 @@ style: container
   </div>
   <div class="column">
     <div class="nf nf-oct-bookmark_slash center"></div>
-    <div class="class-name">nf-oct-bookmark_slash</div><div title="Copy Hex Code to Clipboard" class="codepoint">f482</div>
+    <div class="class-name">nf-oct-bookmark_slash</div><div title="Copy Hex Code to Clipboard" class="codepoint">f533</div>
   </div>
   <div class="column">
     <div class="nf nf-oct-bookmark_slash_fill center"></div>
@@ -45069,6 +45073,10 @@ style: container
   <div class="column">
     <div class="nf nf-oct-file_submodule center"></div>
     <div class="class-name">nf-oct-file_submodule</div><div title="Copy Hex Code to Clipboard" class="codepoint">f414</div>
+  </div>
+  <div class="column">
+    <div class="nf nf-oct-file_symlink_directory center"></div>
+    <div class="class-name">nf-oct-file_symlink_directory</div><div title="Copy Hex Code to Clipboard" class="codepoint">f482</div>
   </div>
   <div class="column">
     <div class="nf nf-oct-file_symlink_file center"></div>
