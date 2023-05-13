@@ -1,7 +1,7 @@
 /*
  *# [Nerd Fonts]  Website: https://www.nerdfonts.com
  *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
- *# [Nerd Fonts]  Version: 3.0.0
+ *# [Nerd Fonts]  Version: 3.0.1
  *# [Nerd Fonts]  The following is generated from the build script
  */
 
@@ -1231,6 +1231,9 @@
 }
 .nf-custom-folder_npm:before {
   content: "\e5fa";
+}
+.nf-custom-folder_oct:before {
+  content: "\e6ad";
 }
 .nf-custom-folder_open:before {
   content: "\e5fe";
@@ -25593,7 +25596,7 @@
   content: "\f47a";
 }
 .nf-oct-bookmark_slash:before {
-  content: "\f482";
+  content: "\f533";
 }
 .nf-oct-bookmark_slash_fill:before {
   content: "\f493";
@@ -25864,6 +25867,9 @@
 }
 .nf-oct-file_submodule:before {
   content: "\f414";
+}
+.nf-oct-file_symlink_directory:before {
+  content: "\f482";
 }
 .nf-oct-file_symlink_file:before {
   content: "\f481";
