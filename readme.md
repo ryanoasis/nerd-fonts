@@ -358,18 +358,17 @@ Patching the font of your own choosing:
 Full options:
 
 ```
-Nerd Fonts Patcher v3.0.0 (4.1.0) (ff 20230101)
+Nerd Fonts Patcher v3.0.1 (4.3.1) (ff 20230101)
 usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-c] [--careful] [--removeligs] [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{0,1,2,3,4,5,6}]] [--variable-width-glyphs]
-                    [--has-no-italic] [--progressbars | --no-progressbars] [--debug] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome]
-                    [--fontawesomeextension] [--fontlogos] [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra]
-                    [--material] [--weather]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{0,1,2,3,4,5,6}]] [--variable-width-glyphs] [--has-no-italic]
+                    [--progressbars | --no-progressbars] [--debug [{0,1,2,3}]] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome] [--fontawesomeextension] [--fontlogos]
+                    [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra] [--material] [--weather]
                     font
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 3.0.0
+* Version: 3.0.1
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
@@ -393,7 +392,7 @@ options:
                         Specify a Script for Post Processing
   --configfile [CONFIGFILE]
                         Specify a file path for JSON configuration file (see sample: src/config.sample.json)
-  --custom [CUSTOM]     Specify a custom symbol font. All new glyphs will be copied, with no scaling applied.
+  --custom [CUSTOM]     Specify a custom symbol font, all glyphs will be copied; absolute path suggested
   -ext [EXTENSION], --extension [EXTENSION]
                         Change font file type to create (e.g., ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
@@ -407,7 +406,7 @@ options:
   --has-no-italic       Font family does not have Italic (but Oblique)
   --progressbars        Show percentage completion progress bars per Glyph Set (default)
   --no-progressbars     Don't show percentage completion progress bars per Glyph Set
-  --debug               Verbose mode
+  --debug [{0,1,2,3}]   Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)
   --dry                 Do neither patch nor store the font, to check naming
   --xavgcharwidth [XAVGWIDTH]
                         Adjust xAvgCharWidth (optional: concrete value)
