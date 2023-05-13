@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.0.0
+# Nerd Fonts Version: 3.0.1
 # Script Version: 2.2.0
 #
 # Iterates over all [*] archived fonts
@@ -24,7 +24,7 @@
 # set -x
 set -e
 
-version="3.0.0"
+version="3.0.1"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"
 LINE_PREFIX="# [Nerd Fonts] "

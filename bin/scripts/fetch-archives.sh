@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.0.0
+# Nerd Fonts Version: 3.0.1
 # Script Version: 2.0.0
 #
 # Fetches the current release files.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf8
-# Nerd Fonts Version: 3.0.0
+# Nerd Fonts Version: 3.0.1
 
 import sys
 

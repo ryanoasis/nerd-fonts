@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.0.0
+# Nerd Fonts Version: 3.0.1
 # Script Version 1.2.0
 
 # Usually this is called without argument. If the first argument
