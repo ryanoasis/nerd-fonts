@@ -2,7 +2,25 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
-## V3.0.0
+## v3.0.1
+
+This bugfix release handles the following issues.
+
+### Fixes
+ - Revive some ligature removal (only of problematic ligs)
+ - Correct Octicons scale (of very few icons)
+ - Fix logging with AppImage `fontforge`
+ - Drop box-drawing glyphs from Symbols Only fonts
+ - Reintroduce upstream-dropped `oct-file-symlink-directory`
+ - Reintroduce old style `oct-file-directory` in `custom-`
+ - Fix wrong `fsSelection` bit
+ - Fix `fi` ligature in Ubuntu
+ - Fix scaling of heavy brackets (mostly in Nerd Font Mono)
+ - Fix Ubuntu Mono Condensed font property (upstream bug)
+ - Fix small scaling glitch for 4 Codicons
+ - Correct CaskaydiaCove's version string (which contains the autohinter)
+
+## v3.0.0
 
 This major release introduces some breaking changes:
 
