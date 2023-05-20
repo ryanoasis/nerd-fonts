@@ -313,6 +313,65 @@ def create_filename(fonts):
         sfnt_psubfam = '-' + sfnt_psubfam
     return (sfnt_pfam + sfnt_psubfam).replace(' ', '')
 
+class patched_region: 
+    # the source font start is the location in the font we start patching at, inserting glyphs
+    # taken from SymStart to SymEnd.
+    # If not specified, it just patches from the symbol font start location SymStart :)
+    def __init__(self, symbol_font_start, symbol_font_end, source_font_start, is_exact_range):
+        self.patch_start = symbol_font_start # int
+        self.patch_end = symbol_font_end # int
+        self.is_exact_range = is_exact_range # bool
+        if source_font_start is not None:
+            # Calculate the shift from symbol font to source font.  
+            delta = source_font_start - symbol_font_start
+            # Apply the shift, to calculate the actual location that the replaced glyphs are at
+            self.patch_start += delta
+            self.patch_end += delta
+
+        # Calculate a convenient hex value for the start and end of the patched region ^.^
+        # Most things reading unicode codepoints take them as hex with a prefix, so this is
+        # useful. 
+        self.hex_start = format(self.patch_start, "04X")
+        self.hex_end = format(self.patch_end, "04X")
+
+    # Return an object that can be encoded with python's json mechanism (i.e. a dict)
+    def as_json_encodeable(self):
+        return {
+            "patch-start": self.patch_start,
+            "patch-end": self.patch_end,
+            "hex-start": self.hex_start,
+            "hex-end": self.hex_end,
+            "is-exact-range": self.is_exact_range
+        } 
+
+# Metadata for a given patched font file.
+# Right now, it only outputs the patched codepoints categorized by name,
+# but we put all that data inside an outer JSON object with a specific key, so 
+# other information can be added later if desired without breaking compat :)
+class patching_metadata:
+    def __init__(self):
+        self.applied_patches = {} # class 'dict'
+
+    # Claim that a new patch has been added to the font. 
+    # The argument is a dictionary as in the format of font_patcher.patch_set elements. 
+    # This does not check if the patch is enabled - you need to do that or only insert 
+    # patches that are enabled, if you want to do things that way. 
+    def inject_new_patch(self, patch):
+        name = patch['Name']
+        new_region = patched_region(patch['SymStart'], patch['SymEnd'], patch['SrcStart'], patch['Exact'])
+        if name not in self.applied_patches:
+            self.applied_patches[name] = []
+        # Group patches sensibly
+        self.applied_patches[name].append(new_region)
+
+    # Produce json of the list of patches 
+    def emit_json_string(self):
+        json_structure = {}
+
+        json_structure["codepoints"] = {}
+        for patch_name, patched_regions in self.applied_patches.items():
+            json_structure["codepoints"][patch_name] = [region.as_json_encodeable() for region in patched_regions]
+        return json.dumps(json_structure)
 
 class font_patcher:
     def __init__(self, args):
@@ -329,6 +388,7 @@ class font_patcher:
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         self.xavgwidth = [] # list of ints
+        self.patch_metadata = None # class patched_symbols 
 
     def patch(self, font):
         self.sourceFont = font
@@ -409,11 +469,16 @@ class font_patcher:
 
     def generate(self, sourceFonts):
         sourceFont = sourceFonts[0]
+        metadata_file_suffix = ".patchmeta.json"
+        # metadata JSON string as bytes
+        metadata_bytes = self.patch_metadata.emit_json_string().encode()
+
         # the `PfEd-comments` flag is required for Fontforge to save '.comment' and '.fontlog'.
         if int(fontforge.version()) >= 20201107:
             gen_flags = (str('opentype'), str('PfEd-comments'), str('no-FFTM-table'))
         else:
             gen_flags = (str('opentype'), str('PfEd-comments'))
+
         if len(sourceFonts) > 1:
             layer = None
             # use first non-background layer
@@ -424,8 +489,11 @@ class font_patcher:
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(create_filename(sourceFonts)) + ".ttc"))
+            metadata_outfile = outfile + metadata_file_suffix 
             sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=gen_flags, layer=layer)
-            message = "   Generated {} fonts\n   \===> '{}'".format(len(sourceFonts), outfile)
+            with open(metadata_outfile, "wb") as metadata_file:
+                metadata_file.write(metadata_bytes)
+            message = "   Generated {} fonts\n   \===> '{}'\n   \===> '{}'".format(len(sourceFonts), outfile, metadata_outfile)
         else:
             fontname = create_filename(sourceFonts)
             if not fontname:
@@ -433,15 +501,20 @@ class font_patcher:
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(fontname) + self.args.extension))
+            metadata_outfile = outfile + metadata_file_suffix 
             bitmaps = str()
             if len(self.sourceFont.bitmapSizes):
                 logger.debug("Preserving bitmaps %s", repr(self.sourceFont.bitmapSizes))
                 bitmaps = str('otf') # otf/ttf, both is bf_ttf
             if self.args.dry_run:
                 logger.debug("=====> Filename '%s'", outfile)
+                logger.debug("=====> Metadata Filename '%s'", metadata_outfile) 
                 return
             sourceFont.generate(outfile, bitmap_type=bitmaps, flags=gen_flags)
-            message = "   {}\n   \===> '{}'".format(self.sourceFont.fullname, outfile)
+            with open(metadata_outfile, "wb") as metadata_file:
+                metadata_file.write(metadata_bytes)
+            message = "   {}\n   \===> '{}'\n   \===> '{}'".format(self.sourceFont.fullname, outfile, metadata_outfile)
+
 
         # Adjust flags that can not be changed via fontforge
         if re.search('\\.[ot]tf$', self.args.font, re.IGNORECASE) and re.search('\\.[ot]tf$', outfile, re.IGNORECASE):
@@ -1056,6 +1129,13 @@ class font_patcher:
             {'Enabled': self.args.codicons,             'Name': "Codicons",                'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEBEB, 'SrcStart': None,   'ScaleRules': CODI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.custom,               'Name': "Custom",                  'Filename': self.args.custom,                                 'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': CUSTOM_ATTR}
         ]
+
+        
+        # Construct the patchset metadata 
+        self.patch_metadata = patching_metadata()
+        for patch in self.patch_set:
+            if patch["Enabled"]:
+                self.patch_metadata.inject_new_patch(patch)
 
     def improve_line_dimensions(self):
         # Make the total line size even.  This seems to make the powerline separators
