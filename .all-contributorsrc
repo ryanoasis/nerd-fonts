@@ -1266,6 +1266,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "sapient-cogbag",
+      "name": "sapient_cogbag",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4654798?v=4",
+      "profile": "https://github.com/sapient-cogbag",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
