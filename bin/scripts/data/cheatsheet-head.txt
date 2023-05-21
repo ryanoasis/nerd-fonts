@@ -12,14 +12,7 @@ style: container
 
 <input type="text" id="glyphSearch" placeholder="Search for glyphs/icons..." title="Type in a glyph name or hex codepoint" class="nerd-font-cheat-sheet-search nerd-font-input tertiary sanity-test" />
 
-<div class="center">
-  <h5 class="inlineblock nerd-font-button tertiary" id="glyphSearchButton">
-    <i class="nf nf-fa-search"></i>&nbsp;Search
-  </h5>
+<div id="glyphCheatSheet" class="nerd-font-cheat-sheet"></div>
 
-  <h5 class="inlineblock nerd-font-button tertiary" id="glyphSearchAllButton">
-    <i class="nf nf-mdi-select_all"></i>&nbsp;Show All Icons
-  </h5>
-</div>
-
-<div id="glyphCheatSheet" class="nerd-font-cheat-sheet">
+<script>
+const glyphs = {

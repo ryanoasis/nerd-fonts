@@ -110,19 +110,12 @@ for var in "${!i@}"; do
 
   # generate HTML cheat sheet
   {
-    printf "  <div class=\"column\">"
-    printf "\\n"
     if [[ "$glyph_name" = mdi-* ]]; then
-      printf "    <span class=\"corner-red\"></span><span class=\"corner-text\">removed</span>\\n"
-      printf "    <div class=\"nfold nfold-%s center\"></div>" "$glyph_name"
+      namespace="nfold"
     else
-      printf "    <div class=\"nf nf-%s center\"></div>" "$glyph_name"
+      namespace="nf"
     fi
-    printf "\\n"
-    printf "    <div class=\"class-name\">nf-%s</div><div title=\"Copy Hex Code to Clipboard\" class=\"codepoint\">%s</div>" "$glyph_name" "$glyph_code"
-    printf "\\n"
-    printf "  </div>"
-    printf "\\n"
+    printf "  \"%s-%s\": \"%s\",\\n" "$namespace" "$glyph_name" "$glyph_code"
   } >> "$output_cheat_sheet_file"
 
 done
