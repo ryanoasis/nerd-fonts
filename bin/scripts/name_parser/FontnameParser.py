@@ -252,6 +252,9 @@ class FontnameParser:
         # Ignore Italic if we have Oblique
         if 'Oblique' in self.weight_token:
             b |= OBLIQUE
+            if not self.rename_oblique:
+                # If we have no dedicated italic, than oblique = italic
+                b |= ITALIC
         elif 'Italic' in self.style_token:
             b |= ITALIC
         # Regular is just the basic weight
