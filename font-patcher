@@ -250,11 +250,11 @@ def force_panose_monospaced(font):
 def get_advance_width(font, extended, minimum):
     """ Get the maximum/minimum advance width in the extended(?) range """
     width = 0
-    if extended:
-        end = 0x17f
+    if not extended:
+        r = range(0x021, 0x07e)
     else:
-        end = 0x07e
-    for glyph in range(0x21, end):
+        r = range(0x07f, 0x17f)
+    for glyph in r:
         if not glyph in font:
             continue
         if glyph in range(0x7F, 0xBF):
@@ -270,8 +270,8 @@ def get_advance_width(font, extended, minimum):
 
 def report_advance_widths(font):
     return "Advance widths (base/extended): {} - {} / {} - {}".format(
-        get_advance_width(font, True, True), get_advance_width(font, False, True),
-        get_advance_width(font, False, False), get_advance_width(font, True, False))
+        get_advance_width(font, False, True), get_advance_width(font, False, False),
+        get_advance_width(font, True, True), get_advance_width(font, True, False))
 
 def get_btb_metrics(font):
     """ Get the baseline to baseline distance for all three metrics """
@@ -765,16 +765,18 @@ class font_patcher:
         if self.args.nonmono:
             return
         panose_mono = check_panose_monospaced(self.sourceFont)
+        logger.debug("Monospace check: %s; glyph-width-mono %s",
+            panose_check_to_text(panose_mono, self.sourceFont.os2_panose), repr(width_mono))
         # The following is in fact "width_mono != panose_mono", but only if panose_mono is not 'unknown'
         if (width_mono and panose_mono == 0) or (not width_mono and panose_mono == 1):
             logger.warning("Monospaced check: Panose assumed to be wrong")
-            logger.warning("  %s and %s",
+            logger.warning("Monospaced check: %s and %s",
                 report_advance_widths(self.sourceFont),
                 panose_check_to_text(panose_mono, self.sourceFont.os2_panose))
         if self.args.single and not width_mono:
-            logger.warning("Sourcefont is not monospaced - forcing to monospace not advisable, results might be useless")
-            if offending_char is not None:
-                logger.warning("           Offending char: %X", offending_char)
+            logger.warning("Sourcefont is not monospaced - forcing to monospace not advisable, "
+                "results might be useless%s",
+                " - offending char: {:X}".format(offending_char) if offending_char is not None else "")
             if self.args.single <= 1:
                 logger.critical("Font will not be patched! Give --mono (or -s, or --use-single-width-glyphs) twice to force patching")
                 sys.exit(1)
@@ -1217,8 +1219,8 @@ class font_patcher:
             if self.font_dim['width'] < self.sourceFont[glyph].width:
                 self.font_dim['width'] = self.sourceFont[glyph].width
                 if not warned1 and glyph > 0x7a: # NOT 'basic' glyph, which includes a-zA-Z
-                    logger.debug("Extended glyphs wider than basic glyphs, results might be useless\n  %s",
-                        report_advance_widths(self.sourceFont))
+                    logger.debug("Extended glyphs wider than basic glyphs, results might be useless")
+                    logger.debug("%s", report_advance_widths(self.sourceFont))
                     warned1 = True
                 # print("New MAXWIDTH-A {:X} {} -> {} {}".format(glyph, self.sourceFont[glyph].width, self.font_dim['width'], xmax))
             if xmax > self.font_dim['xmax']:
@@ -1230,7 +1232,7 @@ class font_patcher:
         if self.font_dim['width'] < self.font_dim['xmax']:
             logger.debug("Font has negative right side bearing in extended glyphs")
             self.font_dim['xmax'] = self.font_dim['width'] # In fact 'xmax' is never used
-        # print("FINAL", self.font_dim)
+        logger.debug("Final font cell dimensions %d w x %d h", self.font_dim['width'], self.font_dim['height'])
 
         self.xavgwidth.append(self.args.xavgwidth)
         if isinstance(self.xavgwidth[-1], int) and self.xavgwidth[-1] == 0:
