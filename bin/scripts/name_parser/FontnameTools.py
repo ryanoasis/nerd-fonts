@@ -5,7 +5,7 @@ import re
 import sys
 
 class FontnameTools:
-    """Deconstruct a font filename to get standardized name parts"""
+    """Deconstruct a fontname to get standardized name parts"""
 
     @staticmethod
     def front_upper(word):
@@ -69,15 +69,7 @@ class FontnameTools:
             'text':         '',
             'ce':           'CE',
             #'semibold':     'Demi',
-            'ob':           'Oblique',
-            'it':           'Italic',
-            'i':            'Italic',
-            'b':            'Bold',
             'normal':       'Regular',
-            'c':            'Condensed',
-            'r':            'Regular',
-            'm':            'Medium',
-            'l':            'Light',
         }
         if style_name in known_names:
             return known_names[style_name.lower()]
@@ -306,8 +298,9 @@ class FontnameTools:
 
     @staticmethod
     def _parse_simple_font_name(name):
-        """Parse a filename that does not follow the 'FontFamilyName-FontStyle' pattern"""
-        # No dash in name, maybe we have blanc separated filename?
+        """Parse a fontname that does not follow the 'FontFamilyName-FontStyle' pattern"""
+        # This is the usual case, because the font-patcher usually uses the fullname and
+        # not the PS name
         if ' ' in name:
             return FontnameTools.parse_font_name(name.replace(' ', '-'))
         # Do we have a number-name boundary?
@@ -322,7 +315,8 @@ class FontnameTools:
 
     @staticmethod
     def parse_font_name(name):
-        """Expects a filename following the 'FontFamilyName-FontStyle' pattern and returns ... parts"""
+        """Expects a fontname following the 'FontFamilyName-FontStyle' pattern and returns ... parts"""
+        # This could parse filenames in the beginning but that was never used in production; code removed with this commit
         name = re.sub(r'\bsemi-condensed\b', 'SemiCondensed', name, 1, re.IGNORECASE) # Just for "3270 Semi-Condensed" :-/
         name = re.sub('[_\s]+', ' ', name)
         matches = re.match(r'([^-]+)(?:-(.*))?', name)
@@ -353,19 +347,9 @@ class FontnameTools:
             r'(?:uni-)?1[14]',  # GohuFont uni
         ]
 
-        # Sometimes used abbreviations
-        weight_abbrevs = [ 'ob', 'c', 'm', 'l', ]
-        style_abbrevs = [ 'it', 'r', 'b', 'i', ]
-
         ( style, weight_token ) = FontnameTools.get_name_token(style, weights)
         ( style, style_token ) = FontnameTools.get_name_token(style, styles)
         ( style, other_token ) = FontnameTools.get_name_token(style, other, True)
-        if (len(style) < 4
-                and style.lower() != 'pro'): # Prevent 'r' of Pro to be detected as style_abbrev
-            ( style, weight_token_abbrevs ) = FontnameTools.get_name_token(style, weight_abbrevs)
-            ( style, style_token_abbrevs ) = FontnameTools.get_name_token(style, style_abbrevs)
-            weight_token += weight_token_abbrevs
-            style_token += style_token_abbrevs
         while 'Regular' in style_token and len(style_token) > 1:
             # Correct situation where "Regular" and something else is given
             style_token.remove('Regular')

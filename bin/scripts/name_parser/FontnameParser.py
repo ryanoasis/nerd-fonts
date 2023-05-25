@@ -7,8 +7,8 @@ from FontnameTools import FontnameTools
 class FontnameParser:
     """Parse a font name and generate all kinds of names"""
 
-    def __init__(self, filename, logger):
-        """Parse a font filename and store the results"""
+    def __init__(self, fontname, logger):
+        """Parse a fontname and store the results"""
         self.parse_ok = False
         self.use_short_families = (False, False, False) # ( camelcase name, short styles, aggressive )
         self.keep_regular_in_family = None # None = auto, True, False
@@ -17,7 +17,7 @@ class FontnameParser:
         self.ps_fontname_suff = ''
         self.short_family_suff = ''
         self.name_subst = []
-        [ self.parse_ok, self._basename, self.weight_token, self.style_token, self.other_token, self._rest ] = FontnameTools.parse_font_name(filename)
+        [ self.parse_ok, self._basename, self.weight_token, self.style_token, self.other_token, self._rest ] = FontnameTools.parse_font_name(fontname)
         self.basename = self._basename
         self.rest = self._rest
         self.add_name_substitution_table(FontnameTools.SIL_TABLE)
