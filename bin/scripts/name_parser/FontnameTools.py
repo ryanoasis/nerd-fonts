@@ -71,9 +71,7 @@ class FontnameTools:
             #'semibold':     'Demi',
             'normal':       'Regular',
         }
-        if style_name in known_names:
-            return known_names[style_name.lower()]
-        return style_name
+        return known_names.get(style_name.lower(), style_name)
 
     @staticmethod
     def find_in_dicts(key, dicts):
