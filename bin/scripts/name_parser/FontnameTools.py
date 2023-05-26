@@ -135,7 +135,7 @@ class FontnameTools:
         return (weights, styles)
 
     @staticmethod
-    def get_name_token(name, tokens, allow_regex_token = False):
+    def get_name_token(name, tokens):
         """Try to find any case insensitive token from tokens in the name, return tuple with found token-list and rest"""
         # The default mode (allow_regex_token = False) will try to find any verbatim string in the
         # tokens list (case insensitive matching) and give that tokens list item back with
@@ -150,10 +150,9 @@ class FontnameTools:
         all_tokens = []
         j = 1
         token_regex = '|'.join(tokens)
-        if not allow_regex_token:
-            # Allow a dash between CamelCase token word parts, i.e. Camel-Case
-            # This allows for styles like Extra-Bold
-            token_regex = re.sub(r'(?<=[a-z])(?=[A-Z])', '-?', token_regex)
+        # Allow a dash between CamelCase token word parts, i.e. Camel-Case
+        # This allows for styles like Extra-Bold
+        token_regex = re.sub(r'(?<=[a-z])(?=[A-Z])', '-?', token_regex)
         regex = re.compile('(.*?)(' + token_regex + ')(.*)', re.IGNORECASE)
         while j:
             j = regex.match(name)
@@ -163,9 +162,7 @@ class FontnameTools:
                 sys.exit('Malformed regex in FontnameTools.get_name_token()')
             not_matched += ' ' + j.groups()[0] # Blanc prevents unwanted concatenation of unmatched substrings
             tok = j.groups()[1].lower()
-            if not allow_regex_token:
-                # Remove dashes between CamelCase token words
-                tok = tok.replace('-', '')
+            tok = tok.replace('-', '') # Remove dashes between CamelCase token words
             if tok in lower_tokens:
                 tok = tokens[lower_tokens.index(tok)]
             tok = FontnameTools.unify_style_names(tok)
@@ -354,7 +351,7 @@ class FontnameTools:
 
         ( style, weight_token ) = FontnameTools.get_name_token(style, weights)
         ( style, style_token ) = FontnameTools.get_name_token(style, styles)
-        ( style, other_token ) = FontnameTools.get_name_token(style, other, True)
+        ( style, other_token ) = FontnameTools.get_name_token(style, other)
         while 'Regular' in style_token and len(style_token) > 1:
             # Correct situation where "Regular" and something else is given
             style_token.remove('Regular')
