@@ -318,7 +318,13 @@ class FontnameTools:
     def parse_font_name(name):
         """Expects a fontname following the 'FontFamilyName-FontStyle' pattern and returns ... parts"""
         # This could parse filenames in the beginning but that was never used in production; code removed with this commit
-        name = re.sub(r'\bsemi-condensed\b', 'SemiCondensed', name, 1, re.IGNORECASE) # Just for "3270 Semi-Condensed" :-/
+        for special in [
+                ('ExtLt', 'ExtraLight'), # IBM-Plex
+                ('Medm', 'Medium'), # IBM-Plex
+                ('Semi-Condensed', 'SemiCondensed'), # 3270
+                ('SmBld', 'SemiBold'), # IBM-Plex
+            ]:
+            name = re.sub(r'\b' + special[0] + r'\b', special[1], name, 1, re.IGNORECASE)
         name = re.sub('[_\s]+', ' ', name)
         matches = re.match(r'([^-]+)(?:-(.*))?', name)
         familyname = FontnameTools.camel_casify(matches.group(1))
