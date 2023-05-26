@@ -65,9 +65,7 @@ class FontnameTools:
             # Source of the table is the current sourcefonts
             # Left side needs to be lower case
             'book':         '',
-            'text':         '',
             'ce':           'CE',
-            #'semibold':     'Demi',
             'normal':       'Regular',
         }
         return known_names.get(style_name.lower(), style_name)
@@ -232,6 +230,7 @@ class FontnameTools:
         'Medium': ('Md', 'Med'),
         'Nord': ('Nd', 'Nord'),
         'Book': ('Bk', 'Book'),
+        'Text': ('Txt', 'Text'),
         'Poster': ('Po', 'Poster'),
         'Demi': ('Dm', 'Demi'), # Demi is sometimes used as a weight, sometimes as a modifier
         'Regular': ('Rg', 'Reg'),
@@ -341,7 +340,6 @@ class FontnameTools:
         # Some font specialities:
         other = [
             '-', 'Book', 'For', 'Powerline',
-            'Text',             # Plex
             'IIx',              # Profont IIx
             'LGC',              # Inconsolata LGC
             r'\bCE\b',          # ProggycleanTT CE
