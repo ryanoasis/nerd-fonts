@@ -64,7 +64,6 @@ class FontnameTools:
         known_names = {
             # Source of the table is the current sourcefonts
             # Left side needs to be lower case
-            '-':            '',
             'book':         '',
             'text':         '',
             'ce':           'CE',
@@ -150,7 +149,12 @@ class FontnameTools:
         not_matched = ""
         all_tokens = []
         j = 1
-        regex = re.compile('(.*?)(' + '|'.join(tokens) + ')(.*)', re.IGNORECASE)
+        token_regex = '|'.join(tokens)
+        if not allow_regex_token:
+            # Allow a dash between CamelCase token word parts, i.e. Camel-Case
+            # This allows for styles like Extra-Bold
+            token_regex = re.sub(r'(?<=[a-z])(?=[A-Z])', '-?', token_regex)
+        regex = re.compile('(.*?)(' + token_regex + ')(.*)', re.IGNORECASE)
         while j:
             j = regex.match(name)
             if not j:
@@ -159,6 +163,9 @@ class FontnameTools:
                 sys.exit('Malformed regex in FontnameTools.get_name_token()')
             not_matched += ' ' + j.groups()[0] # Blanc prevents unwanted concatenation of unmatched substrings
             tok = j.groups()[1].lower()
+            if not allow_regex_token:
+                # Remove dashes between CamelCase token words
+                tok = tok.replace('-', '')
             if tok in lower_tokens:
                 tok = tokens[lower_tokens.index(tok)]
             tok = FontnameTools.unify_style_names(tok)
