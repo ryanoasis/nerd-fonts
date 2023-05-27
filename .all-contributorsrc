@@ -1266,11 +1266,22 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "cherryblossom000",
+      "name": "Lauren Yim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31467609?v=4",
+      "profile": "https://github.com/cherryblossom000",
+      "contributions": [
+        "bug",
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": false,
   "contributorsPerLine": 7,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }
