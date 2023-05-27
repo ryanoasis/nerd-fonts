@@ -1276,6 +1276,15 @@
         "bug",
         "doc"
       ]
+    },
+    {
+      "login": "SilverMira",
+      "name": "SilverMira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66930495?v=4",
+      "profile": "https://github.com/SilverMira",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
