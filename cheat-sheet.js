@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             let notFoundElem = document.createElement("div");
             notFoundElem.setAttribute("style", "padding: 10px;");
-            notFoundElem.innerHTML = `<span style="font-size: 30px;">No results found</span>`;
+            notFoundElem.innerHTML = `<span style="font-size: 30px;">No matches found</span>`;
             elementGlyphCheatSheet.appendChild(notFoundElem);
         }
 

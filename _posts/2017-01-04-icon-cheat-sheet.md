@@ -12,8 +12,7 @@ style: container
 
 <input type="text" id="glyphSearch" placeholder="Search for glyphs/icons here..." title="Type in a glyph name or hex codepoint" class="nerd-font-cheat-sheet-search nerd-font-input tertiary sanity-test" />
 
-<div id="glyphCheatSheet" class="nerd-font-cheat-sheet">
-</div>
+<div id="glyphCheatSheet" class="nerd-font-cheat-sheet"></div>
 
 <script>
 const glyphs = {
@@ -11390,7 +11389,7 @@ const glyphs = {
   "nf-weather-wind_south_east": "e356",
   "nf-weather-wind_south_west": "e355",
   "nf-weather-wind_west": "e354",
-  "nf-weather-windy": "e31e"
+  "nf-weather-windy": "e31e",
 }
 </script>
 
@@ -11410,9 +11409,7 @@ const glyphs = {
 
 I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
   {% endhighlight %}
-  <p>
-    <span class="nerd-fonts-example-usage">
+    <p><span class="nerd-fonts-example-usage">
       I really <i class="nf nf-fa-heart ow"></i> <i class="nf nf-custom-vim nfunc"></i>
-    </span>
-  </p>
+    </span></p>
 </div>
