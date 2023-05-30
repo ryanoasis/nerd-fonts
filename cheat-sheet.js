@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 combineWith: "AND",
                 boost: {id: 0.001},
                 boostDocument: ((documentId, term, storedFields) => {
-                    return storedFields.isRemoved ? 0.001 : 1
+                    return storedFields.isRemoved ? 0.00001 : 1
                 }),
             }
         );
