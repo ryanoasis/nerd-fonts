@@ -201,6 +201,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/cherryblossom000"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/31467609?v=4?s=100" width="100px;" alt="Lauren Yim"/><br /><sub><b>Lauren Yim</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Acherryblossom000" title="Bug reports">🐛</a> <a href="https://github.com/ryanoasis/nerd-fonts/commits?author=cherryblossom000" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SilverMira"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/66930495?v=4?s=100" width="100px;" alt="SilverMira"/><br /><sub><b>SilverMira</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3ASilverMira" title="Bug reports">🐛</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rszyma"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/44318430?v=4?s=100" width="100px;" alt="rszyma"/><br /><sub><b>rszyma</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=rszyma" title="Code">💻</a></td>
+    </tr>
   </tbody>
 </table>
 
