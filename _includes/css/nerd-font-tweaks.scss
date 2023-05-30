@@ -1,4 +1,3 @@
-
 p {
 	line-height: 1.75em;
 }
@@ -20,33 +19,40 @@ input.nerd-font-input {
 	margin: 0pt auto;
 }
 
-.nerd-font-button, .nerd-font-input {
+.nerd-font-button,
+.nerd-font-input {
 	cursor: pointer;
 	border-width: 2px;
 	font-size: 21px;
 	border-style: solid;
 	border-color: #f8f8f8;
 	color: #f8f8f8;
+
 	&input {
 		cursor: inherit;
 		border-radius: unset;
 	}
+
 	&.primary {
 		background: #1E5D8A;
 	}
+
 	&.secondary {
 		background: #BA45AE;
 	}
+
 	&.tertiary {
 		background: #565346;
 		border-color: #0fbfcf;
 		color: #0fbfcf;
 	}
+
 	&.tertiary--inverse {
 		background: #0fbfcf;
 		border-color: #565346;
 		color: #565346;
 	}
+
 	&.download {
 		background: #0C640C;
 	}
@@ -84,7 +90,7 @@ a.nerd-font-button:before {
 @media screen and (max-width:800px) {
 	#main .nerd-font-badges img {
 		height: 2.2em;
-    	margin: 6px 0px;
+		margin: 6px 0px;
 	}
 }
 
@@ -113,10 +119,6 @@ a.nerd-font-button:before {
 	display: flex;
 	flex-flow: row wrap;
 	margin-bottom: 60px;
-	visibility: hidden; /* don't show any by default */
-	&.has-results {
-		visibility: visible;
-	}
 }
 
 #glyphCheatSheet .column {
@@ -127,20 +129,16 @@ a.nerd-font-button:before {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	position: relative;
-	border: 2px solid rgba(0,0,0,.25);
+	border: 2px solid rgba(0, 0, 0, .25);
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 5px;
 	margin: 10px 5px;
-	display: none; /* don't show any by default */
-}
-
-#glyphCheatSheet .column.is-visible {
 	display: block;
 }
 
 #main .nerd-font-cheat-sheet .column:hover {
-	background: rgba(0,0,0,.25);
+	background: rgba(0, 0, 0, .25);
 	border: 2px solid #0fbfcf;
 	color: #0fbfcf !important;
 	cursor: pointer;
@@ -180,7 +178,7 @@ a.nerd-font-button:before {
 	border-radius: 3px;
 	border-bottom: none;
 	border-right: none;
-	background: rgba(0,0,0,.25);
+	background: rgba(0, 0, 0, .25);
 	border-color: #565346;
 	font-weight: bold;
 	border-top-right-radius: unset;
@@ -296,7 +294,8 @@ a.nerd-font-button:before {
 	width: 2.5em
 }
 
-.fa-stack-1x,.fa-stack-2x {
+.fa-stack-1x,
+.fa-stack-2x {
 	left: 0;
 	position: absolute;
 	text-align: center;
@@ -322,18 +321,38 @@ a.nerd-font-button:before {
 }
 
 #forkongithub a {
-  display: inline-block;
+	display: inline-block;
 }
 
 /* color scheme */
 
-.nf1 { color: #E2DB74 }
-.nf2 { color: #49a7e9 }
-.nf3 { color: #66FF99 }
-.nf4 { color: #Ff66CC }
-.nf5 { color: #00ffff }
-.nf6 { color: #f09f17 }
-.nf7 { color: #DD1B16 }
+.nf1 {
+	color: #E2DB74
+}
+
+.nf2 {
+	color: #49a7e9
+}
+
+.nf3 {
+	color: #66FF99
+}
+
+.nf4 {
+	color: #Ff66CC
+}
+
+.nf5 {
+	color: #00ffff
+}
+
+.nf6 {
+	color: #f09f17
+}
+
+.nf7 {
+	color: #DD1B16
+}
 
 /* Example Usage */
 
@@ -351,7 +370,7 @@ a.nerd-font-button:before {
 	padding: 0px 0px 20px 0px;
 }
 
-#all-contributors .container > div > div {
+#all-contributors .container>div>div {
 	min-height: 160px;
 	width: 130px;
 }
@@ -367,9 +386,7 @@ a.nerd-font-button:before {
 
 /* features section */
 
-.feature-sections {
-
-}
+.feature-sections {}
 
 .feature-section {
 	background: #ffffff55;
@@ -381,30 +398,38 @@ a.nerd-font-button:before {
 	text-align: center;
 }
 
-.feature-section h2, .feature-section h3, .feature-section h4 {
+.feature-section h2,
+.feature-section h3,
+.feature-section h4 {
 	font-weight: bold;
 }
 
-.feature-section h2, .feature-section h3 {
+.feature-section h2,
+.feature-section h3 {
 	text-align: left;
 }
 
-.feature-section h2, .feature-section h3, .feature-section h4:not(.nerd-font-button) {
+.feature-section h2,
+.feature-section h3,
+.feature-section h4:not(.nerd-font-button) {
 	padding: 10px 0px;
 	margin: 0px;
 	color: #1c1c1c;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-.feature-section h3, .feature-section h4 {
+.feature-section h3,
+.feature-section h4 {
 	font-size: 20px;
 	padding-top: 0px;
 	font-size: 20px;
 	padding-top: 0px;
 }
+
 .feature-section h4 img {
 	max-height: 100px;
 }
+
 .feature-section div p {
 	text-align: left;
 }
@@ -428,75 +453,89 @@ a.nerd-font-button:before {
 /* individual pages */
 
 .section-page-wrapper .section {
-	position:relative;
-	display:block;
-	width:100%;
-	min-height:0px;
-	padding:180px 0;
-	background:url(/assets/img/bgnoise.png);
-  }
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 0px;
+	padding: 180px 0;
+	background: url(/assets/img/bgnoise.png);
+}
 
 .section-page-wrapper .section:first-of-type {
-    padding-top: 90px;
+	padding-top: 90px;
 }
 
 .section-page-wrapper .sectiondivider {
-	width:270px;
-	height:270px;
-	padding:15px;
-	position:relative;
-	top:0px;
-	left:50%;
-	margin-left:-135px;
+	width: 270px;
+	height: 270px;
+	padding: 15px;
+	position: relative;
+	top: 0px;
+	left: 50%;
+	margin-left: -135px;
 }
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
 	color: #fff;
 	background: #1E5D8A;
-  text-decoration:none;
-  font-family:arial,sans-serif;
-  text-align:center;
-  font-weight:700;
-  font-size:1rem;
-  line-height:2rem;
-  position:relative;
-  transition:.5s;
-  padding:5px 40px;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 2rem;
+	position: relative;
+	transition: .5s;
+	padding: 5px 40px;
 }
-#forkongithub a::before, #forkongithub a::after {
-  content:""; width:100%; display:block; position:absolute;
-  top:1px; left:0; height:1px; background:#fff;
+
+#forkongithub a::before,
+#forkongithub a::after {
+	content: "";
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	height: 1px;
+	background: #fff;
 }
-#forkongithub a::after { bottom:1px; top:auto; }
+
+#forkongithub a::after {
+	bottom: 1px;
+	top: auto;
+}
+
 @media screen and (min-width:800px) {
-  #forkongithub {
-    position:fixed;
-    display:block;
-    top:0;
-    right:0;
-    width:200px;
-    overflow:hidden;
-    height:209px;
-    z-index:99;
-  }
-  #forkongithub a {
-    width:200px;
-    position:absolute;
-    top:60px;
-    right:-60px;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    box-shadow:4px 4px 10px rgba(0,0,0,0.8);
-    box-sizing: content-box;
-  }
+	#forkongithub {
+		position: fixed;
+		display: block;
+		top: 0;
+		right: 0;
+		width: 200px;
+		overflow: hidden;
+		height: 209px;
+		z-index: 99;
+	}
+
+	#forkongithub a {
+		width: 200px;
+		position: absolute;
+		top: 60px;
+		right: -60px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+		box-sizing: content-box;
+	}
 }
 
 .icon-backdrop {
-/* 	position: absolute;
+	/* 	position: absolute;
 	opacity: 0.20;
 	font-size: 2rem;
 	line-height: 1.43em;
@@ -519,15 +558,15 @@ a.nerd-font-button:before {
 
 .rainbow {
 	/* fe2 and ff2 with 66601e */
-	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(.9, #66601e), color-stop(1, #f22) );
-	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #66601e), color-stop(1, #f22) );
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(.9, #66601e), color-stop(1, #f22));
+	background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #66601e), color-stop(1, #f22));
 	color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 }
 
 /* Downloads page */
-#downloads  {
+#downloads {
 	.item {
 		// max-width: 400px !important;
 		// border: 2px solid white;
@@ -549,11 +588,13 @@ a.nerd-font-button:before {
 			// position: relative;
 			// top: -40px;
 			padding-right: 10px;
-    		padding-top: 5px;
+			padding-top: 5px;
 		}
+
 		img {
 			vertical-align: top !important;
 		}
+
 		.font-preview {
 			text-decoration: none;
 			background-size: contain;
@@ -561,25 +602,29 @@ a.nerd-font-button:before {
 			background-repeat: no-repeat;
 			background-position-x: 34px;
 		}
+
 		.font-preview:before {
 			content: "";
 			font-size: 32px;
 			font-family: 'NerdFontsSymbols Nerd Font';
 		}
 	}
+
 	.nerd-font-buttons-wrapper {
 		display: flex;
-    flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
+
 	.button-empty-spacer {
 		height: 42px;
-    width: 100%;
+		width: 100%;
 	}
+
 	.nerd-font-button {
 		border-width: 2px;
 		border-style: solid;
 		flex-shrink: 1;
-    flex-grow: 1;
+		flex-grow: 1;
 	}
 }
 
@@ -614,20 +659,31 @@ a.nerd-font-button:before {
  point at which nav wraps
  without decrease font size
  */
- @media only screen and (max-width: 326px) {
-  nav { font-size: 9px; }
+@media only screen and (max-width: 326px) {
+	nav {
+		font-size: 9px;
+	}
 }
 
 /* tiny size (phones) */
 @media only screen and (max-width: 380px) {
-  nav ul li { min-width:initial; line-height:20px; }
-  li.p-downloads a:after { content: ''; }
-  .section:first-of-type {
-    padding-top: 70px;
-  }
-  #features .sectioninner2 {
-    font-size: .7em;
-  }
+	nav ul li {
+		min-width: initial;
+		line-height: 20px;
+	}
+
+	li.p-downloads a:after {
+		content: '';
+	}
+
+	.section:first-of-type {
+		padding-top: 70px;
+	}
+
+	#features .sectioninner2 {
+		font-size: .7em;
+	}
+
 	#main .nerd-font-cheat-sheet .column {
 		width: 102px;
 		height: 98px;
@@ -641,72 +697,87 @@ a.nerd-font-button:before {
 
 /* mid size (tablets, landscapes) */
 @media only screen and (max-width: 679px) {
-  nav { font-size:10px; }
-  li.p-downloads a:after { content: ''; }
-  nav ul li {
-    min-width:50px;
-    line-height:40px;
-  }
-  .section:first-of-type {
-    padding-top: 70px;
-  }
-  #features .sectioninner2 {
-    font-size: .7em;
-  }
+	nav {
+		font-size: 10px;
+	}
+
+	li.p-downloads a:after {
+		content: '';
+	}
+
+	nav ul li {
+		min-width: 50px;
+		line-height: 40px;
+	}
+
+	.section:first-of-type {
+		padding-top: 70px;
+	}
+
+	#features .sectioninner2 {
+		font-size: .7em;
+	}
 }
 
 /* anything not desktop */
 @media only screen and (max-width: 767px) {
-	.container h1 { font-size: 30px; }
-	.container h2 { font-size: 24px; }
-	.container h3 { font-size: 20px; }
-	.container h4 { font-size: 18px; }
+	.container h1 {
+		font-size: 30px;
+	}
 
-	.section { padding:130px 0; }
-	
+	.container h2 {
+		font-size: 24px;
+	}
+
+	.container h3 {
+		font-size: 20px;
+	}
+
+	.container h4 {
+		font-size: 18px;
+	}
+
+	.section {
+		padding: 130px 0;
+	}
+
 	.section-page-wrapper .sectiondivider,
 	.sectiondivider {
-    width:200px;
-    height:200px;
-    padding:15px;
-    margin-left:-100px;
-  }
+		width: 200px;
+		height: 200px;
+		padding: 15px;
+		margin-left: -100px;
+	}
 
 	.section-page-wrapper .sectiondivider .fa-stack,
 	.sectiondivider .fa-stack {
-    font-size: 100px;
-    margin-top: -14px;
+		font-size: 100px;
+		margin-top: -14px;
 	}
-	
+
 	.section-page-wrapper .sectiondivider h5,
 	.sectiondivider h5 {
-    font-size:15px;
-    bottom:30px;
-    width:170px
-  }
-
-  #features .sectioninner2 {
-    font-size: .7em;
-  }
-
-  .columned {
-    -webkit-column-count: 2;
-    -moz-column-count:    2;
-    column-count:         2;
-  }
-  .sectioninner3 {
-    line-height: 21px;
-    font-size: 11px;
+		font-size: 15px;
+		bottom: 30px;
+		width: 170px
 	}
-	/* gitter adjust sidecar on mobile */
-	.gitter-open-chat-button {
-		bottom: 116px;
-		padding: 1em 1em;
-		transform: rotate(-90deg);
-		right: -28px;
+
+	#features .sectioninner2 {
+		font-size: .7em;
+	}
+
+	.columned {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+
+	.sectioninner3 {
+		line-height: 21px;
+		font-size: 11px;
 	}
 }
-	
+
 /* util */
 
 .text-left {
