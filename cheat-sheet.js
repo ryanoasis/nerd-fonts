@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Index all glyphs/icons
     let miniSearch = new MiniSearch({
-        fields: ['id', 'code'], // fields to index for full-text search
+        fields: ['id', 'code', 'isNew'], // fields to index for full-text search
         storeFields: ['id', 'code', 'isRemoved'], // fields to return with search results
     })
     miniSearch.addAll(Object.entries(glyphs).map(
@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return {
                 id: key,
                 code: value,
+                isNew: key.startsWith('nfold') ? false : key,
             }
         }
     ));
@@ -136,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 prefix: false,
                 combineWith: "AND",
+                boost: { isNew: 2 },
             }
         );
 
