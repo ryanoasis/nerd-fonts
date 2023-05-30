@@ -125,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (searchTerm === "") {
             // MiniSearch don't allow empty searches, so we search for "nf".
-            // Also it hides "nfold" (removed) icons.
             searchTerm = "nf";
         }
 
@@ -135,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         remainingSearchResults = miniSearch.search(searchTerm,
             {
-                prefix: false,
+                prefix: true,
                 combineWith: "AND",
                 boost: { isNew: 2 },
             }
