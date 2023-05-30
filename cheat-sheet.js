@@ -124,16 +124,19 @@ document.addEventListener('DOMContentLoaded', function () {
     function searchGlyphs() {
         let searchTerm = elementGlyphSearch.value;
 
+        let prefixSearchEnabled = true
+
         if (searchTerm === "") {
             // MiniSearch don't allow empty searches, so we search for "nf".
             searchTerm = "nf";
+            prefixSearchEnabled = false;
         }
 
         // TODO: search suggestions
 
         remainingSearchResults = miniSearch.search(searchTerm,
             {
-                prefix: true,
+                prefix: prefixSearchEnabled,
                 combineWith: "AND",
                 boost: {id: 0.001},
                 boostDocument: ((documentId, term, storedFields) => {
