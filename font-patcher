@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.3.3"
+script_version = "4.3.4"
 
 version = "3.0.1"
 projectName = "Nerd Fonts"
@@ -961,15 +961,9 @@ class font_patcher:
             range(0x2591, 0x2593 + 1), # greys
             range(0x2594, 0x259f + 1), # quards (Note: quard 2597 in Hack is wrong, scales like block!)
         ]}
-        CODI_SCALE_LIST = {'ScaleGroupsVert': [
-            range(0xea99, 0xeaa1 + 1), # arrows
+        CODI_SCALE_LIST = {'ScaleGroups': [
             range(0xeb6e, 0xeb71 + 1), # triangles
             range(0xeab4, 0xeab7 + 1), # chevrons
-            [0xea71, *range(0xeaa6, 0xeaab + 1), 0xeabc, 0xeb18, 0xeb87, 0xeb88, 0xeb8a, 0xeb8c, 0xebb4], # small circles and similar
-            [0xeacc, 0xeaba], # dash
-            [0xea75, 0xebe7], # lock pair
-            [0xeacf, 0xebe0], # debug-continue pair
-            [0xeb91, 0xeba8], # debug-alt pair
         ]}
         DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
             'GlyphsToScale': [
