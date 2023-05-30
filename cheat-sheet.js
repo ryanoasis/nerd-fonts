@@ -134,14 +134,11 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 prefix: true,
                 combineWith: "AND",
+                boostDocument: ((documentId, term, storedFields) => {
+                    return storedFields.isRemoved ? 0.001 : 1
+                }),
             }
         );
-        remainingSearchResults.sort((a, b) => {
-            if (a.isRemoved != b.isRemoved) {
-                return a.isRemoved > b.isRemoved
-            }
-            return a.id > b.id
-        })
 
         console.log(`search: ${remainingSearchResults.length} results found`);
         elementGlyphCheatSheet.replaceChildren([]);
