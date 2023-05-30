@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Index all glyphs/icons
     let miniSearch = new MiniSearch({
-        fields: ['id', 'code'], // fields to index for full-text search
+        fields: ['id', 'code', 'name'], // fields to index for full-text search
         storeFields: ['id', 'code', 'isRemoved'], // fields to return with search results
     })
     miniSearch.addAll(Object.entries(glyphs).map(
@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return {
                 id: key,
                 code: value,
+                name: key.substring(key.lastIndexOf('-') + 1),
                 isRemoved: key.startsWith('nfold'),
             }
         }
@@ -134,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 prefix: true,
                 combineWith: "AND",
+                boost: {id: 0.001},
                 boostDocument: ((documentId, term, storedFields) => {
                     return storedFields.isRemoved ? 0.001 : 1
                 }),
