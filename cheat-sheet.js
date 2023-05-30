@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Index all glyphs/icons
     let miniSearch = new MiniSearch({
-        fields: ['id', 'code', 'isNew'], // fields to index for full-text search
+        fields: ['id', 'code'], // fields to index for full-text search
         storeFields: ['id', 'code', 'isRemoved'], // fields to return with search results
     })
     miniSearch.addAll(Object.entries(glyphs).map(
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return {
                 id: key,
                 code: value,
-                isNew: key.startsWith('nfold') ? false : key,
+                isRemoved: key.startsWith('nfold'),
             }
         }
     ));
@@ -130,15 +130,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // TODO: search suggestions
 
-        // TODO: show removed/deprecated icons at the end of results list.
-
         remainingSearchResults = miniSearch.search(searchTerm,
             {
                 prefix: true,
                 combineWith: "AND",
-                boost: { isNew: 2 },
             }
         );
+        remainingSearchResults.sort((a, b) => {
+            if (a.isRemoved != b.isRemoved) {
+                return a.isRemoved > b.isRemoved
+            }
+            return a.id > b.id
+        })
 
         console.log(`search: ${remainingSearchResults.length} results found`);
         elementGlyphCheatSheet.replaceChildren([]);
