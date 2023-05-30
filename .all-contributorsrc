@@ -1285,6 +1285,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "rszyma",
+      "name": "rszyma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44318430?v=4",
+      "profile": "https://github.com/rszyma",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
