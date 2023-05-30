@@ -922,11 +922,7 @@ class font_patcher:
         #       with the same scaling and shifting. The basis for it is a 'combined
         #       bounding box' of all glyphs in that group. All glyphs are handled as
         #       if they fill that combined bounding box.
-        #   - ScaleGroupsVert:
-        #       Almost the same as ScaleGroups, but the shifting-as-one is only done
-        #       on the vertical axis, horizontally the shifting is individually.
-        #       Glyphs in this kind of group share all the same scale and y shift/alignment
-        #       but not the x alignment.
+        #  (- ScaleGroupsVert: Removed with this commit)
         #
         # The ScaleGlyph method: You set 'ScaleGlyph' to the unicode of the reference glyph.
         # Note that there can be only one per patch-set.
@@ -1426,7 +1422,7 @@ class font_patcher:
             # Use combined bounding box?
             if glyph_scale_data is not None and glyph_scale_data[1] is not None:
                 scaleglyph_dim = scale_bounding_box(glyph_scale_data[1], scale_ratio_x, scale_ratio_y)
-                if scaleglyph_dim['advance'] is None or scaleglyph_dim['width'] == 0:
+                if scaleglyph_dim['advance'] is None:
                     # On monospaced symbol collections use their advance with, otherwise align horizontally individually
                     scaleglyph_dim['xmin'] = sym_dim['xmin']
                     scaleglyph_dim['xmax'] = sym_dim['xmax']
@@ -1595,20 +1591,11 @@ class font_patcher:
         scaleRules['bbdims'] = []
         if 'ScaleGroups' not in scaleRules:
             scaleRules['ScaleGroups'] = []
-        for i, groups in enumerate([ scaleRules['ScaleGroups'], scaleRules.get('ScaleGroupsVert', []) ]):
-            for group in groups:
-                sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
-                scale = self.get_scale_factors(sym_dim, stretch)[0]
-                if i == 1:
-                    scaleRules['ScaleGroups'].append(group)
-                    if not self.args.single:
-                        # Do not keep these values, keep only vertical related bounding box:
-                        sym_dim['xmin'] = 0
-                        sym_dim['xmax'] = 0
-                        sym_dim['width'] = 0
-                        sym_dim['advance'] = None # Drop possibe monospaced flag
-                scaleRules['scales'].append(scale)
-                scaleRules['bbdims'].append(sym_dim)
+        for group in scaleRules['ScaleGroups']:
+            sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
+            scale = self.get_scale_factors(sym_dim, stretch)[0]
+            scaleRules['scales'].append(scale)
+            scaleRules['bbdims'].append(sym_dim)
 
         if 'ScaleGlyph' in scaleRules:
             # Rewrite to equivalent ScaleGroup
