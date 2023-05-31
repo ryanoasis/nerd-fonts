@@ -38,7 +38,7 @@ function print-decimal-unicode-range() {
   local leftoverSpaces=$((wrapAt - (originalSequenceLength % wrapAt)))
 
   # add fillers to array to maintain table:
-  if [[ "$leftoverSpaces" -lt "$wrapAt" ]]; then
+  if [ "$leftoverSpaces" -lt "$wrapAt" ]; then
     for _ in $(seq 1 $leftoverSpaces); do
       originalSequence+=(0)
     done
