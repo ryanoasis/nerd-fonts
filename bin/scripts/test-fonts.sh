@@ -23,9 +23,15 @@ function print-decimal-unicode-range() {
   local allChars=""
   local allCodes=""
   local wrapAt=5
-  local topLine="${bgColorBorder}╔══════╦══════╦══════╦══════╦══════╗${reset_color}"
-  local bottomLine="${bgColorBorder}╚══════╩══════╩══════╩══════╩══════╝${reset_color}"
-  local line="${bgColorBorder}╠══════╬══════╬══════╬══════╬══════╣${reset_color}"
+  local topLineStart="${bgColorBorder}╔═══"
+  local topLineMiddle="═══╦═══"
+  local topLineEnd="═══╗${reset_color}"
+  local bottomLineStart="${bgColorBorder}╚═══"
+  local bottomLineMiddle="═══╩═══"
+  local bottomLineEnd="═══╝${reset_color}"
+  local lineStart="${bgColorBorder}╠═══"
+  local lineMiddle="═══╬═══"
+  local lineEnd="═══╣${reset_color}"
   local bar="${bgColorBorder}║${reset_color}"
   local originalSequenceLength=${#originalSequence[@]}
   local leftoverSpaces=$((wrapAt - (originalSequenceLength % wrapAt)))
@@ -41,7 +47,11 @@ function print-decimal-unicode-range() {
 
   local sequenceLength=${#originalSequence[@]}
 
-  printf "%b\\n" "$topLine"
+  printf "%b" "$topLineStart"
+  for ((c = 2; c <= wrapAt; c++)); do
+    printf "%b" "$topLineMiddle"
+  done
+  printf "%b\\n" "$topLineEnd"
 
   for decimalCode in "${originalSequence[@]}"; do
     local hexCode
@@ -76,7 +86,11 @@ function print-decimal-unicode-range() {
       printf "\\n"
 
       if [ "$counter" != "$sequenceLength" ]; then
-        printf "%b\\n" "$line"
+        printf "%b" "$lineStart"
+        for ((c = 2; c <= wrapAt; c++)); do
+          printf "%b" "$lineMiddle"
+        done
+        printf "%b\\n" "$lineEnd"
       fi
 
       allCodes=""
@@ -85,7 +99,12 @@ function print-decimal-unicode-range() {
 
   done
 
-  printf "%b\\n" "$bottomLine"
+  printf "%b" "$bottomLineStart"
+  for ((c = 2; c <= wrapAt; c++)); do
+    printf "%b" "$bottomLineMiddle"
+  done
+  printf "%b\\n" "$bottomLineEnd"
+
 
 }
 
