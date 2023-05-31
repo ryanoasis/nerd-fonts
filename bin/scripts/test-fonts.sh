@@ -162,7 +162,7 @@ function test-fonts() {
   echo; echo
 
   echo "Nerd Fonts - Font Logos"
-  print-unicode-ranges f300 f313
+  print-unicode-ranges f300 f32f
   echo; echo
 
   echo "Nerd Fonts - Font Power Symbols"
