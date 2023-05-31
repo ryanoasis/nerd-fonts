@@ -22,7 +22,7 @@ function print-decimal-unicode-range() {
   local reset_color='\033[0m'
   local allChars=""
   local allCodes=""
-  local wrapAt=5
+  local wrapAt=16
   local topLineStart="${bgColorBorder}╔═══"
   local topLineMiddle="═══╦═══"
   local topLineEnd="═══╗${reset_color}"
