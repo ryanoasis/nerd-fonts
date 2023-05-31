@@ -23,6 +23,7 @@ function print-decimal-unicode-range() {
   local allChars=""
   local allCodes=""
   local wrapAt=16
+  [[ "$wrappingValue" =~ ^[0-9]+$ ]] && [ "$wrappingValue" -gt 2 ] && wrapAt="$wrappingValue"
   local topLineStart="${bgColorBorder}╔═══"
   local topLineMiddle="═══╦═══"
   local topLineEnd="═══╗${reset_color}"
@@ -181,5 +182,7 @@ function test-fonts() {
 
   echo; echo
 }
+
+wrappingValue="$1"
 
 test-fonts
