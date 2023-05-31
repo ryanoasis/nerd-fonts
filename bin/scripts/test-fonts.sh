@@ -38,9 +38,7 @@ function print-decimal-unicode-range() {
 
   # add fillers to array to maintain table:
   if [[ "$leftoverSpaces" -lt "$wrapAt" ]]; then
-    # shellcheck disable=SC2034
-    # needs rework without 'i' var?
-    for i in $(seq 1 $leftoverSpaces); do
+    for _ in $(seq 1 $leftoverSpaces); do
       originalSequence+=(0)
     done
   fi
