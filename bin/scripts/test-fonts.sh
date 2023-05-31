@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.0.0
+# Script Version: 1.1.0
 
 # Run this script in your local bash:
 # curl https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/test-fonts.sh | bash
+# Is possible to change the number of columns passing a number as the first parameter (default=16):
+# ./test-fonts.sh 8
 
 # Given an array of decimal numbers print all unicode codepoint.
 function print-decimal-unicode-range() {
