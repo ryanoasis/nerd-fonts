@@ -39,7 +39,7 @@ function print-decimal-unicode-range() {
 
   # add fillers to array to maintain table:
   if [ "$leftoverSpaces" -lt "$wrapAt" ]; then
-    for _ in $(seq 1 $leftoverSpaces); do
+    for ((c = 1; c <= leftoverSpaces; c++)); do
       originalSequence+=(0)
     done
   fi
