@@ -37,7 +37,7 @@ function print-decimal-unicode-range() {
   local leftoverSpaces=$((wrapAt - (originalSequenceLength % wrapAt)))
 
   # add fillers to array to maintain table:
-  if [[ "$leftoverSpaces" < "$wrapAt" ]]; then
+  if [[ "$leftoverSpaces" -lt "$wrapAt" ]]; then
     # shellcheck disable=SC2034
     # needs rework without 'i' var?
     for i in $(seq 1 $leftoverSpaces); do
