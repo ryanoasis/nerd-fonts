@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 2.0.0
+# Script Version: 2.0.1
 #
 # Fetches the current release files.
 # It fetches the latest release, not release candidate.
@@ -31,18 +31,24 @@ fi
 if [ "${versiontag}" != "latest" ]; then
     echo "${LINE_PREFIX} Fetching release archives with version tag '${versiontag}'"
     releasedata=$(curl -Lf "https://api.github.com/repos/ryanoasis/nerd-fonts/releases")
-    num=$(jq ".[] | select(.tag_name == \"${versiontag}\") | .assets | length" <<< ${releasedata})
+    num=$(jq ".[] | select(.tag_name == \"${versiontag}\") | .assets | length" <<< "${releasedata}")
     if [ -z "${num}" ]; then
         echo "${LINE_PREFIX} Release tag ${versiontag} unknown"
         exit 1
     fi
-    files=($(jq -r ".[] | select(.tag_name == \"${versiontag}\") | .assets[].name | @sh" <<< ${releasedata}))
+    files=()
+    while IFS='' read -r file; do
+        files+=("$file")
+    done < <(jq -r ".[] | select(.tag_name == \"${versiontag}\") | .assets[].name | @sh" <<< "${releasedata}")
 else
     echo "${LINE_PREFIX} Fetching latest release archives"
     releasedata=$(curl -Lf "https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest")
-    versiontag=$(jq -r ".tag_name" <<< ${releasedata})
-    num=$(jq ".assets | length" <<< ${releasedata})
-    files=($(jq -r ".assets[].name | @sh" <<< ${releasedata}))
+    versiontag=$(jq -r ".tag_name" <<< "${releasedata}")
+    num=$(jq ".assets | length" <<< "${releasedata}")
+    files=()
+    while IFS='' read -r file; do
+        files+=("$file")
+    done < <(jq -r ".assets[].name | @sh" <<< "${releasedata}")
 fi
 
 echo "${LINE_PREFIX} Found ${num} artifacts"
@@ -59,7 +65,7 @@ if [ $# -gt 2 ]; then
     exit 2
 fi
 
-for assetname in ${files[@]}; do
+for assetname in "${files[@]}"; do
     assetname=${assetname:1:-1}
     if [[ ! "${assetname}" =~ ^"${pattern}" ]]; then
         continue
