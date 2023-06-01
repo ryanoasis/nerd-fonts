@@ -54,7 +54,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 [**Developer / Contributor**](#font-patcher)
   * [**Font Patcher**](#font-patcher)
-  * [**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all)
+  * [**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all-font-patcher)
   * [**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
   * [**Contributing**](#contributing)
 
@@ -94,7 +94,7 @@ _If you..._
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** _or_ **proportional** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
-* A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
+* A Developer/Contributor provided [bash script](#gotta-patch-em-all-font-patcher) to re-patch all the fonts
 
 
 ## Glyph Sets <a name="glyph-sets"></a>
@@ -449,7 +449,6 @@ docker run --rm -v ~/Desktop/myfont/patchme:/in -v ~/Desktop/myfont/patched:/out
 
 Usually you want the `--complete` option.
 
-<a name="gotta-patch-em-all"></a>
 ## Gotta Patch 'em All Font Patcher! <a name="gotta-patch-em-all-font-patcher"></a>
 
 * for Contributor or Developer use
