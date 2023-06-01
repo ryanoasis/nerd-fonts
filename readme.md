@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1 align="center" name="top">
   <img src="images/nerd-fonts-logo.svg" alt="Nerd Fonts Logo" />
 </h1>
 <h2 align="center">
