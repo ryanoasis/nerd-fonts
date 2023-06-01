@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.3.0
+# Script Version: 1.3.1
 
 # Give any parameter to allow some glyphs to be 2 'cells' wide.
 # This might or might not be how they are currently handled while patching
@@ -15,17 +15,17 @@ rightSymbols=('' '' '' '' '' '' '' '' '' '' '' 
 isWide=(0 0 0 0 1 1 1 1 1 1 1 1 1 1 0)
 
 colorReset='\033[0m'
-colorBgWhite='\033[107m'
-colorBgLightBlue='\033[104m'
+#colorBgWhite='\033[107m'
+#colorBgLightBlue='\033[104m'
 colorBgYellow='\033[103m'
 colorBgBlack='\033[40m'
 colorBg1='\033[100m'
 colorBg2=$colorBgBlack
 colorBg3=$colorBgYellow
 
-colorFgLightBlue='\033[94m'
+#colorFgLightBlue='\033[94m'
 colorFgLightGray='\033[90m'
-colorFgLightYellow='\033[93m'
+#colorFgLightYellow='\033[93m'
 colorFgBlack='\033[30m'
 colorFg1=$colorFgBlack
 colorFg2=$colorFgLightGray
@@ -41,7 +41,7 @@ for i in "${!leftSymbolsCodes[@]}"; do
 	code="${leftSymbolsCodes[$i]}"
 	code2="${rightSymbolsCodes[$i]}"
 
-	if [ ${isWide[$i]} -ge 1 -a $# -ge 1 ]; then
+	if [ "${isWide[$i]}" -ge 1 ] && [ $# -ge 1 ]; then
 		symbol="${symbol} "
 		symbol2="${symbol2} "
 		pad=
@@ -60,9 +60,11 @@ done
 viSymbolsCodes=('E0A0' 'E0A1' 'E0A2' 'E0A3')
 viSymbols=('' '' '' '')
 
+line=
 for i in "${!viSymbolsCodes[@]}"; do
 	symbol=${viSymbols[$i]}
 	code="${viSymbolsCodes[$i]}"
-	printf "$colorBg1$colorFg1$text1 $code $colorFg1$colorBgDefault$symbol"
+	line="$line$colorBg1$colorFg1$text1 $code $colorFg1$colorBgDefault$symbol"
 done
-echo -e "$colorBg1$colorFg1$text2$colorReset$colorBg3\\n$colorReset"
+line="$line$colorBg1$colorFg1$text2$colorReset$colorBg3\\n$colorReset"
+echo -e "$line"
