@@ -291,6 +291,16 @@
       "description": "Inconsolata with added the Cyrillic alphabet"
     },
     {
+      "unpatchedName": "Intel One Mono",
+      "RFN": true,
+      "patchedName": "IntoneMono",
+      "folderName": "IntoneMono",
+      "imagePreviewFont": "IntoneMono Nerd Font",
+      "linkPreviewFont": "intelone-mono",
+      "caskName": "intone-mono",
+      "description": "Intel One Mono is an expressive monospaced font family that’s built with clarity, legibility, and the needs of developers in mind."
+    },
+    {
       "unpatchedName": "Iosevka",
       "RFN": false,
       "patchedName": "Iosevka",

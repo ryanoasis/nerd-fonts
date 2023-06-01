@@ -688,6 +688,8 @@ class font_patcher:
             'fira sans'      : 'fura sans',
             'firamono'       : 'furamono',
             'firasans'       : 'furasans',
+            'IntelOneMono'   : 'IntoneMono',
+            'IntelOne Mono'  : 'Intone Mono',
         }
 
         # remove overly verbose font names
