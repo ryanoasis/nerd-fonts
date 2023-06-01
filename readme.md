@@ -89,7 +89,7 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`53`** already [patched font families](#patched-fonts)
+* **`54`** already [patched font families](#patched-fonts)
 * Over **`9,000`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** _or_ **proportional** glyphs version of each font
@@ -141,6 +141,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]      | 3.000 | NO   | ![w] ![m2] ![l]   |
 | [Inconsolata Go Nerd Font][p-inconsolata-go]      | [InconsolataGo][f-inconsolatago]  | 1.013 | NO   | ![w] ![m2] ![l]   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc] | 1.3 | NO   | ![w] ![m2] ![l]   |
+| [Intone Mono Nerd Font][p-intel-one-mono]         | [Intel One Mono][f-intel-one-mono]| 1.2.0 | YES  | ![w] ![m2] ![l]   |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]              |22.1.0 | NO   | ![w] ![m2] ![l]   |
 | [Iosevka Term Nerd Font][p-iosevka-term]          | [Iosevka Term][f-iosevka]         |22.1.0 | NO   | ![w] ![m2] ![l]   |
 | [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| 2.304 | NO   | ![w] ![m2] ![l]   |
@@ -633,6 +634,7 @@ Font repos
 [f-inconsolata]:https://github.com/googlefonts/Inconsolata
 [f-inconsolatago]:https://levien.com/type/myfonts/inconsolata.html
 [f-inconsolatalgc]:https://github.com/MihailJP/Inconsolata-LGC
+[f-intel-one-mono]:https://github.com/intel/intel-one-mono
 [f-iosevka]:https://github.com/be5invis/Iosevka
 [f-jetbrains-mono]:https://github.com/JetBrains/JetBrainsMono
 [f-lekton]:https://fonts.google.com/specimen/Lekton
@@ -688,6 +690,7 @@ Patched Font internal links
 [p-inconsolata-go]:patched-fonts/InconsolataGo
 [p-inconsolata-lgc]:patched-fonts/InconsolataLGC
 [p-inconsolata]:patched-fonts/Inconsolata
+[p-intel-one-mono]:patched-fonts/IntelOneMono
 [p-iosevka]:patched-fonts/Iosevka
 [p-iosevka-term]:patched-fonts/IosevkaTerm
 [p-jetbrains-mono]:patched-fonts/JetBrainsMono
