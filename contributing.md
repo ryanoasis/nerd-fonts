@@ -18,7 +18,7 @@ Don't forget to give yourself credit! Make sure you add yourself to the contribu
 
 Either:
 * Invoke the [@all-contributors bot](https://allcontributors.org/docs/en/bot/usage) by commenting on your Pull Request or Issue.
-* Shallow clone repo and exeucte `all-contributors add <YOUR_GITHUB_HANDLE> <CONTRIBUTION_TYPE>`
+* Shallow clone repo and execute `all-contributors add <YOUR_GITHUB_HANDLE> <CONTRIBUTION_TYPE>`
 
 Common types for this project include: `code`, `doc`, `translation`, `review` .For full list of contribution types see: https://allcontributors.org/docs/en/emoji-key
 
