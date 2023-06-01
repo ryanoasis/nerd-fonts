@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.1.1
+# Script Version: 1.1.2
 # Iterates over all patched fonts directories
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc
 # adds information on additional-variations and complete font variations
 
 infofilename="README.md"
 LINE_PREFIX="# [Nerd Fonts] "
-sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 || exit ; pwd -P )"
 fonts_info="${sd}/lib/fonts.json"
 unpatched_parent_dir="${sd}/../../src/unpatched-fonts"
 patched_parent_dir="${sd}/../../patched-fonts"
@@ -69,18 +69,18 @@ do
   searchdir=$base_directory
 
   # limit looking for the readme files in the parent dir not the child dirs:
-  if [ "$dirname" != "." -a -n "$dirname" ];
+  if [ "$dirname" != "." ] && [ -n "$dirname" ];
   then
     searchdir=$dirname
   else
     # reset the variables
     unset config_rfn
     unset config_rfn_substitue
-    fontdata=$(cat ${fonts_info} | jq ".fonts[] | select(.folderName == \"${base_directory}\")")
-    if [ "$(echo $fontdata | jq .RFN)" = "true" ]
+    fontdata=$(jq ".fonts[] | select(.folderName == \"${base_directory}\")" "${fonts_info}")
+    if [ "$(echo "$fontdata" | jq .RFN)" = "true" ]
     then
-      config_rfn=$(echo $fontdata | jq -r .unpatchedName)
-      config_rfn_substitue=$(echo $fontdata | jq -r .patchedName)
+      config_rfn=$(echo "$fontdata" | jq -r .unpatchedName)
+      config_rfn_substitue=$(echo "$fontdata" | jq -r .patchedName)
       if [ "${config_rfn}" = "${config_rfn_substitue}" ]
       then
         # Only the case with Mononoki which is RFN but we do not rename (we got the permission to keep the name)
@@ -154,7 +154,7 @@ do
   else
     echo "$LINE_PREFIX Did not find any readme files (RST,TXT,MD) generating just title of Font"
 
-    to_dir="${$patched_parent_dir}/$filename"
+    to_dir="${patched_parent_dir}/$filename"
     to="${to_dir}/$infofilename"
 
     clearDestination "$to_dir" "$to"
