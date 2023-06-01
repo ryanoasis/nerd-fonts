@@ -127,7 +127,8 @@ function print-unicode-ranges() {
     local startDecimal=$((16#$start))
     local endDecimal=$((16#$end))
 
-    mapfile -t combinedRanges < <(seq "$startDecimal" "$endDecimal")
+    # shellcheck disable=SC2207 # We DO WANT the output to be split
+    combinedRanges+=($(seq "$startDecimal" "$endDecimal"))
 
   done
 
