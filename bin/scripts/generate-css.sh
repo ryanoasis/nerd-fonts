@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.2.0
+# Script Version: 1.2.1
 # Generates CSS file for the font and cheat sheet code
 
-# shellcheck disable=SC1091
+# shellcheck disable=SC1091 # Do not pull in the sourced file
 source ./lib/i_all.sh include-old-material
 
 output_css_file="../../css/nerd-fonts-generated.css"
@@ -46,8 +46,8 @@ true > "$output_json_file" 2> /dev/null
   printf "\\n"
   cat "$header_css_file"
 } >> "$output_css_file"
-cat "$header_css_min_file" | tr -d '\n' >> "$output_css_min_file"
-cat "$header_css_min_rem_file" | tr -d '\n' >> "$output_css_min_rem_file"
+tr -d '\n' < "$header_css_min_file" >> "$output_css_min_file"
+tr -d '\n' < "$header_css_min_rem_file" >> "$output_css_min_rem_file"
 
 cat "$cheat_sheet_head_file" > "$output_cheat_sheet_file"
 
@@ -56,15 +56,14 @@ cat "$cheat_sheet_head_file" > "$output_cheat_sheet_file"
   printf "{\"METADATA\":{"
   printf "\"website\":\"https://www.nerdfonts.com\","
   printf "\"development-website\":\"https://github.com/ryanoasis/nerd-fonts\","
-  printf "\"version\":\"$version\","
-  printf "\"date\":\"$(date -u --rfc-3339=seconds)\""
+  printf "\"version\":\"%s\"," "$version"
+  printf "\"date\":\"%s\"" "$(date -u --rfc-3339=seconds)"
   printf "}"
 } >> "$output_json_file"
 
 echo;
 
-# shellcheck disable=SC2154
-# we know the '$i' is from the sourced file
+# shellcheck disable=SC2154 # we know the '$i' is from the sourced file
 for var in "${!i@}"; do
   # trim 'i_' prefix
   glyph_name=${var#*_}
@@ -123,9 +122,9 @@ done
 cat "$cheat_sheet_foot_file" >> "$output_cheat_sheet_file"
 printf "}\n" >> "$output_json_file"
 
-printf "Generated CSS, json, and Cheat Sheet HTML\\n"
-printf "$output_css_file\n"
-printf "$output_css_min_file                 [needs to also go into gh-pages:_includes/css/]\n"
-printf "$output_css_min_rem_file         [needs to only go into gh-pages:_includes/css/]\n"
-printf "$output_cheat_sheet_file              [needs to only go into gh-pages:_posts/]\n"
-printf "$output_json_file\n"
+printf "%s\n" "Generated CSS, json, and Cheat Sheet HTML"
+printf "%s\n" "$output_css_file"
+printf "%s\n" "$output_css_min_file                 [needs to also go into gh-pages:_includes/css/]"
+printf "%s\n" "$output_css_min_rem_file         [needs to only go into gh-pages:_includes/css/]"
+printf "%s\n" "$output_cheat_sheet_file              [needs to only go into gh-pages:_posts/]"
+printf "%s\n" "$output_json_file"
