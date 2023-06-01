@@ -177,7 +177,7 @@ done < <(eval "$find_command")
 # Get list of file names without extensions
 files_dedup=( "${files[@]}" )
 for i in "${!files_dedup[@]}"; do
-  files_dedup[$i]="${files_dedup[$i]%.*}"
+  files_dedup[i]="${files_dedup[$i]%.*}"
 done
 
 # Remove duplicates
@@ -188,7 +188,7 @@ for i in "${!files_dedup[@]}"; do
       ext="${files[$i]##*.}"
       # Only remove if the extension is the one we don’t want
       if [ "$ext" != "$extension" ]; then
-        unset files["$i"]
+        unset "${files[$i]}"
       fi
     fi
   done
@@ -226,7 +226,7 @@ case $mode in
   list)
     for file in "${files[@]}"; do
       file=$(basename "$file")
-      echo "$font_dir/${file#$nerdfonts_root_dir/}"
+      echo "$font_dir/${file#"$nerdfonts_root_dir"/}"
     done
     exit 0
     ;;
