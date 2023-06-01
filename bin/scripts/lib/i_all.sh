@@ -10,11 +10,12 @@ sets=('cod' 'dev' 'fae' 'fa' 'iec' 'logos' 'oct' 'ple' 'pom' 'seti' 'weather' 'm
 base=$(dirname "${BASH_SOURCE[0]:-$0}")
 
 if [ "$1" = "include-old-material" ]; then
-	sets=(${sets[@]} 'material')
+	sets+=('material')
 fi
 
-for set in ${sets[@]}; do
+for set in "${sets[@]}"; do
 	i="${base}/i_${set}.sh"
+	# shellcheck disable=SC1090 # We check the sources individually
 	test -f "$i" -a -r "$i" && source "$i"
 done
 unset i
