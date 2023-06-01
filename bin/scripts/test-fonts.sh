@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.1.0
+# Script Version: 1.1.1
 
 # Run this script in your local bash:
 # curl https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/test-fonts.sh | bash
@@ -58,15 +58,20 @@ function print-decimal-unicode-range() {
     local hexCode
     hexCode=$(printf '%x' "${decimalCode}")
     local code="${hexCode}"
-    local char="\\u${hexCode}"
+    local char="\\U${hexCode}"
 
     # fill in placeholder cells properly formatted:
-    if [ "${char}" = "\\u0" ]; then
+    if [ "${char}" = "\\U0" ]; then
       char=" "
-      code="    "
+      code=""
     fi
 
-    allCodes+="${currentColorCode} ${underline}${code}${reset_color}${currentColorCode} ${reset_color}$bar"
+    filler=""
+    for ((c = ${#code}; c < 5; c++)); do
+      filler=" ${filler}"
+    done
+
+    allCodes+="${currentColorCode}${filler}${underline}${code}${reset_color}${currentColorCode} ${reset_color}$bar"
     allChars+="${currentColorChar}  ${char}   ${reset_color}$bar"
     counter=$((counter + 1))
     count=$(( (count + 1) % wrapAt))
