@@ -177,8 +177,8 @@ function test-fonts() {
   print-unicode-ranges 23fb 23fe 2b58 2b58
   echo; echo
 
-  echo "Nerd Fonts - Material Design Icons"
-  print-unicode-ranges f500 fd46
+  echo "Nerd Fonts - Material Design Icons (first few)"
+  print-unicode-ranges f0001 f0010
   echo; echo
 
   echo "Nerd Fonts - Weather Icons"
