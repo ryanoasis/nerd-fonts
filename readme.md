@@ -26,12 +26,12 @@ The following Sankey flow diagram shows the current glyph sets included:
 <sub><i>Diagram created using <a href="http://sankeymatic.com/" title="SankeyMATIC (BETA): A Sankey diagram builder for everyone">@SankeyMATIC</a></i></sub>
 
 
-## Important Notices
+## Important Notices <a name="important-notices"></a>
 * `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
 * cloning this repository is **not** recommended ([due to Repo size](#option-5-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
 
 
-## Table of Contents
+## Table of Contents <a name="table-of-contents"></a>
 
 [**TL;DR**](#tldr)
 
@@ -66,12 +66,12 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**License**](#license)
 
 
-## TL;DR
+## TL;DR <a name="tldr"></a>
   Nerd Fonts takes popular programming fonts and adds a bunch of Glyphs.
   There is also a [font patcher](#font-patcher) available if your desired font isn't already patched.
   For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
 
-### Various Download Options for Fonts
+### Various Download Options for Fonts <a name="various-download-options-for-fonts"></a>
 
 _If you..._
 
@@ -85,7 +85,7 @@ _If you..._
   * `Option 8.` are on **Arch Linux** and want to use **Community packages** see [Arch Community Repositories](#option-8-arch-community-repository)
   * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
 
-## Features
+## Features <a name="features"></a>
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
@@ -97,18 +97,18 @@ _If you..._
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
 
 
-## Glyph Sets
+## Glyph Sets <a name="glyph-sets"></a>
 
 :mag: :mag: You can now search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
 
 See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoints]
 
-### Icon names in shell
+### Icon names in shell <a name="icon-names-in-shell"></a>
 
 See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 
-## Patched Fonts
+## Patched Fonts <a name="patched-fonts"></a>
 
 | Font Name                                         | Font Name and Repository          | ver   |\*RFN | Status            |
 |:--------------------------------------------------|:----------------------------------|:------|:-----|:------------------|
@@ -169,7 +169,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 <sub>_*RFN = Reserved Font Name_</sub>
 
-### Variations
+### Variations <a name="variations"></a>
 
 - no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
 - **double _(variable/proportional)_** or **single _(fixed/monospaced)_** or **proportional** width glyphs
@@ -184,27 +184,27 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 - [Pomicons][gabrielelana-pomicons]
 - [Codicons][codicons]
 
-## Font Installation
+## Font Installation <a name="font-installation"></a>
 
-### `Option 1: Download and Install Manually`
+### `Option 1: Download and Install Manually` <a name="option-1-download-and-install-manually"></a>
 
 > Best option for **quickly** getting a specific **individual font**.
 
 Download the specific [patched font](#patched-fonts) of your choice
 
-### `Option 2: Release Archive Download`
+### `Option 2: Release Archive Download` <a name="option-2-release-archive-download"></a>
 
 > Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
 
 Fonts are available for download as packages in the [latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 
-### `Option 3: Install Script`
+### `Option 3: Install Script` <a name="option-3-install-script"></a>
 
 > Best option if you want to **automate** installing or for use in **scripts**.
 
 _Note_: **Requires cloning** the repo as of now
 
-#### All fonts:
+#### All fonts: <a name="all-fonts"></a>
 
 * Installs all the patched Fonts (_Warning: This is a lot of Fonts adding up to a large size_)
 
@@ -218,7 +218,7 @@ or, in Powershell (Windows only):
 ./install.ps1
 ```
 
-#### Single font:
+#### Single font: <a name="single-font"></a>
 
 * Installs a single Font of your choice
 
@@ -238,7 +238,7 @@ or, in Powershell (Windows only):
 ./install.ps1 DejaVuSansMono -WhatIf
 ```
 
-### `Option 4: Homebrew Fonts`
+### `Option 4: Homebrew Fonts` <a name="option-4-homebrew-fonts"></a>
 
 > Best option if on **macOS** and want to use **Homebrew**.
 
@@ -249,7 +249,7 @@ brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 
-### `Option 5: Clone the Repo`
+### `Option 5: Clone the Repo` <a name="option-5-clone-the-repo"></a>
 
 > Best option for **full control**, **all** or **some** of the fonts, or **contributing** to development.
 
@@ -268,11 +268,11 @@ cd nerd-fonts
 git sparse-checkout add patched-fonts/JetBrainsMono
 ```
 
-### `Option 6: Ad Hoc Curl Download`
+### `Option 6: Ad Hoc Curl Download` <a name="option-6-ad-hoc-curl-download"></a>
 
 > Option if you want to use the **`curl` command** or for use in **scripts**.
 
-#### Linux
+#### Linux <a name="linux"></a>
 
 ```sh
 mkdir -p ~/.local/share/fonts
@@ -281,13 +281,13 @@ cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw
 
 _Note:_ deprecated alternative paths: `~/.fonts`
 
-#### macOS (OS X)
+#### macOS (OS X) <a name="macos-os-x"></a>
 
 ```sh
 cd ~/Library/Fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
 ```
 
-### `Option 7: Unofficial Chocolatey or Scoop Repositories`
+### `Option 7: Unofficial Chocolatey or Scoop Repositories` <a name="option-7-unofficial-chocolatey-or-scoop-repositories"></a>
 
 > Option for **Windows** and wanting to use **Chocolatey** or **Scoop**.
 
@@ -304,14 +304,14 @@ scoop bucket add nerd-fonts
 scoop install Hack-NF
 ```
 
-### `Option 8: Arch Community Repository`
+### `Option 8: Arch Community Repository` <a name="option-8-arch-community-repository"></a>
 
 > Option for **Arch Linux** and wanting to use **Community packages**.
 
 Most fonts are available via [Arch Community packages](https://archlinux.org/groups/any/nerd-fonts/).
 Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
-### `Option 9: Patch Your Own Font`
+### `Option 9: Patch Your Own Font` <a name="option-9-patch-your-own-font"></a>
 
 > The option for **patching** your **own font** or fully **customizing** the patched font.
 
@@ -429,7 +429,7 @@ Symbol Fonts:
                         Add Weather Icons (https://github.com/erikflowers/weather-icons)
 ```
 
-#### Examples
+#### Examples <a name="examples"></a>
 
 ```
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
@@ -450,7 +450,7 @@ docker run --rm -v ~/Desktop/myfont/patchme:/in -v ~/Desktop/myfont/patched:/out
 Usually you want the `--complete` option.
 
 <a name="gotta-patch-em-all"></a>
-## Gotta Patch 'em All Font Patcher!
+## Gotta Patch 'em All Font Patcher! <a name="gotta-patch-em-all-font-patcher"></a>
 
 * for Contributor or Developer use
 
@@ -499,12 +499,12 @@ Usage: ./gotta-patch-em-all-font-patcher!.sh [OPTION] [FILTER]
           Process all font files that are in directory "iosevka"
 ```
 
-## Contributing
+## Contributing <a name="contributing"></a>
 
 See [contributing.md](contributing.md)
 
 
-## Unstable File Paths
+## Unstable File Paths <a name="unstable-file-paths"></a>
 
 :warning: Warning: File paths may change based on releases (especially **major** version bumps)
 
@@ -515,7 +515,7 @@ Reference the **release** branch and _not_ the ~~master~~ branch because paths a
   * :x: Instead of: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
 
 
-## Other Good Fonts to Patch
+## Other Good Fonts to Patch <a name="other-good-fonts-to-patch"></a>
 
 Non exhaustive list of fonts that would benefit from being patched but are not included in Nerd Fonts due to their license (proprietary, commercial, etc.):
 
@@ -526,16 +526,16 @@ Non exhaustive list of fonts that would benefit from being patched but are not i
 * [Dank Mono][dank]
 
 
-## Project Motivation
+## Project Motivation <a name="project-motivation"></a>
 
 See [Wiki: Project Purpose][wiki-project-purpose]
 
 
-## Changelog
+## Changelog <a name="changelog"></a>
 
 See [changelog.md](changelog.md)
 
-## License
+## License <a name="license"></a>
 
 See [LICENSE][LICENSE]
 
