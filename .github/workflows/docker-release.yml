@@ -23,6 +23,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Determine font-patcher version
+        id: patcher
+        run: |
+          ver_raw=$(grep "^\s*script_version\s*=\s*[\"'][0-9.]*[\"']" font-patcher)
+          echo "VERSION RAW ${ver_raw}"
+          ver=$(sed -E "s/.*[\"']([0-9.]+)[\"'].*/v\1/" <<< "$ver_raw")
+          echo "VERSION     ${ver}"
+          echo "version=${ver}" >> $GITHUB_OUTPUT
+
         # Docker Meta provides automatic, standard tagging
       - name: Docker meta
         id: meta
@@ -30,6 +39,8 @@ jobs:
         with:
           images: nerdfonts/patcher
           flavor: latest=true
+          tags: |
+            type=semver,pattern={{version}},value={{ steps.patcher.outputs.version }}
 
         # QEMU allows us to build container images for multiple architectures (amd64, ARM etc...)
       - name: Set up QEMU
