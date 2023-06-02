@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 # Create one sample of each font
 
 set -e
@@ -15,16 +15,19 @@ function get_config_patch_flags {
     local dir=$1
     unset config_patch_flags
     if [ -f "${unpatched}/${dir}/config.cfg" ]; then
+        # shellcheck disable=SC1090 # Do not pull in the sourced file
         source "${unpatched}/${dir}/config.cfg"
         return
     fi
     dir=$(dirname "$dir")
     if [ -f "${unpatched}/${dir}/config.cfg" ]; then
+        # shellcheck disable=SC1090 # Do not pull in the sourced file
         source "${unpatched}/${dir}/config.cfg"
         return
     fi
     dir=$(dirname "$dir")
     if [ -f "${unpatched}/${dir}/config.cfg" ]; then
+        # shellcheck disable=SC1090 # Do not pull in the sourced file
         source "${unpatched}/${dir}/config.cfg"
         return
     fi
@@ -96,6 +99,8 @@ for f in "${font_files[@]}"; do
     echo ">>------------------------[ $f ]------------------------>>"
     dir=$(dirname "${f}")
     get_config_patch_flags "${dir}"
+    # shellcheck disable=SC2154 # We get the flags from the sourced file
     echo ">>   config.cfg: ${config_patch_flags}"
+    # shellcheck disable=SC2086 # Not double quote some variables to get multiple parameters out of them
     fontforge ../../font-patcher --powerline --debug 2 -out "${outputdir}" $config_patch_flags ${NERDFONTS} "${unpatched}/${f}" 2>/dev/null || true
 done

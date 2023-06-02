@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 
 clear
 echo "Click to start"
@@ -16,5 +16,5 @@ read -r H < <(awk -F: '/Height/{print $2}' <<< "$XWININFO")
 byzanz-record -c --exec=./test-fonts.sh --x="$X" --y="$Y" --width="$W" --height="$H" "rec3.gif"
 
 convert -coalesce "rec3.gif" "results/nerd-fonts.png"
-convert -append $"(ls -v results/*.png)" ./test-combined.png
+convert -append "$(ls -v results/*.png)" ./test-combined.png
 

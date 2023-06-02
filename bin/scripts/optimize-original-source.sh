@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.0.0
+# Script Version: 1.0.1
 
 set -e
 
@@ -17,7 +17,12 @@ function get_size {
 echo
 echo "Checking for SVG simplifications"
 
-dry=`[ "$1" != "doit" ] && echo "dry" || true`
+if [ "$1" != "doit" ]; then
+    dry="dry"
+else
+    dry=""
+fi
+
 if [ -n "${dry}" ]; then
     echo "  This is a dry run: no actual modifications are performed"
     echo "  Specify 'doit' as parameter to actually optimize the svgs"
@@ -41,10 +46,10 @@ for s in "${symbols[@]}"; do
     if [ "${old_size}" -lt "${size_limit}" ]; then
         continue
     fi
-    ratio=`dc -e "${new_size} 100 * ${old_size} / p"`
+    ratio=$(dc -e "${new_size} 100 * ${old_size} / p")
     if [ "${ratio}" -lt "${size_ratio_max}" ]; then
-        echo "Simplification for `basename ${s}` (${old_size} -> ${new_size}) ${ratio}%"
-        count=`dc -e "${count} 1 + p"`
+        echo "Simplification for $(basename "${s}") (${old_size} -> ${new_size}) ${ratio}%"
+	count=$(dc -e "${count} 1 + p")
         if [ -z "${dry}" ]; then
             mv temp.svg "${s}"
         fi

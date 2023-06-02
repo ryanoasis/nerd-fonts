@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.2.1
+# Script Version: 1.2.2
 # Create font previews.
 # All fonts need to be installed (or no preview is generated)
 # Files should end up in the gh-pages branch
@@ -27,9 +27,9 @@ main() {
       continue
     fi
 
-    if $( fc-list -q "${imagePreviewFont}:charset=41" ); then
+    if fc-list -q "${imagePreviewFont}:charset=41" ; then
       generate_preview "$imagePreviewFont" "$patchedName Nerd Font"
-    elif $( fc-list -q "${imagePreviewFont}" ); then
+    elif fc-list -q "${imagePreviewFont}" ; then
       generate_preview_symbols "$imagePreviewFont" "$patchedName Nerd Font"
     else
       echo "[Missing]    $imagePreviewFont"
@@ -56,6 +56,7 @@ generate_preview_symbols() {
   # svgo "${output_dir}${font}.svg"
 }
 
+# shellcheck disable=SC2034 # used by commented out code (on demand)
 image_font_files=( \
   '3270/Regular/3270NerdFont-Regular.ttf' \
   'Agave/AgaveNerdFont-Regular.ttf' \

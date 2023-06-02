@@ -19,14 +19,12 @@ type fontforge >/dev/null 2>&1 || {
 }
 
 # Get script directory to set source and target dirs relative to it
-sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+sd="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 || exit ; pwd -P )"
 
-res1=$(date +%s)
-repo_root_dir=$(dirname $(dirname ${sd})) # two levels up (i.e. ../../)
+repo_root_dir=$(dirname "$(dirname "${sd}")") # two levels up (i.e. ../../)
 # Set source and target directories
 like_pattern='.*\.\(otf\|ttf\|sfd\)'
 last_font_root=""
-last_current_dir=""
 unpatched_parent_dir="src/unpatched-fonts"
 patched_parent_dir="patched-fonts"
 timestamp_parent_dir=${patched_parent_dir}
@@ -129,7 +127,7 @@ while getopts ":chijtv-:" option; do
       exit 1;;
   esac
 done
-shift $((${OPTIND}-1))
+shift $((OPTIND-1))
 
 if [ $# -gt 1 ]
 then
@@ -154,7 +152,7 @@ fi
 source_fonts=()
 while IFS= read -d $'\0' -r file ; do
   source_fonts=("${source_fonts[@]}" "$file")
-done < <(find "$source_fonts_dir" -iregex ${like_pattern} -type f -print0)
+done < <(find "$source_fonts_dir" -iregex "${like_pattern}" -type f -print0)
 
 # print total number of source fonts found
 echo "$LINE_PREFIX Total source fonts found: ${#source_fonts[*]}"
@@ -164,7 +162,7 @@ if [ -z "${SOURCE_DATE_EPOCH}" ]
 then
   export SOURCE_DATE_EPOCH=$(date +%s)
 fi
-release_timestamp=$(date -R --date=@${SOURCE_DATE_EPOCH} 2>/dev/null) || {
+release_timestamp=$(date -R "--date=@${SOURCE_DATE_EPOCH}" 2>/dev/null) || {
   echo >&2 "$LINE_PREFIX Invalid release timestamp SOURCE_DATE_EPOCH: ${SOURCE_DATE_EPOCH}"
   exit 2
 }
@@ -181,13 +179,13 @@ function patch_font {
     # take everything before the last slash (/) to start building the full path
     local ts_font_dir="${f%/*}/"
     local ts_font_dir="${ts_font_dir/$unpatched_parent_dir/$timestamp_parent_dir}"
-    local one_font=$(find ${ts_font_dir} -name '*.[ot]tf' | head -n 1)
+    local one_font=$(find "${ts_font_dir}" -name '*.[ot]tf' | head -n 1)
     if [ -n "${one_font}" ]
     then
       orig_font_date=$(ttfdump -t head "${one_font}" | \
         grep -E '[^a-z]modified:.*0x' | sed 's/.*x//' | tr 'a-f' 'A-F')
       SOURCE_DATE_EPOCH=$(dc -e "16i ${orig_font_date} Ai 86400 24107 * - p")
-      echo "$LINE_PREFIX Release timestamp adjusted to $(date -R --date=@${SOURCE_DATE_EPOCH})"
+      echo "$LINE_PREFIX Release timestamp adjusted to $(date -R "--date=@${SOURCE_DATE_EPOCH}")"
     fi
   fi
 
@@ -203,7 +201,7 @@ function patch_font {
     then
       echo "Purging patched font dir ${patched_font_dir}"
     fi
-    rm ${patched_font_dir}/*
+    rm -- "${patched_font_dir}"/*
   fi
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
@@ -220,10 +218,10 @@ function patch_font {
   then
     # shellcheck source=/dev/null
     source "$config_parent_dir/config.cfg"
-  elif [ -f "$(find_font_root $config_parent_dir)/config.cfg" ]
+  elif [ -f "$(find_font_root "$config_parent_dir")/config.cfg" ]
   then
     # shellcheck source=/dev/null
-    source "$(find_font_root $config_parent_dir)/config.cfg"
+    source "$(find_font_root "$config_parent_dir")/config.cfg"
   fi
 
   if [ -f "$config_parent_dir/config.json" ]
@@ -250,31 +248,37 @@ function patch_font {
   # Add logfile always (but can be overridden by config_patch_flags in config.cfg and env var NERDFONTS)
   config_patch_flags="--debug 1 ${config_patch_flags}"
   # Use absolute path to allow fontforge being an AppImage (used in CI)
-  PWD=`pwd`
+  PWD=$(pwd)
   # Create "Nerd Font"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" \"$f\" -q ${font_config} $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" $config_patch_flags ${NERDFONTS}"
   fi
-  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q ${font_config} $powerline $post_process -c --no-progressbars \
+  # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" "$f" -q ${font_config} $post_process -c --no-progressbars \
                     --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
-  if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
+  # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
+  if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
   # Create "Nerd Font Mono"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" \"$f\" -q -s ${font_config} $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" $config_patch_flags ${NERDFONTS}"
   fi
-  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q -s ${font_config} $powerline $post_process -c --no-progressbars \
+  # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" "$f" -q -s ${font_config} $post_process -c --no-progressbars \
                     --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
-  if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
+  # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
+  if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
   # Create "Nerd Font Propo"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable ${font_config} $powerline $post_process -c --no-progressbars --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" \"$f\" -q --variable ${font_config} $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" $config_patch_flags ${NERDFONTS}"
   fi
-  { OUT=$(fontforge -quiet -script ${PWD}/font-patcher "$f" -q --variable ${font_config} $powerline $post_process -c --no-progressbars \
+  # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" "$f" -q --variable ${font_config} $post_process -c --no-progressbars \
                     --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
-  if [ $? -ne 0 ]; then printf "$OUT\nPatcher run aborted!\n\n"; fi
+  # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
+  if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
 
   # wait for this group of background processes to finish to avoid forking too many processes
   # that can add up quickly with the number of combinations
@@ -288,12 +292,6 @@ function patch_font {
 function generate_info {
   local f=$1; shift
   local font_file=$1; shift
-
-  current_dir=$(dirname "$f")
-  if [ "$current_dir" = "$last_current_dir" ]
-  then
-    continue
-  fi
 
   # take everything before the last slash (/) to start building the full path
   local patched_font_dir="${f%/*}/"
@@ -309,7 +307,7 @@ function generate_info {
   if [ "$last_font_root" != "$font_root" ]
   then
     echo "$LINE_PREFIX --- Calling standardize-and-complete-readmes for $font_root"
-    ${sd}/standardize-and-complete-readmes.sh "$font_root" "$patched_parent_dir"
+    "${sd}/standardize-and-complete-readmes.sh" "$font_root" "$patched_parent_dir"
     echo "$LINE_PREFIX ---"
     last_font_root=$font_root
   fi
@@ -318,7 +316,8 @@ function generate_info {
   # into the destination. This will overwrite all same-names files
   # so make sure all licenses of one fontface are identical
   echo "$LINE_PREFIX * Copying license files"
-  copy_license "$(find_font_root $current_dir)" "$patched_font_dir"
+  current_dir=$(dirname "$f")
+  copy_license "$(find_font_root "$current_dir")" "$patched_font_dir"
 }
 
 
@@ -355,9 +354,9 @@ then
       # to follow font naming changed. We can not do this if we patch only
       # some of the source font files in that directory.
       last_source_dir=${current_source_dir}
-      num_to_patch=$(find "${current_source_dir}" -iregex ${like_pattern} -type f | wc -l)
+      num_to_patch=$(find "${current_source_dir}" -iregex "${like_pattern}" -type f | wc -l)
       num_existing=$(find "${current_source_dir}" -iname "*.[ot]tf" -o -iname "*.sfd" -type f | wc -l)
-      if [ ${num_to_patch} -eq ${num_existing} ]
+      if [ "${num_to_patch}" -eq "${num_existing}" ]
       then
         purge_destination="TRUE"
       fi

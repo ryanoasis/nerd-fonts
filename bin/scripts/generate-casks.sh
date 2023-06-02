@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 2.2.0
+# Script Version: 2.2.1
 #
 # Iterates over all [*] archived fonts
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
@@ -45,7 +45,7 @@ if [ $# -ge 1 ]; then
     fi
 fi
 
-cd ${archivedir} || {
+cd "${archivedir}" || {
     echo >&2 "$LINE_PREFIX Could not find archives directory"
     exit 1
 }
@@ -83,7 +83,7 @@ function find_nerdish_family {
             echo "${fn}"
             return
         fi
-        idx=$((${idx} + 1))
+        idx=$((idx + 1))
     done
 }
 
@@ -123,7 +123,7 @@ function write_body {
         # Find longest filename for pretty printing
         for i in "${!fonts[@]}"; do
             local basename=$(basename "${fonts[$i]}")
-            if [ ${#basename} -gt $longest ]; then
+            if [ ${#basename} -gt "$longest" ]; then
                 longest=${#basename}
             fi
         done
@@ -141,7 +141,7 @@ function write_body {
         if [[ "${familyname}" != *Nerd* ]]; then
             familyname="${familyname} Nerd Font families"
         fi
-        familyname="$(tr [:lower:] [:upper:] <<< ${familyname:0:1})${familyname:1}"
+        familyname="$(tr "[:lower:]" "[:upper:]" <<< "${familyname:0:1}")${familyname:1}"
         # Process font files
         local all_individual_fonts=( )
         local warned=0
@@ -149,7 +149,7 @@ function write_body {
             local individualfont=$(basename "${fonts[$i]}")
             local individualdir=$(dirname "${fonts[$i]}")
 
-	    if [ $(dirname "${individualdir}") = "." ]; then
+	    if [ "$(dirname "${individualdir}")" = "." ]; then
                 individualdir=""
             else
                 if [ ${warned} -eq 0 ]; then
@@ -178,6 +178,7 @@ function write_body {
             # not make sense. Someone has to choose which alternative is wanted.
             # Here we just take the first one.
             # This is only occuring at the moment with GohuFont.
+            # shellcheck disable=SC2091 # Evaluate on array
             $(contains "$individualfont" "${all_individual_fonts[@]}") && {
                 printf "      SKIPPING:     %-${longest}s  %s\\n" "${individualfont}" "${individualdir}/"
                 continue
@@ -210,7 +211,6 @@ fi
 find . -maxdepth 1 -mindepth 1 -type f -iregex "\./$pattern" -regex ".*\.zip" | LC_ALL=C sort |
 while read -r filename; do
 
-    dirname=$(dirname "$filename")
     basename=$(basename "$filename" .zip)
     if [ ! -f "../archives/${basename}.zip" ]; then
         echo "${LINE_PREFIX} No archive for: ${basename}, skipping..."
@@ -219,8 +219,8 @@ while read -r filename; do
     sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
     searchdir=$filename
 
-    originalname=$(jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
-    caskbasename=$(jq -r ".fonts[] | select(.folderName == "\"${basename}\"") | .caskName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
+    originalname=$(jq -r ".fonts[] | select(.folderName == \"${basename}\") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
+    caskbasename=$(jq -r ".fonts[] | select(.folderName == \"${basename}\") | .caskName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
     if [ -z "$originalname" ]; then
         echo "${LINE_PREFIX} Can not find ${basename} in fonts.json, skipping..."
         continue
@@ -252,5 +252,5 @@ while read -r filename; do
 
     rm -Rf "${basename}"
 
-    echo "## Created casks: $(realpath ${to})"
+    echo "## Created casks: $(realpath "${to}")"
 done
