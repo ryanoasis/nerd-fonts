@@ -41,6 +41,7 @@ jobs:
           flavor: latest=true
           tags: |
             type=semver,pattern={{version}},value=${{ steps.patcher.outputs.version }}
+            type=raw,value=master,enable={{is_default_branch}}
 
         # QEMU allows us to build container images for multiple architectures (amd64, ARM etc...)
       - name: Set up QEMU
