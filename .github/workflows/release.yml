@@ -210,12 +210,12 @@ jobs:
           fontforge --script `pwd`/../../font-patcher --version
           ./gotta-patch-em-all-font-patcher\!.sh -j "/${{ matrix.font }}"
 
-      - name: Archive font package zip files
+      - name: Archive font packages
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./archive-fonts.sh "${{ matrix.font }}"
 
-      - name: Upload zip file archive for release
+      - name: Upload zip and tar.xz archive for release
         uses: softprops/action-gh-release@v0.1.15
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
