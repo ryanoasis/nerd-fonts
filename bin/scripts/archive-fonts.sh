@@ -12,13 +12,12 @@
 set -e
 
 LINE_PREFIX="# [Nerd Fonts] "
-scripts_root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
-parent_dir="${PWD}/../../"
-outputdir=$scripts_root_dir../../archives
+root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}/../..")" >/dev/null 2>&1 || exit && pwd -P)"
+outputdir=${root_dir}/archives
 
 mkdir -p "$outputdir"
 
-cd "$scripts_root_dir/../../patched-fonts/" || {
+cd "${root_dir}/patched-fonts/" || {
     echo >&2 "$LINE_PREFIX Could not find patched fonts directory"
     exit 1
 }
@@ -37,7 +36,7 @@ fi
 # create a mini readme with basic info on Nerd Fonts project
 touch "$outputdir/readme.md"
 mini_readme="$outputdir/readme.md"
-cat "$parent_dir/src/archive-readme.md" >> "$mini_readme"
+cat "$root_dir/src/archive-readme.md" >> "$mini_readme"
 
 # clear out the directory zips
 find "${outputdir:?}" -name "$search_pattern" -type f -delete
