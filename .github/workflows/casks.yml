@@ -23,7 +23,7 @@ jobs:
         run: |
           cd bin/scripts
           chmod u+x *
-          ./fetch-archives.sh latest
+          ./fetch-archives.sh latest '*zip'
       - name: Determine release tag
         id: releasetag
         run: |

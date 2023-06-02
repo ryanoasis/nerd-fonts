@@ -15,6 +15,7 @@
 #   fetch-archives v2.2.2
 #   fetch-archives v2.2.2 Heavy
 #   fetch-archives latest HeavyDat
+#   fetch-archives v3.1.0 'Ara.*zip'   (just fetch the zip archive)
 
 set -e
 
@@ -54,8 +55,8 @@ fi
 echo "${LINE_PREFIX} Found ${num} artifacts"
 
 if [ $# -ge 2 ]; then
-    pattern=$2
-    echo "${LINE_PREFIX} Limiting archive to pattern '${pattern}'"
+    pattern=${2// /\\ }
+    echo "${LINE_PREFIX} Limiting archive to regex '${pattern}'"
 else
     pattern=""
     echo "${LINE_PREFIX} No limiting pattern given"
@@ -67,7 +68,7 @@ fi
 
 for assetname in "${files[@]}"; do
     assetname=${assetname:1:-1}
-    if [[ ! "${assetname}" =~ ^"${pattern}" ]]; then
+    if [[ ! "${assetname}" =~ ${pattern} ]]; then
         continue
     fi
     echo >&2 "${LINE_PREFIX} Fetching ${versiontag}/${assetname}"
