@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.1
-# Script Version: 1.1.3
+# Script Version: 1.2.0
 # Iterates over all patched fonts directories
 # to generate release archives of the patched font(s)
 #
@@ -12,7 +12,7 @@
 set -e
 
 LINE_PREFIX="# [Nerd Fonts] "
-root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}/../..")" >/dev/null 2>&1 || exit && pwd -P)"
+root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." >/dev/null 2>&1 || exit && pwd -P)"
 outputdir=${root_dir}/archives
 
 mkdir -p "$outputdir"
@@ -25,11 +25,11 @@ cd "${root_dir}/patched-fonts/" || {
 # limit archiving to given pattern (first script param) or entire root folder if no param given:
 if [ $# -eq 1 ]; then
     pattern=$1
-    search_pattern="*$1*.zip"
+    search_pattern=$1
     echo "$LINE_PREFIX Limiting archive to pattern '$pattern'"
 else
     pattern=".*"
-    search_pattern="*.zip"
+    search_pattern=""
     echo "$LINE_PREFIX No limiting pattern given, will search entire folder"
 fi
 
@@ -38,8 +38,8 @@ touch "$outputdir/readme.md"
 mini_readme="$outputdir/readme.md"
 cat "$root_dir/src/archive-readme.md" >> "$mini_readme"
 
-# clear out the directory zips
-find "${outputdir:?}" -name "$search_pattern" -type f -delete
+# clear out the directory
+find "${outputdir:?}" -maxdepth 1 \( -name "${search_pattern}.zip" -o -name "${search_pattern}.tar.xz" \) -type f -print -delete
 
 find . -maxdepth 1 -iregex "\./$pattern" -type d | sort |
 while read -r filename; do
@@ -48,7 +48,27 @@ while read -r filename; do
 
     [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
+    rm -f "${outputdir}/${basename}.tar"
+    expected=$(find "${searchdir}" -iname "*.[ot]tf" -exec echo "+" \; | wc -l)
+    echo "${LINE_PREFIX} Packing ${basename}.tar.xz (${expected} fonts)"
+    # This finds all files, uniq on the filename (ignoring path):
+    while IFS= read -d $'\0' -r descriptor; do
+        path=$(echo ${descriptor} | sed 's/|.*//')
+        file=$(echo ${descriptor} | sed 's/.*|//')
+        if $(echo ${file} | grep -qi '.[ot]tf'); then
+            expected=$((expected - 1))
+        fi
+        # Need to cd to the file because we want to archive 'flat' (without subdirs):
+        x=$(cd "$path" && tar rf "$outputdir/$basename.tar" --no-recursion "$file")
+    done < <(find "${searchdir}" -type f -exec bash -c 'printf "%s\000" "{}" | sed "s!\(.*\)/!\1|!"' \; | sort -z -u '-t|' -k2,2 | sort -z)
 
+    if [ $expected -ne 0 ]; then
+        # Should never happen, but who knows
+        echo "${LINE_PREFIX} Did not pack expected number of font files! Likely same font names for different paths."
+        exit 1
+    fi
+    x=$(cd "${outputdir}" && tar rf "${outputdir}/${basename}.tar" "readme.md")
+    xz -f -9 -T0 "${outputdir}/${basename}.tar"
 
     # ZIP stuff:
     # add font files:
