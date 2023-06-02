@@ -191,7 +191,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/rszyma"><img src="https://avatars.githubusercontent.com/u/44318430?v=4?s=100" width="100px;" alt="rszyma"/><br /><sub><b>rszyma</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=rszyma" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hasecilu"><img src="https://avatars.githubusercontent.com/u/53124818?v=4?s=100" width="100px;" alt="Ulices"/><br /><sub><b>Ulices</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=hasecilu" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hasecilu"><img src="https://avatars.githubusercontent.com/u/53124818?v=4?s=100" width="100px;" alt="Ulices"/><br /><sub><b>Ulices</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=hasecilu" title="Code">💻</a> <a href="#translation-hasecilu" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
