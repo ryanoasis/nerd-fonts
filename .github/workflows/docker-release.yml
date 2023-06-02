@@ -40,7 +40,7 @@ jobs:
           images: nerdfonts/patcher
           flavor: latest=true
           tags: |
-            type=semver,pattern={{version}},value={{ steps.patcher.outputs.version }}
+            type=semver,pattern={{version}},value=${{ steps.patcher.outputs.version }}
 
         # QEMU allows us to build container images for multiple architectures (amd64, ARM etc...)
       - name: Set up QEMU
