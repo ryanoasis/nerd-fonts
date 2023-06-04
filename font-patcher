@@ -433,14 +433,14 @@ class font_patcher:
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(fontname) + self.args.extension))
             bitmaps = str()
-            if len(self.sourceFont.bitmapSizes):
-                logger.debug("Preserving bitmaps %s", repr(self.sourceFont.bitmapSizes))
+            if len(sourceFont.bitmapSizes):
+                logger.debug("Preserving bitmaps %s", repr(sourceFont.bitmapSizes))
                 bitmaps = str('otf') # otf/ttf, both is bf_ttf
             if self.args.dry_run:
                 logger.debug("=====> Filename '%s'", outfile)
                 return
             sourceFont.generate(outfile, bitmap_type=bitmaps, flags=gen_flags)
-            message = "   {}\n   \===> '{}'".format(self.sourceFont.fullname, outfile)
+            message = "   {}\n   \===> '{}'".format(sourceFont.fullname, outfile)
 
         # Adjust flags that can not be changed via fontforge
         if re.search('\\.[ot]tf$', self.args.font, re.IGNORECASE) and re.search('\\.[ot]tf$', outfile, re.IGNORECASE):
