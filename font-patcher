@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.3.4"
+script_version = "4.3.5"
 
 version = "3.0.1"
 projectName = "Nerd Fonts"
@@ -450,7 +450,7 @@ class font_patcher:
                 for idx in range(source_font.num_fonts):
                     logger.debug("Tweaking %d/%d", idx + 1, source_font.num_fonts)
                     xwidth_s = ''
-                    xwidth = self.xavgwidth[idx]
+                    xwidth = self.xavgwidth[idx] if len(self.xavgwidth) > idx else None
                     if isinstance(xwidth, int):
                         if isinstance(xwidth, bool) and xwidth:
                             source_font.find_table([b'OS/2'], idx)
