@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.0.1
+# Nerd Fonts Version: 3.0.2
 # Script Version: 1.4.5
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
