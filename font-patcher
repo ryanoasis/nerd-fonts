@@ -334,7 +334,6 @@ class font_patcher:
         self.sourceFont = font
         self.setup_version()
         self.get_essential_references()
-        self.setup_name_backup(font)
         self.assert_monospace()
         self.remove_ligatures()
         self.get_sourcefont_dimensions()
@@ -2007,6 +2006,7 @@ def main():
                 subfont)
             sys.exit(1)
 
+        patcher.setup_name_backup(sourceFonts[-1])
         patcher.patch(sourceFonts[-1])
 
     print("Done with Patch Sets, generating font...")
