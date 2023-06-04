@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.3.5"
+script_version = "4.4.0"
 
 version = "3.0.1"
 projectName = "Nerd Fonts"
@@ -706,7 +706,9 @@ class font_patcher:
         fullname   = replace_font_name(fullname,   additionalFontNameReplacements2)
         fontname   = replace_font_name(fontname,   additionalFontNameReplacements2)
 
-        if not (FontnameParserOK and self.args.makegroups > 0):
+        if self.args.makegroups < 0:
+            logger.warning("Renaming disabled! Make sure to comply with font license, esp RFN clause!")
+        elif not (FontnameParserOK and self.args.makegroups > 0):
             # replace any extra whitespace characters:
             font.familyname = " ".join(familyname.split())
             font.fullname   = " ".join(fullname.split())
@@ -1829,17 +1831,18 @@ def setup_arguments():
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
     parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
-    parser.add_argument('--makegroups',                              dest='makegroups',       default=1,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=1, choices=range(0, 6 + 1))
+    parser.add_argument('--makegroups',                              dest='makegroups',       default=1,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=1, choices=range(-1, 6 + 1))
     # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 1'.
     # Original font name: Hugo Sans Mono ExtraCondensed Light Italic
-    #                                                             NF  Fam agg.
-    # 0  turned off, use old naming scheme                        [-] [-] [-]
-    # 1  HugoSansMono Nerd Font ExtraCondensed Light Italic       [ ] [ ] [ ]
-    # 2  HugoSansMono Nerd Font ExtCn Light Italic                [ ] [X] [ ]
-    # 3  HugoSansMono Nerd Font XCn Lt It                         [ ] [X] [X]
-    # 4  HugoSansMono NF ExtraCondensed Light Italic              [X] [ ] [ ]
-    # 5  HugoSansMono NF ExtCn Light Italic                       [X] [X] [ ]
-    # 6  HugoSansMono NF XCn Lt It                                [X] [X] [X]
+    #                                                              NF  Fam agg.
+    # -1  no renaming at all (keep old names and versions etc)     --- --- ---
+    #  0  turned off, use old naming scheme                        [-] [-] [-]
+    #  1  HugoSansMono Nerd Font ExtraCondensed Light Italic       [ ] [ ] [ ]
+    #  2  HugoSansMono Nerd Font ExtCn Light Italic                [ ] [X] [ ]
+    #  3  HugoSansMono Nerd Font XCn Lt It                         [ ] [X] [X]
+    #  4  HugoSansMono NF ExtraCondensed Light Italic              [X] [ ] [ ]
+    #  5  HugoSansMono NF ExtCn Light Italic                       [X] [X] [ ]
+    #  6  HugoSansMono NF XCn Lt It                                [X] [X] [X]
 
     parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
     parser.add_argument('--has-no-italic',                           dest='noitalic',         default=False, action='store_true', help='Font family does not have Italic (but Oblique)')
