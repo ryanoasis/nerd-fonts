@@ -13,6 +13,7 @@ If you miss icons, check #1190 and probably https://github.com/loichyan/nerdfix
  - Bugfix `Codicon` Circles #1261
  - Fix `DaddyTimeMono NFM` #1244
  - Fix `fsSelection` for `--has-no-italic` (`Bitstream Vera` + `DejaVu`) #1255
+ - Fix naming of some fonts of BlexMono and GohuFont
 
 ### Features
  - Allow not renaming the font #1282 for `Cascadia Code` self-patcher (#1242)
