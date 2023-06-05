@@ -355,76 +355,76 @@ Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fon
 完整選項:
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
-                    [--removeligs] [--postprocess [POSTPROCESS]]
-                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups]
-                    [--variable-width-glyphs]
-                    [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
-                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
-                    [--powerline] [--powerlineextra] [--material] [--weather]
+Nerd Fonts Patcher v3.0.2 (4.4.0) (ff 20230101)
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-c] [--careful] [--removeligs] [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{-1,0,1,2,3,4,5,6}]] [--variable-width-glyphs]
+                    [--has-no-italic] [--progressbars | --no-progressbars] [--debug [{0,1,2,3}]] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome]
+                    [--fontawesomeextension] [--fontlogos] [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra]
+                    [--material] [--weather]
                     font
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 2.2.2
+* Version: 3.0.2
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
 positional arguments:
   font                  The path to the font to patch (e.g., Inconsolata.otf)
 
-optional arguments:
-  -h, --help            顯示幫助訊息和退出
-  -v, --version         顯示程式版本和退出
+options:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
   -s, --mono, --use-single-width-glyphs
-                        設置生成的字體是single-width還是double-width (預設是 double-width)
+                        Whether to generate the glyphs as single-width not double-width (default is double-width)
   -l, --adjust-line-height
-                        設置是否調整 line heights (一般應該嘗試 center powerline separators)
+                        Whether to adjust line heights (attempt to center powerline separators more evenly)
   -q, --quiet, --shutup
-                        不生成 verbose output
-  -w, --windows         將內部字體名稱限制在31個符號內 (為了 Windows 相容性)
-  -c, --complete        加入所有可用的字體
-  --careful             如果發現了已經存在的字形，不要對它進行覆寫
+                        Do not generate verbose output
+  -c, --complete        Add all available Glyphs
+  --careful             Do not overwrite existing glyphs if detected
   --removeligs, --removeligatures
                         Removes ligatures specificed in JSON configuration file
   --postprocess [POSTPROCESS]
-                        指定一個針對後續處理程式的腳本
+                        Specify a Script for Post Processing
   --configfile [CONFIGFILE]
                         Specify a file path for JSON configuration file (see sample: src/config.sample.json)
-  --custom [CUSTOM]     指定一個自訂圖示字體，所有新字形都會在不縮放的情況下被複製。
+  --custom [CUSTOM]     Specify a custom symbol font, all glyphs will be copied; absolute path suggested
   -ext [EXTENSION], --extension [EXTENSION]
-                        更改字體文件的文件格式去創建新文件 (e.g., ttf, otf)
+                        Change font file type to create (e.g., ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        將修補後的字體文件輸出到特定目錄
+                        The directory to output the patched font file to
   --glyphdir [GLYPHDIR]
                         Path to glyphs to be used for patching
-  --makegroups          Use alternative method to name patched fonts (experimental)
+  --makegroups [{-1,0,1,2,3,4,5,6}]
+                        Use alternative method to name patched fonts (recommended)
   --variable-width-glyphs
                         Do not adjust advance width (no "overhang")
-  --progressbars        顯示每個Glyph Set的完成度進度條
-  --no-progressbars     不顯示每個Glyph Set的完成度進度條
-  --also-windows        Create two fonts, the normal and the --windows version
+  --has-no-italic       Font family does not have Italic (but Oblique)
+  --progressbars        Show percentage completion progress bars per Glyph Set (default)
+  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
+  --debug [{0,1,2,3}]   Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)
+  --dry                 Do neither patch nor store the font, to check naming
+  --xavgcharwidth [XAVGWIDTH]
+                        Adjust xAvgCharWidth (optional: concrete value)
 
 Symbol Fonts:
-  --fontawesome         加入 Font Awesome Glyphs字體 (http://fontawesome.io/)
+  --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
   --fontawesomeextension
-                        加入 Font Awesome 補充字體 (https://andrelzgava.github.io/font-awesome-extension/)
+                        Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
   --fontlogos, --fontlinux
-                        加入 Font Logos 字體 (https://github.com/Lukas-W/font-logos)
-  --octicons            加入 Octicons 字體 (https://octicons.github.com)
+                        Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)
+  --octicons            Add Octicons Glyphs (https://octicons.github.com)
   --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
-  --powersymbols        加入 IEC Power Symbols (https://unicodepowersymbol.com/)
-  --pomicons            加入 Pomicon 字體 (https://github.com/gabrielelana/pomicons)
-  --powerline           加入 Powerline 字體
-  --powerlineextra      加入 Powerline 字體 (https://github.com/ryanoasis/powerline-extra-symbols)
+  --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
+  --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
+  --powerline           Add Powerline Glyphs
+  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
   --material, --materialdesignicons, --mdi
-                        加入 Material Design 字體 (https://github.com/templarian/MaterialDesign)
+                        Add Material Design Icons (https://github.com/templarian/MaterialDesign)
   --weather, --weathericons
-                        加入 Weather 字體 (https://github.com/erikflowers/weather-icons)
+                        Add Weather Icons (https://github.com/erikflowers/weather-icons)
 ```
 
 #### 範例

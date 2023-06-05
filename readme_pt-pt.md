@@ -306,75 +306,76 @@ Modificar o tipo de letra à tua escolha com [VimDevIcons ➶][vim-devicons]:
 
 
 ```
-usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
-                    [--removeligs] [--postprocess [POSTPROCESS]]
-                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups]
-                    [--variable-width-glyphs]
-                    [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
-                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
-                    [--powerline] [--powerlineextra] [--material] [--weather]
+Nerd Fonts Patcher v3.0.2 (4.4.0) (ff 20230101)
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-c] [--careful] [--removeligs] [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{-1,0,1,2,3,4,5,6}]] [--variable-width-glyphs]
+                    [--has-no-italic] [--progressbars | --no-progressbars] [--debug [{0,1,2,3}]] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome]
+                    [--fontawesomeextension] [--fontlogos] [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra]
+                    [--material] [--weather]
                     font
 
-Modificador de Fontes Nerd Fonts: modifica uma determinada fonte com glifos relacionados à programação e ao desenvolvimento
+Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Versão: 2.2.2
-* Website do desenvolvimento: https://github.com/ryanoasis/nerd-fonts
-* Histórico de alterações: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
+* Version: 3.0.2
+* Development Website: https://github.com/ryanoasis/nerd-fonts
+* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
-argumentos posicionais:
-  font                   Caminho para a fonte a ser modificada (por exemplo, Inconsolata.otf)
+positional arguments:
+  font                  The path to the font to patch (e.g., Inconsolata.otf)
 
-argumentos opcionais:
-  -h, --help            mostrar esta mensagem de ajuda e sair
-  -v, --version         mostrar o número da versão do programa e sair
+options:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
   -s, --mono, --use-single-width-glyphs
-                        Se os glifos devem ser gerados como largura simples e não largura dupla (o padrão é largura dupla)
+                        Whether to generate the glyphs as single-width not double-width (default is double-width)
   -l, --adjust-line-height
-                        Se a altura da linha deve ser ajustada (tentar centralizar os separadores de powerline mais uniformemente)
+                        Whether to adjust line heights (attempt to center powerline separators more evenly)
   -q, --quiet, --shutup
-                        Não gerar saída de detalhe
-  -w, --windows         Limitar o nome da fonte interna a 31 caracteres (para compatibilidade com o Windows)
-  -c, --complete        Aderir todos os glifos disponíveis
-  --careful             Não substituir os glifos existentes se detectados
+                        Do not generate verbose output
+  -c, --complete        Add all available Glyphs
+  --careful             Do not overwrite existing glyphs if detected
   --removeligs, --removeligatures
-                        Remove as ligaduras especificadas no ficheiro de configuração JSON
+                        Removes ligatures specificed in JSON configuration file
   --postprocess [POSTPROCESS]
-                        Especificar um executador para pós-processador
+                        Specify a Script for Post Processing
   --configfile [CONFIGFILE]
-                        Especificar um caminho para o arquivo de configuração JSON (vê a amostra: src/config.sample.json)
-  --custom [CUSTOM]     Especificar um tipo de letra de símbolos personalizada. Todos os novos glifos serão copiados, sem escala aplicada.
+                        Specify a file path for JSON configuration file (see sample: src/config.sample.json)
+  --custom [CUSTOM]     Specify a custom symbol font, all glyphs will be copied; absolute path suggested
   -ext [EXTENSION], --extension [EXTENSION]
-                        Alterar o tipo de ficheiro de fonte para criar (por exemplo, ttf, otf)
+                        Change font file type to create (e.g., ttf, otf)
   -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                        O diretório para enviar o ficheiro de tipo de letra modificado para
+                        The directory to output the patched font file to
   --glyphdir [GLYPHDIR]
                         Path to glyphs to be used for patching
-  --makegroups          Use alternative method to name patched fonts (experimental)
+  --makegroups [{-1,0,1,2,3,4,5,6}]
+                        Use alternative method to name patched fonts (recommended)
   --variable-width-glyphs
                         Do not adjust advance width (no "overhang")
-  --progressbars        Mostrar barras de progresso de conclusão percentual por Glyph Set
-  --no-progressbars     Não mostrar barras de progresso de conclusão percentual por Glyph Set
-  --also-windows        Create two fonts, the normal and the --windows version
+  --has-no-italic       Font family does not have Italic (but Oblique)
+  --progressbars        Show percentage completion progress bars per Glyph Set (default)
+  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
+  --debug [{0,1,2,3}]   Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)
+  --dry                 Do neither patch nor store the font, to check naming
+  --xavgcharwidth [XAVGWIDTH]
+                        Adjust xAvgCharWidth (optional: concrete value)
 
 Symbol Fonts:
-  --fontawesome         Aderir os glifos do Font Awesome (http://fontawesome.io/)
+  --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
   --fontawesomeextension
-                        Aderir os glifos do Font Awesome Extension (https://andrelzgava.github.io/font-awesome-extension/)
+                        Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
   --fontlogos, --fontlinux
-                        Aderir os glifos do Font Logos (https://github.com/Lukas-W/font-logos)
-  --octicons            Aderir os glifos do Octicons (https://octicons.github.com)
-  --powersymbols        Aderir os glifos do IEC Power Symbols (https://unicodepowersymbol.com/)
-  --pomicons            Aderir os glifos do Pomicon (https://github.com/gabrielelana/pomicons)
-  --powerline           Aderir os glifos do Powerline
-  --powerlineextra      Aderir os glifos do Powerline (https://github.com/ryanoasis/powerline-extra-symbols)
+                        Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)
+  --octicons            Add Octicons Glyphs (https://octicons.github.com)
+  --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
+  --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
+  --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
+  --powerline           Add Powerline Glyphs
+  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
   --material, --materialdesignicons, --mdi
-                        Aderir os ícones do Material Design (https://github.com/templarian/MaterialDesign)
+                        Add Material Design Icons (https://github.com/templarian/MaterialDesign)
   --weather, --weathericons
-                        Aderir os ícones do Weather (https://github.com/erikflowers/weather-icons)
+                        Add Weather Icons (https://github.com/erikflowers/weather-icons)
 ```
 
 #### Exemplos

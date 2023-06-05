@@ -358,17 +358,18 @@ Patching the font of your own choosing:
 Full options:
 
 ```
-Nerd Fonts Patcher v3.0.1 (4.3.1) (ff 20230101)
+Nerd Fonts Patcher v3.0.2 (4.4.0) (ff 20230101)
 usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-c] [--careful] [--removeligs] [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{0,1,2,3,4,5,6}]] [--variable-width-glyphs] [--has-no-italic]
-                    [--progressbars | --no-progressbars] [--debug [{0,1,2,3}]] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome] [--fontawesomeextension] [--fontlogos]
-                    [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra] [--material] [--weather]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{-1,0,1,2,3,4,5,6}]] [--variable-width-glyphs]
+                    [--has-no-italic] [--progressbars | --no-progressbars] [--debug [{0,1,2,3}]] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome]
+                    [--fontawesomeextension] [--fontlogos] [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra]
+                    [--material] [--weather]
                     font
 
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 3.0.1
+* Version: 3.0.2
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
@@ -399,7 +400,7 @@ options:
                         The directory to output the patched font file to
   --glyphdir [GLYPHDIR]
                         Path to glyphs to be used for patching
-  --makegroups [{0,1,2,3,4,5,6}]
+  --makegroups [{-1,0,1,2,3,4,5,6}]
                         Use alternative method to name patched fonts (recommended)
   --variable-width-glyphs
                         Do not adjust advance width (no "overhang")

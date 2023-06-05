@@ -303,76 +303,76 @@ Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fon
 ```
     ./fontforge -script font-patcher ШЛЯХ_ДО_ШРИФТА
 
-    usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-w] [-c] [--careful]
-                    [--removeligs] [--postprocess [POSTPROCESS]]
-                    [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
-                    [-ext [EXTENSION]] [-out [OUTPUTDIR]]
-                    [--glyphdir [GLYPHDIR]] [--makegroups]
-                    [--variable-width-glyphs]
-                    [--progressbars | --no-progressbars] [--also-windows]
-                    [--fontawesome] [--fontawesomeextension] [--fontlogos]
-                    [--octicons] [--codicons] [--powersymbols] [--pomicons]
-                    [--powerline] [--powerlineextra] [--material] [--weather]
+Nerd Fonts Patcher v3.0.2 (4.4.0) (ff 20230101)
+usage: font-patcher [-h] [-v] [-s] [-l] [-q] [-c] [--careful] [--removeligs] [--postprocess [POSTPROCESS]] [--configfile [CONFIGFILE]] [--custom [CUSTOM]]
+                    [-ext [EXTENSION]] [-out [OUTPUTDIR]] [--glyphdir [GLYPHDIR]] [--makegroups [{-1,0,1,2,3,4,5,6}]] [--variable-width-glyphs]
+                    [--has-no-italic] [--progressbars | --no-progressbars] [--debug [{0,1,2,3}]] [--dry] [--xavgcharwidth [XAVGWIDTH]] [--fontawesome]
+                    [--fontawesomeextension] [--fontlogos] [--octicons] [--codicons] [--powersymbols] [--pomicons] [--powerline] [--powerlineextra]
+                    [--material] [--weather]
                     font
 
-    Nerd Fonts Font Patcher: виправляє заданий шрифт програмістами та гліфами, пов'язаними з розробкою
+Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
-    * Веб-сайт: https://www.nerdfonts.com
-    * Версія: 2.2.2
-    * Веб-сайт для розробки: https://github.com/ryanoasis/nerd-fonts
-    * Журнал змін: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
+* Website: https://www.nerdfonts.com
+* Version: 3.0.2
+* Development Website: https://github.com/ryanoasis/nerd-fonts
+* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
-    позиційні аргументи:
-      font                  Шлях до шрифту для виправлення (наприклад Inconsolata.otf)
+positional arguments:
+  font                  The path to the font to patch (e.g., Inconsolata.otf)
 
-    необов'язкові аргументи:
-      -h, --help            показати це довідкове повідомлення та завершити виконання
-      -v, --version         показати номер версії програми та завершити виконання
-      -s, --mono, --use-single-width-glyphs
-                            Чи генерувати гліфи як одноширочну, а не подвійну(зазвичай double-width)
-      -l, --adjust-line-height
-                            Чи регулювати висоту лінії (намагання більш рівномірно централізувати розподільчі лінії)
-      -q, --quiet, --shutup
-                            Не генерувати звіт
-      -w, --windows         Обмежте внутрішнє ім'я шрифту до 31 символу (для сумісності з Windows)
-      -c, --complete        Додайте всі доступні гліфи
-      --careful             Не перезаписує наявні гліфи, якщо вони виявлені
-      --removeligs, --removeligatures
-                            Видаляє лігатури, вказані у файлі конфігурації JSON
-      --postprocess [POSTPROCESS]
-                            Вкажіть скрипт для постобробки
-      --configfile [CONFIGFILE]
-                            Вкажіть шлях до файлу конфігурації JSON (див. зразок: src/config.sample.json)
-      --custom [CUSTOM]     Вкажіть спеціальний шрифт символу. Усі нові гліфи будуть скопійовані без масштабування
-      -ext [EXTENSION], --extension [EXTENSION]
-                            Змініть тип файлу шрифту для створення (наприклад, ttf, otf)
-      -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
-                            Каталог для виводу виправленого файлу шрифту
-      --glyphdir [GLYPHDIR]
-                            Path to glyphs to be used for patching
-      --makegroups          Use alternative method to name patched fonts (experimental)
-      --variable-width-glyphs
-                            Do not adjust advance width (no "overhang")
-      --progressbars        Показати прогресбар виконання обробки кожного гліфу
-      --no-progressbars     Не показувати прогресбар виконання обробки кожного гліфу
-      --also-windows        Create two fonts, the normal and the --windows version
+options:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -s, --mono, --use-single-width-glyphs
+                        Whether to generate the glyphs as single-width not double-width (default is double-width)
+  -l, --adjust-line-height
+                        Whether to adjust line heights (attempt to center powerline separators more evenly)
+  -q, --quiet, --shutup
+                        Do not generate verbose output
+  -c, --complete        Add all available Glyphs
+  --careful             Do not overwrite existing glyphs if detected
+  --removeligs, --removeligatures
+                        Removes ligatures specificed in JSON configuration file
+  --postprocess [POSTPROCESS]
+                        Specify a Script for Post Processing
+  --configfile [CONFIGFILE]
+                        Specify a file path for JSON configuration file (see sample: src/config.sample.json)
+  --custom [CUSTOM]     Specify a custom symbol font, all glyphs will be copied; absolute path suggested
+  -ext [EXTENSION], --extension [EXTENSION]
+                        Change font file type to create (e.g., ttf, otf)
+  -out [OUTPUTDIR], --outputdir [OUTPUTDIR]
+                        The directory to output the patched font file to
+  --glyphdir [GLYPHDIR]
+                        Path to glyphs to be used for patching
+  --makegroups [{-1,0,1,2,3,4,5,6}]
+                        Use alternative method to name patched fonts (recommended)
+  --variable-width-glyphs
+                        Do not adjust advance width (no "overhang")
+  --has-no-italic       Font family does not have Italic (but Oblique)
+  --progressbars        Show percentage completion progress bars per Glyph Set (default)
+  --no-progressbars     Don't show percentage completion progress bars per Glyph Set
+  --debug [{0,1,2,3}]   Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)
+  --dry                 Do neither patch nor store the font, to check naming
+  --xavgcharwidth [XAVGWIDTH]
+                        Adjust xAvgCharWidth (optional: concrete value)
 
-    Symbol Fonts:
-      --fontawesome         Додайте Font Awesome гліфи (http://fontawesome.io/)
-      --fontawesomeextension
-                            Додайте Font Awesome Extension гліфи (https://andrelzgava.github.io/font-awesome-extension/)
-      --fontlogos, --fontlinux
-                            Додайте Font Logos гліфи (https://github.com/Lukas-W/font-logos)
-      --octicons            Додайте Octicons гліфи (https://octicons.github.com)
-      --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
-      --powersymbols        Додайте IEC Power Symbols (https://unicodepowersymbol.com/)
-      --pomicons            Додайте Pomicon гліфи (https://github.com/gabrielelana/pomicons)
-      --powerline           Додайте Powerline гліфи
-      --powerlineextra      Додайте Powerline гліфи (https://github.com/ryanoasis/powerline-extra-symbols)
-      --material, --materialdesignicons, --mdi
-                            Додайте Material Design іконки (https://github.com/templarian/MaterialDesign)
-      --weather, --weathericons
-                            Додайте Weather іконки (https://github.com/erikflowers/weather-icons)
+Symbol Fonts:
+  --fontawesome         Add Font Awesome Glyphs (http://fontawesome.io/)
+  --fontawesomeextension
+                        Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)
+  --fontlogos, --fontlinux
+                        Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)
+  --octicons            Add Octicons Glyphs (https://octicons.github.com)
+  --codicons            Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)
+  --powersymbols        Add IEC Power Symbols (https://unicodepowersymbol.com/)
+  --pomicons            Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)
+  --powerline           Add Powerline Glyphs
+  --powerlineextra      Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)
+  --material, --materialdesignicons, --mdi
+                        Add Material Design Icons (https://github.com/templarian/MaterialDesign)
+  --weather, --weathericons
+                        Add Weather Icons (https://github.com/erikflowers/weather-icons)
 ```
 #### Приклади
 

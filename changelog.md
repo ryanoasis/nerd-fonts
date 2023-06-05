@@ -2,6 +2,24 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.0.2
+
+**One general fix and some font specific ones**
+
+Note the breaking changes introduced with the `v3.0.0` release.
+If you miss icons, check #1190 and probably https://github.com/loichyan/nerdfix
+
+### Fixes
+ - Bugfix `Codicon` Circles #1261
+ - Fix `DaddyTimeMono NFM` #1244
+ - Fix `fsSelection` for `--has-no-italic` (`Bitstream Vera` + `DejaVu`) #1255
+
+### Features
+ - Allow not renaming the font #1282 for `Cascadia Code` self-patcher (#1242)
+ - Create `tar.xz` packs now automated #1235
+ - Improve cheat sheet @rszyma #1252 #1254
+ - `test-fonts.sh`: allow wrapping at any number by @hasecilu #1270
+
 ## v3.0.1
 
 This bugfix release handles the following issues.
