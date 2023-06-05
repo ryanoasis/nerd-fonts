@@ -1878,7 +1878,7 @@ def setup_arguments():
     args = parser.parse_args()
 
     if args.makegroups > 0 and not FontnameParserOK:
-        logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
+        logging.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
         sys.exit(1)
 
     # if you add a new font, set it to True here inside the if condition
