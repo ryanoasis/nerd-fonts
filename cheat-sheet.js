@@ -23,9 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     ));
 
-    elementGlyphCheatSheet.onscroll = function () {
-        const threshold = 10;
-        if ((elementGlyphCheatSheet.offsetHeight + elementGlyphCheatSheet.scrollTop + threshold) >= elementGlyphCheatSheet.scrollHeight) {
+    document.onscroll = function () {
+        const elementDoc = document.documentElement;
+        const elementIconsTop = elementGlyphCheatSheet.getBoundingClientRect().top + elementDoc.scrollTop;
+
+        if (elementDoc.clientHeight + elementDoc.scrollTop >=
+            elementGlyphCheatSheet.clientHeight + elementIconsTop) {
             console.log("load more search results");
             loadMoreSearchResults();
         }
