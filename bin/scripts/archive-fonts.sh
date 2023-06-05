@@ -3,6 +3,7 @@
 # Script Version: 1.2.0
 # Iterates over all patched fonts directories
 # to generate release archives of the patched font(s)
+# Set RELEASE_VERSION to attribute a specific release
 #
 # Example run with pattern matching:
 # ./archive-fonts heavydata
@@ -14,6 +15,12 @@ set -e
 LINE_PREFIX="# [Nerd Fonts] "
 root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." >/dev/null 2>&1 || exit && pwd -P)"
 outputdir=${root_dir}/archives
+if [ -n "${RELEASE_VERSION}" ]; then
+    release_txt="the Nerd Fonts release v${RELEASE_VERSION}"
+else
+    echo "${LINE_PREFIX} Do not have release version information, using generic readme"
+    release_txt="a Nerd Fonts release"
+fi
 
 mkdir -p "$outputdir"
 
@@ -33,11 +40,6 @@ else
     echo "$LINE_PREFIX No limiting pattern given, will search entire folder"
 fi
 
-# create a mini readme with basic info on Nerd Fonts project
-touch "$outputdir/readme.md"
-mini_readme="$outputdir/readme.md"
-cat "$root_dir/src/archive-readme.md" >> "$mini_readme"
-
 # clear out the directory
 find "${outputdir:?}" -maxdepth 1 \( -name "${search_pattern}.zip" -o -name "${search_pattern}.tar.xz" \) -type f -delete
 
@@ -56,6 +58,20 @@ while read -r filename; do
     while IFS= read -d $'\0' -r descriptor; do
         path=${descriptor//|*/}
         file=${descriptor//*|/}
+        if [ "$file" = "README.md" ]; then
+            {
+                echo "# Nerd Fonts"
+                echo
+                echo "This is an archived font from ${release_txt}."
+                echo
+                echo "For more information see:"
+                echo "* https://github.com/ryanoasis/nerd-fonts/"
+                echo "* https://github.com/ryanoasis/nerd-fonts/releases/latest/"
+                echo
+            } > "${outputdir}/${file}"
+            cat "${path}/${file}" >> "${outputdir}/${file}"
+            continue
+        fi
         if grep -qi '.[ot]tf' <<< "${file}" ; then
             expected=$((expected - 1))
         fi
@@ -68,7 +84,7 @@ while read -r filename; do
         echo "${LINE_PREFIX} Did not pack expected number of font files! Likely same font names for different paths."
         exit 1
     fi
-    (cd "${outputdir}" && tar rf "${outputdir}/${basename}.tar" "readme.md")
+    (cd "${outputdir}" && tar rf "${outputdir}/${basename}.tar" "README.md")
     xz -f -9 -T0 "${outputdir}/${basename}.tar"
 
     # ZIP stuff:
@@ -91,9 +107,9 @@ while read -r filename; do
         find "$searchdir" -type f -iname "*licen[sc]e*" -o -iname 'ofl*' | awk -F/ '{a[$NF]=$0}END{for(i in a)print a[i]}' | zip -9 -j "$outputdir/$basename" -@
     fi;
 
-    # add mini readme file
-    zip -9 "$outputdir/$basename" -rj "$mini_readme" -q
+    # add readme file
+    (cd "${outputdir}" && zip -9 "$outputdir/$basename" -j "README.md" -q)
 done
 
-rm -f "$mini_readme"
+rm -f "${outputdir}/README.md"
 ls -al "$outputdir"
