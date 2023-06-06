@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.4.0"
+script_version = "4.4.1"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -1878,7 +1878,7 @@ def setup_arguments():
     args = parser.parse_args()
 
     if args.makegroups > 0 and not FontnameParserOK:
-        logging.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
+        logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
         sys.exit(1)
 
     # if you add a new font, set it to True here inside the if condition
@@ -1913,22 +1913,22 @@ def setup_arguments():
         args.complete = font_complete
 
     if args.nonmono and args.single:
-        logging.warning("Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
+        logger.warning("Specified contradicting --variable-width-glyphs and --use-single-width-glyph. Ignoring --variable-width-glyphs.")
         args.nonmono = False
 
     make_sure_path_exists(args.outputdir)
     if not os.path.isfile(args.font):
-        logging.critical("Font file does not exist: %s", args.font)
+        logger.critical("Font file does not exist: %s", args.font)
         sys.exit(1)
     if not os.access(args.font, os.R_OK):
-        logging.critical("Can not open font file for reading: %s", args.font)
+        logger.critical("Can not open font file for reading: %s", args.font)
         sys.exit(1)
     is_ttc = len(fontforge.fontsInFile(args.font)) > 1
     try:
         source_font_test = TableHEADWriter(args.font)
         args.is_variable = source_font_test.find_table([b'avar', b'cvar', b'fvar', b'gvarb', b'HVAR', b'MVAR', b'VVAR'], 0)
         if args.is_variable:
-            logging.warning("Source font is a variable open type font (VF), opening might fail...")
+            logger.warning("Source font is a variable open type font (VF), opening might fail...")
     except:
         args.is_variable = False
     finally:
@@ -1943,25 +1943,27 @@ def setup_arguments():
         args.extension = '.' + args.extension
     if re.match("\.ttc$", args.extension, re.IGNORECASE):
         if not is_ttc:
-            logging.critical("Can not create True Type Collections from single font files")
+            logger.critical("Can not create True Type Collections from single font files")
             sys.exit(1)
     else:
         if is_ttc:
-            logging.critical("Can not create single font files from True Type Collections")
+            logger.critical("Can not create single font files from True Type Collections")
             sys.exit(1)
 
     if isinstance(args.xavgwidth, int) and not isinstance(args.xavgwidth, bool):
         if args.xavgwidth < 0:
-            logging.critical("--xavgcharwidth takes no negative numbers")
+            logger.critical("--xavgcharwidth takes no negative numbers")
             sys.exit(2)
         if args.xavgwidth > 16384:
-            logging.critical("--xavgcharwidth takes only numbers up to 16384")
+            logger.critical("--xavgcharwidth takes only numbers up to 16384")
             sys.exit(2)
 
     return args
 
-
 def main():
+    global logger
+    logging.basicConfig(format='%(levelname)s: %(message)s')
+    logger = logging # Use root logger until we can set up something sane
     global version
     git_version = check_version_with_git(version)
     allversions = "Patcher v{} ({}) (ff {})".format(
@@ -1972,7 +1974,6 @@ def main():
     check_fontforge_min_version()
     args = setup_arguments()
 
-    global logger
     logger = logging.getLogger(os.path.basename(args.font))
     logger.setLevel(logging.DEBUG)
     log_to_file = (args.debugmode & 1 == 1)
