@@ -195,6 +195,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="http://karmenzind.github.io"><img src="https://avatars.githubusercontent.com/u/17923071?v=4?s=100" width="100px;" alt="_kmz"/><br /><sub><b>_kmz</b></sub></a><br /><a href="#ideas-Karmenzind" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/N-R-K"><img src="https://avatars.githubusercontent.com/u/79544946?v=4?s=100" width="100px;" alt="NRK"/><br /><sub><b>NRK</b></sub></a><br /><a href="#ideas-N-R-K" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://loichyan.me"><img src="https://avatars.githubusercontent.com/u/73006950?v=4?s=100" width="100px;" alt="loichyan"/><br /><sub><b>loichyan</b></sub></a><br /><a href="#tool-loichyan" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/senketsu03"><img src="https://avatars.githubusercontent.com/u/111694096?v=4?s=100" width="100px;" alt="senketsu03"/><br /><sub><b>senketsu03</b></sub></a><br /><a href="#translation-senketsu03" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
