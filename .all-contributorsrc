@@ -1331,6 +1331,15 @@
       "contributions": [
         "tool"
       ]
+    },
+    {
+      "login": "senketsu03",
+      "name": "senketsu03",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111694096?v=4",
+      "profile": "https://github.com/senketsu03",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "repoType": "github",
