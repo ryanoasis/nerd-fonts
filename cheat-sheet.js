@@ -127,12 +127,17 @@ document.addEventListener('DOMContentLoaded', function () {
     function searchGlyphs() {
         let searchTerm = elementGlyphSearch.value;
 
-        let prefixSearchEnabled = true
+        let prefixSearchEnabled = true;
+        let emptyResultsMessage = `<span style="font-size: 30px;">No matches found</span>`;
 
         if (searchTerm === "") {
-            // MiniSearch don't allow empty searches, so we search for "nf".
-            searchTerm = "nf";
-            prefixSearchEnabled = false;
+            // MiniSearch doesn't allow empty searches and we want to show the bottom info
+            emptyResultsMessage = "Enter (part) of a word to search for or enter space / blank (' ') to show all icons"
+        } else {
+            if (searchTerm === " ") {
+                prefixSearchEnabled = false;
+                searchTerm = "nf";
+            }
         }
 
         // TODO: search suggestions
@@ -157,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             let notFoundElem = document.createElement("div");
             notFoundElem.setAttribute("style", "padding: 10px;");
-            notFoundElem.innerHTML = `<span style="font-size: 30px;">No matches found</span>`;
+            notFoundElem.innerHTML = emptyResultsMessage;
             elementGlyphCheatSheet.appendChild(notFoundElem);
         }
 
