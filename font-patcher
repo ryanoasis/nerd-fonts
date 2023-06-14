@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.4.1"
+script_version = "4.4.2"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -1962,8 +1962,11 @@ def setup_arguments():
 
 def main():
     global logger
-    logging.basicConfig(format='%(levelname)s: %(message)s')
-    logger = logging # Use root logger until we can set up something sane
+    logger = logging.getLogger("start") # Use start logger until we can set up something sane
+    s_handler = logging.StreamHandler(stream=sys.stdout)
+    s_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
+    logger.addHandler(s_handler)
+
     global version
     git_version = check_version_with_git(version)
     allversions = "Patcher v{} ({}) (ff {})".format(
