@@ -19,5 +19,8 @@ style: container
 <div markdown="1">
 [<img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/24614929?v=4" width="100px;"/><br /><sub><b>Alex</b></sub>](https://github.com/zuedev)
 </div>
+<div markdown="1">
+[<img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/6804887?v=4" width="100px;"/><br /><sub><b>Quentin Lamamy</b></sub>](https://github.com/quentinlamamy)
+</div>
 
 </div>
