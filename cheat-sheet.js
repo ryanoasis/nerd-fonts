@@ -125,14 +125,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function searchGlyphs() {
-        let searchTerm = elementGlyphSearch.value;
+        // Convert high codepoint-chars to codepoint text - enabling search for pasted icon
+        let searchTerm = [...elementGlyphSearch.value]
+            .map((char) => char.codePointAt(0) > 255 ? char.codePointAt(0).toString(16) : char)
+            .join("");
 
         let prefixSearchEnabled = true;
         let emptyResultsMessage = `<span style="font-size: 30px;">No matches found</span>`;
 
         if (searchTerm === "") {
             // MiniSearch doesn't allow empty searches and we want to show the bottom info
-            emptyResultsMessage = "Enter (part) of a word to search for or enter space / blank (' ') to show all icons"
+            emptyResultsMessage = "Enter (part) of a word to search for or paste the icon or enter space / blank (' ') to show all icons"
         } else {
             if (searchTerm === " ") {
                 prefixSearchEnabled = false;
