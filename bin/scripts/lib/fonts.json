@@ -186,7 +186,7 @@
       "patchedName": "GohuFont",
       "folderName": "Gohu",
       "imagePreviewFont": "GohuFont 14 Nerd Font",
-      "linkPreviewFont": false,
+      "linkPreviewFont": "gohufont-14",
       "caskName": "gohufont",
       "description": "Bitmap font, tall capitals and ascenders, small serifs"
     },
