@@ -266,7 +266,7 @@
       "patchedName": "InconsolataGo",
       "folderName": "InconsolataGo",
       "imagePreviewFont": "InconsolataGo Nerd Font",
-      "linkPreviewFont": false,
+      "linkPreviewFont": "inconsolata-go",
       "caskName": "inconsolata-go",
       "description": "Inconsolata with straight quotes"
     },
