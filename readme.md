@@ -706,7 +706,6 @@ Patched Font internal links
 [p-ubuntu]:patched-fonts/Ubuntu
 [p-victor]:patched-fonts/VictorMono
 
-
 <!--
 Quick Link Images
 -->
