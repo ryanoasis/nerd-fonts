@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 args=""
 
 # check all args for --out or -o
@@ -22,3 +24,5 @@ printf "Running with options:\n%s\n" "$args"
 
 # shellcheck disable=SC2086
 for f in /in/*.otf /in/*.ttf /in/*.woff /in/*.eot /in/*.ttc; do [ -f "$f" ] && fontforge -script /nerd/font-patcher -out /out $args "$f"; done
+
+exit 0
