@@ -151,6 +151,16 @@
       "description": "Good for small screens or font sizes"
     },
     {
+      "unpatchedName": "Envy Code R",
+      "RFN": true,
+      "patchedName": "EnvyCodeR",
+      "folderName": "EnvyCodeR",
+      "imagePreviewFont": "EnvyCodeR Nerd Font",
+      "linkPreviewFont": "envy-code-r",
+      "caskName": "envy-code-r",
+      "description": "Fully-scalable monospaced font designed for programming and command prompts"
+    },
+    {
       "unpatchedName": "Fantasque Sans Mono",
       "RFN": false,
       "patchedName": "FantasqueSansM",
