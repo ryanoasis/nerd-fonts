@@ -81,9 +81,11 @@ do
     then
       config_rfn=$(echo "$fontdata" | jq -r .unpatchedName)
       config_rfn_substitue=$(echo "$fontdata" | jq -r .patchedName)
-      if [ "${config_rfn}" = "${config_rfn_substitue}" ]
+      check_config_rfn=$(tr '[:upper:]' '[:lower:]' <<< "$config_rfn" | tr -d ' ')
+      check_config_rfn_sub=$(tr '[:upper:]' '[:lower:]' <<< "$config_rfn_substitue" | tr -d ' ')
+      if [ "${check_config_rfn}" = "${check_config_rfn_sub}" ]
       then
-        # Only the case with Mononoki which is RFN but we do not rename (we got the permission to keep the name)
+        # Only the case with Mononoki and Envy Code R which is RFN but we do not rename (we got the permission to keep the name)
         unset config_rfn
         unset config_rfn_substitue
       fi
