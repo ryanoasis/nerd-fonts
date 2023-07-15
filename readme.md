@@ -127,6 +127,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]  | 1.2.3 | NO   | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            | [DejaVu][f-dejavu]                | 2.37  | NO   | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              | Ascender Corp                     |1.00-113| NO   | ![w] ![m2] ![l]   |
+| [Envy Code R Nerd Font][p-envy]                   | [Envy Code R][f-envy]             | 0.79  | YES  | ![w] ![m2] ![l]   |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]          | 1.8.0 | NO   | ![w] ![m2] ![l]   |
 | [Fira Code Nerd Font][p-fira-code]                | [Fira Code][f-fira-code]          | 6.2   | NO   | ![w] ![m2] ![l]   |
 | [Fira Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]               | 3.206 | NO   | ![w] ![m2] ![l]   |
@@ -617,6 +618,7 @@ Font repos
 [f-comic]:https://github.com/jesusmgg/comic-shanns-mono
 [f-daddytimemono]:https://github.com/BourgeoisBear/DaddyTimeMono
 [f-dejavu]:https://github.com/dejavu-fonts/dejavu-fonts
+[f-envy]:https://github.com/damieng/envy-code-r
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-fira-mono]:https://github.com/mozilla/Fira
@@ -672,6 +674,7 @@ Patched Font internal links
 [p-daddytimemono]:patched-fonts/DaddyTimeMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
+[p-envy]:patched-fonts/EnvyCodeR
 [p-fantasque]:patched-fonts/FantasqueSansMono
 [p-fira-code]:patched-fonts/FiraCode
 [p-fira-mono]:patched-fonts/FiraMono
