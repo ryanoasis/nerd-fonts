@@ -72,6 +72,7 @@ image_font_files=( \
   'DaddyTimeMono/DaddyTimeMonoNerdFont-Regular.ttf' \
   'DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf' \
   'DroidSansMono/DroidSansMNerdFont-Regular.otf' \
+  'EnvyCodeR/EnvyCodeRNerdFont-Regular.ttf' \
   'FantasqueSansMono/Regular/FantasqueSansMNerdFont-Regular.ttf' \
   'FiraCode/Regular/FiraCodeNerdFont-Regular.ttf' \
   'FiraMono/Regular/FiraMonoNerdFont-Regular.otf' \
