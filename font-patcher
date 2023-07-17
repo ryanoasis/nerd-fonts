@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.4.2"
+script_version = "4.5.0"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -557,17 +557,28 @@ class font_patcher:
         additionalFontNameSuffix = " " + projectNameSingular + variant_full + additionalFontNameSuffix
 
         if FontnameParserOK and self.args.makegroups > 0:
-            use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
-            # Use fullname if it is 'equal' to the fontname
-            if font.fullname:
-                use_fullname |= font.fontname.lower() == FontnameTools.postscript_char_filter(font.fullname).lower()
-            # Use fullname for any of these source fonts (that are impossible to disentangle from the fontname, we need the blanks)
-            for hit in [ 'Meslo' ]:
-                use_fullname |= font.fontname.lower().startswith(hit.lower())
-            parser_name = font.fullname if use_fullname else font.fontname
-            # Gohu fontnames hide the weight, but the file names are ok...
-            if parser_name.startswith('Gohu'):
-                parser_name = os.path.splitext(os.path.basename(self.args.font))[0]
+            if not isinstance(self.args.force_name, str):
+                use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
+                # Use fullname if it is 'equal' to the fontname
+                if font.fullname:
+                    use_fullname |= font.fontname.lower() == FontnameTools.postscript_char_filter(font.fullname).lower()
+                # Use fullname for any of these source fonts (that are impossible to disentangle from the fontname, we need the blanks)
+                for hit in [ 'Meslo' ]:
+                    use_fullname |= font.fontname.lower().startswith(hit.lower())
+                parser_name = font.fullname if use_fullname else font.fontname
+                # Gohu fontnames hide the weight, but the file names are ok...
+                if parser_name.startswith('Gohu'):
+                    parser_name = os.path.splitext(os.path.basename(self.args.font))[0]
+            else:
+                if self.args.force_name == 'full':
+                    parser_name = font.fullname
+                elif self.args.force_name == 'postscript':
+                    parser_name = font.fontname
+                else:
+                    parser_name = self.args.force_name
+                if not isinstance(parser_name, str) or len(parser_name) < 1:
+                    logger.critical("Specified --name not usable because the name will be empty")
+                    sys.exit(2)
             n = FontnameParser(parser_name, logger)
             if not n.parse_ok:
                 logger.warning("Have only minimal naming information, check resulting name. Maybe specify --makegroups 0")
@@ -719,9 +730,11 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('Compatible Full'), font.fullname)
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
-            short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups >= 4 else projectNameSingular + variant_full
-            # inject_suffix(family, ps_fontname, short_family)
-            n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
+            # Add Nerd Font suffix unless user specifically asked for some excplicit name via --name
+            if not self.args.force_name or self.args.force_name == 'full' or self.args.force_name == 'postscript':
+                short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups >= 4 else projectNameSingular + variant_full
+                # inject_suffix(family, ps_fontname, short_family)
+                n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
             n.rename_font(font)
 
         font.comment = projectInfo
@@ -1860,6 +1873,7 @@ def setup_arguments():
     # <none>  - copy from sourcefont (default)
     # 0       - calculate from font according to OS/2-version-2
     # 500     - set to 500
+    parser.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', or concrete free name-string)')
 
     # symbol fonts to include arguments
     sym_font_group = parser.add_argument_group('Symbol Fonts')
