@@ -1825,12 +1825,12 @@ def setup_arguments():
     parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
     parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
     parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
-    parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str, nargs='?', help='Specify a Script for Post Processing')
-    parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str, nargs='?', help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
-    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str, nargs='?', help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
-    parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str, nargs='?', help='Change font file type to create (e.g., ttf, otf)')
-    parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str, nargs='?', help='The directory to output the patched font file to')
-    parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, nargs='?', help='Path to glyphs to be used for patching')
+    parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str,            help='Specify a Script for Post Processing')
+    parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
+    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str,            help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
+    parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str,            help='Change font file type to create (e.g., ttf, otf)')
+    parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str,            help='The directory to output the patched font file to')
+    parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, help='Path to glyphs to be used for patching')
     parser.add_argument('--makegroups',                              dest='makegroups',       default=1,     type=int, nargs='?', help='Use alternative method to name patched fonts (recommended)', const=1, choices=range(-1, 6 + 1))
     # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 1'.
     # Original font name: Hugo Sans Mono ExtraCondensed Light Italic
