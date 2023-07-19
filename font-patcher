@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.5.0"
+script_version = "4.5.1"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -557,6 +557,7 @@ class font_patcher:
         additionalFontNameSuffix = " " + projectNameSingular + variant_full + additionalFontNameSuffix
 
         if FontnameParserOK and self.args.makegroups > 0:
+            user_supplied_name = False # User supplied names are kept unchanged
             if not isinstance(self.args.force_name, str):
                 use_fullname = isinstance(font.fullname, str) # Usually the fullname is better to parse
                 # Use fullname if it is 'equal' to the fontname
@@ -576,6 +577,7 @@ class font_patcher:
                     parser_name = font.fontname
                 else:
                     parser_name = self.args.force_name
+                    user_supplied_name = True
                 if not isinstance(parser_name, str) or len(parser_name) < 1:
                     logger.critical("Specified --name not usable because the name will be empty")
                     sys.exit(2)
@@ -583,7 +585,7 @@ class font_patcher:
             if not n.parse_ok:
                 logger.warning("Have only minimal naming information, check resulting name. Maybe specify --makegroups 0")
             n.drop_for_powerline()
-            n.enable_short_families(True, self.args.makegroups in [ 2, 3, 5, 6, ], self.args.makegroups in [ 3, 6, ])
+            n.enable_short_families(not user_supplied_name, self.args.makegroups in [ 2, 3, 5, 6, ], self.args.makegroups in [ 3, 6, ])
             if not n.set_expect_no_italic(self.args.noitalic):
                 logger.critical("Detected 'Italic' slant but --has-no-italic specified")
                 sys.exit(1)
@@ -731,7 +733,7 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
         else:
             # Add Nerd Font suffix unless user specifically asked for some excplicit name via --name
-            if not self.args.force_name or self.args.force_name == 'full' or self.args.force_name == 'postscript':
+            if not user_supplied_name:
                 short_family = projectNameAbbreviation + variant_abbrev if self.args.makegroups >= 4 else projectNameSingular + variant_full
                 # inject_suffix(family, ps_fontname, short_family)
                 n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
