@@ -183,21 +183,21 @@ class FontnameTools:
         return out
 
     SIL_TABLE = [
+        ( '(a)nka/(c)oder',             r'\1na\2onder' ),
         ( '(a)nonymous',                r'\1nonymice' ),
         ( '(b)itstream( ?)(v)era( ?sans ?mono)?', r'\1itstrom\2Wera' ),
-        ( '(s)ource',                   r'\1auce' ),
-        ( '(h)ermit',                   r'\1urmit' ),
-        ( '(h)asklig',                  r'\1asklug' ),
-        ( '(s)hare',                    r'\1hure' ),
-        ( 'IBM[- ]?plex',               r'Blex' ), # We do not keep the case here
-        ( '(t)erminus',                 r'\1erminess' ),
-        ( '(l)iberation',               r'\1iteration' ),
-        ( 'iA([- ]?)writer',            r'iM\1Writing' ),
-        ( '(a)nka/(c)oder',             r'\1na\2onder' ),
         ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\2\3ove' ),
         ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\2\3ono' ),
-        ( '(m)( ?)plus',                r'\1+'), # Added this, because they use a plus symbol :->
         ( 'Gohufont',                   r'GohuFont'), # Correct to CamelCase
+        ( '(h)ermit',                   r'\1urmit' ),
+        ( '(h)asklig',                  r'\1asklug' ),
+        ( 'iA([- ]?)writer',            r'iM\1Writing' ),
+        ( 'IBM[- ]?plex',               r'Blex' ), # We do not keep the case here
+        ( '(l)iberation',               r'\1iteration' ),
+        ( '(m)( ?)plus',                r'\1+'), # Added this, because they use a plus symbol :->
+        ( '(s)hare',                    r'\1hure' ),
+        ( '(s)ource',                   r'\1auce' ),
+        ( '(t)erminus',                 r'\1erminess' ),
         # Noone cares that font names starting with a digit are forbidden:
         ( 'IBM 3270',                   r'3270'), # for historical reasons and 'IBM' is a TM or something
         # Some name parts that are too long for us
