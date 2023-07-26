@@ -298,6 +298,7 @@
       "imagePreviewFont": "IntoneMono Nerd Font",
       "linkPreviewFont": "intel-one-mono",
       "caskName": "intone-mono",
+      "repoRelease": false,
       "description": "Expressive monospaced font family that’s built with clarity, legibility, and the needs of developers in mind"
     },
     {
