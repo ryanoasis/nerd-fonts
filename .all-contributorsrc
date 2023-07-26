@@ -1340,6 +1340,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "sorashi",
+      "name": "Dennis Pražák",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6270283?v=4",
+      "profile": "https://github.com/sorashi",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
