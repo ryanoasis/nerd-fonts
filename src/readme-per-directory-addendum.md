@@ -21,7 +21,7 @@ Once you narrow down your font choice of family (`Droid Sans`, `Inconsolata`, et
 #### `Option 1: Download already patched font`
 
  * For a stable version download a font package from the [release page](https://github.com/ryanoasis/nerd-fonts/releases)
- * Or download the development version from the folders here
+ * %DOWNLOADFROM%
 
 #### `Option 2: Patch your own font`
 
