@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.2
-# Script Version: 1.1.2
+# Script Version: 1.1.3
 # Iterates over all patched fonts directories
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc
 # adds information on additional-variations and complete font variations
@@ -101,72 +101,44 @@ do
 
   [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
+  to_dir="${patched_parent_dir}/$filename"
+  to="${to_dir}/$infofilename"
 
   if [ "${RST[0]}" ];
   then
     for i in "${RST[@]}"
     do
       echo "$LINE_PREFIX Found RST"
-
       from="$unpatched_parent_dir/$i"
-      to_dir="${patched_parent_dir}/$filename"
-      to="${to_dir}/$infofilename"
-
       clearDestination "$to_dir" "$to"
-
       pandoc "$from" --from=rst --to=markdown --output="$to"
-
-      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
-      cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
     done
   elif [ "${TXT[0]}" ];
   then
     for i in "${TXT[@]}"
     do
       echo "$LINE_PREFIX Found TXT"
-
       from="$unpatched_parent_dir/$i"
-      to_dir="${patched_parent_dir}/$filename"
-      to="${to_dir}/$infofilename"
-
       clearDestination "$to_dir" "$to"
-
       cp "$from" "$to"
-
-      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
-      cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
     done
   elif [ "${MD[0]}" ];
   then
     for i in "${MD[@]}"
     do
       echo "$LINE_PREFIX Found MD"
-
       from="$unpatched_parent_dir/$i"
-      to_dir="${patched_parent_dir}/$filename"
-      to="${to_dir}/$infofilename"
-
       clearDestination "$to_dir" "$to"
-
       cp "$from" "$to"
-
-      appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
-      cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
     done
   else
     echo "$LINE_PREFIX Did not find any readme files (RST,TXT,MD) generating just title of Font"
-
-    to_dir="${patched_parent_dir}/$filename"
-    to="${to_dir}/$infofilename"
-
     clearDestination "$to_dir" "$to"
-
     {
       printf "# %s\\n\\n" "$base_directory"
     } >> "$to"
-
-    appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
-    cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
   fi
+  appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
+  cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
 
 done
