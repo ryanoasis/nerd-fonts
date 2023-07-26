@@ -43,7 +43,7 @@ generate_preview() {
   fontText=$2
   echo "[Generating] $font"
   sed -e "s/000000/ffffff/" -e "s/sans-serif/${font}/" -e "s/Font Name/${fontText}/" <"$template_svg" >"${output_dir}${font}.svg"
-  inkscape "${output_dir}${font}.svg" -g "--verb=EditSelectAll;ObjectToPath;FileVacuum;FitCanvasToDrawing;FileSave;FileQuit" 2>/dev/null
+  inkscape "${output_dir}${font}.svg" --actions="select-all; object-to-path; vacuum-defs; fit-canvas-to-selection; export-filename:${output_dir}${font}.svg; export-do"
   # svgo "${output_dir}${font}.svg"
 }
 
@@ -52,7 +52,7 @@ generate_preview_symbols() {
   fontText=$2
   echo "[Gen. Symb.] $font"
   sed -e "s/000000/ffffff/" -e "40,80s/sans-serif/${font}/" -e "s/Font Name/${fontText}/" <"$template2_svg" >"${output_dir}${font}.svg"
-  inkscape "${output_dir}${font}.svg" -g "--verb=EditSelectAll;ObjectToPath;FileVacuum;FitCanvasToDrawing;FileSave;FileQuit" 2>/dev/null
+  inkscape "${output_dir}${font}.svg" --actions="select-all; object-to-path; vacuum-defs; fit-canvas-to-selection; export-filename:${output_dir}${font}.svg; export-do"
   # svgo "${output_dir}${font}.svg"
 }
 
@@ -87,6 +87,7 @@ image_font_files=( \
   'Inconsolata/InconsolataNerdFont-Regular.ttf' \
   'InconsolataGo/Regular/InconsolataGoNerdFont-Regular.ttf' \
   'InconsolataLGC/Regular/InconsolataLGCNerdFont-Regular.ttf' \
+  'IntelOneMono/Regular/IntoneMonoNerdFont-Regular.ttf' \
   'Iosevka/Regular/IosevkaNerdFont-Regular.ttf' \
   'IosevkaTerm/Regular/IosevkaTermNerdFont-Regular.ttf' \
   'JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf' \
