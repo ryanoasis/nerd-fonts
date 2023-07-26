@@ -193,6 +193,7 @@ class FontnameTools:
         ( '(h)asklig',                  r'\1asklug' ),
         ( 'iA([- ]?)writer',            r'iM\1Writing' ),
         ( 'IBM[- ]?plex',               r'Blex' ), # We do not keep the case here
+        ( '(i)ntel( ?)(o)ne',           r'\1ntone' ),
         ( '(l)iberation',               r'\1iteration' ),
         ( '(m)( ?)plus',                r'\1+'), # Added this, because they use a plus symbol :->
         ( '(s)hare',                    r'\1hure' ),
