@@ -26,7 +26,7 @@ function appendGeneralInfo {
   then
     downloadfrom="Or download the development version from the folders here"
   else
-    downloadfrom="https://github.com/ryanoasis/nerd-fonts/releases/latest/${fontname}.zip or https://github.com/ryanoasis/nerd-fonts/releases/latest/${fontname}.tar.xz"
+    downloadfrom="Direct links for [${fontname}.zip](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${fontname}.zip) or [${fontname}.tar.xz](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${fontname}.tar.xz)"
   fi
   sed -e "s|%DOWNLOADFROM%|${downloadfrom}|" "${sd}/../../src/readme-per-directory-addendum.md" >> "${dest}"
 }

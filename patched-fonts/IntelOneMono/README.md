@@ -42,7 +42,7 @@ Once you narrow down your font choice of family (`Droid Sans`, `Inconsolata`, et
 #### `Option 1: Download already patched font`
 
  * For a stable version download a font package from the [release page](https://github.com/ryanoasis/nerd-fonts/releases)
- * https://github.com/ryanoasis/nerd-fonts/releases/latest/IntelOneMono.zip or https://github.com/ryanoasis/nerd-fonts/releases/latest/IntelOneMono.tar.xz
+ * Direct links for [IntelOneMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/IntelOneMono.zip) or [IntelOneMono.tar.xz](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/IntelOneMono.tar.xz)
 
 #### `Option 2: Patch your own font`
 
