@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.0.2
-# Script Version: 1.1.3
+# Script Version: 1.1.4
 # Iterates over all patched fonts directories
 # converts all non markdown readmes to markdown (e.g., txt, rst) using pandoc
 # adds information on additional-variations and complete font variations
@@ -17,6 +17,19 @@ cd "$sd/../../src/unpatched-fonts/" || {
   exit 1
 }
 
+
+function appendGeneralInfo {
+  local dest=$1; shift
+  local fontname=$1; shift
+  local has_repo=$1; shift
+  if [ -n "${has_repo}" ]
+  then
+    downloadfrom="Or download the development version from the folders here"
+  else
+    downloadfrom="https://github.com/ryanoasis/nerd-fonts/releases/latest/${fontname}.zip or https://github.com/ryanoasis/nerd-fonts/releases/latest/${fontname}.tar.xz"
+  fi
+  sed -e "s|%DOWNLOADFROM%|${downloadfrom}|" "${sd}/../../src/readme-per-directory-addendum.md" >> "${dest}"
+}
 
 function appendRfnInfo {
   local config_rfn=$1; shift
@@ -90,6 +103,12 @@ do
         unset config_rfn_substitue
       fi
     fi
+    unset release_to_repo
+    # This defaults to true if no info is given:
+    if [ "$(echo "$fontdata" | jq .repoRelease)" != "false" ]
+    then
+        release_to_repo=TRUE
+    fi
   fi
 
   mapfile -t RST < <(find "$searchdir" -type f -iname 'readme.rst')
@@ -139,6 +158,6 @@ do
     } >> "$to"
   fi
   appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
-  cat "$sd/../../src/readme-per-directory-addendum.md" >> "$to"
+  appendGeneralInfo "$to" "$base_directory" "$release_to_repo"
 
 done

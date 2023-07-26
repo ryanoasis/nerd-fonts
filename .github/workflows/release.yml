@@ -307,6 +307,8 @@ jobs:
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 
       - name: Commit patched fonts back to repo
+        # For fonts with repoRelease == false in the font.json the gitignore should
+        # have been setup in a way that this commits only the README.md
         uses: EndBug/add-and-commit@v9
         with:
           fetch: false
