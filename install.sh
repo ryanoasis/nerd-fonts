@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install Nerd Fonts
-__ScriptVersion="0.6"
+__ScriptVersion="0.7"
 
 # Default values for option variables:
 quiet=false
@@ -197,15 +197,20 @@ done
 # Get target root directory
 if [[ $(uname) == 'Darwin' ]]; then
   # MacOS
-  sys_font_dir="/Library/Fonts"
-  usr_font_dir="$HOME/Library/Fonts"
+  sys_share_dir="/Library"
+  usr_share_dir="$HOME/Library"
+  font_subdir="Fonts"
 else
   # Linux
-  sys_font_dir="/usr/local/share/fonts"
-  usr_font_dir="$HOME/.local/share/fonts"
+  sys_share_dir="/usr/local/share"
+  usr_share_dir="$HOME/.local/share"
+  font_subdir="fonts"
 fi
-sys_font_dir="${sys_font_dir}/NerdFonts"
-usr_font_dir="${usr_font_dir}/NerdFonts"
+if [ -n "${XDG_DATA_HOME}" ]; then
+  usr_share_dir="${XDG_DATA_HOME}"
+fi
+sys_font_dir="${sys_share_dir}/${font_subdir}/NerdFonts"
+usr_font_dir="${usr_share_dir}/${font_subdir}/NerdFonts"
 
 if [[ "system" == "$installpath" ]]; then
   font_dir="${sys_font_dir}"
