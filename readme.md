@@ -359,7 +359,7 @@ Patching the font of your own choosing:
 
 * Use docker
   ```
-  docker run --rm -v /path/to/fonts:/in -v /path/for/output:/out nerdfonts/patcher [OPTIONS]
+  docker run --rm -v /path/to/fonts:/in:Z -v /path/for/output:/out:Z nerdfonts/patcher [OPTIONS]
   ```
 
 Full options:
