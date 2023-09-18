@@ -1349,6 +1349,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "sqwxl",
+      "name": "Nicolas Epstein",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55964909?v=4",
+      "profile": "http://nilueps.net",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
