@@ -210,6 +210,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/senketsu03"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/111694096?v=4?s=100" width="100px;" alt="senketsu03"/><br /><sub><b>senketsu03</b></sub></a><br /><a href="#translation-senketsu03" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sorashi"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/6270283?v=4?s=100" width="100px;" alt="Dennis Pražák"/><br /><sub><b>Dennis Pražák</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=sorashi" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://nilueps.net"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/55964909?v=4?s=100" width="100px;" alt="Nicolas Epstein"/><br /><sub><b>Nicolas Epstein</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=sqwxl" title="Documentation">📖</a></td>
+    </tr>
   </tbody>
 </table>
 
