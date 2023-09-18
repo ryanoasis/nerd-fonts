@@ -1144,7 +1144,7 @@ class font_patcher:
         if our_btb == hhea_btb:
             metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
         elif abs(our_btb - hhea_btb) / our_btb < 0.03:
-            logger.info("Font vertical metrics slightly off (%.1f%)", (our_btb - hhea_btb) / our_btb * 100.0)
+            logger.info("Font vertical metrics slightly off (%.1f)", (our_btb - hhea_btb) / our_btb * 100.0)
             metrics = Metric.TYPO if use_typo else Metric.WIN
         else:
             # Try the other metric
