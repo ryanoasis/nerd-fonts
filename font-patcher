@@ -444,6 +444,9 @@ class font_patcher:
 
         # Adjust flags that can not be changed via fontforge
         if re.search('\\.[ot]tf$', self.args.font, re.IGNORECASE) and re.search('\\.[ot]tf$', outfile, re.IGNORECASE):
+            if not os.path.isfile(outfile) or os.path.getsize(outfile) < 1:
+                logger.critical("Something went wrong and Fontforge did not generate the new font - look for messages above")
+                sys.exit(1)
             try:
                 source_font = TableHEADWriter(self.args.font)
                 dest_font = TableHEADWriter(outfile)
