@@ -271,12 +271,34 @@ class FontnameParser:
             self.logger.error('====-< {:18} too long ({:2} > {:2}): {}'.format(entry_id, len(name), max_len, name))
         return name
 
+    def check_weights(self, font):
+        """ Check weight metadata for consistency """
+        # Some weights are hidden in styles
+        ignore_token = list(FontnameTools.known_widths) + list(FontnameTools.known_slopes)
+        ignore_token += [ m + s
+                        for s in list(FontnameTools.known_widths)
+                        for m in list(FontnameTools.known_modifiers) ]
+        restored_weight_token = [ w for w in self.style_token + self.weight_token if w not in ignore_token ]
+        weight = ''.join(restored_weight_token)
+        os2_weight = font.os2_weight
+        ps_weight = FontnameTools.weight_string_to_number(font.weight)
+        name_weight = FontnameTools.weight_string_to_number(weight)
+        if name_weight is None:
+            self.logger.error('Can not parse name for weight: {}'.format(restored_weight_token))
+            return
+        if abs(os2_weight - ps_weight) > 50 or abs(os2_weight - name_weight) > 50:
+            self.logger.warning('Possible problem with the weight metadata detected, check with --debug')
+        self.logger.debug('Weight approximations: OS2/PS/Name: {}/{}/{} (from {}/\'{}\'/\'{}\')'.format(
+            os2_weight, ps_weight, name_weight,
+            font.os2_weight, font.weight, weight))
+
     def rename_font(self, font):
         """Rename the font to include all information we found (font is fontforge font object)"""
         font.fondname = None
         font.fontname = self.psname()
         font.fullname = self.fullname()
         font.familyname = self.ps_familyname()
+        self.check_weights(font)
 
         # We have to work around several issues in fontforge:
         #
