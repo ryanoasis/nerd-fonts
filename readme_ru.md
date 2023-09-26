@@ -145,7 +145,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [JetBrains Mono][p-jetbrains-mono]                | [JetBrains Mono][f-jetbrains-mono]| 2.304 | НЕТ   | ![w] ![m2] ![l]   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                | 34    | НЕТ   | ![w] ![m2] ![l]   |
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        | 2.1.5 | ДА  | ![w] ![m2] ![l]   |
-| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                  | 2.000 | НЕТ   | ![w2] ![m2] ![l]  |
+| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                  | 2.200 | НЕТ   | ![w2] ![m2] ![l]  |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                  | 1.21  | НЕТ   | ![w] ![m2] ![l]   |
 | [Monofur Nerd Font][p-monofur]                    | Tobias B Koehler                  | 1.0   | НЕТ   | ![w] ![m2] ![l]   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                | 0.61  | НЕТ   | ![w] ![m2] ![l]   |
