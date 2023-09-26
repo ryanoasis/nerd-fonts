@@ -247,6 +247,9 @@ class FontnameTools:
         'Light': ('Lt', 'Light'),
         ' ': (), # Just for CodeClimate :-/
     }
+    known_styles = [ # Keywords that end up as style (i.e. a RIBBI set)
+        'Bold', 'Italic', 'Regular', 'Normal'
+    ]
     known_widths = { # can take modifiers
         'Compressed': ('Cm', 'Comp'),
         'Extended': ('Ex', 'Extd'),
@@ -268,6 +271,51 @@ class FontnameTools:
         'Semi': ('Sm', 'Sem'),
         'Extra': ('X', 'Ext'),
     }
+    equivalent_weights = {
+        100: ('thin', 'hairline'),
+        200: ('extralight', 'ultralight'),
+        300: ('light', ),
+        350: ('semilight', ),
+        400: ('regular', 'normal', 'book', 'text', 'nord', 'retina'),
+        500: ('medium', ),
+        600: ('semibold', 'demibold', 'demi'),
+        700: ('bold', ),
+        800: ('extrabold', 'ultrabold'),
+        900: ('black', 'heavy', 'poster', 'extrablack', 'ultrablack'),
+    }
+
+    @staticmethod
+    def weight_string_to_number(w):
+        """ Convert a common string approximation to a PS/2 weight value """
+        if not len(w):
+            return 400
+        for num, strs in FontnameTools.equivalent_weights.items():
+            if w.lower() in strs:
+                return num
+        return None
+
+    @staticmethod
+    def weight_to_string(w):
+        """ Convert a PS/2 weight value to the common string approximation """
+        if w < 150:
+            str = 'Thin'
+        elif w < 250:
+            str = 'Extra-Light'
+        elif w < 350:
+            str = 'Light'
+        elif w < 450:
+            str = 'Regular'
+        elif w < 550:
+            str = 'Medium'
+        elif w < 650:
+            str = 'Semi-Bold'
+        elif w < 750:
+            str = 'Bold'
+        elif w < 850:
+            str = 'Extra-Bold'
+        else:
+            str = 'Black'
+        return str
 
     @staticmethod
     def is_keep_regular(basename):
@@ -342,8 +390,7 @@ class FontnameTools:
                 for s in list(FontnameTools.known_weights2) + list(FontnameTools.known_widths)
                 for m in list(FontnameTools.known_modifiers) + [''] if m != s
             ] + list(FontnameTools.known_weights1) + list(FontnameTools.known_slopes)
-        styles = [ 'Bold', 'Italic', 'Regular', 'Normal', ]
-        weights = [ w for w in weights if w not in styles ]
+        weights = [ w for w in weights if w not in FontnameTools.known_styles ]
         # Some font specialities:
         other = [
             '-', 'Book', 'For', 'Powerline',
@@ -355,7 +402,7 @@ class FontnameTools:
         ]
 
         ( style, weight_token ) = FontnameTools.get_name_token(style, weights)
-        ( style, style_token ) = FontnameTools.get_name_token(style, styles)
+        ( style, style_token ) = FontnameTools.get_name_token(style, FontnameTools.known_styles)
         ( style, other_token ) = FontnameTools.get_name_token(style, other)
         while 'Regular' in style_token and len(style_token) > 1:
             # Correct situation where "Regular" and something else is given
