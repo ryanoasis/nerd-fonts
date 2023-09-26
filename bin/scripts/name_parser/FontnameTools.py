@@ -203,7 +203,6 @@ class FontnameTools:
         ( 'IBM 3270',                   r'3270'), # for historical reasons and 'IBM' is a TM or something
         # Some name parts that are too long for us
         ( '(.*sans ?m)ono',             r'\1'), # Various SomenameSansMono fonts
-        ( '(.*code ?lat)in Expanded',   r'\1X'), # for 'M PLUS Code Latin Expanded'
         ( '(.*code ?lat)in',            r'\1'), # for 'M PLUS Code Latin'
         ( '(b)ig( ?)(b)lue( ?)(t)erminal', r'\1ig\3lue\5erm'), # Shorten BigBlueTerminal
         ( '(.*)437TT',                  r'\g<1>437'), # Shorten BigBlueTerminal 437 TT even further
