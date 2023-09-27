@@ -8,6 +8,7 @@
       "imagePreviewFont": "3270 Nerd Font",
       "linkPreviewFont": "font3270",
       "caskName": "3270",
+      "repoRelease": true,
       "description": "Derived from the x3270 font, a modern format of a font with high nostalgic value"
     },
     {
@@ -18,6 +19,7 @@
       "imagePreviewFont": "Agave Nerd Font",
       "linkPreviewFont": "agave",
       "caskName": "agave",
+      "repoRelease": true,
       "description": "A small, monospace, outline font that is geometrically regular and simple"
     },
     {
@@ -28,6 +30,7 @@
       "imagePreviewFont": "AnonymicePro Nerd Font",
       "linkPreviewFont": "anonymous-pro",
       "caskName": "anonymice",
+      "repoRelease": true,
       "description": "Inspired by Anonymous 9 on Macintosh, since 2009, distinct `O`, `0`, `I`, `l`, `1`"
     },
     {
@@ -38,6 +41,7 @@
       "imagePreviewFont": "Arimo Nerd Font",
       "linkPreviewFont": false,
       "caskName": "arimo",
+      "repoRelease": true,
       "description": "Metrically similar to Arial, pan-European WGL character set, sans serif"
     },
     {
@@ -48,6 +52,7 @@
       "imagePreviewFont": "AurulentSansM Nerd Font",
       "linkPreviewFont": "aurulent",
       "caskName": "aurulent",
+      "repoRelease": true,
       "description": "Sans serif, designed by Stephen G. Hartke which also created Verily Serif"
     },
     {
@@ -58,6 +63,7 @@
       "imagePreviewFont": "BigBlueTermPlus Nerd Font",
       "linkPreviewFont": "bigblue-terminal",
       "caskName": "bigblue-terminal",
+      "repoRelease": true,
       "description": "Nostalgic, closely based on IBM's 8x14 EGA/VGA charset"
     },
     {
@@ -68,6 +74,7 @@
       "imagePreviewFont": "BitstromWera Nerd Font",
       "linkPreviewFont": "bitstream-vera",
       "caskName": "bitstream-vera-sans-mono",
+      "repoRelease": true,
       "description": "Dotted zero, compact lowercase characters"
     },
     {
@@ -78,6 +85,7 @@
       "imagePreviewFont": "CaskaydiaCove Nerd Font",
       "linkPreviewFont": "cascadia-code",
       "caskName": "caskaydia-cove",
+      "repoRelease": true,
       "description": "A fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal"
     },
     {
@@ -88,6 +96,7 @@
       "imagePreviewFont": "BlexMono Nerd Font",
       "linkPreviewFont": "plex-mono",
       "caskName": "blex-mono",
+      "repoRelease": true,
       "description": "It's global, it's versatile and it's distinctly IBM"
     },
     {
@@ -98,6 +107,7 @@
       "imagePreviewFont": "CodeNewRoman Nerd Font",
       "linkPreviewFont": "code-new-roman",
       "caskName": "code-new-roman",
+      "repoRelease": true,
       "description": "Tunable, slashed zeros, compact smaller characters"
     },
     {
@@ -108,6 +118,7 @@
       "imagePreviewFont": "ComicShannsMono Nerd Font",
       "linkPreviewFont": "false",
       "caskName": "comic-shanns-mono",
+      "repoRelease": true,
       "description": "The very typeface you’ve been trained to recognize since childhood"
     },
     {
@@ -118,6 +129,7 @@
       "imagePreviewFont": "Cousine Nerd Font",
       "linkPreviewFont": "cousine",
       "caskName": "cousine",
+      "repoRelease": true,
       "description": "Similar to Courier New with better readablitiy, dotted zeros"
     },
     {
@@ -128,6 +140,7 @@
       "imagePreviewFont": "DaddyTimeMono Nerd Font",
       "linkPreviewFont": "daddytimemono",
       "caskName": "daddy-time-mono",
+      "repoRelease": true,
       "description": "A monospaced font for programmers and other terminal groupies"
     },
     {
@@ -138,6 +151,7 @@
       "imagePreviewFont": "DejaVuSansM Nerd Font",
       "linkPreviewFont": "dejavu",
       "caskName": "dejavu-sans-mono",
+      "repoRelease": true,
       "description": "Dotted zero, based on the Bitstream Vera Fonts with a wider range of character"
     },
     {
@@ -148,6 +162,7 @@
       "imagePreviewFont": "DroidSansM Nerd Font",
       "linkPreviewFont": "droid-sans",
       "caskName": "droid-sans-mono",
+      "repoRelease": true,
       "description": "Good for small screens or font sizes"
     },
     {
@@ -158,6 +173,7 @@
       "imagePreviewFont": "EnvyCodeR Nerd Font",
       "linkPreviewFont": "envy-code-r",
       "caskName": "envy-code-r",
+      "repoRelease": true,
       "description": "Fully-scalable monospaced font designed for programming and command prompts"
     },
     {
@@ -168,6 +184,7 @@
       "imagePreviewFont": "FantasqueSansM Nerd Font",
       "linkPreviewFont": "fantasque-sans",
       "caskName": "fantasque-sans-mono",
+      "repoRelease": true,
       "description": "\"Wibbly-wobbly handwriting-like fuzziness\", takes some inspiration from Inconsolata and Monaco"
     },
     {
@@ -178,6 +195,7 @@
       "imagePreviewFont": "FiraCode Nerd Font",
       "linkPreviewFont": "firacode",
       "caskName": "fira-code",
+      "repoRelease": true,
       "description": "Programming ligatures, extension of Fira Mono font, enlarged operators"
     },
     {
@@ -188,6 +206,7 @@
       "imagePreviewFont": "FiraMono Nerd Font",
       "linkPreviewFont": "fira",
       "caskName": "fira-mono",
+      "repoRelease": true,
       "description": "Mozilla typeface, dotted zero"
     },
     {
@@ -198,6 +217,7 @@
       "imagePreviewFont": "GohuFont 14 Nerd Font",
       "linkPreviewFont": "gohufont-14",
       "caskName": "gohufont",
+      "repoRelease": true,
       "description": "Bitmap font, tall capitals and ascenders, small serifs"
     },
     {
@@ -208,6 +228,7 @@
       "imagePreviewFont": "GoMono Nerd Font",
       "linkPreviewFont": "go-mono",
       "caskName": "go-mono",
+      "repoRelease": true,
       "description": "Created specifically for the Go project, looks particularly clear for use with the Go language"
     },
     {
@@ -218,6 +239,7 @@
       "imagePreviewFont": "Hack Nerd Font",
       "linkPreviewFont": "hack",
       "caskName": "hack",
+      "repoRelease": true,
       "description": "Dotted zero, short descenders, expands upon work done for Bitstream Vera &amp; DejaVu, legible at common sizes"
     },
     {
@@ -228,6 +250,7 @@
       "imagePreviewFont": "Hasklug Nerd Font",
       "linkPreviewFont": "hasklig",
       "caskName": "hasklug",
+      "repoRelease": true,
       "description": "Monospaced ligatures, makes composite glyphs (e.g. ->) more reabable, especially in Haskell"
     },
     {
@@ -238,6 +261,7 @@
       "imagePreviewFont": "HeavyData Nerd Font",
       "linkPreviewFont": false,
       "caskName": "heavy-data",
+      "repoRelease": true,
       "description": "Novel and unique design, dotted zero"
     },
     {
@@ -248,6 +272,7 @@
       "imagePreviewFont": "Hurmit Nerd Font",
       "linkPreviewFont": "hermit",
       "caskName": "hurmit",
+      "repoRelease": true,
       "description": "Symbols stand out from common text"
     },
     {
@@ -258,6 +283,7 @@
       "imagePreviewFont": "iMWritingMono Nerd Font",
       "linkPreviewFont": "ia-writer-mono",
       "caskName": "im-writing",
+      "repoRelease": true,
       "description": "A heavy modification of IBM's Plex font"
     },
     {
@@ -268,6 +294,7 @@
       "imagePreviewFont": "Inconsolata Nerd Font",
       "linkPreviewFont": "inconsolata",
       "caskName": "inconsolata",
+      "repoRelease": true,
       "description": "Slashed zero, takes inspiration from many different fonts and glyphs, subtle curves in lowercase"
     },
     {
@@ -278,6 +305,7 @@
       "imagePreviewFont": "InconsolataGo Nerd Font",
       "linkPreviewFont": "inconsolata-go",
       "caskName": "inconsolata-go",
+      "repoRelease": true,
       "description": "Inconsolata with straight quotes"
     },
     {
@@ -288,6 +316,7 @@
       "imagePreviewFont": "Inconsolata LGC Nerd Font",
       "linkPreviewFont": false,
       "caskName": "inconsolata-lgc",
+      "repoRelease": true,
       "description": "Inconsolata with added the Cyrillic alphabet"
     },
     {
@@ -309,6 +338,7 @@
       "imagePreviewFont": "Iosevka Nerd Font",
       "linkPreviewFont": "iosevka",
       "caskName": "iosevka",
+      "repoRelease": true,
       "description": "Narrow and horizontally tight characters, slashed zero"
     },
     {
@@ -319,6 +349,7 @@
       "imagePreviewFont": "IosevkaTerm Nerd Font",
       "linkPreviewFont": "false",
       "caskName": "iosevka-term",
+      "repoRelease": true,
       "description": "A narrower variant focusing terminal uses: Arrows and geometric symbols will be narrow to follow typical terminal usages"
     },
     {
@@ -329,6 +360,7 @@
       "imagePreviewFont": "JetBrainsMono Nerd Font",
       "linkPreviewFont": "jetbrainsmono",
       "caskName": "jetbrains-mono",
+      "repoRelease": true,
       "description": "JetBrains officially created font for developers"
     },
     {
@@ -339,6 +371,7 @@
       "imagePreviewFont": "Lekton Nerd Font",
       "linkPreviewFont": "lekton",
       "caskName": "lekton",
+      "repoRelease": true,
       "description": "Very light and thin characters, sharp m's, `0` and `O` very similar"
     },
     {
@@ -349,6 +382,7 @@
       "imagePreviewFont": "LiterationMono Nerd Font",
       "linkPreviewFont": "liberation",
       "caskName": "liberation",
+      "repoRelease": true,
       "description": "`0` and `O` very similar, very short tight descenders"
     },
     {
@@ -359,6 +393,7 @@
       "imagePreviewFont": "Lilex Nerd Font",
       "linkPreviewFont": "lilex",
       "caskName": "lilex",
+      "repoRelease": true,
       "description": "Modern with ligatures"
     },
     {
@@ -369,6 +404,7 @@
       "imagePreviewFont": "MesloLGM Nerd Font",
       "linkPreviewFont": "meslo",
       "caskName": "meslo-lg",
+      "repoRelease": true,
       "description": "Slashed zeros, customized version of Apple's Menlo"
     },
     {
@@ -379,6 +415,7 @@
       "imagePreviewFont": "Monofur Nerd Font",
       "linkPreviewFont": "monofur",
       "caskName": "monofur",
+      "repoRelease": true,
       "description": "Dotted zeros, slightly exaggerated curvy characters, compact characters"
     },
     {
@@ -389,6 +426,7 @@
       "imagePreviewFont": "Monoid Nerd Font",
       "linkPreviewFont": "monoid",
       "caskName": "monoid",
+      "repoRelease": true,
       "description": "Ligatures, distinguishable glyphs with short ascenders &amp; descenders, large operators &amp; punctuation"
     },
     {
@@ -399,6 +437,7 @@
       "imagePreviewFont": "Mononoki Nerd Font",
       "linkPreviewFont": "mononoki",
       "caskName": "mononoki",
+      "repoRelease": true,
       "description": "Keeps in mind differentiation of characters and resolution sizes"
     },
     {
@@ -409,6 +448,7 @@
       "imagePreviewFont": "M+1Code Nerd Font",
       "linkPreviewFont": "mplus",
       "caskName": "mplus",
+      "repoRelease": true,
       "description": "Multiple styles and weights, many glyph sets (e.g. Kana glyphs)"
     },
     {
@@ -419,6 +459,7 @@
       "imagePreviewFont": "NotoSansM Nerd Font",
       "linkPreviewFont": "noto",
       "caskName": "noto",
+      "repoRelease": true,
       "description": "`0` and `O` very similar, characters are either very curvy or straight lined"
     },
     {
@@ -429,6 +470,7 @@
       "imagePreviewFont": "OpenDyslexic Nerd Font",
       "linkPreviewFont": "opendyslexic",
       "caskName": "open-dyslexic",
+      "repoRelease": true,
       "description": "Designed specifically to alleviate reading errors caused by dyslexia"
     },
     {
@@ -439,6 +481,7 @@
       "imagePreviewFont": "OverpassM Nerd Font",
       "linkPreviewFont": "overpass",
       "caskName": "overpass",
+      "repoRelease": true,
       "description": "An open source font family inspired by Highway Gothic"
     },
     {
@@ -449,6 +492,7 @@
       "imagePreviewFont": "ProFont IIx Nerd Font",
       "linkPreviewFont": "profont",
       "caskName": "profont",
+      "repoRelease": true,
       "description": "Looks best with anti-aliasing turned off, squared off character corners, vertically tight small `s`"
     },
     {
@@ -459,6 +503,7 @@
       "imagePreviewFont": "ProggyClean Nerd Font",
       "linkPreviewFont": "proggy-clean",
       "caskName": "proggy-clean-tt",
+      "repoRelease": true,
       "description": "Designed particularly for use at small point sizes"
     },
     {
@@ -469,6 +514,7 @@
       "imagePreviewFont": "RobotoMono Nerd Font",
       "linkPreviewFont": "roboto",
       "caskName": "roboto-mono",
+      "repoRelease": true,
       "description": "Dashed zero, curved and straight character lines"
     },
     {
@@ -479,6 +525,7 @@
       "imagePreviewFont": "ShureTechMono Nerd Font",
       "linkPreviewFont": "share-tech",
       "caskName": "shure-tech-mono",
+      "repoRelease": true,
       "description": "Dotted zeros, distinguishable 1 and l, curved and straight character lines"
     },
     {
@@ -489,6 +536,7 @@
       "imagePreviewFont": "SauceCodePro Nerd Font",
       "linkPreviewFont": "source-code-pro",
       "caskName": "sauce-code-pro",
+      "repoRelease": true,
       "description": "Monospaced font family for user interface and coding environments"
     },
     {
@@ -499,6 +547,7 @@
       "imagePreviewFont": "SpaceMono Nerd Font",
       "linkPreviewFont": "space",
       "caskName": "space-mono",
+      "repoRelease": true,
       "description": "Squarish character lines, dotted zero, aggressive parethesis"
     },
     {
@@ -509,6 +558,7 @@
       "imagePreviewFont": "Symbols2048Em Nerd Font Mono",
       "linkPreviewFont": false,
       "caskName": "symbols-only",
+      "repoRelease": true,
       "description": "Just the Nerd Font Icons. I.e Symbol font only"
     },
     {
@@ -519,6 +569,7 @@
       "imagePreviewFont": "Terminess Nerd Font",
       "linkPreviewFont": "terminus",
       "caskName": "terminess-ttf",
+      "repoRelease": true,
       "description": "Squarish characters that are slightly askew"
     },
     {
@@ -529,6 +580,7 @@
       "imagePreviewFont": "Tinos Nerd Font",
       "linkPreviewFont": false,
       "caskName": "tinos",
+      "repoRelease": true,
       "description": "Some similarities to Times New Roman, designed by Steve Matteson, includes pan-European WGL character set"
     },
     {
@@ -539,6 +591,7 @@
       "imagePreviewFont": "Ubuntu Nerd Font",
       "linkPreviewFont": false,
       "caskName": "ubuntu",
+      "repoRelease": true,
       "description": "Specially created for Ubuntu"
     },
     {
@@ -549,6 +602,7 @@
       "imagePreviewFont": "UbuntuMono Nerd Font",
       "linkPreviewFont": "ubuntu",
       "caskName": "ubuntu-mono",
+      "repoRelease": true,
       "description": "Dotted zeros, used the `n`, `o`, `H` &amp; `O` Latin characters as a base for design"
     },
     {
@@ -559,6 +613,7 @@
       "imagePreviewFont": "VictorMono Nerd Font",
       "linkPreviewFont": "victor-mono",
       "caskName": "victor-mono",
+      "repoRelease": true,
       "description": "Clean, crisp and narrow, with a large x-height and clear punctuation"
     }
   ]
