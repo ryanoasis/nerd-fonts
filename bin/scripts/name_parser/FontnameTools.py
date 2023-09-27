@@ -175,7 +175,7 @@ class FontnameTools:
         """Filter out characters that are not allowed in Postscript names"""
         # The name string must be restricted to the printable ASCII subset, codes 33 to 126,
         # except for the 10 characters '[', ']', '(', ')', '{', '}', '<', '>', '/', '%'
-        out = ""
+        out = ''
         for c in name:
             if c in '[](){}<>/%' or ord(c) < 33 or ord(c) > 126:
                 continue
