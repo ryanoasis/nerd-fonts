@@ -1,4 +1,4 @@
-name: Update gh-pages
+name: Update gitignore and gh-pages
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync:
+  sync_pages:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch files
@@ -43,3 +43,22 @@ jobs:
           git-config-name: GitHub Actions
           git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
           clean: false
+
+  update_gitignore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Regenerate gitignore
+        run: |
+          cd bin/scripts
+          ./update-gitignore.sh
+
+      - name: Commit gitignore back to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          fetch: false
+          add: ".gitignore"
+          message: "[ci] Update .gitignore file"
+          committer_name: GitHub Actions
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com

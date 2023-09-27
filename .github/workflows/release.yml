@@ -309,6 +309,7 @@ jobs:
       - name: Commit patched fonts back to repo
         # For fonts with repoRelease == false in the font.json the gitignore should
         # have been setup in a way that this commits only the README.md
+        # See also fontjson.yml and update-gitignore.sh
         uses: EndBug/add-and-commit@v9
         with:
           fetch: false

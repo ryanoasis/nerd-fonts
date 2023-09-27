@@ -30,6 +30,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `test-powerlines.sh`: Print-to-debug powerline examples [4]
 * `tests.sh`: Create some font usage gif movie? [x]
 * `update-all-contributors-website.py`: Update the contributors page on `nerdfonts.com` (i.e. gh-pages) [7]
+* `update-gitignore.sh`: Correct gitignore file for not-released-in-repo fonts [8]
 * `version-bump.sh`: Change version number in all scripts on a new release [1]
 
 [1] Used by CI (github release workflow)
@@ -39,4 +40,5 @@ Note: Usually you need to call the scripts in this directory while actually bein
 [5] Used by CI (github packsvgs workflow)
 [6] Used by CI (github casks workflow)
 [7] Used by CI (github contributors workflow)
+[8] Used by CI (github fontjson workflow)
 [x] Probably not used by anything
