@@ -362,8 +362,8 @@ Patching the font of your own choosing:
   docker run --rm -v /path/to/fonts:/in:Z -v /path/for/output:/out:Z nerdfonts/patcher [OPTIONS]
   ```
 
-[!NOTE]
-The resulting font's family will be set to the original family after CamelCasing, removing whitespace and appending ` Nerd Font`. For example, `iosevka term` would become `IosevkaTerm Nerd Font`.
+> [!NOTE]
+> The resulting font's family will be set to the original family after CamelCasing, removing whitespace and appending ` Nerd Font`. For example, `iosevka term` would become `IosevkaTerm Nerd Font`.
 
 Full options:
 
