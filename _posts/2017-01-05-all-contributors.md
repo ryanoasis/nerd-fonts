@@ -213,6 +213,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://nilueps.net"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/55964909?v=4?s=100" width="100px;" alt="Nicolas Epstein"/><br /><sub><b>Nicolas Epstein</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=sqwxl" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/LeoniePhiline"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/22329650?v=4?s=100" width="100px;" alt="LeoniePhiline"/><br /><sub><b>LeoniePhiline</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3ALeoniePhiline" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/frantisekhanzlikbl"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/43645405?v=4?s=100" width="100px;" alt="František Hanzlík"/><br /><sub><b>František Hanzlík</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=frantisekhanzlikbl" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
