@@ -1367,6 +1367,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "frantisekhanzlikbl",
+      "name": "František Hanzlík",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43645405?v=4",
+      "profile": "https://github.com/frantisekhanzlikbl",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
