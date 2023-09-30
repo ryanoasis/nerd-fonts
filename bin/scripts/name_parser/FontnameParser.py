@@ -283,10 +283,14 @@ class FontnameParser:
         os2_weight = font.os2_weight
         ps_weight = FontnameTools.weight_string_to_number(font.weight)
         name_weight = FontnameTools.weight_string_to_number(weight)
+        weightproblem = False
+        if ps_weight is None:
+            self.logger.warn('Can not parse PS-weight: {}'.format(restored_weight_token))
+            weightproblem = True
         if name_weight is None:
-            self.logger.error('Can not parse name for weight: {}'.format(restored_weight_token))
-            return
-        if abs(os2_weight - ps_weight) > 50 or abs(os2_weight - name_weight) > 50:
+            self.logger.warn('Can not parse name for weight: {}'.format(restored_weight_token))
+            weightproblem = True
+        if weightproblem or abs(os2_weight - ps_weight) > 50 or abs(os2_weight - name_weight) > 50:
             self.logger.warning('Possible problem with the weight metadata detected, check with --debug')
         self.logger.debug('Weight approximations: OS2/PS/Name: {}/{}/{} (from {}/\'{}\'/\'{}\')'.format(
             os2_weight, ps_weight, name_weight,
