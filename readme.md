@@ -363,7 +363,7 @@ Patching the font of your own choosing:
   ```
 
 > [!NOTE]
-> The resulting font's family will be set to the original family after CamelCasing, removing whitespace and appending ` Nerd Font`. For example, `iosevka term` would become `IosevkaTerm Nerd Font`.
+> The resulting font's family (aka font name) will be set to the original family after CamelCasing, removing whitespace and appending ` Nerd Font`. For example, `iosevka term` would become `IosevkaTerm Nerd Font`.
 
 Full options:
 
