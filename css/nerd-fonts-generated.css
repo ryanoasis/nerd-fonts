@@ -9,18 +9,18 @@
   font-family: 'NerdFontsSymbols Nerd Font';
   /* @TODO you need to adjust the path to the font: */
   src: url("../fonts/Symbols-2048-em Nerd Font Complete.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 100;
+  font-style: none;
 }
 
 .nf, .nerd-font, .nerd-fonts {
   font-family: 'NerdFontsSymbols Nerd Font';
   speak: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  line-height: 2;
   /* Better Font Rendering (from devicons, et al) */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
