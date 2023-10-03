@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# These icons are not included anymore since Nerd Fonts v3;
+# look into i_md.sh instead. This file is used to create
+# the "removed" cheat sheet entries.
+#
 # Material Design Icons (legacy) (2,119 icons)
 # Codepoints: F001-F847, Nerd Fonts moved F500-FD46
 # Nerd Fonts Version: 3.0.2

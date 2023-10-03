@@ -22,7 +22,8 @@ Only glyphs listed here could be found with the cheat sheet.
 * `font-awesome/FontAwesome.otf`: `i_fa.sh`
 * `Unicode_IEC_symbol_font.otf`: `i_iec.sh`
 * `font-logos.ttf`: `i_logos.sh`
-* `materialdesignicons-webfont.ttf`: `i_material.sh`
+* `materialdesignicons-webfont.ttf`: `i_material.sh` _removed with Nerd Fonts v3_
+* `materialdesign/MaterialDesignIconsDesktop.ttf` : `i_md.sh`
 * `octicons.ttf`: `i_oct.sh`
 * `PowerlineExtraSymbols.otf`: `i_ple.sh`
 * `powerline-symbols/PowerlineSymbols.otf`: _is a subset of PowerlineExtraSymbols_
