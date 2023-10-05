@@ -287,3 +287,25 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
+
+@media screen and (min-width: 990px) {
+  .row .subtitle-icon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+  }
+}
+
+.subtitle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.container ol, .container ul { 
+  padding: 0 8%; 
+  margin: 20px;
+}
