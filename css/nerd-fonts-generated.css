@@ -18,12 +18,13 @@
   speak: none;
   font-style: normal;
   font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  font-variant: inherit;
+  text-transform: initial
   line-height: 1;
   /* Better Font Rendering (from devicons, et al) */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 .nf-cod-account:before {
