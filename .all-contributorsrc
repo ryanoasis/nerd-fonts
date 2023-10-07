@@ -1376,6 +1376,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "VitthalGund",
+      "name": "Vitthal Popat Gund",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97181033?v=4",
+      "profile": "https://github.com/VitthalGund",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
