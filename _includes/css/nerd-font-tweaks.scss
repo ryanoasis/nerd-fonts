@@ -310,12 +310,12 @@ a.nerd-font-button:before {
 	font-size: 2em
 }
 
-#forkongithub .nf {
-	font-size: 1.25rem;
-}
+// #forkongithub .nf {
+// 	font-size: 1.25rem;
+// }
 
 /* for any ASCII :) */
-
+/*
 #forkongithub span {
 	font-size: 1.75rem;
 }
@@ -323,7 +323,7 @@ a.nerd-font-button:before {
 #forkongithub a {
 	display: inline-block;
 }
-
+*/
 /* color scheme */
 
 .nf1 {
@@ -476,6 +476,7 @@ a.nerd-font-button:before {
 }
 
 /* ----- fork on github banner ----- */
+/*
 #forkongithub a {
 	color: #fff;
 	background: #1E5D8A;
@@ -532,6 +533,28 @@ a.nerd-font-button:before {
 		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 		box-sizing: content-box;
 	}
+}
+*/
+// Github url button
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+#github {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #ffffff;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 25%;
+	font-size: 2.5em;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .8);
+	transition: all .3s ease-in-out;
+	position: fixed;
+	bottom: 0.7rem;
+	right: 0.7rem;
+	z-index: 10;
 }
 
 .icon-backdrop {
