@@ -5,6 +5,10 @@
 {% include header.html %}
 <body>
   <div id="main">
+    <div class="container">
+      <a href="https://github.com/ryanoasis/nerd-fonts" target="_blank" id="github"
+        class="nf nf-fa-github"></a>
+    </div>
     {% include topnav.html %}
     {% for page in site.posts reversed %}
       {% if page.page == nil %}
