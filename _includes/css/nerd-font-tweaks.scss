@@ -738,6 +738,12 @@ a.nerd-font-button:before {
 	}
 }
 
+@media only screen and (max-width: 785px) {
+	nav ul li {
+		min-width: 50px;
+	}
+}
+
 /* util */
 
 .text-left {

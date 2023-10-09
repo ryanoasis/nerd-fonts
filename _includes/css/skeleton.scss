@@ -91,14 +91,14 @@
   }
 
 /* top nav tweaks */
-@media(min-width:768px) {
+@media(min-width:940px) {
 	.hide-on-larger-view {
 		display: none !important;
 	}
 
 }
 
-@media(max-width:767px) {
+@media(max-width:939px) {
 	.hide-on-smaller-view {
 		display: none !important;
 	}
