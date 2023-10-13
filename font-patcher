@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.5.3"
+script_version = "4.6.0"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -283,6 +283,10 @@ def get_btb_metrics(font):
     typo_btb = typo_height + font.os2_typolinegap
     win_btb = win_height + win_gap
     return (hhea_btb, typo_btb, win_btb, win_gap)
+
+def get_metrics_names():
+    """ Helper to get the line metrics names consistent """
+    return ['HHEA','TYPO','WIN']
 
 def get_old_average_x_width(font):
     """ Determine xAvgCharWidth of the OS/2 table """
@@ -810,11 +814,11 @@ class font_patcher:
 
         box_enabled = self.source_monospaced and not self.symbolsonly # Box glyph only for monospaced and not for Symbols Only
         box_keep = False
-        if box_enabled:
+        if box_enabled or self.args.forcebox:
             self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
             box_glyphs_target = len(list(self.sourceFont.selection))
             box_glyphs_current = len(list(self.sourceFont.selection.byGlyphs))
-            if box_glyphs_target > box_glyphs_current:
+            if box_glyphs_target > box_glyphs_current or self.args.forcebox:
                 # Sourcefont does not have all of these glyphs, do not mix sets (overwrite existing)
                 if box_glyphs_current > 0:
                     logger.debug("%d/%d box drawing glyphs will be replaced",
@@ -1139,29 +1143,40 @@ class font_patcher:
         (hhea_btb, typo_btb, win_btb, win_gap) = get_btb_metrics(self.sourceFont)
         use_typo = self.sourceFont.os2_use_typo_metrics != 0
 
-        Metric = Enum('Metric', ['HHEA', 'TYPO', 'WIN'])
+        Metric = Enum('Metric', get_metrics_names())
 
-        # We use either TYPO (1) or WIN (2) and compare with HHEA
-        # and use HHEA (0) if the fonts seems broken - no WIN, see #1056
-        our_btb = typo_btb if use_typo else win_btb
-        if our_btb == hhea_btb:
-            metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
-        elif abs(our_btb - hhea_btb) / our_btb < 0.03:
-            logger.info("Font vertical metrics slightly off (%.1f)", (our_btb - hhea_btb) / our_btb * 100.0)
-            metrics = Metric.TYPO if use_typo else Metric.WIN
-        else:
-            # Try the other metric
-            our_btb = typo_btb if not use_typo else win_btb
+        if not self.args.metrics:
+            # We use either TYPO (1) or WIN (2) and compare with HHEA
+            # and use HHEA (0) if the fonts seems broken - no WIN, see #1056
+            our_btb = typo_btb if use_typo else win_btb
             if our_btb == hhea_btb:
-                use_typo = not use_typo
-                logger.warning("Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. %s)", repr(use_typo))
-                self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
+                metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
+            elif abs(our_btb - hhea_btb) / our_btb < 0.03:
+                logger.info("Font vertical metrics slightly off (%.1f%)", (our_btb - hhea_btb) / our_btb * 100.0)
                 metrics = Metric.TYPO if use_typo else Metric.WIN
             else:
-                # We trust the WIN metric more, see experiments in #1056
-                logger.warning("Font vertical metrics inconsistent (HHEA %d / TYPO %d / WIN %d), using WIN", hhea_btb, typo_btb, win_btb)
+                # Try the other metric
+                our_btb = typo_btb if not use_typo else win_btb
+                if our_btb == hhea_btb:
+                    use_typo = not use_typo
+                    logger.warning("Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. %s)", repr(use_typo))
+                    self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
+                    metrics = Metric.TYPO if use_typo else Metric.WIN
+                else:
+                    # We trust the WIN metric more, see experiments in #1056
+                    logger.warning("Font vertical metrics inconsistent (HHEA %d / TYPO %d / WIN %d), using WIN", hhea_btb, typo_btb, win_btb)
+                    our_btb = win_btb
+                    metrics = Metric.WIN
+        else:
+            metrics = Metric[self.args.metrics]
+            logger.debug("Metrics in the font: HHEA %d / TYPO %d / WIN %d", hhea_btb, typo_btb, win_btb)
+            if metrics == Metric.HHEA:
+                our_btb = hhea_btb
+            elif metrics == Metric.TYPO:
+                our_btb = typo_btb
+            else:
                 our_btb = win_btb
-                metrics = Metric.WIN
+            logger.info("Manually selected metrics: %s (%d)", self.args.metrics, our_btb)
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
@@ -1177,6 +1192,7 @@ class font_patcher:
             self.font_dim['ymin'] = -self.sourceFont.os2_windescent - half_gap(win_gap, False)
             self.font_dim['ymax'] = self.sourceFont.os2_winascent + half_gap(win_gap, True)
         else:
+            logger.debug("Metrics is strange")
             pass # Will fail the metrics check some line later
 
         # Calculate font height
@@ -1839,18 +1855,13 @@ def setup_arguments():
     # optional arguments
     parser.add_argument('font',                                      help='The path to the font to patch (e.g., Inconsolata.otf)')
     parser.add_argument('-v', '--version',                           action='version',        version=projectName + ": %(prog)s (" + version + ")")
-    parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='count',      help='Whether to generate the glyphs as single-width not double-width (default is double-width)')
-    parser.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
-    parser.add_argument('-q', '--quiet', '--shutup',                 dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
-    parser.add_argument('-c', '--complete',                          dest='complete',         default=False, action='store_true', help='Add all available Glyphs')
+    parser.add_argument('-s', '--mono', '--use-single-width-glyphs', dest='single',           default=False, action='count',      help='Whether to generate the glyphs as single-width not double-width (default is double-width) (Nerd Font Mono)')
+    parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang") (Nerd Font Propo)')
+    parser.add_argument('--debug',                                   dest='debugmode',        default=0,     type=int, nargs='?', help='Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)', const=2, choices=range(0, 3 + 1))
+    parser.add_argument('-q', '--quiet',                             dest='quiet',            default=False, action='store_true', help='Do not generate verbose output')
     parser.add_argument('--careful',                                 dest='careful',          default=False, action='store_true', help='Do not overwrite existing glyphs if detected')
-    parser.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file')
-    parser.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str,            help='Specify a Script for Post Processing')
-    parser.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
-    parser.add_argument('--custom',                                  dest='custom',           default=False, type=str,            help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
     parser.add_argument('-ext', '--extension',                       dest='extension',        default="",    type=str,            help='Change font file type to create (e.g., ttf, otf)')
     parser.add_argument('-out', '--outputdir',                       dest='outputdir',        default=".",   type=str,            help='The directory to output the patched font file to')
-    parser.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, help='Path to glyphs to be used for patching')
     parser.add_argument('--makegroups',                              dest='makegroups',       default=1,     type=int, nargs='?', help='Use alternative method to name patched fonts (default=1)', const=1, choices=range(-1, 6 + 1))
     # --makegroup has an additional undocumented numeric specifier. '--makegroup' is in fact '--makegroup 1'.
     # Original font name: Hugo Sans Mono ExtraCondensed Light Italic
@@ -1864,37 +1875,45 @@ def setup_arguments():
     #  5  HugoSansMono NF ExtCn Light Italic                       [X] [X] [ ]
     #  6  HugoSansMono NF XCn Lt It                                [X] [X] [X]
 
-    parser.add_argument('--variable-width-glyphs',                   dest='nonmono',          default=False, action='store_true', help='Do not adjust advance width (no "overhang")')
-    parser.add_argument('--has-no-italic',                           dest='noitalic',         default=False, action='store_true', help='Font family does not have Italic (but Oblique)')
+    sym_font_group = parser.add_argument_group('Symbol Fonts')
+    sym_font_group.add_argument('-c', '--complete',                             dest='complete',             default=False, action='store_true', help='Add all available Glyphs')
+    sym_font_group.add_argument('--codicons',                                   dest='codicons',             default=False, action='store_true', help='Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)')
+    sym_font_group.add_argument('--fontawesome',                                dest='fontawesome',          default=False, action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)')
+    sym_font_group.add_argument('--fontawesomeext',                             dest='fontawesomeextension', default=False, action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)')
+    sym_font_group.add_argument('--fontlogos',                                  dest='fontlogos',            default=False, action='store_true', help='Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)')
+    sym_font_group.add_argument('--material', '--mdi',                          dest='material',             default=False, action='store_true', help='Add Material Design Icons (https://github.com/templarian/MaterialDesign)')
+    sym_font_group.add_argument('--octicons',                                   dest='octicons',             default=False, action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)')
+    sym_font_group.add_argument('--powersymbols',                               dest='powersymbols',         default=False, action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)')
+    sym_font_group.add_argument('--pomicons',                                   dest='pomicons',             default=False, action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)')
+    sym_font_group.add_argument('--powerline',                                  dest='powerline',            default=False, action='store_true', help='Add Powerline Glyphs')
+    sym_font_group.add_argument('--powerlineextra',                             dest='powerlineextra',       default=False, action='store_true', help='Add Powerline Extra Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)')
+    sym_font_group.add_argument('--weather',                                    dest='weather',              default=False, action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)')
 
-    # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
-    progressbars_group_parser = parser.add_mutually_exclusive_group(required=False)
-    progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
-    progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
-    parser.set_defaults(progressbars=True)
-    parser.add_argument('--debug',                                   dest='debugmode',        default=0,     type=int, nargs='?', help='Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)', const=2, choices=range(0, 3 + 1))
-    parser.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
-    parser.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
+    expert_group = parser.add_argument_group('Expert Options')
+    expert_group.add_argument('--boxdrawing',                              dest='forcebox',         default=False, action='store_true', help='Force patching in (over existing) box drawing glyphs')
+    expert_group.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
+    expert_group.add_argument('--custom',                                  dest='custom',           default=False, type=str,            help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
+
+    expert_group.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
+    expert_group.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, help='Path to glyphs to be used for patching')
+    expert_group.add_argument('--has-no-italic',                           dest='noitalic',         default=False, action='store_true', help='Font family does not have Italic (but Oblique), to help create correct RIBBI set')
+    expert_group.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
+    expert_group.add_argument('--metrics',                                 dest='metrics',          default=None, choices=get_metrics_names(), help='Select vertical metrics source (for problematic cases)')
+    expert_group.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', or concrete free name-string)')
+    expert_group.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str,            help='Specify a Script for Post Processing')
+    progressbars_group_parser = expert_group.add_mutually_exclusive_group(required=False)
+    expert_group.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file (needs --configfile)')
+    expert_group.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
     # Possible values with examples:
     # <none>  - copy from sourcefont (default)
     # 0       - calculate from font according to OS/2-version-2
     # 500     - set to 500
-    parser.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', or concrete free name-string)')
 
-    # symbol fonts to include arguments
-    sym_font_group = parser.add_argument_group('Symbol Fonts')
-    sym_font_group.add_argument('--fontawesome',                                dest='fontawesome',          default=False, action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)')
-    sym_font_group.add_argument('--fontawesomeextension',                       dest='fontawesomeextension', default=False, action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)')
-    sym_font_group.add_argument('--fontlogos', '--fontlinux',                   dest='fontlogos',            default=False, action='store_true', help='Add Font Logos Glyphs (https://github.com/Lukas-W/font-logos)')
-    sym_font_group.add_argument('--octicons',                                   dest='octicons',             default=False, action='store_true', help='Add Octicons Glyphs (https://octicons.github.com)')
-    sym_font_group.add_argument('--codicons',                                   dest='codicons',             default=False, action='store_true', help='Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)')
-    sym_font_group.add_argument('--powersymbols',                               dest='powersymbols',         default=False, action='store_true', help='Add IEC Power Symbols (https://unicodepowersymbol.com/)')
-    sym_font_group.add_argument('--pomicons',                                   dest='pomicons',             default=False, action='store_true', help='Add Pomicon Glyphs (https://github.com/gabrielelana/pomicons)')
-    sym_font_group.add_argument('--powerline',                                  dest='powerline',            default=False, action='store_true', help='Add Powerline Glyphs')
-    sym_font_group.add_argument('--powerlineextra',                             dest='powerlineextra',       default=False, action='store_true', help='Add Powerline Glyphs (https://github.com/ryanoasis/powerline-extra-symbols)')
-    sym_font_group.add_argument('--material', '--materialdesignicons', '--mdi', dest='material',             default=False, action='store_true', help='Add Material Design Icons (https://github.com/templarian/MaterialDesign)')
-    sym_font_group.add_argument('--weather', '--weathericons',                  dest='weather',              default=False, action='store_true', help='Add Weather Icons (https://github.com/erikflowers/weather-icons)')
+    # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
+    progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
+    progressbars_group_parser.add_argument('--no-progressbars',      dest='progressbars',     action='store_false',               help='Don\'t show percentage completion progress bars per Glyph Set')
+    expert_group.set_defaults(progressbars=True)
 
     args = parser.parse_args()
 
