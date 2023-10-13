@@ -329,10 +329,11 @@ See: [Font Patcher](#font-patcher) for usage
 * use this option if you do __not__ want to use one of the [fonts provided](#patched-fonts)
 * you will still need to copy the generated font to the correct font directory on your system
 
+## font-patcher
 
-<h2 align="center" id="font-patcher">
-	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
-</h2>
+<p align="center">
+  <img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
+</p>
 
 Patching the font of your own choosing:
 * Use the script
