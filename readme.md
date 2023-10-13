@@ -366,7 +366,7 @@ Patching the font of your own choosing:
 > [!NOTE]
 > The resulting font's family (aka font name) will be set to the original family after CamelCasing, removing whitespace and appending ` Nerd Font`. For example, `iosevka term` would become `IosevkaTerm Nerd Font`.
 
-Full options follow, see also [Wiki page on script options](https://github.com/ryanoasis/nerd-fonts/wiki/ScriptOptions):
+Full options follow, see also [**page explaining all options**](https://github.com/ryanoasis/nerd-fonts/wiki/ScriptOptions):
 
 ```
 Nerd Fonts Patcher v3.0.2 (4.4.0) (ff 20230101)
