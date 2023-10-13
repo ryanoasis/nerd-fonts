@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.5.3"
+script_version = "4.6.0"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -283,6 +283,10 @@ def get_btb_metrics(font):
     typo_btb = typo_height + font.os2_typolinegap
     win_btb = win_height + win_gap
     return (hhea_btb, typo_btb, win_btb, win_gap)
+
+def get_metrics_names():
+    """ Helper to get the line metrics names consistent """
+    return ['HHEA','TYPO','WIN']
 
 def get_old_average_x_width(font):
     """ Determine xAvgCharWidth of the OS/2 table """
@@ -1139,29 +1143,40 @@ class font_patcher:
         (hhea_btb, typo_btb, win_btb, win_gap) = get_btb_metrics(self.sourceFont)
         use_typo = self.sourceFont.os2_use_typo_metrics != 0
 
-        Metric = Enum('Metric', ['HHEA', 'TYPO', 'WIN'])
+        Metric = Enum('Metric', get_metrics_names())
 
-        # We use either TYPO (1) or WIN (2) and compare with HHEA
-        # and use HHEA (0) if the fonts seems broken - no WIN, see #1056
-        our_btb = typo_btb if use_typo else win_btb
-        if our_btb == hhea_btb:
-            metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
-        elif abs(our_btb - hhea_btb) / our_btb < 0.03:
-            logger.info("Font vertical metrics slightly off (%.1f)", (our_btb - hhea_btb) / our_btb * 100.0)
-            metrics = Metric.TYPO if use_typo else Metric.WIN
-        else:
-            # Try the other metric
-            our_btb = typo_btb if not use_typo else win_btb
+        if not self.args.metrics:
+            # We use either TYPO (1) or WIN (2) and compare with HHEA
+            # and use HHEA (0) if the fonts seems broken - no WIN, see #1056
+            our_btb = typo_btb if use_typo else win_btb
             if our_btb == hhea_btb:
-                use_typo = not use_typo
-                logger.warning("Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. %s)", repr(use_typo))
-                self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
+                metrics = Metric.TYPO if use_typo else Metric.WIN # conforming font
+            elif abs(our_btb - hhea_btb) / our_btb < 0.03:
+                logger.info("Font vertical metrics slightly off (%.1f%)", (our_btb - hhea_btb) / our_btb * 100.0)
                 metrics = Metric.TYPO if use_typo else Metric.WIN
             else:
-                # We trust the WIN metric more, see experiments in #1056
-                logger.warning("Font vertical metrics inconsistent (HHEA %d / TYPO %d / WIN %d), using WIN", hhea_btb, typo_btb, win_btb)
+                # Try the other metric
+                our_btb = typo_btb if not use_typo else win_btb
+                if our_btb == hhea_btb:
+                    use_typo = not use_typo
+                    logger.warning("Font vertical metrics probably wrong USE TYPO METRICS, assume opposite (i.e. %s)", repr(use_typo))
+                    self.sourceFont.os2_use_typo_metrics = 1 if use_typo else 0
+                    metrics = Metric.TYPO if use_typo else Metric.WIN
+                else:
+                    # We trust the WIN metric more, see experiments in #1056
+                    logger.warning("Font vertical metrics inconsistent (HHEA %d / TYPO %d / WIN %d), using WIN", hhea_btb, typo_btb, win_btb)
+                    our_btb = win_btb
+                    metrics = Metric.WIN
+        else:
+            metrics = Metric[self.args.metrics]
+            logger.debug("Metrics in the font: HHEA %d / TYPO %d / WIN %d", hhea_btb, typo_btb, win_btb)
+            if metrics == Metric.HHEA:
+                our_btb = hhea_btb
+            elif metrics == Metric.TYPO:
+                our_btb = typo_btb
+            else:
                 our_btb = win_btb
-                metrics = Metric.WIN
+            logger.info("Manually selected metrics: %s (%d)", self.args.metrics, our_btb)
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
@@ -1177,6 +1192,7 @@ class font_patcher:
             self.font_dim['ymin'] = -self.sourceFont.os2_windescent - half_gap(win_gap, False)
             self.font_dim['ymax'] = self.sourceFont.os2_winascent + half_gap(win_gap, True)
         else:
+            logger.debug("Metrics is strange")
             pass # Will fail the metrics check some line later
 
         # Calculate font height
@@ -1880,6 +1896,7 @@ def setup_arguments():
     # <none>  - copy from sourcefont (default)
     # 0       - calculate from font according to OS/2-version-2
     # 500     - set to 500
+    parser.add_argument('--metrics',                                 dest='metrics',          default=None, choices=get_metrics_names(), help='Select vertical metrics source (for problematic cases)')
     parser.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', or concrete free name-string)')
 
     # symbol fonts to include arguments
