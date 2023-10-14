@@ -112,6 +112,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 | Font Name                                         | Font Name and Repository          | ver   |\*RFN | Status            |
 |:--------------------------------------------------|:----------------------------------|:------|:-----|:------------------|
+| [0xProto][p-0xProto]                              | [0xProto][f-0xProto]              | 1.300 | NO   | ![w] ![m2] ![l]   |
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                    | 3.0.1 | NO   | ![w] ![m2] ![l]   |
 | [Agave][p-agave]                                  | [Agave][f-agave]                  | 37    | NO   | ![w] ![m2] ![l]   |
 | [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]          | 1.002 | YES  | ![w] ![m2] ![l]   |
@@ -614,6 +615,7 @@ Link References
 Font repos
 -->
 
+[f-0xProto]:https://github.com/0xType/0xProto
 [f-3270]:https://github.com/rbanffy/3270font
 [f-agave]:https://github.com/agarick/agave
 [f-a-pro]:https://www.marksimonson.com/fonts/view/anonymous-pro
@@ -665,6 +667,7 @@ Font repos
 Patched Font internal links
 -->
 
+[p-0xProto]:patched-fonts/0xProto
 [p-3270]:patched-fonts/3270
 [p-agave]:patched-fonts/Agave
 [p-anonymous-pro]:patched-fonts/AnonymousPro
