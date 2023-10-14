@@ -1,6 +1,17 @@
 {
   "fonts": [
     {
+      "unpatchedName": "0xProto",
+      "RFN": false,
+      "patchedName": "0xProto",
+      "folderName": "0xProto",
+      "imagePreviewFont": "0xProto",
+      "linkPreviewFont": "oxproto",
+      "caskName": "0xProto",
+      "repoRelease": false,
+      "description": "An opinionated font for software engineers"
+    },
+    {
       "unpatchedName": "IBM 3270",
       "RFN": false,
       "patchedName": "3270",
