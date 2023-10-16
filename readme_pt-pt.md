@@ -108,7 +108,7 @@ See [Wiki: Nomes dos ícones em Unix Shell][wiki-icon-names-in-shell]
 | :------------------------------------------------ | :---------------------------------- | :---- | :--------- | :--------------- |
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                      | NÃO   | 1000       | ![w] ![m2] ![l]  |
 | [Agave][p-agave]                                  | [Agave][f-agave]                    | NÃO   | 2048       | ![w] ![m2] ![l]  |
-| [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]            | NÃO   | 2048       | ![w] ![m2] ![l]  |
+| [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]            | NÃO   | 2048       | ![w] ![m2] ![l]  |
 | [Arimo][p-arimo]                                  | [Arimo][f-arimo]                    | NÃO   | 2048       | ![w] ![m2] ![l]  |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        |                                     | NÃO   | 1000       | ![w] ![m2] ![l]  |
 | [BigBlueTerminal][p-bigblueterm]                  |                                     | NÃO   | 1200       | ![w] ![m2] ![l]  |
