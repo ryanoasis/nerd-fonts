@@ -1385,6 +1385,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "piraces",
+      "name": "Raul Piraces Alastuey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11027628?v=4",
+      "profile": "https://piraces.dev",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
