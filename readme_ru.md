@@ -114,7 +114,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 |:--------------------------------------------------|:----------------------------------|:------|:-----|:------------------|
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                    | 3.0.1 | НЕТ   | ![w] ![m2] ![l]   |
 | [Agave][p-agave]                                  | [Agave][f-agave]                  | 37    | НЕТ   | ![w] ![m2] ![l]   |
-| [Anonymice Nerd Font][p-anonymous-pro]            | [Anonymous Pro][f-a-pro]          | 1.002 | ДА  | ![w] ![m2] ![l]   |
+| [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]          | 1.002 | ДА  | ![w] ![m2] ![l]   |
 | [Arimo][p-arimo]                                  | [Arimo][f-arimo]                  | 1.33  | НЕТ   | ![w] ![m2] ![l]   |
 | [Aurulent Sans Mono Nerd Font][p-aurulent]        | Stephen G. Hartke                 |       | НЕТ   | ![w] ![m2] ![l]   |
 | [BigBlueTerminal][p-bigblueterm]                  | VileR                             |       | НЕТ   | ![w] ![m2] ![l]   |
