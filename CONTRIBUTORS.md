@@ -204,6 +204,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/frantisekhanzlikbl"><img src="https://avatars.githubusercontent.com/u/43645405?v=4?s=100" width="100px;" alt="František Hanzlík"/><br /><sub><b>František Hanzlík</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=frantisekhanzlikbl" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/VitthalGund"><img src="https://avatars.githubusercontent.com/u/97181033?v=4?s=100" width="100px;" alt="Vitthal Popat Gund"/><br /><sub><b>Vitthal Popat Gund</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=VitthalGund" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://piraces.dev"><img src="https://avatars.githubusercontent.com/u/11027628?v=4?s=100" width="100px;" alt="Raul Piraces Alastuey"/><br /><sub><b>Raul Piraces Alastuey</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=piraces" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kingarrrt"><img src="https://avatars.githubusercontent.com/u/752293?v=4?s=100" width="100px;" alt="King Art"/><br /><sub><b>King Art</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=kingarrrt" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
