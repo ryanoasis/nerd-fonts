@@ -14,7 +14,7 @@ input.nerd-font-input {
 }
 
 .highlight {
-	display: inline-block;
+	display: block;
 	width: auto;
 	margin: 0pt auto;
 }
@@ -466,8 +466,8 @@ a.nerd-font-button:before {
 }
 
 .section-page-wrapper .sectiondivider {
-	width: 270px;
-	height: 270px;
+	width: fit-content;
+	height: fit-content;
 	padding: 15px;
 	position: relative;
 	top: 0px;
@@ -703,8 +703,8 @@ a.nerd-font-button:before {
 
 	.section-page-wrapper .sectiondivider,
 	.sectiondivider {
-		width: 200px;
-		height: 200px;
+		width: fit-content;
+		height: fit-content;
 		padding: 15px;
 		margin-left: -100px;
 	}
