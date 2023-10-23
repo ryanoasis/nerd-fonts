@@ -1403,6 +1403,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "georgeguimaraes",
+      "name": "George Guimarães",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2929?v=4",
+      "profile": "https://sourcelevel.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
