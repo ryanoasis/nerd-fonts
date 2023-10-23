@@ -71,6 +71,14 @@ This is not needed and you should never commit any patched files directly to the
     To increase testing speed add `--dry` to the `NERDFONTS` variable above.
   * Add the needed `makegroups` level (if it is not 1) to the `config.cfg` file and ammend your commit.
 ### 5. Release
+* As we do not release directly to the repository anymore the new font will only be seen on a real release.
+* For that the font image preview will also be needed (`generate-font-image-previews.sh`).
+* What is automated via Github workflows and what not might change over time, so nothing is specified hereA.
+
+## Steps to add a new icon to the core set
+Codepoints in the code set are a scarce resource, so in general it is unlikely that a icon will be added.
+* To add a icon one just needs to throw the svg into the correct directory and add a line to `icons.tsv`.
+* The workflow than automagically updates the `i_seti.sh` and the `original-source.otf` (workflow `PackSVGs`).
 
 ## Things to keep in mind
 
