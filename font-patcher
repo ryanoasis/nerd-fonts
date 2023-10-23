@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.6.0"
+script_version = "4.6.1"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
