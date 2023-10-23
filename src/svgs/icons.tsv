@@ -6,7 +6,9 @@
 # Keep the numbers consecutive.
 # You can add aliases by adding a new line with the same offset but
 # different name; omit the filename on those lines.
-# Use generate-original-source.py to regenerate the font used to patch.
+#
+# The Github workflow will automatically execute
+# generate-original-source.py to regenerate the font used to patch.
 #
 # offset	name (in i_seti.sh)			filename (.svg)
 #
@@ -209,3 +211,4 @@
 177		i_custom_asm				asm_nf.svg
 178		i_custom_v_lang				vlang_nf.svg
 179		i_custom_folder_oct			folder2_nf.svg
+180		i_custom_neovim				neovim_nf.svg
