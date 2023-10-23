@@ -4,23 +4,28 @@
 
 ## How to contribute summary
 
+Often it can be helpful to discuss a PR first in an Issue to avoid later problems or re-design when it is in review.
+
 * Fork the project and submit a Pull Request (PR)
   * Explain what the PR fixes or improves
   * Screenshots for bonus points
 * Use sensible commit messages
-  * If your PR fixes a separate issue number, include it in the commit message
+  * Short descriptive title in the first line, one empty line, and then multiple lines with an explanation (why and how).
+  * If your PR fixes a separate issue number, include it in the commit message like `Fixes: #123` (on a separate line).
 * Use a sensible number of commit messages as well
   * e.g. Your PR should not have 100s of commits
-  
+  * If you fix a previous commit of the PR it might be worth considering to squash them
+
 ## How to add yourself to the contributors (give yourself attribution)
 
 Don't forget to give yourself credit! Make sure you add yourself to the contributors list that will eventually propagate to [NerdFonts.com](https://nerdfonts.com)
+Usually the person pulling your PR will make sure you did not forget this step.
 
 Either:
 * Invoke the [@all-contributors bot](https://allcontributors.org/docs/en/bot/usage) by commenting on your Pull Request or Issue.
-* Shallow clone repo and execute `all-contributors add <YOUR_GITHUB_HANDLE> <CONTRIBUTION_TYPE>`
+* _(not advised)_ Shallow clone repo and execute `all-contributors add <YOUR_GITHUB_HANDLE> <CONTRIBUTION_TYPE>`
 
-Common types for this project include: `code`, `doc`, `translation`, `review` .For full list of contribution types see: https://allcontributors.org/docs/en/emoji-key
+Common types for this project include: `code`, `doc`, `translation`, `review`. For full list of contribution types see: https://allcontributors.org/docs/en/emoji-key
 
 ## Steps for updating an existing font
 
@@ -28,47 +33,44 @@ Common types for this project include: `code`, `doc`, `translation`, `review` .F
 * Copy and replace the existing unpatched version of the font and any readme and/or license files in the `src/unpatched-fonts/XYZ-font` directory
   * e.g. Updating *XYZ Font*, update files in directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
   * Make sure to update the correct subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
+  * Update version information in the `readme.md` file(s)
+  * Add all the modifications into a git commit.
 ### 2. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
-  * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
-  * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
+  * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete --debug 2`
+  * Make sure to then delete this new font file if it is in the repository
 ### 3. Run build scripts
-* When fairly satisfied the font patches correctly, run the following scripts in this order:
-  * Copy all the unpatched readmes to the patched location with additional info on variations appended:
-    * `cd bin/scripts`
-    * `./standardize-and-complete-readmes.sh XYZ`
+This is not needed and you should never commit any patched files directly to the repo. The Github workflow will do that at appropriate times.
+
+* When fairly satisfied the font patches correctly, run the following:
   * Patch **all** of the variations/options, e.g.
-    * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
+    * `./gotta-patch-em-all-font-patcher\!.sh /XYZ`
 
 ## Steps for adding a new font or removing an existing font
-
-* For removal of a font skip to [Step #4](#4-run-build-scripts)
 
 ### 1. Verify license
 * Check the license even allows the font to be modified and shared
 ### 2. Add original (unpatched) version
-* Add the unpatched version of the font and any readme and/or license files to the `src/unpatched-fonts/` directory inside a new directory
+* Add the unpatched version of the font and any license files to the `src/unpatched-fonts/` directory inside a new directory
   * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
   * Try to make subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
+  * Add a `README.md` file to `src/unpatched-fonts/xyz` that follows the style of the existing fonts.
+  * If the font has Oblique instead of Italic, set that (and other specials) in the `config.cfg` file
+  * Update information in the `/readme.md` file(s)
+  * Insert font into `bin/scripts/lib/fonts.json`; use repoRelease=false
+  * Add all the modifications into a git commit.
 ### 3. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
-  * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete`
+  * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete --debug 2`
   * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
 ### 4. Run build scripts
-* When fairly satisfied the font patches correctly, run the following scripts in this order:
-  * Copy all the unpatched readmes to the patched location with additional info on variations appended:
-    * `./standardize-and-complete-readmes.sh`
+* When fairly satisfied the font patches correctly, run the following:
   * Patch **all** of the variations/options, e.g.
-    * `./gotta-patch-em-all-font-patcher\!.sh XYZ`
-### 5. Update readme
-* Add the new font to the table of [Patched Fonts][]
-* Update the "counts" in the [Features Section][]
-  * You can get this information by simply passing a second param to the "all patcher": `./gotta-patch-em-all-font-patcher\!.sh "" info`
-    * "`X` already patched font families" -> Give exact number from 'typefaces' line
-    * "Over `X` unique combinations/variations..." -> round down to nearest hundred from 'variation' line
-    * "Over `X` glyphs/icons combined" -> manual process for now (@todo)
-* Update the "counts" in the [Combinations Section][]
-  * Again, get this info from the "all patcher"
+    * `NERDFONTS='--debug 2 --makegroups 1' ./gotta-patch-em-all-font-patcher\!.sh /XYZ`
+  * If there are name length problems you might want to add `--makegroups 2` or increasing (3, 4, ...), until all fonts of the set come out without error.
+    To increase testing speed add `--dry` to the `NERDFONTS` variable above.
+  * Add the needed `makegroups` level (if it is not 1) to the `config.cfg` file and ammend your commit.
+### 5. Release
 
 ## Things to keep in mind
 
@@ -88,8 +90,9 @@ Common types for this project include: `code`, `doc`, `translation`, `review` .F
 
 * Squashing to 1 commit is **not** required at this time
 * Use sensible commit messages (when in doubt: `git log`)
-* Use a sensible number of commit messages
-* If your PR fixes a specific issue number, include it in the commit message: `"Fixes XYZ error (fixes #123)"`
+* Short descriptive title in the first line, one empty line, and then multiple lines with an explanation (e.g. why and how).
+* Use a sensible number of commits
+* If your PR fixes a specific issue number, include it in the commit message: `Fixes: #123` as this activates the autolink and autoclose mechanism.
 
 ## Code standards
 
