@@ -1,82 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="177"
-   height="217"
-   viewBox="0 0 177 217"
    version="1.1"
-   id="svg4"
-   sodipodi:docname="neovim.svg"
-   inkscape:version="1.3 (0e150ed, 2023-07-21)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   viewBox="-10 0 763.98419 915.99951"
+   id="svg392"
+   width="763.98419"
+   height="915.99951"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-  <sodipodi:namedview
-     id="namedview4"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="true"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="4.0708702"
-     inkscape:cx="128.84223"
-     inkscape:cy="117.66526"
-     inkscape:window-width="2560"
-     inkscape:window-height="1327"
-     inkscape:window-x="1080"
-     inkscape:window-y="237"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="Page-1" />
-  <title
-     id="title1">neovim-1color@2x</title>
-  <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs1" />
-  <g
-     id="Page-1"
-     stroke="none"
-     stroke-width="1"
-     fill="none"
-     fill-rule="evenodd"
-     sketch:type="MSPage"
-     style="display:inline">
-    <g
-       id="mark-copy"
-       sketch:type="MSLayerGroup"
-       transform="translate(2.4045078,0.16348808)"
-       style="display:inline;mix-blend-mode:normal">
-      <path
-         d="M 0.02714063,45.458544 7.656878,37.755371 45.223647,93.699003 45.223646,211.99833 0.02714063,166.89384 Z"
-         id="Left---green"
-         stroke="#333333"
-         stroke-width="4"
-         sketch:type="MSShapeGroup" />
-      <path
-         d="M 129.33671,45.889361 175.15234,-0.14833204 V 117.71914 l -38.32918,57.63759 c 0,0 -7.79602,-8.46289 -7.79602,-8.46289 z"
-         id="Right---blue"
-         fill="#333333"
-         sketch:type="MSShapeGroup"
-         transform="matrix(-1,0,0,1,304,0)" />
-      <path
-         d="M 45.193511,-0.13667814 162.69969,179.17338 129.81792,212.05433 12.250244,33.141173 Z"
-         id="Cross---blue"
-         fill="#333333"
-         sketch:type="MSShapeGroup" />
-    </g>
-  </g>
-  <metadata
-     id="metadata4">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>neovim-1color@2x</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+     id="defs396" />
+  <path
+     fill="currentColor"
+     d="M 30.592,697.4655 C 30.5986,545.07164 28.7053,234.2663 28.7053,234.2663 L 155.4763,421.8143 V 822.0043 Z M -10,207.7685 V 712.3435 L 194.068,915.9995 V 408.7625 L 31.183,166.1945 Z M 752.701,192.9685 753.9842,710.9065 721.6463,746.012 562.6543,506.925 V 0 Z M 201.648,2.0483 689.074,775.8423 552.678,912.2363 64.996,140.0883 Z"
+     id="path390" />
 </svg>
