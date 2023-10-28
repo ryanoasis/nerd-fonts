@@ -132,6 +132,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]          | 1.8.0 | NO   | ![w] ![m2] ![l]   |
 | [Fira Code Nerd Font][p-fira-code]                | [Fira Code][f-fira-code]          | 6.2   | NO   | ![w] ![m2] ![l]   |
 | [Fira Mono Nerd Font][p-fira-mono]                | [Fira][f-fira-mono]               | 3.206 | NO   | ![w] ![m2] ![l]   |
+| [Geist Mono Nerd Font][p-geist-mono]                | [Geist Mono][f-geist-mono]      | 1.0.0 | NO   | ![w] ![m2] ![l]   |
 | [Go Mono Nerd Font][p-go-mono]                    | [Go-Mono][f-go-mono]              | 2.010 | NO   | ![w] ![m2] ![l]   |
 | [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2],[Gohu][f-gohu]| 2.0   | NO   | ![w] ![m2] ![l]   |
 | [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                    | 3.003 | NO   | ![w] ![m2] ![l]   |
@@ -629,6 +630,7 @@ Font repos
 [f-fant]:https://github.com/belluzj/fantasque-sans
 [f-fira-code]:https://github.com/tonsky/FiraCode
 [f-fira-mono]:https://github.com/mozilla/Fira
+[f-geist-mono]:https://github.com/vercel/geist-font
 [f-gohu2]:https://github.com/koemaeda/gohufont-ttf
 [f-gohu]:http://font.gohu.org/
 [f-go-mono]:https://go.googlesource.com/image/+/master/font/gofont/ttfs/
@@ -687,6 +689,7 @@ Patched Font internal links
 [p-fantasque]:patched-fonts/FantasqueSansMono
 [p-fira-code]:patched-fonts/FiraCode
 [p-fira-mono]:patched-fonts/FiraMono
+[p-geist-mono]:patched-fonts/GeistMono
 [p-gohu]:patched-fonts/Gohu
 [p-go-mono]:patched-fonts/Go-Mono
 [p-hack]:patched-fonts/Hack

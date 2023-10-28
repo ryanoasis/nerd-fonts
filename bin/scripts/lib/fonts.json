@@ -626,6 +626,17 @@
       "caskName": "victor-mono",
       "repoRelease": true,
       "description": "Clean, crisp and narrow, with a large x-height and clear punctuation"
+    },
+    {
+      "unpatchedName": "Geist Mono",
+      "RFN": false,
+      "patchedName": "GeistMono",
+      "folderName": "GeistMono",
+      "imagePreviewFont": "GeistMono Nerd Font",
+      "linkPreviewFont": "geist",
+      "caskName": "geist-mono",
+      "repoRelease": false,
+      "description": "Created by Vercel in collaboration with Basement Studio"
     }
   ]
 }
