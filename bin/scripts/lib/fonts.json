@@ -221,6 +221,17 @@
       "description": "Mozilla typeface, dotted zero"
     },
     {
+      "unpatchedName": "Geist Mono",
+      "RFN": false,
+      "patchedName": "GeistMono",
+      "folderName": "GeistMono",
+      "imagePreviewFont": "GeistMono Nerd Font",
+      "linkPreviewFont": false,
+      "caskName": "geist-mono",
+      "repoRelease": false,
+      "description": "Monospaced typeface designed to be used in code editors, diagrams, terminals, and other textbased interfaces where code is represented"
+    },
+    {
       "unpatchedName": "Gohu",
       "RFN": false,
       "patchedName": "GohuFont",
@@ -626,17 +637,6 @@
       "caskName": "victor-mono",
       "repoRelease": true,
       "description": "Clean, crisp and narrow, with a large x-height and clear punctuation"
-    },
-    {
-      "unpatchedName": "Geist Mono",
-      "RFN": false,
-      "patchedName": "GeistMono",
-      "folderName": "GeistMono",
-      "imagePreviewFont": "GeistMono Nerd Font",
-      "linkPreviewFont": "geist",
-      "caskName": "geist-mono",
-      "repoRelease": false,
-      "description": "Created by Vercel in collaboration with Basement Studio"
     }
   ]
 }
