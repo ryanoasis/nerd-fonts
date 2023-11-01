@@ -26,8 +26,13 @@ cC_end = contributorContents.rfind(ending_text) + len(ending_text)
 
 transformedContributorContents = contributorContents[cC_start:cC_end]
 
-print('* improving table')
+print('* replacing table')
 transformedContributorContents = transformedContributorContents.replace('<img src=', '<img class="lzy_img" data-src=')
+transformedContributorContents = re.sub(' *</?table>', '', transformedContributorContents, flags=re.IGNORECASE)
+transformedContributorContents = re.sub(' *</?tbody>', '', transformedContributorContents, flags=re.IGNORECASE)
+transformedContributorContents = re.sub(' *</?tr>', '', transformedContributorContents, flags=re.IGNORECASE)
+transformedContributorContents = re.sub(' *</td>', '</span>', transformedContributorContents, flags=re.IGNORECASE)
+transformedContributorContents = re.sub(' *<td[^>]*>', '<span style="display: inline-block; width: 130px;">', transformedContributorContents, flags=re.IGNORECASE)
 
 print('* final out')
 webContributorContents = (webContributorContents[:wCC_start]
