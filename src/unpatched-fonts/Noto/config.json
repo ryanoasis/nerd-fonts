@@ -1,5 +1,6 @@
 [Subtables]
 	ligatures: [
+		"'liga' Standard Ligatures lookup 34 subtable",
 		"Ligature Substitution lookup 18 subtable",
 		"Ligature Substitution lookup 17 subtable",
 		"Ligature Substitution lookup 16 subtable",
