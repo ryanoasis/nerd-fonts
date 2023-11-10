@@ -618,7 +618,7 @@
     },
     {
       "unpatchedName": "MonaspaceArgon",
-      "RFN": false,
+      "RFN": true,
       "patchedName": "MonaspaceArgon",
       "folderName": "MonaspaceArgon",
       "imagePreviewFont": "Monaspace Argon Nerd Font",
