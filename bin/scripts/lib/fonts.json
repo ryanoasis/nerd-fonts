@@ -408,6 +408,61 @@
       "description": "Slashed zeros, customized version of Apple's Menlo"
     },
     {
+      "unpatchedName": "MonaspaceArgon",
+      "RFN": true,
+      "patchedName": "MonaspaceArgon",
+      "folderName": "MonaspaceArgon",
+      "imagePreviewFont": "Monaspace Argon Nerd Font",
+      "linkPreviewFont": "monaspace-argon",
+      "caskName": "monaspace-argon",
+      "repoRelease": false,
+      "description": "Github Monaspace Argon - Neo-grotesque Sans"
+    },
+    {
+      "unpatchedName": "MonaspaceKrypton",
+      "RFN": false,
+      "patchedName": "MonaspaceKrypton",
+      "folderName": "MonaspaceKrypton",
+      "imagePreviewFont": "Monaspace Krypton Nerd Font",
+      "linkPreviewFont": "monaspace-krypton",
+      "caskName": "monaspace-krypton",
+      "repoRelease": false,
+      "description": "Github Monaspace Krypton - Humanist Sans"
+    },
+    {
+      "unpatchedName": "MonaspaceNeon",
+      "RFN": false,
+      "patchedName": "MonaspaceNeon",
+      "folderName": "MonaspaceNeon",
+      "imagePreviewFont": "Monaspace Neon Nerd Font",
+      "linkPreviewFont": "monaspace-neon",
+      "caskName": "monaspace-neon",
+      "repoRelease": false,
+      "description": "Github Monaspace Neon - Slab Serif"
+    },
+    {
+      "unpatchedName": "MonaspaceRadon",
+      "RFN": false,
+      "patchedName": "MonaspaceRadon",
+      "folderName": "MonaspaceRadon",
+      "imagePreviewFont": "Monaspace Radon Nerd Font",
+      "linkPreviewFont": "monaspace-radon",
+      "caskName": "monaspace-radon",
+      "repoRelease": false,
+      "description": "Github Monaspace Radon - Handwriting"
+    },
+    {
+      "unpatchedName": "MonaspaceXenon",
+      "RFN": false,
+      "patchedName": "MonaspaceXenon",
+      "folderName": "MonaspaceXenon",
+      "imagePreviewFont": "Monaspace Xenon Nerd Font",
+      "linkPreviewFont": "monaspace-xenon",
+      "caskName": "monaspace-xenon",
+      "repoRelease": false,
+      "description": "Github Monaspace Xenon - Mechanical Sans"
+    },
+    {
       "unpatchedName": "Monofur",
       "RFN": false,
       "patchedName": "Monofur",
@@ -615,61 +670,6 @@
       "caskName": "victor-mono",
       "repoRelease": true,
       "description": "Clean, crisp and narrow, with a large x-height and clear punctuation"
-    },
-    {
-      "unpatchedName": "MonaspaceArgon",
-      "RFN": true,
-      "patchedName": "MonaspaceArgon",
-      "folderName": "MonaspaceArgon",
-      "imagePreviewFont": "Monaspace Argon Nerd Font",
-      "linkPreviewFont": "monaspace-argon",
-      "caskName": "monaspace-argon",
-      "repoRelease": false,
-      "description": "Github Monaspace Argon - Neo-grotesque Sans"
-    },
-    {
-      "unpatchedName": "MonaspaceKrypton",
-      "RFN": false,
-      "patchedName": "MonaspaceKrypton",
-      "folderName": "MonaspaceKrypton",
-      "imagePreviewFont": "Monaspace Krypton Nerd Font",
-      "linkPreviewFont": "monaspace-krypton",
-      "caskName": "monaspace-krypton",
-      "repoRelease": false,
-      "description": "Github Monaspace Krypton - Humanist Sans"
-    },
-    {
-      "unpatchedName": "MonaspaceNeon",
-      "RFN": false,
-      "patchedName": "MonaspaceNeon",
-      "folderName": "MonaspaceNeon",
-      "imagePreviewFont": "Monaspace Neon Nerd Font",
-      "linkPreviewFont": "monaspace-neon",
-      "caskName": "monaspace-neon",
-      "repoRelease": false,
-      "description": "Github Monaspace Neon - Slab Serif"
-    },
-    {
-      "unpatchedName": "MonaspaceRadon",
-      "RFN": false,
-      "patchedName": "MonaspaceRadon",
-      "folderName": "MonaspaceRadon",
-      "imagePreviewFont": "Monaspace Radon Nerd Font",
-      "linkPreviewFont": "monaspace-radon",
-      "caskName": "monaspace-radon",
-      "repoRelease": false,
-      "description": "Github Monaspace Radon - Handwriting"
-    },
-    {
-      "unpatchedName": "MonaspaceXenon",
-      "RFN": false,
-      "patchedName": "MonaspaceXenon",
-      "folderName": "MonaspaceXenon",
-      "imagePreviewFont": "Monaspace Xenon Nerd Font",
-      "linkPreviewFont": "monaspace-xenon",
-      "caskName": "monaspace-xenon",
-      "repoRelease": false,
-      "description": "Github Monaspace Xenon - Mechanical Sans"
     }
   ]
 }
