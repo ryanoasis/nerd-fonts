@@ -410,9 +410,9 @@
     {
       "unpatchedName": "Monaspace",
       "RFN": true,
-      "patchedName": "Monaspace",
+      "patchedName": "Monispace",
       "folderName": "Monaspace",
-      "imagePreviewFont": "MonaspaceNeon Nerd Font",
+      "imagePreviewFont": "MonispaceNe Nerd Font",
       "linkPreviewFont": false,
       "caskName": "monaspace",
       "repoRelease": false,
