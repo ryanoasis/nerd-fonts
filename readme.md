@@ -149,7 +149,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        | 2.1.5 | YES  | ![w] ![m2] ![l]   |
 | [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                  | 2.000 | NO   | ![w2] ![m2] ![l]  |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                  | 1.21  | NO   | ![w] ![m2] ![l]   |
-| [Monaspace Argon Nerd Font][p-monaspace-argon]    | [Monaspace][f-monaspace]          | 1.000 | NO   | ![w] ![m2] ![l]   |
+| [Monaspace Argon Nerd Font][p-monaspace-argon]    | [Monaspace][f-monaspace]          | 1.000 | YES  | ![w] ![m2] ![l]   |
 | [Monaspace Krypton Nerd Font][p-monaspace-krypton]| [Monaspace][f-monaspace]          | 1.000 | NO   | ![w] ![m2] ![l]   |
 | [Monaspace Neon Nerd Font][p-monaspace-neon]      | [Monaspace][f-monaspace]          | 1.000 | NO   | ![w] ![m2] ![l]   |
 | [Monaspace Radon Nerd Font][p-monaspace-radon]    | [Monaspace][f-monaspace]          | 1.000 | NO   | ![w] ![m2] ![l]   |
