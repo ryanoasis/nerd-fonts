@@ -416,7 +416,7 @@
       "linkPreviewFont": "monaspace-argon",
       "caskName": "monaspace-argon",
       "repoRelease": false,
-      "description": "Github Monaspace Argon - Neo-grotesque Sans"
+      "description": "Neo-grotesque sans-serif, sleek, modern, minimalist"
     },
     {
       "unpatchedName": "MonaspaceKrypton",
@@ -427,7 +427,7 @@
       "linkPreviewFont": "monaspace-krypton",
       "caskName": "monaspace-krypton",
       "repoRelease": false,
-      "description": "Github Monaspace Krypton - Humanist Sans"
+      "description": "Humanist sans-serif, warm, friendly, approachable."
     },
     {
       "unpatchedName": "MonaspaceNeon",
@@ -438,7 +438,7 @@
       "linkPreviewFont": "monaspace-neon",
       "caskName": "monaspace-neon",
       "repoRelease": false,
-      "description": "Github Monaspace Neon - Slab Serif"
+      "description": "Slab serif, sturdy, bold, contemporary, structured."
     },
     {
       "unpatchedName": "MonaspaceRadon",
@@ -449,7 +449,7 @@
       "linkPreviewFont": "monaspace-radon",
       "caskName": "monaspace-radon",
       "repoRelease": false,
-      "description": "Github Monaspace Radon - Handwriting"
+      "description": "Handwriting font, personal, fluid, expressive, artistic."
     },
     {
       "unpatchedName": "MonaspaceXenon",
@@ -460,7 +460,7 @@
       "linkPreviewFont": "monaspace-xenon",
       "caskName": "monaspace-xenon",
       "repoRelease": false,
-      "description": "Github Monaspace Xenon - Mechanical Sans"
+      "description": "Mechanical sans-serif, technical, precise, futuristic, clean."
     },
     {
       "unpatchedName": "Monofur",
