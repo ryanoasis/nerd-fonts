@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.6.1"
+script_version = "4.7.0"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -582,6 +582,8 @@ class font_patcher:
                     parser_name = font.fullname
                 elif self.args.force_name == 'postscript':
                     parser_name = font.fontname
+                elif self.args.force_name == 'filename':
+                    parser_name = os.path.basename(font.path).split('.')[0]
                 else:
                     parser_name = self.args.force_name
                     user_supplied_name = True
@@ -1899,7 +1901,7 @@ def setup_arguments():
     expert_group.add_argument('--has-no-italic',                           dest='noitalic',         default=False, action='store_true', help='Font family does not have Italic (but Oblique), to help create correct RIBBI set')
     expert_group.add_argument('-l', '--adjust-line-height',                dest='adjustLineHeight', default=False, action='store_true', help='Whether to adjust line heights (attempt to center powerline separators more evenly)')
     expert_group.add_argument('--metrics',                                 dest='metrics',          default=None, choices=get_metrics_names(), help='Select vertical metrics source (for problematic cases)')
-    expert_group.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', or concrete free name-string)')
+    expert_group.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', \'filename\', or concrete free name-string)')
     expert_group.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str,            help='Specify a Script for Post Processing')
     progressbars_group_parser = expert_group.add_mutually_exclusive_group(required=False)
     expert_group.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file (needs --configfile)')
