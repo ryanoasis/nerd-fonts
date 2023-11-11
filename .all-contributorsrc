@@ -1422,6 +1422,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "skryukov",
+      "name": "Svyatoslav Kryukov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23056378?v=4",
+      "profile": "https://github.com/skryukov",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
