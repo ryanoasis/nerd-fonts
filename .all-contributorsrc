@@ -1422,6 +1422,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "QuiiBz",
+      "name": "Tom Lienard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43268759?v=4",
+      "profile": "https://tom.lnrd.fr",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
