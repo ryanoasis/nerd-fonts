@@ -1440,6 +1440,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "julien-blanchon",
+      "name": "Blanchon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11278197?v=4",
+      "profile": "https://github.com/julien-blanchon",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
