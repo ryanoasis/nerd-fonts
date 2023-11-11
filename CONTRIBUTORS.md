@@ -210,6 +210,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://twitter.com/Grazfather"><img src="https://avatars.githubusercontent.com/u/497310?v=4?s=100" width="100px;" alt="Grazfather"/><br /><sub><b>Grazfather</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Grazfather" title="Code">💻</a> <a href="#design-Grazfather" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://tom.lnrd.fr"><img src="https://avatars.githubusercontent.com/u/43268759?v=4?s=100" width="100px;" alt="Tom Lienard"/><br /><sub><b>Tom Lienard</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=QuiiBz" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/skryukov"><img src="https://avatars.githubusercontent.com/u/23056378?v=4?s=100" width="100px;" alt="Svyatoslav Kryukov"/><br /><sub><b>Svyatoslav Kryukov</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=skryukov" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
