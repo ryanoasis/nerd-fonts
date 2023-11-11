@@ -180,10 +180,24 @@ class FontnameParser:
         sub = FontnameTools.postscript_char_filter(sub)
         return self._make_ps_name(fam + sub, False)
 
+    def long_family(self):
+        """Get unabbreviated Familyname"""
+        (name, rest) = self._shortened_name()
+        return FontnameTools.concat(name, rest, self.other_token, self.family_suff)
+
+    def long_subfamily(self):
+        """Get unabbreviated Styles"""
+        return FontnameTools.concat(self.weight_token, self.style_token)
+
     def preferred_family(self):
         """Get the SFNT Preferred Familyname (ID 16)"""
         (name, rest) = self._shortened_name()
-        pfn = FontnameTools.concat(name, rest, self.other_token, self.family_suff)
+        other = self.other_token
+        weights = self.weight_token
+        aggressive = self.use_short_families[2]
+        if self.use_short_families[1]:
+            [ other, weights ] = FontnameTools.short_styles([ other, weights ], aggressive)
+        pfn = FontnameTools.concat(name, rest, other, self.short_family_suff)
         if self.suppress_preferred_if_identical and pfn == self.family():
             # Do not set if identical to ID 1
             return ''
