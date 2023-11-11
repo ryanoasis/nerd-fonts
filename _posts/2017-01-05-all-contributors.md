@@ -222,6 +222,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 <span style="display: inline-block; width: 130px;"><a href="https://twitter.com/Grazfather"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/497310?v=4?s=100" width="100px;" alt="Grazfather"/><br /><sub><b>Grazfather</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Grazfather" title="Code">💻</a> <a href="#design-Grazfather" title="Design">🎨</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://tom.lnrd.fr"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/43268759?v=4?s=100" width="100px;" alt="Tom Lienard"/><br /><sub><b>Tom Lienard</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=QuiiBz" title="Code">💻</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/skryukov"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/23056378?v=4?s=100" width="100px;" alt="Svyatoslav Kryukov"/><br /><sub><b>Svyatoslav Kryukov</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=skryukov" title="Code">💻</a></span>
 
 
 
