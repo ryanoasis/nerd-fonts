@@ -419,6 +419,16 @@
       "description": "Modern with ligatures"
     },
     {
+      "unpatchedName": "MartianMono",
+      "RFN": false,
+      "patchedName": "MartianMono",
+      "folderName": "MartianMono",
+      "imagePreviewFont": "MartianMono Nerd Font",
+      "linkPreviewFont": "martian-mono",
+      "caskName": "martian-mono",
+      "description": "Free and open-source monospaced font from Evil Martians"
+    },
+    {
       "unpatchedName": "Meslo LG",
       "RFN": false,
       "patchedName": "MesloLG",
