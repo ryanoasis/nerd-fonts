@@ -133,6 +133,17 @@
       "description": "The very typeface you’ve been trained to recognize since childhood"
     },
     {
+      "unpatchedName": "Commit Mono",
+      "RFN": false,
+      "patchedName": "CommitMono",
+      "folderName": "CommitMono",
+      "imagePreviewFont": "CommitMono Nerd Font",
+      "linkPreviewFont": "commit-mono",
+      "caskName": "commit-mono",
+      "repoRelease": false,
+      "description": "An anonymous and neutral programming typeface"
+    },
+    {
       "unpatchedName": "Cousine",
       "RFN": false,
       "patchedName": "Cousine",
