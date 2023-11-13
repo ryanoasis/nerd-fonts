@@ -19,7 +19,7 @@ main() {
   for i in $(jq '.fonts | keys | .[]' lib/fonts.json); do
     patchedName=$(jq -r ".fonts[$i].patchedName" lib/fonts.json);
     imagePreviewFont=$(jq -r ".fonts[$i].imagePreviewFont" lib/fonts.json);
-    if [ "$imagePreviewFont" != "$patchedName Nerd Font" -a "$imagePreviewFont" != "$patchedName NF" ]; then
+    if [ "$imagePreviewFont" != "$patchedName Nerd Font" ] && [ "$imagePreviewFont" != "$patchedName NF" ]; then
       echo "[mismatch] (Fam vs name)  $imagePreviewFont <=> $patchedName"
     fi
     if [ -z "$imagePreviewFont" ]; then
