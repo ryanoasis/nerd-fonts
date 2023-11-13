@@ -375,6 +375,17 @@
       "description": "A narrower variant focusing terminal uses: Arrows and geometric symbols will be narrow to follow typical terminal usages"
     },
     {
+      "unpatchedName": "Iosevka Term Slab",
+      "RFN": false,
+      "patchedName": "IosevkaTermSlab",
+      "folderName": "IosevkaTermSlab",
+      "imagePreviewFont": "IosevkaTermSlab Nerd Font",
+      "linkPreviewFont": false,
+      "caskName": "iosevka-term-slab",
+      "repoRelease": false,
+      "description": "Nice as Iosevka but with slab serifs"
+    },
+    {
       "unpatchedName": "JetBrains Mono",
       "RFN": false,
       "patchedName": "JetBrainsMono",
