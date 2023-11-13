@@ -2,6 +2,39 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.1.0 (not yet released, corrently working on it)
+
+This release fixes some bugs and adds fonts. More icons will come with the next release.
+
+We also sunset in-repo releases (new fonts will only be released as release artifact) #1360
+
+### New fonts and updates
+ - Add 0xProto @piraces #1381
+ - Add Envy Code R #1318 (already since 3.0.2b)
+ - Add Geist Mono @QuiiBz #1398
+ - Add IntelOne Mono @ (already since 3.0.2b)
+ - Add Iosevka Term Slab #803
+ - Add Martian Mono @skryukov #1092
+ - Update Lilex to v2.3.0 #1356
+ - Update MPlus #1357
+
+### Fixes
+ - Fix naming problem (Visual Studio) #1406
+ - Fix fi-ligature in Noto Sans Mono #1400
+ - Fix logging error in font-patcher @lolicon0930 #1287
+
+### Features
+ - Add Neovim icon @georgeguimaraes #1391
+ - Add Fennel icon @Grazfather #1129
+ - Update Windows icon to Windows 11 #1290
+ - Add font-patcher option to specify metrics source #1300
+ - Add font-patcher option to specify naming source #1319 #1282
+ - Add font-patcher option to specify box drawing glyph behavior #1300
+ - test-fonts.sh: allow wrapping at any number @hasecilu #1270
+
+### Website and docs
+ A lot of work has been done here by various people, thank you all!
+
 ## v3.0.2
 
 **One general fix and some font specific ones**
