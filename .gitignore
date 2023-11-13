@@ -19,6 +19,8 @@ css/nerd-fonts-generated-removed.min.css
 # Non-Repo-Released fonts, see fonts.json:
 patched-fonts/0xProto/*
 !patched-fonts/0xProto/README.md
+patched-fonts/CommitMono/*
+!patched-fonts/CommitMono/README.md
 patched-fonts/GeistMono/*
 !patched-fonts/GeistMono/README.md
 patched-fonts/IntelOneMono/*
