@@ -306,8 +306,9 @@
       "patchedName": "IosevkaTermSlab",
       "folderName": "IosevkaTermSlab",
       "imagePreviewFont": "IosevkaTermSlab Nerd Font",
-      "linkPreviewFont": "false",
+      "linkPreviewFont": false,
       "caskName": "iosevka-term-slab",
+      "repoRelease": false,
       "description": "Nice as Iosevka but with slab serifs"
     },
     {
