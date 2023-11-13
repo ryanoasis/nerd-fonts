@@ -69,6 +69,7 @@ image_font_files=( \
   'CascadiaCode/Regular/CaskaydiaCoveNerdFont-Regular.ttf' \
   'CodeNewRoman/Regular/CodeNewRomanNerdFont-Regular.otf' \
   'ComicShannsMono/ComicShannsMonoNerdFont-Regular.otf' \
+  'CommitMono/CommitMonoNerdFont-Regular.otf' \
   'Cousine/Regular/CousineNerdFont-Regular.ttf' \
   'DaddyTimeMono/DaddyTimeMonoNerdFont-Regular.ttf' \
   'DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf' \
@@ -132,5 +133,6 @@ image_font_files=( \
 # for f in "${image_font_files[@]}"; do
 #   fc-query "../../patched-fonts/$f" '-f %{family}\n'
 # done
+# exit
 
 main "$@"; exit
