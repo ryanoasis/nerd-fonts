@@ -126,6 +126,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Comic Shanns Mono Nerd Font][p-comic]            | [Comic Shanns Mono][f-comic]      | 1.3   | NO   | ![w] ![m2] ![l]   |
 | [Commit Mono Nerd Font][p-commit]                 | [Commit Mono][f-commit]           | 1.141 | NO   | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | 1.211 | NO   | ![w] ![m2] ![l]   |
+| [D2Coding][p-d2coding]                            | [D2Coding][f-d2coding]            | 1.3.2 | NO   | ![w] ![m2] ![l]   |
 | [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]  | 1.2.3 | NO   | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            | [DejaVu][f-dejavu]                | 2.37  | NO   | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              | Ascender Corp                     |1.00-113| NO   | ![w] ![m2] ![l]   |
@@ -627,6 +628,7 @@ Font repos
 [f-cousine]:https://fonts.google.com/specimen/Cousine
 [f-comic]:https://github.com/jesusmgg/comic-shanns-mono
 [f-commit]:https://github.com/eigilnikolajsen/commit-mono
+[f-d2coding]:https://github.com/naver/d2codingfont
 [f-daddytimemono]:https://github.com/BourgeoisBear/DaddyTimeMono
 [f-dejavu]:https://github.com/dejavu-fonts/dejavu-fonts
 [f-envy]:https://github.com/damieng/envy-code-r
@@ -686,6 +688,7 @@ Patched Font internal links
 [p-comic]:patched-fonts/ComicShannsMono
 [p-commit]:patched-fonts/CommitMono
 [p-cousine]:patched-fonts/Cousine
+[p-d2coding]:patched-fonts/D2Coding
 [p-daddytimemono]:patched-fonts/DaddyTimeMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
