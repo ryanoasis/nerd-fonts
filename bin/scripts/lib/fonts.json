@@ -155,6 +155,17 @@
       "description": "Similar to Courier New with better readablitiy, dotted zeros"
     },
     {
+      "unpatchedName": "D2Coding",
+      "RFN": false,
+      "patchedName": "D2CodingLigature",
+      "folderName": "D2Coding",
+      "imagePreviewFont": "D2CodingLigature Nerd Font",
+      "linkPreviewFont": "d2coding",
+      "caskName": "d2coding",
+      "repoRelease": false,
+      "description": "A coding font for Koreans. This is the variant with ligatures."
+    },
+    {
       "unpatchedName": "DaddyTimeMono",
       "RFN": false,
       "patchedName": "DaddyTimeMono",

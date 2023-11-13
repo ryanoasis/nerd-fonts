@@ -71,6 +71,7 @@ image_font_files=( \
   'ComicShannsMono/ComicShannsMonoNerdFont-Regular.otf' \
   'CommitMono/CommitMonoNerdFont-Regular.otf' \
   'Cousine/Regular/CousineNerdFont-Regular.ttf' \
+  'D2Coding/D2CodingLigatureNerdFont-Regular.ttf' \
   'DaddyTimeMono/DaddyTimeMonoNerdFont-Regular.ttf' \
   'DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf' \
   'DroidSansMono/DroidSansMNerdFont-Regular.otf' \
