@@ -58,6 +58,7 @@ generate_preview_symbols() {
 
 # shellcheck disable=SC2034 # used by commented out code (on demand)
 image_font_files=( \
+  '0xProto/0xProtoNerdFont-Regular.ttf' \
   '3270/Regular/3270NerdFont-Regular.ttf' \
   'Agave/AgaveNerdFont-Regular.ttf' \
   'AnonymousPro/Regular/AnonymiceProNerdFont-Regular.ttf' \
@@ -76,6 +77,7 @@ image_font_files=( \
   'FantasqueSansMono/Regular/FantasqueSansMNerdFont-Regular.ttf' \
   'FiraCode/Regular/FiraCodeNerdFont-Regular.ttf' \
   'FiraMono/Regular/FiraMonoNerdFont-Regular.otf' \
+  'GeistMono/Regular/GeistMonoNerdFont-Regular.otf' \
   'Gohu/14/GohuFont14NerdFont-Regular.ttf' \
   'Go-Mono/Regular/GoMonoNerdFont-Regular.ttf' \
   'Hack/Regular/HackNerdFont-Regular.ttf' \
@@ -90,11 +92,12 @@ image_font_files=( \
   'IntelOneMono/Regular/IntoneMonoNerdFont-Regular.ttf' \
   'Iosevka/Regular/IosevkaNerdFont-Regular.ttf' \
   'IosevkaTerm/Regular/IosevkaTermNerdFont-Regular.ttf' \
-  'IosevkaTermSlab/Regular/IosevkaTermSlabNerdFont-Regular.ttf' \
+  'IosevkaTermSlab/IosevkaTermSlabNerdFont-Regular.ttf' \
   'JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf' \
   'Lekton/Regular/LektonNerdFont-Regular.ttf' \
   'LiberationMono/LiterationMonoNerdFont-Regular.ttf' \
   'Lilex/Regular/LilexNerdFont-Regular.ttf' \
+  'MartianMono/Std/MartianMonoNerdFont-Regular.ttf' \
   'Meslo/M/Regular/MesloLGMNerdFont-Regular.ttf' \
   'Monofur/Regular/MonofurNerdFont-Regular.ttf' \
   'Monoid/Regular/MonoidNerdFont-Regular.ttf' \
