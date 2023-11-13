@@ -103,7 +103,7 @@ image_font_files=( \
   'Monoid/Regular/MonoidNerdFont-Regular.ttf' \
   'Mononoki/Regular/MononokiNerdFont-Regular.ttf' \
   'MPlus/M_Plus_1_code/M+1CodeNerdFont-Regular.ttf' \
-  'NerdFontsSymbolsOnly/Symbols2048EmNerdFontMono-Regular.ttf' \
+  'NerdFontsSymbolsOnly/SymbolsNerdFontMono-Regular.ttf' \
   'Noto/Sans-Mono/NotoSansMNerdFont-Regular.ttf' \
   'OpenDyslexic/Regular/OpenDyslexicNerdFont-Regular.otf' \
   'Overpass/Mono/Regular/OverpassMNerdFont-Regular.otf' \
