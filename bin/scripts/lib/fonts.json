@@ -127,7 +127,7 @@
       "patchedName": "ComicShannsMono",
       "folderName": "ComicShannsMono",
       "imagePreviewFont": "ComicShannsMono Nerd Font",
-      "linkPreviewFont": "false",
+      "linkPreviewFont": false,
       "caskName": "comic-shanns-mono",
       "repoRelease": true,
       "description": "The very typeface you’ve been trained to recognize since childhood"
@@ -391,7 +391,7 @@
       "patchedName": "IosevkaTerm",
       "folderName": "IosevkaTerm",
       "imagePreviewFont": "IosevkaTerm Nerd Font",
-      "linkPreviewFont": "false",
+      "linkPreviewFont": false,
       "caskName": "iosevka-term",
       "repoRelease": true,
       "description": "A narrower variant focusing terminal uses: Arrows and geometric symbols will be narrow to follow typical terminal usages"
