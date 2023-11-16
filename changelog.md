@@ -10,6 +10,7 @@ We also sunset in-repo releases (new fonts will only be released as release arti
 
 ### New fonts and updates
  - Add 0xProto @piraces #1381
+ - Add Cascadia Mono #1412
  - Add Commit Mono #1414
  - Add D2Coding #1413
  - Add Envy Code R #1318 (already since 3.0.2b)

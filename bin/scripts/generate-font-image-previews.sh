@@ -67,6 +67,7 @@ image_font_files=( \
   'BigBlueTerminal/BigBlueTermPlusNerdFont-Regular.ttf' \
   'BitstreamVeraSansMono/Regular/BitstromWeraNerdFont-Regular.ttf' \
   'CascadiaCode/Regular/CaskaydiaCoveNerdFont-Regular.ttf' \
+  'CascadiaMono/CaskaydiaMonoNerdFont-Regular.ttf' \
   'CodeNewRoman/Regular/CodeNewRomanNerdFont-Regular.otf' \
   'ComicShannsMono/ComicShannsMonoNerdFont-Regular.otf' \
   'CommitMono/CommitMonoNerdFont-Regular.otf' \
