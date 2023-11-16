@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.7.1"
+script_version = "4.7.2"
 
 version = "3.0.2"
 projectName = "Nerd Fonts"
@@ -858,9 +858,9 @@ class font_patcher:
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
 
             # Arrow tips
-            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.7}},
             0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
-            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.7}},
             0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
 
             # Rounded arcs
