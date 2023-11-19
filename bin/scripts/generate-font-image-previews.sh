@@ -102,6 +102,7 @@ image_font_files=( \
   'Lilex/Regular/LilexNerdFont-Regular.ttf' \
   'MartianMono/Std/MartianMonoNerdFont-Regular.ttf' \
   'Meslo/M/Regular/MesloLGMNerdFont-Regular.ttf' \
+  'Monaspace/Neon/MonaspiceNeNerdFont-Regular.otf' \
   'Monofur/Regular/MonofurNerdFont-Regular.ttf' \
   'Monoid/Regular/MonoidNerdFont-Regular.ttf' \
   'Mononoki/Regular/MononokiNerdFont-Regular.ttf' \
@@ -133,7 +134,7 @@ image_font_files=( \
 # Enable this to get a list of Family names
 #
 # for f in "${image_font_files[@]}"; do
-#   fc-query "../../patched-fonts/$f" '-f %{family}\n'
+#   fc-query "../../patched-fonts/$f" '-f %{family}\n' || true
 # done
 # exit
 
