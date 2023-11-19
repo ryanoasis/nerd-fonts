@@ -154,6 +154,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Literation Mono Nerd Font][p-liberation]         | [Liberation][f-liberation]        | 2.1.5 | YES  | ![w] ![m2] ![l]   |
 | [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                  | 2.300 | NO   | ![w2] ![m2] ![l]  |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                  | 1.21  | NO   | ![w] ![m2] ![l]   |
+| [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]          | 1.0.0 | YES  | ![w] ![m2] ![l]   |
 | [Monofur Nerd Font][p-monofur]                    | Tobias B Koehler                  | 1.0   | NO   | ![w] ![m2] ![l]   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                | 0.61  | NO   | ![w] ![m2] ![l]   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]            | 1.6   | YES  | ![w] ![m2] ![l]   |
@@ -654,6 +655,7 @@ Font repos
 [f-liberation]:https://github.com/liberationfonts/liberation-fonts
 [f-lilex]:https://github.com/mishamyrt/Lilex
 [f-meslo]:https://github.com/andreberg/Meslo-Font
+[f-monaspace]:https://github.com/githubnext/monaspace
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-mononoki]:https://madmalik.github.io/mononoki
 [f-mplus]:https://mplusfonts.github.io
@@ -716,6 +718,7 @@ Patched Font internal links
 [p-liberation]:patched-fonts/LiberationMono
 [p-lilex]:patched-fonts/Lilex
 [p-meslo]:patched-fonts/Meslo
+[p-monaspace]:patched-font/Monaspace
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
 [p-mononoki]:patched-fonts/Mononoki

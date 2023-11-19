@@ -195,6 +195,7 @@ class FontnameTools:
         ( 'IBM[- ]?plex',               r'Blex' ), # We do not keep the case here
         ( '(i)ntel( ?)(o)ne',           r'\1ntone' ),
         ( '(l)iberation',               r'\1iteration' ),
+        ( '(m)onaspace',                r'\1onaspice' ),
         ( '(m)( ?)plus',                r'\1+'), # Added this, because they use a plus symbol :->
         ( '(s)hare',                    r'\1hure' ),
         ( '(s)ource',                   r'\1auce' ),
@@ -211,6 +212,11 @@ class FontnameTools:
         ( '(overpass ?m)ono',           r'\1'), # Overpass Mono -> Overpass M
         ( '(proggyclean) ?tt',          r'\1'), # Remove TT from ProggyClean
         ( '(terminess) ?\(ttf\)',       r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
+        ( '(.*ne)on',                   r'\1'), # Monaspace shorten face name
+        ( '(.*ar)gon',                  r'\1'), # Monaspace shorten face name
+        ( '(.*kr)ypton',                r'\1'), # Monaspace shorten face name
+        ( '(.*xe)non',                  r'\1'), # Monaspace shorten face name
+        ( '(.*r)adon',                  r'\1d'), # Monaspace shorten face name
         ( '(im ?writing ?q)uattro',     r'\1uat'), # Rename iM Writing Quattro to Quat
         ( '(im ?writing ?(mono|duo|quat)) ?s', r'\1'), # Remove S from all iM Writing styles
     ]

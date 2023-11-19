@@ -485,6 +485,17 @@
       "description": "Slashed zeros, customized version of Apple's Menlo"
     },
     {
+      "unpatchedName": "Monaspace",
+      "RFN": true,
+      "patchedName": "Monaspice",
+      "folderName": "Monaspace",
+      "imagePreviewFont": "MonaspiceNe Nerd Font",
+      "linkPreviewFont": false,
+      "caskName": "monaspace",
+      "repoRelease": false,
+      "description": "Five matching fonts all having 'texture healing' to improve legibility"
+    },
+    {
       "unpatchedName": "Monofur",
       "RFN": false,
       "patchedName": "Monofur",
