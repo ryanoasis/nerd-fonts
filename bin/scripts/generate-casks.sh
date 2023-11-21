@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.1.0
-# Script Version: 2.2.1
+# Script Version: 2.2.2
 #
 # Iterates over all [*] archived fonts
 # to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
@@ -79,7 +79,7 @@ function find_nerdish_family {
         if [ -z "$fn" ]; then
             return
         fi
-        if [[ "${fn}" == *Nerd* ]]; then
+        if [[ "${fn}" == *Nerd* ]] || [[ "${fn}" == *NF* ]]; then
             echo "${fn}"
             return
         fi
