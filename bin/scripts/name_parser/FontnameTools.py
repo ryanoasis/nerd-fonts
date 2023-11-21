@@ -216,7 +216,7 @@ class FontnameTools:
         ( '(.*ar)gon',                  r'\1'), # Monaspace shorten face name
         ( '(.*kr)ypton',                r'\1'), # Monaspace shorten face name
         ( '(.*xe)non',                  r'\1'), # Monaspace shorten face name
-        ( '(.*r)adon',                  r'\1d'), # Monaspace shorten face name
+        ( '(.*r)adon',                  r'\1n'), # Monaspace shorten face name
         ( '(im ?writing ?q)uattro',     r'\1uat'), # Rename iM Writing Quattro to Quat
         ( '(im ?writing ?(mono|duo|quat)) ?s', r'\1'), # Remove S from all iM Writing styles
     ]
