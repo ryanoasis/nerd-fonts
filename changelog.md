@@ -2,7 +2,7 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
-## v3.1.0 (not yet released, corrently working on it)
+## v3.1.0
 
 This release fixes some bugs and adds fonts. More icons will come with the next release.
 
@@ -18,6 +18,7 @@ We also sunset in-repo releases (new fonts will only be released as release arti
  - Add IntelOne Mono @ (already since 3.0.2b)
  - Add Iosevka Term Slab #803
  - Add Martian Mono @skryukov #1092
+ - Add Monaspace @julien-blanchon #1405
  - Update Lilex to v2.3.0 #1356
  - Update MPlus #1357
 
@@ -27,8 +28,10 @@ We also sunset in-repo releases (new fonts will only be released as release arti
  - Fix logging error in font-patcher @lolicon0930 #1287
 
 ### Features
- - Add Neovim icon @georgeguimaraes #1391
+ - Add Common Lisp and Scheme icon #1428
  - Add Fennel icon @Grazfather #1129
+ - Add Neovim icon @georgeguimaraes #1391
+ - Update Font Logos to v1.1.1 @hasecilu 1427
  - Update Windows icon to Windows 11 #1290
  - Add font-patcher option to specify metrics source #1300
  - Add font-patcher option to specify naming source #1319 #1282
