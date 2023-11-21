@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # coding=utf8
-# Nerd Fonts Version: 3.0.2
+# Nerd Fonts Version: 3.1.0
 # Script Version: 1.1.1
 
 # Example Usage:
@@ -10,7 +10,7 @@
 
 from __future__ import absolute_import, print_function, unicode_literals
 
-version = "3.0.2"
+version = "3.1.0"
 projectName = "Nerd Fonts"
 projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]
