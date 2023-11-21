@@ -490,7 +490,7 @@
       "patchedName": "Monaspice",
       "folderName": "Monaspace",
       "imagePreviewFont": "MonaspiceNe NF",
-      "linkPreviewFont": monaspace-neon,
+      "linkPreviewFont": "monaspace-neon",
       "caskName": "monaspace",
       "repoRelease": false,
       "description": "Five matching fonts all having 'texture healing' to improve legibility"
