@@ -43,7 +43,7 @@ The following Sankey flow diagram shows the current glyph sets included:
   * [**5 - Clone Repo**](#option-5-clone-the-repo)
   * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
   * [**7 - Chocolatey or Scoop (Windows)**](#option-7-unofficial-chocolatey-or-scoop-repositories)
-  * [**8 - Arch Linux Repository (Community, AUR)**](#option-8-arch-community-repository)
+  * [**8 - Arch Linux Repository (Extra, AUR)**](#option-8-arch-extra-repository)
   * [**9 - Patch Your Own Font**](#option-9-patch-your-own-font)
 
 [**Features**](#features)
@@ -82,7 +82,7 @@ _If you..._
   * `Option 5.` want **complete control** then see [cloning the repo](#option-5-clone-the-repo)
   * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
   * `Option 7.` are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-7-unofficial-chocolatey-or-scoop-repositories)
-  * `Option 8.` are on **Arch Linux** and want to use **Community packages** see [Arch Community Repositories](#option-8-arch-community-repository)
+  * `Option 8.` are on **Arch Linux** and want to use **Extra packages** see [Arch Extra Repositories](#option-8-arch-extra-repository)
   * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
 
 ## Features
@@ -317,11 +317,11 @@ scoop bucket add nerd-fonts
 scoop install Hack-NF
 ```
 
-### `Option 8: Arch Community Repository`
+### `Option 8: Arch Extra Repository`
 
-> Option for **Arch Linux** and wanting to use **Community packages**.
+> Option for **Arch Linux** and wanting to use **Extra packages**.
 
-Most fonts are available via [Arch Community packages](https://archlinux.org/groups/any/nerd-fonts/).
+Most fonts are available via [Arch Extra packages](https://archlinux.org/groups/any/nerd-fonts/).
 Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
 ### `Option 9: Patch Your Own Font`
