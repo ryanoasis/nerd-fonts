@@ -138,7 +138,7 @@ function print-unicode-ranges() {
 
 function test-fonts() {
   echo "Nerd Fonts - Pomicons"
-  print-unicode-ranges e000 e00d
+  print-unicode-ranges e000 e00a
   echo; echo
 
   echo "Nerd Fonts - Powerline"
@@ -170,7 +170,7 @@ function test-fonts() {
   echo; echo
 
   echo "Nerd Fonts - Font Logos"
-  print-unicode-ranges f300 f32f
+  print-unicode-ranges f300 f372
   echo; echo
 
   echo "Nerd Fonts - Font Power Symbols"
