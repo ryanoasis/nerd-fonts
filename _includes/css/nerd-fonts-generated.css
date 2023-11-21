@@ -1,7 +1,7 @@
 /*
  *# [Nerd Fonts]  Website: https://www.nerdfonts.com
  *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
- *# [Nerd Fonts]  Version: 3.0.2
+ *# [Nerd Fonts]  Version: 3.1.0
  *# [Nerd Fonts]  The following is generated from the build script
  */
 
@@ -15,7 +15,7 @@
 
 .nf, .nerd-font, .nerd-fonts {
   font-family: 'NerdFontsSymbols Nerd Font';
-  speak: none;
+  /* speak: none; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1193,6 +1193,9 @@
 .nf-custom-c:before {
   content: "\e61e";
 }
+.nf-custom-common_lisp:before {
+  content: "\e6b0";
+}
 .nf-custom-cpp:before {
   content: "\e61d";
 }
@@ -1213,6 +1216,9 @@
 }
 .nf-custom-emacs:before {
   content: "\e632";
+}
+.nf-custom-fennel:before {
+  content: "\e6af";
 }
 .nf-custom-folder:before {
   content: "\e5ff";
@@ -1250,6 +1256,9 @@
 .nf-custom-msdos:before {
   content: "\e629";
 }
+.nf-custom-neovim:before {
+  content: "\e6ae";
+}
 .nf-custom-orgmode:before {
   content: "\e633";
 }
@@ -1261,6 +1270,9 @@
 }
 .nf-custom-purescript:before {
   content: "\e630";
+}
+.nf-custom-scheme:before {
+  content: "\e6b1";
 }
 .nf-custom-v_lang:before {
   content: "\e6ac";
@@ -4748,14 +4760,32 @@
 .nf-linux-apple:before {
   content: "\f302";
 }
+.nf-linux-archcraft:before {
+  content: "\f345";
+}
 .nf-linux-archlabs:before {
   content: "\f31e";
 }
 .nf-linux-archlinux:before {
   content: "\f303";
 }
+.nf-linux-arcolinux:before {
+  content: "\f346";
+}
+.nf-linux-arduino:before {
+  content: "\f34b";
+}
 .nf-linux-artix:before {
   content: "\f31f";
+}
+.nf-linux-awesome:before {
+  content: "\f354";
+}
+.nf-linux-biglinux:before {
+  content: "\f347";
+}
+.nf-linux-bspwm:before {
+  content: "\f355";
 }
 .nf-linux-budgie:before {
   content: "\f320";
@@ -4763,8 +4793,17 @@
 .nf-linux-centos:before {
   content: "\f304";
 }
+.nf-linux-cinnamon:before {
+  content: "\f35f";
+}
+.nf-linux-codeberg:before {
+  content: "\f330";
+}
 .nf-linux-coreos:before {
   content: "\f305";
+}
+.nf-linux-crystal:before {
+  content: "\f348";
 }
 .nf-linux-debian:before {
   content: "\f306";
@@ -4778,11 +4817,20 @@
 .nf-linux-docker:before {
   content: "\f308";
 }
+.nf-linux-dwm:before {
+  content: "\f356";
+}
 .nf-linux-elementary:before {
   content: "\f309";
 }
 .nf-linux-endeavour:before {
   content: "\f322";
+}
+.nf-linux-enlightenment:before {
+  content: "\f357";
+}
+.nf-linux-fdroid:before {
+  content: "\f36a";
 }
 .nf-linux-fedora:before {
   content: "\f30a";
@@ -4796,26 +4844,104 @@
 .nf-linux-flathub:before {
   content: "\f324";
 }
+.nf-linux-fluxbox:before {
+  content: "\f358";
+}
+.nf-linux-forgejo:before {
+  content: "\f335";
+}
+.nf-linux-fosdem:before {
+  content: "\f36b";
+}
 .nf-linux-freebsd:before {
   content: "\f30c";
+}
+.nf-linux-freecad:before {
+  content: "\f336";
+}
+.nf-linux-freedesktop:before {
+  content: "\f360";
+}
+.nf-linux-garuda:before {
+  content: "\f337";
 }
 .nf-linux-gentoo:before {
   content: "\f30d";
 }
+.nf-linux-gimp:before {
+  content: "\f338";
+}
+.nf-linux-gitea:before {
+  content: "\f339";
+}
+.nf-linux-gnome:before {
+  content: "\f361";
+}
 .nf-linux-gnu_guix:before {
   content: "\f325";
+}
+.nf-linux-gtk:before {
+  content: "\f362";
+}
+.nf-linux-hyperbola:before {
+  content: "\f33a";
+}
+.nf-linux-hyprland:before {
+  content: "\f359";
+}
+.nf-linux-i3:before {
+  content: "\f35a";
 }
 .nf-linux-illumos:before {
   content: "\f326";
 }
+.nf-linux-inkscape:before {
+  content: "\f33b";
+}
+.nf-linux-jwm:before {
+  content: "\f35b";
+}
 .nf-linux-kali_linux:before {
   content: "\f327";
+}
+.nf-linux-kde_neon:before {
+  content: "\f331";
+}
+.nf-linux-kde_plasma:before {
+  content: "\f332";
+}
+.nf-linux-kdenlive:before {
+  content: "\f33c";
+}
+.nf-linux-kicad:before {
+  content: "\f34c";
+}
+.nf-linux-krita:before {
+  content: "\f33d";
+}
+.nf-linux-kubuntu:before {
+  content: "\f333";
+}
+.nf-linux-kubuntu_inverse:before {
+  content: "\f334";
 }
 .nf-linux-linuxmint:before {
   content: "\f30e";
 }
 .nf-linux-linuxmint_inverse:before {
   content: "\f30f";
+}
+.nf-linux-locos:before {
+  content: "\f349";
+}
+.nf-linux-lxde:before {
+  content: "\f363";
+}
+.nf-linux-lxle:before {
+  content: "\f33e";
+}
+.nf-linux-lxqt:before {
+  content: "\f364";
 }
 .nf-linux-mageia:before {
   content: "\f310";
@@ -4826,14 +4952,44 @@
 .nf-linux-manjaro:before {
   content: "\f312";
 }
+.nf-linux-mate:before {
+  content: "\f365";
+}
+.nf-linux-mpv:before {
+  content: "\f36e";
+}
+.nf-linux-mxlinux:before {
+  content: "\f33f";
+}
+.nf-linux-neovim:before {
+  content: "\f36f";
+}
 .nf-linux-nixos:before {
   content: "\f313";
+}
+.nf-linux-octoprint:before {
+  content: "\f34d";
 }
 .nf-linux-openbsd:before {
   content: "\f328";
 }
+.nf-linux-openscad:before {
+  content: "\f34e";
+}
 .nf-linux-opensuse:before {
   content: "\f314";
+}
+.nf-linux-osh:before {
+  content: "\f34f";
+}
+.nf-linux-oshwa:before {
+  content: "\f350";
+}
+.nf-linux-osi:before {
+  content: "\f36c";
+}
+.nf-linux-parabola:before {
+  content: "\f340";
 }
 .nf-linux-parrot:before {
   content: "\f329";
@@ -4841,11 +4997,29 @@
 .nf-linux-pop_os:before {
   content: "\f32a";
 }
+.nf-linux-prusaslicer:before {
+  content: "\f351";
+}
+.nf-linux-puppy:before {
+  content: "\f341";
+}
+.nf-linux-qtile:before {
+  content: "\f35c";
+}
+.nf-linux-qubesos:before {
+  content: "\f342";
+}
 .nf-linux-raspberry_pi:before {
   content: "\f315";
 }
 .nf-linux-redhat:before {
   content: "\f316";
+}
+.nf-linux-reprap:before {
+  content: "\f352";
+}
+.nf-linux-riscv:before {
+  content: "\f353";
 }
 .nf-linux-rocky_linux:before {
   content: "\f32b";
@@ -4865,6 +5039,21 @@
 .nf-linux-solus:before {
   content: "\f32d";
 }
+.nf-linux-sway:before {
+  content: "\f35d";
+}
+.nf-linux-tails:before {
+  content: "\f343";
+}
+.nf-linux-thunderbird:before {
+  content: "\f370";
+}
+.nf-linux-tor:before {
+  content: "\f371";
+}
+.nf-linux-trisquel:before {
+  content: "\f344";
+}
 .nf-linux-tux:before {
   content: "\f31a";
 }
@@ -4874,8 +5063,32 @@
 .nf-linux-ubuntu_inverse:before {
   content: "\f31c";
 }
+.nf-linux-vanilla:before {
+  content: "\f366";
+}
 .nf-linux-void:before {
   content: "\f32e";
+}
+.nf-linux-vscodium:before {
+  content: "\f372";
+}
+.nf-linux-wayland:before {
+  content: "\f367";
+}
+.nf-linux-wikimedia:before {
+  content: "\f36d";
+}
+.nf-linux-xerolinux:before {
+  content: "\f34a";
+}
+.nf-linux-xfce:before {
+  content: "\f368";
+}
+.nf-linux-xmonad:before {
+  content: "\f35e";
+}
+.nf-linux-xorg:before {
+  content: "\f369";
 }
 .nf-linux-zorin:before {
   content: "\f32f";
