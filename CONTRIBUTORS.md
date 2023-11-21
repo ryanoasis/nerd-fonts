@@ -212,6 +212,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://tom.lnrd.fr"><img src="https://avatars.githubusercontent.com/u/43268759?v=4?s=100" width="100px;" alt="Tom Lienard"/><br /><sub><b>Tom Lienard</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=QuiiBz" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/skryukov"><img src="https://avatars.githubusercontent.com/u/23056378?v=4?s=100" width="100px;" alt="Svyatoslav Kryukov"/><br /><sub><b>Svyatoslav Kryukov</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=skryukov" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/julien-blanchon"><img src="https://avatars.githubusercontent.com/u/11278197?v=4?s=100" width="100px;" alt="Blanchon"/><br /><sub><b>Blanchon</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=julien-blanchon" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://felixc.at"><img src="https://avatars.githubusercontent.com/u/1006477?v=4?s=100" width="100px;" alt="Felix Yan"/><br /><sub><b>Felix Yan</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=felixonmars" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
