@@ -96,59 +96,6 @@ _如果你..._
 
 :mag: :mag: 你现在可以通过[NerdFonts.com][Cheat Sheet]中的[Cheat Sheet][]对字形进行搜索
 
-### Seti-UI + 自定义
-> 基于 [Seti-UI] Icomoon 的额外自定义字形。
-
-![image](images/fontforge-glyph-set-1.png)
-
-### [Devicons][vorillaz-devicons]
-> 一个为开发者，code jedis，ninjas，HTTPsters，evangelists 和 nerds(sic)制作的图标字体。 / ([repo][vorillaz-devicons]) / ([website](https://vorillaz.github.io/devicons/))
-
-![image](images/fontforge-glyph-set-2.png)
-
-### [Font Awesome][font-awesome]
-> 字体图标和 CSS 工具包。 / ([repo][font-awesome]) / ([website](http://fontawesome.io/))
-
-![image](images/fontforge-glyph-set-font-awesome-1.png)
-![image](images/fontforge-glyph-set-font-awesome-2.png)
-![image](images/fontforge-glyph-set-font-awesome-3.png)
-![image](images/fontforge-glyph-set-font-awesome-4.png)
-
-### [Font Awesome Extension][font-awesome-extension]
-> 简单的 Font Awesome 补充包。 / ([repo][font-awesome-extension]) / ([website](https://andrelzgava.github.io/font-awesome-extension/))
-
-![image](images/fontforge-glyph-set-font-awesome-extension-1.png)
-
-### [Octicons][octicons]
-> GitHub's 图标. / ([repo][octicons]) / ([website](https://octicons.github.com))
-
-#### Nerd Font Complete Codepoints:*
-
-![image](images/fontforge-glyph-set-octicons.png)
-
-<sub>* To avoid conflicts between icon sets, these were modified in the 'Complete' fonts. To view the original codepoints see the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki/Codepoint-Conflicts).</sub>
-
-### [Powerline Extra Symbols][ryanoasis-powerline-extra-symbols]
-> 提供额外的 Powerline separator 字体 和 a column number glyph (CN). / ([repo][ryanoasis-powerline-extra-symbols])
-
-![image](https://raw.githubusercontent.com/ryanoasis/powerline-extra-symbols/-/fontforge.png)
-
-### [IEC Power Symbols][website-iecpower]
-> 向Unicode中加入新字符  / ([website][website-iecpower])
-
-![image](images/fontforge-glyph-set-font-iec-power-1.png)
-![image](images/fontforge-glyph-set-font-iec-power-2.png)
-
-### [Font Logos][font-logos]
-> Font-logos 是一个包含LOGO和linux流行布局的图标字体。 / ([repo][font-logos])
-
-![image](images/fontforge-glyph-set-font-logos.png)
-
-### [Pomicons][gabrielelana-pomicons]
-> 8 个符号 ["Pomodoro Technique"®](https://cirillocompany.de/pages/pomodoro-technique). / ([repo][gabrielelana-pomicons])
-
-![image](images/fontforge-glyph-set-pomicons.png)
-
 ### Shell中的Icon 名称
 
 从[bin/scripts/lib/](bin/scripts/lib/)路径中下载 `.sh` 文件, 推荐的文件位置为 `~/.local/share/fonts/` 或者 `~/bin/`.
