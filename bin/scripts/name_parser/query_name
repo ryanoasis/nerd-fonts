@@ -41,6 +41,7 @@ for filename in sys.argv[1:]:
     sfnt_pfam =    sfnt['Preferred Family'] if 'Preferred Family' in sfnt else ''
     sfnt_psubfam = sfnt['Preferred Styles'] if 'Preferred Styles' in sfnt else ''
     sfnt_psname =  sfnt['PostScriptName'] if 'PostScriptName' in sfnt else ''
+    sfnt_compat =  sfnt['Compatible Full'] if 'Compatible Full' in sfnt else None
 
     if add_line:
         print()
@@ -57,4 +58,5 @@ for filename in sys.argv[1:]:
     print('PS fontname                 {}'.format(psname))
     print('PS fullname                 {}'.format(full))
     print('PS familyname               {}'.format(fam))
+    print('Compatible Fullname         {}'.format(sfnt_compat))
     print('fondname                    {}'.format(aname))
