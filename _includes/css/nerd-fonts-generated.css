@@ -1,7 +1,7 @@
 /*
  *# [Nerd Fonts]  Website: https://www.nerdfonts.com
  *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
- *# [Nerd Fonts]  Version: 3.1.0
+ *# [Nerd Fonts]  Version: 3.1.1
  *# [Nerd Fonts]  The following is generated from the build script
  */
 
@@ -1273,6 +1273,9 @@
 }
 .nf-custom-scheme:before {
   content: "\e6b1";
+}
+.nf-custom-toml:before {
+  content: "\e6b2";
 }
 .nf-custom-v_lang:before {
   content: "\e6ac";
