@@ -183,12 +183,7 @@ class FontnameParser:
     def preferred_family(self):
         """Get the SFNT Preferred Familyname (ID 16)"""
         (name, rest) = self._shortened_name()
-        other = self.other_token
-        weights = self.weight_token
-        aggressive = self.use_short_families[2]
-        if self.use_short_families[1]:
-            [ other, weights ] = FontnameTools.short_styles([ other, weights ], aggressive)
-        pfn = FontnameTools.concat(name, rest, other, self.short_family_suff)
+        pfn = FontnameTools.concat(name, rest, self.other_token, self.family_suff)
         if self.suppress_preferred_if_identical and pfn == self.family():
             # Do not set if identical to ID 1
             return ''
