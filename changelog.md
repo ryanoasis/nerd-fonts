@@ -2,6 +2,18 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.1.1
+
+This release is mainly a bugfix release: It undoes the breaking naming change of the
+last release which was an unwanted consequence of Fix naming problem (Visual Studio) #1406
+See #1434 for a discussion.
+
+Because these changes were already approved they are also included:
+
+### New fonts and icons
+ - Monaspace: Add Light weight #1433
+ - Add TOML icon @cpea2506 #1436
+
 ## v3.1.0
 
 This release fixes some bugs and adds fonts. More icons will come with the next release.
