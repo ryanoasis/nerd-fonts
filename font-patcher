@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.8.1"
+script_version = "4.8.2"
 
 version = "3.1.0"
 projectName = "Nerd Fonts"
@@ -306,20 +306,16 @@ def get_old_average_x_width(font):
         s += font[g].width * weights[g]
     return int(s / 1000)
 
-def create_filename(patcher, fonts):
+def create_filename(fonts):
     """ Determine filename from font object(s) """
-    pfam = patcher.long_family
-    psubfam = patcher.long_subfamily
     sfnt = { k: v for l, k, v in fonts[0].sfnt_names }
-    if not pfam:
-        pfam = sfnt.get('Preferred Family', sfnt['Family'])
-    if not psubfam or len(psubfam) < 1:
-        psubfam = sfnt.get('Preferred Styles', sfnt['SubFamily'])
+    sfnt_pfam = sfnt.get('Preferred Family', sfnt['Family'])
+    sfnt_psubfam = sfnt.get('Preferred Styles', sfnt['SubFamily'])
     if len(fonts) > 1:
-        return pfam.replace(' ', '')
-    if len(psubfam) > 0:
-        psubfam = '-' + psubfam
-    return (pfam + psubfam).replace(' ', '')
+        return sfnt_pfam
+    if len(sfnt_psubfam) > 0:
+        sfnt_psubfam = '-' + sfnt_psubfam
+    return (sfnt_pfam + sfnt_psubfam).replace(' ', '')
 
 
 class font_patcher:
@@ -337,8 +333,6 @@ class font_patcher:
         self.essential = set()
         self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         self.xavgwidth = [] # list of ints
-        self.long_family = None
-        self.long_subfamily = None
 
     def patch(self, font):
         self.sourceFont = font
@@ -432,11 +426,11 @@ class font_patcher:
                     break
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
-                sanitize_filename(create_filename(self, sourceFonts)) + ".ttc"))
+                sanitize_filename(create_filename(sourceFonts)) + ".ttc"))
             sourceFonts[0].generateTtc(outfile, sourceFonts[1:], flags=gen_flags, layer=layer)
             message = "   Generated {} fonts\n   \===> '{}'".format(len(sourceFonts), outfile)
         else:
-            fontname = create_filename(self, sourceFonts)
+            fontname = create_filename(sourceFonts)
             if not fontname:
                 fontname = sourceFont.cidfontname
             outfile = os.path.normpath(os.path.join(
@@ -755,8 +749,6 @@ class font_patcher:
                 # inject_suffix(family, ps_fontname, short_family)
                 n.inject_suffix(verboseAdditionalFontNameSuffix, ps_suffix, short_family)
             n.rename_font(font)
-            self.long_family = n.long_family()
-            self.long_subfamily = n.long_subfamily()
 
         font.comment = projectInfo
         font.fontlog = projectInfo
