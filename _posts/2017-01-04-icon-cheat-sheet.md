@@ -432,6 +432,7 @@ const glyphs = {
   "nf-custom-puppet": "e631",
   "nf-custom-purescript": "e630",
   "nf-custom-scheme": "e6b1",
+  "nf-custom-toml": "e6b2",
   "nf-custom-v_lang": "e6ac",
   "nf-custom-vim": "e62b",
   "nf-custom-windows": "e62a",
