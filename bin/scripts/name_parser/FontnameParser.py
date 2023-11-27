@@ -339,9 +339,9 @@ class FontnameParser:
         # back, but only as 'English (US)'. This makes sure we do not leave contradicting
         # names over different languages.
         for l, k, v in list(font.sfnt_names):
-            if not k in TO_DEL:
+            if not k in TO_DEL and l == 'English (US)':
                 sfnt_list += [( l, k, v )]
-                if k == 'Version' and l == 'English (US)':
+                if k == 'Version':
                     version_tag = ' ' + v.split()[-1]
 
         sfnt_list += [( 'English (US)', 'Family', self.checklen(31, 'Family (ID 1)', self.family()) )] # 1
