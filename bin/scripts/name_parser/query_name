@@ -35,28 +35,35 @@ for filename in sys.argv[1:]:
     fam = font.familyname
     font.close()
 
-    sfnt_full =    sfnt['Fullname']
-    sfnt_fam =     sfnt['Family']
-    sfnt_subfam =  sfnt['SubFamily']
-    sfnt_pfam =    sfnt['Preferred Family'] if 'Preferred Family' in sfnt else ''
-    sfnt_psubfam = sfnt['Preferred Styles'] if 'Preferred Styles' in sfnt else ''
-    sfnt_psname =  sfnt['PostScriptName'] if 'PostScriptName' in sfnt else ''
-    sfnt_compat =  sfnt['Compatible Full'] if 'Compatible Full' in sfnt else None
+    sfnt_full =    sfnt.get('Fullname', None)
+    sfnt_fam =     sfnt.get('Family', None)
+    sfnt_subfam =  sfnt.get('SubFamily', None)
+    sfnt_pfam =    sfnt.get('Preferred Family', '')
+    sfnt_psubfam = sfnt.get('Preferred Styles', '')
+    sfnt_psname =  sfnt.get('PostScriptName', '')
+    sfnt_compat =  sfnt.get('Compatible Full', '')
+    sfnt_cidff =   sfnt.get('CID findfont Name', '')
+    sfnt_wfam =    sfnt.get('WWS Family', '')
+    sfnt_wsubfam = sfnt.get('WWS Subfamily', '')
+
 
     if add_line:
         print()
     else:
         add_line = True
 
-    print('======== {} ========'.format(fname))
+    print('======== {} ========'.format(fullfile))
     print('SFNT Fullname      ID 4     {}'.format(sfnt_full))
     print('SFNT Family        ID 1     {}'.format(sfnt_fam))
     print('SFNT SubFamily     ID 2     {}'.format(sfnt_subfam))
     print('SFNT Pref Family   ID 16    {}'.format(sfnt_pfam))
     print('SFNT Pref Styles   ID 17    {}'.format(sfnt_psubfam))
     print('SFNT PS Name       ID 6     {}'.format(sfnt_psname))
+    print('SFNT Compatible    ID 18    {}'.format(sfnt_compat))
+    print('SFNT CID findfont  ID 20    {}'.format(sfnt_cidff))
+    print('SFNT WWS Family    ID 21    {}'.format(sfnt_wfam))
+    print('SFNT WWS SubFamily ID 22    {}'.format(sfnt_wsubfam))
     print('PS fontname                 {}'.format(psname))
     print('PS fullname                 {}'.format(full))
     print('PS familyname               {}'.format(fam))
-    print('Compatible Fullname         {}'.format(sfnt_compat))
     print('fondname                    {}'.format(aname))
