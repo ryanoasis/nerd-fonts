@@ -12,7 +12,14 @@ import fontforge
 
 def get_sfnt_dict(font):
     """Extract SFNT table as nice dict"""
-    return { k: v for l, k, v in font.sfnt_names }
+    d = { }
+    for l, k, v in font.sfnt_names:
+        if k not in d:
+            d[k] = [ v ]
+        else:
+            d[k] += [ v ]
+    d = { k: v[0] if v and len(v) == 1 else tuple(v) for k, v in d.items() }
+    return d
 
 ###### Let's go!
 
@@ -38,13 +45,13 @@ for filename in sys.argv[1:]:
     sfnt_full =    sfnt.get('Fullname', None)
     sfnt_fam =     sfnt.get('Family', None)
     sfnt_subfam =  sfnt.get('SubFamily', None)
-    sfnt_pfam =    sfnt.get('Preferred Family', '')
-    sfnt_psubfam = sfnt.get('Preferred Styles', '')
-    sfnt_psname =  sfnt.get('PostScriptName', '')
-    sfnt_compat =  sfnt.get('Compatible Full', '')
-    sfnt_cidff =   sfnt.get('CID findfont Name', '')
-    sfnt_wfam =    sfnt.get('WWS Family', '')
-    sfnt_wsubfam = sfnt.get('WWS Subfamily', '')
+    sfnt_pfam =    sfnt.get('Preferred Family', '-')
+    sfnt_psubfam = sfnt.get('Preferred Styles', '-')
+    sfnt_psname =  sfnt.get('PostScriptName', '-')
+    sfnt_compat =  sfnt.get('Compatible Full', '-')
+    sfnt_cidff =   sfnt.get('CID findfont Name', '-')
+    sfnt_wfam =    sfnt.get('WWS Family', '-')
+    sfnt_wsubfam = sfnt.get('WWS Subfamily', '-')
 
 
     if add_line:
