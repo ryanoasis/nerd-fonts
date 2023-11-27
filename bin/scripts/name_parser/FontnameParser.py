@@ -180,9 +180,18 @@ class FontnameParser:
         sub = FontnameTools.postscript_char_filter(sub)
         return self._make_ps_name(fam + sub, False)
 
-    def preferred_family(self):
+    def preferred_family(self, short_alternative = False):
         """Get the SFNT Preferred Familyname (ID 16)"""
+        # When short_alternative we get the short named alternative needed for some Windows applications
         (name, rest) = self._shortened_name()
+        if short_alternative:
+            other = self.other_token
+            if self.use_short_families[1]:
+                [ other ] = FontnameTools.short_styles([ other ], self.use_short_families[2])
+            pfn = FontnameTools.concat(name, rest, other, self.short_family_suff)
+            if pfn == self.preferred_family(False):
+                return ''
+            return pfn
         pfn = FontnameTools.concat(name, rest, self.other_token, self.family_suff)
         if self.suppress_preferred_if_identical and pfn == self.family():
             # Do not set if identical to ID 1
@@ -231,7 +240,7 @@ class FontnameParser:
 
     def ps_familyname(self):
         """Get the PS Familyname"""
-        fam = self.preferred_family()
+        fam = self.preferred_family(False)
         if len(fam) < 1:
             fam = self.family()
         return self._make_ps_name(fam, True)
@@ -350,12 +359,18 @@ class FontnameParser:
         sfnt_list += [( 'English (US)', 'Fullname', self.checklen(63, 'Fullname (ID 4)', self.fullname()) )] # 4
         sfnt_list += [( 'English (US)', 'PostScriptName', self.checklen(63, 'PSN (ID 6)', self.psname()) )] # 6
 
-        p_fam = self.preferred_family()
+        p_fam = self.preferred_family(False)
         if len(p_fam):
             sfnt_list += [( 'English (US)', 'Preferred Family', self.checklen(31, 'PrefFamily (ID 16)', p_fam) )] # 16
+        p_fam = self.preferred_family(True)
+        if len(p_fam):
+            sfnt_list += [( 'English (British)', 'Preferred Family', self.checklen(31, 'PrefFamily (ID 16)', p_fam) )]
         p_sty = self.preferred_styles()
         if len(p_sty):
             sfnt_list += [( 'English (US)', 'Preferred Styles', self.checklen(31, 'PrefStyles (ID 17)', p_sty) )] # 17
+            if len(p_fam):
+                # Set only if ID16 for British has been set
+                sfnt_list += [( 'English (British)', 'Preferred Styles', self.checklen(31, 'PrefStyles (ID 17)', p_sty) )]
 
         font.sfnt_names = tuple(sfnt_list)
 

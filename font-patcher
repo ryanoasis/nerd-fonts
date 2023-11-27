@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.9.0"
+script_version = "4.10.0"
 
 version = "3.1.1"
 projectName = "Nerd Fonts"
@@ -308,7 +308,8 @@ def get_old_average_x_width(font):
 
 def create_filename(fonts):
     """ Determine filename from font object(s) """
-    sfnt = { k: v for l, k, v in fonts[0].sfnt_names }
+    # Only consider the standard (i.e. English-US) names
+    sfnt = { k: v for l, k, v in fonts[0].sfnt_names if l == 'English (US)' }
     sfnt_pfam = sfnt.get('Preferred Family', sfnt['Family'])
     sfnt_psubfam = sfnt.get('Preferred Styles', sfnt['SubFamily'])
     if len(fonts) > 1:
