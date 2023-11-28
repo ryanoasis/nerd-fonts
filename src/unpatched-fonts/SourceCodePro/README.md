@@ -5,4 +5,4 @@ in user interface (UI) environments.
 
 For more information have a look at the upstream website: https://github.com/adobe-fonts/source-code-pro
 
-Version: 2.038 / 1.058
+Version: 2.042 / 1.062
