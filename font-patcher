@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.8.3"
+script_version = "4.8.4"
 
 version = "3.1.1"
 projectName = "Nerd Fonts"
@@ -1411,6 +1411,18 @@ class font_patcher:
                 # Just prepare scaling of existing glyphs
                 glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, stretch, self.sourceFont, currentSourceFontGlyph) if scaleRules is not None else None
             else:
+                # Break apart multiple unicodes linking to one glyph
+                if currentSourceFontGlyph in self.sourceFont:
+                    altuni = self.sourceFont[currentSourceFontGlyph].altuni
+                    if altuni:
+                        codes = { v for v, s, r in altuni if v >= 0 }
+                        codes.add(self.sourceFont[currentSourceFontGlyph].unicode)
+                        codes.remove(currentSourceFontGlyph)
+                        codes = [ "{:04X}".format(c) for c in sorted(list(codes)) ]
+                        logger.debug("Removing alternate unicode on %X (%s)", currentSourceFontGlyph, ' '.join(codes));
+                        self.sourceFont[currentSourceFontGlyph].altuni = None
+                        self.sourceFont.encoding = 'UnicodeFull' # Rebuild encoding table (needed after altuni changes)
+
                 # This will destroy any content currently in currentSourceFontGlyph, so do it first
                 glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, stretch, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
 
