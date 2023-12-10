@@ -463,6 +463,17 @@
       "description": "Modern with ligatures"
     },
     {
+      "unpatchedName": "Maple Mono",
+      "RFN": false,
+      "patchedName": "MapleMono",
+      "folderName": "MapleMono",
+      "imagePreviewFont": "MapleMono Nerd Font",
+      "linkPreviewFont": "maple",
+      "caskName": "maple",
+      "repoRelease": true,
+      "description": "Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line"
+    },
+    {
       "unpatchedName": "MartianMono",
       "RFN": false,
       "patchedName": "MartianMono",

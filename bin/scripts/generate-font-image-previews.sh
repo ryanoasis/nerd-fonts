@@ -100,6 +100,7 @@ image_font_files=( \
   'Lekton/Regular/LektonNerdFont-Regular.ttf' \
   'LiberationMono/LiterationMonoNerdFont-Regular.ttf' \
   'Lilex/Regular/LilexNerdFont-Regular.ttf' \
+  'MapleMono/MapleMono-SC-NF-Regular.ttf' \
   'MartianMono/Std/MartianMonoNerdFont-Regular.ttf' \
   'Meslo/M/Regular/MesloLGMNerdFont-Regular.ttf' \
   'Monaspace/Neon/MonaspiceNeNerdFont-Regular.otf' \
