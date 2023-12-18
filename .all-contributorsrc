@@ -1467,6 +1467,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "brettKK",
+      "name": "brett",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5836417?v=4",
+      "profile": "https://github.com/brettKK",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
