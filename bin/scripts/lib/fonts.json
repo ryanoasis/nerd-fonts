@@ -672,6 +672,17 @@
       "description": "Some similarities to Times New Roman, designed by Steve Matteson, includes pan-European WGL character set"
     },
     {
+      "unpatchedName": "Twilio Sans Mono",
+      "RNF": false,
+      "patchedName": "TwilioSansMono",
+      "folderName": "TwilioSansMono",
+      "imagePreviewFont": "TwilioSansMono Nerd Font",
+      "linkPreviewFont": false,
+      "caskName": "twilio-sans-mono",
+      "repoRelease": true,
+      "description": "Twilio Sans Mono is a beautiful and extensive open source programming font"
+    },
+    {
       "unpatchedName": "Ubuntu",
       "RFN": false,
       "patchedName": "Ubuntu",
