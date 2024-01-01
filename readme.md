@@ -725,7 +725,7 @@ Patched Font internal links
 [p-liberation]:patched-fonts/LiberationMono
 [p-lilex]:patched-fonts/Lilex
 [p-meslo]:patched-fonts/Meslo
-[p-monaspace]:patched-font/Monaspace
+[p-monaspace]:patched-fonts/Monaspace
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
 [p-mononoki]:patched-fonts/Mononoki
