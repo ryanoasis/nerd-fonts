@@ -1,5 +1,5 @@
-ARG VARIANT="3"
-FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
+ARG VARIANT=3
+FROM mcr.microsoft.com/vscode/devcontainers/python:${VARIANT}
 
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
