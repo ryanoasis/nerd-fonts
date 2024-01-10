@@ -229,6 +229,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/brettKK"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/5836417?v=4?s=100" width="100px;" alt="brett"/><br /><sub><b>brett</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AbrettKK" title="Bug reports">🐛</a></span>
 
 
+<span style="display: inline-block; width: 130px;"><a href="https://hello.mdsanima.dev"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/3817871?v=4?s=100" width="100px;" alt="Marcin Różewski"/><br /><sub><b>Marcin Różewski</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=mdsanima" title="Code">💻</a></span>
+
+
 
 
 <!-- markdownlint-restore -->
