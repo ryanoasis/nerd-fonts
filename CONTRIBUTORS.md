@@ -216,6 +216,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://cpea2506.github.io"><img src="https://avatars.githubusercontent.com/u/42694704?v=4?s=100" width="100px;" alt="PinkLea"/><br /><sub><b>PinkLea</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=cpea2506" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/brettKK"><img src="https://avatars.githubusercontent.com/u/5836417?v=4?s=100" width="100px;" alt="brett"/><br /><sub><b>brett</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AbrettKK" title="Bug reports">🐛</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://hello.mdsanima.dev"><img src="https://avatars.githubusercontent.com/u/3817871?v=4?s=100" width="100px;" alt="Marcin Różewski"/><br /><sub><b>Marcin Różewski</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=mdsanima" title="Code">💻</a></td>
+    </tr>
   </tbody>
 </table>
 
