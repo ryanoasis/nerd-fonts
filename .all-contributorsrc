@@ -1476,6 +1476,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "mdsanima",
+      "name": "Marcin Różewski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3817871?v=4",
+      "profile": "https://hello.mdsanima.dev",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
