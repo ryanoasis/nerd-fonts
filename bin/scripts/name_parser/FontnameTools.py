@@ -374,10 +374,11 @@ class FontnameTools:
         """Expects a fontname following the 'FontFamilyName-FontStyle' pattern and returns ... parts"""
         # This could parse filenames in the beginning but that was never used in production; code removed with this commit
         for special in [
+                ('ExBld', 'ExtraBold'), # Twilio
                 ('ExtLt', 'ExtraLight'), # IBM-Plex
                 ('Medm', 'Medium'), # IBM-Plex
                 ('Semi-Condensed', 'SemiCondensed'), # 3270
-                ('SmBld', 'SemiBold'), # IBM-Plex
+                ('SmBld', 'SemiBold'), # IBM-Plex, Twilio
             ]:
             name = re.sub(r'\b' + special[0] + r'\b', special[1], name, 1, re.IGNORECASE)
         name = re.sub('[_\s]+', ' ', name)
