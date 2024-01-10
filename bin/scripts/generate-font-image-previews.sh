@@ -119,7 +119,7 @@ image_font_files=( \
   'SpaceMono/Regular/SpaceMonoNerdFont-Regular.ttf' \
   'Terminus/Regular/TerminessNerdFont-Regular.ttf' \
   'Tinos/Regular/TinosNerdFont-Regular.ttf' \
-  'TwilioSansMono/TwilioSansMonoNerdFont-Regular.ttf' \
+  'TwilioSansMono/TwilioSansMNerdFont-Regular.ttf' \
   'Ubuntu/Regular/UbuntuNerdFont-Regular.ttf' \
   'UbuntuMono/Regular/UbuntuMonoNerdFont-Regular.ttf' \
   'VictorMono/Regular/VictorMonoNerdFont-Regular.ttf' \

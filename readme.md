@@ -171,6 +171,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]             | 1.001 | NO   | ![w] ![m2] ![l]   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]        |4.49.2 | YES  | ![w] ![m2] ![l]   |
 | [Tinos][p-tinos]                                  | [Tinos][f-tinos]                  | 1.23  | NO   | ![w] ![m2] ![l]   |
+| [Twilio SansM Nerd Font][p-twilio]                | [Twilio Sans Mono][f-twilio]      | 2.100 | YES  | ![w] ![m2] ![l]   |
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]           | 0.83  | NO   | ![w] ![m2] ![l]   |
 | [Ubuntu Mono Nerd Font][p-ubuntu-mono]            | [Ubuntu Font][f-ubuntu]           | 0.80  | NO   | ![w] ![m2] ![l]   |
 | [Victor Mono][p-victor]                           | [Victor Mono][f-victor]           | 1.5.4 | NO   | ![w] ![m2] ![l]   |
@@ -676,6 +677,7 @@ Font repos
 [f-space]:https://fonts.google.com/specimen/Space+Mono
 [f-terminus]:http://terminus-font.sourceforge.net
 [f-tinos]:https://fonts.google.com/specimen/Tinos
+[f-twilio]:https://github.com/twilio/twilio-sans-mono
 [f-ubuntu]:http://font.ubuntu.com
 [f-victor]:https://github.com/rubjo/victor-mono
 
@@ -741,6 +743,7 @@ Patched Font internal links
 [p-space-mono]:patched-fonts/SpaceMono
 [p-terminus]:patched-fonts/Terminus
 [p-tinos]:patched-fonts/Tinos
+[p-twilio]:patched-fonts/TwilioSansMono
 [p-ubuntu-mono]:patched-fonts/UbuntuMono
 [p-ubuntu]:patched-fonts/Ubuntu
 [p-victor]:patched-fonts/VictorMono

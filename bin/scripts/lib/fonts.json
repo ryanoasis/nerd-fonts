@@ -673,14 +673,14 @@
     },
     {
       "unpatchedName": "Twilio Sans Mono",
-      "RNF": false,
-      "patchedName": "TwilioSansMono",
+      "RNF": true,
+      "patchedName": "TwilioSansM",
       "folderName": "TwilioSansMono",
-      "imagePreviewFont": "TwilioSansMono Nerd Font",
-      "linkPreviewFont": false,
+      "imagePreviewFont": "TwilioSansM Nerd Font",
+      "linkPreviewFont": "twilio-sans-mono",
       "caskName": "twilio-sans-mono",
-      "repoRelease": true,
-      "description": "Twilio Sans Mono is a beautiful and extensive open source programming font"
+      "repoRelease": false,
+      "description": "A beautiful and extensive open source programming font"
     },
     {
       "unpatchedName": "Ubuntu",

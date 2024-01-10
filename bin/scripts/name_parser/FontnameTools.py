@@ -334,18 +334,18 @@ class FontnameTools:
             'Cousine',
             'Fantasque',
             'Fira',
-
-            'Overpass',
-            'Lilex',
-            'Inconsolata$', # not InconsolataGo
+            'Hack',
             'IAWriter',
+            'Inconsolata$', # not InconsolataGo
+            'JetBrains Mono',
+            'Lilex',
             'Meslo',
             'Monoid',
             'Mononoki',
-            'Hack',
-            'JetBrains Mono',
             'Noto Sans',
             'Noto Serif',
+            'Overpass',
+            'Twilio',
             'Victor',
         ]
         for kr in KEEP_REGULAR:
