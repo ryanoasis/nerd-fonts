@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.1.1
-# Script Version: 1.2.2
+# Script Version: 1.2.3
 # Create font previews.
 # All fonts need to be installed (or no preview is generated)
 # Files should end up in the gh-pages branch
@@ -56,73 +56,22 @@ generate_preview_symbols() {
   # svgo "${output_dir}${font}.svg"
 }
 
-# shellcheck disable=SC2034 # used by commented out code (on demand)
-image_font_files=( \
-  '0xProto/0xProtoNerdFont-Regular.ttf' \
-  '3270/Regular/3270NerdFont-Regular.ttf' \
-  'Agave/AgaveNerdFont-Regular.ttf' \
-  'AnonymousPro/Regular/AnonymiceProNerdFont-Regular.ttf' \
-  'Arimo/Regular/ArimoNerdFont-Regular.ttf' \
-  'AurulentSansMono/AurulentSansMNerdFont-Regular.otf' \
-  'BigBlueTerminal/BigBlueTermPlusNerdFont-Regular.ttf' \
-  'BitstreamVeraSansMono/Regular/BitstromWeraNerdFont-Regular.ttf' \
-  'CascadiaCode/Regular/CaskaydiaCoveNerdFont-Regular.ttf' \
-  'CascadiaMono/CaskaydiaMonoNerdFont-Regular.ttf' \
-  'CodeNewRoman/Regular/CodeNewRomanNerdFont-Regular.otf' \
-  'ComicShannsMono/ComicShannsMonoNerdFont-Regular.otf' \
-  'CommitMono/CommitMonoNerdFont-Regular.otf' \
-  'Cousine/Regular/CousineNerdFont-Regular.ttf' \
-  'D2Coding/D2CodingLigatureNerdFont-Regular.ttf' \
-  'DaddyTimeMono/DaddyTimeMonoNerdFont-Regular.ttf' \
-  'DejaVuSansMono/Regular/DejaVuSansMNerdFont-Regular.ttf' \
-  'DroidSansMono/DroidSansMNerdFont-Regular.otf' \
-  'EnvyCodeR/EnvyCodeRNerdFont-Regular.ttf' \
-  'FantasqueSansMono/Regular/FantasqueSansMNerdFont-Regular.ttf' \
-  'FiraCode/Regular/FiraCodeNerdFont-Regular.ttf' \
-  'FiraMono/Regular/FiraMonoNerdFont-Regular.otf' \
-  'GeistMono/Regular/GeistMonoNerdFont-Regular.otf' \
-  'Gohu/14/GohuFont14NerdFont-Regular.ttf' \
-  'Go-Mono/Regular/GoMonoNerdFont-Regular.ttf' \
-  'Hack/Regular/HackNerdFont-Regular.ttf' \
-  'Hasklig/Regular/HasklugNerdFont-Regular.otf' \
-  'HeavyData/HeavyDataNerdFont-Regular.ttf' \
-  'Hermit/Regular/HurmitNerdFont-Regular.otf' \
-  'iA-Writer/Mono/Regular/iMWritingMonoNerdFont-Regular.ttf' \
-  'IBMPlexMono/Mono/BlexMonoNerdFont-Regular.ttf' \
-  'Inconsolata/InconsolataNerdFont-Regular.ttf' \
-  'InconsolataGo/Regular/InconsolataGoNerdFont-Regular.ttf' \
-  'InconsolataLGC/Regular/InconsolataLGCNerdFont-Regular.ttf' \
-  'IntelOneMono/Regular/IntoneMonoNerdFont-Regular.ttf' \
-  'Iosevka/Regular/IosevkaNerdFont-Regular.ttf' \
-  'IosevkaTerm/Regular/IosevkaTermNerdFont-Regular.ttf' \
-  'IosevkaTermSlab/IosevkaTermSlabNerdFont-Regular.ttf' \
-  'JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf' \
-  'Lekton/Regular/LektonNerdFont-Regular.ttf' \
-  'LiberationMono/LiterationMonoNerdFont-Regular.ttf' \
-  'Lilex/Regular/LilexNerdFont-Regular.ttf' \
-  'MartianMono/Std/MartianMonoNerdFont-Regular.ttf' \
-  'Meslo/M/Regular/MesloLGMNerdFont-Regular.ttf' \
-  'Monaspace/Neon/MonaspiceNeNerdFont-Regular.otf' \
-  'Monofur/Regular/MonofurNerdFont-Regular.ttf' \
-  'Monoid/Regular/MonoidNerdFont-Regular.ttf' \
-  'Mononoki/Regular/MononokiNerdFont-Regular.ttf' \
-  'MPlus/M_Plus_1_code/M+1CodeNerdFont-Regular.ttf' \
-  'NerdFontsSymbolsOnly/SymbolsNerdFontMono-Regular.ttf' \
-  'Noto/Sans-Mono/NotoSansMNerdFont-Regular.ttf' \
-  'OpenDyslexic/Regular/OpenDyslexicNerdFont-Regular.otf' \
-  'Overpass/Mono/Regular/OverpassMNerdFont-Regular.otf' \
-  'ProFont/profontiix/ProFontIIxNerdFont-Regular.ttf' \
-  'ProggyClean/Regular/ProggyCleanNerdFont-Regular.ttf' \
-  'RobotoMono/Regular/RobotoMonoNerdFont-Regular.ttf' \
-  'ShareTechMono/ShureTechMonoNerdFont-Regular.ttf' \
-  'SourceCodePro/Regular/SauceCodeProNerdFont-Regular.ttf' \
-  'SpaceMono/Regular/SpaceMonoNerdFont-Regular.ttf' \
-  'Terminus/Regular/TerminessNerdFont-Regular.ttf' \
-  'Tinos/Regular/TinosNerdFont-Regular.ttf' \
-  'Ubuntu/Regular/UbuntuNerdFont-Regular.ttf' \
-  'UbuntuMono/Regular/UbuntuMonoNerdFont-Regular.ttf' \
-  'VictorMono/Regular/VictorMonoNerdFont-Regular.ttf' \
-)
+######
+# For the two following helpers you need to enable THIS first:
+#
+# This is not 100% correct because the config.cfg is not evaluated
+if false; then
+  cd ../../src/unpatched-fonts
+  image_font_files=( )
+  while IFS= read -d $'\n' -r f; do
+    dir=$(dirname "${f}")
+    # fontforge ~/git/nerd-fonts/font-patcher ~/git/nerd-fonts/src/unpatched-fonts/"${f}" -c --debug 3
+    dest=${dir}/$(fontforge ../../font-patcher --dry "${f}" --debug 2 2>/dev/null | grep 'DEBUG: =====> Filename' | sed "s/[^']*'//;s/'.*//")
+    echo "Found font filename: $dest"
+    image_font_files+=( "${dest}" )
+  done < <(jq -r '.fonts | .[] | ."imagePreviewFontSource"' ../../bin/scripts/lib/fonts.json)
+  cd -
+fi
 
 # Enable this to get a list of instruction to install all the needed fonts
 #
