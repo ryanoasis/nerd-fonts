@@ -224,9 +224,12 @@ function patch_font {
     source "$(find_font_root "$config_parent_dir")/config.cfg"
   fi
 
-  if [ -f "$config_parent_dir/config.json" ]
+  if [ -f "$config_dir/config.json" ]
   then
-    # load font configuration file and remove ligatures (for mono fonts):
+    # load font configuration file and remove selected ligatures:
+    font_config="--removeligatures --configfile $config_dir/config.json"
+  elif [ -f "$config_parent_dir/config.json" ]
+  then
     font_config="--removeligatures --configfile $config_parent_dir/config.json"
   else
     font_config=""
