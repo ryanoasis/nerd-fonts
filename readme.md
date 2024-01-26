@@ -147,9 +147,9 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [InconsolataGo Nerd Font][p-inconsolata-go]       | [InconsolataGo][f-inconsolatago]       | 1.013      | NO   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc]    | 1.5.2      | NO   |
 | [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.3.0      | YES  |
-| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 22.1.0     | NO   |
-| [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 22.1.0     | NO   |
-| [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 22.1.1     | NO   |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 29.0.4     | NO   |
+| [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 29.0.4     | NO   |
+| [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 29.0.4     | NO   |
 | [JetBrainsMono Nerd Font][p-jetbrains-mono]       | [JetBrains Mono][f-jetbrains-mono]     | 2.304      | NO   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                     | 34         | NO   |
 | [Literation Nerd Font][p-liberation]              | [Liberation][f-liberation]             | 2.1.5      | YES  |
