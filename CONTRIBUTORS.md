@@ -218,6 +218,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://hello.mdsanima.dev"><img src="https://avatars.githubusercontent.com/u/3817871?v=4?s=100" width="100px;" alt="Marcin Różewski"/><br /><sub><b>Marcin Różewski</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=mdsanima" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Zshoham"><img src="https://avatars.githubusercontent.com/u/16373114?v=4?s=100" width="100px;" alt="Shohamza"/><br /><sub><b>Shohamza</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Zshoham" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
