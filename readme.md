@@ -176,6 +176,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | NO   |
 | [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | NO   |
 | [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.6      | NO   |
+| [ZedMono Nerd Font][p-zed-mono]                   | [Zed Mono][f-zed-mono]                 | 1.2.0      | NO   |
 
 <sub>_\*RFN = Reserved Font Name_</sub>
 
@@ -311,7 +312,7 @@ or, in Powershell (Windows only):
 
 _Note_: Will not work to get newer fonts as they are not inside the repo anymore.
 
-A full clone of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.  
+A full clone of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.
 
 If you do want to clone the entire repo be sure to _shallow_ clone:
 ```sh
@@ -698,6 +699,7 @@ Font repos
 [f-tinos]:https://fonts.google.com/specimen/Tinos
 [f-ubuntu]:http://font.ubuntu.com
 [f-victor]:https://github.com/rubjo/victor-mono
+[f-zed-mono]:https://github.com/zed-industries/zed-fonts
 
 <!--
 Patched Font internal links
@@ -767,6 +769,7 @@ Patched Font internal links
 [p-ubuntu-mono]:patched-fonts/UbuntuMono
 [p-ubuntu]:patched-fonts/Ubuntu
 [p-victor]:patched-fonts/VictorMono
+[p-zed-mono]:patched-fonts/ZedMono
 
 
 <!--
