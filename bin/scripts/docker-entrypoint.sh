@@ -23,6 +23,6 @@ done
 printf "Running with options:\n%s\n" "$args"
 
 # shellcheck disable=SC2086
-find /in -type f \( -name "*.otf" -o -name "*.ttf" -o -name "*.woff" -o -name "*.eot" -o -name "*.ttc" \) | parallel fontforge -script /nerd/font-patcher -out /out $args {}
+find /in -type f \( -iname "*.otf" -o -iname "*.ttf" -o -iname "*.woff" -o -iname "*.eot" -o -iname "*.ttc" \) | parallel fontforge -script /nerd/font-patcher -out /out $args {}
 
 exit 0
