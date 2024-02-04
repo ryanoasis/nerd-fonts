@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.title="Nerd Fonts Patcher" \
       org.opencontainers.image.source="https://github.com/ryanoasis/nerd-fonts" \
       org.opencontainers.image.licenses="MIT"
 
-RUN apk update && apk upgrade && apk add --no-cache fontforge --repository=https://dl-cdn.alpinelinux.org/alpine/latest-stable/community
+RUN apk update && apk upgrade && apk add --no-cache fontforge parallel --repository=https://dl-cdn.alpinelinux.org/alpine/latest-stable/community
 
 ENV PYTHONIOENCODING=utf-8
 
