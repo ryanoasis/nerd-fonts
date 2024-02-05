@@ -21,7 +21,7 @@ while [ "$#" -gt 0 ]; do
 done
 
 if [ -z "$PN" ]; then
-	PN=1
+	PN=0
 fi
 
 printf "Running with options:\n%s\nParallelism %s\n" "$args" "$PN"
