@@ -365,9 +365,19 @@ Patching the font of your own choosing:
   ```
 
 * Use docker
+  * Default parallel tasks
   ```
   docker run --rm -v /path/to/fonts:/in:Z -v /path/for/output:/out:Z nerdfonts/patcher [OPTIONS]
   ```
+  * Single process (slow)
+  ```
+  docker run --rm -v /path/to/fonts:/in:Z -v /path/for/output:/out:Z -e "PN=1" nerdfonts/patcher [OPTIONS]
+  ```
+  * Specify the parallel tasks number to 10
+  ```
+  docker run --rm -v /path/to/fonts:/in:Z -v /path/for/output:/out:Z -e "PN=10" nerdfonts/patcher [OPTIONS]
+  ```
+
 
 > [!NOTE]
 > The resulting font's family (aka font name) will be set to the original family after CamelCasing, removing whitespace and appending ` Nerd Font`. For example, `iosevka term` would become `IosevkaTerm Nerd Font`.
