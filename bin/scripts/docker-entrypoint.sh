@@ -20,19 +20,16 @@ while [ "$#" -gt 0 ]; do
 	shift
 done
 
-printf "Running with options:\n%s\n" "$args"
+if [ -z "$PN" ]; then
+	PN=1
+fi
+
+printf "Running with options:\n%s\nParallelism %s\n" "$args" "$PN"
 
 # shellcheck disable=SC2086
-if [ "$PN" -eq 1 ]; then
-	find /in -type f \
-	  \( -iname '*.otf' -o -iname '*.ttf' -o -iname '*.woff' -o -iname '*.eot' -o -iname '*.ttc' \) \
-	  -exec fontforge -script /nerd/font-patcher -out /out $args {} \;
-else
-	njob=""
-	[ "$PN" -gt 1 ] && njob="-j $PN"
-	find /in -type f \
-	  \( -iname '*.otf' -o -iname '*.ttf' -o -iname '*.woff' -o -iname '*.eot' -o -iname '*.ttc' \) \
-	  | parallel $njob fontforge -script /nerd/font-patcher -out /out $args {}
-fi
+find /in -type f \
+  \( -iname '*.otf' -o -iname '*.ttf' -o -iname '*.woff' -o -iname '*.eot' -o -iname '*.ttc' \) \
+  -print0 \
+  | parallel --verbose --null "--jobs=${PN}" fontforge -script /nerd/font-patcher -out /out $args {}
 
 exit 0
