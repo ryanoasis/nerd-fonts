@@ -273,7 +273,13 @@ If you do want to clone the entire repo be sure to _shallow_ clone:
 git clone --depth 1
 ```
 
-If you want to clone a sub-directory, use `git sparse-checkout`. The following example requires `Git v2.26`:
+Even if you develop you probably do not need the old versions of the font files. With this command you have all commits but not all the old data - it will be loaded only if you check out old binaries (or do a blame):
+
+```sh
+git clone --filter=blob:none git@github.com:ryanoasis/nerd-fonts
+```
+
+If you want to clone just a sub-directory, use `git sparse-checkout`.
 
 ```sh
 git clone --filter=blob:none --sparse git@github.com:ryanoasis/nerd-fonts
