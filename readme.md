@@ -28,7 +28,7 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 ## Important Notices
 * `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
-* cloning this repository is **not** recommended ([due to Repo size](#option-5-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
+* cloning this repository is **not** recommended ([due to Repo size](#option-7-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
 
 
 ## Table of Contents
@@ -36,15 +36,14 @@ The following Sankey flow diagram shows the current glyph sets included:
 [**TL;DR**](#tldr)
 
 [**Installation Options**](#font-installation)
-  * [**1 - Manual**](#option-1-download-and-install-manually)
-  * [**2 - Release Archive Download**](#option-2-release-archive-download)
-  * [**3 - Install Script**](#option-3-install-script)
-  * [**4 - Homebrew Fonts (macOS (OS X))**](#option-4-homebrew-fonts)
-  * [**5 - Clone Repo**](#option-5-clone-the-repo)
-  * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
-  * [**7 - Chocolatey or Scoop (Windows)**](#option-7-unofficial-chocolatey-or-scoop-repositories)
-  * [**8 - Arch Linux Repository (Extra, AUR)**](#option-8-arch-extra-repository)
-  * [**9 - Patch Your Own Font**](#option-9-patch-your-own-font)
+  * [**1 - Release Archive Download**](#option-1-release-archive-download)
+  * [**2 - Homebrew Fonts (macOS (OS X))**](#option-2-homebrew-fonts)
+  * [**3 - Chocolatey or Scoop (Windows)**](#option-3-unofficial-chocolatey-or-scoop-repositories)
+  * [**4 - Arch Linux Repository (Extra, AUR)**](#option-4-arch-extra-repository)
+  * [**5 - Ad Hoc Curl Download**](#option-5-ad-hoc-curl-download)
+  * [**6 - Install Script**](#option-6-install-script)
+  * [**7 - Clone Repo**](#option-7-clone-the-repo)
+  * [**8 - Patch Your Own Font**](#option-8-patch-your-own-font)
 
 [**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
@@ -75,15 +74,14 @@ The following Sankey flow diagram shows the current glyph sets included:
 
 _If you..._
 
-  * `Option 1.` want to **quickly** grab an **individual font** download from the [`patched-fonts/` directory](#patched-fonts)
-  * `Option 2.` want to download a **font family** package of variations (bold, italic, etc.) see [download an archive](#option-2-release-archive-download)
-  * `Option 3.` want to **automate** installing or use in **scripts** see the [Install Script](#option-3-install-script)
-  * `Option 4.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-4-homebrew-fonts)
-  * `Option 5.` want **complete control** then see [cloning the repo](#option-5-clone-the-repo)
-  * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
-  * `Option 7.` are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-7-unofficial-chocolatey-or-scoop-repositories)
-  * `Option 8.` are on **Arch Linux** and want to use **Extra packages** see [Arch Extra Repositories](#option-8-arch-extra-repository)
-  * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
+  * `Option 1.` want to download a **font family** package of variations (bold, italic, etc.) see [download an archive](#option-1-release-archive-download)
+  * `Option 2.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-2-homebrew-fonts)
+  * `Option 3.` are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-3-unofficial-chocolatey-or-scoop-repositories)
+  * `Option 4.` are on **Arch Linux** and want to use **Extra packages** see [Arch Extra Repositories](#option-4-arch-extra-repository)
+  * `Option 5.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-5-ad-hoc-curl-download)
+  * `Option 6.` want to **automate** installing or use in **scripts** see the [Install Script](#option-6-install-script)
+  * `Option 7.` want **complete control** then see [cloning the repo](#option-7-clone-the-repo)
+  * `Option 8.` want to patch your own font see the [Font Patcher](#option-8-patch-your-own-font)
 
 ## Features
 * A [FontForge Python script](#font-patcher) to patch any font
@@ -194,28 +192,80 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 ## Font Installation
 
-### `Option 1: Download and Install Manually`
-
-> Best option for **quickly** getting a specific **individual font**.
-
-Download the specific [patched font](#patched-fonts) of your choice
-
-### `Option 2: Release Archive Download`
+### `Option 1: Release Archive Download`
 
 > Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
 
 Fonts are available for download as packages in the [latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+A nice overview is [on the Nerd Font site](https://www.nerdfonts.com/font-downloads) (but misses the more compact `xv` archives).
 
 If you want download the latest release of a given font inside a script you can use (replace "JetBrainsMono" with your font):
 ```sh
 curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
 ```
 
-### `Option 3: Install Script`
+### `Option 2: Homebrew Fonts`
+
+> Best option if on **macOS** and want to use **Homebrew**.
+
+All fonts are available via [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) on macOS (OS X)
+
+```sh
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+```
+
+### `Option 3: Unofficial Chocolatey or Scoop Repositories`
+
+> Option for **Windows** and wanting to use **Chocolatey** or **Scoop**.
+
+Chocolatey users can download fonts published to the [Chocolatey Community Repository (CCR)](https://community.chocolatey.org/packages):
+
+```powershell
+choco install nerd-fonts-hack
+```
+
+Scoop users can download fonts using the [Scoop bucket for Nerd Fonts](https://github.com/matthewjberger/scoop-nerd-fonts):
+
+```powershell
+scoop bucket add nerd-fonts
+scoop install Hack-NF
+```
+
+### `Option 4: Arch Extra Repository`
+
+> Option for **Arch Linux** and wanting to use **Extra packages**.
+
+Most fonts are available via [Arch Extra packages](https://archlinux.org/groups/any/nerd-fonts/).
+Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
+
+### `Option 5: Ad Hoc Curl Download`
+
+> Option if you want to use the **`curl` command** or for use in **scripts**.
+
+_Note_: Will not work to get newer fonts as they are not inside the repo anymore.
+
+#### Linux
+
+```sh
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
+```
+
+_Note:_ deprecated alternative paths: `~/.fonts`
+
+#### macOS (OS X)
+
+```sh
+cd ~/Library/Fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
+```
+
+### `Option 6: Install Script`
 
 > Best option if you want to **automate** installing or for use in **scripts**.
 
-_Note_: **Requires cloning** the repo as of now
+_Note_: **Requires (shallow) cloning** the repo as of now :-(
+_Note_: Will not work to get newer fonts as they are not inside the repo anymore.
 
 #### All fonts:
 
@@ -251,20 +301,11 @@ or, in Powershell (Windows only):
 ./install.ps1 DejaVuSansMono -WhatIf
 ```
 
-### `Option 4: Homebrew Fonts`
-
-> Best option if on **macOS** and want to use **Homebrew**.
-
-All fonts are available via [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) on macOS (OS X)
-
-```sh
-brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font
-```
-
-### `Option 5: Clone the Repo`
+### `Option 7: Clone the Repo`
 
 > Best option for **full control**, **all** or **some** of the fonts, or **contributing** to development.
+
+_Note_: Will not work to get newer fonts as they are not inside the repo anymore.
 
 A full clone of this repository is **not** required nor efficient (mostly due to Repository size) if you are simply only interested in a limited set of fonts.  
 
@@ -287,50 +328,7 @@ cd nerd-fonts
 git sparse-checkout add patched-fonts/JetBrainsMono
 ```
 
-### `Option 6: Ad Hoc Curl Download`
-
-> Option if you want to use the **`curl` command** or for use in **scripts**.
-
-#### Linux
-
-```sh
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
-```
-
-_Note:_ deprecated alternative paths: `~/.fonts`
-
-#### macOS (OS X)
-
-```sh
-cd ~/Library/Fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
-```
-
-### `Option 7: Unofficial Chocolatey or Scoop Repositories`
-
-> Option for **Windows** and wanting to use **Chocolatey** or **Scoop**.
-
-Chocolatey users can download fonts published to the [Chocolatey Community Repository (CCR)](https://community.chocolatey.org/packages):
-
-```powershell
-choco install nerd-fonts-hack
-```
-
-Scoop users can download fonts using the [Scoop bucket for Nerd Fonts](https://github.com/matthewjberger/scoop-nerd-fonts):
-
-```powershell
-scoop bucket add nerd-fonts
-scoop install Hack-NF
-```
-
-### `Option 8: Arch Extra Repository`
-
-> Option for **Arch Linux** and wanting to use **Extra packages**.
-
-Most fonts are available via [Arch Extra packages](https://archlinux.org/groups/any/nerd-fonts/).
-Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
-
-### `Option 9: Patch Your Own Font`
+### `Option 8: Patch Your Own Font`
 
 > The option for **patching** your **own font** or fully **customizing** the patched font.
 
