@@ -64,6 +64,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Cascadia Code                 | SIL OFL 1.1                  |
 | IBM Plex Mono                 | SIL OFL 1.1                  |
 | CodeNewRoman                  | SIL OFL 1.1                  |
+| CommitMono                    | SIL OFL 1.1                  |
 | Cousine                       | Apache 2.0                   |
 | DaddyTimeMono                 | SIL OFL 1.1                  |
 | DejaVuSansMono                | Free license                 |
