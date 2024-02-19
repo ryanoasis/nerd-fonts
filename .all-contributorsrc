@@ -1503,6 +1503,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "saygo-png",
+      "name": "Saygo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131687037?v=4",
+      "profile": "http://saygo-png.github.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
