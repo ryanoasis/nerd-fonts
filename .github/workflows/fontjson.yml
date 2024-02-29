@@ -12,10 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch files
-        uses: Bhacaz/checkout-files@v2
+        uses: actions/checkout@v4
         with:
-          files: bin/scripts/lib/fonts.json
-          branch: ${{ github.sha }}
+          sparse-checkout: bin/scripts/lib
 
       - name: Prepare file
         run: |
@@ -24,7 +23,7 @@ jobs:
           ls -l /tmp/fonts.json
 
       - name: Fetch gh-pages
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
 
@@ -47,7 +46,7 @@ jobs:
   update_gitignore:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Regenerate gitignore
         run: |

@@ -29,11 +29,11 @@ jobs:
     if: ${{ github.repository_owner == 'ryanoasis' }}
 
     steps:
-      # Faster version instead of - uses: actions/checkout@v3
-      - uses: Bhacaz/checkout-files@v2
+      - uses: actions/checkout@v4
         with:
-          files: package.json bin/scripts/get-font-names-from-json.sh bin/scripts/lib/fonts.json
-          branch: ${{ github.head_ref || github.ref_name }}
+          sparse-checkout: -
+            .
+            bin/scripts
 
       - name: Determine font matrix
         id: set-matrix
@@ -68,7 +68,7 @@ jobs:
         # If the tag exists it is obviously a re-release
 
         # This would need a complete checkout, that we want to avoid
-        # uses: mukunku/tag-exists-action@v1.2.0
+        # uses: mukunku/tag-exists-action
         #   with:
         #     tag: "v${{ steps.rel_ver.outputs.val }}"
         #   env:
@@ -135,7 +135,7 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Check release variables
         run: |
           echo "$RELEASE_VERSION"
@@ -216,7 +216,7 @@ jobs:
           ./archive-fonts.sh "${{ matrix.font }}"
 
       - name: Upload zip and tar.xz archive for release
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@ 4634c16e79c963813287e889244c50009e7f0981
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -225,7 +225,7 @@ jobs:
           files: archives/*
 
       - name: Upload patched fonts as artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: patched-fonts
           # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
@@ -246,7 +246,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Bump version for source files
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
@@ -258,7 +258,7 @@ jobs:
           ./archive-font-patcher.sh
 
       - name: Upload font-patcher archive for release
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@ 4634c16e79c963813287e889244c50009e7f0981
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -271,7 +271,7 @@ jobs:
     needs: [ setup-fonts-matrix, build, release-font-patcher ]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Prepare repo (clear out old and obsolete fonts)
         run: |
           cd -- "$GITHUB_WORKSPACE/patched-fonts"
@@ -279,7 +279,7 @@ jobs:
 
       - name: Download patched fonts from build
         id: download-patched-fonts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: patched-fonts
           path: .
@@ -383,7 +383,7 @@ jobs:
           clean: false
 
       - name: Adjust release tag to include previous commit
-        uses: EndBug/latest-tag@v1.5.1
+        uses: EndBug/latest-tag@v1
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           ref: "v${{ needs.setup-fonts-matrix.outputs.rel_version }}"

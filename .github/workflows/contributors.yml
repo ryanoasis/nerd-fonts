@@ -14,12 +14,12 @@ jobs:
     name: Update gh-pages contributors
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Fetch old from gh-pages
-        uses: Bhacaz/checkout-files@v2
+        uses: actions/checkout@v4
         with:
-          files: _posts/2017-01-05-all-contributors.md
-          branch: gh-pages
+          sparse-checkout: _posts
+          ref: gh-pages
       - name: Update the page
         run: |
           cd bin/scripts
