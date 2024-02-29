@@ -43,12 +43,12 @@ input.nerd-font-input {
 
 	&.tertiary {
 		background: #565346;
-		border-color: #0fbfcf;
-		color: #0fbfcf;
+		border-color: #69e8ff;
+		color: #69e8ff;
 	}
 
 	&.tertiary--inverse {
-		background: #0fbfcf;
+		background: #69e8ff;
 		border-color: #565346;
 		color: #565346;
 	}
@@ -140,7 +140,7 @@ a.nerd-font-button:before {
 #main .nerd-font-cheat-sheet .column:hover {
 	background: rgba(0, 0, 0, .25);
 	border: 2px solid #0fbfcf;
-	color: #0fbfcf !important;
+	color: #69e8ff !important;
 	cursor: pointer;
 }
 
@@ -154,7 +154,7 @@ a.nerd-font-button:before {
 }
 
 #main .nerd-font-cheat-sheet .column:hover .class-name {
-	color: #0fbfcf;
+	color: #69e8ff;
 }
 
 #main .nerd-font-cheat-sheet .column .class-name {
@@ -199,7 +199,7 @@ a.nerd-font-button:before {
 
 #main .nerd-font-cheat-sheet .nfold {
 	font-size: 3.25em;
-	color: #8810b0;
+	color: #cc63ff;
 	text-align: left;
 }
 
