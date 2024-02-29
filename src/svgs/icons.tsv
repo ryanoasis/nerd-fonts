@@ -216,7 +216,7 @@
 182		i_custom_common_lisp			commonlisp_nf.svg
 183		i_custom_scheme				scheme_nf.svg
 184		i_custom_toml				toml_nf.svg
-185		i_custom_libreoffice			libreoffice.svg
+185		i_custom_libreoffice			libreoffice_nf.svg
 186		i_custom_libreofficebase		libreofficebase_nf.svg
 187		i_custom_libreofficecalc		libreofficecalc_nf.svg
 188		i_custom_libreofficedraw		libreofficedraw_nf.svg
