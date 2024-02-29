@@ -1512,6 +1512,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "kazerniel",
+      "name": "kazerniel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5689996?v=4",
+      "profile": "https://github.com/kazerniel",
+      "contributions": [
+        "a11y"
+      ]
     }
   ],
   "repoType": "github",
