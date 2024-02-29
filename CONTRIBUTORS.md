@@ -221,6 +221,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Zshoham"><img src="https://avatars.githubusercontent.com/u/16373114?v=4?s=100" width="100px;" alt="Shohamza"/><br /><sub><b>Shohamza</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Zshoham" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nobk"><img src="https://avatars.githubusercontent.com/u/4659870?v=4?s=100" width="100px;" alt="nobk"/><br /><sub><b>nobk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=nobk" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://saygo-png.github.io"><img src="https://avatars.githubusercontent.com/u/131687037?v=4?s=100" width="100px;" alt="Saygo"/><br /><sub><b>Saygo</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=saygo-png" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kazerniel"><img src="https://avatars.githubusercontent.com/u/5689996?v=4?s=100" width="100px;" alt="kazerniel"/><br /><sub><b>kazerniel</b></sub></a><br /><a href="#a11y-kazerniel" title="Accessibility">️️️️♿️</a></td>
     </tr>
   </tbody>
 </table>
