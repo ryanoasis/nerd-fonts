@@ -10,16 +10,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  create-casks:
+  do_update:
     name: Update gh-pages contributors
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Get details and script from default branch
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .
+            bin/scripts
+          path: master
       - name: Fetch old from gh-pages
         uses: actions/checkout@v4
         with:
           sparse-checkout: _posts
           ref: gh-pages
+      - name: Combine branches
+        run: |
+          cp master/CONTRIBUTORS.md .
+          mkdir -p bin/scripts
+          mv master/bin/scripts bin/scripts
       - name: Update the page
         run: |
           cd bin/scripts
