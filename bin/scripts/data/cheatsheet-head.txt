@@ -1,8 +1,8 @@
 ---
 title: "Cheat Sheet"
 short_title: "Icons"
-bg: gray
-color: "#0fbfcf"
+bg: '#5e574b'
+color: '#69e8ff'
 fa-icon: search
 page: cheat-sheet
 style: container
