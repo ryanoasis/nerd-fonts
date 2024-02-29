@@ -218,7 +218,7 @@
 184		i_custom_toml				toml_nf.svg
 185		i_custom_libreoffice			libreoffice.svg
 186		i_custom_libreofficebase		libreofficebase_nf.svg
-187		i_custom_libreofficecalc			libreofficecalc_nf.svg
+187		i_custom_libreofficecalc		libreofficecalc_nf.svg
 188		i_custom_libreofficedraw		libreofficedraw_nf.svg
 189		i_custom_libreofficeimpress		libreofficeimpress_nf.svg
 190		i_custom_libreofficemath		libreofficemath_nf.svg
