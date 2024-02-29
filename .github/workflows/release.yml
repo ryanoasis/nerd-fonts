@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          sparse-checkout: -
+          sparse-checkout: |
             .
             bin/scripts
 
