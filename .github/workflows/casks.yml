@@ -14,11 +14,10 @@ jobs:
     name: Create casks
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch stuff (no checkout)
+      - name: Fetch stuff
         uses: actions/checkout@v4
         with:
-          sparse-checkout: |
-            bin/scripts
+          sparse-checkout: bin/scripts
       - name: Fetch release artifacts
         run: |
           cd bin/scripts

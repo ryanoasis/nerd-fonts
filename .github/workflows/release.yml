@@ -29,11 +29,10 @@ jobs:
     if: ${{ github.repository_owner == 'ryanoasis' }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Fetch information
+        uses: actions/checkout@v4
         with:
-          sparse-checkout: |
-            .
-            bin/scripts
+          sparse-checkout: bin/scripts
 
       - name: Determine font matrix
         id: set-matrix

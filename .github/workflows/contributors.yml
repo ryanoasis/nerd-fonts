@@ -14,22 +14,19 @@ jobs:
     name: Update gh-pages contributors
     runs-on: ubuntu-latest
     steps:
+      - name: Fetch pages from gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
       - name: Get details and script from default branch
         uses: actions/checkout@v4
         with:
-          sparse-checkout: |
-            .
-            bin/scripts
+          sparse-checkout: bin/scripts
           path: master
-      - name: Fetch old from gh-pages
-        uses: actions/checkout@v4
-        with:
-          sparse-checkout: _posts
-          ref: gh-pages
       - name: Combine branches
         run: |
+          mkdir -p bin
           cp master/CONTRIBUTORS.md .
-          mkdir -p bin/scripts
           mv master/bin/scripts bin/scripts
       - name: Update the page
         run: |
