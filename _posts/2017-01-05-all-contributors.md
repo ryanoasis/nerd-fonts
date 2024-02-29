@@ -233,6 +233,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/Zshoham"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/16373114?v=4?s=100" width="100px;" alt="Shohamza"/><br /><sub><b>Shohamza</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Zshoham" title="Code">💻</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/nobk"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/4659870?v=4?s=100" width="100px;" alt="nobk"/><br /><sub><b>nobk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=nobk" title="Code">💻</a></span>
 <span style="display: inline-block; width: 130px;"><a href="http://saygo-png.github.io"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/131687037?v=4?s=100" width="100px;" alt="Saygo"/><br /><sub><b>Saygo</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=saygo-png" title="Documentation">📖</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/kazerniel"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/5689996?v=4?s=100" width="100px;" alt="kazerniel"/><br /><sub><b>kazerniel</b></sub></a><br /><a href="#a11y-kazerniel" title="Accessibility">️️️️♿️</a></span>
 
 
 
