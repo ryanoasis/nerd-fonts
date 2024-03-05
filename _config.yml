@@ -36,6 +36,7 @@ colors:
   white:         '#f8f8f8'
   purewhite:     '#ffffff'
   blue:          '#1E5D8A'
+  darkblue:      '#2c3069'
   green:         '#0C640C'
   purple:        '#BA45AE'
   orange:        '#fab125'
