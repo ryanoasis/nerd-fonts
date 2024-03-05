@@ -283,7 +283,7 @@
       "folderName": "GeistMono",
       "imagePreviewFont": "GeistMono NF",
       "imagePreviewFontSource": "GeistMono/Regular/GeistMono-Regular.otf",
-      "linkPreviewFont": false,
+      "linkPreviewFont": "geist",
       "caskName": "geist-mono",
       "repoRelease": false,
       "description": "Monospaced typeface designed to be used in code editors, diagrams, terminals, and other textbased interfaces where code is represented"
