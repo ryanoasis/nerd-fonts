@@ -1521,6 +1521,15 @@
       "contributions": [
         "a11y"
       ]
+    },
+    {
+      "login": "landfillbaby",
+      "name": "Lucy Phipps",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20822924?v=4",
+      "profile": "https://github.com/landfillbaby",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
