@@ -234,6 +234,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/nobk"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/4659870?v=4?s=100" width="100px;" alt="nobk"/><br /><sub><b>nobk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=nobk" title="Code">💻</a></span>
 <span style="display: inline-block; width: 130px;"><a href="http://saygo-png.github.io"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/131687037?v=4?s=100" width="100px;" alt="Saygo"/><br /><sub><b>Saygo</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=saygo-png" title="Documentation">📖</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/kazerniel"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/5689996?v=4?s=100" width="100px;" alt="kazerniel"/><br /><sub><b>kazerniel</b></sub></a><br /><a href="#a11y-kazerniel" title="Accessibility">️️️️♿️</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/landfillbaby"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/20822924?v=4?s=100" width="100px;" alt="Lucy Phipps"/><br /><sub><b>Lucy Phipps</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Alandfillbaby" title="Bug reports">🐛</a></span>
 
 
 
