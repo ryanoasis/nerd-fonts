@@ -34,7 +34,7 @@ page: font-downloads
 <h2 class="center"> Other Download & Install Options </h2>
 
 <h3 class="center"> <span></span> Homebrew </h3>
-<div class="center" markdown="1">
+<div align="center" markdown="1">
 ```sh
 brew tap homebrew/cask-fonts &&
 brew install --cask font-<FONT NAME>-nerd-font
@@ -46,13 +46,6 @@ brew install --cask font-<FONT NAME>-nerd-font
 ```sh
 curl -fLo "<FONT NAME> Nerd Font Complete.otf" \
 https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
-```
-</div>
-<p/>
-<h3 class="center"> <span></span> Bash Install Script </h3>
-<div align="center" markdown="1">
-```sh
-./install.sh <FontName>
 ```
 </div>
 <p/>
