@@ -1530,6 +1530,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "Neo-Oli",
+      "name": "glow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7983745?v=4",
+      "profile": "https://glow.li",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
