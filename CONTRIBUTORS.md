@@ -223,6 +223,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="http://saygo-png.github.io"><img src="https://avatars.githubusercontent.com/u/131687037?v=4?s=100" width="100px;" alt="Saygo"/><br /><sub><b>Saygo</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=saygo-png" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kazerniel"><img src="https://avatars.githubusercontent.com/u/5689996?v=4?s=100" width="100px;" alt="kazerniel"/><br /><sub><b>kazerniel</b></sub></a><br /><a href="#a11y-kazerniel" title="Accessibility">️️️️♿️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/landfillbaby"><img src="https://avatars.githubusercontent.com/u/20822924?v=4?s=100" width="100px;" alt="Lucy Phipps"/><br /><sub><b>Lucy Phipps</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Alandfillbaby" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://glow.li"><img src="https://avatars.githubusercontent.com/u/7983745?v=4?s=100" width="100px;" alt="glow"/><br /><sub><b>glow</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Neo-Oli" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
