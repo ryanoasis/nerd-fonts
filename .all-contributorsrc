@@ -1539,6 +1539,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "roginfarrer",
+      "name": "Rogin Farrer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9063669?v=4",
+      "profile": "https://github.com/roginfarrer",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
