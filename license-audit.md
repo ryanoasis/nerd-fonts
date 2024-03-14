@@ -54,6 +54,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 
 | Font                          | License                      |
 | ----------------------------- | ---------------------------- |
+| 0xProto                       | SIL OFL 1.1                  |
 | 3270                          | SIL OFL 1.1                  |
 | Agave                         | MIT                          |
 | AnonymousPro                  | SIL OFL 1.1                  |
@@ -62,32 +63,39 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | BigBlueTerminal               | CC BY-SA 4.0                 |
 | BitstreamVeraSansMono         | Bitstream Vera License v1.00 |
 | Cascadia Code                 | SIL OFL 1.1                  |
-| IBM Plex Mono                 | SIL OFL 1.1                  |
 | CodeNewRoman                  | SIL OFL 1.1                  |
+| ComicShannsMono               | MIT                          |
 | CommitMono                    | SIL OFL 1.1                  |
 | Cousine                       | Apache 2.0                   |
+| D2Coding                      | SIL OFL 1.1                  |
 | DaddyTimeMono                 | SIL OFL 1.1                  |
 | DejaVuSansMono                | Free license                 |
 | DroidSansMono                 | Apache 2.0                   |
+| EnvyCodeR                     | SIL OFL 1.1                  |
 | FantasqueSansMono             | SIL OFL 1.1                  |
 | FiraCode                      | SIL OFL 1.1                  |
 | FiraMono                      | SIL OFL 1.1                  |
-| Go-Mono                       | Go License                   |
+| GeistMono                     | SIL OFL 1.1                  |
 | Gohu                          | Do What The Fuck You Want To |
+| Go-Mono                       | Go License                   |
 | Hack                          | MIT                          |
 | Hasklig                       | SIL OFL 1.1                  |
 | HeavyData                     | Vic Fieger License           |
 | Hermit                        | SIL OFL 1.1                  |
 | iA Writer                     | SIL OFL 1.1                  |
+| IBM Plex Mono                 | SIL OFL 1.1                  |
 | Inconsolata                   | SIL OFL 1.1                  |
 | InconsolataGo                 | SIL OFL 1.1                  |
 | InconsolataLGC                | SIL OFL 1.1                  |
+| IntelOneMono                  | SIL OFL 1.1                  |
 | Iosevka                       | SIL OFL 1.1                  |
 | JetBrainsMono                 | SIL OFL 1.1                  |
 | Lekton                        | SIL OFL 1.1                  |
 | LiberationMono                | SIL OFL 1.1                  |
 | Lilex                         | SIL OFL 1.1                  |
+| MartianMono                   | SIL OFL 1.1                  |
 | Meslo                         | Apache 2.0                   |
+| Monaspace                     | SIL OFL 1.1                  |
 | Monofur                       | Monofur Free License         |
 | Monoid                        | MIT                          |
 | Mononoki                      | SIL OFL 1.1                  |
