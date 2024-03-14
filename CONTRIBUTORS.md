@@ -227,6 +227,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/junoslukan"><img src="https://avatars.githubusercontent.com/u/19954026?v=4?s=100" width="100px;" alt="junoslukan"/><br /><sub><b>junoslukan</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=junoslukan" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/roginfarrer"><img src="https://avatars.githubusercontent.com/u/9063669?v=4?s=100" width="100px;" alt="Rogin Farrer"/><br /><sub><b>Rogin Farrer</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=roginfarrer" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://ronitkrshah.github.io"><img src="https://avatars.githubusercontent.com/u/118371892?v=4?s=100" width="100px;" alt="RKS"/><br /><sub><b>RKS</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=ronitkrshah" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
