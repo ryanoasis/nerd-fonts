@@ -1539,6 +1539,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "ronitkrshah",
+      "name": "RKS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118371892?v=4",
+      "profile": "https://ronitkrshah.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
