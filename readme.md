@@ -110,7 +110,7 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 | Font Name                                         | Font Name and Repository          | ver   |\*RFN | Status            |
 |:--------------------------------------------------|:----------------------------------|:------|:-----|:------------------|
-| [0xProto][p-0xProto]                              | [0xProto][f-0xProto]              | 1.300 | NO   | ![w] ![m2] ![l]   |
+| [0xProto][p-0xProto]                              | [0xProto][f-0xProto]              | 1.602 | NO   | ![w] ![m2] ![l]   |
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                    | 3.0.1 | NO   | ![w] ![m2] ![l]   |
 | [Agave][p-agave]                                  | [Agave][f-agave]                  | 37    | NO   | ![w] ![m2] ![l]   |
 | [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]          | 1.002 | YES  | ![w] ![m2] ![l]   |
