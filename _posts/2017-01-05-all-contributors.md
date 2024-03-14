@@ -238,6 +238,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://glow.li"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/7983745?v=4?s=100" width="100px;" alt="glow"/><br /><sub><b>glow</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Neo-Oli" title="Documentation">📖</a></span>
 
 
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/junoslukan"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/19954026?v=4?s=100" width="100px;" alt="junoslukan"/><br /><sub><b>junoslukan</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=junoslukan" title="Code">💻</a></span>
+
+
 
 
 <!-- markdownlint-restore -->
