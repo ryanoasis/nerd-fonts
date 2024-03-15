@@ -154,6 +154,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                     | 34         | NO   |
 | [Literation Nerd Font][p-liberation]              | [Liberation][f-liberation]             | 2.1.5      | YES  |
 | [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.300      | NO   |
+| [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.0.0      | NO   |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | NO   |
 | [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.0.0      | YES  |
 | [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | NO   |
@@ -677,6 +678,7 @@ Font repos
 [f-lekton]:https://fonts.google.com/specimen/Lekton
 [f-liberation]:https://github.com/liberationfonts/liberation-fonts
 [f-lilex]:https://github.com/mishamyrt/Lilex
+[f-martian]:https://github.com/evilmartians/mono
 [f-meslo]:https://github.com/andreberg/Meslo-Font
 [f-monaspace]:https://github.com/githubnext/monaspace
 [f-monoid]:https://github.com/larsenwork/monoid
@@ -741,6 +743,7 @@ Patched Font internal links
 [p-lekton]:patched-fonts/Lekton
 [p-liberation]:patched-fonts/LiberationMono
 [p-lilex]:patched-fonts/Lilex
+[p-martian]:patched-fonts/MartianMono
 [p-meslo]:patched-fonts/Meslo
 [p-monaspace]:patched-fonts/Monaspace
 [p-monofur]:patched-fonts/Monofur
