@@ -575,8 +575,9 @@ a.nerd-font-button:before {
 	}
 
 	.nerd-font-button {
-		border-width: 2px;
-		border-style: solid;
+		border-style: none;
+		margin-top: 0.5em;
+		margin-bottom: 1em;
 		flex-shrink: 1;
 		flex-grow: 1;
 	}

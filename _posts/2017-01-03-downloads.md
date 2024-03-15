@@ -21,7 +21,7 @@ page: font-downloads
       <div class="nerd-font-buttons-wrapper">
         <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.folderName }}.zip" class="inlineblock bg-green border-white text-white nerd-font-button nf-fa-download">Download</a>
         {% if font.linkPreviewFont != false %}
-        <a href="https://www.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank" alt="Full Preview of {{ font.patchedName }} on ProgrammingFonts.org" class="inlineblock bg-darkblue border-white text-white nerd-font-button nf-oct-link_external">Preview on ProgrammingFonts.org</a>
+        <a href="https://www.programmingfonts.org/#{{ font.linkPreviewFont }}" target="_blank" alt="Full Preview of {{ font.patchedName }} on ProgrammingFonts.org" class="inlineblock bg-darkblue border-white text-white nerd-font-button nf-oct-link_external">Preview</a>
         {% endif %}
       </div>
   </div>
