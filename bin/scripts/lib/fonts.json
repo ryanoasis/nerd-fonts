@@ -627,7 +627,7 @@
     {
       "unpatchedName": "MPlus",
       "RFN": false,
-      "version": "2023/03",
+      "version": "2023/09",
       "patchedName": "M+",
       "folderName": "MPlus",
       "imagePreviewFont": "M+1Code Nerd Font",
@@ -731,7 +731,7 @@
     {
       "unpatchedName": "Source Code Pro",
       "RFN": true,
-      "version": "2.038",
+      "version": "2.042",
       "patchedName": "SauceCodePro",
       "folderName": "SourceCodePro",
       "imagePreviewFont": "SauceCodePro Nerd Font",
