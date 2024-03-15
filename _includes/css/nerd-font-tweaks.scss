@@ -558,16 +558,10 @@ a.nerd-font-button:before {
 		.font-preview {
 			text-decoration: none;
 			background-size: contain;
-			height: 110px;
+			height: 140px;
 			background-repeat: no-repeat;
-			background-position-x: 34px;
 		}
 
-		.font-preview:before {
-			content: "";
-			font-size: 32px;
-			font-family: 'NerdFontsSymbols Nerd Font';
-		}
 	}
 
 	.nerd-font-buttons-wrapper {
