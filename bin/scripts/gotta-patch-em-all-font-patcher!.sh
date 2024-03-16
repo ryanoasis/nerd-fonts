@@ -10,6 +10,13 @@
 
 LINE_PREFIX="# [Nerd Fonts] "
 
+test "${BASH_VERSION%%[^0-9]*}" -ge 4 || {
+  echo >&2 "$LINE_PREFIX A non-ancient version of Bash is needed (>= 4)"
+  echo >&2 "# Bash version 4 has been released in 2009, so it's about time to update"
+  echo >&2 "# (Most likely you are on MacOS; try Homebrew with \`brew install bash\`) ;-)"
+  exit 1
+}
+
 # Check for Fontforge
 type fontforge >/dev/null 2>&1 || {
   echo >&2 "$LINE_PREFIX FontForge must be installed before running this script."
