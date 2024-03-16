@@ -4,7 +4,7 @@
 
 ## How to contribute summary
 
-Often it can be helpful to discuss a PR first in an Issue to avoid later problems or re-design when it is in review.
+**Often it can be helpful to discuss a PR first in an Issue** to avoid later problems or re-design when it is in review.
 
 * Fork the project and submit a Pull Request (PR)
   * Explain what the PR fixes or improves
@@ -32,8 +32,8 @@ Common types for this project include: `code`, `doc`, `translation`, `review`. F
 ### 1. Update original (unpatched) version
 * Copy and replace the existing unpatched version of the font and any readme and/or license files in the `src/unpatched-fonts/XYZ-font` directory
   * e.g. Updating *XYZ Font*, update files in directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
-  * Make sure to update the correct subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
-  * Update version information in the `readme.md` file(s)
+  * Make sure to update the correct subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`), if applicable
+  * Update version information in the `readme.md` file(s) and `bin/scripts/lib/fonts.json`
   * Add all the modifications into a git commit.
 ### 2. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
@@ -53,11 +53,11 @@ This is not needed and you should never commit any patched files directly to the
 ### 2. Add original (unpatched) version
 * Add the unpatched version of the font and any license files to the `src/unpatched-fonts/` directory inside a new directory
   * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
-  * Try to make subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`)
+  * Do not make subfolders for each font style
   * Add a `README.md` file to `src/unpatched-fonts/xyz` that follows the style of the existing fonts.
   * If the font has Oblique instead of Italic, set that (and other specials) in the `config.cfg` file
   * Update information in the `/readme.md` file(s)
-  * Insert font into `bin/scripts/lib/fonts.json`; use repoRelease=false
+  * Insert font into `bin/scripts/lib/fonts.json`; use `repoRelease=false`
   * Add all the modifications into a git commit.
 ### 3. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
@@ -73,7 +73,7 @@ This is not needed and you should never commit any patched files directly to the
 ### 5. Release
 * As we do not release directly to the repository anymore the new font will only be seen on a real release.
 * For that the font image preview will also be needed (`generate-font-image-previews.sh`).
-* What is automated via Github workflows and what not might change over time, so nothing is specified hereA.
+* What is automated via Github workflows and what not might change over time, so nothing is specified here.
 
 ## Steps to add a new icon to the core set
 Codepoints in the code set are a scarce resource, so in general it is unlikely that a icon will be added.
