@@ -40,8 +40,6 @@
 022		i_seti_gulp				gulp.svg
 023		i_seti_grunt				grunt.svg
 024		i_custom_default			file_nf.svg
-024		i_seti_default
-024		i_seti_text
 025		i_seti_folder				folder.svg
 026		i_seti_css				css.svg
 027		i_seti_config				config.svg
@@ -114,6 +112,7 @@
 082		i_seti_dart				dart.svg
 083		i_seti_db				db.svg
 084		i_seti_default				default.svg
+084		i_seti_text
 085		i_seti_deprecation_cop			deprecation-cop.svg
 086		i_seti_docker				docker.svg
 087		i_seti_d				d.svg
