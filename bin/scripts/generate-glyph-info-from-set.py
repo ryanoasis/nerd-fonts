@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding=utf8
 # Nerd Fonts Version: 3.1.1
-# Script Version: 1.1.1
+# Script Version: 1.2.0
 
 # Example Usage:
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont.ttf --start f001 --end f847 --offset 4ff --prefix mdi
@@ -66,9 +66,13 @@ elif args.symbolOffset:
 signedOffset = int(sign+'0x'+format(offset, 'X'), 16)
 hexPosition = args.symbolFontStart + signedOffset
 
-symbolFont.selection.select((str("ranges"),str("unicode")),args.symbolFontStart,args.symbolFontEnd)
-
-for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
+allNames = {}
+suppressedEntries = []
+symbolFont.encoding = 'UnicodeFull'
+for index in range(args.symbolFontStart, args.symbolFontEnd + 1):
+  if not index in symbolFont:
+    continue
+  sym_glyph = symbolFont[index]
   slot = format(sym_glyph.unicode, 'X')
   name = sym_glyph.glyphname
   sh_name = "i_" + args.prefix + "_" + name.replace("-", "_")
@@ -78,9 +82,18 @@ for index, sym_glyph in enumerate(symbolFont.selection.byGlyphs):
   else:
     char = chr(int('0x'+slot, 16) + signedOffset)
 
-  print("i='" + char + "' " + sh_name + "=$i")
+  entryString = "i='" + char + "' " + sh_name + "=$i SLOT " + slot + ' ' + str(index)
+  if name not in allNames:
+    print(entryString)
+  else:
+    suppressedEntries.append(entryString)
+
   ctr += 1
   hexPosition += 1
+  allNames[name] = 1
 
 print("Done, generated " + str(ctr) + " glyphs")
 
+if len(suppressedEntries) > 0:
+  print('FOLLOGING ENTRIES SUPPRESSED to prevent double names with different codepoints:')
+  print('\n'.join(suppressedEntries))

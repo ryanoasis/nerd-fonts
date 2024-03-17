@@ -151,7 +151,6 @@ i='' i_cod_folder_opened=$i
 i='' i_cod_gear=$i
 i='' i_cod_gift=$i
 i='' i_cod_gist_secret=$i
-i='' i_cod_file_code=$i
 i='' i_cod_git_commit=$i
 i='' i_cod_git_compare=$i
 i='' i_cod_git_merge=$i
