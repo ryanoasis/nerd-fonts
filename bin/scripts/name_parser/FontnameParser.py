@@ -185,10 +185,14 @@ class FontnameParser:
         # When short_alternative we get the short named alternative needed for some Windows applications
         (name, rest) = self._shortened_name()
         if short_alternative:
+            # Try to come up with a shortened family name
+            # This is in principle the code from family() but without including weights
+            # because weights shall still end up in ID 17
             other = self.other_token
             if self.use_short_families[1]:
                 [ other ] = FontnameTools.short_styles([ other ], self.use_short_families[2])
             pfn = FontnameTools.concat(name, rest, other, self.short_family_suff)
+            # Only return something if it is different to our standard behavior
             if pfn == self.preferred_family(False):
                 return ''
             return pfn
@@ -198,7 +202,7 @@ class FontnameParser:
             return ''
         return pfn
 
-    def preferred_styles(self):
+    def preferred_styles(self, _ = False):
         """Get the SFNT Preferred Styles (ID 17)"""
         styles = self.style_token
         weights = self.weight_token
@@ -305,6 +309,18 @@ class FontnameParser:
             os2_weight, ps_weight, name_weight,
             font.os2_weight, font.weight, weight))
 
+    def pfam_to_sfnt(self, name_function, entry, message):
+        """Prepare SFNT entries for short and long form as two different languages"""
+        languages = [ 'English (US)', 'English (British)' ]
+        names = [ name_function(False), name_function(True) ]
+        ret = [ ]
+        for i in range(2):
+            if len(names[i]):
+                ret += [( languages[i], entry, self.checklen(31, message, names[i]) )]
+            else:
+                break
+        return ret
+
     def rename_font(self, font):
         """Rename the font to include all information we found (font is fontforge font object)"""
         font.fondname = None
@@ -358,19 +374,8 @@ class FontnameParser:
         sfnt_list += [( 'English (US)', 'UniqueID', self.fullname() + version_tag )] # 3
         sfnt_list += [( 'English (US)', 'Fullname', self.checklen(63, 'Fullname (ID 4)', self.fullname()) )] # 4
         sfnt_list += [( 'English (US)', 'PostScriptName', self.checklen(63, 'PSN (ID 6)', self.psname()) )] # 6
-
-        p_fam = self.preferred_family(False)
-        if len(p_fam):
-            sfnt_list += [( 'English (US)', 'Preferred Family', self.checklen(31, 'PrefFamily (ID 16)', p_fam) )] # 16
-        p_fam = self.preferred_family(True)
-        if len(p_fam):
-            sfnt_list += [( 'English (British)', 'Preferred Family', self.checklen(31, 'PrefFamily (ID 16)', p_fam) )]
-        p_sty = self.preferred_styles()
-        if len(p_sty):
-            sfnt_list += [( 'English (US)', 'Preferred Styles', self.checklen(31, 'PrefStyles (ID 17)', p_sty) )] # 17
-            if len(p_fam):
-                # Set only if ID16 for British has been set
-                sfnt_list += [( 'English (British)', 'Preferred Styles', self.checklen(31, 'PrefStyles (ID 17)', p_sty) )]
+        sfnt_list += self.pfam_to_sfnt(self.preferred_family, 'Preferred Family', 'PrefFamily (ID 16)') # 16
+        sfnt_list += self.pfam_to_sfnt(self.preferred_styles, 'Preferred Styles', 'PrefStyles (ID 17)') # 17
 
         font.sfnt_names = tuple(sfnt_list)
 
