@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Codicons (387 icons)
-# Codepoints: EA60-EBEB with holes
+# Codicons (439 icons)
+# Codepoints: EA60-EC1E with holes
 test -n "$__i_cod_loaded" && return || __i_cod_loaded=1
 i='' i_cod_add=$i
 i='' i_cod_lightbulb=$i
@@ -389,4 +389,55 @@ i='' i_cod_azure_devops=$i
 i='' i_cod_verified_filled=$i
 i='' i_cod_newline=$i
 i='' i_cod_layout=$i
+i='' i_cod_layout_activitybar_left=$i
+i='' i_cod_layout_activitybar_right=$i
+i='' i_cod_layout_panel_left=$i
+i='' i_cod_layout_panel_center=$i
+i='' i_cod_layout_panel_justify=$i
+i='' i_cod_layout_panel_right=$i
+i='' i_cod_layout_panel=$i
+i='' i_cod_layout_sidebar_left=$i
+i='' i_cod_layout_sidebar_right=$i
+i='' i_cod_layout_statusbar=$i
+i='' i_cod_layout_menubar=$i
+i='' i_cod_layout_centered=$i
+i='' i_cod_target=$i
+i='' i_cod_indent=$i
+i='' i_cod_record_small=$i
+i='' i_cod_error_small=$i
+i='' i_cod_arrow_circle_down=$i
+i='' i_cod_arrow_circle_left=$i
+i='' i_cod_arrow_circle_right=$i
+i='' i_cod_arrow_circle_up=$i
+i='' i_cod_layout_sidebar_right_off=$i
+i='' i_cod_layout_panel_off=$i
+i='' i_cod_layout_sidebar_left_off=$i
+i='' i_cod_blank=$i
+i='' i_cod_heart_filled=$i
+i='' i_cod_map=$i
+i='' i_cod_map_filled=$i
+i='' i_cod_circle_small=$i
+i='' i_cod_bell_slash=$i
+i='' i_cod_bell_slash_dot=$i
+i='' i_cod_comment_unresolved=$i
+i='' i_cod_git_pull_request_go_to_changes=$i
+i='' i_cod_git_pull_request_new_changes=$i
+i='' i_cod_search_fuzzy=$i
+i='' i_cod_comment_draft=$i
+i='' i_cod_send=$i
+i='' i_cod_sparkle=$i
+i='' i_cod_insert=$i
+i='' i_cod_mic=$i
+i='' i_cod_thumbsdown_filled=$i
+i='' i_cod_thumbsup_filled=$i
+i='' i_cod_coffee=$i
+i='' i_cod_snake=$i
+i='' i_cod_game=$i
+i='' i_cod_vr=$i
+i='' i_cod_chip=$i
+i='' i_cod_piano=$i
+i='' i_cod_music=$i
+i='' i_cod_mic_filled=$i
+i='' i_cod_git_fetch=$i
+i='' i_cod_copilot=$i
 unset i

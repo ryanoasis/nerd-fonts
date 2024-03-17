@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.8.5"
+script_version = "4.9.0"
 
 version = "3.1.1"
 projectName = "Nerd Fonts"
@@ -985,8 +985,15 @@ class font_patcher:
             range(0x2594, 0x259f + 1), # quards (Note: quard 2597 in Hack is wrong, scales like block!)
         ]}
         CODI_SCALE_LIST = {'ScaleGroups': [
-            range(0xeb6e, 0xeb71 + 1), # triangles
+            [0xea61, 0xeb13], # lightbulb
             range(0xeab4, 0xeab7 + 1), # chevrons
+            [0xea7d, *range(0xea99, 0xeaa1 + 1), 0xebcb], # arrows
+            [0xeaa2, 0xeb9a, 0xec08, 0xec09], # bells
+            range(0xead4, 0xead6 + 1), # dot and arrow
+            [0xeb43, 0xec0b, 0xec0c], # (pull) request changes
+            range(0xeb6e, 0xeb71 + 1), # triangles
+            [*range(0xeb89, 0xeb8b + 1), 0xec07], # smallish dots
+            range(0xebd5, 0xebd7 + 1), # compasses
         ]}
         DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
             'GlyphsToScale': [
@@ -1077,7 +1084,7 @@ class font_patcher:
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Heart
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Zap
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': False, 'SymStart': 0xF27C, 'SymEnd': 0xF306, 'SrcStart': 0xF4A9, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.codicons,             'Name': "Codicons",                'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEBEB, 'SrcStart': None,   'ScaleRules': CODI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.codicons,             'Name': "Codicons",                'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEC1E, 'SrcStart': None,   'ScaleRules': CODI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.custom,               'Name': "Custom",                  'Filename': self.args.custom,                                 'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': CUSTOM_ATTR}
         ]
 
