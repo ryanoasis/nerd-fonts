@@ -11,7 +11,7 @@
 
 import fontforge
 
-font = fontforge.open('ComicShannsMono-Regular.otf_orig')
+font = fontforge.open('ComicShannsMono-Regular.sfd_modified')
 
 # Repair some issues in source
 font.selection.all()
