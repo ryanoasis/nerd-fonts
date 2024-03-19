@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.10.1"
+script_version = "4.11.0"
 
 version = "3.1.1"
 projectName = "Nerd Fonts"
@@ -1443,6 +1443,19 @@ class font_patcher:
                 # Paste it
                 self.sourceFont.selection.select(currentSourceFontGlyph)
                 self.sourceFont.paste()
+
+                # Correct path(s) and check for problems
+                old_validate = self.sourceFont[currentSourceFontGlyph].validate(True)
+                self.sourceFont[currentSourceFontGlyph].removeOverlap()
+                self.sourceFont[currentSourceFontGlyph].correctDirection()
+                new_validate = self.sourceFont[currentSourceFontGlyph].validate(True)
+                # Usually self-intersection can not be fixed, so only show if we introduce it
+                if (new_validate & 0x4 and not (old_validate & 0x4)) or new_validate & (0x8 | 0x2):
+                    logger.debug("Problematic glyph %04X (%X -> %X): %s",
+                        currentSourceFontGlyph, old_validate & 0xE, new_validate & 0xE,
+                        sym_glyph.glyphname)
+
+                # Name the glyph
                 self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
                 self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
