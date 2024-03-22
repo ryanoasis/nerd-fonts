@@ -1566,6 +1566,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "madmaxieee",
+      "name": "莊加旭 (Max Chuang)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76544194?v=4",
+      "profile": "https://www.madmaxieee.dev/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
