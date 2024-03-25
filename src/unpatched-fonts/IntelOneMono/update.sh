@@ -40,17 +40,14 @@ unzip_file "$TEMP/iom.zip" "$TEMP"
 
 echo "Extracted to $TEMP"
 
-echo "Creating directories"
-mkdir -p ./Bold/ ./Bold-Italic/ ./Italic/ ./Light/ ./Light-Italic/ ./Medium/ ./Medium-Italic/ ./Regular/
-
 echo "Moving files"
-mv "$TEMP/ttf/IntelOneMono-Bold.ttf" ./Bold
-mv "$TEMP/ttf/IntelOneMono-BoldItalic.ttf" ./Bold-Italic
-mv "$TEMP/ttf/IntelOneMono-Italic.ttf" ./Italic
-mv "$TEMP/ttf/IntelOneMono-Light.ttf" ./Light
-mv "$TEMP/ttf/IntelOneMono-LightItalic.ttf" ./Light-Italic
-mv "$TEMP/ttf/IntelOneMono-Medium.ttf" ./Medium
-mv "$TEMP/ttf/IntelOneMono-MediumItalic.ttf" ./Medium-Italic
-mv "$TEMP/ttf/IntelOneMono-Regular.ttf" ./Regular
+mv "$TEMP/ttf/IntelOneMono-Bold.ttf" .
+mv "$TEMP/ttf/IntelOneMono-BoldItalic.ttf" .
+mv "$TEMP/ttf/IntelOneMono-Italic.ttf" .
+mv "$TEMP/ttf/IntelOneMono-Light.ttf" .
+mv "$TEMP/ttf/IntelOneMono-LightItalic.ttf" .
+mv "$TEMP/ttf/IntelOneMono-Medium.ttf" .
+mv "$TEMP/ttf/IntelOneMono-MediumItalic.ttf" .
+mv "$TEMP/ttf/IntelOneMono-Regular.ttf" .
 
 echo "Done. Make sure to patch the fonts now."
