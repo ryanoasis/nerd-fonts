@@ -242,6 +242,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/roginfarrer"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/9063669?v=4?s=100" width="100px;" alt="Rogin Farrer"/><br /><sub><b>Rogin Farrer</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=roginfarrer" title="Code">💻</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://ronitkrshah.github.io"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/118371892?v=4?s=100" width="100px;" alt="RKS"/><br /><sub><b>RKS</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=ronitkrshah" title="Code">💻</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://www.madmaxieee.dev/"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/76544194?v=4?s=100" width="100px;" alt="莊加旭 (Max Chuang)"/><br /><sub><b>莊加旭 (Max Chuang)</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=madmaxieee" title="Documentation">📖</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://gitlab.com/gboehm"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/12833794?v=4?s=100" width="100px;" alt="Guillaume BOEHM"/><br /><sub><b>Guillaume BOEHM</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=guillaumeboehm" title="Code">💻</a></span>
 
 
 
