@@ -2,7 +2,7 @@
 
 set -eu
 
-VERSION=1.2.1
+VERSION=1.3.0
 TEMP=$(mktemp -d)
 
 LINK="https://github.com/intel/intel-one-mono/releases/download/V${VERSION}/ttf.zip"
@@ -29,14 +29,14 @@ unzip_file "$TEMP/iom.zip" "$TEMP"
 # │  └── ttf
 # ├── iom.zip
 # └── ttf
-#    ├── intelone-mono-font-family-bold.ttf
-#    ├── intelone-mono-font-family-bolditalic.ttf
-#    ├── intelone-mono-font-family-italic.ttf
-#    ├── intelone-mono-font-family-light.ttf
-#    ├── intelone-mono-font-family-lightitalic.ttf
-#    ├── intelone-mono-font-family-medium.ttf
-#    ├── intelone-mono-font-family-mediumitalic.ttf
-#    └── intelone-mono-font-family-regular.ttf
+#    ├── IntelOneMono-Bold.ttf
+#    ├── IntelOneMono-BoldItalic.ttf
+#    ├── IntelOneMono-Italic.ttf
+#    ├── IntelOneMono-Light.ttf
+#    ├── IntelOneMono-LightItalic.ttf
+#    ├── IntelOneMono-Medium.ttf
+#    ├── IntelOneMono-MediumItalic.ttf
+#    └── IntelOneMono-Regular.ttf
 
 echo "Extracted to $TEMP"
 
@@ -44,13 +44,13 @@ echo "Creating directories"
 mkdir -p ./Bold/ ./Bold-Italic/ ./Italic/ ./Light/ ./Light-Italic/ ./Medium/ ./Medium-Italic/ ./Regular/
 
 echo "Moving files"
-mv "$TEMP/ttf/intelone-mono-font-family-bold.ttf" ./Bold
-mv "$TEMP/ttf/intelone-mono-font-family-bolditalic.ttf" ./Bold-Italic
-mv "$TEMP/ttf/intelone-mono-font-family-italic.ttf" ./Italic
-mv "$TEMP/ttf/intelone-mono-font-family-light.ttf" ./Light
-mv "$TEMP/ttf/intelone-mono-font-family-lightitalic.ttf" ./Light-Italic
-mv "$TEMP/ttf/intelone-mono-font-family-medium.ttf" ./Medium
-mv "$TEMP/ttf/intelone-mono-font-family-mediumitalic.ttf" ./Medium-Italic
-mv "$TEMP/ttf/intelone-mono-font-family-regular.ttf" ./Regular
+mv "$TEMP/ttf/IntelOneMono-Bold.ttf" ./Bold
+mv "$TEMP/ttf/IntelOneMono-BoldItalic.ttf" ./Bold-Italic
+mv "$TEMP/ttf/IntelOneMono-Italic.ttf" ./Italic
+mv "$TEMP/ttf/IntelOneMono-Light.ttf" ./Light
+mv "$TEMP/ttf/IntelOneMono-LightItalic.ttf" ./Light-Italic
+mv "$TEMP/ttf/IntelOneMono-Medium.ttf" ./Medium
+mv "$TEMP/ttf/IntelOneMono-MediumItalic.ttf" ./Medium-Italic
+mv "$TEMP/ttf/IntelOneMono-Regular.ttf" ./Regular
 
 echo "Done. Make sure to patch the fonts now."

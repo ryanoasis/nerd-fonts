@@ -4,7 +4,7 @@
 
 For more information have a look at the upstream website: https://github.com/intel/intel-one-mono
 
-Version: 1.2.1
+Version: 1.3.0
 
 ## Why `IntoneMono` and not `Intel One Mono`?
 
