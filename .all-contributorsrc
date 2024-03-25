@@ -1575,6 +1575,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "guillaumeboehm",
+      "name": "Guillaume BOEHM",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12833794?v=4",
+      "profile": "https://gitlab.com/gboehm",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
