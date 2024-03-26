@@ -314,7 +314,7 @@ _Note_: **Requiert le clonage** du dépôt
 Toutes les polices sont disponibles via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) sur macOS (OS X)
 
 ```sh
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 
