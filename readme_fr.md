@@ -311,7 +311,7 @@ _Note_: **Requiert le clonage** du dépôt
 
 > La meilleure option si vous êtes sur **macOS** et que vous voulez utiliser **Homebrew**.
 
-Toutes les polices sont disponibles via [Homebrew Fonts](https://github.com/caskroom/homebrew-fonts) sur macOS (OS X)
+Toutes les polices sont disponibles via [Homebrew Fonts](https://github.com/Homebrew/homebrew-cask-fonts) sur macOS (OS X)
 
 ```sh
 brew tap homebrew/cask-fonts
