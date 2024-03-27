@@ -1584,6 +1584,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "cricrio",
+      "name": "Christopher Bellanger",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16168447?v=4",
+      "profile": "https://github.com/cricrio",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
