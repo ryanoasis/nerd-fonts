@@ -250,10 +250,10 @@ _註_: **Requires cloning** the repo as of now
 
 > 適用於 **macOS 系統**的**Homebrew**使用者。
 
-所有字體都可以透過 [Homebrew 字體](https://github.com/caskroom/homebrew-fonts) 從 macOS (OS X)平台上找到
+所有字體都可以透過 [Homebrew 字體](https://github.com/Homebrew/homebrew-cask-fonts) 從 macOS (OS X)平台上找到
 
 ```sh
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 

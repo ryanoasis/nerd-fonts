@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.1.1
-# Script Version: 2.2.2
+# Script Version: 2.2.3
 #
 # Iterates over all [*] archived fonts
-# to generate ruby cask files for homebrew-fonts (https://github.com/caskroom/homebrew-fonts)
+# to generate ruby cask files for homebrew-fonts (https://github.com/Homebrew/homebrew-cask-fonts)
 # * Only adds non-Windows versions of the fonts
 # * Needs the zip archives in archives/ (i.e. run `./archive-fonts.sh` first)
 #
