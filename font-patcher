@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.10.2"
+script_version = "4.11.0"
 
 version = "3.1.1"
 projectName = "Nerd Fonts"
@@ -840,6 +840,7 @@ class font_patcher:
         # '1' means occupu 1 cell (default for 'xy')
         # '2' means occupy 2 cells (default for 'pa')
         # '!' means do the 'pa' scaling even with non mono fonts (else it just scales down, never up)
+        # '^' means that scaling shall fill the whole cell and not only the icon-cap-height (for mono fonts, other always use the whole cell)
         # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
         #
         # Be careful, stretch may not change within a ScaleRule!
@@ -848,63 +849,63 @@ class font_patcher:
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
         }
         SYM_ATTR_POWERLINE = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
+            'default': {'align': 'c', 'valign': 'c', 'stretch': '^pa', 'params': {}},
 
             # Arrow tips
-            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.7}},
-            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
-            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.7}},
-            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.7}},
+            0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.7}},
+            0xe0b1: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'xy-ratio': 0.7}},
+            0xe0b2: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.7}},
+            0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'xy-ratio': 0.7}},
 
             # Rounded arcs
-            0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.59}},
-            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.5}},
-            0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.59}},
-            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'xy-ratio': 0.5}},
+            0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.59}},
+            0xe0b5: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'xy-ratio': 0.5}},
+            0xe0b6: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.59}},
+            0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'xy-ratio': 0.5}},
 
             # Bottom Triangles
-            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
-            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {}},
+            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {}},
 
             # Top Triangles
-            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {}},
-            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02}},
-            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {}},
+            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {}},
+            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {}},
 
             # Flames
-            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
-            0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
-            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
-            0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {}},
+            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {}},
+            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {}},
 
             # Small squares
-            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.86}},
-            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.86}},
+            0xe0c4: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.86}},
+            0xe0c5: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.86}},
 
             # Bigger squares
-            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
-            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
+            0xe0c6: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
+            0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
 
             # Waveform
-            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
-            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.01}},
+            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
 
             # Hexagons
-            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'overlap': 0.02, 'xy-ratio': 0.85}},
-            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': 'xy2', 'params': {'xy-ratio': 0.865}},
+            0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.02, 'xy-ratio': 0.85}},
+            0xe0cd: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'xy-ratio': 0.865}},
 
             # Legos
-            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': 'pa', 'params': {}},
-            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}},
-            0xe0d0: {'align': 'l', 'valign': 'c', 'stretch': 'pa', 'params': {}},
-            0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': 'pa', 'params': {}},
+            0xe0ce: {'align': 'l', 'valign': 'c', 'stretch': '^pa', 'params': {}},
+            0xe0cf: {'align': 'c', 'valign': 'c', 'stretch': '^pa', 'params': {}},
+            0xe0d0: {'align': 'l', 'valign': 'c', 'stretch': '^pa', 'params': {}},
+            0xe0d1: {'align': 'l', 'valign': 'c', 'stretch': '^pa', 'params': {}},
 
             # Top and bottom trapezoid
-            0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
-            0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}}
+            0xe0d2: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}},
+            0xe0d4: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02, 'xy-ratio': 0.7}}
         }
         SYM_ATTR_TRIGRAPH = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa1!', 'params': {'overlap': -0.10, 'careful': True}}
@@ -922,7 +923,7 @@ class font_patcher:
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa1!', 'params': {'ypadding': 0.3, 'careful': True}}
         }
         SYM_ATTR_BOX = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}},
+            'default': {'align': 'c', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}},
             # No overlap with checkered greys (commented out because that raises problems on rescaling clients)
             # 0x2591: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
             # 0x2592: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
@@ -1190,7 +1191,7 @@ class font_patcher:
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
-        self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0, 'ypadding': 0}
+        self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0, 'iconheight': 0, 'ypadding': 0}
 
         if metrics == Metric.HHEA:
             self.font_dim['ymin'] = self.sourceFont.hhea_descent - half_gap(self.sourceFont.hhea_linegap, False)
@@ -1212,17 +1213,27 @@ class font_patcher:
             # Assume we are using our prepared templates
             self.symbolsonly = True
             self.font_dim = {
-                'xmin'  : 0,
-                'ymin'  : -self.sourceFont.descent,
-                'xmax'  : self.sourceFont.em,
-                'ymax'  : self.sourceFont.ascent,
-                'width' : self.sourceFont.em,
-                'height': self.sourceFont.descent + self.sourceFont.ascent,
+                'xmin'      : 0,
+                'ymin'      : -self.sourceFont.descent,
+                'xmax'      : self.sourceFont.em,
+                'ymax'      : self.sourceFont.ascent,
+                'width'     : self.sourceFont.em,
+                'height'    : self.sourceFont.descent + self.sourceFont.ascent,
+                'iconheight': self.sourceFont.descent + self.sourceFont.ascent,
+                'ypadding'  : 0,
             }
             our_btb = self.sourceFont.descent + self.sourceFont.ascent
         if self.font_dim['height'] <= 0:
             logger.critical("Can not detect sane font height")
             sys.exit(1)
+
+        self.font_dim['iconheight'] = self.font_dim['height']
+        if self.args.single and self.sourceFont.capHeight > 0:
+            # Limit the icon height on monospaced fonts because very slender and tall icons render
+            # excessivly tall otherwise. We ignore that effect for the other variants because it
+            # does not look so much out of place there.
+            # Icons can be bigger than the letter capitals, but not the whole cell:
+            self.font_dim['iconheight'] = (self.sourceFont.capHeight * 2 + self.font_dim['height']) / 3
 
         # Make all metrics equal
         self.sourceFont.os2_typolinegap = 0
@@ -1277,7 +1288,9 @@ class font_patcher:
         if self.font_dim['width'] <= 0:
             logger.critical("Can not detect sane font width")
             sys.exit(1)
-        logger.debug("Final font cell dimensions %d w x %d h", self.font_dim['width'], self.font_dim['height'])
+        logger.debug("Final font cell dimensions %d w x %d h%s",
+            self.font_dim['width'], self.font_dim['height'],
+            ' (with icon cell {} h)'.format(int(self.font_dim['iconheight'])) if self.font_dim['iconheight'] != self.font_dim['height'] else '')
 
         self.xavgwidth.append(self.args.xavgwidth)
         if isinstance(self.xavgwidth[-1], int) and self.xavgwidth[-1] == 0:
@@ -1303,7 +1316,8 @@ class font_patcher:
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
         # Use the font_dim['height'] only for explicit 'y' scaling (not 'pa')
-        target_height = self.font_dim['height'] * (1.0 - self.font_dim['ypadding'])
+        target_height = self.font_dim['height'] if '^' in stretch else self.font_dim['iconheight']
+        target_height *= 1.0 - self.font_dim['ypadding']
         scale_ratio_y = target_height / sym_dim['height']
 
         if 'pa' in stretch:
