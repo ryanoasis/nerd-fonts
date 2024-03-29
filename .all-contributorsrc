@@ -1613,6 +1613,15 @@
         "review",
         "ideas"
       ]
+    },
+    {
+      "login": "trashner",
+      "name": "trashner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13357412?v=4",
+      "profile": "https://github.com/trashner",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "repoType": "github",
