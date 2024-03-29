@@ -1622,6 +1622,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "kierun",
+      "name": "Dr Yann Golanski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3079575?v=4",
+      "profile": "https://github.com/kierun",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
