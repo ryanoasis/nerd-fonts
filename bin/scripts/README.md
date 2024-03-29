@@ -29,6 +29,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `standardize-and-complete-readmes.sh`: Used by `gotta-patch-em-all-font-patcher!.sh`
 * `test-fonts.sh`: Print-to-debug all glyphs we patch in [4]
 * `test-powerlines.sh`: Print-to-debug powerline examples [4]
+* `test-vertical-lines.sh`: Print-to-debug powerline examples [4]
 * `update-all-contributors-website.py`: Update the contributors page on `nerdfonts.com` (i.e. gh-pages) [7]
 * `update-gitignore.sh`: Correct gitignore file for not-released-in-repo fonts [8]
 * `version-bump.sh`: Change version number in all scripts on a new release [1]
