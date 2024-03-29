@@ -1593,6 +1593,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "luebking",
+      "name": "luebking",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5768413?v=4",
+      "profile": "https://github.com/luebking",
+      "contributions": [
+        "bug",
+        "review"
+      ]
     }
   ],
   "repoType": "github",
