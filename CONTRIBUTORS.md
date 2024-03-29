@@ -234,6 +234,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/cricrio"><img src="https://avatars.githubusercontent.com/u/16168447?v=4?s=100" width="100px;" alt="Christopher Bellanger"/><br /><sub><b>Christopher Bellanger</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=cricrio" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/luebking"><img src="https://avatars.githubusercontent.com/u/5768413?v=4?s=100" width="100px;" alt="luebking"/><br /><sub><b>luebking</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Aluebking" title="Bug reports">🐛</a> <a href="https://github.com/ryanoasis/nerd-fonts/pulls?q=is%3Apr+reviewed-by%3Aluebking" title="Reviewed Pull Requests">👀</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/a-usr"><img src="https://avatars.githubusercontent.com/u/81042605?v=4?s=100" width="100px;" alt="usr"/><br /><sub><b>usr</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/pulls?q=is%3Apr+reviewed-by%3Aa-usr" title="Reviewed Pull Requests">👀</a> <a href="#ideas-a-usr" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
   </tbody>
 </table>
 
