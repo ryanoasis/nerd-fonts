@@ -237,6 +237,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/a-usr"><img src="https://avatars.githubusercontent.com/u/81042605?v=4?s=100" width="100px;" alt="usr"/><br /><sub><b>usr</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/pulls?q=is%3Apr+reviewed-by%3Aa-usr" title="Reviewed Pull Requests">👀</a> <a href="#ideas-a-usr" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/trashner"><img src="https://avatars.githubusercontent.com/u/13357412?v=4?s=100" width="100px;" alt="trashner"/><br /><sub><b>trashner</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/pulls?q=is%3Apr+reviewed-by%3Atrashner" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kierun"><img src="https://avatars.githubusercontent.com/u/3079575?v=4?s=100" width="100px;" alt="Dr Yann Golanski"/><br /><sub><b>Dr Yann Golanski</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Akierun" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
