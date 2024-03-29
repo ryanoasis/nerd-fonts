@@ -146,7 +146,7 @@ function test-fonts() {
   echo; echo
 
   echo "Nerd Fonts - Powerline Extra"
-  print-unicode-ranges e0a3 e0a3 e0b4 e0c8 e0cc e0d2 e0d4 e0d4
+  print-unicode-ranges e0a3 e0a3 e0b4 e0c8 e0cc e0d2 e0d4 e0d4 e0d6 e0d7
   echo; echo
 
   echo "Nerd Fonts - Symbols original"
