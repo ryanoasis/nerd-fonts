@@ -248,6 +248,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/a-usr"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/81042605?v=4?s=100" width="100px;" alt="usr"/><br /><sub><b>usr</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/pulls?q=is%3Apr+reviewed-by%3Aa-usr" title="Reviewed Pull Requests">👀</a> <a href="#ideas-a-usr" title="Ideas, Planning, & Feedback">🤔</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/trashner"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/13357412?v=4?s=100" width="100px;" alt="trashner"/><br /><sub><b>trashner</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/pulls?q=is%3Apr+reviewed-by%3Atrashner" title="Reviewed Pull Requests">👀</a></span>
 
 
 
