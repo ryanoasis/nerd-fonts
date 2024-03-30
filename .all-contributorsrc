@@ -1640,6 +1640,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Slabity",
+      "name": "Slabity",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3788421?v=4",
+      "profile": "http://www.slabity.net/",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
