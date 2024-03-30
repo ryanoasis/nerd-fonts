@@ -112,7 +112,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 
 | Font Name                                         | Original Font Name and Repository      | ver        |\*RFN |
 |:--------------------------------------------------|:---------------------------------------|:-----------|:-----|
-| [0xProto Nerd Font][p-0xProto]                    | [0xProto][f-0xProto]                   | 1.602      | NO   |
+| [0xProto Nerd Font][p-0xProto]                    | [0xProto][f-0xProto]                   | 1.603      | NO   |
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                         | 3.0.1      | NO   |
 | [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 37         | NO   |
 | [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]               | 1.002      | YES  |
