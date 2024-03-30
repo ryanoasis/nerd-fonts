@@ -170,7 +170,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [SauceCodePro Nerd Font][p-source-code-pro]       | [Source Code Pro][f-source]            | 2.042      | YES  |
 | [ShureTechMono Nerd Font][p-share-tech-mono]      | [Share Tech Mono][f-share]             | 1.003      | YES  |
 | [SpaceMono Nerd Font][p-space-mono]               | [Space Mono][f-space]                  | 1.001      | NO   |
-| [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]             | 4.49.2     | YES  |
+| [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]             | 4.49.3     | YES  |
 | [Tinos Nerd Font][p-tinos]                        | [Tinos][f-tinos]                       | 1.23       | NO   |
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | NO   |
 | [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | NO   |

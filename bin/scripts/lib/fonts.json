@@ -774,7 +774,7 @@
       "patchedName": "Terminess",
       "folderName": "Terminus",
       "imagePreviewFont": "Terminess Nerd Font",
-      "imagePreviewFontSource": "Terminus/Regular/TerminusTTF-4.49.2.ttf",
+      "imagePreviewFontSource": "Terminus/TerminusTTF-4.49.2.ttf",
       "linkPreviewFont": "terminus",
       "caskName": "terminess-ttf",
       "repoRelease": true,
