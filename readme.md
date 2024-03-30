@@ -174,7 +174,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Tinos Nerd Font][p-tinos]                        | [Tinos][f-tinos]                       | 1.23       | NO   |
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | NO   |
 | [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | NO   |
-| [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.4      | NO   |
+| [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.6      | NO   |
 
 <sub>_\*RFN = Reserved Font Name_</sub>
 
