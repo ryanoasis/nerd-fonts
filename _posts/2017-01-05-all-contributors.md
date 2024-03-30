@@ -251,6 +251,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/trashner"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/13357412?v=4?s=100" width="100px;" alt="trashner"/><br /><sub><b>trashner</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/pulls?q=is%3Apr+reviewed-by%3Atrashner" title="Reviewed Pull Requests">👀</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/kierun"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/3079575?v=4?s=100" width="100px;" alt="Dr Yann Golanski"/><br /><sub><b>Dr Yann Golanski</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Akierun" title="Bug reports">🐛</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/herself"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/609094?v=4?s=100" width="100px;" alt="Wiesław Herr"/><br /><sub><b>Wiesław Herr</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=herself" title="Code">💻</a></span>
+<span style="display: inline-block; width: 130px;"><a href="http://www.slabity.net/"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/3788421?v=4?s=100" width="100px;" alt="Slabity"/><br /><sub><b>Slabity</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3ASlabity" title="Bug reports">🐛</a></span>
 
 
 
