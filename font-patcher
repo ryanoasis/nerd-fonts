@@ -700,6 +700,7 @@ class font_patcher:
             'firasans'       : 'furasans',
             'IntelOneMono'   : 'IntoneMono',
             'IntelOne Mono'  : 'Intone Mono',
+            'Intel One Mono' : 'Intone Mono',
         }
 
         # remove overly verbose font names

@@ -146,7 +146,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]           | 3.000      | NO   |
 | [InconsolataGo Nerd Font][p-inconsolata-go]       | [InconsolataGo][f-inconsolatago]       | 1.013      | NO   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc]    | 1.3        | NO   |
-| [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.2.1      | YES  |
+| [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.3.0      | YES  |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 22.1.0     | NO   |
 | [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 22.1.0     | NO   |
 | [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 22.1.1     | NO   |
