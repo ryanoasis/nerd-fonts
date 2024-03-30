@@ -703,6 +703,19 @@
       "description": "Designed particularly for use at small point sizes"
     },
     {
+      "unpatchedName": "Recursive Mono",
+      "RFN": false,
+      "version": "1.085",
+      "patchedName": "RecMono",
+      "folderName": "Recursive",
+      "imagePreviewFont": "RecMonoSemi Nerd Font",
+      "imagePreviewFontSource": "Recursive/RecMonoLinear/RecMonoSemicasual-Regular-1.085.ttf",
+      "linkPreviewFont": "recursive-mono-linear",
+      "caskName": "recursive-mono",
+      "repoRelease": false,
+      "description": "inspired by casual script signpainting, 4 variants"
+    },
+    {
       "unpatchedName": "Roboto Mono",
       "RFN": false,
       "version": "3.0",
