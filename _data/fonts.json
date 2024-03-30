@@ -3,7 +3,7 @@
     {
       "unpatchedName": "0xProto",
       "RFN": false,
-      "version": "1.602",
+      "version": "1.603",
       "patchedName": "0xProto",
       "folderName": "0xProto",
       "imagePreviewFont": "0xProto Nerd Font",
@@ -107,7 +107,7 @@
     {
       "unpatchedName": "IBM Plex Mono",
       "RFN": true,
-      "version": "2.3",
+      "version": "2.004 (6.4.0)",
       "patchedName": "BlexMono",
       "folderName": "IBMPlexMono",
       "imagePreviewFont": "BlexMono Nerd Font",
@@ -172,7 +172,7 @@
     {
       "unpatchedName": "Commit Mono",
       "RFN": false,
-      "version": "1.141",
+      "version": "1.143",
       "patchedName": "CommitMono",
       "folderName": "CommitMono",
       "imagePreviewFont": "CommitMono Nerd Font",
@@ -302,7 +302,7 @@
     {
       "unpatchedName": "Geist Mono",
       "RFN": false,
-      "version": "1.0.1",
+      "version": "1.2.0 (1.3.0)",
       "patchedName": "GeistMono",
       "folderName": "GeistMono",
       "imagePreviewFont": "GeistMono NF",
@@ -432,7 +432,7 @@
     {
       "unpatchedName": "Inconsolata LGC",
       "RFN": false,
-      "version": "1.3",
+      "version": "1.5.2",
       "patchedName": "Inconsolata LGC",
       "folderName": "InconsolataLGC",
       "imagePreviewFont": "Inconsolata LGC Nerd Font",
@@ -536,7 +536,7 @@
     {
       "unpatchedName": "Lilex",
       "RFN": false,
-      "version": "2.300",
+      "version": "2.400",
       "patchedName": "Lilex",
       "folderName": "Lilex",
       "imagePreviewFont": "Lilex Nerd Font",
@@ -822,7 +822,7 @@
     {
       "unpatchedName": "Victor Mono",
       "RFN": false,
-      "version": "1.5.4",
+      "version": "1.5.6",
       "patchedName": "VictorMono",
       "folderName": "VictorMono",
       "imagePreviewFont": "VictorMono Nerd Font",
