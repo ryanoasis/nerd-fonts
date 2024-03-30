@@ -240,6 +240,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kierun"><img src="https://avatars.githubusercontent.com/u/3079575?v=4?s=100" width="100px;" alt="Dr Yann Golanski"/><br /><sub><b>Dr Yann Golanski</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Akierun" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/herself"><img src="https://avatars.githubusercontent.com/u/609094?v=4?s=100" width="100px;" alt="Wiesław Herr"/><br /><sub><b>Wiesław Herr</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=herself" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.slabity.net/"><img src="https://avatars.githubusercontent.com/u/3788421?v=4?s=100" width="100px;" alt="Slabity"/><br /><sub><b>Slabity</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3ASlabity" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/iruoy"><img src="https://avatars.githubusercontent.com/u/5859352?v=4?s=100" width="100px;" alt="Youri Wijnands"/><br /><sub><b>Youri Wijnands</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=iruoy" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
