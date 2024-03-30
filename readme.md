@@ -153,7 +153,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [JetBrainsMono Nerd Font][p-jetbrains-mono]       | [JetBrains Mono][f-jetbrains-mono]     | 2.304      | NO   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                     | 34         | NO   |
 | [Literation Nerd Font][p-liberation]              | [Liberation][f-liberation]             | 2.1.5      | YES  |
-| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.300      | NO   |
+| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.400      | NO   |
 | [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.0.0      | NO   |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | NO   |
 | [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.0.0      | YES  |
