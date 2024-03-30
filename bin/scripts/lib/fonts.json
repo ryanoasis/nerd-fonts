@@ -172,7 +172,7 @@
     {
       "unpatchedName": "Commit Mono",
       "RFN": false,
-      "version": "1.141",
+      "version": "1.143",
       "patchedName": "CommitMono",
       "folderName": "CommitMono",
       "imagePreviewFont": "CommitMono Nerd Font",
