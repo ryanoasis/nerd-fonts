@@ -4,4 +4,4 @@
 
 For more information have a look at the upstream website: https://github.com/eigilnikolajsen/commit-mono
 
-Version: 1.141
+Version: 1.143
