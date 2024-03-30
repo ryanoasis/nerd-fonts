@@ -166,6 +166,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Overpass Nerd Font][p-overpass]                  | [Overpass][f-overpass]                 | 3.0.5      | NO   |
 | [ProFont Nerd Font][p-profont]                    | [ProFont][f-profont]                   | 2.3, 2.2   | NO   |
 | [ProggyClean Nerd Font][p-proggy-clean]           | ProggyClean (Tristan Grimmer)          | 2004/04/15 | NO   |
+| [RecMono Nerd Font][p-recursive]                  | [Recursive Mono][f-recursive]          | 1.085      | NO   |
 | [RobotoMono Nerd Font][p-roboto]                  | [Roboto Mono][f-roboto]                | 3.0        | NO   |
 | [SauceCodePro Nerd Font][p-source-code-pro]       | [Source Code Pro][f-source]            | 2.042      | YES  |
 | [ShureTechMono Nerd Font][p-share-tech-mono]      | [Share Tech Mono][f-share]             | 1.003      | YES  |
@@ -688,6 +689,7 @@ Font repos
 [f-opendyslexic]:https://github.com/antijingoist/open-dyslexic
 [f-overpass]:http://overpassfont.org
 [f-profont]:https://tobiasjung.name/profont
+[f-recursive]:https://github.com/arrowtype/recursive
 [f-roboto]:https://fonts.google.com/specimen/Roboto+Mono
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
 [f-source]:https://github.com/adobe-fonts/source-code-pro
@@ -755,6 +757,7 @@ Patched Font internal links
 [p-overpass]:patched-fonts/Overpass
 [p-profont]:patched-fonts/ProFont
 [p-proggy-clean]:patched-fonts/ProggyClean
+[p-recursive]:patched-fonts/Recursive
 [p-roboto]:patched-fonts/RobotoMono
 [p-share-tech-mono]:patched-fonts/ShareTechMono
 [p-source-code-pro]:patched-fonts/SourceCodePro

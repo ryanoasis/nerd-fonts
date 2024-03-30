@@ -219,6 +219,7 @@ class FontnameTools:
         ( '(.*r)adon',                  r'\1n'), # Monaspace shorten face name
         ( '(im ?writing ?q)uattro',     r'\1uat'), # Rename iM Writing Quattro to Quat
         ( '(im ?writing ?(mono|duo|quat)) ?s', r'\1'), # Remove S from all iM Writing styles
+        ( '(r)ec( ?)(m)ono( ?)(s)emicasual', r'\1ec\3ono\5emi'), # Shorten RecMonoSemicausal
     ]
 
     # From https://adobe-type-tools.github.io/font-tech-notes/pdfs/5088.FontNames.pdf
