@@ -567,6 +567,7 @@ Non exhaustive list of fonts that would benefit from being patched but are not i
 * [Consolas][consolas]
 * [Operator Mono][operator]
 * [Dank Mono][dank]
+* [SF Mono][sf-mono]
 
 
 ## Project Motivation
@@ -635,6 +636,7 @@ Link References
 [pragmatapro]:https://www.fsd.it/shop/fonts/pragmatapro/
 [operator]:https://www.typography.com/fonts/operator/
 [dank]:https://dank.sh/
+[sf-mono]:https://developer.apple.com/fonts/
 
 [release]:https://github.com/ryanoasis/nerd-fonts/releases/latest "Latest Release (external link) ➶"
 [coc]:https://github.com/ryanoasis/nerd-fonts/blob/-/code_of_conduct.md "Contributor Covenant Code of Conduct"
