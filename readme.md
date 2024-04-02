@@ -551,9 +551,10 @@ See [contributing.md](contributing.md)
 
 :warning: Warning: File paths may change based on releases (especially **major** version bumps)
 
-Reference the **release** branch and _not_ the ~~master~~ branch because paths are subject to change for each release
+Reference the **release** tag or branch and _not_ the ~~master~~ branch because paths are subject to change for each release
 
 * For example:
+  * :white_check_mark: Use: <code>https\://github.com/ryanoasis/nerd-fonts/tree/<b>v3.0.0</b>/patched-fonts/Hermit/Regular/HurmitNerdFont-Regular.otf</code>
   * :white_check_mark: Use: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
   * :x: Instead of: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
 
@@ -562,11 +563,11 @@ Reference the **release** branch and _not_ the ~~master~~ branch because paths a
 
 Non exhaustive list of fonts that would benefit from being patched but are not included in Nerd Fonts due to their license (proprietary, commercial, etc.):
 
-* [Input Mono][input-mono]
-* [PragmataPro][pragmatapro]
 * [Consolas][consolas]
-* [Operator Mono][operator]
 * [Dank Mono][dank]
+* [Input Mono][input-mono]
+* [Operator Mono][operator]
+* [PragmataPro][pragmatapro]
 * [SF Mono][sf-mono]
 
 
