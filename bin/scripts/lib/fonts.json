@@ -844,6 +844,19 @@
       "caskName": "victor-mono",
       "repoRelease": true,
       "description": "Clean, crisp and narrow, with a large x-height and clear punctuation"
+    },
+    {
+      "unpatchedName": "Zed Mono",
+      "RFN": false,
+      "version": "1.2.0",
+      "patchedName": "ZedMono",
+      "folderName": "ZedMono",
+      "imagePreviewFont": "ZedMono Nerd Font",
+      "imagePreviewFontSource": "ZedMono/Normal/zed-mono-regular.ttf",
+      "linkPreviewFont": false,
+      "caskName": "zed-mono",
+      "repoRelease": false,
+      "description": "Zed Mono is a more rounded version of Iosevka"
     }
   ]
 }

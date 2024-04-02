@@ -251,7 +251,7 @@ class FontnameTools:
         'Heavy': ('Hv', 'Heavy'),
         'Thin': ('Th', 'Thin'),
         'Light': ('Lt', 'Light'),
-        ' ': (), # Just for CodeClimate :-/
+        '': (), # Just for CodeClimate :-/
     }
     known_styles = [ # Keywords that end up as style (i.e. a RIBBI set)
         'Bold', 'Italic', 'Regular', 'Normal'
@@ -393,8 +393,12 @@ class FontnameTools:
         # Weights end up as Typographic Family parts ('after the dash')
         # Styles end up as Family parts (for classic grouping of four)
         # Others also end up in Typographic Family ('before the dash')
+        widths = [ m + s
+                for s in list(FontnameTools.known_widths)
+                for m in list(FontnameTools.known_modifiers) + ['']
+            ]
         weights = [ m + s
-                for s in list(FontnameTools.known_weights2) + list(FontnameTools.known_widths)
+                for s in list(FontnameTools.known_weights2)
                 for m in list(FontnameTools.known_modifiers) + [''] if m != s
             ] + list(FontnameTools.known_weights1) + list(FontnameTools.known_slopes)
         weights = [ w for w in weights if w not in FontnameTools.known_styles ]
@@ -408,9 +412,11 @@ class FontnameTools:
             r'(?:uni-)?1[14]',  # GohuFont uni
         ]
 
+        ( style, width_token ) = FontnameTools.get_name_token(style, widths)
         ( style, weight_token ) = FontnameTools.get_name_token(style, weights)
         ( style, style_token ) = FontnameTools.get_name_token(style, FontnameTools.known_styles)
         ( style, other_token ) = FontnameTools.get_name_token(style, other)
+        weight_token = width_token + weight_token
         while 'Regular' in style_token and len(style_token) > 1:
             # Correct situation where "Regular" and something else is given
             style_token.remove('Regular')
