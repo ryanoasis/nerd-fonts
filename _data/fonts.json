@@ -833,6 +833,19 @@
       "description": "Dotted zeros, used the `n`, `o`, `H` &amp; `O` Latin characters as a base for design"
     },
     {
+      "unpatchedName": "Ubuntu Sans",
+      "RFN": false,
+      "version": "1.004",
+      "patchedName": "UbuntuSans",
+      "folderName": "UbuntuSans",
+      "imagePreviewFont": "UbuntuSansMono NF",
+      "imagePreviewFontSource": "UbuntuSans/Mono/UbuntuSansMono-Regular.ttf",
+      "linkPreviewFont": false,
+      "caskName": "ubuntu-sans",
+      "repoRelease": false,
+      "description": "Refreshed version of Ubuntu and Ubuntu Mono fonts"
+    },
+    {
       "unpatchedName": "Victor Mono",
       "RFN": false,
       "version": "1.5.6",
