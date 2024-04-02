@@ -3,7 +3,7 @@
 FONT_VERSION=1.2.0
 TMP_DIR=$(mktemp -d)
 
-set -ex
+set -e
 
 curl -LOf "https://github.com/zed-industries/zed-fonts/releases/download/${FONT_VERSION}/zed-mono-${FONT_VERSION}.zip" --output-dir "${TMP_DIR}"
 unzip -d "${TMP_DIR}" "${TMP_DIR}/*.zip"
@@ -15,7 +15,7 @@ typefaces=( "" "Extended" )
 # weights=( regular italic oblique \
 #     thin* extralight* light* medium* semibold* bold* extrabold* heavy* )
 
-weights=( Regular italic oblique \
+weights=( "" Regular italic oblique \
     light* medium* bold* extrabold* )
 
 for face in "${typefaces[@]}"; do
