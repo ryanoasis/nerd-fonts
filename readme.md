@@ -175,6 +175,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Tinos Nerd Font][p-tinos]                        | [Tinos][f-tinos]                       | 1.23       | NO   |
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | NO   |
 | [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | NO   |
+| [UbuntuSans Nerd Font][p-ubuntu-sans]             | [Ubuntu Sans][f-ubuntu-sans]           | 1.004      | NO   |
 | [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.6      | NO   |
 | [ZedMono Nerd Font][p-zed-mono]                   | [Zed Mono][f-zed-mono]                 | 1.2.0      | NO   |
 
@@ -701,6 +702,7 @@ Font repos
 [f-terminus]:http://terminus-font.sourceforge.net
 [f-tinos]:https://fonts.google.com/specimen/Tinos
 [f-ubuntu]:http://font.ubuntu.com
+[f-ubuntu-sans]:https://github.com/canonical/Ubuntu-Sans-Mono-fonts
 [f-victor]:https://github.com/rubjo/victor-mono
 [f-zed-mono]:https://github.com/zed-industries/zed-fonts
 
@@ -769,8 +771,9 @@ Patched Font internal links
 [p-space-mono]:patched-fonts/SpaceMono
 [p-terminus]:patched-fonts/Terminus
 [p-tinos]:patched-fonts/Tinos
-[p-ubuntu-mono]:patched-fonts/UbuntuMono
 [p-ubuntu]:patched-fonts/Ubuntu
+[p-ubuntu-mono]:patched-fonts/UbuntuMono
+[p-ubuntu-sans]:patched-fonts/UbuntuSans
 [p-victor]:patched-fonts/VictorMono
 [p-zed-mono]:patched-fonts/ZedMono
 
