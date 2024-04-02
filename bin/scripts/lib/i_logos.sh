@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Font Logos (Font Linux) 1.1.1 (115 icons)
-# Codepoints: F300-F372
+# Font Logos (Font Linux) 1.1.1 (118 icons)
+# Codepoints: F300-F375
 # Nerd Fonts Version: 3.1.1
-# Script Version: 1.1.1
+# Script Version: 1.2.0
 # We keep the name 'linux' in the metadata for continuity reasons
 test -n "$__i_linux_loaded" && return || __i_linux_loaded=1
 i='' i_linux_alpine=$i
@@ -120,4 +120,7 @@ i='' i_linux_neovim=$i
 i='' i_linux_thunderbird=$i
 i='' i_linux_tor=$i
 i='' i_linux_vscodium=$i
+i='' i_linux_kde=$i
+i='' i_linux_postmarketos=$i
+i='' i_linux_qt=$i
 unset i
