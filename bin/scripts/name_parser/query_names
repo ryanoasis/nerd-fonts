@@ -12,7 +12,7 @@ import fontforge
 
 def get_sfnt_dict(font):
     """Extract SFNT table as nice dict"""
-    return { k: v for l, k, v in font.sfnt_names }
+    return { k: v for l, k, v in font.sfnt_names if l == 'English (US)' }
 
 def format_names(header, *stuff):
     """Unify outputs (with header)"""
