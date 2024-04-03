@@ -2,7 +2,7 @@
 # Material Design Icons (6,896 icons)
 # Codepoints: F0001-F1AF0
 # Nerd Fonts Version: 3.1.1
-# Script Version 1.0.0
+# Script Version 1.0.1
 test -n "$__i_md_loaded" && return || __i_md_loaded=1
 i='󰀁' i_md_vector_square=$i
 i='󰀂' i_md_access_point_network=$i
@@ -306,8 +306,8 @@ i='󰄫' i_md_chart_pie=$i
 i='󰄬' i_md_check=$i
 i='󰄭' i_md_check_all=$i
 i='󰄮' i_md_checkbox_blank=$i
-i='󰝥' i_md_checkbox_blank_circle=$i
-i='󰝦' i_md_checkbox_blank_circle_outline=$i
+i='󰄯' i_md_checkbox_blank_circle=$i
+i='󰄰' i_md_checkbox_blank_circle_outline=$i
 i='󰄱' i_md_checkbox_blank_outline=$i
 i='󰄲' i_md_checkbox_marked=$i
 i='󰄳' i_md_checkbox_marked_circle=$i
@@ -521,7 +521,7 @@ i='󰈂' i_md_ethernet_cable_off=$i
 i='󰈃' i_md_calendar_refresh_outline=$i
 i='󰈄' i_md_evernote=$i
 i='󰈅' i_md_exclamation=$i
-i='󰗼' i_md_exit_to_app=$i
+i='󰈆' i_md_exit_to_app=$i
 i='󰈇' i_md_export=$i
 i='󰈈' i_md_eye=$i
 i='󰈉' i_md_eye_off=$i
@@ -724,11 +724,11 @@ i='󰋍' i_md_headphones_settings=$i
 i='󰋎' i_md_headset=$i
 i='󰋏' i_md_headset_dock=$i
 i='󰋐' i_md_headset_off=$i
-i='󰣐' i_md_heart=$i
+i='󰋑' i_md_heart=$i
 i='󰋒' i_md_heart_box=$i
 i='󰋓' i_md_heart_box_outline=$i
 i='󰋔' i_md_heart_broken=$i
-i='󱢠' i_md_heart_outline=$i
+i='󰋕' i_md_heart_outline=$i
 i='󰋖' i_md_help=$i
 i='󰋗' i_md_help_circle=$i
 i='󰋘' i_md_hexagon=$i
@@ -760,7 +760,7 @@ i='󰋱' i_md_image_filter_center_focus=$i
 i='󰋲' i_md_image_filter_center_focus_weak=$i
 i='󰋳' i_md_image_filter_drama=$i
 i='󰋴' i_md_image_filter_frames=$i
-i='󰔉' i_md_image_filter_hdr=$i
+i='󰋵' i_md_image_filter_hdr=$i
 i='󰋶' i_md_image_filter_none=$i
 i='󰋷' i_md_image_filter_tilt_shift=$i
 i='󰋸' i_md_image_filter_vintage=$i
@@ -906,8 +906,7 @@ i='󰎃' i_md_multiplication_box=$i
 i='󰎄' i_md_music_box=$i
 i='󰎅' i_md_music_box_outline=$i
 i='󰎆' i_md_music_circle=$i
-i='󰎈' i_md_music_note=$i
-i='󰎈' i_md_music_note=$i
+i='󰎇' i_md_music_note=$i
 i='󰎉' i_md_music_note_half=$i
 i='󰎊' i_md_music_note_off=$i
 i='󰎋' i_md_music_note_quarter=$i
@@ -1088,7 +1087,6 @@ i='󰐹' i_md_radio=$i
 i='󰐺' i_md_radio_handheld=$i
 i='󰐻' i_md_radio_tower=$i
 i='󰐼' i_md_radioactive=$i
-i='󰝦' i_md_checkbox_blank_circle_outline=$i
 i='󰐾' i_md_radiobox_marked=$i
 i='󰐿' i_md_raspberry_pi=$i
 i='󰑀' i_md_ray_end=$i
@@ -1292,7 +1290,6 @@ i='󰔅' i_md_temperature_fahrenheit=$i
 i='󰔆' i_md_temperature_kelvin=$i
 i='󰔇' i_md_tennis_ball=$i
 i='󰔈' i_md_tent=$i
-i='󰔉' i_md_image_filter_hdr=$i
 i='󰔊' i_md_text_to_speech=$i
 i='󰔋' i_md_text_to_speech_off=$i
 i='󰔌' i_md_texture=$i
@@ -1488,7 +1485,7 @@ i='󰗉' i_md_format_line_weight=$i
 i='󰗊' i_md_translate=$i
 i='󰗋' i_md_account_voice=$i
 i='󰗌' i_md_opacity=$i
-i='󱣰' i_md_near_me=$i
+i='󰗍' i_md_near_me=$i
 i='󰗎' i_md_clock_alert_outline=$i
 i='󰗏' i_md_human_pregnant=$i
 i='󰗐' i_md_sticker_circle_outline=$i
@@ -1535,7 +1532,6 @@ i='󰗸' i_md_home_map_marker=$i
 i='󰗹' i_md_incognito=$i
 i='󰗺' i_md_kettle=$i
 i='󰗻' i_md_lock_plus=$i
-i='󰗼' i_md_exit_to_app=$i
 i='󰗽' i_md_logout_variant=$i
 i='󰗾' i_md_music_note_bluetooth=$i
 i='󰗿' i_md_music_note_bluetooth_off=$i
@@ -1896,8 +1892,6 @@ i='󰝡' i_md_unfold_more_vertical=$i
 i='󰝢' i_md_taco=$i
 i='󰝣' i_md_square_outline=$i
 i='󰝤' i_md_square=$i
-i='󰝥' i_md_checkbox_blank_circle=$i
-i='󰝦' i_md_checkbox_blank_circle_outline=$i
 i='󰝧' i_md_alert_octagram=$i
 i='󰝨' i_md_atom=$i
 i='󰝩' i_md_ceiling_light=$i
@@ -2259,7 +2253,6 @@ i='󰣌' i_md_camera_image=$i
 i='󰣍' i_md_car_limousine=$i
 i='󰣎' i_md_cards_club=$i
 i='󰣏' i_md_cards_diamond=$i
-i='󰣐' i_md_heart=$i
 i='󰣑' i_md_cards_spade=$i
 i='󰣒' i_md_cellphone_text=$i
 i='󰣓' i_md_cellphone_message=$i
@@ -2809,22 +2802,22 @@ i='󰫲' i_md_alpha_e=$i
 i='󰫳' i_md_alpha_f=$i
 i='󰫴' i_md_alpha_g=$i
 i='󰫵' i_md_alpha_h=$i
-i='󱂈' i_md_alpha_i=$i
+i='󰫶' i_md_alpha_i=$i
 i='󰫷' i_md_alpha_j=$i
 i='󰫸' i_md_alpha_k=$i
-i='󱎦' i_md_alpha_l=$i
+i='󰫹' i_md_alpha_l=$i
 i='󰫺' i_md_alpha_m=$i
 i='󰫻' i_md_alpha_n=$i
-i='󰬹' i_md_alpha_o=$i
+i='󰫼' i_md_alpha_o=$i
 i='󰫽' i_md_alpha_p=$i
 i='󰫾' i_md_alpha_q=$i
 i='󰫿' i_md_alpha_r=$i
 i='󰬀' i_md_alpha_s=$i
 i='󰬁' i_md_alpha_t=$i
 i='󰬂' i_md_alpha_u=$i
-i='󱂌' i_md_alpha_v=$i
+i='󰬃' i_md_alpha_v=$i
 i='󰬄' i_md_alpha_w=$i
-i='󱂑' i_md_alpha_x=$i
+i='󰬅' i_md_alpha_x=$i
 i='󰬆' i_md_alpha_y=$i
 i='󰬇' i_md_alpha_z=$i
 i='󰬈' i_md_alpha_a_box=$i
@@ -2876,7 +2869,6 @@ i='󰬵' i_md_format_letter_case_lower=$i
 i='󰬶' i_md_format_letter_case_upper=$i
 i='󰬷' i_md_language_java=$i
 i='󰬸' i_md_circle_multiple=$i
-i='󰬹' i_md_alpha_o=$i
 i='󰬺' i_md_numeric_1=$i
 i='󰬻' i_md_numeric_2=$i
 i='󰬼' i_md_numeric_3=$i
@@ -3097,8 +3089,8 @@ i='󰰒' i_md_alpha_n_box_outline=$i
 i='󰰓' i_md_alpha_n_circle=$i
 i='󰰔' i_md_alpha_n_circle_outline=$i
 i='󰰕' i_md_alpha_o_box_outline=$i
-i='󰲞' i_md_alpha_o_circle=$i
-i='󰲟' i_md_alpha_o_circle_outline=$i
+i='󰰖' i_md_alpha_o_circle=$i
+i='󰰗' i_md_alpha_o_circle_outline=$i
 i='󰰘' i_md_alpha_p_box_outline=$i
 i='󰰙' i_md_alpha_p_circle=$i
 i='󰰚' i_md_alpha_p_circle_outline=$i
@@ -3233,8 +3225,6 @@ i='󰲚' i_md_minus_network_outline=$i
 i='󰲛' i_md_network_off=$i
 i='󰲜' i_md_network_off_outline=$i
 i='󰲝' i_md_network_outline=$i
-i='󰲞' i_md_alpha_o_circle=$i
-i='󰲟' i_md_alpha_o_circle_outline=$i
 i='󰲠' i_md_numeric_1_circle=$i
 i='󰲡' i_md_numeric_1_circle_outline=$i
 i='󰲢' i_md_numeric_2_circle=$i
@@ -4235,16 +4225,13 @@ i='󱂄' i_md_lungs=$i
 i='󱂅' i_md_math_log=$i
 i='󱂆' i_md_moped=$i
 i='󱂇' i_md_router_network=$i
-i='󱂈' i_md_alpha_i=$i
 i='󱂉' i_md_roman_numeral_2=$i
 i='󱂊' i_md_roman_numeral_3=$i
 i='󱂋' i_md_roman_numeral_4=$i
-i='󱂌' i_md_alpha_v=$i
 i='󱂍' i_md_roman_numeral_6=$i
 i='󱂎' i_md_roman_numeral_7=$i
 i='󱂏' i_md_roman_numeral_8=$i
 i='󱂐' i_md_roman_numeral_9=$i
-i='󱂑' i_md_alpha_x=$i
 i='󱂒' i_md_soldering_iron=$i
 i='󱂓' i_md_stomach=$i
 i='󱂔' i_md_table_eye=$i
@@ -5033,7 +5020,6 @@ i='󱎢' i_md_size_xxs=$i
 i='󱎣' i_md_size_xs=$i
 i='󱎤' i_md_size_s=$i
 i='󱎥' i_md_size_m=$i
-i='󱎦' i_md_alpha_l=$i
 i='󱎧' i_md_size_xl=$i
 i='󱎨' i_md_size_xxl=$i
 i='󱎩' i_md_size_xxxl=$i
@@ -6307,7 +6293,6 @@ i='󱢜' i_md_bicycle_cargo=$i
 i='󱢝' i_md_calendar_collapse_horizontal=$i
 i='󱢞' i_md_calendar_expand_horizontal=$i
 i='󱢟' i_md_cards_club_outline=$i
-i='󱢠' i_md_heart_outline=$i
 i='󱢡' i_md_cards_playing=$i
 i='󱢢' i_md_cards_playing_club=$i
 i='󱢣' i_md_cards_playing_club_multiple=$i
@@ -6387,7 +6372,6 @@ i='󱣬' i_md_filter_check=$i
 i='󱣭' i_md_filter_check_outline=$i
 i='󱣮' i_md_flag_off=$i
 i='󱣯' i_md_flag_off_outline=$i
-i='󱣰' i_md_near_me=$i
 i='󱣱' i_md_navigation_variant_outline=$i
 i='󱣲' i_md_refresh_auto=$i
 i='󱣳' i_md_tilde_off=$i
