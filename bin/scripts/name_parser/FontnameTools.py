@@ -291,6 +291,18 @@ class FontnameTools:
     }
 
     @staticmethod
+    def check_contains_weight(token):
+        """ Check if a token set contains a Weight specifier or just Widths or Slopes """
+        weight_permutations = [ m + s
+                for s in list(FontnameTools.known_weights2)
+                for m in list(FontnameTools.known_modifiers) + [''] if m != s
+            ] + list(FontnameTools.known_weights1)
+        for t in token:
+            if t in weight_permutations:
+                return True
+        return False
+
+    @staticmethod
     def weight_string_to_number(w):
         """ Convert a common string approximation to a PS/2 weight value """
         if not isinstance(w, str) or len(w) < 1:
