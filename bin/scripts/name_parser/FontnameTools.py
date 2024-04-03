@@ -250,6 +250,7 @@ class FontnameTools:
         'Bold': ('Bd', 'Bold'),
         'Heavy': ('Hv', 'Heavy'),
         'Thin': ('Th', 'Thin'),
+        'Thick': ('Tk', 'Thck'),
         'Light': ('Lt', 'Light'),
         '': (), # Just for CodeClimate :-/
     }
