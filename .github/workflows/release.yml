@@ -226,8 +226,11 @@ jobs:
       - name: Upload patched fonts as artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: patched-fonts
+          name: patched-fonts-${{ matrix.font }}
+          # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
+          # of the root directory for artifact path purposes
           path: |
+            LICENSE
             patched-fonts/${{ matrix.font }}
 
   release-font-patcher:
@@ -277,8 +280,9 @@ jobs:
         id: download-patched-fonts
         uses: actions/download-artifact@v4
         with:
-          name: patched-fonts
-          path: patched-fonts
+          pattern: patched-fonts-*
+          path: .
+          merge-multiple: true
 
       - name: Bump version for source files
         env:
