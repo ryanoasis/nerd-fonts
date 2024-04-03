@@ -291,14 +291,19 @@ class FontnameTools:
     }
 
     @staticmethod
-    def check_contains_weight(token):
-        """ Check if a token set contains a Weight specifier or just Widths or Slopes """
-        weight_permutations = [ m + s
+    def weight_permutations():
+        """ All the weight modifiers we know """
+        return [ m + s
                 for s in list(FontnameTools.known_weights2)
                 for m in list(FontnameTools.known_modifiers) + [''] if m != s
             ] + list(FontnameTools.known_weights1)
+
+    @staticmethod
+    def check_contains_weight(token):
+        """ Check if a token set contains a Weight specifier or just Widths or Slopes """
+        weights = FontnameTools.weight_permutations()
         for t in token:
-            if t in weight_permutations:
+            if t in weights:
                 return True
         return False
 
@@ -410,10 +415,7 @@ class FontnameTools:
                 for s in list(FontnameTools.known_widths)
                 for m in list(FontnameTools.known_modifiers) + ['']
             ]
-        weights = [ m + s
-                for s in list(FontnameTools.known_weights2)
-                for m in list(FontnameTools.known_modifiers) + [''] if m != s
-            ] + list(FontnameTools.known_weights1) + list(FontnameTools.known_slopes)
+        weights = FontnameTools.weight_permutations() + list(FontnameTools.known_slopes)
         weights = [ w for w in weights if w not in FontnameTools.known_styles ]
         # Some font specialities:
         other = [
