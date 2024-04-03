@@ -252,7 +252,6 @@ class FontnameTools:
         'Thin': ('Th', 'Thin'),
         'Thick': ('Tk', 'Thck'),
         'Light': ('Lt', 'Light'),
-        '': (), # Just for CodeClimate :-/
     }
     known_styles = [ # Keywords that end up as style (i.e. a RIBBI set)
         'Bold', 'Italic', 'Regular', 'Normal'
