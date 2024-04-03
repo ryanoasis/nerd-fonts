@@ -206,6 +206,8 @@ class FontnameParser:
         """Get the SFNT Preferred Styles (ID 17)"""
         styles = self.style_token
         weights = self.weight_token
+        if 'Regular' in styles and len(styles) + len(weights) > 1:
+            styles.remove('Regular')
         # For naming purposes we want Oblique to be part of the styles
         (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
         pfs = FontnameTools.concat(weights, styles)
