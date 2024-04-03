@@ -380,6 +380,7 @@ class FontnameTools:
                 ('Medm', 'Medium'), # IBM-Plex
                 ('Semi-Condensed', 'SemiCondensed'), # 3270
                 ('SmBld', 'SemiBold'), # IBM-Plex
+                ('Bold-Italic', 'BoldItalic'), # Terminus
             ]:
             name = re.sub(r'\b' + special[0] + r'\b', special[1], name, 1, re.IGNORECASE)
         name = re.sub('[_\s]+', ' ', name)
