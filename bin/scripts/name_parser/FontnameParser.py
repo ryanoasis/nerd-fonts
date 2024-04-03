@@ -153,7 +153,7 @@ class FontnameParser:
             keep_regular = self.keep_regular_in_family
         if ('Regular' in styles
                 and (not keep_regular
-                    or len(self.weight_token) > 0)): # This is actually a malformed font name
+                    or FontnameTools.check_contains_weight(self.weight_token))): # This is actually a malformed font name
             styles = list(self.style_token)
             styles.remove('Regular')
         # For naming purposes we want Oblique to be part of the styles
