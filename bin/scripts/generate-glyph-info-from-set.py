@@ -1,40 +1,23 @@
 #!/usr/bin/env python3
 # coding=utf8
 # Nerd Fonts Version: 3.1.1
-# Script Version: 1.2.0
+# Script Version: 1.3.0
 
 # Example Usage:
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont.ttf --start f001 --end f847 --offset 4ff --prefix mdi
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesign/*.ttf --start f0001 --end f1af0 --offset 0 --prefix md
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/weathericons-regular-webfont.ttf --start f000 --end f0eb --negoffset d00 --prefix weather --nogaps
 
-from __future__ import absolute_import, print_function, unicode_literals
-
 version = "3.1.1"
-projectName = "Nerd Fonts"
-projectNameAbbreviation = "NF"
-projectNameSingular = projectName[:-1]
 
 import sys
-
-try:
-    import psMat
-except ImportError:
-    sys.exit(projectName + ": FontForge module is probably not installed. [See: http://designwithfontforge.com/en-US/Installing_Fontforge.html]")
-
 import re
 import os
 import argparse
 from argparse import RawTextHelpFormatter
 import errno
 import subprocess
-
-try:
-    #Load the module
-    import fontforge
-
-except ImportError:
-    sys.exit(projectName + ": FontForge module could not be loaded. Try installing fontforge python bindings [e.g. on Linux Debian or Ubuntu: `sudo apt install fontforge python-fontforge`]")
+import fontforge
 
 parser = argparse.ArgumentParser(description='Nerd Fonts Glyph Info Generator: displays code point and glyph names from given set\n\n* Website: https://www.nerdfonts.com\n* Version: ' + version + '\n* Development Website: https://github.com/ryanoasis/nerd-fonts\n* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md', formatter_class=RawTextHelpFormatter)
 parser.add_argument('-start', '--start', type=str, nargs='?', dest='symbolFontStart', help='The starting unicode hex codepoint')
@@ -50,50 +33,53 @@ print(args.symbolFontStart, args.symbolFontEnd)
 
 symbolFont = fontforge.open(args.filepath)
 
-args.symbolFontStart = int("0x" + args.symbolFontStart, 16)
-args.symbolFontEnd = int("0x" + args.symbolFontEnd, 16)
+args.symbolFontStart = int(args.symbolFontStart, 16)
+args.symbolFontEnd = int(args.symbolFontEnd, 16)
 ctr = 0
 
 if args.negSymbolOffset:
-  args.negSymbolOffset = int("0x" + args.negSymbolOffset, 16)
+  args.negSymbolOffset = int(args.negSymbolOffset, 16)
   sign = '-'
   offset = args.negSymbolOffset
 elif args.symbolOffset:
-  args.symbolOffset = int("0x" + args.symbolOffset, 16)
+  args.symbolOffset = int(args.symbolOffset, 16)
   sign = ''
   offset = args.symbolOffset
 
 signedOffset = int(sign+'0x'+format(offset, 'X'), 16)
 hexPosition = args.symbolFontStart + signedOffset
 
-allNames = {}
+allNames = set()
 suppressedEntries = []
 symbolFont.encoding = 'UnicodeFull'
 for index in range(args.symbolFontStart, args.symbolFontEnd + 1):
   if not index in symbolFont:
     continue
   sym_glyph = symbolFont[index]
-  slot = format(sym_glyph.unicode, 'X')
+  code = sym_glyph.unicode
   name = sym_glyph.glyphname
-  sh_name = "i_" + args.prefix + "_" + name.replace("-", "_")
+  sh_name = 'i_{}_{}'.format(args.prefix, name.replace('-', '_'))
 
   if args.nogaps:
     char = chr(hexPosition)
   else:
-    char = chr(int('0x'+slot, 16) + signedOffset)
+    char = chr(code + signedOffset)
 
-  entryString = "i='" + char + "' " + sh_name + "=$i SLOT " + slot + ' ' + str(index)
-  if name not in allNames:
+  entryString = 'i=\'{}\' {}=$i'.format(char, sh_name)
+
+  if index != code:
+    suppressedEntries.append(entryString + ' (not main)')
+  elif name not in allNames:
     print(entryString)
   else:
-    suppressedEntries.append(entryString)
+    suppressedEntries.append(entryString + ' (double)')
 
   ctr += 1
   hexPosition += 1
-  allNames[name] = 1
+  allNames.add(name)
 
-print("Done, generated " + str(ctr) + " glyphs")
+print('Done, generated {} glyphs'.format(ctr))
 
 if len(suppressedEntries) > 0:
-  print('FOLLOGING ENTRIES SUPPRESSED to prevent double names with different codepoints:')
+  print('FOLLOGING ENTRIES SUPPRESSED to prevent double names:')
   print('\n'.join(suppressedEntries))
