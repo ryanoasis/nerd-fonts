@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Nerd Fonts Version: 3.1.1
+# Nerd Fonts Version: 3.2.0
 # Script Version: 1.1.0
 # Generates extrasymbols.sfd from Hack
 

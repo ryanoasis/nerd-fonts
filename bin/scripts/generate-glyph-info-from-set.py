@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # coding=utf8
-# Nerd Fonts Version: 3.1.1
+# Nerd Fonts Version: 3.2.0
 # Script Version: 1.3.0
 
 # Example Usage:
@@ -8,7 +8,7 @@
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesign/*.ttf --start f0001 --end f1af0 --offset 0 --prefix md
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/weathericons-regular-webfont.ttf --start f000 --end f0eb --negoffset d00 --prefix weather --nogaps
 
-version = "3.1.1"
+version = "3.2.0"
 
 import sys
 import re

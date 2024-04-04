@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.1.1
+# Nerd Fonts Version: 3.2.0
 # Script Version: 1.0.2
 # Iterates over all patched fonts directories
 # to generate a fontconfig based on the Nerd Fonts Symbols font

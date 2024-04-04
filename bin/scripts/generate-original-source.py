@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Nerd Fonts Version: 3.1.1
+# Nerd Fonts Version: 3.2.0
 # Script Version: 1.0.1
 # Generates original-source.otf from individual glyphs
 #
@@ -12,7 +12,7 @@ import fontforge
 import psMat
 
 # Double-quotes required here, for version-bump.sh:
-version = "3.1.1"
+version = "3.2.0"
 
 start_codepoint = 0xE4FA # with shift this is 0xE5FA
 end_codepoint = 0xE5FF # Next set starts at 0xE700 - 0x0100 shift = 0xE600
