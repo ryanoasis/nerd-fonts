@@ -2,6 +2,53 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.2.0
+
+The Easter release. Lets see which eggs can be found:
+
+### Fonts
+ - Add Recursive Mono #1576
+ - Add Ubuntu Sans #1583
+ - Add Zed Mono @cabrinha #1504
+ - Update 0xProto to version 1.603 @junoslukan #1516 #1575
+ - Update Commit Mono to 1.143 #1575
+ - Update Geist Mono to 1.200 #1575
+ - Update IBM Plex Mono to 2.004 (v6.4.0) #1575
+ - Update InconsolataLGC to 1.5.2 #1575
+ - Update Intel One Mono to 1.3.0 @landfillbaby #1558
+ - Update Iosevka to 29.0.4 @iruoy #1497
+ - Update Lilex to 2.400 #1575
+ - Update Noto to 2.013/2.014 #1478
+ - Update SourceCodePro to 2.042/1.062 #1444
+ - Update Terminus to 4.49.3 #1571
+ - Update Victor Mono to 1.5.6 #1575
+ - Fix ComicShanns carons (pending upstream) #1546
+
+### Icons
+ - Add Ada icon #1577
+ - Add Astro icon @roginfarrer #1464
+ - Add inverse Powerline arrow heads #1490
+ - Add Prettier icon @ronitkrshah #1470
+ - Update Codicons to 0.0.35 #1544
+ - Update Font Awesome to 6.5.1 (partially) #1563
+ - Update Font Logos to 1.2.0 #1585
+
+### Bugs and improvements
+Only some notable fixes listed here
+ - docker: Allow blancs in filenames
+ - docker: Include logfile in output
+ - docker: Run parallel by default @robk #1508
+ - font-patcher: Prevent excessively tall icons in mono fonts #1564
+ - Increase Powerline overlap (only rounded) #1551
+ - name-parser: Add "thick" weight for Lilex
+ - name-parser: Fill short and long name as TypoFamily (for VSCode etc) #1442
+ - name-parser: Fix Terminus-Bold-Italic parsing
+ - name-parser: Sort Widths before Weights
+ - Manually fix several icons with corrupt paths
+
+### Website and docs
+A lot of work has been done here by various people, thank you all!
+
 ## v3.1.1
 
 This release is mainly a bugfix release: It undoes the breaking naming change of the
