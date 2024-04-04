@@ -18,7 +18,7 @@
 
 **Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
 
-The following Sankey flow diagram shows the current glyph sets included:
+The following flow diagram shows the current glyph sets included:
 
 <p align="center">
   <img src="images/sankey-glyphs-combined-diagram.svg" alt="@SankeyMATIC Diagram" />
@@ -87,8 +87,8 @@ _If you..._
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
   * For more details see the [**Font Patcher**](#font-patcher) section
-* **`54`** already [patched font families](#patched-fonts)
-* Over **`9,000`** glyphs/icons combined [(more details)](#combinations)
+* **`67`** already [patched font families](#patched-fonts)
+* Over **`10,000`** glyphs/icons combined [(more details)](#combinations)
   * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** _or_ **proportional** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
@@ -97,7 +97,7 @@ _If you..._
 
 ## Glyph Sets
 
-:mag: :mag: You can now search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
+:mag: :mag: You can search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
 
 See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoints]
 
@@ -184,7 +184,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 ### Variations
 
 - no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
-- **double _(variable/proportional)_** or **single _(fixed/monospaced)_** or **proportional** width glyphs
+- **double _(variable/proportional)_** or **single _(fixed/monospaced)_** or **proportional** width icon-glyphs
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
 - [Material Design Icons][font-material-design-icons]
