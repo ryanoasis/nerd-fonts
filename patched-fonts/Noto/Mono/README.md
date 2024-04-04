@@ -6,9 +6,11 @@ https://fonts.google.com/noto
 
 The **Noto Mono** is an ancient font, nowadays the equivalent is Noto Sans Mono.
 
-The `ldot` ligatures are removed because the map to only one advance width.
+Some `ldot` and/or `fi`/`fl` ligatures are removed because they map to only one advance width.
 
-Version: 2.000 (20170915)
+Version: 2.013 (2022) for Noto Serif
+Version: 2.013 (2022) for Noto Sans
+Version: 2.014 (2022) for Noto Sans Mono
 Version: 1.0 (2007) for Noto Mono
 
 ## Which font?

@@ -10,7 +10,7 @@ Greek.
 
 For more information have a look at the upstream website: https://github.com/DeLaGuardo/Inconsolata-LGC
 
-Version: 1.3
+Version: 1.5.2
 
 ## Which font?
 

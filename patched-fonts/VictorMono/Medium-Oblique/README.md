@@ -4,7 +4,7 @@
 
 For more information have a look at the upstream website: https://rubjo.github.io/victor-mono
 
-Version: 1.5.4
+Version: 1.5.6
 
 ## Which font?
 

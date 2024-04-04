@@ -1,6 +1,6 @@
 # Heavy Data
 
-by [Vic Fieger](http://www.vicfieger.com/)
+by [Vic Fieger](https://vicfieger.com/)
 
 Version: 1
 

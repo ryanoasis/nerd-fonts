@@ -4,7 +4,7 @@ Space Mono is an original fixed-width type family designed by Colophon Foundry f
 
 https://fonts.google.com/specimen/Space+Mono
 
-The `fi` and `fl` ligatures are removed because the map to only one advance width.
+The `fi` and `fl` ligatures are removed because they map to only one advance width.
 
 Version: 1.001
 

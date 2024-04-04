@@ -6,7 +6,7 @@ https://terminus-font.sourceforge.net/
 
 For more information have a look at the upstream website: https://files.ax86.net/terminus-ttf/
 
-Version: 4.49.2
+Version: 4.49.3
 
 ## Why `Terminess` and not `Terminus`?
 
