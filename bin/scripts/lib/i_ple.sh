@@ -43,6 +43,6 @@ i='' i_ple_lego_block_facing=$i
 i='' i_ple_lego_block_sideways=$i
 i='' i_ple_trapezoid_top_bottom=$i
 i='' i_ple_trapezoid_top_bottom_mirrored=$i
-i='' i_pl_right_hard_divider_inverse=$i
-i='' i_pl_left_hard_divider_inverse=$i
+i='' i_ple_right_hard_divider_inverse=$i
+i='' i_ple_left_hard_divider_inverse=$i
 unset i
