@@ -63,6 +63,8 @@ renames = {
     0xF003: 'envelope_o',
     0xF006: 'star_o',
     0xF046: 'check_square_o',
+    0xF057: 'remove_sign',
+    0xF058: 'ok_sign',
     0xF087: 'thumbs_o_up',
     0xF088: 'thumbs_o_down',
     0xF016: 'file_o',
@@ -130,7 +132,15 @@ print('#')
 print('# FA-code NF-code filename FA-name')
 print('#')
 
-for point in [ *range(0xF000, 0xF900), *range(0xE000, 0xF000) ]:
+# Reorder processing to accomodate for glyph shifts introduced
+all_points = [ *range(0xF000, 0xF900), *range(0xE000, 0xF000) ]
+move_or_drop = { 0xF30B: False, 0xF30C: False }
+for code, move in move_or_drop.items():
+    all_points.remove(code)
+    if move:
+        all_points.append(code)
+
+for point in all_points:
     source = None
     subset = 'none'
     if point in sources.regul and point not in block_regular and point not in prefer_solid:
