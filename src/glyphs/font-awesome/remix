@@ -79,7 +79,7 @@ renames = {
     0xF0A2: 'bell_o',
     0xF0D5: 'google_plus',
     0xF0E5: 'comment_o',
-    0xF0E5: 'comments_o',
+    0xF0E6: 'comments_o',
     0xF0F6: 'file_text_o',
     0xF0F7: 'building_o',
     0xF10C: 'circle_o',
@@ -134,7 +134,7 @@ print('#')
 
 # Reorder processing to accomodate for glyph shifts introduced
 all_points = [ *range(0xF000, 0xF900), *range(0xE000, 0xF000) ]
-move_or_drop = { 0xF30B: False, 0xF30C: False }
+move_or_drop = { 0xF30B: False, 0xF30C: False, 0xF374: True }
 for code, move in move_or_drop.items():
     all_points.remove(code)
     if move:
