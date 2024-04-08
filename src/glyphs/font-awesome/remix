@@ -40,7 +40,8 @@ def find_destination(codepoint, font):
     # Fill gaps with the remaing icons (i.e. 'Region B')
     # That will target first the original FA codepoint range in NF (F000-F2FF)
     # and if that is full use the additional range ED00-EFFF
-    for point in [ *range(0xF000, 0xF300), *range(0xED00, 0xF000) ]:
+    # The subrange 0xEE00 - 0xEE0B is reserved for Fira Code progress icons
+    for point in [ *range(0xF000, 0xF300), *range(0xED00, 0xEE00), *range(0xEE0C, 0xF000) ]:
         if point not in font:
             return point
     print("No space found - abort")
@@ -136,7 +137,10 @@ prefer_solid = {
 }
 
 # Special handling of some few icons, see PR #1596
-move_or_drop = { 0xF30B: False, 0xF30C: False, 0xF374: True, 0xF219: 0xF3A5, 0xF10A: 0xF3FA, 0xF10B: 0xF3CD, }
+move_or_drop = { 0xF30B: False, 0xF30C: False, 0xF374: True,
+                 0xF536: True, 0xF537: True, 0xF538: True, 0xF539: True, 0xF53A: True, 0xF53B: True, # move for progress icons
+                 0xF53C: True, 0xF53D: True, 0xF53E: True, 0xF53F: True, 0xF540: True, 0xF542: True, # move for progress icons
+                 0xF219: 0xF3A5, 0xF10A: 0xF3FA, 0xF10B: 0xF3CD, }
 swap_codes = [ (0xF167, 0xF16A), (0xF219, 0xF3A5), (0xF10A, 0xF3FA), (0xF10B, 0xF3CD), ]
 
 block_regular = set()
