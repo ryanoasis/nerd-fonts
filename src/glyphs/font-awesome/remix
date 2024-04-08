@@ -168,7 +168,8 @@ for point in all_points:
         altuni = source[point].altuni
         if altuni:
             for i, _, _ in altuni:
-                block_regular.add(i)
+                if i != 0xf1db: # Allow circle to be used twice
+                    block_regular.add(i)
     elif point in sources.solid:
         source = sources.solid
         subset = 'solid'
