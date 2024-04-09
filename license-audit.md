@@ -45,7 +45,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 
 ### Additional notes
 
-* font awesome - we use the fonts which are SIL OFL 1.1, the icons are CC 4.0. We also adhere to the RFN condition to the best of our ability
+* font awesome - we use the icons which are CC 4.0.
 * weather icons - project is unfortunately dead, but added the OFL license files to comply.
 
 ## Fonts
@@ -55,7 +55,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Font                          | License                      |
 | ----------------------------- | ---------------------------- |
 | 0xProto                       | SIL OFL 1.1                  |
-| 3270                          | SIL OFL 1.1                  |
+| 3270                          | BSD-3-Clause                 |
 | Agave                         | MIT                          |
 | AnonymousPro                  | SIL OFL 1.1                  |
 | Arimo                         | Apache 2.0                   |
@@ -69,16 +69,16 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Cousine                       | Apache 2.0                   |
 | D2Coding                      | SIL OFL 1.1                  |
 | DaddyTimeMono                 | SIL OFL 1.1                  |
-| DejaVuSansMono                | Free license                 |
+| DejaVuSansMono                | Bitstream Vera License v1.00 |
 | DroidSansMono                 | Apache 2.0                   |
 | EnvyCodeR                     | SIL OFL 1.1                  |
 | FantasqueSansMono             | SIL OFL 1.1                  |
 | FiraCode                      | SIL OFL 1.1                  |
 | FiraMono                      | SIL OFL 1.1                  |
 | GeistMono                     | SIL OFL 1.1                  |
+| Go-Mono                       | BSD-3-Clause-Clear           |
 | Gohu                          | Do What The Fuck You Want To |
-| Go-Mono                       | Go License                   |
-| Hack                          | MIT                          |
+| Hack                          | Bitstream-Vera               |
 | Hasklig                       | SIL OFL 1.1                  |
 | HeavyData                     | Vic Fieger License           |
 | Hermit                        | SIL OFL 1.1                  |
@@ -99,12 +99,13 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Monofur                       | Monofur Free License         |
 | Monoid                        | MIT                          |
 | Mononoki                      | SIL OFL 1.1                  |
-| MPlus                         | Free License                 |
+| MPlus                         | SIL OFL 1.1                  |
 | Noto                          | SIL OFL 1.1                  |
 | OpenDyslexic                  | Bitstream License            |
 | Overpass                      | SIL OFL 1.1                  |
 | ProFont                       | MIT                          |
-| ProggyClean                   | Free License                 |
+| ProggyClean                   | MIT                          |
+| Recursive                     | SIL OFL 1.1                  |
 | RobotoMono                    | Apache 2.0                   |
 | ShareTechMono                 | SIL OFL 1.1                  |
 | SourceCodePro                 | SIL OFL 1.1                  |
@@ -113,4 +114,5 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Tinos                         | Apache 2.0                   |
 | Ubuntu                        | Ubuntu Font License 1.0      |
 | UbuntuMono                    | Ubuntu Font License 1.0      |
-| VictorMono                    | MIT                          |
+| VictorMono                    | SIL OFL 1.1                  |
+| Zed                           | SIL OFL 1.1                  |
