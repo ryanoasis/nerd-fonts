@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.13.0"
+script_version = "4.13.1"
 
 version = "3.2.0"
 projectName = "Nerd Fonts"
@@ -1135,14 +1135,14 @@ class font_patcher:
         # glyphs intact.
         # 0x0000-0x017f is the Latin Extended-A range
         # 0xfb00-0xfb06 are 'fi' and other ligatures
-        basic_glyphs = set()
+        basic_glyphs = { c for c in range(0x21, 0x17f + 1) if c in self.sourceFont }
         # Collect substitution destinations
-        for glyph in [*range(0x21, 0x17f + 1), *range(0xfb00, 0xfb06 + 1)]:
+        for glyph in list(basic_glyphs) + [*range(0xfb00, 0xfb06 + 1)]:
             if not glyph in self.sourceFont:
                 continue
-            basic_glyphs.add(glyph)
             for possub in self.sourceFont[glyph].getPosSub('*'):
                 if possub[1] == 'Substitution' or possub[1] == 'Ligature':
+                    basic_glyphs.add(glyph)
                     basic_glyphs.add(self.sourceFont[possub[2]].unicode)
         basic_glyphs.discard(-1) # the .notdef glyph
         for glyph in basic_glyphs:
