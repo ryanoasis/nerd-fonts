@@ -256,6 +256,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/Kirito139"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/99382674?v=4?s=100" width="100px;" alt="Lennier Mulder"/><br /><sub><b>Lennier Mulder</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Kirito139" title="Documentation">📖</a></span>
 
 
+<span style="display: inline-block; width: 130px;"><a href="http://about.earrayminkoff.tech"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/33302691?v=4?s=100" width="100px;" alt="Eli Array Minkoff"/><br /><sub><b>Eli Array Minkoff</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Aeliminmax" title="Bug reports">🐛</a></span>
+
+
 
 
 <!-- markdownlint-restore -->
