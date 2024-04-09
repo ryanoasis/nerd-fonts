@@ -243,6 +243,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/iruoy"><img src="https://avatars.githubusercontent.com/u/5859352?v=4?s=100" width="100px;" alt="Youri Wijnands"/><br /><sub><b>Youri Wijnands</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=iruoy" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Kirito139"><img src="https://avatars.githubusercontent.com/u/99382674?v=4?s=100" width="100px;" alt="Lennier Mulder"/><br /><sub><b>Lennier Mulder</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Kirito139" title="Documentation">📖</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://about.earrayminkoff.tech"><img src="https://avatars.githubusercontent.com/u/33302691?v=4?s=100" width="100px;" alt="Eli Array Minkoff"/><br /><sub><b>Eli Array Minkoff</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Aeliminmax" title="Bug reports">🐛</a></td>
+    </tr>
   </tbody>
 </table>
 
