@@ -1667,6 +1667,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "eliminmax",
+      "name": "Eli Array Minkoff",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33302691?v=4",
+      "profile": "http://about.earrayminkoff.tech",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
