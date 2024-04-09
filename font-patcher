@@ -338,9 +338,9 @@ class font_patcher:
     def patch(self, font):
         self.sourceFont = font
         self.setup_version()
-        self.get_essential_references()
         self.assert_monospace()
         self.remove_ligatures()
+        self.get_essential_references()
         self.get_sourcefont_dimensions()
         self.setup_patch_set()
         self.improve_line_dimensions()
