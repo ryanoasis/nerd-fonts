@@ -26,7 +26,7 @@ def addIcon(codepoint, name, filename):
     glyph = font.createChar(codepoint, name)
     glyph.importOutlines(filename)
     xmin, ymin, xmax, ymax = glyph.boundingBox()
-    glyph.width = int(xmax + xmin) # make meft and right bearings equal
+    glyph.width = int(xmax + xmin) # make left and right bearings equal
     glyph.manualHints = True
 
 def createGlyphInfo(icon_datasets, filepathname, into):
@@ -71,7 +71,6 @@ font = fontforge.font()
 font.fontname = 'FA-NerdFont-Regular'
 font.fullname = 'FA Nerd Font Regular'
 font.familyname = 'FA Nerd Font'
-font.em = 2048
 font.ascent = 1000
 font.descent = 200
 font.encoding = 'UnicodeFull'
@@ -94,8 +93,8 @@ for _, codepoint, file, *names in mapping:
 num_icons = len(mapping)
 
 print('Generating {} with {} glyphs'.format(fontfile, num_icons))
-font.ascent = 1100
-font.descent = 300
+font.ascent = 1000
+font.descent = 200
 font.generate(os.path.join(fontdir, fontfile), flags=("no-FFTM-table",))
 
 codepoints = [ int(p, 16) for _, p, *_ in mapping ]

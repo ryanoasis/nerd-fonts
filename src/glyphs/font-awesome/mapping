@@ -9,7 +9,7 @@ F3C9 ED03 solid/microphone-lines.svg microphone_lines
 F3CA ED04 brands/microsoft.svg microsoft
 F3CB ED05 brands/mix.svg mix
 F3CC ED06 brands/mizuni.svg mizuni
-F3CD ED07 solid/mobile-screen-button.svg mobile_screen_button
+F10B ED07 solid/mobile-button.svg mobile_button
 F3CE ED08 solid/mobile.svg mobile
 F3CF ED09 solid/mobile-screen.svg mobile_screen
 F3D0 ED0A brands/monero.svg monero
@@ -47,7 +47,7 @@ F3F6 ED29 brands/steam-symbol.svg steam_symbol
 F3F7 ED2A brands/sticker-mule.svg sticker_mule
 F3F8 ED2B brands/studiovinari.svg studiovinari
 F3F9 ED2C brands/supple.svg supple
-F3FA ED2D solid/tablet-screen-button.svg tablet_screen_button
+F10A ED2D solid/tablet-button.svg tablet_button
 F3FB ED2E solid/tablet.svg tablet
 F3FD ED2F solid/gauge-high.svg gauge_high
 F3FF ED30 solid/ticket-simple.svg ticket_simple
@@ -258,18 +258,6 @@ F532 EDFC solid/greater-than-equal.svg greater_than_equal
 F533 EDFD solid/helicopter.svg helicopter
 F534 EDFE solid/infinity.svg infinity
 F535 EDFF solid/kiwi-bird.svg kiwi_bird
-F536 EE00 solid/less-than.svg less_than
-F537 EE01 solid/less-than-equal.svg less_than_equal
-F538 EE02 solid/memory.svg memory
-F539 EE03 solid/microphone-lines-slash.svg microphone_lines_slash
-F53A EE04 solid/money-bill-wave.svg money_bill_wave
-F53B EE05 solid/money-bill-1-wave.svg money_bill_1_wave
-F53C EE06 solid/money-check.svg money_check
-F53D EE07 solid/money-check-dollar.svg money_check_dollar
-F53E EE08 solid/not-equal.svg not_equal
-F53F EE09 solid/palette.svg palette
-F540 EE0A solid/square-parking.svg square_parking
-F542 EE0B solid/diagram-project.svg diagram_project
 F543 EE0C solid/receipt.svg receipt
 F544 EE0D solid/robot.svg robot
 F545 EE0E solid/ruler.svg ruler
@@ -708,6 +696,19 @@ F8E1 EFBE brands/swift.svg swift
 F8E8 EFBF brands/umbraco.svg umbraco
 F8EF EFC0 solid/walkie-talkie.svg walkie_talkie
 F8FF EFC1 solid/caravan.svg caravan
+F374 EFC2 brands/avianex.svg avianex
+F536 EFC3 solid/less-than.svg less_than
+F537 EFC4 solid/less-than-equal.svg less_than_equal
+F538 EFC5 solid/memory.svg memory
+F539 EFC6 solid/microphone-lines-slash.svg microphone_lines_slash
+F53A EFC7 solid/money-bill-wave.svg money_bill_wave
+F53B EFC8 solid/money-bill-1-wave.svg money_bill_1_wave
+F53C EFC9 solid/money-check.svg money_check
+F53D EFCA solid/money-check-dollar.svg money_check_dollar
+F53E EFCB solid/not-equal.svg not_equal
+F53F EFCC solid/palette.svg palette
+F540 EFCD solid/square-parking.svg square_parking
+F542 EFCE solid/diagram-project.svg diagram_project
 F000 F000 solid/martini-glass-empty.svg martini_glass_empty glass
 F001 F001 solid/music.svg music
 F002 F002 solid/magnifying-glass.svg magnifying_glass search
@@ -795,13 +796,13 @@ F053 F053 solid/chevron-left.svg chevron_left
 F054 F054 solid/chevron-right.svg chevron_right
 F055 F055 solid/circle-plus.svg circle_plus plus_circle
 F056 F056 solid/circle-minus.svg circle_minus minus_circle
-F057 F057 solid/circle-xmark.svg circle_xmark times_circle
-F058 F058 solid/circle-check.svg circle_check check_circle
+F057 F057 solid/circle-xmark.svg remove_sign times_circle
+F058 F058 solid/circle-check.svg ok_sign check_circle
 F059 F059 solid/circle-question.svg circle_question question_circle
 F05A F05A solid/circle-info.svg circle_info info_circle
 F05B F05B solid/crosshairs.svg crosshairs
-F30B F05C solid/right-long.svg right_long times_circle_o
-F30C F05D solid/up-long.svg up_long check_circle_o
+F05C F05C regular/circle-xmark.svg circle_xmark times_circle_o
+F05D F05D regular/circle-check.svg circle_check check_circle_o
 F05E F05E solid/ban.svg ban
 F31C F05F solid/file-pen.svg file_pen
 F060 F060 solid/arrow-left.svg arrow_left
@@ -937,8 +938,8 @@ F0E1 F0E1 brands/linkedin-in.svg linkedin_in linkedin
 F0E2 F0E2 solid/arrow-rotate-left.svg arrow_rotate_left undo
 F0E3 F0E3 solid/gavel.svg gavel legal
 F0E4 F0E4 solid/gauge-simple-high.svg gauge_simple_high dashboard tachometer
-F0E5 F0E5 regular/comment.svg comments_o comment_o
-F374 F0E6 brands/avianex.svg avianex
+F0E5 F0E5 regular/comment.svg comment_o
+F0E6 F0E6 regular/comments.svg comments_o
 F0E7 F0E7 solid/bolt.svg bolt flash
 F0E8 F0E8 solid/sitemap.svg sitemap
 F0E9 F0E9 solid/umbrella.svg umbrella
@@ -974,8 +975,8 @@ F106 F106 solid/angle-up.svg angle_up
 F107 F107 solid/angle-down.svg angle_down
 F108 F108 solid/desktop.svg desktop
 F109 F109 solid/laptop.svg laptop
-F10A F10A solid/tablet-button.svg tablet_button
-F10B F10B solid/mobile-button.svg mobile_button mobile_phone
+F3FA F10A solid/tablet-screen-button.svg tablet_screen_button
+F3CD F10B solid/mobile-screen-button.svg mobile_screen_button mobile_phone
 F10C F10C regular/circle.svg circle_o
 F10D F10D solid/quote-left.svg quote_left
 F10E F10E solid/quote-right.svg quote_right
@@ -1067,10 +1068,10 @@ F163 F163 solid/arrow-up-1-9.svg arrow_up_1_9 sort_numeric_desc
 F164 F164 solid/thumbs-up.svg thumbs_up
 F165 F165 solid/thumbs-down.svg thumbs_down
 F166 F166 brands/square-youtube.svg square_youtube youtube_square
-F167 F167 brands/youtube.svg youtube
+F384 F167 brands/cloudsmith.svg cloudsmith
 F168 F168 brands/xing.svg xing
 F169 F169 brands/square-xing.svg square_xing xing_square
-F384 F16A brands/cloudsmith.svg cloudsmith youtube_play
+F167 F16A brands/youtube.svg youtube youtube_play
 F16B F16B brands/dropbox.svg dropbox
 F16C F16C brands/stack-overflow.svg stack_overflow
 F16D F16D brands/instagram.svg instagram
@@ -1183,7 +1184,7 @@ F1D7 F1D7 brands/weixin.svg weixin wechat
 F1D8 F1D8 solid/paper-plane.svg paper_plane send
 F1D9 F1D9 regular/paper-plane.svg paper_plane_o send_o
 F1DA F1DA solid/clock-rotate-left.svg clock_rotate_left history
-F1DB F1DB solid/circle.svg circle_thin
+F1DB F1DB regular/circle.svg circle_thin
 F1DC F1DC solid/heading.svg heading header
 F1DD F1DD solid/paragraph.svg paragraph
 F1DE F1DE solid/sliders.svg sliders
@@ -1245,7 +1246,7 @@ F215 F215 brands/simplybuilt.svg simplybuilt
 F216 F216 brands/skyatlas.svg skyatlas
 F217 F217 solid/cart-plus.svg cart_plus
 F218 F218 solid/cart-arrow-down.svg cart_arrow_down
-F219 F219 solid/diamond.svg diamond
+F3A5 F219 regular/gem.svg gem
 F21A F21A solid/ship.svg ship
 F21B F21B solid/user-secret.svg user_secret
 F21C F21C solid/motorcycle.svg motorcycle
@@ -1379,7 +1380,7 @@ F29B F29B brands/accessible-icon.svg accessible_icon wheelchair_alt
 F29C F29C regular/circle-question.svg question_circle_o
 F29D F29D solid/person-walking-with-cane.svg person_walking_with_cane blind
 F29E F29E solid/audio-description.svg audio_description
-F3A5 F29F regular/gem.svg gem
+F219 F29F solid/diamond.svg diamond
 F2A0 F2A0 solid/phone-volume.svg phone_volume volume_control_phone
 F2A1 F2A1 solid/braille.svg braille
 F2A2 F2A2 solid/ear-listen.svg ear_listen assistive_listening_systems
@@ -1476,12 +1477,13 @@ F3C1 F2FC solid/lock-open.svg lock_open
 F3C3 F2FD brands/lyft.svg lyft
 F2FE F2FE solid/poo.svg poo
 F3C4 F2FF brands/magento.svg magento
-# Name clash: name: comments_o, old: F0E6, new: F0E5 (F0E5), name at old pos: avianex
+# Name clash: name: youtube, old: F167, new: F16A (F167), name at old pos: cloudsmith
 # Name clash: name: rotate_left, old: F0E2, new: F2EA (F2EA), name at old pos: arrow_rotate_left
 # Name clash: name: rotate_right, old: F01E, new: F2F9 (F2F9), name at old pos: arrow_rotate_right
 # Name clash: name: bitcoin, old: F15A, new: F10F (F379), name at old pos: btc
 # Name clash: name: facebook_f, old: F09A, new: F24F (F39E), name at old pos: facebook
-# Name clash: name: mobile, old: F10B, new: ED08 (F3CE), name at old pos: mobile_button
-# Name clash: name: tablet, old: F10A, new: ED2E (F3FB), name at old pos: tablet_button
+# Name clash: name: diamond, old: F219, new: F29F (F219), name at old pos: gem
+# Name clash: name: mobile, old: F10B, new: ED08 (F3CE), name at old pos: mobile_screen_button
+# Name clash: name: tablet, old: F10A, new: ED2E (F3FB), name at old pos: tablet_screen_button
 # Name clash: name: vimeo, old: F27D, new: ED39 (F40A), name at old pos: vimeo_v
 

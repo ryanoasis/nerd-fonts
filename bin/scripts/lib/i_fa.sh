@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Font Awesome (version 6.5.1, 1474 icons, 343 aliases)
+# Font Awesome (version 6.5.1, 1475 icons, 342 aliases)
 # Does not include all icons of the release
 # Codepoints: ED00-F2FF with gaps
 # Nerd Fonts Version: 3.2.0
@@ -12,7 +12,7 @@ i='' i_fa_microphone_lines=$i
 i='' i_fa_microsoft=$i
 i='' i_fa_mix=$i
 i='' i_fa_mizuni=$i
-i='' i_fa_mobile_screen_button=$i
+i='' i_fa_mobile_button=$i
 i='' i_fa_mobile=$i
 i='' i_fa_mobile_screen=$i
 i='' i_fa_monero=$i
@@ -50,7 +50,7 @@ i='' i_fa_steam_symbol=$i
 i='' i_fa_sticker_mule=$i
 i='' i_fa_studiovinari=$i
 i='' i_fa_supple=$i
-i='' i_fa_tablet_screen_button=$i
+i='' i_fa_tablet_button=$i
 i='' i_fa_tablet=$i
 i='' i_fa_gauge_high=$i
 i='' i_fa_ticket_simple=$i
@@ -261,18 +261,6 @@ i='' i_fa_greater_than_equal=$i
 i='' i_fa_helicopter=$i
 i='' i_fa_infinity=$i
 i='' i_fa_kiwi_bird=$i
-i='' i_fa_less_than=$i
-i='' i_fa_less_than_equal=$i
-i='' i_fa_memory=$i
-i='' i_fa_microphone_lines_slash=$i
-i='' i_fa_money_bill_wave=$i
-i='' i_fa_money_bill_1_wave=$i
-i='' i_fa_money_check=$i
-i='' i_fa_money_check_dollar=$i
-i='' i_fa_not_equal=$i
-i='' i_fa_palette=$i
-i='' i_fa_square_parking=$i
-i='' i_fa_diagram_project=$i
 i='' i_fa_receipt=$i
 i='' i_fa_robot=$i
 i='' i_fa_ruler=$i
@@ -711,6 +699,19 @@ i='' i_fa_swift=$i
 i='' i_fa_umbraco=$i
 i='' i_fa_walkie_talkie=$i
 i='' i_fa_caravan=$i
+i='' i_fa_avianex=$i
+i='' i_fa_less_than=$i
+i='' i_fa_less_than_equal=$i
+i='' i_fa_memory=$i
+i='' i_fa_microphone_lines_slash=$i
+i='' i_fa_money_bill_wave=$i
+i='' i_fa_money_bill_1_wave=$i
+i='' i_fa_money_check=$i
+i='' i_fa_money_check_dollar=$i
+i='' i_fa_not_equal=$i
+i='' i_fa_palette=$i
+i='' i_fa_square_parking=$i
+i='' i_fa_diagram_project=$i
 i='' i_fa_martini_glass_empty=$i
       i_fa_glass=$i
 i='' i_fa_music=$i
@@ -835,18 +836,18 @@ i='' i_fa_circle_plus=$i
       i_fa_plus_circle=$i
 i='' i_fa_circle_minus=$i
       i_fa_minus_circle=$i
-i='' i_fa_circle_xmark=$i
+i='' i_fa_remove_sign=$i
       i_fa_times_circle=$i
-i='' i_fa_circle_check=$i
+i='' i_fa_ok_sign=$i
       i_fa_check_circle=$i
 i='' i_fa_circle_question=$i
       i_fa_question_circle=$i
 i='' i_fa_circle_info=$i
       i_fa_info_circle=$i
 i='' i_fa_crosshairs=$i
-i='' i_fa_right_long=$i
+i='' i_fa_circle_xmark=$i
       i_fa_times_circle_o=$i
-i='' i_fa_up_long=$i
+i='' i_fa_circle_check=$i
       i_fa_check_circle_o=$i
 i='' i_fa_ban=$i
 i='' i_fa_file_pen=$i
@@ -1038,9 +1039,8 @@ i='' i_fa_gavel=$i
 i='' i_fa_gauge_simple_high=$i
       i_fa_dashboard=$i
       i_fa_tachometer=$i
-i='' i_fa_comments_o=$i
-      i_fa_comment_o=$i
-i='' i_fa_avianex=$i
+i='' i_fa_comment_o=$i
+i='' i_fa_comments_o=$i
 i='' i_fa_bolt=$i
       i_fa_flash=$i
 i='' i_fa_sitemap=$i
@@ -1096,8 +1096,8 @@ i='' i_fa_angle_up=$i
 i='' i_fa_angle_down=$i
 i='' i_fa_desktop=$i
 i='' i_fa_laptop=$i
-i='' i_fa_tablet_button=$i
-i='' i_fa_mobile_button=$i
+i='' i_fa_tablet_screen_button=$i
+i='' i_fa_mobile_screen_button=$i
       i_fa_mobile_phone=$i
 i='' i_fa_circle_o=$i
 i='' i_fa_quote_left=$i
@@ -1247,11 +1247,11 @@ i='' i_fa_thumbs_up=$i
 i='' i_fa_thumbs_down=$i
 i='' i_fa_square_youtube=$i
       i_fa_youtube_square=$i
-i='' i_fa_youtube=$i
+i='' i_fa_cloudsmith=$i
 i='' i_fa_xing=$i
 i='' i_fa_square_xing=$i
       i_fa_xing_square=$i
-i='' i_fa_cloudsmith=$i
+i='' i_fa_youtube=$i
       i_fa_youtube_play=$i
 i='' i_fa_dropbox=$i
 i='' i_fa_stack_overflow=$i
@@ -1505,7 +1505,7 @@ i='' i_fa_simplybuilt=$i
 i='' i_fa_skyatlas=$i
 i='' i_fa_cart_plus=$i
 i='' i_fa_cart_arrow_down=$i
-i='' i_fa_diamond=$i
+i='' i_fa_gem=$i
 i='' i_fa_ship=$i
 i='' i_fa_user_secret=$i
 i='' i_fa_motorcycle=$i
@@ -1685,7 +1685,7 @@ i='' i_fa_question_circle_o=$i
 i='' i_fa_person_walking_with_cane=$i
       i_fa_blind=$i
 i='' i_fa_audio_description=$i
-i='' i_fa_gem=$i
+i='' i_fa_diamond=$i
 i='' i_fa_phone_volume=$i
       i_fa_volume_control_phone=$i
 i='' i_fa_braille=$i
