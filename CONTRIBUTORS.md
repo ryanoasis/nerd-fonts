@@ -245,6 +245,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://about.earrayminkoff.tech"><img src="https://avatars.githubusercontent.com/u/33302691?v=4?s=100" width="100px;" alt="Eli Array Minkoff"/><br /><sub><b>Eli Array Minkoff</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Aeliminmax" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.tehpers.com"><img src="https://avatars.githubusercontent.com/u/2214247?v=4?s=100" width="100px;" alt="TehPers"/><br /><sub><b>TehPers</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3ATehPers" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
