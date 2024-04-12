@@ -1,6 +1,6 @@
 {
   "name": "nerd-fonts",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Iconic font aggregator, collection, & patcher. 9,000+ icons, 60+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more",
   "main": "index.js",
   "dependencies": {},
