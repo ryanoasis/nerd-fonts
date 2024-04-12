@@ -13,6 +13,8 @@ you are expressly encouraged to experiment, modify, share and improve.
 
 http://font.ubuntu.com/
 
+The `fi`, `fl`, and similar ligatures are removed because they would block some Font Awesome glyphs.
+
 Version: 0.83
 
 ## Preprocessed Source Font
