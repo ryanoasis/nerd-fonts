@@ -21,3 +21,11 @@ Open old and new definitions shell script and copy the header from the old file 
 Glyph 0xF1522 is broken in the original font. We fixed that one glyph manually.
 
 See https://github.com/Templarian/MaterialDesign-Font/issues/9
+
+## Old version
+
+Also contained is the old (pre Nerd Fonts v3.0.0) Material Design Icons:
+
+`materialdesignicons-webfont.ttf`
+
+That is not used, but can be activated by users of the font-patcher by enabling the font in the sourcecode.
