@@ -223,6 +223,11 @@ jobs:
           tag_name: "v${{ env.RELEASE_VERSION }}"
           files: archives/*
 
+      - name: Create checksums from font packages
+        run: |
+          cd -- "$GITHUB_WORKSPACE/archives"
+          sha256sum * > SHA-256-${{ matrix.font }}.txt
+
       - name: Upload patched fonts as artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -232,6 +237,7 @@ jobs:
           path: |
             LICENSE
             patched-fonts/${{ matrix.font }}
+            archives/SHA*
 
   release-font-patcher:
     name: Archive font patcher and add to release
@@ -268,6 +274,9 @@ jobs:
   commit:
     name: Commit and push patched fonts to the repo, finalize release
     needs: [ setup-fonts-matrix, build, release-font-patcher ]
+    env:
+      RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
+      RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -284,10 +293,21 @@ jobs:
           path: .
           merge-multiple: true
 
+      - name: Create complete checksums file
+        run: |
+          cd -- "$GITHUB_WORKSPACE/archives"
+          cat SHA-256-* | sort -k 2 > SHA-256.txt
+
+      - name: Upload checksums for release
+        uses: softprops/action-gh-release@v2
+        if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
+        with:
+          draft: true
+          prerelease: ${{ env.RELEASE_CANDIDATE != 'false' }}
+          tag_name: "v${{ env.RELEASE_VERSION }}"
+          files: archives/SHA-256.txt
+
       - name: Bump version for source files
-        env:
-          RELEASE_VERSION: ${{ needs.setup-fonts-matrix.outputs.rel_version }}
-          RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_VERSION"
