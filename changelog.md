@@ -2,6 +2,51 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.2.1
+
+This bugfix release is mainly because of the Fira Code progress indicator glyphs. These are used by some applications, and usually could be used via fontfallback from any font (because the codepoints were un-occupied in the Nerd Fonts). But with adding more FontAwesome glyphs we utilized that codepoints for the new glyphs, breaking this common setup.
+To fix that we keep these codepoints (there are 9 glyphs) free and un-occupied. So the usualy fallback scheme will continue to work.
+
+Please see below for a list of codepoint that change with this release (which were new in 3.2.0), so I count that not really as breaking, because they were just some days ago (accidentally) introduced.
+
+<details>
+
+| name | v3.2.0 codepoint | v3.2.1 codepoint |
+|---|---|---|
+| `fa_less_than`              | `EE00` | `EFC3` |
+| `fa_less_than_equal`        | `EE01` | `EFC4` |
+| `fa_memory`                 | `EE02` | `EFC5` |
+| `fa_microphone_lines_slash` | `EE03` | `EFC6` |
+| `fa_money_bill_wave`        | `EE04` | `EFC7` |
+| `fa_money_bill_1_wave`      | `EE05` | `EFC8` |
+| `fa_money_check`            | `EE06` | `EFC9` |
+| `fa_money_check_dollar`     | `EE07` | `EFCA` |
+| `fa_not_equal`              | `EE08` | `EFCB` |
+| `fa_palette`                | `EE09` | `EFCC` |
+| `fa_square_parking`         | `EE0A` | `EFCD` |
+| `fa_diagram_project`        | `EE0B` | `EFCE` |
+| this moves:                                   |
+| `fa_avianex`                | `F0E6` | `EFC2` |
+| these swap:                                   |
+| `fa_diamond`                | `F219` | `F29F` |
+| `fa_gem`                    | `F29F` | `F219` |
+| `fa_cloudsmith`             | `F16A` | `F167` |
+| `fa_youtube`                | `F167` | `F16A` |
+
+</details>
+
+### Codepoint shift :warning: (only relative to 3.2.0)
+* Reorder some FontAwesome glyphs #1596
+  (see list above)
+
+### Bugs
+* Remove Ubuntu 'fi' and 'fl' ligs #1597
+
+### Improvements for package maintainers
+
+* Add individual licenses to font database `fonts.json` for package maintainers #1599
+* Add sha256 checksums to release (commit c2cd3cdf)
+
 ## v3.2.0
 
 The Easter release. Lets see which eggs can be found:
