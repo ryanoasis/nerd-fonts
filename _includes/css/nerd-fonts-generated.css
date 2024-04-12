@@ -1,7 +1,7 @@
 /*
  *# [Nerd Fonts]  Website: https://www.nerdfonts.com
  *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
- *# [Nerd Fonts]  Version: 3.2.0
+ *# [Nerd Fonts]  Version: 3.2.1
  *# [Nerd Fonts]  The following is generated from the build script
  */
 
@@ -2343,7 +2343,7 @@
   content: "\ed47";
 }
 .nf-fa-avianex:before {
-  content: "\f0e6";
+  content: "\efc2";
 }
 .nf-fa-aviato:before {
   content: "\ed4c";
@@ -3021,7 +3021,7 @@
   content: "\f0aa";
 }
 .nf-fa-circle_check:before {
-  content: "\f058";
+  content: "\f05d";
 }
 .nf-fa-circle_chevron_down:before {
   content: "\f13a";
@@ -3102,7 +3102,7 @@
   content: "\f2bd";
 }
 .nf-fa-circle_xmark:before {
-  content: "\f057";
+  content: "\f05c";
 }
 .nf-fa-city:before {
   content: "\eec0";
@@ -3183,7 +3183,7 @@
   content: "\f15f";
 }
 .nf-fa-cloudsmith:before {
-  content: "\f16a";
+  content: "\f167";
 }
 .nf-fa-cloudversify:before {
   content: "\f16f";
@@ -3261,7 +3261,7 @@
   content: "\eec2";
 }
 .nf-fa-comments_o:before {
-  content: "\f0e5";
+  content: "\f0e6";
 }
 .nf-fa-compact_disc:before {
   content: "\ede9";
@@ -3459,10 +3459,10 @@
   content: "\ef40";
 }
 .nf-fa-diagram_project:before {
-  content: "\ee0b";
+  content: "\efce";
 }
 .nf-fa-diamond:before {
-  content: "\f219";
+  content: "\f29f";
 }
 .nf-fa-diamond_turn_right:before {
   content: "\eea2";
@@ -4254,7 +4254,7 @@
   content: "\f085";
 }
 .nf-fa-gem:before {
-  content: "\f29f";
+  content: "\f219";
 }
 .nf-fa-genderless:before {
   content: "\f22d";
@@ -4938,10 +4938,10 @@
   content: "\ed48";
 }
 .nf-fa-less_than:before {
-  content: "\ee00";
+  content: "\efc3";
 }
 .nf-fa-less_than_equal:before {
-  content: "\ee01";
+  content: "\efc4";
 }
 .nf-fa-level_down:before {
   content: "\f149";
@@ -5196,7 +5196,7 @@
   content: "\f11a";
 }
 .nf-fa-memory:before {
-  content: "\ee02";
+  content: "\efc5";
 }
 .nf-fa-mendeley:before {
   content: "\ef57";
@@ -5223,7 +5223,7 @@
   content: "\ed03";
 }
 .nf-fa-microphone_lines_slash:before {
-  content: "\ee03";
+  content: "\efc6";
 }
 .nf-fa-microphone_slash:before {
   content: "\f131";
@@ -5265,7 +5265,7 @@
   content: "\ed08";
 }
 .nf-fa-mobile_button:before {
-  content: "\f10b";
+  content: "\ed07";
 }
 .nf-fa-mobile_phone:before {
   content: "\f10b";
@@ -5274,7 +5274,7 @@
   content: "\ed09";
 }
 .nf-fa-mobile_screen_button:before {
-  content: "\ed07";
+  content: "\f10b";
 }
 .nf-fa-modx:before {
   content: "\f285";
@@ -5292,16 +5292,16 @@
   content: "\ed0b";
 }
 .nf-fa-money_bill_1_wave:before {
-  content: "\ee05";
+  content: "\efc8";
 }
 .nf-fa-money_bill_wave:before {
-  content: "\ee04";
+  content: "\efc7";
 }
 .nf-fa-money_check:before {
-  content: "\ee06";
+  content: "\efc9";
 }
 .nf-fa-money_check_dollar:before {
-  content: "\ee07";
+  content: "\efca";
 }
 .nf-fa-monument:before {
   content: "\ee6f";
@@ -5370,7 +5370,7 @@
   content: "\ed0d";
 }
 .nf-fa-not_equal:before {
-  content: "\ee08";
+  content: "\efcb";
 }
 .nf-fa-note_sticky:before {
   content: "\f249";
@@ -5401,6 +5401,9 @@
 }
 .nf-fa-oil_can:before {
   content: "\eeae";
+}
+.nf-fa-ok_sign:before {
+  content: "\f058";
 }
 .nf-fa-old_republic:before {
   content: "\edda";
@@ -5451,7 +5454,7 @@
   content: "\f1fc";
 }
 .nf-fa-palette:before {
-  content: "\ee09";
+  content: "\efcc";
 }
 .nf-fa-palfed:before {
   content: "\ed12";
@@ -5840,6 +5843,9 @@
 .nf-fa-remove:before {
   content: "\f00d";
 }
+.nf-fa-remove_sign:before {
+  content: "\f057";
+}
 .nf-fa-renren:before {
   content: "\f18b";
 }
@@ -5890,9 +5896,6 @@
 }
 .nf-fa-right_left:before {
   content: "\f0b5";
-}
-.nf-fa-right_long:before {
-  content: "\f05c";
 }
 .nf-fa-right_to_bracket:before {
   content: "\f2f6";
@@ -6390,7 +6393,7 @@
   content: "\f264";
 }
 .nf-fa-square_parking:before {
-  content: "\ee0a";
+  content: "\efcd";
 }
 .nf-fa-square_pen:before {
   content: "\f14b";
@@ -6651,10 +6654,10 @@
   content: "\ed2e";
 }
 .nf-fa-tablet_button:before {
-  content: "\f10a";
+  content: "\ed2d";
 }
 .nf-fa-tablet_screen_button:before {
-  content: "\ed2d";
+  content: "\f10a";
 }
 .nf-fa-tablets:before {
   content: "\ed8e";
@@ -7039,9 +7042,6 @@
 }
 .nf-fa-up_down_left_right:before {
   content: "\f0b2";
-}
-.nf-fa-up_long:before {
-  content: "\f05d";
 }
 .nf-fa-up_right_and_down_left_from_center:before {
   content: "\ed4f";
@@ -7461,7 +7461,7 @@
   content: "\f2b1";
 }
 .nf-fa-youtube:before {
-  content: "\f167";
+  content: "\f16a";
 }
 .nf-fa-youtube_play:before {
   content: "\f16a";
@@ -29942,9 +29942,6 @@
 .nf-pl-left_hard_divider:before {
   content: "\e0b0";
 }
-.nf-pl-left_hard_divider_inverse:before {
-  content: "\e0d7";
-}
 .nf-pl-left_soft_divider:before {
   content: "\e0b1";
 }
@@ -29956,9 +29953,6 @@
 }
 .nf-pl-right_hard_divider:before {
   content: "\e0b2";
-}
-.nf-pl-right_hard_divider_inverse:before {
-  content: "\e0d6";
 }
 .nf-pl-right_soft_divider:before {
   content: "\e0b3";
@@ -30011,6 +30005,9 @@
 .nf-ple-left_half_circle_thin:before {
   content: "\e0b7";
 }
+.nf-ple-left_hard_divider_inverse:before {
+  content: "\e0d7";
+}
 .nf-ple-lego_block_facing:before {
   content: "\e0d0";
 }
@@ -30046,6 +30043,9 @@
 }
 .nf-ple-right_half_circle_thin:before {
   content: "\e0b5";
+}
+.nf-ple-right_hard_divider_inverse:before {
+  content: "\e0d6";
 }
 .nf-ple-trapezoid_top_bottom:before {
   content: "\e0d2";
