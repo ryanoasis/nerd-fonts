@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.2.0
+# Nerd Fonts Version: 3.2.1
 # Script Version: 1.2.0
 # Iterates over all patched fonts directories
 # to generate release archives of the patched font(s)

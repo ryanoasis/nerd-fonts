@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf8
-# Nerd Fonts Version: 3.2.0
+# Nerd Fonts Version: 3.2.1
 # Script version is further down
 
 from __future__ import absolute_import, print_function, unicode_literals
@@ -8,7 +8,7 @@ from __future__ import absolute_import, print_function, unicode_literals
 # Change the script version when you edit this script:
 script_version = "4.13.1"
 
-version = "3.2.0"
+version = "3.2.1"
 projectName = "Nerd Fonts"
 projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]

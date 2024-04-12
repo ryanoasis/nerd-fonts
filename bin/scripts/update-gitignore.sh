@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.2.0
+# Nerd Fonts Version: 3.2.1
 # Script Version: 1.0.0
 #
 # Edits the repo's .gitignore to prevent patched font artifacts

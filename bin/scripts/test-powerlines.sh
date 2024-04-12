@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.2.0
+# Nerd Fonts Version: 3.2.1
 # Script Version: 1.3.1
 
 # Give any parameter to allow some glyphs to be 2 'cells' wide.

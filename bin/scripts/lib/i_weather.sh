@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Weather Icons 1.100 (228 icons)
 # Codepoints: F000-F0EB (with holes), Nerd Fonts moved E300-E3E3
-# Nerd Fonts Version: 3.2.0
+# Nerd Fonts Version: 3.2.1
 # Script Version 1.0.2
 test -n "$__i_weather_loaded" && return || __i_weather_loaded=1
 i='' i_weather_day_cloudy_gusts=$i

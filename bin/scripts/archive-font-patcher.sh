@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.2.0
+# Nerd Fonts Version: 3.2.1
 # Script Version: 1.1.0
 # Archives the font patcher script and the required source files
 # If some (any) argument is given this is though of as intermediate version
