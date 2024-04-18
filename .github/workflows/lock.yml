@@ -25,3 +25,4 @@ jobs:
             issue, complete the issue template with all the details
             necessary to reproduce, and mention this issue as reference.
           process-only: 'issues'
+          exclude-any-issue-labels: keep_unlocked
