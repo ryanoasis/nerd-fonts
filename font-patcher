@@ -1961,6 +1961,23 @@ def setup_arguments():
 
     args = parser.parse_args()
 
+    # if we have a config file: fetch commandline arguments from there and process again with all arguments
+    if args.configfile:
+        if not os.path.isfile(args.configfile):
+            logger.critical("Configfile does not exist: %s", args.configfile)
+            sys.exit(1)
+        if not os.access(args.configfile, os.R_OK):
+            logger.critical("Can not open configfile for reading: %s", args.configfile)
+            sys.exit(1)
+        config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
+        config.read(args.configfile)
+        extraflags = config.get("Config", "commandline", fallback='')
+        if len(extraflags):
+            # We have no level less severe than warning here, logger will be set up later
+            logger.warning("Adding config commandline options: %s", extraflags)
+            extraflags += ' ' + args.font
+            args = parser.parse_args(extraflags.split(), args)
+
     if args.makegroups > 0 and not FontnameParserOK:
         logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
         sys.exit(1)
