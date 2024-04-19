@@ -320,10 +320,10 @@ def create_filename(fonts):
 
 
 class font_patcher:
-    def __init__(self, args):
+    def __init__(self, args, conf):
         self.args = args  # class 'argparse.Namespace'
         self.sym_font_args = []
-        self.config = None  # class 'configparser.ConfigParser'
+        self.config = conf  # class 'configparser.ConfigParser'
         self.sourceFont = None  # class 'fontforge.font'
         self.patch_set = None  # class 'list'
         self.font_dim = None  # class 'dict'
@@ -332,14 +332,12 @@ class font_patcher:
         self.symbolsonly = False # Are we generating the SymbolsOnly font?
         self.onlybitmaps = 0
         self.essential = set()
-        self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         self.xavgwidth = [] # list of ints
 
     def patch(self, font):
         self.sourceFont = font
         self.setup_version()
         self.assert_monospace()
-        self.load_config()
         self.remove_ligatures()
         self.manipulate_hints()
         self.get_essential_references()
@@ -769,13 +767,6 @@ class font_patcher:
         self.sourceFont.appendSFNTName(str('English (US)'), str('Version'), "Version " + self.sourceFont.version)
         # The Version SFNT name is later reused by the NameParser for UniqueID
         # print("Version now is {}".format(sourceFont.version))
-
-
-    def load_config(self):
-        """ Try to read the config file (if specified) """
-        if self.args.configfile:
-            if not self.config.read(self.args.configfile):
-                logger.error("Unable to read configfile")
 
 
     def remove_ligatures(self):
@@ -1914,6 +1905,7 @@ def check_version_with_git(version):
     return False
 
 def setup_arguments():
+    """ Parse the command line parameters and load the config file if needed """
     parser = argparse.ArgumentParser(
         description=(
             'Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs\n\n'
@@ -1990,6 +1982,7 @@ def setup_arguments():
     args = parser.parse_args()
 
     # if we have a config file: fetch commandline arguments from there and process again with all arguments
+    config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
     if args.configfile:
         if not os.path.isfile(args.configfile):
             logger.critical("Configfile does not exist: %s", args.configfile)
@@ -1997,7 +1990,6 @@ def setup_arguments():
         if not os.access(args.configfile, os.R_OK):
             logger.critical("Can not open configfile for reading: %s", args.configfile)
             sys.exit(1)
-        config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         config.read(args.configfile)
         extraflags = config.get("Config", "commandline", fallback='')
         if len(extraflags):
@@ -2087,7 +2079,7 @@ def setup_arguments():
             logger.critical("--xavgcharwidth takes only numbers up to 16384")
             sys.exit(2)
 
-    return args
+    return (args, config)
 
 def main():
     global logger
@@ -2104,7 +2096,7 @@ def main():
     if git_version:
         version = git_version
     check_fontforge_min_version()
-    args = setup_arguments()
+    (args, conf) = setup_arguments()
 
     logger = logging.getLogger(os.path.basename(args.font))
     logger.setLevel(logging.DEBUG)
@@ -2127,7 +2119,7 @@ def main():
         logger.info("Can not write logfile, disabling")
     logger.debug("Naming mode %d", args.makegroups)
 
-    patcher = font_patcher(args)
+    patcher = font_patcher(args, conf)
 
     sourceFonts = []
     all_fonts = fontforge.fontsInFile(args.font)
