@@ -1935,7 +1935,7 @@ def setup_arguments():
 
     expert_group = parser.add_argument_group('Expert Options')
     expert_group.add_argument('--boxdrawing',                              dest='forcebox',         default=False, action='store_true', help='Force patching in (over existing) box drawing glyphs')
-    expert_group.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
+    expert_group.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for configuration file (see sample: src/config.sample.cfg)')
     expert_group.add_argument('--custom',                                  dest='custom',           default=False, type=str,            help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
 
     expert_group.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
@@ -1946,7 +1946,7 @@ def setup_arguments():
     expert_group.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', \'filename\', or concrete free name-string)')
     expert_group.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str,            help='Specify a Script for Post Processing')
     progressbars_group_parser = expert_group.add_mutually_exclusive_group(required=False)
-    expert_group.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file (needs --configfile)')
+    expert_group.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in configuration file (needs --configfile)')
     expert_group.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
     # Possible values with examples:

@@ -214,32 +214,19 @@ function patch_font {
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
   config_dir=$( cd "$( dirname "$f" )" && pwd)
 
-  # source the font config file if exists:
-  # fetches for example config_patch_flags
-  unset config_patch_flags
+  # find the font config file:
   if [ -f "$config_dir/config.cfg" ]
   then
-    # shellcheck source=/dev/null
-    source "$config_dir/config.cfg"
+    font_config="--configfile=$config_dir/config.cfg"
   elif [ -f "$config_parent_dir/config.cfg" ]
   then
-    # shellcheck source=/dev/null
-    source "$config_parent_dir/config.cfg"
+    font_config="--configfile=$config_parent_dir/config.cfg"
   elif [ -f "$(find_font_root "$config_parent_dir")/config.cfg" ]
   then
-    # shellcheck source=/dev/null
-    source "$(find_font_root "$config_parent_dir")/config.cfg"
-  fi
-
-  if [ -f "$config_dir/config.json" ]
-  then
-    # load font configuration file and remove selected ligatures:
-    font_config="--removeligatures --configfile $config_dir/config.json"
-  elif [ -f "$config_parent_dir/config.json" ]
-  then
-    font_config="--removeligatures --configfile $config_parent_dir/config.json"
+    font_config="--configfile=$(find_font_root "$config_parent_dir")/config.cfg"
   else
-    font_config=""
+    # We need to give some argument because empty arguments will break the patcher call
+    font_config="-q"
   fi
 
   if [ "$post_process" ]
@@ -255,38 +242,37 @@ function patch_font {
     echo >&2 "# Could not find project parent directory"
     exit 3
   }
-  # Add logfile always (but can be overridden by config_patch_flags in config.cfg and env var NERDFONTS)
-  config_patch_flags="--debug 1 ${config_patch_flags}"
+  # Add logfile always (but can be overridden by config.cfg and env var NERDFONTS)
   # Use absolute path to allow fontforge being an AppImage (used in CI)
   PWD=$(pwd)
   # Create "Nerd Font"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script \"${PWD}/font-patcher\" \"$f\" -q ${font_config} $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q \"${font_config}\" $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
   fi
   # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
-  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" "$f" -q ${font_config} $post_process -c --no-progressbars \
-                    --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q "${font_config}" $post_process -c --no-progressbars \
+                    --outputdir "${patched_font_dir}" ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
   if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
   # Create "Nerd Font Mono"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script \"${PWD}/font-patcher\" \"$f\" -q -s ${font_config} $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q -s \"${font_config}\" $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
   fi
   # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
-  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" "$f" -q -s ${font_config} $post_process -c --no-progressbars \
-                    --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q -s "${font_config}" $post_process -c --no-progressbars \
+                    --outputdir "${patched_font_dir}" ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
   if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
   # Create "Nerd Font Propo"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script \"${PWD}/font-patcher\" \"$f\" -q --variable ${font_config} $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" $config_patch_flags ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q --variable \"${font_config}\" $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
   fi
   # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
-  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" "$f" -q --variable ${font_config} $post_process -c --no-progressbars \
-                    --outputdir "${patched_font_dir}" $config_patch_flags ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q --variable "${font_config}" $post_process -c --no-progressbars \
+                    --outputdir "${patched_font_dir}" ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
   if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
 
