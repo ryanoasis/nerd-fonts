@@ -1980,6 +1980,7 @@ def setup_arguments():
     expert_group.set_defaults(progressbars=True)
 
     args = parser.parse_args()
+    setup_global_logger(args)
 
     # if we have a config file: fetch commandline arguments from there and process again with all arguments
     config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
@@ -1993,9 +1994,8 @@ def setup_arguments():
         config.read(args.configfile)
         extraflags = config.get("Config", "commandline", fallback='')
         if len(extraflags):
-            # We have no level less severe than warning here, logger will be set up later
-            logger.warning("Adding config commandline options: %s", extraflags)
-            extraflags += ' ' + args.font
+            logger.info("Adding config commandline options: %s", extraflags)
+            extraflags += ' ' + args.font # Need to re-add the mandatory argument
             args = parser.parse_args(extraflags.split(), args)
 
     if args.makegroups > 0 and not FontnameParserOK:
@@ -2081,23 +2081,9 @@ def setup_arguments():
 
     return (args, config)
 
-def main():
+def setup_global_logger(args):
+    """ Set up the logger and take options into account """
     global logger
-    logger = logging.getLogger("start") # Use start logger until we can set up something sane
-    s_handler = logging.StreamHandler(stream=sys.stdout)
-    s_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
-    logger.addHandler(s_handler)
-
-    global version
-    git_version = check_version_with_git(version)
-    allversions = "Patcher v{} ({}) (ff {})".format(
-        git_version if git_version else version, script_version, fontforge.version())
-    print("{} {}".format(projectName, allversions))
-    if git_version:
-        version = git_version
-    check_fontforge_min_version()
-    (args, conf) = setup_arguments()
-
     logger = logging.getLogger(os.path.basename(args.font))
     logger.setLevel(logging.DEBUG)
     log_to_file = (args.debugmode & 1 == 1)
@@ -2117,6 +2103,24 @@ def main():
     logger.addHandler(c_handler)
     if (args.debugmode & 1 == 1) and not log_to_file:
         logger.info("Can not write logfile, disabling")
+
+def main():
+    global logger
+    logger = logging.getLogger("start") # Use start logger until we can set up something sane
+    s_handler = logging.StreamHandler(stream=sys.stdout)
+    s_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
+    logger.addHandler(s_handler)
+
+    global version
+    git_version = check_version_with_git(version)
+    global allversions
+    allversions = "Patcher v{} ({}) (ff {})".format(
+        git_version if git_version else version, script_version, fontforge.version())
+    print("{} {}".format(projectName, allversions))
+    if git_version:
+        version = git_version
+    check_fontforge_min_version()
+    (args, conf) = setup_arguments()
     logger.debug("Naming mode %d", args.makegroups)
 
     patcher = font_patcher(args, conf)
