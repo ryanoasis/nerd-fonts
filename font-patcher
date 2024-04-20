@@ -773,28 +773,28 @@ class font_patcher:
         # let's deal with ligatures (mostly for monospaced fonts)
         # Usually removes 'fi' ligs that end up being only one cell wide, and 'ldot'
         if self.args.removeligatures:
-            if self.args.configfile:
-                logger.info("Removing ligatures from configfile `Subtables` section")
-                ligature_subtables = json.loads(self.config.get("Subtables", "ligatures"))
-                for subtable in ligature_subtables:
-                    logger.debug("Removing subtable: %s", subtable)
-                    try:
-                        self.sourceFont.removeLookupSubtable(subtable)
-                        logger.debug("Successfully removed subtable: %s", subtable)
-                    except Exception:
-                        logger.error("Failed to remove subtable: %s", subtable)
-            else:
-                logger.error("No configfile, unable to remove ligatures")
+            logger.info("Removing ligatures from configfile `Subtables` section")
+            if 'Subtables' not in self.config:
+                logger.warning("No ligature data (config file missing?)")
+                return
+            ligature_subtables = json.loads(self.config.get('Subtables', 'ligatures', fallback='[]'))
+            for subtable in ligature_subtables:
+                logger.debug("Removing subtable: %s", subtable)
+                try:
+                    self.sourceFont.removeLookupSubtable(subtable)
+                    logger.debug("Successfully removed subtable: %s", subtable)
+                except Exception:
+                    logger.error("Failed to remove subtable: %s", subtable)
 
 
     def manipulate_hints(self):
         """ Redo the hinting on some problematic glyphs """
-        if not self.args.configfile:
+        if 'Hinting' not in self.config:
             return
-        redo = json.loads(self.config.get("Hinting", "re_hint"))
+        redo = json.loads(self.config.get('Hinting', 're_hint', fallback='[]'))
         if not len(redo):
             return
-        logger.debug("Working on {} rehinting rules".format(len(redo)))
+        logger.debug("Working on {} rehinting rules (this may create a lot of fontforge warnings)".format(len(redo)))
         count = 0
         for gname in self.sourceFont:
             for regex in redo:
