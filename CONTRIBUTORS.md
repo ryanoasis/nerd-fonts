@@ -248,6 +248,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://www.tehpers.com"><img src="https://avatars.githubusercontent.com/u/2214247?v=4?s=100" width="100px;" alt="TehPers"/><br /><sub><b>TehPers</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3ATehPers" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/chansey97"><img src="https://avatars.githubusercontent.com/u/4015056?v=4?s=100" width="100px;" alt="Siyuan Chen"/><br /><sub><b>Siyuan Chen</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=chansey97" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://fahn.co"><img src="https://avatars.githubusercontent.com/u/15943089?v=4?s=100" width="100px;" alt="Gibson Fahnestock"/><br /><sub><b>Gibson Fahnestock</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Agibfahn" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/FrancescoLuzzi"><img src="https://avatars.githubusercontent.com/u/81475751?v=4?s=100" width="100px;" alt="Francesco Luzzi"/><br /><sub><b>Francesco Luzzi</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AFrancescoLuzzi" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
