@@ -1694,6 +1694,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "FrancescoLuzzi",
+      "name": "Francesco Luzzi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81475751?v=4",
+      "profile": "https://github.com/FrancescoLuzzi",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
