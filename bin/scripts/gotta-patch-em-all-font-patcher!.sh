@@ -229,15 +229,6 @@ function patch_font {
     font_config="-q"
   fi
 
-  if [ "$post_process" ]
-  then
-    # There is no postprocess active anymore, see the commit that introduced
-    # this comment for the Hack postprocess we once had. It called e.g. ttfautohint.
-    post_process="--postprocess=${repo_root_dir}/${post_process}"
-  else
-    post_process=""
-  fi
-
   cd "$repo_root_dir" || {
     echo >&2 "# Could not find project parent directory"
     exit 3
@@ -248,30 +239,30 @@ function patch_font {
   # Create "Nerd Font"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q \"${font_config}\" $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q \"${font_config}\" -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
   fi
   # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
-  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q "${font_config}" $post_process -c --no-progressbars \
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q "${font_config}" -c --no-progressbars \
                     --outputdir "${patched_font_dir}" ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
   if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
   # Create "Nerd Font Mono"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q -s \"${font_config}\" $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q -s \"${font_config}\" -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
   fi
   # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
-  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q -s "${font_config}" $post_process -c --no-progressbars \
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q -s "${font_config}" -c --no-progressbars \
                     --outputdir "${patched_font_dir}" ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
   if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
   # Create "Nerd Font Propo"
   if [ -n "${verbose}" ]
   then
-    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q --variable \"${font_config}\" $post_process -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
+    echo "fontforge -quiet -script \"${PWD}/font-patcher\" --debug 1 \"$f\" -q --variable \"${font_config}\" -c --no-progressbars --outputdir \"${patched_font_dir}\" ${NERDFONTS}"
   fi
   # shellcheck disable=SC2086 # We want splitting for the unquoted variables to get multiple options out of them
-  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q --variable "${font_config}" $post_process -c --no-progressbars \
+  { OUT=$(fontforge -quiet -script "${PWD}/font-patcher" --debug 1 "$f" -q --variable "${font_config}" -c --no-progressbars \
                     --outputdir "${patched_font_dir}" ${NERDFONTS} 2>&1 1>&3 3>&- ); } 3>&1
   # shellcheck disable=SC2181 # Checking the code directly is very unreadable here, as we execute a whole block
   if [ $? -ne 0 ]; then printf "%s\nPatcher run aborted!\n\n" "$OUT"; fi
