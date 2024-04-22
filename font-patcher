@@ -944,7 +944,7 @@ class font_patcher:
             0xf0de: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}}
         }
         SYM_ATTR_HEAVYBRACKETS = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa1!', 'params': {'ypadding': 0.3, 'careful': True}}
+            'default': {'align': 'c', 'valign': 'c', 'stretch': '^pa1!', 'params': {'ypadding': 0.3, 'careful': True}}
         }
         SYM_ATTR_BOX = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02, 'dont_copy': box_keep}},
