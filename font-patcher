@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.13.1"
+script_version = "4.14.0"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -320,10 +320,10 @@ def create_filename(fonts):
 
 
 class font_patcher:
-    def __init__(self, args):
+    def __init__(self, args, conf):
         self.args = args  # class 'argparse.Namespace'
         self.sym_font_args = []
-        self.config = None  # class 'configparser.ConfigParser'
+        self.config = conf  # class 'configparser.ConfigParser'
         self.sourceFont = None  # class 'fontforge.font'
         self.patch_set = None  # class 'list'
         self.font_dim = None  # class 'dict'
@@ -332,7 +332,6 @@ class font_patcher:
         self.symbolsonly = False # Are we generating the SymbolsOnly font?
         self.onlybitmaps = 0
         self.essential = set()
-        self.config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
         self.xavgwidth = [] # list of ints
 
     def patch(self, font):
@@ -340,6 +339,7 @@ class font_patcher:
         self.setup_version()
         self.assert_monospace()
         self.remove_ligatures()
+        self.manipulate_hints()
         self.get_essential_references()
         self.get_sourcefont_dimensions()
         self.setup_patch_set()
@@ -772,20 +772,39 @@ class font_patcher:
     def remove_ligatures(self):
         # let's deal with ligatures (mostly for monospaced fonts)
         # Usually removes 'fi' ligs that end up being only one cell wide, and 'ldot'
-        if self.args.configfile and self.config.read(self.args.configfile):
-            if self.args.removeligatures:
-                logger.info("Removing ligatures from configfile `Subtables` section")
-                ligature_subtables = json.loads(self.config.get("Subtables", "ligatures"))
-                for subtable in ligature_subtables:
-                    logger.debug("Removing subtable: %s", subtable)
-                    try:
-                        self.sourceFont.removeLookupSubtable(subtable)
-                        logger.debug("Successfully removed subtable: %s", subtable)
-                    except Exception:
-                        logger.error("Failed to remove subtable: %s", subtable)
-        elif self.args.removeligatures:
-            logger.error("Unable to read configfile, unable to remove ligatures")
+        if self.args.removeligatures:
+            logger.info("Removing ligatures from configfile `Subtables` section")
+            if 'Subtables' not in self.config:
+                logger.warning("No ligature data (config file missing?)")
+                return
+            ligature_subtables = json.loads(self.config.get('Subtables', 'ligatures', fallback='[]'))
+            for subtable in ligature_subtables:
+                logger.debug("Removing subtable: %s", subtable)
+                try:
+                    self.sourceFont.removeLookupSubtable(subtable)
+                    logger.debug("Successfully removed subtable: %s", subtable)
+                except Exception:
+                    logger.error("Failed to remove subtable: %s", subtable)
 
+
+    def manipulate_hints(self):
+        """ Redo the hinting on some problematic glyphs """
+        if 'Hinting' not in self.config:
+            return
+        redo = json.loads(self.config.get('Hinting', 're_hint', fallback='[]'))
+        if not len(redo):
+            return
+        logger.debug("Working on {} rehinting rules (this may create a lot of fontforge warnings)".format(len(redo)))
+        count = 0
+        for gname in self.sourceFont:
+            for regex in redo:
+                if re.fullmatch(regex, gname):
+                    glyph = self.sourceFont[gname]
+                    glyph.autoHint()
+                    glyph.autoInstr()
+                    count += 1
+                    break
+        logger.info("Rehinted {} glyphs".format(count))
 
     def assert_monospace(self):
         # Check if the sourcefont is monospaced
@@ -1886,6 +1905,7 @@ def check_version_with_git(version):
     return False
 
 def setup_arguments():
+    """ Parse the command line parameters and load the config file if needed """
     parser = argparse.ArgumentParser(
         description=(
             'Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs\n\n'
@@ -1935,7 +1955,7 @@ def setup_arguments():
 
     expert_group = parser.add_argument_group('Expert Options')
     expert_group.add_argument('--boxdrawing',                              dest='forcebox',         default=False, action='store_true', help='Force patching in (over existing) box drawing glyphs')
-    expert_group.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for JSON configuration file (see sample: src/config.sample.json)')
+    expert_group.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for configuration file (see sample: src/config.sample.cfg)')
     expert_group.add_argument('--custom',                                  dest='custom',           default=False, type=str,            help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
 
     expert_group.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
@@ -1946,7 +1966,7 @@ def setup_arguments():
     expert_group.add_argument('--name',                                    dest='force_name',       default=None, type=str,             help='Specify naming source (\'full\', \'postscript\', \'filename\', or concrete free name-string)')
     expert_group.add_argument('--postprocess',                             dest='postprocess',      default=False, type=str,            help='Specify a Script for Post Processing')
     progressbars_group_parser = expert_group.add_mutually_exclusive_group(required=False)
-    expert_group.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in JSON configuration file (needs --configfile)')
+    expert_group.add_argument('--removeligs', '--removeligatures',         dest='removeligatures',  default=False, action='store_true', help='Removes ligatures specificed in configuration file (needs --configfile)')
     expert_group.add_argument('--xavgcharwidth',                           dest='xavgwidth',        default=None,  type=int, nargs='?', help='Adjust xAvgCharWidth (optional: concrete value)', const=True)
     # --xavgcharwidth for compatibility with old applications like notepad and non-latin fonts
     # Possible values with examples:
@@ -1960,6 +1980,23 @@ def setup_arguments():
     expert_group.set_defaults(progressbars=True)
 
     args = parser.parse_args()
+    setup_global_logger(args)
+
+    # if we have a config file: fetch commandline arguments from there and process again with all arguments
+    config = configparser.ConfigParser(empty_lines_in_values=False, allow_no_value=True)
+    if args.configfile:
+        if not os.path.isfile(args.configfile):
+            logger.critical("Configfile does not exist: %s", args.configfile)
+            sys.exit(1)
+        if not os.access(args.configfile, os.R_OK):
+            logger.critical("Can not open configfile for reading: %s", args.configfile)
+            sys.exit(1)
+        config.read(args.configfile)
+        extraflags = config.get("Config", "commandline", fallback='')
+        if len(extraflags):
+            logger.info("Adding config commandline options: %s", extraflags)
+            extraflags += ' ' + args.font # Need to re-add the mandatory argument
+            args = parser.parse_args(extraflags.split(), args)
 
     if args.makegroups > 0 and not FontnameParserOK:
         logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
@@ -2042,25 +2079,11 @@ def setup_arguments():
             logger.critical("--xavgcharwidth takes only numbers up to 16384")
             sys.exit(2)
 
-    return args
+    return (args, config)
 
-def main():
+def setup_global_logger(args):
+    """ Set up the logger and take options into account """
     global logger
-    logger = logging.getLogger("start") # Use start logger until we can set up something sane
-    s_handler = logging.StreamHandler(stream=sys.stdout)
-    s_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
-    logger.addHandler(s_handler)
-
-    global version
-    git_version = check_version_with_git(version)
-    allversions = "Patcher v{} ({}) (ff {})".format(
-        git_version if git_version else version, script_version, fontforge.version())
-    print("{} {}".format(projectName, allversions))
-    if git_version:
-        version = git_version
-    check_fontforge_min_version()
-    args = setup_arguments()
-
     logger = logging.getLogger(os.path.basename(args.font))
     logger.setLevel(logging.DEBUG)
     log_to_file = (args.debugmode & 1 == 1)
@@ -2080,9 +2103,27 @@ def main():
     logger.addHandler(c_handler)
     if (args.debugmode & 1 == 1) and not log_to_file:
         logger.info("Can not write logfile, disabling")
+
+def main():
+    global logger
+    logger = logging.getLogger("start") # Use start logger until we can set up something sane
+    s_handler = logging.StreamHandler(stream=sys.stdout)
+    s_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
+    logger.addHandler(s_handler)
+
+    global version
+    git_version = check_version_with_git(version)
+    global allversions
+    allversions = "Patcher v{} ({}) (ff {})".format(
+        git_version if git_version else version, script_version, fontforge.version())
+    print("{} {}".format(projectName, allversions))
+    if git_version:
+        version = git_version
+    check_fontforge_min_version()
+    (args, conf) = setup_arguments()
     logger.debug("Naming mode %d", args.makegroups)
 
-    patcher = font_patcher(args)
+    patcher = font_patcher(args, conf)
 
     sourceFonts = []
     all_fonts = fontforge.fontsInFile(args.font)
