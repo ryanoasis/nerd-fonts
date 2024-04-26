@@ -90,7 +90,8 @@
 061		i_seti_asm				asm.svg
 062		i_seti_audio				audio.svg
 063		i_seti_babel				babel.svg
-064		i_seti_bazel				bazel.svg
+064		i_custom_bazel				bazel_nf.svg
+064		i_seti_bazel
 065		i_seti_bicep				bicep.svg
 066		i_seti_bsl				bsl.svg
 067		i_seti_cake_php				cake_php.svg
