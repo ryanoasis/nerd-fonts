@@ -122,7 +122,8 @@
 090		i_seti_error				error.svg
 091		i_seti_eslint				eslint.svg
 092		i_seti_ethereum				ethereum.svg
-093		i_seti_firebase				firebase.svg
+093		i_custom_firebase			firebase_nf.svg
+093		i_seti_firebase
 094		i_seti_firefox				firefox.svg
 095		i_seti_font				font.svg
 096		i_seti_f_sharp				f-sharp.svg
