@@ -25,7 +25,8 @@
 008		i_seti_play_arrow
 009		i_seti_sass				sass.svg
 010		i_seti_rails				rails.svg
-011		i_seti_ruby				ruby.svg
+011		i_custom_ruby				ruby_nf.svg
+011		i_seti_ruby
 012		i_seti_python				python.svg
 013		i_seti_heroku				heroku.svg
 014		i_seti_php				php.svg
@@ -90,7 +91,8 @@
 061		i_seti_asm				asm.svg
 062		i_seti_audio				audio.svg
 063		i_seti_babel				babel.svg
-064		i_seti_bazel				bazel.svg
+064		i_custom_bazel				bazel_nf.svg
+064		i_seti_bazel
 065		i_seti_bicep				bicep.svg
 066		i_seti_bsl				bsl.svg
 067		i_seti_cake_php				cake_php.svg
@@ -121,7 +123,8 @@
 090		i_seti_error				error.svg
 091		i_seti_eslint				eslint.svg
 092		i_seti_ethereum				ethereum.svg
-093		i_seti_firebase				firebase.svg
+093		i_custom_firebase			firebase_nf.svg
+093		i_seti_firebase
 094		i_seti_firefox				firefox.svg
 095		i_seti_font				font.svg
 096		i_seti_f_sharp				f-sharp.svg
