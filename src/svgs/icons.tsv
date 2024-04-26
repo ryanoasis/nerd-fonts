@@ -25,7 +25,8 @@
 008		i_seti_play_arrow
 009		i_seti_sass				sass.svg
 010		i_seti_rails				rails.svg
-011		i_seti_ruby				ruby.svg
+011		i_custom_ruby				ruby_nf.svg
+011		i_seti_ruby
 012		i_seti_python				python.svg
 013		i_seti_heroku				heroku.svg
 014		i_seti_php				php.svg
