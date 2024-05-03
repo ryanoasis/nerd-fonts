@@ -1722,6 +1722,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "my4ng",
+      "name": "Michael Yang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17978089?v=4",
+      "profile": "https://github.com/my4ng",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
