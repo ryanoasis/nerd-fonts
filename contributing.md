@@ -30,11 +30,11 @@ Common types for this project include: `code`, `doc`, `translation`, `review`. F
 ## Steps for updating an existing font
 
 ### 1. Update original (unpatched) version
-* Copy and replace the existing unpatched version of the font and any readme and/or license files in the `src/unpatched-fonts/XYZ-font` directory
-  * e.g. Updating *XYZ Font*, update files in directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
-  * Make sure to update the correct subfolders for each font style (e.g. `src/unpatched-fonts/xyz/bold/{BOLD FONT FILES HERE}`), if applicable
+* Copy and replace the existing unpatched version of the font and any readme and/or license files in the `src/unpatched-fonts/XYZ` directory
+  * e.g. Updating *XYZ Font*, update files in directory `src/unpatched-fonts/XYZ/{PUT FONT FILES HERE}`
+  * Make sure to update the correct subfolders for each font style (e.g. `src/unpatched-fonts/XYZ/Bold/{BOLD FONT FILES HERE}`), but only if the subfolder structure is already existing
   * Update version information in the `readme.md` file(s) and `bin/scripts/lib/fonts.json`
-  * Add all the modifications into a git commit.
+  * Add all the modifications into a git commit
 ### 2. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
   * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete --debug 2`
@@ -52,13 +52,13 @@ This is not needed and you should never commit any patched files directly to the
 * Check the license even allows the font to be modified and shared
 ### 2. Add original (unpatched) version
 * Add the unpatched version of the font and any license files to the `src/unpatched-fonts/` directory inside a new directory
-  * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/xyz/{PUT FONT FILES HERE}`
+  * e.g. Adding *XYZ Font*, create directory `src/unpatched-fonts/XYZ/{PUT FONT FILES HERE}`
   * Do not make subfolders for each font style
-  * Add a `README.md` file to `src/unpatched-fonts/xyz` that follows the style of the existing fonts.
-  * If the font has Oblique instead of Italic, set that (and other specials) in the `config.cfg` file
+  * Add a `README.md` file to `src/unpatched-fonts/XYZ` that follows the style of the existing fonts
+  * If the font has only Oblique instead of Italic, set that (and other specials) in the `config.cfg` file
   * Update information in the `/readme.md` file(s)
   * Insert font into `bin/scripts/lib/fonts.json`; use `repoRelease=false`
-  * Add all the modifications into a git commit.
+  * Add all the modifications into a git commit
 ### 3. Execute basic testing
 * Do a basic test with the new font to ensure it patches correctly and generates a new font file, e.g.
   * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete --debug 2`
@@ -67,16 +67,16 @@ This is not needed and you should never commit any patched files directly to the
 * When fairly satisfied the font patches correctly, run the following:
   * Patch **all** of the variations/options, e.g.
     * `NERDFONTS='--debug 2 --makegroups 1' ./gotta-patch-em-all-font-patcher\!.sh /XYZ`
-  * If there are name length problems you might want to add `--makegroups 2` or increasing (3, 4, ...), until all fonts of the set come out without error.
-    To increase testing speed add `--dry` to the `NERDFONTS` variable above.
-  * Add the needed `makegroups` level (if it is not 1) to the `config.cfg` file and ammend your commit.
+  * If there are name length problems you might want to use `--makegroups 2` or increasing (3, 4, ...), until all fonts of the set come out without error.
+  * To increase testing speed add `--dry` to the `NERDFONTS` variable above.
+  * Add the needed `makegroups` level (if it is not 1) to the `config.cfg` file and amend your commit.
 ### 5. Release
 * As we do not release directly to the repository anymore the new font will only be seen on a real release.
 * For that the font image preview will also be needed (`generate-font-image-previews.sh`).
 * What is automated via Github workflows and what not might change over time, so nothing is specified here.
 
 ## Steps to add a new icon to the core set
-Codepoints in the code set are a scarce resource, so in general it is unlikely that a icon will be added.
+Codepoints in the code set are a scarce resource, so in general it is unlikely that an icon will be added.
 * To add a icon one just needs to throw the svg into the correct directory and add a line to `icons.tsv`.
 * The workflow than automagically updates the `i_seti.sh` and the `original-source.otf` (workflow `PackSVGs`).
 
@@ -87,7 +87,7 @@ Codepoints in the code set are a scarce resource, so in general it is unlikely t
   * Pull Requests and bugfixes are directly merged into the default branch after sanity testing
   * The default branch is basically consider the main developer branch
     * We no longer wait to get changes into the default branch when there is a release/milestone/version!
-  * the release branches and version tags are considered stable and frozen
+  * The release branches and version tags are considered stable and frozen
 * This project is using [Semantic Versioning 2.0.0](http://semver.org/)
   * If a bugfix or PR is *not* trivial it will likely end up in the next **MINOR** version
   * If a bugfix or PR *is* trivial *or* critical it will likely end up in the next **PATCH** version
