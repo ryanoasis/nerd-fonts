@@ -211,7 +211,7 @@ class FontnameTools:
         ( '(.*dyslexic ?m)ono',         r'\1'), # Open Dyslexic Mono -> Open Dyslexic M
         ( '(overpass ?m)ono',           r'\1'), # Overpass Mono -> Overpass M
         ( '(proggyclean) ?tt',          r'\1'), # Remove TT from ProggyClean
-        ( '(terminess) ?\(ttf\)',       r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
+        ( '(terminess) ?(ttf)',         r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
         ( '(.*ne)on',                   r'\1'), # Monaspace shorten face name
         ( '(.*ar)gon',                  r'\1'), # Monaspace shorten face name
         ( '(.*kr)ypton',                r'\1'), # Monaspace shorten face name
@@ -399,7 +399,7 @@ class FontnameTools:
                 ('Bold-Italic', 'BoldItalic'), # Terminus
             ]:
             name = re.sub(r'\b' + special[0] + r'\b', special[1], name, 1, re.IGNORECASE)
-        name = re.sub('[_\s]+', ' ', name)
+        name = re.sub(r'[_\s]+', ' ', name)
         matches = re.match(r'([^-]+)(?:-(.*))?', name)
         familyname = FontnameTools.camel_casify(matches.group(1))
         style = matches.group(2)
