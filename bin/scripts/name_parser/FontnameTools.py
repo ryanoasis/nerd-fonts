@@ -211,7 +211,7 @@ class FontnameTools:
         ( '(.*dyslexic ?m)ono',         r'\1'), # Open Dyslexic Mono -> Open Dyslexic M
         ( '(overpass ?m)ono',           r'\1'), # Overpass Mono -> Overpass M
         ( '(proggyclean) ?tt',          r'\1'), # Remove TT from ProggyClean
-        ( '(terminess) ?(ttf)',         r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
+        ( r'(terminess) ?\(ttf\)',      r'\1'), # Remove TTF from Terminus (after renamed to Terminess)
         ( '(.*ne)on',                   r'\1'), # Monaspace shorten face name
         ( '(.*ar)gon',                  r'\1'), # Monaspace shorten face name
         ( '(.*kr)ypton',                r'\1'), # Monaspace shorten face name
