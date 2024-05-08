@@ -1731,6 +1731,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Markov-Komarov",
+      "name": "マルコフ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83531009?v=4",
+      "profile": "https://github.com/Markov-Komarov",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
