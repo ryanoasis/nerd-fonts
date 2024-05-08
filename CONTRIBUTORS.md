@@ -252,6 +252,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/zaucy"><img src="https://avatars.githubusercontent.com/u/1284289?v=4?s=100" width="100px;" alt="Ezekiel Warren"/><br /><sub><b>Ezekiel Warren</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=zaucy" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/my4ng"><img src="https://avatars.githubusercontent.com/u/17978089?v=4?s=100" width="100px;" alt="Michael Yang"/><br /><sub><b>Michael Yang</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=my4ng" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Markov-Komarov"><img src="https://avatars.githubusercontent.com/u/83531009?v=4?s=100" width="100px;" alt="マルコフ"/><br /><sub><b>マルコフ</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AMarkov-Komarov" title="Bug reports">🐛</a></td>
+    </tr>
   </tbody>
 </table>
 
