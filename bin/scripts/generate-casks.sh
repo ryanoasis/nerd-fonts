@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.3.0
-# Script Version: 2.2.3
+# Script Version: 2.3.0
 #
 # Iterates over all [*] archived fonts
-# to generate ruby cask files for homebrew-fonts (https://github.com/Homebrew/homebrew-cask-fonts)
-# * Only adds non-Windows versions of the fonts
+# to generate ruby cask files for homebrew-fonts (https://github.com/Homebrew/homebrew-cask)
 # * Needs the zip archives in archives/ (i.e. run `./archive-fonts.sh` first)
 #
 # Uses the current release version (including drafts) of the repo.
@@ -236,14 +235,12 @@ while read -r filename; do
         FONTS=("${FONTS[@]}" "$file")
     done < <(find "$searchdir" -type f -iname '*.[ot]tf' -print0 | LC_ALL=C sort -z)
 
-    outputdir=$PWD/../casks
-
     echo "$LINE_PREFIX Generating cask for: $basename"
 
-    [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
-
     caskname="font-${caskbasename}-nerd-font"
-    to="$outputdir/${caskname}.rb"
+    outputdir="${PWD}/../casks/${caskname:0:6}"
+    [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
+    to="${outputdir}/${caskname}.rb"
 
     clear_file "$to"
     write_header "$to" "$caskname"
