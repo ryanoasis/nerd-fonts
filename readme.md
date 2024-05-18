@@ -217,7 +217,6 @@ curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBra
 All fonts are available via [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) on macOS (OS X)
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 
