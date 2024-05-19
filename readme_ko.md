@@ -231,10 +231,9 @@ _주의_: 현재 저장소를 **클론 해야 합니다**
 
 > **macOS**에서 **Homebrew**를 사용하는 최고의 옵션.
 
-macOS (OS X)의 [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts)를 통해 모든 폰트를 사용할 수 있습니다.
+macOS (OS X)의 [Homebrew Cask](https://github.com/Homebrew/homebrew-cask)를 통해 모든 폰트를 사용할 수 있습니다.
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 

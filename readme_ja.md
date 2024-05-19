@@ -230,10 +230,9 @@ _注意_: 今の所、リポジトリの**クローンが必要です。**
 
 > **macOS** で、かつ、**Homebrew** を使いたい場合に一番適した選択肢です。
 
-macOS (OS X) では [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) を通じて全てのフォントが利用できます。
+macOS (OS X) では [Homebrew Cask](https://github.com/Homebrew/homebrew-cask) を通じて全てのフォントが利用できます。
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 

@@ -230,10 +230,9 @@ _Nota_: Por agora, **implica dar clone** do repositório
 
 > Melhor opção caso utilizes **macOS** e queres utilizar **Homebrew**.
 
-Todos os tipos de letra estão disponíveis através de [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) para macOS (OS X)
+Todos os tipos de letra estão disponíveis através de [Homebrew Cask](https://github.com/Homebrew/homebrew-cask) para macOS (OS X)
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 

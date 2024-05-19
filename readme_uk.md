@@ -231,10 +231,9 @@ _Примітка_: **необхідне клонування** репозито
 
 > Найкращий варіант, якщо ви використовуєте  **macOS** і хочете використовувати **нативні шрифти**.
 
-Усі шрифти доступні через [нативні Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) on macOS (OS X)
+Усі шрифти доступні через [нативні Cask](https://github.com/Homebrew/homebrew-cask) on macOS (OS X)
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 

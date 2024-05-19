@@ -248,10 +248,9 @@ _ध्यान दें_:**क्लोनिंग की आवश्यक
 
 > सबसे अच्छा विकल्प अगर चालू है**मैक ओएस**और उपयोग करना चाहते हैं**होमब्रू**.
 
-सभी फोंट के माध्यम से उपलब्ध हैं[Homebrew पीपा फ़ॉन्ट्स](https://github.com/Homebrew/homebrew-cask-fonts)मैकोज़ (ओएस एक्स) पर
+सभी फोंट के माध्यम से उपलब्ध हैं[Homebrew पीपा फ़ॉन्ट्स](https://github.com/Homebrew/homebrew-cask)मैकोज़ (ओएस एक्स) पर
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 
