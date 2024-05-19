@@ -266,6 +266,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/Markov-Komarov"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/83531009?v=4?s=100" width="100px;" alt="マルコフ"/><br /><sub><b>マルコフ</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AMarkov-Komarov" title="Bug reports">🐛</a></span>
+<span style="display: inline-block; width: 130px;"><a href="http://veritemugabo.com"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/53856673?v=4?s=100" width="100px;" alt="Verité Mugabo"/><br /><sub><b>Verité Mugabo</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=veritem" title="Documentation">📖</a></span>
 
 
 
