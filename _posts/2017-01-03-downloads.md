@@ -41,7 +41,6 @@ page: font-downloads
 <h3 class="center"> <span></span> Homebrew </h3>
 <div align="center" markdown="1">
 ```sh
-brew tap homebrew/cask-fonts &&
 brew install --cask font-<FONT NAME>-nerd-font
 ```
 </div>
