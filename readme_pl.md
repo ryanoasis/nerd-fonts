@@ -306,10 +306,9 @@ _Uwaga_: Od teraz **wymaga kolonowania** repo
 
 > Najlepsza opcja jeśli używasz **macOS** i chcesz skorzystac z **Homebrew**.
 
-Wszystkie czcionki są dostępne na [Homebrew Fonts](https://github.com/Homebrew/homebrew-cask-fonts) na macOS (OS X)
+Wszystkie czcionki są dostępne na [Homebrew Cask](https://github.com/Homebrew/homebrew-cask) na macOS (OS X)
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 

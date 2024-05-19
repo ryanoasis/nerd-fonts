@@ -242,10 +242,9 @@ o, en Powershell (solo Windows):
 
 > Es la mejor opcion si estás en **macOS** y quieres usar **Homebrew**.
 
-Todas las fuentes están disponibles en [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) en macOS (OS X)
+Todas las fuentes están disponibles en [Homebrew Cask](https://github.com/Homebrew/homebrew-cask) en macOS (OS X)
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 

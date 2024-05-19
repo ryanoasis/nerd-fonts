@@ -234,10 +234,9 @@ _Nota_: **Richiede di clonare** il repo al commit corrente
 
 > È l‘opzione migliore se stai usando **macOS** e vuoi utilizzare **Homebrew**.
 
-Tutti i font sono disponibili via la [Homebrew Cask Fonts](https://github.com/Homebrew/homebrew-cask-fonts) su macOS (OS X)
+Tutti i font sono disponibili via la [Homebrew Cask](https://github.com/Homebrew/homebrew-cask) su macOS (OS X)
 
 ```sh
-brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 
