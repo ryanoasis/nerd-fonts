@@ -254,6 +254,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Markov-Komarov"><img src="https://avatars.githubusercontent.com/u/83531009?v=4?s=100" width="100px;" alt="マルコフ"/><br /><sub><b>マルコフ</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AMarkov-Komarov" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://veritemugabo.com"><img src="https://avatars.githubusercontent.com/u/53856673?v=4?s=100" width="100px;" alt="Verité Mugabo"/><br /><sub><b>Verité Mugabo</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=veritem" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
