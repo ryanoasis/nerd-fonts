@@ -1749,6 +1749,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "kjkent",
+      "name": "Kristopher James Kent",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96310790?v=4",
+      "profile": "https://kjkent.dev",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
