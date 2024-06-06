@@ -1758,6 +1758,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "kaBeech",
+      "name": "Kyle Beechly",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97925125?v=4",
+      "profile": "http://kabeech.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "repoType": "github",
