@@ -169,6 +169,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [RecMono Nerd Font][p-recursive]                  | [Recursive Mono][f-recursive]          | 1.085      | NO   |
 | [RobotoMono Nerd Font][p-roboto]                  | [Roboto Mono][f-roboto]                | 3.0        | NO   |
 | [SauceCodePro Nerd Font][p-source-code-pro]       | [Source Code Pro][f-source]            | 2.042      | YES  |
+| [SeriousSans Nerd Font][p-serious]                | [Serious Sans][f-serious]              | 3.0.1      | NO   |
 | [ShureTechMono Nerd Font][p-share-tech-mono]      | [Share Tech Mono][f-share]             | 1.003      | YES  |
 | [SpaceMono Nerd Font][p-space-mono]               | [Space Mono][f-space]                  | 1.001      | NO   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]             | 4.49.3     | YES  |
@@ -696,6 +697,7 @@ Font repos
 [f-recursive]:https://github.com/arrowtype/recursive
 [f-roboto]:https://fonts.google.com/specimen/Roboto+Mono
 [f-share]:https://fonts.google.com/specimen/Share+Tech+Mono
+[f-serious]:https://github.com/kaBeech/serious-sans
 [f-source]:https://github.com/adobe-fonts/source-code-pro
 [f-space]:https://fonts.google.com/specimen/Space+Mono
 [f-terminus]:http://terminus-font.sourceforge.net
@@ -765,6 +767,7 @@ Patched Font internal links
 [p-proggy-clean]:patched-fonts/ProggyClean
 [p-recursive]:patched-fonts/Recursive
 [p-roboto]:patched-fonts/RobotoMono
+[p-serious]:patched-fonts/SeriousSans
 [p-share-tech-mono]:patched-fonts/ShareTechMono
 [p-source-code-pro]:patched-fonts/SourceCodePro
 [p-space-mono]:patched-fonts/SpaceMono
