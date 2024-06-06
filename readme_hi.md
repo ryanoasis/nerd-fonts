@@ -153,6 +153,7 @@ _अगर तुम..._
 | [ProFont (x11) Nerd Font][p-profont]                     |                                       | नहीं     | 1000     | ![w]![m2]![l]    |
 | [ProggyClean Nerd Font][p-proggy-clean]                  |                                       | नहीं     | 2048     | अपूर्ण           |
 | [रोबोट मोनो][p-roboto]                                   |                                       | नहीं     | 2048     | ![w]![m2]![l]    |
+| [SeriousSans Nerd Font][p-serious]                | [Serious Sans][f-serious]           | नहीं    | 1000     | ![w]![m2]![l]   |
 | [सॉस कोड बेवकूफ फ़ॉन्ट][p-source-code-pro]               | [स्रोत][f-source]                     | हां      | 1000     | ![w]![m2]![l]    |
 | [शुरे ते च बात ने आरडी फॉन्ट \*][p-share-tech-mono]      | [फैशनेबल हाथ च व्यक्ति][f-share]      | हां      | 1000     | ![w]![m2]![l]    |
 | [अंतरिक्ष मोनो बेवकूफ फ़ॉन्ट][p-space-mono]              | [अंतरिक्ष मोनो][f-space]              | नहीं     | 1000     | ![w]![m2]![l]    |

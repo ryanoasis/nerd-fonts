@@ -783,6 +783,19 @@
       "caskName": "roboto-mono",
       "repoRelease": true,
       "description": "Dashed zero, curved and straight character lines"
+    },    {
+      "unpatchedName": "Serious Sans",
+      "licenseId": "MIT",
+      "RFN": false,
+      "version": "3.0.1",
+      "patchedName": "SeriousSans",
+      "folderName": "SeriousSans",
+      "imagePreviewFont": "SeriousSans Nerd Font",
+      "imagePreviewFontSource": "SeriousSans/Regular/SeriousSans-Regular.otf",
+      "linkPreviewFont": "serious-sans",
+      "caskName": "serious-sans",
+      "repoRelease": false,
+      "description": "A legible monospace font for playful professionals. Comic Sans for hackers."
     },
     {
       "unpatchedName": "Share Tech Mono",

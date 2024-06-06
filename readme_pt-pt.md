@@ -150,6 +150,7 @@ See [Wiki: Nomes dos ícones em Unix Shell][wiki-icon-names-in-shell]
 | [ProggyClean Nerd Font][p-proggy-clean]           |                                     | NÃO   | 2048       | Imperfeito       |
 | [Roboto Mono][p-roboto]                           |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
 | [Sauce Code Nerd Font][p-source-code-pro]         | [Source][f-source]                  | SIM   | 1000       | ![w] ![m2] ![l]  |
+| [SeriousSans Nerd Font][p-serious]                | [Serious Sans][f-serious]           | NÃO   | 1000       | ![w] ![m2] ![l]  |
 | [Shure Tech Mono Nerd Font*][p-share-tech-mono]   | [Share Tech Mono][f-share]          | SIM   | 1000       | ![w] ![m2] ![l]  |
 | [Space Mono Nerd Font][p-space-mono]              | [Space Mono][f-space]               | NÃO   | 1000       | ![w] ![m2] ![l]  |
 | [Terminess Nerd Font*][p-terminus]                | [Terminus Font][f-terminus]         | SIM   | 1000       | ![w] ![m2] ![l]  |
