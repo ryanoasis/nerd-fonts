@@ -1758,6 +1758,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "dsvoid",
+      "name": "Dmitry S",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7375973?v=4",
+      "profile": "https://github.com/dsvoid",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
