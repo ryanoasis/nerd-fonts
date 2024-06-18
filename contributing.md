@@ -64,6 +64,8 @@ This is not needed and you should never commit any patched files directly to the
   * `fontforge --script ./font-patcher src/unpatched-fonts/XYZ/XYZ.ttf --complete --debug 2`
   * Make sure to then delete this new font file if it is in the repository (all patched fonts should be generated in the `patched-fonts` directory)
 ### 4. Run build scripts
+You should never commit any patched files directly to the repo. The Github workflow will do that at appropriate times.
+
 * When fairly satisfied the font patches correctly, run the following:
   * Patch **all** of the variations/options, e.g.
     * `NERDFONTS='--debug 2 --makegroups 1' ./gotta-patch-em-all-font-patcher\!.sh /XYZ`
