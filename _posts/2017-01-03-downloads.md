@@ -13,6 +13,7 @@ page: font-downloads
 {% for font in site.data.fonts.fonts %}
   <div class="item">
       <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ site.current_version }}/{{ font.folderName }}.zip" class="font-preview" style="background-image: url('/assets/img/previews/{{ font.imagePreviewFont }}.svg')">
+      <span class="nerd-font-invisible-text"> {{ font.patchedName }} </span>
       </a>
       {% assign upN = font.unpatchedName | split: " " | join: "" %}
       {% assign pN = font.patchedName | split: " " | join: "" %}
