@@ -1,0 +1,44 @@
+# Maintain consistent coding style across the entire project.
+
+# This is a configuration file for EditorConfig.  The settings for JavaScript, Python and C/C++
+# files are mirrored by languages in .prettierrc, .eslintrc, .flake8, .pylintrc, pyproject.toml and
+# .clang-format files that is shared accros all my codebase projects.  Keep them in sync.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+quote_type = double
+
+[*.{bash,eslint*,json*,md*,prettier*,sh,svg,todo,version*,vim,xml,yaml,yml,zsh*}]
+indent_size = 2
+max_line_length = 100
+
+[*.{css,html,js,jsx,mjs,ps1,psd1,psm1,scss,ts,tsx}]
+indent_size = 4
+max_line_length = 100
+
+[*.py]
+profile = black
+indent_size = 4
+max_line_length = 100
+
+[{.clang-format,.clang-tidy}]
+indent_size = 2
+max_line_length = 100
+
+[{CMakeLists.txt,*.{cmake,c,h,cc,hh,cpp,hpp,cxx,hxx}}]
+indent_size = 4
+max_line_length = 100
+
+[{Makefile,.gitattributes,.gitconfig,.gitcredentials,.gitmessage,.gitmodules}]
+indent_size = 8
+indent_style = tab
+
+[COMMIT_EDITMSG]
+max_line_length = 72
