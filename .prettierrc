@@ -1,0 +1,33 @@
+{
+  "endOfLine": "lf",
+  "printWidth": 100,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 4,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": "*.md",
+      "excludeFiles": "CHANGELOG.md",
+      "options": {
+        "parser": "markdown",
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "endOfLine": "lf",
+        "printWidth": 100,
+        "proseWrap": "always",
+        "semi": false,
+        "singleQuote": false,
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "useTabs": false
+      }
+    },
+    {
+      "files": [".clang*", ".eslint*", ".prettierrc", "*.json", "*.yaml", "*.yml"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}
