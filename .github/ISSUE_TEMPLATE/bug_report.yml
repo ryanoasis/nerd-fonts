@@ -7,11 +7,8 @@ body:
       label: Requirements
       options:
         - label: "I have searched the [issues](https://github.com/ryanoasis/nerd-fonts/issues) for my issue and found nothing related or helpful"
-          required: true
         - label: "I have searched the [FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting) for help"
-          required: true
         - label: "I have checked the [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki) for help"
-          required: true
 
   - type: textarea
     attributes:
@@ -40,8 +37,8 @@ body:
 
   - type: input
     attributes:
-      label: Terminal Emulator
-      placeholder: Specify your terminal emulator (e.g., iTerm2, urxvt, gnome-terminal).
+      label: Terminal Emulator (and the title of the terminal window)
+      placeholder: Specify your terminal emulator (e.g., iTerm2, urxvt, kitty).
 
   - type: input
     attributes:
@@ -50,5 +47,5 @@ body:
 
   - type: textarea
     attributes:
-      label: Additional Context
+      label: ★ Screenshots
       description: Include any other relevant details or screenshots here.
