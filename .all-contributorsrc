@@ -1767,6 +1767,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "gu5e",
+      "name": "guse",
+      "avatar_url": "https://avatars.githubusercontent.com/u/162893147?v=4",
+      "profile": "http://guse.dev",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
