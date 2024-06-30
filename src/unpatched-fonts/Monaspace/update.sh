@@ -12,7 +12,7 @@ ls -alh "${TMP_DIR}"
 # In order of increasing atomic mass:
 typefaces=(Neon Argon Krypton Xenon Radon)
 
-weights=(ExtraLight Light LightItalic Regular Italic Bold BoldItalic Medium MediumItalic)
+weights=(ExtraLight ExtraLightItalic Light LightItalic Regular Italic Bold BoldItalic Medium MediumItalic)
 
 for face in "${typefaces[@]}"; do
     echo "Processing ${face} ..."
