@@ -546,6 +546,9 @@ class font_patcher:
             if self.args.weather:
                 additionalFontNameSuffix += " WEA"
                 verboseAdditionalFontNameSuffix += " Plus Weather Icons"
+            if self.args.braille:
+                additionalFontNameSuffix += " B"
+                verboseAdditionalFontNameSuffix += " Plus Braille Icons"
 
         # add mono signifier to beginning of name suffix
         if self.args.single:
@@ -943,6 +946,9 @@ class font_patcher:
             0xf0dd: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}},
             0xf0de: {'align': 'c', 'valign': '', 'stretch': 'pa', 'params': {}}
         }
+        SYM_ATTR_BRAILLE = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {'overlap': -0.05}}
+        }
         SYM_ATTR_HEAVYBRACKETS = {
             'default': {'align': 'c', 'valign': 'c', 'stretch': '^pa1!', 'params': {'ypadding': 0.3, 'careful': True}}
         }
@@ -1080,6 +1086,9 @@ class font_patcher:
             # box of this range:
             range(0xf000, 0xf0cb + 1), # lots of clouds and other (Please read note above!)
         ]}
+        BRAILLE_SCALE_LIST = {'ScaleGroups': [
+            range(0x2800, 0x28ff + 1), # all Braille glyphs
+        ]}
         MDI_SCALE_LIST = None # Maybe later add some selected ScaleGroups
 
 
@@ -1111,6 +1120,7 @@ class font_patcher:
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Zap
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': False, 'SymStart': 0xF27C, 'SymEnd': 0xF306, 'SrcStart': 0xF4A9, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.codicons,             'Name': "Codicons",                'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEC1E, 'SrcStart': None,   'ScaleRules': CODI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.braille,              'Name': "Braille",                 'Filename': "UBraille.sfd",                                   'Exact': True,  'SymStart': 0x2800, 'SymEnd': 0x28FF, 'SrcStart': None,   'ScaleRules': BRAILLE_SCALE_LIST, 'Attributes': SYM_ATTR_BRAILLE},
             {'Enabled': self.args.custom,               'Name': "Custom",                  'Filename': self.args.custom,                                 'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': CUSTOM_ATTR}
         ]
 
@@ -1941,6 +1951,7 @@ def setup_arguments():
 
     sym_font_group = parser.add_argument_group('Symbol Fonts')
     sym_font_group.add_argument('-c', '--complete',                             dest='complete',             default=False, action='store_true', help='Add all available Glyphs')
+    sym_font_group.add_argument('--braille',                                    dest='braille',              default=False, action='store_true', help='Add Braille Glyphs (https://yudit.org/download/fonts/UBraille/)')
     sym_font_group.add_argument('--codicons',                                   dest='codicons',             default=False, action='store_true', help='Add Codicons Glyphs (https://github.com/microsoft/vscode-codicons)')
     sym_font_group.add_argument('--fontawesome',                                dest='fontawesome',          default=False, action='store_true', help='Add Font Awesome Glyphs (http://fontawesome.io/)')
     sym_font_group.add_argument('--fontawesomeext',                             dest='fontawesomeextension', default=False, action='store_true', help='Add Font Awesome Extension Glyphs (https://andrelzgava.github.io/font-awesome-extension/)')
@@ -2015,6 +2026,7 @@ def setup_arguments():
         args.powerlineextra = True
         args.material = True
         args.weather = True
+        args.braille = True
 
     if not args.complete:
         sym_font_args = []
