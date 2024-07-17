@@ -46,14 +46,6 @@ brew install --cask font-<FONT NAME>-nerd-font
 ```
 </div>
 <p/>
-<h3 class="center"> :// curl </h3>
-<div align="center" markdown="1">
-```sh
-curl -fLo "<FONT NAME> Nerd Font Complete.otf" \
-https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/<FONT_PATH>/complete/<FONT_NAME>%20Nerd%20Font%20Complete.otf
-```
-</div>
-<p/>
 <h3 class="center"> <span></span> Arch Community Repository</h3>
 <div markdown="1" class="center">
 Search [Nerd Fonts Packages](https://archlinux.org/groups/any/nerd-fonts/) or some special packages in [AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off)
