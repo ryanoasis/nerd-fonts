@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.4"
+script_version = "4.15.0"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -853,8 +853,9 @@ class font_patcher:
                 box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
-        # Supported params: overlap | careful | xy-ratio | dont_copy | ypadding
-        # Overlap value is used horizontally but vertically limited to 0.01
+        # Supported params: overlap | voverlap | careful | xy-ratio | dont_copy | ypadding
+        # Overlap value is used horizontally and vertically - but vertically limited to 0.01 (or specified by voverlap)
+        # Voverlap is only used if overlap is also set and sets an explicit vertical overlap value
         # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
@@ -878,8 +879,8 @@ class font_patcher:
             0xe0b3: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'xy-ratio': 0.7}},
 
             # Inverse arrow tips
-            0xe0d6: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'xy-ratio': 0.7}},
-            0xe0d7: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'xy-ratio': 0.7}},
+            0xe0d6: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'xy-ratio': 0.7, 'voverlap': 0.0}},
+            0xe0d7: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'xy-ratio': 0.7, 'voverlap': 0.0}},
 
             # Rounded arcs
             0xe0b4: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.59}},
@@ -1502,8 +1503,9 @@ class font_patcher:
                 logger.critical("Conflicting params: overlap and ypadding")
                 sys.exit(1)
             if overlap:
+                voverlap = sym_attr['params'].get('voverlap')
                 scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
-                y_overlap = min(0.01, overlap) # never aggressive vertical overlap
+                y_overlap = voverlap if voverlap is not None else min(0.01, overlap) # never aggressive vertical overlap
                 scale_ratio_y *= 1.0 + (self.font_dim['height'] / (sym_dim['height'] * scale_ratio_y)) * y_overlap
 
             # Size in x to size in y ratio limit (to prevent over-wide glyphs)
