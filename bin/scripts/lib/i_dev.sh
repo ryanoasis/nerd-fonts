@@ -198,6 +198,6 @@ i=''
 i=''
 i=''
 i=''
-i='' i_dev_sqllite=$i
+i='' i_dev_sqlite=$i
 i='' i_dev_vim=$i
 unset i
