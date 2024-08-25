@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.9"
+script_version = "4.15.0"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -318,6 +318,16 @@ def create_filename(fonts):
         sfnt_psubfam = '-' + sfnt_psubfam
     return (sfnt_pfam + sfnt_psubfam).replace(' ', '')
 
+def fetch_glyphnames():
+    """ Read the glyphname database and put it into a dictionary """
+    try:
+        glyphnamefile = os.path.abspath(os.path.dirname(sys.argv[0])) + '/glyphnames.json'
+        with open(glyphnamefile, 'r') as f:
+            namelist = json.load(f)
+            return { int(v['code'], 16): k for k, v in namelist.items() if 'code' in v }
+    except Exception as error:
+        logger.warning("Can not read glyphnames file (%s)", repr(error))
+        return {}
 
 class font_patcher:
     def __init__(self, args, conf):
@@ -333,6 +343,7 @@ class font_patcher:
         self.onlybitmaps = 0
         self.essential = set()
         self.xavgwidth = [] # list of ints
+        self.glyphnames = fetch_glyphnames()
 
     def patch(self, font):
         self.sourceFont = font
@@ -1488,7 +1499,8 @@ class font_patcher:
                 # Paste it
                 self.sourceFont.selection.select(currentSourceFontGlyph)
                 self.sourceFont.paste()
-                self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
+                self.sourceFont[currentSourceFontGlyph].glyphname = \
+                        self.glyphnames.get(currentSourceFontGlyph, sym_glyph.glyphname) if setName != 'Custom' else sym_glyph.glyphname
                 self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
             # Prepare symbol glyph dimensions

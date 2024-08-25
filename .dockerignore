@@ -2,6 +2,7 @@
 **
 !src/glyphs
 !font-patcher
+!glyphnames.json
 !bin/scripts/name_parser/Fontname*.py
 !bin/scripts/docker-entrypoint.sh
 !.codeclimate.yml
