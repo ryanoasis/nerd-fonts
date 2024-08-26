@@ -1,12 +1,13 @@
 # Devicons
 
-For more information have a look at the upstream website: https://github.com/vorillaz/devicons
+From the Devicons the non-linemark versions are selected and assembled into a custom
+icon font. This font guarantees that the codepoints of existing icons do not change
+when other icons are added or removed.
 
-This is taken directly from the repository default branch, which is ahead of release 1.8.0.
-We call it 1.8.1 here, but there is no such release.
+For more information have a look at the upstream website: https://github.com/devicons/devicon
 
-## Source bugs fixed
+The helper scripts need to be called in this order (note the individual prerequisites):
+* `analyze`
+* `generate` (possibly via `fontforge`)
 
-Glyph 0xE6B6 is defective in the original font. We hand optimized and fixed that.
-
-Version: 1.8.1
+Version: 2.16.0.custom
