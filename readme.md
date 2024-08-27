@@ -16,7 +16,7 @@
 </div>
 
 
-**Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
+**Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][devicons], [Octicons][octicons], and [others](#glyph-sets).
 
 The following flow diagram shows the current glyph sets included:
 
@@ -91,7 +91,7 @@ _If you..._
   * For more details see the [**Font Patcher**](#font-patcher) section
 * **`67`** already [patched font families](#patched-fonts)
 * Over **`10,000`** glyphs/icons combined [(more details)](#combinations)
-  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
+  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** _or_ **proportional** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
@@ -185,7 +185,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 
 ### Variations
 
-- no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
+- no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][devicons]**)
 - **double _(variable/proportional)_** or **single _(fixed/monospaced)_** or **proportional** width icon-glyphs
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
@@ -630,7 +630,7 @@ Repo References
 -->
 
 [vim-devicons]:https://github.com/ryanoasis/vim-devicons "VimDevIcons Vim Plugin (external link) ➶"
-[vorillaz-devicons]:https://vorillaz.github.io/devicons/
+[devicons]:https://github.com/devicons/devicon
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLZGava/font-awesome-extension
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
