@@ -20,6 +20,7 @@ def filename_from_name(filename):
     # Returns '-' if the icon is to be removed
     # Giving a full pathname selects a certain svg variant
     return {
+        'awk': 'fixed/awk-plain.svg', # added as fixed icon
         'bower': 'bower/bower-line.svg',
         'c_lang': 'c',
         'clojure': 'clojure/clojure-line.svg',
@@ -78,6 +79,7 @@ def suggest_new_filename(name):
     if not os.path.exists(subdir):
         return False
     if os.path.isfile(subdir):
+        # For translation to direct filename hits
         return name
     svgs = os.listdir(subdir)
     filename = file_with_ending(svgs, 'plain.svg')
@@ -102,6 +104,9 @@ with open('mapping', 'r') as f:
 new_names = os.listdir(vectorsdir)
 new_names.sort()
 new_names.remove('vorillaz') # If this fails one prerequisite step is missing
+if 'fixed' in new_names:
+    # This can exist after a generate run
+    new_names.remove('fixed')
 
 print('Found {} mapping entries and {} devicon directories'.format(
     len(remix_mapping), len(new_names)))
@@ -119,6 +124,9 @@ for orig_point, dest_point, filename, *names in remix_mapping:
     if filename:
         mapping.append((orig_point, dest_point, filename, *names))
         dirname = os.path.dirname(filename)
+        if dirname.endswith('fixed'):
+            # Translate dirname for fixed icons
+            dirname = names[0]
         if dirname in new_names:
             new_names.remove(dirname)
         continue

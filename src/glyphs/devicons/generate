@@ -23,9 +23,19 @@ fontfile = 'devicons.ttf'
 glyphsetfile = 'i_dev.sh'
 glyphsetsdir = '../../../bin/scripts/lib'
 
+def replace_with_fixed(filename):
+    base, name = os.path.split(filename)
+    base, subdir = os.path.split(base)
+    fixed = os.path.join(base, 'fixed', name)
+    if os.path.isfile(fixed):
+        print('Using fixed svg for {}'.format(name))
+        return fixed
+    return filename
+
 def addIcon(codepoint, name, filename):
     """ Add one outline file and rescale/move """
     filename = os.path.join(vectorsdir, filename)
+    filename = replace_with_fixed(filename)
     glyph = font.createChar(codepoint, name)
     if not os.path.isfile(filename):
         sys.exit("Mapping file refers to not existing file " + filename);
@@ -75,8 +85,8 @@ if subprocess.call('rm -rf devicon-* icons && tar zxf ' + archive + \
         ' && mv devicon-*/icons .', shell=True):
     sys.exit('Error unpacking archive')
 
-print('\nMixing Vorillaz Devicons in')
-if subprocess.call('cp -r vorillaz icons', shell=True):
+print('\nMixing Vorillaz Devicons and possible fixes in')
+if subprocess.call('cp -r vorillaz fixed icons', shell=True):
     sys.exit('Error mixing ...')
 
 
