@@ -5,8 +5,11 @@
 # Search for a glyph by part of its name in all patchsets
 # Usage: ./cheatsheet.sh divider
 
+# Get script directory to set source and target dirs relative to it
+sd="$( cd -- "$(dirname "${0}")" >/dev/null 2>&1 || exit ; pwd -P )"
+
 # shellcheck disable=SC1091 # Do not pull in the sourced file
-source ./lib/i_all.sh
+source "${sd}/lib/i_all.sh"
 
 # Search the key on the declared variables
 for glyph in ${!i_*}; do
