@@ -13,7 +13,7 @@ source "${sd}/lib/i_all.sh"
 
 # Search the key on the declared variables
 for glyph in ${!i_*}; do
-  if [[ "$glyph" == *"$1"* ]]; then
-    printf "%s\t%x\t%s\n" "${!glyph}" "'${!glyph}'" "$glyph"
+  if [[ "${glyph}" == *"${1}"* ]]; then
+    printf "%s\t%x\t%s\n" "${!glyph}" "'${!glyph}'" "${glyph}"
   fi
 done
