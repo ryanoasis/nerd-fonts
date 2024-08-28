@@ -4,6 +4,7 @@ Note: Usually you need to call the scripts in this directory while actually bein
 
 * `archive-font-patcher.sh`: Archives the font patcher script and subscripts and the required source glyph files [1]
 * `archive-fonts.sh`: Creates the release zip file of one or more font(s) from existing `patched-fonts/` content [1]
+* `cheatsheet.sh`: Search for a glyph by part of its name [4]
 * `data/`: Contains plain text files used to generate the CSS and cheat sheet files
 * `data/sankey/`: Contains instructions on how to create the sankey glyph table manually [3]
 * `docker-entrypoint.sh`: This script is packaged into the docker container and is usually used to start patching [2]
