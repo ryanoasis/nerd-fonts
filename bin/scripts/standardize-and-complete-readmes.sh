@@ -34,15 +34,23 @@ function appendGeneralInfo {
 function appendRfnInfo {
   local config_rfn=$1; shift
   local config_rfn_substitue=$1; shift
+  local config_rfn_exception=$1; shift
   local working_dir=$1; shift
   local to=$1; shift
-  if [ "$config_rfn" ] && [ "$config_rfn_substitue" ]
-  then
-    # add to the file
-    {
-      printf "\\n## Why \`%s\` and not \`%s\`?\\n" "$config_rfn_substitue" "$config_rfn"
-      cat "$working_dir/../../src/readme-rfn-addendum.md"
-    } >> "$to"
+  if [ "$config_rfn" ]; then
+    if [ "$config_rfn_substitue" ]; then
+      {
+        printf "\\n## Why \`%s\` and not \`%s\`?\\n" "$config_rfn_substitue" "$config_rfn"
+        printf "\\nWhat's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in particular the [Reserved Font Name mechanism][SIL-RFN]\\n\\n"
+        cat "$working_dir/../../src/readme-rfn-addendum.md"
+      } >> "$to"
+    else
+      printf "\\n## \`%s\` is a Reserved Font Name\\n\\n" "$config_rfn" >> "$to"
+      cat "$working_dir/../../src/readme-rfn-addendum.md" >> "$to"
+      if [ -n "${config_rfn_exception}" ]; then
+        printf "\\nFind Nerd Font's permission to keep the name here: %s\\n" "$config_rfn_exception" >> "$to"
+      fi
+    fi
   fi
 }
 
@@ -89,6 +97,7 @@ do
     # reset the variables
     unset config_rfn
     unset config_rfn_substitue
+    unset config_rfn_exception
     fontdata=$(jq ".fonts[] | select(.folderName == \"${base_directory}\")" "${fonts_info}")
     if [ "$(echo "$fontdata" | jq .RFN)" = "true" ]
     then
@@ -96,11 +105,14 @@ do
       config_rfn_substitue=$(echo "$fontdata" | jq -r .patchedName)
       check_config_rfn=$(tr '[:upper:]' '[:lower:]' <<< "$config_rfn" | tr -d ' ')
       check_config_rfn_sub=$(tr '[:upper:]' '[:lower:]' <<< "$config_rfn_substitue" | tr -d ' ')
+      config_rfn_exception=$(echo "$fontdata" | jq -r .RFNException)
       if [ "${check_config_rfn}" = "${check_config_rfn_sub}" ]
       then
         # Only the case with Mononoki and Envy Code R which is RFN but we do not rename (we got the permission to keep the name)
-        unset config_rfn
         unset config_rfn_substitue
+      fi
+      if [ "${config_rfn_exception}" = "null" ]; then
+        unset config_rfn_exception
       fi
     fi
     unset release_to_repo
@@ -157,7 +169,7 @@ do
       printf "# %s\\n\\n" "$base_directory"
     } >> "$to"
   fi
-  appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$sd" "$to"
+  appendRfnInfo "$config_rfn" "$config_rfn_substitue" "$config_rfn_exception" "$sd" "$to"
   appendGeneralInfo "$to" "$base_directory" "$release_to_repo"
 
 done
