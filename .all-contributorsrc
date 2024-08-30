@@ -1777,6 +1777,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "doongjohn",
+      "name": "doongjohn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40219740?v=4",
+      "profile": "https://github.com/doongjohn",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
