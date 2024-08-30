@@ -258,6 +258,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://kjkent.dev"><img src="https://avatars.githubusercontent.com/u/96310790?v=4?s=100" width="100px;" alt="Kristopher James Kent"/><br /><sub><b>Kristopher James Kent</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Akjkent" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/dsvoid"><img src="https://avatars.githubusercontent.com/u/7375973?v=4?s=100" width="100px;" alt="Dmitry S"/><br /><sub><b>Dmitry S</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Adsvoid" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://guse.dev"><img src="https://avatars.githubusercontent.com/u/162893147?v=4?s=100" width="100px;" alt="realguse"/><br /><sub><b>realguse</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=realguse" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/doongjohn"><img src="https://avatars.githubusercontent.com/u/40219740?v=4?s=100" width="100px;" alt="doongjohn"/><br /><sub><b>doongjohn</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Adoongjohn" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
