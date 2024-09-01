@@ -288,7 +288,7 @@ _Note_:
 
 #### Install from PowerShell Gallery for Local Use
 
-The Nerd Font Web Installer can also be installed locally from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Invoke-NerdFontInstaller/) as a trusted source:
+The Nerd Font Web Installer can also be installed locally from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Invoke-NerdFontInstaller) as a trusted source:
 
 ```powershell
 Install-PSResource Invoke-NerdFontInstaller
