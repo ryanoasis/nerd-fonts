@@ -251,47 +251,36 @@ Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fon
 > Best option for **interactive setup guidance** or **automating** installations through **PowerShell scripts**.
 
 _Note_:
-  - **Requires PowerShell 7+** to be installed on either Windows, macOS, or Linux.
-  - **Windows PowerShell 5.1** works okay too.
+  - **Requires PowerShell 7+** to be installed on Windows, macOS, or Linux.
+  - **Windows PowerShell 5.1** is also supported.
+  - This is a 3rd-party community tool. More information can be found on its GitHub repository [here](https://github.com/jpawlowski/nerd-fonts-installer-PS), including advanced installation options.
 
 #### Run the Interactive Installer
 
+To run the interactive installer, use the following command:
+
 ```powershell
-& ([scriptblock]::Create((iwr 'https://bit.ly/ps-nerdfont-installer')))
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1')))
 ```
 
-#### Install Fonts by Name
+#### Install Fonts Directly
+
+To install specific fonts directly, use the following command:
 
 ```powershell
-& ([scriptblock]::Create((iwr 'https://bit.ly/ps-nerdfont-installer'))) -Name hack, heavy-data
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) -Name hack, heavy-data
 ```
 
-#### Install Fonts Unattended
+To install fonts without a confirmation prompt, use:
 
 ```powershell
-& ([scriptblock]::Create((iwr 'https://bit.ly/ps-nerdfont-installer'))) -Name hack, heavy-data -Confirm:$false
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) -Confirm:$false -Name hack, heavy-data
 ```
 
-#### List or Search Font Names
+To get a list of possible font names, use:
 
 ```powershell
-& ([scriptblock]::Create((iwr 'https://bit.ly/ps-nerdfont-installer'))) -List All
-& ([scriptblock]::Create((iwr 'https://bit.ly/ps-nerdfont-installer'))) -List hack
-& ([scriptblock]::Create((iwr 'https://bit.ly/ps-nerdfont-installer'))) -List cas*
-```
-
-#### Get Help with Enhanced Parameter Options
-
-```powershell
-& ([scriptblock]::Create((iwr 'https://bit.ly/ps-nerdfont-installer'))) -Help ?
-```
-
-#### Install from PowerShell Gallery for Local Use
-
-The Nerd Font Web Installer can also be installed locally from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Invoke-NerdFontInstaller) as a trusted source:
-
-```powershell
-Install-PSResource Invoke-NerdFontInstaller
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) -List All
 ```
 
 ### `Option 6: Ad Hoc Curl Download`
