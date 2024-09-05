@@ -1786,6 +1786,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "jpawlowski",
+      "name": "Julian Pawlowski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75446?v=4",
+      "profile": "https://julian.pawlowski.me",
+      "contributions": [
+        "tool",
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
