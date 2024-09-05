@@ -40,10 +40,11 @@ The following flow diagram shows the current glyph sets included:
   * [**2 - Homebrew Fonts (macOS (OS X))**](#option-2-homebrew-fonts)
   * [**3 - Chocolatey or Scoop (Windows)**](#option-3-unofficial-chocolatey-or-scoop-repositories)
   * [**4 - Arch Linux Repository (Extra, AUR)**](#option-4-arch-extra-repository)
-  * [**5 - Ad Hoc Curl Download**](#option-5-ad-hoc-curl-download)
-  * [**6 - Install Script**](#option-6-install-script)
-  * [**7 - Clone Repo**](#option-7-clone-the-repo)
-  * [**8 - Patch Your Own Font**](#option-8-patch-your-own-font)
+  * [**5 - PowerShell Web Installer (Multi-Platform)**](#option-5-powershell-web-installer)
+  * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
+  * [**7 - Install Script**](#option-7-install-script)
+  * [**8 - Clone Repo**](#option-8-clone-the-repo)
+  * [**9 - Patch Your Own Font**](#option-9-patch-your-own-font)
 
 [**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
@@ -78,10 +79,11 @@ _If you..._
   * `Option 2.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-2-homebrew-fonts)
   * `Option 3.` are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-3-unofficial-chocolatey-or-scoop-repositories)
   * `Option 4.` are on **Arch Linux** and want to use **Extra packages** see [Arch Extra Repositories](#option-4-arch-extra-repository)
-  * `Option 5.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-5-ad-hoc-curl-download)
-  * `Option 6.` want to **automate** installing or use in **scripts** see the [Install Script](#option-6-install-script)
-  * `Option 7.` want **complete control** then see [cloning the repo](#option-7-clone-the-repo)
-  * `Option 8.` want to patch your own font see the [Font Patcher](#option-8-patch-your-own-font)
+  * `Option 5.` are using **PowerShell** and want an **interactive setup** or **use in scripts** see the [PowerShell Web Installer](#option-5-powershell-web-installer)
+  * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
+  * `Option 7.` want to **automate** installing or use in **scripts** see the [Install Script](#option-7-install-script)
+  * `Option 8.` want **complete control** then see [cloning the repo](#option-8-clone-the-repo)
+  * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
 
 ## Features
 * A [FontForge Python script](#font-patcher) to patch any font
@@ -244,7 +246,44 @@ scoop install Hack-NF
 Most fonts are available via [Arch Extra packages](https://archlinux.org/groups/any/nerd-fonts/).
 Some special packages are [in AUR](https://aur.archlinux.org/packages?K=nerd-fonts-&outdated=off).
 
-### `Option 5: Ad Hoc Curl Download`
+### `Option 5: PowerShell Web Installer`
+
+> Best option for **interactive setup guidance** or **automating** installations through **PowerShell scripts**.
+
+_Note_:
+  - **Requires PowerShell 7+** to be installed on Windows, macOS, or Linux.
+  - **Windows PowerShell 5.1** is also supported.
+  - This is a 3rd-party community tool. More information can be found on its GitHub repository [here](https://github.com/jpawlowski/nerd-fonts-installer-PS), including advanced installation options.
+
+#### Run the Interactive Installer
+
+To run the interactive installer, use the following command:
+
+```powershell
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1')))
+```
+
+#### Install Fonts Directly
+
+To install specific fonts directly, use the following command:
+
+```powershell
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) -Name hack, heavy-data
+```
+
+To install fonts without a confirmation prompt, use:
+
+```powershell
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) -Confirm:$false -Name hack, heavy-data
+```
+
+To get a list of possible font names, use:
+
+```powershell
+& ([scriptblock]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) -List All
+```
+
+### `Option 6: Ad Hoc Curl Download`
 
 > Option if you want to use the **`curl` command** or for use in **scripts**.
 
@@ -265,12 +304,13 @@ _Note:_ deprecated alternative paths: `~/.fonts`
 cd ~/Library/Fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
 ```
 
-### `Option 6: Install Script`
+### `Option 7: Install Script`
 
 > Best option if you want to **automate** installing or for use in **scripts**.
 
-_Note_: **Requires (shallow) cloning** the repo as of now :-(
-_Note_: Will not work to get newer fonts as they are not inside the repo anymore.
+_Note_:
+  - **Requires (shallow) cloning** the repo as of now :-(
+  - Will not work to get newer fonts as they are not inside the repo anymore.
 
 #### All fonts:
 
@@ -280,9 +320,9 @@ _Note_: Will not work to get newer fonts as they are not inside the repo anymore
 ./install.sh
 ```
 
-or, in Powershell (Windows only):
+or, in PowerShell (Windows only):
 
-```pwsh
+```powershell
 ./install.ps1
 ```
 
@@ -296,9 +336,9 @@ or, in Powershell (Windows only):
 ./install.sh HeavyData
 ```
 
-or, in Powershell (Windows only):
+or, in PowerShell (Windows only):
 
-```pwsh
+```powershell
 ./install.ps1 <FontName>
 ./install.ps1 Hack
 ./install.ps1 HeavyData
@@ -306,7 +346,7 @@ or, in Powershell (Windows only):
 ./install.ps1 DejaVuSansMono -WhatIf
 ```
 
-### `Option 7: Clone the Repo`
+### `Option 8: Clone the Repo`
 
 > Best option for **full control**, **all** or **some** of the fonts, or **contributing** to development.
 
@@ -333,7 +373,7 @@ cd nerd-fonts
 git sparse-checkout add patched-fonts/JetBrainsMono
 ```
 
-### `Option 8: Patch Your Own Font`
+### `Option 9: Patch Your Own Font`
 
 > The option for **patching** your **own font** or fully **customizing** the patched font.
 
