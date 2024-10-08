@@ -109,7 +109,7 @@ while read -r filename; do
 
     # add readme file
     (cd "${outputdir}" && zip -9 "$outputdir/$basename" -j "README.md" -q)
+    rm -f "${outputdir}/README.md"
 done
 
-rm -f "${outputdir}/README.md"
 ls -al "$outputdir"
