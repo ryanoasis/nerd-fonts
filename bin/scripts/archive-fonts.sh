@@ -47,6 +47,11 @@ find . -maxdepth 1 -iregex "\./$pattern" -type d | sort |
 while read -r filename; do
     basename=$(basename "$filename")
     searchdir=$filename
+    if [[ "${basename}" =~ SymbolsOnly ]]; then
+        fontconfig="TRUE"
+    else
+        fontconfig=
+    fi
 
     [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
 
@@ -89,6 +94,10 @@ while read -r filename; do
         exit 1
     fi
     (cd "${outputdir}" && tar rf "${outputdir}/${basename}.tar" "README.md")
+    if [ -n "$fontconfig" ]; then
+        echo "${LINE_PREFIX} Adding fontconfig"
+        (cd "${root_dir}" && tar rf "${outputdir}/${basename}.tar" "10-nerd-font-symbols.conf")
+    fi;
     xz -f -9 -T0 "${outputdir}/${basename}.tar"
 
     # ZIP stuff:
@@ -113,6 +122,10 @@ while read -r filename; do
 
     # add readme file
     (cd "${outputdir}" && zip -9 "$outputdir/$basename" -j "README.md" -q)
+    # add fontconfig file (only needed for NerdFontsSymbolsOnly)
+    if [ -n "$fontconfig" ]; then
+        (cd "${root_dir}" && zip -9 "$outputdir/$basename" -j "10-nerd-font-symbols.conf" -q)
+    fi;
     rm -f "${outputdir}/README.md"
 done
 
