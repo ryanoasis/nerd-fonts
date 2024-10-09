@@ -1,14 +1,15 @@
 # HELLO!
 
-Thanks for trying Departure Mono (departuremono.com), licensed under the SIL OFL. Send your questions and suggestions to hello@helenazhang.com. Enjoy!
+Thanks for trying Departure Mono (departuremono.com), licensed under the SIL OFL. Send your questions and suggestions to hello@helenazhang.com or DM me on Twitter/X: @minor_axis. Donations much appreciated at: buymeacoffee.com/helenazhang. Enjoy!
 
 — Helena Zhang (helenazhang.com)
 
 # FONT INFORMATION
 
-Version 1.350 features 775 glyphs, including support for:
+Version 1.420 features 1,030 glyphs, including support for:
 
 - Basic Latin, Latin-1, Latin Extended-A, and most Latinate languages
+- Cyrillic
 - Basic Greek
 - Small caps
 - Old-style numerals and fractions
@@ -18,9 +19,16 @@ Version 1.350 features 775 glyphs, including support for:
 
 For pixel-perfect results, set the font size to increments of 11px.
 
-Experiment with tighter tracking (letter-spacing) for a more comfortable read in some cases — or wider tracking for a sci-fi effect.
+Experiment with tighter or wider tracking (letter-spacing).
 
 # CHANGELOG
+
+v1.420
+- 1,030 glyphs
+- Added Cyrillic characters: А Б В Г Ѓ Ґ Ӷ Ғ Ҕ Д Е Ѐ Ё Ж З И Й Ѝ Ҋ К Ќ Л М Н О П Р С Т У Ў Ф Х Ч Ц Ш Щ Џ Ь Ы Ъ Љ Њ Ѕ Є Э І Ї Ј Ћ Ю Я Ђ Ѣ Ѵ Җ Ҙ Қ Ҟ Ҡ Ң Ҥ Ҧ Ԥ Ҩ Ҫ Ҭ Ү Ұ Ҳ Ҵ Ҷ Һ Ԧ Ҽ Ҿ Ӏ Ӂ Ӄ Ӆ Ӈ Ӊ Ӌ Ӎ Ӑ Ӓ Ӕ Ӗ Ӛ Ӝ Ӟ Ӡ Ӣ Ӥ Ӧ Ө Ӫ Ӭ Ӯ Ӱ Ӳ Ӵ Ӹ Ӽ Ԑ Ԓ Ԝ Ҍ Ҏ а б в г ѓ ґ ӷ ғ ҕ д е ѐ ё ж з и й ѝ ҋ к ќ л м н о п р с т у ў ф х ч ц ш щ џ ь ы ъ љ њ ѕ є э і ї ј ћ ю я ђ ѣ ѵ җ ҙ қ ҟ ҡ ң ҥ ҧ ԥ ҩ ҫ ҭ ү ұ ҳ ҵ ҷ һ ԧ ҽ ҿ ӏ ӂ ӄ ӆ ӈ ӊ ӌ ӎ ӑ ӓ ӕ ӗ ӛ ӝ ӟ ӡ ӣ ӥ ӧ ө ӫ ӭ ӯ ӱ ӳ ӵ ӹ ӽ ԑ ԓ ԝ ҍ ҏ
+- Added Greek characters: Ά Έ Ή Ί Ό Ύ Ώ Ϊ Ϋ ί ϊ ΐ ύ ϋ ΰ ό ώ ά έ ή ΄ ΅ ͺ
+- Added: № ∙
+- Adjusted: Ľ ť ĸ δ ι ʻ
 
 v1.350
 - 775 glyphs
@@ -33,3 +41,7 @@ v1.350
 
 v1.346
 - 763 glyphs
+
+# THANKS
+
+A big thank you to: Tobias Fried, Christine Lee, Daniel Stern, Kim Slawson, Parker McGowan, Alex Krivov, and Karl Peterson for their general feedback and testing across languages
