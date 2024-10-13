@@ -263,6 +263,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Gitoffthelawn/Contact-Gitoffthelawn"><img src="https://avatars.githubusercontent.com/u/7672848?v=4?s=100" width="100px;" alt="Gitoffthelawn"/><br /><sub><b>Gitoffthelawn</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Gitoffthelawn" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://nikunjmathur.vercel.app/"><img src="https://avatars.githubusercontent.com/u/142373040?v=4?s=100" width="100px;" alt="Nikunj Mathur"/><br /><sub><b>Nikunj Mathur</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=nikunjmathur08" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
