@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.4"
+script_version = "4.14.5"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -2128,8 +2128,11 @@ def main():
     sourceFonts = []
     all_fonts = fontforge.fontsInFile(args.font)
     if not all_fonts:
-        logger.critical("Can not find any fonts in '%s'", args.font)
-        sys.exit(1)
+        if re.match(".*\\.woff2?", args.font, re.I):
+            all_fonts=[ "" ]
+        else:
+            logger.critical("Can not find any fonts in '%s'", args.font)
+            sys.exit(1)
     for i, subfont in enumerate(all_fonts):
         if len(all_fonts) > 1:
           print("\n")
