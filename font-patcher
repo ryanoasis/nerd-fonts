@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.5"
+script_version = "4.14.6"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -888,21 +888,21 @@ class font_patcher:
             0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'xy-ratio': 0.5}},
 
             # Bottom Triangles
-            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {}},
-            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {}},
 
             # Top Triangles
-            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {}},
-            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {}},
 
             # Flames
-            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
             0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {}},
-            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
             0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {}},
 
             # Small squares
@@ -914,8 +914,8 @@ class font_patcher:
             0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
 
             # Waveform
-            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
-            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
+            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
 
             # Hexagons
             0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.02, 'xy-ratio': 0.85}},
