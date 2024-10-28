@@ -57,7 +57,7 @@ while read -r filename; do
 
     rm -f "${outputdir}/${basename}.tar"
     expected=$(find "${searchdir}" -iname "*.[ot]tf" -exec echo "+" \; | wc -l)
-    if [ $expected -eq 0 ]; then
+    if [ "${expected}" -eq 0 ]; then
         echo "${LINE_PREFIX} There seem to be no font files in ${basename}! Aborting!"
         exit 1
     fi
