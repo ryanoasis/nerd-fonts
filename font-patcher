@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.6"
+script_version = "4.14.7"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -1071,6 +1071,8 @@ class font_patcher:
             range(0xf095, 0xf0b0 + 1), # moon phases
             range(0xf0b7, 0xf0c3 + 1), # wind strengths
             [0xf06e, 0xf070 ], # solar/lunar eclipse
+            [0xf051, 0xf052, 0xf0c9, 0xf0ca, 0xf072 ], # sun/moon up/down
+            [0xf049, 0xf056, 0xf071, *range(0xf073, 0xf07c + 1), 0xf08a], # other things
             # Note: Codepoints listed before that are also in the following range
             # will take the scaling of the previous group (the ScaleGroups are
             # searched through in definition order).
@@ -1078,7 +1080,12 @@ class font_patcher:
             # _will_ include all glyphs in its definition: Make sure the exempt
             # glyphs from above are smaller (do not extend) the combined bounding
             # box of this range:
-            range(0xf000, 0xf0cb + 1), # lots of clouds and other (Please read note above!)
+            [ *range(0xf000, 0xf041 + 1),
+              *range(0xf064, 0xf06d + 1),
+              *range(0xf07d, 0xf083 + 1),
+              *range(0xf085, 0xf086 + 1),
+              *range(0xf0b2, 0xf0b6 + 1)
+            ], # lots of clouds (weather states) (Please read note above!)
         ]}
         MDI_SCALE_LIST = None # Maybe later add some selected ScaleGroups
 
