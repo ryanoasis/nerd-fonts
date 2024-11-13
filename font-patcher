@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.7"
+script_version = "4.14.9"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -1568,7 +1568,7 @@ class font_patcher:
                 elif sym_attr['align'] == 'c':
                     if overlap_width > 0:
                         x_align_distance -= overlap_width / 2
-                elif sym_attr['align'] == 'r':
+                elif sym_attr['align'] == 'r' and not self.args.nonmono:
                     # Check and correct overlap; it can go wrong if we have a xy-ratio limit
                     target_xmax = (self.font_dim['xmin'] + self.font_dim['width']) * self.get_target_width(stretch)
                     target_xmax += overlap_width
