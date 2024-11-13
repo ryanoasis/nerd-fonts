@@ -1032,10 +1032,7 @@ class font_patcher:
             [*range(0xeb89, 0xeb8b + 1), 0xec07], # smallish dots
             range(0xebd5, 0xebd7 + 1), # compasses
         ]}
-        DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
-            'GlyphsToScale': [
-                (0xe6bd, 0xe6c3) # very small things
-        ]}
+        DEVI_SCALE_LIST = None
         FONTA_SCALE_LIST = {'ScaleGroups': [
             [0xf005, 0xf006, 0xf089], # star, star empty, half star
             range(0xf026, 0xf028 + 1), # volume off, down, up
