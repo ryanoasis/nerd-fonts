@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.9"
+script_version = "4.15.0"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -318,6 +318,16 @@ def create_filename(fonts):
         sfnt_psubfam = '-' + sfnt_psubfam
     return (sfnt_pfam + sfnt_psubfam).replace(' ', '')
 
+def fetch_glyphnames():
+    """ Read the glyphname database and put it into a dictionary """
+    try:
+        glyphnamefile = os.path.abspath(os.path.dirname(sys.argv[0])) + '/glyphnames.json'
+        with open(glyphnamefile, 'r') as f:
+            namelist = json.load(f)
+            return { int(v['code'], 16): k for k, v in namelist.items() if 'code' in v }
+    except Exception as error:
+        logger.warning("Can not read glyphnames file (%s)", repr(error))
+        return {}
 
 class font_patcher:
     def __init__(self, args, conf):
@@ -333,6 +343,7 @@ class font_patcher:
         self.onlybitmaps = 0
         self.essential = set()
         self.xavgwidth = [] # list of ints
+        self.glyphnames = fetch_glyphnames()
 
     def patch(self, font):
         self.sourceFont = font
@@ -1021,10 +1032,7 @@ class font_patcher:
             [*range(0xeb89, 0xeb8b + 1), 0xec07], # smallish dots
             range(0xebd5, 0xebd7 + 1), # compasses
         ]}
-        DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
-            'GlyphsToScale': [
-                (0xe6bd, 0xe6c3) # very small things
-        ]}
+        DEVI_SCALE_LIST = None
         FONTA_SCALE_LIST = {'ScaleGroups': [
             [0xf005, 0xf006, 0xf089], # star, star empty, half star
             range(0xf026, 0xf028 + 1), # volume off, down, up
@@ -1096,7 +1104,7 @@ class font_patcher:
             {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': HEAVY_SCALE_LIST, 'Attributes': SYM_ATTR_HEAVYBRACKETS},
             {'Enabled': box_enabled,                    'Name': "Box Drawing",             'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
-            {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons/devicons.ttf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons/devicons.ttf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE7E3, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "powerline-extra/PowerlineExtraSymbols.otf",      'Exact': True,  'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
@@ -1488,7 +1496,8 @@ class font_patcher:
                 # Paste it
                 self.sourceFont.selection.select(currentSourceFontGlyph)
                 self.sourceFont.paste()
-                self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
+                self.sourceFont[currentSourceFontGlyph].glyphname = \
+                        self.glyphnames.get(currentSourceFontGlyph, sym_glyph.glyphname) if setName != 'Custom' else sym_glyph.glyphname
                 self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
             # Prepare symbol glyph dimensions

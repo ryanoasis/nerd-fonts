@@ -1349,6 +1349,9 @@
 .nf-custom-astro:before {
   content: "\e6b3";
 }
+.nf-custom-bazel:before {
+  content: "\e63a";
+}
 .nf-custom-c:before {
   content: "\e61e";
 }
@@ -1378,6 +1381,9 @@
 }
 .nf-custom-fennel:before {
   content: "\e6af";
+}
+.nf-custom-firebase:before {
+  content: "\e657";
 }
 .nf-custom-folder:before {
   content: "\e5ff";
@@ -1432,6 +1438,9 @@
 }
 .nf-custom-purescript:before {
   content: "\e630";
+}
+.nf-custom-ruby:before {
+  content: "\e605";
 }
 .nf-custom-scheme:before {
   content: "\e6b1";
@@ -1937,7 +1946,7 @@
 .nf-dev-snap_svg:before {
   content: "\e75e";
 }
-.nf-dev-sqllite:before {
+.nf-dev-sqlite:before {
   content: "\e7c4";
 }
 .nf-dev-stackoverflow:before {
