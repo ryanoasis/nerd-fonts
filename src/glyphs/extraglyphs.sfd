@@ -425,14 +425,14 @@ EndChar
 
 StartChar: uni2595
 Encoding: 280 9621 24
-Width: 1232
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
 1094 1950 m 1
- 1232 1950 l 1
- 1232 -512 l 1
+ 1233 1950 l 1
+ 1233 -512 l 1
  1094 -512 l 1
  1094 1950 l 1
 EndSplineSet
