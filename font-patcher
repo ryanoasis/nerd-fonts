@@ -1359,25 +1359,29 @@ class font_patcher:
             return 1
         return 2
 
-    def get_scale_factors(self, sym_dim, stretch):
+    def get_scale_factors(self, sym_dim, stretch, overlap=None):
         """ Get scale in x and y as tuple """
         # It is possible to have empty glyphs, so we need to skip those.
         if not sym_dim['width'] or not sym_dim['height']:
             return (1.0, 1.0)
 
         target_width = self.font_dim['width'] * self.get_target_width(stretch)
+        if overlap:
+            target_width *= 1.0 + overlap
         scale_ratio_x = target_width / sym_dim['width']
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
         # Use the font_dim['height'] only for explicit 'y' scaling (not 'pa')
         target_height = self.font_dim['height'] if '^' in stretch else self.font_dim['iconheight']
         target_height *= 1.0 - self.font_dim['ypadding']
+        if overlap:
+            target_height *= 1.0 + min(0.01, overlap) # never aggressive vertical overlap
         scale_ratio_y = target_height / sym_dim['height']
 
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
-            if not self.args.single and not '!' in stretch:
+            if not self.args.single and not '!' in stretch and not overlap:
                 # non monospaced fonts just scale down on 'pa', not up
                 scale_ratio_x = min(scale_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
@@ -1517,25 +1521,26 @@ class font_patcher:
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
-            if glyph_scale_data is not None:
-                if glyph_scale_data[1] is not None:
-                    sym_dim = glyph_scale_data[1] # Use combined bounding box
-                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch)
-                else:
-                    # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
-                    # Except we do not have glyph_scale_data[1] always...
-                    (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
-            else:
-                (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch)
-
             overlap = sym_attr['params'].get('overlap')
             if overlap and ypadding:
                 logger.critical("Conflicting params: overlap and ypadding")
                 sys.exit(1)
-            if overlap:
-                scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
-                y_overlap = min(0.01, overlap) # never aggressive vertical overlap
-                scale_ratio_y *= 1.0 + (self.font_dim['height'] / (sym_dim['height'] * scale_ratio_y)) * y_overlap
+
+            if glyph_scale_data is not None:
+                if glyph_scale_data[1] is not None:
+                    sym_dim = glyph_scale_data[1] # Use combined bounding box
+                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch, overlap)
+                else:
+                    # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
+                    # Except we do not have glyph_scale_data[1] always...
+                    (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
+                    if overlap:
+                        scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
+                        y_overlap = min(0.01, overlap) # never aggressive vertical overlap
+                        scale_ratio_y *= 1.0 + (self.font_dim['height'] / (sym_dim['height'] * scale_ratio_y)) * y_overlap
+            else:
+                (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch, overlap)
+
 
             # Size in x to size in y ratio limit (to prevent over-wide glyphs)
             xy_ratio_max = sym_attr['params'].get('xy-ratio')
@@ -1582,15 +1587,17 @@ class font_patcher:
                 elif sym_attr['align'] == 'r':
                     # Right align
                     x_align_distance += self.font_dim['width'] * self.get_target_width(stretch) - sym_dim['width']
-                # If symbol glyph is wider than target font cell, just left-align
-                x_align_distance = max(self.font_dim['xmin'] - sym_dim['xmin'], x_align_distance)
+                if not overlap:
+                    # If symbol glyph is wider than target font cell, just left-align
+                    x_align_distance = max(self.font_dim['xmin'] - sym_dim['xmin'], x_align_distance)
 
             if overlap:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
                 elif sym_attr['align'] == 'c':
-                    if overlap_width > 0:
+                    # center aligned keeps being center aligned even with overlap
+                    if overlap_width < 0 and self.args.nonmono and sym_dim['advance'] is None: # Keep positive bearing due to negative overlap (propo)
                         x_align_distance -= overlap_width / 2
                 elif sym_attr['align'] == 'r' and not self.args.nonmono:
                     # Check and correct overlap; it can go wrong if we have a xy-ratio limit
@@ -1624,7 +1631,7 @@ class font_patcher:
                 else:
                     width = sym_dim['width']
                 # If we have overlap we need to subtract that to keep/get negative bearings
-                if overlap and (sym_attr['align'] == 'l' or sym_attr['align'] == 'r'):
+                if overlap:
                     width -= overlap_width
                 # Fontforge handles the width change like this:
                 # - Keep existing left_side_bearing
