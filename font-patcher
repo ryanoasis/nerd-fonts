@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.15.0"
+script_version = "4.16.0"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -964,6 +964,16 @@ class font_patcher:
             # 0x2592: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
             # 0x2593: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
         }
+        SYM_ATTR_PROGRESS = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': '^pa1!', 'params': {'overlap': -0.03, 'careful': True}}, # Cirles
+            # All the squares:
+            0xee00: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+            0xee01: {'align': 'c', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.10, 'careful': True}},
+            0xee02: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+            0xee03: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+            0xee04: {'align': 'c', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.10, 'careful': True}},
+            0xee05: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+        }
         CUSTOM_ATTR = {
             # previous custom scaling => do not touch the icons
             # 'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
@@ -1070,6 +1080,10 @@ class font_patcher:
                 range(0xf2c2, 0xf2c5 + 1), # move to
                 [0xf07b, 0xf0a1, 0xf0d6, 0xf306], # bookmarks
         ]}
+        PROGR_SCALE_LIST = {'ScaleGroups': [
+                range(0xedff, 0xee05 + 1), # boxes... with helper glyph for Y padding
+                range(0xee06, 0xee0b + 1), # circles
+        ]}
         WEATH_SCALE_LIST = {'ScaleGroups': [
             [0xf03c, 0xf042, 0xf045 ], # degree signs
             [0xf043, 0xf044, 0xf048, 0xf04b, 0xf04c, 0xf04d, 0xf057, 0xf058, 0xf087, 0xf088], # arrows
@@ -1104,6 +1118,7 @@ class font_patcher:
             {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': HEAVY_SCALE_LIST, 'Attributes': SYM_ATTR_HEAVYBRACKETS},
             {'Enabled': box_enabled,                    'Name': "Box Drawing",             'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
+            {'Enabled': True,                           'Name': "Progress Indicators",     'Filename': "extraglyphs2.sfd",                               'Exact': True,  'SymStart': 0xEE00, 'SymEnd': 0xEE0B, 'SrcStart': None,   'ScaleRules': PROGR_SCALE_LIST, 'Attributes': SYM_ATTR_PROGRESS},
             {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons/devicons.ttf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE7E3, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
