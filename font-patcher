@@ -1035,9 +1035,7 @@ class font_patcher:
         BOX_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
             [*range(0x2500, 0x2570 + 1), *range(0x2574, 0x257f + 1)], # box drawing
             range(0x2571, 0x2573 + 1), # diagonals
-            [*range(0x2580, 0x2590 + 1), 0x2594, 0x2595], # blocks
-            range(0x2591, 0x2593 + 1), # greys
-            range(0x2594, 0x259f + 1), # quards (Note: quard 2597 in Hack is wrong, scales like block!)
+            range(0x2580, 0x259f + 1), # blocks and greys (greys are less tall originally, so overlap will be less)
         ]}
         CODI_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
             [0xea61, 0xeb13], # lightbulb
