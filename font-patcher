@@ -993,9 +993,9 @@ class font_patcher:
         #       Shifting in addition to scaling can be selected too (see below).
         #   - ScaleGroups:
         #       Here you specify a group of glyphs that should be handled together
-        #       with the same scaling and shifting. The basis for it is a 'combined
-        #       bounding box' of all glyphs in that group. All glyphs are handled as
-        #       if they fill that combined bounding box.
+        #       with the same scaling and shifting (see bottom). The basis for it is
+        #       a 'combined bounding box' of all glyphs in that group. All glyphs are
+        #       handled as if they fill that combined bounding box.
         #  (- ScaleGroupsVert: Removed with this commit)
         #
         # The ScaleGlyph method: You set 'ScaleGlyph' to the unicode of the reference glyph.
@@ -1012,7 +1012,7 @@ class font_patcher:
         #
         # For the ScaleGroup method you define any number groups of glyphs and each group is
         # handled separately. The combined bounding box of all glyphs in the group is determined
-        # and based on that the scale and shift for all the glyphs in the group.
+        # and based on that the scale and shift (see bottom) for all the glyphs in the group.
         # You define the groups as value of 'ScaleGroups'.
         # It is a List of: ((lists of glyph codes) or (ranges of glyph codes))
         #    'ScaleGroups': [
@@ -1023,15 +1023,23 @@ class font_patcher:
         # See prepareScaleRules() for some more details.
         # For historic reasons ScaleGroups is sometimes called 'new method' and ScaleGlyph 'old'.
         # The codepoints mentioned here are symbol-font-codepoints.
+        #
+        # Shifting:
+        # If we have a combined bounding box stored in a range, that
+        # box is used to align all symbols in the range identically.
+        # - If the symbol font is proportinal only the v alignment is synced.
+        # - If the symbol font is monospaced v and h alignemnts are synced.
+        # To make sure the behavior is as expected you are required to set a ShiftMode property
+        # accordingly. It just checks, you can not (!) select what is done with that property.
 
-        BOX_SCALE_LIST = {'ScaleGroups': [
+        BOX_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
             [*range(0x2500, 0x2570 + 1), *range(0x2574, 0x257f + 1)], # box drawing
             range(0x2571, 0x2573 + 1), # diagonals
             [*range(0x2580, 0x2590 + 1), 0x2594, 0x2595], # blocks
             range(0x2591, 0x2593 + 1), # greys
             range(0x2594, 0x259f + 1), # quards (Note: quard 2597 in Hack is wrong, scales like block!)
         ]}
-        CODI_SCALE_LIST = {'ScaleGroups': [
+        CODI_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
             [0xea61, 0xeb13], # lightbulb
             range(0xeab4, 0xeab7 + 1), # chevrons
             [0xea7d, *range(0xea99, 0xeaa1 + 1), 0xebcb], # arrows
@@ -1043,7 +1051,7 @@ class font_patcher:
             range(0xebd5, 0xebd7 + 1), # compasses
         ]}
         DEVI_SCALE_LIST = None
-        FONTA_SCALE_LIST = {'ScaleGroups': [
+        FONTA_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
             [0xf005, 0xf006, 0xf089], # star, star empty, half star
             range(0xf026, 0xf028 + 1), # volume off, down, up
             range(0xf02b, 0xf02c + 1), # tag, tags
@@ -1064,11 +1072,11 @@ class font_patcher:
             range(0xf221, 0xf22d + 1), # gender or so
             range(0xf255, 0xf25b + 1), # hand symbols
         ]}
-        HEAVY_SCALE_LIST = {'ScaleGlyph': 0x2771, # widest bracket, horizontally
+        HEAVY_SCALE_LIST = {'ShiftMode': 'y', 'ScaleGlyph': 0x2771, # widest bracket, horizontally
             'GlyphsToScale': [
                 (0x276c, 0x2771) # all
         ]}
-        OCTI_SCALE_LIST = {'ScaleGroups': [
+        OCTI_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
                 [*range(0xf03d, 0xf040 + 1), 0xf019, 0xf030, 0xf04a, 0xf051,  0xf071, 0xf08c ], # arrows
                 [0xF0E7, # Smily and ...
                     0xf044, 0xf05a, 0xf05b, 0xf0aa, # triangles
@@ -1080,11 +1088,11 @@ class font_patcher:
                 range(0xf2c2, 0xf2c5 + 1), # move to
                 [0xf07b, 0xf0a1, 0xf0d6, 0xf306], # bookmarks
         ]}
-        PROGR_SCALE_LIST = {'ScaleGroups': [
+        PROGR_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
                 range(0xedff, 0xee05 + 1), # boxes... with helper glyph for Y padding
                 range(0xee06, 0xee0b + 1), # circles
         ]}
-        WEATH_SCALE_LIST = {'ScaleGroups': [
+        WEATH_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
             [0xf03c, 0xf042, 0xf045 ], # degree signs
             [0xf043, 0xf044, 0xf048, 0xf04b, 0xf04c, 0xf04d, 0xf057, 0xf058, 0xf087, 0xf088], # arrows
             range(0xf053, 0xf055 + 1), # thermometers
@@ -1729,11 +1737,21 @@ class font_patcher:
         scaleRules['bbdims'] = []
         if 'ScaleGroups' not in scaleRules:
             scaleRules['ScaleGroups'] = []
+
+        mode = scaleRules['ShiftMode'] # Mode is only documentary
         for group in scaleRules['ScaleGroups']:
             sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
             scale = self.get_scale_factors(sym_dim, stretch)[0]
             scaleRules['scales'].append(scale)
             scaleRules['bbdims'].append(sym_dim)
+            if (mode):
+                if ('x' in mode) != (sym_dim['advance'] is not None):
+                    d = '0x{:X} - 0x{:X}'.format(group[0], group[-1])
+                    if ('x' in mode) :
+                        logger.critical("Scaling in group %s is expected to do horizonal shifts but can not", d)
+                    else:
+                        logger.critical("Scaling in group %s is expected to not do horizonal shifts but will", d)
+                    sys.exit(1)
 
         if 'ScaleGlyph' in scaleRules:
             # Rewrite to equivalent ScaleGroup
