@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1731617186
-ModificationTime: 1731617186
+ModificationTime: 1731675434
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -41,7 +41,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 234 26 8
+WinInfo: 286 26 8
 BeginPrivate: 5
 StdHW 5 [172]
 StemSnapH 18 [172 343 344 418 ]
@@ -49,7 +49,7 @@ StdVW 5 [160]
 StemSnapV 43 [160 188 189 291 320 496 616 636 637 1233 ]
 BlueValues 2 []
 EndPrivate
-BeginChars: 423 167
+BeginChars: 256 180
 
 StartChar: uni276C
 Encoding: 256 10092 0
@@ -3880,6 +3880,305 @@ SplineSet
  716 -530 l 1
  556 -530 l 1
  556 704 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEDFF
+Encoding: 423 60927 167
+Width: 1220
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+0 1780 m 1
+ 1220 1780 l 1
+ 1220 1486 l 1
+ 0 1486 l 1
+ 0 1780 l 1
+0 -88 m 1
+ 1220 -88 l 1
+ 1220 -380 l 1
+ 0 -380 l 1
+ 0 -88 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE00
+Encoding: 424 60928 168
+Width: 1220
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1220 -88 m 1
+ 1220 -231 l 1
+ 110 -231 l 1
+ 110 1631 l 1
+ 1220 1631 l 1
+ 1220 1486 l 1
+ 269 1486 l 1
+ 269 -88 l 1
+ 1220 -88 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE01
+Encoding: 425 60929 169
+Width: 1220
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+0 1631 m 1
+ 1220 1631 l 1
+ 1220 1486 l 1
+ 0 1486 l 1
+ 0 1631 l 1
+0 -88 m 1
+ 1220 -88 l 1
+ 1220 -231 l 1
+ 0 -231 l 1
+ 0 -88 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE02
+Encoding: 426 60930 170
+Width: 1220
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+0 -88 m 1
+ 0 -231 l 1
+ 1110 -231 l 1
+ 1110 1631 l 1
+ 0 1631 l 1
+ 0 1486 l 1
+ 951 1486 l 1
+ 951 -88 l 1
+ 0 -88 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE03
+Encoding: 427 60931 171
+Width: 1220
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1220 -88 m 1
+ 1220 -231 l 1
+ 110 -231 l 1
+ 110 1631 l 1
+ 1220 1631 l 1
+ 1220 1486 l 1
+ 269 1486 l 1
+ 269 -88 l 1
+ 1220 -88 l 1
+499 1274 m 1
+ 1220 1274 l 1
+ 1220 100 l 1
+ 499 100 l 1
+ 499 1274 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE04
+Encoding: 428 60932 172
+Width: 1220
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+0 1631 m 1
+ 1220 1631 l 1
+ 1220 1486 l 1
+ 0 1486 l 1
+ 0 1631 l 1
+0 1274 m 1
+ 1220 1274 l 1
+ 1220 100 l 1
+ 0 100 l 1
+ 0 1274 l 1
+0 -88 m 1
+ 1220 -88 l 1
+ 1220 -231 l 1
+ 0 -231 l 1
+ 0 -88 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE05
+Encoding: 429 60933 173
+Width: 1220
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+0 -88 m 1
+ 0 -231 l 1
+ 1110 -231 l 1
+ 1110 1631 l 1
+ 0 1631 l 1
+ 0 1486 l 1
+ 951 1486 l 1
+ 951 -88 l 1
+ 0 -88 l 1
+721 1274 m 1
+ 0 1274 l 1
+ 0 100 l 1
+ 721 100 l 1
+ 721 1274 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE06
+Encoding: 430 60934 174
+Width: 1300
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1109 1146 m 1
+ 1009 1046 l 1
+ 941 1115 941 1115 848 1155 c 128
+ 755 1195 755 1195 650 1195 c 256
+ 545 1195 545 1195 452.5 1155 c 128
+ 360 1115 360 1115 291 1047 c 1
+ 191 1146 l 1
+ 279 1234 279 1234 397.5 1285 c 128
+ 516 1336 516 1336 650 1336 c 256
+ 784 1336 784 1336 902.5 1285 c 128
+ 1021 1234 1021 1234 1109 1146 c 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE07
+Encoding: 431 60935 175
+Width: 1300
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+650 1336 m 1
+ 785 1336 785 1336 902.5 1285.5 c 128
+ 1020 1235 1020 1235 1109.5 1145.5 c 128
+ 1199 1056 1199 1056 1249.5 938.5 c 128
+ 1300 821 1300 821 1300 686 c 0
+ 1300 598 1300 598 1277 515.5 c 128
+ 1254 433 1254 433 1213 361 c 1
+ 1091 432 l 1
+ 1123 488 1123 488 1141 552 c 128
+ 1159 616 1159 616 1159 686 c 0
+ 1159 827 1159 827 1090.5 942.5 c 128
+ 1022 1058 1022 1058 906.5 1126.5 c 128
+ 791 1195 791 1195 650 1195 c 1
+ 650 1336 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE08
+Encoding: 432 60936 176
+Width: 1300
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+481 58 m 1
+ 518 194 l 1
+ 581 177 581 177 650 177 c 0
+ 791 177 791 177 906.5 245.5 c 128
+ 1022 314 1022 314 1090.5 429.5 c 128
+ 1159 545 1159 545 1159 686 c 0
+ 1159 791 1159 791 1119 884 c 128
+ 1079 977 1079 977 1010 1046 c 1
+ 1110 1146 l 1
+ 1198 1057 1198 1057 1249 938.5 c 128
+ 1300 820 1300 820 1300 686 c 0
+ 1300 551 1300 551 1249.5 433.5 c 128
+ 1199 316 1199 316 1109.5 226.5 c 128
+ 1020 137 1020 137 902.5 86.5 c 128
+ 785 36 785 36 650 36 c 0
+ 566 36 566 36 481 58 c 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE09
+Encoding: 433 60937 177
+Width: 1300
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1300 686 m 1
+ 1300 551 1300 551 1249.5 433.5 c 128
+ 1199 316 1199 316 1109.5 226.5 c 128
+ 1020 137 1020 137 902.5 86.5 c 128
+ 785 36 785 36 650 36 c 256
+ 515 36 515 36 397.5 86.5 c 128
+ 280 137 280 137 190.5 226.5 c 128
+ 101 316 101 316 50.5 433.5 c 128
+ 0 551 0 551 0 686 c 1
+ 141 686 l 1
+ 141 545 141 545 209.5 429.5 c 128
+ 278 314 278 314 393.5 245.5 c 128
+ 509 177 509 177 650 177 c 256
+ 791 177 791 177 906.5 245.5 c 128
+ 1022 314 1022 314 1090.5 429.5 c 128
+ 1159 545 1159 545 1159 686 c 1
+ 1300 686 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE0A
+Encoding: 434 60938 178
+Width: 1300
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+819 58 m 1
+ 782 194 l 1
+ 719 177 719 177 650 177 c 0
+ 509 177 509 177 393.5 245.5 c 128
+ 278 314 278 314 209.5 429.5 c 128
+ 141 545 141 545 141 686 c 0
+ 141 791 141 791 181 884 c 128
+ 221 977 221 977 290 1046 c 1
+ 190 1146 l 1
+ 102 1057 102 1057 51 938.5 c 128
+ 0 820 0 820 0 686 c 0
+ 0 551 0 551 50.5 433.5 c 128
+ 101 316 101 316 190.5 226.5 c 128
+ 280 137 280 137 397.5 86.5 c 128
+ 515 36 515 36 650 36 c 0
+ 734 36 734 36 819 58 c 1
+EndSplineSet
+EndChar
+
+StartChar: uniEE0B
+Encoding: 435 60939 179
+Width: 1300
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+650 1336 m 1
+ 515 1336 515 1336 397.5 1285.5 c 128
+ 280 1235 280 1235 190.5 1145.5 c 128
+ 101 1056 101 1056 50.5 938.5 c 128
+ 0 821 0 821 0 686 c 0
+ 0 598 0 598 23 515.5 c 128
+ 46 433 46 433 87 361 c 1
+ 209 432 l 1
+ 177 488 177 488 159 552 c 128
+ 141 616 141 616 141 686 c 0
+ 141 827 141 827 209.5 942.5 c 128
+ 278 1058 278 1058 393.5 1126.5 c 128
+ 509 1195 509 1195 650 1195 c 1
+ 650 1336 l 1
 EndSplineSet
 EndChar
 EndChars
