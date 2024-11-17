@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.16.0"
+script_version = "4.16.1"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
@@ -1580,7 +1580,8 @@ class font_patcher:
 
             # Handle glyph l/r/c alignment
             x_align_distance = 0
-            if self.args.nonmono and sym_dim['advance'] is None:
+            simple_nonmono = self.args.nonmono and sym_dim['advance'] is None
+            if simple_nonmono:
                 # Remove left side bearing
                 # (i.e. do not remove left side bearing when combined BB is in use)
                 x_align_distance = -self.sourceFont[currentSourceFontGlyph].left_side_bearing
@@ -1603,9 +1604,9 @@ class font_patcher:
                     x_align_distance -= overlap_width
                 elif sym_attr['align'] == 'c':
                     # center aligned keeps being center aligned even with overlap
-                    if overlap_width < 0 and self.args.nonmono and sym_dim['advance'] is None: # Keep positive bearing due to negative overlap (propo)
+                    if overlap_width < 0 and simple_nonmono: # Keep positive bearing due to negative overlap (propo)
                         x_align_distance -= overlap_width / 2
-                elif sym_attr['align'] == 'r' and not self.args.nonmono:
+                elif sym_attr['align'] == 'r' and not simple_nonmono:
                     # Check and correct overlap; it can go wrong if we have a xy-ratio limit
                     target_xmax = (self.font_dim['xmin'] + self.font_dim['width']) * self.get_target_width(stretch)
                     target_xmax += overlap_width
