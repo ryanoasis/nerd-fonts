@@ -26,6 +26,8 @@ patched-fonts/CommitMono/*
 !patched-fonts/CommitMono/README.md
 patched-fonts/D2Coding/*
 !patched-fonts/D2Coding/README.md
+patched-fonts/DepartureMono/*
+!patched-fonts/DepartureMono/README.md
 patched-fonts/GeistMono/*
 !patched-fonts/GeistMono/README.md
 patched-fonts/IntelOneMono/*
