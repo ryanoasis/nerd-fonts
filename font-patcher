@@ -1373,7 +1373,7 @@ class font_patcher:
 
         target_width = self.font_dim['width'] * self.get_target_width(stretch)
         if overlap:
-            target_width *= 1.0 + overlap
+            target_width += self.font_dim['width'] * overlap
         scale_ratio_x = target_width / sym_dim['width']
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
