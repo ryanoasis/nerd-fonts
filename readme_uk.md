@@ -121,6 +121,7 @@ _Якщо ви..._
 | [Code New Roman Nerd Font][p-code-nr]             |                                    | NO    | 2048    | ![w] ![m2] ![l]  |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]               | NO    | 1000    | ![w] ![m2] ![l]  |
 | [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]   | NO    | 1024    | ![w] ![m2] ![l]  |
+| [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono]  | NO    | 550     | ![w] ![m2] ![l]  |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                    | NO    | 2048    | ![w] ![m2] ![l]  |
 | [Droid Sans Mono Nerd Font][p-droid]              |                                    | NO    | 2048    | ![w] ![m2] ![l]  |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]           | NO    | 2048    | ![w] ![m2] ![l]  |
@@ -583,6 +584,8 @@ Symbol Fonts:
 
 [f-ia-writer]: https://github.com/iaolo/iA-Fonts
 
+[f-departuremono]:https://github.com/rektdeckard/departure-mono
+
 <!--
 Внутрішні посилання на пропатченні шрифти 
 -->
@@ -602,6 +605,8 @@ Symbol Fonts:
 [p-blex]: patched-fonts/IBMPlexMono
 
 [p-cousine]: patched-fonts/Cousine
+
+[p-departuremono]:patched-fonts/DepartureMono
 
 [p-dejavu]: patched-fonts/DejaVuSansMono
 

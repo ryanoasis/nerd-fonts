@@ -121,6 +121,7 @@ _अगर तुम..._
 | [कोड न्यू रोमन नर्ड Font][p-code-nr]                     |                                       | नहीं     | 2048     | ![w]![m2]![l]    |
 | [चचेरे भाई बेवकूफ फ़ॉन्ट][p-cousine]                     | [चचेरा भाई][f-cousine]                | नहीं     | 1000     | ![w]![m2]![l]    |
 | [डैडीटाइममोनो][p-daddytimemono]                          | [डैडीटाइममोनो][f-daddytimemono]       | नहीं     | 1024     | ![w]![m2]![l]    |
+| [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono] | नहीं     | 550      | ![w] ![m2] ![l]   |
 | [देजाव का व्यक्ति rd फोन को महत्व देता है][p-dejavu]     |                                       | नहीं     | 2048     | ![w]![m2]![l]    |
 | [Droid Sans Mono Nerd Font][p-droid]                     |                                       | नहीं     | 2048     | ![w]![m2]![l]    |
 | [सनकी बिना बेवकूफ Font][p-fantasque]                     | [बिना बढ़िया][f-fant]                 | नहीं     | 2048     | ![w]![m2]![l]    |
@@ -657,6 +658,8 @@ Font repos
 
 [f-ia-writer]: https://github.com/iaolo/iA-Fonts
 
+[f-departuremono]:https://github.com/rektdeckard/departure-mono
+
 <!--
 Patched Font internal links
 -->
@@ -678,6 +681,8 @@ Patched Font internal links
 [p-cascadia]: patched-fonts/CascadiaCode
 
 [p-cousine]: patched-fonts/Cousine
+
+[p-departuremono]:patched-fonts/DepartureMono
 
 [p-dejavu]: patched-fonts/DejaVuSansMono
 
