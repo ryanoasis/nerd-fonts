@@ -2,7 +2,7 @@
 
 set -eu
 
-VERSION=1.3.0
+VERSION=1.4.0
 TEMP=$(mktemp -d)
 
 LINK="https://github.com/intel/intel-one-mono/releases/download/V${VERSION}/ttf.zip"

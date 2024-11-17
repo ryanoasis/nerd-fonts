@@ -4,4 +4,4 @@
 
 For more information have a look at the upstream website: https://github.com/intel/intel-one-mono
 
-Version: 1.3.0
+Version: 1.4.0
