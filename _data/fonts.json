@@ -239,6 +239,20 @@
       "description": "A monospaced font for programmers and other terminal groupies"
     },
     {
+      "unpatchedName": "Departure Mono",
+      "licenseId": "OFL-1.1-no-RFN",
+      "RFN": false,
+      "version": "1.422",
+      "patchedName": "DepartureMono",
+      "folderName": "DepartureMono",
+      "imagePreviewFont": "DepartureMono Nerd Font",
+      "imagePreviewFontSource": "DepartureMono/DepartureMono-Regular.otf",
+      "linkPreviewFont": "departuremono",
+      "caskName": "departure-mono",
+      "repoRelease": false,
+      "description": "A monospaced pixel font with a lo-fi, techy vibe"
+    },
+    {
       "unpatchedName": "DejaVu Sans Mono",
       "licenseId": "Bitstream-Vera",
       "RFN": false,
