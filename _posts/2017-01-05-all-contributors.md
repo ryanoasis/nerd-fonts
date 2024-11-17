@@ -274,6 +274,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://julian.pawlowski.me"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/75446?v=4?s=100" width="100px;" alt="Julian Pawlowski"/><br /><sub><b>Julian Pawlowski</b></sub></a><br /><a href="#tool-jpawlowski" title="Tools">🔧</a> <a href="https://github.com/ryanoasis/nerd-fonts/commits?author=jpawlowski" title="Documentation">📖</a></span>
 
 
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/Gitoffthelawn/Contact-Gitoffthelawn"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/7672848?v=4?s=100" width="100px;" alt="Gitoffthelawn"/><br /><sub><b>Gitoffthelawn</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Gitoffthelawn" title="Documentation">📖</a></span>
+
+
 
 
 <!-- markdownlint-restore -->
