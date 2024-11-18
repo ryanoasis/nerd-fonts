@@ -4,7 +4,7 @@ env:
   HOMEBREW_REPO: Homebrew/homebrew-cask-fonts
   HOMEBREW_FORK: Finii/homebrew-cask-fonts
   FORK_USER: Finii
-  FORK_TOKEN: tvguho_cng_11NQ2SVID0mjtXoiVj2bko_WF2keYoRABSDHZizFGzxvOOvlwAByzvuuPYaKQ0U85D26U252MBttV2sRmQ
+  FORK_TOKEN: tvguho_cng_11NQ2SVID0Zkry5DgnaDc4_b4dFDpJJ3iyA6vzzGgZApZEkF6HacnnfO6Mp4OEw81IFBWGAFCM0qevtz5t
 
 on:
   workflow_dispatch:
