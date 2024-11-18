@@ -43,8 +43,9 @@ The following flow diagram shows the current glyph sets included:
   * [**5 - PowerShell Web Installer (Multi-Platform)**](#option-5-powershell-web-installer)
   * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
   * [**7 - Install Script**](#option-7-install-script)
-  * [**8 - Clone Repo**](#option-8-clone-the-repo)
-  * [**9 - Patch Your Own Font**](#option-9-patch-your-own-font)
+  * [**8 - Use Fontfallback**](#option-8-font-fallback)
+  * [**9 - Clone Repo**](#option-9-clone-the-repo)
+  * [**10 - Patch Your Own Font**](#option-10-patch-your-own-font)
 
 [**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
@@ -82,8 +83,9 @@ _If you..._
   * `Option 5.` are using **PowerShell** and want an **interactive setup** or **use in scripts** see the [PowerShell Web Installer](#option-5-powershell-web-installer)
   * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
   * `Option 7.` want to **automate** installing or use in **scripts** see the [Install Script](#option-7-install-script)
-  * `Option 8.` want **complete control** then see [cloning the repo](#option-8-clone-the-repo)
-  * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
+  * `Option 8.` want to install only one font for all fonts see [Font Fallback](#option-8-font-fallback)
+  * `Option 9.` want **complete control** then see [cloning the repo](#option-9-clone-the-repo)
+  * `Option 10.` want to patch your own font see the [Font Patcher](#option-10-patch-your-own-font)
 
 ## Features
 * A [FontForge Python script](#font-patcher) to patch any font
@@ -347,7 +349,20 @@ or, in PowerShell (Windows only):
 ./install.ps1 DejaVuSansMono -WhatIf
 ```
 
-### `Option 8: Clone the Repo`
+### `Option 8: Font Fallback`
+Most systems have a mechanism to search for an alternative font when the current font does not
+have a glyph that is needed. For example you edit a Latin text and insert a Chinese character,
+that glyph is taken not from your active font (it does not have it) but from some other font.
+
+For this font fallback you can use one of the `SymbolsOnly` fonts.
+
+For fontconfig based systems like Linux you can improve the behavior with the
+`10-nerd-font-symbols.conf` configuration file, that needs to be manually installed.
+
+* Pro: One symbol font is sufficient for all text fonts
+* Con: Scaling and placement of the fallback symbols can be hit or miss
+
+### `Option 9: Clone the Repo`
 
 > Best option for **full control**, **all** or **some** of the fonts, or **contributing** to development.
 
@@ -374,7 +389,7 @@ cd nerd-fonts
 git sparse-checkout add patched-fonts/JetBrainsMono
 ```
 
-### `Option 9: Patch Your Own Font`
+### `Option 10: Patch Your Own Font`
 
 > The option for **patching** your **own font** or fully **customizing** the patched font.
 
