@@ -1,7 +1,7 @@
 /*
  *# [Nerd Fonts]  Website: https://www.nerdfonts.com
  *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
- *# [Nerd Fonts]  Version: 3.2.1
+ *# [Nerd Fonts]  Version: 3.3.0
  *# [Nerd Fonts]  The following is generated from the build script
  */
 
@@ -1355,6 +1355,9 @@
 .nf-custom-c:before {
   content: "\e61e";
 }
+.nf-custom-chuck:before {
+  content: "\e6b6";
+}
 .nf-custom-common_lisp:before {
   content: "\e6b0";
 }
@@ -1454,14 +1457,71 @@
 .nf-custom-vim:before {
   content: "\e62b";
 }
+.nf-custom-vitruvian:before {
+  content: "\e6b7";
+}
 .nf-custom-windows:before {
   content: "\e62a";
+}
+.nf-dev-aarch64:before {
+  content: "\e700";
+}
+.nf-dev-adonisjs:before {
+  content: "\e701";
+}
+.nf-dev-aftereffects:before {
+  content: "\e705";
+}
+.nf-dev-akka:before {
+  content: "\e708";
+}
+.nf-dev-algolia:before {
+  content: "\e70a";
+}
+.nf-dev-alpinejs:before {
+  content: "\e713";
+}
+.nf-dev-amazonwebservices:before {
+  content: "\e7ad";
+}
+.nf-dev-anaconda:before {
+  content: "\e715";
 }
 .nf-dev-android:before {
   content: "\e70e";
 }
+.nf-dev-androidstudio:before {
+  content: "\e71a";
+}
 .nf-dev-angular:before {
   content: "\e753";
+}
+.nf-dev-angularjs:before {
+  content: "\e71c";
+}
+.nf-dev-angularmaterial:before {
+  content: "\e720";
+}
+.nf-dev-ansible:before {
+  content: "\e723";
+}
+.nf-dev-antdesign:before {
+  content: "\e72a";
+}
+.nf-dev-apache:before {
+  content: "\e72b";
+}
+.nf-dev-apacheairflow:before {
+  content: "\e72c";
+}
+.nf-dev-apachekafka:before {
+  content: "\e72e";
+}
+.nf-dev-apachespark:before {
+  content: "\e72f";
+}
+.nf-dev-apl:before {
+  content: "\e730";
 }
 .nf-dev-appcelerator:before {
   content: "\e7ab";
@@ -1469,38 +1529,74 @@
 .nf-dev-apple:before {
   content: "\e711";
 }
-.nf-dev-appstore:before {
-  content: "\e713";
+.nf-dev-appwrite:before {
+  content: "\e731";
 }
-.nf-dev-aptana:before {
-  content: "\e799";
+.nf-dev-archlinux:before {
+  content: "\e732";
 }
-.nf-dev-asterisk:before {
-  content: "\e7ac";
+.nf-dev-arduino:before {
+  content: "\e733";
 }
-.nf-dev-atlassian:before {
-  content: "\e75b";
+.nf-dev-argocd:before {
+  content: "\e734";
+}
+.nf-dev-astro:before {
+  content: "\e735";
 }
 .nf-dev-atom:before {
   content: "\e764";
 }
+.nf-dev-awk:before {
+  content: "\e741";
+}
 .nf-dev-aws:before {
   content: "\e7ad";
+}
+.nf-dev-axios:before {
+  content: "\e74f";
+}
+.nf-dev-azure:before {
+  content: "\e754";
+}
+.nf-dev-azuredevops:before {
+  content: "\e756";
+}
+.nf-dev-azuresqldatabase:before {
+  content: "\e75b";
+}
+.nf-dev-babel:before {
+  content: "\e75d";
 }
 .nf-dev-backbone:before {
   content: "\e752";
 }
-.nf-dev-bing_small:before {
-  content: "\e700";
+.nf-dev-backbonejs:before {
+  content: "\e752";
 }
-.nf-dev-bintray:before {
-  content: "\e794";
+.nf-dev-ballerina:before {
+  content: "\e75e";
+}
+.nf-dev-bamboo:before {
+  content: "\e75f";
+}
+.nf-dev-bash:before {
+  content: "\e760";
+}
+.nf-dev-beats:before {
+  content: "\e761";
+}
+.nf-dev-behance:before {
+  content: "\e762";
 }
 .nf-dev-bitbucket:before {
   content: "\e703";
 }
-.nf-dev-blackberry:before {
-  content: "\e723";
+.nf-dev-blazor:before {
+  content: "\e765";
+}
+.nf-dev-blender:before {
+  content: "\e766";
 }
 .nf-dev-bootstrap:before {
   content: "\e747";
@@ -1508,23 +1604,56 @@
 .nf-dev-bower:before {
   content: "\e74d";
 }
-.nf-dev-brackets:before {
-  content: "\e79d";
-}
-.nf-dev-bugsense:before {
-  content: "\e78d";
-}
-.nf-dev-celluloid:before {
+.nf-dev-browserstack:before {
   content: "\e76b";
 }
-.nf-dev-chart:before {
-  content: "\e760";
+.nf-dev-bulma:before {
+  content: "\e76c";
+}
+.nf-dev-bun:before {
+  content: "\e76f";
+}
+.nf-dev-c:before {
+  content: "\e771";
+}
+.nf-dev-c_lang:before {
+  content: "\e771";
+}
+.nf-dev-cairo:before {
+  content: "\e773";
+}
+.nf-dev-cakephp:before {
+  content: "\e77a";
+}
+.nf-dev-canva:before {
+  content: "\e77c";
+}
+.nf-dev-capacitor:before {
+  content: "\e785";
+}
+.nf-dev-carbon:before {
+  content: "\e788";
+}
+.nf-dev-cassandra:before {
+  content: "\e789";
+}
+.nf-dev-centos:before {
+  content: "\e78a";
+}
+.nf-dev-ceylon:before {
+  content: "\e78b";
 }
 .nf-dev-chrome:before {
   content: "\e743";
 }
-.nf-dev-cisco:before {
-  content: "\e765";
+.nf-dev-circleci:before {
+  content: "\e78c";
+}
+.nf-dev-clarity:before {
+  content: "\e78d";
+}
+.nf-dev-clion:before {
+  content: "\e78e";
 }
 .nf-dev-clojure:before {
   content: "\e768";
@@ -1532,17 +1661,23 @@
 .nf-dev-clojure_alt:before {
   content: "\e76a";
 }
-.nf-dev-cloud9:before {
-  content: "\e79f";
+.nf-dev-clojurescript:before {
+  content: "\e790";
 }
-.nf-dev-coda:before {
+.nf-dev-cloudflare:before {
+  content: "\e792";
+}
+.nf-dev-cloudflareworkers:before {
   content: "\e793";
 }
-.nf-dev-code:before {
+.nf-dev-cmake:before {
+  content: "\e794";
+}
+.nf-dev-codeac:before {
   content: "\e796";
 }
-.nf-dev-code_badge:before {
-  content: "\e7a3";
+.nf-dev-codecov:before {
+  content: "\e797";
 }
 .nf-dev-codeigniter:before {
   content: "\e780";
@@ -1550,23 +1685,41 @@
 .nf-dev-codepen:before {
   content: "\e716";
 }
-.nf-dev-codrops:before {
-  content: "\e72f";
-}
 .nf-dev-coffeescript:before {
   content: "\e751";
-}
-.nf-dev-compass:before {
-  content: "\e761";
 }
 .nf-dev-composer:before {
   content: "\e783";
 }
-.nf-dev-creativecommons:before {
-  content: "\e789";
+.nf-dev-confluence:before {
+  content: "\e799";
 }
-.nf-dev-creativecommons_badge:before {
-  content: "\e78a";
+.nf-dev-consul:before {
+  content: "\e79a";
+}
+.nf-dev-contao:before {
+  content: "\e79b";
+}
+.nf-dev-corejs:before {
+  content: "\e79d";
+}
+.nf-dev-cosmosdb:before {
+  content: "\e79f";
+}
+.nf-dev-couchbase:before {
+  content: "\e7a0";
+}
+.nf-dev-couchdb:before {
+  content: "\e7a2";
+}
+.nf-dev-cplusplus:before {
+  content: "\e7a3";
+}
+.nf-dev-crystal:before {
+  content: "\e7ac";
+}
+.nf-dev-csharp:before {
+  content: "\e7b2";
 }
 .nf-dev-css3:before {
   content: "\e749";
@@ -1574,11 +1727,14 @@
 .nf-dev-css3_full:before {
   content: "\e74a";
 }
-.nf-dev-css_tricks:before {
-  content: "\e701";
+.nf-dev-cucumber:before {
+  content: "\e7b7";
 }
-.nf-dev-cssdeck:before {
-  content: "\e72a";
+.nf-dev-cypressio:before {
+  content: "\e7b9";
+}
+.nf-dev-d3js:before {
+  content: "\e7bc";
 }
 .nf-dev-dart:before {
   content: "\e798";
@@ -1586,14 +1742,38 @@
 .nf-dev-database:before {
   content: "\e706";
 }
+.nf-dev-datagrip:before {
+  content: "\e7bd";
+}
+.nf-dev-dataspell:before {
+  content: "\e7be";
+}
+.nf-dev-dbeaver:before {
+  content: "\e7bf";
+}
 .nf-dev-debian:before {
   content: "\e77d";
+}
+.nf-dev-denojs:before {
+  content: "\e7c0";
+}
+.nf-dev-devicon:before {
+  content: "\e7c1";
 }
 .nf-dev-digital_ocean:before {
   content: "\e7ae";
 }
+.nf-dev-digitalocean:before {
+  content: "\e7ae";
+}
+.nf-dev-discordjs:before {
+  content: "\e7c2";
+}
 .nf-dev-django:before {
   content: "\e71d";
+}
+.nf-dev-djangorest:before {
+  content: "\e7c3";
 }
 .nf-dev-dlang:before {
   content: "\e7af";
@@ -1604,11 +1784,11 @@
 .nf-dev-doctrine:before {
   content: "\e774";
 }
-.nf-dev-dojo:before {
-  content: "\e71c";
-}
 .nf-dev-dotnet:before {
   content: "\e77f";
+}
+.nf-dev-dotnetcore:before {
+  content: "\e7c6";
 }
 .nf-dev-dreamweaver:before {
   content: "\e79c";
@@ -1616,23 +1796,80 @@
 .nf-dev-dropbox:before {
   content: "\e707";
 }
+.nf-dev-dropwizard:before {
+  content: "\e7c7";
+}
 .nf-dev-drupal:before {
   content: "\e742";
+}
+.nf-dev-dynamodb:before {
+  content: "\e7c8";
 }
 .nf-dev-eclipse:before {
   content: "\e79e";
 }
+.nf-dev-ecto:before {
+  content: "\e7c9";
+}
+.nf-dev-elasticsearch:before {
+  content: "\e7ca";
+}
+.nf-dev-electron:before {
+  content: "\e7cb";
+}
+.nf-dev-eleventy:before {
+  content: "\e7cc";
+}
+.nf-dev-elixir:before {
+  content: "\e7cd";
+}
+.nf-dev-elm:before {
+  content: "\e7ce";
+}
+.nf-dev-emacs:before {
+  content: "\e7cf";
+}
+.nf-dev-embeddedc:before {
+  content: "\e7d0";
+}
 .nf-dev-ember:before {
   content: "\e71b";
 }
-.nf-dev-envato:before {
-  content: "\e75d";
+.nf-dev-envoy:before {
+  content: "\e7d1";
 }
 .nf-dev-erlang:before {
   content: "\e7b1";
 }
-.nf-dev-extjs:before {
-  content: "\e78e";
+.nf-dev-eslint:before {
+  content: "\e7d2";
+}
+.nf-dev-express:before {
+  content: "\e7d3";
+}
+.nf-dev-facebook:before {
+  content: "\e7d4";
+}
+.nf-dev-fastapi:before {
+  content: "\e7d5";
+}
+.nf-dev-fastify:before {
+  content: "\e7d6";
+}
+.nf-dev-faunadb:before {
+  content: "\e7d7";
+}
+.nf-dev-feathersjs:before {
+  content: "\e7d8";
+}
+.nf-dev-fedora:before {
+  content: "\e7d9";
+}
+.nf-dev-figma:before {
+  content: "\e7da";
+}
+.nf-dev-filezilla:before {
+  content: "\e7db";
 }
 .nf-dev-firebase:before {
   content: "\e787";
@@ -1640,14 +1877,50 @@
 .nf-dev-firefox:before {
   content: "\e745";
 }
+.nf-dev-flask:before {
+  content: "\e7dc";
+}
+.nf-dev-flutter:before {
+  content: "\e7dd";
+}
+.nf-dev-fortran:before {
+  content: "\e7de";
+}
+.nf-dev-foundation:before {
+  content: "\e7df";
+}
+.nf-dev-framermotion:before {
+  content: "\e7e0";
+}
+.nf-dev-framework7:before {
+  content: "\e7e1";
+}
 .nf-dev-fsharp:before {
   content: "\e7a7";
+}
+.nf-dev-gatling:before {
+  content: "\e7e2";
+}
+.nf-dev-gatsby:before {
+  content: "\e7e3";
+}
+.nf-dev-gazebo:before {
+  content: "\e7e4";
+}
+.nf-dev-gcc:before {
+  content: "\e7e5";
+}
+.nf-dev-gentoo:before {
+  content: "\e7e6";
 }
 .nf-dev-ghost:before {
   content: "\e71f";
 }
 .nf-dev-ghost_small:before {
   content: "\e714";
+}
+.nf-dev-gimp:before {
+  content: "\e7e7";
 }
 .nf-dev-git:before {
   content: "\e702";
@@ -1667,11 +1940,11 @@
 .nf-dev-git_pull_request:before {
   content: "\e726";
 }
-.nf-dev-github:before {
-  content: "\e70a";
+.nf-dev-gitbook:before {
+  content: "\e7e8";
 }
-.nf-dev-github_alt:before {
-  content: "\e708";
+.nf-dev-github:before {
+  content: "\e709";
 }
 .nf-dev-github_badge:before {
   content: "\e709";
@@ -1679,23 +1952,56 @@
 .nf-dev-github_full:before {
   content: "\e717";
 }
+.nf-dev-githubactions:before {
+  content: "\e7e9";
+}
+.nf-dev-githubcodespaces:before {
+  content: "\e7ea";
+}
+.nf-dev-gitlab:before {
+  content: "\e7eb";
+}
+.nf-dev-gitpod:before {
+  content: "\e7ec";
+}
+.nf-dev-gitter:before {
+  content: "\e7ed";
+}
 .nf-dev-gnu:before {
   content: "\e779";
 }
 .nf-dev-go:before {
   content: "\e724";
 }
-.nf-dev-google_cloud_platform:before {
-  content: "\e7b2";
+.nf-dev-godot:before {
+  content: "\e7ee";
 }
-.nf-dev-google_drive:before {
-  content: "\e731";
+.nf-dev-goland:before {
+  content: "\e7ef";
+}
+.nf-dev-google:before {
+  content: "\e7f0";
+}
+.nf-dev-googlecloud:before {
+  content: "\e7f1";
+}
+.nf-dev-gradle:before {
+  content: "\e7f2";
+}
+.nf-dev-grafana:before {
+  content: "\e7f3";
 }
 .nf-dev-grails:before {
   content: "\e7b3";
 }
+.nf-dev-graphql:before {
+  content: "\e7f4";
+}
 .nf-dev-groovy:before {
   content: "\e775";
+}
+.nf-dev-grpc:before {
+  content: "\e7f5";
 }
 .nf-dev-grunt:before {
   content: "\e74c";
@@ -1703,35 +2009,59 @@
 .nf-dev-gulp:before {
   content: "\e763";
 }
-.nf-dev-hackernews:before {
-  content: "\e71a";
+.nf-dev-hadoop:before {
+  content: "\e7f6";
+}
+.nf-dev-handlebars:before {
+  content: "\e7f7";
+}
+.nf-dev-hardhat:before {
+  content: "\e7f8";
+}
+.nf-dev-harvester:before {
+  content: "\e7f9";
 }
 .nf-dev-haskell:before {
   content: "\e777";
 }
+.nf-dev-haxe:before {
+  content: "\e7fa";
+}
+.nf-dev-helm:before {
+  content: "\e7fb";
+}
 .nf-dev-heroku:before {
   content: "\e77b";
+}
+.nf-dev-hibernate:before {
+  content: "\e7fc";
+}
+.nf-dev-homebrew:before {
+  content: "\e7fd";
 }
 .nf-dev-html5:before {
   content: "\e736";
 }
-.nf-dev-html5_3d_effects:before {
-  content: "\e735";
-}
-.nf-dev-html5_connectivity:before {
-  content: "\e734";
-}
-.nf-dev-html5_device_access:before {
-  content: "\e733";
-}
-.nf-dev-html5_multimedia:before {
-  content: "\e732";
+.nf-dev-hugo:before {
+  content: "\e7fe";
 }
 .nf-dev-ie:before {
   content: "\e744";
 }
+.nf-dev-ifttt:before {
+  content: "\e7ff";
+}
 .nf-dev-illustrator:before {
   content: "\e7b4";
+}
+.nf-dev-influxdb:before {
+  content: "\e800";
+}
+.nf-dev-inkscape:before {
+  content: "\e801";
+}
+.nf-dev-insomnia:before {
+  content: "\e802";
 }
 .nf-dev-intellij:before {
   content: "\e7b5";
@@ -1739,17 +2069,32 @@
 .nf-dev-ionic:before {
   content: "\e7a9";
 }
+.nf-dev-jaegertracing:before {
+  content: "\e803";
+}
+.nf-dev-jamstack:before {
+  content: "\e804";
+}
+.nf-dev-jasmine:before {
+  content: "\e805";
+}
 .nf-dev-java:before {
   content: "\e738";
 }
 .nf-dev-javascript:before {
+  content: "\e781";
+}
+.nf-dev-javascript_alt:before {
   content: "\e74e";
 }
 .nf-dev-javascript_badge:before {
   content: "\e781";
 }
-.nf-dev-javascript_shield:before {
-  content: "\e74f";
+.nf-dev-jeet:before {
+  content: "\e806";
+}
+.nf-dev-jekyll:before {
+  content: "\e70d";
 }
 .nf-dev-jekyll_small:before {
   content: "\e70d";
@@ -1757,41 +2102,131 @@
 .nf-dev-jenkins:before {
   content: "\e767";
 }
+.nf-dev-jest:before {
+  content: "\e807";
+}
+.nf-dev-jetbrains:before {
+  content: "\e808";
+}
+.nf-dev-jetpackcompose:before {
+  content: "\e809";
+}
 .nf-dev-jira:before {
   content: "\e75c";
 }
-.nf-dev-joomla:before {
-  content: "\e741";
+.nf-dev-jiraalign:before {
+  content: "\e80a";
 }
 .nf-dev-jquery:before {
   content: "\e750";
 }
-.nf-dev-jquery_ui:before {
-  content: "\e754";
+.nf-dev-json:before {
+  content: "\e80b";
 }
-.nf-dev-komodo:before {
-  content: "\e792";
+.nf-dev-jule:before {
+  content: "\e80c";
+}
+.nf-dev-julia:before {
+  content: "\e80d";
+}
+.nf-dev-junit:before {
+  content: "\e80e";
+}
+.nf-dev-jupyter:before {
+  content: "\e80f";
+}
+.nf-dev-k3os:before {
+  content: "\e810";
+}
+.nf-dev-k3s:before {
+  content: "\e811";
+}
+.nf-dev-k6:before {
+  content: "\e812";
+}
+.nf-dev-kaggle:before {
+  content: "\e813";
+}
+.nf-dev-karatelabs:before {
+  content: "\e814";
+}
+.nf-dev-karma:before {
+  content: "\e815";
+}
+.nf-dev-kdeneon:before {
+  content: "\e816";
+}
+.nf-dev-keras:before {
+  content: "\e817";
+}
+.nf-dev-kibana:before {
+  content: "\e818";
+}
+.nf-dev-knexjs:before {
+  content: "\e819";
+}
+.nf-dev-knockout:before {
+  content: "\e81a";
+}
+.nf-dev-kotlin:before {
+  content: "\e81b";
 }
 .nf-dev-krakenjs:before {
-  content: "\e785";
+  content: "\e784";
 }
 .nf-dev-krakenjs_badge:before {
   content: "\e784";
 }
+.nf-dev-ktor:before {
+  content: "\e81c";
+}
+.nf-dev-kubernetes:before {
+  content: "\e81d";
+}
+.nf-dev-labview:before {
+  content: "\e81e";
+}
 .nf-dev-laravel:before {
   content: "\e73f";
+}
+.nf-dev-latex:before {
+  content: "\e81f";
 }
 .nf-dev-less:before {
   content: "\e758";
 }
+.nf-dev-linkedin:before {
+  content: "\e820";
+}
 .nf-dev-linux:before {
   content: "\e712";
+}
+.nf-dev-liquibase:before {
+  content: "\e821";
+}
+.nf-dev-livewire:before {
+  content: "\e822";
+}
+.nf-dev-llvm:before {
+  content: "\e823";
+}
+.nf-dev-lodash:before {
+  content: "\e824";
+}
+.nf-dev-logstash:before {
+  content: "\e825";
+}
+.nf-dev-lua:before {
+  content: "\e826";
+}
+.nf-dev-lumen:before {
+  content: "\e827";
 }
 .nf-dev-magento:before {
   content: "\e740";
 }
-.nf-dev-mailchimp:before {
-  content: "\e79a";
+.nf-dev-mariadb:before {
+  content: "\e828";
 }
 .nf-dev-markdown:before {
   content: "\e73e";
@@ -1799,23 +2234,56 @@
 .nf-dev-materializecss:before {
   content: "\e7b6";
 }
+.nf-dev-materialui:before {
+  content: "\e829";
+}
+.nf-dev-matlab:before {
+  content: "\e82a";
+}
+.nf-dev-matplotlib:before {
+  content: "\e82b";
+}
+.nf-dev-maven:before {
+  content: "\e82c";
+}
+.nf-dev-maya:before {
+  content: "\e82d";
+}
 .nf-dev-meteor:before {
   content: "\e7a5";
 }
 .nf-dev-meteorfull:before {
   content: "\e7a6";
 }
-.nf-dev-mitlicence:before {
-  content: "\e78b";
+.nf-dev-microsoftsqlserver:before {
+  content: "\e82e";
 }
-.nf-dev-modernizr:before {
-  content: "\e720";
+.nf-dev-minitab:before {
+  content: "\e82f";
+}
+.nf-dev-mithril:before {
+  content: "\e830";
+}
+.nf-dev-mobx:before {
+  content: "\e831";
+}
+.nf-dev-mocha:before {
+  content: "\e832";
+}
+.nf-dev-modx:before {
+  content: "\e833";
+}
+.nf-dev-moleculer:before {
+  content: "\e834";
 }
 .nf-dev-mongodb:before {
   content: "\e7a4";
 }
-.nf-dev-mootools:before {
-  content: "\e790";
+.nf-dev-mongoose:before {
+  content: "\e835";
+}
+.nf-dev-moodle:before {
+  content: "\e836";
 }
 .nf-dev-mootools_badge:before {
   content: "\e78f";
@@ -1823,23 +2291,50 @@
 .nf-dev-mozilla:before {
   content: "\e786";
 }
-.nf-dev-msql_server:before {
-  content: "\e77c";
+.nf-dev-msdos:before {
+  content: "\e837";
 }
 .nf-dev-mysql:before {
   content: "\e704";
 }
-.nf-dev-nancy:before {
-  content: "\e766";
+.nf-dev-nano:before {
+  content: "\e838";
 }
-.nf-dev-netbeans:before {
-  content: "\e79b";
+.nf-dev-neo4j:before {
+  content: "\e839";
 }
-.nf-dev-netmagazine:before {
-  content: "\e72e";
+.nf-dev-neovim:before {
+  content: "\e83a";
+}
+.nf-dev-nestjs:before {
+  content: "\e83b";
+}
+.nf-dev-netlify:before {
+  content: "\e83c";
+}
+.nf-dev-networkx:before {
+  content: "\e83d";
+}
+.nf-dev-nextjs:before {
+  content: "\e83e";
 }
 .nf-dev-nginx:before {
   content: "\e776";
+}
+.nf-dev-ngrx:before {
+  content: "\e83f";
+}
+.nf-dev-nhibernate:before {
+  content: "\e840";
+}
+.nf-dev-nim:before {
+  content: "\e841";
+}
+.nf-dev-nimble:before {
+  content: "\e842";
+}
+.nf-dev-nixos:before {
+  content: "\e843";
 }
 .nf-dev-nodejs:before {
   content: "\e719";
@@ -1847,26 +2342,104 @@
 .nf-dev-nodejs_small:before {
   content: "\e718";
 }
+.nf-dev-nodemon:before {
+  content: "\e844";
+}
+.nf-dev-nodewebkit:before {
+  content: "\e845";
+}
+.nf-dev-nomad:before {
+  content: "\e846";
+}
+.nf-dev-norg:before {
+  content: "\e847";
+}
+.nf-dev-notion:before {
+  content: "\e848";
+}
 .nf-dev-npm:before {
   content: "\e71e";
 }
-.nf-dev-onedrive:before {
-  content: "\e762";
+.nf-dev-nuget:before {
+  content: "\e849";
 }
-.nf-dev-openshift:before {
-  content: "\e7b7";
+.nf-dev-numpy:before {
+  content: "\e84a";
 }
-.nf-dev-opensource:before {
-  content: "\e771";
+.nf-dev-nuxtjs:before {
+  content: "\e84b";
+}
+.nf-dev-oauth:before {
+  content: "\e84c";
+}
+.nf-dev-objectivec:before {
+  content: "\e84d";
+}
+.nf-dev-ocaml:before {
+  content: "\e84e";
+}
+.nf-dev-ohmyzsh:before {
+  content: "\e84f";
+}
+.nf-dev-okta:before {
+  content: "\e850";
+}
+.nf-dev-openal:before {
+  content: "\e851";
+}
+.nf-dev-openapi:before {
+  content: "\e852";
+}
+.nf-dev-opencl:before {
+  content: "\e853";
+}
+.nf-dev-opencv:before {
+  content: "\e854";
+}
+.nf-dev-opengl:before {
+  content: "\e855";
+}
+.nf-dev-openstack:before {
+  content: "\e856";
+}
+.nf-dev-opensuse:before {
+  content: "\e857";
+}
+.nf-dev-opentelemetry:before {
+  content: "\e858";
 }
 .nf-dev-opera:before {
   content: "\e746";
 }
+.nf-dev-oracle:before {
+  content: "\e859";
+}
+.nf-dev-ory:before {
+  content: "\e85a";
+}
+.nf-dev-p5js:before {
+  content: "\e85b";
+}
+.nf-dev-packer:before {
+  content: "\e85c";
+}
+.nf-dev-pandas:before {
+  content: "\e85d";
+}
 .nf-dev-perl:before {
   content: "\e769";
 }
-.nf-dev-phonegap:before {
-  content: "\e730";
+.nf-dev-pfsense:before {
+  content: "\e85e";
+}
+.nf-dev-phalcon:before {
+  content: "\e85f";
+}
+.nf-dev-phoenix:before {
+  content: "\e860";
+}
+.nf-dev-photonengine:before {
+  content: "\e861";
 }
 .nf-dev-photoshop:before {
   content: "\e7b8";
@@ -1874,26 +2447,149 @@
 .nf-dev-php:before {
   content: "\e73d";
 }
+.nf-dev-phpstorm:before {
+  content: "\e862";
+}
+.nf-dev-playwright:before {
+  content: "\e863";
+}
+.nf-dev-plotly:before {
+  content: "\e864";
+}
+.nf-dev-pnpm:before {
+  content: "\e865";
+}
+.nf-dev-podman:before {
+  content: "\e866";
+}
+.nf-dev-poetry:before {
+  content: "\e867";
+}
+.nf-dev-polygon:before {
+  content: "\e868";
+}
+.nf-dev-portainer:before {
+  content: "\e869";
+}
+.nf-dev-postcss:before {
+  content: "\e86a";
+}
 .nf-dev-postgresql:before {
   content: "\e76e";
+}
+.nf-dev-postman:before {
+  content: "\e86b";
+}
+.nf-dev-powershell:before {
+  content: "\e86c";
+}
+.nf-dev-premierepro:before {
+  content: "\e86d";
+}
+.nf-dev-prisma:before {
+  content: "\e86e";
+}
+.nf-dev-processing:before {
+  content: "\e86f";
 }
 .nf-dev-prolog:before {
   content: "\e7a1";
 }
+.nf-dev-prometheus:before {
+  content: "\e870";
+}
+.nf-dev-protractor:before {
+  content: "\e871";
+}
+.nf-dev-pulsar:before {
+  content: "\e872";
+}
+.nf-dev-pulumi:before {
+  content: "\e873";
+}
+.nf-dev-puppeteer:before {
+  content: "\e874";
+}
+.nf-dev-purescript:before {
+  content: "\e875";
+}
+.nf-dev-putty:before {
+  content: "\e876";
+}
+.nf-dev-pycharm:before {
+  content: "\e877";
+}
+.nf-dev-pypi:before {
+  content: "\e878";
+}
+.nf-dev-pyscript:before {
+  content: "\e879";
+}
+.nf-dev-pytest:before {
+  content: "\e87a";
+}
 .nf-dev-python:before {
   content: "\e73c";
 }
-.nf-dev-rackspace:before {
-  content: "\e7b9";
+.nf-dev-pytorch:before {
+  content: "\e87b";
 }
-.nf-dev-raphael:before {
-  content: "\e75f";
+.nf-dev-qodana:before {
+  content: "\e87c";
 }
-.nf-dev-rasberry_pi:before {
+.nf-dev-qt:before {
+  content: "\e87d";
+}
+.nf-dev-quarkus:before {
+  content: "\e87e";
+}
+.nf-dev-quasar:before {
+  content: "\e87f";
+}
+.nf-dev-qwik:before {
+  content: "\e880";
+}
+.nf-dev-r:before {
+  content: "\e881";
+}
+.nf-dev-rabbitmq:before {
+  content: "\e882";
+}
+.nf-dev-rails:before {
+  content: "\e73b";
+}
+.nf-dev-railway:before {
+  content: "\e883";
+}
+.nf-dev-rancher:before {
+  content: "\e884";
+}
+.nf-dev-raspberry_pi:before {
   content: "\e722";
+}
+.nf-dev-reach:before {
+  content: "\e885";
 }
 .nf-dev-react:before {
   content: "\e7ba";
+}
+.nf-dev-reactbootstrap:before {
+  content: "\e886";
+}
+.nf-dev-reactnavigation:before {
+  content: "\e887";
+}
+.nf-dev-reactrouter:before {
+  content: "\e888";
+}
+.nf-dev-readthedocs:before {
+  content: "\e889";
+}
+.nf-dev-realm:before {
+  content: "\e88a";
+}
+.nf-dev-rect:before {
+  content: "\e88b";
 }
 .nf-dev-redhat:before {
   content: "\e7bb";
@@ -1901,11 +2597,38 @@
 .nf-dev-redis:before {
   content: "\e76d";
 }
+.nf-dev-redux:before {
+  content: "\e88c";
+}
+.nf-dev-renpy:before {
+  content: "\e88d";
+}
+.nf-dev-replit:before {
+  content: "\e88e";
+}
 .nf-dev-requirejs:before {
   content: "\e770";
 }
-.nf-dev-responsive:before {
-  content: "\e797";
+.nf-dev-rider:before {
+  content: "\e88f";
+}
+.nf-dev-rocksdb:before {
+  content: "\e890";
+}
+.nf-dev-rockylinux:before {
+  content: "\e891";
+}
+.nf-dev-rollup:before {
+  content: "\e892";
+}
+.nf-dev-ros:before {
+  content: "\e893";
+}
+.nf-dev-rspec:before {
+  content: "\e894";
+}
+.nf-dev-rstudio:before {
+  content: "\e895";
 }
 .nf-dev-ruby:before {
   content: "\e739";
@@ -1916,11 +2639,23 @@
 .nf-dev-ruby_rough:before {
   content: "\e791";
 }
+.nf-dev-rubymine:before {
+  content: "\e896";
+}
 .nf-dev-rust:before {
   content: "\e7a8";
 }
+.nf-dev-rxjs:before {
+  content: "\e897";
+}
 .nf-dev-safari:before {
   content: "\e748";
+}
+.nf-dev-salesforce:before {
+  content: "\e898";
+}
+.nf-dev-sanity:before {
+  content: "\e899";
 }
 .nf-dev-sass:before {
   content: "\e74b";
@@ -1928,32 +2663,95 @@
 .nf-dev-scala:before {
   content: "\e737";
 }
-.nf-dev-scriptcs:before {
-  content: "\e7bc";
+.nf-dev-scalingo:before {
+  content: "\e89a";
 }
-.nf-dev-scrum:before {
-  content: "\e7a0";
+.nf-dev-scikitlearn:before {
+  content: "\e89b";
 }
-.nf-dev-senchatouch:before {
-  content: "\e78c";
+.nf-dev-sdl:before {
+  content: "\e89c";
 }
-.nf-dev-sizzlejs:before {
-  content: "\e788";
+.nf-dev-selenium:before {
+  content: "\e89d";
+}
+.nf-dev-sema:before {
+  content: "\e89e";
+}
+.nf-dev-sentry:before {
+  content: "\e89f";
+}
+.nf-dev-sequelize:before {
+  content: "\e8a0";
+}
+.nf-dev-shopware:before {
+  content: "\e8a1";
+}
+.nf-dev-shotgrid:before {
+  content: "\e8a2";
+}
+.nf-dev-sketch:before {
+  content: "\e8a3";
+}
+.nf-dev-slack:before {
+  content: "\e8a4";
 }
 .nf-dev-smashing_magazine:before {
   content: "\e72d";
 }
-.nf-dev-snap_svg:before {
-  content: "\e75e";
+.nf-dev-socketio:before {
+  content: "\e8a5";
+}
+.nf-dev-solidity:before {
+  content: "\e8a6";
+}
+.nf-dev-solidjs:before {
+  content: "\e8a7";
+}
+.nf-dev-sonarqube:before {
+  content: "\e8a8";
+}
+.nf-dev-sourcetree:before {
+  content: "\e8a9";
+}
+.nf-dev-spack:before {
+  content: "\e8aa";
+}
+.nf-dev-splunk:before {
+  content: "\e8ab";
+}
+.nf-dev-spring:before {
+  content: "\e8ac";
+}
+.nf-dev-spss:before {
+  content: "\e8ad";
+}
+.nf-dev-spyder:before {
+  content: "\e8ae";
+}
+.nf-dev-sqlalchemy:before {
+  content: "\e8af";
+}
+.nf-dev-sqldeveloper:before {
+  content: "\e8b0";
 }
 .nf-dev-sqlite:before {
   content: "\e7c4";
 }
+.nf-dev-ssh:before {
+  content: "\e8b1";
+}
 .nf-dev-stackoverflow:before {
   content: "\e710";
 }
-.nf-dev-streamline:before {
-  content: "\e705";
+.nf-dev-stata:before {
+  content: "\e8b2";
+}
+.nf-dev-storybook:before {
+  content: "\e8b3";
+}
+.nf-dev-streamlit:before {
+  content: "\e8b4";
 }
 .nf-dev-stylus:before {
   content: "\e759";
@@ -1961,23 +2759,74 @@
 .nf-dev-sublime:before {
   content: "\e7aa";
 }
+.nf-dev-subversion:before {
+  content: "\e8b5";
+}
+.nf-dev-supabase:before {
+  content: "\e8b6";
+}
+.nf-dev-svelte:before {
+  content: "\e8b7";
+}
+.nf-dev-swagger:before {
+  content: "\e8b8";
+}
 .nf-dev-swift:before {
   content: "\e755";
 }
+.nf-dev-swiper:before {
+  content: "\e8b9";
+}
 .nf-dev-symfony:before {
-  content: "\e756";
+  content: "\e757";
 }
 .nf-dev-symfony_badge:before {
   content: "\e757";
 }
-.nf-dev-techcrunch:before {
-  content: "\e72c";
+.nf-dev-tailwindcss:before {
+  content: "\e8ba";
+}
+.nf-dev-tauri:before {
+  content: "\e8bb";
+}
+.nf-dev-tensorflow:before {
+  content: "\e8bc";
 }
 .nf-dev-terminal:before {
   content: "\e795";
 }
-.nf-dev-terminal_badge:before {
-  content: "\e7a2";
+.nf-dev-terraform:before {
+  content: "\e8bd";
+}
+.nf-dev-tex:before {
+  content: "\e8be";
+}
+.nf-dev-thealgorithms:before {
+  content: "\e8bf";
+}
+.nf-dev-threedsmax:before {
+  content: "\e8c0";
+}
+.nf-dev-threejs:before {
+  content: "\e8c1";
+}
+.nf-dev-titaniumsdk:before {
+  content: "\e8c2";
+}
+.nf-dev-tomcat:before {
+  content: "\e8c3";
+}
+.nf-dev-tortoisegit:before {
+  content: "\e8c4";
+}
+.nf-dev-towergit:before {
+  content: "\e8c5";
+}
+.nf-dev-traefikmesh:before {
+  content: "\e8c6";
+}
+.nf-dev-traefikproxy:before {
+  content: "\e8c7";
 }
 .nf-dev-travis:before {
   content: "\e77e";
@@ -1985,50 +2834,158 @@
 .nf-dev-trello:before {
   content: "\e75a";
 }
+.nf-dev-trpc:before {
+  content: "\e8c8";
+}
+.nf-dev-twitter:before {
+  content: "\e8c9";
+}
+.nf-dev-typescript:before {
+  content: "\e8ca";
+}
 .nf-dev-typo3:before {
   content: "\e772";
 }
 .nf-dev-ubuntu:before {
   content: "\e73a";
 }
-.nf-dev-uikit:before {
-  content: "\e773";
+.nf-dev-uml:before {
+  content: "\e8cb";
+}
+.nf-dev-unifiedmodelinglanguage:before {
+  content: "\e8cb";
+}
+.nf-dev-unity:before {
+  content: "\e721";
 }
 .nf-dev-unity_small:before {
   content: "\e721";
 }
+.nf-dev-unix:before {
+  content: "\e8cc";
+}
+.nf-dev-unrealengine:before {
+  content: "\e8cd";
+}
+.nf-dev-uwsgi:before {
+  content: "\e8ce";
+}
+.nf-dev-v8:before {
+  content: "\e8cf";
+}
+.nf-dev-vagrant:before {
+  content: "\e8d0";
+}
+.nf-dev-vala:before {
+  content: "\e8d1";
+}
+.nf-dev-vault:before {
+  content: "\e8d2";
+}
+.nf-dev-vercel:before {
+  content: "\e8d3";
+}
+.nf-dev-vertx:before {
+  content: "\e8d4";
+}
 .nf-dev-vim:before {
   content: "\e7c5";
+}
+.nf-dev-visualbasic:before {
+  content: "\e8d5";
 }
 .nf-dev-visualstudio:before {
   content: "\e70c";
 }
-.nf-dev-w3c:before {
-  content: "\e76c";
+.nf-dev-vite:before {
+  content: "\e8d6";
 }
-.nf-dev-webplatform:before {
-  content: "\e76f";
+.nf-dev-vitejs:before {
+  content: "\e8d7";
+}
+.nf-dev-vitess:before {
+  content: "\e8d8";
+}
+.nf-dev-vitest:before {
+  content: "\e8d9";
+}
+.nf-dev-vscode:before {
+  content: "\e8da";
+}
+.nf-dev-vsphere:before {
+  content: "\e8db";
+}
+.nf-dev-vuejs:before {
+  content: "\e8dc";
+}
+.nf-dev-vuestorefront:before {
+  content: "\e8dd";
+}
+.nf-dev-vuetify:before {
+  content: "\e8de";
+}
+.nf-dev-vyper:before {
+  content: "\e8df";
+}
+.nf-dev-wasm:before {
+  content: "\e8e0";
+}
+.nf-dev-webflow:before {
+  content: "\e8e1";
+}
+.nf-dev-weblate:before {
+  content: "\e8e2";
+}
+.nf-dev-webpack:before {
+  content: "\e8e3";
+}
+.nf-dev-webstorm:before {
+  content: "\e8e4";
 }
 .nf-dev-windows:before {
   content: "\e70f";
 }
+.nf-dev-windows11:before {
+  content: "\e8e5";
+}
+.nf-dev-woocommerce:before {
+  content: "\e8e6";
+}
 .nf-dev-wordpress:before {
   content: "\e70b";
 }
-.nf-dev-yahoo:before {
-  content: "\e715";
+.nf-dev-xamarin:before {
+  content: "\e8e7";
 }
-.nf-dev-yahoo_small:before {
-  content: "\e72b";
+.nf-dev-xcode:before {
+  content: "\e8e8";
 }
-.nf-dev-yeoman:before {
-  content: "\e77a";
+.nf-dev-xd:before {
+  content: "\e8e9";
+}
+.nf-dev-xml:before {
+  content: "\e8ea";
+}
+.nf-dev-yaml:before {
+  content: "\e8eb";
+}
+.nf-dev-yarn:before {
+  content: "\e8ec";
 }
 .nf-dev-yii:before {
   content: "\e782";
 }
+.nf-dev-yugabytedb:before {
+  content: "\e8ed";
+}
+.nf-dev-yunohost:before {
+  content: "\e8ee";
+}
 .nf-dev-zend:before {
   content: "\e778";
+}
+.nf-dev-zig:before {
+  content: "\e8ef";
 }
 .nf-fa-500px:before {
   content: "\f26e";
@@ -8195,6 +9152,30 @@
 .nf-linux-kubuntu_inverse:before {
   content: "\f334";
 }
+.nf-linux-leap:before {
+  content: "\f37e";
+}
+.nf-linux-libreoffice:before {
+  content: "\f376";
+}
+.nf-linux-libreofficebase:before {
+  content: "\f377";
+}
+.nf-linux-libreofficecalc:before {
+  content: "\f378";
+}
+.nf-linux-libreofficedraw:before {
+  content: "\f379";
+}
+.nf-linux-libreofficeimpress:before {
+  content: "\f37a";
+}
+.nf-linux-libreofficemath:before {
+  content: "\f37b";
+}
+.nf-linux-libreofficewriter:before {
+  content: "\f37c";
+}
 .nf-linux-linuxmint:before {
   content: "\f30e";
 }
@@ -8236,6 +9217,9 @@
 }
 .nf-linux-nixos:before {
   content: "\f313";
+}
+.nf-linux-nobara:before {
+  content: "\f380";
 }
 .nf-linux-octoprint:before {
   content: "\f34d";
@@ -8297,6 +9281,9 @@
 .nf-linux-riscv:before {
   content: "\f353";
 }
+.nf-linux-river:before {
+  content: "\f381";
+}
 .nf-linux-rocky_linux:before {
   content: "\f32b";
 }
@@ -8330,8 +9317,14 @@
 .nf-linux-trisquel:before {
   content: "\f344";
 }
+.nf-linux-tumbleweed:before {
+  content: "\f37d";
+}
 .nf-linux-tux:before {
   content: "\f31a";
+}
+.nf-linux-typst:before {
+  content: "\f37f";
 }
 .nf-linux-ubuntu:before {
   content: "\f31b";
