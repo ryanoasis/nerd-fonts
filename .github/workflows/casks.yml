@@ -79,7 +79,7 @@ jobs:
           cwd: homebrew
           fetch: false
           add: Casks/font
-          message: "[ci] Update Nerd Font casks to ${{ needs.create-casks.outputs.tag }}"
+          message: "font: Update Nerd Font casks to ${{ needs.create-casks.outputs.tag }} [CI]"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
       - name: Create PR
