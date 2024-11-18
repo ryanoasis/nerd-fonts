@@ -162,7 +162,6 @@ function write_body {
             if [ "$i" == 0 ]; then
                 {
                     printf "  name \"%s (%s)\"\\n" "$familyname" "$unpatchedname"
-                    printf "  desc \"Developer targeted fonts with a high number of glyphs\"\\n"
                     printf "  homepage \"%s\"" "$homepage"
                     printf "\\n\\n"
                     printf "  livecheck do\\n"
