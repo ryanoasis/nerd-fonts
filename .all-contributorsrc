@@ -1823,6 +1823,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "cub-uanic",
+      "name": "Oleg Kostyuk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75673?v=4",
+      "profile": "http://bit.ly/cubuanic-github-contributions",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
