@@ -62,6 +62,7 @@ The following flow diagram shows the current glyph sets included:
 [**Project Motivation**](#project-motivation)
 
 **Additional Info**
+  * [**In case of problems**](#common-problems)
   * [**Unstable file paths on master**](#unstable-file-paths)
   * [**Changelog**](#changelog)
   * [**License**](#license)
@@ -108,7 +109,6 @@ See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoint
 ### Icon names in shell
 
 See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
-
 
 ## Patched Fonts
 
@@ -603,6 +603,13 @@ Usage: ./gotta-patch-em-all-font-patcher!.sh [OPTION] [FILTER]
 
 See [contributing.md](contributing.md)
 
+## Common Problems
+
+Some solutions can be found on the Wiki, if you are lucky. For example hints to use the pager `less` are there:
+
+* https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting
+* https://github.com/ryanoasis/nerd-fonts/wiki/Terminal-Emulators
+* https://github.com/ryanoasis/nerd-fonts/wiki/Reporting-Issues
 
 ## Unstable File Paths
 
