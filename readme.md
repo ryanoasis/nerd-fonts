@@ -203,6 +203,10 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 
 ## Font Installation
 
+Some of the options below just help you to download the font file(s) (i.e. `.ttf` or `.otf`) or archives of font files.
+These must be installed on your system, depending on your OS. Usually (double) clicking the font files individually does the trick.
+Ask your OS' community if installing a font file is a problem.
+
 ### `Option 1: Release Archive Download`
 
 > Best option if you want an **archive** or complete **font family** of variations (Bold, Italic, etc.).
