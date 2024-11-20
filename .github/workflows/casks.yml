@@ -1,10 +1,10 @@
 name: Create Casks PR
 
 env:
-  HOMEBREW_REPO: Homebrew/homebrew-cask-fonts
-  HOMEBREW_FORK: Finii/homebrew-cask-fonts
+  HOMEBREW_REPO: Homebrew/homebrew-cask
+  HOMEBREW_FORK: Finii/homebrew-cask
   FORK_USER: Finii
-  FORK_TOKEN: tvguho_cng_11NQ2SVID0mjtXoiVj2bko_WF2keYoRABSDHZizFGzxvOOvlwAByzvuuPYaKQ0U85D26U252MBttV2sRmQ
+  FORK_TOKEN: tvguho_cng_11NQ2SVID0Zkry5DgnaDc4_b4dFDpJJ3iyA6vzzGgZApZEkF6HacnnfO6Mp4OEw81IFBWGAFCM0qevtz5t
 
 on:
   workflow_dispatch:
@@ -72,14 +72,14 @@ jobs:
           path: casks
       - name: Prepare changes
         run: |
-          cp casks/* homebrew/Casks
+          cp -r casks/* homebrew/Casks/font
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           cwd: homebrew
           fetch: false
-          add: Casks
-          message: "[ci] Update Nerd Font casks to ${{ needs.create-casks.outputs.tag }}"
+          add: Casks/font
+          message: "font: Update Nerd Font casks to ${{ needs.create-casks.outputs.tag }} [CI]"
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
       - name: Create PR

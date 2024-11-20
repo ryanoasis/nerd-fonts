@@ -93,8 +93,8 @@ for _, codepoint, file, *names in mapping:
 num_icons = len(mapping)
 
 print('Generating {} with {} glyphs'.format(fontfile, num_icons))
-font.ascent = 1000
-font.descent = 200
+font.ascent = 1050
+font.descent = 250
 font.generate(os.path.join(fontdir, fontfile), flags=("no-FFTM-table",))
 
 codepoints = [ int(p, 16) for _, p, *_ in mapping ]

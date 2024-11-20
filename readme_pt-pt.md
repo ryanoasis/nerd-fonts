@@ -118,6 +118,7 @@ See [Wiki: Nomes dos ícones em Unix Shell][wiki-icon-names-in-shell]
 | [Code New Roman Nerd Font][p-code-nr]             |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                | NÃO   | 1000       | ![w] ![m2] ![l]  |
 | [DaddyTimeMono][p-daddytimemono]                  | [DaddyTimeMono][f-daddytimemono]    | NÃO   | 1024       | ![w] ![m2] ![l]  |
+| [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono]   | NÃO   | 550        | ![w] ![m2] ![l]  |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
 | [Droid Sans Mono Nerd Font][p-droid]              |                                     | NÃO   | 2048       | ![w] ![m2] ![l]  |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]            | NÃO   | 2048       | ![w] ![m2] ![l]  |
@@ -537,6 +538,7 @@ Repositórios dos tipos de letra
 [f-daddytimemono]:https://github.com/BourgeoisBear/DaddyTimeMono
 [f-agave]:https://github.com/agarick/agave
 [f-ia-writer]:https://github.com/iaolo/iA-Fonts
+[f-departuremono]:https://github.com/rektdeckard/departure-mono
 
 <!--
 LIgações internas do «Patched Font»
@@ -551,6 +553,7 @@ LIgações internas do «Patched Font»
 [p-blex]:patched-fonts/IBMPlexMono
 [p-cascadia]:patched-fonts/CascadiaCode
 [p-cousine]:patched-fonts/Cousine
+[p-departuremono]:patched-fonts/DepartureMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
 [p-fantasque]:patched-fonts/FantasqueSansMono

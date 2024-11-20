@@ -4,7 +4,7 @@
       "unpatchedName": "0xProto",
       "licenseId": "OFL-1.1-no-RFN",
       "RFN": false,
-      "version": "1.603",
+      "version": "2.201",
       "patchedName": "0xProto",
       "folderName": "0xProto",
       "imagePreviewFont": "0xProto Nerd Font",
@@ -12,7 +12,7 @@
       "linkPreviewFont": "oxproto",
       "caskName": "0xproto",
       "repoRelease": false,
-      "description": "An opinionated font for software engineers"
+      "description": "A programming font focused on source code legibility"
     },
     {
       "unpatchedName": "IBM 3270",
@@ -237,6 +237,20 @@
       "caskName": "daddy-time-mono",
       "repoRelease": true,
       "description": "A monospaced font for programmers and other terminal groupies"
+    },
+    {
+      "unpatchedName": "Departure Mono",
+      "licenseId": "OFL-1.1-no-RFN",
+      "RFN": false,
+      "version": "1.422",
+      "patchedName": "DepartureMono",
+      "folderName": "DepartureMono",
+      "imagePreviewFont": "DepartureMono Nerd Font",
+      "imagePreviewFontSource": "DepartureMono/DepartureMono-Regular.otf",
+      "linkPreviewFont": "departuremono",
+      "caskName": "departure-mono",
+      "repoRelease": false,
+      "description": "A monospaced pixel font with a lo-fi, techy vibe"
     },
     {
       "unpatchedName": "DejaVu Sans Mono",
@@ -481,7 +495,7 @@
       "unpatchedName": "Intel One Mono",
       "licenseId": "OFL-1.1-RFN",
       "RFN": true,
-      "version": "1.3.0",
+      "version": "1.4.0",
       "patchedName": "IntoneMono",
       "folderName": "IntelOneMono",
       "imagePreviewFont": "IntoneMono Nerd Font",
@@ -621,7 +635,7 @@
       "unpatchedName": "Monaspace",
       "licenseId": "OFL-1.1-RFN",
       "RFN": true,
-      "version": "1.0.0",
+      "version": "1.101",
       "patchedName": "Monaspice",
       "folderName": "Monaspace",
       "imagePreviewFont": "MonaspiceNe NF",
@@ -684,7 +698,7 @@
       "imagePreviewFont": "M+1Code Nerd Font",
       "imagePreviewFontSource": "MPlus/M_Plus_1_code/Mplus1Code-Regular.ttf",
       "linkPreviewFont": "mplus",
-      "caskName": "mplus",
+      "caskName": "m+",
       "repoRelease": true,
       "description": "Multiple styles and weights, many glyph sets (e.g. Kana glyphs)"
     },

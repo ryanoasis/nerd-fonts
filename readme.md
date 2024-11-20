@@ -16,7 +16,7 @@
 </div>
 
 
-**Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][vorillaz-devicons], [Octicons][octicons], and [others](#glyph-sets).
+**Nerd Fonts** is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as [Font Awesome][font-awesome], [Devicons][devicons], [Octicons][octicons], and [others](#glyph-sets).
 
 The following flow diagram shows the current glyph sets included:
 
@@ -43,8 +43,9 @@ The following flow diagram shows the current glyph sets included:
   * [**5 - PowerShell Web Installer (Multi-Platform)**](#option-5-powershell-web-installer)
   * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
   * [**7 - Install Script**](#option-7-install-script)
-  * [**8 - Clone Repo**](#option-8-clone-the-repo)
-  * [**9 - Patch Your Own Font**](#option-9-patch-your-own-font)
+  * [**8 - Use Fontfallback**](#option-8-font-fallback)
+  * [**9 - Clone Repo**](#option-9-clone-the-repo)
+  * [**10 - Patch Your Own Font**](#option-10-patch-your-own-font)
 
 [**Features**](#features)
   * [**Glyph/Icon sets**](#glyph-sets)
@@ -82,8 +83,9 @@ _If you..._
   * `Option 5.` are using **PowerShell** and want an **interactive setup** or **use in scripts** see the [PowerShell Web Installer](#option-5-powershell-web-installer)
   * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
   * `Option 7.` want to **automate** installing or use in **scripts** see the [Install Script](#option-7-install-script)
-  * `Option 8.` want **complete control** then see [cloning the repo](#option-8-clone-the-repo)
-  * `Option 9.` want to patch your own font see the [Font Patcher](#option-9-patch-your-own-font)
+  * `Option 8.` want to install only one font for all fonts see [Font Fallback](#option-8-font-fallback)
+  * `Option 9.` want **complete control** then see [cloning the repo](#option-9-clone-the-repo)
+  * `Option 10.` want to patch your own font see the [Font Patcher](#option-10-patch-your-own-font)
 
 ## Features
 * A [FontForge Python script](#font-patcher) to patch any font
@@ -91,7 +93,7 @@ _If you..._
   * For more details see the [**Font Patcher**](#font-patcher) section
 * **`67`** already [patched font families](#patched-fonts)
 * Over **`10,000`** glyphs/icons combined [(more details)](#combinations)
-  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][vorillaz-devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
+  * Current glyph sets include: [Powerline with Extra Symbols][ryanoasis-powerline-extra-symbols], [Font Awesome][font-awesome], [Material Design Icons][font-material-design-icons], [Weather][font-weather], [Devicons][devicons], [Octicons][octicons], [Font Logos][font-logos] (Formerly Font Linux), [Pomicons][gabrielelana-pomicons], [Codeicons][codicons]
 * **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** _or_ **proportional** glyphs version of each font
   * This refers to the Nerd Font glyphs themselves not necessarily the Font as a whole
 * A Developer/Contributor provided [bash script](#gotta-patch-em-all) to re-patch all the fonts
@@ -114,7 +116,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 
 | Font Name                                         | Original Font Name and Repository      | ver        |\*RFN |
 |:--------------------------------------------------|:---------------------------------------|:-----------|:-----|
-| [0xProto Nerd Font][p-0xProto]                    | [0xProto][f-0xProto]                   | 1.603      | NO   |
+| [0xProto Nerd Font][p-0xProto]                    | [0xProto][f-0xProto]                   | 2.201      | NO   |
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                         | 3.0.1      | NO   |
 | [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 37         | NO   |
 | [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]               | 1.002      | YES  |
@@ -131,6 +133,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.211      | NO   |
 | [D2Coding Nerd Font][p-d2coding]                  | [D2Coding][f-d2coding]                 | 1.3.2      | NO   |
 | [DaddyTimeMono Nerd Font][p-daddytimemono]        | [DaddyTimeMono][f-daddytimemono]       | 1.2.3      | NO   |
+| [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono]      | 1.422      | NO   |
 | [DejaVuSansMono Nerd Font][p-dejavu]              | [DejaVu][f-dejavu]                     | 2.37       | NO   |
 | [DroidSansMono Nerd Font][p-droid]                | Droid Sans Mono (Ascender Corp)        | 1.00-113   | NO   |
 | [EnvyCodeR Nerd Font][p-envy]                     | [Envy Code R][f-envy]                  | 0.79       | YES  |
@@ -148,7 +151,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]           | 3.000      | NO   |
 | [InconsolataGo Nerd Font][p-inconsolata-go]       | [InconsolataGo][f-inconsolatago]       | 1.013      | NO   |
 | [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc]    | 1.5.2      | NO   |
-| [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.3.0      | YES  |
+| [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.4.0      | YES  |
 | [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 29.0.4     | NO   |
 | [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 29.0.4     | NO   |
 | [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 29.0.4     | NO   |
@@ -158,7 +161,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.400      | NO   |
 | [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.0.0      | NO   |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | NO   |
-| [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.0.0      | YES  |
+| [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.101      | YES  |
 | [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | NO   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                     | 0.61       | NO   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]                 | 1.6        | YES  |
@@ -185,7 +188,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 
 ### Variations
 
-- no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][vorillaz-devicons]**)
+- no flags given (defaults to only **Seti-UI + Custom** and **[Devicons][devicons]**)
 - **double _(variable/proportional)_** or **single _(fixed/monospaced)_** or **proportional** width icon-glyphs
 - [Font Awesome][font-awesome]
 - [Font Awesome Extension][font-awesome-extension]
@@ -346,7 +349,20 @@ or, in PowerShell (Windows only):
 ./install.ps1 DejaVuSansMono -WhatIf
 ```
 
-### `Option 8: Clone the Repo`
+### `Option 8: Font Fallback`
+Most systems have a mechanism to search for an alternative font when the current font does not
+have a glyph that is needed. For example you edit a Latin text and insert a Chinese character,
+that glyph is taken not from your active font (it does not have it) but from some other font.
+
+For this font fallback you can use one of the `SymbolsOnly` fonts.
+
+For fontconfig based systems like Linux you can improve the behavior with the
+`10-nerd-font-symbols.conf` configuration file, that needs to be manually installed.
+
+* Pro: One symbol font is sufficient for all text fonts
+* Con: Scaling and placement of the fallback symbols can be hit or miss
+
+### `Option 9: Clone the Repo`
 
 > Best option for **full control**, **all** or **some** of the fonts, or **contributing** to development.
 
@@ -373,7 +389,7 @@ cd nerd-fonts
 git sparse-checkout add patched-fonts/JetBrainsMono
 ```
 
-### `Option 9: Patch Your Own Font`
+### `Option 10: Patch Your Own Font`
 
 > The option for **patching** your **own font** or fully **customizing** the patched font.
 
@@ -630,7 +646,7 @@ Repo References
 -->
 
 [vim-devicons]:https://github.com/ryanoasis/vim-devicons "VimDevIcons Vim Plugin (external link) ➶"
-[vorillaz-devicons]:https://vorillaz.github.io/devicons/
+[devicons]:https://github.com/devicons/devicon
 [font-awesome]:https://github.com/FortAwesome/Font-Awesome
 [font-awesome-extension]:https://github.com/AndreLZGava/font-awesome-extension
 [font-material-design-icons]:https://github.com/Templarian/MaterialDesign
@@ -700,6 +716,7 @@ Font repos
 [f-commit]:https://github.com/eigilnikolajsen/commit-mono
 [f-d2coding]:https://github.com/naver/d2codingfont
 [f-daddytimemono]:https://github.com/BourgeoisBear/DaddyTimeMono
+[f-departuremono]:https://github.com/rektdeckard/departure-mono
 [f-dejavu]:https://github.com/dejavu-fonts/dejavu-fonts
 [f-envy]:https://github.com/damieng/envy-code-r
 [f-fant]:https://github.com/belluzj/fantasque-sans
@@ -766,6 +783,7 @@ Patched Font internal links
 [p-cousine]:patched-fonts/Cousine
 [p-d2coding]:patched-fonts/D2Coding
 [p-daddytimemono]:patched-fonts/DaddyTimeMono
+[p-departuremono]:patched-fonts/DepartureMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
 [p-envy]:patched-fonts/EnvyCodeR

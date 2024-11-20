@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.2.1
+# Nerd Fonts Version: 3.3.0
 # Script Version: 1.2.0
 # Iterates over all patched fonts directories
 # to generate release archives of the patched font(s)
@@ -57,7 +57,7 @@ while read -r filename; do
 
     rm -f "${outputdir}/${basename}.tar"
     expected=$(find "${searchdir}" -iname "*.[ot]tf" -exec echo "+" \; | wc -l)
-    if [ $expected -eq 0 ]; then
+    if [ "${expected}" -eq 0 ]; then
         echo "${LINE_PREFIX} There seem to be no font files in ${basename}! Aborting!"
         exit 1
     fi

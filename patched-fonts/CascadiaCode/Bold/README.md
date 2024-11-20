@@ -4,6 +4,8 @@
 
 For more information have a look at the upstream website: https://github.com/microsoft/cascadia-code
 
+Note that upstream has a version with Nerd Font icons: CascadiaCodeNF. That has not been created with the Nerd Fonts `font-patcher`.
+
 ## Preprocessed Source Font
 
 This source font has been preprocessed - it is not taken directly from upstream.

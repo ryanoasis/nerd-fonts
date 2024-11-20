@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-# Nerd Fonts Version: 3.2.1
-# Script Version: 2.2.3
+# Nerd Fonts Version: 3.3.0
+# Script Version: 2.3.0
 #
 # Iterates over all [*] archived fonts
-# to generate ruby cask files for homebrew-fonts (https://github.com/Homebrew/homebrew-cask-fonts)
-# * Only adds non-Windows versions of the fonts
+# to generate ruby cask files for homebrew-fonts (https://github.com/Homebrew/homebrew-cask)
 # * Needs the zip archives in archives/ (i.e. run `./archive-fonts.sh` first)
 #
 # Uses the current release version (including drafts) of the repo.
@@ -24,7 +23,7 @@
 # set -x
 set -e
 
-version="3.2.1"
+version="3.3.0"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 downloadarchive="https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/"
 LINE_PREFIX="# [Nerd Fonts] "
@@ -163,7 +162,6 @@ function write_body {
             if [ "$i" == 0 ]; then
                 {
                     printf "  name \"%s (%s)\"\\n" "$familyname" "$unpatchedname"
-                    printf "  desc \"Developer targeted fonts with a high number of glyphs\"\\n"
                     printf "  homepage \"%s\"" "$homepage"
                     printf "\\n\\n"
                     printf "  livecheck do\\n"
@@ -236,14 +234,12 @@ while read -r filename; do
         FONTS=("${FONTS[@]}" "$file")
     done < <(find "$searchdir" -type f -iname '*.[ot]tf' -print0 | LC_ALL=C sort -z)
 
-    outputdir=$PWD/../casks
-
     echo "$LINE_PREFIX Generating cask for: $basename"
 
-    [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
-
     caskname="font-${caskbasename}-nerd-font"
-    to="$outputdir/${caskname}.rb"
+    outputdir="${PWD}/../casks/${caskname:0:6}"
+    [[ -d "$outputdir" ]] || mkdir -p "$outputdir"
+    to="${outputdir}/${caskname}.rb"
 
     clear_file "$to"
     write_header "$to" "$caskname"

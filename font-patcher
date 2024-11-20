@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # coding=utf8
-# Nerd Fonts Version: 3.2.1
+# Nerd Fonts Version: 3.3.0
 # Script version is further down
 
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.14.4"
+script_version = "4.16.1"
 
-version = "3.2.1"
+version = "3.3.0"
 projectName = "Nerd Fonts"
 projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]
@@ -318,6 +318,16 @@ def create_filename(fonts):
         sfnt_psubfam = '-' + sfnt_psubfam
     return (sfnt_pfam + sfnt_psubfam).replace(' ', '')
 
+def fetch_glyphnames():
+    """ Read the glyphname database and put it into a dictionary """
+    try:
+        glyphnamefile = os.path.abspath(os.path.dirname(sys.argv[0])) + '/glyphnames.json'
+        with open(glyphnamefile, 'r') as f:
+            namelist = json.load(f)
+            return { int(v['code'], 16): k for k, v in namelist.items() if 'code' in v }
+    except Exception as error:
+        logger.warning("Can not read glyphnames file (%s)", repr(error))
+        return {}
 
 class font_patcher:
     def __init__(self, args, conf):
@@ -333,6 +343,7 @@ class font_patcher:
         self.onlybitmaps = 0
         self.essential = set()
         self.xavgwidth = [] # list of ints
+        self.glyphnames = fetch_glyphnames()
 
     def patch(self, font):
         self.sourceFont = font
@@ -888,21 +899,21 @@ class font_patcher:
             0xe0b7: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'xy-ratio': 0.5}},
 
             # Bottom Triangles
-            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0b8: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0b9: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {}},
-            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0ba: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0bb: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {}},
 
             # Top Triangles
-            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0bc: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0bd: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {}},
-            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.02}},
+            0xe0be: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05}},
             0xe0bf: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {}},
 
             # Flames
-            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c0: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
             0xe0c1: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {}},
-            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c2: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
             0xe0c3: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {}},
 
             # Small squares
@@ -914,8 +925,8 @@ class font_patcher:
             0xe0c7: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': -0.03, 'xy-ratio': 0.78}},
 
             # Waveform
-            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
-            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.01}},
+            0xe0c8: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
+            0xe0ca: {'align': 'r', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.05}},
 
             # Hexagons
             0xe0cc: {'align': 'l', 'valign': 'c', 'stretch': '^xy2', 'params': {'overlap': 0.02, 'xy-ratio': 0.85}},
@@ -953,6 +964,16 @@ class font_patcher:
             # 0x2592: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
             # 0x2593: {'align': 'c', 'valign': 'c', 'stretch': 'xy', 'params': {'dont_copy': box_keep}},
         }
+        SYM_ATTR_PROGRESS = {
+            'default': {'align': 'c', 'valign': 'c', 'stretch': '^pa1!', 'params': {'overlap': -0.03, 'careful': True}}, # Cirles
+            # All the squares:
+            0xee00: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+            0xee01: {'align': 'c', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.10, 'careful': True}},
+            0xee02: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+            0xee03: {'align': 'r', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+            0xee04: {'align': 'c', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.10, 'careful': True}},
+            0xee05: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.05, 'careful': True}},
+        }
         CUSTOM_ATTR = {
             # previous custom scaling => do not touch the icons
             # 'default': {'align': 'c', 'valign': '', 'stretch': '', 'params': {}}
@@ -972,9 +993,9 @@ class font_patcher:
         #       Shifting in addition to scaling can be selected too (see below).
         #   - ScaleGroups:
         #       Here you specify a group of glyphs that should be handled together
-        #       with the same scaling and shifting. The basis for it is a 'combined
-        #       bounding box' of all glyphs in that group. All glyphs are handled as
-        #       if they fill that combined bounding box.
+        #       with the same scaling and shifting (see bottom). The basis for it is
+        #       a 'combined bounding box' of all glyphs in that group. All glyphs are
+        #       handled as if they fill that combined bounding box.
         #  (- ScaleGroupsVert: Removed with this commit)
         #
         # The ScaleGlyph method: You set 'ScaleGlyph' to the unicode of the reference glyph.
@@ -991,7 +1012,7 @@ class font_patcher:
         #
         # For the ScaleGroup method you define any number groups of glyphs and each group is
         # handled separately. The combined bounding box of all glyphs in the group is determined
-        # and based on that the scale and shift for all the glyphs in the group.
+        # and based on that the scale and shift (see bottom) for all the glyphs in the group.
         # You define the groups as value of 'ScaleGroups'.
         # It is a List of: ((lists of glyph codes) or (ranges of glyph codes))
         #    'ScaleGroups': [
@@ -1002,15 +1023,21 @@ class font_patcher:
         # See prepareScaleRules() for some more details.
         # For historic reasons ScaleGroups is sometimes called 'new method' and ScaleGlyph 'old'.
         # The codepoints mentioned here are symbol-font-codepoints.
+        #
+        # Shifting:
+        # If we have a combined bounding box stored in a range, that
+        # box is used to align all symbols in the range identically.
+        # - If the symbol font is proportinal only the v alignment is synced.
+        # - If the symbol font is monospaced v and h alignemnts are synced.
+        # To make sure the behavior is as expected you are required to set a ShiftMode property
+        # accordingly. It just checks, you can not (!) select what is done with that property.
 
-        BOX_SCALE_LIST = {'ScaleGroups': [
+        BOX_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
             [*range(0x2500, 0x2570 + 1), *range(0x2574, 0x257f + 1)], # box drawing
             range(0x2571, 0x2573 + 1), # diagonals
-            [*range(0x2580, 0x2590 + 1), 0x2594, 0x2595], # blocks
-            range(0x2591, 0x2593 + 1), # greys
-            range(0x2594, 0x259f + 1), # quards (Note: quard 2597 in Hack is wrong, scales like block!)
+            range(0x2580, 0x259f + 1), # blocks and greys (greys are less tall originally, so overlap will be less)
         ]}
-        CODI_SCALE_LIST = {'ScaleGroups': [
+        CODI_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
             [0xea61, 0xeb13], # lightbulb
             range(0xeab4, 0xeab7 + 1), # chevrons
             [0xea7d, *range(0xea99, 0xeaa1 + 1), 0xebcb], # arrows
@@ -1021,11 +1048,8 @@ class font_patcher:
             [*range(0xeb89, 0xeb8b + 1), 0xec07], # smallish dots
             range(0xebd5, 0xebd7 + 1), # compasses
         ]}
-        DEVI_SCALE_LIST = {'ScaleGlyph': 0xE60E, # Android logo
-            'GlyphsToScale': [
-                (0xe6bd, 0xe6c3) # very small things
-        ]}
-        FONTA_SCALE_LIST = {'ScaleGroups': [
+        DEVI_SCALE_LIST = None
+        FONTA_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
             [0xf005, 0xf006, 0xf089], # star, star empty, half star
             range(0xf026, 0xf028 + 1), # volume off, down, up
             range(0xf02b, 0xf02c + 1), # tag, tags
@@ -1046,11 +1070,11 @@ class font_patcher:
             range(0xf221, 0xf22d + 1), # gender or so
             range(0xf255, 0xf25b + 1), # hand symbols
         ]}
-        HEAVY_SCALE_LIST = {'ScaleGlyph': 0x2771, # widest bracket, horizontally
+        HEAVY_SCALE_LIST = {'ShiftMode': 'y', 'ScaleGlyph': 0x2771, # widest bracket, horizontally
             'GlyphsToScale': [
                 (0x276c, 0x2771) # all
         ]}
-        OCTI_SCALE_LIST = {'ScaleGroups': [
+        OCTI_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
                 [*range(0xf03d, 0xf040 + 1), 0xf019, 0xf030, 0xf04a, 0xf051,  0xf071, 0xf08c ], # arrows
                 [0xF0E7, # Smily and ...
                     0xf044, 0xf05a, 0xf05b, 0xf0aa, # triangles
@@ -1062,7 +1086,11 @@ class font_patcher:
                 range(0xf2c2, 0xf2c5 + 1), # move to
                 [0xf07b, 0xf0a1, 0xf0d6, 0xf306], # bookmarks
         ]}
-        WEATH_SCALE_LIST = {'ScaleGroups': [
+        PROGR_SCALE_LIST = {'ShiftMode': 'xy', 'ScaleGroups': [
+                range(0xedff, 0xee05 + 1), # boxes... with helper glyph for Y padding
+                range(0xee06, 0xee0b + 1), # circles
+        ]}
+        WEATH_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
             [0xf03c, 0xf042, 0xf045 ], # degree signs
             [0xf043, 0xf044, 0xf048, 0xf04b, 0xf04c, 0xf04d, 0xf057, 0xf058, 0xf087, 0xf088], # arrows
             range(0xf053, 0xf055 + 1), # thermometers
@@ -1071,6 +1099,8 @@ class font_patcher:
             range(0xf095, 0xf0b0 + 1), # moon phases
             range(0xf0b7, 0xf0c3 + 1), # wind strengths
             [0xf06e, 0xf070 ], # solar/lunar eclipse
+            [0xf051, 0xf052, 0xf0c9, 0xf0ca, 0xf072 ], # sun/moon up/down
+            [0xf049, 0xf056, 0xf071, *range(0xf073, 0xf07c + 1), 0xf08a], # other things
             # Note: Codepoints listed before that are also in the following range
             # will take the scaling of the previous group (the ScaleGroups are
             # searched through in definition order).
@@ -1078,7 +1108,12 @@ class font_patcher:
             # _will_ include all glyphs in its definition: Make sure the exempt
             # glyphs from above are smaller (do not extend) the combined bounding
             # box of this range:
-            range(0xf000, 0xf0cb + 1), # lots of clouds and other (Please read note above!)
+            [ *range(0xf000, 0xf041 + 1),
+              *range(0xf064, 0xf06d + 1),
+              *range(0xf07d, 0xf083 + 1),
+              *range(0xf085, 0xf086 + 1),
+              *range(0xf0b2, 0xf0b6 + 1)
+            ], # lots of clouds (weather states) (Please read note above!)
         ]}
         MDI_SCALE_LIST = None # Maybe later add some selected ScaleGroups
 
@@ -1089,7 +1124,8 @@ class font_patcher:
             {'Enabled': True,                           'Name': "Seti-UI + Custom",        'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': True,                           'Name': "Heavy Angle Brackets",    'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': HEAVY_SCALE_LIST, 'Attributes': SYM_ATTR_HEAVYBRACKETS},
             {'Enabled': box_enabled,                    'Name': "Box Drawing",             'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
-            {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons/devicons.ttf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE6C5, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': True,                           'Name': "Progress Indicators",     'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0xEE00, 'SymEnd': 0xEE0B, 'SrcStart': None,   'ScaleRules': PROGR_SCALE_LIST, 'Attributes': SYM_ATTR_PROGRESS},
+            {'Enabled': True,                           'Name': "Devicons",                'Filename': "devicons/devicons.ttf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE7E3, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",       'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra Symbols", 'Filename': "powerline-extra/PowerlineExtraSymbols.otf",      'Exact': True,  'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
@@ -1105,7 +1141,7 @@ class font_patcher:
             {'Enabled': False             ,             'Name': "Material legacy",         'Filename': "materialdesign/materialdesignicons-webfont.ttf", 'Exact': False, 'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.material,             'Name': "Material",                'Filename': "materialdesign/MaterialDesignIconsDesktop.ttf",  'Exact': True,  'SymStart': 0xF0001,'SymEnd': 0xF1AF0,'SrcStart': None,   'ScaleRules': MDI_SCALE_LIST,   'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.weather,              'Name': "Weather Icons",           'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'ScaleRules': WEATH_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.fontlogos,            'Name': "Font Logos",              'Filename': "font-logos.ttf",                                 'Exact': True,  'SymStart': 0xF300, 'SymEnd': 0xF375, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.fontlogos,            'Name': "Font Logos",              'Filename': "font-logos.ttf",                                 'Exact': True,  'SymStart': 0xF300, 'SymEnd': 0xF381, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Magnifying glass
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Heart
             {'Enabled': self.args.octicons,             'Name': "Octicons",                'Filename': "octicons/octicons.ttf",                          'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Zap
@@ -1329,25 +1365,29 @@ class font_patcher:
             return 1
         return 2
 
-    def get_scale_factors(self, sym_dim, stretch):
+    def get_scale_factors(self, sym_dim, stretch, overlap=None):
         """ Get scale in x and y as tuple """
         # It is possible to have empty glyphs, so we need to skip those.
         if not sym_dim['width'] or not sym_dim['height']:
             return (1.0, 1.0)
 
         target_width = self.font_dim['width'] * self.get_target_width(stretch)
+        if overlap:
+            target_width += self.font_dim['width'] * overlap
         scale_ratio_x = target_width / sym_dim['width']
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
         # Use the font_dim['height'] only for explicit 'y' scaling (not 'pa')
         target_height = self.font_dim['height'] if '^' in stretch else self.font_dim['iconheight']
         target_height *= 1.0 - self.font_dim['ypadding']
+        if overlap:
+            target_height *= 1.0 + min(0.01, overlap) # never aggressive vertical overlap
         scale_ratio_y = target_height / sym_dim['height']
 
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
-            if not self.args.single and not '!' in stretch:
+            if not self.args.single and not '!' in stretch and not overlap:
                 # non monospaced fonts just scale down on 'pa', not up
                 scale_ratio_x = min(scale_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
@@ -1481,30 +1521,32 @@ class font_patcher:
                 # Paste it
                 self.sourceFont.selection.select(currentSourceFontGlyph)
                 self.sourceFont.paste()
-                self.sourceFont[currentSourceFontGlyph].glyphname = sym_glyph.glyphname
+                self.sourceFont[currentSourceFontGlyph].glyphname = \
+                        self.glyphnames.get(currentSourceFontGlyph, sym_glyph.glyphname) if setName != 'Custom' else sym_glyph.glyphname
                 self.sourceFont[currentSourceFontGlyph].manualHints = True # No autohints for symbols
 
             # Prepare symbol glyph dimensions
             sym_dim = get_glyph_dimensions(self.sourceFont[currentSourceFontGlyph])
-            if glyph_scale_data is not None:
-                if glyph_scale_data[1] is not None:
-                    sym_dim = glyph_scale_data[1] # Use combined bounding box
-                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch)
-                else:
-                    # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
-                    # Except we do not have glyph_scale_data[1] always...
-                    (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
-            else:
-                (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch)
-
             overlap = sym_attr['params'].get('overlap')
             if overlap and ypadding:
                 logger.critical("Conflicting params: overlap and ypadding")
                 sys.exit(1)
-            if overlap:
-                scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
-                y_overlap = min(0.01, overlap) # never aggressive vertical overlap
-                scale_ratio_y *= 1.0 + (self.font_dim['height'] / (sym_dim['height'] * scale_ratio_y)) * y_overlap
+
+            if glyph_scale_data is not None:
+                if glyph_scale_data[1] is not None:
+                    sym_dim = glyph_scale_data[1] # Use combined bounding box
+                    (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch, overlap)
+                else:
+                    # This is roughly alike get_scale_factors(glyph_scale_data[1], 'pa')
+                    # Except we do not have glyph_scale_data[1] always...
+                    (scale_ratio_x, scale_ratio_y) = (glyph_scale_data[0], glyph_scale_data[0])
+                    if overlap:
+                        scale_ratio_x *= 1.0 + (self.font_dim['width'] / (sym_dim['width'] * scale_ratio_x)) * overlap
+                        y_overlap = min(0.01, overlap) # never aggressive vertical overlap
+                        scale_ratio_y *= 1.0 + (self.font_dim['height'] / (sym_dim['height'] * scale_ratio_y)) * y_overlap
+            else:
+                (scale_ratio_x, scale_ratio_y) = self.get_scale_factors(sym_dim, stretch, overlap)
+
 
             # Size in x to size in y ratio limit (to prevent over-wide glyphs)
             xy_ratio_max = sym_attr['params'].get('xy-ratio')
@@ -1538,7 +1580,8 @@ class font_patcher:
 
             # Handle glyph l/r/c alignment
             x_align_distance = 0
-            if self.args.nonmono and sym_dim['advance'] is None:
+            simple_nonmono = self.args.nonmono and sym_dim['advance'] is None
+            if simple_nonmono:
                 # Remove left side bearing
                 # (i.e. do not remove left side bearing when combined BB is in use)
                 x_align_distance = -self.sourceFont[currentSourceFontGlyph].left_side_bearing
@@ -1551,17 +1594,19 @@ class font_patcher:
                 elif sym_attr['align'] == 'r':
                     # Right align
                     x_align_distance += self.font_dim['width'] * self.get_target_width(stretch) - sym_dim['width']
-                # If symbol glyph is wider than target font cell, just left-align
-                x_align_distance = max(self.font_dim['xmin'] - sym_dim['xmin'], x_align_distance)
+                if not overlap:
+                    # If symbol glyph is wider than target font cell, just left-align
+                    x_align_distance = max(self.font_dim['xmin'] - sym_dim['xmin'], x_align_distance)
 
             if overlap:
                 overlap_width = self.font_dim['width'] * overlap
                 if sym_attr['align'] == 'l':
                     x_align_distance -= overlap_width
                 elif sym_attr['align'] == 'c':
-                    if overlap_width > 0:
+                    # center aligned keeps being center aligned even with overlap
+                    if overlap_width < 0 and simple_nonmono: # Keep positive bearing due to negative overlap (propo)
                         x_align_distance -= overlap_width / 2
-                elif sym_attr['align'] == 'r':
+                elif sym_attr['align'] == 'r' and not simple_nonmono:
                     # Check and correct overlap; it can go wrong if we have a xy-ratio limit
                     target_xmax = (self.font_dim['xmin'] + self.font_dim['width']) * self.get_target_width(stretch)
                     target_xmax += overlap_width
@@ -1593,7 +1638,7 @@ class font_patcher:
                 else:
                     width = sym_dim['width']
                 # If we have overlap we need to subtract that to keep/get negative bearings
-                if overlap and (sym_attr['align'] == 'l' or sym_attr['align'] == 'r'):
+                if overlap:
                     width -= overlap_width
                 # Fontforge handles the width change like this:
                 # - Keep existing left_side_bearing
@@ -1691,11 +1736,21 @@ class font_patcher:
         scaleRules['bbdims'] = []
         if 'ScaleGroups' not in scaleRules:
             scaleRules['ScaleGroups'] = []
+
+        mode = scaleRules['ShiftMode'] # Mode is only documentary
         for group in scaleRules['ScaleGroups']:
             sym_dim = get_multiglyph_boundingBox([ symbolFont[g] if g in symbolFont else None for g in group ], destGlyph)
             scale = self.get_scale_factors(sym_dim, stretch)[0]
             scaleRules['scales'].append(scale)
             scaleRules['bbdims'].append(sym_dim)
+            if (mode):
+                if ('x' in mode) != (sym_dim['advance'] is not None):
+                    d = '0x{:X} - 0x{:X}'.format(group[0], group[-1])
+                    if ('x' in mode) :
+                        logger.critical("Scaling in group %s is expected to do horizonal shifts but can not", d)
+                    else:
+                        logger.critical("Scaling in group %s is expected to not do horizonal shifts but will", d)
+                    sys.exit(1)
 
         if 'ScaleGlyph' in scaleRules:
             # Rewrite to equivalent ScaleGroup
@@ -2128,8 +2183,11 @@ def main():
     sourceFonts = []
     all_fonts = fontforge.fontsInFile(args.font)
     if not all_fonts:
-        logger.critical("Can not find any fonts in '%s'", args.font)
-        sys.exit(1)
+        if re.match(".*\\.woff2?", args.font, re.I):
+            all_fonts=[ "" ]
+        else:
+            logger.critical("Can not find any fonts in '%s'", args.font)
+            sys.exit(1)
     for i, subfont in enumerate(all_fonts):
         if len(all_fonts) > 1:
           print("\n")

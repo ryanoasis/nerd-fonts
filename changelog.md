@@ -2,6 +2,55 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.3.0
+
+The Post-Halloween Release
+
+The biggest change is the update of **Devicons** by switching from the unmaintained repo
+to a more maintained fork that has lots of asked for icons. Some very old icons have
+been dropped now; hope noone is really affected. See the description in #1691 for
+a complete list.
+
+### Breaking
+ - Because Devicons are updated some old icons were dropped (replaced) #1691
+
+### Fonts
+ - Add Departure Mono @rektdeckard #1709
+ - Add Monaspace weight ExtraLight (Italic) #1670
+ - Update 0xProto to 2.201 @my4ng #1623
+ - Update Intel One Mono to 1.4.0 #1741
+ - Update Monaspace to v1.101 @Stealthii #1630
+ - Fix upstream Gohufont 14 question mark bug #1654
+
+### Icons
+ - Switch to devicons/devicon #1691
+ - Add Chuck and Vitruvian Man #1740
+ - Add Progress Indicators a la Fira Code #1733
+ - Update Font Logos to 1.3.0 #1721
+ - FontAwesome: Scale glyphs a bit smaller #1722
+ - Improve Bazel icon @zaucy #1610
+ - Improve Ruby and Firebase icons
+
+### Features
+ - Add shell based cheat-sheet script @hasecilu #1694
+ - Add fontfonfig file to SymbolsOnly release archive (for repackagers) #1713
+ - Unify configuration files for font-patcher and gotta-patch-em (format changed) #1613
+
+### Bugs and improvements
+ - Fix Powerline glyphs position and size in some cases #1727
+ - font-patcher: Allow to rehint glyphs via config file #1613
+ - font-patcher: don't double-shrink heavy angle brackets @gibfahn #1617
+ - font-patcher: Fix behavior when trying to patch non-font files #1648
+ - font-patcher: Fix escaping warning
+ - gotta-patch-em: Remove post processing
+ - Increase Powerline overlap (big triangles and more) #1724
+ - Increase weather icons 'other' icons scale #1726
+ - ShareTechMono: Fix fi/fl ligs #1631
+ - PowerShell install @jpawlowski #1701
+
+### Website and docs
+Again a lot has been done by various people, thank you all!
+
 ## v3.2.1
 
 This bugfix release is mainly because of the Fira Code progress indicator glyphs. These are used by some applications, and usually could be used via fontfallback from any font (because the codepoints were un-occupied in the Nerd Fonts). But with adding more FontAwesome glyphs we utilized that codepoints for the new glyphs, breaking this common setup.

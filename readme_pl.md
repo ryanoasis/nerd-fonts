@@ -196,6 +196,7 @@ echo $i_oct_heart
 | [Blex*][p-blex]                                   | [IBM Plex][f-ibm-plex]            | YES  | 1000    | ![w] ![m2] ![l]   |
 | [Code New Roman Nerd Font][p-code-nr]             |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]              | NO   | 1000    | ![w] ![m2] ![l]   |
+| [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono] | NO   | 550     | ![w] ![m2] ![l]   |
 | [DejaVu Sans Mono Nerd Font][p-dejavu]            |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Droid Sans Mono Nerd Font][p-droid]              |                                   | NO   | 2048    | ![w] ![m2] ![l]   |
 | [Fantasque Sans Nerd Font][p-fantasque]           | [Fantasque Sans][f-fant]          | NO   | 2048    | ![w] ![m2] ![l]   |
@@ -605,6 +606,7 @@ Font repos
 [f-mononoki]:https://madmalik.github.io/mononoki/
 [f-hasklig]:https://github.com/i-tu/Hasklig
 [f-ibm-plex]:https://github.com/IBM/plex
+[f-departuremono]:https://github.com/rektdeckard/departure-mono
 
 <!--
 Patched Font internal links
@@ -618,6 +620,7 @@ Patched Font internal links
 [p-bitstream]:patched-fonts/BitstreamVeraSansMono
 [p-blex]:patched-fonts/Blex
 [p-cousine]:patched-fonts/Cousine
+[p-departuremono]:patched-fonts/DepartureMono
 [p-dejavu]:patched-fonts/DejaVuSansMono
 [p-droid]:patched-fonts/DroidSansMono
 [p-fantasque]:patched-fonts/FantasqueSansMono
