@@ -454,7 +454,7 @@ Patching the font of your own choosing:
 Full options follow, see also [**page explaining all options**](https://github.com/ryanoasis/nerd-fonts/wiki/ScriptOptions):
 
 ```
-Nerd Fonts Patcher v3.1.0-6 (4.8.1) (ff 20230101)
+Nerd Fonts Patcher v3.3.0-21 (4.16.1) (ff 20230101)
 usage: font-patcher [-h] [-v] [-s] [--variable-width-glyphs]
                     [--debug [{0,1,2,3}]] [-q] [--careful] [-ext EXTENSION]
                     [-out OUTPUTDIR] [--makegroups [{-1,0,1,2,3,4,5,6}]] [-c]
@@ -472,7 +472,7 @@ usage: font-patcher [-h] [-v] [-s] [--variable-width-glyphs]
 Nerd Fonts Font Patcher: patches a given font with programming and development related glyphs
 
 * Website: https://www.nerdfonts.com
-* Version: 3.1.0-6
+* Version: 3.3.0-21
 * Development Website: https://github.com/ryanoasis/nerd-fonts
 * Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md
 
