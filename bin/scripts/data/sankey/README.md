@@ -9,20 +9,19 @@ Goto https://sankeymatic.com/
 
 Enter data:
 
-    Powerline Symbols: 7 icons [7] Nerd Fonts: 9,014 icons
-    Powerline Extra Symbols: 38 icons [31] Nerd Fonts: 9,014 icons
-    Font Awesome: 675 icons [675] Nerd Fonts: 9,014 icons
-    Font Awesome Extension: 170 icons [170] Nerd Fonts: 9,014 icons
-    Devicons:198 icons [198] Nerd Fonts: 9,014 icons
-    Weather Icons: 228 icons [228] Nerd Fonts: 9,014 icons
-    Seti UI + Custom: 179 icons [179] Nerd Fonts: 9,014 icons
-    Octicons: 172 icons [172] Nerd Fonts: 9,014 icons
-    Font Logos: 48 icons [48] Nerd Fonts: 9,014 icons
-    IEC Power Symbols: 5 icons [5] Nerd Fonts: 9,014 icons
-    Pomicons: 11 icons [11] Nerd Fonts: 9,014 icons
-    Material Design: 6,896 icons [2119] Nerd Fonts: 9,014 icons
-    Codicons: 387 icons [387] Nerd Fonts: 9,014 icons
-    :Nerd Fonts: 9,014 icons #3484bb
+    Powerline Symbols: 7 icons [7] Nerd Fonts: 10,390 icons
+    Powerline Extra Symbols: 33 icons [33] Nerd Fonts: 10,390 icons
+    Font Awesome: 1474 icons [1474] Nerd Fonts: 10,390 icons
+    Font Awesome Extension: 170 icons [170] Nerd Fonts: 10,390 icons
+    Devicons:496 icons [496] Nerd Fonts: 10,390 icons
+    Weather Icons: 228 icons [228] Nerd Fonts: 10,390 icons
+    Seti UI + Custom: 190 icons [190] Nerd Fonts: 10,390 icons
+    Octicons: 310 icons [310] Nerd Fonts: 10,390 icons
+    Font Logos: 130 icons [130] Nerd Fonts: 10,390 icons
+    IEC Power Symbols: 5 icons [5] Nerd Fonts: 10,390 icons
+    Pomicons: 11 icons [11] Nerd Fonts: 10,390 icons
+    Material Design: 6,896 icons [4119] Nerd Fonts: 10,390 icons
+    Codicons: 439 [439] Nerd Fonts: 10,390 icons
 
 Note that we do not use the amount calculation anymore but do that by hand. The reason is that Material Design has so many icons now, if we keep this graph to scale MDI will dominate them all. So we put the numbers and the sum there explicitely as text and do the scaling (number is brackets) about as before.
 

@@ -1,20 +1,21 @@
-// SankeyMATIC diagram inputs - Saved: 1/23/2023, 11:47:58 AM
+// SankeyMATIC diagram inputs - Saved: 11/21/2024, 1:47:46 PM
+// https://sankeymatic.com/build/
+
 // === Nodes and Flows ===
 
-    Powerline Symbols: 7 icons [7] Nerd Fonts: 9,014 icons
-    Powerline Extra Symbols: 38 icons [31] Nerd Fonts: 9,014 icons
-    Font Awesome: 675 icons [675] Nerd Fonts: 9,014 icons
-    Font Awesome Extension: 170 icons [170] Nerd Fonts: 9,014 icons
-    Devicons:198 icons [198] Nerd Fonts: 9,014 icons
-    Weather Icons: 228 icons [228] Nerd Fonts: 9,014 icons
-    Seti UI + Custom: 179 icons [59] Nerd Fonts: 9,014 icons
-    Octicons: 172 icons [172] Nerd Fonts: 9,014 icons
-    Font Logos: 48 icons [48] Nerd Fonts: 9,014 icons
-    IEC Power Symbols: 5 icons [5] Nerd Fonts: 9,014 icons
-    Pomicons: 11 icons [11] Nerd Fonts: 9,014 icons
-    Material Design: 6,896 icons [2119] Nerd Fonts: 9,014 icons
-    Codicons: 387 [387] Nerd Fonts: 9,014 icons
-    :Nerd Fonts: 9,014 icons #3484bb
+    Powerline Symbols: 7 icons [7] Nerd Fonts: 10,390 icons
+    Powerline Extra Symbols: 33 icons [33] Nerd Fonts: 10,390 icons
+    Font Awesome: 1474 icons [1474] Nerd Fonts: 10,390 icons
+    Font Awesome Extension: 170 icons [170] Nerd Fonts: 10,390 icons
+    Devicons:496 icons [496] Nerd Fonts: 10,390 icons
+    Weather Icons: 228 icons [228] Nerd Fonts: 10,390 icons
+    Seti UI + Custom: 190 icons [190] Nerd Fonts: 10,390 icons
+    Octicons: 310 icons [310] Nerd Fonts: 10,390 icons
+    Font Logos: 130 icons [130] Nerd Fonts: 10,390 icons
+    IEC Power Symbols: 5 icons [5] Nerd Fonts: 10,390 icons
+    Pomicons: 11 icons [11] Nerd Fonts: 10,390 icons
+    Material Design: 6,896 icons [4119] Nerd Fonts: 10,390 icons
+    Codicons: 439 [439] Nerd Fonts: 10,390 icons
 
 // === Settings ===
 
@@ -25,7 +26,7 @@ margin l 12
   t 18
   b 20
 bg color #ffffff
-  transparent n
+  transparent N
 node w 18
   h 53
   spacing 71
@@ -34,29 +35,38 @@ node w 18
   color #888888
   opacity 1
 flow curvature 0.7
-  inheritfrom outside-in
+  inheritfrom source
   color #999999
   opacity 0.45
 layout order automatic
-  justifyorigins n
-  justifyends n
-  reversegraph n
+  justifyorigins N
+  justifyends N
+  reversegraph N
+  attachincompletesto nearest
 labels color #000000
+  hide N
   highlight 0.55
   fontface monospace
-labelname appears y
+  linespacing 0.2
+  relativesize 100
+  magnify 100
+labelname appears Y
   size 14
   weight 400
-labelvalue appears n
-  fullprecision y
-labelposition first after
+labelvalue appears N
+  fullprecision Y
+  position after
+  weight 400
+labelposition autoalign 0
+  scheme per_stage
+  first after
   breakpoint 2
 value format ',.'
   prefix ''
   suffix ' icons'
-themeoffset a 1
+themeoffset a 0
   b 0
   c 0
-  d 0
-meta mentionsankeymatic n
-  listimbalances y
+  d 7
+meta mentionsankeymatic N
+  listimbalances Y
