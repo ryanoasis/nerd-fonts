@@ -25,10 +25,8 @@ The flow diagram below illustrates the glyph sets currently included:
   <sub><i>Diagram created using <a href="http://sankeymatic.com/" title="SankeyMATIC: A user-friendly Sankey diagram builder">@SankeyMATIC</a></i></sub>
 </div>
 
-## Important Notices
-* `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
-* cloning this repository is **not** recommended ([due to Repo size](#option-7-clone-the-repo)) unless you are going to be [contributing to development](#contributing)
-
+> [!IMPORTANT]  
+> Cloning this repository is not recommended due to its large size and potentially unstable `master` branch, unless you are contributing to development.
 
 ## Table of Contents
 
