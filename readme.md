@@ -4,9 +4,16 @@
   <img src="images/project-subtitle-phrase.svg" alt="Iconic font aggregator, collection, and patcher" />
   <hr />
 
-  [Releases](https://github.com/ryanoasis/nerd-fonts/releases) • [Fonts](#patched-fonts) • [Font Patcher](#font-patcher) • [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki) • [VimDevIcons](https://github.com/ryanoasis/vim-devicons)
+  [Releases](https://github.com/ryanoasis/nerd-fonts/releases) • 
+  [Fonts](#patched-fonts) • 
+  [Font Patcher](#font-patcher) • 
+  [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki) • 
+  [VimDevIcons](https://github.com/ryanoasis/vim-devicons)
   
-  [![Version](https://img.shields.io/github/release/ryanoasis/nerd-fonts.svg?style=for-the-badge)](https://github.com/ryanoasis/nerd-fonts/releases) [![Gitter](https://img.shields.io/gitter/room/ryanoasis/nerd-fonts?style=for-the-badge)](https://gitter.im/ryanoasis/nerd-fonts) [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge)](https://github.com/ryanoasis/nerd-fonts/blob/master/CODE_OF_CONDUCT.md) [![OS Support](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg)](https://github.com/ryanoasis/nerd-fonts#font-installation)
+  [![Version](https://img.shields.io/github/release/ryanoasis/nerd-fonts.svg?style=for-the-badge)](https://github.com/ryanoasis/nerd-fonts/releases) 
+  [![Gitter](https://img.shields.io/gitter/room/ryanoasis/nerd-fonts?style=for-the-badge)](https://gitter.im/ryanoasis/nerd-fonts) 
+  [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge)](https://github.com/ryanoasis/nerd-fonts/blob/master/CODE_OF_CONDUCT.md) 
+  [![OS Support](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg)](https://github.com/ryanoasis/nerd-fonts#font-installation)
 </div>
 
 **Nerd Fonts** is a project that enhances developer-focused fonts by adding a large number of glyphs. It adds glyphs from popular fonts like [Font Awesome](https://github.com/FortAwesome/Font-Awesome), [Devicons](https://github.com/devicons/devicon), [Octicons](https://github.com/primer/octicons), and others to expand functionality.
