@@ -18,13 +18,12 @@
 
 **Nerd Fonts** is a project that enhances developer-focused fonts by adding a large number of glyphs. It adds glyphs from popular fonts like [Font Awesome](https://github.com/FortAwesome/Font-Awesome), [Devicons](https://github.com/devicons/devicon), [Octicons](https://github.com/primer/octicons), and others to expand functionality.
 
-The following flow diagram shows the current glyph sets included:
+The flow diagram below illustrates the glyph sets currently included:
 
-<p align="center">
-  <img src="images/sankey-glyphs-combined-diagram.svg" alt="@SankeyMATIC Diagram" />
-</p>
-<sub><i>Diagram created using <a href="http://sankeymatic.com/" title="SankeyMATIC (BETA): A Sankey diagram builder for everyone">@SankeyMATIC</a></i></sub>
-
+<div align="center">
+  <img src="images/sankey-glyphs-combined-diagram.svg" alt="Glyph Set Flow Diagram" />
+  <sub><i>Diagram created using <a href="http://sankeymatic.com/" title="SankeyMATIC: A user-friendly Sankey diagram builder">@SankeyMATIC</a></i></sub>
+</div>
 
 ## Important Notices
 * `master` branch file paths are **not** considered stable. [Verify your repository URI references](#unstable-file-paths)
