@@ -4,9 +4,9 @@
   <img src="images/project-subtitle-phrase.svg" alt="Iconic font aggregator, collection, and patcher" />
   <hr />
 
-  [Releases](https://github.com/ryanoasis/nerd-fonts/releases) • [Fonts](https://github.com/ryanoasis/nerd-fonts#patched-fonts) • [Font Patcher](https://github.com/ryanoasis/nerd-fonts#font-patcher) • [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki) • [VimDevIcons](https://github.com/ryanoasis/vim-devicons)
+  [Releases](https://github.com/ryanoasis/nerd-fonts/releases) • [Fonts](#patched-fonts) • [Font Patcher](#font-patcher) • [Wiki](https://github.com/ryanoasis/nerd-fonts/wiki) • [VimDevIcons](https://github.com/ryanoasis/vim-devicons)
   
-  ![Version](https://img.shields.io/github/release/ryanoasis/nerd-fonts.svg?style=for-the-badge) ![Gitter](https://img.shields.io/gitter/room/ryanaosis/nerd-fonts?style=for-the-badge) ![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge) [![OS Support](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg)](https://www.nerdfonts.com/#patched-fonts)
+  [![Version](https://img.shields.io/github/release/ryanoasis/nerd-fonts.svg?style=for-the-badge)](https://github.com/ryanoasis/nerd-fonts/releases) [![Gitter](https://img.shields.io/gitter/room/ryanoasis/nerd-fonts?style=for-the-badge)](https://gitter.im/ryanoasis/nerd-fonts) [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge)](https://github.com/ryanoasis/nerd-fonts/blob/master/CODE_OF_CONDUCT.md) [![OS Support](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg)](https://github.com/ryanoasis/nerd-fonts#font-installation)
 </div>
 
 
