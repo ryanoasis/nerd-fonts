@@ -582,8 +582,3 @@ Non exhaustive list of fonts that would benefit from being patched but are not i
 ## Project Motivation
 
 See [Wiki: Project Purpose][wiki-project-purpose]
-
-
-## Changelog
-
-See [changelog.md](changelog.md)
