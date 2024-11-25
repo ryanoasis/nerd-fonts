@@ -28,43 +28,6 @@ The flow diagram below illustrates the glyph sets currently included:
 > [!IMPORTANT]  
 > Cloning this repository is not recommended due to its large size and potentially unstable `master` branch, unless you are contributing to development.
 
-## Table of Contents
-
-[**TL;DR**](#tldr)
-
-[**Installation Options**](#font-installation)
-  * [**1 - Release Archive Download**](#option-1-release-archive-download)
-  * [**2 - Homebrew Fonts (macOS (OS X))**](#option-2-homebrew-fonts)
-  * [**3 - Chocolatey or Scoop (Windows)**](#option-3-unofficial-chocolatey-or-scoop-repositories)
-  * [**4 - Arch Linux Repository (Extra, AUR)**](#option-4-arch-extra-repository)
-  * [**5 - PowerShell Web Installer (Multi-Platform)**](#option-5-powershell-web-installer)
-  * [**6 - Ad Hoc Curl Download**](#option-6-ad-hoc-curl-download)
-  * [**7 - Install Script**](#option-7-install-script)
-  * [**8 - Use Fontfallback**](#option-8-font-fallback)
-  * [**9 - Clone Repo**](#option-9-clone-the-repo)
-  * [**10 - Patch Your Own Font**](#option-10-patch-your-own-font)
-
-[**Features**](#features)
-  * [**Glyph/Icon sets**](#glyph-sets)
-  * [**Patched Fonts**](#patched-fonts)
-  * [**Variations**](#variations)
-  * [**Font Patcher**](#font-patcher)
-
-[**Developer / Contributor**](#font-patcher)
-  * [**Font Patcher**](#font-patcher)
-  * [**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all)
-  * [**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
-  * [**Contributing**](#contributing)
-
-[**Project Motivation**](#project-motivation)
-
-**Additional Info**
-  * [**In case of problems**](#common-problems)
-  * [**Unstable file paths on master**](#unstable-file-paths)
-  * [**Changelog**](#changelog)
-  * [**License**](#license)
-
-
 ## TL;DR
   Nerd Fonts takes popular programming fonts and adds a bunch of Glyphs.
   There is also a [font patcher](#font-patcher) available if your desired font isn't already patched.
