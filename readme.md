@@ -54,77 +54,79 @@ See [Wiki: Icon names in shell][wiki-icon-names-in-shell]
 
 A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downloads).
 
-| Font Name                                         | Original Font Name and Repository      | ver        |\*RFN |
-|:--------------------------------------------------|:---------------------------------------|:-----------|:-----|
-| [0xProto Nerd Font][p-0xProto]                    | [0xProto][f-0xProto]                   | 2.201      | NO   |
-| [3270 Nerd Font][p-3270]                          | [3270][f-3270]                         | 3.0.1      | NO   |
-| [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 37         | NO   |
-| [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]               | 1.002      | YES  |
-| [Arimo Nerd Font][p-arimo]                        | [Arimo][f-arimo]                       | 1.33       | NO   |
-| [AurulentSansMono Nerd Font][p-aurulent]          | Aurulent Sans Mono (Stephen G. Hartke) |            | NO   |
-| [BigBlueTerminal Nerd Font][p-bigblueterm]        | BigBlueTerminal (VileR)                |            | NO   |
-| [BitstromWera Nerd Font][p-bitstream]             | Vera Sans Mono (Bitstream Inc)         | 1.1        | YES  |
-| [BlexMono Nerd Font][p-blex]                      | [IBM Plex Mono][f-ibm-plex]            | 2.004      | YES  |
-| [CaskaydiaCove Nerd Font][p-cascadia]             | [Cascadia Code][f-cascadia]            | 2111.01    | YES  |
-| [CaskaydiaMono Nerd Font][p-cascadia-mono]        | [Cascadia Mono][f-cascadia]            | 2111.01    | YES  |
-| [CodeNewRoman Nerd Font][p-code-nr]               | Code New Roman (Sam Radian)            | 2.0        | NO   |
-| [ComicShannsMono Nerd Font][p-comic]              | [Comic Shanns Mono][f-comic]           | 1.3.1      | NO   |
-| [CommitMono Nerd Font][p-commit]                  | [Commit Mono][f-commit]                | 1.143      | NO   |
-| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.211      | NO   |
-| [D2Coding Nerd Font][p-d2coding]                  | [D2Coding][f-d2coding]                 | 1.3.2      | NO   |
-| [DaddyTimeMono Nerd Font][p-daddytimemono]        | [DaddyTimeMono][f-daddytimemono]       | 1.2.3      | NO   |
-| [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono]      | 1.422      | NO   |
-| [DejaVuSansMono Nerd Font][p-dejavu]              | [DejaVu][f-dejavu]                     | 2.37       | NO   |
-| [DroidSansMono Nerd Font][p-droid]                | Droid Sans Mono (Ascender Corp)        | 1.00-113   | NO   |
-| [EnvyCodeR Nerd Font][p-envy]                     | [Envy Code R][f-envy]                  | 0.79       | YES  |
-| [FantasqueSansMono Nerd Font][p-fantasque]        | [Fantasque Sans Mono][f-fant]          | 1.8.0      | NO   |
-| [FiraCode Nerd Font][p-fira-code]                 | [Fira Code][f-fira-code]               | 6.2        | NO   |
-| [FiraMono Nerd Font][p-fira-mono]                 | [Fira Mono][f-fira-mono]               | 3.206      | NO   |
-| [GeistMono Nerd Font][p-geist-mono]               | [Geist Mono][f-geist-mono]             | 1.200      | NO   |
-| [GoMono Nerd Font][p-go-mono]                     | [Go-Mono][f-go-mono]                   | 2.010      | NO   |
-| [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2], [Gohu][f-gohu]    | 2.0        | NO   |
-| [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                         | 3.003      | NO   |
-| [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]                   | 1.2        | YES  |
-| [HeavyDataMono Nerd Font][p-heavy-data]           | HeavyData (Vic Fieger)                 | 1          | NO   |
-| [Hurmit Nerd Font][p-hermit]                      | [Hermit][f-hermit]                     | 2.0        | YES  |
-| [iM-Writing Nerd Font][p-im-writing]              | [iA-Writer][f-ia-writer]               | Dec 2018   | YES  |
-| [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]           | 3.000      | NO   |
-| [InconsolataGo Nerd Font][p-inconsolata-go]       | [InconsolataGo][f-inconsolatago]       | 1.013      | NO   |
-| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc]    | 1.5.2      | NO   |
-| [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.4.0      | YES  |
-| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 29.0.4     | NO   |
-| [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 29.0.4     | NO   |
-| [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 29.0.4     | NO   |
-| [JetBrainsMono Nerd Font][p-jetbrains-mono]       | [JetBrains Mono][f-jetbrains-mono]     | 2.304      | NO   |
-| [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                     | 34         | NO   |
-| [Literation Nerd Font][p-liberation]              | [Liberation][f-liberation]             | 2.1.5      | YES  |
-| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.400      | NO   |
-| [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.0.0      | NO   |
-| [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | NO   |
-| [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.101      | YES  |
-| [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | NO   |
-| [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                     | 0.61       | NO   |
-| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]                 | 1.6        | YES  |
-| [M+ Nerd Font][p-mplus]                           | [MPlus Fonts][f-mplus]                 | 2023/09    | NO   |
-| [Noto Nerd Font][p-noto]                          | [Noto][f-noto]                         | div        | NO   |
-| [OpenDyslexic Nerd Font][p-opendyslexic]          | [OpenDyslexic][f-opendyslexic]         | 2.001      | NO   |
-| [Overpass Nerd Font][p-overpass]                  | [Overpass][f-overpass]                 | 3.0.5      | NO   |
-| [ProFont Nerd Font][p-profont]                    | [ProFont][f-profont]                   | 2.3, 2.2   | NO   |
-| [ProggyClean Nerd Font][p-proggy-clean]           | ProggyClean (Tristan Grimmer)          | 2004/04/15 | NO   |
-| [RecMono Nerd Font][p-recursive]                  | [Recursive Mono][f-recursive]          | 1.085      | NO   |
-| [RobotoMono Nerd Font][p-roboto]                  | [Roboto Mono][f-roboto]                | 3.0        | NO   |
-| [SauceCodePro Nerd Font][p-source-code-pro]       | [Source Code Pro][f-source]            | 2.042      | YES  |
-| [ShureTechMono Nerd Font][p-share-tech-mono]      | [Share Tech Mono][f-share]             | 1.003      | YES  |
-| [SpaceMono Nerd Font][p-space-mono]               | [Space Mono][f-space]                  | 1.001      | NO   |
-| [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]             | 4.49.3     | YES  |
-| [Tinos Nerd Font][p-tinos]                        | [Tinos][f-tinos]                       | 1.23       | NO   |
-| [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | NO   |
-| [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | NO   |
-| [UbuntuSans Nerd Font][p-ubuntu-sans]             | [Ubuntu Sans][f-ubuntu-sans]           | 1.004      | NO   |
-| [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.6      | NO   |
-| [ZedMono Nerd Font][p-zed-mono]                   | [Zed Mono][f-zed-mono]                 | 1.2.0      | NO   |
-
-<sub>_\*RFN = Reserved Font Name_</sub>
+<details>
+  <summary>Expand available fonts</summary>
+  
+| Patched Font                                      | Original Font                          | Version    | Reserved |
+| ------------------------------------------------- | -------------------------------------- | ---------- | ------   |
+| [0xProto Nerd Font](patched-fonts/0xProto)        | [0xProto][f-0xProto]                   | 2.201      | No       |
+| [3270 Nerd Font](patched-fonts/3270)              | [3270][f-3270]                         | 3.0.1      | No       |
+| [Agave Nerd Font](patched-fonts/Agave)                       | [Agave][f-agave]                       | 37         | No       |
+| [AnonymicePro Nerd Font](patched-fonts/AnonymousPro)         | [Anonymous Pro][f-a-pro]               | 1.002      | Yes      |
+| [Arimo Nerd Font](patched-fonts/Arimo)                        | [Arimo][f-arimo]                       | 1.33       | No       |
+| [AurulentSansMono Nerd Font](patched-fonts/AurulentSansMono)           | Aurulent Sans Mono (Stephen G. Hartke) |            | No       |
+| [BigBlueTerminal Nerd Font](patched-fonts/)         | BigBlueTerminal (VileR)                |            | No       |
+| [BitstromWera Nerd Font](patched-fonts/)             | Vera Sans Mono (Bitstream Inc)         | 1.1        | Yes      |
+| [BlexMono Nerd Font](patched-fonts/)                      | [IBM Plex Mono][f-ibm-plex]            | 2.004      | Yes      |
+| [CaskaydiaCove Nerd Font](patched-fonts/)              | [Cascadia Code][f-cascadia]            | 2111.01    | Yes      |
+| [CaskaydiaMono Nerd Font](patched-fonts/)        | [Cascadia Mono][f-cascadia]            | 2111.01    | Yes      |
+| [CodeNewRoman Nerd Font](patched-fonts/)              | Code New Roman (Sam Radian)            | 2.0        | No       |
+| [ComicShannsMono Nerd Font](patched-fonts/)              | [Comic Shanns Mono][f-comic]           | 1.3.1      | No       |
+| [CommitMono Nerd Font](patched-fonts/)                 | [Commit Mono][f-commit]                | 1.143      | No       |
+| [Cousine Nerd Font](patched-fonts/)                    | [Cousine][f-cousine]                   | 1.211      | No       |
+| [D2Coding Nerd Font](patched-fonts/)                 | [D2Coding][f-d2coding]                 | 1.3.2      | No       |
+| [DaddyTimeMono Nerd Font](patched-fonts/)         | [DaddyTimeMono][f-daddytimemono]       | 1.2.3      | No       |
+| [DepartureMono Nerd Font](patched-fonts/)         | [Departure Mono][f-departuremono]      | 1.422      | No       |
+| [DejaVuSansMono Nerd Font][p-dejavu]              | [DejaVu][f-dejavu]                     | 2.37       | No       |
+| [DroidSansMono Nerd Font][p-droid]                | Droid Sans Mono (Ascender Corp)        | 1.00-113   | No       |
+| [EnvyCodeR Nerd Font][p-envy]                     | [Envy Code R][f-envy]                  | 0.79       | Yes      |
+| [FantasqueSansMono Nerd Font][p-fantasque]        | [Fantasque Sans Mono][f-fant]          | 1.8.0      | No       |
+| [FiraCode Nerd Font][p-fira-code]                 | [Fira Code][f-fira-code]               | 6.2        | No       |
+| [FiraMono Nerd Font][p-fira-mono]                 | [Fira Mono][f-fira-mono]               | 3.206      | No       |
+| [GeistMono Nerd Font][p-geist-mono]               | [Geist Mono][f-geist-mono]             | 1.200      | No       |
+| [GoMono Nerd Font][p-go-mono]                     | [Go-Mono][f-go-mono]                   | 2.010      | No       |
+| [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2], [Gohu][f-gohu]    | 2.0        | No       |
+| [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                         | 3.003      | No       |
+| [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]                   | 1.2        | Yes      |
+| [HeavyDataMono Nerd Font][p-heavy-data]           | HeavyData (Vic Fieger)                 | 1          | No       |
+| [Hurmit Nerd Font][p-hermit]                      | [Hermit][f-hermit]                     | 2.0        | Yes      |
+| [iM-Writing Nerd Font][p-im-writing]              | [iA-Writer][f-ia-writer]               | Dec 2018   | Yes      |
+| [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]           | 3.000      | No       |
+| [InconsolataGo Nerd Font][p-inconsolata-go]       | [InconsolataGo][f-inconsolatago]       | 1.013      | No       |
+| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc]    | 1.5.2      | No       |
+| [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.4.0      | Yes      |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 29.0.4     | No       |
+| [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 29.0.4     | No       |
+| [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 29.0.4     | No       |
+| [JetBrainsMono Nerd Font][p-jetbrains-mono]       | [JetBrains Mono][f-jetbrains-mono]     | 2.304      | No       |
+| [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                     | 34         | No       |
+| [Literation Nerd Font][p-liberation]              | [Liberation][f-liberation]             | 2.1.5      | Yes      |
+| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.400      | No       |
+| [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.0.0      | No       |
+| [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | No       |
+| [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.101      | Yes      |
+| [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | No       |
+| [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                     | 0.61       | No       |
+| [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]                 | 1.6        | Yes      |
+| [M+ Nerd Font][p-mplus]                           | [MPlus Fonts][f-mplus]                 | 2023/09    | No       |
+| [Noto Nerd Font][p-noto]                          | [Noto][f-noto]                         | div        | No       |
+| [OpenDyslexic Nerd Font][p-opendyslexic]          | [OpenDyslexic][f-opendyslexic]         | 2.001      | No       |
+| [Overpass Nerd Font][p-overpass]                  | [Overpass][f-overpass]                 | 3.0.5      | No       |
+| [ProFont Nerd Font][p-profont]                    | [ProFont][f-profont]                   | 2.3, 2.2   | No       |
+| [ProggyClean Nerd Font][p-proggy-clean]           | ProggyClean (Tristan Grimmer)          | 2004/04/15 | No       |
+| [RecMono Nerd Font][p-recursive]                  | [Recursive Mono][f-recursive]          | 1.085      | No       |
+| [RobotoMono Nerd Font][p-roboto]                  | [Roboto Mono][f-roboto]                | 3.0        | No       |
+| [SauceCodePro Nerd Font][p-source-code-pro]       | [Source Code Pro][f-source]            | 2.042      | Yes      |
+| [ShureTechMono Nerd Font][p-share-tech-mono]      | [Share Tech Mono][f-share]             | 1.003      | Yes      |
+| [SpaceMono Nerd Font][p-space-mono]               | [Space Mono][f-space]                  | 1.001      | No       |
+| [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]             | 4.49.3     | Yes      |
+| [Tinos Nerd Font][p-tinos]                        | [Tinos][f-tinos]                       | 1.23       | No       |
+| [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | No       |
+| [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | No       |
+| [UbuntuSans Nerd Font][p-ubuntu-sans]             | [Ubuntu Sans][f-ubuntu-sans]           | 1.004      | No       |
+| [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.6      | No       |
+| [ZedMono Nerd Font][p-zed-mono]                   | [Zed Mono][f-zed-mono]                 | 1.2.0      | No       |
+</details>
 
 ### Variations
 
