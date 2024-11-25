@@ -587,7 +587,3 @@ See [Wiki: Project Purpose][wiki-project-purpose]
 ## Changelog
 
 See [changelog.md](changelog.md)
-
-## License
-
-See [LICENSE][LICENSE]
