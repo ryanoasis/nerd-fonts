@@ -577,8 +577,3 @@ Non exhaustive list of fonts that would benefit from being patched but are not i
 * [Operator Mono][operator]
 * [PragmataPro][pragmatapro]
 * [SF Mono][sf-mono]
-
-
-## Project Motivation
-
-See [Wiki: Project Purpose][wiki-project-purpose]
