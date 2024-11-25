@@ -28,26 +28,6 @@ The flow diagram below illustrates the glyph sets currently included:
 > [!IMPORTANT]  
 > Cloning this repository is not recommended due to its large size and potentially unstable `master` branch, unless you are contributing to development.
 
-## TL;DR
-  Nerd Fonts takes popular programming fonts and adds a bunch of Glyphs.
-  There is also a [font patcher](#font-patcher) available if your desired font isn't already patched.
-  For more high level information see the [wiki][wiki]. If you are looking for the Vim plugin see [VimDevIcons ➶][vim-devicons].
-
-### Various Download Options for Fonts
-
-_If you..._
-
-  * `Option 1.` want to download a **font family** package of variations (bold, italic, etc.) see [download an archive](#option-1-release-archive-download)
-  * `Option 2.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-2-homebrew-fonts)
-  * `Option 3.` are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-3-unofficial-chocolatey-or-scoop-repositories)
-  * `Option 4.` are on **Arch Linux** and want to use **Extra packages** see [Arch Extra Repositories](#option-4-arch-extra-repository)
-  * `Option 5.` are using **PowerShell** and want an **interactive setup** or **use in scripts** see the [PowerShell Web Installer](#option-5-powershell-web-installer)
-  * `Option 6.` want to use the **`curl` command** or use in **scripts** see [Ad Hoc Curl Download](#option-6-ad-hoc-curl-download)
-  * `Option 7.` want to **automate** installing or use in **scripts** see the [Install Script](#option-7-install-script)
-  * `Option 8.` want to install only one font for all fonts see [Font Fallback](#option-8-font-fallback)
-  * `Option 9.` want **complete control** then see [cloning the repo](#option-9-clone-the-repo)
-  * `Option 10.` want to patch your own font see the [Font Patcher](#option-10-patch-your-own-font)
-
 ## Features
 * A [FontForge Python script](#font-patcher) to patch any font
   * Includes an option to create **Monospaced (fixed-pitch, fixed-width)** _or_ **double-width (non-monospaced)** glyphs
