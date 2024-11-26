@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.3.0
-# Script Version: 1.2.1
+# Script Version: 1.3.0
 # Generates CSS file for the font and cheat sheet code
 
 # shellcheck disable=SC1091 # Do not pull in the sourced file
@@ -70,13 +70,11 @@ for var in "${!i@}"; do
   # replace _ with -
   glyph_name=${glyph_name/_/-}
   glyph_char=${!var}
-  glyph_code=$(printf "%x" "'$glyph_char'")
 
   #echo "$var=${!var}"
 
   #echo "$glyph_name"
   #echo "$glyph_char"
-  #echo "$glyph_code"
   #printf "%x" "'$glyph_char'"
 
   if [[ "$glyph_name" != mdi-* ]]; then
@@ -84,7 +82,7 @@ for var in "${!i@}"; do
     {
       printf ".nf-%s:before {" "$glyph_name"
       printf "\\n"
-      printf "  content: \"\\%s\";" "$glyph_code"
+      printf "  content: \"\\%x\";" "'$glyph_char'"
       printf "\\n"
       printf "}"
       printf "\\n"
@@ -92,18 +90,18 @@ for var in "${!i@}"; do
 
     # generate css min rules
     {
-      printf ".nf-%s:before{content:\"\\%s\"}" "$glyph_name" "$glyph_code"
+      printf ".nf-%s:before{content:\"\\%x\"}" "$glyph_name" "'$glyph_char'"
     } >> "$output_css_min_file"
 
     # generate json entry
     {
-      printf ",\"%s\":{\"char\":\"%s\",\"code\":\"%s\"}" "$glyph_name" "$glyph_char" "$glyph_code"
+      printf ",\"%s\":{\"char\":\"%s\",\"code\":\"%x\"}" "$glyph_name" "$glyph_char" "'$glyph_char'"
     } >> "$output_json_file"
 
   else
     # generate css min rules for removed glyphs
     {
-      printf ".nfold-%s:before{content:\"\\%s\"}" "$glyph_name" "$glyph_code"
+      printf ".nfold-%s:before{content:\"\\%x\"}" "$glyph_name" "'$glyph_char'"
     } >> "$output_css_min_rem_file"
   fi
 
@@ -114,7 +112,7 @@ for var in "${!i@}"; do
     else
       namespace="nf"
     fi
-    printf "  \"%s-%s\": \"%s\",\\n" "$namespace" "$glyph_name" "$glyph_code"
+    printf "  \"%s-%s\": \"%x\",\\n" "$namespace" "$glyph_name" "'$glyph_char'"
   } >> "$output_cheat_sheet_file"
 
 done
