@@ -198,10 +198,13 @@ jobs:
           fontforge --version
           fontforge --version 2>&1 | grep libfontforge | awk '{print $NF}'
 
-      - name: Bump version for source files
+      - name: Bump version for source files and update glyphnames.json
+        # and check if generated glyphnames.json is valid
         run: |
           cd -- "$GITHUB_WORKSPACE/bin/scripts"
           ./version-bump.sh "$RELEASE_VERSION"
+          ./generate-css.sh
+          jq . ../../glyphnames.json > /dev/null
 
       - name: Patch all the variations of the font family
         run: |
