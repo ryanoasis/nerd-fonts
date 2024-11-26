@@ -35,11 +35,11 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `update-gitignore.sh`: Correct gitignore file for not-released-in-repo fonts [8]
 * `version-bump.sh`: Change version number in all scripts on a new release [1]
 
-[1] Used by CI (github release workflow)
-[2] Used by CI (github docker-release workflow)
-[3] To be used manually (sigh)
-[4] To be used manually
-[5] Used by CI (github packsvgs workflow)
-[6] Used by CI (github casks workflow)
-[7] Used by CI (github contributors workflow)
+[1] Used by CI (github release workflow)<br />
+[2] Used by CI (github docker-release workflow)<br />
+[3] To be used manually (sigh)<br />
+[4] To be used manually<br />
+[5] Used by CI (github packsvgs workflow)<br />
+[6] Used by CI (github casks workflow)<br />
+[7] Used by CI (github contributors workflow)<br />
 [8] Used by CI (github fontjson workflow)
