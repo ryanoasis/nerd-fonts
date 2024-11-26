@@ -87,7 +87,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [GoMono Nerd Font](patched-fonts/GoMono%20NF)                               | [Go-Mono][f-go-mono]                   | 2.010      |
 | [Gohu Nerd Font](patched-fonts/Gohu%20NF)                                   | [Gohu TTF][f-gohu2], [Gohu][f-gohu]    | 2.0        |
 | [Hack Nerd Font](patched-fonts/Hack%20NF)                                   | [Hack][f-hack]                         | 3.003      |
-| [Hasklug Nerd Font](patched-fonts/Hasklig%20NF)                             | [Hasklig][f-hasklig]                   | 1.2        |
+| [Hasklig Nerd Font](patched-fonts/Hasklig%20NF)                             | [Hasklig][f-hasklig]                   | 1.2        |
 | [HeavyData Nerd Font](patched-fonts/HeavyData%20NF)                         | HeavyData (Vic Fieger)                 | 1          |
 | [Hermit Nerd Font](patched-fonts/Hermit%20NF)                               | [Hermit][f-hermit]                     | 2.0        |
 | [iAWriterMono Nerd Font](patched-fonts/iAWriterMono%20NF)                   | [iA-Writer][f-ia-writer]               | Dec 2018   |
