@@ -2,6 +2,9 @@
 
 Note: Usually you need to call the scripts in this directory while actually being in this directory (i.e. `pwd = .../nerd-fonts/bin/scripts`).
 
+Shell scripts here require a halfway recent version of `bash`, i.e. at least version 4 which came out in 2009.<br />
+MacOS usually has a `bash` version 3; you can install a current version via Homebrew.
+
 * `archive-font-patcher.sh`: Archives the font patcher script and subscripts and the required source glyph files [1]
 * `archive-fonts.sh`: Creates the release zip file of one or more font(s) from existing `patched-fonts/` content [1]
 * `cheatsheet.sh`: Search for a glyph by part of its name [4]
@@ -22,7 +25,6 @@ Note: Usually you need to call the scripts in this directory while actually bein
 * `generate-webfonts.sh`: Generate woff and woff2 font files from the SymbolsOnly font (for the gh-pages) [1]
 * `get-font-names-from-json.sh`: Helper to setup the CI font matrix from `data/fonts.json` [1]
 * `gotta-patch-em-all-font-patcher!.sh`: Patch one or more fonts 'complete' with and without `mono` and with and without `windows compat` [1]
-* `Hack/`: Special additional post patching script for Hack, invoked via Hack's `config.cfg` (not used when self-patching)
 * `lib/`: See its own README
 * `name_parser/`: Suite to set up sane Family and SubFamily names, used by `font-patcher` (on demand)
 * `optimize-original-source.sh`: Run all icons in `src/svgs` through inkscape to simplify (remove nodes and edges) [5]
