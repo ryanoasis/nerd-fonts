@@ -103,7 +103,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Liberation Nerd Font](patched-fonts/Liberation%20NF)                       | [Liberation][f-liberation]             | 2.1.5      |
 | [Lilex Nerd Font](patched-fonts/Lilex%20NF)                                 | [Lilex][f-lilex]                       | 2.400      |
 | [MartianMono Nerd Font](patched-fonts/MartianMono%20NF)                     | [MartianMono][f-martian]               | 1.0.0      |
-| [Meslo Nerd Font](patched-fonts/Meslo%20NF)                                 | [Meslo][f-meslo]                       | 1.21       |
+| [MesloLG Nerd Font](patched-fonts/MesloLG%20NF)                                 | [Meslo][f-meslo]                       | 1.21       |
 | [Monaspace Nerd Font](patched-fonts/Monaspace%20NF)                         | [Monaspace][f-monaspace]               | 1.101      |
 | [Monofur Nerd Font](patched-fonts/Monofur%20NF)                             | Monofur (Tobias B Koehler)             | 1.0        |
 | [Monoid Nerd Font](patched-fonts/Monoid%20NF)                               | [Monoid][f-monoid]                     | 0.61       |
