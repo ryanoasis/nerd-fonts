@@ -1,5 +1,6 @@
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-118-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/github/all-contributors/ryanoasis/nerd-fonts?color=ee8449&style=flat-square)](#contributors)
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
