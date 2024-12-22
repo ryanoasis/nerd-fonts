@@ -247,7 +247,7 @@
       "folderName": "DepartureMono",
       "imagePreviewFont": "DepartureMono Nerd Font",
       "imagePreviewFontSource": "DepartureMono/DepartureMono-Regular.otf",
-      "linkPreviewFont": "departuremono",
+      "linkPreviewFont": "departure-mono",
       "caskName": "departure-mono",
       "repoRelease": false,
       "description": "A monospaced pixel font with a lo-fi, techy vibe"
