@@ -266,6 +266,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://nikunjmathur.vercel.app/"><img src="https://avatars.githubusercontent.com/u/142373040?v=4?s=100" width="100px;" alt="Nikunj Mathur"/><br /><sub><b>Nikunj Mathur</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=nikunjmathur08" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nikelborm"><img src="https://avatars.githubusercontent.com/u/29357907?v=4?s=100" width="100px;" alt="Eva"/><br /><sub><b>Eva</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=nikelborm" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://bit.ly/cubuanic-github-contributions"><img src="https://avatars.githubusercontent.com/u/75673?v=4?s=100" width="100px;" alt="Oleg Kostyuk"/><br /><sub><b>Oleg Kostyuk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=cub-uanic" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/crummyh"><img src="https://avatars.githubusercontent.com/u/188942224?v=4?s=100" width="100px;" alt="crummyh"/><br /><sub><b>crummyh</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=crummyh" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
