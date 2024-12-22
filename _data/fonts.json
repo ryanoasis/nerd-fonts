@@ -247,7 +247,7 @@
       "folderName": "DepartureMono",
       "imagePreviewFont": "DepartureMono Nerd Font",
       "imagePreviewFontSource": "DepartureMono/DepartureMono-Regular.otf",
-      "linkPreviewFont": "departuremono",
+      "linkPreviewFont": "departure-mono",
       "caskName": "departure-mono",
       "repoRelease": false,
       "description": "A monospaced pixel font with a lo-fi, techy vibe"
@@ -698,7 +698,7 @@
       "imagePreviewFont": "M+1Code Nerd Font",
       "imagePreviewFontSource": "MPlus/M_Plus_1_code/Mplus1Code-Regular.ttf",
       "linkPreviewFont": "mplus",
-      "caskName": "mplus",
+      "caskName": "m+",
       "repoRelease": true,
       "description": "Multiple styles and weights, many glyph sets (e.g. Kana glyphs)"
     },
