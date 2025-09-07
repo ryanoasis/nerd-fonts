@@ -1376,13 +1376,7 @@ class font_patcher:
             logger.critical("Can not detect sane font height")
             sys.exit(1)
 
-        self.font_dim['iconheight'] = self.font_dim['height']
-        if self.args.single and self.sourceFont.capHeight > 0 and not isinstance(self.args.cellopt, list):
-            # Limit the icon height on monospaced fonts because very slender and tall icons render
-            # excessively tall otherwise. We ignore that effect for the other variants because it
-            # does not look so much out of place there.
-            # Icons can be bigger than the letter capitals, but not the whole cell:
-            self.font_dim['iconheight'] = (self.sourceFont.capHeight * 2 + self.font_dim['height']) / 3
+        self.font_dim['iconheight'] = self.get_iconheight()
 
         # Make all metrics equal
         self.sourceFont.os2_typolinegap = 0
@@ -1467,6 +1461,18 @@ class font_patcher:
         if isinstance(self.xavgwidth[-1], int) and self.xavgwidth[-1] == 0:
             self.xavgwidth[-1] = get_old_average_x_width(self.sourceFont)
 
+    def get_iconheight(self, single_width=None):
+        if single_width is None:
+            single_width = self.args.single
+
+        iconheight = self.font_dim['height']
+        if single_width and self.sourceFont.capHeight > 0 and not isinstance(self.args.cellopt, list):
+            # Limit the icon height on monospaced fonts because very slender and tall icons render
+            # excessively tall otherwise. We ignore that effect for the other variants because it
+            # does not look so much out of place there.
+            # Icons can be bigger than the letter capitals, but not the whole cell:
+            iconheight = (self.sourceFont.capHeight * 2 + self.font_dim['height']) / 3
+        return iconheight
 
     def get_target_width(self, stretch):
         """ Get the target width (1 or 2 'cell') for a given stretch parameter """
@@ -1482,9 +1488,10 @@ class font_patcher:
         if not sym_dim['width'] or not sym_dim['height']:
             return (1.0, 1.0)
 
-        target_width = self.font_dim['width'] * self.get_target_width(stretch)
+        single_width = self.font_dim['width']
+        target_width =  single_width * self.get_target_width(stretch)
         if overlap:
-            target_width += self.font_dim['width'] * overlap
+            target_width += single_width * overlap
         scale_ratio_x = target_width / sym_dim['width']
 
         # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
@@ -1498,9 +1505,16 @@ class font_patcher:
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
-            if not self.args.single and not '!' in stretch and not overlap:
-                # non monospaced fonts just scale down on 'pa', not up
-                scale_ratio_x = min(scale_ratio_x, 1.0)
+            if scale_ratio_x > 1 and not self.args.single and not '!' in stretch and not overlap:
+                # on 'pa', non monospaced fonts only scale up as much as they would if monospaced
+                single_height = self.font_dim['height'] if '^' in stretch else self.get_iconheight(single_width=True)
+                single_height *= 1.0 - self.font_dim['ypadding']
+
+                single_ratio_x = single_width / sym_dim['width']
+                single_ratio_y = single_height / sym_dim['height']
+
+                single_ratio_x = min(single_ratio_x, single_ratio_y)
+                scale_ratio_x = max(single_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
         else:
             # Keep the not-stretched direction
