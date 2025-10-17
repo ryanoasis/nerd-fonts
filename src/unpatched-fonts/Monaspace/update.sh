@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-FONT_VERSION=1.200
+FONT_VERSION=1.400
 TMP_DIR=$(mktemp -d)
 
 set -e
 
-curl -LOf "https://github.com/githubnext/monaspace/releases/download/v${FONT_VERSION}/monaspace-v${FONT_VERSION}.zip" --output-dir "${TMP_DIR}"
+curl -LOf "https://github.com/githubnext/monaspace/releases/download/v${FONT_VERSION}/monaspace-static-v${FONT_VERSION}.zip" --output-dir "${TMP_DIR}"
 unzip -d "${TMP_DIR}" "${TMP_DIR}/*.zip"
 ls -alh "${TMP_DIR}"
 
