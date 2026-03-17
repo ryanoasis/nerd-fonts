@@ -1408,9 +1408,6 @@ class font_patcher:
         if self.font_dim['width'] < self.font_dim['xmax']:
             logger.debug("Font has negative right side bearing in extended glyphs")
             self.font_dim['xmax'] = self.font_dim['width'] # In fact 'xmax' is never used
-        if self.font_dim['width'] <= 0:
-            logger.critical("Can not detect sane font width")
-            sys.exit(1)
         if isinstance(self.args.cellopt, list):
             logger.debug("Overriding cell X{%d:%d} with X{%d:%d}",
                 self.font_dim['xmin'], self.font_dim['xmin'] + self.font_dim['width'],
@@ -1418,6 +1415,9 @@ class font_patcher:
             self.font_dim['xmin'] = self.args.cellopt[0]
             self.font_dim['xmax'] = self.args.cellopt[1]
             self.font_dim['width'] = self.args.cellopt[1]
+        if self.font_dim['width'] <= 0:
+            logger.critical("Can not detect sane font width")
+            sys.exit(1)
         if self.args.cellopt:
             logger.info("Cell coordinates (Xmin:Xmax:Ymin:Ymax) %s%d:%d:%d:%d",
                 '' if not isinstance(self.args.cellopt, list) else 'overridden with ',
