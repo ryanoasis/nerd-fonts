@@ -1697,7 +1697,7 @@ class font_patcher:
                     cell_width = self.font_dim['width']
                 if sym_attr['align'] == 'c':
                     # Center align
-                    x_align_distance += (cell_width / 2) - (sym_dim['width'] / 2)
+                    x_align_distance += (cell_width * self.get_target_width(stretch) / 2) - (sym_dim['width'] / 2)
                 elif sym_attr['align'] == 'r':
                     # Right align
                     # (not really supported with pa scaling and 2x stretch in NFP)
