@@ -25,7 +25,7 @@ Either:
 * Invoke the [@all-contributors bot](https://allcontributors.org/docs/en/bot/usage) by commenting on your Pull Request or Issue.
 * _(not advised)_ Shallow clone repo and execute `all-contributors add <YOUR_GITHUB_HANDLE> <CONTRIBUTION_TYPE>`
 
-Common types for this project include: `code`, `doc`, `translation`, `review`. For full list of contribution types see: https://allcontributors.org/docs/en/emoji-key
+Common types for this project include: `code`, `doc`, `translation`, `review`. For full list of contribution types see: https://allcontributors.org/en/reference/emoji-key
 
 ## Steps for updating an existing font
 
