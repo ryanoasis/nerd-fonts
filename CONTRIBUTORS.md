@@ -293,6 +293,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/GoldPigg"><img src="https://avatars.githubusercontent.com/u/110080943?v=4?s=100" width="100px;" alt="Goldpigg"/><br /><sub><b>Goldpigg</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=GoldPigg" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/shaunchokshi"><img src="https://avatars.githubusercontent.com/u/66697794?v=4?s=100" width="100px;" alt="shaun"/><br /><sub><b>shaun</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=shaunchokshi" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/pgoslatara"><img src="https://avatars.githubusercontent.com/u/14027534?v=4?s=100" width="100px;" alt="Pádraic Slattery"/><br /><sub><b>Pádraic Slattery</b></sub></a><br /><a href="#maintenance-pgoslatara" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://naufalkateni.com/"><img src="https://avatars.githubusercontent.com/u/75259474?v=4?s=100" width="100px;" alt="Muhammad Naufal Kateni"/><br /><sub><b>Muhammad Naufal Kateni</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=NaufalK25" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
