@@ -912,7 +912,7 @@ class font_patcher:
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
         # Supported params: overlap | careful | xy-ratio | dont_copy | ypadding
-        # Overlap value is used horizontally but vertically limited to 0.01 (implies '!', usually should have '1' when used with 'pa')
+        # Overlap value is used horizontally but vertically limited to 0.01 (usually should have '1' when used with 'pa')
         # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
@@ -1506,12 +1506,16 @@ class font_patcher:
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
-            if not self.args.single and not '!' in stretch and not overlap and scale_ratio_x > 1.0:
+            if not self.args.single and not '!' in stretch and scale_ratio_x > 1.0:
                 # on 'pa', non monospaced fonts only scale up as much as they would if monospaced
                 single_ratio_x = single_width / sym_dim['width']
+                if overlap:
+                    single_ratio_x *= 1.0 + overlap
 
                 single_height = self.font_dim['height'] if '^' in stretch else self.get_iconheight(single_width_font=True)
                 single_height *= 1.0 - self.font_dim['ypadding']
+                if overlap:
+                    single_height *= 1.0 + min(0.01, overlap) # never aggressive vertical overlap
                 single_ratio_y = single_height / sym_dim['height']
 
                 single_ratio_x = min(single_ratio_x, single_ratio_y)
