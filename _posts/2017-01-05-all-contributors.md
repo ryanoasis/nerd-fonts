@@ -305,6 +305,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/shaunchokshi"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/66697794?v=4?s=100" width="100px;" alt="shaun"/><br /><sub><b>shaun</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=shaunchokshi" title="Code">💻</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/pgoslatara"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/14027534?v=4?s=100" width="100px;" alt="Pádraic Slattery"/><br /><sub><b>Pádraic Slattery</b></sub></a><br /><a href="#maintenance-pgoslatara" title="Maintenance">🚧</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://naufalkateni.com/"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/75259474?v=4?s=100" width="100px;" alt="Muhammad Naufal Kateni"/><br /><sub><b>Muhammad Naufal Kateni</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=NaufalK25" title="Documentation">📖</a></span>
+<span style="display: inline-block; width: 130px;"><a href="http://blog.ningwang.me"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/7892593?v=4?s=100" width="100px;" alt="Ning Wang"/><br /><sub><b>Ning Wang</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=ningw42" title="Code">💻</a></span>
 
 
 
