@@ -1461,10 +1461,9 @@ class font_patcher:
         if isinstance(self.xavgwidth[-1], int) and self.xavgwidth[-1] == 0:
             self.xavgwidth[-1] = get_old_average_x_width(self.sourceFont)
 
-    def get_iconheight(self, single_width_font=None):
+    def get_iconheight(self, force_single=False):
         """ Get the target height for a given target variant """
-        if single_width_font is None:
-            single_width_font = self.args.single
+        single_width_font = self.args.single or force_single
 
         iconheight = self.font_dim['height']
         if single_width_font and self.sourceFont.capHeight > 0 and not isinstance(self.args.cellopt, list):
@@ -1483,41 +1482,39 @@ class font_patcher:
             return 1
         return 2
 
+    def get_scale_pair_raw(self, sym_dim, stretch, overlap, force_mono_metrix=False):
+        """ Get scale in x and y as tuple ignoring 'pa' and 'xy' flags """
+        if force_mono_metrix:
+            stretch = '1' + stretch
+        cell_width_factor = self.get_target_width(stretch)
+        if overlap:
+            cell_width_factor += overlap
+        target_width = self.font_dim['width'] * cell_width_factor
+
+        # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
+        # Use the font_dim['height'] only for explicit 'y' scaling (not 'pa')
+        target_height = self.font_dim['height'] if '^' in stretch else self.get_iconheight(force_mono_metrix)
+        target_height *= 1.0 - self.font_dim['ypadding']
+        if overlap:
+            target_height *= 1.0 + min(0.01, overlap) # never aggressive vertical overlap
+
+        return (target_width / sym_dim['width'], target_height / sym_dim['height'])
+
+
     def get_scale_factors(self, sym_dim, stretch, overlap=None):
         """ Get scale in x and y as tuple """
         # It is possible to have empty glyphs, so we need to skip those.
         if not sym_dim['width'] or not sym_dim['height']:
             return (1.0, 1.0)
 
-        single_width = self.font_dim['width']
-        target_width = single_width * self.get_target_width(stretch)
-        if overlap:
-            target_width += single_width * overlap
-        scale_ratio_x = target_width / sym_dim['width']
-
-        # font_dim['height'] represents total line height, keep our symbols sized based upon font's em
-        # Use the font_dim['height'] only for explicit 'y' scaling (not 'pa')
-        target_height = self.font_dim['height'] if '^' in stretch else self.font_dim['iconheight']
-        target_height *= 1.0 - self.font_dim['ypadding']
-        if overlap:
-            target_height *= 1.0 + min(0.01, overlap) # never aggressive vertical overlap
-        scale_ratio_y = target_height / sym_dim['height']
+        (scale_ratio_x, scale_ratio_y) = self.get_scale_pair_raw(sym_dim, stretch, overlap)
 
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
             if not self.args.single and not '!' in stretch and scale_ratio_x > 1.0:
                 # on 'pa', non monospaced fonts only scale up as much as they would if monospaced
-                single_ratio_x = single_width / sym_dim['width']
-                if overlap:
-                    single_ratio_x *= 1.0 + overlap
-
-                single_height = self.font_dim['height'] if '^' in stretch else self.get_iconheight(single_width_font=True)
-                single_height *= 1.0 - self.font_dim['ypadding']
-                if overlap:
-                    single_height *= 1.0 + min(0.01, overlap) # never aggressive vertical overlap
-                single_ratio_y = single_height / sym_dim['height']
-
+                (single_ratio_x, single_ratio_y) = self.get_scale_pair_raw(sym_dim, stretch, overlap, force_mono_metrix=True)
                 single_ratio_x = min(single_ratio_x, single_ratio_y)
                 scale_ratio_x = max(single_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
