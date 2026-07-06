@@ -2022,6 +2022,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "ningw42",
+      "name": "Ning Wang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7892593?v=4",
+      "profile": "http://blog.ningwang.me",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
