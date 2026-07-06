@@ -912,12 +912,12 @@ class font_patcher:
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
         # Supported params: overlap | careful | xy-ratio | dont_copy | ypadding
-        # Overlap value is used horizontally but vertically limited to 0.01
+        # Overlap value is used horizontally but vertically limited to 0.01 (implies '!', usually should have '1' when used with 'pa')
         # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
         # '2' means occupy 2 cells (default for 'pa')
-        # '!' means do the 'pa' scaling even with non mono fonts (else it just scales down, never up)
+        # '!' means do the 'pa' scaling even with non mono fonts into a 2 cell wide space (else it just scales down, or up into a 1 cell wide space)
         # '^' means that scaling shall fill the whole cell and not only the icon-cap-height (for mono fonts, other always use the whole cell)
         # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
         #
@@ -1461,12 +1461,13 @@ class font_patcher:
         if isinstance(self.xavgwidth[-1], int) and self.xavgwidth[-1] == 0:
             self.xavgwidth[-1] = get_old_average_x_width(self.sourceFont)
 
-    def get_iconheight(self, single_width=None):
-        if single_width is None:
-            single_width = self.args.single
+    def get_iconheight(self, single_width_font=None):
+        """ Get the target height for a given target variant """
+        if single_width_font is None:
+            single_width_font = self.args.single
 
         iconheight = self.font_dim['height']
-        if single_width and self.sourceFont.capHeight > 0 and not isinstance(self.args.cellopt, list):
+        if single_width_font and self.sourceFont.capHeight > 0 and not isinstance(self.args.cellopt, list):
             # Limit the icon height on monospaced fonts because very slender and tall icons render
             # excessively tall otherwise. We ignore that effect for the other variants because it
             # does not look so much out of place there.
@@ -1489,7 +1490,7 @@ class font_patcher:
             return (1.0, 1.0)
 
         single_width = self.font_dim['width']
-        target_width =  single_width * self.get_target_width(stretch)
+        target_width = single_width * self.get_target_width(stretch)
         if overlap:
             target_width += single_width * overlap
         scale_ratio_x = target_width / sym_dim['width']
@@ -1505,12 +1506,12 @@ class font_patcher:
         if 'pa' in stretch:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
-            if scale_ratio_x > 1 and not self.args.single and not '!' in stretch and not overlap:
+            if not self.args.single and not '!' in stretch and not overlap and scale_ratio_x > 1.0:
                 # on 'pa', non monospaced fonts only scale up as much as they would if monospaced
-                single_height = self.font_dim['height'] if '^' in stretch else self.get_iconheight(single_width=True)
-                single_height *= 1.0 - self.font_dim['ypadding']
-
                 single_ratio_x = single_width / sym_dim['width']
+
+                single_height = self.font_dim['height'] if '^' in stretch else self.get_iconheight(single_width_font=True)
+                single_height *= 1.0 - self.font_dim['ypadding']
                 single_ratio_y = single_height / sym_dim['height']
 
                 single_ratio_x = min(single_ratio_x, single_ratio_y)
