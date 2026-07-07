@@ -1332,7 +1332,7 @@ class font_patcher:
 
         # print("FINI hhea {} typo {} win {} use {}     {}      {}".format(hhea_btb, typo_btb, win_btb, use_typo, our_btb != hhea_btb, self.sourceFont.fontname))
 
-        self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0, 'iconheight': 0, 'ypadding': 0}
+        self.font_dim = {'xmin': 0, 'ymin': 0, 'xmax': 0, 'ymax': 0, 'width' : 0, 'height': 0, 'ypadding': 0}
 
         if metrics == Metric.HHEA:
             self.font_dim['ymin'] = self.sourceFont.hhea_descent - half_gap(self.sourceFont.hhea_linegap, False)
@@ -1368,15 +1368,12 @@ class font_patcher:
                 'ymax'      : self.sourceFont.ascent,
                 'width'     : self.sourceFont.em,
                 'height'    : self.sourceFont.descent + self.sourceFont.ascent,
-                'iconheight': self.sourceFont.descent + self.sourceFont.ascent,
                 'ypadding'  : 0,
             }
             our_btb = self.sourceFont.descent + self.sourceFont.ascent
         if self.font_dim['height'] <= 0:
             logger.critical("Can not detect sane font height")
             sys.exit(1)
-
-        self.font_dim['iconheight'] = self.get_iconheight()
 
         # Make all metrics equal
         self.sourceFont.os2_typolinegap = 0
@@ -1445,7 +1442,7 @@ class font_patcher:
                 self.font_dim['ymax'] - self.font_dim['height'], self.font_dim['ymax'])
         logger.debug("Final font cell dimensions %d w x %d h%s",
             self.font_dim['width'], self.font_dim['height'],
-            ' (with icon cell {} h)'.format(int(self.font_dim['iconheight'])) if self.font_dim['iconheight'] != self.font_dim['height'] else '')
+            ' (with icon cell {} h)'.format(int(self.get_iconheight())) if self.get_iconheight() != self.font_dim['height'] else '')
         try:
             middle = lambda x, y: abs(x - y) / 2 + min(x, y)
             x_bb = self.sourceFont['x'].boundingBox();
