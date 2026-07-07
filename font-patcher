@@ -888,7 +888,9 @@ class font_patcher:
 
         # Automatically added Braille glyphs only for monospaced and not for Symbols Only
         # unless they are requested specifically (i.e. not via --complete)
-        if self.args.braille == 'complete':
+        if not self.args.braille:
+            braille_enabled = False
+        elif self.args.braille == 'complete':
             self.args.braille = 'rectangle'
             braille_enabled = self.source_monospaced and not self.symbolsonly
             if braille_enabled and self.args.careful and braille_glyphs_target == braille_glyphs_current:
@@ -896,7 +898,7 @@ class font_patcher:
                 # do not replace if set is already complete
                 logger.debug("Found complete Braille glyphs set. Skipping...")
                 braille_enabled = False
-        elif self.args.braille is not None:
+        else:
             braille_enabled = True
         if braille_enabled:
             if braille_glyphs_current > 0:
