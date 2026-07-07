@@ -3,6 +3,7 @@
 
 import fontforge
 import math
+import sys
 
 
 def get_circle_center(dot, width, ymax, ymin):
@@ -69,6 +70,8 @@ def draw_braille_glyph(glyph, idx, width, ymax, ymin, style, rx, ry):
                 draw_rectangle(pen, center, rx, ry)
             elif style == 'circle':
                 draw_circle(pen, center, min(rx, ry))
+            else:
+                sys.exit('Braille style "{}" unknown'.format(style))
     pen = None
 
 
