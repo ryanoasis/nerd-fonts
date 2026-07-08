@@ -1165,7 +1165,25 @@ class font_patcher:
               *range(0xf0b2, 0xf0b6 + 1)
             ], # lots of clouds (weather states) (Please read note above!)
         ]}
-        MDI_SCALE_LIST = None # Maybe later add some selected ScaleGroups
+        MDI_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
+            [*range(0xf00da, 0xf00dc + 1), *range(0xf0f61, 0xf0f68 + 1)], # moons
+            range(0xf013c, 0xf0143 + 1), # chevrons
+            range(0xf035d, 0xf0360 + 1), # triangles
+            [*range(0xf0387, 0xf038d + 1), 0xf0f71, 0xf0f72, *range(0xf0f74, 0xf0f77 + 1)], # musical notes
+            range(0xf0504, 0xf0506 + 1), # temperature scale units
+            [*range(0xf0712, 0xf0716 + 1), 0xf0a6f ], # cellular signals
+            range(0xf0718, 0xf071e + 1), # commit symbols
+            range(0xf0857, 0xf085c + 1), # chess pieces
+            [0xf09dd, 0xf09de, 0xf09df, 0xf0a10, 0xf0a13, 0xf014, 0xf0a15, 0xf14dc, 0xf1554], # small circles etc (first glyph is size reference)
+            range(0xf0aee, 0xf0b07 + 1), # alpha
+            range(0xf0b39, 0xf0b42 + 1), # numerics
+            range(0xf0bb5, 0xf0bbe + 1), # pan buttons
+            range(0xf1088, 0xf1091 + 1), # roman numerals
+            range(0xf12ab, 0xf12b3 + 1), # f-keys (only 1-9, scale f10 etc independently)
+            range(0xf13a2, 0xf13a9 + 1), # sizes
+            range(0xf19b0, 0xf19b7 + 1), # arrows
+            range(0xf1abc, 0xf1ac0 + 1), # tally marks
+        ]}
 
 
         # Define the character ranges
