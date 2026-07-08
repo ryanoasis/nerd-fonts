@@ -92,14 +92,14 @@ for index in range(args.symbolFontStart, args.symbolFontEnd + 1):
 
   if index != code:
     suppressedEntries.append(entryString + ' ({:X} not main codepoint)'.format(index))
-  elif name not in allNames:
+  elif sh_name not in allNames:
     print(entryString)
   else:
     suppressedEntries.append(entryString + ' (double)')
 
   ctr += 1
   hexPosition += 1
-  allNames.add(name)
+  allNames.add(sh_name)
 
 print('Done, generated {} glyphs'.format(ctr))
 
