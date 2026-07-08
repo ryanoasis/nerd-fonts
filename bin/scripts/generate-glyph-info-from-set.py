@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding=utf8
 # Nerd Fonts Version: 3.4.0
-# Script Version: 1.3.0
+# Script Version: 1.4.0
 
 # Example Usage:
 # ./generate-glyph-info-from-set.py --font ../../src/glyphs/materialdesignicons-webfont.ttf --start f001 --end f847 --offset 4ff --prefix mdi
@@ -29,6 +29,25 @@ parser.add_argument('-nogaps', '--nogaps', action='store_true', dest='nogaps', h
 parser.add_argument('-font', '--font', type=str, nargs='?', dest='filepath', help='The file path to the font file to open')
 args = parser.parse_args()
 
+manual_name_substitudes = {
+        0xF0388: 'music_note_2',
+        0xF043D: 'radiobox_blank',
+        0xF0509: 'mountains',
+        0xF05FC: 'logout_variant_2',
+        0xF0765: 'circle',
+        0xF0766: 'circle_outline',
+        0xF08D0: 'cards_heart',
+        0xF0B39: 'numeric_0',
+        0xF0C9E: 'numeric_0_circle',
+        0xF0C9F: 'numeric_0_circle_outline',
+        0xF1088: 'roman_numeral_1',
+        0xF108C: 'roman_numeral_5',
+        0xF1091: 'roman_numeral_10',
+        0xF13A6: 'size_m',
+        0xF18A0: 'cards_heart_outline',
+        0xF18F0: 'navigation_variant',
+}
+
 print(args.symbolFontStart, args.symbolFontEnd)
 
 symbolFont = fontforge.open(args.filepath)
@@ -55,20 +74,24 @@ symbolFont.encoding = 'UnicodeFull'
 for index in range(args.symbolFontStart, args.symbolFontEnd + 1):
   if not index in symbolFont:
     continue
-  sym_glyph = symbolFont[index]
-  code = sym_glyph.unicode
-  name = sym_glyph.glyphname
+  if index in manual_name_substitudes:
+    code = index
+    name = manual_name_substitudes[index]
+  else:
+    sym_glyph = symbolFont[index]
+    code = sym_glyph.unicode
+    name = sym_glyph.glyphname
   sh_name = 'i_{}_{}'.format(args.prefix, name.replace('-', '_'))
 
   if args.nogaps:
     char = chr(hexPosition)
   else:
-    char = chr(code + signedOffset)
+    char = chr(index + signedOffset)
 
   entryString = 'i=\'{}\' {}=$i'.format(char, sh_name)
 
   if index != code:
-    suppressedEntries.append(entryString + ' (not main)')
+    suppressedEntries.append(entryString + ' ({:X} not main codepoint)'.format(index))
   elif name not in allNames:
     print(entryString)
   else:
@@ -81,5 +104,5 @@ for index in range(args.symbolFontStart, args.symbolFontEnd + 1):
 print('Done, generated {} glyphs'.format(ctr))
 
 if len(suppressedEntries) > 0:
-  print('FOLLOGING ENTRIES SUPPRESSED to prevent double names:')
+  print('FOLLOWING ENTRIES SUPPRESSED to prevent double names:')
   print('\n'.join(suppressedEntries))

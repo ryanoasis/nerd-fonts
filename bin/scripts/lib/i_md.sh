@@ -907,6 +907,7 @@ i='󰎄' i_md_music_box=$i
 i='󰎅' i_md_music_box_outline=$i
 i='󰎆' i_md_music_circle=$i
 i='󰎇' i_md_music_note=$i
+i='󰎈' i_md_music_note_2=$i
 i='󰎉' i_md_music_note_half=$i
 i='󰎊' i_md_music_note_off=$i
 i='󰎋' i_md_music_note_quarter=$i
@@ -1087,6 +1088,7 @@ i='󰐹' i_md_radio=$i
 i='󰐺' i_md_radio_handheld=$i
 i='󰐻' i_md_radio_tower=$i
 i='󰐼' i_md_radioactive=$i
+i='󰐽' i_md_radiobox_blank=$i
 i='󰐾' i_md_radiobox_marked=$i
 i='󰐿' i_md_raspberry_pi=$i
 i='󰑀' i_md_ray_end=$i
@@ -1290,6 +1292,7 @@ i='󰔅' i_md_temperature_fahrenheit=$i
 i='󰔆' i_md_temperature_kelvin=$i
 i='󰔇' i_md_tennis_ball=$i
 i='󰔈' i_md_tent=$i
+i='󰔉' i_md_mountains=$i
 i='󰔊' i_md_text_to_speech=$i
 i='󰔋' i_md_text_to_speech_off=$i
 i='󰔌' i_md_texture=$i
@@ -1532,6 +1535,7 @@ i='󰗸' i_md_home_map_marker=$i
 i='󰗹' i_md_incognito=$i
 i='󰗺' i_md_kettle=$i
 i='󰗻' i_md_lock_plus=$i
+i='󰗼' i_md_logout_variant_2=$i
 i='󰗽' i_md_logout_variant=$i
 i='󰗾' i_md_music_note_bluetooth=$i
 i='󰗿' i_md_music_note_bluetooth_off=$i
@@ -1892,6 +1896,8 @@ i='󰝡' i_md_unfold_more_vertical=$i
 i='󰝢' i_md_taco=$i
 i='󰝣' i_md_square_outline=$i
 i='󰝤' i_md_square=$i
+i='󰝥' i_md_circle=$i
+i='󰝦' i_md_circle_outline=$i
 i='󰝧' i_md_alert_octagram=$i
 i='󰝨' i_md_atom=$i
 i='󰝩' i_md_ceiling_light=$i
@@ -2253,6 +2259,7 @@ i='󰣌' i_md_camera_image=$i
 i='󰣍' i_md_car_limousine=$i
 i='󰣎' i_md_cards_club=$i
 i='󰣏' i_md_cards_diamond=$i
+i='󰣐' i_md_cards_heart=$i
 i='󰣑' i_md_cards_spade=$i
 i='󰣒' i_md_cellphone_text=$i
 i='󰣓' i_md_cellphone_message=$i
@@ -2869,6 +2876,7 @@ i='󰬵' i_md_format_letter_case_lower=$i
 i='󰬶' i_md_format_letter_case_upper=$i
 i='󰬷' i_md_language_java=$i
 i='󰬸' i_md_circle_multiple=$i
+i='󰬹' i_md_numeric_0=$i
 i='󰬺' i_md_numeric_1=$i
 i='󰬻' i_md_numeric_2=$i
 i='󰬼' i_md_numeric_3=$i
@@ -3225,6 +3233,8 @@ i='󰲚' i_md_minus_network_outline=$i
 i='󰲛' i_md_network_off=$i
 i='󰲜' i_md_network_off_outline=$i
 i='󰲝' i_md_network_outline=$i
+i='󰲞' i_md_numeric_0_circle=$i
+i='󰲟' i_md_numeric_0_circle_outline=$i
 i='󰲠' i_md_numeric_1_circle=$i
 i='󰲡' i_md_numeric_1_circle_outline=$i
 i='󰲢' i_md_numeric_2_circle=$i
@@ -4225,13 +4235,16 @@ i='󱂄' i_md_lungs=$i
 i='󱂅' i_md_math_log=$i
 i='󱂆' i_md_moped=$i
 i='󱂇' i_md_router_network=$i
+i='󱂈' i_md_roman_numeral_1=$i
 i='󱂉' i_md_roman_numeral_2=$i
 i='󱂊' i_md_roman_numeral_3=$i
 i='󱂋' i_md_roman_numeral_4=$i
+i='󱂌' i_md_roman_numeral_5=$i
 i='󱂍' i_md_roman_numeral_6=$i
 i='󱂎' i_md_roman_numeral_7=$i
 i='󱂏' i_md_roman_numeral_8=$i
 i='󱂐' i_md_roman_numeral_9=$i
+i='󱂑' i_md_roman_numeral_10=$i
 i='󱂒' i_md_soldering_iron=$i
 i='󱂓' i_md_stomach=$i
 i='󱂔' i_md_table_eye=$i
@@ -5020,6 +5033,7 @@ i='󱎢' i_md_size_xxs=$i
 i='󱎣' i_md_size_xs=$i
 i='󱎤' i_md_size_s=$i
 i='󱎥' i_md_size_m=$i
+i='󱎦' i_md_size_m=$i
 i='󱎧' i_md_size_xl=$i
 i='󱎨' i_md_size_xxl=$i
 i='󱎩' i_md_size_xxxl=$i
@@ -6293,6 +6307,7 @@ i='󱢜' i_md_bicycle_cargo=$i
 i='󱢝' i_md_calendar_collapse_horizontal=$i
 i='󱢞' i_md_calendar_expand_horizontal=$i
 i='󱢟' i_md_cards_club_outline=$i
+i='󱢠' i_md_cards_heart_outline=$i
 i='󱢡' i_md_cards_playing=$i
 i='󱢢' i_md_cards_playing_club=$i
 i='󱢣' i_md_cards_playing_club_multiple=$i
@@ -6372,6 +6387,7 @@ i='󱣬' i_md_filter_check=$i
 i='󱣭' i_md_filter_check_outline=$i
 i='󱣮' i_md_flag_off=$i
 i='󱣯' i_md_flag_off_outline=$i
+i='󱣰' i_md_navigation_variant=$i
 i='󱣱' i_md_navigation_variant_outline=$i
 i='󱣲' i_md_refresh_auto=$i
 i='󱣳' i_md_tilde_off=$i
