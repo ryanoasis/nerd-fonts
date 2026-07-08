@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.22.3"
+script_version = "4.22.4"
 
 version = "3.4.0"
 projectName = "Nerd Fonts"
@@ -1518,7 +1518,8 @@ class font_patcher:
             sys.stdout.write("{} {} Glyphs from {} Set\n".format(
                 "Adding" if not modify else "Rescaling", glyphSetLength, setName))
 
-        currentSourceFontGlyph = -1 # initialize for the exactEncoding case
+        currentSymbolFontGlyph = -1 # Unicode of the copy source
+        currentSourceFontGlyph = -1 # Unicode of the copy target
         width_warning = False
 
         progressHeader = '{:21}'.format(setName)
@@ -1531,33 +1532,39 @@ class font_patcher:
 
 
         for index, sym_glyph in enumerate(symbolFontSelection):
-            sym_attr = attributes.get(sym_glyph.unicode)
+
+            # Find the codepoint of the current symbol glyph sym_glyph.
+            # Problem is we do not know the intended codepoint of the glyph
+            # because it came from a selection.byGlyphs: The glyph can have
+            # multiple codepoints or there might be skipped over glyphs.
+            # The iteration loop is still in the order of the selection by codepoint,
+            # i.e. we iterate with target codepoint regardless of reported glyph's codepoint.
+            # So we take the next allowed codepoint of the current glyph.
+            possible_codes = [ ]
+            if sym_glyph.unicode > currentSymbolFontGlyph:
+                possible_codes += [ sym_glyph.unicode ]
+            if sym_glyph.altuni:
+                possible_codes += [ v for v, s, r in sym_glyph.altuni if v > currentSymbolFontGlyph ]
+            if len(possible_codes) == 0:
+                logger.warning("Can not determine codepoint of %X. Skipping...", sym_glyph.unicode)
+                continue
+            currentSymbolFontGlyph = min(possible_codes)
+
+            if exactEncoding:
+                # Use the exact same hex values for the source font as for the symbol font.
+                currentSourceFontGlyph = currentSymbolFontGlyph
+            else:
+                # use source font defined hex values based on passed in start (fills gaps; symbols are packed)
+                currentSourceFontGlyph = sourceFontStart + sourceFontCounter
+                sourceFontCounter += 1
+
+            sym_attr = attributes.get(currentSymbolFontGlyph)
             if sym_attr is None:
                 sym_attr = attributes['default']
 
             if self.font_extrawide:
                 # Do not allow 'xy2' scaling
                 sym_attr['stretch'] = sym_attr['stretch'].replace('2', '')
-
-            if exactEncoding:
-                # Use the exact same hex values for the source font as for the symbol font.
-                # Problem is we do not know the codepoint of the sym_glyph and because it
-                # came from a selection.byGlyphs there might be skipped over glyphs.
-                # The iteration is still in the order of the selection by codepoint,
-                # so we take the next allowed codepoint of the current glyph
-                possible_codes = [ ]
-                if sym_glyph.unicode > currentSourceFontGlyph:
-                    possible_codes += [ sym_glyph.unicode ]
-                if sym_glyph.altuni:
-                    possible_codes += [ v for v, s, r in sym_glyph.altuni if v > currentSourceFontGlyph ]
-                if len(possible_codes) == 0:
-                    logger.warning("Can not determine codepoint of %X. Skipping...", sym_glyph.unicode)
-                    continue
-                currentSourceFontGlyph = min(possible_codes)
-            else:
-                # use source font defined hex values based on passed in start (fills gaps; symbols are packed)
-                currentSourceFontGlyph = sourceFontStart + sourceFontCounter
-                sourceFontCounter += 1
 
             # For debugging process only limited glyphs
             # if currentSourceFontGlyph != 0xe7bd:
@@ -1592,7 +1599,7 @@ class font_patcher:
 
             if dont_copy:
                 # Just prepare scaling of existing glyphs
-                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, stretch, self.sourceFont, currentSourceFontGlyph) if scaleRules is not None else None
+                glyph_scale_data = self.get_glyph_scale(currentSymbolFontGlyph, scaleRules, stretch, self.sourceFont, currentSourceFontGlyph) if scaleRules is not None else None
             else:
                 # Break apart multiple unicodes linking to one glyph
                 if currentSourceFontGlyph in self.sourceFont:
@@ -1607,12 +1614,12 @@ class font_patcher:
                         self.sourceFont.encoding = 'UnicodeFull' # Rebuild encoding table (needed after altuni changes)
 
                 # This will destroy any content currently in currentSourceFontGlyph, so do it first
-                glyph_scale_data = self.get_glyph_scale(sym_glyph.encoding, scaleRules, stretch, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
+                glyph_scale_data = self.get_glyph_scale(currentSymbolFontGlyph, scaleRules, stretch, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
 
                 # Select and copy symbol from its encoding point
                 # We need to do this select after the careful check, this way we don't
                 # reset our selection before starting the next loop
-                symbolFont.selection.select(sym_glyph.encoding)
+                symbolFont.selection.select(currentSymbolFontGlyph)
                 symbolFont.copy()
 
                 # Paste it
