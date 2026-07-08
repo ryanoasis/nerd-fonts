@@ -5033,7 +5033,7 @@ i='󱎢' i_md_size_xxs=$i
 i='󱎣' i_md_size_xs=$i
 i='󱎤' i_md_size_s=$i
 i='󱎥' i_md_size_m=$i
-i='󱎦' i_md_size_m=$i
+i='󱎦' i_md_size_l=$i
 i='󱎧' i_md_size_xl=$i
 i='󱎨' i_md_size_xxl=$i
 i='󱎩' i_md_size_xxxl=$i

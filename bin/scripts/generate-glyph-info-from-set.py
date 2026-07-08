@@ -43,7 +43,7 @@ manual_name_substitudes = {
         0xF1088: 'roman_numeral_1',
         0xF108C: 'roman_numeral_5',
         0xF1091: 'roman_numeral_10',
-        0xF13A6: 'size_m',
+        0xF13A6: 'size_l',
         0xF18A0: 'cards_heart_outline',
         0xF18F0: 'navigation_variant',
 }
