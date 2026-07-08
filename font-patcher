@@ -1172,12 +1172,12 @@ class font_patcher:
         #   - Filename
         #       File path relative to glyphdir.
         #   - Font
-        #       A hook function has a return value of type `fontforge.font`. 
+        #       A hook function has a return value of type `fontforge.font`.
         #       This hook function will be called before `copy_glyphs`.
         #       This provides greater flexibility when complex adjustments/generation  based on the sourceFont are required.
-        # Note: 
+        # Note:
         #   Only one of the two can exist.
-        #   When complex dynamic adjustments/generation based on sourceFont are unnecessary, 
+        #   When complex dynamic adjustments/generation based on sourceFont are unnecessary,
         #   it is better to use `Filename`, then adjust via attributes (in fact, this is more usual).
         self.patch_set = [
             {'Enabled': True,                           'Name': "Seti-UI + NerdFonts",  'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
