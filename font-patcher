@@ -1528,9 +1528,6 @@ class font_patcher:
             indexoffset = self.copy_glyphs_last['maximum']
         else:
             indexoffset = 0
-            if self.args.progressbars and len(self.copy_glyphs_last['header']):
-                sys.stdout.write("\n")
-
 
         for index, sym_glyph in enumerate(symbolFontSelection):
 
@@ -1787,6 +1784,8 @@ class font_patcher:
         # end for
         self.copy_glyphs_last['header'] = progressHeader
         self.copy_glyphs_last['maximum'] = glyphSetLength + indexoffset
+        if self.args.progressbars and len(self.copy_glyphs_last['header']):
+            sys.stdout.write("\n")
 
 
     def set_sourcefont_glyph_widths(self):
