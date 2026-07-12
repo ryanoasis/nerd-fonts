@@ -13,16 +13,16 @@ projectName = "Nerd Fonts"
 projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]
 
-import sys
-import re
-import os
 import argparse
-from argparse import RawTextHelpFormatter
-import errno
-import subprocess
-import json
 from enum import Enum
+import errno
+import json
 import logging
+import os
+import re
+import subprocess
+import sys
+
 try:
     import configparser
 except ImportError:
@@ -2131,7 +2131,7 @@ def setup_arguments():
             '* Version: ' + version + '\n'
             '* Development Website: https://github.com/ryanoasis/nerd-fonts\n'
             '* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md'),
-        formatter_class=RawTextHelpFormatter,
+        formatter_class=argparse.RawTextHelpFormatter,
         add_help=False,
     )
 
