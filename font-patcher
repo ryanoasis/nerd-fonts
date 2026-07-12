@@ -22,6 +22,7 @@ import os
 import re
 import subprocess
 import sys
+import unicodedata
 
 try:
     import configparser
@@ -1800,9 +1801,13 @@ class font_patcher:
                 # Ligatures will have these.
                 continue
 
-            if glyph.width == 2 * mono_width and self.source_monospaced:
+            if (glyph.width == 2 * mono_width
+                and self.source_monospaced
+                and glyph.unicode > 0
+                and unicodedata.east_asian_width(chr(glyph.unicode)) not in 'WF'):
                 # Move glyph into the monospaced cell if
                 # - it is in a double size cell
+                # - it is not part of the WIDE asian glyphs
                 # - it is centered inside the double cell
                 # - it fits roughly into a singe cell (5% lenience)
                 (xmin, _, xmax, _) = glyph.boundingBox()
