@@ -120,7 +120,7 @@ E672 E772 typo3/typo3-original.svg typo3
 E673 E773 cairo/cairo-plain.svg cairo
 E674 E774 doctrine/doctrine-plain.svg doctrine
 E675 E775 groovy/groovy-plain.svg groovy
-E676 E776 nginx/nginx-original.svg nginx
+E676 E776 nginx/nginx-plain.svg nginx
 E677 E777 haskell/haskell-plain.svg haskell
 E678 E778 zend/zend-original.svg zend
 E679 E779 vorillaz/gnu.svg gnu
@@ -205,7 +205,7 @@ E6C7 E7C7 dropwizard/dropwizard-plain.svg dropwizard
 E6C8 E7C8 dynamodb/dynamodb-plain.svg dynamodb
 E6C9 E7C9 ecto/ecto-original.svg ecto
 E6CA E7CA elasticsearch/elasticsearch-plain.svg elasticsearch
-E6CB E7CB electron/electron-original.svg electron
+E6CB E7CB electron/electron-plain.svg electron
 E6CC E7CC eleventy/eleventy-plain.svg eleventy
 E6CD E7CD elixir/elixir-plain.svg elixir
 E6CE E7CE elm/elm-plain.svg elm
@@ -453,7 +453,7 @@ E7BF E8BF thealgorithms/thealgorithms-plain.svg thealgorithms
 E7C0 E8C0 threedsmax/threedsmax-plain.svg threedsmax
 E7C1 E8C1 threejs/threejs-original.svg threejs
 E7C2 E8C2 titaniumsdk/titaniumsdk-original.svg titaniumsdk
-E7C3 E8C3 tomcat/tomcat-original.svg tomcat
+E7C3 E8C3 tomcat/tomcat-plain.svg tomcat
 E7C4 E8C4 tortoisegit/tortoisegit-plain.svg tortoisegit
 E7C5 E8C5 towergit/towergit-plain.svg towergit
 E7C6 E8C6 traefikmesh/traefikmesh-original.svg traefikmesh
@@ -497,7 +497,7 @@ E7EB E8EB yaml/yaml-plain.svg yaml
 E7EC E8EC yarn/yarn-original.svg yarn
 E7ED E8ED yugabytedb/yugabytedb-plain.svg yugabytedb
 E7EE E8EE yunohost/yunohost-plain.svg yunohost
-E7EF E8EF zig/zig-original.svg zig
+E7EF E8EF zig/zig-plain.svg zig
 E7F0 E8F0 nats/nats-plain.svg nats
 E7F1 E8F1 aerospike/aerospike-original.svg aerospike
 E7F2 E8F2 aframe/aframe-plain.svg aframe

@@ -157,3 +157,4 @@ if notes2:
     print(notes2)
 
 print('Generated new mapping with {} entries'.format(len(mapping)))
+print('Please check icons in fixed/, they might be lost from the mapping and or need to be updated')
