@@ -519,7 +519,7 @@ E801 E901 cpanel/cpanel-original.svg cpanel
 E802 E902 datadog/datadog-original.svg datadog
 E803 E903 datatables/datatables-original.svg datatables
 E804 E904 delphi/delphi-plain.svg delphi
-E805 E905 detaspace/detaspace-original.svg detaspace
+E805 E905 detaspace/detaspace-plain.svg detaspace
 E806 E906 discloud/discloud-original.svg discloud
 E807 E907 dovecot/dovecot-plain.svg dovecot
 E808 E908 duckdb/duckdb-plain.svg duckdb
@@ -552,7 +552,7 @@ E822 E922 leetcode/leetcode-plain.svg leetcode
 E823 E923 libgdx/libgdx-plain.svg libgdx
 E824 E924 linuxmint/linuxmint-plain.svg linuxmint
 E825 E925 love2d/love2d-plain.svg love2d
-E826 E926 mapbox/mapbox-original.svg mapbox
+E826 E926 mapbox/mapbox-plain.svg mapbox
 E827 E927 mattermost/mattermost-original.svg mattermost
 E828 E928 memcached/memcached-plain.svg memcached
 E829 E929 mercurial/mercurial-plain.svg mercurial
