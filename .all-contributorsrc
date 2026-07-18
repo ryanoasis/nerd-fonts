@@ -2031,6 +2031,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "joeriddles",
+      "name": "Joe Riddle",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19392916?v=4",
+      "profile": "https://github.com/joeriddles",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
