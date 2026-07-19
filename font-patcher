@@ -6,23 +6,24 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.22.4"
+script_version = "4.23.0"
 
 version = "3.4.0"
 projectName = "Nerd Fonts"
 projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]
 
-import sys
-import re
-import os
 import argparse
-from argparse import RawTextHelpFormatter
-import errno
-import subprocess
-import json
 from enum import Enum
+import errno
+import json
 import logging
+import os
+import re
+import subprocess
+import sys
+import unicodedata
+
 try:
     import configparser
 except ImportError:
@@ -868,7 +869,8 @@ class font_patcher:
     def setup_patch_set(self):
         """ Creates list of dicts to with instructions on copying glyphs from each symbol font into self.sourceFont """
 
-        box_enabled = self.source_monospaced and not self.symbolsonly # Box glyph only for monospaced and not for Symbols Only
+        basics_enabled = True # This enables the standard patch sets that will always be patched in, regardless of other options
+        box_enabled = basics_enabled and self.source_monospaced and not self.symbolsonly # Box glyph only for monospaced and not for Symbols Only
         box_keep = False
         if box_enabled or self.args.forcebox:
             self.sourceFont.selection.select(("ranges",), 0x2500, 0x259f)
@@ -902,7 +904,7 @@ class font_patcher:
                 logger.debug("Found complete Braille glyphs set. Skipping...")
                 braille_enabled = False
         else:
-            braille_enabled = True
+            braille_enabled = basics_enabled
         if braille_enabled:
             if braille_glyphs_current > 0:
                 logger.debug("%d/%d Braille glyphs will be replaced",
@@ -1180,11 +1182,11 @@ class font_patcher:
         #   When complex dynamic adjustments/generation based on sourceFont are unnecessary,
         #   it is better to use `Filename`, then adjust via attributes (in fact, this is more usual).
         self.patch_set = [
-            {'Enabled': True,                           'Name': "Seti-UI + NerdFonts",  'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': True,                           'Name': "Heavy Angle Brackets", 'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': HEAVY_SCALE_LIST, 'Attributes': SYM_ATTR_HEAVYBRACKETS},
+            {'Enabled': basics_enabled,                 'Name': "Seti-UI + NerdFonts",  'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': basics_enabled,                 'Name': "Heavy Angle Brackets", 'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': HEAVY_SCALE_LIST, 'Attributes': SYM_ATTR_HEAVYBRACKETS},
             {'Enabled': box_enabled,                    'Name': "Box Drawing",          'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
-            {'Enabled': True,                           'Name': "Progress Indicators",  'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0xEE00, 'SymEnd': 0xEE0B, 'SrcStart': None,   'ScaleRules': PROGR_SCALE_LIST, 'Attributes': SYM_ATTR_PROGRESS},
-            {'Enabled': True,                           'Name': "Devicons",             'Filename': "devicons/devicons.otf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE7EF, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': basics_enabled,                 'Name': "Progress Indicators",  'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0xEE00, 'SymEnd': 0xEE0B, 'SrcStart': None,   'ScaleRules': PROGR_SCALE_LIST, 'Attributes': SYM_ATTR_PROGRESS},
+            {'Enabled': basics_enabled,                 'Name': "Devicons",             'Filename': "devicons/devicons.otf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE7EF, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",    'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",    'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra",      'Filename': "powerline-extra/PowerlineExtraSymbols.otf",      'Exact': True,  'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
@@ -1527,9 +1529,6 @@ class font_patcher:
             indexoffset = self.copy_glyphs_last['maximum']
         else:
             indexoffset = 0
-            if self.args.progressbars and len(self.copy_glyphs_last['header']):
-                sys.stdout.write("\n")
-
 
         for index, sym_glyph in enumerate(symbolFontSelection):
 
@@ -1786,18 +1785,41 @@ class font_patcher:
         # end for
         self.copy_glyphs_last['header'] = progressHeader
         self.copy_glyphs_last['maximum'] = glyphSetLength + indexoffset
+        if self.args.progressbars and len(self.copy_glyphs_last['header']):
+            sys.stdout.write("\n")
 
 
     def set_sourcefont_glyph_widths(self):
         """ Makes self.sourceFont monospace compliant """
 
+        mono_width = self.font_dim['width']
+        recentered = []
+
         for glyph in self.sourceFont.glyphs():
-            if (glyph.width == self.font_dim['width']):
+            if glyph.width == mono_width:
                 # Don't touch the (negative) bearings if the width is ok
                 # Ligatures will have these.
                 continue
 
-            if (glyph.width != 0):
+            if (glyph.width == 2 * mono_width
+                and self.source_monospaced
+                and glyph.unicode > 0
+                and glyph.unicode not in range(0xEE00, 0xEE0B + 1)
+                and unicodedata.east_asian_width(chr(glyph.unicode)) not in 'WF'):
+                # Move glyph into the monospaced cell if
+                # - it is in a double size cell
+                # - it is not part of the WIDE asian glyphs or is likely a progress indicator in PUA
+                # - it is centered inside the double cell
+                # - it fits roughly into a singe cell (5% lenience)
+                (xmin, _, xmax, _) = glyph.boundingBox()
+                glyph_width = xmax - xmin
+                glyph_center = xmin + glyph_width / 2.0
+                is_centered = abs(glyph_center - mono_width) <= 1.0
+                if is_centered and glyph_width < mono_width * 1.05:
+                    glyph.left_side_bearing = int(glyph.left_side_bearing - mono_width / 2.0)
+                    recentered += [ glyph.unicode ]
+
+            if glyph.width != 0:
                 # If the width is zero this glyph is intended to be printed on top of another one.
                 # In this case we need to keep the negative bearings to shift it 'left'.
                 # Things like &Auml; have these: composed of U+0041 'A' and U+0308 'double dot above'
@@ -1806,6 +1828,10 @@ class font_patcher:
                 self.remove_glyph_neg_bearings(glyph)
 
             self.set_glyph_width_mono(glyph)
+
+        if len(recentered) > 0:
+            logger.info("Recentered %d double size glyphs", len(recentered))
+            logger.debug("Recentered:%s", ''.join(' {:X}'.format(x) for x in sorted(recentered)))
 
 
     def remove_glyph_neg_bearings(self, glyph):
@@ -2111,7 +2137,7 @@ def setup_arguments():
             '* Version: ' + version + '\n'
             '* Development Website: https://github.com/ryanoasis/nerd-fonts\n'
             '* Changelog: https://github.com/ryanoasis/nerd-fonts/blob/-/changelog.md'),
-        formatter_class=RawTextHelpFormatter,
+        formatter_class=argparse.RawTextHelpFormatter,
         add_help=False,
     )
 
