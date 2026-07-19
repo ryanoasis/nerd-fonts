@@ -296,6 +296,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://naufalkateni.com/"><img src="https://avatars.githubusercontent.com/u/75259474?v=4?s=100" width="100px;" alt="Muhammad Naufal Kateni"/><br /><sub><b>Muhammad Naufal Kateni</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=NaufalK25" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://blog.ningwang.me"><img src="https://avatars.githubusercontent.com/u/7892593?v=4?s=100" width="100px;" alt="Ning Wang"/><br /><sub><b>Ning Wang</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=ningw42" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/joeriddles"><img src="https://avatars.githubusercontent.com/u/19392916?v=4?s=100" width="100px;" alt="Joe Riddle"/><br /><sub><b>Joe Riddle</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=joeriddles" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/OzelotVanilla"><img src="https://avatars.githubusercontent.com/u/59910575?v=4?s=100" width="100px;" alt="青木 橙花"/><br /><sub><b>青木 橙花</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=OzelotVanilla" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
