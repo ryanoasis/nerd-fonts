@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Font Logos (Font Linux) 1.3.0 (130 icons)
-# Codepoints: F300-F381
-# Nerd Fonts Version: 3.4.0
-# Script Version: 1.3.0
+# Font Logos (Font Linux) 1.4.0 (134 icons)
+# Codepoints: F300-F385
+# Nerd Fonts Version: 3.5.0
+# Script Version: 1.4.0
 # We keep the name 'linux' in the metadata for continuity reasons
 test -n "$__i_linux_loaded" && return || __i_linux_loaded=1
 i='' i_linux_alpine=$i
@@ -135,4 +135,8 @@ i='' i_linux_leap=$i
 i='' i_linux_typst=$i
 i='' i_linux_nobara=$i
 i='' i_linux_river=$i
+i='' i_linux_openwrt=$i
+i='' i_linux_wireguard=$i
+i='' i_linux_ffmpeg=$i
+i='' i_linux_cachyos=$i
 unset i
