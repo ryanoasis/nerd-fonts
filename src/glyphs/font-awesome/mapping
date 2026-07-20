@@ -1477,6 +1477,7 @@ F3C1 F2FC solid/lock-open.svg lock_open
 F3C3 F2FD brands/lyft.svg lyft
 F2FE F2FE solid/poo.svg poo
 F3C4 F2FF brands/magento.svg magento
+F6A8 EFCF solid/volume.svg volume
 # Name clash: name: youtube, old: F167, new: F16A (F167), name at old pos: cloudsmith
 # Name clash: name: rotate_left, old: F0E2, new: F2EA (F2EA), name at old pos: arrow_rotate_left
 # Name clash: name: rotate_right, old: F01E, new: F2F9 (F2F9), name at old pos: arrow_rotate_right
