@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.24.1"
+script_version = "4.25.0"
 
 version = "3.4.0"
 projectName = "Nerd Fonts"
@@ -1102,7 +1102,7 @@ class font_patcher:
         DEVI_SCALE_LIST = None
         FONTA_SCALE_LIST = {'ShiftMode': '', 'ScaleGroups': [
             [0xf005, 0xf006, 0xf089], # star, star empty, half star
-            range(0xf026, 0xf028 + 1), # volume off, down, up
+            [*range(0xf026, 0xf028 + 1), 0xeee8, 0xefcf], # volume off, down, up, x, mid
             range(0xf02b, 0xf02c + 1), # tag, tags
             range(0xf031, 0xf035 + 1), # font et al
             range(0xf044, 0xf046 + 1), # edit, share, check (boxes)

@@ -9,7 +9,7 @@ import fontforge
 
 # Double-quotes required here, for version-bump.sh:
 # version-bump.sh is not working here, need to adjust manually!
-version = "3.2.0"
+version = "3.5.0"
 
 fa_version = '6.5.1'
 archive = 'fontawesome-free-{}-desktop.zip'.format(fa_version)
@@ -60,6 +60,9 @@ if subprocess.call('curl -OL https://github.com/FortAwesome/Font-Awesome/release
 print('\nUnpacking Font Awesome archive')
 if subprocess.call('rm -rf svgs fontawesome-free-*-desktop && unzip -q *.zip && mv fontawesome-free-*-desktop/svgs . && rm -rf fontawesome-free-*-desktop.zip', shell=True):
     sys.exit('Error unpacking archive')
+print('\nSneaking in FA 7.3.1 volume.svg')
+if subprocess.call('cp volume.svg svgs/solid', shell=True):
+    sys.exit('Error adding volume.svg')
 
 svg_dirs = os.listdir(vectorsdir)
 svgs = []
