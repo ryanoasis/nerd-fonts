@@ -55,7 +55,7 @@ class FontnameParser:
         self.keep_regular_in_family = keep
 
     def set_expect_no_italic(self, noitalic):
-        """Prevents rewriting Oblique as family name part"""
+        """Prevents rewriting Oblique/Slanted as family name part"""
         # To prevent naming clashes usually Oblique is moved out in the family name
         # because some fonts have Italic and Oblique, and we want to generate pure
         # RIBBI families in ID1/2.
@@ -224,8 +224,14 @@ class FontnameParser:
             (weights, styles) = FontnameTools.make_oblique_style(weights, [])
         if self.use_short_families[1]:
             [ other, weights ] = FontnameTools.short_styles([ other, weights ], aggressive)
-        weights = [ w if w != 'Oblique' else 'Obl' for w in weights ]
-        return FontnameTools.concat(name, rest, other, self.short_family_suff, weights)
+        new_weights = []
+        for w in weights:
+            # weights = [ w if w != 'Oblique' else 'Obl' for w in weights ]
+            if w not in FontnameTools.known_slope_types:
+                new_weights.append(w)
+                continue
+            new_weights.append(FontnameTools.known_slope_types[w][1])
+        return FontnameTools.concat(name, rest, other, self.short_family_suff, new_weights)
 
     def subfamily(self):
         """Get the SFNT SubFamily (ID 2)"""
@@ -234,10 +240,10 @@ class FontnameParser:
         if not self.rename_oblique:
             (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
         if len(styles) == 0:
-            if 'Oblique' in weights:
+            if len(set(FontnameTools.known_slope_types) & set(weights)): # 'Oblique' in weights
                 return FontnameTools.concat(styles, 'Italic')
             return 'Regular'
-        if 'Oblique' in weights and not 'Italic' in styles:
+        if len(set(FontnameTools.known_slope_types) & set(weights)) and not 'Italic' in styles:
                 return FontnameTools.concat(styles, 'Italic')
         return FontnameTools.concat(styles)
 
@@ -262,7 +268,7 @@ class FontnameParser:
         if 'Bold' in self.style_token:
             b |= BOLD
         # Ignore Italic if we have Oblique
-        if 'Oblique' in self.weight_token:
+        if len(set(FontnameTools.known_slope_types) & set(self.weight_token)): # 'Oblique' in self.weight_token
             b |= OBLIQUE
             if not self.rename_oblique:
                 # If we have no dedicated italic, than oblique = italic

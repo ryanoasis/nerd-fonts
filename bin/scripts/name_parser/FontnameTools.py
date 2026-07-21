@@ -127,11 +127,12 @@ class FontnameTools:
     @staticmethod
     def make_oblique_style(weights, styles):
         """Move "Oblique" from weights to styles for font naming purposes"""
-        if 'Oblique' in weights:
-            weights = list(weights)
-            weights.remove('Oblique')
-            styles = list(styles)
-            styles.append('Oblique')
+        for oblique in FontnameTools.known_slopes.keys(): # 'Oblique', 'Slanted'...
+            if oblique in weights:
+                weights = list(weights)
+                weights.remove(oblique)
+                styles = list(styles)
+                styles.append(oblique)
         return (weights, styles)
 
     @staticmethod
@@ -267,13 +268,16 @@ class FontnameTools:
         'Narrow': ('Nr', 'Narrow'),
         'Compact': ('Ct', 'Compact'),
     }
-    known_slopes = { # can not take modifiers
+    known_slope_types = { # can not take modifiers
         'Inclined': ('Ic', 'Incl'),
         'Oblique': ('Obl', 'Obl'),
         'Italic': ('It', 'Italic'),
-        'Upright': ('Up', 'Uprght'),
         'Kursiv': ('Ks', 'Kurs'),
         'Sloped': ('Sl', 'Slop'),
+        'Slanted': ('St', 'Slnt'),
+    }
+    known_slopes = known_slope_types | { # can not take modifiers
+        'Upright': ('Up', 'Uprght'),
     }
     known_modifiers = {
         'Demi': ('Dm', 'Dem'),
