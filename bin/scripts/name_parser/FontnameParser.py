@@ -50,6 +50,19 @@ class FontnameParser:
         else:
             return (FontnameTools.concat(self.basename, self.rest).replace(' ', ''), '')
 
+    def _remove_regular(self, styles, weights):
+        """Remove name part 'Regular' if it is superfluous or not really coorect"""
+        if self.keep_regular_in_family == None:
+            keep_regular = FontnameTools.is_keep_regular(self._basename + ' ' + self._rest)
+        else:
+            keep_regular = self.keep_regular_in_family
+        if ('Regular' in styles
+                and (not keep_regular
+                     or FontnameTools.check_contains_weight(self.weight_token))): # This is actually a malformed font name
+            styles = list(styles)
+            styles.remove('Regular')
+        return styles
+
     def set_keep_regular_in_family(self, keep):
         """Familyname may contain 'Regular' where it should normally be suppressed"""
         self.keep_regular_in_family = keep
@@ -146,15 +159,7 @@ class FontnameParser:
         """Get the SFNT Fullname (ID 4)"""
         styles = self.style_token
         weights = self.weight_token
-        if self.keep_regular_in_family == None:
-            keep_regular = FontnameTools.is_keep_regular(self._basename + ' ' + self._rest)
-        else:
-            keep_regular = self.keep_regular_in_family
-        if ('Regular' in styles
-                and (not keep_regular
-                    or FontnameTools.check_contains_weight(self.weight_token))): # This is actually a malformed font name
-            styles = list(self.style_token)
-            styles.remove('Regular')
+        styles = self._remove_regular(styles, weights)
         # For naming purposes we want Oblique to be part of the styles
         (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
         (name, rest) = self._shortened_name()
@@ -168,6 +173,7 @@ class FontnameParser:
         (name, rest) = self._shortened_name()
         styles = self.style_token
         weights = self.weight_token
+        styles = self._remove_regular(styles, weights)
         if self.use_short_families[1]:
             styles = FontnameTools.short_styles(styles, self.use_short_families[2])
             weights = FontnameTools.short_styles(weights, self.use_short_families[2])
@@ -237,6 +243,7 @@ class FontnameParser:
         """Get the SFNT SubFamily (ID 2)"""
         styles = self.style_token
         weights = self.weight_token
+        styles = self._remove_regular(styles, weights)
         if not self.rename_oblique:
             (weights, styles) = FontnameTools.make_oblique_style(weights, styles)
         if len(styles) == 0:
