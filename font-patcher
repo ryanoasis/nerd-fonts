@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.25.0"
+script_version = "4.25.1"
 
 version = "3.4.0"
 projectName = "Nerd Fonts"
@@ -627,7 +627,7 @@ class font_patcher:
                     sys.exit(2)
             n = FontnameParser(parser_name, logger)
             if not n.parse_ok:
-                logger.warning("Have only minimal naming information, check resulting name. Maybe specify --makegroups 0")
+                logger.warning("Parsing the font names failed. Maybe select different naming source via --name. Check resulting name(s).")
             n.drop_for_powerline()
             n.enable_short_families(not user_supplied_name, self.args.makegroups in [ 2, 3, 5, 6, ], self.args.makegroups in [ 3, 6, ])
             if not n.set_expect_no_italic(self.args.noitalic):
