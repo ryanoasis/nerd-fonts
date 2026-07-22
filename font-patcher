@@ -2221,6 +2221,7 @@ def setup_arguments():
     expert_group.add_argument('--configfile',                              dest='configfile',       default=False, type=str,            help='Specify a file path for configuration file (see sample: src/config.sample.cfg)')
     expert_group.add_argument('--custom',                                  dest='custom',           default=False, type=str,            help='Specify a custom symbol font, all glyphs will be copied; absolute path suggested')
     expert_group.add_argument('--dry',                                     dest='dry_run',          default=False, action='store_true', help='Do neither patch nor store the font, to check naming')
+    expert_group.add_argument('--experimental',                            dest='experimental',     default=[], action='extend', nargs=1, help='Enable experimental/unstable feature, get hints with "?" or "help"')
     expert_group.add_argument('--glyphdir',                                dest='glyphdir',         default=__dir__ + "/src/glyphs/", type=str, help='Path to glyphs to be used for patching')
     expert_group.add_argument('--has-no-italic',                           dest='noitalic',         default=False, action='store_true', help='Font family does not have Italic (but Oblique/Slanted), to help create correct RIBBI set')
     expert_group.add_argument('--metrics',                                 dest='metrics',          default=None, choices=get_metrics_names(), help='Select vertical metrics source (for problematic cases)')
@@ -2258,6 +2259,29 @@ def setup_arguments():
             logger.info("Adding config commandline options: %s", extraflags)
             extraflags += ' ' + args.font # Need to re-add the mandatory argument
             args = parser.parse_args(extraflags.split(), args)
+
+    experimental_features={
+        # user-switch-name: ( PR number, description, variable in args )
+    }
+    args.experimental = list(set(args.experimental))
+    if '?' in args.experimental or 'help' in args.experimental:
+        print('\nThe following experimental features can be enabled.');
+        if not len(experimental_features):
+            print('    No experimental feature available today')
+        else:
+            for k, v in experimental_features.items():
+                print('    \'{}\': {} (PR {})'.format(k, v[1], v[0]))
+            print('Note that a feature might be removed without notice in the future.');
+        sys.exit(0)
+    for k,v in experimental_features.items():
+        if k in args.experimental:
+            setattr(args, v[2], True)
+            args.experimental.remove(k)
+            logger.warning('Enabling experimental feature %s', k)
+        else:
+            setattr(args, v[2], False)
+    if len(args.experimental):
+        logger.error('Unknown experimental flag(s): %s', ', '.join(args.experimental))
 
     if args.makegroups > 0 and not FontnameParserOK:
         logger.critical("FontnameParser module missing (bin/scripts/name_parser/Fontname*), specify --makegroups 0")
