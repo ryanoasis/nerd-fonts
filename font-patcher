@@ -1183,6 +1183,7 @@ class font_patcher:
             range(0xf13a2, 0xf13a9 + 1), # sizes
             range(0xf19b0, 0xf19b7 + 1), # arrows
             range(0xf1abc, 0xf1ac0 + 1), # tally marks
+            [0xf0210, 0xf081d, *range(0xf146c, 0xf1474 + 1), 0xf171d, 0xf1a3a], # fans
         ]}
 
 
