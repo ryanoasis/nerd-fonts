@@ -27,30 +27,30 @@ def get_circle_center(dot, width, ymax, ymin):
     return (x0 + col * width / 2, y0 - row * height / 4)
 
 
-def draw_rectangle(pen, center, rx, ry):
+def draw_rectangle(pen, center, half_size_x, half_size_y):
     """ Control the pen to draw a rectangle """
 
     cx, cy = center
 
-    pen.moveTo((cx - rx, cy + ry))
-    pen.lineTo((cx + rx, cy + ry))
-    pen.lineTo((cx + rx, cy - ry))
-    pen.lineTo((cx - rx, cy - ry))
-    pen.lineTo((cx - rx, cy + ry))
+    pen.moveTo((cx - half_size_x, cy + half_size_y))
+    pen.lineTo((cx + half_size_x, cy + half_size_y)) # top-left -> top-right
+    pen.lineTo((cx + half_size_x, cy - half_size_y)) # top-right -> bottom-right
+    pen.lineTo((cx - half_size_x, cy - half_size_y)) # bottom-right -> botton-left
+    pen.lineTo((cx - half_size_x, cy + half_size_y)) # bottom-left -> top-left
 
     pen.closePath()
 
 
-def draw_circle(pen, center, r):
+def draw_circle(pen, center, radius):
     """ Control the pen to draw a circle """
     K = 4 / 3 * (math.sqrt(2) - 1)  # a ratio for determining control points
-    offset = r * K  # offset distance of control points
+    offset = radius * K  # offset distance of control points
 
     cx, cy = center
-    tx, ty = cx, cy + r  # top
-    rx, ry = cx + r, cy  # right
-    bx, by = cx, cy - r  # bottom
-    lx, ly = cx - r, cy  # left
+    tx, ty = cx, cy + radius  # top
+    rx, ry = cx + radius, cy  # right
+    bx, by = cx, cy - radius  # bottom
+    lx, ly = cx - radius, cy  # left
 
     pen.moveTo((tx, ty))
     pen.curveTo((tx + offset, ty), (rx, ry + offset), (rx, ry))  # top -> right
@@ -60,27 +60,27 @@ def draw_circle(pen, center, r):
     pen.closePath()
 
 
-def draw_braille_glyph(glyph, idx, width, ymax, ymin, style, rx, ry):
+def draw_braille_glyph(glyph, idx, width, ymax, ymin, style, half_size_x, half_size_y):
     """ Draw the braille glyph with the corresponding number """
     pen = glyph.glyphPen()
     for i in range(8):
         if (1 << i) & idx > 0:
             center = get_circle_center(i, width, ymax, ymin)
             if style == 'rectangle':
-                draw_rectangle(pen, center, rx, ry)
+                draw_rectangle(pen, center, half_size_x, half_size_y)
             elif style == 'circle':
-                draw_circle(pen, center, min(rx, ry))
+                draw_circle(pen, center, min(half_size_x, half_size_y))
             else:
                 sys.exit('Braille style "{}" unknown'.format(style))
     pen = None
 
 
 def set_scent(font, ymax, ymin):
-    """" Set ascent and descent """
-    # This may not impact the final patch result,
-    # but to better check middle result, we set them.
+    """ Set ascent and descent """
+    # This may not impact the final font-patcher result,
+    # but to better check intermediate result, we set them.
     # We set them simply, because this is enough
-    # to reveal the true situation when we check the middle result.
+    # to reveal the true situation when we check the intermediate result.
     font.hhea_ascent = ymax
     font.hhea_descent = ymin
     font.hhea_ascent_add = 0
@@ -101,7 +101,7 @@ def set_scent(font, ymax, ymin):
 
 def get_braille_font(em, width, ymax, ymin, style, r_ratio):
     """
-    Get braille font
+    Get Braille font
     r_ratio: the maximum ratio occupied in the horizontal and vertical directions
     """
     braille_font = fontforge.font()
@@ -120,8 +120,8 @@ def get_braille_font(em, width, ymax, ymin, style, r_ratio):
     if style == 'gapless':
         r_ratio = 1
         style = 'rectangle'
-    rx = width / 4 * r_ratio
-    ry = (ymax - ymin) / 8 * r_ratio
+    half_size_x = width / 4 * r_ratio
+    half_size_y = (ymax - ymin) / 8 * r_ratio
 
     START = 0x2800
     END = 0x28FF
@@ -129,6 +129,6 @@ def get_braille_font(em, width, ymax, ymin, style, r_ratio):
         idx = i - START
         glyph = braille_font.createChar(i, f'uni{i:04X}')
         glyph.width = width
-        draw_braille_glyph(glyph, idx, width, ymax, ymin, style, rx, ry)
+        draw_braille_glyph(glyph, idx, width, ymax, ymin, style, half_size_x, half_size_y)
 
     return braille_font
