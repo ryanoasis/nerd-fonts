@@ -25,7 +25,7 @@ MacOS usually has a `bash` version 3; you can install a current version via Home
 * `generate-sample-set.sh`: Generate one patched font file from each source font (for manual checks) [4]
 * `generate-webfonts.sh`: Generate woff and woff2 font files from the SymbolsOnly font (for the gh-pages) [1]
 * `get-font-names-from-json.sh`: Helper to setup the CI font matrix from `data/fonts.json` [1]
-* `gotta-patch-em-all-font-patcher!.sh`: Patch one or more fonts 'complete' with and without `mono` and with and without `windows compat` [1]
+* `gotta-patch-em-all-font-patcher!.sh`: Patch one or more fonts 'complete' in all 3 variants 'standard', 'mono', and 'propo' [1]
 * `lib/`: See its own README
 * `name_parser/`: Suite to set up sane Family and SubFamily names, used by `font-patcher` (on demand)
 * `optimize-original-source.sh`: Run all icons in `src/svgs` through inkscape to simplify (remove nodes and edges) [5]
