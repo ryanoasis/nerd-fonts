@@ -32,11 +32,11 @@ function appendGeneralInfo {
       printf "in the same 'cell'.\n"
     } >> "${dest}"
   fi
+  downloadfrom="   * [${fontname}.zip](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${fontname}.zip)\
+\n   * [${fontname}.tar.xz](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${fontname}.tar.xz) (smaller)"
   if [ -n "${has_repo}" ]
   then
-    downloadfrom="Or download the development version from the folders here"
-  else
-    downloadfrom="Direct links for [${fontname}.zip](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${fontname}.zip) or [${fontname}.tar.xz](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${fontname}.tar.xz)"
+    downloadfrom="${downloadfrom}\n * Or download the development version from the folders here"
   fi
   local iconinfo="${sd}/../../src/glyphs/README.md"
   local iconinfostart=$(grep -Einm 1 '^#+ +icon' "${iconinfo}" | sed 's/:.*//')
