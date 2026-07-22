@@ -912,14 +912,18 @@ class font_patcher:
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
         # Supported params: overlap | careful | xy-ratio | dont_copy | ypadding
-        # Overlap value is used horizontally but vertically limited to 0.01 (usually should have '1' when used with 'pa')
+        # Overlap value is used horizontally but vertically limited to 0.01 (then params usually should have '1' when used with 'pa')
         # Careful does not overwrite/modify existing glyphs
         # The xy-ratio limits the x-scale for a given y-scale to make the ratio <= this value (to prevent over-wide glyphs)
         # '1' means occupu 1 cell (default for 'xy')
         # '2' means occupy 2 cells (default for 'pa')
-        # '!' means do the 'pa' scaling even with non mono fonts into a 2 cell wide space (else it just scales down, or up into a 1 cell wide space)
+        # '!' means do the 'pa' scaling even with non mono fonts into a 2 cell wide space (else it just scales down, never up (*))
         # '^' means that scaling shall fill the whole cell and not only the icon-cap-height (for mono fonts, other always use the whole cell)
         # Dont_copy does not overwrite existing glyphs but rescales the preexisting ones
+        #
+        # (*) 'pa' scaling without '!' of a non mono font scales:
+        # - [normal mode] only down, never up (keeps original icon sizes unless they are too big)
+        # - [upscale mode] down; or up into a 1 cell wide space (at least same size as mono font icons)
         #
         # Be careful, stretch may not change within a ScaleRule!
 
@@ -1510,10 +1514,15 @@ class font_patcher:
             # We want to preserve x/y aspect ratio, so find biggest scale factor that allows symbol to fit
             scale_ratio_x = min(scale_ratio_x, scale_ratio_y)
             if not self.args.single and not '!' in stretch and scale_ratio_x > 1.0:
-                # on 'pa', non monospaced fonts only scale up as much as they would if monospaced
-                (single_ratio_x, single_ratio_y) = self.get_scale_pair_raw(sym_dim, stretch, overlap, force_mono_metrix=True)
-                single_ratio_x = min(single_ratio_x, single_ratio_y)
-                scale_ratio_x = max(single_ratio_x, 1.0)
+                if not self.args.upscale:
+                    # non monospaced fonts just scale down on 'pa', not up
+                    if not overlap:
+                        scale_ratio_x = 1.0
+                else:
+                    # on 'pa', non monospaced fonts only scale up as much as they would if monospaced
+                    (single_ratio_x, single_ratio_y) = self.get_scale_pair_raw(sym_dim, stretch, overlap, force_mono_metrix=True)
+                    single_ratio_x = min(single_ratio_x, single_ratio_y)
+                    scale_ratio_x = max(single_ratio_x, 1.0)
             scale_ratio_y = scale_ratio_x
         else:
             # Keep the not-stretched direction
@@ -2262,6 +2271,7 @@ def setup_arguments():
 
     experimental_features={
         # user-switch-name: ( PR number, description, variable in args )
+        'nonmono-upscale': (1926, 'Scale non-mono icons to be at least as large as mono', 'upscale'),
     }
     args.experimental = list(set(args.experimental))
     if '?' in args.experimental or 'help' in args.experimental:
