@@ -311,6 +311,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/danielwe"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/5809017?v=4?s=100" width="100px;" alt="Daniel Wennberg"/><br /><sub><b>Daniel Wennberg</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=danielwe" title="Code">💻</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/rivy"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/80132?v=4?s=100" width="100px;" alt="Roy Ivy III"/><br /><sub><b>Roy Ivy III</b></sub></a><br /><a href="#ideas-rivy" title="Ideas, Planning, & Feedback">🤔</a></span>
 
 
 
