@@ -931,7 +931,7 @@ class font_patcher:
             'default': {'align': 'c', 'valign': 'c', 'stretch': 'pa', 'params': {}}
         }
         SYM_ATTR_POWERLINE = {
-            'default': {'align': 'c', 'valign': 'c', 'stretch': '^pa', 'params': {}},
+            'default': {'align': 'c', 'valign': 'c', 'stretch': '^pa1', 'params': {}},
 
             # Arrow tips
             0xe0b0: {'align': 'l', 'valign': 'c', 'stretch': '^xy', 'params': {'overlap': 0.06, 'xy-ratio': 0.7}},
@@ -1757,7 +1757,7 @@ class font_patcher:
                 if sym_attr['align'] == 'c':
                     # Center align
                     x_width = cell_width
-                    if '2' in stretch:
+                    if '2' in stretch or (self.args.centerwide and 'pa' in stretch and '1' not in stretch):
                         x_width *= self.get_target_width(stretch)
                     x_align_distance += (x_width / 2) - (sym_dim['width'] / 2)
                 elif sym_attr['align'] == 'r':
@@ -2272,6 +2272,7 @@ def setup_arguments():
     experimental_features={
         # user-switch-name: ( PR number, description, variable in args )
         'nonmono-upscale': (1926, 'Scale non-mono icons to be at least as large as mono', 'upscale'),
+        'center-wide': (2034, 'Is it possible to "center" glyphs which overlap a single cell by padding them?', 'centerwide'),
     }
     args.experimental = list(set(args.experimental))
     if '?' in args.experimental or 'help' in args.experimental:
