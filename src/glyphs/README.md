@@ -4,6 +4,9 @@ This directory contains all the glyphs (glyph sets) that the `font-patcher` puts
 
 If a icon font here is updated, do not forget to update the database file in `bin/script/libs`.
 
+Also do not forget to update the table below, because it is reused for the individual fonts' READMEs
+(ripped out of here).
+
 The 'Seti and Original' icons (in `original-source.otf`) is automatically generated from the glyphs in `src/svgs`.
 Do not edit and commit changes to that font directly.
 
@@ -11,8 +14,8 @@ Do not edit and commit changes to that font directly.
 
 | Icon set name          | upstream                                              | version         | license     |
 |------------------------|-------------------------------------------------------|-----------------|-------------|
-| Codicons               | https://github.com/microsoft/vscode-codicons          | 0.0.35          | CC BY 4.0   |
-| Devicons               | https://github.com/devicons/devicon                   | 2.16.0          | MIT         |
+| Codicons               | https://github.com/microsoft/vscode-codicons          | 0.0.45          | CC BY 4.0   |
+| Devicons               | https://github.com/devicons/devicon                   | 2.17.0          | MIT         |
 | extraglyphs            | https://github.com/source-foundry/Hack                | -               | MIT         |
 | Font Awesome           | https://github.com/FortAwesome/Font-Awesome           | 6.5.1           | CC BY 4.0   |
 | Font Awesome Extension | https://github.com/AndreLZGava/font-awesome-extension | 0.0.3           | MIT         |

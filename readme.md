@@ -102,6 +102,8 @@ _If you..._
 
 ## Glyph Sets
 
+The currently used sets are listed in [`src/glyphs/README.md`](src/glyphs/README.md).
+
 :mag: :mag: You can search for glyphs easily on [NerdFonts.com][Cheat Sheet] via the [Cheat Sheet][]
 
 See [Wiki: Glyph Sets and Codepoints for more details][wiki-glyph-sets-codepoints]
