@@ -43,7 +43,7 @@ generate_preview() {
   fontText=$2
   echo "[Generating] $font"
   sed -e "s/000000/ffffff/" -e "s/sans-serif/${font}/" -e "s/Font Name/${fontText}/" <"$template_svg" >"${output_dir}${font}.svg"
-  inkscape "${output_dir}${font}.svg" --actions="select-all; object-to-path; vacuum-defs; fit-canvas-to-selection; export-filename:${output_dir}${font}.svg; export-do"
+  inkscape "${output_dir}${font}.svg" --actions="select-all; object-to-path; fit-canvas-to-selection; export-filename:${output_dir}${font}.svg; export-do" --export-type=svg --vacuum-defs --export-plain-svg
   # svgo "${output_dir}${font}.svg"
 }
 
@@ -52,7 +52,7 @@ generate_preview_symbols() {
   fontText=$2
   echo "[Gen. Symb.] $font"
   sed -e "s/000000/ffffff/" -e "40,80s/sans-serif/${font}/" -e "s/Font Name/${fontText}/" <"$template2_svg" >"${output_dir}${font}.svg"
-  inkscape "${output_dir}${font}.svg" --actions="select-all; object-to-path; vacuum-defs; fit-canvas-to-selection; export-filename:${output_dir}${font}.svg; export-do"
+  inkscape "${output_dir}${font}.svg" --actions="select-all; object-to-path; fit-canvas-to-selection; export-filename:${output_dir}${font}.svg; export-do" --export-type=svg --vacuum-defs --export-plain-svg
   # svgo "${output_dir}${font}.svg"
 }
 
