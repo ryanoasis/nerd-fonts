@@ -10,20 +10,6 @@
    viewBox="0 0 744.09448819 1052.3622047"
    height="297mm"
    width="210mm">
-  <defs
-     id="defs4" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
   <g
      id="layer1">
     <text
@@ -43,12 +29,12 @@
        xml:space="preserve"><tspan
          y="140.93362"
          x="65.419403"
-         id="tspan4142">abcdefghijklmnopqrstuvwxyz</tspan><tspan
+         id="tspan4142">abcdefghijklmnopqrstuvwxyz [0xX]</tspan><tspan
          id="tspan4144"
          y="162.80862"
-         x="65.419403">ABCDEFGHIJKLMNOPQRSTUVWXYZ </tspan><tspan
+         x="65.419403">ABCDEFGHIJKLMNOPQRSTUVWXYZ (0xX) </tspan><tspan
          id="tspan4148"
          y="184.68362"
-         x="65.419403">oO08 iIlL1 {} [] g9qCGQ ~-+=&gt;</tspan></text>
+         x="65.419403">oO08 iIlL1 g9qCGQ ~-+=&gt;    {0xX}</tspan></text>
   </g>
 </svg>
