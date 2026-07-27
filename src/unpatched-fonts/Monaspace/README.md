@@ -7,6 +7,6 @@ you to mix and match them for a more expressive typographical palette.
 
 For more information have a look at the upstream website: https://github.com/githubnext/monaspace
 
-Light weight added only after Nerd Font v3.1.0 release, see Issue 1433.
+Light weight added only after Nerd Font v3.1.0 release, see https://github.com/ryanoasis/nerd-fonts/issues/1433.
 
-Version: 1.200
+Version: 1.400
