@@ -2088,6 +2088,15 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "rektdeckard",
+      "name": "Tobias Fried",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26732044?v=4",
+      "profile": "https://tobiasfried.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
