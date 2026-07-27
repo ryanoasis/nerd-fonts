@@ -304,6 +304,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/barries"><img src="https://avatars.githubusercontent.com/u/621187?v=4?s=100" width="100px;" alt="barries"/><br /><sub><b>barries</b></sub></a><br /><a href="#ideas-barries" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/thekingofspain"><img src="https://avatars.githubusercontent.com/u/2846624?v=4?s=100" width="100px;" alt="thekingofspain"/><br /><sub><b>thekingofspain</b></sub></a><br /><a href="#ideas-thekingofspain" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://tobiasfried.com"><img src="https://avatars.githubusercontent.com/u/26732044?v=4?s=100" width="100px;" alt="Tobias Fried"/><br /><sub><b>Tobias Fried</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=rektdeckard" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Tejakshaya"><img src="https://avatars.githubusercontent.com/u/96788831?v=4?s=100" width="100px;" alt="Dusk"/><br /><sub><b>Dusk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Tejakshaya" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
