@@ -302,6 +302,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/danielwe"><img src="https://avatars.githubusercontent.com/u/5809017?v=4?s=100" width="100px;" alt="Daniel Wennberg"/><br /><sub><b>Daniel Wennberg</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=danielwe" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/rivy"><img src="https://avatars.githubusercontent.com/u/80132?v=4?s=100" width="100px;" alt="Roy Ivy III"/><br /><sub><b>Roy Ivy III</b></sub></a><br /><a href="#ideas-rivy" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/barries"><img src="https://avatars.githubusercontent.com/u/621187?v=4?s=100" width="100px;" alt="barries"/><br /><sub><b>barries</b></sub></a><br /><a href="#ideas-barries" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/thekingofspain"><img src="https://avatars.githubusercontent.com/u/2846624?v=4?s=100" width="100px;" alt="thekingofspain"/><br /><sub><b>thekingofspain</b></sub></a><br /><a href="#ideas-thekingofspain" title="Ideas, Planning, & Feedback">🤔</a></td>
     </tr>
   </tbody>
 </table>
