@@ -316,6 +316,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/thekingofspain"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/2846624?v=4?s=100" width="100px;" alt="thekingofspain"/><br /><sub><b>thekingofspain</b></sub></a><br /><a href="#ideas-thekingofspain" title="Ideas, Planning, & Feedback">🤔</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://tobiasfried.com"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/26732044?v=4?s=100" width="100px;" alt="Tobias Fried"/><br /><sub><b>Tobias Fried</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=rektdeckard" title="Code">💻</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/Tejakshaya"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/96788831?v=4?s=100" width="100px;" alt="Dusk"/><br /><sub><b>Dusk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Tejakshaya" title="Code">💻</a></span>
+<span style="display: inline-block; width: 130px;"><a href="http://gerardbalaoro.dev"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/13101267?v=4?s=100" width="100px;" alt="Gerard Balaoro"/><br /><sub><b>Gerard Balaoro</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=gerardbalaoro" title="Code">💻</a></span>
 
 
 
