@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.4.0
-# Script Version: 2.3.0
+# Script Version: 2.4.0
 #
 # Iterates over all [*] archived fonts
 # to generate ruby cask files for homebrew-fonts (https://github.com/Homebrew/homebrew-cask)
@@ -63,7 +63,7 @@ function write_header {
         printf "cask \"%s\" do\\n" "$caskname"
         printf "  version \"%s\"\\n" "$version"
         printf "  sha256 \"%s\"\\n\\n" "$sha256sum"
-        printf "  url \"%s%s.zip\"\\n" "$downloadarchive" "$basename"
+        printf "  url \"%s%s.tar.xz\"\\n" "$downloadarchive" "$basename"
     } >> "$outputfile"
 }
 
