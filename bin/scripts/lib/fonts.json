@@ -308,7 +308,7 @@
       "patchedName": "DejaVuSansM",
       "folderName": "DejaVuSansMono",
       "imagePreviewFont": "DejaVuSansM Nerd Font",
-      "imagePreviewFontSource": "DejaVuSansMono/Regular/DejaVuSansMono.ttf",
+      "imagePreviewFontSource": "DejaVuSansMono/DejaVuSansMono.ttf",
       "linkPreviewFont": "dejavu",
       "caskName": "dejavu-sans-mono",
       "repoRelease": true,
