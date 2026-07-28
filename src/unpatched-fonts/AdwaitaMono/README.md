@@ -4,4 +4,4 @@ Adwaita Mono is the default monospace font for GNOME 48+. It is a modification o
 
 The fonts and license are available on the GNOME GitLab instance: https://gitlab.gnome.org/GNOME/adwaita-fonts
 
-Version: 32.4
+Version: 34.1
