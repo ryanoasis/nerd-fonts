@@ -47,9 +47,9 @@
     },
     {
       "unpatchedName": "Agave",
-      "licenseId": "MIT",
+      "licenseId": "OFL-1.1-no-RFN",
       "RFN": false,
-      "version": "37",
+      "version": "38",
       "patchedName": "Agave",
       "folderName": "Agave",
       "imagePreviewFont": "Agave Nerd Font",

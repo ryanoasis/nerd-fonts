@@ -121,7 +121,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [0xProto Nerd Font][p-0xProto]                    | [0xProto][f-0xProto]                   | 2.502      | NO   |
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                         | 3.0.1      | NO   |
 | [AdwaitaMono Nerd Font][p-adwaita-mono]           | [Adwaita Mono][f-adwaita-mono]         | 34.1       | NO   |
-| [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 37         | NO   |
+| [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 38         | NO   |
 | [AnnotationMono Nerd Font][p-annotation]          | [Annotation Mono][f-annotation]        | 0.4        | NO   |
 | [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]               | 1.002      | YES  |
 | [Arimo Nerd Font][p-arimo]                        | [Arimo][f-arimo]                       | 1.33       | NO   |
