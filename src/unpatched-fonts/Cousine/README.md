@@ -5,4 +5,4 @@ that is metrically compatible with Courier New.
 
 For more information have a look at: https://fonts.google.com/specimen/Cousine
 
-Version: 1.211
+Version: 1.241

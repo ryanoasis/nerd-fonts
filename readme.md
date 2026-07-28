@@ -135,7 +135,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [CodeNewRoman Nerd Font][p-code-nr]               | Code New Roman (Sam Radian)            | 2.0        | NO   |
 | [ComicShannsMono Nerd Font][p-comic]              | [Comic Shanns Mono][f-comic]           | 1.3.2      | NO   |
 | [CommitMono Nerd Font][p-commit]                  | [Commit Mono][f-commit]                | 1.143      | NO   |
-| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.211      | NO   |
+| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.241      | NO   |
 | [D2Coding Nerd Font][p-d2coding]                  | [D2Coding][f-d2coding]                 | 1.3.2      | YES  |
 | [DaddyTimeMono Nerd Font][p-daddytimemono]        | [DaddyTimeMono][f-daddytimemono]       | 1.2.3      | NO   |
 | [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono]      | 1.500      | NO   |
@@ -755,7 +755,7 @@ Font repos
 [f-arimo]:https://github.com/googlefonts/Arimo
 [f-atkinson]:https://www.brailleinstitute.org/freefont/
 [f-cascadia]:https://github.com/microsoft/cascadia-code
-[f-cousine]:https://fonts.google.com/specimen/Cousine
+[f-cousine]:https://github.com/googlefonts/cousine
 [f-comic]:https://github.com/jesusmgg/comic-shanns-mono
 [f-commit]:https://github.com/eigilnikolajsen/commit-mono
 [f-d2coding]:https://github.com/naver/d2codingfont
