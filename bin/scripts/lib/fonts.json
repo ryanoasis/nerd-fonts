@@ -61,6 +61,21 @@
       "description": "A small, monospace, outline font that is geometrically regular and simple"
     },
     {
+      "unpatchedName": "AnnotationMono",
+      "licenseId": "OFL-1.1-no-RFN",
+      "RFN": false,
+      "version": "0.4",
+      "patchedName": "AnnotationMono",
+      "folderName": "AnnotationMono",
+      "imagePreviewFont": "AnnotationMono NF",
+      "imagePreviewFontSource": "AnnotationMono/Regular.ttf",
+      "linkPreviewFont": "annotation-mono",
+      "caskName": "annotationmono",
+      "repoRelease": false,
+      "isMonospaced": true,
+      "description": "Idealized handwriting; legibility maximized while retaining hand-written character"
+    },
+    {
       "unpatchedName": "Anonymous Pro",
       "licenseId": "OFL-1.1-RFN",
       "RFN": true,

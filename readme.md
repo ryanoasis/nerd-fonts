@@ -122,6 +122,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                         | 3.0.1      | NO   |
 | [AdwaitaMono Nerd Font][p-adwaita-mono]           | [Adwaita Mono][f-adwaita-mono]         | 32.4       | NO   |
 | [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 37         | NO   |
+| [AnnotationMono Nerd Font][p-annotation]          | [Annotation Mono][f-annotation]        | 0.4        | NO   |
 | [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]               | 1.002      | YES  |
 | [Arimo Nerd Font][p-arimo]                        | [Arimo][f-arimo]                       | 1.33       | NO   |
 | [AtkynsonMono Nerd Font][p-atkinson-mono]         | [Atkinson Hyperlegible Mono][f-atkinson]| 2.001     | YES  |
@@ -749,6 +750,7 @@ Font repos
 [f-3270]:https://github.com/rbanffy/3270font
 [f-adwaita-mono]:https://gitlab.gnome.org/GNOME/adwaita-fonts
 [f-agave]:https://github.com/agarick/agave
+[f-annotation]:https://github.com/qwerasd205/AnnotationMono
 [f-a-pro]:https://www.marksimonson.com/fonts/view/anonymous-pro
 [f-arimo]:https://github.com/googlefonts/Arimo
 [f-atkinson]:https://www.brailleinstitute.org/freefont/
@@ -812,6 +814,7 @@ Patched Font internal links
 [p-0xProto]:patched-fonts/0xProto
 [p-3270]:patched-fonts/3270
 [p-adwaita-mono]:patched-fonts/AdwaitaMono
+[p-annotation]:patched-fonts/AnnotationMono
 [p-agave]:patched-fonts/Agave
 [p-anonymous-pro]:patched-fonts/AnonymousPro
 [p-arimo]:patched-fonts/Arimo
