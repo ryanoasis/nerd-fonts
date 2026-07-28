@@ -171,7 +171,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | NO   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                     | 0.61       | NO   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]                 | 1.6        | YES  |
-| [M+ Nerd Font][p-mplus]                           | [MPlus Fonts][f-mplus]                 | 1.007      | NO   |
+| [M+ Nerd Font][p-mplus]                           | [MPlus Fonts][f-mplus]                 | 1.100      | NO   |
 | [Noto Nerd Font][p-noto]                          | [Noto][f-noto]                         | div        | NO   |
 | [OpenDyslexic Nerd Font][p-opendyslexic]          | [OpenDyslexic][f-opendyslexic]         | 2.001      | NO   |
 | [Overpass Nerd Font][p-overpass]                  | [Overpass][f-overpass]                 | 3.0.5      | NO   |
