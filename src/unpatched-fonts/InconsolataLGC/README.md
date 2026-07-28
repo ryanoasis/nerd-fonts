@@ -8,6 +8,6 @@ Inconsolata LGC is a modified version of Inconsolata with added the Cyrillic
 alphabet which directly descends from Inconsolata Hellenic supporting modern
 Greek.
 
-For more information have a look at the upstream website: https://github.com/DeLaGuardo/Inconsolata-LGC
+For more information have a look at the upstream website: https://github.com/MihailJP/Inconsolata-LGC
 
-Version: 1.13
+Version: 3.201
