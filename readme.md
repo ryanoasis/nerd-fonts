@@ -187,6 +187,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | NO   |
 | [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | NO   |
 | [UbuntuSans Nerd Font][p-ubuntu-sans]             | [Ubuntu Sans][f-ubuntu-sans]           | 1.006      | NO   |
+| [UbuntuSansM Nerd Font][p-ubuntu-sans]            | [Ubuntu Sans Mono][f-ubuntu-sans-m]    | 1.100      | NO   |
 | [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.6      | NO   |
 | [ZedMono Nerd Font][p-zed-mono]                   | [Zed Mono][f-zed-mono]                 | 1.2.0      | NO   |
 
@@ -803,7 +804,8 @@ Font repos
 [f-terminus]:http://terminus-font.sourceforge.net
 [f-tinos]:https://fonts.google.com/specimen/Tinos
 [f-ubuntu]:http://font.ubuntu.com
-[f-ubuntu-sans]:https://github.com/canonical/Ubuntu-Sans-Mono-fonts
+[f-ubuntu-sans]:https://github.com/canonical/Ubuntu-Sans-fonts
+[f-ubuntu-sans-m]:https://github.com/canonical/Ubuntu-Sans-Mono-fonts
 [f-victor]:https://github.com/rubjo/victor-mono
 [f-zed-mono]:https://github.com/zed-industries/zed-fonts
 
