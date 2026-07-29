@@ -147,7 +147,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [GeistMono Nerd Font][p-geist-mono]               | [Geist Mono][f-geist-mono]             | 1.702      | NO   |
 | [GoMono Nerd Font][p-go-mono]                     | [Go-Mono][f-go-mono]                   | 2.010      | NO   |
 | [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2], [Gohu][f-gohu]    | 2.0        | NO   |
-| [GoogleSansCode Nerd Font][p-googlesc]            | [Google Sans Code][f-googlesc]         | 7.000      | NO   |
+| [GoogleSansCode Nerd Font][p-googlesc]            | [Google Sans Code][f-googlesc]         | 7.001      | NO   |
 | [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                         | 3.003      | NO   |
 | [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]                   | 1.2        | YES  |
 | [HeavyDataMono Nerd Font][p-heavy-data]           | HeavyData (Vic Fieger)                 | 1          | NO   |
