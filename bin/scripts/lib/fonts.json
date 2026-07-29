@@ -437,6 +437,21 @@
       "description": "Bitmap font, tall capitals and ascenders, small serifs"
     },
     {
+      "unpatchedName": "Google Sans Code",
+      "licenseId": "OFL-1.1-no-RFN",
+      "RFN": false,
+      "version": "7.000",
+      "patchedName": "GoogleSansCode",
+      "folderName": "GoogleSansCode",
+      "imagePreviewFont": "GoogleSansCode NF",
+      "imagePreviewFontSource": "GoogleSansCode/GoogleSansCode-Regular.ttf",
+      "linkPreviewFont": "google-sans-code",
+      "caskName": "googlesanscode",
+      "repoRelease": false,
+      "isMonospaced": true,
+      "description": "Designed to bring clarity, readability, and a bit of Google's distinctive brand character to code"
+    },
+    {
       "unpatchedName": "Hack",
       "licenseId": "Bitstream-Vera AND MIT",
       "RFN": false,
