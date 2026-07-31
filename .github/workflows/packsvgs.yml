@@ -12,7 +12,7 @@ jobs:
   create-symbols-font:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Fetch dependencies
         run: |
           sudo apt update -y -q
@@ -31,7 +31,7 @@ jobs:
 
       - name: Commit simplified SVGs back to repo
         if: steps.optimize.outputs.num_of_files > 0
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           fetch: false
           add: 'src/svgs'
@@ -74,7 +74,7 @@ jobs:
 
       - name: Commit created font back to repo
         if: steps.compare_font.outputs.changed == 'true'
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           fetch: false
           add: "['src/glyphs/original-source.otf', 'bin/scripts/lib/i_seti.sh']"

@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Fetch information
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           sparse-checkout: bin/scripts
 
@@ -134,7 +134,7 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Check release variables
         run: |
           echo "$RELEASE_VERSION"
@@ -218,7 +218,7 @@ jobs:
           ./archive-fonts.sh "${{ matrix.font }}"
 
       - name: Upload zip and tar.xz archive for release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -232,7 +232,7 @@ jobs:
           sha256sum * > SHA-256-${{ matrix.font }}.txt
 
       - name: Upload patched fonts as artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: patched-fonts-${{ matrix.font }}
           # adding multiple paths (i.e. LICENSE) is a workaround to get a least common ancestor
@@ -250,7 +250,7 @@ jobs:
       RELEASE_CANDIDATE: ${{ needs.setup-fonts-matrix.outputs.rel_candidate }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Prepare repo (clear out old and obsolete fonts)
         run: |
           cd -- "$GITHUB_WORKSPACE/patched-fonts"
@@ -258,7 +258,7 @@ jobs:
 
       - name: Download patched fonts from build
         id: download-patched-fonts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           pattern: patched-fonts-*
           path: .
@@ -270,7 +270,7 @@ jobs:
           cat SHA-256-* | sort -k 2 > SHA-256.txt
 
       - name: Upload checksums for release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -289,7 +289,7 @@ jobs:
         # and the action fails silently (i.e. without stopping the job).
         # This means there will be only one commit in the repo for each version tag change,
         # regardless of how often we run the release CI.
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           fetch: false
           add: "['font-patcher', 'bin/scripts']"
@@ -301,7 +301,7 @@ jobs:
         # For fonts with repoRelease == false in the font.json the gitignore should
         # have been setup in a way that this commits only the README.md
         # See also fontjson.yml and update-gitignore.sh
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           fetch: false
           add: 'patched-fonts'
@@ -315,7 +315,7 @@ jobs:
           ./generate-fontconfig.sh
 
       - name: Commit fontconfig back to repo
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           fetch: false
           add: '10-nerd-font-symbols.conf'
@@ -332,7 +332,7 @@ jobs:
           ./generate-webfonts.sh
 
       - name: Commit CSS back to repo
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         id: push_css
         with:
           fetch: false
@@ -354,7 +354,7 @@ jobs:
            echo "updated=$?" >> $GITHUB_OUTPUT) || true
 
       - name: Upload font-patcher archive for release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: needs.setup-fonts-matrix.outputs.rel_upload == 'true'
         with:
           draft: true
@@ -367,7 +367,7 @@ jobs:
         run: cp -f archives/FontPatcher.zip .
 
       - name: Commit new FontPatcher.zip
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         if: steps.updated-or-not.outputs.updated != 0
         with:
           fetch: false
