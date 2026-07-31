@@ -70,7 +70,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Comic Shanns Mono             | MIT                          |
 | Commit Mono                   | OFL-1.1-no-RFN               |
 | Cousine                       | Apache-2.0                   |
-| D2Coding                      | OFL-1.1-no-RFN               |
+| D2Coding                      | OFL-1.1-RFN                  |
 | DaddyTimeMono                 | OFL-1.1-no-RFN               |
 | DejaVu Sans Mono              | Bitstream-Vera               |
 | Droid Sans Mono               | Apache-2.0                   |
