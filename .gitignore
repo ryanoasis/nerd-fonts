@@ -35,6 +35,8 @@ patched-fonts/DepartureMono/*
 !patched-fonts/DepartureMono/README.md
 patched-fonts/GeistMono/*
 !patched-fonts/GeistMono/README.md
+patched-fonts/GoogleSansCode/*
+!patched-fonts/GoogleSansCode/README.md
 patched-fonts/IntelOneMono/*
 !patched-fonts/IntelOneMono/README.md
 patched-fonts/IosevkaTermSlab/*
