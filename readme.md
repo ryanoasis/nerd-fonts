@@ -120,8 +120,8 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 |:--------------------------------------------------|:---------------------------------------|:-----------|:-----|
 | [0xProto Nerd Font][p-0xProto]                    | [0xProto][f-0xProto]                   | 2.502      | NO   |
 | [3270 Nerd Font][p-3270]                          | [3270][f-3270]                         | 3.0.1      | NO   |
-| [AdwaitaMono Nerd Font][p-adwaita-mono]           | [Adwaita Mono][f-adwaita-mono]         | 32.4       | NO   |
-| [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 37         | NO   |
+| [AdwaitaMono Nerd Font][p-adwaita-mono]           | [Adwaita Mono][f-adwaita-mono]         | 34.1       | NO   |
+| [Agave Nerd Font][p-agave]                        | [Agave][f-agave]                       | 38         | NO   |
 | [AnnotationMono Nerd Font][p-annotation]          | [Annotation Mono][f-annotation]        | 0.4        | NO   |
 | [AnonymicePro Nerd Font][p-anonymous-pro]         | [Anonymous Pro][f-a-pro]               | 1.002      | YES  |
 | [Arimo Nerd Font][p-arimo]                        | [Arimo][f-arimo]                       | 1.33       | NO   |
@@ -135,7 +135,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [CodeNewRoman Nerd Font][p-code-nr]               | Code New Roman (Sam Radian)            | 2.0        | NO   |
 | [ComicShannsMono Nerd Font][p-comic]              | [Comic Shanns Mono][f-comic]           | 1.3.2      | NO   |
 | [CommitMono Nerd Font][p-commit]                  | [Commit Mono][f-commit]                | 1.143      | NO   |
-| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.211      | NO   |
+| [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.241      | NO   |
 | [D2Coding Nerd Font][p-d2coding]                  | [D2Coding][f-d2coding]                 | 1.3.2      | YES  |
 | [DaddyTimeMono Nerd Font][p-daddytimemono]        | [DaddyTimeMono][f-daddytimemono]       | 1.2.3      | NO   |
 | [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono]      | 1.500      | NO   |
@@ -156,22 +156,22 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [iM-Writing Nerd Font][p-im-writing]              | [iA-Writer][f-ia-writer]               | Dec 2018   | YES  |
 | [Inconsolata Nerd Font][p-inconsolata]            | [Inconsolata][f-inconsolata]           | 3.000      | NO   |
 | [InconsolataGo Nerd Font][p-inconsolata-go]       | [InconsolataGo][f-inconsolatago]       | 1.013      | NO   |
-| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc]    | 1.13       | NO   |
+| [Inconsolata LGC Nerd Font][p-inconsolata-lgc]    | [Inconsolata LGC][f-inconsolatalgc]    | 3.201      | NO   |
 | [IntoneMono Nerd Font][p-intel-one-mono]          | [Intel One Mono][f-intel-one-mono]     | 1.4.0      | YES  |
-| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 33.2.1     | NO   |
-| [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 33.2.1     | NO   |
-| [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 33.2.1     | NO   |
+| [Iosevka Nerd Font][p-iosevka]                    | [Iosevka][f-iosevka]                   | 34.8.0     | NO   |
+| [IosevkaTerm Nerd Font][p-iosevka-term]           | [Iosevka Term][f-iosevka]              | 34.8.0     | NO   |
+| [IosevkaTermSlab Nerd Font][p-iosevka-term-slab]  | [Iosevka Term Slab][f-iosevka]         | 34.8.0     | NO   |
 | [JetBrainsMono Nerd Font][p-jetbrains-mono]       | [JetBrains Mono][f-jetbrains-mono]     | 2.304      | NO   |
 | [Lekton Nerd Font][p-lekton]                      | [Lekton][f-lekton]                     | 34         | NO   |
 | [Literation Nerd Font][p-liberation]              | [Liberation][f-liberation]             | 2.1.5      | YES  |
-| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.600      | NO   |
+| [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.700      | NO   |
 | [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.1.0      | NO   |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | NO   |
 | [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.400      | YES  |
 | [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | NO   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                     | 0.61       | NO   |
 | [Mononoki Nerd Font][p-mononoki]                  | [Mononoki][f-mononoki]                 | 1.6        | YES  |
-| [M+ Nerd Font][p-mplus]                           | [MPlus Fonts][f-mplus]                 | 1.007      | NO   |
+| [M+ Nerd Font][p-mplus]                           | [MPlus Fonts][f-mplus]                 | 1.100      | NO   |
 | [Noto Nerd Font][p-noto]                          | [Noto][f-noto]                         | div        | NO   |
 | [OpenDyslexic Nerd Font][p-opendyslexic]          | [OpenDyslexic][f-opendyslexic]         | 2.001      | NO   |
 | [Overpass Nerd Font][p-overpass]                  | [Overpass][f-overpass]                 | 3.0.5      | NO   |
@@ -181,12 +181,13 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [RobotoMono Nerd Font][p-roboto]                  | [Roboto Mono][f-roboto]                | 3.0        | NO   |
 | [SauceCodePro Nerd Font][p-source-code-pro]       | [Source Code Pro][f-source]            | 2.042      | YES  |
 | [ShureTechMono Nerd Font][p-share-tech-mono]      | [Share Tech Mono][f-share]             | 1.003      | YES  |
-| [SpaceMono Nerd Font][p-space-mono]               | [Space Mono][f-space]                  | 1.001      | NO   |
+| [SpaceMono Nerd Font][p-space-mono]               | [Space Mono][f-space]                  | 1.003      | NO   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]             | 4.49.3     | YES  |
 | [Tinos Nerd Font][p-tinos]                        | [Tinos][f-tinos]                       | 1.23       | NO   |
 | [Ubuntu Nerd Font][p-ubuntu]                      | [Ubuntu Font][f-ubuntu]                | 0.83       | NO   |
 | [UbuntuMono Nerd Font][p-ubuntu-mono]             | [Ubuntu Font][f-ubuntu]                | 0.80       | NO   |
 | [UbuntuSans Nerd Font][p-ubuntu-sans]             | [Ubuntu Sans][f-ubuntu-sans]           | 1.006      | NO   |
+| [UbuntuSansM Nerd Font][p-ubuntu-sans]            | [Ubuntu Sans Mono][f-ubuntu-sans-m]    | 1.100      | NO   |
 | [VictorMono Nerd Font][p-victor]                  | [Victor Mono][f-victor]                | 1.5.6      | NO   |
 | [ZedMono Nerd Font][p-zed-mono]                   | [Zed Mono][f-zed-mono]                 | 1.2.0      | NO   |
 
@@ -755,7 +756,7 @@ Font repos
 [f-arimo]:https://github.com/googlefonts/Arimo
 [f-atkinson]:https://www.brailleinstitute.org/freefont/
 [f-cascadia]:https://github.com/microsoft/cascadia-code
-[f-cousine]:https://fonts.google.com/specimen/Cousine
+[f-cousine]:https://github.com/googlefonts/cousine
 [f-comic]:https://github.com/jesusmgg/comic-shanns-mono
 [f-commit]:https://github.com/eigilnikolajsen/commit-mono
 [f-d2coding]:https://github.com/naver/d2codingfont
@@ -803,7 +804,8 @@ Font repos
 [f-terminus]:http://terminus-font.sourceforge.net
 [f-tinos]:https://fonts.google.com/specimen/Tinos
 [f-ubuntu]:http://font.ubuntu.com
-[f-ubuntu-sans]:https://github.com/canonical/Ubuntu-Sans-Mono-fonts
+[f-ubuntu-sans]:https://github.com/canonical/Ubuntu-Sans-fonts
+[f-ubuntu-sans-m]:https://github.com/canonical/Ubuntu-Sans-Mono-fonts
 [f-victor]:https://github.com/rubjo/victor-mono
 [f-zed-mono]:https://github.com/zed-industries/zed-fonts
 

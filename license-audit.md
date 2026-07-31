@@ -23,7 +23,7 @@ the new work, appended to that name.
 
 ## Original source works under Nerd Fonts repository
 
-All files created such as `font-patcher` and any `ph` or `sh` script/source files are released under an MIT license.
+All files created such as `font-patcher` and any `.py` or `.sh` script/source files are released under an MIT license.
 
 ## Glyph/icon sources
 
@@ -57,10 +57,12 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | ----------------------------- | ---------------------------- |
 | 0xProto                       | OFL-1.1-no-RFN               |
 | IBM 3270                      | BSD-3-Clause                 |
-| Agave                         | MIT                          |
+| Adwaita Mono                  | OFL-1.1-no-RFN               |
+| Agave                         | OFL-1.1-no-RFN               |
 | Annotation Mono               | OFL-1.1-no-RFN               |
 | Anonymous Pro                 | OFL-1.1-RFN                  |
-| Arimo                         | Apache-2.0                   |
+| Arimo                         | OFL-1.1-no-RFN               |
+| Atkinson Hyperlegible Mono    | OFL-1.1-RFN                  |
 | Aurulent Sans Mono            | OFL-1.1-no-RFN               |
 | BigBlue Terminal              | CC-BY-SA-4.0                 |
 | Bitstream Vera Sans Mono      | Bitstream-Vera               |
@@ -70,10 +72,11 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Code New Roman                | OFL-1.1-no-RFN               |
 | Comic Shanns Mono             | MIT                          |
 | Commit Mono                   | OFL-1.1-no-RFN               |
-| Cousine                       | Apache-2.0                   |
+| Cousine                       | OFL-1.1-no-RFN               |
 | D2Coding                      | OFL-1.1-RFN                  |
 | DaddyTimeMono                 | OFL-1.1-no-RFN               |
 | DejaVu Sans Mono              | Bitstream-Vera               |
+| Departure Mono                | OFL-1.1-no-RFN               |
 | Droid Sans Mono               | Apache-2.0                   |
 | Envy Code R                   | OFL-1.1-RFN                  |
 | Fantasque Sans Mono           | OFL-1.1-no-RFN               |
@@ -126,3 +129,11 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Zed Mono                      | OFL-1.1-no-RFN               |
 
 _LicenseRef licenses have no SPDX value_
+
+<details>
+
+```
+jq -r '.fonts[] | "| \(.unpatchedName)"+(" "*(30-(.unpatchedName|length)))+"| \(.licenseId)"+(" "*(28-(.licenseId|length)))+" |"' bin/scripts/lib/fonts.json
+```
+
+</details>

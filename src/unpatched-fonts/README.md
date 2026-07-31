@@ -18,3 +18,7 @@ Just call
             | sed 's/ /\\ /g' \
             | LC_ALL=C sort --ignore-case \
             > fontfilenames
+
+afterwards check if all files are existing, or if there are errors in `fonts.json`
+
+        cat fontfilenames | xargs -n 1 ls > /dev/null
