@@ -81,6 +81,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | Geist Mono                    | OFL-1.1-no-RFN               |
 | Go Mono                       | BSD-3-Clause-Clear           |
 | Gohu                          | WTFPL                        |
+| Google Sans Code              | OFL-1.1-no-RFN               |
 | Hack                          | Bitstream-Vera AND MIT       |
 | Hasklig                       | OFL-1.1-RFN                  |
 | Heavy Data                    | LicenseRef-VicFieger         |
