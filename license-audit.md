@@ -58,6 +58,7 @@ All files created such as `font-patcher` and any `ph` or `sh` script/source file
 | 0xProto                       | OFL-1.1-no-RFN               |
 | IBM 3270                      | BSD-3-Clause                 |
 | Agave                         | MIT                          |
+| Annotation Mono               | OFL-1.1-no-RFN               |
 | Anonymous Pro                 | OFL-1.1-RFN                  |
 | Arimo                         | Apache-2.0                   |
 | Aurulent Sans Mono            | OFL-1.1-no-RFN               |

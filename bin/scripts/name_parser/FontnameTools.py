@@ -212,6 +212,7 @@ class FontnameTools:
         ( '(.*code ?lat)in',            r'\1'), # for 'M PLUS Code Latin'
         ( '(b)ig( ?)(b)lue( ?)(t)erminal', r'\1ig\3lue\5erm'), # Shorten BigBlueTerminal
         ( '(.*)437TT',                  r'\g<1>437'), # Shorten BigBlueTerminal 437 TT even further
+        ( '(annotation ?m)ono',         r'\1'), # Annotation Mono -> Annotation M
         ( '(.*dyslexic ?alt)a',         r'\1'), # Open Dyslexic Alta -> Open Dyslexic Alt
         ( '(.*dyslexic ?m)ono',         r'\1'), # Open Dyslexic Mono -> Open Dyslexic M
         ( '(overpass ?m)ono',           r'\1'), # Overpass Mono -> Overpass M
