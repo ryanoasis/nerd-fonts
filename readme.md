@@ -136,7 +136,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [ComicShannsMono Nerd Font][p-comic]              | [Comic Shanns Mono][f-comic]           | 1.3.2      | NO   |
 | [CommitMono Nerd Font][p-commit]                  | [Commit Mono][f-commit]                | 1.143      | NO   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.241      | NO   |
-| [D2Coding Nerd Font][p-d2coding]                  | [D2Coding][f-d2coding]                 | 1.3.2      | YES  |
+| [D2Koding Nerd Font][p-d2coding]                  | [D2Coding][f-d2coding]                 | 1.3.2      | YES  |
 | [DaddyTimeMono Nerd Font][p-daddytimemono]        | [DaddyTimeMono][f-daddytimemono]       | 1.2.3      | NO   |
 | [DepartureMono Nerd Font][p-departuremono]        | [Departure Mono][f-departuremono]      | 1.500      | NO   |
 | [DejaVuSansMono Nerd Font][p-dejavu]              | [DejaVu][f-dejavu]                     | 2.37       | NO   |
