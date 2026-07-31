@@ -2,6 +2,72 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.5.0 (to be released)
+
+### Breaking
+ - D2Coding is renamed to D2Code
+
+### Fonts
+ - Add Annotation Mono #2049
+ - Add Google Sans Code #2050
+ - Update 0xProto to 2.502 @my4ng #1873
+ - Update AdwaitaMono to 34.1 #2048
+ - Update Agave to v38 #2048
+ - Update Arimo to 1.33-autohint #2048
+ - Update Cousine to 1.241 #2048
+ - Update DaddyTimeMono to 1.2.3 17-9-2025 #2048
+ - Update Departure Mono to v1.500 @rektdeckard #1874
+ - Update GeistMono to 1.8.0 @Tejakshaya #2013
+ - Update Inconsolata-LGC to 3.201 #2048
+ - Update Iosevka to 34.8.0 #2048
+ - Update Iosevka Term to 34.8.0 #2048
+ - Update Iosevka Term Slab to 34.8.0 #2048
+ - Update Lilex to 2.700 #2048
+ - Update Monaspice to v1.400 @injust #1938
+ - Update MPlus to 1.100 #2048
+ - Update SpaceMono to 1.003 #2048
+ - Update Ubuntu Sans Mono to 1.100 #2048
+ - Fix ComicShannsMono: Flip `questiondown` #1963
+ - Fix DejaVuSansMono: Fix monospaced #1865
+ - Fix SpaceMono: Remove arrow-calts #1960
+ - Fix SymbolsOnly 2 cell wide #1992
+
+### Icons
+ - Add Braille icons (with generator) #1980
+ - Add FontAwesome `fa-volume` #2030
+ - Add Obsidian icon #2031
+ - Add Wireshark icon #2031
+ - Add zsh icon #1979
+ - Update Codicons to 0.0.45 #2027
+ - Update Devicons to v2.17.0 @joeriddles #1900
+ - Update Font Logos to 1.4.0 #2029
+ - Add MDI scale-groups #2033
+
+### Features
+ - Make progress bars more compact #2022
+ - Expand `--has-no-italic` to other slanted styles than Oblique #2032
+ - Optionally center most icons in 2 cell space #2034
+ - Optionally scale non-mono icons to be at least as large as mono @danielwe #1926
+
+### Bugs and improvements
+ - Downgrade install.sh to bash 3 #1866
+ - font-patcher: Fix patching of fonts with slashes in name #1881
+ - font-patcher: Fix removal of `For Powerline` #1882
+ - font-patcher: Implement rounding in `scale_bounding_box()` @GoldPigg #1974
+ - font-patcher: Obey two-cell scale rule with c alignment #2020
+ - Fix Material Design icon names #2023
+ - Fix symbolfont handling if glyphs have multiple codepoints #2024
+ - Fix some glyph are not visually centered when patching monospaced variation @OzelotVanilla #1998
+ - Casks: Switch to `tar.xz` archives #2041
+ - MacOS compatibility for `gotta-patch-em-all!.sh` @shaunchokshi #1976
+ - Update outdated GitHub Actions @pgoslatara #1981
+
+### Website and docs
+ - Improve font preview #2038
+ - Fix cheatsheet footer @sliva0 #1855
+ - Fix link in `README` @injust #1916
+ - Fix broken emoji key link in `contributing.md` @NaufalK25 #2016
+
 ## v3.4.0
 
 Easter Release without Eggs
