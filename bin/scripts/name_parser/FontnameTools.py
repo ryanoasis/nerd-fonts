@@ -193,6 +193,7 @@ class FontnameTools:
         ( '(b)itstream( ?)(v)era( ?sans ?mono)?', r'\1itstrom\2Wera' ),
         ( '(c)ascadia( ?)(c)ode',       r'\1askaydia\2\3ove' ),
         ( '(c)ascadia( ?)(m)ono',       r'\1askaydia\2\3ono' ),
+        ( '(d2)( ?)coding(.*)',         r'\1\2Koding\3' ),
         ( 'Gohufont',                   r'GohuFont'), # Correct to CamelCase
         ( '(h)ermit',                   r'\1urmit' ),
         ( '(h)asklig',                  r'\1asklug' ),

@@ -5,7 +5,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 ## v3.5.0 (to be released)
 
 ### Breaking
- - D2Coding is renamed to D2Code
+ - D2Coding is renamed to D2Koding #2052
 
 ### Fonts
  - Add Annotation Mono #2049
