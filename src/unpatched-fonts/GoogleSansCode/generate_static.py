@@ -3,15 +3,14 @@
 #
 # Dependencies: fonttools and skia-pathops
 
-import os
 import fontTools
 from fontTools import ttLib
 from fontTools.varLib import instancer
 from fontTools.varLib.instancer.names import NameID
 
 fonts = [
-    'GoogleSansCode[MONO,wght].ttf',
-    'GoogleSansCode-Italic[MONO,wght].ttf',
+    'GoogleSansCode[MONO,wght].ttf_orig',
+    'GoogleSansCode-Italic[MONO,wght].ttf_orig',
 ]
 
 weights = {
@@ -118,7 +117,7 @@ def update_font_names(font, weight_name):
 for f in fonts:
     font = ttLib.TTFont(f)
     for weight_name, weight_value in weights.items():
-        print('Working on {} with weight {}'.format(f, weight_name), end='\r')
+        print('Working on "{}" of {}'.format(weight_name, f), end='', flush=True)
         static_font = instancer.instantiateVariableFont(
                 font, {'wght': weight_value, 'MONO': 1},
                 overlap=instancer.OverlapMode.REMOVE,
@@ -126,8 +125,8 @@ for f in fonts:
                 static=True)
         update_font_names(static_font, weight_name)
         instancer.setRibbiBits(static_font)
-        static_filename = static_font['name'].getName(instancer.names.NameID.POSTSCRIPT_NAME, 3, 1).toUnicode() + '.ttf'
-        print('       Creating', static_filename, '                          ')
+        static_filename = static_font['name'].getName(NameID.POSTSCRIPT_NAME, 3, 1).toUnicode() + '.ttf'
         static_font.save(static_filename)
+        print('\r       Created', static_filename, '                        ')
+        static_font.close()
     font.close()
-    os.rename(f, f + '_orig')
