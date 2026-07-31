@@ -147,6 +147,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [GeistMono Nerd Font][p-geist-mono]               | [Geist Mono][f-geist-mono]             | 1.702      | NO   |
 | [GoMono Nerd Font][p-go-mono]                     | [Go-Mono][f-go-mono]                   | 2.010      | NO   |
 | [Gohu Nerd Font][p-gohu]                          | [Gohu TTF][f-gohu2], [Gohu][f-gohu]    | 2.0        | NO   |
+| [GoogleSansCode Nerd Font][p-googlesc]            | [Google Sans Code][f-googlesc]         | 7.001      | NO   |
 | [Hack Nerd Font][p-hack]                          | [Hack][f-hack]                         | 3.003      | NO   |
 | [Hasklug Nerd Font][p-hasklig]                    | [Hasklig][f-hasklig]                   | 1.2        | YES  |
 | [HeavyDataMono Nerd Font][p-heavy-data]           | HeavyData (Vic Fieger)                 | 1          | NO   |
@@ -767,6 +768,7 @@ Font repos
 [f-gohu2]:https://github.com/koemaeda/gohufont-ttf
 [f-gohu]:http://font.gohu.org/
 [f-go-mono]:https://go.googlesource.com/image/+/master/font/gofont/ttfs/
+[f-googlesc]:https://github.com/googlefonts/googlesans-code
 [f-hack]:https://github.com/chrissimpkins/Hack
 [f-hasklig]:https://github.com/i-tu/Hasklig
 [f-hermit]:https://pcaro.es/hermit
@@ -836,6 +838,7 @@ Patched Font internal links
 [p-geist-mono]:patched-fonts/GeistMono
 [p-gohu]:patched-fonts/Gohu
 [p-go-mono]:patched-fonts/Go-Mono
+[p-googlesc]:patched-fonts/GoogleSansCode
 [p-hack]:patched-fonts/Hack
 [p-hasklig]:patched-fonts/Hasklig
 [p-heavy-data]:patched-fonts/HeavyData
