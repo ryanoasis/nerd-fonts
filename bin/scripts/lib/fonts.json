@@ -790,7 +790,7 @@
       "patchedName": "Mononoki",
       "folderName": "Mononoki",
       "imagePreviewFont": "Mononoki Nerd Font",
-      "imagePreviewFontSource": "Mononoki/Regular/mononoki-Regular.ttf",
+      "imagePreviewFontSource": "Mononoki/mononoki-Regular.ttf",
       "linkPreviewFont": "mononoki",
       "caskName": "mononoki",
       "repoRelease": true,
