@@ -654,7 +654,7 @@
       "patchedName": "JetBrainsMono",
       "folderName": "JetBrainsMono",
       "imagePreviewFont": "JetBrainsMono Nerd Font",
-      "imagePreviewFontSource": "JetBrainsMono/Ligatures/Regular/JetBrainsMono-Regular.ttf",
+      "imagePreviewFontSource": "JetBrainsMono/Ligatures/JetBrainsMono-Regular.ttf",
       "linkPreviewFont": "jetbrainsmono",
       "caskName": "jetbrains-mono",
       "repoRelease": true,
