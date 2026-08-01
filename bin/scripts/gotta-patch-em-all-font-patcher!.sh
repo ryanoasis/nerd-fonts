@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.4.0
-# Script Version: 1.4.6
+# Script Version: 1.5.0
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
 # That option will override the defaults (also defaults of THIS script).
@@ -182,14 +182,14 @@ if [ -n "$find_path_filter" ]; then
   # Disable glob expansion to prevent shell from expanding wildcard patterns in find_cmd_args
   while IFS= read -d $'\0' -r file ; do
     source_fonts=("${source_fonts[@]}" "$file")
-  done < <(set -f; find "$source_fonts_dir" "${find_path_filter_with_pattern[@]}" "(" "${find_cmd_args[@]}" ")" -type f -print0)
+  done < <(set -f; find "$source_fonts_dir" "${find_path_filter_with_pattern[@]}" "(" "${find_cmd_args[@]}" ")" -type f -print0 | sort -z)
 else
   # Filename filter or no filter: group conditions with parentheses
   # -type f must be outside parentheses to apply to all -iname conditions
   # Disable glob expansion to prevent shell from expanding wildcard patterns in find_cmd_args
   while IFS= read -d $'\0' -r file ; do
     source_fonts=("${source_fonts[@]}" "$file")
-  done < <(set -f; find "$source_fonts_dir" "(" "${find_cmd_args[@]}" ")" -type f -print0)
+  done < <(set -f; find "$source_fonts_dir" "(" "${find_cmd_args[@]}" ")" -type f -print0 | sort -z)
 fi
 
 # print total number of source fonts found
