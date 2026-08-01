@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.26.0"
+script_version = "4.27.0"
 
 version = "3.4.0"
 projectName = "Nerd Fonts"
@@ -813,6 +813,16 @@ class font_patcher:
                 return
             ligature_subtables = json.loads(self.config.get('Subtables', 'ligatures', fallback='[]'))
             for subtable in ligature_subtables:
+                if not isinstance(subtable, str):
+                    # Complex entries have the form [ regex, table ].
+                    # If the first character of the regex is '!' the regex must NOT match
+                    regex = subtable[0]
+                    invert = regex[0] == '!'
+                    if invert:
+                        regex = regex[1:]
+                    if  (re.search(regex, self.sourceFont.fullname) is None) != invert:
+                        continue
+                    subtable = subtable[1]
                 logger.debug("Removing subtable: %s", subtable)
                 try:
                     self.sourceFont.removeLookupSubtable(subtable)
