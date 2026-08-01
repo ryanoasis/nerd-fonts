@@ -63,6 +63,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
  - MacOS compatibility for `gotta-patch-em-all!.sh` @shaunchokshi #1976
  - Update outdated GitHub Actions @pgoslatara #1981
  - Allow more detailed information in `config.cfg` #2053
+ - gotta-patch-em: Add flag to enforce patched-fonts/ subdir purging (for rename on releases) 1372be5 730af09
 
 ### Website and docs
  - Improve font preview #2038
