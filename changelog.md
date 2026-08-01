@@ -6,6 +6,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
 ### Breaking
  - D2Coding is renamed to D2Koding #2052
+ - Flatten font subdirs #2054
 
 ### Fonts
  - Add Annotation Mono #2049
@@ -61,6 +62,7 @@ This project is using [Semantic Versioning 2.0.0](http://semver.org/)
  - Casks: Switch to `tar.xz` archives #2041
  - MacOS compatibility for `gotta-patch-em-all!.sh` @shaunchokshi #1976
  - Update outdated GitHub Actions @pgoslatara #1981
+ - Allow more detailed information in `config.cfg` #2053
 
 ### Website and docs
  - Improve font preview #2038
