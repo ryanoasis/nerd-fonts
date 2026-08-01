@@ -429,7 +429,7 @@
       "patchedName": "GoMono",
       "folderName": "Go-Mono",
       "imagePreviewFont": "GoMono Nerd Font",
-      "imagePreviewFontSource": "Go-Mono/Regular/Go-Mono.ttf",
+      "imagePreviewFontSource": "Go-Mono/Go-Mono.ttf",
       "linkPreviewFont": "go-mono",
       "caskName": "go-mono",
       "repoRelease": true,
