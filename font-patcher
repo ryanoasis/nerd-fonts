@@ -2339,6 +2339,9 @@ def setup_arguments():
 
     if args.forcemono:
         args.single = True
+        if config.getboolean("Config", "abort-mono-patch", fallback=False):
+            logger.info("No trying --mono as requested by configfile; exiting")
+            sys.exit(0)
     if args.nonmono and args.single:
         logger.warning("Specified contradicting --variable-width-glyphs together with --mono or --single-width-glyphs. Ignoring --variable-width-glyphs.")
         args.nonmono = False
