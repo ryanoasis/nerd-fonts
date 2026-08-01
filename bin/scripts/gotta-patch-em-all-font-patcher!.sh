@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nerd Fonts Version: 3.4.0
-# Script Version: 1.5.0
+# Script Version: 1.6.0
 #
 # You can supply options to the font-patcher via environment variable NERDFONTS
 # That option will override the defaults (also defaults of THIS script).
@@ -272,7 +272,7 @@ function patch_font {
     then
       echo "Purging patched font dir ${patched_font_dir}"
     fi
-    rm -Rf -- "${patched_font_dir}"/*
+    rm -- "${patched_font_dir}"/*
   fi
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
@@ -399,7 +399,20 @@ then
   do
     purge_destination=""
     current_source_dir=$(dirname "${source_fonts[$i]}")
-    if [ "${current_source_dir}" != "${last_source_dir}" ]
+    current_root_dir=${source_fonts_dir}/$(TMP="${current_source_dir##$source_fonts_dir/}"; echo ${TMP%%/*})
+
+    if [ "${current_root_dir}" != "${last_root_dir}" ] && [ -n "${force_purge}" ]
+    then
+      last_root_dir=${current_root_dir}
+      purgedir=${current_root_dir/$unpatched_parent_dir/$patched_parent_dir}
+      if [ -n "${verbose}" ]
+      then
+        echo "Purging patched font dir ${purgedir}"
+      fi
+      rm -Rf -- "${purgedir}"/*
+    fi
+
+    if [ "${current_source_dir}" != "${last_source_dir}" ] && [ -z "${force_purge}" ]
     then
       # If we are going to patch ALL font files from a certain source directory
       # the destination directory is purged (all font files therein deleted)
@@ -433,10 +446,6 @@ then
       # Always count all fonts in directory for comparison
       num_existing=$(find "${current_source_dir}" "(" -iname "*.ttf" -o -iname "*.otf" -o -iname "*.sfd" ")" -type f | wc -l)
       if [ "${num_to_patch}" -eq "${num_existing}" ]
-      then
-        purge_destination="TRUE"
-      fi
-      if [ -n "${force_purge}" ]
       then
         purge_destination="TRUE"
       fi
