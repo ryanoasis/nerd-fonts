@@ -1030,7 +1030,7 @@
       "patchedName": "UbuntuMono",
       "folderName": "UbuntuMono",
       "imagePreviewFont": "UbuntuMono Nerd Font",
-      "imagePreviewFontSource": "UbuntuMono/Regular/UbuntuMono-R.ttf",
+      "imagePreviewFontSource": "UbuntuMono/UbuntuMono-R.ttf",
       "linkPreviewFont": "ubuntu",
       "caskName": "ubuntu-mono",
       "repoRelease": true,
