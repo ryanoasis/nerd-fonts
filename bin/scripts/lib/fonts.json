@@ -1015,7 +1015,7 @@
       "patchedName": "Ubuntu",
       "folderName": "Ubuntu",
       "imagePreviewFont": "Ubuntu Nerd Font",
-      "imagePreviewFontSource": "Ubuntu/Regular/Ubuntu-R.ttf",
+      "imagePreviewFontSource": "Ubuntu/Ubuntu-R.ttf",
       "linkPreviewFont": false,
       "caskName": "ubuntu",
       "repoRelease": true,
