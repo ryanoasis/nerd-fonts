@@ -90,7 +90,7 @@ while read -r filename; do
 
     if [ "$expected" -ne 0 ]; then
         # Should never happen, but who knows
-        echo "${LINE_PREFIX} Did not pack expected number of font files! Likely same font names for different paths."
+        echo "${LINE_PREFIX} Did not pack expected number of font files! Likely same font names for different paths. (diff: ${expected})"
         exit 1
     fi
     (cd "${outputdir}" && tar rf "${outputdir}/${basename}.tar" "README.md")

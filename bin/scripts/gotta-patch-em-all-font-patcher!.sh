@@ -59,6 +59,7 @@ function show_help {
   echo
   echo "    OPTION:"
   echo "        -c, --checkfont     Create the font(s) in check-fonts/ instead"
+  echo "        -p, --purge         Force purging of the destination in patched-fonts/"
   echo "        -t, --keeptime      Try to preserve timestamp of previously patched"
   echo "                            font in patched-fonts/ directory"
   echo "        -v, --verbose       Show more information when running"
@@ -84,7 +85,7 @@ function find_font_root {
   sed -E "s|(${unpatched_parent_dir}/[^/]*).*|\1|" <<< "$1"
 }
 
-while getopts ":chijtv-:" option; do
+while getopts ":chijptv-:" option; do
   case "${option}" in
     c)
       activate_checkfont
@@ -97,6 +98,9 @@ while getopts ":chijtv-:" option; do
       ;;
     j)
       parallel=TRUE
+      ;;
+    p)
+      force_purge=TRUE
       ;;
     t)
       activate_keeptime
@@ -117,6 +121,9 @@ while getopts ":chijtv-:" option; do
           ;;
         jobs)
           parallel=TRUE
+          ;;
+        purge)
+          force_purge=TRUE
           ;;
         keeptime)
           activate_keeptime
@@ -265,7 +272,7 @@ function patch_font {
     then
       echo "Purging patched font dir ${patched_font_dir}"
     fi
-    rm -- "${patched_font_dir}"/*
+    rm -Rf -- "${patched_font_dir}"/*
   fi
 
   config_parent_dir=$( cd "$( dirname "$f" )" && cd ".." && pwd)
@@ -426,6 +433,10 @@ then
       # Always count all fonts in directory for comparison
       num_existing=$(find "${current_source_dir}" "(" -iname "*.ttf" -o -iname "*.otf" -o -iname "*.sfd" ")" -type f | wc -l)
       if [ "${num_to_patch}" -eq "${num_existing}" ]
+      then
+        purge_destination="TRUE"
+      fi
+      if [ -n "${force_purge}" ]
       then
         purge_destination="TRUE"
       fi
