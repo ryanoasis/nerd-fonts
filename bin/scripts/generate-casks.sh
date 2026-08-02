@@ -168,6 +168,7 @@ function write_body {
                     printf "    url :url\\n"
                     printf "    strategy :github_latest\\n"
                     printf "  end\\n\\n"
+                    printf "  no_autobump! because: :bumped_by_upstream\\n\\n"
                 } >> "$outputfile"
             fi
 
