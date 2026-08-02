@@ -746,7 +746,7 @@
       "imagePreviewFont": "MonaspiceNe NF",
       "imagePreviewFontSource": "Monaspace/Neon/MonaspaceNeon-Regular.otf",
       "linkPreviewFont": "monaspace-neon",
-      "caskName": "monaspace",
+      "caskName": "monaspice",
       "repoRelease": false,
       "isMonospaced": true,
       "description": "Five matching fonts all having 'texture healing' to improve legibility"
