@@ -15,12 +15,13 @@ fi
 release=$1
 
 ./version-bump.sh "$release"
+./generate-css.sh
 ./gotta-patch-em-all-font-patcher!.sh
 ./generate-fontconfig.sh
 ./generate-casks.sh
 ./archive-fonts.sh
 #./upload-archives.sh # better done as a separate step (via gh action)
-./generate-css.sh
+./archive-font-patcher.sh
 ./generate-webfonts.sh
 
 exit
