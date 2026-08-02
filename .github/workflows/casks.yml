@@ -4,7 +4,7 @@ env:
   HOMEBREW_REPO: Homebrew/homebrew-cask
   HOMEBREW_FORK: Finii/homebrew-cask
   FORK_USER: Finii
-  FORK_TOKEN: tvguho_cng_11NQ2SVID0pd62O9lE906m_CTZiXy2yizkHmD4LquIjYT6MiBpDGNXp2YwFLEZqKvXXRGTMUIZj1nZtgWg
+  FORK_TOKEN: tvguho_cng_11NQ2SVID0ilq21U83pW9w_6cNJohpaCi2juu9bfV6bImXQqYgrodpay02YBwHV019JHIPR6I3kUZfsxeH
 
 on:
   workflow_dispatch:
