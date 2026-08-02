@@ -1,7 +1,7 @@
 /*
  *# [Nerd Fonts]  Website: https://www.nerdfonts.com
  *# [Nerd Fonts]  Development Website: https://github.com/ryanoasis/nerd-fonts
- *# [Nerd Fonts]  Version: 3.4.0
+ *# [Nerd Fonts]  Version: 3.5.0
  *# [Nerd Fonts]  The following is generated from the build script
  */
 
@@ -34,6 +34,12 @@
 }
 .nf-cod-add:before {
   content: "\ea60";
+}
+.nf-cod-add_small:before {
+  content: "\ec7b";
+}
+.nf-cod-agent:before {
+  content: "\ec67";
 }
 .nf-cod-archive:before {
   content: "\ea98";
@@ -79,6 +85,12 @@
 }
 .nf-cod-arrow_up:before {
   content: "\eaa1";
+}
+.nf-cod-ask:before {
+  content: "\ec80";
+}
+.nf-cod-attach:before {
+  content: "\ec34";
 }
 .nf-cod-azure:before {
   content: "\ebd8";
@@ -134,6 +146,9 @@
 .nf-cod-bug:before {
   content: "\eaaf";
 }
+.nf-cod-build:before {
+  content: "\ec5a";
+}
 .nf-cod-calendar:before {
   content: "\eab0";
 }
@@ -145,6 +160,15 @@
 }
 .nf-cod-case_sensitive:before {
   content: "\eab1";
+}
+.nf-cod-chat_sparkle:before {
+  content: "\ec4f";
+}
+.nf-cod-chat_sparkle_error:before {
+  content: "\ec56";
+}
+.nf-cod-chat_sparkle_warning:before {
+  content: "\ec55";
 }
 .nf-cod-check:before {
   content: "\eab2";
@@ -206,11 +230,17 @@
 .nf-cod-circuit_board:before {
   content: "\eabe";
 }
+.nf-cod-claude:before {
+  content: "\ec82";
+}
 .nf-cod-clear_all:before {
   content: "\eabf";
 }
 .nf-cod-clippy:before {
   content: "\eac0";
+}
+.nf-cod-clockface:before {
+  content: "\ec75";
 }
 .nf-cod-close:before {
   content: "\ea76";
@@ -224,17 +254,32 @@
 .nf-cod-cloud_download:before {
   content: "\eac2";
 }
+.nf-cod-cloud_small:before {
+  content: "\ec7a";
+}
 .nf-cod-cloud_upload:before {
   content: "\eac3";
 }
 .nf-cod-code:before {
   content: "\eac4";
 }
+.nf-cod-code_oss:before {
+  content: "\ec2b";
+}
+.nf-cod-code_review:before {
+  content: "\ec37";
+}
 .nf-cod-coffee:before {
   content: "\ec15";
 }
 .nf-cod-collapse_all:before {
   content: "\eac5";
+}
+.nf-cod-collection:before {
+  content: "\ec57";
+}
+.nf-cod-collection_small:before {
+  content: "\ec78";
 }
 .nf-cod-color_mode:before {
   content: "\eac6";
@@ -247,6 +292,12 @@
 }
 .nf-cod-comment_discussion:before {
   content: "\eac7";
+}
+.nf-cod-comment_discussion_quote:before {
+  content: "\ec5b";
+}
+.nf-cod-comment_discussion_sparkle:before {
+  content: "\ec54";
 }
 .nf-cod-comment_draft:before {
   content: "\ec0e";
@@ -266,11 +317,47 @@
 .nf-cod-copilot:before {
   content: "\ec1e";
 }
+.nf-cod-copilot_blocked:before {
+  content: "\ec3d";
+}
+.nf-cod-copilot_error:before {
+  content: "\ec4d";
+}
+.nf-cod-copilot_in_progress:before {
+  content: "\ec4c";
+}
+.nf-cod-copilot_large:before {
+  content: "\ec3a";
+}
+.nf-cod-copilot_not_connected:before {
+  content: "\ec3e";
+}
+.nf-cod-copilot_snooze:before {
+  content: "\ec52";
+}
+.nf-cod-copilot_success:before {
+  content: "\ec4e";
+}
+.nf-cod-copilot_unavailable:before {
+  content: "\ec42";
+}
+.nf-cod-copilot_warning:before {
+  content: "\ec38";
+}
+.nf-cod-copilot_warning_large:before {
+  content: "\ec3b";
+}
 .nf-cod-copy:before {
   content: "\ebcc";
 }
+.nf-cod-coverage:before {
+  content: "\ec2e";
+}
 .nf-cod-credit_card:before {
   content: "\eac9";
+}
+.nf-cod-cursor:before {
+  content: "\ec5c";
 }
 .nf-cod-dash:before {
   content: "\eacc";
@@ -319,6 +406,9 @@
 }
 .nf-cod-debug_breakpoint_unsupported:before {
   content: "\eb8c";
+}
+.nf-cod-debug_connected:before {
+  content: "\ec63";
 }
 .nf-cod-debug_console:before {
   content: "\eb9b";
@@ -401,17 +491,35 @@
 .nf-cod-diff_modified:before {
   content: "\eade";
 }
+.nf-cod-diff_multiple:before {
+  content: "\ec23";
+}
 .nf-cod-diff_removed:before {
   content: "\eadf";
 }
 .nf-cod-diff_renamed:before {
   content: "\eae0";
 }
+.nf-cod-diff_single:before {
+  content: "\ec22";
+}
 .nf-cod-discard:before {
   content: "\eae2";
 }
+.nf-cod-download:before {
+  content: "\ec74";
+}
 .nf-cod-edit:before {
   content: "\ea73";
+}
+.nf-cod-edit_code:before {
+  content: "\ec68";
+}
+.nf-cod-edit_session:before {
+  content: "\ec36";
+}
+.nf-cod-edit_sparkle:before {
+  content: "\ec51";
 }
 .nf-cod-editor_layout:before {
   content: "\eae3";
@@ -421,6 +529,9 @@
 }
 .nf-cod-empty_window:before {
   content: "\eae4";
+}
+.nf-cod-eraser:before {
+  content: "\ec5d";
 }
 .nf-cod-error:before {
   content: "\ea87";
@@ -439,6 +550,9 @@
 }
 .nf-cod-extensions:before {
   content: "\eae6";
+}
+.nf-cod-extensions_large:before {
+  content: "\ec48";
 }
 .nf-cod-eye:before {
   content: "\ea70";
@@ -473,6 +587,9 @@
 .nf-cod-file_symlink_file:before {
   content: "\eaee";
 }
+.nf-cod-file_text:before {
+  content: "\ec5e";
+}
 .nf-cod-file_zip:before {
   content: "\eaef";
 }
@@ -484,6 +601,9 @@
 }
 .nf-cod-filter_filled:before {
   content: "\ebce";
+}
+.nf-cod-flag:before {
+  content: "\ec3f";
 }
 .nf-cod-flame:before {
   content: "\eaf2";
@@ -509,6 +629,9 @@
 .nf-cod-folder_opened:before {
   content: "\eaf7";
 }
+.nf-cod-forward:before {
+  content: "\ec73";
+}
 .nf-cod-game:before {
   content: "\ec17";
 }
@@ -518,8 +641,23 @@
 .nf-cod-gift:before {
   content: "\eaf9";
 }
+.nf-cod-gist:before {
+  content: "\eafb";
+}
 .nf-cod-gist_secret:before {
   content: "\eafa";
+}
+.nf-cod-git_branch:before {
+  content: "\ec6f";
+}
+.nf-cod-git_branch_changes:before {
+  content: "\ec6c";
+}
+.nf-cod-git_branch_conflicts:before {
+  content: "\ec6e";
+}
+.nf-cod-git_branch_staged_changes:before {
+  content: "\ec6d";
 }
 .nf-cod-git_commit:before {
   content: "\eafc";
@@ -542,6 +680,9 @@
 .nf-cod-git_pull_request_create:before {
   content: "\ebbc";
 }
+.nf-cod-git_pull_request_done:before {
+  content: "\ec46";
+}
 .nf-cod-git_pull_request_draft:before {
   content: "\ebdb";
 }
@@ -550,6 +691,15 @@
 }
 .nf-cod-git_pull_request_new_changes:before {
   content: "\ec0c";
+}
+.nf-cod-git_stash:before {
+  content: "\ec26";
+}
+.nf-cod-git_stash_apply:before {
+  content: "\ec27";
+}
+.nf-cod-git_stash_pop:before {
+  content: "\ec28";
 }
 .nf-cod-github:before {
   content: "\ea84";
@@ -563,11 +713,20 @@
 .nf-cod-github_inverted:before {
   content: "\eba1";
 }
+.nf-cod-github_project:before {
+  content: "\ec2f";
+}
 .nf-cod-globe:before {
   content: "\eb01";
 }
+.nf-cod-go_to_editing_session:before {
+  content: "\ec35";
+}
 .nf-cod-go_to_file:before {
   content: "\ea94";
+}
+.nf-cod-go_to_search:before {
+  content: "\ec32";
 }
 .nf-cod-grabber:before {
   content: "\eb02";
@@ -614,6 +773,9 @@
 .nf-cod-indent:before {
   content: "\ebf9";
 }
+.nf-cod-index_zero:before {
+  content: "\ec66";
+}
 .nf-cod-info:before {
   content: "\ea74";
 }
@@ -646,6 +808,15 @@
 }
 .nf-cod-key:before {
   content: "\eb11";
+}
+.nf-cod-keyboard_tab:before {
+  content: "\ec3c";
+}
+.nf-cod-keyboard_tab_above:before {
+  content: "\ec44";
+}
+.nf-cod-keyboard_tab_below:before {
+  content: "\ec45";
 }
 .nf-cod-law:before {
   content: "\eb12";
@@ -680,6 +851,9 @@
 .nf-cod-layout_panel_center:before {
   content: "\ebef";
 }
+.nf-cod-layout_panel_dock:before {
+  content: "\ec49";
+}
 .nf-cod-layout_panel_justify:before {
   content: "\ebf0";
 }
@@ -695,11 +869,17 @@
 .nf-cod-layout_sidebar_left:before {
   content: "\ebf3";
 }
+.nf-cod-layout_sidebar_left_dock:before {
+  content: "\ec4a";
+}
 .nf-cod-layout_sidebar_left_off:before {
   content: "\ec02";
 }
 .nf-cod-layout_sidebar_right:before {
   content: "\ebf4";
+}
+.nf-cod-layout_sidebar_right_dock:before {
+  content: "\ec4b";
 }
 .nf-cod-layout_sidebar_right_off:before {
   content: "\ec00";
@@ -715,6 +895,12 @@
 }
 .nf-cod-lightbulb_autofix:before {
   content: "\eb13";
+}
+.nf-cod-lightbulb_empty:before {
+  content: "\ec40";
+}
+.nf-cod-lightbulb_sparkle:before {
+  content: "\ec1f";
 }
 .nf-cod-link:before {
   content: "\eb15";
@@ -770,8 +956,17 @@
 .nf-cod-map_filled:before {
   content: "\ec06";
 }
+.nf-cod-map_vertical:before {
+  content: "\ec30";
+}
+.nf-cod-map_vertical_filled:before {
+  content: "\ec31";
+}
 .nf-cod-markdown:before {
   content: "\eb1d";
+}
+.nf-cod-mcp:before {
+  content: "\ec47";
 }
 .nf-cod-megaphone:before {
   content: "\eb1e";
@@ -784,6 +979,9 @@
 }
 .nf-cod-merge:before {
   content: "\ebab";
+}
+.nf-cod-merge_into:before {
+  content: "\ec6b";
 }
 .nf-cod-mic:before {
   content: "\ec12";
@@ -812,11 +1010,17 @@
 .nf-cod-mute:before {
   content: "\eb24";
 }
+.nf-cod-new_collection:before {
+  content: "\ec58";
+}
 .nf-cod-new_file:before {
   content: "\ea7f";
 }
 .nf-cod-new_folder:before {
   content: "\ea80";
+}
+.nf-cod-new_session:before {
+  content: "\ec84";
 }
 .nf-cod-newline:before {
   content: "\ebea";
@@ -836,8 +1040,17 @@
 .nf-cod-octoface:before {
   content: "\eb27";
 }
+.nf-cod-open_in_product:before {
+  content: "\ec65";
+}
+.nf-cod-open_in_window:before {
+  content: "\ec83";
+}
 .nf-cod-open_preview:before {
   content: "\eb28";
+}
+.nf-cod-openai:before {
+  content: "\ec81";
 }
 .nf-cod-organization:before {
   content: "\ea7e";
@@ -856,6 +1069,9 @@
 }
 .nf-cod-pass_filled:before {
   content: "\ebb3";
+}
+.nf-cod-percentage:before {
+  content: "\ec33";
 }
 .nf-cod-person:before {
   content: "\ea67";
@@ -902,11 +1118,17 @@
 .nf-cod-pulse:before {
   content: "\eb31";
 }
+.nf-cod-python:before {
+  content: "\ec39";
+}
 .nf-cod-question:before {
   content: "\eb32";
 }
 .nf-cod-quote:before {
   content: "\eb33";
+}
+.nf-cod-quotes:before {
+  content: "\ec60";
 }
 .nf-cod-radio_tower:before {
   content: "\eb34";
@@ -944,6 +1166,12 @@
 .nf-cod-remove:before {
   content: "\eb3b";
 }
+.nf-cod-remove_small:before {
+  content: "\ec7c";
+}
+.nf-cod-rename:before {
+  content: "\ec61";
+}
 .nf-cod-replace:before {
   content: "\eb3d";
 }
@@ -965,17 +1193,26 @@
 .nf-cod-repo_forked:before {
   content: "\ea63";
 }
+.nf-cod-repo_pinned:before {
+  content: "\ec43";
+}
 .nf-cod-repo_pull:before {
   content: "\eb40";
 }
 .nf-cod-repo_push:before {
   content: "\eb41";
 }
+.nf-cod-repo_selected:before {
+  content: "\ec69";
+}
 .nf-cod-report:before {
   content: "\eb42";
 }
 .nf-cod-request_changes:before {
   content: "\eb43";
+}
+.nf-cod-robot:before {
+  content: "\ec20";
 }
 .nf-cod-rocket:before {
   content: "\eb44";
@@ -998,11 +1235,20 @@
 .nf-cod-run_all:before {
   content: "\eb9e";
 }
+.nf-cod-run_all_coverage:before {
+  content: "\ec2d";
+}
 .nf-cod-run_below:before {
   content: "\ebbe";
 }
+.nf-cod-run_coverage:before {
+  content: "\ec2c";
+}
 .nf-cod-run_errors:before {
   content: "\ebde";
+}
+.nf-cod-run_with_deps:before {
+  content: "\ec62";
 }
 .nf-cod-save:before {
   content: "\eb4b";
@@ -1012,6 +1258,9 @@
 }
 .nf-cod-save_as:before {
   content: "\eb4a";
+}
+.nf-cod-screen_cut:before {
+  content: "\ec7f";
 }
 .nf-cod-screen_full:before {
   content: "\eb4c";
@@ -1025,11 +1274,20 @@
 .nf-cod-search_fuzzy:before {
   content: "\ec0d";
 }
+.nf-cod-search_large:before {
+  content: "\ec70";
+}
+.nf-cod-search_sparkle:before {
+  content: "\ec50";
+}
 .nf-cod-search_stop:before {
   content: "\eb4e";
 }
 .nf-cod-send:before {
   content: "\ec0f";
+}
+.nf-cod-send_to_remote_agent:before {
+  content: "\ec53";
 }
 .nf-cod-server:before {
   content: "\eb50";
@@ -1040,11 +1298,17 @@
 .nf-cod-server_process:before {
   content: "\eba2";
 }
+.nf-cod-session_in_progress:before {
+  content: "\ec77";
+}
 .nf-cod-settings:before {
   content: "\eb52";
 }
 .nf-cod-settings_gear:before {
   content: "\eb51";
+}
+.nf-cod-share:before {
+  content: "\ec25";
 }
 .nf-cod-shield:before {
   content: "\eb53";
@@ -1054,6 +1318,9 @@
 }
 .nf-cod-sign_out:before {
   content: "\ea6e";
+}
+.nf-cod-skip:before {
+  content: "\ec6a";
 }
 .nf-cod-smiley:before {
   content: "\eb54";
@@ -1069,6 +1336,9 @@
 }
 .nf-cod-sparkle:before {
   content: "\ec10";
+}
+.nf-cod-sparkle_filled:before {
+  content: "\ec21";
 }
 .nf-cod-split_horizontal:before {
   content: "\eb56";
@@ -1090,6 +1360,12 @@
 }
 .nf-cod-stop_circle:before {
   content: "\eba5";
+}
+.nf-cod-strikethrough:before {
+  content: "\ec64";
+}
+.nf-cod-surround_with:before {
+  content: "\ec24";
 }
 .nf-cod-symbol_array:before {
   content: "\ea8a";
@@ -1132,6 +1408,9 @@
 }
 .nf-cod-symbol_method:before {
   content: "\ea8c";
+}
+.nf-cod-symbol_method_arrow:before {
+  content: "\ec41";
 }
 .nf-cod-symbol_misc:before {
   content: "\eb63";
@@ -1199,6 +1478,9 @@
 .nf-cod-terminal_debian:before {
   content: "\ebc5";
 }
+.nf-cod-terminal_git_bash:before {
+  content: "\ec71";
+}
 .nf-cod-terminal_linux:before {
   content: "\ebc6";
 }
@@ -1213,6 +1495,9 @@
 }
 .nf-cod-text_size:before {
   content: "\eb69";
+}
+.nf-cod-thinking:before {
+  content: "\ec59";
 }
 .nf-cod-three_bars:before {
   content: "\eb6a";
@@ -1259,6 +1544,9 @@
 .nf-cod-type_hierarchy_super:before {
   content: "\ebbb";
 }
+.nf-cod-unarchive:before {
+  content: "\ec76";
+}
 .nf-cod-unfold:before {
   content: "\eb73";
 }
@@ -1301,8 +1589,17 @@
 .nf-cod-vm_running:before {
   content: "\eb7b";
 }
+.nf-cod-vm_small:before {
+  content: "\ec79";
+}
 .nf-cod-vr:before {
   content: "\ec18";
+}
+.nf-cod-vscode:before {
+  content: "\ec29";
+}
+.nf-cod-vscode_insiders:before {
+  content: "\ec2a";
 }
 .nf-cod-wand:before {
   content: "\ebcf";
@@ -1322,6 +1619,9 @@
 .nf-cod-window:before {
   content: "\eb7f";
 }
+.nf-cod-window_active:before {
+  content: "\ec72";
+}
 .nf-cod-word_wrap:before {
   content: "\eb80";
 }
@@ -1333,6 +1633,12 @@
 }
 .nf-cod-workspace_untrusted:before {
   content: "\ebc2";
+}
+.nf-cod-worktree:before {
+  content: "\ec7e";
+}
+.nf-cod-worktree_small:before {
+  content: "\ec7d";
 }
 .nf-cod-zoom_in:before {
   content: "\eb81";
@@ -1430,6 +1736,9 @@
 .nf-custom-neovim:before {
   content: "\e6ae";
 }
+.nf-custom-obsidian:before {
+  content: "\e6bb";
+}
 .nf-custom-orgmode:before {
   content: "\e633";
 }
@@ -1466,11 +1775,23 @@
 .nf-custom-windows:before {
   content: "\e62a";
 }
+.nf-custom-wireshark:before {
+  content: "\e6ba";
+}
+.nf-custom-zsh:before {
+  content: "\e6b9";
+}
 .nf-dev-aarch64:before {
   content: "\e700";
 }
 .nf-dev-adonisjs:before {
   content: "\e701";
+}
+.nf-dev-aerospike:before {
+  content: "\e8f1";
+}
+.nf-dev-aframe:before {
+  content: "\e8f2";
 }
 .nf-dev-aftereffects:before {
   content: "\e705";
@@ -1480,6 +1801,9 @@
 }
 .nf-dev-algolia:before {
   content: "\e70a";
+}
+.nf-dev-almalinux:before {
+  content: "\e8f3";
 }
 .nf-dev-alpinejs:before {
   content: "\e713";
@@ -1508,6 +1832,9 @@
 .nf-dev-ansible:before {
   content: "\e723";
 }
+.nf-dev-ansys:before {
+  content: "\e8f4";
+}
 .nf-dev-antdesign:before {
   content: "\e72a";
 }
@@ -1523,8 +1850,14 @@
 .nf-dev-apachespark:before {
   content: "\e72f";
 }
+.nf-dev-apex:before {
+  content: "\e8f5";
+}
 .nf-dev-apl:before {
   content: "\e730";
+}
+.nf-dev-apollographql:before {
+  content: "\e8f6";
 }
 .nf-dev-appcelerator:before {
   content: "\e7ab";
@@ -1543,6 +1876,9 @@
 }
 .nf-dev-argocd:before {
   content: "\e734";
+}
+.nf-dev-artixlinux:before {
+  content: "\e8f7";
 }
 .nf-dev-astro:before {
   content: "\e735";
@@ -1571,6 +1907,9 @@
 .nf-dev-babel:before {
   content: "\e75d";
 }
+.nf-dev-babylonjs:before {
+  content: "\e8f8";
+}
 .nf-dev-backbone:before {
   content: "\e752";
 }
@@ -1586,11 +1925,20 @@
 .nf-dev-bash:before {
   content: "\e760";
 }
+.nf-dev-bazel:before {
+  content: "\e8f9";
+}
 .nf-dev-beats:before {
   content: "\e761";
 }
 .nf-dev-behance:before {
   content: "\e762";
+}
+.nf-dev-bevyengine:before {
+  content: "\e8fa";
+}
+.nf-dev-biome:before {
+  content: "\e8fb";
 }
 .nf-dev-bitbucket:before {
   content: "\e703";
@@ -1646,6 +1994,12 @@
 .nf-dev-ceylon:before {
   content: "\e78b";
 }
+.nf-dev-chakraui:before {
+  content: "\e8fc";
+}
+.nf-dev-chartjs:before {
+  content: "\e8fd";
+}
 .nf-dev-chrome:before {
   content: "\e743";
 }
@@ -1654,6 +2008,9 @@
 }
 .nf-dev-clarity:before {
   content: "\e78d";
+}
+.nf-dev-clickhouse:before {
+  content: "\e8fe";
 }
 .nf-dev-clion:before {
   content: "\e78e";
@@ -1673,8 +2030,14 @@
 .nf-dev-cloudflareworkers:before {
   content: "\e793";
 }
+.nf-dev-cloudrun:before {
+  content: "\e8ff";
+}
 .nf-dev-cmake:before {
   content: "\e794";
+}
+.nf-dev-cobol:before {
+  content: "\e900";
 }
 .nf-dev-codeac:before {
   content: "\e796";
@@ -1715,6 +2078,9 @@
 .nf-dev-couchdb:before {
   content: "\e7a2";
 }
+.nf-dev-cpanel:before {
+  content: "\e901";
+}
 .nf-dev-cplusplus:before {
   content: "\e7a3";
 }
@@ -1745,11 +2111,17 @@
 .nf-dev-database:before {
   content: "\e706";
 }
+.nf-dev-datadog:before {
+  content: "\e902";
+}
 .nf-dev-datagrip:before {
   content: "\e7bd";
 }
 .nf-dev-dataspell:before {
   content: "\e7be";
+}
+.nf-dev-datatables:before {
+  content: "\e903";
 }
 .nf-dev-dbeaver:before {
   content: "\e7bf";
@@ -1757,8 +2129,14 @@
 .nf-dev-debian:before {
   content: "\e77d";
 }
+.nf-dev-delphi:before {
+  content: "\e904";
+}
 .nf-dev-denojs:before {
   content: "\e7c0";
+}
+.nf-dev-detaspace:before {
+  content: "\e905";
 }
 .nf-dev-devicon:before {
   content: "\e7c1";
@@ -1768,6 +2146,9 @@
 }
 .nf-dev-digitalocean:before {
   content: "\e7ae";
+}
+.nf-dev-discloud:before {
+  content: "\e906";
 }
 .nf-dev-discordjs:before {
   content: "\e7c2";
@@ -1793,6 +2174,9 @@
 .nf-dev-dotnetcore:before {
   content: "\e7c6";
 }
+.nf-dev-dovecot:before {
+  content: "\e907";
+}
 .nf-dev-dreamweaver:before {
   content: "\e79c";
 }
@@ -1805,8 +2189,17 @@
 .nf-dev-drupal:before {
   content: "\e742";
 }
+.nf-dev-duckdb:before {
+  content: "\e908";
+}
+.nf-dev-dyalog:before {
+  content: "\e909";
+}
 .nf-dev-dynamodb:before {
   content: "\e7c8";
+}
+.nf-dev-dynatrace:before {
+  content: "\e90a";
 }
 .nf-dev-eclipse:before {
   content: "\e79e";
@@ -1838,6 +2231,9 @@
 .nf-dev-ember:before {
   content: "\e71b";
 }
+.nf-dev-entityframeworkcore:before {
+  content: "\e90b";
+}
 .nf-dev-envoy:before {
   content: "\e7d1";
 }
@@ -1846,6 +2242,9 @@
 }
 .nf-dev-eslint:before {
   content: "\e7d2";
+}
+.nf-dev-expo:before {
+  content: "\e90c";
 }
 .nf-dev-express:before {
   content: "\e7d3";
@@ -1868,14 +2267,23 @@
 .nf-dev-fedora:before {
   content: "\e7d9";
 }
+.nf-dev-fiber:before {
+  content: "\e90d";
+}
 .nf-dev-figma:before {
   content: "\e7da";
+}
+.nf-dev-filamentphp:before {
+  content: "\e90e";
 }
 .nf-dev-filezilla:before {
   content: "\e7db";
 }
 .nf-dev-firebase:before {
   content: "\e787";
+}
+.nf-dev-firebird:before {
+  content: "\e90f";
 }
 .nf-dev-firefox:before {
   content: "\e745";
@@ -1885,6 +2293,9 @@
 }
 .nf-dev-flutter:before {
   content: "\e7dd";
+}
+.nf-dev-forgejo:before {
+  content: "\e910";
 }
 .nf-dev-fortran:before {
   content: "\e7de";
@@ -1900,6 +2311,12 @@
 }
 .nf-dev-fsharp:before {
   content: "\e7a7";
+}
+.nf-dev-fusion:before {
+  content: "\e911";
+}
+.nf-dev-gardener:before {
+  content: "\e912";
 }
 .nf-dev-gatling:before {
   content: "\e7e2";
@@ -1961,6 +2378,9 @@
 .nf-dev-githubcodespaces:before {
   content: "\e7ea";
 }
+.nf-dev-gitkraken:before {
+  content: "\e913";
+}
 .nf-dev-gitlab:before {
   content: "\e7eb";
 }
@@ -1969,6 +2389,12 @@
 }
 .nf-dev-gitter:before {
   content: "\e7ed";
+}
+.nf-dev-gleam:before {
+  content: "\e914";
+}
+.nf-dev-glitch:before {
+  content: "\e915";
 }
 .nf-dev-gnu:before {
   content: "\e779";
@@ -1987,6 +2413,9 @@
 }
 .nf-dev-googlecloud:before {
   content: "\e7f1";
+}
+.nf-dev-googlecolab:before {
+  content: "\e916";
 }
 .nf-dev-gradle:before {
   content: "\e7f2";
@@ -2018,6 +2447,9 @@
 .nf-dev-handlebars:before {
   content: "\e7f7";
 }
+.nf-dev-harbor:before {
+  content: "\e917";
+}
 .nf-dev-hardhat:before {
   content: "\e7f8";
 }
@@ -2042,11 +2474,20 @@
 .nf-dev-homebrew:before {
   content: "\e7fd";
 }
+.nf-dev-hoppscotch:before {
+  content: "\e918";
+}
 .nf-dev-html5:before {
   content: "\e736";
 }
+.nf-dev-htmx:before {
+  content: "\e919";
+}
 .nf-dev-hugo:before {
   content: "\e7fe";
+}
+.nf-dev-hyperv:before {
+  content: "\e91a";
 }
 .nf-dev-ie:before {
   content: "\e744";
@@ -2056,6 +2497,9 @@
 }
 .nf-dev-illustrator:before {
   content: "\e7b4";
+}
+.nf-dev-inertiajs:before {
+  content: "\e91b";
 }
 .nf-dev-influxdb:before {
   content: "\e800";
@@ -2114,6 +2558,9 @@
 .nf-dev-jetpackcompose:before {
   content: "\e809";
 }
+.nf-dev-jhipster:before {
+  content: "\e91c";
+}
 .nf-dev-jira:before {
   content: "\e75c";
 }
@@ -2150,6 +2597,12 @@
 .nf-dev-kaggle:before {
   content: "\e813";
 }
+.nf-dev-kaldi:before {
+  content: "\e91d";
+}
+.nf-dev-kalilinux:before {
+  content: "\e91e";
+}
 .nf-dev-karatelabs:before {
   content: "\e814";
 }
@@ -2183,26 +2636,44 @@
 .nf-dev-ktor:before {
   content: "\e81c";
 }
+.nf-dev-kubeflow:before {
+  content: "\e91f";
+}
 .nf-dev-kubernetes:before {
   content: "\e81d";
 }
 .nf-dev-labview:before {
   content: "\e81e";
 }
+.nf-dev-laminas:before {
+  content: "\e920";
+}
 .nf-dev-laravel:before {
   content: "\e73f";
+}
+.nf-dev-laraveljetstream:before {
+  content: "\e921";
 }
 .nf-dev-latex:before {
   content: "\e81f";
 }
+.nf-dev-leetcode:before {
+  content: "\e922";
+}
 .nf-dev-less:before {
   content: "\e758";
+}
+.nf-dev-libgdx:before {
+  content: "\e923";
 }
 .nf-dev-linkedin:before {
   content: "\e820";
 }
 .nf-dev-linux:before {
   content: "\e712";
+}
+.nf-dev-linuxmint:before {
+  content: "\e924";
 }
 .nf-dev-liquibase:before {
   content: "\e821";
@@ -2219,6 +2690,9 @@
 .nf-dev-logstash:before {
   content: "\e825";
 }
+.nf-dev-love2d:before {
+  content: "\e925";
+}
 .nf-dev-lua:before {
   content: "\e826";
 }
@@ -2227,6 +2701,9 @@
 }
 .nf-dev-magento:before {
   content: "\e740";
+}
+.nf-dev-mapbox:before {
+  content: "\e926";
 }
 .nf-dev-mariadb:before {
   content: "\e828";
@@ -2246,11 +2723,20 @@
 .nf-dev-matplotlib:before {
   content: "\e82b";
 }
+.nf-dev-mattermost:before {
+  content: "\e927";
+}
 .nf-dev-maven:before {
   content: "\e82c";
 }
 .nf-dev-maya:before {
   content: "\e82d";
+}
+.nf-dev-memcached:before {
+  content: "\e928";
+}
+.nf-dev-mercurial:before {
+  content: "\e929";
 }
 .nf-dev-meteor:before {
   content: "\e7a5";
@@ -2285,6 +2771,9 @@
 .nf-dev-mongoose:before {
   content: "\e835";
 }
+.nf-dev-monogame:before {
+  content: "\e92a";
+}
 .nf-dev-moodle:before {
   content: "\e836";
 }
@@ -2303,6 +2792,9 @@
 .nf-dev-nano:before {
   content: "\e838";
 }
+.nf-dev-nats:before {
+  content: "\e8f0";
+}
 .nf-dev-neo4j:before {
   content: "\e839";
 }
@@ -2312,17 +2804,29 @@
 .nf-dev-nestjs:before {
   content: "\e83b";
 }
+.nf-dev-netbeans:before {
+  content: "\e92b";
+}
+.nf-dev-netbox:before {
+  content: "\e92c";
+}
 .nf-dev-netlify:before {
   content: "\e83c";
 }
 .nf-dev-networkx:before {
   content: "\e83d";
 }
+.nf-dev-newrelic:before {
+  content: "\e92d";
+}
 .nf-dev-nextjs:before {
   content: "\e83e";
 }
 .nf-dev-nginx:before {
   content: "\e776";
+}
+.nf-dev-ngrok:before {
+  content: "\e92e";
 }
 .nf-dev-ngrx:before {
   content: "\e83f";
@@ -2348,6 +2852,9 @@
 .nf-dev-nodemon:before {
   content: "\e844";
 }
+.nf-dev-nodered:before {
+  content: "\e92f";
+}
 .nf-dev-nodewebkit:before {
   content: "\e845";
 }
@@ -2363,11 +2870,17 @@
 .nf-dev-npm:before {
   content: "\e71e";
 }
+.nf-dev-npss:before {
+  content: "\e930";
+}
 .nf-dev-nuget:before {
   content: "\e849";
 }
 .nf-dev-numpy:before {
   content: "\e84a";
+}
+.nf-dev-nuxt:before {
+  content: "\e931";
 }
 .nf-dev-nuxtjs:before {
   content: "\e84b";
@@ -2429,6 +2942,9 @@
 .nf-dev-pandas:before {
   content: "\e85d";
 }
+.nf-dev-passport:before {
+  content: "\e932";
+}
 .nf-dev-perl:before {
   content: "\e769";
 }
@@ -2453,11 +2969,17 @@
 .nf-dev-phpstorm:before {
   content: "\e862";
 }
+.nf-dev-pixijs:before {
+  content: "\e933";
+}
 .nf-dev-playwright:before {
   content: "\e863";
 }
 .nf-dev-plotly:before {
   content: "\e864";
+}
+.nf-dev-pm2:before {
+  content: "\e934";
 }
 .nf-dev-pnpm:before {
   content: "\e865";
@@ -2489,11 +3011,17 @@
 .nf-dev-premierepro:before {
   content: "\e86d";
 }
+.nf-dev-primeng:before {
+  content: "\e935";
+}
 .nf-dev-prisma:before {
   content: "\e86e";
 }
 .nf-dev-processing:before {
   content: "\e86f";
+}
+.nf-dev-processwire:before {
+  content: "\e936";
 }
 .nf-dev-prolog:before {
   content: "\e7a1";
@@ -2503,6 +3031,12 @@
 }
 .nf-dev-protractor:before {
   content: "\e871";
+}
+.nf-dev-proxmox:before {
+  content: "\e937";
+}
+.nf-dev-pug:before {
+  content: "\e938";
 }
 .nf-dev-pulsar:before {
   content: "\e872";
@@ -2543,6 +3077,9 @@
 .nf-dev-qt:before {
   content: "\e87d";
 }
+.nf-dev-qtest:before {
+  content: "\e939";
+}
 .nf-dev-quarkus:before {
   content: "\e87e";
 }
@@ -2557,6 +3094,12 @@
 }
 .nf-dev-rabbitmq:before {
   content: "\e882";
+}
+.nf-dev-racket:before {
+  content: "\e93a";
+}
+.nf-dev-radstudio:before {
+  content: "\e93b";
 }
 .nf-dev-rails:before {
   content: "\e73b";
@@ -2578,6 +3121,9 @@
 }
 .nf-dev-reactbootstrap:before {
   content: "\e886";
+}
+.nf-dev-reactnative:before {
+  content: "\e93c";
 }
 .nf-dev-reactnavigation:before {
   content: "\e887";
@@ -2603,6 +3149,12 @@
 .nf-dev-redux:before {
   content: "\e88c";
 }
+.nf-dev-reflex:before {
+  content: "\e93d";
+}
+.nf-dev-remix:before {
+  content: "\e93e";
+}
 .nf-dev-renpy:before {
   content: "\e88d";
 }
@@ -2611,6 +3163,9 @@
 }
 .nf-dev-requirejs:before {
   content: "\e770";
+}
+.nf-dev-rexx:before {
+  content: "\e93f";
 }
 .nf-dev-rider:before {
   content: "\e88f";
@@ -2714,11 +3269,17 @@
 .nf-dev-sonarqube:before {
   content: "\e8a8";
 }
+.nf-dev-sourceengine:before {
+  content: "\e940";
+}
 .nf-dev-sourcetree:before {
   content: "\e8a9";
 }
 .nf-dev-spack:before {
   content: "\e8aa";
+}
+.nf-dev-spicedb:before {
+  content: "\e941";
 }
 .nf-dev-splunk:before {
   content: "\e8ab";
@@ -2744,17 +3305,26 @@
 .nf-dev-ssh:before {
   content: "\e8b1";
 }
+.nf-dev-stackblitz:before {
+  content: "\e942";
+}
 .nf-dev-stackoverflow:before {
   content: "\e710";
 }
 .nf-dev-stata:before {
   content: "\e8b2";
 }
+.nf-dev-stenciljs:before {
+  content: "\e943";
+}
 .nf-dev-storybook:before {
   content: "\e8b3";
 }
 .nf-dev-streamlit:before {
   content: "\e8b4";
+}
+.nf-dev-styledcomponents:before {
+  content: "\e944";
 }
 .nf-dev-stylus:before {
   content: "\e759";
@@ -2765,11 +3335,20 @@
 .nf-dev-subversion:before {
   content: "\e8b5";
 }
+.nf-dev-sulu:before {
+  content: "\e945";
+}
 .nf-dev-supabase:before {
   content: "\e8b6";
 }
+.nf-dev-surrealdb:before {
+  content: "\e946";
+}
 .nf-dev-svelte:before {
   content: "\e8b7";
+}
+.nf-dev-svgo:before {
+  content: "\e947";
 }
 .nf-dev-swagger:before {
   content: "\e8b8";
@@ -2789,8 +3368,14 @@
 .nf-dev-tailwindcss:before {
   content: "\e8ba";
 }
+.nf-dev-talos:before {
+  content: "\e948";
+}
 .nf-dev-tauri:before {
   content: "\e8bb";
+}
+.nf-dev-teleport:before {
+  content: "\e949";
 }
 .nf-dev-tensorflow:before {
   content: "\e8bc";
@@ -2800,6 +3385,9 @@
 }
 .nf-dev-terraform:before {
   content: "\e8bd";
+}
+.nf-dev-terramate:before {
+  content: "\e94a";
 }
 .nf-dev-tex:before {
   content: "\e8be";
@@ -2813,8 +3401,14 @@
 .nf-dev-threejs:before {
   content: "\e8c1";
 }
+.nf-dev-thymeleaf:before {
+  content: "\e94b";
+}
 .nf-dev-titaniumsdk:before {
   content: "\e8c2";
+}
+.nf-dev-tmux:before {
+  content: "\e94c";
 }
 .nf-dev-tomcat:before {
   content: "\e8c3";
@@ -2839,6 +3433,12 @@
 }
 .nf-dev-trpc:before {
   content: "\e8c8";
+}
+.nf-dev-turbo:before {
+  content: "\e94d";
+}
+.nf-dev-twilio:before {
+  content: "\e94e";
 }
 .nf-dev-twitter:before {
   content: "\e8c9";
@@ -2876,6 +3476,9 @@
 .nf-dev-v8:before {
   content: "\e8cf";
 }
+.nf-dev-vaadin:before {
+  content: "\e94f";
+}
 .nf-dev-vagrant:before {
   content: "\e8d0";
 }
@@ -2884,6 +3487,9 @@
 }
 .nf-dev-vault:before {
   content: "\e8d2";
+}
+.nf-dev-veevalidate:before {
+  content: "\e950";
 }
 .nf-dev-vercel:before {
   content: "\e8d3";
@@ -2915,6 +3521,9 @@
 .nf-dev-vscode:before {
   content: "\e8da";
 }
+.nf-dev-vscodium:before {
+  content: "\e951";
+}
 .nf-dev-vsphere:before {
   content: "\e8db";
 }
@@ -2927,14 +3536,26 @@
 .nf-dev-vuetify:before {
   content: "\e8de";
 }
+.nf-dev-vulkan:before {
+  content: "\e952";
+}
 .nf-dev-vyper:before {
   content: "\e8df";
+}
+.nf-dev-waku:before {
+  content: "\e953";
 }
 .nf-dev-wasm:before {
   content: "\e8e0";
 }
+.nf-dev-web3js:before {
+  content: "\e954";
+}
 .nf-dev-webflow:before {
   content: "\e8e1";
+}
+.nf-dev-webgpu:before {
+  content: "\e955";
 }
 .nf-dev-weblate:before {
   content: "\e8e2";
@@ -2950,6 +3571,9 @@
 }
 .nf-dev-windows11:before {
   content: "\e8e5";
+}
+.nf-dev-wolfram:before {
+  content: "\e956";
 }
 .nf-dev-woocommerce:before {
   content: "\e8e6";
@@ -2989,6 +3613,12 @@
 }
 .nf-dev-zig:before {
   content: "\e8ef";
+}
+.nf-dev-zsh:before {
+  content: "\e957";
+}
+.nf-dev-zustand:before {
+  content: "\e958";
 }
 .nf-extra-progress_empty_left:before {
   content: "\ee00";
@@ -8246,6 +8876,9 @@
 .nf-fa-volleyball:before {
   content: "\ed72";
 }
+.nf-fa-volume:before {
+  content: "\efcf";
+}
 .nf-fa-volume_control_phone:before {
   content: "\f2a0";
 }
@@ -9053,6 +9686,9 @@
 .nf-linux-budgie:before {
   content: "\f320";
 }
+.nf-linux-cachyos:before {
+  content: "\f385";
+}
 .nf-linux-centos:before {
   content: "\f304";
 }
@@ -9103,6 +9739,9 @@
 }
 .nf-linux-ferris:before {
   content: "\f323";
+}
+.nf-linux-ffmpeg:before {
+  content: "\f384";
 }
 .nf-linux-flathub:before {
   content: "\f324";
@@ -9272,6 +9911,9 @@
 .nf-linux-opensuse:before {
   content: "\f314";
 }
+.nf-linux-openwrt:before {
+  content: "\f382";
+}
 .nf-linux-osh:before {
   content: "\f34f";
 }
@@ -9385,6 +10027,9 @@
 }
 .nf-linux-wikimedia:before {
   content: "\f36d";
+}
+.nf-linux-wireguard:before {
+  content: "\f383";
 }
 .nf-linux-xerolinux:before {
   content: "\f34a";
@@ -13637,6 +14282,12 @@
 .nf-md-cards_diamond_outline:before {
   content: "\f101d";
 }
+.nf-md-cards_heart:before {
+  content: "\f08d0";
+}
+.nf-md-cards_heart_outline:before {
+  content: "\f18a0";
+}
 .nf-md-cards_outline:before {
   content: "\f0639";
 }
@@ -14366,6 +15017,9 @@
 .nf-md-cigar_off:before {
   content: "\f141b";
 }
+.nf-md-circle:before {
+  content: "\f0765";
+}
 .nf-md-circle_box:before {
   content: "\f15dc";
 }
@@ -14401,6 +15055,9 @@
 }
 .nf-md-circle_opacity:before {
   content: "\f1853";
+}
+.nf-md-circle_outline:before {
+  content: "\f0766";
 }
 .nf-md-circle_slice_1:before {
   content: "\f0a9e";
@@ -21566,6 +22223,9 @@
 .nf-md-logout_variant:before {
   content: "\f05fd";
 }
+.nf-md-logout_variant_2:before {
+  content: "\f05fc";
+}
 .nf-md-longitude:before {
   content: "\f0f5a";
 }
@@ -22478,6 +23138,9 @@
 .nf-md-motorbike_electric:before {
   content: "\f15ba";
 }
+.nf-md-mountains:before {
+  content: "\f0509";
+}
 .nf-md-mouse:before {
   content: "\f037d";
 }
@@ -22733,6 +23396,9 @@
 .nf-md-music_note:before {
   content: "\f0387";
 }
+.nf-md-music_note_2:before {
+  content: "\f0388";
+}
 .nf-md-music_note_bluetooth:before {
   content: "\f05fe";
 }
@@ -22819,6 +23485,9 @@
 }
 .nf-md-navigation_outline:before {
   content: "\f1607";
+}
+.nf-md-navigation_variant:before {
+  content: "\f18f0";
 }
 .nf-md-navigation_variant_outline:before {
   content: "\f18f1";
@@ -23090,6 +23759,9 @@
 .nf-md-numeric:before {
   content: "\f03a0";
 }
+.nf-md-numeric_0:before {
+  content: "\f0b39";
+}
 .nf-md-numeric_0_box:before {
   content: "\f03a1";
 }
@@ -23101,6 +23773,12 @@
 }
 .nf-md-numeric_0_box_outline:before {
   content: "\f03a3";
+}
+.nf-md-numeric_0_circle:before {
+  content: "\f0c9e";
+}
+.nf-md-numeric_0_circle_outline:before {
+  content: "\f0c9f";
 }
 .nf-md-numeric_1:before {
   content: "\f0b3a";
@@ -24818,6 +25496,9 @@
 .nf-md-radioactive_off:before {
   content: "\f0ec1";
 }
+.nf-md-radiobox_blank:before {
+  content: "\f043d";
+}
 .nf-md-radiobox_marked:before {
   content: "\f043e";
 }
@@ -25355,6 +26036,12 @@
 .nf-md-rolodex_outline:before {
   content: "\f1aba";
 }
+.nf-md-roman_numeral_1:before {
+  content: "\f1088";
+}
+.nf-md-roman_numeral_10:before {
+  content: "\f1091";
+}
 .nf-md-roman_numeral_2:before {
   content: "\f1089";
 }
@@ -25363,6 +26050,9 @@
 }
 .nf-md-roman_numeral_4:before {
   content: "\f108b";
+}
+.nf-md-roman_numeral_5:before {
+  content: "\f108c";
 }
 .nf-md-roman_numeral_6:before {
   content: "\f108d";
@@ -26326,6 +27016,9 @@
 }
 .nf-md-sitemap_outline:before {
   content: "\f199c";
+}
+.nf-md-size_l:before {
+  content: "\f13a6";
 }
 .nf-md-size_m:before {
   content: "\f13a5";
