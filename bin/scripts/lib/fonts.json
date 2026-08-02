@@ -837,7 +837,7 @@
       "imagePreviewFont": "OpenDyslexic Nerd Font",
       "imagePreviewFontSource": "OpenDyslexic/Regular/OpenDyslexic-Regular.otf",
       "linkPreviewFont": "opendyslexic",
-      "caskName": "open-dyslexic",
+      "caskName": "opendyslexic",
       "repoRelease": true,
       "isMonospaced": false,
       "description": "Designed specifically to alleviate reading errors caused by dyslexia"
