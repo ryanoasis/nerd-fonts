@@ -746,7 +746,7 @@
       "imagePreviewFont": "MonaspiceNe NF",
       "imagePreviewFontSource": "Monaspace/Neon/MonaspaceNeon-Regular.otf",
       "linkPreviewFont": "monaspace-neon",
-      "caskName": "monaspace",
+      "caskName": "monaspice",
       "repoRelease": false,
       "isMonospaced": true,
       "description": "Five matching fonts all having 'texture healing' to improve legibility"
@@ -837,7 +837,7 @@
       "imagePreviewFont": "OpenDyslexic Nerd Font",
       "imagePreviewFontSource": "OpenDyslexic/Regular/OpenDyslexic-Regular.otf",
       "linkPreviewFont": "opendyslexic",
-      "caskName": "open-dyslexic",
+      "caskName": "opendyslexic",
       "repoRelease": true,
       "isMonospaced": false,
       "description": "Designed specifically to alleviate reading errors caused by dyslexia"
