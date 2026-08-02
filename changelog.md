@@ -2,7 +2,19 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
-## v3.5.0 (to be released)
+## v3.5.0
+
+Sun-Kissed Release, Running Hot<br>
+Heat wave edition
+
+Still sizzling you get (just some notable things):
+
+    Three glyph set updates
+    Finally Braille glyphs matching the 'cell' size exactly
+    Two new fonts
+    All fonts updated
+
+Thank you to all the people who contributed - by reporting issues, engaging in discussions, or providing code! ❤️
 
 ### Breaking
  - D2Coding is renamed to D2Koding #2052
