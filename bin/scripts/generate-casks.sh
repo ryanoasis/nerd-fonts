@@ -4,7 +4,7 @@
 #
 # Iterates over all [*] archived fonts
 # to generate ruby cask files for homebrew-fonts (https://github.com/Homebrew/homebrew-cask)
-# * Needs the zip archives in archives/ (i.e. run `./archive-fonts.sh` first)
+# * Needs the tar.xz archives in archives/ (i.e. run `./archive-fonts.sh` first)
 #
 # Uses the current release version (including drafts) of the repo.
 # You can specify a different version with the --setversion parameter.
@@ -148,14 +148,14 @@ function write_body {
             local individualfont=$(basename "${fonts[$i]}")
             local individualdir=$(dirname "${fonts[$i]}")
 
-	    if [ "$(dirname "${individualdir}")" = "." ]; then
+            if [ "$(dirname "${individualdir}")" = "." ]; then
                 individualdir=""
             else
                 if [ ${warned} -eq 0 ]; then
                     echo "$LINE_PREFIX WARNING: Non-flat directory structure in archive! We might have problems..."
                     warned=1
                 fi
-                # Remove leftmost directory (on Linux), the base directory of the zip file
+                # Remove leftmost directory (on Linux), the base directory of the archive file
                 individualdir=$(sed -E 's!/+!/!;s!^([^/]*/)|(/[^/]+/?)|([^/]*$)!!' <<< "${individualdir}")/
             fi
 
@@ -206,15 +206,15 @@ if [ "$pattern" = "" ]; then
     pattern=".*"
 fi
 
-find . -maxdepth 1 -mindepth 1 -type f -iregex "\./$pattern" -regex ".*\.zip" | LC_ALL=C sort |
+find . -maxdepth 1 -mindepth 1 -type f -iregex "\./$pattern" -regex ".*\.tar\.xz" | LC_ALL=C sort |
 while read -r filename; do
 
-    basename=$(basename "$filename" .zip)
-    if [ ! -f "../archives/${basename}.zip" ]; then
+    basename=$(basename "$filename" .tar.xz)
+    if [ ! -f "../archives/${basename}.tar.xz" ]; then
         echo "${LINE_PREFIX} No archive for: ${basename}, skipping..."
         continue
     fi
-    sha256sum=$(sha256sum "../archives/${basename}.zip" | head -c 64)
+    sha256sum=$(sha256sum "../archives/${basename}.tar.xz" | head -c 64)
     searchdir=$filename
 
     originalname=$(jq -r ".fonts[] | select(.folderName == \"${basename}\") | .unpatchedName" "${scripts_root_dir}/lib/fonts.json" | head -n 1)
@@ -226,7 +226,8 @@ while read -r filename; do
 
     rm -Rf "${basename}"
     echo "$LINE_PREFIX Unpacking $basename"
-    unzip -q "${basename}" -d "${basename}"
+    mkdir "${basename}"
+    tar xf "${basename}.tar.xz" -C "${basename}"
     searchdir=${basename}
 
     FONTS=()
