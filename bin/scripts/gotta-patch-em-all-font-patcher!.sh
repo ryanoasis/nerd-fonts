@@ -399,17 +399,17 @@ then
   do
     purge_destination=""
     current_source_dir=$(dirname "${source_fonts[$i]}")
-    current_root_dir=${source_fonts_dir}/$(TMP="${current_source_dir##$source_fonts_dir/}"; echo ${TMP%%/*})
+    current_root_dir=${source_fonts_dir}/$(TMP="${current_source_dir##"${source_fonts_dir}/"}"; echo "${TMP%%/*}")
 
     if [ "${current_root_dir}" != "${last_root_dir}" ] && [ -n "${force_purge}" ]
     then
       last_root_dir=${current_root_dir}
       purgedir=${current_root_dir/$unpatched_parent_dir/$patched_parent_dir}
-      if [ -n "${verbose}" ]
+      if [ -n "${verbose}" ] && [ -n "${purgedir}" ]
       then
         echo "Purging patched font dir ${purgedir}"
       fi
-      rm -Rf -- "${purgedir}"/*
+      rm -Rf -- "${purgedir:?}"/*
     fi
 
     if [ "${current_source_dir}" != "${last_source_dir}" ] && [ -z "${force_purge}" ]
