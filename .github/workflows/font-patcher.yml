@@ -72,7 +72,7 @@ jobs:
       - name: Patcher typical test run
         run: |
           mkdir -p $GITHUB_WORKSPACE/temp/
-          fontforge --script ./font-patcher src/unpatched-fonts/Hack/Regular/Hack-Regular.ttf \
+          fontforge --script ./font-patcher src/unpatched-fonts/Hack/Hack-Regular.ttf \
           --complete --quiet --no-progressbars --outputdir $GITHUB_WORKSPACE/temp/ \
           --experimental check-glyph-count
 
@@ -97,7 +97,7 @@ jobs:
       - name: Spot check font properties
         run: |
           ${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/HackNerdFont-Regular.ttf" | grep -q 'File Checksum.*diff=0\s*$' && echo "TTF checksum ok" || exit 1
-          ORIG_MINPPEM=$(${{ env.SHOWTTF }} -c "src/unpatched-fonts/Hack/Regular/Hack-Regular.ttf" | grep 'lowestppem=' )
+          ORIG_MINPPEM=$(${{ env.SHOWTTF }} -c "src/unpatched-fonts/Hack/Hack-Regular.ttf" | grep 'lowestppem=' )
           PATCH_MINPPEM=$(${{ env.SHOWTTF }} -c "$GITHUB_WORKSPACE/temp/HackNerdFont-Regular.ttf" | grep 'lowestppem=' )
           echo "${ORIG_MINPPEM} == ${PATCH_MINPPEM}"
           [[ ${ORIG_MINPPEM} == ${PATCH_MINPPEM} ]] && echo "lowestRecPPEM matches" || exit 1
@@ -105,7 +105,7 @@ jobs:
       - name: Patcher monospaced
         run: |
           mkdir -p $GITHUB_WORKSPACE/temp/
-          fontforge --script ./font-patcher src/unpatched-fonts/Hack/Regular/Hack-Regular.ttf \
+          fontforge --script ./font-patcher src/unpatched-fonts/Hack/Hack-Regular.ttf \
           --complete --mono --quiet --no-progressbars --outputdir $GITHUB_WORKSPACE/temp/
 
       - name: Check if patched font generated
@@ -125,6 +125,6 @@ jobs:
       - name: Check if font with references is patched
         # (patch result not checked)
         run: |
-          fontforge --script ./font-patcher src/unpatched-fonts/UbuntuMono/Regular/UbuntuMono-R.ttf \
+          fontforge --script ./font-patcher src/unpatched-fonts/UbuntuMono/UbuntuMono-R.ttf \
           --quiet --no-progressbars --outputdir $GITHUB_WORKSPACE/temp/
           [ -e "$GITHUB_WORKSPACE/temp/UbuntuMonoNerdFont-Regular.ttf" ] && echo "File exists" || exit 1
