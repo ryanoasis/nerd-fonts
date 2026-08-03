@@ -616,6 +616,7 @@ Usage: ./gotta-patch-em-all-font-patcher!.sh [OPTION] [FILTER]
 
     OPTION:
         -c, --checkfont     Create the font(s) in check-fonts/ instead
+        -p, --purge         Force purging of the destination in patched-fonts/
         -t, --keeptime      Try to preserve timestamp of previously patched
                             font in patched-fonts/ directory
         -v, --verbose       Show more information when running
@@ -634,6 +635,11 @@ Usage: ./gotta-patch-em-all-font-patcher!.sh [OPTION] [FILTER]
         the filter are processed only.
           Example ./gotta-patch-em-all-font-patcher\!.sh "/iosevka"
           Process all font files that are in directory "iosevka"
+
+    ENVIRONMENT:
+        NERDFONTS: You can supply any font-patcher arguments here that will
+            be appended to all internal font-patcher calls. For example
+            NERDFONTS="--dry --debug 2" ./gotta-patch-em-all-font-patcher!.sh
 ```
 
 ## Contributing
