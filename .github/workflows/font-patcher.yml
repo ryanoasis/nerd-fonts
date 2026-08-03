@@ -7,6 +7,7 @@ on:
     paths:
       - 'font-patcher'
       - 'src/glyphs/**'
+      - 'bin/scripts/lib/i*.sh'
 
 jobs:
   tests:
@@ -72,7 +73,8 @@ jobs:
         run: |
           mkdir -p $GITHUB_WORKSPACE/temp/
           fontforge --script ./font-patcher src/unpatched-fonts/Hack/Regular/Hack-Regular.ttf \
-          --complete --quiet --no-progressbars --outputdir $GITHUB_WORKSPACE/temp/
+          --complete --quiet --no-progressbars --outputdir $GITHUB_WORKSPACE/temp/ \
+          --experimental check-glyph-count
 
       - name: Check if patched font generated
         run: |

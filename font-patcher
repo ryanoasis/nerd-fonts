@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.27.1"
+script_version = "4.27.2"
 
 version = "3.5.0"
 projectName = "Nerd Fonts"
@@ -337,6 +337,26 @@ def fetch_glyphnames():
         logger.warning("Can not read glyphnames file (%s)", repr(error))
         return {}
 
+def check_glyph_counts(counts):
+    for name, (ish, num) in counts.items():
+        if ish is None:
+            continue
+        i_file = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), 'bin', 'scripts', 'lib', ish))
+        try:
+            with open(i_file, 'r') as f:
+                for i in range(10):
+                    m = re.search(r'([0-9]+) icons', next(f))
+                    if m is None:
+                        continue
+                    n = int(m.group(1))
+                    logger.debug('Patched %d, expected %d (%s)', num, n, name)
+                    if num != n:
+                        logger.critical("Wrong number of icons patched (%d/%d: %s)", num, n, ish)
+                        sys.exit(1)
+        except Exception as error:
+            logger.critical("Can not find %s: %s (this is a CI helper option)", ish, repr(error))
+            sys.exit(1)
+
 class font_patcher:
     def __init__(self, args, conf):
         self.args = args  # class 'argparse.Namespace'
@@ -390,6 +410,8 @@ class font_patcher:
         if self.args.dry_run:
             return
 
+        glyphnum = {}
+
         for patch in self.patch_set:
             if patch['Enabled']:
                 if 'Filename' in patch and 'Font' in patch:
@@ -427,11 +449,15 @@ class font_patcher:
                 if not SrcStart:
                     SrcStart = patch['SymStart']
                 self.copy_glyphs(SrcStart, symfont, patch['SymStart'], patch['SymEnd'], patch['Exact'], patch['ScaleRules'], patch['Name'], patch['Attributes'])
+                glyphnum.update({patch['Name']: (patch.get('ish'), self.copy_glyphs_last['maximum'])})
 
         if symfont:
             symfont.close()
         if self.args.progressbars:
             sys.stdout.write("\n")
+
+        if self.args.glyphcount:
+            check_glyph_counts(glyphnum)
 
         # The grave accent and fontforge:
         # If the type is 'auto' fontforge changes it to 'mark' on export.
@@ -1215,11 +1241,11 @@ class font_patcher:
         #   When complex dynamic adjustments/generation based on sourceFont are unnecessary,
         #   it is better to use `Filename`, then adjust via attributes (in fact, this is more usual).
         self.patch_set = [
-            {'Enabled': basics_enabled,                 'Name': "Seti-UI + NerdFonts",  'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': basics_enabled,                 'Name': "Seti-UI + NerdFonts",  'Filename': "original-source.otf",                            'Exact': False, 'SymStart': 0xE4FA, 'SymEnd': 0xE5FF, 'SrcStart': 0xE5FA, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_seti.sh"},
             {'Enabled': basics_enabled,                 'Name': "Heavy Angle Brackets", 'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x276C, 'SymEnd': 0x2771, 'SrcStart': None,   'ScaleRules': HEAVY_SCALE_LIST, 'Attributes': SYM_ATTR_HEAVYBRACKETS},
             {'Enabled': box_enabled,                    'Name': "Box Drawing",          'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0x2500, 'SymEnd': 0x259F, 'SrcStart': None,   'ScaleRules': BOX_SCALE_LIST,   'Attributes': SYM_ATTR_BOX},
             {'Enabled': basics_enabled,                 'Name': "Progress Indicators",  'Filename': "extraglyphs.sfd",                                'Exact': True,  'SymStart': 0xEE00, 'SymEnd': 0xEE0B, 'SrcStart': None,   'ScaleRules': PROGR_SCALE_LIST, 'Attributes': SYM_ATTR_PROGRESS},
-            {'Enabled': basics_enabled,                 'Name': "Devicons",             'Filename': "devicons/devicons.otf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE858, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': basics_enabled,                 'Name': "Devicons",             'Filename': "devicons/devicons.otf",                          'Exact': False, 'SymStart': 0xE600, 'SymEnd': 0xE858, 'SrcStart': 0xE700, 'ScaleRules': DEVI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_dev.sh"},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",    'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0A0, 'SymEnd': 0xE0A2, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerline,            'Name': "Powerline Symbols",    'Filename': "powerline-symbols/PowerlineSymbols.otf",         'Exact': True,  'SymStart': 0xE0B0, 'SymEnd': 0xE0B3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra",      'Filename': "powerline-extra/PowerlineExtraSymbols.otf",      'Exact': True,  'SymStart': 0xE0A3, 'SymEnd': 0xE0A3, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
@@ -1227,20 +1253,20 @@ class font_patcher:
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra",      'Filename': "powerline-extra/PowerlineExtraSymbols.otf",      'Exact': True,  'SymStart': 0xE0CA, 'SymEnd': 0xE0CA, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra",      'Filename': "powerline-extra/PowerlineExtraSymbols.otf",      'Exact': True,  'SymStart': 0xE0CC, 'SymEnd': 0xE0D7, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_POWERLINE},
             {'Enabled': self.args.powerlineextra,       'Name': "Powerline Extra",      'Filename': "powerline-extra/PowerlineExtraSymbols.otf",      'Exact': True,  'SymStart': 0x2630, 'SymEnd': 0x2630, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_TRIGRAPH},
-            {'Enabled': self.args.pomicons,             'Name': "Pomicons",             'Filename': "pomicons/Pomicons.otf",                          'Exact': True,  'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.fontawesome,          'Name': "Font Awesome",         'Filename': "font-awesome/FontAwesome.otf",                   'Exact': True,  'SymStart': 0xED00, 'SymEnd': 0xF2FF, 'SrcStart': None,   'ScaleRules': FONTA_SCALE_LIST, 'Attributes': SYM_ATTR_FONTA},
-            {'Enabled': self.args.fontawesomeextension, 'Name': "Font Awesome Ext",     'Filename': "font-awesome-extension.ttf",                     'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Maximize
+            {'Enabled': self.args.pomicons,             'Name': "Pomicons",             'Filename': "pomicons/Pomicons.otf",                          'Exact': True,  'SymStart': 0xE000, 'SymEnd': 0xE00A, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_pom.sh"},
+            {'Enabled': self.args.fontawesome,          'Name': "Font Awesome",         'Filename': "font-awesome/FontAwesome.otf",                   'Exact': True,  'SymStart': 0xED00, 'SymEnd': 0xF2FF, 'SrcStart': None,   'ScaleRules': FONTA_SCALE_LIST, 'Attributes': SYM_ATTR_FONTA,     'ish': "i_fa.sh"},
+            {'Enabled': self.args.fontawesomeextension, 'Name': "Font Awesome Ext",     'Filename': "font-awesome-extension.ttf",                     'Exact': False, 'SymStart': 0xE000, 'SymEnd': 0xE0A9, 'SrcStart': 0xE200, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_fae.sh"},  # Maximize
             {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",        'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x23FB, 'SymEnd': 0x23FE, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Power, Power On/Off, Power On, Sleep
-            {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",        'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},  # Heavy Circle (aka Power Off)
+            {'Enabled': self.args.powersymbols,         'Name': "Power Symbols",        'Filename': "Unicode_IEC_symbol_font.otf",                    'Exact': True,  'SymStart': 0x2B58, 'SymEnd': 0x2B58, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_iec.sh"},  # Heavy Circle (aka Power Off)
             {'Enabled': False             ,             'Name': "Material legacy",      'Filename': "materialdesign/materialdesignicons-webfont.ttf", 'Exact': False, 'SymStart': 0xF001, 'SymEnd': 0xF847, 'SrcStart': 0xF500, 'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.material,             'Name': "Material",             'Filename': "materialdesign/MaterialDesignIconsDesktop.ttf",  'Exact': True,  'SymStart': 0xF0001,'SymEnd': 0xF1AF0,'SrcStart': None,   'ScaleRules': MDI_SCALE_LIST,   'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.weather,              'Name': "Weather Icons",        'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'ScaleRules': WEATH_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.fontlogos,            'Name': "Font Logos",           'Filename': "font-logos.ttf",                                 'Exact': True,  'SymStart': 0xF300, 'SymEnd': 0xF385, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.material,             'Name': "Material",             'Filename': "materialdesign/MaterialDesignIconsDesktop.ttf",  'Exact': True,  'SymStart': 0xF0001,'SymEnd': 0xF1AF0,'SrcStart': None,   'ScaleRules': MDI_SCALE_LIST,   'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_md.sh"},
+            {'Enabled': self.args.weather,              'Name': "Weather Icons",        'Filename': "weather-icons/weathericons-regular-webfont.ttf", 'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF0EB, 'SrcStart': 0xE300, 'ScaleRules': WEATH_SCALE_LIST, 'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_weather.sh"},
+            {'Enabled': self.args.fontlogos,            'Name': "Font Logos",           'Filename': "font-logos.ttf",                                 'Exact': True,  'SymStart': 0xF300, 'SymEnd': 0xF385, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_logos.sh"},
             {'Enabled': self.args.octicons,             'Name': "Octicons",             'Filename': "octicons/octicons.otf",                          'Exact': False, 'SymStart': 0xF000, 'SymEnd': 0xF105, 'SrcStart': 0xF400, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Magnifying glass
             {'Enabled': self.args.octicons,             'Name': "Octicons",             'Filename': "octicons/octicons.otf",                          'Exact': True,  'SymStart': 0x2665, 'SymEnd': 0x2665, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Heart
             {'Enabled': self.args.octicons,             'Name': "Octicons",             'Filename': "octicons/octicons.otf",                          'Exact': True,  'SymStart': 0X26A1, 'SymEnd': 0X26A1, 'SrcStart': None,   'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},  # Zap
-            {'Enabled': self.args.octicons,             'Name': "Octicons",             'Filename': "octicons/octicons.otf",                          'Exact': False, 'SymStart': 0xF27C, 'SymEnd': 0xF306, 'SrcStart': 0xF4A9, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
-            {'Enabled': self.args.codicons,             'Name': "Codicons",             'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEC84, 'SrcStart': None,   'ScaleRules': CODI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT},
+            {'Enabled': self.args.octicons,             'Name': "Octicons",             'Filename': "octicons/octicons.otf",                          'Exact': False, 'SymStart': 0xF27C, 'SymEnd': 0xF306, 'SrcStart': 0xF4A9, 'ScaleRules': OCTI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_oct.sh"},
+            {'Enabled': self.args.codicons,             'Name': "Codicons",             'Filename': "codicons/codicon.ttf",                           'Exact': True,  'SymStart': 0xEA60, 'SymEnd': 0xEC84, 'SrcStart': None,   'ScaleRules': CODI_SCALE_LIST,  'Attributes': SYM_ATTR_DEFAULT,   'ish': "i_cod.sh"},
             {'Enabled': braille_enabled,                'Name': "Braille",              'Font'    : self.get_braille_font,                            'Exact': True,  'SymStart': 0x2800, 'SymEnd': 0x28FF, 'SrcStart': None,   'ScaleRules': None,             'Attributes': SYM_ATTR_BRAILLE},
             {'Enabled': self.args.custom,               'Name': "Custom",               'Filename': self.args.custom,                                 'Exact': True,  'SymStart': 0x0000, 'SymEnd': 0x0000, 'SrcStart': None,   'ScaleRules': None,             'Attributes': CUSTOM_ATTR}
         ]
@@ -2283,6 +2309,7 @@ def setup_arguments():
         # user-switch-name: ( PR number, description, variable in args )
         'nonmono-upscale': (1926, 'Scale non-mono icons to be at least as large as mono', 'upscale'),
         'center-wide': (2034, 'Is it possible to "center" glyphs which overlap a single cell by padding them?', 'centerwide'),
+        'check-glyph-count': (2057, 'Compare actually patched in glyph number agains expected', 'glyphcount'),
     }
     args.experimental = list(set(args.experimental))
     if '?' in args.experimental or 'help' in args.experimental:
