@@ -76,7 +76,6 @@ if [ "${first_step}" = TRUE ]; then
     if [ -n "${abort}" ]; then
       exit 1
     fi
-    dir=$(dirname "${f}")
     fontfile=$(fontforge ../../font-patcher --dry "${f}" --debug 2 2>/dev/null | grep 'DEBUG: =====> Filename' | sed "s/[^']*'//;s/'.*//")
     dest=$(find ../../archives -name "${fontfile}")
     if [ -z "${dest}" ]; then
