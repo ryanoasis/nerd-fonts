@@ -2,6 +2,14 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+## v3.5.1 (upcoming)
+
+We need a bugfix release this time.
+
+### Bugs
+
+ - Actually put in the new promised Devicons #2057
+
 ## v3.5.0
 
 Sun-Kissed Release, Running Hot<br>
@@ -9,10 +17,10 @@ Heat wave edition
 
 Still sizzling you get (just some notable things):
 
-    Three glyph set updates
-    Finally Braille glyphs matching the 'cell' size exactly
-    Two new fonts
-    All fonts updated
+ - Three glyph set updates
+ - Finally Braille glyphs matching the 'cell' size exactly
+ - Two new fonts
+ - All fonts updated
 
 Thank you to all the people who contributed - by reporting issues, engaging in discussions, or providing code! ❤️
 
