@@ -319,6 +319,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="http://gerardbalaoro.dev"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/13101267?v=4?s=100" width="100px;" alt="Gerard Balaoro"/><br /><sub><b>Gerard Balaoro</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=gerardbalaoro" title="Code">💻</a></span>
 
 
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/kStor2poche"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/43518872?v=4?s=100" width="100px;" alt="kStor2poche"/><br /><sub><b>kStor2poche</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AkStor2poche" title="Bug reports">🐛</a></span>
+
+
 
 
 <!-- markdownlint-restore -->
