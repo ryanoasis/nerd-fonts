@@ -307,6 +307,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Tejakshaya"><img src="https://avatars.githubusercontent.com/u/96788831?v=4?s=100" width="100px;" alt="Dusk"/><br /><sub><b>Dusk</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Tejakshaya" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://gerardbalaoro.dev"><img src="https://avatars.githubusercontent.com/u/13101267?v=4?s=100" width="100px;" alt="Gerard Balaoro"/><br /><sub><b>Gerard Balaoro</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=gerardbalaoro" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kStor2poche"><img src="https://avatars.githubusercontent.com/u/43518872?v=4?s=100" width="100px;" alt="kStor2poche"/><br /><sub><b>kStor2poche</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AkStor2poche" title="Bug reports">🐛</a></td>
+    </tr>
   </tbody>
 </table>
 
