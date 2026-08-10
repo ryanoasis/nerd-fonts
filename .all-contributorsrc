@@ -2115,6 +2115,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "kStor2poche",
+      "name": "kStor2poche",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43518872?v=4",
+      "profile": "https://github.com/kStor2poche",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
