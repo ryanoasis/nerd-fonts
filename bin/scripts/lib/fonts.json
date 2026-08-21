@@ -850,7 +850,7 @@
       "patchedName": "Overpass",
       "folderName": "Overpass",
       "imagePreviewFont": "OverpassM Nerd Font",
-      "imagePreviewFontSource": "Overpass/Mono/Regular/overpass-mono-regular.otf",
+      "imagePreviewFontSource": "Overpass/Mono/overpass-mono-regular.otf",
       "linkPreviewFont": "overpass",
       "caskName": "overpass",
       "repoRelease": true,
