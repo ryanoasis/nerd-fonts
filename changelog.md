@@ -2,13 +2,15 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
-## v3.5.1 (upcoming)
+## v3.5.1
 
-We need a bugfix release this time.
+It was too hot, we need a bugfix release this time.
 
 ### Bugs
 
  - Actually put in the new promised Devicons #2057
+ - SpaceMono: Remove fi/fl ligs #2062
+ - Flatten forgotten font subdirs
 
 ## v3.5.0
 
