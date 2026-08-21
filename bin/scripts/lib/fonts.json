@@ -534,7 +534,7 @@
       "patchedName": "iMWriting",
       "folderName": "iA-Writer",
       "imagePreviewFont": "iMWritingMono Nerd Font",
-      "imagePreviewFontSource": "iA-Writer/Mono/Regular/iAWriterMonoS-Regular.ttf",
+      "imagePreviewFontSource": "iA-Writer/Mono/iAWriterMonoS-Regular.ttf",
       "linkPreviewFont": "ia-writer-mono",
       "caskName": "im-writing",
       "repoRelease": true,
