@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Font Logos (Font Linux) 1.4.0 (134 icons)
 # Codepoints: F300-F385
-# Nerd Fonts Version: 3.5.0
+# Nerd Fonts Version: 3.5.1
 # Script Version: 1.4.0
 # We keep the name 'linux' in the metadata for continuity reasons
 test -n "$__i_linux_loaded" && return || __i_linux_loaded=1
