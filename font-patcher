@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.27.2"
+script_version = "4.27.3"
 
 version = "3.5.1"
 projectName = "Nerd Fonts"
@@ -1606,6 +1606,8 @@ class font_patcher:
             indexoffset = self.copy_glyphs_last['maximum']
         else:
             indexoffset = 0
+            if self.args.progressbars and len(self.copy_glyphs_last['header']):
+                sys.stdout.write("\n")
 
         for index, sym_glyph in enumerate(symbolFontSelection):
 
@@ -1862,8 +1864,6 @@ class font_patcher:
         # end for
         self.copy_glyphs_last['header'] = progressHeader
         self.copy_glyphs_last['maximum'] = glyphSetLength + indexoffset
-        if self.args.progressbars and len(self.copy_glyphs_last['header']):
-            sys.stdout.write("\n")
 
 
     def set_sourcefont_glyph_widths(self):
