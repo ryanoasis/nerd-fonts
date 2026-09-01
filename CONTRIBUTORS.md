@@ -309,6 +309,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kStor2poche"><img src="https://avatars.githubusercontent.com/u/43518872?v=4?s=100" width="100px;" alt="kStor2poche"/><br /><sub><b>kStor2poche</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AkStor2poche" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://codeberg.org/krisque/"><img src="https://avatars.githubusercontent.com/u/63082743?v=4?s=100" width="100px;" alt="Krisque"/><br /><sub><b>Krisque</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=chrisemke" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
