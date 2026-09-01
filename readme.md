@@ -801,7 +801,7 @@ Font repos
 [f-mononoki]:https://madmalik.github.io/mononoki
 [f-mplus]:https://mplusfonts.github.io
 [f-noto]:https://fonts.google.com/noto
-[f-opendyslexic]:https://github.com/antijingoist/open-dyslexic
+[f-opendyslexic]:https://opendyslexic.org
 [f-overpass]:http://overpassfont.org
 [f-profont]:https://tobiasjung.name/profont
 [f-recursive]:https://github.com/arrowtype/recursive
