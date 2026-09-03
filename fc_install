@@ -62,7 +62,7 @@ else
     FONT_DIR="${FONT_DIR:-${sys_share_dir}/${font_subdir}/NerdFonts}"
 fi
 
-_REQUIREMENTS=("curl")
+_REQUIREMENTS=("curl" "sed" "tar" "mktemp")
 _GH_RELEASE_DATA=""
 
 # command line interface
