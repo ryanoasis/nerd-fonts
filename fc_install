@@ -219,7 +219,7 @@ EOF
 
 nerd.released_archives() {
     # Returns pairs of "Archive-basename asset-ID"
-    local archive_suffix=.zip
+    local archive_suffix=.tar.xz
     local assets_regex="^ *\"assets\":"
     local aid_regex="^ *\"id\":"
     local name_regex="^ *\"name\":"
@@ -284,9 +284,9 @@ nerd.install_font() {
     (
         set -e
         local dst
-        gh.download_asset "${1}.zip" "${aid}"
+        gh.download_asset "${1}.tar.xz" "${aid}"
         mkdir -p "${1}"
-        unzip -q -o -d "${1}" "${1}.zip"
+        tar xf "${1}.tar.xz" -C "${1}"
         mkdir -p "$FONT_DIR"
         for filename in "${1}"/*; do
             if sh.in_array "${filename##*.}" "${FONT_FORMATS[@]}"; then
