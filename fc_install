@@ -43,19 +43,19 @@ FONT_FORMATS=(ttf otf)
 
 # Get target font directory
 if [ "$(uname)" = "Darwin" ]; then
-  # MacOS
-  sys_share_dir="/Library"
-  usr_share_dir="$HOME/Library"
-  font_subdir="Fonts"
+    # MacOS
+    sys_share_dir="/Library"
+    usr_share_dir="$HOME/Library"
+    font_subdir="Fonts"
 else
-  # Linux
-  sys_share_dir="/usr/local/share"
-  usr_share_dir="$HOME/.local/share"
-  font_subdir="fonts"
+    # Linux
+    sys_share_dir="/usr/local/share"
+    usr_share_dir="$HOME/.local/share"
+    font_subdir="fonts"
 fi
 XDG_DATA_HOME="${XDG_DATA_HOME:-}"
 if [ -n "${XDG_DATA_HOME}" ]; then
-  usr_share_dir="${XDG_DATA_HOME}"
+    usr_share_dir="${XDG_DATA_HOME}"
 fi
 if [ ${EUID:-0} -ne 0 ] || [ "$(id -u)" -ne 0 ]; then
     FONT_DIR="${FONT_DIR:-${usr_share_dir}/${font_subdir}/NerdFonts}"
