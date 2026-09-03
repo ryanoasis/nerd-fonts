@@ -411,7 +411,7 @@ sh.prompt-err() {
 sh.in_array() {
     local word="${1}"
     shift
-    for e in "$@"; do [[ "${e}" == "${word}" ]] && return 0; done
+    for e in "$@"; do [ "${e}" = "${word}" ] && return 0; done
     return 1
 }
 
