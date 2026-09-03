@@ -371,17 +371,6 @@ gh.download_asset() {
 # script helpers
 # --------------
 
-if [ ! -p /dev/stdout ] && [ ! "${TERM:-unknown}" = "unknown" ]; then
-    _BYellow='\e[1;33m'
-    _BBlue='\e[1;94m'
-    _BRed='\e[1;31m'
-    _creset='\e[0m' # reset all attributes
-else
-    _BYellow=''
-    _BBlue=''
-    _BRed=''
-    _creset=''
-fi
 
 msg.err() {
     echo -e "${_BRed}ERROR:${_creset} $*" >&2
@@ -475,4 +464,20 @@ main() {
 
 echo "Nerd Fonts installer -- Version ${scriptversion}"
 echo "                     -- Bash ${BASH_VERSION}"
+
+if [ ! -t 2 ] || \
+    [ "${TERM:-unknown}" = "unknown" ] || \
+    [ "${TERM}" = "dumb" ] || \
+    [ -n "${NO_COLOR:-}" ]; then
+    _BYellow=''
+    _BBlue=''
+    _BRed=''
+    _creset=''
+else
+    _BYellow='\e[1;33m'
+    _BBlue='\e[1;94m'
+    _BRed='\e[1;31m'
+    _creset='\e[0m'
+fi
+
 main "$@"
