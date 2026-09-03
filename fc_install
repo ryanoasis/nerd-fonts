@@ -217,30 +217,74 @@ EOF
 # Nerd Fonts
 # ----------
 
-nerd.released_zip() {
-    gh.release_data |
-        grep "browser_download_url.*zip" |
-        cut -d : -f 2,3 |
-        tr -d \"
+nerd.released_archives() {
+    # Returns pairs of "Archive-basename asset-ID"
+    local archive_suffix=.zip
+    local assets_regex="^ *\"assets\":"
+    local aid_regex="^ *\"id\":"
+    local name_regex="^ *\"name\":"
+    local end1_regex="^ *},$"
+    local end2_regex="^ *],$"
+    local extract_id='s/[^:]*: *\([0-9a-zA-Z]*\).*/\1/'
+    local extract_string='s/[^:]*[^"]*"\([^"]*\).*/\1/'
+    local assets_started=
+    local aid=
+    local name=
+    gh.release_data | \
+    while IFS= read -r line; do
+        [ -z "$assets_started" ] && [[ ! "$line" =~ $assets_regex ]] && continue
+        assets_started=true
+        [[ "$line" =~ $end2_regex ]] && break # end of assets
+
+        if [[ "$line" =~ $aid_regex ]] && [ -z "$aid" ]; then
+            aid=$(echo $line | sed "$extract_id")
+        fi
+        if [[ "$line" =~ $name_regex ]]; then
+            name=$(echo $line | sed "$extract_string")
+        fi
+        if [[ "$line" =~ $end1_regex ]] && [ -n "$aid" ]; then
+            # Select only one suffix
+            if [[ "$name" == *"${archive_suffix}" ]]; then
+                printf "%s %s\0" "${name%$archive_suffix}" "${aid}"
+            fi
+            aid=
+        fi
+    done
 }
 
 nerd.font_list() {
-    while IFS= read -r line; do
+    nerd.released_archives | \
+    while IFS= read -d $'\0' -r line; do
         if [[ "$line" == *FontPatcher* ]]; then
             continue
         fi
-        echo "$line" | sed 's/^.*\/\(.*\).zip$/\1/'
-    done < <(nerd.released_zip)
+        echo "${line%% *}"
+    done
+}
+
+nerd.find_asset_id() {
+    local aid=
+    nerd.released_archives | \
+    while IFS= read -d $'\0' -r line; do
+        if [ "${line%% *}" = "${1}" ]; then
+            echo "${line#* }"
+        fi
+    done
 }
 
 nerd.install_font() {
     # usage:  nerd.install_font <font name>
 
-    msg.info "download & install font: ${1}"
+    local aid
+    aid=$(nerd.find_asset_id "${1}")
+    if [ -z "$aid" ]; then
+        sh.die.err 42 "Can not find asset ID of ${1}"
+    fi
+    msg.info "download & install font: ${1} (asset ${aid})"
     (
         set -e
         local dst
-        gh.download_asset "${1}.zip"
+        gh.download_asset "${1}.zip" "${aid}"
         mkdir -p "${1}"
         unzip -q -o -d "${1}" "${1}.zip"
         mkdir -p "$FONT_DIR"
@@ -298,15 +342,18 @@ gh.get_release_data() {
 }
 
 gh.download_asset() {
-    # usage: gh.download_asset <asset filename>
+    # usage: gh.download_asset <target file name> <asset id>
 
     local fname="${1}"
+    local aid="${2}"
     local url
     local filesize
 
-    url="https://github.com/$GH_OWNER/$GH_REPO/releases/download/$(gh.release_tag)/${fname}"
+    url="https://api.github.com/repos/$GH_OWNER/$GH_REPO/releases/assets/${aid}"
     msg.debug "gh.download_asset URL $url"
-    curl -L \
+    curl --silent -L \
+        -H "Accept: application/octet-stream" \
+        -H "X-GitHub-Api-Version: $GH_API_VERSION" \
         -H "${AUTH}" \
         "${url}" -o "${fname}" || sh.die.err $? "can't download $url"
 
