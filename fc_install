@@ -246,7 +246,7 @@ nerd.released_archives() {
         if [[ "${line}" =~ ${end1_regex} ]] && [ -n "${aid}" ]; then
             # Select only one suffix
             if [[ "${name}" == *"${archive_suffix}" ]]; then
-                printf "%s %s\0" "${name%"${archive_suffix}"}" "${aid}"
+                printf "%s|%s\n" "${name%"${archive_suffix}"}" "${aid}"
             fi
             aid=
         fi
@@ -255,20 +255,20 @@ nerd.released_archives() {
 
 nerd.font_list() {
     nerd.released_archives | \
-    while IFS= read -d $'\0' -r line; do
+    while IFS= read -r line; do
         if [[ "${line}" == *FontPatcher* ]]; then
             continue
         fi
-        echo "${line%% *}"
+        echo "${line%%|*}"
     done
 }
 
 nerd.find_asset_id() {
     local aid=
     nerd.released_archives | \
-    while IFS= read -d $'\0' -r line; do
-        if [ "${line%% *}" = "${1}" ]; then
-            echo "${line#* }"
+    while IFS= read -r line; do
+        if [ "${line%%|*}" = "${1}" ]; then
+            echo "${line#*|}"
         fi
     done
 }
