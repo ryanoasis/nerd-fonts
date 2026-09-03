@@ -373,7 +373,7 @@ scripts.requires() {
 }
 
 main() {
-    local cmd="${1:-install}"
+    local cmd="${1:-help}"
     shift || true
     scripts.requires "${_REQUIREMENTS[@]}" || sh.die.err $? "first install missing requirements"
 
