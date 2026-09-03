@@ -266,6 +266,10 @@ gh.release_data() {
         msg.debug "release data: $_GH_RELEASE_DATA"
         sh.die.err 42 "release tag $GH_RELEASE_TAG does not exists"
     fi
+    if echo "$_GH_RELEASE_DATA" | grep -q '"message":"API rate limit exceeded' &>/dev/null; then
+        msg.debug "release data: $_GH_RELEASE_DATA"
+        sh.die.err 42 "GitHub API rate limit exceeded. Wait or use GH_TOKEN."
+    fi
     echo "$_GH_RELEASE_DATA"
 }
 
@@ -302,8 +306,8 @@ gh.download_asset() {
 
     # check if the response from GH is just a "Not Found"
     filesize=$(stat -c%s "${fname}")
-    if [ 15 -ge "$filesize" ]; then
-        if [ "$(head -c 10 "${fname}")" = "Not Found" ]; then
+    if [ "$filesize" -ge 30 ]; then
+        if [[ "$(head -c 30 "${fname}")" =~ "Not Found" ]]; then
             msg.err "Asset Not Found: $url"
             return 42
         fi
