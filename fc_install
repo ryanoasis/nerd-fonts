@@ -260,7 +260,7 @@ gh.release_data() {
     if [ "$_GH_RELEASE_DATA" = "" ]; then
         _GH_RELEASE_DATA="$(gh.get_release_data)"
     fi
-    if echo "$_GH_RELEASE_DATA" | grep '"message": "Not Found"' &>/dev/null; then
+    if echo "$_GH_RELEASE_DATA" | grep -q '"message": "Not Found"' &>/dev/null; then
         msg.debug "release data: $_GH_RELEASE_DATA"
         sh.die.err 42 "release tag $GH_RELEASE_TAG does not exists"
     fi
