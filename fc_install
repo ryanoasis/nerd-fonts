@@ -24,6 +24,7 @@
 # Nerd Fonts Version: 3.5.0
 # Script Version: 1.0.0
 
+# shellcheck enable=require-variable-braces
 
 set -euo pipefail
 shopt -s inherit_errexit
@@ -45,12 +46,12 @@ FONT_FORMATS=(ttf otf)
 if [ "$(uname)" = "Darwin" ]; then
     # MacOS
     sys_share_dir="/Library"
-    usr_share_dir="$HOME/Library"
+    usr_share_dir="${HOME}/Library"
     font_subdir="Fonts"
 else
     # Linux
     sys_share_dir="/usr/local/share"
-    usr_share_dir="$HOME/.local/share"
+    usr_share_dir="${HOME}/.local/share"
     font_subdir="fonts"
 fi
 XDG_DATA_HOME="${XDG_DATA_HOME:-}"
@@ -77,7 +78,7 @@ Install and update Nerd Fonts [1] from the GitHub releases [2].
 See \`$(basename "$0") install --help\` for details.
 
 [1] https://www.nerdfonts.com/
-[2] https://github.com/$GH_OWNER/$GH_REPO/releases
+[2] https://github.com/${GH_OWNER}/${GH_REPO}/releases
 
 cmd:
   help      : show this help message
@@ -108,7 +109,7 @@ By default the user font directory is used; run script as root for a
 system wide install.
 
 The target directory is determined to be
-  $FONT_DIR
+  ${FONT_DIR}
 EOF
 }
 cmd.install() {
@@ -119,38 +120,38 @@ cmd.install() {
     gh.release_data >/dev/null # Needed to fill 'cache' environment variable
     IFS=$'\n' read -r -d '' -a font_list < <(nerd.font_list && printf '\0')
 
-    if [ "$font_name" = "all" ]; then
+    if [ "${font_name}" = "all" ]; then
         msg.info "install all ${#font_list[@]} fonts"
         msg.warn "installing all fonts will take its time / time for a coffee break"
-    elif [ "$font_name" = "" ]; then
+    elif [ "${font_name}" = "" ]; then
         PS3="Enter a number: "
         select font_name in "${font_list[@]}" "all"; do
-            if [ "$font_name" = "all" ]; then
+            if [ "${font_name}" = "all" ]; then
                 msg.warn "installing all fonts will take its time / time for a coffee break"
                 break
-            elif sh.in_array "$font_name" "${font_list[@]}"; then
-                font_list=("$font_name")
+            elif sh.in_array "${font_name}" "${font_list[@]}"; then
+                font_list=("${font_name}")
                 break
             else
                 msg.err "invalid choice."
             fi
         done
-        msg.debug "user selected font $font_name"
+        msg.debug "user selected font ${font_name}"
     else
-        sh.in_array "$font_name" "${font_list[@]}" ||
-            sh.die.err 42 "font $font_name does not exists in release $GH_RELEASE_TAG"
-        font_list=("$font_name")
+        sh.in_array "${font_name}" "${font_list[@]}" ||
+            sh.die.err 42 "font ${font_name} does not exists in release ${GH_RELEASE_TAG}"
+        font_list=("${font_name}")
     fi
 
-    msg.info "install fonts into folder: $FONT_DIR"
+    msg.info "install fonts into folder: ${FONT_DIR}"
     tmp_folder="$(mktemp -d)"
-    msg.debug "Workdir $tmp_folder"
-    pushd "$tmp_folder" &>/dev/null || sh.die.err 42 "can't cd $tmp_folder"
+    msg.debug "Workdir ${tmp_folder}"
+    pushd "${tmp_folder}" &>/dev/null || sh.die.err 42 "can't cd ${tmp_folder}"
     for font in "${font_list[@]}"; do
-        nerd.install_font "$font"
+        nerd.install_font "${font}"
     done
     popd &>/dev/null
-    rm -rf "$tmp_folder"
+    rm -rf "${tmp_folder}"
     if command fc-cache; then
         msg.info "fontconfig: build font information cache files"
         fc-cache
@@ -162,31 +163,31 @@ cmd.remove.help() {
 Usage: $(basename "$0") remove
 
 Uninstall all previous installed Nerd Fonts.
-In fact purging the directory $FONT_DIR
+In fact purging the directory ${FONT_DIR}
 EOF
 }
 
 cmd.remove() {
     [ "$#" -ne 0 ] && sh.die.err 42 "${FUNCNAME#"cmd."}: unknown arguments $*"
-    if [ -d "$FONT_DIR" ]; then
-        msg.info "remove font folder $FONT_DIR"
-        rm -rf "$FONT_DIR"
+    if [ -d "${FONT_DIR}" ]; then
+        msg.info "remove font folder ${FONT_DIR}"
+        rm -rf "${FONT_DIR}"
         if command fc-cache; then
             msg.info "fontconfig: build font information cache files"
             fc-cache
         fi
     else
-        msg.err "Nerd Fonts not installed at $FONT_DIR"
+        msg.err "Nerd Fonts not installed at ${FONT_DIR}"
     fi
 }
 
 cmd.list() {
     [ "$#" -ne 0 ] && sh.die.err 42 "${FUNCNAME#"cmd."}: unknown arguments $*"
-    if [ "$GH_RELEASE_TAG" = "latest" ]; then
+    if [ "${GH_RELEASE_TAG}" = "latest" ]; then
         GH_RELEASE_TAG="$(gh.latest_release)"
-        msg.info "$GH_OWNER/$GH_REPO: latest ($GH_RELEASE_TAG)"
+        msg.info "${GH_OWNER}/${GH_REPO}: latest (${GH_RELEASE_TAG})"
     else
-        msg.info "$GH_OWNER/$GH_REPO: $GH_RELEASE_TAG"
+        msg.info "${GH_OWNER}/${GH_REPO}: ${GH_RELEASE_TAG}"
     fi
     nerd.font_list
 }
@@ -232,20 +233,20 @@ nerd.released_archives() {
     local name=
     gh.release_data | \
     while IFS= read -r line; do
-        [ -z "$assets_started" ] && [[ ! "$line" =~ $assets_regex ]] && continue
+        [ -z "${assets_started}" ] && [[ ! "${line}" =~ ${assets_regex} ]] && continue
         assets_started=true
-        [[ "$line" =~ $end2_regex ]] && break # end of assets
+        [[ "${line}" =~ ${end2_regex} ]] && break # end of assets
 
-        if [[ "$line" =~ $aid_regex ]] && [ -z "$aid" ]; then
-            aid=$(echo "$line" | sed "$extract_id")
+        if [[ "${line}" =~ ${aid_regex} ]] && [ -z "${aid}" ]; then
+            aid=$(echo "${line}" | sed "${extract_id}")
         fi
-        if [[ "$line" =~ $name_regex ]]; then
-            name=$(echo "$line" | sed "$extract_string")
+        if [[ "${line}" =~ ${name_regex} ]]; then
+            name=$(echo "${line}" | sed "${extract_string}")
         fi
-        if [[ "$line" =~ $end1_regex ]] && [ -n "$aid" ]; then
+        if [[ "${line}" =~ ${end1_regex} ]] && [ -n "${aid}" ]; then
             # Select only one suffix
-            if [[ "$name" == *"${archive_suffix}" ]]; then
-                printf "%s %s\0" "${name%"$archive_suffix"}" "${aid}"
+            if [[ "${name}" == *"${archive_suffix}" ]]; then
+                printf "%s %s\0" "${name%"${archive_suffix}"}" "${aid}"
             fi
             aid=
         fi
@@ -255,7 +256,7 @@ nerd.released_archives() {
 nerd.font_list() {
     nerd.released_archives | \
     while IFS= read -d $'\0' -r line; do
-        if [[ "$line" == *FontPatcher* ]]; then
+        if [[ "${line}" == *FontPatcher* ]]; then
             continue
         fi
         echo "${line%% *}"
@@ -277,7 +278,7 @@ nerd.install_font() {
 
     local aid
     aid=$(nerd.find_asset_id "${1}")
-    if [ -z "$aid" ]; then
+    if [ -z "${aid}" ]; then
         sh.die.err 42 "Can not find asset ID of ${1}"
     fi
     msg.info "download & install font: ${1} (asset ${aid})"
@@ -287,12 +288,12 @@ nerd.install_font() {
         gh.download_asset "${1}.tar.xz" "${aid}"
         mkdir -p "${1}"
         tar xf "${1}.tar.xz" -C "${1}"
-        mkdir -p "$FONT_DIR"
+        mkdir -p "${FONT_DIR}"
         for filename in "${1}"/*; do
             if sh.in_array "${filename##*.}" "${FONT_FORMATS[@]}"; then
-                dst="$FONT_DIR/$(basename "$filename")"
-                msg.debug "install font: $dst"
-                mv "$filename" "$dst"
+                dst="${FONT_DIR}/$(basename "${filename}")"
+                msg.debug "install font: ${dst}"
+                mv "${filename}" "${dst}"
             fi
         done
     )
@@ -303,42 +304,42 @@ nerd.install_font() {
 # ------------
 
 gh.latest_release() {
-    msg.debug "gh.latest_release() - URL https://github.com/$GH_OWNER/$GH_REPO/releases/latest"
-    basename "$(curl -H "${AUTH}" -fs -o/dev/null -w "%{redirect_url}" "https://github.com/$GH_OWNER/$GH_REPO/releases/latest")"
+    msg.debug "gh.latest_release() - URL https://github.com/${GH_OWNER}/${GH_REPO}/releases/latest"
+    basename "$(curl -H "${AUTH}" -fs -o/dev/null -w "%{redirect_url}" "https://github.com/${GH_OWNER}/${GH_REPO}/releases/latest")"
 }
 
 gh.release_data() {
     gh.release_tag
-    if [ "$_GH_RELEASE_DATA" = "" ]; then
+    if [ "${_GH_RELEASE_DATA}" = "" ]; then
         _GH_RELEASE_DATA="$(gh.get_release_data)"
     fi
-    if echo "$_GH_RELEASE_DATA" | grep -q '"message": "Not Found"' &>/dev/null; then
-        msg.debug "release data: $_GH_RELEASE_DATA"
-        sh.die.err 42 "release tag $GH_RELEASE_TAG does not exists"
+    if echo "${_GH_RELEASE_DATA}" | grep -q '"message": "Not Found"' &>/dev/null; then
+        msg.debug "release data: ${_GH_RELEASE_DATA}"
+        sh.die.err 42 "release tag ${GH_RELEASE_TAG} does not exists"
     fi
-    if echo "$_GH_RELEASE_DATA" | grep -q '"message":"API rate limit exceeded' &>/dev/null; then
-        msg.debug "release data: $_GH_RELEASE_DATA"
+    if echo "${_GH_RELEASE_DATA}" | grep -q '"message":"API rate limit exceeded' &>/dev/null; then
+        msg.debug "release data: ${_GH_RELEASE_DATA}"
         sh.die.err 42 "GitHub API rate limit exceeded. Wait or use GH_TOKEN."
     fi
-    echo "$_GH_RELEASE_DATA"
+    echo "${_GH_RELEASE_DATA}"
 }
 
 gh.release_tag() {
-    if [ "$GH_RELEASE_TAG" = "latest" ]; then
+    if [ "${GH_RELEASE_TAG}" = "latest" ]; then
         GH_RELEASE_TAG="$(gh.latest_release)"
     fi
-    echo "$GH_RELEASE_TAG"
+    echo "${GH_RELEASE_TAG}"
 }
 
 gh.get_release_data() {
     local url
-    url="https://api.github.com/repos/$GH_OWNER/$GH_REPO/releases/tags/$(gh.release_tag)"
-    msg.debug "gh.get_release_data() URL $url"
+    url="https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/releases/tags/$(gh.release_tag)"
+    msg.debug "gh.get_release_data() URL ${url}"
     curl --silent -L \
         -H "Accept: application/vnd.github+json" \
-        -H "X-GitHub-Api-Version: $GH_API_VERSION" \
+        -H "X-GitHub-Api-Version: ${GH_API_VERSION}" \
         -H "${AUTH}" \
-        "$url"
+        "${url}"
 }
 
 gh.download_asset() {
@@ -349,19 +350,19 @@ gh.download_asset() {
     local url
     local filesize
 
-    url="https://api.github.com/repos/$GH_OWNER/$GH_REPO/releases/assets/${aid}"
-    msg.debug "gh.download_asset URL $url"
+    url="https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/releases/assets/${aid}"
+    msg.debug "gh.download_asset URL ${url}"
     curl --silent -L \
         -H "Accept: application/octet-stream" \
-        -H "X-GitHub-Api-Version: $GH_API_VERSION" \
+        -H "X-GitHub-Api-Version: ${GH_API_VERSION}" \
         -H "${AUTH}" \
-        "${url}" -o "${fname}" || sh.die.err $? "can't download $url"
+        "${url}" -o "${fname}" || sh.die.err $? "can't download ${url}"
 
     # check if the response from GH is just a "Not Found"
     filesize=$(stat -c%s "${fname}")
-    if [ "$filesize" -ge 30 ]; then
+    if [ "${filesize}" -ge 30 ]; then
         if head -c 30 "${fname}" | grep -q "Not Found"; then
-            msg.err "Asset Not Found: $url"
+            msg.err "Asset Not Found: ${url}"
             return 42
         fi
     fi
@@ -379,7 +380,7 @@ else
     _BYellow=''
     _BBlue=''
     _BRed=''
-    _creset='' # reset all attributes
+    _creset=''
 fi
 
 msg.err() {
@@ -414,14 +415,14 @@ sh.prompt-err() {
     ## the exit code is not zero.
 
     local err=${1}
-    [ "$err" -ne "0" ] && msg.err "${FUNCNAME[1]} exit with error ($err)"
-    return "$err"
+    [ "${err}" -ne 0 ] && msg.err "${FUNCNAME[1]} exit with error (${err})"
+    return "${err}"
 }
 
 sh.in_array() {
     local word="${1}"
     shift
-    for e in "$@"; do [[ "$e" == "$word" ]] && return 0; done
+    for e in "$@"; do [[ "${e}" == "${word}" ]] && return 0; done
     return 1
 }
 
@@ -434,7 +435,7 @@ scripts.requires() {
         fi
         shift
     done
-    return $exit_val
+    return "${exit_val}"
 }
 
 main() {
@@ -449,24 +450,24 @@ main() {
         AUTH="X-noop;"
     fi
 
-    case "$cmd" in
+    case "${cmd}" in
     help | --help) cmd.help ;;
     *)
-        _type="$(type -t "cmd.$cmd")" || true
-        if [ "$_type" != "function" ]; then
-            sh.die.err 42 "unknown command: $cmd / use --help"
+        _type="$(type -t "cmd.${cmd}")" || true
+        if [ "${_type}" != "function" ]; then
+            sh.die.err 42 "unknown command: ${cmd} / use --help"
         fi
 
         if [ "${1-}" = '--help' ]; then
-            _type="$(type -t "cmd.$cmd.help")" || true
-            if [ "$_type" = 'function' ]; then
+            _type="$(type -t "cmd.${cmd}.help")" || true
+            if [ "${_type}" = 'function' ]; then
                 "cmd.${cmd}.help"
             else
                 "cmd.help"
             fi
         else
             [ "${VERBOSE}" -ge 3 ] && set -x
-            "cmd.$cmd" "$@"
+            "cmd.${cmd}" "$@"
         fi
         ;;
     esac
