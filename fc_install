@@ -116,18 +116,22 @@ EOF
 cmd.install() {
     local font_name="${1-}"
     local tmp_folder
+    local font_list
+    local font_list_size
 
-    gh.release_data >/dev/null # Needed to fill 'cache' environment variable
-    local font_list=$(nerd.font_list)
+    font_list=$(nerd.font_list)
+    # shellcheck disable=SC2086 # We actually need word splitting of font_list here
+    font_list_size=$(sh.count ${font_list})
 
     if [ "${font_name}" = "all" ]; then
-        msg.info "install all $(sh.count ${font_list}) fonts"
+        msg.info "install all ${font_list_size} fonts"
         msg.warn "installing all fonts will take its time / time for a coffee break"
     elif [ "${font_name}" = "" ]; then
         PS3="Enter a number: "
         select font_name in ${font_list} "all"; do
+            # shellcheck disable=SC2086 # We actually need word splitting of font_list here in the else
             if [ "${font_name}" = "all" ]; then
-                msg.info "install all $(sh.count ${font_list}) fonts"
+                msg.info "install all ${font_list_size} fonts"
                 msg.warn "installing all fonts will take its time / time for a coffee break"
                 break
             elif sh.in_array "${font_name}" ${font_list}; then
@@ -139,6 +143,7 @@ cmd.install() {
         done
         msg.debug "user selected font ${font_name}"
     else
+        # shellcheck disable=SC2086 # We actually need word splitting of font_list here
         sh.in_array "${font_name}" ${font_list} ||
             sh.die.err 42 "font ${font_name} does not exists in release ${GH_RELEASE_TAG}"
         font_list="${font_name}"
