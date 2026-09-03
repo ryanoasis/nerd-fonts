@@ -171,6 +171,10 @@ cmd.remove() {
     if [ -d "$FONT_DIR" ]; then
         msg.info "remove font folder $FONT_DIR"
         rm -rf "$FONT_DIR"
+        if command fc-cache; then
+            msg.info "fontconfig: build font information cache files"
+            fc-cache
+        fi
     else
         msg.err "Nerd Fonts not installed at $FONT_DIR"
     fi
