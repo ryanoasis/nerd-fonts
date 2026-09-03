@@ -115,23 +115,23 @@ EOF
 }
 cmd.install() {
     local font_name="${1-}"
-    local font_list=()
     local tmp_folder
 
     gh.release_data >/dev/null # Needed to fill 'cache' environment variable
-    IFS=$'\n' read -r -d '' -a font_list < <(nerd.font_list && printf '\0')
+    local font_list=$(nerd.font_list)
 
     if [ "${font_name}" = "all" ]; then
-        msg.info "install all ${#font_list[@]} fonts"
+        msg.info "install all $(sh.count ${font_list}) fonts"
         msg.warn "installing all fonts will take its time / time for a coffee break"
     elif [ "${font_name}" = "" ]; then
         PS3="Enter a number: "
-        select font_name in "${font_list[@]}" "all"; do
+        select font_name in ${font_list} "all"; do
             if [ "${font_name}" = "all" ]; then
+                msg.info "install all $(sh.count ${font_list}) fonts"
                 msg.warn "installing all fonts will take its time / time for a coffee break"
                 break
-            elif sh.in_array "${font_name}" "${font_list[@]}"; then
-                font_list=("${font_name}")
+            elif sh.in_array "${font_name}" ${font_list}; then
+                font_list="${font_name}"
                 break
             else
                 msg.err "invalid choice."
@@ -139,16 +139,16 @@ cmd.install() {
         done
         msg.debug "user selected font ${font_name}"
     else
-        sh.in_array "${font_name}" "${font_list[@]}" ||
+        sh.in_array "${font_name}" ${font_list} ||
             sh.die.err 42 "font ${font_name} does not exists in release ${GH_RELEASE_TAG}"
-        font_list=("${font_name}")
+        font_list="${font_name}"
     fi
 
     msg.info "install fonts into folder: ${FONT_DIR}"
     tmp_folder="$(mktemp -d)"
     msg.debug "Workdir ${tmp_folder}"
     pushd "${tmp_folder}" &>/dev/null || sh.die.err 42 "can't cd ${tmp_folder}"
-    for font in "${font_list[@]}"; do
+    for font in ${font_list}; do
         nerd.install_font "${font}"
     done
     popd &>/dev/null
@@ -425,6 +425,10 @@ sh.in_array() {
     shift
     for e in "$@"; do [ "${e}" = "${word}" ] && return 0; done
     return 1
+}
+
+sh.count() {
+    echo $#
 }
 
 scripts.requires() {
