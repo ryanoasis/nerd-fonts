@@ -65,7 +65,8 @@ else
 fi
 
 _REQUIREMENTS=("curl" "sed" "tar" "mktemp")
-_GH_RELEASE_DATA=""
+_GH_RELEASE_DATA=
+_GH_ASSET_DATA=
 
 # command line interface
 # ----------------------
@@ -218,7 +219,7 @@ EOF
 # Nerd Fonts
 # ----------
 
-nerd.released_archives() {
+nerd.assemble_released_archives() {
     # Returns pairs of "Archive-basename asset-ID"
     local archive_suffix=.tar.xz
     local assets_regex="^ *\"assets\":"
@@ -231,6 +232,7 @@ nerd.released_archives() {
     local assets_started=
     local aid=
     local name=
+    msg.debug "nerd.assemble_released_archives() for ${archive_suffix}"
     gh.release_data | \
     while IFS= read -r line; do
         [ -z "${assets_started}" ] && [[ ! "${line}" =~ ${assets_regex} ]] && continue
@@ -251,6 +253,11 @@ nerd.released_archives() {
             aid=
         fi
     done
+}
+
+nerd.released_archives() {
+    _GH_ASSET_DATA="${_GH_ASSET_DATA:-$(nerd.assemble_released_archives)}"
+    printf "%s\n" "${_GH_ASSET_DATA}"
 }
 
 nerd.font_list() {
@@ -304,7 +311,7 @@ nerd.install_font() {
 # ------------
 
 gh.latest_release() {
-    msg.debug "gh.latest_release() - URL https://github.com/${GH_OWNER}/${GH_REPO}/releases/latest"
+    msg.debug "gh.latest_release() URL https://github.com/${GH_OWNER}/${GH_REPO}/releases/latest"
     basename "$(curl -H "${AUTH}" -fs -o/dev/null -w "%{redirect_url}" "https://github.com/${GH_OWNER}/${GH_REPO}/releases/latest")"
 }
 
@@ -439,9 +446,14 @@ main() {
         AUTH="X-noop;"
     fi
 
-    case "${cmd}" in
-    help | --help) cmd.help ;;
-    *)
+    if [ "${cmd}" = "help" ] || [ "${cmd}" = "--help" ]; then
+        cmd.help
+    else
+        if [ "${cmd}" = "list" ] || [ "${cmd}" = "install" ]; then
+            # Needed to fill 'cache' environment variables:
+            gh.release_data >/dev/null
+            nerd.released_archives >/dev/null
+        fi
         _type="$(type -t "cmd.${cmd}")" || true
         if [ "${_type}" != "function" ]; then
             sh.die.err 42 "unknown command: ${cmd} / use --help"
@@ -458,8 +470,7 @@ main() {
             [ "${VERBOSE}" -ge 3 ] && set -x
             "cmd.${cmd}" "$@"
         fi
-        ;;
-    esac
+    fi
 }
 
 echo "Nerd Fonts installer -- Version ${scriptversion}"
