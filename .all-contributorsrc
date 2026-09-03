@@ -2133,6 +2133,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "return42",
+      "name": "Markus Heiser",
+      "avatar_url": "https://avatars.githubusercontent.com/u/554536?v=4",
+      "profile": "https://github.com/return42",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
