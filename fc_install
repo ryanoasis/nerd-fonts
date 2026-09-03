@@ -121,6 +121,7 @@ cmd.install() {
 
     if [ "$font_name" = "all" ]; then
         msg.info "install all ${#font_list[@]} fonts"
+        msg.warn "installing all fonts will take its time / time for a coffee break"
     elif [ "$font_name" = "" ]; then
         PS3="Enter a number: "
         select font_name in "${font_list[@]}" "all"; do
@@ -138,6 +139,7 @@ cmd.install() {
     else
         sh.in_array "$font_name" "${font_list[@]}" ||
             sh.die.err 42 "font $font_name does not exists in release $GH_RELEASE_TAG"
+        font_list=("$font_name")
     fi
 
     msg.info "install fonts into folder: $FONT_DIR"
