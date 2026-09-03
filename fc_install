@@ -40,7 +40,7 @@ GH_RELEASE_TAG="${GH_RELEASE_TAG:-latest}"
 GH_OWNER="${GH_OWNER:-ryanoasis}"
 GH_REPO="${GH_REPO:-nerd-fonts}"
 GH_TOKEN="${GH_TOKEN:-}"
-FONT_FORMATS=(ttf otf)
+FONT_FORMATS="${FONT_FORMATS:-ttf|otf}"
 
 # Get target font directory
 if [ "$(uname)" = "Darwin" ]; then
@@ -204,7 +204,7 @@ GH_OWNER=${GH_OWNER}
 GH_REPO=${GH_REPO}
 GH_TOKEN=${GH_TOKEN}
 FONT_DIR=${FONT_DIR}
-FONT_FORMATS=(${FONT_FORMATS[@]})
+FONT_FORMATS=${FONT_FORMATS}
 XDG_DATA_HOME=${XDG_DATA_HOME}
 TERM=${TERM}
 
@@ -296,13 +296,18 @@ nerd.install_font() {
         mkdir -p "${1}"
         tar xf "${1}.tar.xz" -C "${1}"
         mkdir -p "${FONT_DIR}"
+        local found_one=
         for filename in "${1}"/*; do
-            if sh.in_array "${filename##*.}" "${FONT_FORMATS[@]}"; then
+            if [[ "${filename##*.}" =~ ${FONT_FORMATS} ]]; then
                 dst="${FONT_DIR}/$(basename "${filename}")"
                 msg.debug "install font: ${dst}"
                 mv "${filename}" "${dst}"
+                found_one=true
             fi
         done
+        if [ -z "${found_one}" ]; then
+            msg.warn "no font file matching \"${FONT_FORMATS}\" for ${1}"
+        fi
     )
     sh.prompt-err $?
 }
