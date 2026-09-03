@@ -360,7 +360,7 @@ gh.download_asset() {
     # check if the response from GH is just a "Not Found"
     filesize=$(stat -c%s "${fname}")
     if [ "$filesize" -ge 30 ]; then
-        if [[ "$(head -c 30 "${fname}")" =~ "Not Found" ]]; then
+        if head -c 30 "${fname}" | grep -q "Not Found"; then
             msg.err "Asset Not Found: $url"
             return 42
         fi
