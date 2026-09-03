@@ -15,14 +15,14 @@
 #   $ shellcheck fc_install
 #
 # [1] https://www.nerdfonts.com/
-# [2] https://github.com/$GH_OWNER/$GH_REPO/releases
+# [2] https://github.com/ryanoasis/nerd-fonts/releases
 
 # SPDX-License-Identifier: MIT
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
+scriptversion="1.0.0"
 # Nerd Fonts Version: 3.5.0
-# Script Version: 1.0.0
 
 # shellcheck enable=require-variable-braces
 
@@ -473,4 +473,6 @@ main() {
     esac
 }
 
+echo "Nerd Fonts installer -- Version ${scriptversion}"
+echo "                     -- Bash ${BASH_VERSION}"
 main "$@"
