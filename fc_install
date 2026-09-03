@@ -394,7 +394,7 @@ msg.warn() {
 }
 msg.info() {
     if [ "${VERBOSE}" -ge 1 ]; then
-        echo -e "${_BYellow}INFO:${_creset}  $*" >&2
+        echo -e "${_BGreen}INFO:${_creset}  $*" >&2
     fi
     return 0
 }
@@ -488,11 +488,13 @@ if [ ! -t 2 ] || \
     _BYellow=''
     _BBlue=''
     _BRed=''
+    _BGreen=''
     _creset=''
 else
     _BYellow='\e[1;33m'
     _BBlue='\e[1;94m'
     _BRed='\e[1;31m'
+    _BGreen='\e[1;32m'
     _creset='\e[0m'
 fi
 
