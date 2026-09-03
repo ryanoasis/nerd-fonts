@@ -38,6 +38,7 @@ GH_API_VERSION="${GH_API_VERSION:-2022-11-28}"
 GH_RELEASE_TAG="${GH_RELEASE_TAG:-latest}"
 GH_OWNER="${GH_OWNER:-ryanoasis}"
 GH_REPO="${GH_REPO:-nerd-fonts}"
+GH_TOKEN="${GH_TOKEN:-}"
 FONT_FORMATS=(ttf otf)
 
 # Get target font directory
@@ -193,6 +194,7 @@ GH_API_VERSION=${GH_API_VERSION}
 GH_RELEASE_TAG=${GH_RELEASE_TAG}
 GH_OWNER=${GH_OWNER}
 GH_REPO=${GH_REPO}
+GH_TOKEN=${GH_TOKEN}
 FONT_DIR=${FONT_DIR}
 FONT_FORMATS=(${FONT_FORMATS[@]})
 XDG_DATA_HOME=${XDG_DATA_HOME}
@@ -252,7 +254,7 @@ nerd.install_font() {
 
 gh.latest_release() {
     msg.debug "gh.latest_release() - URL https://github.com/$GH_OWNER/$GH_REPO/releases/latest"
-    basename "$(curl -fs -o/dev/null -w "%{redirect_url}" "https://github.com/$GH_OWNER/$GH_REPO/releases/latest")"
+    basename "$(curl -H "${AUTH}" -fs -o/dev/null -w "%{redirect_url}" "https://github.com/$GH_OWNER/$GH_REPO/releases/latest")"
 }
 
 gh.release_data() {
@@ -281,6 +283,7 @@ gh.get_release_data() {
     curl --silent -L \
         -H "Accept: application/vnd.github+json" \
         -H "X-GitHub-Api-Version: $GH_API_VERSION" \
+        -H "${AUTH}" \
         "$url"
 }
 
@@ -293,7 +296,9 @@ gh.download_asset() {
 
     url="https://github.com/$GH_OWNER/$GH_REPO/releases/download/$(gh.release_tag)/${fname}"
     msg.debug "gh.download_asset URL $url"
-    curl -L -# "${url}" -o "${fname}" || sh.die.err $? "can't download $url"
+    curl -L \
+        -H "${AUTH}" \
+        "${url}" -o "${fname}" || sh.die.err $? "can't download $url"
 
     # check if the response from GH is just a "Not Found"
     filesize=$(stat -c%s "${fname}")
@@ -379,6 +384,13 @@ main() {
     local cmd="${1:-help}"
     shift || true
     scripts.requires "${_REQUIREMENTS[@]}" || sh.die.err $? "first install missing requirements"
+
+    if [ -n "${GH_TOKEN}" ]; then
+        msg.debug "Using Github token to avoid rate limits and allow draft downloads"
+        AUTH="Authorization: Bearer ${GH_TOKEN}"
+    else
+        AUTH="X-noop;"
+    fi
 
     case "$cmd" in
     help | --help) cmd.help ;;
