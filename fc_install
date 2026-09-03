@@ -119,9 +119,9 @@ cmd.install() {
     gh.release_data >/dev/null
     IFS=$'\n' read -r -d '' -a font_list < <(nerd.font_list && printf '\0')
 
-    if [ "$font_name" == "all" ]; then
+    if [ "$font_name" = "all" ]; then
         msg.info "install all ${#font_list[@]} fonts"
-    elif [ "$font_name" == "" ]; then
+    elif [ "$font_name" = "" ]; then
         PS3="Enter a number: "
         select font_name in "${font_list[@]}" "all"; do
             if [ "$font_name" = "all" ]; then
@@ -404,7 +404,7 @@ main() {
             sh.die.err 42 "unknown command: $cmd / use --help"
         fi
 
-        if [ "${1-}" == '--help' ]; then
+        if [ "${1-}" = '--help' ]; then
             _type="$(type -t "cmd.$cmd.help")" || true
             if [ "$_type" = 'function' ]; then
                 "cmd.${cmd}.help"
