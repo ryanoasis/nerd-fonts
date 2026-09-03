@@ -46,7 +46,7 @@ else
     FONT_DIR="${FONT_DIR:-/usr/local/share/fonts/NerdFonts}"
 fi
 
-_REQUIREMENTS=("curl" "fc-cache")
+_REQUIREMENTS=("curl")
 _GH_RELEASE_DATA=""
 
 # command line interface
@@ -123,8 +123,10 @@ cmd.install() {
     done
     popd &>/dev/null
     rm -rf "$tmp_folder"
-    msg.info "fontconfig: build font information cache files"
-    fc-cache
+    if command fc-cache; then
+        msg.info "fontconfig: build font information cache files"
+        fc-cache
+    fi
 }
 
 cmd.remove.help() {
