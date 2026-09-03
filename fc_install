@@ -116,7 +116,7 @@ cmd.install() {
     local font_list=()
     local tmp_folder
 
-    gh.release_data >/dev/null
+    gh.release_data >/dev/null # Needed to fill 'cache' environment variable
     IFS=$'\n' read -r -d '' -a font_list < <(nerd.font_list && printf '\0')
 
     if [ "$font_name" = "all" ]; then
@@ -144,7 +144,7 @@ cmd.install() {
 
     msg.info "install fonts into folder: $FONT_DIR"
     tmp_folder="$(mktemp -d)"
-    msg.debug "cd $tmp_folder"
+    msg.debug "Workdir $tmp_folder"
     pushd "$tmp_folder" &>/dev/null || sh.die.err 42 "can't cd $tmp_folder"
     for font in "${font_list[@]}"; do
         nerd.install_font "$font"
