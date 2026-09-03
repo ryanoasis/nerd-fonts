@@ -27,7 +27,9 @@ scriptversion="1.0.0"
 # shellcheck enable=require-variable-braces
 
 set -euo pipefail
-shopt -s inherit_errexit
+if shopt | grep -s inherit_errexit; then
+    shopt -s inherit_errexit
+fi
 
 # environment
 # -----------
