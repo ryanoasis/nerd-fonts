@@ -40,10 +40,27 @@ GH_RELEASE_TAG="${GH_RELEASE_TAG:-latest}"
 GH_OWNER="${GH_OWNER:-ryanoasis}"
 GH_REPO="${GH_REPO:-nerd-fonts}"
 FONT_FORMATS=(ttf otf)
-if [ ${EUID:-0} -ne 0 ] || [ "$(id -u)" -ne 0 ]; then
-    FONT_DIR="${FONT_DIR:-${HOME}/.local/share/fonts/NerdFonts}"
+
+# Get target font directory
+if [ "$(uname)" = "Darwin" ]; then
+  # MacOS
+  sys_share_dir="/Library"
+  usr_share_dir="$HOME/Library"
+  font_subdir="Fonts"
 else
-    FONT_DIR="${FONT_DIR:-/usr/local/share/fonts/NerdFonts}"
+  # Linux
+  sys_share_dir="/usr/local/share"
+  usr_share_dir="$HOME/.local/share"
+  font_subdir="fonts"
+fi
+XDG_DATA_HOME="${XDG_DATA_HOME:-}"
+if [ -n "${XDG_DATA_HOME}" ]; then
+  usr_share_dir="${XDG_DATA_HOME}"
+fi
+if [ ${EUID:-0} -ne 0 ] || [ "$(id -u)" -ne 0 ]; then
+    FONT_DIR="${FONT_DIR:-${usr_share_dir}/${font_subdir}/NerdFonts}"
+else
+    FONT_DIR="${FONT_DIR:-${sys_share_dir}/${font_subdir}/NerdFonts}"
 fi
 
 _REQUIREMENTS=("curl")
