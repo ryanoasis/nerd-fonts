@@ -389,22 +389,22 @@ gh.download_asset() {
 # --------------
 
 msg.err() {
-    echo -e "${_BRed}ERROR:${_creset} $*" >&2
+    printf "${_BRed}ERROR:${_creset} %s\n" "$*" >&2
     return 0
 }
 msg.warn() {
-    echo -e "${_BBlue}WARN:${_creset}  $*" >&2
+    printf "${_BBlue}WARN:${_creset}  %s\n" "$*" >&2
     return 0
 }
 msg.info() {
     if [ "${VERBOSE}" -ge 1 ]; then
-        echo -e "${_BGreen}INFO:${_creset}  $*" >&2
+        printf "${_BGreen}INFO:${_creset}  %s\n" "$*" >&2
     fi
     return 0
 }
 msg.debug() {
     if [ "${VERBOSE}" -ge 2 ]; then
-        echo -e "${_BYellow}DEBUG:${_creset} $*" >&2
+        printf "${_BYellow}DEBUG:${_creset} %s\n" "$*" >&2
     fi
     return 0
 }
