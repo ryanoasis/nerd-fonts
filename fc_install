@@ -218,6 +218,9 @@ nerd.released_zip() {
 
 nerd.font_list() {
     while IFS= read -r line; do
+        if [[ "$line" == *FontPatcher* ]]; then
+            continue
+        fi
         echo "$line" | sed 's/^.*\/\(.*\).zip$/\1/'
     done < <(nerd.released_zip)
 }
