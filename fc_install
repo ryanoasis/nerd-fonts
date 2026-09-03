@@ -66,7 +66,7 @@ else
     FONT_DIR="${FONT_DIR:-${sys_share_dir}/${font_subdir}/NerdFonts}"
 fi
 
-_REQUIREMENTS=("curl" "sed" "tar" "mktemp")
+_REQUIREMENTS=("curl" "sed" "tar" "mktemp" "wc")
 _GH_RELEASE_DATA=
 _GH_ASSET_DATA=
 
@@ -378,7 +378,7 @@ gh.download_asset() {
         "${url}" -o "${fname}" || sh.die.err $? "can't download ${url}"
 
     # check if the response from GH is just a "Not Found"
-    filesize=$(stat -c%s "${fname}")
+    filesize=$(wc -c <"${fname}")
     if [ "${filesize}" -ge 30 ]; then
         if head -c 30 "${fname}" | grep -q "Not Found"; then
             msg.err "Asset Not Found: ${url}"
