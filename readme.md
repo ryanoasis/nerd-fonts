@@ -37,7 +37,7 @@ The following flow diagram shows the current glyph sets included:
 
 [**Installation Options**](#font-installation)
   * [**1 - Release Archive Download**](#option-1-release-archive-download)
-  * [**2 - Homebrew Fonts (macOS (OS X))**](#option-2-homebrew-fonts)
+  * [**2 - Homebrew Fonts (macOS/Linux)**](#option-2-homebrew-fonts)
   * [**3 - Install Script**](#option-3-install-script)
   * [**4 - Chocolatey or Scoop (Windows)**](#option-4-unofficial-chocolatey-or-scoop-repositories)
   * [**5 - Arch Linux Repository (Extra, AUR)**](#option-5-arch-extra-repository)
@@ -85,7 +85,7 @@ chmod ugo+x fc_install
 _If you..._
 
   * `Option 1.` want to download a **font family** package of variations (bold, italic, etc.) see [download an archive](#option-1-release-archive-download)
-  * `Option 2.` are on **macOS** and want to use **Homebrew** see [Homebrew Fonts](#option-2-homebrew-fonts)
+  * `Option 2.` are on **macOS** or **Linux** and want to use **Homebrew** see [Homebrew Fonts](#option-2-homebrew-fonts)
   * `Option 3.` want to **automate** installing or use in **scripts** see the [Install Script](#option-3-install-script)
   * `Option 4.` are on **Windows** and want to use **Chocolatey** or **Scoop** see [Unofficial Chocolatey or Scoop Repositories](#option-4-unofficial-chocolatey-or-scoop-repositories)
   * `Option 5.` are on **Arch Linux** and want to use **Extra packages** see [Arch Extra Repositories](#option-5-arch-extra-repository)
