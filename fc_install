@@ -237,15 +237,15 @@ nerd.released_archives() {
         [[ "$line" =~ $end2_regex ]] && break # end of assets
 
         if [[ "$line" =~ $aid_regex ]] && [ -z "$aid" ]; then
-            aid=$(echo $line | sed "$extract_id")
+            aid=$(echo "$line" | sed "$extract_id")
         fi
         if [[ "$line" =~ $name_regex ]]; then
-            name=$(echo $line | sed "$extract_string")
+            name=$(echo "$line" | sed "$extract_string")
         fi
         if [[ "$line" =~ $end1_regex ]] && [ -n "$aid" ]; then
             # Select only one suffix
             if [[ "$name" == *"${archive_suffix}" ]]; then
-                printf "%s %s\0" "${name%$archive_suffix}" "${aid}"
+                printf "%s %s\0" "${name%"$archive_suffix"}" "${aid}"
             fi
             aid=
         fi
