@@ -74,14 +74,6 @@ The following flow diagram shows the current glyph sets included:
 
 ### Various Download Options for Fonts
 
-On Linux, to install fonts from [(latest) release](https://github.com/ryanoasis/nerd-fonts/releases/latest) use the [font config](https://www.freedesktop.org/wiki/Software/fontconfig/) installer:
-
-```bash
-curl -s https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/fc_install -o fc_install
-chmod ugo+x fc_install
-./fc_install --help
-```
-
 _If you..._
 
   * `Option 1.` want to download a **font family** package of variations (bold, italic, etc.) see [download an archive](#option-1-release-archive-download)
@@ -246,13 +238,18 @@ _On Linux you have to add `--cask` after `install`._
 
 ### `Option 3: Install Script`
 
+To install fonts from [(latest) release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+use this script.
+
 > Best option if you want to **automate** installing or for use in **scripts**.
 
-Only available for Linux / MacOS.
+Only available for Linux / MacOS. It downloads the release artifacts of the latest or any
+other release and installs the files.
 
 If you install all patched Fonts: _Warning: This is a lot of Fonts adding up to a large size_
 
-The script is a standalone tool, use like this:
+The script is a standalone tool that you can download individually, use like the following.
+No need to clone the complete repository (which does not contain all patched fonts anyhow).
 
 ```sh
 curl -s https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/install.sh -o install.sh

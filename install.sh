@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.0.0"
+scriptversion="2.0.1"
 # Nerd Fonts Version: 3.5.0
 
 # shellcheck enable=require-variable-braces
@@ -36,7 +36,7 @@ scriptversion="2.0.0"
 # and that also needs to be checked
 
 set -euo pipefail
-if shopt | grep -s inherit_errexit; then
+if shopt | grep -q inherit_errexit; then
     shopt -s inherit_errexit
 fi
 
@@ -491,7 +491,7 @@ main() {
             fi
         else
             [ "${VERBOSE}" -ge 3 ] && set -x
-            "cmd.${cmd}" "$@"
+            "cmd_${cmd}" "$@"
         fi
     fi
 }
