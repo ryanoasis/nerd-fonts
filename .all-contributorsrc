@@ -2142,6 +2142,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "laur89",
+      "name": "laur89",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4551018?v=4",
+      "profile": "https://github.com/laur89",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
