@@ -322,6 +322,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/kStor2poche"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/43518872?v=4?s=100" width="100px;" alt="kStor2poche"/><br /><sub><b>kStor2poche</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AkStor2poche" title="Bug reports">🐛</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://codeberg.org/krisque/"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/63082743?v=4?s=100" width="100px;" alt="Krisque"/><br /><sub><b>Krisque</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=chrisemke" title="Documentation">📖</a></span>
 <span style="display: inline-block; width: 130px;"><a href="https://github.com/return42"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/554536?v=4?s=100" width="100px;" alt="Markus Heiser"/><br /><sub><b>Markus Heiser</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=return42" title="Code">💻</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/laur89"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/4551018?v=4?s=100" width="100px;" alt="laur89"/><br /><sub><b>laur89</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Alaur89" title="Bug reports">🐛</a></span>
 
 
 
