@@ -266,6 +266,8 @@ Examples:
 ./install.sh install HeavyData
 ./install.sh install all
 ./install.sh install # interactive mode
+VERBOSE=3 ./install.sh install DaddyTimeMono
+GH_RELEASE_TAG=v3.2.1 ./install.sh list
 ```
 
 ### `Option 4: Unofficial Chocolatey or Scoop Repositories`
