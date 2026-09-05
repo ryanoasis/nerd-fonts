@@ -165,6 +165,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.700      | NO   |
 | [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.1.0      | NO   |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | NO   |
+| [MonaSansMono Nerd Font][p-mona-sans-mono]        | [Mona Sans Mono][f-mona-sans-mono]     | 2.0.27     | YES  |
 | [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.400      | YES  |
 | [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | NO   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                     | 0.61       | NO   |
@@ -765,6 +766,7 @@ Font repos
 [f-lilex]:https://github.com/mishamyrt/Lilex
 [f-martian]:https://github.com/evilmartians/mono
 [f-meslo]:https://github.com/andreberg/Meslo-Font
+[f-mona-sans-mono]:https://github.com/github/mona-sans#mona-sans-mono-styles
 [f-monaspace]:https://github.com/githubnext/monaspace
 [f-monoid]:https://github.com/larsenwork/monoid
 [f-mononoki]:https://madmalik.github.io/mononoki
@@ -839,6 +841,7 @@ Patched Font internal links
 [p-lilex]:patched-fonts/Lilex
 [p-martian]:patched-fonts/MartianMono
 [p-meslo]:patched-fonts/Meslo
+[p-mona-sans-mono]:patched-fonts/MonaSansMono
 [p-monaspace]:patched-fonts/Monaspace
 [p-monofur]:patched-fonts/Monofur
 [p-monoid]:patched-fonts/Monoid
