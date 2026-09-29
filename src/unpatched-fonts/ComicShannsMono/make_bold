@@ -11,45 +11,67 @@
 
 import fontforge
 
-font = fontforge.open('ComicShannsMono-Regular.sfd_modified')
+def get_original_font():
+    # A font object can not be copied, so if we need the original
+    # more than once we need to open it each time anew
+    font = fontforge.open('ComicShannsMono-Regular.sfd_modified')
 
-# Repair some issues in source
-font.selection.all()
-font.removeOverlap() # For example THERE DOES NOT EXIST (u_2204) is broken
-font.correctDirection()
-target_width = 550
-for g in font.selection.byGlyphs:
-    # For example ntilde is 600 wide
-    if g.width != target_width:
-        if g.encoding >= 0x2800 and g.encoding <= 0x28ff:
-            # resize only
-            bb_width = target_width + 1
-        else:
-            # resize and recenter
-            ( xmin, _, xmax, _ ) = g.boundingBox()
-            bb_width = xmax - xmin
-        if bb_width <= target_width:
-            # Do not introduce negative lsb
-            g.left_side_bearing = int((target_width - bb_width) / 2)
-        g.width = target_width
-font.selection.none()
+    # Repair some issues in source
+    font.selection.all()
+    font.removeOverlap() # For example THERE DOES NOT EXIST (u_2204) is broken
+    font.correctDirection()
+    target_width = 550
+    for g in font.selection.byGlyphs:
+        # For example ntilde is 600 wide
+        if g.width != target_width:
+            if g.encoding >= 0x2800 and g.encoding <= 0x28ff:
+                # resize only
+                bb_width = target_width + 1
+            else:
+                # resize and recenter
+                ( xmin, _, xmax, _ ) = g.boundingBox()
+                bb_width = xmax - xmin
+            if bb_width <= target_width:
+                # Do not introduce negative lsb
+                g.left_side_bearing = int((target_width - bb_width) / 2)
+            g.width = target_width
+    font.selection.none()
 
-# WIN line metrics obviously wrong, as Nerd Fonts sometimes prefers that, fix it already
-font.os2_winascent = font.os2_typoascent
-font.os2_windescent = -font.os2_typodescent
-font.os2_use_typo_metrics = 1
+    # WIN line metrics obviously wrong, as Nerd Fonts sometimes prefers that, fix it already
+    font.os2_winascent = font.os2_typoascent
+    font.os2_windescent = -font.os2_typodescent
+    font.os2_use_typo_metrics = 1
 
-# Overwrite the font version here to account for changes in this script and keep the
-# modified source version stable (if that font is not changed)
-force_version = '1.3.3'
-font.sfntRevision = None
-font.version = force_version
-font.appendSFNTName('English (US)', 'Version', '')
-font.appendSFNTName('English (US)', 'Version', 'Version ' + force_version)
+    # Overwrite the font version here to account for changes in this script and keep the
+    # modified source version stable (if that font is not changed)
+    force_version = '1.3.3'
+    font.sfntRevision = None
+    font.version = force_version
+    font.appendSFNTName('English (US)', 'Version', '')
+    font.appendSFNTName('English (US)', 'Version', 'Version ' + force_version)
 
+    return font
+
+def prepare_hinting(font):
+    # For correct hinting we need the Extrema points
+    # They need to be calculated after all glyph modifications
+    # The font is passed by reference
+    font.selection.all()
+    for g in font.selection.byGlyphs:
+        g.addExtrema('only_good_rm')
+    font.selection.none()
+
+# Create Regular face
+
+font = get_original_font()
+
+prepare_hinting(font)
 font.generate('ComicShannsMono-Regular.otf')
+font.close()
 
 # Create Bold face
+
+font = get_original_font()
 
 font.fontname = 'ComicMono-Bold'
 font.fullname = 'Comic Shanns Mono Bold'
@@ -75,5 +97,6 @@ for g in font.selection.byGlyphs:
         if g.selfIntersects() and g.unicode != 0x05A:
             g.simplify(2, ('ignoreslopes','ignoreextrema','smoothcurves'), 0.2, 100, 100)
 
+prepare_hinting(font)
 font.generate('ComicShannsMono-Bold.otf')
 font.close()
