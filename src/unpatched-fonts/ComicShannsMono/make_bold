@@ -39,6 +39,14 @@ font.os2_winascent = font.os2_typoascent
 font.os2_windescent = -font.os2_typodescent
 font.os2_use_typo_metrics = 1
 
+# Overwrite the font version here to account for changes in this script and keep the
+# modified source version stable (if that font is not changed)
+force_version = '1.3.3'
+font.sfntRevision = None
+font.version = force_version
+font.appendSFNTName('English (US)', 'Version', '')
+font.appendSFNTName('English (US)', 'Version', 'Version ' + force_version)
+
 font.generate('ComicShannsMono-Regular.otf')
 
 # Create Bold face
