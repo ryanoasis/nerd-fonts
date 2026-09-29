@@ -21,9 +21,13 @@ target_width = 550
 for g in font.selection.byGlyphs:
     # For example ntilde is 600 wide
     if g.width != target_width:
-        # resize and recenter
-        ( xmin, _, xmax, _ ) = g.boundingBox()
-        bb_width = xmax - xmin
+        if g.encoding >= 0x2800 and g.encoding <= 0x28ff:
+            # resize only
+            bb_width = target_width + 1
+        else:
+            # resize and recenter
+            ( xmin, _, xmax, _ ) = g.boundingBox()
+            bb_width = xmax - xmin
         if bb_width <= target_width:
             # Do not introduce negative lsb
             g.left_side_bearing = int((target_width - bb_width) / 2)
