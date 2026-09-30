@@ -1,6 +1,20 @@
 #!/usr/bin/env python
 # coding=utf8
 #
+# Build the Regular + Bold faces of Comic Shanns Mono from the FontForge source.
+#
+# both faces:
+#   1. Normalize every glyph advance to 550  -> the font becomes truly monospaced.
+#   2. Compact vertical metrics Ascent 850 / Descent 350 / LineGap 0,
+#      with USE_TYPO_METRICS set and hhea/typo/win kept identical.
+#   3. NO AutoHint  -> the 'no-hints' generate flag suppresses the hints that
+#      removeOverlap() would otherwise make FontForge emit, which avoids the Z/J
+#      top-left rendering artifact at small pixel sizes.
+#   4. Flatten component references before normalising -> the Braille glyphs
+#      (U+28xx) are built from nested references; left as references, the width
+#      normalisation below collapses them to a single column (and the result
+#      even depends on whether fontforge or ffpython runs the script).
+#
 # Usually called in this directory via
 # $ fontforge --script make_bold
 
@@ -11,33 +25,60 @@
 
 import fontforge
 
-font = fontforge.open('ComicShannsMono-Regular.sfd_modified')
+SOURCE = 'ComicShannsMono-Regular.sfd_modified'
+
+TARGET_WIDTH = 550
+ASCENT = 850
+DESCENT = 350
+GEN_FLAGS = ('no-hints',)
+
+font = fontforge.open(SOURCE)
 
 # Repair some issues in source
+# Flatten the nested component references first (the Braille glyphs are composed
+# of them). Doing this before removeOverlap()/normalisation keeps the Braille at
+# two columns and makes the output independent of how the script is launched.
 font.selection.all()
+font.unlinkReferences()
 font.removeOverlap() # For example THERE DOES NOT EXIST (u_2204) is broken
 font.correctDirection()
-target_width = 550
 for g in font.selection.byGlyphs:
     # For example ntilde is 600 wide
-    if g.width != target_width:
+    if g.width != TARGET_WIDTH:
         # resize and recenter
         ( xmin, _, xmax, _ ) = g.boundingBox()
         bb_width = xmax - xmin
-        if bb_width <= target_width:
+        if bb_width <= TARGET_WIDTH:
             # Do not introduce negative lsb
-            g.left_side_bearing = int((target_width - bb_width) / 2)
-        g.width = target_width
+            g.left_side_bearing = int((TARGET_WIDTH - bb_width) / 2)
+        g.width = TARGET_WIDTH
 font.selection.none()
 
-# WIN line metrics obviously wrong, as Nerd Fonts sometimes prefers that, fix it already
-font.os2_winascent = font.os2_typoascent
-font.os2_windescent = -font.os2_typodescent
+# Compact vertical metrics: fold the original line gap away and keep all three
+# metric groups equal so every renderer agrees.
+font.os2_typoascent = ASCENT
+font.os2_typodescent = -DESCENT
+font.os2_typolinegap = 0
+font.os2_winascent = ASCENT
+font.os2_windescent = DESCENT
 font.os2_use_typo_metrics = 1
+font.hhea_ascent = ASCENT
+font.hhea_descent = -DESCENT
+font.hhea_linegap = 0
 
-font.generate('ComicShannsMono-Regular.otf')
+# The SFD carries two version values: the header "Version:" (exposed by FontForge
+# as font.version, and what font-patcher uses) and a name-table "Version" string
+# that FontForge writes verbatim on generate (here it was left stale at 1.3.0).
+# Sync the name-table string to the header so bumping "Version:" in the SFD is
+# all that is needed.
+if font.version:
+    font.appendSFNTName('English (US)', 'Version', font.version)
 
-# Create Bold face
+# Deliberately no font.autoHint() here; 'no-hints' keeps removeOverlap from
+# triggering hint output.
+font.generate('ComicShannsMono-Regular.otf', flags=GEN_FLAGS)
+
+# Create Bold face (metrics and advances carry over from the in-memory font)
 
 font.fontname = 'ComicMono-Bold'
 font.fullname = 'Comic Shanns Mono Bold'
@@ -63,5 +104,5 @@ for g in font.selection.byGlyphs:
         if g.selfIntersects() and g.unicode != 0x05A:
             g.simplify(2, ('ignoreslopes','ignoreextrema','smoothcurves'), 0.2, 100, 100)
 
-font.generate('ComicShannsMono-Bold.otf')
+font.generate('ComicShannsMono-Bold.otf', flags=GEN_FLAGS)
 font.close()
