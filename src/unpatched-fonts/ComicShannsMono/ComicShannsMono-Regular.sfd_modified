@@ -4,14 +4,14 @@ FullName: Comic Shanns Mono Regular
 FamilyName: Comic Shanns Mono-Regular
 Weight: Regular
 Copyright: MIT License\n\nCopyright (c) 2018 Shannon Miwa\nCopyright (c) 2023 Jesus Gonzalez\nCopyright (c) 2023 Rodrigo Batista de Moraes\nCopyright (c) 2024 Fini Jastrow\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.
-Version: 1.3.2
+Version: 1.302
 ItalicAngle: 0
 UnderlinePosition: 0
 UnderlineWidth: 0
 Ascent: 750
 Descent: 250
 InvalidEm: 0
-sfntRevision: 0x00000000
+sfntRevision: 0x00014d50
 LayerCount: 2
 Layer: 0 0 "Atr+AOEA-s" 1
 Layer: 1 0 "Fore" 0
@@ -59,7 +59,7 @@ OS2CodePages: 00000093.00000000
 OS2UnicodeRanges: 00000007.00000000.00000000.00000000
 MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "" "" "" "" "" "Version 1.3.2" "" "" "" "" "" "" "" "MIT License" "https://opensource.org/license/MIT" "" "Comic Shanns Mono"
+LangName: 1033 "" "" "" "" "" "Version 1.302" "" "" "" "" "" "" "" "MIT License" "https://opensource.org/license/MIT" "" "Comic Shanns Mono"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts

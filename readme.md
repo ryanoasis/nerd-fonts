@@ -131,7 +131,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [CaskaydiaCove Nerd Font][p-cascadia]             | [Cascadia Code][f-cascadia]            | 2407.24    | YES  |
 | [CaskaydiaMono Nerd Font][p-cascadia-mono]        | [Cascadia Mono][f-cascadia]            | 2407.24    | YES  |
 | [CodeNewRoman Nerd Font][p-code-nr]               | Code New Roman (Sam Radian)            | 2.0        | NO   |
-| [ComicShannsMono Nerd Font][p-comic]              | [Comic Shanns Mono][f-comic]           | 1.3.3      | NO   |
+| [ComicShannsMono Nerd Font][p-comic]              | [Comic Shanns Mono][f-comic]           | 1.303      | NO   |
 | [CommitMono Nerd Font][p-commit]                  | [Commit Mono][f-commit]                | 1.143      | NO   |
 | [Cousine Nerd Font][p-cousine]                    | [Cousine][f-cousine]                   | 1.241      | NO   |
 | [D2Koding Nerd Font][p-d2coding]                  | [D2Coding][f-d2coding]                 | 1.3.2      | YES  |

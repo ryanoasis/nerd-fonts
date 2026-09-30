@@ -13,4 +13,5 @@ For more information have a look at the upstream website: https://github.com/jes
 * dcaron and tcaron are corrected with apothrophe by Nerd Fonts
 * The **Bold** weight has been manually added by Nerd Fonts, inspired by Thai Pangsakulyanont's _Comic Mono_ (https://github.com/dtinth/comic-mono-font)
 
-Version: 1.3.3
+Version: 1.303
+>>>>>>> bbd484967 (ComicShannsMono: Switch to major.minor version number)
