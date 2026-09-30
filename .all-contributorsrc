@@ -2151,6 +2151,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "Case3y",
+      "name": "XiayongLee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71315026?v=4",
+      "profile": "https://github.com/Case3y",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "repoType": "github",
