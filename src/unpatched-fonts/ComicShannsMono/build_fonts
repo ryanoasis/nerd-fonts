@@ -2,7 +2,7 @@
 # coding=utf8
 #
 # Usually called in this directory via
-# $ fontforge --script make_bold
+# $ fontforge --script build_fonts
 
 # The resulting names in the font are ... bad, but we will rename it anyhow
 

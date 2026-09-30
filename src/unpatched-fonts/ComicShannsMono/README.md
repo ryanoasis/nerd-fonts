@@ -13,5 +13,12 @@ For more information have a look at the upstream website: https://github.com/jes
 * dcaron and tcaron are corrected with apothrophe by Nerd Fonts
 * The **Bold** weight has been manually added by Nerd Fonts, inspired by Thai Pangsakulyanont's _Comic Mono_ (https://github.com/dtinth/comic-mono-font)
 
+Workflow evolved over time:
+* Opened Rodrigo Batista de Moraes font file in fontforge ("1.3.0")
+* Manually edited carons and questiondown ("1.3.1", "1.3.2")
+* Switched to `major,minor` version ("1.302")
+* Saved to `ComicShannsMono-Regular.sfd_modified`
+* Called `build_fonts` to create the two `otf` fonts ("1.303")
+* The `otf` fonts are the sources for releases
+
 Version: 1.303
->>>>>>> bbd484967 (ComicShannsMono: Switch to major.minor version number)
