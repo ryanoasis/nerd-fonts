@@ -313,6 +313,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/return42"><img src="https://avatars.githubusercontent.com/u/554536?v=4?s=100" width="100px;" alt="Markus Heiser"/><br /><sub><b>Markus Heiser</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=return42" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/laur89"><img src="https://avatars.githubusercontent.com/u/4551018?v=4?s=100" width="100px;" alt="laur89"/><br /><sub><b>laur89</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Alaur89" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Case3y"><img src="https://avatars.githubusercontent.com/u/71315026?v=4?s=100" width="100px;" alt="XiayongLee"/><br /><sub><b>XiayongLee</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3ACase3y" title="Bug reports">🐛</a> <a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Case3y" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.danifbento.me"><img src="https://avatars.githubusercontent.com/u/1489765?v=4?s=100" width="100px;" alt="Dani Bento"/><br /><sub><b>Dani Bento</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=danifbento" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
