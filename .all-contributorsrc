@@ -2161,6 +2161,15 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "danifbento",
+      "name": "Dani Bento",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1489765?v=4",
+      "profile": "http://www.danifbento.me",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
