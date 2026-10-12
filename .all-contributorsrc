@@ -2170,6 +2170,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "giacomoguiduzzi",
+      "name": "Giacomo Guiduzzi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10937563?v=4",
+      "profile": "https://github.com/giacomoguiduzzi",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
