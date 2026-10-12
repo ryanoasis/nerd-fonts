@@ -496,6 +496,9 @@ gh_download_asset() {
             msg_err "Asset Not Found: ${url}"
             return 42
         fi
+        if head -c 40 "${fname}" | grep -q '"message":"API rate limit exceeded' >/dev/null 2>&1; then
+            sh_die_err 42 "GitHub API rate limit exceeded. Wait or use GH_TOKEN."
+        fi
     fi
 }
 
