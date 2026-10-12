@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.2.1"
+scriptversion="2.2.2"
 # Nerd Fonts Version: 3.5.1
 
 # shellcheck enable=require-variable-braces
@@ -111,6 +111,7 @@ process_options() {
     while getopts ":dhr:st:vz-:" option; do
         case "${option}" in
             \?) sh_die_err 2 "Invalid option -${OPTARG}";;
+            :) sh_die_err 2 "Option -${OPTARG} requires an argument";;
             d) dry_run=TRUE;;
             h) invoke_help=TRUE;;
             r) GH_RELEASE_TAG=$OPTARG;;
