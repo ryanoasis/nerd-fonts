@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.1.0"
+scriptversion="2.2.0"
 # Nerd Fonts Version: 3.5.1
 
 # shellcheck enable=require-variable-braces
@@ -92,6 +92,7 @@ options:
   -d, --dry             do not execute, show what would happen (pair with -v)
   -r, --release TAG     specify release tag, default is 'latest'
   -s, --silent          give no progress messages
+  -t, --token TOKEN     specify Github token used to avoid rate limits
   -v, --verbose         increase verbosity level (can be used multiple times)
   -z, --zip             use zip archive (needed for older releases)
   -h, --help            show this help message
@@ -105,13 +106,14 @@ fetch_option_argument() {
 }
 
 process_options() {
-    while getopts ":dhr:svz-:" option; do
+    while getopts ":dhr:st:vz-:" option; do
         case "${option}" in
             \?) sh_die_err 2 "Invalid option -${OPTARG}";;
             d) dry_run=TRUE;;
             h) invoke_help=TRUE;;
             r) GH_RELEASE_TAG=$OPTARG;;
             s) VERBOSE=0;;
+            t) GH_TOKEN=$OPTARG;;
             v) VERBOSE=$(( VERBOSE + 1 ));;
             z) archive_suffix=.zip;;
             -) case "${OPTARG}" in
@@ -120,6 +122,8 @@ process_options() {
                 release=*) GH_RELEASE_TAG=${OPTARG#release=};;
                 release) GH_RELEASE_TAG=$(fetch_option_argument "$@"); OPTIND=$(( OPTIND + 1 ));;
                 silent) VERBOSE=0;;
+                token=*) GH_TOKEN=${OPTARG#token=};;
+                token) GH_TOKEN=$(fetch_option_argument "$@"); OPTIND=$(( OPTIND + 1 ));;
                 verbose) VERBOSE=$(( VERBOSE + 1 ));;
                 version) printf "Nerd Fonts installer %s\n" "${scriptversion}"; exit 0;;
                 zip) archive_suffix=.zip;;
