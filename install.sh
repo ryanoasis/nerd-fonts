@@ -319,9 +319,12 @@ EOF
 # ----------
 
 nerd_assemble_released_archives() {
-    # Returns pairs of "Archive-basename asset-ID"
+    # Returns pairs of "Archive-basename|asset-ID"
+    # or "Archive-basename|download-url" depending on
+    # GH_TOKEN usage
     local assets_regex="^ *\"assets\":"
     local aid_regex="^ *\"id\":"
+    local browser_regex="^ *\"browser_download_url\":"
     local name_regex="^ *\"name\":"
     local end1_regex="^ *},$"
     local end2_regex="^ *],$"
@@ -337,8 +340,14 @@ nerd_assemble_released_archives() {
             assets_started=true
             [[ "${line}" =~ ${end2_regex} ]] && break # end of assets
 
-            if [[ "${line}" =~ ${aid_regex} ]] && [ -z "${aid}" ]; then
-                aid=$(echo "${line}" | sed "${extract_id}")
+            if [ -z "${GH_TOKEN}" ]; then
+                if [[ "${line}" =~ ${browser_regex} ]] && [ -z "${aid}" ]; then
+                    aid=$(echo "${line}" | sed "${extract_string}")
+                fi
+            else
+                if [[ "${line}" =~ ${aid_regex} ]] && [ -z "${aid}" ]; then
+                    aid=$(echo "${line}" | sed "${extract_id}")
+                fi
             fi
             if [[ "${line}" =~ ${name_regex} ]]; then
                 name=$(echo "${line}" | sed "${extract_string}")
@@ -401,9 +410,13 @@ nerd_install_font() {
     fi
     aid=$(nerd_find_asset_id "${fontname}")
     if [ -z "${aid}" ]; then
-        sh_die_err 42 "Can not find asset ID of ${fontname}"
+        sh_die_err 42 "Can not find asset ID/URL of ${fontname}"
     fi
-    msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG}, asset ${aid})"
+    if [[ "${aid}" == https://* ]]; then
+        msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG})"
+    else
+        msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG}, asset ${aid})"
+    fi
     (
         set -e
         local dst
@@ -474,14 +487,18 @@ gh_get_release_data() {
 }
 
 gh_download_asset() {
-    # usage: gh_download_asset <target file name> <asset id>
+    # usage: gh_download_asset <target file name> <asset id/url>
 
     local fname="${1}"
     local aid="${2}"
     local url
     local filesize
 
-    url="https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/releases/assets/${aid}"
+    if [[ "${aid}" == https://* ]]; then
+        url=$aid
+    else
+        url="https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/releases/assets/${aid}"
+    fi
     msg_debug "gh_download_asset URL ${url}"
     curl --silent -L \
         -H "Accept: application/octet-stream" \
