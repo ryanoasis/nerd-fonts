@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.1.0"
+scriptversion="2.2.0"
 # Nerd Fonts Version: 3.5.1
 
 # shellcheck enable=require-variable-braces
@@ -92,6 +92,7 @@ options:
   -d, --dry             do not execute, show what would happen (pair with -v)
   -r, --release TAG     specify release tag, default is 'latest'
   -s, --silent          give no progress messages
+  -t, --token TOKEN     specify Github token used to avoid rate limits
   -v, --verbose         increase verbosity level (can be used multiple times)
   -z, --zip             use zip archive (needed for older releases)
   -h, --help            show this help message
@@ -105,13 +106,14 @@ fetch_option_argument() {
 }
 
 process_options() {
-    while getopts ":dhr:svz-:" option; do
+    while getopts ":dhr:st:vz-:" option; do
         case "${option}" in
             \?) sh_die_err 2 "Invalid option -${OPTARG}";;
             d) dry_run=TRUE;;
             h) invoke_help=TRUE;;
             r) GH_RELEASE_TAG=$OPTARG;;
             s) VERBOSE=0;;
+            t) GH_TOKEN=$OPTARG;;
             v) VERBOSE=$(( VERBOSE + 1 ));;
             z) archive_suffix=.zip;;
             -) case "${OPTARG}" in
@@ -120,6 +122,8 @@ process_options() {
                 release=*) GH_RELEASE_TAG=${OPTARG#release=};;
                 release) GH_RELEASE_TAG=$(fetch_option_argument "$@"); OPTIND=$(( OPTIND + 1 ));;
                 silent) VERBOSE=0;;
+                token=*) GH_TOKEN=${OPTARG#token=};;
+                token) GH_TOKEN=$(fetch_option_argument "$@"); OPTIND=$(( OPTIND + 1 ));;
                 verbose) VERBOSE=$(( VERBOSE + 1 ));;
                 version) printf "Nerd Fonts installer %s\n" "${scriptversion}"; exit 0;;
                 zip) archive_suffix=.zip;;
@@ -319,9 +323,12 @@ EOF
 # ----------
 
 nerd_assemble_released_archives() {
-    # Returns pairs of "Archive-basename asset-ID"
+    # Returns pairs of "Archive-basename|asset-ID"
+    # or "Archive-basename|download-url" depending on
+    # GH_TOKEN usage
     local assets_regex="^ *\"assets\":"
     local aid_regex="^ *\"id\":"
+    local browser_regex="^ *\"browser_download_url\":"
     local name_regex="^ *\"name\":"
     local end1_regex="^ *},$"
     local end2_regex="^ *],$"
@@ -337,8 +344,14 @@ nerd_assemble_released_archives() {
             assets_started=true
             [[ "${line}" =~ ${end2_regex} ]] && break # end of assets
 
-            if [[ "${line}" =~ ${aid_regex} ]] && [ -z "${aid}" ]; then
-                aid=$(echo "${line}" | sed "${extract_id}")
+            if [ -z "${GH_TOKEN}" ]; then
+                if [[ "${line}" =~ ${browser_regex} ]] && [ -z "${aid}" ]; then
+                    aid=$(echo "${line}" | sed "${extract_string}")
+                fi
+            else
+                if [[ "${line}" =~ ${aid_regex} ]] && [ -z "${aid}" ]; then
+                    aid=$(echo "${line}" | sed "${extract_id}")
+                fi
             fi
             if [[ "${line}" =~ ${name_regex} ]]; then
                 name=$(echo "${line}" | sed "${extract_string}")
@@ -401,9 +414,13 @@ nerd_install_font() {
     fi
     aid=$(nerd_find_asset_id "${fontname}")
     if [ -z "${aid}" ]; then
-        sh_die_err 42 "Can not find asset ID of ${fontname}"
+        sh_die_err 42 "Can not find asset ID/URL of ${fontname}"
     fi
-    msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG}, asset ${aid})"
+    if [[ "${aid}" == https://* ]]; then
+        msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG})"
+    else
+        msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG}, asset ${aid})"
+    fi
     (
         set -e
         local dst
@@ -474,14 +491,18 @@ gh_get_release_data() {
 }
 
 gh_download_asset() {
-    # usage: gh_download_asset <target file name> <asset id>
+    # usage: gh_download_asset <target file name> <asset id/url>
 
     local fname="${1}"
     local aid="${2}"
     local url
     local filesize
 
-    url="https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/releases/assets/${aid}"
+    if [[ "${aid}" == https://* ]]; then
+        url=$aid
+    else
+        url="https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/releases/assets/${aid}"
+    fi
     msg_debug "gh_download_asset URL ${url}"
     curl --silent -L \
         -H "Accept: application/octet-stream" \
@@ -495,6 +516,9 @@ gh_download_asset() {
         if head -c 30 "${fname}" | grep -q "Not Found"; then
             msg_err "Asset Not Found: ${url}"
             return 42
+        fi
+        if head -c 40 "${fname}" | grep -q '"message":"API rate limit exceeded' >/dev/null 2>&1; then
+            sh_die_err 42 "GitHub API rate limit exceeded. Wait or use GH_TOKEN."
         fi
     fi
 }
