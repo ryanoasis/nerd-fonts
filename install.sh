@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.2.2"
+scriptversion="2.2.3"
 # Nerd Fonts Version: 3.5.1
 
 # shellcheck enable=require-variable-braces
@@ -515,8 +515,8 @@ gh_download_asset() {
 
     # check if the response from GH is just a "Not Found"
     filesize=$(wc -c <"${fname}")
-    if [ "${filesize}" -ge 30 ]; then
-        if head -c 30 "${fname}" | grep -q "Not Found"; then
+    if [ "${filesize}" -ge 40 ]; then
+        if head -c 40 "${fname}" | grep -q "Not Found"; then
             msg_err "Asset Not Found: ${url}"
             return 42
         fi
