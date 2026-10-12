@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.2.0"
+scriptversion="2.2.1"
 # Nerd Fonts Version: 3.5.1
 
 # shellcheck enable=require-variable-braces
@@ -101,7 +101,9 @@ EOF
 }
 
 fetch_option_argument() {
-    [ "${OPTIND}" -gt "$#" ] && sh_die_err 2 "Option --release requires an argument"
+    local option=$1
+    shift
+    [ "${OPTIND}" -gt "$#" ] && sh_die_err 2 "Option --${option} requires an argument"
     echo "${*:OPTIND:1}"
 }
 
@@ -120,10 +122,10 @@ process_options() {
                 dry) dry_run=TRUE;;
                 help) invoke_help=TRUE;;
                 release=*) GH_RELEASE_TAG=${OPTARG#release=};;
-                release) GH_RELEASE_TAG=$(fetch_option_argument "$@"); OPTIND=$(( OPTIND + 1 ));;
+                release) GH_RELEASE_TAG=$(fetch_option_argument "${OPTARG}" "$@"); OPTIND=$(( OPTIND + 1 ));;
                 silent) VERBOSE=0;;
                 token=*) GH_TOKEN=${OPTARG#token=};;
-                token) GH_TOKEN=$(fetch_option_argument "$@"); OPTIND=$(( OPTIND + 1 ));;
+                token) GH_TOKEN=$(fetch_option_argument "${OPTARG}" "$@"); OPTIND=$(( OPTIND + 1 ));;
                 verbose) VERBOSE=$(( VERBOSE + 1 ));;
                 version) printf "Nerd Fonts installer %s\n" "${scriptversion}"; exit 0;;
                 zip) archive_suffix=.zip;;
