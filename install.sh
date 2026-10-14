@@ -390,7 +390,7 @@ nerd_font_list() {
 nerd_find_spelling() {
     nerd_released_archives |
         while IFS= read -r line; do
-            if [[ "${1}" =~ ${line%%|*} ]]; then
+            if [[ "${1}" == "${line%%|*}" ]]; then
                 echo "${line%%|*}"
                 return
             fi
