@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.2.3"
+scriptversion="2.2.4"
 # Nerd Fonts Version: 3.5.1
 
 # shellcheck enable=require-variable-braces
@@ -390,7 +390,7 @@ nerd_font_list() {
 nerd_find_spelling() {
     nerd_released_archives |
         while IFS= read -r line; do
-            if [[ "${1}" =~ ${line%%|*} ]]; then
+            if [[ "${1}" == "${line%%|*}" ]]; then
                 echo "${line%%|*}"
                 return
             fi
