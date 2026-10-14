@@ -316,6 +316,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="http://www.danifbento.me"><img src="https://avatars.githubusercontent.com/u/1489765?v=4?s=100" width="100px;" alt="Dani Bento"/><br /><sub><b>Dani Bento</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=danifbento" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/giacomoguiduzzi"><img src="https://avatars.githubusercontent.com/u/10937563?v=4?s=100" width="100px;" alt="Giacomo Guiduzzi"/><br /><sub><b>Giacomo Guiduzzi</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Agiacomoguiduzzi" title="Bug reports">🐛</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://nextgen-labs.net/"><img src="https://avatars.githubusercontent.com/u/188639646?v=4?s=100" width="100px;" alt="Leo Camus"/><br /><sub><b>Leo Camus</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Dev-next-gen" title="Code">💻</a></td>
+    </tr>
   </tbody>
 </table>
 
