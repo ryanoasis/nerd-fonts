@@ -329,6 +329,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 
 <span style="display: inline-block; width: 130px;"><a href="https://nextgen-labs.net/"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/188639646?v=4?s=100" width="100px;" alt="Leo Camus"/><br /><sub><b>Leo Camus</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=Dev-next-gen" title="Code">💻</a></span>
+<span style="display: inline-block; width: 130px;"><a href="https://github.com/mahdimahdieh"><img class="lzy_img" data-src="https://avatars.githubusercontent.com/u/74340183?v=4?s=100" width="100px;" alt="mahdimahdieh"/><br /><sub><b>mahdimahdieh</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Amahdimahdieh" title="Bug reports">🐛</a></span>
 
 
 
