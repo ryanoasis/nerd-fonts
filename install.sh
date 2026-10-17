@@ -207,7 +207,7 @@ cmd_install() {
                 msg_info "Install all ${font_list_size} fonts"
                 msg_warn "Installing all fonts will take its time / time for a coffee break"
                 break
-            elif sh_in_array "${font_name}" ${font_list}; then
+            elif [ -n "${font_name}" ]; then
                 msg_debug "User selected font ${font_name}"
                 font_list="${font_name}"
                 break
