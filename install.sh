@@ -193,46 +193,46 @@ cmd_install() {
     font_list_size=$(sh_count ${font_list})
 
     if [ "${font_list_size}" -eq 0 ]; then
-        sh_die_err 5 "no fonts to install"
+        sh_die_err 5 "No fonts to install"
     fi
 
     if sh_in_array "all" "$@"; then
-        msg_info "install all ${font_list_size} fonts"
-        msg_warn "installing all fonts will take its time / time for a coffee break"
+        msg_info "Install all ${font_list_size} fonts"
+        msg_warn "Installing all fonts will take its time / time for a coffee break"
     elif [ "$#" -eq 0 ]; then
         PS3="Enter a number (or q to quit): "
         select font_name in ${font_list} "all"; do
             # shellcheck disable=SC2086 # We actually need word splitting of font_list here in the else
             if [ "${font_name}" = "all" ]; then
-                msg_info "install all ${font_list_size} fonts"
-                msg_warn "installing all fonts will take its time / time for a coffee break"
+                msg_info "Install all ${font_list_size} fonts"
+                msg_warn "Installing all fonts will take its time / time for a coffee break"
                 break
             elif sh_in_array "${font_name}" ${font_list}; then
-                msg_debug "user selected font ${font_name}"
+                msg_debug "User selected font ${font_name}"
                 font_list="${font_name}"
                 break
             elif sh_in_array "${REPLY}" "q" "quit"; then
-                msg_debug "user aborted"
+                msg_debug "User aborted"
                 return
             else
-                msg_err "invalid choice."
+                msg_err "Invalid choice"
             fi
         done
     else
         font_list=$*
     fi
-    msg_info "install fonts into folder: ${FONT_DIR}"
+    msg_info "Install fonts into folder: ${FONT_DIR}"
     tmp_folder="$(mktemp -d)"
     # shellcheck disable=SC2064 # We want to expand tmp_folder now, it's a local variable
     trap "rm -rf -- '${tmp_folder}'" 0
     msg_debug "Workdir ${tmp_folder}"
-    cd -- "${tmp_folder}" >/dev/null 2>&1 || sh_die_err 42 "can't cd ${tmp_folder}"
+    cd -- "${tmp_folder}" >/dev/null 2>&1 || sh_die_err 42 "Can't cd ${tmp_folder}"
     for font in ${font_list}; do
         nerd_install_font "${font}"
     done
     cd - >/dev/null 2>&1
     if command fc-cache; then
-        msg_info "fontconfig: build font information cache files"
+        msg_info "fontconfig: Build font information cache files"
         [ -z "${dry_run}" ] && fc-cache
     fi
 }
@@ -252,11 +252,11 @@ cmd_remove() {
     [ "$#" -ne 0 ] && sh_die_err 42 "${FUNCNAME#"cmd."}: unknown arguments $*"
     if [ -d "${FONT_DIR}" ]; then
         # shellcheck disable=SC2010 # We can not use a glob, we want to count with grep
-        msg_debug "removing $(cd -- "${FONT_DIR}" && ls -R1 . | grep -cEv "^$|^\.:$|^\./") files"
-        msg_info "remove font folder ${FONT_DIR}"
+        msg_debug "Removing $(cd -- "${FONT_DIR}" && ls -R1 . | grep -cEv "^$|^\.:$|^\./") files"
+        msg_info "Remove font folder ${FONT_DIR}"
         [ -z "${dry_run}" ] && rm -rf -- "${FONT_DIR}"
         if command fc-cache; then
-            msg_info "fontconfig: build font information cache files"
+            msg_info "fontconfig: Build font information cache files"
             [ -z "${dry_run}" ] && fc-cache
         fi
     else
@@ -368,7 +368,7 @@ nerd_assemble_released_archives() {
 nerd_released_archives() {
     _GH_ASSET_DATA="${_GH_ASSET_DATA:-$(nerd_assemble_released_archives)}"
     if [ "${archive_suffix}" != ".zip" ] && [ -z "${_GH_ASSET_DATA}" ]; then
-        sh_die_err 5 "no .xz archives found, maybe use --zip"
+        sh_die_err 5 "No .xz archives found, maybe use --zip"
     fi
     printf "%s\n" "${_GH_ASSET_DATA}"
 }
@@ -409,16 +409,16 @@ nerd_install_font() {
     local fontname
     fontname=$(nerd_find_spelling "${1}")
     if [ -z "${fontname}" ]; then
-        sh_die_err 3 "Can not find font ${1}"
+        sh_die_err 3 "Font ${1} does not exists in release ${GH_RELEASE_TAG}"
     fi
     aid=$(nerd_find_asset_id "${fontname}")
     if [ -z "${aid}" ]; then
         sh_die_err 42 "Can not find asset ID/URL of ${fontname}"
     fi
     if [[ "${aid}" == https://* ]]; then
-        msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG})"
+        msg_info "Download & install font: ${fontname} (${GH_RELEASE_TAG})"
     else
-        msg_info "download & install font: ${fontname} (${GH_RELEASE_TAG}, asset ${aid})"
+        msg_info "Download & install font: ${fontname} (${GH_RELEASE_TAG}, asset ${aid})"
     fi
     (
         set -e
@@ -435,13 +435,13 @@ nerd_install_font() {
         for filename in "${fontname}"/*; do
             if [[ "${filename##*.}" =~ ${FONT_FORMATS} ]]; then
                 dst="${FONT_DIR}/$(basename "${filename}")"
-                msg_debug "install font: ${dst}"
+                msg_debug "Install font: ${dst}"
                 [ -z "${dry_run}" ] && mv -- "${filename}" "${dst}"
                 found_one=true
             fi
         done
         if [ -z "${found_one}" ]; then
-            msg_warn "no font file matching \"${FONT_FORMATS}\" for ${fontname}"
+            msg_warn "No font file matching \"${FONT_FORMATS}\" for ${fontname}"
         fi
     )
     sh_prompt_err $?
@@ -461,11 +461,11 @@ gh_release_data() {
         _GH_RELEASE_DATA="$(gh_get_release_data)"
     fi
     if echo "${_GH_RELEASE_DATA}" | grep -q '"message": "Not Found"' >/dev/null 2>&1; then
-        msg_debug "release data: ${_GH_RELEASE_DATA}"
-        sh_die_err 42 "release tag ${GH_RELEASE_TAG} does not exists"
+        msg_debug "Release data: ${_GH_RELEASE_DATA}"
+        sh_die_err 42 "Release tag ${GH_RELEASE_TAG} does not exists"
     fi
     if echo "${_GH_RELEASE_DATA}" | grep -q '"message":"API rate limit exceeded' >/dev/null 2>&1; then
-        msg_debug "release data: ${_GH_RELEASE_DATA}"
+        msg_debug "Release data: ${_GH_RELEASE_DATA}"
         sh_die_err 42 "GitHub API rate limit exceeded. Wait or use GH_TOKEN."
     fi
     echo "${_GH_RELEASE_DATA}"
@@ -507,7 +507,7 @@ gh_download_asset() {
         -H "Accept: application/octet-stream" \
         -H "X-GitHub-Api-Version: ${GH_API_VERSION}" \
         -H "${AUTH}" \
-        "${url}" -o "${fname}" || sh_die_err $? "can't download ${url}"
+        "${url}" -o "${fname}" || sh_die_err $? "Can't download ${url}"
 
     # check if the response from GH is just a "Not Found"
     filesize=$(wc -c <"${fname}")
@@ -574,7 +574,7 @@ scripts_requires() {
     local exit_val=0
     while [ -n "${1-}" ]; do
         if ! command -v "${1}" >/dev/null 2>&1; then
-            msg_err "missing command ${1}"
+            msg_err "Missing tool: ${1}"
             exit_val=42
         fi
         shift
@@ -594,14 +594,11 @@ main() {
     process_options "$@"
     shift $((OPTIND - 1))
 
-    if [ -n "${dry_run}" ]; then
-        msg_warn "dry run: No files will be created or removed"
-    fi
     if [ "${archive_suffix}" = ".zip" ]; then
         _REQUIREMENTS="${_REQUIREMENTS} unzip"
     fi
     # shellcheck disable=SC2086 # We actually need word splitting of _REQUIREMENTS here
-    scripts_requires ${_REQUIREMENTS} || sh_die_err $? "first install missing requirements"
+    scripts_requires ${_REQUIREMENTS} || sh_die_err $? "First install missing required tools"
 
     if [ -n "${GH_TOKEN}" ]; then
         msg_debug "Using Github token to avoid rate limits and allow draft downloads"
@@ -616,6 +613,9 @@ main() {
         if [ -z "${invoke_help}" ]; then
             printf "Nerd Fonts installer -- Version %s\n                     -- Bash %s\n\n" \
                 "${scriptversion}" "${BASH_VERSION}" >&2
+            if [ -n "${dry_run}" ]; then
+                msg_warn "Dry run: No files will be created or removed"
+            fi
         fi
         if [ "${cmd}" = "list" ] || [ "${cmd}" = "install" ]; then
             if [ -z "${invoke_help}" ]; then
@@ -626,7 +626,7 @@ main() {
         fi
         _type="$(type -t "cmd_${cmd}")" || true
         if [ "${_type}" != "function" ]; then
-            sh_die_err 42 "unknown command: ${cmd} / use --help"
+            sh_die_err 42 "Unknown command: ${cmd} / use --help"
         fi
 
         if [ -n "${invoke_help}" ]; then
