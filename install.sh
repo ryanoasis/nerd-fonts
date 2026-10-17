@@ -21,7 +21,7 @@
 # Author: Markus Heiser <markus.heiser@darmarit.de>
 # Keywords: NerdFonts
 #
-scriptversion="2.2.4"
+scriptversion="2.2.5"
 # Nerd Fonts Version: 3.5.1
 
 # shellcheck enable=require-variable-braces
@@ -208,6 +208,7 @@ cmd_install() {
                 msg_warn "installing all fonts will take its time / time for a coffee break"
                 break
             elif sh_in_array "${font_name}" ${font_list}; then
+                msg_debug "user selected font ${font_name}"
                 font_list="${font_name}"
                 break
             elif sh_in_array "${REPLY}" "q" "quit"; then
@@ -217,11 +218,6 @@ cmd_install() {
                 msg_err "invalid choice."
             fi
         done
-        msg_debug "user selected font ${font_name}"
-        # shellcheck disable=SC2086 # We actually need word splitting of font_list here
-        sh_in_array "${font_name}" ${font_list} ||
-            sh_die_err 42 "font ${font_name} does not exists in release ${GH_RELEASE_TAG}"
-        font_list="${font_name}"
     else
         font_list=$*
     fi
