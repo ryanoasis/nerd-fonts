@@ -737,6 +737,21 @@
       "description": "Slashed zeros, customized version of Apple's Menlo"
     },
     {
+      "unpatchedName": "Mona Sans Mono",
+      "licenseId": "OFL-1.1-RFN",
+      "RFN": true,
+      "version": "2.0.27",
+      "patchedName": "MonaSansM",
+      "folderName": "MonaSansMono",
+      "imagePreviewFont": "MonaSansM Nerd Font",
+      "imagePreviewFontSource": "MonaSansMono/MonaSansMono-Regular.otf",
+      "linkPreviewFont": "mona-sans-mono",
+      "caskName": "mona-sans-mono",
+      "repoRelease": false,
+      "isMonospaced": true,
+      "description": "Monospaced extension of Mona Sans designed for code and interface typography"
+    },
+    {
       "unpatchedName": "Monaspace",
       "licenseId": "OFL-1.1-RFN",
       "RFN": true,
