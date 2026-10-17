@@ -218,10 +218,12 @@ cmd_install() {
             fi
         done
         msg_debug "user selected font ${font_name}"
-        # shellcheck disable=SC2086 # We actually need word splitting of font_list here
-        sh_in_array "${font_name}" ${font_list} ||
-            sh_die_err 42 "font ${font_name} does not exists in release ${GH_RELEASE_TAG}"
-        font_list="${font_name}"
+        if [ "${font_name}" != "all" ]; then
+            # shellcheck disable=SC2086 # We actually need word splitting of font_list here
+            sh_in_array "${font_name}" ${font_list} ||
+                sh_die_err 42 "font ${font_name} does not exists in release ${GH_RELEASE_TAG}"
+            font_list="${font_name}"
+        fi
     else
         font_list=$*
     fi
