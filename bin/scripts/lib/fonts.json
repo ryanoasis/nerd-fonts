@@ -737,6 +737,21 @@
       "description": "Slashed zeros, customized version of Apple's Menlo"
     },
     {
+      "unpatchedName": "Miracode",
+      "licenseId": "OFL-1.1-no-RFN",
+      "RFN": false,
+      "version": "1.0",
+      "patchedName": "Miracode",
+      "folderName": "Miracode",
+      "imagePreviewFont": "Miracode Nerd Font",
+      "imagePreviewFontSource": "Miracode/Miracode.ttf",
+      "linkPreviewFont": false,
+      "caskName": "miracode",
+      "repoRelease": false,
+      "isMonospaced": true,
+      "description": "An angular, vector-drawn monospaced font based on Monocraft with programming ligatures"
+    },
+    {
       "unpatchedName": "Monaspace",
       "licenseId": "OFL-1.1-RFN",
       "RFN": true,

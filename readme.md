@@ -165,6 +165,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [Lilex Nerd Font][p-lilex]                        | [Lilex][f-lilex]                       | 2.700      | NO   |
 | [MartianMono Nerd Font][p-martian]                | [MartianMono][f-martian]               | 1.1.0      | NO   |
 | [Meslo Nerd Font][p-meslo]                        | [Meslo][f-meslo]                       | 1.21       | NO   |
+| [Miracode Nerd Font][p-miracode]                  | [Miracode][f-miracode]                 | 1.0        | YES  |
 | [Monaspice Nerd Font][p-monaspace]                | [Monaspace][f-monaspace]               | 1.400      | YES  |
 | [Monofur Nerd Font][p-monofur]                    | Monofur (Tobias B Koehler)             | 1.0        | NO   |
 | [Monoid Nerd Font][p-monoid]                      | [Monoid][f-monoid]                     | 0.61       | NO   |
@@ -873,3 +874,6 @@ Quick Link Images
 [ql-3]:images/nerd-fonts-patcher-logo-md.png "↓ Font Patcher Details ↓"
 [ql-4]:https://raw.githubusercontent.com/wiki/ryanoasis/vim-devicons/screenshots/v1.0.0/branding-logo-sm.png "VimDevIcons Vim Plugin (external link) ➶"
 [ql-5]:images/nerd-fonts-character-logo-md.png "Font Package Archive (Zip) Downloads (external link) ➶"
+
+[p-miracode]:patched-fonts/Miracode
+[f-miracode]:https://github.com/IdreesInc/Miracode
