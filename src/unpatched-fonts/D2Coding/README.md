@@ -4,4 +4,4 @@
 
 For more information have a look at the upstream website: https://github.com/naver/d2codingfont
 
-Version: 1.3.2
+Version: 1.4.0
