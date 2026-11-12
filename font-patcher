@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.27.3"
+script_version = "4.27.4"
 
 version = "3.5.1"
 projectName = "Nerd Fonts"
@@ -439,7 +439,6 @@ class font_patcher:
                     else:
                         symfont = patch['Font']()
                         PreviousSymbol = patch['Font']
-                    symfont.encoding = 'UnicodeFull'
 
                     # Match the symbol font size to the source font size
                     symfont.em = self.sourceFont.em
@@ -448,8 +447,19 @@ class font_patcher:
                 SrcStart = patch['SrcStart']
                 if not SrcStart:
                     SrcStart = patch['SymStart']
+
+                # Fontforge's copy() and paste() loop over all encoding slots, that are 0x110000 with
+                # 'UnicodeFull' but only 0x10000 with 'UnicodeBmp'. Use the smaller one where possible.
+                beyond_bmp = patch['SymStart'] == 0 or max(patch['SymEnd'], SrcStart + patch['SymEnd'] - patch['SymStart']) > 0xFFFF
+                encoding = 'UnicodeFull' if beyond_bmp else 'UnicodeBmp'
+                for f in [ self.sourceFont, symfont ]:
+                    if f.encoding != encoding:
+                        f.encoding = encoding
+
                 self.copy_glyphs(SrcStart, symfont, patch['SymStart'], patch['SymEnd'], patch['Exact'], patch['ScaleRules'], patch['Name'], patch['Attributes'])
                 glyphnum.update({patch['Name']: (patch.get('ish'), self.copy_glyphs_last['maximum'])})
+
+        self.sourceFont.encoding = 'UnicodeFull'
 
         if symfont:
             symfont.close()
@@ -1689,7 +1699,7 @@ class font_patcher:
                         codes = [ "{:04X}".format(c) for c in sorted(list(codes)) ]
                         logger.debug("Removing alternate unicode on %X (%s)", currentSourceFontGlyph, ' '.join(codes));
                         self.sourceFont[currentSourceFontGlyph].altuni = None
-                        self.sourceFont.encoding = 'UnicodeFull' # Rebuild encoding table (needed after altuni changes)
+                        self.sourceFont.encoding = self.sourceFont.encoding # Rebuild encoding table (needed after altuni changes)
 
                 # This will destroy any content currently in currentSourceFontGlyph, so do it first
                 glyph_scale_data = self.get_glyph_scale(currentSymbolFontGlyph, scaleRules, stretch, symbolFont, currentSourceFontGlyph) if scaleRules is not None else None
